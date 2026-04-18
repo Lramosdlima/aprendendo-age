@@ -6,6 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { construcaoById, eraById, panteaoById, unidadeById } from "@/data/catalog";
+import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function ConstrucaoDetailPage() {
   const { id } = useParams();
@@ -21,6 +22,7 @@ export function ConstrucaoDetailPage() {
   }
 
   const era = c.era_id != null ? eraById.get(c.era_id) : undefined;
+  const construcaoIcon = getConstrucaoAssetUrl(c.ingles);
   const panteao = c.panteao_id != null ? panteaoById.get(c.panteao_id) : undefined;
 
   const unidadeLinks = (c.unidades_ids ?? [])
@@ -40,7 +42,7 @@ export function ConstrucaoDetailPage() {
       <PageHeader title={c.nome} description={c.ingles ? `EN: ${c.ingles}` : undefined} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Classificação">
+        <Section title="Classificação" watermarkSrc={construcaoIcon}>
           <div className="space-y-0">
             {c.tipo ? <InfoRow label="Tipo">{c.tipo}</InfoRow> : null}
             {panteao ? (

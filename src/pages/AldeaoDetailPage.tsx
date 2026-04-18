@@ -5,6 +5,7 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { aldeaoById, panteaoById } from "@/data/catalog";
+import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function AldeaoDetailPage() {
   const { id } = useParams();
@@ -20,6 +21,7 @@ export function AldeaoDetailPage() {
   }
 
   const panteao = a.panteao_id != null ? panteaoById.get(a.panteao_id) : undefined;
+  const aldeaoIcon = getAldeaoAssetUrl(a.ingles);
 
   return (
     <div>
@@ -27,7 +29,7 @@ export function AldeaoDetailPage() {
       <PageHeader title={a.nome} description={a.ingles ? `EN: ${a.ingles}` : undefined} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Geral">
+        <Section title="Geral" watermarkSrc={aldeaoIcon}>
           <div className="space-y-0">
             {panteao ? (
               <InfoRow label="Panteão">

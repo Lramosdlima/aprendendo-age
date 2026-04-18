@@ -1,6 +1,7 @@
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { aldeoes } from "@/data/catalog";
+import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function AldeoesPage() {
   return (
@@ -14,6 +15,7 @@ export function AldeoesPage() {
               title={a.nome}
               subtitle={a.panteao}
               meta={a.ingles ? a.ingles : undefined}
+              watermarkSrc={getAldeaoAssetUrl(a.ingles)}
             />
           </li>
         ))}

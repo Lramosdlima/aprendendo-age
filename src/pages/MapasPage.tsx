@@ -4,6 +4,7 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { mapas } from "@/data/catalog";
+import { getMapaAssetUrl } from "@/lib/entityWatermarkUrls";
 
 function matches(m: (typeof mapas)[number], q: string, index: number) {
   if (!q.trim()) return true;
@@ -31,6 +32,7 @@ export function MapasPage() {
               title={m.nome}
               subtitle={m.tipo}
               meta={m.mapas_da_ranqueada === "Yes" ? "Ranqueada" : "—"}
+              watermarkSrc={getMapaAssetUrl(m.ingles)}
             />
           </li>
         ))}

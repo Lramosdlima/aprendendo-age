@@ -3447,7 +3447,7 @@
   {
     "id": 124,
     "nome": "Nezha (Jovem)",
-    "ingles": "Nezha (Yonth)",
+    "ingles": "Nezha (Youth)",
     "tipo": "Herói ⭐",
     "panteao": "Chinês🐉",
     "era": "Heróica",
@@ -3818,6 +3818,7 @@
   {
     "id": 138,
     "nome": "Sombra de Hades",
+    "ingles": "Shade of Hades",
     "tipo": "Mítica 🐲",
     "panteao": "Grego⚡",
     "era": "Arcaica",
@@ -4252,9 +4253,5 @@
     "era_id": 4,
     "god_dono_id": 78,
     "panteao_id": 1
-  },
-  {
-    "nome": "Sem título",
-    "forca_atributos": 0
   }
 ]

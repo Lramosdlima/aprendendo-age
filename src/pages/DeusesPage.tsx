@@ -5,6 +5,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { deuses } from "@/data/catalog";
+import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 
 function matches(d: (typeof deuses)[number], q: string) {
   if (!q.trim()) return true;
@@ -28,6 +29,7 @@ export function DeusesPage() {
               title={d.nome}
               subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
               meta={[d.panteao, d.era].filter(Boolean).join(" · ")}
+              watermarkSrc={getDeusAssetUrl(d.nome)}
             />
           </li>
         ))}

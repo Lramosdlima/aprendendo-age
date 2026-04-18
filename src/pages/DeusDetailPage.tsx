@@ -6,6 +6,8 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { deusById, eraById, godpowerById, panteaoById, unidadeById } from "@/data/catalog";
+import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { parseStartReferences } from "@/lib/startLinksFromDeus";
 
 export function DeusDetailPage() {
   const { id } = useParams();
@@ -19,6 +21,8 @@ export function DeusDetailPage() {
       </div>
     );
   }
+
+  const deusIcon = getDeusAssetUrl(d.nome);
 
   const panteao = d.panteao_id != null ? panteaoById.get(d.panteao_id) : undefined;
   const era = d.era_id != null ? eraById.get(d.era_id) : undefined;
@@ -55,7 +59,7 @@ export function DeusDetailPage() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Visão geral">
+        <Section title="Visão geral" watermarkSrc={deusIcon}>
           <div className="space-y-0">
             {panteao ? (
               <InfoRow label="Panteão">
@@ -120,12 +124,24 @@ export function DeusDetailPage() {
 
       {d.starts ? (
         <Section title="Starts (referências)" className="mt-6">
-          <NotionText text={d.starts} />
+          <ul className="list-inside list-disc space-y-2 text-sm">
+            {parseStartReferences(d.starts).map((item, i) => (
+              <li key={i}>
+                {item.kind === "link" ? (
+                  <Link to={`/starts/${item.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                    <NotionText text={item.titulo} />
+                  </Link>
+                ) : (
+                  <NotionText text={item.raw} />
+                )}
+              </li>
+            ))}
+          </ul>
         </Section>
       ) : null}
 
       {relacoes.length > 0 ? (
-        <Section title="Relação com majors" className="mt-6">
+        <Section title="Deuses Menores" className="mt-6">
           <ul className="list-inside list-disc space-y-1">
             {relacoes.map((el, i) => (
               <li key={i}>{el}</li>
@@ -133,7 +149,7 @@ export function DeusDetailPage() {
           </ul>
         </Section>
       ) : d.god_maior_relacao ? (
-        <Section title="Relação com majors (texto)" className="mt-6">
+        <Section title="Deuses Menores" className="mt-6">
           <NotionText text={d.god_maior_relacao} />
         </Section>
       ) : null}

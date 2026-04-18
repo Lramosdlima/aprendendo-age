@@ -5,6 +5,7 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { mapas } from "@/data/catalog";
+import { getMapaAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function MapaDetailPage() {
   const { index } = useParams();
@@ -20,12 +21,14 @@ export function MapaDetailPage() {
     );
   }
 
+  const mapaIcon = getMapaAssetUrl(m.ingles);
+
   return (
     <div>
       <BackLink to="/mapas">Mapas</BackLink>
       <PageHeader title={m.nome} description={m.ingles ? `EN: ${m.ingles}` : undefined} />
 
-      <Section title="Metadados">
+      <Section title="Metadados" watermarkSrc={mapaIcon}>
         <div className="space-y-0">
           <InfoRow label="Índice no JSON">{i}</InfoRow>
           <InfoRow label="Ranqueada">{m.mapas_da_ranqueada ?? "—"}</InfoRow>

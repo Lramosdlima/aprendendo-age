@@ -6,6 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { construcaoById, eraById, panteaoById, unidadeById } from "@/data/catalog";
+import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function UnidadeDetailPage() {
   const { id } = useParams();
@@ -20,6 +21,8 @@ export function UnidadeDetailPage() {
     );
   }
 
+  const unidadeIcon = getUnidadeAssetUrl(u.ingles);
+
   const era = u.era_id != null ? eraById.get(u.era_id) : undefined;
   const panteao = u.panteao_id != null ? panteaoById.get(u.panteao_id) : undefined;
   const constr = u.construcao_id != null ? construcaoById.get(u.construcao_id) : undefined;
@@ -30,7 +33,7 @@ export function UnidadeDetailPage() {
       <PageHeader title={u.nome} description={u.ingles ? `EN: ${u.ingles}` : undefined} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Visão geral">
+        <Section title="Visão geral" watermarkSrc={unidadeIcon}>
           <div className="space-y-0">
             {u.tipo ? (
               <InfoRow label="Tipo">

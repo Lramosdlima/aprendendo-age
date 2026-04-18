@@ -4,6 +4,7 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { unidades } from "@/data/catalog";
+import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
 function matches(u: (typeof unidades)[number], q: string) {
   if (!q.trim()) return true;
@@ -30,6 +31,7 @@ export function UnidadesPage() {
               title={u.nome}
               subtitle={u.tipo}
               meta={[u.panteao, u.era].filter(Boolean).join(" · ")}
+              watermarkSrc={getUnidadeAssetUrl(u.ingles)}
             />
           </li>
         ))}

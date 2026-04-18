@@ -4,6 +4,7 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { construcoes } from "@/data/catalog";
+import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 function matches(c: (typeof construcoes)[number], q: string) {
   if (!q.trim()) return true;
@@ -27,6 +28,7 @@ export function ConstrucoesPage() {
               title={c.nome}
               subtitle={c.tipo}
               meta={[c.panteao, c.era].filter(Boolean).join(" · ")}
+              watermarkSrc={getConstrucaoAssetUrl(c.ingles)}
             />
           </li>
         ))}
