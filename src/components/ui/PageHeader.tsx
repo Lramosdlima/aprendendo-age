@@ -5,7 +5,7 @@ import { cn } from "@/lib/cn";
 
 type PageHeaderBlockProps = {
   title: ReactNode;
-  description?: string;
+  description?: ReactNode;
   /** Mesmo asset da marca d’água: ícone ao lado do título/descrição. */
   headerIconSrc?: string;
   /** Se true, a descrição é mostrada dentro de {@link AppTag} (comportamento análogo a `subtitleTag` em EntityCard). */
@@ -33,11 +33,17 @@ export function PageHeaderBlock({
       />
     ) : null;
 
-  const useDescriptionTag = descriptionTag && description != null && description !== "";
+  const hasDescription =
+    description != null && (typeof description !== "string" || description !== "");
+  const useDescriptionTag = descriptionTag && hasDescription;
   const descriptionBody = useDescriptionTag ? (
     <AppTag className="mt-2 align-top leading-snug [word-break:break-word] normal-case">{description}</AppTag>
-  ) : description ? (
-    <p className="mt-2 max-w-2xl text-sm text-zinc-400">{description}</p>
+  ) : hasDescription ? (
+    typeof description === "string" ? (
+      <p className="mt-2 max-w-2xl text-sm text-zinc-400">{description}</p>
+    ) : (
+      <div className="mt-2 max-w-2xl text-sm text-zinc-400">{description}</div>
+    )
   ) : null;
 
   const isEnd = align === "end";
@@ -69,7 +75,7 @@ export function PageHeaderBlock({
 
 type PageHeaderProps = {
   title: ReactNode;
-  description?: string;
+  description?: ReactNode;
   /** Mesmo asset da marca d’água: ícone à esquerda do título/descrição. */
   headerIconSrc?: string;
   /** Se true, a descrição é mostrada dentro de `AppTag`. */

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { unidades } from "@/data/catalog";
@@ -89,7 +90,7 @@ export function UnidadesPage() {
               <EntityCard
                 to={`/unidades/${u.id}`}
                 title={u.nome}
-                subtitle={u.tipo}
+                subtitle={u.tipo ? <NotionText text={u.tipo} /> : undefined}
                 meta={[u.panteao, u.era].filter(Boolean).join(" · ")}
                 watermarkSrc={getUnidadeAssetUrl(u.ingles)}
                 compareMode={compareMode}

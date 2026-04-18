@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 
 import { UnidadeCombateBody, UnidadeCustoBody, UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
 import { BackLink } from "@/components/ui/BackLink";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { unidadeById } from "@/data/catalog";
@@ -25,7 +26,12 @@ export function UnidadeDetailPage() {
   return (
     <div>
       <BackLink to="/unidades">Unidades</BackLink>
-      <PageHeader title={u.nome} description={u.tipo} descriptionTag headerIconSrc={unidadeIcon} />
+      <PageHeader
+        title={u.nome}
+        description={u.tipo ? <NotionText text={u.tipo} /> : undefined}
+        descriptionTag
+        headerIconSrc={unidadeIcon}
+      />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Visão geral">

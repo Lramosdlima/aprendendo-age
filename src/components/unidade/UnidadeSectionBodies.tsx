@@ -70,7 +70,9 @@ export function UnidadeCombateBody({ u }: { u: U }) {
       <InfoRow label="Arm. corte">{u.armadura_anticorte ?? "—"}</InfoRow>
       <InfoRow label="Arm. perfuração">{u.armadura_antiperfurante ?? "—"}</InfoRow>
       <InfoRow label="Counter de">{u.counter_de ? <NotionText text={u.counter_de} /> : "—"}</InfoRow>
-      <InfoRow label="Multiplicador">{u.multiplicador ?? "—"}</InfoRow>
+      <InfoRow label="Multiplicador">
+        {u.multiplicador != null && u.multiplicador !== "" ? <NotionText text={u.multiplicador} /> : "—"}
+      </InfoRow>
       <InfoRow label="Forte contra">{u.forte_contra ? <NotionText text={u.forte_contra} /> : "—"}</InfoRow>
       <InfoRow label="Fraco contra">{u.fraco_contra ? <NotionText text={u.fraco_contra} /> : "—"}</InfoRow>
     </div>
@@ -80,13 +82,27 @@ export function UnidadeCombateBody({ u }: { u: U }) {
 export function UnidadeCustoBody({ u }: { u: U }) {
   return (
     <div className="space-y-0">
-      <InfoRow label="Comida">{u.comida ?? "—"}</InfoRow>
-      <InfoRow label="Madeira">{u.madeira ?? "—"}</InfoRow>
-      <InfoRow label="Ouro">{u.ouro ?? "—"}</InfoRow>
-      <InfoRow label="População">{u.populacao ?? "—"}</InfoRow>
-      <InfoRow label="Tempo treino (s)">{u.tempo_treinamento ?? "—"}</InfoRow>
-      <InfoRow label="Velocidade movimento">{u.velocidade_movimento ?? "—"}</InfoRow>
-      <InfoRow label="Força atributos">{u.forca_atributos ?? "—"}</InfoRow>
+      <InfoRow label="Comida" icon="foodaom">
+        {u.comida ?? "—"}
+      </InfoRow>
+      <InfoRow label="Madeira" icon="woodaom">
+        {u.madeira ?? "—"}
+      </InfoRow>
+      <InfoRow label="Ouro" icon="goldaom">
+        {u.ouro ?? "—"}
+      </InfoRow>
+      <InfoRow label="População" icon="aomr_population_provision_icon">
+        {u.populacao ?? "—"}
+      </InfoRow>
+      <InfoRow label="Tempo treino (s)" icon="aomr_time_icon">
+        {u.tempo_treinamento ?? "—"}
+      </InfoRow>
+      <InfoRow label="Velocidade movimento" icon="aomr_speed_icon">
+        {u.velocidade_movimento ?? "—"}
+      </InfoRow>
+      <InfoRow label="Força atributos" icon="attack_cur">
+        {u.forca_atributos ?? "—"}
+      </InfoRow>
     </div>
   );
 }

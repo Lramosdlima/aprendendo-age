@@ -47,10 +47,18 @@ export function EraDetailPage() {
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Custos (avanço)">
           <div className="space-y-0">
-            <InfoRow label="Comida">{e.comida ?? 0}</InfoRow>
-            <InfoRow label="Madeira">{e.madeira ?? 0}</InfoRow>
-            <InfoRow label="Ouro">{e.ouro ?? 0}</InfoRow>
-            <InfoRow label="Tempo base (s)">{e.tempo_seg ?? 0}</InfoRow>
+            <InfoRow label="Comida" icon="foodaom">
+              {e.comida ?? 0}
+            </InfoRow>
+            <InfoRow label="Madeira" icon="woodaom">
+              {e.madeira ?? 0}
+            </InfoRow>
+            <InfoRow label="Ouro" icon="goldaom">
+              {e.ouro ?? 0}
+            </InfoRow>
+            <InfoRow label="Tempo base (s)" icon="aomr_time_icon">
+              {e.tempo_seg ?? 0}
+            </InfoRow>
           </div>
         </Section>
 
