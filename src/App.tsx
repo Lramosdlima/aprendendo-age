@@ -21,6 +21,7 @@ import { StartDetailPage } from "@/pages/StartDetailPage";
 import { StartsPage } from "@/pages/StartsPage";
 import { TecnologiaDetailPage } from "@/pages/TecnologiaDetailPage";
 import { TecnologiasPage } from "@/pages/TecnologiasPage";
+import { UnidadeComparePage } from "@/pages/UnidadeComparePage";
 import { UnidadeDetailPage } from "@/pages/UnidadeDetailPage";
 import { UnidadesPage } from "@/pages/UnidadesPage";
 
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="construcoes" element={<ConstrucoesPage />} />
           <Route path="construcoes/:id" element={<ConstrucaoDetailPage />} />
           <Route path="unidades" element={<UnidadesPage />} />
+          <Route path="unidades/compare/:idA/:idB" element={<UnidadeComparePage />} />
           <Route path="unidades/:id" element={<UnidadeDetailPage />} />
           <Route path="aldeoes" element={<AldeoesPage />} />
           <Route path="aldeoes/:id" element={<AldeaoDetailPage />} />

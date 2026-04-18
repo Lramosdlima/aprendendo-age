@@ -17,6 +17,12 @@ type EntityCardProps = {
   /** Reserva altura fixa para N linhas de subtítulo (ex.: 3 para grelha uniforme). */
   subtitleMinLines?: 2 | 3;
   className?: string;
+  /** Modo comparação: card não navega; exibe checkbox e alterna seleção ao clicar. */
+  compareMode?: boolean;
+  selected?: boolean;
+  onToggleSelect?: () => void;
+  /** Quando true e já há 2 outras unidades selecionadas, bloqueia nova seleção. */
+  selectDisabled?: boolean;
 };
 
 export function EntityCard({
@@ -28,6 +34,10 @@ export function EntityCard({
   subtitleTag = true,
   subtitleMinLines = 2,
   className,
+  compareMode,
+  selected,
+  onToggleSelect,
+  selectDisabled,
 }: EntityCardProps) {
   const useSubtitleTag = subtitleTag && subtitle != null && subtitle !== "";
   const subtitleBody = useSubtitleTag ? (
@@ -36,14 +46,18 @@ export function EntityCard({
     subtitle
   );
 
-  return (
-    <Link
-      to={to}
-      className={cn(
-        "group relative block overflow-hidden rounded-xl border border-aom-border bg-zinc-900/40 p-4 transition-colors hover:border-amber-500/35 hover:bg-zinc-900/70",
-        className,
-      )}
-    >
+  const shellClass = cn(
+    "group relative block overflow-hidden rounded-xl border bg-zinc-900/40 p-4 transition-colors",
+    compareMode
+      ? "cursor-pointer border-aom-border hover:border-amber-500/35 hover:bg-zinc-900/70"
+      : "border-aom-border hover:border-amber-500/35 hover:bg-zinc-900/70",
+    selected && compareMode ? "border-amber-500/50 bg-zinc-900/70 ring-1 ring-amber-500/30" : false,
+    selectDisabled && compareMode && !selected ? "opacity-60" : false,
+    className,
+  );
+
+  const inner = (
+    <>
       {watermarkSrc ? (
         <div
           aria-hidden
@@ -57,9 +71,26 @@ export function EntityCard({
       ) : null}
       <div className="relative z-[1]">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <span className="font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
-            {title}
-          </span>
+          <div className="flex min-w-0 items-start gap-3">
+            {compareMode ? (
+              <input
+                type="checkbox"
+                checked={!!selected}
+                disabled={selectDisabled && !selected}
+                onChange={(e) => {
+                  e.stopPropagation();
+                  if (selectDisabled && !selected) return;
+                  onToggleSelect?.();
+                }}
+                onClick={(e) => e.stopPropagation()}
+                className="mt-1 size-4 shrink-0 rounded border-aom-border bg-zinc-900 text-amber-600 focus:ring-amber-500/40 disabled:cursor-not-allowed"
+                aria-label="Selecionar para comparar"
+              />
+            ) : null}
+            <span className="min-w-0 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
+              {title}
+            </span>
+          </div>
           {meta ? <span className="text-xs text-zinc-500">{meta}</span> : null}
         </div>
         {subtitleMinLines === 3 ? (
@@ -70,6 +101,34 @@ export function EntityCard({
           <p className="mt-2 line-clamp-2 text-sm text-zinc-400">{subtitleBody}</p>
         ) : null}
       </div>
+    </>
+  );
+
+  if (compareMode) {
+    return (
+      <div
+        role="button"
+        tabIndex={0}
+        className={shellClass}
+        onClick={() => {
+          if (selectDisabled && !selected) return;
+          onToggleSelect?.();
+        }}
+        onKeyDown={(e) => {
+          if (e.key !== "Enter" && e.key !== " ") return;
+          e.preventDefault();
+          if (selectDisabled && !selected) return;
+          onToggleSelect?.();
+        }}
+      >
+        {inner}
+      </div>
+    );
+  }
+
+  return (
+    <Link to={to} className={shellClass}>
+      {inner}
     </Link>
   );
 }
