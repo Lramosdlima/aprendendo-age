@@ -28,6 +28,7 @@ export function PanteoesPage() {
               title={p.nome}
               subtitle={p.description}
               meta={`${(p.deuses_ids ?? []).length} deuses`}
+              subtitleTag={false}
             />
           </li>
         ))}

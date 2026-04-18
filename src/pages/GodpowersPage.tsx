@@ -30,6 +30,7 @@ export function GodpowersPage() {
               meta={[g.god, g.era].filter(Boolean).join(" · ")}
               watermarkSrc={getGodPowerAssetUrl(g.ingles)}
               subtitleMinLines={3}
+              subtitleTag={false}
             />
           </li>
         ))}

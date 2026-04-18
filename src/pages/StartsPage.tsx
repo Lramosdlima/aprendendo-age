@@ -16,7 +16,7 @@ export function StartsPage() {
             <EntityCard
               to={`/starts/${s.id}`}
               title={<NotionText text={s.titulo} />}
-              subtitle={s.descricao_curta}
+              subtitle={s.god}
               meta={s.youtube.length ? `${s.youtube.length} vídeo(s)` : undefined}
             />
           </li>

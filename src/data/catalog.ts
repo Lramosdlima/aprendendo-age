@@ -12,6 +12,8 @@ import unidadesJson from "./unidades_aom.json";
 export type StartBuildOrder = {
   id: number;
   titulo: string;
+  /** Deus principal inferido do título; vazio se for só civilização ou sem correspondência. */
+  god: string;
   notion_file_id: string;
   youtube: string[];
   descricao_curta: string;

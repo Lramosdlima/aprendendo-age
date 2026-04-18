@@ -2,6 +2,7 @@
   {
     "id": 1,
     "titulo": "Amaterasu - por MikeKing | TheRapl",
+    "god": "Amaterasu",
     "notion_file_id": "28200f30e21181068ec1d6a95eece9b3",
     "youtube": [
       "https://youtu.be/Wo1Qb4GjJyI",
@@ -13,6 +14,7 @@
   {
     "id": 2,
     "titulo": "Atlantes - por Moose",
+    "god": "Gaia, Urano, Cronos",
     "notion_file_id": "28500f30e21180fbb56bf7ffd0dec7e2",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -24,6 +26,7 @@
   {
     "id": 3,
     "titulo": "Chineses - por Moose",
+    "god": "Fu Xi, Nu Wa, Shennong",
     "notion_file_id": "28500f30e211802885f9cec177b1ba64",
     "youtube": [
       "https://youtu.be/1MxHT7EJdxs"
@@ -34,6 +37,7 @@
   {
     "id": 4,
     "titulo": "Cronos 2TC - por Tpisai",
+    "god": "Cronos",
     "notion_file_id": "28500f30e21180259646c5aa65a92a4a",
     "youtube": [
       "https://youtu.be/f8z-usB3IKw"
@@ -44,6 +48,7 @@
   {
     "id": 5,
     "titulo": "Cronos Rush 💥 - por Morley Games",
+    "god": "Cronos",
     "notion_file_id": "28500f30e21180ceae2edb08b6209593",
     "youtube": [
       "https://youtu.be/UmLxeuRJokI"
@@ -54,6 +59,7 @@
   {
     "id": 6,
     "titulo": "Egípcios - por Moose",
+    "god": "Rá, Ísis, Set",
     "notion_file_id": "28500f30e21180bcac19d3ce77313730",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -65,6 +71,7 @@
   {
     "id": 7,
     "titulo": "Freyr - por Scooby",
+    "god": "Freyr",
     "notion_file_id": "28200f30e2118141a862c5602104d485",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -73,6 +80,7 @@
   {
     "id": 8,
     "titulo": "Freyr Rush/2TC 💥- por Aussie_Drongo",
+    "god": "Freyr",
     "notion_file_id": "28200f30e211817a889ec4e52ac5094b",
     "youtube": [
       "https://youtu.be/VUMgDXltBLk"
@@ -83,6 +91,7 @@
   {
     "id": 9,
     "titulo": "Fu Xi - HuskSuppe",
+    "god": "Fu Xi",
     "notion_file_id": "2d400f30e21180b68687ee3cf9a009a8",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -91,6 +100,7 @@
   {
     "id": 10,
     "titulo": "Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion",
+    "god": "Gaia",
     "notion_file_id": "28500f30e21180f79b93ffbc9082b57b",
     "youtube": [
       "https://youtu.be/9tFWpUUQAwQ"
@@ -101,6 +111,7 @@
   {
     "id": 11,
     "titulo": "Gaia Eco :aomr_economic_guild_icon: - por Balerion",
+    "god": "Gaia",
     "notion_file_id": "28500f30e21180f7aac8ce6ae70c7bdf",
     "youtube": [
       "https://youtu.be/h7rzk9agp2o"
@@ -111,6 +122,7 @@
   {
     "id": 12,
     "titulo": "Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)- por Boxer",
+    "god": "Gaia",
     "notion_file_id": "2b300f30e21180df9628cd93850abdff",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -119,6 +131,7 @@
   {
     "id": 13,
     "titulo": "Gregos - por HuskSuppe (Mar 🌊:aomr_type_ship_icon:)",
+    "god": "Zeus, Hades, Poseidon, Deméter",
     "notion_file_id": "2d200f30e211800c85ced0bc22fc227b",
     "youtube": [
       "https://youtu.be/Rv2GToFC8x0"
@@ -129,6 +142,7 @@
   {
     "id": 14,
     "titulo": "Gregos - por Moose",
+    "god": "Zeus, Hades, Poseidon, Deméter",
     "notion_file_id": "28500f30e21180398f65d36e5df5fa0f",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -140,6 +154,7 @@
   {
     "id": 15,
     "titulo": "Hades (com Cofre :aomr_vaults_of_erebus_icon:)- por Aussie_Drongo",
+    "god": "Hades",
     "notion_file_id": "28500f30e21180bb8fe8fd53f6bd33c4",
     "youtube": [
       "https://youtu.be/ZQt5PmCZGSY"
@@ -150,6 +165,7 @@
   {
     "id": 16,
     "titulo": "Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias)- por HuskSuppe",
+    "god": "Loki",
     "notion_file_id": "28500f30e211802eabe3eafc8264633c",
     "youtube": [
       "https://youtu.be/O-_xwvH--tY"
@@ -159,7 +175,8 @@
   },
   {
     "id": 17,
-    "titulo": "Nórdicos (exceto Thor ❌:aomr_thor_icon:) - por Moose",
+    "titulo": "Nórdicos - por Moose",
+    "god": "Odin, Loki, Thor, Freyr",
     "notion_file_id": "28500f30e211802e9d90d9c181d32fcb",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -171,6 +188,7 @@
   {
     "id": 18,
     "titulo": "Poseidon (com :aomr_lure_power_icon:) - por Mosca",
+    "god": "Poseidon",
     "notion_file_id": "28300f30e21180929adcdd1e79730000",
     "youtube": [
       "https://youtu.be/WZiRB9sCU38"
@@ -181,6 +199,7 @@
   {
     "id": 19,
     "titulo": "Rá (2TC | Bast) - por Light Yagami",
+    "god": "Ra",
     "notion_file_id": "2a300f30e211800e98afd303776045e1",
     "youtube": [
       "https://youtu.be/8ziqMC_Njt4"
@@ -191,6 +210,7 @@
   {
     "id": 20,
     "titulo": "Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM]",
+    "god": "Set",
     "notion_file_id": "31400f30e2118083ab54fba88ed727b8",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -199,6 +219,7 @@
   {
     "id": 21,
     "titulo": "Set Rush! 💥 - por Miniyeti",
+    "god": "Set",
     "notion_file_id": "2a300f30e21180eb82eee9f3de936709",
     "youtube": [
       "https://youtu.be/b9m6emrH7GM"
@@ -209,6 +230,7 @@
   {
     "id": 22,
     "titulo": "Shennong (2 TC :aomr_town_center_chinese:) - por Morley",
+    "god": "Shennong",
     "notion_file_id": "28200f30e211816b921fcef811c85af7",
     "youtube": [
       "https://youtu.be/bOn4ASvDmvU"
@@ -219,6 +241,7 @@
   {
     "id": 23,
     "titulo": "Shennong Fazendeiro (:aomr_farm_icon::aomr_prosperous_seeds:) por HuskSuppe",
+    "god": "Shennong",
     "notion_file_id": "2cb00f30e21180099a8de1b7e23179b5",
     "youtube": [
       "https://youtu.be/wee5Mm6wJ2I",
@@ -230,6 +253,7 @@
   {
     "id": 24,
     "titulo": "Susanoo (++Mikos :aomr_miko_icon::favoraom:) - por HuskSuppe",
+    "god": "Susanoo",
     "notion_file_id": "2d300f30e21180b693a9e4c30f92d1e9",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -238,6 +262,7 @@
   {
     "id": 25,
     "titulo": "Susanoo - por TheRapl",
+    "god": "Susanoo",
     "notion_file_id": "28200f30e211819c92dcdf17a22db5df",
     "youtube": [
       "https://youtu.be/JV4ksUDd7SQ"
@@ -248,6 +273,7 @@
   {
     "id": 26,
     "titulo": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg",
+    "god": "Thor",
     "notion_file_id": "2dd00f30e2118095a6b8e58d614037b6",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -256,6 +282,7 @@
   {
     "id": 27,
     "titulo": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose",
+    "god": "Thor",
     "notion_file_id": "28500f30e2118097bea7d038be0734e8",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -267,6 +294,7 @@
   {
     "id": 28,
     "titulo": "Tsukuyomi (Mar 🌊) - por Scooby",
+    "god": "Tsukuyomi",
     "notion_file_id": "2cc00f30e211802c9354fb0cc22fc1cb",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -275,6 +303,7 @@
   {
     "id": 29,
     "titulo": "Tsukuyomi (Rush+2TC) - por HuskSuppe",
+    "god": "Tsukuyomi",
     "notion_file_id": "2d100f30e21180639454f8cbb197353f",
     "youtube": [
       "https://youtu.be/1cG3tcC4cio"
@@ -285,6 +314,7 @@
   {
     "id": 30,
     "titulo": "Tsukuyomi - por TheRapl",
+    "god": "Tsukuyomi",
     "notion_file_id": "28200f30e211812ab55dd4020f51a0d0",
     "youtube": [
       "https://youtu.be/Ua0z6kt75Iw"
@@ -295,6 +325,7 @@
   {
     "id": 31,
     "titulo": "Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami",
+    "god": "Isis",
     "notion_file_id": "28300f30e21180a0a22ff1f5ab5c56fe",
     "youtube": [
       "https://youtu.be/-sojDxdtSy4"
