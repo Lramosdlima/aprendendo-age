@@ -802,5 +802,19 @@
   "aomr_classical_age_icon": "/assets/ages/AoMR_Classical_Age_icon.png",
   "aomr_heroic_age_icon": "/assets/ages/AoMR_Heroic_Age_icon.png",
   "aomr_mythic_age_icon": "/assets/ages/AoMR_Mythic_Age_icon.png",
-  "aomr_wonder_age_icon": "/assets/ages/AoMR_Wonder_Age_icon.png"
+  "aomr_wonder_age_icon": "/assets/ages/AoMR_Wonder_Age_icon.png",
+  "aomr_champion_chariots_icon": "/assets/techs/techs_egyptian/AoMR_Champion_Chariot_Archers_icon.png",
+  "aomr_champion_elephants_icon": "/assets/techs/techs_egyptian/AoMR_Champion_War_Elephants_icon.png",
+  "aomr_champion_ranged_soldiers_icon": "/assets/techs/techs_greek/AoMR_Conscript_Ranged_Soldiers_icon.webp",
+  "aomr_conscript_barracks_soldiers_icon": "/assets/techs/techs_egyptian/AoMR_Levy_Barracks_Soldiers_icon.png",
+  "aomr_freyrs_gift_icon": "/assets/techs/techs_norse/AoMR_Freyr%27s_Gift_icon.webp",
+  "aomr_heavy_chariots_icon": "/assets/techs/techs_egyptian/AoMR_Heavy_Chariot_Archers_icon.webp",
+  "aomr_heavy_elephants_icon": "/assets/techs/techs_egyptian/AoMR_Heavy_War_Elephants_icon.webp",
+  "aomr_heavy_ranged_soldiers_icon": "/assets/techs/techs_greek/AoMR_Conscript_Ranged_Soldiers_icon.webp",
+  "aomr_leizu_27s_silk_icon": "/assets/techs/techs_chinese/AoMR_Leizu%27s_Silk_icon.webp",
+  "aomr_medium_ranged_soldiers_icon": "/assets/techs/techs_greek/AoMR_Levy_Ranged_Soldiers_icon.png",
+  "aomr_qilin_27s_blessing_icon": "/assets/techs/techs_chinese/AoMR_Qilin%27s_Blessing_icon.webp",
+  "aomr_sun_dried_mud_brick_icon": "/assets/techs/techs_egyptian/AoMR_Sundried_Mud_Brick_icon.webp",
+  "aomr_ten_fist_sword_icon": "/assets/techs/techs_japanese/AoMR_Ten-Fist_Sword_icon.png",
+  "aomr_xuanyuan_27s_bloodline_icon": "/assets/techs/techs_chinese/AoMR_Xuanyuan%27s_Bloodline_icon.webp"
 }

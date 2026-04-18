@@ -151,7 +151,7 @@
     "panteoes": "Geral",
     "tempo_s": 15,
     "tipo": "Defensivo :aomr_type_human_soldier_icon:",
-    "icon": "aomr_watch_tower_icon",
+    "icon": "aomr_watch_tower_greek_icon",
     "campo": ":aomr_sentry_tower_icon: Torre de Sentinela: Ativa a Ação de Ataque de Longo Alcance alcance. :piercedamage:",
     "construcao_origem_id": 70,
     "eras_id": 2
@@ -182,7 +182,7 @@
     "panteoes": "Geral",
     "tempo_s": 40,
     "tipo": "Defensivo :aomr_type_human_soldier_icon:",
-    "icon": "aomr_stone_wall_icon",
+    "icon": "aomr_fortified_wall_greek_icon",
     "campo": ":aomr_wooden_wall_icon: Muralha: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
     "construcao_origem_id": 69,
     "eras_id": 2
@@ -373,7 +373,7 @@
     "panteoes": "Geral",
     "tempo_s": 40,
     "tipo": "Defensivo :aomr_type_human_soldier_icon:",
-    "icon": "aomr_guard_tower_icon",
+    "icon": "aomr_guard_tower_greek_icon",
     "campo": ":aomr_machine_workshop: Oficina de Máquinas: Todas as Ações de Dano (Todos os Tipos) +50%",
     "construcao_origem_id": 70,
     "eras_id": 3
@@ -420,7 +420,7 @@
     "panteoes": "Geral",
     "tempo_s": 50,
     "tipo": "Defensivo :aomr_type_human_soldier_icon:",
-    "icon": "aomr_fortified_wall_icon",
+    "icon": "aomr_fortified_wall_greek_icon",
     "campo": ":aomr_wooden_wall_icon: Muralha: Adicional 3.00 LDV :los_icon_aoe3de:",
     "construcao_origem_id": 69,
     "eras_id": 3
