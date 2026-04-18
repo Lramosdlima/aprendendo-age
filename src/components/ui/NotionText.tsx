@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
+import { getTokenLabel } from "@/lib/notionTokenLabels";
 
 type NotionTextProps = {
   text: string;
@@ -33,7 +34,7 @@ export function NotionText({ text, className }: NotionTextProps) {
           key={`img-${i++}`}
           src={src}
           alt=""
-          title={raw}
+          title={getTokenLabel(name)}
           className="notion-token-inline mx-0.5 inline-block h-[1em] max-h-[1.1em] w-auto align-[-0.12em] object-contain"
         />,
       );
@@ -42,7 +43,7 @@ export function NotionText({ text, className }: NotionTextProps) {
         <span
           key={`miss-${i++}`}
           className="mx-0.5 inline rounded bg-zinc-800/90 px-1 py-0.5 align-baseline font-mono text-[0.65rem] text-amber-200/95"
-          title={raw}
+          title={getTokenLabel(name)}
         >
           {raw}
         </span>,

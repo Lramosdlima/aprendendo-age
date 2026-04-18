@@ -1,6 +1,14 @@
 import tokenAssetMap from "@/data/token_asset_map.json";
 
+import { getTokenLabel } from "./notionTokenLabels";
+
+export { getTokenLabel };
+
 type MapType = Record<string, string>;
+
+function escapeHtmlAttr(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+}
 
 const map = tokenAssetMap as MapType;
 
@@ -34,7 +42,8 @@ export function replaceNotionTokensInHtml(html: string): string {
   return html.replace(NOTION_TOKEN_IN_TEXT_RE, (full, name: string) => {
     const src = getTokenAssetUrl(name);
     if (!src) return full;
-    return `<img src="${src}" alt="" class="notion-token-inline" loading="lazy" decoding="async"/>`;
+    const title = escapeHtmlAttr(getTokenLabel(name));
+    return `<img src="${src}" alt="" title="${title}" class="notion-token-inline" loading="lazy" decoding="async"/>`;
   });
 }
 
@@ -54,7 +63,14 @@ export function rewriteFlatImgSrcFromAlt(html: string): string {
     const src = srcM[1];
     const parts = src.split("/");
     if (parts.length !== 3 || parts[1] !== "assets") return tag;
-    if (src === url) return tag;
-    return tag.replace(srcM[0], `src="${url}"`);
+    let out = tag;
+    if (src !== url) {
+      out = out.replace(srcM[0], `src="${url}"`);
+    }
+    if (!/\btitle\s*=/i.test(out)) {
+      const label = escapeHtmlAttr(getTokenLabel(token));
+      out = out.replace(/(\/?>)\s*$/, ` title="${label}"$1`);
+    }
+    return out;
   });
 }
