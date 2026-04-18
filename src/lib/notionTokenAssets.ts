@@ -12,15 +12,10 @@ const map = tokenAssetMap as MapType;
 const TOKEN_FALLBACK_URL: Record<string, string> = {
   aomr_archaic_age_icon: "/assets/techs/AoMR_Pickaxe_icon.png",
   aomr_classical_age_icon: "/assets/techs/AoMR_Coinage_icon.png",
-  aomr_heroic_age_icon: "/assets/techs/techs_atlantic/AoMR_Heroic_Renewal_icon.webp",
-  aomr_mythic_age_icon: "/assets/techs/techs_atlantic/AoMR_Mythic_Rejuvenation_icon.webp",
+  aomr_heroic_age_icon: "/assets/techs/techs_atlantean/AoMR_Heroic_Renewal_icon.webp",
+  aomr_mythic_age_icon: "/assets/techs/techs_atlantean/AoMR_Mythic_Rejuvenation_icon.webp",
   aomr_wonder_age_icon: "/assets/others/AoMR_Wonder_icon.png",
-  aomr_thor_icon: "/assets/god_power/AoMR_Dwarven_Mine_icon.png",
   aomr_japaneses_icon: "/assets/buildings/AoMR_Town_Center_Japanese_icon.png",
-  /** Retratos principais ausentes em assets; usar ícone tier do Retold em others/ */
-  aomr_amaterasu_icon: "/assets/others/Amaterasu_tier_1_icon.webp",
-  aomr_susanoo_icon: "/assets/others/Susanoo_tier_1_icon.webp",
-  aomr_tsukuyomi_icon: "/assets/others/Tsukuyomi_tier_1_icon.webp",
 };
 
 /** Token como em `:favoraom:` ou `:aomr_type_ship_icon:` (sem dois-pontos). */
