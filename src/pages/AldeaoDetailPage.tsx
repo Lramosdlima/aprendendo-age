@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { aldeaoById, panteaoById } from "@/data/catalog";
@@ -38,7 +39,9 @@ export function AldeaoDetailPage() {
                 </Link>
               </InfoRow>
             ) : (
-              <InfoRow label="Panteão">{a.panteao}</InfoRow>
+              <InfoRow label="Panteão">
+                <NotionText text={a.panteao} />
+              </InfoRow>
             )}
             <InfoRow label="Vida">{a.vida ?? "—"}</InfoRow>
             <InfoRow label="População">{a.populacao ?? "—"}</InfoRow>

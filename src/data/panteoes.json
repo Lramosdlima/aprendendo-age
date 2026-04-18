@@ -30,7 +30,7 @@
     "nome": "Egípcio",
     "description": "Os egípcios exploram fazendo com que seus sacerdotes construam obeliscos . Os primeiros soldados egípcios tendem a ser mais especializados, mas treinam rapidamente. Suas unidades posteriores, da Fortaleza Migdol, são mais poderosas. Muitas construções egípcias custam ouro e várias outras são gratuitas, mas levam mais tempo para serem construídas. As construções egípcias são mais rápidas, coletam, treinam e pesquisam melhorias com mais rapidez e lutam melhor quando fortalecidas por um faraó . Os egípcios ganham Favor construindo Monumentos .",
     "deuses": "Rá, Ísis, Set, Bast, Ptah, Anúbis, Hathor/Sobek, Néftis, Sekhmet, Osíris, Thoth, Hórus",
-    "starts": "Egípcios - por Moose, Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami, Rá (2TC | Bast) - por Light Yagami, Set Rush! 💥 - por Miniyeti, Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM]",
+    "starts": "Egípcios - por Moose, Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami, Rá (2TC | Bast) - por Light Yagami, Set Rush! :aomr_type_siege_weapon_icon: - por Miniyeti, Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM]",
     "vill": "Trabalhador",
     "deuses_ids": [
       4,
@@ -53,7 +53,7 @@
     "nome": "Nórdico",
     "description": "Os nórdicos não possuem batedores dedicados , então devem usar um Berserk ou outra infantaria. A infantaria nórdica também constrói edifícios ; seus aldeões , chamados coletores , apenas coletam recursos. Os nórdicos também podem treinar anões , que são mineradores especializados. Os nórdicos podem ter quantos heróis puderem pagar. Eles ganham favores lutando contra soldados inimigos e matando animais .",
     "deuses": "Thor, Odin, Loki, Frey, Freyja, Heimdall, Forseti, Njord, Skadi, Bragi, Baldr, Tyr, Hel, Ullr, Aegir, Vidar",
-    "starts": "Nórdicos (exceto Thor ❌:aomr_thor_icon:) - por Moose, Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose, Freyr - por Scooby, Freyr Rush/2TC 💥- por Aussie_Drongo, Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias)- por HuskSuppe, Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg",
+    "starts": "Nórdicos (exceto Thor ❌:aomr_thor_icon:) - por Moose, Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose, Freyr - por Scooby, Freyr Rush/2TC :aomr_type_siege_weapon_icon:- por Aussie_Drongo, Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias)- por HuskSuppe, Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg",
     "vill": "Coletor, Anão",
     "deuses_ids": [
       7,
@@ -83,7 +83,7 @@
     "nome": "Atlante",
     "description": "Os atlantes exploram usando seus Oráculos . Soldados atlantes são bastante caros, mas cada um deles pode ser transformado em Heróis . Em eras posteriores, as unidades que podem ser treinadas no Palácio são as mais poderosas. Cidadãos atlantes coletam recursos e constroem edifícios. Cidadãos são unidades lentas e caras que não precisam de um local de desembarque para coletar recursos. Os atlantes ganham Favor posicionando Oráculos pelo mapa para comungar com os deuses.",
     "deuses": "Urano, Gaia, Cronos, Leto, Prometeu, Oceano, Rheia, Hyperion, Theia, Atlas, Hélios, Hécate",
-    "starts": "Atlantes - por Moose, Cronos Rush 💥 - por Morley Games, Cronos 2TC - por Tpisai, Gaia Eco :aomr_economic_guild_icon: - por Balerion, Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion, Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)- por Boxer",
+    "starts": "Atlantes - por Moose, Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games, Cronos 2TC - por Tpisai, Gaia Eco :aomr_economic_guild_icon: - por Balerion, Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion, Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)- por Boxer",
     "vill": "Cidadão, Cidadão (Herói)",
     "deuses_ids": [
       10,

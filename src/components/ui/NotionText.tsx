@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 
-import { renderTextWithEmojiTypeIcons } from "@/lib/emojiTypeIcons";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 type NotionTextProps = {
@@ -10,16 +9,8 @@ type NotionTextProps = {
 
 const TOKEN_RE = /:([a-z0-9_-]+):/gi;
 
-function renderPlainSegment(text: string, keyPrefix: string): ReactNode {
-  const parts = renderTextWithEmojiTypeIcons(text, keyPrefix);
-  if (parts.length === 0) return null;
-  if (parts.length === 1) return parts[0];
-  return <span key={keyPrefix}>{parts}</span>;
-}
-
 /**
  * Texto exportado do Notion: trechos `:token:` viram ícone em /assets quando mapeados em token_asset_map.json.
- * Emojis de tipo de unidade (⚔, 🏹, 🐴, …) são substituídos por ícones de `token_asset_map`.
  */
 export function NotionText({ text, className }: NotionTextProps) {
   if (!text) return null;
@@ -31,9 +22,7 @@ export function NotionText({ text, className }: NotionTextProps) {
   for (const m of text.matchAll(TOKEN_RE)) {
     const start = m.index ?? 0;
     if (start > lastIndex) {
-      const segment = text.slice(lastIndex, start);
-      const node = renderPlainSegment(segment, `em-${segKey++}`);
-      if (node != null) parts.push(node);
+      parts.push(<span key={`em-${segKey++}`}>{text.slice(lastIndex, start)}</span>);
     }
     const raw = m[0];
     const name = (m[1] ?? "").toLowerCase();
@@ -62,9 +51,7 @@ export function NotionText({ text, className }: NotionTextProps) {
     lastIndex = start + raw.length;
   }
   if (lastIndex < text.length) {
-    const segment = text.slice(lastIndex);
-    const node = renderPlainSegment(segment, `end-${segKey}`);
-    if (node != null) parts.push(node);
+    parts.push(<span key={`end-${segKey}`}>{text.slice(lastIndex)}</span>);
   }
 
   return <span className={className}>{parts}</span>;

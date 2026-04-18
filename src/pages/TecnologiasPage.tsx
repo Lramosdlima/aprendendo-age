@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
+import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { tecnologias } from "@/data/catalog";
@@ -36,7 +38,12 @@ export function TecnologiasPage() {
               to={`/tecnologias/${i}`}
               title={t.nome || `(sem título #${i})`}
               subtitle={t.beneficia ? <NotionText text={t.beneficia} /> : undefined}
-              meta={[t.panteoes, t.eras].filter(Boolean).join(" · ")}
+              meta={
+                <span className="inline-flex flex-wrap items-baseline gap-x-0">
+                  {t.panteoes_id != null ? <PantheonMetaIcon panteaoId={t.panteoes_id} /> : null}
+                  <MetaNotionLine parts={[t.panteoes, t.eras]} />
+                </span>
+              }
             />
           </li>
         ))}

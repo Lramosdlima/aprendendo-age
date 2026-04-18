@@ -790,5 +790,12 @@
   "susanoo_tier_1_icon": "/assets/others/Susanoo_tier_1_icon.webp",
   "time_shift_aom": "/assets/others/Time_Shift_AoM.png",
   "tsukuyomi_tier_1_icon": "/assets/others/Tsukuyomi_tier_1_icon.webp",
-  "woodaom": "/assets/retold_icons/WoodAOM.png"
+  "woodaom": "/assets/retold_icons/WoodAOM.png",
+  "aomr_pantheon_greeks_icon": "/assets/pantheons/AoMR_Greeks_icon.png",
+  "aomr_pantheon_egyptians_icon": "/assets/pantheons/AoMR_Egyptians_icon.png",
+  "aomr_pantheon_norse_icon": "/assets/pantheons/AoMR_Norse_icon.png",
+  "aomr_pantheon_atlanteans_icon": "/assets/pantheons/AoMR_Atlanteans_icon.png",
+  "aomr_pantheon_chinese_icon": "/assets/pantheons/AoMR_Chinese_icon.png",
+  "aomr_pantheon_japanese_icon": "/assets/pantheons/AoMR_Japanese_icon.png",
+  "aomr_pantheon_azteca_icon": "/assets/pantheons/AoMR_Azteca_icon.png"
 }

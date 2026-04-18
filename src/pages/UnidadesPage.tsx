@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
@@ -91,7 +92,7 @@ export function UnidadesPage() {
                 to={`/unidades/${u.id}`}
                 title={u.nome}
                 subtitle={u.tipo ? <NotionText text={u.tipo} /> : undefined}
-                meta={[u.panteao, u.era].filter(Boolean).join(" · ")}
+                meta={<MetaNotionLine parts={[u.panteao, u.era]} />}
                 watermarkSrc={getUnidadeAssetUrl(u.ingles)}
                 compareMode={compareMode}
                 selected={selected}

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { SearchField } from "@/components/ui/SearchField";
 import { panteoes } from "@/data/catalog";
 
@@ -29,6 +30,7 @@ export function PanteoesPage() {
               subtitle={p.description}
               meta={`${(p.deuses_ids ?? []).length} deuses`}
               subtitleTag={false}
+              watermarkSrc={getPantheonWatermarkUrl(p.id)}
             />
           </li>
         ))}

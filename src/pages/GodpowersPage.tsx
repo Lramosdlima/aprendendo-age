@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { godpowers } from "@/data/catalog";
@@ -27,7 +28,7 @@ export function GodpowersPage() {
               to={`/poderes/${g.id}`}
               title={g.nome}
               subtitle={g.descricao_resumida}
-              meta={[g.god, g.era].filter(Boolean).join(" · ")}
+              meta={<MetaNotionLine parts={[g.god, g.era, g.panteao]} />}
               watermarkSrc={getGodPowerAssetUrl(g.ingles)}
               subtitleMinLines={3}
               subtitleTag={false}

@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { construcoes } from "@/data/catalog";
@@ -26,8 +28,8 @@ export function ConstrucoesPage() {
             <EntityCard
               to={`/construcoes/${c.id}`}
               title={c.nome}
-              subtitle={c.tipo}
-              meta={[c.panteao, c.era].filter(Boolean).join(" · ")}
+              subtitle={c.tipo ? <NotionText text={c.tipo} /> : undefined}
+              meta={<MetaNotionLine parts={[c.panteao, c.era]} />}
               watermarkSrc={getConstrucaoAssetUrl(c.ingles)}
             />
           </li>

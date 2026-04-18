@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
+import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { deuses } from "@/data/catalog";
@@ -28,7 +30,12 @@ export function DeusesPage() {
               to={`/deuses/${d.id}`}
               title={d.nome}
               subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
-              meta={[d.panteao, d.era].filter(Boolean).join(" · ")}
+              meta={
+                <span className="inline-flex flex-wrap items-baseline gap-x-0">
+                  {d.panteao_id != null ? <PantheonMetaIcon panteaoId={d.panteao_id} /> : null}
+                  <MetaNotionLine parts={[d.panteao, d.era]} />
+                </span>
+              }
               watermarkSrc={getDeusAssetUrl(d.nome)}
             />
           </li>

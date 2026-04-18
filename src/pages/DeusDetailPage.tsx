@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
@@ -55,7 +56,9 @@ export function DeusDetailPage() {
       <BackLink to="/deuses">Deuses</BackLink>
       <PageHeader
         title={d.nome}
-        description={[d.hierarquia, d.panteao].filter(Boolean).join(" · ")}
+        description={
+          [d.hierarquia, d.panteao].some(Boolean) ? <MetaNotionLine parts={[d.hierarquia, d.panteao]} /> : undefined
+        }
         headerIconSrc={deusIcon}
       />
 

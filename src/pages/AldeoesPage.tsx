@@ -1,4 +1,5 @@
 import { EntityCard } from "@/components/ui/EntityCard";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { aldeoes } from "@/data/catalog";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
@@ -13,7 +14,7 @@ export function AldeoesPage() {
             <EntityCard
               to={`/aldeoes/${a.id}`}
               title={a.nome}
-              subtitle={a.panteao}
+              subtitle={a.panteao ? <NotionText text={a.panteao} /> : undefined}
               meta={a.ingles ? a.ingles : undefined}
               watermarkSrc={getAldeaoAssetUrl(a.ingles)}
             />

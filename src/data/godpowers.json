@@ -11,7 +11,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Um raio do céu que abate qualquer unidade militar.",
     "descricao_avancada": "Causa 10.000 de dano divino à unidade alvo, ou 2.500 de dano divino se a unidade alvo for um Titã. Este poder não pode ser usado em unidades econômicas ( Aldeão , Trabalhador , Coletor , Anão , Cidadão , Camponês ), unidades de transporte ( Navio de Transporte , Roca , Leviatã ), Carroças de Boi , Qilins de Conto do Dragão , Regentes ou jogadores Berserk of Norse iniciais.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 1,
     "era_id": 1,
     "panteao_id": 1
@@ -28,7 +28,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Mire um local para erguer uma pedra especial que atrai animais para ela e gere galinhas. A Atração convoca mais Comida em eras posteriores e os Aldeões podem deixar Comida na Atração.",
     "descricao_avancada": "Cria uma estrutura que atrai animais e atua como um celeiro , além de gerar galinhas . Após atrair uma quantidade definida de alimento , a isca deixa de funcionar como um atrativo .",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 2,
     "era_id": 1,
     "panteao_id": 1
@@ -45,7 +45,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Use em um Centro Urbano, Centro da Aldeia ou numa Fortaleza sua ou de um aliado para protegê-lo com guardiões de pedra.",
     "descricao_avancada": "Invoca cinco Sentinelas , gigantes de pedra imóveis, armados com arcos, ao redor de Centros da Cidade próprios ou aliados . Em Retold , até 3 sentinelas podem ser criadas em sequência em cada local ao redor de um único Centro da Cidade.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 3,
     "era_id": 1,
     "panteao_id": 1
@@ -62,7 +62,7 @@
     "incremento_por_uso": "+15",
     "descricao_resumida": "Mire em qualquer lugar para fazer com que todos os seus Aldeões coletam Comida das Fazendas mais rapidamente.",
     "descricao_avancada": "Por 45 segundos, somente o jogador que invoca experimentará um aumento de 150% nas taxas de coleta da Fazenda .",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 4,
     "era_id": 1,
     "panteao_id": 2
@@ -79,7 +79,7 @@
     "incremento_por_uso": "+10",
     "descricao_resumida": "Use em qualquer lugar para fazer com que todos os seus Aldeões e Caravana de Comércio reúnam nosso mais rapidamente",
     "descricao_avancada": "Por 50 segundos, os Trabalhadores coletarão ouro 80% mais rápido. Em Retold , a taxa de coleta de ouro das Caravanas também aumentará em 20% durante o efeito.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 5,
     "era_id": 1,
     "panteao_id": 2
@@ -96,7 +96,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Use uma região oculta do mapa para revelar-la temporariamente.",
     "descricao_avancada": "Revela a área alvo e dissipa a Névoa da Guerra para o jogador e seus aliados por 20 segundos.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 6,
     "era_id": 1,
     "panteao_id": 2
@@ -113,7 +113,7 @@
     "incremento_por_uso": "+50",
     "descricao_resumida": "Selecione um local para criar uma nova Mina de Ouro que tem mais Ouro e coleta mais rápida se usada em eras posteriores.",
     "descricao_avancada": "Cria uma Mina de Ouro mística no local alvo. A quantidade de ouro na mina depende da era em que este poder é usado.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 7,
     "era_id": 1,
     "panteao_id": 3
@@ -130,7 +130,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Use um grupo de animais selvagens para multiplicar grandemente seus números. Se não houver nenhum, Odin evocará alguns deles. Fica mais poderoso a cada época.",
     "descricao_avancada": "Faz com que os animais na área alvo se multipliquem. Seu poder aumenta a cada Era. Se não houver animais, alguns Alces são gerados.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 8,
     "era_id": 1,
     "panteao_id": 3
@@ -147,7 +147,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Use uma unidade inimiga para ver secretamente o que ela vê.",
     "descricao_avancada": "O poder pode ser usado em uma unidade inimiga alvo para revelar sua Linha de Visão até que ela seja morta. O poder não pode ser usado em um Titã (que revela a Linha de Visão para todos os jogadores de qualquer maneira). Ao contrário de outros poderes divinos, o jogo não exibe uma notificação quando um jogador invoca este poder.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 9,
     "era_id": 1,
     "panteao_id": 3
@@ -164,7 +164,7 @@
     "incremento_por_uso": "+15",
     "descricao_resumida": "Use em um local do mapa para mandar unidades inimigas pelos ares e atordoá-las por alguns segundos.",
     "descricao_avancada": "Gera uma onda de choque que causa dano leve e dispersa unidades inimigas em um raio relativamente pequeno. Unidades dispersas também ficam atordoadas por vários segundos.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 10,
     "era_id": 1,
     "panteao_id": 4
@@ -181,7 +181,7 @@
     "incremento_por_uso": "+10",
     "descricao_resumida": "Selecione um local para cultivar uma Floresta Gaia. Os aldeões coletaram madeira mais rapidamente das árvores de Gaia.",
     "descricao_avancada": "Cria uma floresta de álamos, que contêm mais madeira do que outras árvores. Os cidadãos coletam madeira dessas árvores em uma taxa maior. As árvores também podem ser colocadas estrategicamente para criar uma barreira difícil de ser ultrapassada por outros jogadores.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 11,
     "era_id": 1,
     "panteao_id": 4
@@ -198,7 +198,7 @@
     "incremento_por_uso": "+10",
     "descricao_resumida": "Use numa construção inimiga para desconstruí-la. O jogador alvo receberá seus recursos de volta, mas perderá a construção.",
     "descricao_avancada": "Inicia imediatamente o processo de reversão da construção de uma edificação inimiga alvo. O proprietário recuperará o custo de recursos da edificação desconstruída. Este poder não pode ser usado em Centros de Vila, Maravilhas , Portões de Titãs e edificações invocadas com poderes divinos.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 12,
     "era_id": 1,
     "panteao_id": 4
@@ -215,7 +215,7 @@
     "incremento_por_uso": "+100",
     "descricao_resumida": "Mire em um local para criar a Primavera da Flor de Pessegueiro, cujo estoque de recursos aumenta com o tempo. Os recursos da Fonte da Flor de Pessegueiro são obtidos muito rapidamente, mas seu estoque para aumentar quando um aldeão começa a coleção dele.",
     "descricao_avancada": "Gera uma Fonte de Flor de Pessegueiro na área invocada. Ela acumula automaticamente seu estoque de recursos ao longo do tempo e pode ser alternada entre coletar comida, madeira ou ouro. No entanto, seu estoque para de aumentar quando um aldeão coleta recursos dela.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 13,
     "era_id": 1,
     "panteao_id": 5
@@ -232,7 +232,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Mire em um local para criar um número de Camponeses de Barro que duram alguns minutos. Gera mais camponeses em eras posteriores.",
     "descricao_avancada": "Gera um número variável de Camponeses de Argila que funcionam como Camponeses comuns , mas eventualmente decaem após um curto período de tempo. 2/4/8/12/30 são gerados nas Eras Arcaica/Clássica/Heroica/Mítica/Maravilha, respectivamente.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 14,
     "era_id": 1,
     "panteao_id": 5
@@ -249,7 +249,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Mire em 2 Fazendas para semear as sementes da borboleta. Elas produzirão comida mais rapidamente, curarão os aldeões próximos e tornarão as unidades aliadas invisíveis.",
     "descricao_avancada": "Transforma 2 Fazendas em Fazendas de Shennong , com o triplo de pontos de vida, taxa de coleta de alimentos 40% mais rápida do que as Fazendas normais, um efeito de cura para aldeões próximos e a capacidade de tornar unidades aliadas posicionadas nelas invisíveis.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 15,
     "era_id": 1,
     "panteao_id": 5
@@ -266,7 +266,7 @@
     "incremento_por_uso": "+50",
     "descricao_resumida": "Mire em um dos seus Centros Urbanos (ou de seus aliados) para invocar e comandar o javali dourado de Frey, Gullinbursti, para defender uma área. Gullinbursti se torna mais forte a cada época.",
     "descricao_avancada": "Pode ser usado como alvo no próprio Centro da Cidade ou em um Centro aliado para invocar Gullinbursti por um período determinado, uma poderosa unidade de heróis cujo poder e atributos aumentam em cada Era.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 16,
     "era_id": 1,
     "panteao_id": 3
@@ -283,7 +283,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Selecione uma unidade para torná-la temporariamente quase invulnerável",
     "descricao_avancada": "Por 10 segundos, a unidade alvo ganha um escudo com 300 pontos (+300 a cada avanço de era) recarregável e é curada a 25 HP/s.",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 17,
     "era_id": 1,
     "panteao_id": 6
@@ -300,7 +300,7 @@
     "incremento_por_uso": "+25",
     "descricao_resumida": "Mire em um prédio para obter até 3 tecnologias gratuitas por lançamento, priorizando as mais caras todas as tecnologias disponíveis gratuitamente e fazer com que as unidades militares treinem mais rápido por um curto período.",
     "descricao_avancada": "Mire em 1 prédio para obter até 3 tecnologias disponíveis gratuitamente e fazer com que as unidades militares treinem mais rápido por um curto período. Isso dura 10seg. E a tecnologia permanece",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 18,
     "era_id": 1,
     "panteao_id": 6
@@ -317,7 +317,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Selecione um local para que o Susanoo lance sua espada, Kusanagi. A espada causa dano aos inimigos próximos e invoca uma correnteza que os lança para o alto.",
     "descricao_avancada": "Lança uma espada divina que causa dano aos inimigos e invoca uma correnteza que repele as unidades. Tem -50% de bônus de dano contra aldeões.",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 19,
     "era_id": 1,
     "panteao_id": 6
@@ -334,7 +334,7 @@
     "incremento_por_uso": "+25",
     "descricao_resumida": "Por 30 segundos, todo combate é proibido, e a construção de Torres , Fortalezas , Fortalezas Migdol , Fortes nas Colinas , Palácios e Castelos é interrompida. No entanto, poderes divinos ofensivos ainda podem ser invocados durante esse período",
     "descricao_avancada": "Por 30 segundos, todo combate é proibido, e a construção de Torres , Fortalezas , Fortalezas Migdol , Fortes nas Colinas , Palácios e Castelos é interrompida. No entanto, poderes divinos ofensivos ainda podem ser invocados durante esse período.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 20,
     "era_id": 2,
     "panteao_id": 1
@@ -350,7 +350,7 @@
     "custo_repetir": 100,
     "incremento_por_uso": "+20",
     "descricao_avancada": "Unidades e edifícios aliados na área alvo recuperarão rapidamente pontos de vida por 8 segundos. Fora de combate, este poder pode restaurar quase instantaneamente a saúde total de qualquer unidade normal. A taxa de recuperação é bastante reduzida durante o combate.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 21,
     "era_id": 2,
     "panteao_id": 1
@@ -366,7 +366,7 @@
     "custo_repetir": 50,
     "incremento_por_uso": "+10",
     "descricao_avancada": "Edifícios na área alvo tornarão as unidades mais lentas e impedirão o ataque por 60 segundos . No entanto, este poder não afeta os Centros da Cidade .",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 22,
     "era_id": 2,
     "panteao_id": 1
@@ -382,7 +382,7 @@
     "custo_repetir": 200,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Cria dois portais de túnel nos locais alvos. Unidades que entram em um portal são instantaneamente transportadas para o outro. Os portais podem ser destruídos por unidades inimigas, e destruir um portal fará com que seu equivalente também desmorone.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 23,
     "era_id": 3,
     "panteao_id": 1
@@ -398,7 +398,7 @@
     "custo_repetir": 150,
     "incremento_por_uso": "+10",
     "descricao_avancada": "Transforma todos os soldados humanos, unidades míticas (exceto Titãs) e naves do jogador na área alvo em bronze por 40 segundos, reduzindo suas vulnerabilidades de hack e perfuração em -35% .",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 24,
     "era_id": 3,
     "panteao_id": 1
@@ -414,7 +414,7 @@
     "custo_repetir": 125,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Transforma unidades inimigas aleatórias na área alvo em porcos , com um limite máximo para o custo de recursos das unidades transformadas. Este poder não afeta unidades míticas * ou heróis , e tem impacto reduzido sobre os Aldeões",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 25,
     "era_id": 3,
     "panteao_id": 1
@@ -430,7 +430,7 @@
     "custo_repetir": 200,
     "incremento_por_uso": "+200",
     "descricao_avancada": "Cria um Cofre que gera 4 unidades de comida , madeira e ouro a cada segundo. O Cofre não pode ser destruído. Em vez disso, pode ser capturado por unidades inimigas e será tomado pelo jogador que tiver mais unidades perto do Cofre.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 26,
     "era_id": 4,
     "panteao_id": 1
@@ -446,7 +446,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Cria uma tempestade violenta na área alvo. Raios podem atingir unidades inimigas, causando-lhes grande dano. Quanto mais unidades houver na área, maior será o dano causado. Este poder não afeta unidades próprias ou aliadas (antes de Retold , também não afetava unidades voadoras ) e é menos eficaz contra estruturas.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 27,
     "era_id": 4,
     "panteao_id": 1
@@ -462,7 +462,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Causa enormes quantidades de dano de esmagamento em uma ampla área na área alvo – com mais dano sendo causado no centro da área de efeito e menos nas bordas. Este poder não tem efeito em Fazendas .",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 28,
     "era_id": 4,
     "panteao_id": 1
@@ -478,7 +478,7 @@
     "custo_repetir": 90,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Por 55 segundos, cria uma escuridão sobre todo o mapa, o que aumenta as unidades míticas e os Monumentos do jogador . Unidades míticas ganham +20% de ataque (incluindo habilidades), -60% de tempo de recarga de habilidades, +15% de velocidade de movimento e vulnerabilidades de -10%  de corte / -10%  de perfuração / -10%  de esmagamento . Monumentos ganham +50% de taxa de ganho de favor . Antes de Retold, nenhum outro poder divino pode ser invocado por qualquer jogador enquanto Eclipse estiver em vigor.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 29,
     "era_id": 2,
     "panteao_id": 2
@@ -494,7 +494,7 @@
     "custo_repetir": 50,
     "incremento_por_uso": "+20",
     "descricao_avancada": "Transporta instantaneamente um grupo de unidades aliadas de um local alvo no mapa para outro. Antes de Retold , isso podia ser usado para mover unidades aliadas e inimigas; no entanto, as unidades inimigas a serem transportadas eram selecionadas aleatoriamente, com uma chance muito menor de serem transportadas em comparação com unidades aliadas.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 30,
     "era_id": 2,
     "panteao_id": 2
@@ -510,7 +510,7 @@
     "custo_repetir": 60,
     "incremento_por_uso": "+10",
     "descricao_avancada": "Invoca Serpentes aliadas para proteger o local alvo. O jogador não tem controle sobre as serpentes, mas compartilha sua Linha de Visão . Se este poder for invocado na água, Serpentes Marinhas serão invocadas em seu lugar.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 31,
     "era_id": 2,
     "panteao_id": 2
@@ -526,7 +526,7 @@
     "custo_repetir": 75,
     "incremento_por_uso": "+10",
     "descricao_avancada": "Invoca um enxame de gafanhotos para atacar na direção indicada. O enxame danificará todas as unidades e edifícios, além de causar grande dano a Aldeões e Barcos de Pesca , além de destruir rapidamente Fazendas , Arbustos de Frutas e animais. Antes de Retold , ele não causava dano a outras unidades ou edifícios, mas era muito eficaz em devastar a economia do oponente. Afetava uma única área e se movia aleatoriamente. Em Retold , o poder utilizava um alvo direcional, e o enxame se deslocava em linha reta.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 32,
     "era_id": 3,
     "panteao_id": 2
@@ -542,7 +542,7 @@
     "custo_repetir": 100,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Ressuscita os mortos por 55 segundos no local alvo. Em terra, Lacaios serão invocados, enquanto na água, Navios Perdidos aparecerão. Os Ancestrais são ressuscitados gradualmente e serão dispensados juntos quando o efeito expirar.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 33,
     "era_id": 3,
     "panteao_id": 2
@@ -558,7 +558,7 @@
     "custo_repetir": 150,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Transforma o Centro da Cidade aliado alvo em um Centro da Cidadela , uma estrutura durável com ataque, pontos de vida, armadura e taxa de trabalho significativamente aumentados. A Cidadela também suporta população adicional. Em Retold , cada civilização usa sua própria arquitetura única para a Cidadela, em vez de sempre aparecer no design egípcio, com a única diferença sendo a estátua principal do deus.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 34,
     "era_id": 3,
     "panteao_id": 2
@@ -574,7 +574,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Transforma o Faraó alvo em um Filho de Osíris , uma unidade com ataque e pontos de vida muito aumentados, além de maior magnitude de poder, que usa um ataque em cadeia de raios que pode atingir até quatro unidades de uma só vez. Um Filho de Osíris não pode ser curado e, ao morrer, um Faraó comum o substituirá. Em Retold , é possível conjurar este poder novamente para ter vários Filhos de Osíris ao mesmo tempo.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 35,
     "era_id": 4,
     "panteao_id": 2
@@ -590,7 +590,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Por 20 segundos, meteoros cairão sobre a área alvo. O primeiro impacto será no centro do alvo, com os impactos subsequentes se espalhando aleatoriamente. Os impactos de meteoros causam enormes quantidades de dano a estruturas e lançam unidades ao ar, causando dano moderado a elas. Meteoros podem causar dano a unidades e estruturas aliadas, embora não na mesma extensão que os inimigos.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 36,
     "era_id": 4,
     "panteao_id": 2
@@ -606,7 +606,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Cria um tornado violento por 20 segundos no local alvo, que se propaga em espiral, causando grande dano a unidades e estruturas. O tornado causará dano tanto a unidades inimigas quanto a unidades aliadas.",
-    "panteao": "Egípcio🐍",
+    "panteao": "Egípcio:aomr_pantheon_egyptians_icon:",
     "god_id": 37,
     "era_id": 4,
     "panteao_id": 2
@@ -622,7 +622,7 @@
     "custo_repetir": 125,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Incendeia árvores no local alvo, espalhando-se para outras árvores em um raio limitado antes de caírem. Unidades e edifícios inimigos próximos às chamas sofrem dano, enquanto unidades e edifícios próprios e aliados ficam imunes.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 38,
     "era_id": 2,
     "panteao_id": 3
@@ -638,7 +638,7 @@
     "custo_repetir": 50,
     "incremento_por_uso": "+10",
     "descricao_avancada": "Cria uma onda de choque que causa dano a muralhas, torres, centros urbanos e fortalezas. Desmoronar é poderosa o suficiente para destruir muralhas e torres instantaneamente, mas causa dano limitado a centros urbanos e fortalezas. Em Retold , o poder usa um alvo direcional.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 39,
     "era_id": 2,
     "panteao_id": 3
@@ -654,7 +654,7 @@
     "custo_repetir": 100,
     "incremento_por_uso": "+150",
     "descricao_avancada": "Cria uma fonte de cura que cura unidades próprias e aliadas ociosas dentro do alcance a uma taxa de 2,5 pontos de vida por segundo, mais lenta para unidades não ociosas. A fonte não pode ser destruída. Em vez disso, pode ser capturada por unidades inimigas e será tomada pelo jogador que tiver mais unidades perto da fonte.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 40,
     "era_id": 2,
     "panteao_id": 3
@@ -670,7 +670,7 @@
     "custo_repetir": 100,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Anima árvores aleatórias na área alvo. As Florestas Andantes atacarão unidades e edifícios inimigos. Antes do patch 2.7, elas não podiam ser controladas pelo jogador.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 41,
     "era_id": 3,
     "panteao_id": 3
@@ -686,7 +686,7 @@
     "custo_repetir": 200,
     "incremento_por_uso": "+15",
     "descricao_avancada": "Por 50 segundos, todas as unidades inimigas na área alvo ficarão congeladas no lugar, mas terão 99% de blindagem, tornando-as quase invulneráveis a qualquer ataque durante esse período.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 42,
     "era_id": 3,
     "panteao_id": 3
@@ -702,7 +702,7 @@
     "custo_repetir": 250,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Quando invocado, todas as unidades humanas, naves e heróis do jogador no mapa terão 60% a mais de ataque por 45 segundos.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 43,
     "era_id": 3,
     "panteao_id": 3
@@ -718,7 +718,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Converte instantaneamente todos os Coletores e Anões do mapa em Heróis de Ragnarok , unidades de infantaria corpo a corpo com um bônus enorme contra unidades míticas, mas incapazes de coletar recursos ou construir Fazendas. Este poder essencialmente sacrifica a economia do jogador por um exército instantâneo.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 44,
     "era_id": 4,
     "panteao_id": 3
@@ -734,7 +734,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+55",
     "descricao_avancada": "Por 31 segundos, várias matilhas de Lobos Fimbulwinter aparecerão ao lado de Centros Urbanos , Centros de Vila ou Assentamentos inimigos . O jogador não tem controle sobre os lobos, e eles são dispensados quando o efeito expira. No jogo original, nenhum outro poder divino pode ser invocado por nenhum jogador enquanto Fimbulwinter estiver em vigor.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 45,
     "era_id": 4,
     "panteao_id": 3
@@ -750,7 +750,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Invoca o poderoso dragão Nidhogg para servir ao jogador. Nidhogg é particularmente resistente e bastante eficaz contra construções, causando dano em grupo contra grupos de unidades inimigas. Ele é particularmente vulnerável a ataques à distância de heróis , torres e construções do tipo Fortaleza , e não pode ser curado de forma alguma.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 46,
     "era_id": 4,
     "panteao_id": 3
@@ -766,7 +766,7 @@
     "custo_repetir": 0,
     "incremento_por_uso": "+3",
     "descricao_avancada": "Coloca ovos de aranha na área alvo, que eventualmente eclodirão e se enterrarão no solo. Unidades humanas inimigas serão mortas pelas aranhas ao atravessarem a área. Os ovos podem ser mortos pelos inimigos antes de eclodirem. Em Retold , este poder usa um alvo direcional.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 47,
     "era_id": 2,
     "panteao_id": 4
@@ -782,7 +782,7 @@
     "custo_repetir": 1,
     "incremento_por_uso": "+1",
     "descricao_avancada": "Este poder transforma instantaneamente unidades atlantes em heróis. No jogo original, um grupo de unidades pode ser convertido. Em Retold , este poder afeta apenas uma unidade, mas restaura instantaneamente sua saúde total.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 48,
     "era_id": 2,
     "panteao_id": 4
@@ -798,7 +798,7 @@
     "custo_repetir": 20,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Invoca uma planta carnívora anfíbia no local alvo (terra ou água). A planta é estacionária, mas pode devorar soldados (e afundar navios antes de Retold ) que se aproximarem.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 49,
     "era_id": 2,
     "panteao_id": 4
@@ -814,7 +814,7 @@
     "custo_repetir": 15,
     "incremento_por_uso": "+15",
     "descricao_avancada": "Concede instantaneamente ao jogador o controle de uma unidade inimiga selecionada. Não pode ser usado em unidades econômicas, Titãs , heróis e outras unidades, como unidades de transporte. No jogo original, unidades convertidas por Traidor terão imediatamente 85% de seus pontos de vida máximos, independentemente de seus pontos de vida antes da conversão. Em Retold , unidades convertidas por Traidor não sofrerão mais dano ao serem convertidas.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 50,
     "era_id": 3,
     "panteao_id": 4
@@ -830,7 +830,7 @@
     "custo_repetir": 60,
     "incremento_por_uso": "+20",
     "descricao_avancada": "No jogo original, esse poder converte imediatamente um grupo de unidades inimigas na área alvo para a Mãe Natureza , tornando-as hostis a todos os jogadores. Em Retold , ele confere um efeito de status que faz com que as unidades afetadas ataquem umas às outras. A duração depende do número de unidades afetadas; quanto mais unidades afetadas, menor a duração do poder divino.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 51,
     "era_id": 3,
     "panteao_id": 4
@@ -846,7 +846,7 @@
     "custo_repetir": 0,
     "incremento_por_uso": "+125",
     "descricao_avancada": "Constrói imediatamente uma Árvore das Hespérides , onde até 5 Dríades (por árvore) podem ser criadas. No jogo original, a árvore também protege contra poderes divinos dentro do alcance, mas esse efeito foi removido em Retold e substituído por uma habilidade que cura unidades míticas próximas e gera 2 Dríades gratuitas quando invocada . A árvore não pode ser destruída. Em vez disso, ela pode ser capturada por unidades inimigas ou aliadas e será tomada pelo jogador que tiver mais unidades perto da árvore.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 52,
     "era_id": 3,
     "panteao_id": 4
@@ -862,7 +862,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Cria um \"buraco negro\" esférico, que suga e causa dano às unidades próximas ( exceto unidades voadoras ) e então explode, causando dano a todas as unidades próximas e danos substanciais às estruturas. O dano da explosão final aumenta à medida que mais unidades são sugadas.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 53,
     "era_id": 4,
     "panteao_id": 4
@@ -878,7 +878,7 @@
     "custo_repetir": 0,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Teletransporta instantaneamente todas as unidades militares próprias de todo o mapa para o local alvo.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 54,
     "era_id": 4,
     "panteao_id": 4
@@ -894,7 +894,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Abre instantaneamente um portal para o submundo no local alvo, gerando criaturas neutras hostis a todos os jogadores. O portal também destrói instantaneamente qualquer edifício em que for lançado, exceto Centros da Cidade, Maravilhas e Portões de Titãs.",
-    "panteao": "Atlante🌌",
+    "panteao": "Atlante:aomr_pantheon_atlanteans_icon:",
     "god_id": 55,
     "era_id": 4,
     "panteao_id": 4
@@ -910,7 +910,7 @@
     "custo_repetir": 60,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Torna todas as unidades aliadas em um raio de 20 metros invisíveis por 30 segundos. A invisibilidade dura até que o poder divino termine ou as unidades invisíveis ataquem qualquer inimigo.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 56,
     "era_id": 2,
     "panteao_id": 5
@@ -926,7 +926,7 @@
     "custo_repetir": 75,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Concede a todos os soldados humanos, naves e heróis do jogador uma chance de atordoar unidades inimigas por 15 segundos.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 57,
     "era_id": 2,
     "panteao_id": 5
@@ -942,7 +942,7 @@
     "custo_repetir": 75,
     "incremento_por_uso": "+15",
     "descricao_avancada": "Quando invocado em uma construção aliada, um muro circular de terra resistente se ergue do chão em um raio de 40 para prender ou manter os inimigos afastados. Os muros erguidos começam com 50% de vida e aumentam lentamente, passando por obstáculos como árvores ou outras construções.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 58,
     "era_id": 2,
     "panteao_id": 5
@@ -958,7 +958,7 @@
     "custo_repetir": 100,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Quando invocado em um edifício aliado, plantas brotam do chão próximo em um raio de 30, curando unidades aliadas e imobilizando e causando dano momentâneo às unidades inimigas próximas.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 59,
     "era_id": 3,
     "panteao_id": 5
@@ -974,7 +974,7 @@
     "custo_repetir": 125,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Reduz os pontos de vida de construções inimigas em um raio de 30 em 10%, tornando-as ainda mais vulneráveis a danos. Construções e reparos na área alvo também são desativados.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 60,
     "era_id": 3,
     "panteao_id": 5
@@ -990,7 +990,7 @@
     "custo_repetir": 150,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Gera sete Feis para atacar unidades inimigas e infectá-las com doenças.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 61,
     "era_id": 3,
     "panteao_id": 5
@@ -1006,7 +1006,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Cria uma onda veloz que varre unidades inimigas e devasta edifícios inimigos em seu caminho.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 62,
     "era_id": 4,
     "panteao_id": 5
@@ -1022,7 +1022,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Invoca Yinglong , o lendário dragão alado da chuva, para servir ao jogador. Yinglong é particularmente resistente e bastante eficaz contra unidades e estruturas, inflige dano divino com seus raios e possui um efeito de aura que impulsiona as Fazendas aliadas e desacelera as unidades inimigas abaixo dele. Ele é particularmente vulnerável a ataques à distância de heróis , torres e estruturas do tipo Fortaleza , e não pode ser curado de forma alguma .",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 63,
     "era_id": 4,
     "panteao_id": 5
@@ -1038,7 +1038,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Escurece o céu e faz com que pedras em chamas bombardeiem a área alvo, causando dano a tudo em uma área de 25.",
-    "panteao": "Chinês🐉",
+    "panteao": "Chinês:aomr_pantheon_chinese_icon:",
     "god_id": 64,
     "era_id": 4,
     "panteao_id": 5
@@ -1054,7 +1054,7 @@
     "custo_repetir": 100,
     "incremento_por_uso": 0,
     "descricao_avancada": "Coloca um Forte Asgardiano na Colina no local alvo, que começará a se construir a partir de 50%. Construtores podem ser encarregados de construir o edifício mais rapidamente.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 65,
     "era_id": 2,
     "panteao_id": 3
@@ -1070,7 +1070,7 @@
     "custo_repetir": 200,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Invoca uma nevasca que faz chover pingentes de gelo, causando dano às unidades, reduzindo sua velocidade de movimento e aumentando seu tempo de recarga.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 66,
     "era_id": 3,
     "panteao_id": 3
@@ -1086,7 +1086,7 @@
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Invoca Fenrir, que investirá na direção indicada. Fenrir incinerará tudo em seu caminho, causando dano de corte em tudo o que tocar, incendiará árvores e desaparecerá em uma grande e poderosa explosão.",
-    "panteao": "Nórdico🐺",
+    "panteao": "Nórdico:aomr_pantheon_norse_icon:",
     "god_id": 67,
     "era_id": 4,
     "panteao_id": 3
@@ -1103,7 +1103,7 @@
     "incremento_por_uso": "+100",
     "descricao_resumida": "Selecione um local para invocar uma árvore Goshinboku. A bênção da árvore ressuscita as unidades míticas do dono conforme elas caem em combate.",
     "descricao_avancada": "Cria uma Árvore Goshinboku que faz renascer unidades míticas caídas, até duas por vez; não pode fazer renascer Kitsune , Titãs , unidades voadoras ou certas unidades míticas não treináveis. A árvore não pode ser destruída, mas pode ser capturada por qualquer jogador que tenha mais unidades perto dela.",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 68,
     "era_id": 2,
     "panteao_id": 6
@@ -1120,7 +1120,7 @@
     "incremento_por_uso": "+30",
     "descricao_resumida": "Selecione um Santuário para transformá-lo em um Santuário da Caça, gerando periodicamente veados caçáveis, bem como lobos amigáveis que defendem a área",
     "descricao_avancada": "Transforma um Santuário em um Santuário da Caça , que gera veados caçáveis e lobos guardiões ; atua como um local de queda",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 69,
     "era_id": 2,
     "panteao_id": 6
@@ -1137,7 +1137,7 @@
     "incremento_por_uso": "+25",
     "descricao_resumida": "Selecione um local para criar um pântano temporário infestado de Kappa que saltará da água e afogará soldados humanos inimigos",
     "descricao_avancada": "Cria um pântano de raio 18 infestado de Kappa que periodicamente afoga soldados humanos inimigos que se aproximam deles",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 70,
     "era_id": 2,
     "panteao_id": 6
@@ -1154,7 +1154,7 @@
     "incremento_por_uso": "+25",
     "descricao_resumida": "Escolha um Daimyo para transformá-lo em um Shogun imensamente poderoso, que invoca Samurais enquanto luta.",
     "descricao_avancada": "Transforma um Daimyo em um Shogun , que é mais poderoso e gera Samurai em combate",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 71,
     "era_id": 3,
     "panteao_id": 6
@@ -1171,7 +1171,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Mire em um local para liberar ondas de choque que podem abalar a terra. Raijin golpeia seus tambores den-den daiko, criando anéis de relâmpagos que se expandem e causam dano e atordoamento aos inimigos.",
     "descricao_avancada": "Cria quatro ondas de choque que danificam e arremessam unidades dentro de um raio de expansão sucessiva de 20 a 35, repelindo unidades inimigas e danificando unidades e edifícios. Tem -50% de bônus de dano contra aldeões.",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 73,
     "era_id": 3,
     "panteao_id": 6
@@ -1188,7 +1188,7 @@
     "incremento_por_uso": "+10",
     "descricao_resumida": "Mire em uma direção para liberar uma imensa rajada de vento, destruindo unidades militares pelo mapa",
     "descricao_avancada": "Explode unidades, aliadas e inimigas, para bem longe na direção do alvo; unidades voadoras , trabalhadores e animais (como animais pastoris , caçáveis e animais de Set ) não são afetados",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 72,
     "era_id": 3,
     "panteao_id": 6
@@ -1205,7 +1205,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Crie um caminho de destruição. Takemikazuchi cortará a terra com um corte colossal de katana, causando dano massivo às unidades e atordoando os sobreviventes",
     "descricao_avancada": "Causa dano a unidades inimigas em uma área de 8 de largura e 30 de comprimento, repelindo e atordoando os sobreviventes",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 74,
     "era_id": 4,
     "panteao_id": 6
@@ -1222,7 +1222,7 @@
     "incremento_por_uso": "+300",
     "descricao_resumida": "Selecione um local para erguer um grande Portão Torii que torna seus Poderes Divinos mais baratos e permite que você os invoque novamente de graça",
     "descricao_avancada": "Cria um Portão Sagrado que torna todos os poderes divinos (exceto o Portão Sagrado) disponíveis imediatamente por mais uma vez, sem custo algum, e reduz seu custo de reutilização em 20%. O Portão não pode ser destruído, mas pode ser capturado por qualquer jogador que tenha mais unidades perto dele.",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 75,
     "era_id": 4,
     "panteao_id": 6
@@ -1239,7 +1239,7 @@
     "incremento_por_uso": "+5",
     "descricao_resumida": "Mire em um caminho de destruição. Watatsumi descerá em forma de dragão e explodirá em um tufão rodopiante, destruindo tudo em seu caminho",
     "descricao_avancada": "Causa dano aos inimigos em uma área circular móvel de raio 25; move 60 peças na duração de 12 segundos",
-    "panteao": "Japonês⛩",
+    "panteao": "Japonês:aomr_pantheon_japanese_icon:",
     "god_id": 76,
     "era_id": 4,
     "panteao_id": 6
@@ -1252,7 +1252,7 @@
     "era": "Arcaica",
     "duracao_no_mapa_seg": 60,
     "descricao_resumida": "Desencadeia uma devastação na área alvo, secando frutos silvestres, plantas e árvores, e transformando o terreno em um deserto árido onde nada pode crescer por um curto período de tempo.",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 78,
     "era_id": 1,
     "panteao_id": 1
@@ -1265,7 +1265,7 @@
     "era": "Clássica",
     "duracao_no_mapa_seg": 240,
     "descricao_resumida": "cria um campo pacífico que impede todos os ataques de unidades e edifícios atingidos por seu brilho",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 79,
     "era_id": 2,
     "panteao_id": 1
@@ -1278,7 +1278,7 @@
     "era": "Heróica",
     "duracao_no_mapa_seg": 3,
     "descricao_resumida": "Oferece bônus de força defensiva e recursos, e pode converter unidades inimigas para o seu lado",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 80,
     "era_id": 3,
     "panteao_id": 1
@@ -1292,7 +1292,7 @@
     "duracao_no_mapa_seg": 200,
     "custo_repetir": 350,
     "descricao_resumida": "Revive as últimas 100 unidades caídas como Eidolons espectrais sob seu controle, ao custo de todos os Centros da Cidade que você possui",
-    "panteao": "Grego⚡",
+    "panteao": "Grego:aomr_pantheon_greeks_icon:",
     "god_id": 81,
     "era_id": 4,
     "panteao_id": 1
