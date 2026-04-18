@@ -89,7 +89,8 @@ def copy_asset_map(
     dest: Path,
 ) -> dict[str, str]:
     """
-    Copia ficheiros para dest/ e devolve mapa basename -> /assets/basename
+    Copia ficheiros para public/assets (mantém subpastas se o ficheiro já existir)
+    e devolve mapa basename -> /assets/.../ficheiro
     """
     dest.mkdir(parents=True, exist_ok=True)
     copied: dict[str, str] = {}
@@ -100,8 +101,14 @@ def copy_asset_map(
         bn = src.name
         if bn in copied:
             return
-        shutil.copy2(src, dest / bn)
-        copied[bn] = f"/assets/{bn}"
+        existing = find_file_by_basename(dest, bn)
+        if existing and existing.is_file():
+            shutil.copy2(src, existing)
+            rel = existing.relative_to(dest).as_posix()
+            copied[bn] = f"/assets/{rel}"
+        else:
+            shutil.copy2(src, dest / bn)
+            copied[bn] = f"/assets/{bn}"
 
     # 1) Todos os AoMR_*_icon.png sob Starts Build Order (pedido do utilizador)
     sb_root = notion_root / "Starts Build Order"
@@ -158,7 +165,12 @@ def rewrite_img_src(soup_fragment: BeautifulSoup, asset_map: dict[str, str]) -> 
         if base in asset_map:
             img["src"] = asset_map[base]
         elif base.startswith("AoMR_") and "_icon" in base:
-            img["src"] = f"/assets/{base}"
+            found = find_file_by_basename(PUBLIC_ASSETS, base)
+            if found and found.is_file():
+                rel = found.relative_to(PUBLIC_ASSETS).as_posix()
+                img["src"] = f"/assets/{rel}"
+            else:
+                img["src"] = f"/assets/{base}"
 
 
 def extract_page_body_html(html: str, asset_map: dict[str, str]) -> str:
@@ -195,15 +207,32 @@ def build_starts(asset_map: dict[str, str]) -> list[dict]:
 
 
 def write_token_asset_map() -> None:
-    """Mapa nome do ficheiro (minúsculas) -> /assets/Ficheiro para tokens :token: na UI."""
+    """Mapa stem do ficheiro (minúsculas) -> /assets/subpasta/... para tokens :token: na UI."""
+    if not PUBLIC_ASSETS.is_dir():
+        return
+
+    by_bn: dict[str, list[str]] = {}
+    for dp, _, files in os.walk(PUBLIC_ASSETS):
+        for fn in files:
+            rel = Path(dp, fn).relative_to(PUBLIC_ASSETS).as_posix()
+            by_bn.setdefault(fn, []).append(rel)
+
+    chosen: dict[str, str] = {}
+    for fn, rels in by_bn.items():
+        if len(rels) == 1:
+            chosen[fn] = rels[0]
+        else:
+            rels_sorted = sorted(rels, key=lambda r: (0 if r.startswith("techs/") else 1, r))
+            chosen[fn] = rels_sorted[0]
+
     m: dict[str, str] = {}
-    if PUBLIC_ASSETS.is_dir():
-        for p in PUBLIC_ASSETS.iterdir():
-            if p.suffix.lower() not in (".png", ".jpg", ".jpeg", ".gif", ".webp"):
-                continue
-            m[p.stem.lower()] = f"/assets/{p.name}"
+    for fn, rel in chosen.items():
+        if Path(fn).suffix.lower() not in (".png", ".jpg", ".jpeg", ".gif", ".webp"):
+            continue
+        m[Path(fn).stem.lower()] = f"/assets/{rel}"
+
     (DATA / "token_asset_map.json").write_text(
-        json.dumps(m, ensure_ascii=False, indent=2),
+        json.dumps(dict(sorted(m.items())), ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     print("Wrote token_asset_map.json:", len(m), "keys")

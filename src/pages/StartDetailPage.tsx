@@ -4,7 +4,7 @@ import { BackLink } from "@/components/ui/BackLink";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { startById } from "@/data/catalog";
-import { replaceNotionTokensInHtml } from "@/lib/notionTokenAssets";
+import { replaceNotionTokensInHtml, rewriteFlatImgSrcFromAlt } from "@/lib/notionTokenAssets";
 import { toYouTubeEmbedUrl } from "@/lib/youtubeEmbed";
 
 export function StartDetailPage() {
@@ -33,7 +33,9 @@ export function StartDetailPage() {
       {s.conteudo_html ? (
         <div
           className="start-notion-content mt-8"
-          dangerouslySetInnerHTML={{ __html: replaceNotionTokensInHtml(s.conteudo_html) }}
+          dangerouslySetInnerHTML={{
+            __html: rewriteFlatImgSrcFromAlt(replaceNotionTokensInHtml(s.conteudo_html)),
+          }}
         />
       ) : null}
 
