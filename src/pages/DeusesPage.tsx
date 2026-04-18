@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { deuses } from "@/data/catalog";
@@ -25,7 +26,7 @@ export function DeusesPage() {
             <EntityCard
               to={`/deuses/${d.id}`}
               title={d.nome}
-              subtitle={d.foco}
+              subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
               meta={[d.panteao, d.era].filter(Boolean).join(" · ")}
             />
           </li>

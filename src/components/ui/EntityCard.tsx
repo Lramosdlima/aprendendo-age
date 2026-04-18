@@ -5,8 +5,8 @@ import { cn } from "@/lib/cn";
 
 type EntityCardProps = {
   to: string;
-  title: string;
-  subtitle?: string;
+  title: ReactNode;
+  subtitle?: ReactNode;
   meta?: ReactNode;
   className?: string;
 };

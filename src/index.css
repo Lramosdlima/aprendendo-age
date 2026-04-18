@@ -31,6 +31,17 @@ body {
   min-height: 100vh;
 }
 
+/* Ícones inline para :token: (NotionText e replaceNotionTokensInHtml) */
+.notion-token-inline {
+  display: inline-block;
+  height: 1em;
+  max-height: 1.15em;
+  width: auto;
+  vertical-align: -0.12em;
+  margin: 0 0.15em;
+  object-fit: contain;
+}
+
 /* Conteúdo Notion (starts / build order) — tabelas e texto no tema escuro */
 .start-notion-content {
   white-space: normal;

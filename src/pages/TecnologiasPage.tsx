@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { tecnologias } from "@/data/catalog";
@@ -34,7 +35,7 @@ export function TecnologiasPage() {
             <EntityCard
               to={`/tecnologias/${i}`}
               title={t.nome || `(sem título #${i})`}
-              subtitle={t.beneficia}
+              subtitle={t.beneficia ? <NotionText text={t.beneficia} /> : undefined}
               meta={[t.panteoes, t.eras].filter(Boolean).join(" · ")}
             />
           </li>

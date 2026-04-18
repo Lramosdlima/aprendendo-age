@@ -194,6 +194,21 @@ def build_starts(asset_map: dict[str, str]) -> list[dict]:
     return rows
 
 
+def write_token_asset_map() -> None:
+    """Mapa nome do ficheiro (minúsculas) -> /assets/Ficheiro para tokens :token: na UI."""
+    m: dict[str, str] = {}
+    if PUBLIC_ASSETS.is_dir():
+        for p in PUBLIC_ASSETS.iterdir():
+            if p.suffix.lower() not in (".png", ".jpg", ".jpeg", ".gif", ".webp"):
+                continue
+            m[p.stem.lower()] = f"/assets/{p.name}"
+    (DATA / "token_asset_map.json").write_text(
+        json.dumps(m, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print("Wrote token_asset_map.json:", len(m), "keys")
+
+
 def main() -> None:
     DATA.mkdir(parents=True, exist_ok=True)
     if not NOTION_APP.is_dir():
@@ -202,6 +217,8 @@ def main() -> None:
     else:
         asset_map = copy_asset_map(NOTION_APP, STARTS_DIR, PUBLIC_ASSETS)
         print("Assets copiados:", len(asset_map), "ficheiros -> public/assets")
+
+    write_token_asset_map()
 
     starts = build_starts(asset_map)
     (DATA / "starts_build_order.json").write_text(

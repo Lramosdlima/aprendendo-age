@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { startById } from "@/data/catalog";
+import { replaceNotionTokensInHtml } from "@/lib/notionTokenAssets";
 import { toYouTubeEmbedUrl } from "@/lib/youtubeEmbed";
 
 export function StartDetailPage() {
@@ -23,7 +25,7 @@ export function StartDetailPage() {
   return (
     <div>
       <BackLink to="/starts">Starts & build orders</BackLink>
-      <PageHeader title={s.titulo} description={s.descricao_curta} />
+      <PageHeader title={<NotionText text={s.titulo} />} description={s.descricao_curta} />
       <p className="text-xs text-zinc-500">
         Export Notion: <code className="text-zinc-400">{s.notion_file_id}</code>
       </p>
@@ -31,8 +33,7 @@ export function StartDetailPage() {
       {s.conteudo_html ? (
         <div
           className="start-notion-content mt-8"
-          // HTML gerado localmente a partir do export Notion (paths /assets já resolvidos)
-          dangerouslySetInnerHTML={{ __html: s.conteudo_html }}
+          dangerouslySetInnerHTML={{ __html: replaceNotionTokensInHtml(s.conteudo_html) }}
         />
       ) : null}
 

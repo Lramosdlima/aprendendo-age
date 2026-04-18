@@ -1,4 +1,5 @@
 import { EntityCard } from "@/components/ui/EntityCard";
+import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { startsBuildOrder } from "@/data/catalog";
 
@@ -14,7 +15,7 @@ export function StartsPage() {
           <li key={s.id}>
             <EntityCard
               to={`/starts/${s.id}`}
-              title={s.titulo}
+              title={<NotionText text={s.titulo} />}
               subtitle={s.descricao_curta}
               meta={s.youtube.length ? `${s.youtube.length} vídeo(s)` : undefined}
             />
