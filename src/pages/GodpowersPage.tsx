@@ -4,6 +4,7 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { godpowers } from "@/data/catalog";
+import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 
 function matches(g: (typeof godpowers)[number], q: string) {
   if (!q.trim()) return true;
@@ -27,6 +28,8 @@ export function GodpowersPage() {
               title={g.nome}
               subtitle={g.descricao_resumida}
               meta={[g.god, g.era].filter(Boolean).join(" · ")}
+              watermarkSrc={getGodPowerAssetUrl(g.ingles)}
+              subtitleMinLines={3}
             />
           </li>
         ))}

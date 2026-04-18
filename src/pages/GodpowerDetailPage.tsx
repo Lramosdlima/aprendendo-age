@@ -6,6 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { deusById, eraById, godpowerById, panteaoById } from "@/data/catalog";
+import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 
 export function GodpowerDetailPage() {
   const { id } = useParams();
@@ -23,6 +24,7 @@ export function GodpowerDetailPage() {
   const deus = g.god_id != null ? deusById.get(g.god_id) : undefined;
   const era = g.era_id != null ? eraById.get(g.era_id) : undefined;
   const panteao = g.panteao_id != null ? panteaoById.get(g.panteao_id) : undefined;
+  const powerIcon = getGodPowerAssetUrl(g.ingles);
 
   return (
     <div>
@@ -30,7 +32,7 @@ export function GodpowerDetailPage() {
       <PageHeader title={g.nome} description={g.ingles ? `EN: ${g.ingles}` : undefined} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Ligações">
+        <Section title="Ligações" watermarkSrc={powerIcon}>
           <div className="space-y-0">
             {deus ? (
               <InfoRow label="Deus">
@@ -68,7 +70,7 @@ export function GodpowerDetailPage() {
           </div>
         </Section>
 
-        <Section title="Números">
+        <Section title="Números" watermarkSrc={powerIcon}>
           <div className="space-y-0">
             <InfoRow label="Cooldown (s)">{g.cooldown_seg ?? "—"}</InfoRow>
             <InfoRow label="Duração no mapa (s)">{g.duracao_no_mapa_seg ?? "—"}</InfoRow>
