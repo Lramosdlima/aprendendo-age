@@ -60,7 +60,7 @@ export function DeusDetailPage() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Visão geral" watermarkSrc={deusIcon}>
+        <Section title="Visão geral">
           <div className="space-y-0">
             {panteao ? (
               <InfoRow label="Panteão">

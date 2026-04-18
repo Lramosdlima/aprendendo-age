@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
+import { AppTag } from "@/components/ui/AppTag";
 import { cn } from "@/lib/cn";
 import { watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
 
@@ -11,6 +12,8 @@ type EntityCardProps = {
   meta?: ReactNode;
   /** Ícone ou arte como marca d’água ao fundo (baixa opacidade). */
   watermarkSrc?: string;
+  /** Se true, o subtítulo é mostrado dentro de {@link AppTag}. */
+  subtitleTag?: boolean;
   /** Reserva altura fixa para N linhas de subtítulo (ex.: 3 para grelha uniforme). */
   subtitleMinLines?: 2 | 3;
   className?: string;
@@ -22,9 +25,17 @@ export function EntityCard({
   subtitle,
   meta,
   watermarkSrc,
+  subtitleTag = true,
   subtitleMinLines = 2,
   className,
 }: EntityCardProps) {
+  const useSubtitleTag = subtitleTag && subtitle != null && subtitle !== "";
+  const subtitleBody = useSubtitleTag ? (
+    <AppTag className="align-top leading-snug [word-break:break-word] normal-case">{subtitle}</AppTag>
+  ) : (
+    subtitle
+  );
+
   return (
     <Link
       to={to}
@@ -52,9 +63,11 @@ export function EntityCard({
           {meta ? <span className="text-xs text-zinc-500">{meta}</span> : null}
         </div>
         {subtitleMinLines === 3 ? (
-          <p className="mt-2 line-clamp-3 min-h-[3lh] text-sm leading-relaxed text-zinc-400">{subtitle ?? "\u00A0"}</p>
+          <p className="mt-2 line-clamp-3 min-h-[3lh] text-sm leading-relaxed text-zinc-400">
+            {subtitle != null ? subtitleBody : "\u00A0"}
+          </p>
         ) : subtitle ? (
-          <p className="mt-2 line-clamp-2 text-sm text-zinc-400">{subtitle}</p>
+          <p className="mt-2 line-clamp-2 text-sm text-zinc-400">{subtitleBody}</p>
         ) : null}
       </div>
     </Link>

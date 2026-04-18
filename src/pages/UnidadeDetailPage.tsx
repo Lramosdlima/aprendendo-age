@@ -33,7 +33,7 @@ export function UnidadeDetailPage() {
       <PageHeader title={u.nome} description={u.ingles ? `EN: ${u.ingles}` : undefined} headerIconSrc={unidadeIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Visão geral" watermarkSrc={unidadeIcon}>
+        <Section title="Visão geral">
           <div className="space-y-0">
             {u.tipo ? (
               <InfoRow label="Tipo">

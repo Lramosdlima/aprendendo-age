@@ -1024,7 +1024,7 @@
     "ouro": 0,
     "custo": 100,
     "era": "Clássica",
-    "ingles": "Stage",
+    "ingles": "Stable",
     "tecnologias": "Cavalaria Trácios, Lança do Pânico de Fobos, Cavalaria Média, Convocar Cavalaria, Cavalaria Pesada, Recrutar Cavalaria, Cavalaria Campeã",
     "tempo_construir_segundos": 25,
     "unidades": "Prodromos, Hippeis",
@@ -2073,10 +2073,5 @@
     "era_id": 1,
     "tecnologias_id": "2a900f30e211807fa7a0c6b01fd9de68",
     "panteao_id": 3
-  },
-  {
-    "nome": "Sem título",
-    "dps": 0,
-    "custo": 0
   }
 ]

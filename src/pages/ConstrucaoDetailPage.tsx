@@ -46,7 +46,7 @@ export function ConstrucaoDetailPage() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Classificação" watermarkSrc={construcaoIcon}>
+        <Section title="Classificação">
           <div className="space-y-0">
             {c.tipo ? <InfoRow label="Tipo">{c.tipo}</InfoRow> : null}
             {panteao ? (

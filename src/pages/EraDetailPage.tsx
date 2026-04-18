@@ -45,7 +45,7 @@ export function EraDetailPage() {
       <PageHeader title={e.nome} description={e.ingles ? `Inglês: ${e.ingles}` : undefined} headerIconSrc={eraIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Custos (avanço)" watermarkSrc={eraIcon}>
+        <Section title="Custos (avanço)">
           <div className="space-y-0">
             <InfoRow label="Comida">{e.comida ?? 0}</InfoRow>
             <InfoRow label="Madeira">{e.madeira ?? 0}</InfoRow>
@@ -55,7 +55,7 @@ export function EraDetailPage() {
         </Section>
 
         {(e.requisitos_para_subir_de_era || reqLinks.length > 0) && (
-          <Section title="Requisitos para subir de era" watermarkSrc={eraIcon}>
+          <Section title="Requisitos para subir de era">
             {reqLinks.length > 0 ? (
               <ul className="flex flex-wrap gap-2">
                 {reqLinks.map((el, i) => (

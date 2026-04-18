@@ -32,7 +32,7 @@ export function GodpowerDetailPage() {
       <PageHeader title={g.nome} description={g.ingles ? `EN: ${g.ingles}` : undefined} headerIconSrc={powerIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Ligações" watermarkSrc={powerIcon}>
+        <Section title="Ligações">
           <div className="space-y-0">
             {deus ? (
               <InfoRow label="Deus">

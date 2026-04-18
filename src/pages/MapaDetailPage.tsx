@@ -28,7 +28,7 @@ export function MapaDetailPage() {
       <BackLink to="/mapas">Mapas</BackLink>
       <PageHeader title={m.nome} description={m.ingles ? `EN: ${m.ingles}` : undefined} headerIconSrc={mapaIcon} />
 
-      <Section title="Metadados" watermarkSrc={mapaIcon}>
+      <Section title="Metadados">
         <div className="space-y-0">
           <InfoRow label="Índice no JSON">{i}</InfoRow>
           <InfoRow label="Ranqueada">{m.mapas_da_ranqueada ?? "—"}</InfoRow>

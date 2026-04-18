@@ -24,7 +24,29 @@ function buildSlugMap(pathIncludes: string[]): Map<string, string> {
 
 const unitSlugToUrl = buildSlugMap(["/unit_humans/", "/unit_myths/", "/unit_heroes/", "/unit_scout/"]);
 
-const buildingSlugToUrl = buildSlugMap(["/assets/buildings/"]);
+/** Inclui chaves `aomr_<slug>` sem sufixo `_icon` (ex.: silo, imperial_academy) e Maravilha em `/others/`. */
+function buildBuildingSlugMap(): Map<string, string> {
+  const m = new Map<string, string>();
+  for (const [k, v] of Object.entries(tokenAssetMap)) {
+    if (typeof v !== "string") continue;
+    const inBuildings = v.includes("/assets/buildings/");
+    const inOthersWonder = v.includes("/assets/others/") && /wonder/i.test(v);
+    if (!inBuildings && !inOthersWonder) continue;
+
+    let slug: string | undefined;
+    const iconKey = k.match(/^aomr_(.+)_icon$/);
+    if (iconKey) slug = iconKey[1];
+    else {
+      const bare = k.match(/^aomr_(.+)$/);
+      if (bare) slug = bare[1];
+    }
+    if (!slug) continue;
+    if (!m.has(slug)) m.set(slug, v);
+  }
+  return m;
+}
+
+const buildingSlugToUrl = buildBuildingSlugMap();
 
 const villagerSlugToUrl = buildSlugMap(["/assets/und_villagers/"]);
 
@@ -42,8 +64,10 @@ function pickWithCivPrefix(slug: string, m: Map<string, string>): string | undef
   return m.get(prefixed[0]);
 }
 
-/** Quando o EN não coincide com o slug do ficheiro (ex.: Town Center → vários TC). */
-const CONSTRUCAO_INGLES_TO_SLUG: Record<string, string> = {};
+/** Quando o EN não coincide com o slug do ficheiro (hífens, typos, OX → ox_cart). */
+const CONSTRUCAO_INGLES_TO_SLUG: Record<string, string> = {
+  "Counter Barracks": "counter-barracks",
+};
 
 const ALDEAO_INGLES_TO_SLUG: Record<string, string> = {
   Villager: "villager_greek",
@@ -91,7 +115,11 @@ export function getUnidadeAssetUrl(ingles: string | undefined): string | undefin
 export function getConstrucaoAssetUrl(ingles: string | undefined): string | undefined {
   if (!ingles?.trim()) return undefined;
   const slug = CONSTRUCAO_INGLES_TO_SLUG[ingles] ?? normalizeSlug(ingles);
-  return pickWithCivPrefix(slug, buildingSlugToUrl);
+  const fromBuildings = pickWithCivPrefix(slug, buildingSlugToUrl);
+  if (fromBuildings) return fromBuildings;
+  /** Carro de Boi: `ingles` "OX" no JSON → asset em `und_villagers`. */
+  if (slug === "ox") return villagerSlugToUrl.get("ox_cart");
+  return undefined;
 }
 
 export function getAldeaoAssetUrl(ingles: string | undefined): string | undefined {
