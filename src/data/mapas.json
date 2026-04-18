@@ -1,0 +1,534 @@
+[
+  {
+    "nome": "Acrópole",
+    "ingles": "Acropolis",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Alfheim",
+    "ingles": "Alfheim",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Anatólia",
+    "ingles": "Anatolia",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Arena",
+    "ingles": "Arena",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Arquipélago",
+    "ingles": "Archipelago",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Aïr",
+    "ingles": "Aïr",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Bosque de Bambu",
+    "ingles": "Bamboo Grove",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Immortal Pillars (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Buraco d’Água",
+    "ingles": "Watering Hole",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Corrida do Ouro",
+    "ingles": "Gold Rush",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Dança da Cobra",
+    "ingles": "Snake Dance",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Elísio",
+    "ingles": "Elysium",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Estepe",
+    "ingles": "Steppe",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Immortal Pillars (2025)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Floresta das Trevas",
+    "ingles": "Deep Jungle",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Tale of the Dragon (2016)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Floresta de Ferro",
+    "ingles": "Ironwood",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Gizé",
+    "ingles": "Giza",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Grande Muralha",
+    "ingles": "Great Wall",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Immortal Pillars (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Ilhas",
+    "ingles": "Islands",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Titans (2003)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Jotunheim",
+    "ingles": "Jotunheim",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Kerlaugar",
+    "ingles": "Kerlaugar",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Kii",
+    "ingles": "Kii",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Lago Fantasma",
+    "ingles": "Ghost Lake",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Lago Qinghai",
+    "ingles": "Qinghai Lake",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Immortal Pillars (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Lagoa Azul",
+    "ingles": "Blue Lagoon",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Tale of the Dragon (2016)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Mar dos Vermes",
+    "ingles": "Sea of Worms",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Mar Negro",
+    "ingles": "Black Sea",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Mediterrâneo",
+    "ingles": "Mediterranean",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Megalópole",
+    "ingles": "Megalopolis",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Titans (2003)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Midgard",
+    "ingles": "Midgard",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Migração de Equipe",
+    "ingles": "Team Migration",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Miragem",
+    "ingles": "Mirage",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Monte Olimpo",
+    "ingles": "Mount Olympus",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Muspellheim",
+    "ingles": "Muspellheim",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Nômade",
+    "ingles": "Nomad",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Nômade de Terra",
+    "ingles": "Land Nomad",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Okuchichibu",
+    "ingles": "Okuchichibu",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Oásis",
+    "ingles": "Oasis",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️",
+    "no_oasis_so_tem_1_zona_de_caca_inicial": "aomr_caribou_icon: na sua base junto com as frutinhas :aomr_berry_bush_icon: e galinhas :aomr_chicken_icon:. Por causa disso, sair da base é quase que imediato após a passagem para Clássica :aomr_classical_age_icon:.",
+    "entao_sabendo_disso_voce_podera_raidar_seu_rival_muito_cedo_porem_nesse_mapa_tambem_tem_muita_cabra": "aomr_goat_icon:. Então se você for alvo dessa agressividade, você poderá recorrer as suas cabras :aomr_goat_icon:.",
+    "esse_mapa_existem_3_variacoes": ""
+  },
+  {
+    "nome": "Pastagens de Aso",
+    "ingles": "Aso Grasslands",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Planalto",
+    "ingles": "Highland",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Titans (2003)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Pântano",
+    "ingles": "Marsh",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Titans (2003)",
+    "padrao": "Yes",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Rio Amarelo",
+    "ingles": "Yellow River",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊, Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Rio Estige",
+    "ingles": "River Styx",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Rio Nilo",
+    "ingles": "River Nile",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Rota da Seda",
+    "ingles": "Silk Road",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Savana",
+    "ingles": "Savannah",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Senjōgahara",
+    "ingles": "Senjōgahara",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Setonaikai",
+    "ingles": "Setonaikai",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Heavenly Spear (2025)",
+    "padrao": "Yes",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Terra da Flor de Pêssego",
+    "ingles": "Peach Blossom Land",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "Yes",
+    "origem": "AoM: Immortal Pillars (2025)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Tundra",
+    "ingles": "Tundra",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Titans (2003)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Vale dos Reis",
+    "ingles": "Valley of Kings",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Vaus do Nilo",
+    "ingles": "Nile Shallows",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Retold (2024)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Vaus do Nilo",
+    "ingles": "Nile Shallows",
+    "mapas_da_ranqueada": "Yes",
+    "saiu_da_ranqueada": "No",
+    "padrao": "Yes",
+    "partidas_rapidas": "Yes",
+    "tipo": "Terra 🚶‍♂️"
+  },
+  {
+    "nome": "Vinlandsaga",
+    "ingles": "Vinlandsaga",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Naval 🌊"
+  },
+  {
+    "nome": "Érebo",
+    "ingles": "Erebus",
+    "mapas_da_ranqueada": "No",
+    "saiu_da_ranqueada": "No",
+    "origem": "AoM: Original (2002)",
+    "padrao": "No",
+    "partidas_rapidas": "No",
+    "tipo": "Terra 🚶‍♂️"
+  }
+]

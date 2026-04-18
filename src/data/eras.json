@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "nome": "Arcaica",
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 0,
+    "tempo_seg": 0,
+    "ingles": "Archaic"
+  },
+  {
+    "id": 2,
+    "nome": "Clássica",
+    "comida": 400,
+    "madeira": 0,
+    "ouro": 0,
+    "tempo_seg": 60,
+    "requisitos_para_subir_de_era": "Templo (Grego), Templo (Egípcio), Templo (Nórdico), Templo (Atlante), Templo (Chinês), Templo (Japonês)",
+    "ingles": "Classical",
+    "requisitos_para_subir_de_era_ids": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Heróica",
+    "comida": 800,
+    "madeira": 0,
+    "ouro": 500,
+    "tempo_seg": 75,
+    "requisitos_para_subir_de_era": "Armaria (Grega), Mercado (Grego), Armaria de Anões",
+    "ingles": "Heroic",
+    "requisitos_para_subir_de_era_ids": [
+      27,
+      51,
+      34
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Mítica",
+    "comida": 1200,
+    "madeira": 0,
+    "ouro": 1200,
+    "tempo_seg": 120,
+    "requisitos_para_subir_de_era": "Fortaleza, Fortaleza Migdol, Forte da Colina, Palácio, Baolei, Castelo",
+    "ingles": "Mythic",
+    "requisitos_para_subir_de_era_ids": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      68
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Maravilha",
+    "comida": 5000,
+    "madeira": 5000,
+    "ouro": 5000,
+    "tempo_seg": 5400,
+    "requisitos_para_subir_de_era": "Maravilha",
+    "ingles": "Wonder",
+    "requisitos_para_subir_de_era_id": 71
+  }
+]
