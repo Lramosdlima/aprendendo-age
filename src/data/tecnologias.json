@@ -1,6 +1,7 @@
 [
   {
     "nome": "Abundância",
+    "icon": "aomr_abundance_icon",
     "beneficia": ":favoraom: Terreno Favorável (+:favoraom:)",
     "construcao_origem": "Silo",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -18,6 +19,7 @@
   },
   {
     "nome": "Agitador do Céu",
+    "icon": "aomr_shaker_of_heaven_icon",
     "beneficia": ":aomr_type_hero_icon: Herói (:aomr_hit_points_icon: & :aomr_type_myth_unit_icon:)",
     "construcao_origem": "Armaria (Chinês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -35,6 +37,7 @@
   },
   {
     "nome": "Alma Condenada",
+    "icon": "aomr_condemned_soul_icon",
     "beneficia": "Wanyudo",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -81,6 +84,7 @@
   },
   {
     "nome": "Arapuca Mortal",
+    "icon": "aomr_deadly_snare_icon",
     "beneficia": ":aomr_jorogumo_icon: Jorogumo (:aomr_divine_damage_icon:)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -158,6 +162,7 @@
   },
   {
     "nome": "Arcos Assimétricos",
+    "icon": "aomr_asymmetrical_bows_icon",
     "beneficia": "Cavalheiro Arqueiro Yumi",
     "construcao_origem": "Estábulo",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -367,6 +372,7 @@
   },
   {
     "nome": "Artesão Mecânicos",
+    "icon": "aomr_mechanical_artisans_icon",
     "beneficia": ":aomr_oyumi_icon: Oyumi",
     "construcao_origem": "Castelo",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -402,6 +408,7 @@
   },
   {
     "nome": "Assombração Eterna",
+    "icon": "aomr_eternal_haunting_icon",
     "beneficia": ":aomr_shinigami_icon: Shinigami",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -419,6 +426,7 @@
   },
   {
     "nome": "Auréola do Sol",
+    "icon": "aomr_halo_of_the_sun_icon",
     "beneficia": "Arcus |  Sifão",
     "construcao_origem": "Quartel Militar, Palácio",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -565,6 +573,7 @@
   },
   {
     "nome": "Bênção de Qilin",
+    "icon": "aomr_qilin%27s_blessing_icon",
     "beneficia": "Qilin",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -631,6 +640,7 @@
   },
   {
     "nome": "Canção do Solstício de Verão",
+    "icon": "aomr_song_of_midsummer_icon",
     "beneficia": ":aomr_zhuque_icon: Zhuque",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -677,6 +687,7 @@
   },
   {
     "nome": "Cascos do Vento",
+    "icon": "aomr_hooves_of_the_wind_icon",
     "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:hackarmor::aomr_speed_icon:)",
     "construcao_origem": "Baolei",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -811,6 +822,7 @@
   },
   {
     "nome": "Celeridade",
+    "icon": "aomr_celerity_icon",
     "beneficia": "MU",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -842,6 +854,7 @@
   },
   {
     "nome": "Chama do Sul",
+    "icon": "aomr_southern_fire_icon",
     "beneficia": ":aomr_fire_archer_icon: Arqueiro de Fogo (:piercedamage: & :piercedamage::aomr_divine_damage_icon:)",
     "construcao_origem": "Oficina de Máquina",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -914,6 +927,7 @@
   },
   {
     "nome": "Chifres da Consagração",
+    "icon": "aomr_horns_of_consecration_icon",
     "beneficia": ":aomr_fanatic_icon: Fanático ativado ✅",
     "construcao_origem": "Palácio",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -1239,6 +1253,7 @@
   },
   {
     "nome": "Corrida Frenética",
+    "icon": "aomr_frenzied_dash_icon",
     "beneficia": ":aomr_taowu_icon: Taowu (+:hackdamage:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -1256,6 +1271,7 @@
   },
   {
     "nome": "Cortar e Queimar",
+    "icon": "aomr_slash_and_burn_icon",
     "beneficia": ":aomr_type_villager_icon: Aldeão (:aomr_farm_icon:)",
     "construcao_origem": "Silo",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -1273,6 +1289,7 @@
   },
   {
     "nome": "Cota de Oricalco",
+    "icon": "aomr_orichalcum_mail_icon",
     "beneficia": ":aomr_type_infantry_icon: Infantaria (:hackarmor:)",
     "construcao_origem": "Contralquartel",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -1368,6 +1385,7 @@
   },
   {
     "nome": "Defesas Avançadas",
+    "icon": "aomr_advanced_defenses_icon",
     "beneficia": ":aomr_sentry_tower_icon: Torre de Sentinela e :aomr_baolei: Baolei (:piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": "Torre de Sentinela, Baolei",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -1405,6 +1423,7 @@
   },
   {
     "nome": "Determinação Sinistra",
+    "icon": "aomr_sinister_defiance_icon",
     "beneficia": ":aomr_qiongqi_icon: Qiongqi (:hackarmor::piercearmor:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -1422,6 +1441,7 @@
   },
   {
     "nome": "Devotos de Atlas",
+    "icon": "aomr_devotees_of_atlas_icon",
     "beneficia": "Fanático",
     "construcao_origem": "Palácio",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -1683,6 +1703,7 @@
   },
   {
     "nome": "Escudo dos Titãs",
+    "icon": "aomr_titan_shield_icon",
     "beneficia": "Destruidor",
     "construcao_origem": "Palácio",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -1744,6 +1765,7 @@
   },
   {
     "nome": "Escudos Dourados",
+    "icon": "aomr_gilded_shields_icon",
     "beneficia": ":aomr_dao_swordsman_icon: Espadachim de Dao (:hackarmor:)",
     "construcao_origem": "Campo Militar",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -1761,6 +1783,7 @@
   },
   {
     "nome": "Espada Dez Punhos",
+    "icon": "aomr_ten-fist_sword_icon",
     "beneficia": ":aomr_samurai_icon: Samurai (:hackdamage:)",
     "construcao_origem": "Dojo",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -1842,6 +1865,7 @@
   },
   {
     "nome": "Espólios de Guerra",
+    "icon": "aomr_spoils_of_war_icon",
     "beneficia": ":aomr_type_siege_weapon_icon::aomr_type_building_icon: (:woodaom::goldaom:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -1876,6 +1900,7 @@
   },
   {
     "nome": "Estômago sem fundo",
+    "icon": "aomr_bottomless_stomach_icon",
     "beneficia": ":aomr_taotie_icon: Taotis (:aomr_time_icon:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -1893,6 +1918,7 @@
   },
   {
     "nome": "Exército Inquieto",
+    "icon": "aomr_restless_army_icon",
     "beneficia": ":aomr_onmoraki_icon: Onmoraki",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -1910,6 +1936,7 @@
   },
   {
     "nome": "Filho de Loong",
+    "icon": "aomr_son_of_loong_icon",
     "beneficia": ":aomr_yazi_icon: Yazi (:aomr_hit_points_icon: & :hackdamage:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -1945,6 +1972,7 @@
   },
   {
     "nome": "Filhos do Sol",
+    "icon": "aomr_sons_of_the_sun_icon",
     "beneficia": ":aomr_oracle_hero_icon: Oráculo (zero:favoraom:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -2005,6 +2033,7 @@
   },
   {
     "nome": "Foices de Vento",
+    "icon": "aomr_wind_sickles_icon",
     "beneficia": ":aomr_kamaitachi_icon: Kamaitachi",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2046,6 +2075,7 @@
   },
   {
     "nome": "Forja Vulcânica",
+    "icon": "aomr_volcanic_forge_icon",
     "beneficia": ":aomr_type_human_soldier_icon: Soldado | :aomr_type_hero_icon: Herói | :aomr_automaton_icon: Autômato (:piercearmor:)",
     "construcao_origem": "Templo (Atlante), Armaria (Atlante)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2108,6 +2138,7 @@
   },
   {
     "nome": "Força de Caçador",
+    "icon": "aomr_hunters_strength_icon",
     "beneficia": "Artilharia ()",
     "construcao_origem": "Armaria (Japonês), Posto de Vigia",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2241,6 +2272,7 @@
   },
   {
     "nome": "Fúria de Matança",
+    "icon": "aomr_rage_of_slaughter_icon",
     "beneficia": ":aomr_yazi_icon: Yazi (:aomr_hit_points_icon: & :hackdamage::aomr_hit_points_icon:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2258,6 +2290,7 @@
   },
   {
     "nome": "Fúria do Vendaval",
+    "icon": "aomr_gales_fury_icon",
     "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_speed_icon: & :aomr_rate_of_fire_icon::hackdamage:)",
     "construcao_origem": "Estábulo",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -2314,6 +2347,7 @@
   },
   {
     "nome": "Fúria Mortal",
+    "icon": "aomr_deadly_rage_icon",
     "beneficia": ":aomr_oni_icon: Oni (:hackdamage::hackarmor:)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -2392,6 +2426,7 @@
   },
   {
     "nome": "Guardião do Io",
+    "icon": "aomr_guardian_of_io_icon",
     "beneficia": "Argos",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -2430,6 +2465,7 @@
   },
   {
     "nome": "Gêmeos",
+    "icon": "aomr_gemini_icon",
     "beneficia": ":aomr_satyr_icon: Sátiro (:piercedamage:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -2465,6 +2501,7 @@
   },
   {
     "nome": "Heroísmo da Linha de Frente",
+    "icon": "aomr_frontline_heroics_icon",
     "beneficia": ":aomr_type_hero_icon::aomr_type_infantry_icon: Herói de Infantaria (:foodaom::goldaom:)",
     "construcao_origem": "Quartel Militar",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2596,6 +2633,7 @@
   },
   {
     "nome": "Infiltradores à Beira-mar",
+    "icon": "aomr_seaside_infiltrators_icon",
     "beneficia": ":aomr_shinobi_icon: Shinobi",
     "construcao_origem": "Dojo",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -2684,6 +2722,7 @@
   },
   {
     "nome": "Julgamento Divino",
+    "icon": "aomr_divine_judgement_icon",
     "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_divine_damage_icon: & :aomr_type_myth_unit_icon:)",
     "construcao_origem": "Campo Militar, Armaria (Chinês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -2722,6 +2761,7 @@
   },
   {
     "nome": "Kagura",
+    "icon": "aomr_kagura_icon",
     "beneficia": ":aomr_miko_icon: Miko (Heroína)",
     "construcao_origem": "Santuário",
     "eras": "Arcaica :aomr_archaic_age_icon:",
@@ -2736,6 +2776,7 @@
   },
   {
     "nome": "Katagi",
+    "icon": "aomr_katagi_icon",
     "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon: ++:amaterasu_tier_1_icon:)",
     "construcao_origem": "Posto de Vigia, Dojo",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2756,6 +2797,7 @@
   },
   {
     "nome": "Kumiki",
+    "icon": "aomr_kumiki_icon",
     "beneficia": "Artilharia e  Cerco (⤵️)",
     "construcao_origem": "Posto de Vigia",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -2889,6 +2931,7 @@
   },
   {
     "nome": "Lança de Pedra",
+    "icon": "aomr_lance_of_stone_icon",
     "beneficia": ":aomr_contarius_icon: Contarius (:hackdamage:)",
     "construcao_origem": "Quartel Militar",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -2957,6 +3000,7 @@
   },
   {
     "nome": "Linhagem de Xuanyuan",
+    "icon": "aomr_xuanyuan%27s_bloodline_icon",
     "beneficia": ":aomr_type_infantry_icon: Infantaria (:hackdamage: ao 💀)",
     "construcao_origem": "Campo Militar",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -3012,6 +3056,7 @@
   },
   {
     "nome": "Livros Divinos",
+    "icon": "aomr_divine_books_icon",
     "beneficia": ":aomr_military_camp: Campo Militar",
     "construcao_origem": "Campo Militar, Oficina de Máquina",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3209,6 +3254,7 @@
   },
   {
     "nome": "Malevolência Ardente",
+    "icon": "aomr_burning_malevolence_icon",
     "beneficia": ":aomr_asura_icon: Asura",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -3244,6 +3290,7 @@
   },
   {
     "nome": "Maré Crescente",
+    "icon": "aomr_rising_tide_icon",
     "beneficia": ":aomr_qinglong_icon: QingLong",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -3286,6 +3333,7 @@
   },
   {
     "nome": "Maça sem Peso",
+    "icon": "aomr_weightless_mace_icon",
     "beneficia": ":aomr_katapeltes_icon: Katapeltes (:aomr_speed_icon: :hackdamage:)",
     "construcao_origem": "Armaria (Atlante)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3360,6 +3408,7 @@
   },
   {
     "nome": "Mestre das Armas",
+    "icon": "aomr_master_of_weaponry_icon",
     "beneficia": ":aomr_ge_halberdier_icon: Alabardeiro Ge (:rangeicon:&:aomr_type_cavalry_icon:❄️)",
     "construcao_origem": "Campo Militar",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3377,6 +3426,7 @@
   },
   {
     "nome": "Mordida do Turbarão",
+    "icon": "aomr_bite_of_the_shark_icon",
     "beneficia": ":aomr_murmillo_icon: Murmilo | :aomr_fanatic_icon: Fanático (:hackdamage: :aomr_divine_damage_icon:)",
     "construcao_origem": "Armaria (Atlante)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3424,6 +3474,7 @@
   },
   {
     "nome": "Máscara de Hannya",
+    "icon": "aomr_hannya_mask_icon",
     "beneficia": "Infantaria (→)",
     "construcao_origem": "Posto de Vigia, Dojo",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -3443,6 +3494,7 @@
   },
   {
     "nome": "Máscara Oni",
+    "icon": "aomr_oni_mask_icon",
     "beneficia": ":aomr_type_myth_unit_icon: MU (:aomr_time_icon::aomr_hit_points_icon:)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -3505,6 +3557,7 @@
   },
   {
     "nome": "Nascente de Água Salgada",
+    "icon": "aomr_saltwater_spring_icon",
     "beneficia": "Aldeão ( )",
     "construcao_origem": "Moinho de Água",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3562,6 +3615,7 @@
   },
   {
     "nome": "Netsuke de Marfim",
+    "icon": "aomr_ivory_netsuke_icon",
     "beneficia": ":goldaom: Ouro (passivo)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3618,6 +3672,7 @@
   },
   {
     "nome": "O Presente de Reia",
+    "icon": "aomr_rheias_gift_icon",
     "beneficia": "⏫ Tecnologia (zero:favoraom:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -3635,6 +3690,7 @@
   },
   {
     "nome": "Oito Estandartes",
+    "icon": "aomr_eight_banners_icon",
     "beneficia": ":aomr_type_hero_icon: Herói (:aomr_time_icon::aomr_hit_points_icon:)",
     "construcao_origem": "Castelo",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -3694,6 +3750,7 @@
   },
   {
     "nome": "Ondas Esmagadoras",
+    "icon": "aomr_crushing_waves_icon",
     "beneficia": ":aomr_type_myth_unit_icon: MU (:aomr_speed_icon: e :aomr_divine_damage_icon:)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Arcaica :aomr_archaic_age_icon:",
@@ -3707,6 +3764,7 @@
     "panteoes_id": 6
   },
   {
+    "100": "goldaom: de ouro × custo da população total de inimigos :aomr_population_provision_icon:",
     "nome": "Oniciência",
     "ouro": 100,
     "tempo_s": 5,
@@ -3716,12 +3774,12 @@
     "ingles": "Omniscience",
     "panteoes": "Geral",
     "tipo": "Utilidade 🔧",
-    "100": "goldaom: de ouro × custo da população total de inimigos :aomr_population_provision_icon:",
     "construcao_origem_id": 21,
     "eras_id": 4
   },
   {
     "nome": "Onmyodo",
+    "icon": "aomr_onmyodo_icon",
     "beneficia": ":aomr_onmyoji_icon: Onmyoji",
     "construcao_origem": "Castelo",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -3739,6 +3797,7 @@
   },
   {
     "nome": "Ordem Imperial",
+    "icon": "aomr_imperial_order_icon",
     "beneficia": ":aomr_dao_swordsman_icon: :aomr_ge_halberdier_icon: :aomr_wuzu_javelineer_icon: :aomr_military_camp: (custos :foodaom::woodaom::goldaom:)",
     "construcao_origem": "Campo Militar",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -3780,6 +3839,7 @@
   },
   {
     "nome": "Outono da Abundância",
+    "icon": "aomr_autumn_of_abundance_icon",
     "beneficia": ":aomr_pixiu_icon: Pixiu (:foodaom::woodaom:)",
     "construcao_origem": "Mercado (Chinês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -3921,6 +3981,7 @@
   },
   {
     "nome": "Penas Ardentes",
+    "icon": "aomr_scorching_feathers_icon",
     "beneficia": ":aomr_type_archer_icon: Artilharia (🚫:hackarmor::piercearmor: + :aomr_rate_of_fire_icon:)",
     "construcao_origem": "Armaria (Chinês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -3938,6 +3999,7 @@
   },
   {
     "nome": "Percepção",
+    "icon": "aomr_perception_icon",
     "beneficia": ":aomr_oracle_hero_icon: Oráculo (:los_icon_aoe3de: :favoraom:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3955,6 +4017,7 @@
   },
   {
     "nome": "Perseguindo o Sol",
+    "icon": "aomr_chasing_the_sun_icon",
     "beneficia": "🔨:aomr_town_center_chinese::aomr_type_building_icon: Construção & TC",
     "construcao_origem": "Centro Urbano (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -3972,6 +4035,7 @@
   },
   {
     "nome": "Petrificação",
+    "icon": "aomr_petrification_icon",
     "beneficia": "Cerco",
     "construcao_origem": "Palácio",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4022,6 +4086,7 @@
   },
   {
     "nome": "Pipa de Ouro",
+    "icon": "aomr_golden_kite_icon",
     "beneficia": ":aomr_type_archer_icon: Artilharia ( e ++)",
     "construcao_origem": "Armaria (Japonês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -4040,6 +4105,7 @@
   },
   {
     "nome": "Poder do Caos",
+    "icon": "aomr_power_of_chaos_icon",
     "beneficia": ":aomr_hundun_icon: Hundun",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4118,6 +4184,7 @@
   },
   {
     "nome": "Presente Trovejante",
+    "icon": "aomr_thunderous_presence_icon",
     "beneficia": ":aomr_raiju_icon: Raijin (:hackdamage::aomr_speed_icon:)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -4161,6 +4228,7 @@
   },
   {
     "nome": "Província Divina",
+    "icon": "aomr_divine_prefecture_icon",
     "beneficia": "Treinamento+Pesquisa:aomr_time_icon:",
     "construcao_origem": "Centro Urbano (Japonês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4178,6 +4246,7 @@
   },
   {
     "nome": "Práticas Ascéticas",
+    "icon": "aomr_ascetic_practices_icon",
     "beneficia": ":aomr_tengu_icon: Tengu",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -4443,6 +4512,7 @@
   },
   {
     "nome": "Reencarnação",
+    "icon": "aomr_reincarnation_icon",
     "beneficia": "(Reviver Soldados)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -4460,6 +4530,7 @@
   },
   {
     "nome": "Rejuvenescimento Mítico",
+    "icon": "aomr_mythic_rejuvenation_icon",
     "beneficia": "MU",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4476,6 +4547,7 @@
   },
   {
     "nome": "Renovação Heróica",
+    "icon": "aomr_heroic_renewal_icon",
     "beneficia": ":aomr_type_hero_icon: Herói (:aomr_hit_points_icon:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -4557,6 +4629,7 @@
   },
   {
     "nome": "Rocha Sólida",
+    "icon": "aomr_rock_solid_icon",
     "beneficia": ":aomr_type_myth_unit_icon: MU (:hackarmor::piercearmor:)",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -4673,6 +4746,7 @@
   },
   {
     "nome": "Sabedoria dos Nove",
+    "icon": "aomr_wisdom_of_nine_icon",
     "beneficia": ":aomr_kitsune_icon: Kitsune (:los_icon_aoe3de::aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -4784,6 +4858,7 @@
   },
   {
     "nome": "Sangue de Ásper",
+    "icon": "aomr_asper_blood_icon",
     "beneficia": "Lâmpade",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4822,6 +4897,7 @@
   },
   {
     "nome": "Sangue Flamejante",
+    "icon": "aomr_flaming_blood_icon",
     "beneficia": ":aomr_type_myth_unit_icon: MU",
     "construcao_origem": "Templo (Chinês)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4861,6 +4937,7 @@
   },
   {
     "nome": "Seda de Leizu",
+    "icon": "aomr_leizu%27s_silk_icon",
     "beneficia": ":aomr_type_villager_icon: Aldeão & :aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon:)",
     "construcao_origem": "Oficina de Máquina",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -4878,6 +4955,7 @@
   },
   {
     "nome": "Segredo de Poseidon",
+    "icon": "aomr_poseidons_secret_icon",
     "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_speed_icon: -:foodaom::woodaom::goldaom:)",
     "construcao_origem": "Quartel Militar",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -5002,6 +5080,7 @@
   },
   {
     "nome": "Sojutsu",
+    "icon": "aomr_sojutsu_icon",
     "beneficia": ":aomr_yari_spearman_icon: Lanceiro Yari (:aomr_rate_of_fire_icon: :aomr_speed_icon:)",
     "construcao_origem": "Posto de Vigia",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -5096,6 +5175,7 @@
   },
   {
     "nome": "Tambores Den Den",
+    "icon": "aomr_den_den_drums_icon",
     "beneficia": "God Power  (+ barato)",
     "construcao_origem": "Templo (Japonês)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -5112,6 +5192,7 @@
   },
   {
     "nome": "Tempestade Turbulenta",
+    "icon": "aomr_tempestuous_storm_icon",
     "beneficia": ":aomr_type_hero_icon: Herói (:foodaom::woodaom::goldaom: &:aomr_time_icon:)",
     "construcao_origem": "Academia Imperial",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -5151,6 +5232,7 @@
   },
   {
     "nome": "Tenshu",
+    "icon": "aomr_tenshu_icon",
     "beneficia": "Torre | :aomr_castle_icon: Fortaleza",
     "construcao_origem": "Torre de Sentinela",
     "eras": "Arcaica :aomr_archaic_age_icon:",
@@ -5180,6 +5262,7 @@
   },
   {
     "nome": "Terreno Vibrante",
+    "icon": "aomr_vibrant_land_icon",
     "beneficia": ":aomr_type_villager_icon: Aldeão (:woodaom:) e :aomr_house_icon: →",
     "construcao_origem": "Silo, Casa",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -5219,6 +5302,7 @@
   },
   {
     "nome": "Titanomaquia",
+    "icon": "aomr_titanomachy_icon",
     "beneficia": "Centimanos",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -5282,6 +5366,7 @@
   },
   {
     "nome": "Treinamento de Sumô",
+    "icon": "aomr_sumo_training_icon",
     "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon:&:crushdamage:)",
     "construcao_origem": "Dojo, Posto de Vigia",
     "eras": "Mítica :aomr_mythic_age_icon:",
@@ -5358,6 +5443,7 @@
   },
   {
     "nome": "Varinhas de Gohei",
+    "icon": "aomr_gohei_wands_icon",
     "beneficia": ":aomr_miko_icon: Miko | :aomr_shrine_icon: Santuário",
     "construcao_origem": "Santuário",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -5375,6 +5461,7 @@
   },
   {
     "nome": "Vassalos Sashimono",
+    "icon": "aomr_sashimono_bannermen_icon",
     "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon: e ++:aomr_type_cavalry_icon:)",
     "construcao_origem": "Estábulo",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -5443,6 +5530,7 @@
   },
   {
     "nome": "Vingança de Hefesto",
+    "icon": "aomr_hephaestus_revenge_icon",
     "beneficia": ":aomr_automaton_icon: Autômato (:aomr_hit_points_icon:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Clássica :aomr_classical_age_icon:",
@@ -5479,6 +5567,7 @@
   },
   {
     "nome": "Visão Profética",
+    "icon": "aomr_prophetic_sight_icon",
     "beneficia": ":aomr_oracle_hero_icon: Oráculo (:favoraom:)",
     "construcao_origem": "Templo (Atlante)",
     "eras": "Heróica :aomr_heroic_age_icon:",
@@ -5596,6 +5685,7 @@
   },
   {
     "nome": "Última Resistência",
+    "icon": "aomr_last_stand_icon",
     "beneficia": ":aomr_type_cavalry_icon: Cavalaria ()",
     "construcao_origem": "Baolei",
     "eras": "Mítica :aomr_mythic_age_icon:",

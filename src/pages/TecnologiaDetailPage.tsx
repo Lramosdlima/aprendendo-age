@@ -6,6 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { construcaoById, deusById, eraById, panteaoById, tecnologias } from "@/data/catalog";
+import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 export function TecnologiaDetailPage() {
   const { index } = useParams();
@@ -39,7 +40,11 @@ export function TecnologiaDetailPage() {
   return (
     <div>
       <BackLink to="/tecnologias">Tecnologias</BackLink>
-      <PageHeader title={t.nome || `Sem título (#${i})`} description={`Índice JSON: ${i}`} />
+      <PageHeader
+        title={t.nome || `Sem título (#${i})`}
+        description={`Índice JSON: ${i}`}
+        headerIconSrc={getTecnologiaAssetUrl(t)}
+      />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Resumo">
