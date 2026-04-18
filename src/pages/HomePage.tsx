@@ -8,6 +8,7 @@ import {
   godpowers,
   mapas,
   panteoes,
+  startsBuildOrder,
   tecnologias,
   unidades,
 } from "@/data/catalog";
@@ -23,6 +24,12 @@ const tiles = [
   { to: "/aldeoes", label: "Aldeões", count: aldeoes.length, hint: "Coleta e trabalhadores." },
   { to: "/mapas", label: "Mapas", count: mapas.length, hint: "Ranqueada, origem e tipo." },
   { to: "/tecnologias", label: "Tecnologias", count: tecnologias.length, hint: "Melhorias e bônus." },
+  {
+    to: "/starts",
+    label: "Starts (BO)",
+    count: startsBuildOrder.length,
+    hint: "Build orders e vídeos da pasta Starts do Notion.",
+  },
 ] as const;
 
 export function HomePage() {

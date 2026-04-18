@@ -13,6 +13,7 @@ const nav = [
   { to: "/aldeoes", label: "Aldeões" },
   { to: "/mapas", label: "Mapas" },
   { to: "/tecnologias", label: "Tecnologias" },
+  { to: "/starts", label: "Starts (BO)" },
 ] as const;
 
 function navClass({ isActive }: { isActive: boolean }) {

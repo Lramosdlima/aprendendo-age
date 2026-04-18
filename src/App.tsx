@@ -17,6 +17,8 @@ import { MapasPage } from "@/pages/MapasPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
+import { StartDetailPage } from "@/pages/StartDetailPage";
+import { StartsPage } from "@/pages/StartsPage";
 import { TecnologiaDetailPage } from "@/pages/TecnologiaDetailPage";
 import { TecnologiasPage } from "@/pages/TecnologiasPage";
 import { UnidadeDetailPage } from "@/pages/UnidadeDetailPage";
@@ -46,6 +48,8 @@ export default function App() {
           <Route path="mapas/:index" element={<MapaDetailPage />} />
           <Route path="tecnologias" element={<TecnologiasPage />} />
           <Route path="tecnologias/:index" element={<TecnologiaDetailPage />} />
+          <Route path="starts" element={<StartsPage />} />
+          <Route path="starts/:id" element={<StartDetailPage />} />
           <Route path="home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

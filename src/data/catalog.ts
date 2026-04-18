@@ -5,8 +5,20 @@ import erasJson from "./eras.json";
 import godpowersJson from "./godpowers.json";
 import mapasJson from "./mapas.json";
 import panteoesJson from "./panteoes.json";
+import startsBuildOrderJson from "./starts_build_order.json";
 import tecnologiasJson from "./tecnologias.json";
 import unidadesJson from "./unidades_aom.json";
+
+export type StartBuildOrder = {
+  id: number;
+  titulo: string;
+  notion_file_id: string;
+  youtube: string[];
+  descricao_curta: string;
+};
+
+export const startsBuildOrder = startsBuildOrderJson as StartBuildOrder[];
+export const startById = new Map(startsBuildOrder.map((s) => [s.id, s]));
 
 export const aldeoes = aldeoesJson;
 export const construcoes = construcoesJson;
