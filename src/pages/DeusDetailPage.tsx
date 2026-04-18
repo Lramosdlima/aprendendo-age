@@ -56,6 +56,7 @@ export function DeusDetailPage() {
       <PageHeader
         title={d.nome}
         description={[d.hierarquia, d.panteao].filter(Boolean).join(" · ")}
+        headerIconSrc={deusIcon}
       />
 
       <div className="grid gap-6 lg:grid-cols-2">

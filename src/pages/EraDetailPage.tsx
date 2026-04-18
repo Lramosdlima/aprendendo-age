@@ -42,7 +42,7 @@ export function EraDetailPage() {
   return (
     <div>
       <BackLink to="/eras">Eras</BackLink>
-      <PageHeader title={e.nome} description={e.ingles ? `Inglês: ${e.ingles}` : undefined} />
+      <PageHeader title={e.nome} description={e.ingles ? `Inglês: ${e.ingles}` : undefined} headerIconSrc={eraIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Custos (avanço)" watermarkSrc={eraIcon}>

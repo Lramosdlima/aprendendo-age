@@ -26,7 +26,7 @@ export function AldeaoDetailPage() {
   return (
     <div>
       <BackLink to="/aldeoes">Aldeões</BackLink>
-      <PageHeader title={a.nome} description={a.ingles ? `EN: ${a.ingles}` : undefined} />
+      <PageHeader title={a.nome} description={a.ingles ? `EN: ${a.ingles}` : undefined} headerIconSrc={aldeaoIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Geral" watermarkSrc={aldeaoIcon}>

@@ -30,7 +30,7 @@ export function UnidadeDetailPage() {
   return (
     <div>
       <BackLink to="/unidades">Unidades</BackLink>
-      <PageHeader title={u.nome} description={u.ingles ? `EN: ${u.ingles}` : undefined} />
+      <PageHeader title={u.nome} description={u.ingles ? `EN: ${u.ingles}` : undefined} headerIconSrc={unidadeIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Visão geral" watermarkSrc={unidadeIcon}>

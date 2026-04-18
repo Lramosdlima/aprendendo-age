@@ -39,7 +39,11 @@ export function ConstrucaoDetailPage() {
   return (
     <div>
       <BackLink to="/construcoes">Construções</BackLink>
-      <PageHeader title={c.nome} description={c.ingles ? `EN: ${c.ingles}` : undefined} />
+      <PageHeader
+        title={c.nome}
+        description={c.ingles ? `EN: ${c.ingles}` : undefined}
+        headerIconSrc={construcaoIcon}
+      />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Classificação" watermarkSrc={construcaoIcon}>

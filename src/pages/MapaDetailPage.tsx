@@ -26,7 +26,7 @@ export function MapaDetailPage() {
   return (
     <div>
       <BackLink to="/mapas">Mapas</BackLink>
-      <PageHeader title={m.nome} description={m.ingles ? `EN: ${m.ingles}` : undefined} />
+      <PageHeader title={m.nome} description={m.ingles ? `EN: ${m.ingles}` : undefined} headerIconSrc={mapaIcon} />
 
       <Section title="Metadados" watermarkSrc={mapaIcon}>
         <div className="space-y-0">

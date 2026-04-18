@@ -29,7 +29,7 @@ export function GodpowerDetailPage() {
   return (
     <div>
       <BackLink to="/poderes">Poderes divinos</BackLink>
-      <PageHeader title={g.nome} description={g.ingles ? `EN: ${g.ingles}` : undefined} />
+      <PageHeader title={g.nome} description={g.ingles ? `EN: ${g.ingles}` : undefined} headerIconSrc={powerIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Ligações" watermarkSrc={powerIcon}>
@@ -70,7 +70,7 @@ export function GodpowerDetailPage() {
           </div>
         </Section>
 
-        <Section title="Números" watermarkSrc={powerIcon}>
+        <Section title="Números">
           <div className="space-y-0">
             <InfoRow label="Cooldown (s)">{g.cooldown_seg ?? "—"}</InfoRow>
             <InfoRow label="Duração no mapa (s)">{g.duracao_no_mapa_seg ?? "—"}</InfoRow>
