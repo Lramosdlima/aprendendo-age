@@ -30,3 +30,183 @@ body {
 #root {
   min-height: 100vh;
 }
+
+/* Conteúdo Notion (starts / build order) — tabelas e texto no tema escuro */
+.start-notion-content {
+  white-space: normal;
+  word-break: break-word;
+  color: #e4e4e7;
+  line-height: 1.55;
+}
+
+.start-notion-content .page-body {
+  display: block;
+}
+
+.start-notion-content h3 {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fde68a;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.start-notion-content h3:first-child {
+  margin-top: 0;
+}
+
+.start-notion-content table.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  margin: 1rem 0;
+  display: table;
+}
+
+.start-notion-content .simple-table thead {
+  display: table-header-group;
+}
+
+.start-notion-content .simple-table tbody {
+  display: table-row-group;
+}
+
+.start-notion-content .simple-table tr {
+  display: table-row;
+}
+
+.start-notion-content .simple-table th,
+.start-notion-content .simple-table td {
+  display: table-cell;
+  border: 1px solid var(--aom-border);
+  padding: 0.45rem 0.5rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.start-notion-content .simple-table th {
+  background: rgba(26, 30, 38, 0.95);
+  color: #d4d4d8;
+  font-weight: 600;
+}
+
+.start-notion-content .simple-table img {
+  display: inline-block;
+  vertical-align: -0.15em;
+  height: 1em !important;
+  width: auto !important;
+  max-width: 1.25rem;
+}
+
+.start-notion-content mark {
+  background: transparent;
+  color: inherit;
+}
+
+.start-notion-content .highlight-red {
+  color: #fca5a5;
+}
+.start-notion-content .highlight-yellow {
+  color: #fde047;
+}
+.start-notion-content .highlight-brown,
+.start-notion-content mark.highlight-brown {
+  color: #d4a574;
+}
+.start-notion-content .highlight-blue {
+  color: #93c5fd;
+}
+.start-notion-content .highlight-teal {
+  color: #5eead4;
+}
+.start-notion-content .highlight-orange {
+  color: #fdba74;
+}
+.start-notion-content .highlight-pink {
+  color: #f9a8d4;
+}
+.start-notion-content .highlight-purple {
+  color: #d8b4fe;
+}
+
+.start-notion-content .block-color-teal_background {
+  background: rgba(45, 212, 191, 0.12);
+}
+.start-notion-content .block-color-gray_background {
+  background: rgba(113, 113, 122, 0.2);
+}
+.start-notion-content .block-color-blue_background {
+  background: rgba(59, 130, 246, 0.18);
+}
+.start-notion-content .block-color-pink_background {
+  background: rgba(236, 72, 153, 0.15);
+}
+.start-notion-content .block-color-red_background {
+  background: rgba(248, 113, 113, 0.12);
+}
+.start-notion-content .block-color-orange_background {
+  background: rgba(251, 146, 60, 0.14);
+}
+
+.start-notion-content figure.callout {
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  border: 1px solid var(--aom-border);
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.start-notion-content figure.block-color-gray_background.callout {
+  background: rgba(39, 39, 42, 0.65);
+}
+.start-notion-content figure.block-color-orange_background.callout {
+  background: rgba(120, 53, 15, 0.25);
+}
+
+.start-notion-content figure.callout p {
+  margin: 0.35rem 0;
+}
+
+.start-notion-content .bookmark.source {
+  display: block;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--aom-border);
+  margin: 0.75rem 0;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(24, 24, 27, 0.6);
+}
+
+.start-notion-content .bookmark-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.start-notion-content .bookmark-info {
+  padding: 0.75rem 1rem;
+}
+
+.start-notion-content .bookmark-title {
+  font-weight: 600;
+  color: #fafafa;
+  margin-bottom: 0.35rem;
+}
+
+.start-notion-content .bookmark-description {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  max-height: 4.5rem;
+  overflow: hidden;
+}
+
+.start-notion-content code {
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.35);
+}

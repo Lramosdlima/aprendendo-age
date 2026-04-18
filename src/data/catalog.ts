@@ -15,6 +15,8 @@ export type StartBuildOrder = {
   notion_file_id: string;
   youtube: string[];
   descricao_curta: string;
+  /** Corpo exportado do Notion: títulos, callouts, tabelas simple-table, bookmarks. */
+  conteudo_html: string;
 };
 
 export const startsBuildOrder = startsBuildOrderJson as StartBuildOrder[];

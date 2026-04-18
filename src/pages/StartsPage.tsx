@@ -7,7 +7,7 @@ export function StartsPage() {
     <div>
       <PageHeader
         title="Starts & build orders"
-        description="Páginas exportadas da pasta «Starts Build Order» do Notion. Vídeos de referência foram extraídos automaticamente; tabelas completas ficam no HTML original."
+        description="Sequências em tabela (comida, madeira, ouro, pop), callouts e links de vídeo — extraídos do export HTML do Notion. Ícones em /assets."
       />
       <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {startsBuildOrder.map((s) => (

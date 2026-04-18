@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { Section } from "@/components/ui/Section";
 import { startById } from "@/data/catalog";
 import { toYouTubeEmbedUrl } from "@/lib/youtubeEmbed";
 
@@ -19,18 +18,25 @@ export function StartDetailPage() {
     );
   }
 
+  const fallbackVideoOnly = !s.conteudo_html?.trim();
+
   return (
     <div>
       <BackLink to="/starts">Starts & build orders</BackLink>
       <PageHeader title={s.titulo} description={s.descricao_curta} />
+      <p className="text-xs text-zinc-500">
+        Export Notion: <code className="text-zinc-400">{s.notion_file_id}</code>
+      </p>
 
-      <Section title="Metadados">
-        <p className="text-sm text-zinc-400">
-          ID Notion (arquivo): <code className="text-zinc-300">{s.notion_file_id}</code>
-        </p>
-      </Section>
+      {s.conteudo_html ? (
+        <div
+          className="start-notion-content mt-8"
+          // HTML gerado localmente a partir do export Notion (paths /assets já resolvidos)
+          dangerouslySetInnerHTML={{ __html: s.conteudo_html }}
+        />
+      ) : null}
 
-      {s.youtube.length > 0 ? (
+      {fallbackVideoOnly && s.youtube.length > 0 ? (
         <div className="mt-8 space-y-6">
           <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95">Vídeos</h2>
           {s.youtube.map((url) => {
@@ -59,9 +65,11 @@ export function StartDetailPage() {
             );
           })}
         </div>
-      ) : (
-        <p className="mt-6 text-sm text-zinc-500">Nenhum link de YouTube detectado nesta exportação.</p>
-      )}
+      ) : null}
+
+      {fallbackVideoOnly && s.youtube.length === 0 ? (
+        <p className="mt-6 text-sm text-zinc-500">Sem conteúdo HTML nem vídeos nesta exportação.</p>
+      ) : null}
     </div>
   );
 }
