@@ -797,5 +797,10 @@
   "aomr_pantheon_atlanteans_icon": "/assets/pantheons/AoMR_Atlanteans_icon.png",
   "aomr_pantheon_chinese_icon": "/assets/pantheons/AoMR_Chinese_icon.png",
   "aomr_pantheon_japanese_icon": "/assets/pantheons/AoMR_Japanese_icon.png",
-  "aomr_pantheon_azteca_icon": "/assets/pantheons/AoMR_Azteca_icon.png"
+  "aomr_pantheon_azteca_icon": "/assets/pantheons/AoMR_Azteca_icon.png",
+  "aomr_archaic_age_icon": "/assets/ages/AoMR_Archaic_Age_icon.png",
+  "aomr_classical_age_icon": "/assets/ages/AoMR_Classical_Age_icon.png",
+  "aomr_heroic_age_icon": "/assets/ages/AoMR_Heroic_Age_icon.png",
+  "aomr_mythic_age_icon": "/assets/ages/AoMR_Mythic_Age_icon.png",
+  "aomr_wonder_age_icon": "/assets/ages/AoMR_Wonder_Age_icon.png"
 }
