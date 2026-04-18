@@ -6,6 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { construcaoById, eraById } from "@/data/catalog";
+import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 
 export function EraDetailPage() {
   const { id } = useParams();
@@ -22,6 +23,8 @@ export function EraDetailPage() {
 
   const reqIds = (e as { requisitos_para_subir_de_era_ids?: number[] }).requisitos_para_subir_de_era_ids;
   const reqSingle = (e as { requisitos_para_subir_de_era_id?: number }).requisitos_para_subir_de_era_id;
+
+  const eraIcon = getEraAssetUrl(e.id);
 
   const reqLinks = (reqIds ?? (reqSingle != null ? [reqSingle] : []))
     .map((cid) => {
@@ -42,7 +45,7 @@ export function EraDetailPage() {
       <PageHeader title={e.nome} description={e.ingles ? `Inglês: ${e.ingles}` : undefined} />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Custos (avanço)">
+        <Section title="Custos (avanço)" watermarkSrc={eraIcon}>
           <div className="space-y-0">
             <InfoRow label="Comida">{e.comida ?? 0}</InfoRow>
             <InfoRow label="Madeira">{e.madeira ?? 0}</InfoRow>
@@ -52,7 +55,7 @@ export function EraDetailPage() {
         </Section>
 
         {(e.requisitos_para_subir_de_era || reqLinks.length > 0) && (
-          <Section title="Requisitos para subir de era">
+          <Section title="Requisitos para subir de era" watermarkSrc={eraIcon}>
             {reqLinks.length > 0 ? (
               <ul className="flex flex-wrap gap-2">
                 {reqLinks.map((el, i) => (
