@@ -8,6 +8,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { deuses } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matches(d: (typeof deuses)[number], q: string) {
   if (!q.trim()) return true;
@@ -29,6 +30,7 @@ export function DeusesPage() {
             <EntityCard
               to={`/deuses/${d.id}`}
               title={d.nome}
+              cardTint={pantheonCardTint(d.panteao)}
               subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
               meta={
                 <span className="inline-flex flex-wrap items-baseline gap-x-0">

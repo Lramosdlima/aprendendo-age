@@ -23,6 +23,8 @@ type EntityCardProps = {
   onToggleSelect?: () => void;
   /** Quando true e já há 2 outras unidades selecionadas, bloqueia nova seleção. */
   selectDisabled?: boolean;
+  /** Tinte de fundo (ex.: rgba) por baixo do cinza — mistura com o card sem substituir o visual base. */
+  cardTint?: string;
 };
 
 export function EntityCard({
@@ -38,7 +40,9 @@ export function EntityCard({
   selected,
   onToggleSelect,
   selectDisabled,
+  cardTint,
 }: EntityCardProps) {
+  const hasTint = Boolean(cardTint);
   const useSubtitleTag = subtitleTag && subtitle != null && subtitle !== "";
   const subtitleBody = useSubtitleTag ? (
     <AppTag className="align-top leading-snug [word-break:break-word] normal-case">{subtitle}</AppTag>
@@ -47,14 +51,36 @@ export function EntityCard({
   );
 
   const shellClass = cn(
-    "group relative block overflow-hidden rounded-xl border bg-zinc-900/40 p-4 transition-colors",
+    "group relative block overflow-hidden rounded-xl border p-4 transition-colors",
+    !hasTint && "bg-zinc-900/40",
     compareMode
-      ? "cursor-pointer border-aom-border hover:border-amber-500/35 hover:bg-zinc-900/70"
-      : "border-aom-border hover:border-amber-500/35 hover:bg-zinc-900/70",
-    selected && compareMode ? "border-amber-500/50 bg-zinc-900/70 ring-1 ring-amber-500/30" : false,
+      ? "cursor-pointer border-aom-border hover:border-amber-500/35"
+      : "border-aom-border hover:border-amber-500/35",
+    !hasTint && "hover:bg-zinc-900/70",
+    selected && compareMode && !hasTint ? "border-amber-500/50 bg-zinc-900/70 ring-1 ring-amber-500/30" : false,
+    selected && compareMode && hasTint ? "border-amber-500/50 ring-1 ring-amber-500/30" : false,
     selectDisabled && compareMode && !selected ? "opacity-60" : false,
     className,
   );
+
+  const tintLayers =
+    hasTint && cardTint ? (
+      <>
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 rounded-[inherit]"
+          style={{ backgroundColor: cardTint }}
+        />
+        <div
+          aria-hidden
+          className={cn(
+            "pointer-events-none absolute inset-0 rounded-[inherit] bg-zinc-900/40 transition-colors",
+            "group-hover:bg-zinc-900/70",
+            selected && compareMode && "bg-zinc-900/70",
+          )}
+        />
+      </>
+    ) : null;
 
   const inner = (
     <>
@@ -121,6 +147,7 @@ export function EntityCard({
           onToggleSelect?.();
         }}
       >
+        {tintLayers}
         {inner}
       </div>
     );
@@ -128,6 +155,7 @@ export function EntityCard({
 
   return (
     <Link to={to} className={shellClass}>
+      {tintLayers}
       {inner}
     </Link>
   );

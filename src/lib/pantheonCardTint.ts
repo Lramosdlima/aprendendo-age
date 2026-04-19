@@ -1,0 +1,16 @@
+/**
+ * Tinte leve por panteão para misturar com o fundo cinza do EntityCard (camada sob bg-zinc-900/40).
+ */
+const PANTHEON_TINT_RGBA: Record<string, string> = {
+  Grego: "rgba(25, 85, 125, 0.22)", // azul mar
+  Egípcio: "rgba(175, 135, 45, 0.2)", // amarelo deserto
+  Nórdico: "rgba(125, 32, 32, 0.2)", // vermelho sangue
+  Atlante: "rgba(22, 145, 145, 0.2)", // turquesa
+  Chinês: "rgba(95, 55, 130, 0.18)", // roxo
+  Japonês: "rgba(155, 75, 105, 0.18)", // rosa cerejeira
+  Aztecas: "rgba(165, 78, 28, 0.2)", // laranja barro
+};
+
+export function pantheonCardTint(panteao: string): string | undefined {
+  return PANTHEON_TINT_RGBA[panteao];
+}
