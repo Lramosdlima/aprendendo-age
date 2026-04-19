@@ -31,7 +31,7 @@ export function MapasPage() {
               to={`/mapas/${i}`}
               title={m.nome}
               subtitle={m.tipo}
-              meta={m.mapas_da_ranqueada === "Yes" ? "Ranqueada" : "—"}
+              meta={m.origem}
               watermarkSrc={getMapaAssetUrl(m.ingles)}
             />
           </li>

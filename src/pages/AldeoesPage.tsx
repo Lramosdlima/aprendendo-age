@@ -1,8 +1,9 @@
 import { EntityCard } from "@/components/ui/EntityCard";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { aldeoes } from "@/data/catalog";
+import { aldeoes, panteaoById } from "@/data/catalog";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 export function AldeoesPage() {
   return (
@@ -14,6 +15,7 @@ export function AldeoesPage() {
             <EntityCard
               to={`/aldeoes/${a.id}`}
               title={a.nome}
+              cardTint={pantheonCardTint(panteaoById.get(a.panteao_id)?.nome ?? "")}
               subtitle={a.panteao ? <NotionText text={a.panteao} /> : undefined}
               meta={a.ingles ? a.ingles : undefined}
               watermarkSrc={getAldeaoAssetUrl(a.ingles)}

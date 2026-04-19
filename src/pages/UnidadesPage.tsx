@@ -6,8 +6,9 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { unidades } from "@/data/catalog";
+import { panteaoById, unidades } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matches(u: (typeof unidades)[number], q: string) {
   if (!q.trim()) return true;
@@ -91,6 +92,7 @@ export function UnidadesPage() {
               <EntityCard
                 to={`/unidades/${u.id}`}
                 title={u.nome}
+                cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
                 subtitle={u.tipo ? <NotionText text={u.tipo} /> : undefined}
                 meta={<MetaNotionLine parts={[u.panteao, u.era]} />}
                 watermarkSrc={getUnidadeAssetUrl(u.ingles)}
