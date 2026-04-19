@@ -48,6 +48,8 @@ function buildBuildingSlugMap(): Map<string, string> {
 
 const buildingSlugToUrl = buildBuildingSlugMap();
 
+const mapSlugToUrl = buildSlugMap(["/assets/maps/"]);
+
 const villagerSlugToUrl = buildSlugMap(["/assets/und_villagers/"]);
 
 const CIV_SUFFIXES = ["greek", "egyptian", "norse", "atlantean", "chinese", "japanese"] as const;
@@ -101,9 +103,13 @@ const UNIDADE_INGLES_TO_SLUG: Record<string, string> = {
   Hypapist: "hypaspist",
 };
 
-/** Sem ícones por mapa no asset map — não usar imagem genérica enganosa. */
-export function getMapaAssetUrl(_ingles?: string): string | undefined {
-  return undefined;
+/** EN do `mapas.json` → `aomr_<slug>_icon` em `token_asset_map` (`/assets/maps/`). */
+const MAPA_INGLES_TO_SLUG: Record<string, string> = {};
+
+export function getMapaAssetUrl(ingles?: string): string | undefined {
+  if (!ingles?.trim()) return undefined;
+  const slug = MAPA_INGLES_TO_SLUG[ingles] ?? normalizeSlug(ingles);
+  return mapSlugToUrl.get(slug);
 }
 
 export function getUnidadeAssetUrl(ingles: string | undefined): string | undefined {
