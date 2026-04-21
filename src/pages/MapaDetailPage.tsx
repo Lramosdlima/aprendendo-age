@@ -5,6 +5,11 @@ import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { Section } from "@/components/ui/Section";
 import { mapas } from "@/data/catalog";
+
+function fmtSimNao(v: boolean | undefined): string {
+  if (v === undefined) return "—";
+  return v ? "Sim" : "Não";
+}
 import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 
 export function MapaDetailPage() {
@@ -35,11 +40,10 @@ export function MapaDetailPage() {
     >
       <Section title="Metadados">
         <div className="space-y-0">
-          <InfoRow label="Índice no JSON">{i}</InfoRow>
-          <InfoRow label="Ranqueada">{m.mapas_da_ranqueada ?? "—"}</InfoRow>
-          <InfoRow label="Saiu da ranqueada">{m.saiu_da_ranqueada ?? "—"}</InfoRow>
-          <InfoRow label="Padrão">{m.padrao ?? "—"}</InfoRow>
-          <InfoRow label="Partidas rápidas">{m.partidas_rapidas ?? "—"}</InfoRow>
+          <InfoRow label="Ranqueada">{fmtSimNao(m.mapas_da_ranqueada)}</InfoRow>
+          <InfoRow label="Saiu da ranqueada">{fmtSimNao(m.saiu_da_ranqueada)}</InfoRow>
+          <InfoRow label="Padrão">{fmtSimNao(m.padrao)}</InfoRow>
+          <InfoRow label="Partidas rápidas">{fmtSimNao(m.partidas_rapidas)}</InfoRow>
           <InfoRow label="Tipo">{m.tipo ?? "—"}</InfoRow>
           <InfoRow label="Origem">{m.origem ?? "—"}</InfoRow>
         </div>
