@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { InfoRow } from "@/components/ui/InfoRow";
+import { formatArmorPercent } from "@/lib/armorDisplay";
 import { NotionText } from "@/components/ui/NotionText";
 import {
   construcaoById,
@@ -101,10 +102,10 @@ export function UnidadeCombateBody({ u }: { u: U }) {
         {u.dps ?? "—"}
       </InfoRow>
       <InfoRow label="Armadura de corte" icon="hackarmor">
-        {u.armadura_anticorte ?? "—"}
+        {formatArmorPercent(u.armadura_anticorte)}
       </InfoRow>
       <InfoRow label="Armadura de perfuração" icon="piercearmor">
-        {u.armadura_antiperfurante ?? "—"}
+        {formatArmorPercent(u.armadura_antiperfurante)}
       </InfoRow>
       <InfoRow label="Counter de">
         {u.counter_de ? <NotionText text={u.counter_de} /> : "—"}

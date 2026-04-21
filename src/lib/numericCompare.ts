@@ -5,7 +5,7 @@ export function parseGameNumber(value: unknown): number | null {
   if (typeof value === "string") {
     const t = value.trim();
     if (t === "" || t === "—" || t === "-") return null;
-    const n = Number(t.replace(",", "."));
+    const n = Number(t.replace(/%$/u, "").replace(",", "."));
     if (Number.isFinite(n)) return n;
   }
   return null;

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import { CompareInfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
+import { formatArmorPercent } from "@/lib/armorDisplay";
 import { parseGameNumber } from "@/lib/numericCompare";
 import {
   construcaoById,
@@ -173,15 +174,15 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
       <CompareInfoRow
         label="Armadura de corte"
         icon="hackarmor"
-        left={u1.armadura_anticorte ?? "—"}
-        right={u2.armadura_anticorte ?? "—"}
+        left={formatArmorPercent(u1.armadura_anticorte)}
+        right={formatArmorPercent(u2.armadura_anticorte)}
         numericPair={numericPairFrom(u1.armadura_anticorte, u2.armadura_anticorte)}
       />
       <CompareInfoRow
         label="Armadura de perfuração"
         icon="piercearmor"
-        left={u1.armadura_antiperfurante ?? "—"}
-        right={u2.armadura_antiperfurante ?? "—"}
+        left={formatArmorPercent(u1.armadura_antiperfurante)}
+        right={formatArmorPercent(u2.armadura_antiperfurante)}
         numericPair={numericPairFrom(u1.armadura_antiperfurante, u2.armadura_antiperfurante)}
       />
       <CompareInfoRow

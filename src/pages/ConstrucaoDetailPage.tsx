@@ -14,6 +14,7 @@ import {
   unidadeById,
   unidadeSlugById,
 } from "@/data/catalog";
+import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function ConstrucaoDetailPage() {
@@ -133,13 +134,13 @@ export function ConstrucaoDetailPage() {
               {c.no_projeteis ?? "—"}
             </InfoRow>
             <InfoRow label="Armadura de corte" icon="hackarmor">
-              {c.armadura_anticorte ?? "—"}
+              {formatArmorPercent(c.armadura_anticorte)}
             </InfoRow>
             <InfoRow label="Armadura de perfuração" icon="piercearmor">
-              {c.armadura_antiperfurante ?? "—"}
+              {formatArmorPercent(c.armadura_antiperfurante)}
             </InfoRow>
             <InfoRow label="Armadura de contusão" icon="crusharmor">
-              {c.armadura_anticontucao ?? "—"}
+              {formatArmorPercent(c.armadura_anticontucao)}
             </InfoRow>
           </div>
         </Section>
