@@ -2641,6 +2641,7 @@
     "era": "Arcaica :aomr_archaic_age_icon:",
     "foco": "Sacerdotes guerreiros :aomr_type_hero_icon: & guerreiros do Noble's Hut :aomr_type_infantry_icon:",
     "era_id": 1,
+    "godpower_id": 84,
     "panteao_id": 7
   },
   {
@@ -2651,6 +2652,7 @@
     "era": "Arcaica :aomr_archaic_age_icon:",
     "foco": "Defesa 🛡️ & unidades míticas :aomr_type_myth_unit_icon:",
     "era_id": 1,
+    "godpower_id": 83,
     "panteao_id": 7
   },
   {
@@ -2661,6 +2663,7 @@
     "era": "Arcaica :aomr_archaic_age_icon:",
     "foco": "Conquista 💥 & expansão 💢",
     "era_id": 1,
+    "godpower_id": 82,
     "panteao_id": 7
   },
   {
@@ -2671,6 +2674,7 @@
     "era": "Heróica :aomr_heroic_age_icon:",
     "foco": "Tonalli & guerreiros do Noble's Hut :aomr_type_infantry_icon:",
     "era_id": 3,
+    "godpower_id": 88,
     "panteao_id": 7
   },
   {
@@ -2681,6 +2685,7 @@
     "era": "Mítica :aomr_mythic_age_icon:",
     "foco": "Economia & Great Temple :aomr_type_building_icon:",
     "era_id": 4,
+    "godpower_id": 93,
     "panteao_id": 7
   },
   {
@@ -2691,6 +2696,7 @@
     "era": "Mítica :aomr_mythic_age_icon:",
     "foco": "Unidades míticas :aomr_type_myth_unit_icon:",
     "era_id": 4,
+    "godpower_id": 92,
     "panteao_id": 7
   },
   {
@@ -2701,6 +2707,7 @@
     "era": "Heróica :aomr_heroic_age_icon:",
     "foco": "Construções :aomr_type_building_icon: & cerco :aomr_type_siege_weapon_icon:",
     "era_id": 3,
+    "godpower_id": 90,
     "panteao_id": 7
   },
   {
@@ -2711,6 +2718,7 @@
     "era": "Clássica :aomr_classical_age_icon:",
     "foco": "Venenos & maldições 💀",
     "era_id": 2,
+    "godpower_id": 86,
     "panteao_id": 7
   },
   {
@@ -2721,6 +2729,7 @@
     "era": "Clássica :aomr_classical_age_icon:",
     "foco": "Armadilhas & furtividades",
     "era_id": 2,
+    "godpower_id": 87,
     "panteao_id": 7
   },
   {
@@ -2731,6 +2740,7 @@
     "era": "Clássica :aomr_classical_age_icon:",
     "foco": "Colonos & cura ✨",
     "era_id": 2,
+    "godpower_id": 85,
     "panteao_id": 7
   },
   {
@@ -2741,6 +2751,7 @@
     "era": "Heróica :aomr_heroic_age_icon:",
     "foco": "Devoção & tecnologia ⏫",
     "era_id": 3,
+    "godpower_id": 89,
     "panteao_id": 7
   },
   {
@@ -2751,6 +2762,7 @@
     "era": "Mítica :aomr_mythic_age_icon:",
     "foco": "Sacerdotes guerreiros :aomr_type_hero_icon: & morte ☠️",
     "era_id": 4,
+    "godpower_id": 91,
     "panteao_id": 7
   }
 ]

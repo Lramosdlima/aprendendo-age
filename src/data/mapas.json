@@ -530,5 +530,55 @@
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳"
+  },
+  {
+    "nome": "Blood River Crossing",
+    "ingles": "Blood River Crossing",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Naval 🌊, Terra 🌳"
+  },
+  {
+    "nome": "Cloud Forest",
+    "ingles": "Cloud Forest",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳"
+  },
+  {
+    "nome": "Obsidian Ridge",
+    "ingles": "Obsidian Ridge",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳"
+  },
+  {
+    "nome": "Temple of the Jaguar Moon",
+    "ingles": "Temple of the Jaguar Moon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳"
+  },
+  {
+    "nome": "Valley of the Sun Serpent",
+    "ingles": "Valley of the Sun Serpent",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳"
   }
 ]
