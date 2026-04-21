@@ -1,13 +1,20 @@
+import { Fragment, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 import { CompareInfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import {
+  formatMultiplicadorTailForNotion,
   hasMultiplicadorContent,
-  multiplicadorItemsToNotionText,
+  multiplicadorCompareTones,
+  type UnidadeMultiplicadorItem,
 } from "@/lib/unidadeMultiplicador";
 import { formatArmorPercent } from "@/lib/armorDisplay";
-import { parseGameNumber } from "@/lib/numericCompare";
+import {
+  parseGameNumber,
+  toneToTextClass,
+  type CompareCellTone,
+} from "@/lib/numericCompare";
 import {
   construcaoById,
   construcaoSlugById,
@@ -95,6 +102,48 @@ function showConstrucaoRow(u1: U, u2: U) {
 
 function numericPairFrom(a: unknown, b: unknown) {
   return { left: parseGameNumber(a), right: parseGameNumber(b) };
+}
+
+function MultiplicadorCompareSegment({
+  item,
+  tone,
+}: {
+  item: UnidadeMultiplicadorItem;
+  tone: CompareCellTone;
+}) {
+  const toneCls = toneToTextClass(tone);
+  const icon = (item.icon ?? "").trim();
+
+  if (!icon) {
+    return (
+      <span className={toneCls}>
+        <NotionText text={item.value} />
+      </span>
+    );
+  }
+
+  return (
+    <span className="inline align-baseline">
+      <NotionText text={`:${icon}:`} />
+      <span className={toneCls}>{formatMultiplicadorTailForNotion(item.value)}</span>
+    </span>
+  );
+}
+
+function renderMultiplicadorCompareSide(
+  items: UnidadeMultiplicadorItem[],
+  tones: CompareCellTone[],
+): ReactNode {
+  return (
+    <>
+      {items.map((item, i) => (
+        <Fragment key={i}>
+          {i > 0 ? <span className="text-zinc-500"> || </span> : null}
+          <MultiplicadorCompareSegment item={item} tone={tones[i] ?? "default"} />
+        </Fragment>
+      ))}
+    </>
+  );
 }
 
 export function UnidadeVisaoGeralCompare({ u1, u2 }: { u1: U; u2: U }) {
@@ -194,23 +243,24 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
         left={u1.counter_de ? <NotionText text={u1.counter_de} /> : "—"}
         right={u2.counter_de ? <NotionText text={u2.counter_de} /> : "—"}
       />
-      <CompareInfoRow
-        label="Multiplicador"
-        left={
-          hasMultiplicadorContent(u1.multiplicador) ? (
-            <NotionText text={multiplicadorItemsToNotionText(u1.multiplicador)} />
-          ) : (
-            "—"
-          )
-        }
-        right={
-          hasMultiplicadorContent(u2.multiplicador) ? (
-            <NotionText text={multiplicadorItemsToNotionText(u2.multiplicador)} />
-          ) : (
-            "—"
-          )
-        }
-      />
+      {(() => {
+        const leftItems: UnidadeMultiplicadorItem[] =
+          hasMultiplicadorContent(u1.multiplicador) && u1.multiplicador ? u1.multiplicador : [];
+        const rightItems: UnidadeMultiplicadorItem[] =
+          hasMultiplicadorContent(u2.multiplicador) && u2.multiplicador ? u2.multiplicador : [];
+        const { left: tonesL, right: tonesR } = multiplicadorCompareTones(leftItems, rightItems);
+        return (
+          <CompareInfoRow
+            label="Multiplicador"
+            left={
+              leftItems.length ? renderMultiplicadorCompareSide(leftItems, tonesL) : "—"
+            }
+            right={
+              rightItems.length ? renderMultiplicadorCompareSide(rightItems, tonesR) : "—"
+            }
+          />
+        );
+      })()}
       <CompareInfoRow
         label="Forte contra"
         left={u1.forte_contra ? <NotionText text={u1.forte_contra} /> : "—"}

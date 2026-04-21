@@ -3,6 +3,12 @@
  * no formato esperado por {@link NotionText} (ícones `:token:`).
  */
 
+import {
+  compareNumericTones,
+  parseGameNumber,
+  type CompareCellTone,
+} from "@/lib/numericCompare";
+
 export type UnidadeMultiplicadorItem = {
   type: string;
   /** Nome do token sem `:` (ex.: `aomr_type_infantry_icon`). Vazio = segmento só texto/emojis. */
@@ -87,14 +93,14 @@ export function multiplicadorItemsToNotionText(
       continue;
     }
 
-    const tail = formatTailForNotion(value);
+    const tail = formatMultiplicadorTailForNotion(value);
     parts.push(`:${icon}:${tail}`);
   }
   return parts.join(" || ");
 }
 
 /** Número canónico (`1.25`) → `1,25x` como no dataset antigo; resto mantém-se. */
-function formatTailForNotion(value: string): string {
+export function formatMultiplicadorTailForNotion(value: string): string {
   const v = value.trim();
   if (!v) return "";
 
@@ -102,4 +108,59 @@ function formatTailForNotion(value: string): string {
     return `${v.replace(".", ",")}x`;
   }
   return v;
+}
+
+/**
+ * Extrai um único número para comparação entre unidades (mesmo `type` nos dois lados).
+ * Usa o valor completo quando já é parseável; senão tenta `Nx…` ou o primeiro número do texto.
+ */
+export function parseMultiplicadorCompareNumber(value: string): number | null {
+  const t = (value ?? "").trim();
+  if (!t) return null;
+
+  const direct = parseGameNumber(t);
+  if (direct != null) return direct;
+
+  const xHead = /^(\d+(?:[.,]\d+)?)\s*[xX]/.exec(t);
+  if (xHead) return parseGameNumber(xHead[1]);
+
+  const lead = /^(\d+(?:[.,]\d+)?)/.exec(t);
+  if (lead) return parseGameNumber(lead[1]);
+
+  return null;
+}
+
+/**
+ * Pareamento por `type` (FIFO em cada tipo): quando há par no outro lado e ambos os
+ * valores resolvem a um número, aplica a mesma lógica que {@link compareNumericTones}
+ * (maior = melhor, como DPS / multiplicador de dano).
+ */
+export function multiplicadorCompareTones(
+  left: UnidadeMultiplicadorItem[],
+  right: UnidadeMultiplicadorItem[],
+): { left: CompareCellTone[]; right: CompareCellTone[] } {
+  const toneL: CompareCellTone[] = Array.from({ length: left.length }, () => "default");
+  const toneR: CompareCellTone[] = Array.from({ length: right.length }, () => "default");
+
+  const rightQueues = new Map<string, number[]>();
+  for (let ri = 0; ri < right.length; ri++) {
+    const ty = right[ri].type;
+    if (!rightQueues.has(ty)) rightQueues.set(ty, []);
+    rightQueues.get(ty)!.push(ri);
+  }
+
+  for (let li = 0; li < left.length; li++) {
+    const q = rightQueues.get(left[li].type);
+    if (!q?.length) continue;
+    const ri = q.shift()!;
+    const nl = parseMultiplicadorCompareNumber(left[li].value);
+    const nr = parseMultiplicadorCompareNumber(right[ri].value);
+    if (nl == null || nr == null) continue;
+
+    const { left: lt, right: rt } = compareNumericTones(nl, nr);
+    toneL[li] = lt;
+    toneR[ri] = rt;
+  }
+
+  return { left: toneL, right: toneR };
 }
