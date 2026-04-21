@@ -4,8 +4,8 @@
 
 export type UnidadeTipoItem = {
   type: string;
-  /** Nome do token sem `:`; vazio = só texto (sem ícone ao lado). */
-  icon: string;
+  /** Nome do token sem `:`; omitido ou vazio = só texto (sem ícone ao lado). */
+  icon?: string;
 };
 
 export function hasTipoContent(t: UnidadeTipoItem[] | null | undefined): boolean {

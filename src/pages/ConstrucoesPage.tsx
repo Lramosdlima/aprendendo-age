@@ -1,18 +1,20 @@
 import { useMemo, useState } from "react";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
+import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
-import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { construcoes, construcaoSlugById } from "@/data/catalog";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { hasTipoContent, tipoItemsToSearchBlob } from "@/lib/unidadeTipo";
 
 function matches(c: (typeof construcoes)[number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  return [c.nome, c.tipo ?? "", c.panteao ?? "", c.era ?? "", c.ingles ?? ""].join(" ").toLowerCase().includes(s);
+  const tipoBlob = hasTipoContent(c.tipo) ? tipoItemsToSearchBlob(c.tipo) : "";
+  return [c.nome, tipoBlob, c.panteao ?? "", c.era ?? "", c.ingles ?? ""].join(" ").toLowerCase().includes(s);
 }
 
 export function ConstrucoesPage() {
@@ -35,7 +37,7 @@ export function ConstrucoesPage() {
             <EntityCard
               to={`/construcoes/${construcaoSlugById.get(c.id) ?? c.id}`}
               title={c.nome}
-              subtitle={c.tipo ? <NotionText text={c.tipo} /> : undefined}
+              subtitle={hasTipoContent(c.tipo) ? <UnidadeTipoLine tipo={c.tipo} colored /> : undefined}
               meta={<MetaNotionLine parts={[c.panteao, c.era]} />}
               watermarkSrc={getConstrucaoAssetUrl(c.ingles)}
             />

@@ -2,7 +2,11 @@
   {
     "id": 1,
     "nome": "Centro Urbano (Grego)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -51,7 +55,11 @@
   {
     "id": 3,
     "nome": "Centro Urbano (Egípcio)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -91,7 +99,11 @@
   {
     "id": 4,
     "nome": "Centro Urbano (Nórdico)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -124,7 +136,11 @@
   {
     "id": 5,
     "nome": "Centro Urbano (Atlante)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -150,7 +166,11 @@
   {
     "id": 6,
     "nome": "Centro Urbano (Chinês)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -180,7 +200,11 @@
   {
     "id": 7,
     "nome": "Centro Urbano (Japonês)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -211,7 +235,11 @@
   {
     "id": 8,
     "nome": "Casa",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:, Egípcio :aomr_pantheon_egyptians_icon:, Grego :aomr_pantheon_greeks_icon:, Japonês :aomr_pantheon_japanese_icon:, Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 450,
     "dps": 0,
@@ -232,7 +260,11 @@
   {
     "id": 11,
     "nome": "Mansão",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 800,
     "dps": 0,
@@ -251,7 +283,14 @@
   {
     "id": 14,
     "nome": "Armazém",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -279,7 +318,14 @@
   {
     "id": 15,
     "nome": "Celeiro (Grego)",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -306,7 +352,14 @@
   {
     "id": 16,
     "nome": "Campo de Mineração",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:, Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -329,7 +382,14 @@
   {
     "id": 17,
     "nome": "Campo Madeireiro",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -353,7 +413,14 @@
   {
     "id": 18,
     "nome": "Celeiro (Egípcio)",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -379,7 +446,14 @@
   {
     "id": 19,
     "nome": "Guilda Econômica",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -405,7 +479,14 @@
   {
     "id": 20,
     "nome": "Silo",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -431,7 +512,15 @@
   {
     "id": 21,
     "nome": "Templo (Grego)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -504,7 +593,15 @@
   {
     "id": 22,
     "nome": "Templo (Egípcio)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -552,7 +649,15 @@
   {
     "id": 23,
     "nome": "Templo (Nórdico)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
@@ -606,7 +711,15 @@
   {
     "id": 24,
     "nome": "Templo (Atlante)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -659,7 +772,15 @@
   {
     "id": 25,
     "nome": "Templo (Chinês)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -709,7 +830,15 @@
   {
     "id": 26,
     "nome": "Templo (Japonês)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -759,7 +888,11 @@
   {
     "id": 27,
     "nome": "Armaria (Grega)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -796,7 +929,11 @@
   {
     "id": 28,
     "nome": "Armaria (Egípcio)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -823,7 +960,11 @@
   {
     "id": 29,
     "nome": "Armaria (Nórdico)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
@@ -844,7 +985,11 @@
   {
     "id": 31,
     "nome": "Armaria (Atlante)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -869,7 +1014,11 @@
   {
     "id": 32,
     "nome": "Armaria (Chinês)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -894,7 +1043,11 @@
   {
     "id": 33,
     "nome": "Armaria (Japonês)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -918,7 +1071,11 @@
   {
     "id": 34,
     "nome": "Armaria de Anões",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
@@ -944,7 +1101,12 @@
   {
     "id": 35,
     "nome": "Academia Militar",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -978,7 +1140,12 @@
   {
     "id": 36,
     "nome": "Campo de Arqueiros",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1013,7 +1180,12 @@
   {
     "id": 37,
     "nome": "Estábulo",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1047,7 +1219,12 @@
   {
     "id": 38,
     "nome": "Quartel",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1094,7 +1271,12 @@
   {
     "id": 39,
     "nome": "Casa Comunal",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
@@ -1136,7 +1318,12 @@
   {
     "id": 40,
     "nome": "Grande Salão",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1620,
     "dps": 0,
@@ -1177,7 +1364,12 @@
   {
     "id": 41,
     "nome": "Quartel Militar",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1217,7 +1409,12 @@
   {
     "id": 42,
     "nome": "Contralquartel",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1254,7 +1451,12 @@
   {
     "id": 43,
     "nome": "Campo Militar",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1294,7 +1496,12 @@
   {
     "id": 44,
     "nome": "Academia Imperial",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1333,7 +1540,12 @@
   {
     "id": 45,
     "nome": "Oficina de Máquina",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1366,7 +1578,15 @@
   {
     "id": 46,
     "nome": "Doca (Grego)",
-    "tipo": "Militar :aomr_type_infantry_icon:, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1600,
     "dps": 0,
@@ -1386,7 +1606,15 @@
   {
     "id": 47,
     "nome": "Doca (Egípcio)",
-    "tipo": "Militar :aomr_type_infantry_icon:, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1600,
     "dps": 0,
@@ -1406,7 +1634,15 @@
   {
     "id": 48,
     "nome": "Doca (Nórdico)",
-    "tipo": "Militar :aomr_type_infantry_icon:, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1440,
     "dps": 0,
@@ -1426,7 +1662,15 @@
   {
     "id": 49,
     "nome": "Doca (Atlante)",
-    "tipo": "Militar :aomr_type_infantry_icon:, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1600,
     "dps": 0,
@@ -1446,7 +1690,15 @@
   {
     "id": 50,
     "nome": "Doca (Chinês)",
-    "tipo": "Militar :aomr_type_infantry_icon:, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1600,
     "dps": 0,
@@ -1466,7 +1718,11 @@
   {
     "id": 51,
     "nome": "Mercado (Grego)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1491,7 +1747,11 @@
   {
     "id": 52,
     "nome": "Mercado (Egípcio)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1512,7 +1772,11 @@
   {
     "id": 53,
     "nome": "Mercado (Nórdico)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
@@ -1531,7 +1795,11 @@
   {
     "id": 54,
     "nome": "Mercado (Atlante)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1550,7 +1818,11 @@
   {
     "id": 55,
     "nome": "Mercado (Chinês)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1571,7 +1843,11 @@
   {
     "id": 56,
     "nome": "Mercado (Japonês)",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1590,7 +1866,15 @@
   {
     "id": 57,
     "nome": "Fortaleza",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 3000,
     "dps": 0,
@@ -1628,7 +1912,15 @@
   {
     "id": 58,
     "nome": "Fortaleza Migdol",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 3250,
     "dps": 0,
@@ -1670,7 +1962,15 @@
   {
     "id": 59,
     "nome": "Forte da Colina",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 2700,
     "dps": 0,
@@ -1704,7 +2004,15 @@
   {
     "id": 60,
     "nome": "Palácio",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 3000,
     "dps": 0,
@@ -1737,7 +2045,15 @@
   {
     "id": 61,
     "nome": "Baolei",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 2500,
     "dps": 0,
@@ -1771,7 +2087,15 @@
   {
     "id": 62,
     "nome": "Oficina de Cerco",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1797,7 +2121,12 @@
   {
     "id": 63,
     "nome": "Dojo",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1830,7 +2159,14 @@
   {
     "id": 64,
     "nome": "Santuário",
-    "tipo": "Recurso ⚒, Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Recurso ⚒"
+      },
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 600,
     "dps": 0,
@@ -1860,7 +2196,12 @@
   {
     "id": 65,
     "nome": "Posto de Vigia",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1894,7 +2235,12 @@
   {
     "id": 66,
     "nome": "Estábulo",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -1925,7 +2271,14 @@
   {
     "id": 67,
     "nome": "Moinho de Água",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -1952,7 +2305,15 @@
   {
     "id": 68,
     "nome": "Castelo",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 3000,
     "dano_perfurante": 9,
@@ -1988,7 +2349,11 @@
   {
     "id": 69,
     "nome": "Muralha de Madeira",
-    "tipo": "Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Geral",
     "pontos_de_vida": 300,
     "dps": 0,
@@ -2011,7 +2376,14 @@
   {
     "id": 70,
     "nome": "Torre de Sentinela",
-    "tipo": "Proteção 🧱, Visão 👁‍🗨",
+    "tipo": [
+      {
+        "type": "Proteção 🧱"
+      },
+      {
+        "type": "Visão 👁‍🗨"
+      }
+    ],
     "panteao": "Geral",
     "pontos_de_vida": 600,
     "dano_perfurante": 8,
@@ -2045,7 +2417,11 @@
   {
     "id": 71,
     "nome": "Maravilha",
-    "tipo": "Utilidade ⏫",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
     "panteao": "Geral",
     "pontos_de_vida": 9999,
     "dps": 0,
@@ -2063,7 +2439,14 @@
   {
     "id": 72,
     "nome": "Carro de Boi",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "dps": 0,
     "custo": 0,
@@ -2077,7 +2460,14 @@
   {
     "id": 73,
     "nome": "Calpulli",
-    "tipo": "Básico, Recurso ⚒",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
@@ -2098,7 +2488,12 @@
   {
     "id": 74,
     "nome": "War Hut",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -2122,7 +2517,12 @@
   {
     "id": 75,
     "nome": "Noble's Hut",
-    "tipo": "Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -2147,7 +2547,15 @@
   {
     "id": 76,
     "nome": "Templo (Asteca)",
-    "tipo": "Básico, Militar :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
@@ -2173,7 +2581,15 @@
   {
     "id": 77,
     "nome": "Great Temple",
-    "tipo": "Militar :aomr_type_infantry_icon:, Proteção 🧱",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 3000,
     "dano_perfurante": 12,
@@ -2211,7 +2627,11 @@
   {
     "id": 79,
     "nome": "Centro Urbano (Asteca)",
-    "tipo": "Básico",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
@@ -2238,7 +2658,9 @@
       "29500f30e21180a0963ec1cf50203f4f",
       "29500f30e21180888b25f958d43e6616"
     ],
-    "unidades_ids": [160],
+    "unidades_ids": [
+      160
+    ],
     "panteao_id": 7
   }
 ]

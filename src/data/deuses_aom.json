@@ -2639,6 +2639,7 @@
     "panteao": "Astecas",
     "hierarquia": "Maior",
     "era": "Arcaica :aomr_archaic_age_icon:",
+    "foco": "Sacerdotes guerreiros :aomr_type_hero_icon: & guerreiros do Noble's Hut :aomr_type_infantry_icon:",
     "era_id": 1,
     "panteao_id": 7
   },
@@ -2648,6 +2649,7 @@
     "panteao": "Astecas",
     "hierarquia": "Maior",
     "era": "Arcaica :aomr_archaic_age_icon:",
+    "foco": "Defesa 🛡️ & unidades míticas :aomr_type_myth_unit_icon:",
     "era_id": 1,
     "panteao_id": 7
   },
@@ -2657,6 +2659,7 @@
     "panteao": "Astecas",
     "hierarquia": "Maior",
     "era": "Arcaica :aomr_archaic_age_icon:",
+    "foco": "Conquista 💥 & expansão 💢",
     "era_id": 1,
     "panteao_id": 7
   },
@@ -2665,6 +2668,9 @@
     "nome": "Itzpapalotl",
     "panteao": "Astecas",
     "hierarquia": "Menor",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "foco": "Tonalli & guerreiros do Noble's Hut :aomr_type_infantry_icon:",
+    "era_id": 3,
     "panteao_id": 7
   },
   {
@@ -2672,6 +2678,9 @@
     "nome": "Tlaloc",
     "panteao": "Astecas",
     "hierarquia": "Menor",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "foco": "Economia & Great Temple :aomr_type_building_icon:",
+    "era_id": 4,
     "panteao_id": 7
   },
   {
@@ -2679,6 +2688,9 @@
     "nome": "Xolotl",
     "panteao": "Astecas",
     "hierarquia": "Menor",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "foco": "Unidades míticas :aomr_type_myth_unit_icon:",
+    "era_id": 4,
     "panteao_id": 7
   },
   {
@@ -2686,6 +2698,59 @@
     "nome": "Coatlicue",
     "panteao": "Astecas",
     "hierarquia": "Menor",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "foco": "Construções :aomr_type_building_icon: & cerco :aomr_type_siege_weapon_icon:",
+    "era_id": 3,
+    "panteao_id": 7
+  },
+  {
+    "id": 89,
+    "nome": "Malinalxochitl",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "foco": "Venenos & maldições 💀",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 90,
+    "nome": "Huehuecóyotl",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "foco": "Armadilhas & furtividades",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 91,
+    "nome": "Patecatl",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "foco": "Colonos & cura ✨",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 92,
+    "nome": "Coyolxauhqui",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "foco": "Devoção & tecnologia ⏫",
+    "era_id": 3,
+    "panteao_id": 7
+  },
+  {
+    "id": 93,
+    "nome": "Mictlantecuhtli",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "foco": "Sacerdotes guerreiros :aomr_type_hero_icon: & morte ☠️",
+    "era_id": 4,
     "panteao_id": 7
   }
 ]

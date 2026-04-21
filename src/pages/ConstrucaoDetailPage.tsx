@@ -5,6 +5,7 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
+import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import {
   construcaoBySlug,
   eraById,
@@ -16,6 +17,7 @@ import {
 } from "@/data/catalog";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { hasTipoContent } from "@/lib/unidadeTipo";
 
 export function ConstrucaoDetailPage() {
   const { slug } = useParams();
@@ -61,7 +63,11 @@ export function ConstrucaoDetailPage() {
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Classificação">
           <div className="space-y-0">
-            {c.tipo ? <InfoRow label="Tipo">{c.tipo}</InfoRow> : null}
+            {hasTipoContent(c.tipo) ? (
+              <InfoRow label="Tipo">
+                <UnidadeTipoLine tipo={c.tipo} colored />
+              </InfoRow>
+            ) : null}
             {panteao ? (
               <InfoRow label="Panteão">
                 <Link
