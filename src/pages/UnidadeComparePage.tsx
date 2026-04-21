@@ -50,7 +50,7 @@ export function UnidadeComparePage() {
 
       <div
         className={cn(
-          "sticky top-0 z-20 mb-8 -mx-4 px-4 py-2.5 md:-mx-10 md:px-10",
+          "sticky top-16 z-20 mb-8 -mx-4 px-4 py-2.5 md:top-0 md:-mx-10 md:px-10",
           "border-b border-transparent transition-[background-color,box-shadow,backdrop-filter,border-color] duration-200 ease-out",
           compareHeaderScrolled
             ? "border-zinc-800/90 bg-zinc-950/93 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.82)] backdrop-blur-md ring-1 ring-black/45"
