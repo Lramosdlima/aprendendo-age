@@ -2668,50 +2668,6 @@
   },
   {
     "id": 85,
-    "nome": "Itzpapalotl",
-    "panteao": "Astecas",
-    "hierarquia": "Menor",
-    "era": "Heróica :aomr_heroic_age_icon:",
-    "foco": "Tonalli & guerreiros do Noble's Hut :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "godpower_id": 88,
-    "panteao_id": 7
-  },
-  {
-    "id": 86,
-    "nome": "Tlaloc",
-    "panteao": "Astecas",
-    "hierarquia": "Menor",
-    "era": "Mítica :aomr_mythic_age_icon:",
-    "foco": "Economia & Great Temple :aomr_type_building_icon:",
-    "era_id": 4,
-    "godpower_id": 93,
-    "panteao_id": 7
-  },
-  {
-    "id": 87,
-    "nome": "Xolotl",
-    "panteao": "Astecas",
-    "hierarquia": "Menor",
-    "era": "Mítica :aomr_mythic_age_icon:",
-    "foco": "Unidades míticas :aomr_type_myth_unit_icon:",
-    "era_id": 4,
-    "godpower_id": 92,
-    "panteao_id": 7
-  },
-  {
-    "id": 88,
-    "nome": "Coatlicue",
-    "panteao": "Astecas",
-    "hierarquia": "Menor",
-    "era": "Heróica :aomr_heroic_age_icon:",
-    "foco": "Construções :aomr_type_building_icon: & cerco :aomr_type_siege_weapon_icon:",
-    "era_id": 3,
-    "godpower_id": 90,
-    "panteao_id": 7
-  },
-  {
-    "id": 89,
     "nome": "Malinalxochitl",
     "panteao": "Astecas",
     "hierarquia": "Menor",
@@ -2722,7 +2678,7 @@
     "panteao_id": 7
   },
   {
-    "id": 90,
+    "id": 86,
     "nome": "Huehuecóyotl",
     "panteao": "Astecas",
     "hierarquia": "Menor",
@@ -2733,7 +2689,7 @@
     "panteao_id": 7
   },
   {
-    "id": 91,
+    "id": 87,
     "nome": "Patecatl",
     "panteao": "Astecas",
     "hierarquia": "Menor",
@@ -2744,7 +2700,29 @@
     "panteao_id": 7
   },
   {
-    "id": 92,
+    "id": 88,
+    "nome": "Itzpapalotl",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "foco": "Tonalli & guerreiros do Noble's Hut :aomr_type_infantry_icon:",
+    "era_id": 3,
+    "godpower_id": 88,
+    "panteao_id": 7
+  },
+  {
+    "id": 89,
+    "nome": "Coatlicue",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "foco": "Construções :aomr_type_building_icon: & cerco :aomr_type_siege_weapon_icon:",
+    "era_id": 3,
+    "godpower_id": 90,
+    "panteao_id": 7
+  },
+  {
+    "id": 90,
     "nome": "Coyolxauhqui",
     "panteao": "Astecas",
     "hierarquia": "Menor",
@@ -2752,6 +2730,28 @@
     "foco": "Devoção & tecnologia ⏫",
     "era_id": 3,
     "godpower_id": 89,
+    "panteao_id": 7
+  },
+  {
+    "id": 91,
+    "nome": "Tlaloc",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "foco": "Economia & Great Temple :aomr_type_building_icon:",
+    "era_id": 4,
+    "godpower_id": 93,
+    "panteao_id": 7
+  },
+  {
+    "id": 92,
+    "nome": "Xolotl",
+    "panteao": "Astecas",
+    "hierarquia": "Menor",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "foco": "Unidades míticas :aomr_type_myth_unit_icon:",
+    "era_id": 4,
+    "godpower_id": 92,
     "panteao_id": 7
   },
   {

@@ -1347,7 +1347,7 @@
     "custo_repetir": 150,
     "descricao_resumida": "Target a location to spawn a sacred Agave. Gather it for Food or let its sacred energy heal your nearby units.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 91,
+    "god_id": 87,
     "era_id": 2,
     "panteao_id": 7
   },
@@ -1361,7 +1361,7 @@
     "custo_repetir": 100,
     "descricao_resumida": "Target a location to summon an Infested Nest that periodically spawns Scorpions that obey your commands.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 89,
+    "god_id": 85,
     "era_id": 2,
     "panteao_id": 7
   },
@@ -1375,7 +1375,7 @@
     "custo_repetir": 125,
     "descricao_resumida": "Target a group of enemies to put them to sleep. Any damage dealt to sleeping units will wake them up immediately.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 90,
+    "god_id": 86,
     "era_id": 2,
     "panteao_id": 7
   },
@@ -1389,7 +1389,7 @@
     "custo_repetir": 150,
     "descricao_resumida": "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 85,
+    "god_id": 88,
     "era_id": 3,
     "panteao_id": 7
   },
@@ -1403,7 +1403,7 @@
     "custo_repetir": 250,
     "descricao_resumida": "Target a location to bombard enemies with falling stars. Tzitzimitl star demons occasionally emerge from the craters to fight for you.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 92,
+    "god_id": 90,
     "era_id": 3,
     "panteao_id": 7
   },
@@ -1417,7 +1417,7 @@
     "custo_repetir": 150,
     "descricao_resumida": "Target a location to summon Tlaltecuhtli, the Earth Monster. It erupts from the ground repeatedly to swallow groups of units, trapping them underground before regurgitating survivors.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 88,
+    "god_id": 89,
     "era_id": 3,
     "panteao_id": 7
   },
@@ -1445,7 +1445,7 @@
     "custo_repetir": 350,
     "descricao_resumida": "Target an area to corrupt the earth. Defeated enemies here will be reborn as vile abominations that fight for you.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 87,
+    "god_id": 92,
     "era_id": 4,
     "panteao_id": 7
   },
@@ -1458,7 +1458,7 @@
     "custo_repetir": 350,
     "descricao_resumida": "Target a location to call down the Pillar of Tlálocan, obliterating fortifications on impact. The statue remains to defend the area with water strikes until destroyed.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "god_id": 86,
+    "god_id": 91,
     "era_id": 4,
     "panteao_id": 7
   }

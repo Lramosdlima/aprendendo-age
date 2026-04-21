@@ -158,7 +158,7 @@
   {
     "id": 7,
     "nome": "Astecas",
-    "deuses": "Quetzalcoatl, Tezcatlipoca, Huitzilopochtli, Itzpapalotl, Tlaloc, Xolotl, Coatlicue, Malinalxochitl, Huehuecóyotl, Patecatl, Coyolxauhqui, Mictlantecuhtli",
+    "deuses": "Quetzalcoatl, Tezcatlipoca, Huitzilopochtli, Malinalxochitl, Huehuecóyotl, Patecatl, Itzpapalotl, Coatlicue, Coyolxauhqui, Tlaloc, Xolotl, Mictlantecuhtli",
     "deuses_ids": [
       82,
       83,
