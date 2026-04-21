@@ -18,6 +18,22 @@ function matchesStart(
   return hay.includes(needle);
 }
 
+const godTagClass =
+  "inline-flex max-w-full shrink-0 items-center rounded border border-amber-600/45 bg-amber-500/10 px-1.5 py-0.5 text-sm font-medium leading-snug text-amber-200/90 [word-break:break-word]";
+
+function StartGodTags({ names }: { names: string[] }) {
+  if (!names.length) return null;
+  return (
+    <span className="inline-flex max-w-full flex-wrap items-center gap-1 align-top">
+      {names.map((name, i) => (
+        <span key={`${name}-${i}`} className={godTagClass}>
+          {name}
+        </span>
+      ))}
+    </span>
+  );
+}
+
 export function StartsPage() {
   const [q, setQ] = useState("");
   const filtered = useMemo(() => startsBuildOrder.filter((s) => matchesStart(s, q)), [q]);
@@ -44,7 +60,8 @@ export function StartsPage() {
               className="h-full"
               to={`/starts/${s.slug}`}
               title={<NotionText text={s.titulo} />}
-              subtitle={s.god.join(", ")}
+              subtitleTag={false}
+              subtitle={s.god.length ? <StartGodTags names={s.god} /> : undefined}
               cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : undefined}
               meta={
                 <span
