@@ -41,7 +41,7 @@ function renderPanteaoCell(u: U) {
         to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
         className="text-amber-200 underline-offset-2 hover:underline"
       >
-        {panteao.nome}
+        {u.panteao?.trim() ? <NotionText text={u.panteao} /> : panteao.nome}
       </Link>
     );
   }
@@ -62,7 +62,7 @@ function renderEraCell(u: U) {
   if (era) {
     return (
       <Link to={`/eras/${eraSlugById.get(era.id) ?? era.id}`} className="text-amber-200 underline-offset-2 hover:underline">
-        {era.nome}
+        {u.era?.trim() ? <NotionText text={u.era} /> : era.nome}
       </Link>
     );
   }

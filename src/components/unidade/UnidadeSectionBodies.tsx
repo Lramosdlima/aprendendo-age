@@ -50,7 +50,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
             to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
             className="text-amber-200 underline-offset-2 hover:underline"
           >
-            {panteao.nome}
+            {u.panteao?.trim() ? <NotionText text={u.panteao} /> : panteao.nome}
           </Link>
         </InfoRow>
       ) : u.panteao ? (
@@ -64,7 +64,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
             to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
             className="text-amber-200 underline-offset-2 hover:underline"
           >
-            {era.nome}
+            {u.era?.trim() ? <NotionText text={u.era} /> : era.nome}
           </Link>
         </InfoRow>
       ) : u.era ? (
