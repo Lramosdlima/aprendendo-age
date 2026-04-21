@@ -36,8 +36,8 @@ export function HomePage() {
   return (
     <div>
       <PageHeader
-        title="Referência AoM"
-        description="Conteúdo exportado do Notion em JSON estático — navegue por panteões, deuses, eras, unidades e o restante da base."
+        title="Aprendendo Age"
+        description="Fala galeeera!! Aqui é o Scooby Maníaco e fiz esse site a princípio para estudo pessoal! Mas com tempo vi o quão bacana é compartilhar esse conhecimento para toda comunidade!  Foi e ainda é trabalhoso manter ele! Mas vale a pena cada comentário e carinho de cada um de vocês! Valeu demais!"
       />
       <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {tiles.map((t) => (
