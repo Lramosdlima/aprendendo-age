@@ -12,6 +12,7 @@ import {
   tecnologias,
   unidades,
 } from "@/data/catalog";
+import { AppBanner } from "@/components/ui/AppBanner";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 const tiles = [
@@ -38,6 +39,12 @@ export function HomePage() {
       <PageHeader
         title="Aprendendo Age"
         description="Fala galeeera!! Aqui é o Scooby Maníaco e fiz esse site a princípio para estudo pessoal! Mas com tempo vi o quão bacana é compartilhar esse conhecimento para toda comunidade!  Foi e ainda é trabalhoso manter ele! Mas vale a pena cada comentário e carinho de cada um de vocês! Valeu demais!"
+      />
+      <AppBanner
+        type="Alert"
+        title="Bem vindo ao mais novo site Aprendendo Age!"
+        description="Estamos em fase de desenvolvimento para melhorar cada vez mais nosso querido site. Alguns recursos ainda estão sendo atualizados e ainda não se encontram aqui! Por favor, paciência que em breve teremos tudo aqui de volta!! Valeu galera!"
+        footer="Assinado: Scooby!"
       />
       <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {tiles.map((t) => (
