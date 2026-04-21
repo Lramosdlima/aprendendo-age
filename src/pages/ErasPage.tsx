@@ -1,6 +1,6 @@
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { eras } from "@/data/catalog";
+import { eras, eraSlugById } from "@/data/catalog";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 
 export function ErasPage() {
@@ -11,7 +11,7 @@ export function ErasPage() {
         {eras.map((e) => (
           <li key={e.id}>
             <EntityCard
-              to={`/eras/${e.id}`}
+              to={`/eras/${eraSlugById.get(e.id) ?? e.id}`}
               title={e.nome}
               subtitle={e.ingles ? `Inglês: ${e.ingles}` : undefined}
               meta={

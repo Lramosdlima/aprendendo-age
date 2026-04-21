@@ -5,12 +5,12 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { construcaoById, eraById } from "@/data/catalog";
+import { construcaoById, construcaoSlugById, eraBySlug } from "@/data/catalog";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 
 export function EraDetailPage() {
-  const { id } = useParams();
-  const e = eraById.get(Number(id));
+  const { slug } = useParams();
+  const e = slug ? eraBySlug.get(slug) : undefined;
 
   if (!e) {
     return (
@@ -30,7 +30,11 @@ export function EraDetailPage() {
     .map((cid) => {
       const c = construcaoById.get(cid);
       return c ? (
-        <Link key={cid} to={`/construcoes/${cid}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link
+          key={cid}
+          to={`/construcoes/${construcaoSlugById.get(cid) ?? cid}`}
+          className="text-amber-200 underline-offset-2 hover:underline"
+        >
           {c.nome}
         </Link>
       ) : (

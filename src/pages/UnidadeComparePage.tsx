@@ -4,13 +4,13 @@ import { UnidadeCombateBody, UnidadeCustoBody, UnidadeVisaoGeralBody } from "@/c
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { unidadeById } from "@/data/catalog";
+import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function UnidadeComparePage() {
-  const { idA, idB } = useParams();
-  const u1 = unidadeById.get(Number(idA));
-  const u2 = unidadeById.get(Number(idB));
+  const { slugA, slugB } = useParams();
+  const u1 = slugA ? unidadeBySlug.get(slugA) : undefined;
+  const u2 = slugB ? unidadeBySlug.get(slugB) : undefined;
 
   if (!u1 || !u2) {
     return (

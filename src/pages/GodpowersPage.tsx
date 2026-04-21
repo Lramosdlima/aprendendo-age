@@ -4,7 +4,7 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { godpowers, panteaoById } from "@/data/catalog";
+import { godpowers, godpowerSlugById, panteaoById } from "@/data/catalog";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
@@ -26,7 +26,7 @@ export function GodpowersPage() {
         {filtered.map((g) => (
           <li key={g.id}>
             <EntityCard
-              to={`/poderes/${g.id}`}
+              to={`/poderes/${godpowerSlugById.get(g.id) ?? g.id}`}
               title={g.nome}
               cardTint={pantheonCardTint(panteaoById.get(g.panteao_id)?.nome ?? "")}
               subtitle={g.descricao_resumida}

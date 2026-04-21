@@ -5,12 +5,20 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { construcaoById, eraById, panteaoById, unidadeById } from "@/data/catalog";
+import {
+  construcaoBySlug,
+  eraById,
+  eraSlugById,
+  panteaoById,
+  panteaoSlugById,
+  unidadeById,
+  unidadeSlugById,
+} from "@/data/catalog";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function ConstrucaoDetailPage() {
-  const { id } = useParams();
-  const c = construcaoById.get(Number(id));
+  const { slug } = useParams();
+  const c = slug ? construcaoBySlug.get(slug) : undefined;
 
   if (!c) {
     return (
@@ -29,7 +37,11 @@ export function ConstrucaoDetailPage() {
     .map((uid) => {
       const u = unidadeById.get(uid);
       return u ? (
-        <Link key={uid} to={`/unidades/${uid}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link
+          key={uid}
+          to={`/unidades/${unidadeSlugById.get(uid) ?? uid}`}
+          className="text-amber-200 underline-offset-2 hover:underline"
+        >
           {u.nome}
         </Link>
       ) : null;
@@ -51,7 +63,10 @@ export function ConstrucaoDetailPage() {
             {c.tipo ? <InfoRow label="Tipo">{c.tipo}</InfoRow> : null}
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link to={`/panteoes/${panteao.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {panteao.nome}
                 </Link>
               </InfoRow>
@@ -62,7 +77,10 @@ export function ConstrucaoDetailPage() {
             ) : null}
             {era ? (
               <InfoRow label="Era">
-                <Link to={`/eras/${era.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {era.nome}
                 </Link>
               </InfoRow>

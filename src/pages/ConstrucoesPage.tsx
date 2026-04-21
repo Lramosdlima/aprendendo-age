@@ -5,7 +5,7 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { construcoes } from "@/data/catalog";
+import { construcoes, construcaoSlugById } from "@/data/catalog";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 function matches(c: (typeof construcoes)[number], q: string) {
@@ -26,7 +26,7 @@ export function ConstrucoesPage() {
         {filtered.map((c) => (
           <li key={c.id}>
             <EntityCard
-              to={`/construcoes/${c.id}`}
+              to={`/construcoes/${construcaoSlugById.get(c.id) ?? c.id}`}
               title={c.nome}
               subtitle={c.tipo ? <NotionText text={c.tipo} /> : undefined}
               meta={<MetaNotionLine parts={[c.panteao, c.era]} />}

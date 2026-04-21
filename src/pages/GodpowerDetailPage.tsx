@@ -5,12 +5,20 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { deusById, eraById, godpowerById, panteaoById } from "@/data/catalog";
+import {
+  deusById,
+  deusSlugById,
+  eraById,
+  eraSlugById,
+  godpowerBySlug,
+  panteaoById,
+  panteaoSlugById,
+} from "@/data/catalog";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 
 export function GodpowerDetailPage() {
-  const { id } = useParams();
-  const g = godpowerById.get(Number(id));
+  const { slug } = useParams();
+  const g = slug ? godpowerBySlug.get(slug) : undefined;
 
   if (!g) {
     return (
@@ -36,7 +44,10 @@ export function GodpowerDetailPage() {
           <div className="space-y-0">
             {deus ? (
               <InfoRow label="Deus">
-                <Link to={`/deuses/${deus.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/deuses/${deusSlugById.get(deus.id) ?? deus.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {deus.nome}
                 </Link>
               </InfoRow>
@@ -47,7 +58,10 @@ export function GodpowerDetailPage() {
             ) : null}
             {era ? (
               <InfoRow label="Era">
-                <Link to={`/eras/${era.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {era.nome}
                 </Link>
               </InfoRow>
@@ -58,7 +72,10 @@ export function GodpowerDetailPage() {
             ) : null}
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link to={`/panteoes/${panteao.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {panteao.nome}
                 </Link>
               </InfoRow>

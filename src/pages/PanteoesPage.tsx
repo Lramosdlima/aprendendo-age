@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { SearchField } from "@/components/ui/SearchField";
-import { panteoes } from "@/data/catalog";
+import { panteoes, panteaoSlugById } from "@/data/catalog";
 
 function matches(p: (typeof panteoes)[number], q: string) {
   if (!q.trim()) return true;
@@ -26,7 +26,7 @@ export function PanteoesPage() {
         {filtered.map((p) => (
           <li key={p.id}>
             <EntityCard
-              to={`/panteoes/${p.id}`}
+              to={`/panteoes/${panteaoSlugById.get(p.id) ?? p.id}`}
               title={p.nome}
               cardTint={pantheonCardTint(p.nome)}
               subtitle={p.description}

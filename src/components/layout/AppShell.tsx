@@ -1,10 +1,19 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 import { cn } from "@/lib/cn";
 
-const nav = [
+type NavItem =
+  | { to: string; label: string; end?: boolean }
+  | { to: string; label: string; match: (pathname: string) => boolean };
+
+const nav: NavItem[] = [
   { to: "/", label: "Início", end: true },
   { to: "/starts", label: "Starts (BO)" },
+  {
+    to: "/trilha-de-aprendizado",
+    label: "Trilha de Aprendizado",
+    match: (p) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
+  },
   { to: "/panteoes", label: "Panteões" },
   { to: "/deuses", label: "Deuses" },
   { to: "/eras", label: "Eras" },
@@ -14,18 +23,20 @@ const nav = [
   { to: "/aldeoes", label: "Aldeões" },
   { to: "/mapas", label: "Mapas" },
   { to: "/tecnologias", label: "Tecnologias" },
-] as const;
+];
 
-function navClass({ isActive }: { isActive: boolean }) {
+function navClass(active: boolean) {
   return cn(
     "block rounded-lg px-3 py-2 text-sm transition-colors",
-    isActive
+    active
       ? "bg-amber-500/15 text-amber-200 ring-1 ring-amber-500/35"
       : "text-zinc-300 hover:bg-zinc-800/80 hover:text-white",
   );
 }
 
 export function AppShell() {
+  const pathname = useLocation().pathname;
+
   return (
     <div className="flex min-h-screen flex-col md:flex-row">
       <aside className="border-aom-border shrink-0 border-b bg-zinc-950/80 md:w-56 md:border-r md:border-b-0 md:py-6">
@@ -37,7 +48,14 @@ export function AppShell() {
         </div>
         <nav className="flex flex-wrap gap-1 px-2 pb-3 md:flex-col md:px-3 md:pb-0">
           {nav.map((item) => (
-            <NavLink key={item.to} to={item.to} end={"end" in item ? item.end : false} className={navClass}>
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={"end" in item ? item.end : false}
+              className={({ isActive }) =>
+                navClass("match" in item ? item.match(pathname) : isActive)
+              }
+            >
               {item.label}
             </NavLink>
           ))}

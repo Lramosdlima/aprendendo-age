@@ -16,6 +16,8 @@ export type Mapa = {
   partidas_rapidas: boolean;
   tipo: string;
 };
+import { buildIndexSlugMaps, buildRecordSlugMaps } from "@/lib/entitySlug";
+
 import panteoesJson from "./panteoes.json";
 import startsBuildOrderJson from "./starts_build_order.json";
 import tecnologiasJson from "./tecnologias.json";
@@ -90,4 +92,40 @@ export const godpowerById = new Map(godpowers.map((g) => [g.id, g]));
 export const construcaoById = new Map(construcoes.map((c) => [c.id, c]));
 export const unidadeById = new Map(unidades.map((u) => [u.id, u]));
 export const aldeaoById = new Map(aldeoes.map((a) => [a.id, a]));
+
+const deusSlugMaps = buildRecordSlugMaps(deuses, (d) => d.nome);
+export const deusBySlug = deusSlugMaps.bySlug;
+export const deusSlugById = deusSlugMaps.slugById;
+
+const panteaoSlugMaps = buildRecordSlugMaps(panteoes, (p) => p.nome);
+export const panteaoBySlug = panteaoSlugMaps.bySlug;
+export const panteaoSlugById = panteaoSlugMaps.slugById;
+
+const eraSlugMaps = buildRecordSlugMaps(eras, (e) => e.nome);
+export const eraBySlug = eraSlugMaps.bySlug;
+export const eraSlugById = eraSlugMaps.slugById;
+
+const godpowerSlugMaps = buildRecordSlugMaps(godpowers, (g) => g.nome);
+export const godpowerBySlug = godpowerSlugMaps.bySlug;
+export const godpowerSlugById = godpowerSlugMaps.slugById;
+
+const construcaoSlugMaps = buildRecordSlugMaps(construcoes, (c) => c.nome);
+export const construcaoBySlug = construcaoSlugMaps.bySlug;
+export const construcaoSlugById = construcaoSlugMaps.slugById;
+
+const unidadeSlugMaps = buildRecordSlugMaps(unidades, (u) => u.nome);
+export const unidadeBySlug = unidadeSlugMaps.bySlug;
+export const unidadeSlugById = unidadeSlugMaps.slugById;
+
+const aldeaoSlugMaps = buildRecordSlugMaps(aldeoes, (a) => a.nome);
+export const aldeaoBySlug = aldeaoSlugMaps.bySlug;
+export const aldeaoSlugById = aldeaoSlugMaps.slugById;
+
+const tecnologiaSlugMaps = buildIndexSlugMaps(tecnologias, (t) => t.nome ?? "");
+export const tecnologiaBySlug = tecnologiaSlugMaps.bySlug;
+export const tecnologiaSlugByIndex = tecnologiaSlugMaps.slugByIndex;
+
+const mapaSlugMaps = buildIndexSlugMaps(mapas, (m) => m.nome ?? "");
+export const mapaBySlug = mapaSlugMaps.bySlug;
+export const mapaSlugByIndex = mapaSlugMaps.slugByIndex;
 

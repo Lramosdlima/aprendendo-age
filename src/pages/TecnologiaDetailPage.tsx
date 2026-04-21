@@ -5,13 +5,23 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { construcaoById, deusById, eraById, panteaoById, tecnologias } from "@/data/catalog";
+import {
+  construcaoById,
+  construcaoSlugById,
+  deusById,
+  deusSlugById,
+  eraById,
+  eraSlugById,
+  panteaoById,
+  panteaoSlugById,
+  tecnologiaBySlug,
+  tecnologias,
+} from "@/data/catalog";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 export function TecnologiaDetailPage() {
-  const { index } = useParams();
-  const i = Number(index);
-  const t = Number.isFinite(i) && i >= 0 && i < tecnologias.length ? tecnologias[i] : undefined;
+  const { slug } = useParams();
+  const t = slug ? tecnologiaBySlug.get(slug) : undefined;
 
   if (!t) {
     return (
@@ -22,6 +32,7 @@ export function TecnologiaDetailPage() {
     );
   }
 
+  const tecIndex = tecnologias.indexOf(t);
   const era = t.eras_id != null ? eraById.get(t.eras_id) : undefined;
   const panteao = t.panteoes_id != null ? panteaoById.get(t.panteoes_id) : undefined;
   const constr = t.construcao_origem_id != null ? construcaoById.get(t.construcao_origem_id) : undefined;
@@ -30,7 +41,11 @@ export function TecnologiaDetailPage() {
     .map((did) => {
       const d = deusById.get(did);
       return d ? (
-        <Link key={did} to={`/deuses/${did}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link
+          key={did}
+          to={`/deuses/${deusSlugById.get(did) ?? did}`}
+          className="text-amber-200 underline-offset-2 hover:underline"
+        >
           {d.nome}
         </Link>
       ) : null;
@@ -41,8 +56,8 @@ export function TecnologiaDetailPage() {
     <div>
       <BackLink to="/tecnologias">Tecnologias</BackLink>
       <PageHeader
-        title={t.nome || `Sem título (#${i})`}
-        description={`Índice JSON: ${i}`}
+        title={t.nome || `Sem título (#${tecIndex >= 0 ? tecIndex : "?"})`}
+        description={tecIndex >= 0 ? `Lista JSON: #${tecIndex}` : undefined}
         headerIconSrc={getTecnologiaAssetUrl(t)}
       />
 
@@ -56,7 +71,10 @@ export function TecnologiaDetailPage() {
             ) : null}
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link to={`/panteoes/${panteao.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {panteao.nome}
                 </Link>
               </InfoRow>
@@ -67,7 +85,10 @@ export function TecnologiaDetailPage() {
             ) : null}
             {era ? (
               <InfoRow label="Era">
-                <Link to={`/eras/${era.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {era.nome}
                 </Link>
               </InfoRow>
@@ -78,7 +99,10 @@ export function TecnologiaDetailPage() {
             ) : null}
             {constr ? (
               <InfoRow label="Construção de origem">
-                <Link to={`/construcoes/${constr.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/construcoes/${construcaoSlugById.get(constr.id) ?? constr.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {constr.nome}
                 </Link>
               </InfoRow>

@@ -5,12 +5,11 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { deusById, panteaoById } from "@/data/catalog";
+import { deusById, deusSlugById, panteaoBySlug } from "@/data/catalog";
 
 export function PanteaoDetailPage() {
-  const { id } = useParams();
-  const numId = Number(id);
-  const p = panteaoById.get(numId);
+  const { slug } = useParams();
+  const p = slug ? panteaoBySlug.get(slug) : undefined;
 
   if (!p) {
     return (
@@ -25,7 +24,11 @@ export function PanteaoDetailPage() {
     .map((did) => {
       const d = deusById.get(did);
       return d ? (
-        <Link key={did} to={`/deuses/${did}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link
+          key={did}
+          to={`/deuses/${deusSlugById.get(did) ?? did}`}
+          className="text-amber-200 underline-offset-2 hover:underline"
+        >
           {d.nome}
         </Link>
       ) : null;

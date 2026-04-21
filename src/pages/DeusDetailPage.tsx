@@ -6,13 +6,25 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { deusById, eraById, godpowerById, panteaoById, unidadeById } from "@/data/catalog";
+import {
+  deusById,
+  deusBySlug,
+  deusSlugById,
+  eraById,
+  eraSlugById,
+  godpowerById,
+  godpowerSlugById,
+  panteaoById,
+  panteaoSlugById,
+  unidadeById,
+  unidadeSlugById,
+} from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { parseStartReferences } from "@/lib/startLinksFromDeus";
 
 export function DeusDetailPage() {
-  const { id } = useParams();
-  const d = deusById.get(Number(id));
+  const { slug } = useParams();
+  const d = slug ? deusBySlug.get(slug) : undefined;
 
   if (!d) {
     return (
@@ -33,7 +45,11 @@ export function DeusDetailPage() {
     .map((rid) => {
       const x = deusById.get(rid);
       return x ? (
-        <Link key={rid} to={`/deuses/${rid}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link
+          key={rid}
+          to={`/deuses/${deusSlugById.get(rid) ?? rid}`}
+          className="text-amber-200 underline-offset-2 hover:underline"
+        >
           {x.nome}
         </Link>
       ) : null;
@@ -44,7 +60,11 @@ export function DeusDetailPage() {
     .map((uid) => {
       const u = unidadeById.get(uid);
       return u ? (
-        <Link key={uid} to={`/unidades/${uid}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link
+          key={uid}
+          to={`/unidades/${unidadeSlugById.get(uid) ?? uid}`}
+          className="text-amber-200 underline-offset-2 hover:underline"
+        >
           {u.nome}
         </Link>
       ) : null;
@@ -67,7 +87,10 @@ export function DeusDetailPage() {
           <div className="space-y-0">
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link to={`/panteoes/${panteao.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {panteao.nome}
                 </Link>
               </InfoRow>
@@ -79,7 +102,10 @@ export function DeusDetailPage() {
             {d.hierarquia ? <InfoRow label="Hierarquia">{d.hierarquia}</InfoRow> : null}
             {era ? (
               <InfoRow label="Era">
-                <Link to={`/eras/${era.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {era.nome}
                 </Link>
               </InfoRow>
@@ -90,7 +116,10 @@ export function DeusDetailPage() {
             ) : null}
             {gp ? (
               <InfoRow label="Poder divino">
-                <Link to={`/poderes/${gp.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/poderes/${godpowerSlugById.get(gp.id) ?? gp.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {gp.nome}
                 </Link>
               </InfoRow>

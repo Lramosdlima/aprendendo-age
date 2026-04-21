@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 
 import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
-import { construcaoById, eraById, panteaoById, unidades } from "@/data/catalog";
+import {
+  construcaoById,
+  construcaoSlugById,
+  eraById,
+  eraSlugById,
+  panteaoById,
+  panteaoSlugById,
+  unidades,
+} from "@/data/catalog";
 
 type U = (typeof unidades)[number];
 
@@ -28,7 +36,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
       {panteao ? (
         <InfoRow label="Panteão">
           <Link
-            to={`/panteoes/${panteao.id}`}
+            to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
             className="text-amber-200 underline-offset-2 hover:underline"
           >
             {panteao.nome}
@@ -42,7 +50,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
       {era ? (
         <InfoRow label="Era">
           <Link
-            to={`/eras/${era.id}`}
+            to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
             className="text-amber-200 underline-offset-2 hover:underline"
           >
             {era.nome}
@@ -56,7 +64,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
       {constr ? (
         <InfoRow label="Construção">
           <Link
-            to={`/construcoes/${constr.id}`}
+            to={`/construcoes/${construcaoSlugById.get(constr.id) ?? constr.id}`}
             className="text-amber-200 underline-offset-2 hover:underline"
           >
             {constr.nome}

@@ -6,7 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { deuses } from "@/data/catalog";
+import { deuses, deusSlugById } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
@@ -28,7 +28,7 @@ export function DeusesPage() {
         {filtered.map((d) => (
           <li key={d.id}>
             <EntityCard
-              to={`/deuses/${d.id}`}
+              to={`/deuses/${deusSlugById.get(d.id) ?? d.id}`}
               title={d.nome}
               cardTint={pantheonCardTint(d.panteao)}
               subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}

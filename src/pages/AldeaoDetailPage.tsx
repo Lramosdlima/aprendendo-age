@@ -5,12 +5,12 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { aldeaoById, panteaoById } from "@/data/catalog";
+import { aldeaoBySlug, panteaoById, panteaoSlugById } from "@/data/catalog";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function AldeaoDetailPage() {
-  const { id } = useParams();
-  const a = aldeaoById.get(Number(id));
+  const { slug } = useParams();
+  const a = slug ? aldeaoBySlug.get(slug) : undefined;
 
   if (!a) {
     return (
@@ -34,7 +34,10 @@ export function AldeaoDetailPage() {
           <div className="space-y-0">
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link to={`/panteoes/${panteao.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                <Link
+                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
                   {panteao.nome}
                 </Link>
               </InfoRow>

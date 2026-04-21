@@ -5,12 +5,12 @@ import { BackLink } from "@/components/ui/BackLink";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { unidadeById } from "@/data/catalog";
+import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
 export function UnidadeDetailPage() {
-  const { id } = useParams();
-  const u = unidadeById.get(Number(id));
+  const { slug } = useParams();
+  const u = slug ? unidadeBySlug.get(slug) : undefined;
 
   if (!u) {
     return (

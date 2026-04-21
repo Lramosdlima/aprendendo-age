@@ -6,7 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { tecnologias } from "@/data/catalog";
+import { tecnologias, tecnologiaSlugByIndex } from "@/data/catalog";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
@@ -30,14 +30,14 @@ export function TecnologiasPage() {
     <div>
       <PageHeader
         title="Tecnologias"
-        description="Melhorias e bônus — a lista é grande; use a busca. Entradas sem título único usam o índice no JSON."
+        description="Melhorias e bônus — a lista é grande; use a busca. O slug vem do nome; títulos repetidos ganham sufixo (-2, -3…)."
       />
       <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, deus ou panteão…" id="tec-search" />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map(({ t, i }) => (
           <li key={`${i}-${t.nome}`}>
             <EntityCard
-              to={`/tecnologias/${i}`}
+              to={`/tecnologias/${tecnologiaSlugByIndex.get(i) ?? i}`}
               title={t.nome || `(sem título #${i})`}
               cardTint={pantheonCardTint(t.panteoes ?? "")}
               watermarkSrc={getTecnologiaAssetUrl(t)}

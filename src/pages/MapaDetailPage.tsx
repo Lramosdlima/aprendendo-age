@@ -4,7 +4,7 @@ import { AppPageDetail } from "@/components/layout/AppPageDetail";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { Section } from "@/components/ui/Section";
-import { mapas } from "@/data/catalog";
+import { mapaBySlug } from "@/data/catalog";
 
 function fmtSimNao(v: boolean | undefined): string {
   if (v === undefined) return "—";
@@ -13,9 +13,8 @@ function fmtSimNao(v: boolean | undefined): string {
 import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 
 export function MapaDetailPage() {
-  const { index } = useParams();
-  const i = Number(index);
-  const m = Number.isFinite(i) && i >= 0 && i < mapas.length ? mapas[i] : undefined;
+  const { slug } = useParams();
+  const m = slug ? mapaBySlug.get(slug) : undefined;
 
   if (!m) {
     return (

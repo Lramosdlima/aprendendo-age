@@ -6,7 +6,7 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { panteaoById, unidades } from "@/data/catalog";
+import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
@@ -26,29 +26,29 @@ export function UnidadesPage() {
   const navigate = useNavigate();
   const [q, setQ] = useState("");
   const [compareMode, setCompareMode] = useState(false);
-  const [selectedIds, setSelectedIds] = useState<number[]>([]);
+  const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
   const filtered = useMemo(() => unidades.filter((u) => matches(u, q)), [q]);
 
-  function toggleSelect(id: number) {
-    setSelectedIds((prev) => {
-      if (prev.includes(id)) return prev.filter((x) => x !== id);
+  function toggleSelect(unitSlug: string) {
+    setSelectedSlugs((prev) => {
+      if (prev.includes(unitSlug)) return prev.filter((x) => x !== unitSlug);
       if (prev.length >= 2) return prev;
-      return [...prev, id];
+      return [...prev, unitSlug];
     });
   }
 
   function exitCompareMode() {
     setCompareMode(false);
-    setSelectedIds([]);
+    setSelectedSlugs([]);
   }
 
   function enterCompareMode() {
     setCompareMode(true);
-    setSelectedIds([]);
+    setSelectedSlugs([]);
   }
 
-  const canCompare = selectedIds.length === 2;
+  const canCompare = selectedSlugs.length === 2;
 
   return (
     <div>
@@ -72,7 +72,7 @@ export function UnidadesPage() {
                 disabled={!canCompare}
                 onClick={() => {
                   if (!canCompare) return;
-                  navigate(`/unidades/compare/${selectedIds[0]}/${selectedIds[1]}`);
+                  navigate(`/unidades/compare/${selectedSlugs[0]}/${selectedSlugs[1]}`);
                 }}
               >
                 Comparar
@@ -84,13 +84,14 @@ export function UnidadesPage() {
 
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((u) => {
-          const selected = selectedIds.includes(u.id);
-          const selectDisabled = compareMode && selectedIds.length >= 2 && !selected;
+          const slug = unidadeSlugById.get(u.id) ?? String(u.id);
+          const selected = selectedSlugs.includes(slug);
+          const selectDisabled = compareMode && selectedSlugs.length >= 2 && !selected;
 
           return (
             <li key={u.id}>
               <EntityCard
-                to={`/unidades/${u.id}`}
+                to={`/unidades/${slug}`}
                 title={u.nome}
                 cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
                 subtitle={u.tipo ? <NotionText text={u.tipo} /> : undefined}
@@ -99,7 +100,7 @@ export function UnidadesPage() {
                 compareMode={compareMode}
                 selected={selected}
                 selectDisabled={selectDisabled}
-                onToggleSelect={() => toggleSelect(u.id)}
+                onToggleSelect={() => toggleSelect(slug)}
               />
             </li>
           );

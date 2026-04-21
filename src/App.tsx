@@ -19,6 +19,10 @@ import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
 import { StartDetailPage } from "@/pages/StartDetailPage";
 import { StartsPage } from "@/pages/StartsPage";
+import { AtalhosImportantesPage } from "@/pages/trilha-de-aprendizado/AtalhosImportantesPage";
+import { RushTurtleBoomarPage } from "@/pages/trilha-de-aprendizado/RushTurtleBoomarPage";
+import { TiposUnidadesMultiplicadoresPage } from "@/pages/trilha-de-aprendizado/TiposUnidadesMultiplicadoresPage";
+import { TrilhaDeAprendizadoPage } from "@/pages/trilha-de-aprendizado/TrilhaDeAprendizadoPage";
 import { TecnologiaDetailPage } from "@/pages/TecnologiaDetailPage";
 import { TecnologiasPage } from "@/pages/TecnologiasPage";
 import { UnidadeComparePage } from "@/pages/UnidadeComparePage";
@@ -32,26 +36,33 @@ export default function App() {
         <Route element={<AppShell />}>
           <Route index element={<HomePage />} />
           <Route path="panteoes" element={<PanteoesPage />} />
-          <Route path="panteoes/:id" element={<PanteaoDetailPage />} />
+          <Route path="panteoes/:slug" element={<PanteaoDetailPage />} />
           <Route path="deuses" element={<DeusesPage />} />
-          <Route path="deuses/:id" element={<DeusDetailPage />} />
+          <Route path="deuses/:slug" element={<DeusDetailPage />} />
           <Route path="eras" element={<ErasPage />} />
-          <Route path="eras/:id" element={<EraDetailPage />} />
+          <Route path="eras/:slug" element={<EraDetailPage />} />
           <Route path="poderes" element={<GodpowersPage />} />
-          <Route path="poderes/:id" element={<GodpowerDetailPage />} />
+          <Route path="poderes/:slug" element={<GodpowerDetailPage />} />
           <Route path="construcoes" element={<ConstrucoesPage />} />
-          <Route path="construcoes/:id" element={<ConstrucaoDetailPage />} />
+          <Route path="construcoes/:slug" element={<ConstrucaoDetailPage />} />
           <Route path="unidades" element={<UnidadesPage />} />
-          <Route path="unidades/compare/:idA/:idB" element={<UnidadeComparePage />} />
-          <Route path="unidades/:id" element={<UnidadeDetailPage />} />
+          <Route path="unidades/compare/:slugA/:slugB" element={<UnidadeComparePage />} />
+          <Route path="unidades/:slug" element={<UnidadeDetailPage />} />
           <Route path="aldeoes" element={<AldeoesPage />} />
-          <Route path="aldeoes/:id" element={<AldeaoDetailPage />} />
+          <Route path="aldeoes/:slug" element={<AldeaoDetailPage />} />
           <Route path="mapas" element={<MapasPage />} />
-          <Route path="mapas/:index" element={<MapaDetailPage />} />
+          <Route path="mapas/:slug" element={<MapaDetailPage />} />
           <Route path="tecnologias" element={<TecnologiasPage />} />
-          <Route path="tecnologias/:index" element={<TecnologiaDetailPage />} />
+          <Route path="tecnologias/:slug" element={<TecnologiaDetailPage />} />
           <Route path="starts" element={<StartsPage />} />
           <Route path="starts/:slug" element={<StartDetailPage />} />
+          <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
+          <Route
+            path="trilha-de-aprendizado/tipos-unidades-multiplicadores"
+            element={<TiposUnidadesMultiplicadoresPage />}
+          />
+          <Route path="trilha-de-aprendizado/atalhos-importantes" element={<AtalhosImportantesPage />} />
+          <Route path="trilha-de-aprendizado/rush-turtle-boom" element={<RushTurtleBoomarPage />} />
           <Route path="home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
