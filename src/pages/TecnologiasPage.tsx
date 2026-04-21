@@ -7,6 +7,7 @@ import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { tecnologias } from "@/data/catalog";
+import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 function matches(t: (typeof tecnologias)[number], q: string) {
@@ -38,6 +39,7 @@ export function TecnologiasPage() {
             <EntityCard
               to={`/tecnologias/${i}`}
               title={t.nome || `(sem título #${i})`}
+              cardTint={pantheonCardTint(t.panteoes ?? "")}
               watermarkSrc={getTecnologiaAssetUrl(t)}
               subtitle={t.beneficia ? <NotionText text={t.beneficia} /> : undefined}
               meta={

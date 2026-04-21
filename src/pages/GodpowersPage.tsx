@@ -4,8 +4,9 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { godpowers } from "@/data/catalog";
+import { godpowers, panteaoById } from "@/data/catalog";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
+import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matches(g: (typeof godpowers)[number], q: string) {
   if (!q.trim()) return true;
@@ -27,6 +28,7 @@ export function GodpowersPage() {
             <EntityCard
               to={`/poderes/${g.id}`}
               title={g.nome}
+              cardTint={pantheonCardTint(panteaoById.get(g.panteao_id)?.nome ?? "")}
               subtitle={g.descricao_resumida}
               meta={<MetaNotionLine parts={[g.god, g.era, g.panteao]} />}
               watermarkSrc={getGodPowerAssetUrl(g.ingles)}
