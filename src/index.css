@@ -221,3 +221,76 @@ body {
   border-radius: 0.25rem;
   background: rgba(0, 0, 0, 0.35);
 }
+
+/* Tabela estruturada (starts) — descrição larga, colunas numéricas estreitas */
+.start-structured .start-structured-table {
+  table-layout: fixed;
+}
+
+.start-structured .start-structured-table th,
+.start-structured .start-structured-table td {
+  vertical-align: top;
+}
+
+.start-structured .start-col-desc {
+  width: 56%;
+  min-width: 11rem;
+}
+
+.start-structured .start-col-res {
+  width: 8%;
+  max-width: 4.25rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.start-structured .start-col-pop {
+  width: 10%;
+  max-width: 4.75rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.start-structured .start-row-hint td {
+  background: rgba(113, 113, 122, 0.2);
+}
+.start-structured .start-row-blue td {
+  background: rgba(59, 130, 246, 0.18);
+}
+.start-structured .start-row-pink td {
+  background: rgba(236, 72, 153, 0.15);
+}
+.start-structured .start-row-teal td {
+  background: rgba(45, 212, 191, 0.12);
+}
+.start-structured .start-row-orange td {
+  background: rgba(251, 146, 60, 0.14);
+}
+.start-structured .start-row-red td {
+  background: rgba(248, 113, 113, 0.12);
+}
+
+.start-structured .highlight-red {
+  color: #fca5a5;
+}
+.start-structured .highlight-yellow {
+  color: #fde047;
+}
+.start-structured .highlight-brown {
+  color: #d4a574;
+}
+.start-structured .highlight-blue {
+  color: #93c5fd;
+}
+.start-structured .highlight-teal {
+  color: #5eead4;
+}
+.start-structured .highlight-orange {
+  color: #fdba74;
+}
+.start-structured .highlight-pink {
+  color: #f9a8d4;
+}
+.start-structured .highlight-purple {
+  color: #d8b4fe;
+}

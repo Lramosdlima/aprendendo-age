@@ -38,7 +38,7 @@ const out = data.map((item) => ({
   notion_file_id: item.notion_file_id,
   youtube: item.youtube,
   descricao_curta: item.descricao_curta,
-  conteudo_html: item.conteudo_html,
+  structured: item.structured,
 }));
 
 fs.writeFileSync(p, `${JSON.stringify(out, null, 2)}\n`);
