@@ -34,6 +34,7 @@ function godFromTitulo(titulo) {
 const out = data.map((item) => ({
   id: item.id,
   titulo: item.titulo,
+  author: item.author,
   god: godFromTitulo(item.titulo),
   notion_file_id: item.notion_file_id,
   youtube: item.youtube,

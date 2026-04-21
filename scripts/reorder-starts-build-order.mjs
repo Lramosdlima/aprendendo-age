@@ -22,6 +22,7 @@ const sorted = [...data].sort((a, b) => {
 const out = sorted.map((item, i) => ({
   id: i + 1,
   titulo: item.titulo,
+  author: item.author,
   god: item.god,
   notion_file_id: item.notion_file_id,
   youtube: item.youtube,

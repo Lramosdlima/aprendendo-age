@@ -12,7 +12,9 @@ function matchesStart(
 ): boolean {
   if (!q.trim()) return true;
   const needle = q.toLowerCase().trim();
-  const hay = [s.titulo, s.god, ...(s.god.split(",").map((g) => g.trim()))].join(" ").toLowerCase();
+  const hay = [s.titulo, ...s.author, s.god, ...s.god.split(",").map((g) => g.trim())]
+    .join(" ")
+    .toLowerCase();
   return hay.includes(needle);
 }
 
@@ -29,7 +31,7 @@ export function StartsPage() {
       <SearchField
         value={q}
         onChange={setQ}
-        placeholder="Filtrar por título ou deus (major/minor)…"
+        placeholder="Filtrar por título, autor ou deus (major/minor)…"
         id="starts-search"
       />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
@@ -41,8 +43,11 @@ export function StartsPage() {
               title={<NotionText text={s.titulo} />}
               subtitle={s.god}
               meta={
-                <span className={s.youtube.length ? "" : "invisible select-none"} aria-hidden={s.youtube.length === 0}>
-                  {s.youtube.length ? `${s.youtube.length} vídeo(s)` : "0 vídeo(s)"}
+                <span
+                  className={s.author.length ? "" : "invisible select-none"}
+                  aria-hidden={s.author.length === 0}
+                >
+                  {s.author.length ? s.author.join(" · ") : "—"}
                 </span>
               }
             />
