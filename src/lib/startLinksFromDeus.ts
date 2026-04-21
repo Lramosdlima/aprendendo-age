@@ -18,7 +18,7 @@ for (const s of startsBuildOrder) {
 }
 
 export type StartRefItem =
-  | { kind: "link"; id: number; titulo: string }
+  | { kind: "link"; slug: string; titulo: string }
   | { kind: "text"; raw: string };
 
 /**
@@ -35,10 +35,10 @@ export function parseStartReferences(startsText: string): StartRefItem[] {
     const normalized = normalizeDeusesStartPart(part);
     const c = canonicalStartTitle(normalized);
     const exact = startByCanonicalKey.get(c);
-    if (exact) return { kind: "link", id: exact.id, titulo: exact.titulo };
+    if (exact) return { kind: "link", slug: exact.slug, titulo: exact.titulo };
     const collapsed = canonicalStartTitle(normalized.replace(/\s+/g, " ").trim());
     const fuzzy = startByCanonicalKey.get(collapsed);
-    if (fuzzy) return { kind: "link", id: fuzzy.id, titulo: fuzzy.titulo };
+    if (fuzzy) return { kind: "link", slug: fuzzy.slug, titulo: fuzzy.titulo };
     return { kind: "text", raw: part };
   });
 }

@@ -35,10 +35,10 @@ export function StartsPage() {
       />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((s) => (
-          <li key={s.id} className="min-h-[8.5rem]">
+          <li key={s.slug} className="min-h-[8.5rem]">
             <EntityCard
               className="h-full"
-              to={`/starts/${s.id}`}
+              to={`/starts/${s.slug}`}
               title={<NotionText text={s.titulo} />}
               subtitle={s.god.join(", ")}
               cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : undefined}

@@ -343,7 +343,8 @@
         }
       ]
     },
-    "pantheon": "Grego"
+    "pantheon": "Grego",
+    "slug": "gregos-moose"
   },
   {
     "id": 2,
@@ -521,7 +522,8 @@
         }
       ]
     },
-    "pantheon": "Egípcio"
+    "pantheon": "Egípcio",
+    "slug": "egipcios-moose"
   },
   {
     "id": 3,
@@ -754,7 +756,8 @@
         }
       ]
     },
-    "pantheon": "Nórdico"
+    "pantheon": "Nórdico",
+    "slug": "nordicos-moose"
   },
   {
     "id": 4,
@@ -932,7 +935,8 @@
         }
       ]
     },
-    "pantheon": "Atlante"
+    "pantheon": "Atlante",
+    "slug": "atlantes-moose"
   },
   {
     "id": 5,
@@ -1095,7 +1099,8 @@
         }
       ]
     },
-    "pantheon": "Chinês"
+    "pantheon": "Chinês",
+    "slug": "chineses-moose"
   },
   {
     "id": 6,
@@ -1245,7 +1250,8 @@
         }
       ]
     },
-    "pantheon": "Grego"
+    "pantheon": "Grego",
+    "slug": "gregos-mar-husksuppe"
   },
   {
     "id": 7,
@@ -1496,7 +1502,8 @@
         }
       ]
     },
-    "pantheon": "Grego"
+    "pantheon": "Grego",
+    "slug": "hades-com-cofre-aussie-drongo"
   },
   {
     "id": 8,
@@ -1698,7 +1705,8 @@
         }
       ]
     },
-    "pantheon": "Grego"
+    "pantheon": "Grego",
+    "slug": "poseidon-com-mosca"
   },
   {
     "id": 9,
@@ -1918,7 +1926,8 @@
         }
       ]
     },
-    "pantheon": "Egípcio"
+    "pantheon": "Egípcio",
+    "slug": "isis-a-e-light-yagami"
   },
   {
     "id": 10,
@@ -2150,7 +2159,8 @@
         }
       ]
     },
-    "pantheon": "Egípcio"
+    "pantheon": "Egípcio",
+    "slug": "ra-2tc-bast-light-yagami"
   },
   {
     "id": 11,
@@ -2428,7 +2438,8 @@
         }
       ]
     },
-    "pantheon": "Egípcio"
+    "pantheon": "Egípcio",
+    "slug": "set-fh-migdol-agresivo-cafeina-psgm"
   },
   {
     "id": 12,
@@ -2641,7 +2652,8 @@
         }
       ]
     },
-    "pantheon": "Egípcio"
+    "pantheon": "Egípcio",
+    "slug": "set-rush-miniyeti"
   },
   {
     "id": 13,
@@ -2850,7 +2862,8 @@
         }
       ]
     },
-    "pantheon": "Nórdico"
+    "pantheon": "Nórdico",
+    "slug": "freyr-scooby"
   },
   {
     "id": 14,
@@ -3025,7 +3038,8 @@
         }
       ]
     },
-    "pantheon": "Nórdico"
+    "pantheon": "Nórdico",
+    "slug": "freyr-rush-2tc-aussie-drongo"
   },
   {
     "id": 15,
@@ -3262,7 +3276,8 @@
         }
       ]
     },
-    "pantheon": "Nórdico"
+    "pantheon": "Nórdico",
+    "slug": "loki-herliquias-husksuppe"
   },
   {
     "id": 16,
@@ -3448,7 +3463,8 @@
         }
       ]
     },
-    "pantheon": "Nórdico"
+    "pantheon": "Nórdico",
+    "slug": "thor-borg"
   },
   {
     "id": 17,
@@ -3651,7 +3667,8 @@
         }
       ]
     },
-    "pantheon": "Nórdico"
+    "pantheon": "Nórdico",
+    "slug": "thor-moose"
   },
   {
     "id": 18,
@@ -3844,7 +3861,8 @@
         }
       ]
     },
-    "pantheon": "Atlante"
+    "pantheon": "Atlante",
+    "slug": "cronos-2tc-tpisai"
   },
   {
     "id": 19,
@@ -4055,7 +4073,8 @@
         }
       ]
     },
-    "pantheon": "Atlante"
+    "pantheon": "Atlante",
+    "slug": "cronos-rush-morley-games"
   },
   {
     "id": 20,
@@ -4288,7 +4307,8 @@
         }
       ]
     },
-    "pantheon": "Atlante"
+    "pantheon": "Atlante",
+    "slug": "gaia-fh-balerion"
   },
   {
     "id": 21,
@@ -4481,7 +4501,8 @@
         }
       ]
     },
-    "pantheon": "Atlante"
+    "pantheon": "Atlante",
+    "slug": "gaia-eco-balerion"
   },
   {
     "id": 22,
@@ -4653,7 +4674,8 @@
         }
       ]
     },
-    "pantheon": "Atlante"
+    "pantheon": "Atlante",
+    "slug": "gaia-heroica-anti-mu-boxer"
   },
   {
     "id": 23,
@@ -4859,7 +4881,8 @@
         }
       ]
     },
-    "pantheon": "Chinês"
+    "pantheon": "Chinês",
+    "slug": "fu-xi-husksuppe"
   },
   {
     "id": 24,
@@ -5075,7 +5098,8 @@
         }
       ]
     },
-    "pantheon": "Chinês"
+    "pantheon": "Chinês",
+    "slug": "shennong-2-tc-morley"
   },
   {
     "id": 25,
@@ -5327,7 +5351,8 @@
         }
       ]
     },
-    "pantheon": "Chinês"
+    "pantheon": "Chinês",
+    "slug": "shennong-fazendeiro-husksuppe"
   },
   {
     "id": 26,
@@ -5594,7 +5619,8 @@
         }
       ]
     },
-    "pantheon": "Japonês"
+    "pantheon": "Japonês",
+    "slug": "amaterasu-mikeking-therapl"
   },
   {
     "id": 27,
@@ -5787,7 +5813,8 @@
         }
       ]
     },
-    "pantheon": "Japonês"
+    "pantheon": "Japonês",
+    "slug": "susanoo-therapl"
   },
   {
     "id": 28,
@@ -6034,7 +6061,8 @@
         }
       ]
     },
-    "pantheon": "Japonês"
+    "pantheon": "Japonês",
+    "slug": "susanoo-mikos-husksuppe"
   },
   {
     "id": 29,
@@ -6259,7 +6287,8 @@
         }
       ]
     },
-    "pantheon": "Japonês"
+    "pantheon": "Japonês",
+    "slug": "tsukuyomi-therapl"
   },
   {
     "id": 30,
@@ -6504,7 +6533,8 @@
         }
       ]
     },
-    "pantheon": "Japonês"
+    "pantheon": "Japonês",
+    "slug": "tsukuyomi-mar-scooby"
   },
   {
     "id": 31,
@@ -6710,6 +6740,7 @@
         }
       ]
     },
-    "pantheon": "Japonês"
+    "pantheon": "Japonês",
+    "slug": "tsukuyomi-rush-2tc-husksuppe"
   }
 ]

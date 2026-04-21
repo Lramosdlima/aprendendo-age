@@ -51,7 +51,7 @@ export default function App() {
           <Route path="tecnologias" element={<TecnologiasPage />} />
           <Route path="tecnologias/:index" element={<TecnologiaDetailPage />} />
           <Route path="starts" element={<StartsPage />} />
-          <Route path="starts/:id" element={<StartDetailPage />} />
+          <Route path="starts/:slug" element={<StartDetailPage />} />
           <Route path="home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

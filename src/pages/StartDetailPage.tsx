@@ -5,11 +5,11 @@ import { StartVideosSection } from "@/components/starts/StartVideosSection";
 import { BackLink } from "@/components/ui/BackLink";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { startById } from "@/data/catalog";
+import { startBySlug } from "@/data/catalog";
 
 export function StartDetailPage() {
-  const { id } = useParams();
-  const s = startById.get(Number(id));
+  const { slug } = useParams();
+  const s = slug ? startBySlug.get(slug) : undefined;
 
   if (!s) {
     return (

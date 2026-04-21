@@ -53,6 +53,8 @@ export type StartStructured = {
 
 export type StartBuildOrder = {
   id: number;
+  /** Rota `/starts/:slug` — derivado de título + autores (ver `buildStartSlug`). */
+  slug: string;
   titulo: string;
   /** Autor(es) do build (após « - por » no Notion); vários separados por | no texto original. */
   author: string[];
@@ -69,6 +71,7 @@ export type StartBuildOrder = {
 
 export const startsBuildOrder = startsBuildOrderJson as StartBuildOrder[];
 export const startById = new Map(startsBuildOrder.map((s) => [s.id, s]));
+export const startBySlug = new Map(startsBuildOrder.map((s) => [s.slug, s]));
 
 export const aldeoes = aldeoesJson;
 export const construcoes = construcoesJson;

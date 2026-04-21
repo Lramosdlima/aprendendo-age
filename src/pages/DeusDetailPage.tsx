@@ -132,7 +132,7 @@ export function DeusDetailPage() {
             {parseStartReferences(d.starts).map((item, i) => (
               <li key={i}>
                 {item.kind === "link" ? (
-                  <Link to={`/starts/${item.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+                  <Link to={`/starts/${item.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
                     <NotionText text={item.titulo} />
                   </Link>
                 ) : (
