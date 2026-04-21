@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
@@ -52,37 +53,43 @@ export function UnidadesPage() {
 
   return (
     <div>
-      <PageHeader title="Unidades" description="Militares, mitológicas e heróis — filtros por nome ou papel." />
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Unidades"
+          description="Militares, mitológicas e heróis — filtros por nome ou papel."
+          className="!mb-0"
+        />
 
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <SearchField value={q} onChange={setQ} placeholder="Filtrar…" id="unidades-search" />
-        <div className="flex flex-wrap items-center justify-end gap-2 sm:ml-auto">
-          {!compareMode ? (
-            <button type="button" className={toolbarBtn} onClick={enterCompareMode}>
-              Modo Comparação
-            </button>
-          ) : (
-            <>
-              <button type="button" className={toolbarBtn} onClick={exitCompareMode}>
-                Cancelar
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <SearchField value={q} onChange={setQ} placeholder="Filtrar…" id="unidades-search" />
+          <div className="flex flex-wrap items-center justify-end gap-2 sm:ml-auto">
+            {!compareMode ? (
+              <button type="button" className={toolbarBtn} onClick={enterCompareMode}>
+                Modo Comparação
               </button>
-              <button
-                type="button"
-                className={toolbarBtn}
-                disabled={!canCompare}
-                onClick={() => {
-                  if (!canCompare) return;
-                  navigate(`/unidades/compare/${selectedSlugs[0]}/${selectedSlugs[1]}`);
-                }}
-              >
-                Comparar
-              </button>
-            </>
-          )}
+            ) : (
+              <>
+                <button type="button" className={toolbarBtn} onClick={exitCompareMode}>
+                  Cancelar
+                </button>
+                <button
+                  type="button"
+                  className={toolbarBtn}
+                  disabled={!canCompare}
+                  onClick={() => {
+                    if (!canCompare) return;
+                    navigate(`/unidades/compare/${selectedSlugs[0]}/${selectedSlugs[1]}`);
+                  }}
+                >
+                  Comparar
+                </button>
+              </>
+            )}
+          </div>
         </div>
-      </div>
+      </ListPageStickyHeader>
 
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((u) => {
           const slug = unidadeSlugById.get(u.id) ?? String(u.id);
           const selected = selectedSlugs.includes(slug);

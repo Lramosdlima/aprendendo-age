@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
@@ -22,12 +23,15 @@ export function MapasPage() {
 
   return (
     <div>
-      <PageHeader
-        title="Mapas"
-        description="Origem, ranqueada e tipo — o slug vem do nome; nomes repetidos ganham sufixo (-2, -3…)."
-      />
-      <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou tipo…" id="mapas-search" />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Mapas"
+          description="Origem, ranqueada e tipo — o slug vem do nome; nomes repetidos ganham sufixo (-2, -3…)."
+          className="!mb-0"
+        />
+        <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou tipo…" id="mapas-search" />
+      </ListPageStickyHeader>
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map(({ m, i }) => (
           <li key={`${m.nome}-${i}`}>
             <EntityCard

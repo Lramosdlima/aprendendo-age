@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
@@ -20,9 +21,15 @@ export function ConstrucoesPage() {
 
   return (
     <div>
-      <PageHeader title="Construções" description="Edifícios, custos e estatísticas de combate quando aplicável." />
-      <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou tipo…" id="constr-search" />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Construções"
+          description="Edifícios, custos e estatísticas de combate quando aplicável."
+          className="!mb-0"
+        />
+        <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou tipo…" id="constr-search" />
+      </ListPageStickyHeader>
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((c) => (
           <li key={c.id}>
             <EntityCard

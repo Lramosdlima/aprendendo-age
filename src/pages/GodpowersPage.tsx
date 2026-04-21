@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -20,9 +21,15 @@ export function GodpowersPage() {
 
   return (
     <div>
-      <PageHeader title="Poderes divinos" description="Myth powers: cooldown, custo de repetição e descrições." />
-      <SearchField value={q} onChange={setQ} placeholder="Filtrar…" id="gp-search" />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Poderes divinos"
+          description="Myth powers: cooldown, custo de repetição e descrições."
+          className="!mb-0"
+        />
+        <SearchField value={q} onChange={setQ} placeholder="Filtrar…" id="gp-search" />
+      </ListPageStickyHeader>
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((g) => (
           <li key={g.id}>
             <EntityCard

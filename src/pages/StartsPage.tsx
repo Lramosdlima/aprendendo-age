@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -23,17 +24,20 @@ export function StartsPage() {
 
   return (
     <div>
-      <PageHeader
-        title="Starts & build orders"
-        description="Start ou Build Order é uma sequência de ações que se executa no início da partida com determinado deus/panteão. Geralmente é focada em um objetivo/intenção (seja rush ou um FH), que é construído a partir da disposição dos aldeões, ou seja, na economia."
-      />
-      <SearchField
-        value={q}
-        onChange={setQ}
-        placeholder="Filtrar por título, autor ou deus (maior/menor)…"
-        id="starts-search"
-      />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Starts & build orders"
+          description="Start ou Build Order é uma sequência de ações que se executa no início da partida com determinado deus/panteão. Geralmente é focada em um objetivo/intenção (seja rush ou um FH), que é construído a partir da disposição dos aldeões, ou seja, na economia."
+          className="!mb-0"
+        />
+        <SearchField
+          value={q}
+          onChange={setQ}
+          placeholder="Filtrar por título, autor ou deus (maior/menor)…"
+          id="starts-search"
+        />
+      </ListPageStickyHeader>
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((s) => (
           <li key={s.slug} className="min-h-[8.5rem]">
             <EntityCard

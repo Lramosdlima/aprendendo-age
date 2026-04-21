@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
@@ -22,9 +23,15 @@ export function DeusesPage() {
 
   return (
     <div>
-      <PageHeader title="Deuses" description="Escolhas de maiores e menores com foco e referências de build." />
-      <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, panteão ou era…" id="deuses-search" />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Deuses"
+          description="Escolhas de maiores e menores com foco e referências de build."
+          className="!mb-0"
+        />
+        <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, panteão ou era…" id="deuses-search" />
+      </ListPageStickyHeader>
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((d) => (
           <li key={d.id}>
             <EntityCard

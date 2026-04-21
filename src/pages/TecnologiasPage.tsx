@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
@@ -28,12 +29,15 @@ export function TecnologiasPage() {
 
   return (
     <div>
-      <PageHeader
-        title="Tecnologias"
-        description="Melhorias e bônus — a lista é grande; use a busca. O slug vem do nome; títulos repetidos ganham sufixo (-2, -3…)."
-      />
-      <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, deus ou panteão…" id="tec-search" />
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <ListPageStickyHeader>
+        <PageHeader
+          title="Tecnologias"
+          description="Melhorias e bônus — a lista é grande; use a busca. O slug vem do nome; títulos repetidos ganham sufixo (-2, -3…)."
+          className="!mb-0"
+        />
+        <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, deus ou panteão…" id="tec-search" />
+      </ListPageStickyHeader>
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map(({ t, i }) => (
           <li key={`${i}-${t.nome}`}>
             <EntityCard
