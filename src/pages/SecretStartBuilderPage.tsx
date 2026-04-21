@@ -38,10 +38,16 @@ type EditorRow = {
   type: string;
 };
 
+type EditorLeadCallout = {
+  id: string;
+  text: string;
+};
+
 type EditorSegment = {
   id: string;
   heading: string;
-  callout: string;
+  /** Vários callouts em sequência no `lead` (antes da tabela), como no JSON. */
+  callouts: EditorLeadCallout[];
   footer: string;
   rows: EditorRow[];
 };
@@ -74,11 +80,20 @@ function newTableRowAfter(previous: EditorRow | undefined): EditorRow {
   };
 }
 
+function emptyLeadCallout(): EditorLeadCallout {
+  return { id: uid(), text: "" };
+}
+
+function newLeadCalloutAfter(previous: EditorLeadCallout | undefined): EditorLeadCallout {
+  if (!previous) return emptyLeadCallout();
+  return { id: uid(), text: previous.text };
+}
+
 function emptySegment(): EditorSegment {
   return {
     id: uid(),
     heading: "",
-    callout: "",
+    callouts: [emptyLeadCallout()],
     footer: "",
     rows: [emptyRow()],
   };
@@ -89,8 +104,10 @@ function segmentToStructured(seg: EditorSegment): StartBuildSegment {
   if (seg.heading.trim()) {
     lead.push({ kind: "heading", level: 1, text: seg.heading.trim() });
   }
-  if (seg.callout.trim()) {
-    lead.push({ kind: "callout", text: seg.callout.trim() });
+  for (const c of seg.callouts) {
+    if (c.text.trim()) {
+      lead.push({ kind: "callout", text: c.text.trim() });
+    }
   }
   const table: StartTableRow[] = seg.rows
     .filter((r) => r.description.trim())
@@ -353,7 +370,7 @@ export function SecretStartBuilderPage() {
               </button>
             </div>
             <p className="mb-4 text-xs text-zinc-500">
-              Arraste pelo ícone ⋮⋮ à esquerda para reordenar. Cada segmento vira um bloco com heading/callout opcionais, tabela de passos e rodapé opcional.
+              Arraste pelo ícone ⋮⋮ à esquerda para reordenar. Cada segmento pode ter título (heading), vários callouts antes da tabela, a tabela e rodapé opcional.
               Tipos de linha da tabela: os mesmos usados em{" "}
               <code className="text-zinc-400">starts_build_order.json</code> (hint, blue, pink, …).
             </p>
@@ -395,16 +412,70 @@ export function SecretStartBuilderPage() {
                         }}
                         placeholder="Título do segmento (heading nível 1), opcional"
                       />
-                      <textarea
-                        className={cnTextarea()}
-                        value={seg.callout}
-                        onChange={(e) => {
-                          const v = e.target.value;
-                          setSegments((prev) => prev.map((s, j) => (j === si ? { ...s, callout: v } : s)));
-                        }}
-                        rows={2}
-                        placeholder="Callout antes da tabela (opcional), aceita :tokens: e mini-markup"
-                      />
+                      <div className="space-y-2">
+                        <span className="text-xs font-medium text-zinc-400">Callouts antes da tabela (opcional)</span>
+                        {seg.callouts.map((c, ci) => (
+                          <div key={c.id} className="rounded-lg border border-aom-border/60 bg-aom-card/25 p-2">
+                            <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+                              <span className="text-xs text-zinc-500">Callout {ci + 1}</span>
+                              <button
+                                type="button"
+                                className="rounded border border-zinc-600 px-2 py-0.5 text-xs text-zinc-400 hover:bg-zinc-800"
+                                onClick={() =>
+                                  setSegments((prev) =>
+                                    prev.map((s, j) =>
+                                      j === si
+                                        ? {
+                                            ...s,
+                                            callouts:
+                                              s.callouts.length <= 1 ? s.callouts : s.callouts.filter((_, k) => k !== ci),
+                                          }
+                                        : s,
+                                    ),
+                                  )
+                                }
+                                disabled={seg.callouts.length <= 1}
+                              >
+                                Remover callout
+                              </button>
+                            </div>
+                            <textarea
+                              className={cnTextarea()}
+                              value={c.text}
+                              onChange={(e) => {
+                                const v = e.target.value;
+                                setSegments((prev) =>
+                                  prev.map((s, j) =>
+                                    j === si
+                                      ? {
+                                          ...s,
+                                          callouts: s.callouts.map((x, k) => (k === ci ? { ...x, text: v } : x)),
+                                        }
+                                      : s,
+                                  ),
+                                );
+                              }}
+                              rows={2}
+                              placeholder="Texto do callout (:tokens:, mini-markup…)"
+                            />
+                          </div>
+                        ))}
+                        <button
+                          type="button"
+                          className="text-sm text-amber-200/90 underline-offset-2 hover:underline"
+                          onClick={() =>
+                            setSegments((prev) =>
+                              prev.map((s, j) => {
+                                if (j !== si) return s;
+                                const last = s.callouts[s.callouts.length - 1];
+                                return { ...s, callouts: [...s.callouts, newLeadCalloutAfter(last)] };
+                              }),
+                            )
+                          }
+                        >
+                          + Callout
+                        </button>
+                      </div>
                     </div>
                     <button
                       type="button"
