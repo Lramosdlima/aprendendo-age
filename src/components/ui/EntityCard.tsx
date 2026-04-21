@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
-import { AppTag } from "@/components/ui/AppTag";
+import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
 import { cn } from "@/lib/cn";
 import { watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
 
@@ -16,6 +16,8 @@ type EntityCardProps = {
   backgroundCoverSrc?: string;
   /** Se true, o subtítulo é mostrado dentro de {@link AppTag}. */
   subtitleTag?: boolean;
+  /** Estilo do {@link AppTag} do subtítulo (`rich` = não forçar âmbar; útil com cores por tipo). */
+  subtitleTagVariant?: AppTagVariant;
   /** Reserva altura fixa para N linhas de subtítulo (ex.: 3 para grelha uniforme). */
   subtitleMinLines?: 2 | 3;
   className?: string;
@@ -37,6 +39,7 @@ export function EntityCard({
   watermarkSrc,
   backgroundCoverSrc,
   subtitleTag = true,
+  subtitleTagVariant = "amber",
   subtitleMinLines = 2,
   className,
   compareMode,
@@ -49,7 +52,12 @@ export function EntityCard({
   const hasBgCover = Boolean(backgroundCoverSrc);
   const useSubtitleTag = subtitleTag && subtitle != null && subtitle !== "";
   const subtitleBody = useSubtitleTag ? (
-    <AppTag className="align-top leading-snug [word-break:break-word] normal-case">{subtitle}</AppTag>
+    <AppTag
+      variant={subtitleTagVariant}
+      className="align-top leading-snug [word-break:break-word] normal-case"
+    >
+      {subtitle}
+    </AppTag>
   ) : (
     subtitle
   );

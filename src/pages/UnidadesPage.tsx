@@ -109,6 +109,7 @@ export function UnidadesPage() {
                 to={`/unidades/${slug}`}
                 title={u.nome}
                 cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
+                subtitleTagVariant="rich"
                 subtitle={
                   hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
                 }

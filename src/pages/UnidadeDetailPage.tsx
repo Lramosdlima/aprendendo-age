@@ -33,6 +33,7 @@ export function UnidadeDetailPage() {
           hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
         }
         descriptionTag
+        descriptionTagVariant="rich"
         headerIconSrc={unidadeIcon}
       />
 

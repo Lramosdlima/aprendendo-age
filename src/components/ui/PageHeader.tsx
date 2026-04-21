@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { AppTag } from "@/components/ui/AppTag";
+import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
 import { cn } from "@/lib/cn";
 
 type PageHeaderBlockProps = {
@@ -10,6 +10,8 @@ type PageHeaderBlockProps = {
   headerIconSrc?: string;
   /** Se true, a descrição é mostrada dentro de {@link AppTag} (comportamento análogo a `subtitleTag` em EntityCard). */
   descriptionTag?: boolean;
+  /** Variante do {@link AppTag} quando `descriptionTag` está ativo. */
+  descriptionTagVariant?: AppTagVariant;
   /** `end`: ícone à direita e texto alinhado à direita (ex.: coluna numa comparação). */
   align?: "start" | "end";
   className?: string;
@@ -22,6 +24,7 @@ export function PageHeaderBlock({
   description,
   headerIconSrc,
   descriptionTag = false,
+  descriptionTagVariant = "amber",
   align = "start",
   className,
   titleClassName,
@@ -40,7 +43,12 @@ export function PageHeaderBlock({
     description != null && (typeof description !== "string" || description !== "");
   const useDescriptionTag = descriptionTag && hasDescription;
   const descriptionBody = useDescriptionTag ? (
-    <AppTag className="mt-2 align-top leading-snug [word-break:break-word] normal-case">{description}</AppTag>
+    <AppTag
+      variant={descriptionTagVariant}
+      className="mt-2 align-top leading-snug [word-break:break-word] normal-case"
+    >
+      {description}
+    </AppTag>
   ) : hasDescription ? (
     typeof description === "string" ? (
       <p className="mt-2 max-w-2xl text-sm text-zinc-400">{description}</p>
@@ -88,14 +96,29 @@ type PageHeaderProps = {
   headerIconSrc?: string;
   /** Se true, a descrição é mostrada dentro de `AppTag`. */
   descriptionTag?: boolean;
+  descriptionTagVariant?: AppTagVariant;
   actions?: ReactNode;
   className?: string;
 };
 
-export function PageHeader({ title, description, headerIconSrc, descriptionTag, actions, className }: PageHeaderProps) {
+export function PageHeader({
+  title,
+  description,
+  headerIconSrc,
+  descriptionTag,
+  descriptionTagVariant,
+  actions,
+  className,
+}: PageHeaderProps) {
   return (
     <header className={cn("mb-8 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between", className)}>
-      <PageHeaderBlock title={title} description={description} headerIconSrc={headerIconSrc} descriptionTag={descriptionTag} />
+      <PageHeaderBlock
+        title={title}
+        description={description}
+        headerIconSrc={headerIconSrc}
+        descriptionTag={descriptionTag}
+        descriptionTagVariant={descriptionTagVariant}
+      />
       {actions ? <div className="shrink-0 sm:ml-auto">{actions}</div> : null}
     </header>
   );
