@@ -33,7 +33,7 @@ export function AppShell() {
           <div className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-wide text-amber-200">
             Aprendendo Age
           </div>
-          <p className="mt-1 text-xs text-zinc-500">Age of Mythology — referência estática</p>
+          <p className="mt-1 text-xs text-zinc-500">por Scooby Maníaco</p>
         </div>
         <nav className="flex flex-wrap gap-1 px-2 pb-3 md:flex-col md:px-3 md:pb-0">
           {nav.map((item) => (
