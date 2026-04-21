@@ -83,7 +83,7 @@ export function HomePage() {
     <div>
       <PageHeader
         title="Aprendendo Age"
-        description="Fala galeeera!! Aqui é o Scooby Maníaco e fiz esse site a princípio para estudo pessoal! Mas com tempo vi o quão bacana é compartilhar esse conhecimento para toda comunidade!  Foi e ainda é trabalhoso manter ele! Mas vale a pena cada comentário e carinho de cada um de vocês! Valeu demais!"
+        description="Fala galeeera!! Aqui é o Scooby Maníaco e sejam bem vindos ao Aprendendo Age! Um site feito com muito carinho para a comunidade de Age of Mythology! O objetivo aqui é compartilhar informações, dicas e estratégias para ajudar todos a se tornarem mestres nesse jogo incrível. Fiquem à vontade para explorar o conteúdo, aprender e se divertir! E claro, não esqueçam de compartilhar suas próprias experiências e conhecimentos também. Vamos juntos nessa jornada para dominar o Age of Mythology!"
       />
       <AppBanner
         type="Alert"
