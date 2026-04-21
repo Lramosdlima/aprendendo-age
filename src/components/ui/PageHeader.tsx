@@ -13,6 +13,8 @@ type PageHeaderBlockProps = {
   /** `end`: ícone à direita e texto alinhado à direita (ex.: coluna numa comparação). */
   align?: "start" | "end";
   className?: string;
+  /** Classes extra no `<h1>` (ex.: tamanho responsivo em páginas de comparação). */
+  titleClassName?: string;
 };
 
 export function PageHeaderBlock({
@@ -22,6 +24,7 @@ export function PageHeaderBlock({
   descriptionTag = false,
   align = "start",
   className,
+  titleClassName,
 }: PageHeaderBlockProps) {
   const icon =
     headerIconSrc ? (
@@ -58,7 +61,12 @@ export function PageHeaderBlock({
     >
       {icon}
       <div className={cn("min-w-0", isEnd && "text-right")}>
-        <h1 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-wide text-amber-100">
+        <h1
+          className={cn(
+            "font-[family-name:var(--font-display)] font-semibold tracking-wide text-amber-100",
+            titleClassName ?? "text-3xl",
+          )}
+        >
           {title}
         </h1>
         {descriptionBody}

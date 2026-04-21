@@ -1,11 +1,19 @@
 import { useParams } from "react-router-dom";
 
 import { UnidadeCombateBody, UnidadeCustoBody, UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
+import {
+  UnidadeCombateCompare,
+  UnidadeCustoCompare,
+  UnidadeVisaoGeralCompare,
+} from "@/components/unidade/UnidadeCompareSections";
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+
+const compareTitleClass =
+  "text-xl leading-snug [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl";
 
 export function UnidadeComparePage() {
   const { slugA, slugB } = useParams();
@@ -28,13 +36,14 @@ export function UnidadeComparePage() {
     <div>
       <BackLink to="/unidades">Unidades</BackLink>
 
-      <header className="mb-8 flex flex-wrap items-start justify-between gap-x-8 gap-y-6">
+      <header className="mb-8 flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
         <PageHeaderBlock
           title={u1.nome}
           description={u1.ingles ? `Inglês: ${u1.ingles}` : undefined}
           headerIconSrc={icon1}
           descriptionTag
-          className="max-w-[min(100%,28rem)] min-w-0 flex-1"
+          titleClassName={compareTitleClass}
+          className="w-full max-w-none lg:max-w-[min(100%,28rem)] lg:flex-1"
         />
         <PageHeaderBlock
           align="end"
@@ -42,11 +51,12 @@ export function UnidadeComparePage() {
           description={u2.ingles ? `Inglês: ${u2.ingles}` : undefined}
           headerIconSrc={icon2}
           descriptionTag
-          className="max-w-[min(100%,28rem)] min-w-0 flex-1"
+          titleClassName={compareTitleClass}
+          className="w-full max-w-none lg:max-w-[min(100%,28rem)] lg:flex-1"
         />
       </header>
 
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="hidden lg:grid lg:grid-cols-2 lg:gap-6">
         <Section title="Visão geral">
           <UnidadeVisaoGeralBody u={u1} />
         </Section>
@@ -55,7 +65,7 @@ export function UnidadeComparePage() {
         </Section>
       </div>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+      <div className="hidden lg:mt-6 lg:grid lg:grid-cols-2 lg:gap-6">
         <Section title="Combate">
           <UnidadeCombateBody u={u1} />
         </Section>
@@ -64,12 +74,24 @@ export function UnidadeComparePage() {
         </Section>
       </div>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+      <div className="hidden lg:mt-6 lg:grid lg:grid-cols-2 lg:gap-6">
         <Section title="Custo e treino">
           <UnidadeCustoBody u={u1} />
         </Section>
         <Section title="Custo e treino">
           <UnidadeCustoBody u={u2} />
+        </Section>
+      </div>
+
+      <div className="space-y-6 lg:hidden">
+        <Section title="Visão geral">
+          <UnidadeVisaoGeralCompare u1={u1} u2={u2} />
+        </Section>
+        <Section title="Combate">
+          <UnidadeCombateCompare u1={u1} u2={u2} />
+        </Section>
+        <Section title="Custo e treino">
+          <UnidadeCustoCompare u1={u1} u2={u2} />
         </Section>
       </div>
     </div>

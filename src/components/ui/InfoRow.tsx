@@ -24,3 +24,35 @@ export function InfoRow({ label, children, icon }: InfoRowProps) {
     </div>
   );
 }
+
+type CompareInfoRowProps = {
+  label: string;
+  left: ReactNode;
+  right: ReactNode;
+  icon?: string;
+};
+
+/** Uma linha de comparação: rótulo | valor A | valor B (uso típico em telas estreitas). */
+export function CompareInfoRow({ label, left, right, icon }: CompareInfoRowProps) {
+  const iconSrc = icon ? resolveTokenIconSrc(icon) : undefined;
+
+  return (
+    <div className="grid grid-cols-[minmax(0,5.75rem)_minmax(0,1fr)_minmax(0,1fr)] items-start gap-x-2 gap-y-1 border-b border-zinc-800/80 py-2.5 last:border-0 sm:grid-cols-[minmax(0,8.5rem)_minmax(0,1fr)_minmax(0,1fr)] sm:gap-x-3 sm:py-3">
+      <div className="flex min-w-0 items-start gap-1.5 pt-0.5">
+        {iconSrc ? (
+          <img
+            src={iconSrc}
+            alt=""
+            aria-hidden
+            className="mt-0.5 size-4 shrink-0 object-contain opacity-90 sm:size-5"
+          />
+        ) : null}
+        <span className="text-[10px] font-medium uppercase leading-snug tracking-wide text-zinc-500 sm:text-xs">
+          {label}
+        </span>
+      </div>
+      <div className="min-w-0 break-words text-xs text-zinc-200 sm:text-sm">{left}</div>
+      <div className="min-w-0 break-words text-right text-xs text-zinc-200 sm:text-sm">{right}</div>
+    </div>
+  );
+}
