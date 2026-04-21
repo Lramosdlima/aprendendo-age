@@ -2487,7 +2487,7 @@
   },
   {
     "id": 74,
-    "nome": "War Hut",
+    "nome": "Cabana de Guerra",
     "tipo": [
       {
         "type": "Militar",
@@ -2516,7 +2516,7 @@
   },
   {
     "id": 75,
-    "nome": "Noble's Hut",
+    "nome": "Cabana do Nobre",
     "tipo": [
       {
         "type": "Militar",
@@ -2580,7 +2580,7 @@
   },
   {
     "id": 77,
-    "nome": "Great Temple",
+    "nome": "Grande Templo",
     "tipo": [
       {
         "type": "Militar",
