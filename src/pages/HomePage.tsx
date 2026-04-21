@@ -18,9 +18,9 @@ import { PageHeader } from "@/components/ui/PageHeader";
 const tiles = [
     {
     to: "/starts",
-    label: "Starts (BO)",
+    label: "Starts (Build Orders)",
     count: startsBuildOrder.length,
-    hint: "Build orders ou Starts.",
+    hint: "Build Orders ou Starts.",
   },
   {
     to: "/panteoes",

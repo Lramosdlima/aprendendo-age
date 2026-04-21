@@ -8,7 +8,7 @@ type NavItem =
 
 const nav: NavItem[] = [
   { to: "/", label: "Início", end: true },
-  { to: "/starts", label: "Starts (BO)" },
+  { to: "/starts", label: "Starts (Build Orders)" },
   {
     to: "/trilha-de-aprendizado",
     label: "Trilha de Aprendizado",
