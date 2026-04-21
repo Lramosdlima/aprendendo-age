@@ -65,6 +65,17 @@ export type StartStructured = {
   segments: StartBuildSegment[];
 };
 
+/** Blocos do corpo legado Notion (`page-body`) para deuses com hierarquia Maior. */
+export type DeusExplicacaoBloco =
+  | { tipo: "citacao"; texto: string }
+  | { tipo: "lista"; itens: string[] }
+  | { tipo: "titulo"; texto: string }
+  | { tipo: "paragrafo"; texto: string };
+
+export type DeusExplicacaoMaior = {
+  blocos: DeusExplicacaoBloco[];
+};
+
 export type StartBuildOrder = {
   id: number;
   /** Rota `/starts/:slug` — derivado de título + autores (ver `buildStartSlug`). */

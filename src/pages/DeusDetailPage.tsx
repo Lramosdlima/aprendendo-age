@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 
+import { DeusExplicacaoMaiorSection } from "@/components/deus/DeusExplicacaoMaiorSection";
 import { GodMajorDecisionTree } from "@/components/deus/GodMajorDecisionTree";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
@@ -17,6 +18,7 @@ import {
   godpowerSlugById,
   panteaoById,
   panteaoSlugById,
+  type DeusExplicacaoBloco,
   unidadeById,
   unidadeSlugById,
 } from "@/data/catalog";
@@ -209,6 +211,10 @@ export function DeusDetailPage() {
           ) : null}
         </Section>
       </div>
+
+      {d.hierarquia === "Maior" && d.explicacao_maior?.blocos?.length ? (
+        <DeusExplicacaoMaiorSection blocos={d.explicacao_maior.blocos as DeusExplicacaoBloco[]} />
+      ) : null}
 
       {treeTiers ? (
         <Section title="Árvore de deuses menores (por era)" className="mt-6">
