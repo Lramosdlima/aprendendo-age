@@ -6403,5 +6403,476 @@
     "era_id": 4,
     "god_dono_id": 78,
     "panteao_id": 1
+  },
+  {
+    "id": 160,
+    "nome": "Quimchim Spy",
+    "ingles": "Quimchim Spy",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.25"
+      }
+    ],
+    "pontos_de_vida": 75,
+    "dano_perfurante": 2,
+    "alcance": 4,
+    "velocidade_de_ataque_atk_s": 1.3,
+    "dps": 1.538461538462,
+    "armadura_anticorte": 5,
+    "armadura_antiperfurante": 45,
+    "construcao": "Centro Urbano (Asteca)",
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 1,
+    "velocidade_movimento": 4.3,
+    "forca_atributos": 180.838461538462,
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "forte_contra": "Artilharia :aomr_type_archer_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
+    "era_id": 1,
+    "panteao_id": 7
+  },
+  {
+    "id": 161,
+    "nome": "Warrior Priest (Herói)",
+    "ingles": "Warrior Priest (Hero)",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "7"
+      }
+    ],
+    "pontos_de_vida": 90,
+    "dano_cortante": 2,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 2,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 35,
+    "construcao": "Templo (Asteca)",
+    "comida": 40,
+    "madeira": 0,
+    "ouro": 70,
+    "populacao": 2,
+    "velocidade_movimento": 4.8,
+    "forca_atributos": 94.8,
+    "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
+    "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
+    "era_id": 1,
+    "panteao_id": 7
+  },
+  {
+    "id": 162,
+    "nome": "Tlamanih Spearman",
+    "ingles": "Tlamanih Spearman",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "3.5"
+      }
+    ],
+    "pontos_de_vida": 85,
+    "dano_cortante": 6,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 6,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 10,
+    "construcao": "War Hut",
+    "comida": 45,
+    "madeira": 0,
+    "ouro": 25,
+    "populacao": 2,
+    "velocidade_movimento": 4.8,
+    "forca_atributos": 108.8,
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Artilharia :aomr_type_archer_icon:",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 163,
+    "nome": "Tequihua Archer",
+    "ingles": "Tequihua Archer",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.25"
+      }
+    ],
+    "pontos_de_vida": 85,
+    "dano_perfurante": 5,
+    "alcance": 14,
+    "velocidade_de_ataque_atk_s": 0.9,
+    "dps": 5.555555555556,
+    "armadura_anticorte": 15,
+    "armadura_antiperfurante": 15,
+    "construcao": "War Hut",
+    "comida": 0,
+    "madeira": 50,
+    "ouro": 30,
+    "populacao": 2,
+    "velocidade_movimento": 4.5,
+    "forca_atributos": 133.055555555556,
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 164,
+    "nome": "Coyote Warrior",
+    "ingles": "Coyote Warrior",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "2.5"
+      }
+    ],
+    "pontos_de_vida": 105,
+    "dano_cortante": 7,
+    "velocidade_de_ataque_atk_s": 1.2,
+    "dps": 5.833333333333,
+    "armadura_anticorte": 10,
+    "armadura_antiperfurante": 45,
+    "construcao": "Nuble's Hut",
+    "comida": 30,
+    "madeira": 0,
+    "ouro": 55,
+    "populacao": 2,
+    "velocidade_movimento": 5.3,
+    "forca_atributos": 126.633333333333,
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
+    "forte_contra": "Artilharia :aomr_type_archer_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 165,
+    "nome": "Ocelotl Warrior",
+    "ingles": "Ocelotl Warrior",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "counter_de": "Todos👥",
+    "multiplicador": [],
+    "pontos_de_vida": 155,
+    "dano_cortante": 20,
+    "velocidade_de_ataque_atk_s": 1.6,
+    "dps": 12.5,
+    "armadura_anticorte": 35,
+    "armadura_antiperfurante": 15,
+    "construcao": "Nuble's Hut",
+    "comida": 70,
+    "madeira": 0,
+    "ouro": 60,
+    "populacao": 3,
+    "velocidade_movimento": 4.5,
+    "forca_atributos": 154,
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Artilharia :aomr_type_archer_icon:",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 167,
+    "nome": "Eagle Warrior",
+    "ingles": "Eagle Warrior",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Clássica :aomr_classical_age_icon:",
+    "counter_de": "Todos👥",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
+    "pontos_de_vida": 95,
+    "dano_perfurante": 10,
+    "alcance": 19,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 6.666666666667,
+    "armadura_anticorte": 15,
+    "armadura_antiperfurante": 30,
+    "construcao": "Nuble's Hut",
+    "comida": 0,
+    "madeira": 75,
+    "ouro": 45,
+    "populacao": 3,
+    "velocidade_movimento": 4.5,
+    "forca_atributos": 138.166666666667,
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
+    "era_id": 2,
+    "panteao_id": 7
+  },
+  {
+    "id": 168,
+    "nome": "Otontin Smasher",
+    "ingles": "Medium Otontin Smasher",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "counter_de": "Construção:aomr_type_building_icon:",
+    "multiplicador": [
+      {
+        "type": "Construção",
+        "icon": "aomr_type_building_icon",
+        "value": "8"
+      }
+    ],
+    "pontos_de_vida": 264,
+    "dano_contundente": 12.1,
+    "velocidade_de_ataque_atk_s": 1.4,
+    "dps": 8.642857142857,
+    "armadura_anticorte": 25,
+    "armadura_antiperfurante": 65,
+    "construcao": "Great Temple",
+    "comida": 0,
+    "madeira": 150,
+    "ouro": 100,
+    "populacao": 4,
+    "velocidade_movimento": 3.2,
+    "forca_atributos": 236.842857142857,
+    "forte_contra": "Construção :aomr_type_building_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
+    "era_id": 3,
+    "panteao_id": 7
+  },
+  {
+    "id": 169,
+    "nome": "Shorn One",
+    "ingles": "Medium Shorn One",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "3"
+      }
+    ],
+    "pontos_de_vida": 192,
+    "dano_cortante": 14.3,
+    "velocidade_de_ataque_atk_s": 1.3,
+    "dps": 11,
+    "armadura_anticorte": 35,
+    "armadura_antiperfurante": 20,
+    "construcao": "Great Temple",
+    "comida": 90,
+    "madeira": 0,
+    "ouro": 45,
+    "populacao": 3,
+    "velocidade_movimento": 4.3,
+    "forca_atributos": 191.8,
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Artilharia :aomr_type_archer_icon:",
+    "era_id": 3,
+    "panteao_id": 7
+  },
+  {
+    "id": 170,
+    "nome": "Jaguar Rider",
+    "ingles": "Jaguar Rider",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
+    "pontos_de_vida": 220,
+    "dano_cortante": 19.8,
+    "velocidade_de_ataque_atk_s": 1.3,
+    "dps": 15.230769230769,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 40,
+    "construcao": "Great Temple",
+    "comida": 65,
+    "madeira": 0,
+    "ouro": 95,
+    "populacao": 3,
+    "velocidade_movimento": 5.5,
+    "forca_atributos": 217.730769230769,
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
+    "era_id": 4,
+    "panteao_id": 7
+  },
+  {
+    "id": 171,
+    "nome": "Quinametzin",
+    "ingles": "Quinametzin",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "era": "Mítica :aomr_mythic_age_icon:",
+    "counter_de": "Construção:aomr_type_building_icon:",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
+    "pontos_de_vida": 500,
+    "dano_contundente": 150,
+    "dano_perfurante": 10,
+    "alcance": 24,
+    "velocidade_de_ataque_atk_s": 3,
+    "dps": 3.333333333333,
+    "armadura_anticorte": 15,
+    "armadura_antiperfurante": 80,
+    "construcao": "Great Temple",
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 300,
+    "favor": 20,
+    "populacao": 4,
+    "velocidade_movimento": 3,
+    "forca_atributos": 447.333333333333,
+    "forte_contra": "Construção :aomr_type_building_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Herói :aomr_type_hero_icon:",
+    "era_id": 4,
+    "panteao_id": 7
   }
 ]
