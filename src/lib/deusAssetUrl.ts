@@ -27,7 +27,7 @@ function normalizeNomeToSlug(nome: string): string {
 
 /**
  * Nome exibido no JSON → slug do token (quando o PT não coincide com o ficheiro en).
- * Aztecas em AoMR podem não ter ícone no mapa.
+ * Astecas em AoMR podem não ter ícone no mapa.
  */
 const NOME_TO_SLUG: Record<string, string> = {
   Urano: "oranos",

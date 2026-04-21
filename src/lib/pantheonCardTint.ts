@@ -8,7 +8,7 @@ const PANTHEON_TINT_RGBA: Record<string, string> = {
   Atlante: "rgba(22, 145, 145, 0.2)", // turquesa
   Chinês: "rgba(95, 55, 130, 0.18)", // roxo
   Japonês: "rgba(155, 75, 105, 0.18)", // rosa cerejeira
-  Aztecas: "rgba(165, 78, 28, 0.2)", // laranja barro
+  Astecas: "rgba(165, 78, 28, 0.2)", // laranja barro
 };
 
 export function pantheonCardTint(panteao: string): string | undefined {

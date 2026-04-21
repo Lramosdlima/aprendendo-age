@@ -2636,7 +2636,7 @@
   {
     "id": 82,
     "nome": "Quetzalcoatl",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Maior",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "era_id": 1,
@@ -2645,7 +2645,7 @@
   {
     "id": 83,
     "nome": "Tezcatlipoca",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Maior",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "era_id": 1,
@@ -2654,7 +2654,7 @@
   {
     "id": 84,
     "nome": "Huitzilopochtli",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Maior",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "era_id": 1,
@@ -2663,28 +2663,28 @@
   {
     "id": 85,
     "nome": "Itzpapalotl",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Menor",
     "panteao_id": 7
   },
   {
     "id": 86,
     "nome": "Tlaloc",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Menor",
     "panteao_id": 7
   },
   {
     "id": 87,
     "nome": "Xolotl",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Menor",
     "panteao_id": 7
   },
   {
     "id": 88,
     "nome": "Coatlicue",
-    "panteao": "Aztecas",
+    "panteao": "Astecas",
     "hierarquia": "Menor",
     "panteao_id": 7
   }

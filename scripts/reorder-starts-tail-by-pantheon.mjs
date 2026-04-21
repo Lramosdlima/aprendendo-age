@@ -1,6 +1,6 @@
 /**
  * Mantém os 6 primeiros starts (ids 1–6); reordena do 7º em diante por panteão
- * (Grego → Egípcio → Nórdico → Atlante → Chinês → Japonês → Aztecas).
+ * (Grego → Egípcio → Nórdico → Atlante → Chinês → Japonês → Astecas).
  * Dentro de cada panteão, preserva a ordem anterior (por id).
  * node scripts/reorder-starts-tail-by-pantheon.mjs
  */
@@ -19,7 +19,7 @@ const PANTHEON_ORDER = [
   "Atlante",
   "Chinês",
   "Japonês",
-  "Aztecas",
+  "Astecas",
 ];
 
 function rank(pantheon) {

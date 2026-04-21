@@ -46,12 +46,12 @@ function nameMatch(g, candidate) {
 }
 
 /**
- * Panteão Aztecas inclui "Zeus" (DLC); não usar para tint dos starts principais.
+ * Panteão Astecas inclui "Zeus" (DLC); não usar para tint dos starts principais.
  * @param {string[]} gods
  * @param {Array<{ id: number, nome: string, deuses?: string }>} panteoes
  */
 function resolvePantheon(gods, panteoes) {
-  const ordered = [...panteoes].filter((p) => p.nome !== "Aztecas").sort((a, b) => a.id - b.id);
+  const ordered = [...panteoes].filter((p) => p.nome !== "Astecas").sort((a, b) => a.id - b.id);
   for (const god of gods) {
     for (const p of ordered) {
       if (nameMatch(god, p.nome)) return p.nome;
