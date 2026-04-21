@@ -16,15 +16,18 @@ type UnidadeTipoLineProps = {
   /** Se true, aplica cores por categoria (lista de unidades, etc.). */
   colored?: boolean;
   /**
-   * Com `colored`: um único tipo → cápsula com borda/fundo da categoria; vários → só texto colorido
-   * (o `AppTag` cinza fica no pai, se existir). `none` desativa a cápsula mesmo com um tipo.
+   * Com `colored`: cada tipo → cápsula com borda/fundo da categoria (uma por item quando `auto`).
+   * `none` desativa a cápsula (só cor de texto, separado por vírgula).
    */
   shell?: "auto" | "none";
   className?: string;
 };
 
+const tipoTagShellLayoutClass =
+  "inline-flex max-w-full shrink-0 items-center rounded border px-1.5 py-0.5 align-top text-sm font-medium normal-case leading-snug [word-break:break-word]";
+
 /**
- * Renderiza `tipo` como antes (ícones inline), com separador `, ` e cores opcionais por categoria.
+ * Renderiza `tipo` com ícones inline; com `colored` + `shell="auto"`, uma cápsula por tipo.
  */
 export function UnidadeTipoLine({
   tipo,
@@ -40,19 +43,31 @@ export function UnidadeTipoLine({
     return <NotionText text={tipoItemsToNotionText(tipo)} className={cn("inline", className)} />;
   }
 
-  const useShell = shell === "auto" && items.length === 1;
+  if (shell === "auto") {
+    if (items.length === 1) {
+      const it = items[0]!;
+      return (
+        <span className={cn(tipoTagShellLayoutClass, tipoTypeTagShellClass(it.type), className)}>
+          <NotionText text={tipoItemToNotionText(it)} className="inline" />
+        </span>
+      );
+    }
 
-  if (useShell) {
-    const it = items[0]!;
     return (
       <span
         className={cn(
-          "inline-flex max-w-full shrink-0 items-center rounded border px-1.5 py-0.5 align-top text-sm font-medium normal-case leading-snug [word-break:break-word]",
-          tipoTypeTagShellClass(it.type),
+          "inline-flex max-w-full flex-wrap items-center gap-1 align-top",
           className,
         )}
       >
-        <NotionText text={tipoItemToNotionText(it)} className="inline" />
+        {items.map((it, i) => (
+          <span
+            key={`${it.type}-${it.icon ?? ""}-${i}`}
+            className={cn(tipoTagShellLayoutClass, tipoTypeTagShellClass(it.type))}
+          >
+            <NotionText text={tipoItemToNotionText(it)} className="inline" />
+          </span>
+        ))}
       </span>
     );
   }

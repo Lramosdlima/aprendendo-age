@@ -105,7 +105,6 @@ export function UnidadesPage() {
           const slug = unidadeSlugById.get(u.id) ?? String(u.id);
           const selected = selectedSlugs.includes(slug);
           const selectDisabled = compareMode && selectedSlugs.length >= 2 && !selected;
-          const multiTipo = hasTipoContent(u.tipo) && u.tipo!.length > 1;
 
           return (
             <li key={u.id}>
@@ -113,8 +112,7 @@ export function UnidadesPage() {
                 to={`/unidades/${slug}`}
                 title={u.nome}
                 cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
-                subtitleTag={multiTipo}
-                subtitleTagVariant="rich"
+                subtitleTag={false}
                 subtitle={
                   hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
                 }
