@@ -77,10 +77,18 @@ export function ConstrucaoDetailPage() {
         <Section title="Custo e tempo">
           <div className="space-y-0">
             <InfoRow label="Custo total">{c.custo ?? "—"}</InfoRow>
-            <InfoRow label="Madeira">{c.madeira ?? "—"}</InfoRow>
-            <InfoRow label="Ouro">{c.ouro ?? "—"}</InfoRow>
-            <InfoRow label="Tempo (s)">{c.tempo_construir_segundos ?? "—"}</InfoRow>
-            <InfoRow label="Guarnição">{c.guarnicao ?? "—"}</InfoRow>
+            <InfoRow label="Madeira" icon="woodaom">
+              {c.madeira ?? "—"}
+            </InfoRow>
+            <InfoRow label="Ouro" icon="goldaom">
+              {c.ouro ?? "—"}
+            </InfoRow>
+            <InfoRow label="Tempo (s)" icon="aomr_time_icon">
+              {c.tempo_construir_segundos ?? "—"}
+            </InfoRow>
+            <InfoRow label="Guarnição" icon="aom_garrison_icon">
+              {c.guarnicao ?? "—"}
+            </InfoRow>
           </div>
         </Section>
       </div>
@@ -88,14 +96,26 @@ export function ConstrucaoDetailPage() {
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
         <Section title="Combate / defesa">
           <div className="space-y-0">
-            <InfoRow label="PV">{c.pontos_de_vida ?? "—"}</InfoRow>
-            <InfoRow label="DPS">{c.dps ?? "—"}</InfoRow>
-            <InfoRow label="Alcance">{c.alcance ?? "—"}</InfoRow>
+            <InfoRow label="PV" icon="aomr_hit_points_icon">
+              {c.pontos_de_vida ?? "—"}
+            </InfoRow>
+            <InfoRow label="DPS" icon="aomr_hit_points_icon">
+              {c.dps ?? "—"}
+            </InfoRow>
+            <InfoRow label="Alcance" icon="rangeicon">
+              {c.alcance ?? "—"}
+            </InfoRow>
             <InfoRow label="Projéteis">{c.no_projeteis ?? "—"}</InfoRow>
-            <InfoRow label="Dano perfurante">{c.dano_perfurante ?? "—"}</InfoRow>
+            <InfoRow label="Dano perfurante" icon="piercedamage">
+              {c.dano_perfurante ?? "—"}
+            </InfoRow>
             <InfoRow label="Vel. ataque (s)">{c.velocidade_de_ataque_atk_s ?? "—"}</InfoRow>
-            <InfoRow label="Arm. corte">{c.armadura_anticorte ?? "—"}</InfoRow>
-            <InfoRow label="Arm. perfuração">{c.armadura_antiperfurante ?? "—"}</InfoRow>
+            <InfoRow label="Arm. corte" icon="hackarmor">
+              {c.armadura_anticorte ?? "—"}
+            </InfoRow>
+            <InfoRow label="Arm. perfuração" icon="piercearmor">
+              {c.armadura_antiperfurante ?? "—"}
+            </InfoRow>
             <InfoRow label="Arm. contusão">{c.armadura_anticontucao ?? "—"}</InfoRow>
           </div>
         </Section>

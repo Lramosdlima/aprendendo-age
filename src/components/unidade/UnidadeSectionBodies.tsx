@@ -63,12 +63,22 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
 export function UnidadeCombateBody({ u }: { u: U }) {
   return (
     <div className="space-y-0">
-      <InfoRow label="PV">{u.pontos_de_vida ?? "—"}</InfoRow>
-      <InfoRow label="DPS">{u.dps ?? "—"}</InfoRow>
+      <InfoRow label="PV" icon="aomr_hit_points_icon">
+        {u.pontos_de_vida ?? "—"}
+      </InfoRow>
+      <InfoRow label="DPS" icon="aomr_hit_points_icon">
+        {u.dps ?? "—"}
+      </InfoRow>
       <InfoRow label="Vel. ataque (s)">{u.velocidade_de_ataque_atk_s ?? "—"}</InfoRow>
-      <InfoRow label="Dano cortante">{u.dano_cortante ?? "—"}</InfoRow>
-      <InfoRow label="Arm. corte">{u.armadura_anticorte ?? "—"}</InfoRow>
-      <InfoRow label="Arm. perfuração">{u.armadura_antiperfurante ?? "—"}</InfoRow>
+      <InfoRow label="Dano cortante" icon="hackdamage">
+        {u.dano_cortante ?? "—"}
+      </InfoRow>
+      <InfoRow label="Arm. corte" icon="hackarmor">
+        {u.armadura_anticorte ?? "—"}
+      </InfoRow>
+      <InfoRow label="Arm. perfuração" icon="piercearmor">
+        {u.armadura_antiperfurante ?? "—"}
+      </InfoRow>
       <InfoRow label="Counter de">{u.counter_de ? <NotionText text={u.counter_de} /> : "—"}</InfoRow>
       <InfoRow label="Multiplicador">
         {u.multiplicador != null && u.multiplicador !== "" ? <NotionText text={u.multiplicador} /> : "—"}
