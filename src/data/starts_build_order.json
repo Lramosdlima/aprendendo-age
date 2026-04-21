@@ -1,659 +1,16 @@
 [
   {
     "id": 1,
-    "titulo": "Atlantes",
-    "author": [
-      "Moose"
-    ],
-    "god": "Gaia, Urano, Cronos",
-    "notion_file_id": "28500f30e21180fbb56bf7ffd0dec7e2",
-    "youtube": [
-      "https://youtu.be/_0PBN1DrH44",
-      "https://youtu.be/1MxHT7EJdxs"
-    ],
-    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
-    "structured": {
-      "segments": [
-        {
-          "lead": [
-            {
-              "kind": "callout",
-              "text": "Começa com 2 Cidadãos :aomr_citizen_icon: + 3 Oráculos :aomr_oracle_hero_icon:"
-            }
-          ],
-          "table": [
-            {
-              "description": "2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
-              "food": "2",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "7/15",
-              "type": null
-            },
-            {
-              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "hint"
-            },
-            {
-              "description": "1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina",
-              "food": "2",
-              "wood": "-",
-              "gold": "1",
-              "favor": null,
-              "pop": "9/15",
-              "type": null
-            },
-            {
-              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "2",
-              "wood": "1",
-              "gold": "1",
-              "favor": null,
-              "pop": "11/35",
-              "type": null
-            },
-            {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
-              "food": "4",
-              "wood": "1",
-              "gold": "1",
-              "favor": null,
-              "pop": "15/35",
-              "type": null
-            },
-            {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "4",
-              "wood": "2",
-              "gold": "1",
-              "favor": null,
-              "pop": "17/35",
-              "type": null
-            },
-            {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "blue"
-            },
-            {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
-              "food": "5",
-              "wood": "2",
-              "gold": "1",
-              "favor": null,
-              "pop": "19/35",
-              "type": null
-            },
-            {
-              "description": "+1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
-              "food": "5",
-              "wood": "2",
-              "gold": "2",
-              "favor": null,
-              "pop": "21/35",
-              "type": null
-            },
-            {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "5",
-              "wood": "3",
-              "gold": "2",
-              "favor": null,
-              "pop": "23/35",
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Oceano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da <highlight-red>comida</highlight-red> :foodaom: para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "5",
-              "wood": "4",
-              "gold": "2",
-              "favor": null,
-              "pop": "25/35",
-              "type": null
-            },
-            {
-              "description": "Treine +1 Oráculo :aomr_oracle_hero_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "Construir <highlight-blue>Quartel Militar</highlight-blue> :aomr_military_barracks_icon: e <highlight-blue>Contralquartel</highlight-blue> :aomr_counter-barracks_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": "Agressivar com [Murmillo :aomr_murmillo_icon: + Turma :aomr_turma_icon: ] OU [Murmillo :aomr_murmillo_icon: + Quirobalista :aomr_cheiroballista_icon: ]",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            }
-          ],
-          "footer": []
-        }
-      ]
-    }
-  },
-  {
-    "id": 2,
-    "titulo": "Chineses",
-    "author": [
-      "Moose"
-    ],
-    "god": "Fu Xi, Nu Wa, Shennong",
-    "notion_file_id": "28500f30e211802885f9cec177b1ba64",
-    "youtube": [
-      "https://youtu.be/1MxHT7EJdxs"
-    ],
-    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
-    "structured": {
-      "segments": [
-        {
-          "lead": [
-            {
-              "kind": "callout",
-              "text": "Começa com 2 Camponeses :aomr_peasant_icon: + 1 Kuafu :aomr_kuafu_icon: + 1 Pioneiro :aomr_pioneer_icon:"
-            },
-            {
-              "kind": "callout",
-              "text": "Lembre-se sempre de <strong>espalhar</strong> as construções e <strong>conectá-las</strong> para gerar <highlight-blue>favor</highlight-blue> :favoraom:"
-            }
-          ],
-          "table": [
-            {
-              "description": "2 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: + Silo :aomr_silo:",
-              "food": "2",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "4/15",
-              "type": null
-            },
-            {
-              "description": "1 Kuafu :aomr_kuafu_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois Silo :aomr_silo: para <highlight-yellow>Ouro</highlight-yellow> :goldaom: (até <highlight-yellow>250</highlight-yellow>)",
-              "food": "-",
-              "wood": "-",
-              "gold": "1",
-              "favor": null,
-              "pop": "4/15",
-              "type": null
-            },
-            {
-              "description": "Explore com Pioneiro :aomr_pioneer_icon: → Coloque Auto :autoqueue_px112: nos Balões :aomr_sky_lantern_icon:",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "hint"
-            },
-            {
-              "description": "+5 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom:",
-              "food": "9",
-              "wood": "-",
-              "gold": "1",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": "Recolha <highlight-yellow>250</highlight-yellow> de <highlight-yellow>Ouro</highlight-yellow> :goldaom: e mude o Kuafu :aomr_kuafu_icon: Silo :aomr_silo: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>",
-              "food": "-",
-              "wood": "1",
-              "gold": "0",
-              "favor": null,
-              "pop": "7/25",
-              "type": null
-            },
-            {
-              "description": "Depois do 9º camponês :aomr_peasant_icon: : crie novo Kuafu :aomr_kuafu_icon: para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
-              "food": "9",
-              "wood": "1",
-              "gold": "0",
-              "favor": null,
-              "pop": "17/25",
-              "type": null
-            },
-            {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com o novo Kuafu :aomr_kuafu_icon: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:50</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "blue"
-            },
-            {
-              "description": "+3 Camponeses :aomr_peasant_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "9",
-              "wood": "4",
-              "gold": "-",
-              "favor": null,
-              "pop": "10/25",
-              "type": null
-            },
-            {
-              "description": "Move Kuafu :aomr_kuafu_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-teal></highlight-teal> para o <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
-              "food": "5",
-              "wood": "4",
-              "gold": "1",
-              "favor": null,
-              "pop": "11/25",
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: <strong></strong>(<strong>≈</strong><code><strong>3:05</strong></code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "Rebalanceie os Camponeses imediatamente :aomr_peasant_icon:",
-              "food": "6",
-              "wood": "4",
-              "gold": "3",
-              "favor": null,
-              "pop": "19/25",
-              "type": null
-            },
-            {
-              "description": "Camponês :aomr_peasant_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:05</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "Construir <highlight-blue>Oficina de Máquina</highlight-blue> :aomr_machine_workshop: e <highlight-blue>Campo Militar</highlight-blue><highlight-blue>:aomr_military_camp:</highlight-blue>",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            }
-          ],
-          "footer": []
-        }
-      ]
-    }
-  },
-  {
-    "id": 3,
-    "titulo": "Egípcios",
-    "author": [
-      "Moose"
-    ],
-    "god": "Rá, Ísis, Set",
-    "notion_file_id": "28500f30e21180bcac19d3ce77313730",
-    "youtube": [
-      "https://youtu.be/_0PBN1DrH44",
-      "https://youtu.be/1MxHT7EJdxs"
-    ],
-    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
-    "structured": {
-      "segments": [
-        {
-          "lead": [
-            {
-              "kind": "callout",
-              "text": "Começa com 3 Trabalhador :aomr_laborer_icon: + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
-            }
-          ],
-          "table": [
-            {
-              "description": "3 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
-              "food": "3",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "5/15",
-              "type": null
-            },
-            {
-              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: → Com Set :aomr_set_icon: converta animais / Ou Ísis :aomr_isis_icon: coloque Obeliscos :aomr_obelisk_icon:",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "hint"
-            },
-            {
-              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon:",
-              "food": "3",
-              "wood": "-",
-              "gold": "2",
-              "favor": null,
-              "pop": "7/15",
-              "type": null
-            },
-            {
-              "description": "+1 Trabalhador :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
-              "food": "4",
-              "wood": "-",
-              "gold": "2",
-              "favor": null,
-              "pop": "9/15",
-              "type": null
-            },
-            {
-              "description": "Próximo Trabalhador :aomr_laborer_icon: sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: , +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
-              "food": "8",
-              "wood": "0",
-              "gold": "3",
-              "favor": null,
-              "pop": "16/25",
-              "type": null
-            },
-            {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com próximo Trabalhador :aomr_laborer_icon: que nascer <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:30</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "blue"
-            },
-            {
-              "description": "Esse mesmo Trabalhador :aomr_laborer_icon: fará todas as <highlight-blue>Casas</highlight-blue> :aomr_house_icon: ao redor das torres :aomr_sentry_tower_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": "2 Trabalhadores :aomr_laborer_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Campo Madeireiro :aomr_lumber_camp_icon: <highlight-gray>(para Fundeiros</highlight-gray><highlight-gray>:aomr_slinger_icon:</highlight-gray><highlight-gray>ou UPs)</highlight-gray>",
-              "food": "8",
-              "wood": "2",
-              "gold": "3",
-              "favor": null,
-              "pop": "19/25",
-              "type": null
-            },
-            {
-              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
-              "food": "8",
-              "wood": "2",
-              "gold": "5",
-              "favor": null,
-              "pop": "21/25",
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Anubis</strong> :aomr_anubis_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:15</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
-              "food": "6",
-              "wood": "2",
-              "gold": "7",
-              "favor": null,
-              "pop": "21/25",
-              "type": null
-            },
-            {
-              "description": "Up da <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": "hint"
-            },
-            {
-              "description": "Trabalhador :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: sobe +1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:15</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "2 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: cada um sobe 1 <highlight-blue>Quartel</highlight-blue> :aomr_barracks_icon: <highlight-gray>(totalizando 2)</highlight-gray>",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            }
-          ],
-          "footer": []
-        }
-      ]
-    }
-  },
-  {
-    "id": 5,
-    "titulo": "Gregos (Mar 🌊:aomr_type_ship_icon:)",
-    "author": [
-      "HuskSuppe"
-    ],
-    "god": "Zeus, Hades, Poseidon, Deméter",
-    "notion_file_id": "2d200f30e211800c85ced0bc22fc227b",
-    "youtube": [
-      "https://youtu.be/Rv2GToFC8x0"
-    ],
-    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
-    "structured": {
-      "segments": [
-        {
-          "lead": [
-            {
-              "kind": "callout",
-              "text": "Começa com 4 Aldeões :aomr_villager_greek_icon: + Kataskopos :aomr_kataskopos_icon:"
-            }
-          ],
-          "table": [
-            {
-              "description": "3 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
-              "food": "-",
-              "wood": "3",
-              "gold": "-",
-              "favor": null,
-              "pop": "5/15",
-              "type": null
-            },
-            {
-              "description": "Outro Aldeão Inicial :aomr_villager_greek_icon: no <highlight-orange>Doca</highlight-orange> :aomr_dock_icon: depois na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "-",
-              "wood": "4",
-              "gold": "-",
-              "favor": null,
-              "pop": "5/15",
-              "type": null
-            },
-            {
-              "description": "6 barcos de pesca :aomr_type_ship_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": null
-            },
-            {
-              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
-              "food": "2",
-              "wood": "4",
-              "gold": "-",
-              "favor": null,
-              "pop": null,
-              "type": null
-            },
-            {
-              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
-              "food": "2",
-              "wood": "4",
-              "gold": "2",
-              "favor": null,
-              "pop": null,
-              "type": null
-            },
-            {
-              "description": "Foco TC :aomr_town_center_greek_icon: : Aldeões :aomr_villager_greek_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
-              "food": "+",
-              "wood": "4",
-              "gold": "-",
-              "favor": null,
-              "pop": null,
-              "type": null
-            },
-            {
-              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": null,
-              "type": null
-            },
-            {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 1 Aldeão :aomr_villager_greek_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: (<strong>≈</strong><code>2:30</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "blue"
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "Rebalanceie os Aldeões :aomr_villager_greek_icon: : todos da Caça :aomr_caribou_icon: vão para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
-              "food": "6",
-              "wood": "10",
-              "gold": "4",
-              "favor": null,
-              "pop": "23/25",
-              "type": null
-            },
-            {
-              "description": "Com Aldeão :aomr_villager_greek_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> faça outras 2 <highlight-orange>Docas</highlight-orange> :aomr_dock_icon:",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": null
-            },
-            {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": "pink"
-            },
-            {
-              "description": "Convoque barcos nessa ordem: martelo :aomr_type_close_combat_ship_icon: → cerco :aomr_type_siege_ship_icon: → flecha :aomr_type_archer_ship_icon:",
-              "food": null,
-              "wood": null,
-              "gold": null,
-              "favor": null,
-              "pop": null,
-              "type": null
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "id": 4,
     "titulo": "Gregos",
     "author": [
       "Moose"
     ],
-    "god": "Zeus, Hades, Poseidon, Deméter",
+    "god": [
+      "Zeus",
+      "Hades",
+      "Poseidon",
+      "Deméter"
+    ],
     "notion_file_id": "28500f30e21180398f65d36e5df5fa0f",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -985,15 +342,199 @@
           ]
         }
       ]
-    }
+    },
+    "pantheon": "Grego"
   },
   {
-    "id": 6,
+    "id": 2,
+    "titulo": "Egípcios",
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Rá",
+      "Ísis",
+      "Set"
+    ],
+    "notion_file_id": "28500f30e21180bcac19d3ce77313730",
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
+    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 3 Trabalhador :aomr_laborer_icon: + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
+            }
+          ],
+          "table": [
+            {
+              "description": "3 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "food": "3",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "5/15",
+              "type": null
+            },
+            {
+              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: → Com Set :aomr_set_icon: converta animais / Ou Ísis :aomr_isis_icon: coloque Obeliscos :aomr_obelisk_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon:",
+              "food": "3",
+              "wood": "-",
+              "gold": "2",
+              "favor": null,
+              "pop": "7/15",
+              "type": null
+            },
+            {
+              "description": "+1 Trabalhador :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "food": "4",
+              "wood": "-",
+              "gold": "2",
+              "favor": null,
+              "pop": "9/15",
+              "type": null
+            },
+            {
+              "description": "Próximo Trabalhador :aomr_laborer_icon: sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: , +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "food": "8",
+              "wood": "0",
+              "gold": "3",
+              "favor": null,
+              "pop": "16/25",
+              "type": null
+            },
+            {
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com próximo Trabalhador :aomr_laborer_icon: que nascer <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:30</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "Esse mesmo Trabalhador :aomr_laborer_icon: fará todas as <highlight-blue>Casas</highlight-blue> :aomr_house_icon: ao redor das torres :aomr_sentry_tower_icon:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": "2 Trabalhadores :aomr_laborer_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Campo Madeireiro :aomr_lumber_camp_icon: <highlight-gray>(para Fundeiros</highlight-gray><highlight-gray>:aomr_slinger_icon:</highlight-gray><highlight-gray>ou UPs)</highlight-gray>",
+              "food": "8",
+              "wood": "2",
+              "gold": "3",
+              "favor": null,
+              "pop": "19/25",
+              "type": null
+            },
+            {
+              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "food": "8",
+              "wood": "2",
+              "gold": "5",
+              "favor": null,
+              "pop": "21/25",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Anubis</strong> :aomr_anubis_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:15</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "food": "6",
+              "wood": "2",
+              "gold": "7",
+              "favor": null,
+              "pop": "21/25",
+              "type": null
+            },
+            {
+              "description": "Up da <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": "hint"
+            },
+            {
+              "description": "Trabalhador :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: sobe +1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:15</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "2 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: cada um sobe 1 <highlight-blue>Quartel</highlight-blue> :aomr_barracks_icon: <highlight-gray>(totalizando 2)</highlight-gray>",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            }
+          ],
+          "footer": []
+        }
+      ]
+    },
+    "pantheon": "Egípcio"
+  },
+  {
+    "id": 3,
     "titulo": "Nórdicos",
     "author": [
       "Moose"
     ],
-    "god": "Odin, Loki, Thor, Freyr",
+    "god": [
+      "Odin",
+      "Loki",
+      "Thor",
+      "Freyr"
+    ],
     "notion_file_id": "28500f30e211802e9d90d9c181d32fcb",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -1212,7 +753,499 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Nórdico"
+  },
+  {
+    "id": 4,
+    "titulo": "Atlantes",
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Gaia",
+      "Urano",
+      "Cronos"
+    ],
+    "notion_file_id": "28500f30e21180fbb56bf7ffd0dec7e2",
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
+    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 2 Cidadãos :aomr_citizen_icon: + 3 Oráculos :aomr_oracle_hero_icon:"
+            }
+          ],
+          "table": [
+            {
+              "description": "2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "food": "2",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "7/15",
+              "type": null
+            },
+            {
+              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina",
+              "food": "2",
+              "wood": "-",
+              "gold": "1",
+              "favor": null,
+              "pop": "9/15",
+              "type": null
+            },
+            {
+              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "2",
+              "wood": "1",
+              "gold": "1",
+              "favor": null,
+              "pop": "11/35",
+              "type": null
+            },
+            {
+              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "food": "4",
+              "wood": "1",
+              "gold": "1",
+              "favor": null,
+              "pop": "15/35",
+              "type": null
+            },
+            {
+              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "4",
+              "wood": "2",
+              "gold": "1",
+              "favor": null,
+              "pop": "17/35",
+              "type": null
+            },
+            {
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "food": "5",
+              "wood": "2",
+              "gold": "1",
+              "favor": null,
+              "pop": "19/35",
+              "type": null
+            },
+            {
+              "description": "+1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "food": "5",
+              "wood": "2",
+              "gold": "2",
+              "favor": null,
+              "pop": "21/35",
+              "type": null
+            },
+            {
+              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "5",
+              "wood": "3",
+              "gold": "2",
+              "favor": null,
+              "pop": "23/35",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Oceano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da <highlight-red>comida</highlight-red> :foodaom: para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "5",
+              "wood": "4",
+              "gold": "2",
+              "favor": null,
+              "pop": "25/35",
+              "type": null
+            },
+            {
+              "description": "Treine +1 Oráculo :aomr_oracle_hero_icon:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Construir <highlight-blue>Quartel Militar</highlight-blue> :aomr_military_barracks_icon: e <highlight-blue>Contralquartel</highlight-blue> :aomr_counter-barracks_icon:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": "Agressivar com [Murmillo :aomr_murmillo_icon: + Turma :aomr_turma_icon: ] OU [Murmillo :aomr_murmillo_icon: + Quirobalista :aomr_cheiroballista_icon: ]",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            }
+          ],
+          "footer": []
+        }
+      ]
+    },
+    "pantheon": "Atlante"
+  },
+  {
+    "id": 5,
+    "titulo": "Chineses",
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Fu Xi",
+      "Nu Wa",
+      "Shennong"
+    ],
+    "notion_file_id": "28500f30e211802885f9cec177b1ba64",
+    "youtube": [
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
+    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 2 Camponeses :aomr_peasant_icon: + 1 Kuafu :aomr_kuafu_icon: + 1 Pioneiro :aomr_pioneer_icon:"
+            },
+            {
+              "kind": "callout",
+              "text": "Lembre-se sempre de <strong>espalhar</strong> as construções e <strong>conectá-las</strong> para gerar <highlight-blue>favor</highlight-blue> :favoraom:"
+            }
+          ],
+          "table": [
+            {
+              "description": "2 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: + Silo :aomr_silo:",
+              "food": "2",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "4/15",
+              "type": null
+            },
+            {
+              "description": "1 Kuafu :aomr_kuafu_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois Silo :aomr_silo: para <highlight-yellow>Ouro</highlight-yellow> :goldaom: (até <highlight-yellow>250</highlight-yellow>)",
+              "food": "-",
+              "wood": "-",
+              "gold": "1",
+              "favor": null,
+              "pop": "4/15",
+              "type": null
+            },
+            {
+              "description": "Explore com Pioneiro :aomr_pioneer_icon: → Coloque Auto :autoqueue_px112: nos Balões :aomr_sky_lantern_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+5 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom:",
+              "food": "9",
+              "wood": "-",
+              "gold": "1",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": "Recolha <highlight-yellow>250</highlight-yellow> de <highlight-yellow>Ouro</highlight-yellow> :goldaom: e mude o Kuafu :aomr_kuafu_icon: Silo :aomr_silo: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>",
+              "food": "-",
+              "wood": "1",
+              "gold": "0",
+              "favor": null,
+              "pop": "7/25",
+              "type": null
+            },
+            {
+              "description": "Depois do 9º camponês :aomr_peasant_icon: : crie novo Kuafu :aomr_kuafu_icon: para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "food": "9",
+              "wood": "1",
+              "gold": "0",
+              "favor": null,
+              "pop": "17/25",
+              "type": null
+            },
+            {
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com o novo Kuafu :aomr_kuafu_icon: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:50</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "+3 Camponeses :aomr_peasant_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "9",
+              "wood": "4",
+              "gold": "-",
+              "favor": null,
+              "pop": "10/25",
+              "type": null
+            },
+            {
+              "description": "Move Kuafu :aomr_kuafu_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-teal></highlight-teal> para o <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "food": "5",
+              "wood": "4",
+              "gold": "1",
+              "favor": null,
+              "pop": "11/25",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: <strong></strong>(<strong>≈</strong><code><strong>3:05</strong></code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Rebalanceie os Camponeses imediatamente :aomr_peasant_icon:",
+              "food": "6",
+              "wood": "4",
+              "gold": "3",
+              "favor": null,
+              "pop": "19/25",
+              "type": null
+            },
+            {
+              "description": "Camponês :aomr_peasant_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:05</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Construir <highlight-blue>Oficina de Máquina</highlight-blue> :aomr_machine_workshop: e <highlight-blue>Campo Militar</highlight-blue><highlight-blue>:aomr_military_camp:</highlight-blue>",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": "-",
+              "type": null
+            }
+          ],
+          "footer": []
+        }
+      ]
+    },
+    "pantheon": "Chinês"
+  },
+  {
+    "id": 6,
+    "titulo": "Gregos (Mar 🌊:aomr_type_ship_icon:)",
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Zeus",
+      "Hades",
+      "Poseidon",
+      "Deméter"
+    ],
+    "notion_file_id": "2d200f30e211800c85ced0bc22fc227b",
+    "youtube": [
+      "https://youtu.be/Rv2GToFC8x0"
+    ],
+    "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 4 Aldeões :aomr_villager_greek_icon: + Kataskopos :aomr_kataskopos_icon:"
+            }
+          ],
+          "table": [
+            {
+              "description": "3 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
+              "food": "-",
+              "wood": "3",
+              "gold": "-",
+              "favor": null,
+              "pop": "5/15",
+              "type": null
+            },
+            {
+              "description": "Outro Aldeão Inicial :aomr_villager_greek_icon: no <highlight-orange>Doca</highlight-orange> :aomr_dock_icon: depois na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "-",
+              "wood": "4",
+              "gold": "-",
+              "favor": null,
+              "pop": "5/15",
+              "type": null
+            },
+            {
+              "description": "6 barcos de pesca :aomr_type_ship_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "food": "2",
+              "wood": "4",
+              "gold": "-",
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
+              "food": "2",
+              "wood": "4",
+              "gold": "2",
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Foco TC :aomr_town_center_greek_icon: : Aldeões :aomr_villager_greek_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "food": "+",
+              "wood": "4",
+              "gold": "-",
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon:",
+              "food": "-",
+              "wood": "-",
+              "gold": "-",
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 1 Aldeão :aomr_villager_greek_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: (<strong>≈</strong><code>2:30</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Rebalanceie os Aldeões :aomr_villager_greek_icon: : todos da Caça :aomr_caribou_icon: vão para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "food": "6",
+              "wood": "10",
+              "gold": "4",
+              "favor": null,
+              "pop": "23/25",
+              "type": null
+            },
+            {
+              "description": "Com Aldeão :aomr_villager_greek_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> faça outras 2 <highlight-orange>Docas</highlight-orange> :aomr_dock_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Convoque barcos nessa ordem: martelo :aomr_type_close_combat_ship_icon: → cerco :aomr_type_siege_ship_icon: → flecha :aomr_type_archer_ship_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            }
+          ]
+        }
+      ]
+    },
+    "pantheon": "Grego"
   },
   {
     "id": 7,
@@ -1221,7 +1254,9 @@
       "MikeKing",
       "TheRapl"
     ],
-    "god": "Amaterasu",
+    "god": [
+      "Amaterasu"
+    ],
     "notion_file_id": "28200f30e21181068ec1d6a95eece9b3",
     "youtube": [
       "https://youtu.be/Wo1Qb4GjJyI",
@@ -1476,7 +1511,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Japonês"
   },
   {
     "id": 8,
@@ -1484,7 +1520,9 @@
     "author": [
       "Tpisai"
     ],
-    "god": "Cronos",
+    "god": [
+      "Cronos"
+    ],
     "notion_file_id": "28500f30e21180259646c5aa65a92a4a",
     "youtube": [
       "https://youtu.be/f8z-usB3IKw"
@@ -1666,7 +1704,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Atlante"
   },
   {
     "id": 9,
@@ -1674,7 +1713,9 @@
     "author": [
       "Morley Games"
     ],
-    "god": "Cronos",
+    "god": [
+      "Cronos"
+    ],
     "notion_file_id": "28500f30e21180ceae2edb08b6209593",
     "youtube": [
       "https://youtu.be/UmLxeuRJokI"
@@ -1874,7 +1915,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Atlante"
   },
   {
     "id": 10,
@@ -1882,7 +1924,9 @@
     "author": [
       "Scooby"
     ],
-    "god": "Freyr",
+    "god": [
+      "Freyr"
+    ],
     "notion_file_id": "28200f30e2118141a862c5602104d485",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -2080,7 +2124,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Nórdico"
   },
   {
     "id": 11,
@@ -2088,7 +2133,9 @@
     "author": [
       "Aussie_Drongo"
     ],
-    "god": "Freyr",
+    "god": [
+      "Freyr"
+    ],
     "notion_file_id": "28200f30e211817a889ec4e52ac5094b",
     "youtube": [
       "https://youtu.be/VUMgDXltBLk"
@@ -2252,7 +2299,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Nórdico"
   },
   {
     "id": 12,
@@ -2260,7 +2308,9 @@
     "author": [
       "HuskSuppe"
     ],
-    "god": "Fu Xi",
+    "god": [
+      "Fu Xi"
+    ],
     "notion_file_id": "2d400f30e21180b68687ee3cf9a009a8",
     "youtube": [
       "https://youtu.be/yPITLNPFxBI"
@@ -2455,7 +2505,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Chinês"
   },
   {
     "id": 13,
@@ -2463,7 +2514,9 @@
     "author": [
       "Balerion"
     ],
-    "god": "Gaia",
+    "god": [
+      "Gaia"
+    ],
     "notion_file_id": "28500f30e21180f79b93ffbc9082b57b",
     "youtube": [
       "https://youtu.be/9tFWpUUQAwQ"
@@ -2685,7 +2738,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Atlante"
   },
   {
     "id": 14,
@@ -2693,7 +2747,9 @@
     "author": [
       "Balerion"
     ],
-    "god": "Gaia",
+    "god": [
+      "Gaia"
+    ],
     "notion_file_id": "28500f30e21180f7aac8ce6ae70c7bdf",
     "youtube": [
       "https://youtu.be/h7rzk9agp2o"
@@ -2875,7 +2931,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Atlante"
   },
   {
     "id": 15,
@@ -2883,7 +2940,9 @@
     "author": [
       "Boxer"
     ],
-    "god": "Gaia",
+    "god": [
+      "Gaia"
+    ],
     "notion_file_id": "2b300f30e21180df9628cd93850abdff",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -3044,7 +3103,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Atlante"
   },
   {
     "id": 16,
@@ -3052,7 +3112,9 @@
     "author": [
       "Aussie_Drongo"
     ],
-    "god": "Hades",
+    "god": [
+      "Hades"
+    ],
     "notion_file_id": "28500f30e21180bb8fe8fd53f6bd33c4",
     "youtube": [
       "https://youtu.be/ZQt5PmCZGSY"
@@ -3292,7 +3354,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Grego"
   },
   {
     "id": 17,
@@ -3300,7 +3363,9 @@
     "author": [
       "Light Yagami"
     ],
-    "god": "Isis",
+    "god": [
+      "Isis"
+    ],
     "notion_file_id": "28300f30e21180a0a22ff1f5ab5c56fe",
     "youtube": [
       "https://youtu.be/-sojDxdtSy4"
@@ -3509,7 +3574,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Egípcio"
   },
   {
     "id": 18,
@@ -3517,7 +3583,9 @@
     "author": [
       "HuskSuppe"
     ],
-    "god": "Loki",
+    "god": [
+      "Loki"
+    ],
     "notion_file_id": "28500f30e211802eabe3eafc8264633c",
     "youtube": [
       "https://youtu.be/O-_xwvH--tY"
@@ -3743,7 +3811,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Nórdico"
   },
   {
     "id": 19,
@@ -3751,7 +3820,9 @@
     "author": [
       "Mosca"
     ],
-    "god": "Poseidon",
+    "god": [
+      "Poseidon"
+    ],
     "notion_file_id": "28300f30e21180929adcdd1e79730000",
     "youtube": [
       "https://youtu.be/WZiRB9sCU38"
@@ -3942,7 +4013,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Grego"
   },
   {
     "id": 20,
@@ -3950,7 +4022,9 @@
     "author": [
       "Light Yagami"
     ],
-    "god": "Ra",
+    "god": [
+      "Ra"
+    ],
     "notion_file_id": "2a300f30e211800e98afd303776045e1",
     "youtube": [
       "https://youtu.be/8ziqMC_Njt4"
@@ -4171,7 +4245,8 @@
           ]
         }
       ]
-    }
+    },
+    "pantheon": "Egípcio"
   },
   {
     "id": 21,
@@ -4179,7 +4254,9 @@
     "author": [
       "Cafeína [PSGM]"
     ],
-    "god": "Set",
+    "god": [
+      "Set"
+    ],
     "notion_file_id": "31400f30e2118083ab54fba88ed727b8",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -4446,7 +4523,8 @@
           ]
         }
       ]
-    }
+    },
+    "pantheon": "Egípcio"
   },
   {
     "id": 22,
@@ -4454,7 +4532,9 @@
     "author": [
       "Miniyeti"
     ],
-    "god": "Set",
+    "god": [
+      "Set"
+    ],
     "notion_file_id": "2a300f30e21180eb82eee9f3de936709",
     "youtube": [
       "https://youtu.be/b9m6emrH7GM"
@@ -4656,7 +4736,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Egípcio"
   },
   {
     "id": 23,
@@ -4664,7 +4745,9 @@
     "author": [
       "Morley"
     ],
-    "god": "Shennong",
+    "god": [
+      "Shennong"
+    ],
     "notion_file_id": "28200f30e211816b921fcef811c85af7",
     "youtube": [
       "https://youtu.be/bOn4ASvDmvU"
@@ -4869,7 +4952,8 @@
           ]
         }
       ]
-    }
+    },
+    "pantheon": "Chinês"
   },
   {
     "id": 24,
@@ -4877,7 +4961,9 @@
     "author": [
       "HuskSuppe"
     ],
-    "god": "Shennong",
+    "god": [
+      "Shennong"
+    ],
     "notion_file_id": "2cb00f30e21180099a8de1b7e23179b5",
     "youtube": [
       "https://youtu.be/wee5Mm6wJ2I",
@@ -5118,7 +5204,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Chinês"
   },
   {
     "id": 25,
@@ -5126,7 +5213,9 @@
     "author": [
       "TheRapl"
     ],
-    "god": "Susanoo",
+    "god": [
+      "Susanoo"
+    ],
     "notion_file_id": "28200f30e211819c92dcdf17a22db5df",
     "youtube": [
       "https://youtu.be/JV4ksUDd7SQ"
@@ -5308,7 +5397,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Japonês"
   },
   {
     "id": 26,
@@ -5316,7 +5406,9 @@
     "author": [
       "HuskSuppe"
     ],
-    "god": "Susanoo",
+    "god": [
+      "Susanoo"
+    ],
     "notion_file_id": "2d300f30e21180b693a9e4c30f92d1e9",
     "youtube": [
       "https://youtu.be/yPITLNPFxBI"
@@ -5552,7 +5644,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Japonês"
   },
   {
     "id": 27,
@@ -5560,7 +5653,9 @@
     "author": [
       "Borg"
     ],
-    "god": "Thor",
+    "god": [
+      "Thor"
+    ],
     "notion_file_id": "2dd00f30e2118095a6b8e58d614037b6",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -5735,7 +5830,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Nórdico"
   },
   {
     "id": 28,
@@ -5743,7 +5839,9 @@
     "author": [
       "Moose"
     ],
-    "god": "Thor",
+    "god": [
+      "Thor"
+    ],
     "notion_file_id": "28500f30e2118097bea7d038be0734e8",
     "youtube": [
       "https://youtu.be/_0PBN1DrH44",
@@ -5935,7 +6033,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Nórdico"
   },
   {
     "id": 29,
@@ -5943,7 +6042,9 @@
     "author": [
       "TheRapl"
     ],
-    "god": "Tsukuyomi",
+    "god": [
+      "Tsukuyomi"
+    ],
     "notion_file_id": "28200f30e211812ab55dd4020f51a0d0",
     "youtube": [
       "https://youtu.be/Ua0z6kt75Iw"
@@ -6157,7 +6258,8 @@
           ]
         }
       ]
-    }
+    },
+    "pantheon": "Japonês"
   },
   {
     "id": 30,
@@ -6165,7 +6267,9 @@
     "author": [
       "Scooby"
     ],
-    "god": "Tsukuyomi",
+    "god": [
+      "Tsukuyomi"
+    ],
     "notion_file_id": "2cc00f30e211802c9354fb0cc22fc1cb",
     "youtube": [],
     "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
@@ -6399,7 +6503,8 @@
           "footer": []
         }
       ]
-    }
+    },
+    "pantheon": "Japonês"
   },
   {
     "id": 31,
@@ -6407,7 +6512,9 @@
     "author": [
       "HuskSuppe"
     ],
-    "god": "Tsukuyomi",
+    "god": [
+      "Tsukuyomi"
+    ],
     "notion_file_id": "2d100f30e21180639454f8cbb197353f",
     "youtube": [
       "https://youtu.be/1cG3tcC4cio"
@@ -6602,6 +6709,7 @@
           ]
         }
       ]
-    }
+    },
+    "pantheon": "Japonês"
   }
 ]

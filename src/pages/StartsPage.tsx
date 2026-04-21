@@ -5,6 +5,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { startsBuildOrder } from "@/data/catalog";
+import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matchesStart(
   s: (typeof startsBuildOrder)[number],
@@ -12,9 +13,7 @@ function matchesStart(
 ): boolean {
   if (!q.trim()) return true;
   const needle = q.toLowerCase().trim();
-  const hay = [s.titulo, ...s.author, s.god, ...s.god.split(",").map((g) => g.trim())]
-    .join(" ")
-    .toLowerCase();
+  const hay = [s.titulo, ...s.author, ...s.god].join(" ").toLowerCase();
   return hay.includes(needle);
 }
 
@@ -41,7 +40,8 @@ export function StartsPage() {
               className="h-full"
               to={`/starts/${s.id}`}
               title={<NotionText text={s.titulo} />}
-              subtitle={s.god}
+              subtitle={s.god.join(", ")}
+              cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : undefined}
               meta={
                 <span
                   className={s.author.length ? "" : "invisible select-none"}
