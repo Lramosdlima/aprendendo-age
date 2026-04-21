@@ -22,6 +22,45 @@ import {
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { parseStartReferences } from "@/lib/startLinksFromDeus";
 
+/** Nota 1–5 da avaliação de build (Rush / Turtle / Eco). */
+function buildAvaliacaoLabel(n: number | null | undefined): string {
+  if (n == null || Number.isNaN(n)) return "—";
+  switch (n) {
+    case 5:
+      return "Excelente";
+    case 4:
+      return "Ótimo";
+    case 3:
+      return "Bom";
+    case 2:
+      return "Ruim";
+    case 1:
+      return "Péssimo";
+    default:
+      return String(n);
+  }
+}
+
+/** Cor do texto conforme a nota (5 verde → 1 vermelho). */
+function buildAvaliacaoScoreClassName(n: number | null | undefined): string {
+  const base = "text-xs font-semibold leading-tight";
+  if (n == null || Number.isNaN(n)) return `${base} text-zinc-500`;
+  switch (n) {
+    case 5:
+      return `${base} text-emerald-400`;
+    case 4:
+      return `${base} text-lime-300`;
+    case 3:
+      return `${base} text-yellow-400`;
+    case 2:
+      return `${base} text-orange-400`;
+    case 1:
+      return `${base} text-red-400`;
+    default:
+      return `${base} text-zinc-400`;
+  }
+}
+
 export function DeusDetailPage() {
   const { slug } = useParams();
   const d = slug ? deusBySlug.get(slug) : undefined;
@@ -132,19 +171,31 @@ export function DeusDetailPage() {
         </Section>
 
         <Section title="Avaliação (builds)">
-          <div className="grid grid-cols-3 gap-3 text-center">
-            <div className="rounded-lg bg-zinc-900/80 p-3">
-              <div className="text-xs uppercase text-zinc-500">Rush</div>
-              <div className="mt-1 text-2xl font-semibold tabular-nums text-amber-100">{d.rush ?? "—"}</div>
-            </div>
-            <div className="rounded-lg bg-zinc-900/80 p-3">
-              <div className="text-xs uppercase text-zinc-500">Turtle</div>
-              <div className="mt-1 text-2xl font-semibold tabular-nums text-amber-100">{d.turtle ?? "—"}</div>
-            </div>
-            <div className="rounded-lg bg-zinc-900/80 p-3">
-              <div className="text-xs uppercase text-zinc-500">Eco</div>
-              <div className="mt-1 text-2xl font-semibold tabular-nums text-amber-100">{d.eco ?? "—"}</div>
-            </div>
+          <div className="flex flex-wrap items-start justify-start gap-3 sm:gap-4">
+            <section className="flex size-24 min-h-0 flex-col items-center justify-center gap-0.5 rounded-xl border border-pink-900/40 bg-pink-950/20 px-1.5 py-2 text-center sm:size-28">
+              <h3 className="font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight text-pink-200 sm:text-xs">
+                Rush
+              </h3>
+              <p className={`${buildAvaliacaoScoreClassName(d.rush)} max-w-full break-words`}>
+                {buildAvaliacaoLabel(d.rush)}
+              </p>
+            </section>
+            <section className="flex size-24 min-h-0 flex-col items-center justify-center gap-0.5 rounded-xl border border-teal-900/40 bg-teal-950/20 px-1.5 py-2 text-center sm:size-28">
+              <h3 className="font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight text-teal-200 sm:text-xs">
+                Turtle
+              </h3>
+              <p className={`${buildAvaliacaoScoreClassName(d.turtle)} max-w-full break-words`}>
+                {buildAvaliacaoLabel(d.turtle)}
+              </p>
+            </section>
+            <section className="flex size-24 min-h-0 flex-col items-center justify-center gap-0.5 rounded-xl border border-purple-900/40 bg-purple-950/25 px-1.5 py-2 text-center sm:size-28">
+              <h3 className="font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight text-purple-200 sm:text-xs">
+                Eco
+              </h3>
+              <p className={`${buildAvaliacaoScoreClassName(d.eco)} max-w-full break-words`}>
+                {buildAvaliacaoLabel(d.eco)}
+              </p>
+            </section>
           </div>
           {d.foco ? (
             <p className="mt-4 text-sm">
