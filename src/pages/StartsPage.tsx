@@ -25,12 +25,12 @@ export function StartsPage() {
     <div>
       <PageHeader
         title="Starts & build orders"
-        description="Sequências em tabela (comida, madeira, ouro, pop), callouts e links de vídeo. Ícones em /assets."
+        description="Start ou Build Order é uma sequência de ações que se executa no início da partida com determinado deus/panteão. Geralmente é focada em um objetivo/intenção (seja rush ou um FH), que é construído a partir da disposição dos aldeões, ou seja, na economia."
       />
       <SearchField
         value={q}
         onChange={setQ}
-        placeholder="Filtrar por título, autor ou deus (major/minor)…"
+        placeholder="Filtrar por título, autor ou deus (maior/menor)…"
         id="starts-search"
       />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">

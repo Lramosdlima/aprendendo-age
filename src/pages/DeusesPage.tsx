@@ -22,7 +22,7 @@ export function DeusesPage() {
 
   return (
     <div>
-      <PageHeader title="Deuses" description="Escolhas de major e minor com foco e referências de build." />
+      <PageHeader title="Deuses" description="Escolhas de maiores e menores com foco e referências de build." />
       <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, panteão ou era…" id="deuses-search" />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((d) => (
