@@ -7,6 +7,7 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { godpowers, godpowerSlugById, panteaoById } from "@/data/catalog";
+import { formatGodNameForMetaNotion } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
@@ -96,7 +97,7 @@ export function GodpowersPage() {
                 title={g.nome}
                 cardTint={pantheonCardTint(panteaoById.get(g.panteao_id)?.nome ?? "")}
                 subtitle={g.descricao_resumida}
-                meta={<MetaNotionLine parts={[g.god, g.era, g.panteao]} />}
+                meta={<MetaNotionLine parts={[formatGodNameForMetaNotion(g.god), g.era, g.panteao]} />}
                 watermarkSrc={getGodPowerAssetUrl(g.ingles)}
                 subtitleMinLines={3}
                 subtitleTag={false}

@@ -48,12 +48,9 @@ const NOME_TO_SLUG: Record<string, string> = {
   "Perséfone": "persephone",
 };
 
-/**
- * URL pública do retrato do deus em `/assets/gods/`, ou `undefined` se não existir no mapa.
- */
-export function getDeusAssetUrl(nome: string | undefined): string | undefined {
-  if (!nome?.trim()) return undefined;
-  if (nome.trim() === "Sem título") return undefined;
+/** Slug intermédio (`aomr_<slug>_icon` em `token_asset_map`) quando existe retrato em `/assets/gods/`. */
+export function resolveDeusIconSlug(nome: string | undefined | null): string | undefined {
+  if (!nome?.trim() || nome.trim() === "Sem título") return undefined;
 
   const slugOverride = NOME_TO_SLUG[nome];
   const candidates: string[] = [];
@@ -65,9 +62,26 @@ export function getDeusAssetUrl(nome: string | undefined): string | undefined {
   candidates.push(base.replace(/_/g, "-"));
 
   for (const s of candidates) {
-    const url = urlBySlug.get(s);
-    if (url) return url;
+    if (urlBySlug.has(s)) return s;
   }
-
   return undefined;
+}
+
+/**
+ * Texto para `NotionText` / `MetaNotionLine`: nome + `:token:` do retrato (como era e panteão em `godpowers.json`).
+ * Sem ícone no mapa, devolve só o nome.
+ */
+export function formatGodNameForMetaNotion(nome: string | undefined | null): string {
+  if (!nome?.trim()) return "";
+  const slug = resolveDeusIconSlug(nome);
+  if (!slug) return nome;
+  return `${nome} :aomr_${slug}_icon:`;
+}
+
+/**
+ * URL pública do retrato do deus em `/assets/gods/`, ou `undefined` se não existir no mapa.
+ */
+export function getDeusAssetUrl(nome: string | undefined): string | undefined {
+  const slug = resolveDeusIconSlug(nome);
+  return slug ? urlBySlug.get(slug) : undefined;
 }

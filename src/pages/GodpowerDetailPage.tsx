@@ -14,6 +14,7 @@ import {
   panteaoById,
   panteaoSlugById,
 } from "@/data/catalog";
+import { formatGodNameForMetaNotion } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 
 export function GodpowerDetailPage() {
@@ -53,7 +54,7 @@ export function GodpowerDetailPage() {
               </InfoRow>
             ) : g.god ? (
               <InfoRow label="Deus">
-                <NotionText text={g.god} />
+                <NotionText text={formatGodNameForMetaNotion(g.god)} />
               </InfoRow>
             ) : null}
             {era ? (
