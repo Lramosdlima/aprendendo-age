@@ -32,7 +32,7 @@ export function TecnologiasPage() {
       <ListPageStickyHeader>
         <PageHeader
           title="Tecnologias"
-          description="Melhorias e bônus — a lista é grande; use a busca. O slug vem do nome; títulos repetidos ganham sufixo (-2, -3…)."
+          description="Melhorias e bônus — a lista é grande; use a busca!"
           className="!mb-0"
         />
         <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, deus ou panteão…" id="tec-search" />

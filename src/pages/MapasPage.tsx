@@ -26,7 +26,7 @@ export function MapasPage() {
       <ListPageStickyHeader>
         <PageHeader
           title="Mapas"
-          description="Origem, ranqueada e tipo — o slug vem do nome; nomes repetidos ganham sufixo (-2, -3…)."
+          description="Origem, ranqueada e tipo!"
           className="!mb-0"
         />
         <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou tipo…" id="mapas-search" />
