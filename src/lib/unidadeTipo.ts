@@ -4,7 +4,7 @@
 
 export type UnidadeTipoItem = {
   type: string;
-  /** Nome do token sem `:`; vazio = só texto (ex.: Batedor 👁). */
+  /** Nome do token sem `:`; vazio = só texto (sem ícone ao lado). */
   icon: string;
 };
 

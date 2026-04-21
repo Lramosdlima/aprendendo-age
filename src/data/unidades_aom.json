@@ -1718,8 +1718,8 @@
     "ingles": "Pegasus",
     "tipo": [
       {
-        "type": "Batedor 👁",
-        "icon": ""
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Mítica",
@@ -2752,8 +2752,8 @@
     "ingles": "Priest",
     "tipo": [
       {
-        "type": "Batedor 👁",
-        "icon": ""
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Curandeiro✨",
@@ -2858,8 +2858,8 @@
     "ingles": "Oracle (Hero)",
     "tipo": [
       {
-        "type": "Batedor 👁",
-        "icon": ""
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Herói",
@@ -2905,8 +2905,8 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Batedor 👁",
-        "icon": ""
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Herói",
@@ -4827,8 +4827,8 @@
     "ingles": "Raven",
     "tipo": [
       {
-        "type": "Batedor 👁",
-        "icon": ""
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Mítica",
@@ -5292,8 +5292,8 @@
     "ingles": "Kitsune",
     "tipo": [
       {
-        "type": "Batedor 👁",
-        "icon": ""
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Mítica",
