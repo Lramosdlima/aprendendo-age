@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import { CompareInfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
+import { parseGameNumber } from "@/lib/numericCompare";
 import {
   construcaoById,
   construcaoSlugById,
@@ -87,6 +88,10 @@ function showConstrucaoRow(u1: U, u2: U) {
   return !!(c1 || u1.construcao || c2 || u2.construcao);
 }
 
+function numericPairFrom(a: unknown, b: unknown) {
+  return { left: parseGameNumber(a), right: parseGameNumber(b) };
+}
+
 export function UnidadeVisaoGeralCompare({ u1, u2 }: { u1: U; u2: U }) {
   return (
     <div className="space-y-0">
@@ -125,38 +130,56 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
         icon="aomr_hit_points_icon"
         left={u1.pontos_de_vida ?? "—"}
         right={u2.pontos_de_vida ?? "—"}
+        numericPair={numericPairFrom(u1.pontos_de_vida, u2.pontos_de_vida)}
       />
-      <CompareInfoRow label="Alcance" icon="rangeicon" left={u1.alcance ?? "—"} right={u2.alcance ?? "—"} />
+      <CompareInfoRow
+        label="Alcance"
+        icon="rangeicon"
+        left={u1.alcance ?? "—"}
+        right={u2.alcance ?? "—"}
+        numericPair={numericPairFrom(u1.alcance, u2.alcance)}
+      />
       <CompareInfoRow
         label="Dano cortante"
         icon="hackdamage"
         left={u1.dano_cortante ?? "—"}
         right={u2.dano_cortante ?? "—"}
+        numericPair={numericPairFrom(u1.dano_cortante, u2.dano_cortante)}
       />
       <CompareInfoRow
         label="Dano perfurante"
         icon="piercedamage"
         left={u1.dano_perfurante ?? "—"}
         right={u2.dano_perfurante ?? "—"}
+        numericPair={numericPairFrom(u1.dano_perfurante, u2.dano_perfurante)}
       />
       <CompareInfoRow
         label="Velocidade de ataque (seg)"
         icon="aomr_rate_of_fire_icon"
         left={u1.velocidade_de_ataque_atk_s ?? "—"}
         right={u2.velocidade_de_ataque_atk_s ?? "—"}
+        numericPair={numericPairFrom(u1.velocidade_de_ataque_atk_s, u2.velocidade_de_ataque_atk_s)}
       />
-      <CompareInfoRow label="DPS" icon="attack_cur" left={u1.dps ?? "—"} right={u2.dps ?? "—"} />
+      <CompareInfoRow
+        label="DPS"
+        icon="attack_cur"
+        left={u1.dps ?? "—"}
+        right={u2.dps ?? "—"}
+        numericPair={numericPairFrom(u1.dps, u2.dps)}
+      />
       <CompareInfoRow
         label="Armadura de corte"
         icon="hackarmor"
         left={u1.armadura_anticorte ?? "—"}
         right={u2.armadura_anticorte ?? "—"}
+        numericPair={numericPairFrom(u1.armadura_anticorte, u2.armadura_anticorte)}
       />
       <CompareInfoRow
         label="Armadura de perfuração"
         icon="piercearmor"
         left={u1.armadura_antiperfurante ?? "—"}
         right={u2.armadura_antiperfurante ?? "—"}
+        numericPair={numericPairFrom(u1.armadura_antiperfurante, u2.armadura_antiperfurante)}
       />
       <CompareInfoRow
         label="Counter de"
@@ -185,32 +208,54 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
 export function UnidadeCustoCompare({ u1, u2 }: { u1: U; u2: U }) {
   return (
     <div className="space-y-0">
-      <CompareInfoRow label="Comida" icon="foodaom" left={u1.comida ?? "—"} right={u2.comida ?? "—"} />
-      <CompareInfoRow label="Madeira" icon="woodaom" left={u1.madeira ?? "—"} right={u2.madeira ?? "—"} />
-      <CompareInfoRow label="Ouro" icon="goldaom" left={u1.ouro ?? "—"} right={u2.ouro ?? "—"} />
+      <CompareInfoRow
+        label="Comida"
+        icon="foodaom"
+        left={u1.comida ?? "—"}
+        right={u2.comida ?? "—"}
+        numericPair={numericPairFrom(u1.comida, u2.comida)}
+      />
+      <CompareInfoRow
+        label="Madeira"
+        icon="woodaom"
+        left={u1.madeira ?? "—"}
+        right={u2.madeira ?? "—"}
+        numericPair={numericPairFrom(u1.madeira, u2.madeira)}
+      />
+      <CompareInfoRow
+        label="Ouro"
+        icon="goldaom"
+        left={u1.ouro ?? "—"}
+        right={u2.ouro ?? "—"}
+        numericPair={numericPairFrom(u1.ouro, u2.ouro)}
+      />
       <CompareInfoRow
         label="População"
         icon="aomr_population_provision_icon"
         left={u1.populacao ?? "—"}
         right={u2.populacao ?? "—"}
+        numericPair={numericPairFrom(u1.populacao, u2.populacao)}
       />
       <CompareInfoRow
         label="Tempo treino (seg)"
         icon="aomr_time_icon"
         left={u1.tempo_treinamento ?? "—"}
         right={u2.tempo_treinamento ?? "—"}
+        numericPair={numericPairFrom(u1.tempo_treinamento, u2.tempo_treinamento)}
       />
       <CompareInfoRow
         label="Velocidade movimento"
         icon="aomr_speed_icon"
         left={u1.velocidade_movimento ?? "—"}
         right={u2.velocidade_movimento ?? "—"}
+        numericPair={numericPairFrom(u1.velocidade_movimento, u2.velocidade_movimento)}
       />
       <CompareInfoRow
         label="Força atributos"
         icon="attack_cur"
         left={u1.forca_atributos ?? "—"}
         right={u2.forca_atributos ?? "—"}
+        numericPair={numericPairFrom(u1.forca_atributos, u2.forca_atributos)}
       />
     </div>
   );

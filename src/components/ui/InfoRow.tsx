@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { cn } from "@/lib/cn";
+import { compareNumericTones, toneToTextClass } from "@/lib/numericCompare";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 type InfoRowProps = {
@@ -30,11 +32,18 @@ type CompareInfoRowProps = {
   left: ReactNode;
   right: ReactNode;
   icon?: string;
+  /** Quando ambos os lados são números válidos, aplica verde/vermelho/amarelo conforme a comparação. */
+  numericPair?: { left: number | null; right: number | null };
 };
 
 /** Uma linha de comparação: rótulo | valor A | valor B (uso típico em telas estreitas). */
-export function CompareInfoRow({ label, left, right, icon }: CompareInfoRowProps) {
+export function CompareInfoRow({ label, left, right, icon, numericPair }: CompareInfoRowProps) {
   const iconSrc = icon ? resolveTokenIconSrc(icon) : undefined;
+  const tones = numericPair
+    ? compareNumericTones(numericPair.left, numericPair.right)
+    : { left: "default" as const, right: "default" as const };
+  const leftToneClass = toneToTextClass(tones.left);
+  const rightToneClass = toneToTextClass(tones.right);
 
   return (
     <div className="grid grid-cols-[minmax(0,5.75rem)_minmax(0,1fr)_minmax(0,1fr)] items-start gap-x-2 gap-y-1 border-b border-zinc-800/80 py-2.5 last:border-0 sm:grid-cols-[minmax(0,8.5rem)_minmax(0,1fr)_minmax(0,1fr)] sm:gap-x-3 sm:py-3">
@@ -51,8 +60,8 @@ export function CompareInfoRow({ label, left, right, icon }: CompareInfoRowProps
           {label}
         </span>
       </div>
-      <div className="min-w-0 break-words text-xs text-zinc-200 sm:text-sm">{left}</div>
-      <div className="min-w-0 break-words text-right text-xs text-zinc-200 sm:text-sm">{right}</div>
+      <div className={cn("min-w-0 break-words text-xs sm:text-sm", leftToneClass)}>{left}</div>
+      <div className={cn("min-w-0 break-words text-right text-xs sm:text-sm", rightToneClass)}>{right}</div>
     </div>
   );
 }

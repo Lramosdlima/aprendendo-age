@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import { UnidadeCombateBody, UnidadeCustoBody, UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
+import { UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
 import {
   UnidadeCombateCompare,
   UnidadeCustoCompare,
@@ -65,35 +65,19 @@ export function UnidadeComparePage() {
         </Section>
       </div>
 
-      <div className="hidden lg:mt-6 lg:grid lg:grid-cols-2 lg:gap-6">
-        <Section title="Combate">
-          <UnidadeCombateBody u={u1} />
-        </Section>
-        <Section title="Combate">
-          <UnidadeCombateBody u={u2} />
-        </Section>
-      </div>
-
-      <div className="hidden lg:mt-6 lg:grid lg:grid-cols-2 lg:gap-6">
-        <Section title="Custo e treino">
-          <UnidadeCustoBody u={u1} />
-        </Section>
-        <Section title="Custo e treino">
-          <UnidadeCustoBody u={u2} />
-        </Section>
-      </div>
-
       <div className="space-y-6 lg:hidden">
         <Section title="Visão geral">
           <UnidadeVisaoGeralCompare u1={u1} u2={u2} />
         </Section>
-        <Section title="Combate">
-          <UnidadeCombateCompare u1={u1} u2={u2} />
-        </Section>
-        <Section title="Custo e treino">
-          <UnidadeCustoCompare u1={u1} u2={u2} />
-        </Section>
       </div>
+
+      <Section title="Combate" className="mt-6">
+        <UnidadeCombateCompare u1={u1} u2={u2} />
+      </Section>
+
+      <Section title="Custo e treino" className="mt-6">
+        <UnidadeCustoCompare u1={u1} u2={u2} />
+      </Section>
     </div>
   );
 }
