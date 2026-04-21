@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
@@ -9,6 +10,7 @@ import {
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
+import { cn } from "@/lib/cn";
 import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
@@ -32,29 +34,49 @@ export function UnidadeComparePage() {
   const icon1 = getUnidadeAssetUrl(u1.ingles);
   const icon2 = getUnidadeAssetUrl(u2.ingles);
 
+  const [compareHeaderScrolled, setCompareHeaderScrolled] = useState(false);
+
+  useEffect(() => {
+    const threshold = 10;
+    const onScroll = () => setCompareHeaderScrolled(window.scrollY > threshold);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div>
       <BackLink to="/unidades">Unidades</BackLink>
 
-      <header className="mb-8 flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
-        <PageHeaderBlock
-          title={u1.nome}
-          description={u1.ingles ? `Inglês: ${u1.ingles}` : undefined}
-          headerIconSrc={icon1}
-          descriptionTag
-          titleClassName={compareTitleClass}
-          className="w-full max-w-none lg:max-w-[min(100%,28rem)] lg:flex-1"
-        />
-        <PageHeaderBlock
-          align="end"
-          title={u2.nome}
-          description={u2.ingles ? `Inglês: ${u2.ingles}` : undefined}
-          headerIconSrc={icon2}
-          descriptionTag
-          titleClassName={compareTitleClass}
-          className="w-full max-w-none lg:max-w-[min(100%,28rem)] lg:flex-1"
-        />
-      </header>
+      <div
+        className={cn(
+          "sticky top-0 z-20 mb-8 -mx-4 px-4 py-2.5 md:-mx-10 md:px-10",
+          "border-b border-transparent transition-[background-color,box-shadow,backdrop-filter,border-color] duration-200 ease-out",
+          compareHeaderScrolled
+            ? "border-zinc-800/90 bg-zinc-950/93 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.82)] backdrop-blur-md ring-1 ring-black/45"
+            : "bg-transparent shadow-none ring-0",
+        )}
+      >
+        <header className="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
+          <PageHeaderBlock
+            title={u1.nome}
+            description={u1.ingles ? `Inglês: ${u1.ingles}` : undefined}
+            headerIconSrc={icon1}
+            descriptionTag
+            titleClassName={compareTitleClass}
+            className="w-full max-w-none lg:max-w-[min(100%,28rem)] lg:flex-1"
+          />
+          <PageHeaderBlock
+            align="end"
+            title={u2.nome}
+            description={u2.ingles ? `Inglês: ${u2.ingles}` : undefined}
+            headerIconSrc={icon2}
+            descriptionTag
+            titleClassName={compareTitleClass}
+            className="w-full max-w-none lg:max-w-[min(100%,28rem)] lg:flex-1"
+          />
+        </header>
+      </div>
 
       <div className="hidden lg:grid lg:grid-cols-2 lg:gap-6">
         <Section title="Visão geral">
