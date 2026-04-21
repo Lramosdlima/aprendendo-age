@@ -1,5 +1,32 @@
 import { StartMiniMarkup } from "@/lib/startMiniMarkup";
 import type { StartBuildSegment, StartFooterBlock, StartLeadBlock, StartTableRow } from "@/data/catalog";
+import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
+import { getTokenLabel } from "@/lib/notionTokenLabels";
+
+function ResourceColumnHeader({
+  label,
+  token,
+  labelClassName,
+}: {
+  label: string;
+  token: string;
+  labelClassName?: string;
+}) {
+  const src = getTokenAssetUrl(token);
+  return (
+    <span className="inline-flex items-center justify-center gap-1">
+      {labelClassName ? <span className={labelClassName}>{label}</span> : <span>{label}</span>}
+      {src ? (
+        <img
+          src={src}
+          alt=""
+          title={getTokenLabel(token)}
+          className="notion-token-inline mx-0 inline-block h-[1em] max-h-[1.1em] w-auto shrink-0 align-[-0.12em] object-contain"
+        />
+      ) : null}
+    </span>
+  );
+}
 
 function rowTypeClass(type: string | null): string | undefined {
   if (!type) return undefined;
@@ -24,11 +51,23 @@ function StartTable({ rows }: { rows: StartTableRow[] }) {
         <thead>
           <tr>
             <th className="start-col-desc">Descrição</th>
-            <th className="start-col-res">Comida</th>
-            <th className="start-col-res">Madeira</th>
-            <th className="start-col-res">Ouro</th>
-            {showFavor ? <th className="start-col-res">Favor</th> : null}
-            <th className="start-col-pop">População</th>
+            <th className="start-col-res">
+              <ResourceColumnHeader label="Comida" token="foodaom" labelClassName="highlight-red" />
+            </th>
+            <th className="start-col-res">
+              <ResourceColumnHeader label="Madeira" token="woodaom" labelClassName="highlight-brown" />
+            </th>
+            <th className="start-col-res">
+              <ResourceColumnHeader label="Ouro" token="goldaom" labelClassName="highlight-yellow" />
+            </th>
+            {showFavor ? (
+              <th className="start-col-res">
+                <ResourceColumnHeader label="Favor" token="favoraom" labelClassName="text-blue-400" />
+              </th>
+            ) : null}
+            <th className="start-col-pop">
+              <ResourceColumnHeader label="População" token="aomr_population_provision_icon" />
+            </th>
           </tr>
         </thead>
         <tbody>
