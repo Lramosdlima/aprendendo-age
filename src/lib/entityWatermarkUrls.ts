@@ -52,7 +52,7 @@ const mapSlugToUrl = buildSlugMap(["/assets/maps/"]);
 
 const villagerSlugToUrl = buildSlugMap(["/assets/und_villagers/"]);
 
-const CIV_SUFFIXES = ["greek", "egyptian", "norse", "atlantean", "chinese", "japanese"] as const;
+const CIV_SUFFIXES = ["greek", "egyptian", "norse", "atlantean", "chinese", "japanese", "aztec"] as const;
 
 function pickWithCivPrefix(slug: string, m: Map<string, string>): string | undefined {
   if (m.has(slug)) return m.get(slug);
