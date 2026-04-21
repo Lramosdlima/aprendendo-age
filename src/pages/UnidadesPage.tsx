@@ -10,7 +10,10 @@ import { SearchField } from "@/components/ui/SearchField";
 import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
-import { hasTipoContent, tipoItemsToSearchBlob } from "@/lib/unidadeTipo";
+import {
+  hasTipoContent,
+  tipoItemsToSearchBlob,
+} from "@/lib/unidadeTipo";
 
 function matches(u: (typeof unidades)[number], q: string) {
   if (!q.trim()) return true;
@@ -20,7 +23,7 @@ function matches(u: (typeof unidades)[number], q: string) {
     tipoItemsToSearchBlob(u.tipo),
     u.panteao ?? "",
     u.era ?? "",
-    u.categoria ?? "",
+    tipoItemsToSearchBlob(u.categoria),
     u.forte_contra ?? "",
   ]
     .join(" ")

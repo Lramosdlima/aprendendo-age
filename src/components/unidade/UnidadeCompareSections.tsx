@@ -16,7 +16,11 @@ import {
   toneToTextClass,
   type CompareCellTone,
 } from "@/lib/numericCompare";
-import { hasTipoContent } from "@/lib/unidadeTipo";
+import {
+  categoriaItemsToNotionText,
+  hasCategoriaContent,
+  hasTipoContent,
+} from "@/lib/unidadeTipo";
 import {
   construcaoById,
   construcaoSlugById,
@@ -28,10 +32,6 @@ import {
 } from "@/data/catalog";
 
 type U = (typeof unidades)[number];
-
-function dash(s: string | null | undefined): boolean {
-  return s == null || s === "";
-}
 
 function renderPanteaoCell(u: U) {
   const panteao = u.panteao_id != null ? panteaoById.get(u.panteao_id) : undefined;
@@ -158,11 +158,23 @@ export function UnidadeVisaoGeralCompare({ u1, u2 }: { u1: U; u2: U }) {
           right={hasTipoContent(u2.tipo) ? <UnidadeTipoLine tipo={u2.tipo} colored /> : "—"}
         />
       ) : null}
-      {!dash(u1.categoria) || !dash(u2.categoria) ? (
+      {hasCategoriaContent(u1.categoria) || hasCategoriaContent(u2.categoria) ? (
         <CompareInfoRow
           label="Categoria"
-          left={u1.categoria ? <NotionText text={u1.categoria} /> : "—"}
-          right={u2.categoria ? <NotionText text={u2.categoria} /> : "—"}
+          left={
+            hasCategoriaContent(u1.categoria) ? (
+              <NotionText text={categoriaItemsToNotionText(u1.categoria)} />
+            ) : (
+              "—"
+            )
+          }
+          right={
+            hasCategoriaContent(u2.categoria) ? (
+              <NotionText text={categoriaItemsToNotionText(u2.categoria)} />
+            ) : (
+              "—"
+            )
+          }
         />
       ) : null}
       {showPanteaoRow(u1, u2) ? (

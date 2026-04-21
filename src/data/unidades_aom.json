@@ -33,7 +33,12 @@
     "tempo_treinamento": 12,
     "velocidade_movimento": 4.3,
     "forca_atributos": 118.3,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -74,7 +79,12 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 5.5,
     "forca_atributos": 146.5,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
@@ -116,7 +126,12 @@
     "tempo_treinamento": 15,
     "velocidade_movimento": 4,
     "forca_atributos": 93,
-    "categoria": "Artilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
@@ -157,7 +172,12 @@
     "tempo_treinamento": 9.5,
     "velocidade_movimento": 4.3,
     "forca_atributos": 95.3,
-    "categoria": "ContraInfantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 3,
@@ -198,7 +218,12 @@
     "tempo_treinamento": 12,
     "velocidade_movimento": 6,
     "forca_atributos": 127.153846153846,
-    "categoria": "ContraCavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -240,7 +265,12 @@
     "tempo_treinamento": 10,
     "velocidade_movimento": 4,
     "forca_atributos": 105.333333333333,
-    "categoria": "ContraArtilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
@@ -281,7 +311,12 @@
     "tempo_treinamento": 11.5,
     "velocidade_movimento": 4.3,
     "forca_atributos": 95.8,
-    "categoria": "ContraInfantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -322,7 +357,12 @@
     "tempo_treinamento": 12.5,
     "velocidade_movimento": 5,
     "forca_atributos": 94,
-    "categoria": "ContraCavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -364,7 +404,12 @@
     "tempo_treinamento": 13.5,
     "velocidade_movimento": 4,
     "forca_atributos": 117.5,
-    "categoria": "ContraArtilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
@@ -410,7 +455,16 @@
     "tempo_treinamento": 6.5,
     "velocidade_movimento": 6,
     "forca_atributos": 134.5,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "SoftCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -456,7 +510,12 @@
     "tempo_treinamento": 8,
     "velocidade_movimento": 5,
     "forca_atributos": 111.333333333333,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -502,7 +561,12 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 2.9,
     "forca_atributos": 399.614285714286,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -537,7 +601,6 @@
     "tempo_treinamento": 9,
     "velocidade_movimento": 4.8,
     "forca_atributos": 88.085714285714,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 1,
@@ -586,7 +649,12 @@
     "tempo_treinamento": 15,
     "velocidade_movimento": 4,
     "forca_atributos": 106,
-    "categoria": "ContraInfantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -627,7 +695,12 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 4.8,
     "forca_atributos": 81.3,
-    "categoria": "ContraCavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -668,7 +741,12 @@
     "tempo_treinamento": 10,
     "velocidade_movimento": 6,
     "forca_atributos": 122,
-    "categoria": "ContraArtilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
@@ -709,7 +787,12 @@
     "tempo_treinamento": 6.5,
     "velocidade_movimento": 5,
     "forca_atributos": 131,
-    "categoria": "ContraArtilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
@@ -744,7 +827,6 @@
     "tempo_treinamento": 14.5,
     "velocidade_movimento": 4.8,
     "forca_atributos": 188.3,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -779,7 +861,6 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 4.5,
     "forca_atributos": 109.75,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -820,7 +901,12 @@
     "tempo_treinamento": 10.5,
     "velocidade_movimento": 4.5,
     "forca_atributos": 109.5,
-    "categoria": "ContraCavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -866,7 +952,12 @@
     "tempo_treinamento": 9.5,
     "velocidade_movimento": 5,
     "forca_atributos": 144.055555555556,
-    "categoria": "ContraArtilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
@@ -917,7 +1008,12 @@
     "tempo_treinamento": 24,
     "velocidade_movimento": 3.8,
     "forca_atributos": 94.8,
-    "categoria": "Artilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
@@ -958,7 +1054,12 @@
     "tempo_treinamento": 16.5,
     "velocidade_movimento": 5.75,
     "forca_atributos": 142.75,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -1000,7 +1101,12 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 4,
     "forca_atributos": 88.5,
-    "categoria": "Artilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
@@ -1035,7 +1141,6 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 3.8,
     "forca_atributos": 142.8,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -1076,7 +1181,12 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 5,
     "forca_atributos": 90.136363636364,
-    "categoria": "ContraCavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
@@ -1118,7 +1228,12 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 4.75,
     "forca_atributos": 120,
-    "categoria": "ContraArtilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
@@ -1165,7 +1280,12 @@
     "tempo_treinamento": 9.5,
     "velocidade_movimento": 4,
     "forca_atributos": 104,
-    "categoria": "Artilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
@@ -1201,7 +1321,6 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 3.8,
     "forca_atributos": 100.157142857143,
-    "categoria": "Artilharia :aomr_type_archer_icon:",
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
@@ -1242,7 +1361,12 @@
     "tempo_treinamento": 7,
     "velocidade_movimento": 6,
     "forca_atributos": 126.833333333333,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
@@ -1286,7 +1410,13 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 63,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ]
   },
   {
     "id": 33,
@@ -1330,7 +1460,13 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 3,
     "construcao_id": 63,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ]
   },
   {
     "id": 34,
@@ -1367,7 +1503,6 @@
     "tempo_treinamento": 6.5,
     "velocidade_movimento": 4.5,
     "forca_atributos": 171.428571428571,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "god_dono": "Zeus",
@@ -1411,7 +1546,12 @@
     "tempo_treinamento": 9,
     "velocidade_movimento": 3.8,
     "forca_atributos": 67.514285714286,
-    "categoria": "Artilharia :aomr_type_archer_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "god_dono": "Hades",
@@ -1454,7 +1594,6 @@
     "tempo_treinamento": 8,
     "velocidade_movimento": 5,
     "forca_atributos": 137,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "god_dono": "Poseidon",
@@ -1502,7 +1641,16 @@
     "tempo_treinamento": 7,
     "velocidade_movimento": 4.3,
     "forca_atributos": 149.8,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      },
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 4,
@@ -1548,7 +1696,16 @@
     "tempo_treinamento": 9,
     "velocidade_movimento": 5,
     "forca_atributos": 151.333333333333,
-    "categoria": "Cavalaria :aomr_type_cavalry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "SoftCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 4,
@@ -3884,7 +4041,13 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ]
   },
   {
     "id": 88,
@@ -3936,7 +4099,13 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "categoria": [
+      {
+        "type": "HardCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ]
   },
   {
     "id": 89,
@@ -3994,7 +4163,13 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "categoria": [
+      {
+        "type": "HardCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ]
   },
   {
     "id": 90,
@@ -4042,7 +4217,13 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 3,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ]
   },
   {
     "id": 91,
@@ -4090,7 +4271,13 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 3,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ]
   },
   {
     "id": 94,
@@ -4964,7 +5151,16 @@
     "populacao": 3,
     "velocidade_movimento": 4.6,
     "forca_atributos": 126.1,
-    "categoria": "Infantaria :aomr_type_infantry_icon:",
+    "categoria": [
+      {
+        "type": "SoftCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      },
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 4,
@@ -5740,7 +5936,13 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 65,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "categoria": [
+      {
+        "type": "HardCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ]
   },
   {
     "id": 142,
@@ -5780,7 +5982,13 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
     "construcao_id": 65,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "categoria": [
+      {
+        "type": "SoftCounter Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ]
   },
   {
     "id": 143,
@@ -5901,7 +6109,17 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
     "construcao_id": 66,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "categoria": [
+      {
+        "type": "SoftCounter Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "SoftCounter Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ]
   },
   {
     "id": 146,

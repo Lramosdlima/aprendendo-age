@@ -8,7 +8,11 @@ import {
   hasMultiplicadorContent,
   multiplicadorItemsToNotionText,
 } from "@/lib/unidadeMultiplicador";
-import { hasTipoContent } from "@/lib/unidadeTipo";
+import {
+  categoriaItemsToNotionText,
+  hasCategoriaContent,
+  hasTipoContent,
+} from "@/lib/unidadeTipo";
 import {
   construcaoById,
   construcaoSlugById,
@@ -35,9 +39,9 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
           <UnidadeTipoLine tipo={u.tipo} colored />
         </InfoRow>
       ) : null}
-      {u.categoria ? (
+      {hasCategoriaContent(u.categoria) ? (
         <InfoRow label="Categoria">
-          <NotionText text={u.categoria} />
+          <NotionText text={categoriaItemsToNotionText(u.categoria)} />
         </InfoRow>
       ) : null}
       {panteao ? (

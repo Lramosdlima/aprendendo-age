@@ -1,5 +1,5 @@
 /**
- * `tipo` em `unidades_aom.json`: categorias com ícone opcional (`:token:` via {@link NotionText}).
+ * `tipo` e `categoria` em `unidades_aom.json`: listas de `{ type, icon }` com ícones `:token:` via {@link NotionText}.
  */
 
 export type UnidadeTipoItem = {
@@ -10,6 +10,11 @@ export type UnidadeTipoItem = {
 
 export function hasTipoContent(t: UnidadeTipoItem[] | null | undefined): boolean {
   return Array.isArray(t) && t.length > 0;
+}
+
+/** Mesma forma que `tipo`: array `{ type, icon }` em `categoria`. */
+export function hasCategoriaContent(c: UnidadeTipoItem[] | null | undefined): boolean {
+  return hasTipoContent(c);
 }
 
 /** Texto equivalente ao formato antigo para pesquisa / meta. */
@@ -31,8 +36,11 @@ export function tipoItemsToNotionText(items: UnidadeTipoItem[] | null | undefine
   return items.map(tipoItemToNotionText).join(", ");
 }
 
+/** Junta entradas de `categoria` como texto Notion (igual a {@link tipoItemsToNotionText}). */
+export const categoriaItemsToNotionText = tipoItemsToNotionText;
+
 /**
- * Tom de texto da categoria (mesmo `text-*` na cápsula e nas listas com vários tipos).
+ * Tom de texto por rótulo de tipo (cápsula e listas com vários tipos).
  */
 function tipoTypeToneTextClass(typeLabel: string): string {
   const t = (typeLabel ?? "").trim();
