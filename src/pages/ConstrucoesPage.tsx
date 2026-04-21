@@ -37,7 +37,11 @@ export function ConstrucoesPage() {
             <EntityCard
               to={`/construcoes/${construcaoSlugById.get(c.id) ?? c.id}`}
               title={c.nome}
-              subtitle={hasTipoContent(c.tipo) ? <UnidadeTipoLine tipo={c.tipo} colored /> : undefined}
+              subtitle={
+                hasTipoContent(c.tipo) ? (
+                  <UnidadeTipoLine tipo={c.tipo} colored shell="none" />
+                ) : undefined
+              }
               meta={<MetaNotionLine parts={[c.panteao, c.era]} />}
               watermarkSrc={getConstrucaoAssetUrl(c.ingles)}
             />

@@ -9,6 +9,7 @@ import { DeusDetailPage } from "@/pages/DeusDetailPage";
 import { DeusesPage } from "@/pages/DeusesPage";
 import { EraDetailPage } from "@/pages/EraDetailPage";
 import { ErasPage } from "@/pages/ErasPage";
+import { GodpowerComparePage } from "@/pages/GodpowerComparePage";
 import { GodpowerDetailPage } from "@/pages/GodpowerDetailPage";
 import { GodpowersPage } from "@/pages/GodpowersPage";
 import { HomePage } from "@/pages/HomePage";
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="eras" element={<ErasPage />} />
           <Route path="eras/:slug" element={<EraDetailPage />} />
           <Route path="poderes" element={<GodpowersPage />} />
+          <Route path="poderes/compare/:slugA/:slugB" element={<GodpowerComparePage />} />
           <Route path="poderes/:slug" element={<GodpowerDetailPage />} />
           <Route path="construcoes" element={<ConstrucoesPage />} />
           <Route path="construcoes/:slug" element={<ConstrucaoDetailPage />} />
