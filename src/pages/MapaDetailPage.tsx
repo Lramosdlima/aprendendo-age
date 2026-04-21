@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 
+import { AppPageDetail } from "@/components/layout/AppPageDetail";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
-import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { mapas } from "@/data/catalog";
-import { getMapaAssetUrl } from "@/lib/entityWatermarkUrls";
+import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 
 export function MapaDetailPage() {
   const { index } = useParams();
@@ -22,12 +22,17 @@ export function MapaDetailPage() {
   }
 
   const mapaIcon = getMapaAssetUrl(m.ingles);
+  const previewUrl = getMapaPreviewUrl(m.ingles);
 
   return (
-    <div>
-      <BackLink to="/mapas">Mapas</BackLink>
-      <PageHeader title={m.nome} description={m.ingles ? `EN: ${m.ingles}` : undefined} headerIconSrc={mapaIcon} />
-
+    <AppPageDetail
+      backTo="/mapas"
+      backLabel="Mapas"
+      title={m.nome}
+      description={m.ingles ? `EN: ${m.ingles}` : undefined}
+      headerIconSrc={mapaIcon}
+      heroBackgroundSrc={previewUrl}
+    >
       <Section title="Metadados">
         <div className="space-y-0">
           <InfoRow label="Índice no JSON">{i}</InfoRow>
@@ -39,6 +44,6 @@ export function MapaDetailPage() {
           <InfoRow label="Origem">{m.origem ?? "—"}</InfoRow>
         </div>
       </Section>
-    </div>
+    </AppPageDetail>
   );
 }
