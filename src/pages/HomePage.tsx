@@ -16,20 +16,65 @@ import { AppBanner } from "@/components/ui/AppBanner";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 const tiles = [
-  { to: "/panteoes", label: "Panteões", count: panteoes.length, hint: "Civilizações e visão geral." },
-  { to: "/deuses", label: "Deuses", count: deuses.length, hint: "Árvore tecnológica e bônus." },
-  { to: "/eras", label: "Eras", count: eras.length, hint: "Custos e tempos de avanço." },
-  { to: "/poderes", label: "Poderes divinos", count: godpowers.length, hint: "Mitos, cooldowns e efeitos." },
-  { to: "/construcoes", label: "Construções", count: construcoes.length, hint: "Edifícios e estatísticas." },
-  { to: "/unidades", label: "Unidades", count: unidades.length, hint: "Militares e mitológicas." },
-  { to: "/aldeoes", label: "Aldeões", count: aldeoes.length, hint: "Coleta e trabalhadores." },
-  { to: "/mapas", label: "Mapas", count: mapas.length, hint: "Ranqueada, origem e tipo." },
-  { to: "/tecnologias", label: "Tecnologias", count: tecnologias.length, hint: "Melhorias e bônus." },
-  {
+    {
     to: "/starts",
     label: "Starts (BO)",
     count: startsBuildOrder.length,
-    hint: "Build orders e vídeos da pasta Starts do Notion.",
+    hint: "Build orders ou Starts.",
+  },
+  {
+    to: "/panteoes",
+    label: "Panteões",
+    count: panteoes.length,
+    hint: "Civilizações e visão geral.",
+  },
+  {
+    to: "/deuses",
+    label: "Deuses",
+    count: deuses.length,
+    hint: "Árvore tecnológica e bônus.",
+  },
+  {
+    to: "/eras",
+    label: "Eras",
+    count: eras.length,
+    hint: "Custos e tempos de avanço.",
+  },
+  {
+    to: "/poderes",
+    label: "Poderes divinos",
+    count: godpowers.length,
+    hint: "Mitos, cooldowns e efeitos.",
+  },
+  {
+    to: "/construcoes",
+    label: "Construções",
+    count: construcoes.length,
+    hint: "Edifícios e estatísticas.",
+  },
+  {
+    to: "/unidades",
+    label: "Unidades",
+    count: unidades.length,
+    hint: "Militares e mitológicas.",
+  },
+  {
+    to: "/aldeoes",
+    label: "Aldeões",
+    count: aldeoes.length,
+    hint: "Coleta e trabalhadores.",
+  },
+  {
+    to: "/mapas",
+    label: "Mapas",
+    count: mapas.length,
+    hint: "Ranqueada, origem e tipo.",
+  },
+  {
+    to: "/tecnologias",
+    label: "Tecnologias",
+    count: tecnologias.length,
+    hint: "Melhorias e bônus.",
   },
 ] as const;
 
@@ -57,7 +102,9 @@ export function HomePage() {
                 <span className="font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100">
                   {t.label}
                 </span>
-                <span className="rounded-full bg-zinc-800 px-2 py-0.5 text-xs tabular-nums text-zinc-400">{t.count}</span>
+                <span className="rounded-full bg-zinc-800 px-2 py-0.5 text-xs tabular-nums text-zinc-400">
+                  {t.count}
+                </span>
               </div>
               <p className="mt-2 flex-1 text-sm text-zinc-400">{t.hint}</p>
             </Link>

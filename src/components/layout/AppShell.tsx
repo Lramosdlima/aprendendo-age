@@ -4,6 +4,7 @@ import { cn } from "@/lib/cn";
 
 const nav = [
   { to: "/", label: "Início", end: true },
+  { to: "/starts", label: "Starts (BO)" },
   { to: "/panteoes", label: "Panteões" },
   { to: "/deuses", label: "Deuses" },
   { to: "/eras", label: "Eras" },
@@ -13,7 +14,6 @@ const nav = [
   { to: "/aldeoes", label: "Aldeões" },
   { to: "/mapas", label: "Mapas" },
   { to: "/tecnologias", label: "Tecnologias" },
-  { to: "/starts", label: "Starts (BO)" },
 ] as const;
 
 function navClass({ isActive }: { isActive: boolean }) {
