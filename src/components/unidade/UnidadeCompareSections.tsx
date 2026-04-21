@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 import { CompareInfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
+import {
+  hasMultiplicadorContent,
+  multiplicadorItemsToNotionText,
+} from "@/lib/unidadeMultiplicador";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { parseGameNumber } from "@/lib/numericCompare";
 import {
@@ -192,8 +196,20 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
       />
       <CompareInfoRow
         label="Multiplicador"
-        left={u1.multiplicador != null && u1.multiplicador !== "" ? <NotionText text={u1.multiplicador} /> : "—"}
-        right={u2.multiplicador != null && u2.multiplicador !== "" ? <NotionText text={u2.multiplicador} /> : "—"}
+        left={
+          hasMultiplicadorContent(u1.multiplicador) ? (
+            <NotionText text={multiplicadorItemsToNotionText(u1.multiplicador)} />
+          ) : (
+            "—"
+          )
+        }
+        right={
+          hasMultiplicadorContent(u2.multiplicador) ? (
+            <NotionText text={multiplicadorItemsToNotionText(u2.multiplicador)} />
+          ) : (
+            "—"
+          )
+        }
       />
       <CompareInfoRow
         label="Forte contra"

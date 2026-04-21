@@ -4,6 +4,10 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { NotionText } from "@/components/ui/NotionText";
 import {
+  hasMultiplicadorContent,
+  multiplicadorItemsToNotionText,
+} from "@/lib/unidadeMultiplicador";
+import {
   construcaoById,
   construcaoSlugById,
   eraById,
@@ -111,8 +115,8 @@ export function UnidadeCombateBody({ u }: { u: U }) {
         {u.counter_de ? <NotionText text={u.counter_de} /> : "—"}
       </InfoRow>
       <InfoRow label="Multiplicador">
-        {u.multiplicador != null && u.multiplicador !== "" ? (
-          <NotionText text={u.multiplicador} />
+        {hasMultiplicadorContent(u.multiplicador) ? (
+          <NotionText text={multiplicadorItemsToNotionText(u.multiplicador)} />
         ) : (
           "—"
         )}

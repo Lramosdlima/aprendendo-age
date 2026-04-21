@@ -7,7 +7,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:1,25x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "1.25"
+      }
+    ],
     "pontos_de_vida": 115,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1,
@@ -37,7 +43,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1,5x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 150,
     "dano_cortante": 10,
     "velocidade_de_ataque_atk_s": 1,
@@ -67,7 +79,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:1,25x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.25"
+      }
+    ],
     "pontos_de_vida": 65,
     "dano_perfurante": 6,
     "alcance": 15,
@@ -98,7 +116,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:5x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "5"
+      }
+    ],
     "pontos_de_vida": 95,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -128,7 +152,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:3,5x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "3.5"
+      }
+    ],
     "pontos_de_vida": 145,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1.3,
@@ -158,7 +188,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 65,
     "dano_perfurante": 5,
     "alcance": 18,
@@ -189,7 +225,13 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 85,
     "dano_cortante": 5,
     "velocidade_de_ataque_atk_s": 1,
@@ -219,7 +261,13 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:1,75x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "1.75"
+      }
+    ],
     "pontos_de_vida": 85,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1,
@@ -249,7 +297,13 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:2x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "2"
+      }
+    ],
     "pontos_de_vida": 60,
     "dano_perfurante": 4,
     "alcance": 17,
@@ -280,7 +334,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1,25x || :aomr_type_cavalry_icon:2x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.25"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "2"
+      }
+    ],
     "pontos_de_vida": 135,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1,
@@ -310,7 +375,13 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:1,5x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 95,
     "dano_perfurante": 11,
     "alcance": 19,
@@ -341,7 +412,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_building_icon:4x || :aomr_type_archer_icon:1,5x",
+    "multiplicador": [
+      {
+        "type": "Construção",
+        "icon": "aomr_type_building_icon",
+        "value": "4"
+      },
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 450,
     "dano_cortante": 22,
     "velocidade_de_ataque_atk_s": 1.4,
@@ -371,7 +453,7 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Todos👥",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 85,
     "dano_cortante": 6.5,
     "velocidade_de_ataque_atk_s": 0.7,
@@ -404,7 +486,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:3x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "3"
+      }
+    ],
     "pontos_de_vida": 65,
     "dano_cortante": 6,
     "alcance": 11,
@@ -435,7 +523,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 90,
     "dano_cortante": 5,
     "velocidade_de_ataque_atk_s": 1,
@@ -465,7 +559,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1,75x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.75"
+      }
+    ],
     "pontos_de_vida": 105,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1,
@@ -495,7 +595,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:2x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "2"
+      }
+    ],
     "pontos_de_vida": 115,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 1,
@@ -525,7 +631,7 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 190,
     "dano_cortante": 11,
     "velocidade_de_ataque_atk_s": 1,
@@ -555,7 +661,7 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 110,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 0.8,
@@ -585,7 +691,13 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 115,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -615,7 +727,13 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 85,
     "dano_perfurante": 5.5,
     "alcance": 14,
@@ -646,7 +764,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:5x || 🚢3x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "5"
+      },
+      {
+        "type": "Texto",
+        "icon": "",
+        "value": "🚢3x"
+      }
+    ],
     "pontos_de_vida": 105,
     "dano_perfurante": 3,
     "alcance": 16,
@@ -677,7 +806,13 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1,5x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 140,
     "dano_cortante": 13.5,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -707,7 +842,13 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:1,25x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.25"
+      }
+    ],
     "pontos_de_vida": 65,
     "dano_perfurante": 5,
     "alcance": 20,
@@ -738,7 +879,7 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Todos👥",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 135,
     "dano_cortante": 9,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -768,7 +909,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:5x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "5"
+      }
+    ],
     "pontos_de_vida": 95,
     "dano_cortante": 4,
     "velocidade_de_ataque_atk_s": 1.1,
@@ -798,7 +945,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:3,5x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "3.5"
+      }
+    ],
     "pontos_de_vida": 70,
     "dano_perfurante": 4.5,
     "alcance": 16,
@@ -829,7 +982,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, HardCounter-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:3x || :aomr_type_building_icon:6x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "3"
+      },
+      {
+        "type": "Construção",
+        "icon": "aomr_type_building_icon",
+        "value": "6"
+      }
+    ],
     "pontos_de_vida": 65,
     "dano_perfurante": 4,
     "alcance": 11,
@@ -860,7 +1024,7 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 90,
     "dano_perfurante": 8,
     "alcance": 4,
@@ -891,7 +1055,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1,75x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.75"
+      }
+    ],
     "pontos_de_vida": 135,
     "dano_cortante": 13,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -921,7 +1091,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:1.5x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 190,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -949,7 +1125,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_archer_icon:2.5x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "2.5"
+      }
+    ],
     "pontos_de_vida": 100,
     "dano_cortante": 4,
     "dano_contundente": 11,
@@ -978,7 +1160,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Todos👥",
-    "multiplicador": ":aomr_pantheon_greeks_icon:10 (dano divino) ignora armaduras",
+    "multiplicador": [
+      {
+        "type": "Grego",
+        "icon": "aomr_pantheon_greeks_icon",
+        "value": "10 (dano divino) ignora armaduras"
+      }
+    ],
     "pontos_de_vida": 160,
     "dano_cortante": 10,
     "dano_divino": 10,
@@ -1011,7 +1199,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_building_icon:20x",
+    "multiplicador": [
+      {
+        "type": "Construção",
+        "icon": "aomr_type_building_icon",
+        "value": "20"
+      }
+    ],
     "pontos_de_vida": 80,
     "dano_perfurante": 12,
     "alcance": 23,
@@ -1044,7 +1238,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Todos👥",
-    "multiplicador": ":aomr_type_archer_icon:1,5x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 160,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1,
@@ -1076,7 +1276,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:1.5x || :aomr_type_cavalry_icon:1.5x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.5"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 155,
     "dano_cortante": 10.5,
     "velocidade_de_ataque_atk_s": 1,
@@ -1106,7 +1317,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1,5x || :aomr_type_cavalry_icon:2x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "2"
+      }
+    ],
     "pontos_de_vida": 170,
     "dano_cortante": 13,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -1135,7 +1357,7 @@
     "tipo": "Batedor 👁, Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 100,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
@@ -1164,7 +1386,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 320,
     "dano_cortante": 17,
     "velocidade_de_ataque_atk_s": 1.1,
@@ -1196,7 +1429,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 250,
     "dano_perfurante": 18,
     "alcance": 15,
@@ -1229,7 +1473,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 600,
     "dano_cortante": 16,
     "dano_contundente": 28,
@@ -1262,7 +1517,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 200,
     "dano_cortante": 11,
     "velocidade_de_ataque_atk_s": 0.8,
@@ -1294,7 +1560,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 260,
     "dano_perfurante": 12,
     "alcance": 18,
@@ -1327,7 +1604,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 300,
     "dano_cortante": 15,
     "dano_contundente": 9,
@@ -1360,7 +1648,18 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 250,
     "dano_perfurante": 18,
     "alcance": 14,
@@ -1393,7 +1692,18 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 275,
     "dano_cortante": 15,
     "dano_contundente": 15,
@@ -1426,7 +1736,18 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 200,
     "dano_cortante": 14,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -1458,7 +1779,23 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5% || +2:aomr_pantheon_greeks_icon:(divine)",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      },
+      {
+        "type": "Texto",
+        "icon": "",
+        "value": "+2:aomr_pantheon_greeks_icon:(divine)"
+      }
+    ],
     "pontos_de_vida": 320,
     "dano_perfurante": 5,
     "alcance": 14,
@@ -1492,7 +1829,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 175,
     "dano_cortante": 12,
     "dano_contundente": 6,
@@ -1525,7 +1873,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 230,
     "dano_cortante": 11,
     "velocidade_de_ataque_atk_s": 1,
@@ -1557,7 +1916,7 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 100,
     "velocidade_de_ataque_atk_s": 0,
     "armadura_anticorte": 5,
@@ -1587,7 +1946,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 290,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -1619,7 +1989,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 300,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -1651,7 +2032,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 400,
     "dano_cortante": 16,
     "dano_contundente": 6,
@@ -1684,7 +2076,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:12x (hack) || :aomr_type_myth_unit_icon:9x (pierce)",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "12x (hack)"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "9x (pierce)"
+      }
+    ],
     "pontos_de_vida": 200,
     "dano_cortante": 9,
     "dano_perfurante": 6,
@@ -1720,7 +2123,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:12x (hack) || :aomr_type_myth_unit_icon:9x (pierce)",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "12x (hack)"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "9x (pierce)"
+      }
+    ],
     "pontos_de_vida": 190,
     "dano_cortante": 6.5,
     "dano_perfurante": 6,
@@ -1756,7 +2170,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:12x (hack) || :aomr_type_myth_unit_icon:9x (pierce)",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "12x (hack)"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "9x (pierce)"
+      }
+    ],
     "pontos_de_vida": 190,
     "dano_cortante": 9,
     "dano_perfurante": 6,
@@ -1792,7 +2217,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2,5x || +1.2:aomr_pantheon_greeks_icon:(divine só míticos)",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2.5"
+      },
+      {
+        "type": "Texto",
+        "icon": "",
+        "value": "+1.2:aomr_pantheon_greeks_icon:(divine só míticos)"
+      }
+    ],
     "pontos_de_vida": 100,
     "dano_perfurante": 6,
     "dano_divino": 1.2,
@@ -1823,7 +2259,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:5x || +0.5:aomr_pantheon_greeks_icon:(divine só míticos)",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "5"
+      },
+      {
+        "type": "Texto",
+        "icon": "",
+        "value": "+0.5:aomr_pantheon_greeks_icon:(divine só míticos)"
+      }
+    ],
     "pontos_de_vida": 80,
     "dano_perfurante": 0.5,
     "dano_divino": 0.5,
@@ -1857,7 +2304,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      }
+    ],
     "pontos_de_vida": 130,
     "dano_cortante": 8.8,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -1890,7 +2343,13 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      }
+    ],
     "pontos_de_vida": 105,
     "dano_cortante": 0.9,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -1918,7 +2377,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:11x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "11"
+      }
+    ],
     "pontos_de_vida": 90,
     "dano_perfurante": 0.5,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -1951,7 +2416,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 800,
     "dano_cortante": 30,
     "dano_contundente": 18,
@@ -1984,7 +2460,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 420,
     "dano_perfurante": 11,
     "alcance": 16,
@@ -2017,7 +2504,18 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 740,
     "dano_cortante": 22,
     "dano_contundente": 14,
@@ -2050,7 +2548,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 400,
     "dano_perfurante": 30,
     "alcance": 20,
@@ -2083,7 +2592,23 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5% || :aomr_type_building_icon:1x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      },
+      {
+        "type": "Construção",
+        "icon": "aomr_type_building_icon",
+        "value": "1"
+      }
+    ],
     "pontos_de_vida": 1000,
     "dano_cortante": 15,
     "dano_contundente": 95,
@@ -2116,7 +2641,18 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 550,
     "dano_cortante": 30,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -2148,7 +2684,18 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 600,
     "dano_cortante": 36,
     "dano_contundente": 30,
@@ -2184,7 +2731,18 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 720,
     "dano_cortante": 20,
     "dano_contundente": 30,
@@ -2217,7 +2775,18 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:1x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "1"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 1200,
     "dano_cortante": 26,
     "dano_contundente": 40,
@@ -2253,7 +2822,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 850,
     "dano_cortante": 50,
     "dano_contundente": 36,
@@ -2286,7 +2861,23 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5% || :aomr_type_building_icon:1x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      },
+      {
+        "type": "Construção",
+        "icon": "aomr_type_building_icon",
+        "value": "1"
+      }
+    ],
     "pontos_de_vida": 700,
     "dano_cortante": 20,
     "dano_contundente": 110,
@@ -2319,7 +2910,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 400,
     "dano_perfurante": 20,
     "alcance": 18,
@@ -2352,7 +2954,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 400,
     "dano_perfurante": 14,
     "alcance": 15,
@@ -2385,7 +2998,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 780,
     "dano_cortante": 20,
     "dano_contundente": 90,
@@ -2418,7 +3042,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 700,
     "dano_cortante": 25,
     "dano_contundente": 20,
@@ -2451,7 +3086,18 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 650,
     "dano_cortante": 30,
     "dano_contundente": 15,
@@ -2484,7 +3130,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ],
     "pontos_de_vida": 357.5,
     "dano_cortante": 13.2,
     "dano_perfurante": 8.8,
@@ -2520,7 +3172,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:7x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "7"
+      }
+    ],
     "pontos_de_vida": 325,
     "dano_cortante": 13.2,
     "dano_perfurante": 8.8,
@@ -2556,7 +3214,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ],
     "pontos_de_vida": 330,
     "dano_cortante": 9.9,
     "dano_perfurante": 13.2,
@@ -2592,7 +3256,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      }
+    ],
     "pontos_de_vida": 106,
     "dano_perfurante": 8.8,
     "alcance": 17,
@@ -2623,7 +3293,13 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:5.5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "5.5"
+      }
+    ],
     "pontos_de_vida": 125,
     "dano_cortante": 7.5,
     "velocidade_de_ataque_atk_s": 0.8,
@@ -2651,7 +3327,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:9x || :aomr_type_cavalry_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "9"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 130,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -2679,7 +3366,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, HardCounter-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x || :aomr_type_archer_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      },
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 95,
     "dano_perfurante": 6.5,
     "velocidade_de_ataque_atk_s": 1.8,
@@ -2707,7 +3405,23 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, HardCounter-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x || :aomr_type_infantry_icon:5x || 🚢3x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "5"
+      },
+      {
+        "type": "Texto",
+        "icon": "",
+        "value": "🚢3x"
+      }
+    ],
     "pontos_de_vida": 120,
     "dano_perfurante": 4,
     "alcance": 16,
@@ -2736,7 +3450,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Artilharia :aomr_type_archer_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:7x || :aomr_type_archer_icon:1,5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "7"
+      },
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 155,
     "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -2764,7 +3489,18 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:5.5x:aomr_type_infantry_icon:1,25x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "5.5"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.25"
+      }
+    ],
     "pontos_de_vida": 70,
     "dano_perfurante": 6,
     "velocidade_de_ataque_atk_s": 1,
@@ -2792,7 +3528,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 138,
     "dano_perfurante": 3.8,
     "dano_divino": 2.5,
@@ -2823,7 +3565,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ],
     "pontos_de_vida": 437.5,
     "dano_perfurante": 13.75,
     "dano_divino": 0,
@@ -2860,7 +3608,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ],
     "pontos_de_vida": 406.25,
     "dano_perfurante": 18.75,
     "dano_divino": 0,
@@ -2897,7 +3651,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ],
     "pontos_de_vida": 437.5,
     "dano_perfurante": 16.25,
     "dano_divino": 0,
@@ -3206,7 +3966,7 @@
     "tipo": "Batedor 👁, Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 30,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 60,
@@ -3246,7 +4006,13 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:10x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "10"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -3279,7 +4045,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6.5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6.5"
+      }
+    ],
     "pontos_de_vida": 225,
     "dano_cortante": 9,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -3309,7 +4081,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "5"
+      }
+    ],
     "pontos_de_vida": 275,
     "dano_perfurante": 8,
     "dano_divino": 4,
@@ -3340,7 +4118,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:10x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "10"
+      }
+    ],
     "dano_cortante": 14,
     "construcao": "Academia Imperial",
     "forca_atributos": 0,
@@ -3360,7 +4144,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:7x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "7"
+      }
+    ],
     "dano_perfurante": 9,
     "construcao": "Academia Imperial",
     "forca_atributos": 0,
@@ -3380,7 +4170,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      }
+    ],
     "dano_cortante": 10,
     "dano_contundente": 50,
     "construcao": "Academia Imperial",
@@ -3401,7 +4197,23 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6x ||:aomr_type_infantry_icon:1.5x || :aomr_type_cavalry_icon:1.5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.5"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "1.5"
+      }
+    ],
     "pontos_de_vida": 170,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1,
@@ -3429,7 +4241,13 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:4x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "4"
+      }
+    ],
     "pontos_de_vida": 189,
     "dano_cortante": 13.1,
     "velocidade_de_ataque_atk_s": 1.3,
@@ -3452,7 +4270,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6.5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6.5"
+      }
+    ],
     "pontos_de_vida": 300,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -3482,7 +4306,13 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6.5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6.5"
+      }
+    ],
     "pontos_de_vida": 400,
     "dano_cortante": 14,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -3512,7 +4342,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 100,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -3546,7 +4387,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 300,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 0.7,
@@ -3576,7 +4428,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 300,
     "dano_contundente": 35,
     "dano_area": 2.5,
@@ -3607,7 +4470,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 400,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -3637,7 +4511,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 600,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 0.8,
@@ -3667,7 +4552,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 700,
     "dano_cortante": 24,
     "velocidade_de_ataque_atk_s": 1,
@@ -3697,7 +4593,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.5%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5%"
+      }
+    ],
     "pontos_de_vida": 1100,
     "dano_cortante": 40,
     "dano_contundente": 60,
@@ -3728,7 +4635,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 300,
     "dano_perfurante": 20,
     "dano_divino": 20,
@@ -3760,7 +4678,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 550,
     "dano_perfurante": 40,
     "velocidade_de_ataque_atk_s": 1,
@@ -3790,7 +4719,18 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:2x || :aomr_type_hero_icon:0.25%",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25%"
+      }
+    ],
     "pontos_de_vida": 1000,
     "dano_cortante": 30,
     "dano_contundente": 30,
@@ -3822,7 +4762,7 @@
     "tipo": "Mítica :aomr_type_myth_unit_icon:",
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 100,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 2,
@@ -3854,7 +4794,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:10x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "10"
+      }
+    ],
     "pontos_de_vida": 50,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 2,
@@ -3881,7 +4827,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:8x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ],
     "pontos_de_vida": 80,
     "dano_perfurante": 7,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -3910,7 +4862,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_cavalry_icon:3x",
+    "multiplicador": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon",
+        "value": "3"
+      }
+    ],
     "pontos_de_vida": 200,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 0.9,
@@ -3938,7 +4896,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
-    "multiplicador": ":aomr_type_infantry_icon:1.25x",
+    "multiplicador": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon",
+        "value": "1.25"
+      }
+    ],
     "pontos_de_vida": 65,
     "dano_perfurante": 8,
     "alcance": 18,
@@ -3967,7 +4931,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:6x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      }
+    ],
     "pontos_de_vida": 200,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.5,
@@ -3996,7 +4966,7 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Todos👥",
-    "multiplicador": "-",
+    "multiplicador": [],
     "pontos_de_vida": 90,
     "dano_perfurante": 9,
     "alcance": 15,
@@ -4025,7 +4995,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
-    "multiplicador": ":aomr_type_archer_icon:1.75x",
+    "multiplicador": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.75"
+      }
+    ],
     "pontos_de_vida": 140,
     "dano_cortante": 9,
     "velocidade_de_ataque_atk_s": 1,
@@ -4053,7 +5029,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:3x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      }
+    ],
     "pontos_de_vida": 120,
     "dano_contundente": 60,
     "dano_divino": 6,
@@ -4083,7 +5065,13 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "multiplicador": ":aomr_type_myth_unit_icon:5x",
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "5"
+      }
+    ],
     "pontos_de_vida": 180,
     "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.5,
