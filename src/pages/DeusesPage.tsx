@@ -17,9 +17,21 @@ function matches(d: (typeof deuses)[number], q: string) {
   return [d.nome, d.panteao, d.hierarquia ?? "", d.era ?? "", d.foco ?? ""].join(" ").toLowerCase().includes(s);
 }
 
+function isHierarquiaMaior(h: string | undefined): boolean {
+  return h?.toLowerCase() === "maior";
+}
+
 export function DeusesPage() {
   const [q, setQ] = useState("");
-  const filtered = useMemo(() => deuses.filter((d) => matches(d, q)), [q]);
+  const filtered = useMemo(() => {
+    const list = deuses.filter((d) => matches(d, q));
+    return [...list].sort((a, b) => {
+      const aM = isHierarquiaMaior(a.hierarquia) ? 0 : 1;
+      const bM = isHierarquiaMaior(b.hierarquia) ? 0 : 1;
+      if (aM !== bM) return aM - bM;
+      return a.id - b.id;
+    });
+  }, [q]);
 
   return (
     <div>
