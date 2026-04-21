@@ -16,3 +16,10 @@ export function getPantheonWatermarkUrl(panteaoId: number): string | undefined {
   const token = PANTHEON_ID_TO_TOKEN[panteaoId];
   return token ? getTokenAssetUrl(token) : undefined;
 }
+
+/** Texto para `NotionText`: nome do panteão + `:token:` do ícone. */
+export function formatPantheonNameForMetaNotion(panteaoId: number, nome: string): string {
+  const token = PANTHEON_ID_TO_TOKEN[panteaoId];
+  if (!token || !getTokenAssetUrl(token)) return nome;
+  return `${nome} :${token}:`;
+}

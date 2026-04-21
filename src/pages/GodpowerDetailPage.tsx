@@ -15,7 +15,9 @@ import {
   panteaoSlugById,
 } from "@/data/catalog";
 import { formatGodNameForMetaNotion } from "@/lib/deusAssetUrl";
+import { formatEraNameForMetaNotion } from "@/lib/eraMetaNotion";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
+import { formatPantheonNameForMetaNotion } from "@/lib/pantheonAssetUrl";
 
 export function GodpowerDetailPage() {
   const { slug } = useParams();
@@ -49,7 +51,7 @@ export function GodpowerDetailPage() {
                   to={`/deuses/${deusSlugById.get(deus.id) ?? deus.id}`}
                   className="text-amber-200 underline-offset-2 hover:underline"
                 >
-                  {deus.nome}
+                  <NotionText text={formatGodNameForMetaNotion(deus.nome)} />
                 </Link>
               </InfoRow>
             ) : g.god ? (
@@ -63,7 +65,7 @@ export function GodpowerDetailPage() {
                   to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
                   className="text-amber-200 underline-offset-2 hover:underline"
                 >
-                  {era.nome}
+                  <NotionText text={formatEraNameForMetaNotion(era.id, era.nome)} />
                 </Link>
               </InfoRow>
             ) : g.era ? (
@@ -77,7 +79,7 @@ export function GodpowerDetailPage() {
                   to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
                   className="text-amber-200 underline-offset-2 hover:underline"
                 >
-                  {panteao.nome}
+                  <NotionText text={formatPantheonNameForMetaNotion(panteao.id, panteao.nome)} />
                 </Link>
               </InfoRow>
             ) : g.panteao ? (
