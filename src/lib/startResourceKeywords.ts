@@ -101,19 +101,19 @@ export function expandResourceKeywords(text: string): string {
   let t = text;
   t = t.replace(
     new RegExp(`${boundaryBefore}(comida)${NOT_IF_ICON}${boundaryAfter}`, u),
-    (_x, m: string) => `<highlight-red>${m}</highlight-red> :foodaom:`,
+    (_x, m: string) => `<highlight-red>${m}</highlight-red>:foodaom:`,
   );
   t = t.replace(
     new RegExp(`${boundaryBefore}(madeira)${NOT_IF_ICON}${boundaryAfter}`, u),
-    (_x, m: string) => `<highlight-brown>${m}</highlight-brown> :woodaom:`,
+    (_x, m: string) => `<highlight-brown>${m}</highlight-brown>:woodaom:`,
   );
   t = t.replace(
     new RegExp(`${boundaryBefore}(ouro)${NOT_IF_ICON}${boundaryAfter}`, u),
-    (_x, m: string) => `<highlight-yellow>${m}</highlight-yellow> :goldaom:`,
+    (_x, m: string) => `<highlight-yellow>${m}</highlight-yellow>:goldaom:`,
   );
   t = t.replace(
     new RegExp(`${boundaryBefore}(favor)${NOT_IF_ICON}${boundaryAfter}`, u),
-    (_x, m: string) => `<highlight-blue>${m}</highlight-blue> :favoraom:`,
+    (_x, m: string) => `<highlight-blue>${m}</highlight-blue>:favoraom:`,
   );
   return t;
 }
