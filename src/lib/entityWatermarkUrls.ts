@@ -112,6 +112,13 @@ export function getMapaAssetUrl(ingles?: string): string | undefined {
   return mapSlugToUrl.get(slug);
 }
 
+/** Pré-visualização de mapa em tamanho real (`/assets/maps/previews/`), mesmo basename que o ícone em `/assets/maps/`. */
+export function getMapaPreviewUrl(ingles?: string): string | undefined {
+  const u = getMapaAssetUrl(ingles);
+  if (!u) return undefined;
+  return u.replace("/assets/maps/", "/assets/maps/previews/");
+}
+
 export function getUnidadeAssetUrl(ingles: string | undefined): string | undefined {
   if (!ingles?.trim()) return undefined;
   const slug = UNIDADE_INGLES_TO_SLUG[ingles] ?? normalizeSlug(ingles);

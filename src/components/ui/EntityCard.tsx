@@ -10,8 +10,10 @@ type EntityCardProps = {
   title: ReactNode;
   subtitle?: ReactNode;
   meta?: ReactNode;
-  /** Ícone ou arte como marca d’água ao fundo (baixa opacidade). */
+  /** Ícone ou arte como marca d’água à direita (baixa opacidade); fica acima do fundo em `backgroundCoverSrc`. */
   watermarkSrc?: string;
+  /** Imagem de fundo em todo o card (cover, mesma opacidade suave que a faixa da marca d’água); por baixo do ícone e do texto. */
+  backgroundCoverSrc?: string;
   /** Se true, o subtítulo é mostrado dentro de {@link AppTag}. */
   subtitleTag?: boolean;
   /** Reserva altura fixa para N linhas de subtítulo (ex.: 3 para grelha uniforme). */
@@ -33,6 +35,7 @@ export function EntityCard({
   subtitle,
   meta,
   watermarkSrc,
+  backgroundCoverSrc,
   subtitleTag = true,
   subtitleMinLines = 2,
   className,
@@ -43,6 +46,7 @@ export function EntityCard({
   cardTint,
 }: EntityCardProps) {
   const hasTint = Boolean(cardTint);
+  const hasBgCover = Boolean(backgroundCoverSrc);
   const useSubtitleTag = subtitleTag && subtitle != null && subtitle !== "";
   const subtitleBody = useSubtitleTag ? (
     <AppTag className="align-top leading-snug [word-break:break-word] normal-case">{subtitle}</AppTag>
@@ -52,13 +56,15 @@ export function EntityCard({
 
   const shellClass = cn(
     "group relative block overflow-hidden rounded-xl border p-4 transition-colors",
-    !hasTint && "bg-zinc-900/40",
+    !hasTint && !hasBgCover && "bg-zinc-900/40",
+    !hasTint && hasBgCover && "bg-transparent",
     compareMode
       ? "cursor-pointer border-aom-border hover:border-amber-500/35"
       : "border-aom-border hover:border-amber-500/35",
-    !hasTint && "hover:bg-zinc-900/70",
-    selected && compareMode && !hasTint ? "border-amber-500/50 bg-zinc-900/70 ring-1 ring-amber-500/30" : false,
+    !hasTint && !hasBgCover && "hover:bg-zinc-900/70",
+    selected && compareMode && !hasTint && !hasBgCover ? "border-amber-500/50 bg-zinc-900/70 ring-1 ring-amber-500/30" : false,
     selected && compareMode && hasTint ? "border-amber-500/50 ring-1 ring-amber-500/30" : false,
+    selected && compareMode && hasBgCover && !hasTint ? "border-amber-500/50 ring-1 ring-amber-500/30" : false,
     selectDisabled && compareMode && !selected ? "opacity-60" : false,
     className,
   );
@@ -68,7 +74,10 @@ export function EntityCard({
       <>
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 rounded-[inherit]"
+          className={cn(
+            "pointer-events-none absolute inset-0 rounded-[inherit]",
+            hasBgCover && "z-[2]",
+          )}
           style={{ backgroundColor: cardTint }}
         />
         <div
@@ -77,17 +86,46 @@ export function EntityCard({
             "pointer-events-none absolute inset-0 rounded-[inherit] bg-zinc-900/40 transition-colors",
             "group-hover:bg-zinc-900/70",
             selected && compareMode && "bg-zinc-900/70",
+            hasBgCover && "z-[3]",
           )}
         />
       </>
     ) : null;
+
+  const bgCoverLayers = hasBgCover ? (
+    <>
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[inherit]"
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center saturate-125 opacity-[0.18] transition-opacity group-hover:opacity-[0.18]"
+          style={{ backgroundImage: `url(${backgroundCoverSrc})` }}
+        />
+      </div>
+      <div
+        aria-hidden
+        className={cn(
+          "pointer-events-none absolute inset-0 z-[1] rounded-[inherit] bg-zinc-900/40 transition-colors",
+          "group-hover:bg-zinc-900/70",
+          selected && compareMode && !hasTint && "bg-zinc-900/70",
+        )}
+      />
+    </>
+  ) : null;
+
+  const wmZ = hasBgCover ? "z-[4]" : "z-0";
+  const contentZ = hasBgCover ? "z-[5]" : "z-[1]";
 
   const inner = (
     <>
       {watermarkSrc ? (
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-y-0 right-0 z-0 w-[min(52%,20rem)] overflow-hidden"
+          className={cn(
+            "pointer-events-none absolute inset-y-0 right-0 w-[min(52%,20rem)] overflow-hidden",
+            wmZ,
+          )}
         >
           <div
             className="absolute inset-0 saturate-125 opacity-[0.18] transition-opacity group-hover:opacity-[0.18]"
@@ -95,7 +133,7 @@ export function EntityCard({
           />
         </div>
       ) : null}
-      <div className="relative z-[1]">
+      <div className={cn("relative", contentZ)}>
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <div className="flex min-w-0 items-start gap-3">
             {compareMode ? (
@@ -147,6 +185,7 @@ export function EntityCard({
           onToggleSelect?.();
         }}
       >
+        {bgCoverLayers}
         {tintLayers}
         {inner}
       </div>
@@ -155,6 +194,7 @@ export function EntityCard({
 
   return (
     <Link to={to} className={shellClass}>
+      {bgCoverLayers}
       {tintLayers}
       {inner}
     </Link>
