@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 
+import { GodMajorDecisionTree } from "@/components/deus/GodMajorDecisionTree";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
@@ -20,6 +21,7 @@ import {
   unidadeSlugById,
 } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { bucketMinorsByEra } from "@/lib/godMajorTree";
 import { parseStartReferences } from "@/lib/startLinksFromDeus";
 
 /** Nota 1–5 da avaliação de build (Rush / Turtle / Eco). */
@@ -79,6 +81,8 @@ export function DeusDetailPage() {
   const panteao = d.panteao_id != null ? panteaoById.get(d.panteao_id) : undefined;
   const era = d.era_id != null ? eraById.get(d.era_id) : undefined;
   const gp = d.godpower_id != null ? godpowerById.get(d.godpower_id) : undefined;
+
+  const treeTiers = d.hierarquia === "Maior" ? bucketMinorsByEra(d, deusById) : null;
 
   const relacoes = (d.god_maior_relacao_ids ?? [])
     .map((rid) => {
@@ -206,6 +210,12 @@ export function DeusDetailPage() {
         </Section>
       </div>
 
+      {treeTiers ? (
+        <Section title="Árvore de deuses menores (por era)" className="mt-6">
+          <GodMajorDecisionTree major={d} tiers={treeTiers} />
+        </Section>
+      ) : null}
+
       {d.starts ? (
         <Section title="Starts (referências)" className="mt-6">
           <ul className="list-inside list-disc space-y-2 text-sm">
@@ -224,7 +234,7 @@ export function DeusDetailPage() {
         </Section>
       ) : null}
 
-      {relacoes.length > 0 ? (
+      {relacoes.length > 0 && !treeTiers ? (
         <Section title="Deuses Menores" className="mt-6">
           <ul className="list-inside list-disc space-y-1">
             {relacoes.map((el, i) => (
@@ -232,7 +242,7 @@ export function DeusDetailPage() {
             ))}
           </ul>
         </Section>
-      ) : d.god_maior_relacao ? (
+      ) : d.god_maior_relacao && !treeTiers ? (
         <Section title="Deuses Menores" className="mt-6">
           <NotionText text={d.god_maior_relacao} />
         </Section>
