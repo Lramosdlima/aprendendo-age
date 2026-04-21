@@ -3,7 +3,12 @@
     "id": 1,
     "nome": "Hoplita",
     "ingles": "Hoplite",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:",
@@ -39,7 +44,12 @@
     "id": 2,
     "nome": "Hippeis",
     "ingles": "Hippeus",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -75,7 +85,12 @@
     "id": 3,
     "nome": "Toxote",
     "ingles": "Toxote",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -112,7 +127,12 @@
     "id": 4,
     "nome": "Hipaspista",
     "ingles": "Hypapist",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
@@ -148,7 +168,12 @@
     "id": 5,
     "nome": "Prodromos",
     "ingles": "Prodromos",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -184,7 +209,12 @@
     "id": 6,
     "nome": "Peltasta",
     "ingles": "Peltast",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -221,7 +251,12 @@
     "id": 7,
     "nome": "Machadeiro",
     "ingles": "Axeman",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
@@ -257,7 +292,12 @@
     "id": 8,
     "nome": "Lanceiro",
     "ingles": "Spearman",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -293,7 +333,12 @@
     "id": 9,
     "nome": "Fundeiro",
     "ingles": "Slinger",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -330,7 +375,12 @@
     "id": 10,
     "nome": "Cameleiro",
     "ingles": "Camel Rider",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
@@ -371,7 +421,16 @@
     "id": 12,
     "nome": "Arqueiro em Biga",
     "ingles": "Chariot Archer",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -408,7 +467,12 @@
     "id": 13,
     "nome": "Elefante de Guerra",
     "ingles": "War Elephant",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
@@ -449,7 +513,12 @@
     "id": 14,
     "nome": "Berserker",
     "ingles": "Berserker",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Todos👥",
@@ -482,7 +551,16 @@
     "id": 15,
     "nome": "Lançador de Machados",
     "ingles": "Throwing Axeman",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
@@ -519,7 +597,12 @@
     "id": 16,
     "nome": "Hird",
     "ingles": "Hirdman",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -555,7 +638,12 @@
     "id": 17,
     "nome": "Cavalaria Incursora",
     "ingles": "Raiding Cavalry",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -591,7 +679,12 @@
     "id": 18,
     "nome": "Huscarl",
     "ingles": "Huscarl",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -627,7 +720,12 @@
     "id": 19,
     "nome": "Jarl",
     "ingles": "Jarl",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -657,7 +755,12 @@
     "id": 20,
     "nome": "Murmilo",
     "ingles": "Murmillo",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -687,7 +790,12 @@
     "id": 21,
     "nome": "Katapeltes",
     "ingles": "Katapeltes",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -723,7 +831,16 @@
     "id": 22,
     "nome": "Turma",
     "ingles": "Turma",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -760,7 +877,16 @@
     "id": 23,
     "nome": "Chierobalista",
     "ingles": "Cheiroballista",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Cerco :aomr_type_siege_weapon_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Infantaria :aomr_type_infantry_icon:",
@@ -802,7 +928,12 @@
     "id": 24,
     "nome": "Contarius",
     "ingles": "Contarius",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -838,7 +969,12 @@
     "id": 25,
     "nome": "Arcus",
     "ingles": "Arcus",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -875,7 +1011,12 @@
     "id": 26,
     "nome": "Espadachim de Dao",
     "ingles": "Dao Swordsman",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Todos👥",
@@ -905,7 +1046,12 @@
     "id": 27,
     "nome": "Alabardeiro Ge",
     "ingles": "Ge Halberdier",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -941,7 +1087,12 @@
     "id": 28,
     "nome": "Lanceiro Wuzu",
     "ingles": "Wuzu Javelineer",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -978,7 +1129,12 @@
     "id": 29,
     "nome": "Arqueiro de Fogo",
     "ingles": "Fire Archer",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, HardCounter-Infantaria :aomr_type_infantry_icon:",
@@ -1020,7 +1176,12 @@
     "id": 30,
     "nome": "Chu Ko Nu",
     "ingles": "Chu Ko Nu",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1051,7 +1212,12 @@
     "id": 31,
     "nome": "Cavalaria de Cavalo Branco",
     "ingles": "White Horse Cavalry",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -1087,7 +1253,12 @@
     "id": 32,
     "nome": "Samurai",
     "ingles": "Samurai",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -1121,7 +1292,16 @@
     "id": 33,
     "nome": "Shinobi",
     "ingles": "Shinobi",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
@@ -1156,7 +1336,12 @@
     "id": 34,
     "nome": "Mirmidão",
     "ingles": "Myrmidon",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Todos👥",
@@ -1195,7 +1380,12 @@
     "id": 35,
     "nome": "Gastrafeta",
     "ingles": "Gastraphetoros",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
@@ -1234,7 +1424,12 @@
     "id": 36,
     "nome": "Hetairos",
     "ingles": "Hetairos",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Todos👥",
@@ -1272,7 +1467,12 @@
     "id": 37,
     "nome": "Fanático",
     "ingles": "Fanatic",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
@@ -1313,7 +1513,12 @@
     "id": 38,
     "nome": "Cavalaria de Tigre",
     "ingles": "Tiger Cavalry",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
@@ -1354,7 +1559,20 @@
     "id": 39,
     "nome": "Pégasos",
     "ingles": "Pegasus",
-    "tipo": "Batedor 👁, Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Batedor 👁",
+        "icon": ""
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "multiplicador": [],
@@ -1382,7 +1600,12 @@
     "id": 40,
     "nome": "Minotauro",
     "ingles": "Minotauro",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1425,7 +1648,12 @@
     "id": 41,
     "nome": "Centauro",
     "ingles": "Centauro",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1469,7 +1697,16 @@
     "id": 42,
     "nome": "Ciclope",
     "ingles": "Ciclope",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1513,7 +1750,12 @@
     "id": 43,
     "nome": "Anubita",
     "ingles": "Anubite",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1556,7 +1798,12 @@
     "id": 44,
     "nome": "Wadjet",
     "ingles": "Wadjet",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1600,7 +1847,12 @@
     "id": 45,
     "nome": "Esfinge",
     "ingles": "Esfinge",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1644,7 +1896,12 @@
     "id": 46,
     "nome": "Troll",
     "ingles": "Troll",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1688,7 +1945,12 @@
     "id": 47,
     "nome": "Einheri",
     "ingles": "Einheri",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1732,7 +1994,16 @@
     "id": 49,
     "nome": "Valquíria",
     "ingles": "Valquíria",
-    "tipo": "Curandeiro✨, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1775,7 +2046,12 @@
     "id": 50,
     "nome": "Draugr",
     "ingles": "Draugr",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1825,7 +2101,12 @@
     "id": 51,
     "nome": "Prometeano",
     "ingles": "Prometeus",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1869,7 +2150,12 @@
     "id": 53,
     "nome": "Autômato",
     "ingles": "Autômato",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1912,7 +2198,20 @@
     "id": 54,
     "nome": "Caladria",
     "ingles": "Caladria",
-    "tipo": "Curandeiro✨, Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1942,7 +2241,12 @@
     "id": 55,
     "nome": "Qilin",
     "ingles": "Qilin",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1985,7 +2289,12 @@
     "id": 56,
     "nome": "Yazi",
     "ingles": "Yazi",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2028,7 +2337,12 @@
     "id": 57,
     "nome": "Qiongqi",
     "ingles": "Qiongqi",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2072,7 +2386,12 @@
     "id": 58,
     "nome": "Jazão",
     "ingles": "Jason",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2119,7 +2438,12 @@
     "id": 59,
     "nome": "Teseu",
     "ingles": "Theseus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2166,7 +2490,12 @@
     "id": 60,
     "nome": "Ajax",
     "ingles": "Ajax",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2213,7 +2542,16 @@
     "id": 61,
     "nome": "Faraó",
     "ingles": "Pharaoh",
-    "tipo": "Curandeiro✨, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2255,7 +2593,20 @@
     "id": 62,
     "nome": "Sarcedote",
     "ingles": "Priest",
-    "tipo": "Batedor 👁, Curandeiro✨, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Batedor 👁",
+        "icon": ""
+      },
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2300,7 +2651,16 @@
     "id": 63,
     "nome": "Hersir",
     "ingles": "Hersir",
-    "tipo": "Herói :aomr_type_hero_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2339,7 +2699,16 @@
     "id": 64,
     "nome": "Oráculo (Herói)",
     "ingles": "Oracle (Hero)",
-    "tipo": "Batedor 👁, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Batedor 👁",
+        "icon": ""
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2373,7 +2742,20 @@
     "id": 65,
     "nome": "Pioneiro",
     "ingles": "Pioneer",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Batedor 👁, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Batedor 👁",
+        "icon": ""
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -2412,7 +2794,12 @@
     "id": 66,
     "nome": "Hidra",
     "ingles": "Hydra",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2456,7 +2843,12 @@
     "id": 67,
     "nome": "Mantícora",
     "ingles": "Manticore",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2500,7 +2892,12 @@
     "id": 68,
     "nome": "Leão de Neméia",
     "ingles": "Nemean Lion",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2544,7 +2941,12 @@
     "id": 69,
     "nome": "Petsuchos",
     "ingles": "Petsuchos",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2588,7 +2990,16 @@
     "id": 70,
     "nome": "Escaravelho",
     "ingles": "Scarab",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2637,7 +3048,12 @@
     "id": 71,
     "nome": "Homem Escorpião",
     "ingles": "Scorpion Man",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2680,7 +3096,12 @@
     "id": 72,
     "nome": "Gigante de Gelo",
     "ingles": "Frost Giant",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2727,7 +3148,16 @@
     "id": 73,
     "nome": "Javali de Batalha",
     "ingles": "Battle Boar",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2771,7 +3201,16 @@
     "id": 74,
     "nome": "Gigante da Montanha",
     "ingles": "Mountain Giant",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2818,7 +3257,16 @@
     "id": 75,
     "nome": "Gigante das Rochas",
     "ingles": "Rock Giant",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2857,7 +3305,16 @@
     "id": 76,
     "nome": "Beemote",
     "ingles": "Behemoth",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2906,7 +3363,12 @@
     "id": 77,
     "nome": "Sátiro",
     "ingles": "Satyr",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2950,7 +3412,16 @@
     "id": 78,
     "nome": "Pássaro de Estínfalo",
     "ingles": "Stymphalian Bird",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2994,7 +3465,12 @@
     "id": 79,
     "nome": "Taowu",
     "ingles": "Taowu",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3038,7 +3514,12 @@
     "id": 80,
     "nome": "Taotie",
     "ingles": "Taotie",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3082,7 +3563,12 @@
     "id": 81,
     "nome": "Baihu",
     "ingles": "Baihu",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3126,7 +3612,12 @@
     "id": 82,
     "nome": "Hércules",
     "ingles": "Heracles",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3168,7 +3659,12 @@
     "id": 83,
     "nome": "Atalanta",
     "ingles": "Atalanta",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3210,7 +3706,12 @@
     "id": 84,
     "nome": "Aquíles",
     "ingles": "Achilles",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3252,7 +3753,16 @@
     "id": 85,
     "nome": "Godi",
     "ingles": "Godi",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3289,7 +3799,16 @@
     "id": 86,
     "nome": "Murmilo (Herói)",
     "ingles": "Murmillo (Hero)",
-    "tipo": "Herói :aomr_type_hero_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3323,7 +3842,16 @@
     "id": 87,
     "nome": "Katapeltes (Herói)",
     "ingles": "Katapeltes (Hero)",
-    "tipo": "Herói :aomr_type_hero_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -3362,7 +3890,20 @@
     "id": 88,
     "nome": "Turma (Herói)",
     "ingles": "Turma (Hero)",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Cavalaria :aomr_type_cavalry_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, HardCounter-Artilharia :aomr_type_archer_icon:",
@@ -3401,7 +3942,20 @@
     "id": 89,
     "nome": "Chierobalista (Herói)",
     "ingles": "Cheiroballista (Hero)",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Cerco :aomr_type_siege_weapon_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, HardCounter-Infantaria :aomr_type_infantry_icon:",
@@ -3446,7 +4000,16 @@
     "id": 90,
     "nome": "Contarius (Herói)",
     "ingles": "Contarius (Hero)",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Artilharia :aomr_type_archer_icon:",
@@ -3485,7 +4048,16 @@
     "id": 91,
     "nome": "Arcus (Herói)",
     "ingles": "Arcus (Hero)",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
@@ -3524,7 +4096,12 @@
     "id": 94,
     "nome": "Sábio",
     "ingles": "Sage",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3561,7 +4138,12 @@
     "id": 95,
     "nome": "Odisseu",
     "ingles": "Odysseus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3604,7 +4186,12 @@
     "id": 96,
     "nome": "Hipólita",
     "ingles": "Hippolyta",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3647,7 +4234,12 @@
     "id": 97,
     "nome": "Quíron",
     "ingles": "Chiron",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3690,7 +4282,12 @@
     "id": 98,
     "nome": "Medusa",
     "ingles": "Medusa",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3708,7 +4305,12 @@
     "id": 99,
     "nome": "Colosso",
     "ingles": "Colossus",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3726,7 +4328,12 @@
     "id": 100,
     "nome": "Quimera",
     "ingles": "Chimera",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3744,7 +4351,12 @@
     "id": 101,
     "nome": "Múmia",
     "ingles": "Mummy",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3762,7 +4374,12 @@
     "id": 102,
     "nome": "Vingador",
     "ingles": "Avenger",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3780,7 +4397,12 @@
     "id": 103,
     "nome": "Fênix",
     "ingles": "Phoenix",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3798,7 +4420,12 @@
     "id": 104,
     "nome": "Gigante de Fogo",
     "ingles": "Fire Giant",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3819,7 +4446,12 @@
     "id": 105,
     "nome": "Lobo de Fenrir",
     "ingles": "Fenris Wolf Brood",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3837,7 +4469,12 @@
     "id": 106,
     "nome": "Fafnir",
     "ingles": "Fafnir",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3855,7 +4492,12 @@
     "id": 107,
     "nome": "Centimanus",
     "ingles": "Centimanus",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3873,7 +4515,12 @@
     "id": 108,
     "nome": "Argos",
     "ingles": "Argus",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3891,7 +4538,12 @@
     "id": 109,
     "nome": "Lâmpade",
     "ingles": "Lampades",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3909,7 +4561,12 @@
     "id": 110,
     "nome": "Hundun",
     "ingles": "Hundun",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3927,7 +4584,16 @@
     "id": 111,
     "nome": "Qinglong",
     "ingles": "Qinglong",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3945,7 +4611,16 @@
     "id": 112,
     "nome": "Zhuque",
     "ingles": "Zhuque",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3963,7 +4638,20 @@
     "id": 113,
     "nome": "Corvo",
     "ingles": "Raven",
-    "tipo": "Batedor 👁, Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Batedor 👁",
+        "icon": ""
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "multiplicador": [],
@@ -3986,7 +4674,12 @@
     "id": 114,
     "nome": "Belerofonte",
     "ingles": "Bellerophon",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4002,7 +4695,12 @@
     "id": 115,
     "nome": "Polifemo",
     "ingles": "Polyphemus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4025,7 +4723,12 @@
     "id": 116,
     "nome": "Perseus",
     "ingles": "Perseus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4041,7 +4744,12 @@
     "id": 117,
     "nome": "Nezha (Criança)",
     "ingles": "Nezha (Child)",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4077,7 +4785,12 @@
     "id": 118,
     "nome": "Jiang Ziya",
     "ingles": "Jiang Ziya",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4114,7 +4827,12 @@
     "id": 119,
     "nome": "Yang Jian",
     "ingles": "Yang Jian",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4140,7 +4858,12 @@
     "id": 120,
     "nome": "Li Jing",
     "ingles": "Li Jing",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4166,7 +4889,12 @@
     "id": 121,
     "nome": "Wen Zhong",
     "ingles": "Wen Zhong",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4193,7 +4921,16 @@
     "id": 122,
     "nome": "Fanático (Herói)",
     "ingles": "Fanatic (Hero)",
-    "tipo": "Herói :aomr_type_hero_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
@@ -4237,7 +4974,16 @@
     "id": 123,
     "nome": "Herói do Ragnarok",
     "ingles": "Hero of Ragnarok",
-    "tipo": "Herói :aomr_type_hero_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4266,7 +5012,12 @@
     "id": 124,
     "nome": "Nezha (Jovem)",
     "ingles": "Nezha (Youth)",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4302,7 +5053,12 @@
     "id": 125,
     "nome": "Nezha (Herói)",
     "ingles": "Nezha (Hero)",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4338,7 +5094,16 @@
     "id": 126,
     "nome": "Kitsune",
     "ingles": "Kitsune",
-    "tipo": "Batedor 👁, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Batedor 👁",
+        "icon": ""
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4383,7 +5148,12 @@
     "id": 127,
     "nome": "Kamaitachi",
     "ingles": "Kamaitachi",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4424,7 +5194,16 @@
     "id": 128,
     "nome": "Wanyūdō",
     "ingles": "Wanyūdō",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4466,7 +5245,12 @@
     "id": 129,
     "nome": "Jorogumo",
     "ingles": "Jorogumo",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4507,7 +5291,12 @@
     "id": 130,
     "nome": "Tengu",
     "ingles": "Tengu",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4548,7 +5337,12 @@
     "id": 131,
     "nome": "Raiju",
     "ingles": "Raiju",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4589,7 +5383,16 @@
     "id": 132,
     "nome": "Oni",
     "ingles": "Oni",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4631,7 +5434,12 @@
     "id": 134,
     "nome": "Shinigami",
     "ingles": "Shinigami",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4674,7 +5482,16 @@
     "id": 135,
     "nome": "Onmoraki",
     "ingles": "Onmoraki",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4715,7 +5532,16 @@
     "id": 136,
     "nome": "Asura",
     "ingles": "Asura",
-    "tipo": "Cerco :aomr_type_siege_weapon_icon:, Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
+      },
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -4759,7 +5585,12 @@
     "id": 138,
     "nome": "Sombra de Hades",
     "ingles": "Shade of Hades",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "multiplicador": [],
@@ -4790,7 +5621,16 @@
     "id": 139,
     "nome": "Miko (Heroína)",
     "ingles": "Miko (Hero)",
-    "tipo": "Curandeiro✨, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4823,7 +5663,16 @@
     "id": 140,
     "nome": "Bushi (Herói)",
     "ingles": "Bushi (Hero)",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4858,7 +5707,12 @@
     "id": 141,
     "nome": "Lanceiro Yari",
     "ingles": "Yari Spearman",
-    "tipo": "Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "HardCounter-Cavalaria :aomr_type_cavalry_icon:",
@@ -4892,7 +5746,12 @@
     "id": 142,
     "nome": "Arqueiro Yumi",
     "ingles": "Yumi Archer",
-    "tipo": "Artilharia :aomr_type_archer_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -4927,7 +5786,16 @@
     "id": 143,
     "nome": "Onna-musha (Herói)",
     "ingles": "Bushi",
-    "tipo": "Herói :aomr_type_hero_icon:, Infantaria :aomr_type_infantry_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Infantaria",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -4962,7 +5830,16 @@
     "id": 144,
     "nome": "Cavalaria de Arqueiro Yumi",
     "ingles": "Yumi Horse Archer",
-    "tipo": "Artilharia :aomr_type_archer_icon:, Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Todos👥",
@@ -4991,7 +5868,12 @@
     "id": 145,
     "nome": "Cavaleiro Naginata",
     "ingles": "Naginata Rider",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
@@ -5025,7 +5907,16 @@
     "id": 146,
     "nome": "Onmyyoji (Herói)",
     "ingles": "Onmyyoji (Hero)",
-    "tipo": "Curandeiro✨, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5061,7 +5952,16 @@
     "id": 147,
     "nome": "Daimyo (Herói)",
     "ingles": "Daimyo (Hero)",
-    "tipo": "Cavalaria :aomr_type_cavalry_icon:, Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5096,7 +5996,16 @@
     "id": 151,
     "nome": "Harpia",
     "ingles": "Harpy",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:, Voador :aomr_type_flying_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      },
+      {
+        "type": "Voador",
+        "icon": "aomr_type_flying_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -5114,7 +6023,12 @@
     "id": 152,
     "nome": "Licaão",
     "ingles": "Lykaon",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "construcao": "Templo (Grego)",
@@ -5136,7 +6050,12 @@
     "id": 153,
     "nome": "Hamadríade",
     "ingles": "Hamadryad",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -5158,7 +6077,12 @@
     "id": 154,
     "nome": "Sirênico",
     "ingles": "Siren",
-    "tipo": "Mítica :aomr_type_myth_unit_icon:",
+    "tipo": [
+      {
+        "type": "Mítica",
+        "icon": "aomr_type_myth_unit_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -5176,7 +6100,12 @@
     "id": 155,
     "nome": "Ícaro",
     "ingles": "Icarus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Heróica :aomr_heroic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5194,7 +6123,12 @@
     "id": 157,
     "nome": "Orfeu",
     "ingles": "Orpheus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5212,7 +6146,12 @@
     "id": 158,
     "nome": "Iolau",
     "ingles": "Iolaus",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Clássica :aomr_classical_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5230,7 +6169,12 @@
     "id": 159,
     "nome": "Rei Midas",
     "ingles": "King Midas",
-    "tipo": "Herói :aomr_type_hero_icon:",
+    "tipo": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon"
+      }
+    ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "era": "Mítica :aomr_mythic_age_icon:",
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",

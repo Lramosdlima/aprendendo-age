@@ -3,18 +3,26 @@ import { useNavigate } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
-import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
+import { hasTipoContent, tipoItemsToSearchBlob } from "@/lib/unidadeTipo";
 
 function matches(u: (typeof unidades)[number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  return [u.nome, u.tipo ?? "", u.panteao ?? "", u.era ?? "", u.categoria ?? "", u.forte_contra ?? ""]
+  return [
+    u.nome,
+    tipoItemsToSearchBlob(u.tipo),
+    u.panteao ?? "",
+    u.era ?? "",
+    u.categoria ?? "",
+    u.forte_contra ?? "",
+  ]
     .join(" ")
     .toLowerCase()
     .includes(s);
@@ -101,7 +109,9 @@ export function UnidadesPage() {
                 to={`/unidades/${slug}`}
                 title={u.nome}
                 cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
-                subtitle={u.tipo ? <NotionText text={u.tipo} /> : undefined}
+                subtitle={
+                  hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
+                }
                 meta={<MetaNotionLine parts={[u.panteao, u.era]} />}
                 watermarkSrc={getUnidadeAssetUrl(u.ingles)}
                 compareMode={compareMode}

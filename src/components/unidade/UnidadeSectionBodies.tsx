@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 
 import { InfoRow } from "@/components/ui/InfoRow";
 import { formatArmorPercent } from "@/lib/armorDisplay";
+import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { NotionText } from "@/components/ui/NotionText";
 import {
   hasMultiplicadorContent,
   multiplicadorItemsToNotionText,
 } from "@/lib/unidadeMultiplicador";
+import { hasTipoContent } from "@/lib/unidadeTipo";
 import {
   construcaoById,
   construcaoSlugById,
@@ -28,9 +30,9 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
 
   return (
     <div className="space-y-0">
-      {u.tipo ? (
+      {hasTipoContent(u.tipo) ? (
         <InfoRow label="Tipo">
-          <NotionText text={u.tipo} />
+          <UnidadeTipoLine tipo={u.tipo} colored />
         </InfoRow>
       ) : null}
       {u.categoria ? (

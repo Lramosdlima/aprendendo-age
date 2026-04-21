@@ -2,7 +2,8 @@ import { useParams } from "react-router-dom";
 
 import { UnidadeCombateBody, UnidadeCustoBody, UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
 import { BackLink } from "@/components/ui/BackLink";
-import { NotionText } from "@/components/ui/NotionText";
+import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
+import { hasTipoContent } from "@/lib/unidadeTipo";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { unidadeBySlug } from "@/data/catalog";
@@ -28,7 +29,9 @@ export function UnidadeDetailPage() {
       <BackLink to="/unidades">Unidades</BackLink>
       <PageHeader
         title={u.nome}
-        description={u.tipo ? <NotionText text={u.tipo} /> : undefined}
+        description={
+          hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
+        }
         descriptionTag
         headerIconSrc={unidadeIcon}
       />

@@ -1,6 +1,7 @@
 import { Fragment, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 
+import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { CompareInfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import {
@@ -15,6 +16,7 @@ import {
   toneToTextClass,
   type CompareCellTone,
 } from "@/lib/numericCompare";
+import { hasTipoContent } from "@/lib/unidadeTipo";
 import {
   construcaoById,
   construcaoSlugById,
@@ -149,11 +151,11 @@ function renderMultiplicadorCompareSide(
 export function UnidadeVisaoGeralCompare({ u1, u2 }: { u1: U; u2: U }) {
   return (
     <div className="space-y-0">
-      {!dash(u1.tipo) || !dash(u2.tipo) ? (
+      {hasTipoContent(u1.tipo) || hasTipoContent(u2.tipo) ? (
         <CompareInfoRow
           label="Tipo"
-          left={u1.tipo ? <NotionText text={u1.tipo} /> : "—"}
-          right={u2.tipo ? <NotionText text={u2.tipo} /> : "—"}
+          left={hasTipoContent(u1.tipo) ? <UnidadeTipoLine tipo={u1.tipo} colored /> : "—"}
+          right={hasTipoContent(u2.tipo) ? <UnidadeTipoLine tipo={u2.tipo} colored /> : "—"}
         />
       ) : null}
       {!dash(u1.categoria) || !dash(u2.categoria) ? (
