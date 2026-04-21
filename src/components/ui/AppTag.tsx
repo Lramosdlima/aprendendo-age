@@ -7,7 +7,7 @@ export type AppTagVariant = "amber" | "rich";
 export type AppTagProps = HTMLAttributes<HTMLSpanElement> & {
   /**
    * `amber`: badge clássico (subtítulos simples).
-   * `rich`: borda/fundo neutros e texto base `zinc` para conteúdo com cores próprias (ex.: tipos de unidade).
+   * `rich`: borda/fundo âmbar suaves e texto base âmbar (vários tipos com cores próprias no interior).
    */
   variant?: AppTagVariant;
 };
@@ -23,7 +23,7 @@ export function AppTag({ className, children, variant = "amber", ...props }: App
         variant === "amber" &&
           "border border-amber-600/50 bg-amber-500/10 text-[10px] font-semibold uppercase tracking-wide text-amber-200/90",
         variant === "rich" &&
-          "border border-zinc-600/50 bg-zinc-900/70 text-sm font-medium normal-case tracking-normal text-zinc-400",
+          "border border-amber-700/45 bg-amber-950/40 text-sm font-medium normal-case tracking-normal text-amber-200/90",
         className,
       )}
       {...props}

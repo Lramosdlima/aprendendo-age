@@ -23,6 +23,7 @@ export function UnidadeDetailPage() {
   }
 
   const unidadeIcon = getUnidadeAssetUrl(u.ingles);
+  const multiTipo = hasTipoContent(u.tipo) && u.tipo!.length > 1;
 
   return (
     <div>
@@ -32,7 +33,7 @@ export function UnidadeDetailPage() {
         description={
           hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
         }
-        descriptionTag
+        descriptionTag={multiTipo}
         descriptionTagVariant="rich"
         headerIconSrc={unidadeIcon}
       />

@@ -32,20 +32,62 @@ export function tipoItemsToNotionText(items: UnidadeTipoItem[] | null | undefine
 }
 
 /**
- * Cor do rótulo de tipo (lista de unidades, cabeçalhos). `Curandeiro` e outros sem match ficam neutros.
+ * Tom de texto da categoria (mesmo `text-*` na cápsula e nas listas com vários tipos).
  */
-export function tipoTypeTextClass(typeLabel: string): string {
+function tipoTypeToneTextClass(typeLabel: string): string {
   const t = (typeLabel ?? "").trim();
-  if (!t) return "text-zinc-300";
+  if (!t) return "text-zinc-200";
 
-  if (t.startsWith("Infantaria")) return "text-red-400";
-  if (t.startsWith("Cavalaria")) return "text-emerald-400";
-  if (t.startsWith("Artilharia")) return "text-sky-400";
+  if (t.startsWith("Infantaria")) return "text-red-300";
+  if (t.startsWith("Cavalaria")) return "text-emerald-300";
+  if (t.startsWith("Artilharia")) return "text-sky-300";
   if (t.startsWith("Herói")) return "text-yellow-300";
-  if (t.startsWith("Batedor")) return "text-zinc-500";
-  if (t.startsWith("Mítica")) return "text-pink-400";
-  if (t.startsWith("Cerco")) return "text-amber-700";
-  if (t.startsWith("Voador")) return "text-zinc-400";
+  if (t.startsWith("Batedor")) return "text-zinc-300";
+  if (t.startsWith("Mítica")) return "text-pink-300";
+  if (t.startsWith("Cerco")) return "text-amber-300";
+  if (t.startsWith("Voador")) return "text-zinc-200";
 
-  return "text-zinc-300";
+  return "text-zinc-200";
+}
+
+/** Classe só de cor de texto (vários tipos, comparações, etc.). */
+export function tipoTypeTextClass(typeLabel: string): string {
+  return tipoTypeToneTextClass(typeLabel);
+}
+
+/**
+ * Cápsula (borda + fundo + texto) para **um único** tipo — o `text-*` coincide com {@link tipoTypeTextClass}.
+ */
+export function tipoTypeTagShellClass(typeLabel: string): string {
+  const t = (typeLabel ?? "").trim();
+  const text = tipoTypeToneTextClass(typeLabel);
+
+  if (!t) return `border-zinc-600/55 bg-zinc-900/75 ${text}`;
+
+  if (t.startsWith("Infantaria")) {
+    return `border-red-500/50 bg-red-950/50 ${text}`;
+  }
+  if (t.startsWith("Cavalaria")) {
+    return `border-emerald-500/50 bg-emerald-950/45 ${text}`;
+  }
+  if (t.startsWith("Artilharia")) {
+    return `border-sky-500/50 bg-sky-950/45 ${text}`;
+  }
+  if (t.startsWith("Herói")) {
+    return `border-yellow-500/55 bg-yellow-950/40 ${text}`;
+  }
+  if (t.startsWith("Batedor")) {
+    return `border-zinc-600 bg-zinc-900/90 ${text}`;
+  }
+  if (t.startsWith("Mítica")) {
+    return `border-pink-500/50 bg-pink-950/45 ${text}`;
+  }
+  if (t.startsWith("Cerco")) {
+    return `border-amber-700/55 bg-amber-950/50 ${text}`;
+  }
+  if (t.startsWith("Voador")) {
+    return `border-zinc-500/50 bg-zinc-800/55 ${text}`;
+  }
+
+  return `border-zinc-600/55 bg-zinc-900/75 ${text}`;
 }
