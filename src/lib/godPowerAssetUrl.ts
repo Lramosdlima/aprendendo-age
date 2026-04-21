@@ -38,6 +38,8 @@ const OVERRIDES: Record<string, string> = {
   "yinglong's wrath": "/assets/god_power/AoMR_Yinglongs_Wrath.png",
   /** typo no dado: Goushinboku vs Goshinboku */
   goushinboku: "/assets/god_power/AoMR_Goshinboku_Tree_icon.png",
+  /** dado EN "Secret Gate" vs arquivo Sacred_Gate */
+  "secret gate": "/assets/god_power/AoMR_Sacred_Gate_icon.webp",
 };
 
 /**
