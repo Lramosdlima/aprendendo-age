@@ -31,7 +31,7 @@ export function UnidadeComparePage() {
       <header className="mb-8 flex flex-wrap items-start justify-between gap-x-8 gap-y-6">
         <PageHeaderBlock
           title={u1.nome}
-          description={u1.ingles ? `EN: ${u1.ingles}` : undefined}
+          description={u1.ingles ? `Inglês: ${u1.ingles}` : undefined}
           headerIconSrc={icon1}
           descriptionTag
           className="max-w-[min(100%,28rem)] min-w-0 flex-1"
@@ -39,7 +39,7 @@ export function UnidadeComparePage() {
         <PageHeaderBlock
           align="end"
           title={u2.nome}
-          description={u2.ingles ? `EN: ${u2.ingles}` : undefined}
+          description={u2.ingles ? `Inglês: ${u2.ingles}` : undefined}
           headerIconSrc={icon2}
           descriptionTag
           className="max-w-[min(100%,28rem)] min-w-0 flex-1"

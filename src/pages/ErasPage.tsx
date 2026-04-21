@@ -13,7 +13,7 @@ export function ErasPage() {
             <EntityCard
               to={`/eras/${e.id}`}
               title={e.nome}
-              subtitle={e.ingles ? `EN: ${e.ingles}` : undefined}
+              subtitle={e.ingles ? `Inglês: ${e.ingles}` : undefined}
               meta={
                 e.tempo_seg != null && e.tempo_seg > 0 ? `${Math.round(e.tempo_seg / 60)} min` : "Inicial"
               }

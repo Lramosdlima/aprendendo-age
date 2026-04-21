@@ -41,7 +41,7 @@ export function ConstrucaoDetailPage() {
       <BackLink to="/construcoes">Construções</BackLink>
       <PageHeader
         title={c.nome}
-        description={c.ingles ? `EN: ${c.ingles}` : undefined}
+        description={c.ingles ? `Inglês: ${c.ingles}` : undefined}
         headerIconSrc={construcaoIcon}
       />
 

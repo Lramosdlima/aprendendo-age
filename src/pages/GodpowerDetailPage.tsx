@@ -29,7 +29,7 @@ export function GodpowerDetailPage() {
   return (
     <div>
       <BackLink to="/poderes">Poderes divinos</BackLink>
-      <PageHeader title={g.nome} description={g.ingles ? `EN: ${g.ingles}` : undefined} headerIconSrc={powerIcon} />
+      <PageHeader title={g.nome} description={g.ingles ? `Inglês: ${g.ingles}` : undefined} headerIconSrc={powerIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Ligações">

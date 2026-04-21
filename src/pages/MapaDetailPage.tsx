@@ -34,7 +34,7 @@ export function MapaDetailPage() {
       backTo="/mapas"
       backLabel="Mapas"
       title={m.nome}
-      description={m.ingles ? `EN: ${m.ingles}` : undefined}
+      description={m.ingles ? `Inglês: ${m.ingles}` : undefined}
       headerIconSrc={mapaIcon}
       heroBackgroundSrc={previewUrl}
     >
