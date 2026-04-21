@@ -69,6 +69,8 @@ export type StartBuildOrder = {
   id: number;
   /** Rota `/starts/:slug` — derivado de título + autores (ver `buildStartSlug`). */
   slug: string;
+  /** Ex.: `"new"` — lista em `/starts` coloca no topo e mostra etiqueta «Novo!». */
+  status?: string;
   titulo: string;
   /** Autor(es) do build (após « - por » no Notion); vários separados por | no texto original. */
   author: string[];

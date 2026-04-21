@@ -158,7 +158,7 @@ export function EntityCard({
               aria-label="Selecionar para comparar"
             />
           ) : null}
-          <span className="min-w-0 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
+          <span className="flex min-w-0 flex-1 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
             {title}
           </span>
         </div>
