@@ -277,11 +277,13 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
       })()}
       <CompareInfoRow
         label="Forte contra"
+        icon="aomr_better_icon"
         left={u1.forte_contra ? <NotionText text={u1.forte_contra} /> : "—"}
         right={u2.forte_contra ? <NotionText text={u2.forte_contra} /> : "—"}
       />
       <CompareInfoRow
         label="Fraco contra"
+        icon="aomr_worse_icon"
         left={u1.fraco_contra ? <NotionText text={u1.fraco_contra} /> : "—"}
         right={u2.fraco_contra ? <NotionText text={u2.fraco_contra} /> : "—"}
       />

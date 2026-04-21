@@ -127,10 +127,10 @@ export function UnidadeCombateBody({ u }: { u: U }) {
           "—"
         )}
       </InfoRow>
-      <InfoRow label="Forte contra">
+      <InfoRow label="Forte contra" icon="aomr_better_icon">
         {u.forte_contra ? <NotionText text={u.forte_contra} /> : "—"}
       </InfoRow>
-      <InfoRow label="Fraco contra">
+      <InfoRow label="Fraco contra" icon="aomr_worse_icon">
         {u.fraco_contra ? <NotionText text={u.fraco_contra} /> : "—"}
       </InfoRow>
     </div>
