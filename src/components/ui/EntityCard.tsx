@@ -134,28 +134,25 @@ export function EntityCard({
         </div>
       ) : null}
       <div className={cn("relative", contentZ)}>
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <div className="flex min-w-0 items-start gap-3">
-            {compareMode ? (
-              <input
-                type="checkbox"
-                checked={!!selected}
-                disabled={selectDisabled && !selected}
-                onChange={(e) => {
-                  e.stopPropagation();
-                  if (selectDisabled && !selected) return;
-                  onToggleSelect?.();
-                }}
-                onClick={(e) => e.stopPropagation()}
-                className="mt-1 size-4 shrink-0 rounded border-aom-border bg-zinc-900 text-amber-600 focus:ring-amber-500/40 disabled:cursor-not-allowed"
-                aria-label="Selecionar para comparar"
-              />
-            ) : null}
-            <span className="min-w-0 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
-              {title}
-            </span>
-          </div>
-          {meta ? <span className="text-xs text-zinc-500">{meta}</span> : null}
+        <div className="flex min-w-0 items-start gap-3">
+          {compareMode ? (
+            <input
+              type="checkbox"
+              checked={!!selected}
+              disabled={selectDisabled && !selected}
+              onChange={(e) => {
+                e.stopPropagation();
+                if (selectDisabled && !selected) return;
+                onToggleSelect?.();
+              }}
+              onClick={(e) => e.stopPropagation()}
+              className="mt-1 size-4 shrink-0 rounded border-aom-border bg-zinc-900 text-amber-600 focus:ring-amber-500/40 disabled:cursor-not-allowed"
+              aria-label="Selecionar para comparar"
+            />
+          ) : null}
+          <span className="min-w-0 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
+            {title}
+          </span>
         </div>
         {subtitleMinLines === 3 ? (
           <p className="mt-2 line-clamp-3 min-h-[3lh] text-sm leading-relaxed text-zinc-400">
@@ -164,6 +161,7 @@ export function EntityCard({
         ) : subtitle ? (
           <p className="mt-2 line-clamp-2 text-sm text-zinc-400">{subtitleBody}</p>
         ) : null}
+        {meta ? <div className="mt-2 text-xs text-zinc-500">{meta}</div> : null}
       </div>
     </>
   );
