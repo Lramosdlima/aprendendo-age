@@ -1299,7 +1299,7 @@
   },
   {
     "id": 82,
-    "nome": "Blood Pact",
+    "nome": "Pacto de Sangue",
     "ingles": "Blood Pact",
     "god": "Huitzilopochtli",
     "era": "Arcaica :aomr_archaic_age_icon:",
@@ -1313,7 +1313,7 @@
   },
   {
     "id": 83,
-    "nome": "Obsidian Mirror",
+    "nome": "Espelho de Obsidiana",
     "ingles": "Obsidian Mirror",
     "god": "Tezcatlipoca",
     "era": "Arcaica :aomr_archaic_age_icon:",
@@ -1325,7 +1325,7 @@
   },
   {
     "id": 84,
-    "nome": "Tailwind",
+    "nome": "Vento de cauda",
     "ingles": "Tailwind",
     "god": "Quetzalcoatl",
     "era": "Arcaica :aomr_archaic_age_icon:",
@@ -1339,7 +1339,7 @@
   },
   {
     "id": 85,
-    "nome": "Agave Bloom",
+    "nome": "Florescimento de Agave",
     "ingles": "Agave Bloom",
     "god": "Patecatl",
     "era": "Clássica :aomr_classical_age_icon:",
@@ -1353,7 +1353,7 @@
   },
   {
     "id": 86,
-    "nome": "Infestation",
+    "nome": "Insfestação",
     "ingles": "Infestation",
     "god": "Malinalxochitl",
     "era": "Clássica :aomr_classical_age_icon:",
@@ -1367,7 +1367,7 @@
   },
   {
     "id": 87,
-    "nome": "Lullaby",
+    "nome": "Canção de Ninar",
     "ingles": "Lullaby",
     "god": "Huehuecóyotl",
     "era": "Clássica :aomr_classical_age_icon:",
@@ -1381,7 +1381,7 @@
   },
   {
     "id": 88,
-    "nome": "Purge",
+    "nome": "Eliminação",
     "ingles": "Purge",
     "god": "Itzpapalotl",
     "era": "Heróica :aomr_heroic_age_icon:",
@@ -1395,7 +1395,7 @@
   },
   {
     "id": 89,
-    "nome": "Starfall",
+    "nome": "Queda das Estrelas",
     "ingles": "Starfall",
     "god": "Coyolxauhqui",
     "era": "Heróica :aomr_heroic_age_icon:",
@@ -1409,7 +1409,7 @@
   },
   {
     "id": 90,
-    "nome": "Earth Monster",
+    "nome": "Monstro da Terra",
     "ingles": "Earth Monster",
     "god": "Coatlicue",
     "era": "Heróica :aomr_heroic_age_icon:",
@@ -1423,7 +1423,7 @@
   },
   {
     "id": 91,
-    "nome": "Volcano",
+    "nome": "Vulcão",
     "ingles": "Volcano",
     "god": "Mictlantecuhtli",
     "era": "Mítica :aomr_mythic_age_icon:",
@@ -1437,7 +1437,7 @@
   },
   {
     "id": 92,
-    "nome": "Corrupted Ground",
+    "nome": "Solo Corrompido",
     "ingles": "Corrupted Ground",
     "god": "Xolotl",
     "era": "Mítica :aomr_mythic_age_icon:",
@@ -1451,7 +1451,7 @@
   },
   {
     "id": 93,
-    "nome": "Pillar of Tlálocan",
+    "nome": "Pilar de Tlaloc",
     "ingles": "Pillar of Tlálocan",
     "god": "Tlaloc",
     "era": "Mítica :aomr_mythic_age_icon:",
