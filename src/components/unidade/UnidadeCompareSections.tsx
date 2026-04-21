@@ -216,35 +216,35 @@ export function UnidadeCustoCompare({ u1, u2 }: { u1: U; u2: U }) {
         icon="foodaom"
         left={u1.comida ?? "—"}
         right={u2.comida ?? "—"}
-        numericPair={numericPairFrom(u1.comida, u2.comida)}
+        numericPair={{...numericPairFrom(u1.comida, u2.comida), lowerIsBetter: true}}
       />
       <CompareInfoRow
         label="Madeira"
         icon="woodaom"
         left={u1.madeira ?? "—"}
         right={u2.madeira ?? "—"}
-        numericPair={numericPairFrom(u1.madeira, u2.madeira)}
+        numericPair={{...numericPairFrom(u1.madeira, u2.madeira), lowerIsBetter: true}}
       />
       <CompareInfoRow
         label="Ouro"
         icon="goldaom"
         left={u1.ouro ?? "—"}
         right={u2.ouro ?? "—"}
-        numericPair={numericPairFrom(u1.ouro, u2.ouro)}
+        numericPair={{...numericPairFrom(u1.ouro, u2.ouro), lowerIsBetter: true}}
       />
       <CompareInfoRow
         label="População"
         icon="aomr_population_provision_icon"
         left={u1.populacao ?? "—"}
         right={u2.populacao ?? "—"}
-        numericPair={numericPairFrom(u1.populacao, u2.populacao)}
+        numericPair={{...numericPairFrom(u1.populacao, u2.populacao), lowerIsBetter: true}}
       />
       <CompareInfoRow
         label="Tempo treino (seg)"
         icon="aomr_time_icon"
         left={u1.tempo_treinamento ?? "—"}
         right={u2.tempo_treinamento ?? "—"}
-        numericPair={numericPairFrom(u1.tempo_treinamento, u2.tempo_treinamento)}
+        numericPair={{...numericPairFrom(u1.tempo_treinamento, u2.tempo_treinamento), lowerIsBetter: true}}
       />
       <CompareInfoRow
         label="Velocidade movimento"
