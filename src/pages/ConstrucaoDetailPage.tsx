@@ -96,32 +96,38 @@ export function ConstrucaoDetailPage() {
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
         <Section title="Combate / defesa">
           <div className="space-y-0">
-            <InfoRow label="PV" icon="aomr_hit_points_icon">
+            <InfoRow label="Pontos de Vida" icon="aomr_hit_points_icon">
               {c.pontos_de_vida ?? "—"}
             </InfoRow>
-            <InfoRow label="DPS" icon="aomr_hit_points_icon">
+            <InfoRow label="Dano perfurante" icon="piercedamage">
+              {c.dano_perfurante ?? "—"}
+            </InfoRow>
+            <InfoRow label="Velocidade de ataque (seg)" icon="aomr_rate_of_fire_icon">
+              {c.velocidade_de_ataque_atk_s ?? "—"}
+            </InfoRow>
+            <InfoRow label="DPS" icon="attack_cur">
               {c.dps ?? "—"}
             </InfoRow>
             <InfoRow label="Alcance" icon="rangeicon">
               {c.alcance ?? "—"}
             </InfoRow>
-            <InfoRow label="Projéteis">{c.no_projeteis ?? "—"}</InfoRow>
-            <InfoRow label="Dano perfurante" icon="piercedamage">
-              {c.dano_perfurante ?? "—"}
+            <InfoRow label="Projéteis" icon="piercedamage">
+              {c.no_projeteis ?? "—"}
             </InfoRow>
-            <InfoRow label="Vel. ataque (s)">{c.velocidade_de_ataque_atk_s ?? "—"}</InfoRow>
-            <InfoRow label="Arm. corte" icon="hackarmor">
+            <InfoRow label="Armadura de corte" icon="hackarmor">
               {c.armadura_anticorte ?? "—"}
             </InfoRow>
-            <InfoRow label="Arm. perfuração" icon="piercearmor">
+            <InfoRow label="Armadura de perfuração" icon="piercearmor">
               {c.armadura_antiperfurante ?? "—"}
             </InfoRow>
-            <InfoRow label="Arm. contusão">{c.armadura_anticontucao ?? "—"}</InfoRow>
+            <InfoRow label="Armadura de contusão" icon="crusharmor">
+              {c.armadura_anticontucao ?? "—"}
+            </InfoRow>
           </div>
         </Section>
 
         {c.tecnologias ? (
-          <Section title="Tecnologias (texto)">
+          <Section title="Tecnologias">
             <NotionText text={c.tecnologias} />
           </Section>
         ) : (
@@ -138,7 +144,7 @@ export function ConstrucaoDetailPage() {
           </ul>
         </Section>
       ) : c.unidades ? (
-        <Section title="Unidades (texto)" className="mt-6">
+        <Section title="Unidades" className="mt-6">
           <NotionText text={c.unidades} />
         </Section>
       ) : null}
