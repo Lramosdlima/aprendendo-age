@@ -206,7 +206,7 @@
   {
     "id": 13,
     "nome": "A Primaveira da Flor de Persegueiro",
-    "ingles": "The Peach Blossom Spring",
+    "ingles": "PeachBlossomSpring",
     "god": "Fu Xi",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "cooldown_seg": 180,
@@ -257,7 +257,7 @@
   {
     "id": 16,
     "nome": "Guillinbursti",
-    "ingles": "Guillinbursti",
+    "ingles": "Gullinbursti",
     "god": "Frey",
     "era": "Arcaica :aomr_archaic_age_icon:",
     "cooldown_seg": 180,
@@ -422,7 +422,7 @@
   {
     "id": 26,
     "nome": "Cofre da Abundância",
-    "ingles": "Plenty",
+    "ingles": "Plenty Vault",
     "god": "Hefesto",
     "era": "Mítica :aomr_mythic_age_icon:",
     "cooldown_seg": 180,
@@ -1014,7 +1014,7 @@
   {
     "id": 63,
     "nome": "Ira de Yinglong",
-    "ingles": "Yinglong's Wrath",
+    "ingles": "Yinglongs Wrath",
     "god": "Huangdi",
     "era": "Mítica :aomr_mythic_age_icon:",
     "cooldown_seg": 240,
@@ -1094,7 +1094,7 @@
   {
     "id": 68,
     "nome": "Goushinboku",
-    "ingles": "Goushinboku",
+    "ingles": "Goshinboku Tree",
     "god": "Ame-no-Uzume",
     "era": "Clássica :aomr_classical_age_icon:",
     "cooldown_seg": 90,
@@ -1213,7 +1213,7 @@
   {
     "id": 75,
     "nome": "Portal Sagrado",
-    "ingles": "Secret Gate",
+    "ingles": "Sacred Gate",
     "god": "Okuninushi",
     "era": "Mítica :aomr_mythic_age_icon:",
     "cooldown_seg": 240,
