@@ -158,7 +158,10 @@ export function UnidadeCombateCompare({ u1, u2 }: { u1: U; u2: U }) {
         icon="aomr_rate_of_fire_icon"
         left={u1.velocidade_de_ataque_atk_s ?? "—"}
         right={u2.velocidade_de_ataque_atk_s ?? "—"}
-        numericPair={numericPairFrom(u1.velocidade_de_ataque_atk_s, u2.velocidade_de_ataque_atk_s)}
+        numericPair={{
+          ...numericPairFrom(u1.velocidade_de_ataque_atk_s, u2.velocidade_de_ataque_atk_s),
+          lowerIsBetter: true,
+        }}
       />
       <CompareInfoRow
         label="DPS"

@@ -17,12 +17,22 @@ const CLOSE_RATIO = 0.1;
 
 export type CompareCellTone = "default" | "higher" | "lower" | "close";
 
+export type CompareNumericOptions = {
+  /** Se true, o valor menor é melhor (ex.: segundos — mais rápido): verde no menor, vermelho no maior. */
+  lowerIsBetter?: boolean;
+};
+
 /**
- * Compara dois números para destaque visual: maior verde, menor vermelho,
- * muito próximos (≤20% em relação ao maior em módulo) amarelo nos dois,
- * iguais sem destaque. Só aplica quando ambos são finitos.
+ * Compara dois números para destaque visual: por defeito maior verde e menor vermelho;
+ * com `lowerIsBetter`, menor verde e maior vermelho.
+ * Valores muito próximos (≤ limiar relativo) em amarelo nos dois; iguais sem destaque.
+ * Só aplica quando ambos são finitos.
  */
-export function compareNumericTones(a: number | null, b: number | null): {
+export function compareNumericTones(
+  a: number | null,
+  b: number | null,
+  options?: CompareNumericOptions,
+): {
   left: CompareCellTone;
   right: CompareCellTone;
 } {
@@ -39,6 +49,13 @@ export function compareNumericTones(a: number | null, b: number | null): {
   const rel = maxAbs > 0 ? Math.abs(a - b) / maxAbs : 0;
   if (rel <= CLOSE_RATIO) {
     return { left: "close", right: "close" };
+  }
+  const invert = options?.lowerIsBetter === true;
+  if (invert) {
+    if (a < b) {
+      return { left: "higher", right: "lower" };
+    }
+    return { left: "lower", right: "higher" };
   }
   if (a > b) {
     return { left: "higher", right: "lower" };

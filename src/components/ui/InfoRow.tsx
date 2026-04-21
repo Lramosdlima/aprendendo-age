@@ -33,14 +33,16 @@ type CompareInfoRowProps = {
   right: ReactNode;
   icon?: string;
   /** Quando ambos os lados são números válidos, aplica verde/vermelho/amarelo conforme a comparação. */
-  numericPair?: { left: number | null; right: number | null };
+  numericPair?: { left: number | null; right: number | null; lowerIsBetter?: boolean };
 };
 
 /** Uma linha de comparação: rótulo | valor A | valor B (uso típico em telas estreitas). */
 export function CompareInfoRow({ label, left, right, icon, numericPair }: CompareInfoRowProps) {
   const iconSrc = icon ? resolveTokenIconSrc(icon) : undefined;
   const tones = numericPair
-    ? compareNumericTones(numericPair.left, numericPair.right)
+    ? compareNumericTones(numericPair.left, numericPair.right, {
+        lowerIsBetter: numericPair.lowerIsBetter,
+      })
     : { left: "default" as const, right: "default" as const };
   const leftToneClass = toneToTextClass(tones.left);
   const rightToneClass = toneToTextClass(tones.right);
