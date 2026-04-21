@@ -59,6 +59,21 @@ function emptyRow(): EditorRow {
   };
 }
 
+/** Nova linha: copia food/wood/gold/favor/pop da linha anterior (descrição e tipo vazios). */
+function newTableRowAfter(previous: EditorRow | undefined): EditorRow {
+  if (!previous) return emptyRow();
+  return {
+    id: uid(),
+    description: "",
+    food: previous.food,
+    wood: previous.wood,
+    gold: previous.gold,
+    favor: previous.favor,
+    pop: previous.pop,
+    type: "",
+  };
+}
+
 function emptySegment(): EditorSegment {
   return {
     id: uid(),
@@ -491,7 +506,11 @@ export function SecretStartBuilderPage() {
                       className="text-sm text-amber-200/90 underline-offset-2 hover:underline"
                       onClick={() =>
                         setSegments((prev) =>
-                          prev.map((s, j) => (j === si ? { ...s, rows: [...s.rows, emptyRow()] } : s)),
+                          prev.map((s, j) => {
+                            if (j !== si) return s;
+                            const last = s.rows[s.rows.length - 1];
+                            return { ...s, rows: [...s.rows, newTableRowAfter(last)] };
+                          }),
                         )
                       }
                     >
