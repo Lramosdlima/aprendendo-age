@@ -18,6 +18,7 @@ import { MapasPage } from "@/pages/MapasPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
+import { SecretStartBuilderPage } from "@/pages/SecretStartBuilderPage";
 import { StartDetailPage } from "@/pages/StartDetailPage";
 import { StartsPage } from "@/pages/StartsPage";
 import { AtalhosImportantesPage } from "@/pages/trilha-de-aprendizado/AtalhosImportantesPage";
@@ -58,6 +59,7 @@ export default function App() {
           <Route path="tecnologias/:slug" element={<TecnologiaDetailPage />} />
           <Route path="starts" element={<StartsPage />} />
           <Route path="starts/:slug" element={<StartDetailPage />} />
+          <Route path="admin/novo-start" element={<SecretStartBuilderPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
           <Route
             path="trilha-de-aprendizado/tipos-unidades-multiplicadores"

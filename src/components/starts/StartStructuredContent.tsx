@@ -75,24 +75,24 @@ function StartTable({ rows }: { rows: StartTableRow[] }) {
           {rows.map((r, i) => (
             <tr key={i} className={rowTypeClass(r.type ?? null)}>
               <td className="start-col-desc">
-                <StartMiniMarkup text={r.description} />
+                <StartMiniMarkup text={r.description} expandResources />
               </td>
               <td className="start-col-res">
-                {r.food != null && r.food !== "" ? <StartMiniMarkup text={r.food} /> : null}
+                {r.food != null && r.food !== "" ? <StartMiniMarkup text={r.food} expandResources /> : null}
               </td>
               <td className="start-col-res">
-                {r.wood != null && r.wood !== "" ? <StartMiniMarkup text={r.wood} /> : null}
+                {r.wood != null && r.wood !== "" ? <StartMiniMarkup text={r.wood} expandResources /> : null}
               </td>
               <td className="start-col-res">
-                {r.gold != null && r.gold !== "" ? <StartMiniMarkup text={r.gold} /> : null}
+                {r.gold != null && r.gold !== "" ? <StartMiniMarkup text={r.gold} expandResources /> : null}
               </td>
               {showFavor ? (
                 <td className="start-col-res">
-                  {r.favor != null && r.favor !== "" ? <StartMiniMarkup text={r.favor} /> : null}
+                  {r.favor != null && r.favor !== "" ? <StartMiniMarkup text={r.favor} expandResources /> : null}
                 </td>
               ) : null}
               <td className="start-col-pop">
-                {r.pop != null && r.pop !== "" ? <StartMiniMarkup text={r.pop} /> : null}
+                {r.pop != null && r.pop !== "" ? <StartMiniMarkup text={r.pop} expandResources /> : null}
               </td>
             </tr>
           ))}
@@ -120,7 +120,7 @@ function LeadBlocks({ blocks }: { blocks: StartLeadBlock[] }) {
         if (b.kind === "callout") {
           return (
             <CalloutBlock key={i}>
-              <StartMiniMarkup text={b.text} />
+              <StartMiniMarkup text={b.text} expandResources />
             </CalloutBlock>
           );
         }
@@ -130,7 +130,7 @@ function LeadBlocks({ blocks }: { blocks: StartLeadBlock[] }) {
             key={i}
             className="mt-6 font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95 first:mt-0"
           >
-            <StartMiniMarkup text={b.text} />
+            <StartMiniMarkup text={b.text} expandResources />
           </Tag>
         );
       })}
@@ -145,14 +145,14 @@ function FooterBlocks({ blocks }: { blocks: StartFooterBlock[] }) {
         if (b.kind === "paragraph") {
           return (
             <p key={i} className="mt-4 whitespace-pre-line text-sm leading-relaxed text-zinc-300">
-              <StartMiniMarkup text={b.text} />
+              <StartMiniMarkup text={b.text} expandResources />
             </p>
           );
         }
         if (b.kind === "callout") {
           return (
             <CalloutBlock key={i}>
-              <StartMiniMarkup text={b.text} />
+              <StartMiniMarkup text={b.text} expandResources />
             </CalloutBlock>
           );
         }
@@ -162,7 +162,7 @@ function FooterBlocks({ blocks }: { blocks: StartFooterBlock[] }) {
             key={i}
             className="mt-6 font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95"
           >
-            <StartMiniMarkup text={b.text} />
+            <StartMiniMarkup text={b.text} expandResources />
           </Tag>
         );
       })}

@@ -33,6 +33,18 @@ export type StartTableRow = {
   type: string | null;
 };
 
+/** Valores de `StartTableRow.type` usados no CSS (`StartStructuredContent`). */
+export const START_TABLE_ROW_TYPE_OPTIONS = [
+  { value: "", label: "(padrão)" },
+  { value: "hint", label: "hint — dica" },
+  { value: "blue", label: "blue — destaque azul" },
+  { value: "pink", label: "pink — era / marco" },
+  { value: "teal", label: "teal" },
+  { value: "orange", label: "orange" },
+  { value: "red", label: "red" },
+  { value: "gray", label: "gray (como hint)" },
+] as const;
+
 export type StartLeadBlock =
   | { kind: "callout"; text: string }
   | { kind: "heading"; level: 1 | 2 | 3; text: string };

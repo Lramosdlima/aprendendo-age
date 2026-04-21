@@ -37,7 +37,7 @@
           ],
           "table": [
             {
-              "description": "4 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "4 Aldeões Iniciais :aomr_villager_greek_icon: na comida + Celeiro :aomr_granary_icon:",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -46,7 +46,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões :aomr_villager_greek_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões :aomr_villager_greek_icon: no ouro + Armazém :aomr_storehouse_icon:",
               "food": "4",
               "wood": "-",
               "gold": "2",
@@ -55,7 +55,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões :aomr_villager_greek_icon: na madeira+ Armazém :aomr_storehouse_icon:",
               "food": "4",
               "wood": "2",
               "gold": "2",
@@ -64,7 +64,7 @@
               "type": null
             },
             {
-              "description": "+5 Aldeões :aomr_villager_greek_icon: para a <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+5 Aldeões :aomr_villager_greek_icon: para a comida",
               "food": "9",
               "wood": "2",
               "gold": "2",
@@ -73,7 +73,7 @@
               "type": null
             },
             {
-              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: do ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -82,7 +82,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Aldeão :aomr_villager_greek_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Aldeão :aomr_villager_greek_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -91,7 +91,7 @@
               "type": "blue"
             },
             {
-              "description": "O Aldeão :aomr_villager_greek_icon: permanece no <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletando <highlight-blue>Favor</highlight-blue> :favoraom:",
+              "description": "O Aldeão :aomr_villager_greek_icon: permanece no <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletando Favor",
               "food": "9",
               "wood": "2",
               "gold": "1",
@@ -100,7 +100,7 @@
               "type": null
             },
             {
-              "description": "+3 Aldeões :aomr_villager_greek_icon: para a <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+3 Aldeões :aomr_villager_greek_icon: para a madeira",
               "food": "9",
               "wood": "5",
               "gold": "1",
@@ -136,7 +136,7 @@
               "type": "hint"
             },
             {
-              "description": "O Aldeão :aomr_villager_greek_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> constrói 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: , depois volta para coletar <highlight-blue>Favor</highlight-blue> :favoraom:",
+              "description": "O Aldeão :aomr_villager_greek_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> constrói 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: , depois volta para coletar Favor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -196,7 +196,7 @@
           ],
           "table": [
             {
-              "description": "4 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "4 Aldeões Iniciais :aomr_villager_greek_icon: na comida + Celeiro :aomr_granary_icon:",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -205,7 +205,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões :aomr_villager_greek_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões :aomr_villager_greek_icon: no ouro + Armazém :aomr_storehouse_icon:",
               "food": "4",
               "wood": "-",
               "gold": "2",
@@ -214,7 +214,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões :aomr_villager_greek_icon: na madeira+ Armazém :aomr_storehouse_icon:",
               "food": "4",
               "wood": "2",
               "gold": "2",
@@ -223,7 +223,7 @@
               "type": null
             },
             {
-              "description": "+3 Aldeões :aomr_villager_greek_icon: para a <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Aldeões :aomr_villager_greek_icon: para a comida",
               "food": "7",
               "wood": "2",
               "gold": "2",
@@ -232,7 +232,7 @@
               "type": null
             },
             {
-              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: depois retorna",
+              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: do ouro depois retorna",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -250,7 +250,7 @@
               "type": "hint"
             },
             {
-              "description": "O Aldeão :aomr_villager_greek_icon: permanece no <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletando <highlight-blue>Favor</highlight-blue> :favoraom:",
+              "description": "O Aldeão :aomr_villager_greek_icon: permanece no <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletando Favor",
               "food": "7",
               "wood": "2",
               "gold": "2",
@@ -259,7 +259,7 @@
               "type": null
             },
             {
-              "description": "+3 Aldeões :aomr_villager_greek_icon: para a <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+3 Aldeões :aomr_villager_greek_icon: para a madeira",
               "food": "7",
               "wood": "5",
               "gold": "1",
@@ -295,7 +295,7 @@
               "type": null
             },
             {
-              "description": "O Aldeão :aomr_villager_greek_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> constrói 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: , depois volta para coletar <highlight-blue>Favor</highlight-blue> :favoraom:",
+              "description": "O Aldeão :aomr_villager_greek_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> constrói 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: , depois volta para coletar Favor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -374,7 +374,7 @@
           ],
           "table": [
             {
-              "description": "3 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "3 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na Comida + Celeiro :aomr_granary_icon:",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -392,7 +392,7 @@
               "type": "hint"
             },
             {
-              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon:",
+              "description": "2 Trabalhadores :aomr_laborer_icon: no Ouro + Campo de Mineração :aomr_mining_camp_icon:",
               "food": "3",
               "wood": "-",
               "gold": "2",
@@ -401,7 +401,7 @@
               "type": null
             },
             {
-              "description": "+1 Trabalhador :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "+1 Trabalhador :aomr_laborer_icon: na Comida",
               "food": "4",
               "wood": "-",
               "gold": "2",
@@ -410,7 +410,7 @@
               "type": null
             },
             {
-              "description": "Próximo Trabalhador :aomr_laborer_icon: sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: , +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Próximo Trabalhador :aomr_laborer_icon: sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: , +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois Ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -419,7 +419,7 @@
               "type": null
             },
             {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na Comida",
               "food": "8",
               "wood": "0",
               "gold": "3",
@@ -446,7 +446,7 @@
               "type": null
             },
             {
-              "description": "2 Trabalhadores :aomr_laborer_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Campo Madeireiro :aomr_lumber_camp_icon: <highlight-gray>(para Fundeiros</highlight-gray><highlight-gray>:aomr_slinger_icon:</highlight-gray><highlight-gray>ou UPs)</highlight-gray>",
+              "description": "2 Trabalhadores :aomr_laborer_icon: na madeira+ Campo Madeireiro :aomr_lumber_camp_icon: <highlight-gray>(para Fundeiros</highlight-gray><highlight-gray>:aomr_slinger_icon:</highlight-gray><highlight-gray>ou UPs)</highlight-gray>",
               "food": "8",
               "wood": "2",
               "gold": "3",
@@ -455,7 +455,7 @@
               "type": null
             },
             {
-              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "2 Trabalhadores :aomr_laborer_icon: no Ouro",
               "food": "8",
               "wood": "2",
               "gold": "5",
@@ -473,7 +473,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 Ouro",
               "food": "6",
               "wood": "2",
               "gold": "7",
@@ -491,7 +491,7 @@
               "type": "hint"
             },
             {
-              "description": "Trabalhador :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: sobe +1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim:",
+              "description": "Trabalhador :aomr_laborer_icon: do Ouro sobe +1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -509,7 +509,7 @@
               "type": "pink"
             },
             {
-              "description": "2 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: cada um sobe 1 <highlight-blue>Quartel</highlight-blue> :aomr_barracks_icon: <highlight-gray>(totalizando 2)</highlight-gray>",
+              "description": "2 Trabalhadores :aomr_laborer_icon: do Ouro cada um sobe 1 <highlight-blue>Quartel</highlight-blue> :aomr_barracks_icon: <highlight-gray>(totalizando 2)</highlight-gray>",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -554,7 +554,7 @@
           ],
           "table": [
             {
-              "description": "O TC :aomr_town_center_norse_icon: começa treinando Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "O TC :aomr_town_center_norse_icon: começa treinando Anão :aomr_dwarf_icon: para o ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -563,7 +563,7 @@
               "type": null
             },
             {
-              "description": "3 Coletores inicial :aomr_gatherer_icon: na <highlight-red>comida</highlight-red> :foodaom: junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "3 Coletores inicial :aomr_gatherer_icon: na comida junto com Carro de Boi :aomr_ox_cart_icon:",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -590,7 +590,7 @@
               "type": "hint"
             },
             {
-              "description": "Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom: construindo Carro de Boi :aomr_ox_cart_icon:",
+              "description": "Anão :aomr_dwarf_icon: para o ouro construindo Carro de Boi :aomr_ox_cart_icon:",
               "food": "3",
               "wood": "-",
               "gold": "1",
@@ -599,7 +599,7 @@
               "type": null
             },
             {
-              "description": "Coletor :aomr_gatherer_icon: para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> construindo Carro de Boi :aomr_ox_cart_icon:",
+              "description": "Coletor :aomr_gatherer_icon: para madeira construindo Carro de Boi :aomr_ox_cart_icon:",
               "food": "3",
               "wood": "2",
               "gold": "1",
@@ -608,7 +608,7 @@
               "type": null
             },
             {
-              "description": "+1 Coletor :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Coletor :aomr_gatherer_icon: para comida",
               "food": "4",
               "wood": "2",
               "gold": "1",
@@ -617,7 +617,7 @@
               "type": null
             },
             {
-              "description": "+1 Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Anão :aomr_dwarf_icon: para o ouro",
               "food": "4",
               "wood": "2",
               "gold": "2",
@@ -626,7 +626,7 @@
               "type": null
             },
             {
-              "description": "+2 Coletores :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Coletores :aomr_gatherer_icon: para comida",
               "food": "6",
               "wood": "2",
               "gold": "2",
@@ -635,7 +635,7 @@
               "type": null
             },
             {
-              "description": "+1 Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Anão :aomr_dwarf_icon: para o ouro",
               "food": "4",
               "wood": "2",
               "gold": "3",
@@ -644,7 +644,7 @@
               "type": null
             },
             {
-              "description": "+3 Coletores :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Coletores :aomr_gatherer_icon: para comida",
               "food": "9",
               "wood": "2",
               "gold": "3",
@@ -662,7 +662,7 @@
               "type": "blue"
             },
             {
-              "description": "+1 Coletor :aomr_gatherer_icon: para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Coletor :aomr_gatherer_icon: para madeira",
               "food": "9",
               "wood": "3",
               "gold": "3",
@@ -671,7 +671,7 @@
               "type": null
             },
             {
-              "description": "+1 Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Anão :aomr_dwarf_icon: para o ouro",
               "food": "9",
               "wood": "3",
               "gold": "4",
@@ -787,7 +787,7 @@
           ],
           "table": [
             {
-              "description": "2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -805,7 +805,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina",
+              "description": "1 Cidadão :aomr_citizen_icon: no ouro + 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina",
               "food": "2",
               "wood": "-",
               "gold": "1",
@@ -814,7 +814,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "1 Cidadão :aomr_citizen_icon: na madeira",
               "food": "2",
               "wood": "1",
               "gold": "1",
@@ -823,7 +823,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "4",
               "wood": "1",
               "gold": "1",
@@ -832,7 +832,7 @@
               "type": null
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Cidadão :aomr_citizen_icon: na madeira",
               "food": "4",
               "wood": "2",
               "gold": "1",
@@ -841,7 +841,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -850,7 +850,7 @@
               "type": "blue"
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Cidadão :aomr_citizen_icon: na comida",
               "food": "5",
               "wood": "2",
               "gold": "1",
@@ -859,7 +859,7 @@
               "type": null
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Cidadão :aomr_citizen_icon: no ouro",
               "food": "5",
               "wood": "2",
               "gold": "2",
@@ -868,7 +868,7 @@
               "type": null
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Cidadão :aomr_citizen_icon: na madeira",
               "food": "5",
               "wood": "3",
               "gold": "2",
@@ -886,7 +886,7 @@
               "type": "pink"
             },
             {
-              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da <highlight-red>comida</highlight-red> :foodaom: para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da comida para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para madeira",
               "food": "5",
               "wood": "4",
               "gold": "2",
@@ -964,12 +964,12 @@
             },
             {
               "kind": "callout",
-              "text": "Lembre-se sempre de <strong>espalhar</strong> as construções e <strong>conectá-las</strong> para gerar <highlight-blue>favor</highlight-blue> :favoraom:"
+              "text": "Lembre-se sempre de <strong>espalhar</strong> as construções e <strong>conectá-las</strong> para gerar favor"
             }
           ],
           "table": [
             {
-              "description": "2 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: + Silo :aomr_silo:",
+              "description": "2 Camponeses :aomr_peasant_icon: para Comida + Silo :aomr_silo:",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -978,7 +978,7 @@
               "type": null
             },
             {
-              "description": "1 Kuafu :aomr_kuafu_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois Silo :aomr_silo: para <highlight-yellow>Ouro</highlight-yellow> :goldaom: (até <highlight-yellow>250</highlight-yellow>)",
+              "description": "1 Kuafu :aomr_kuafu_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois Silo :aomr_silo: para Ouro (até <highlight-yellow>250</highlight-yellow>)",
               "food": "-",
               "wood": "-",
               "gold": "1",
@@ -996,7 +996,7 @@
               "type": "hint"
             },
             {
-              "description": "+5 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "+5 Camponeses :aomr_peasant_icon: para Comida",
               "food": "9",
               "wood": "-",
               "gold": "1",
@@ -1005,7 +1005,7 @@
               "type": null
             },
             {
-              "description": "Recolha <highlight-yellow>250</highlight-yellow> de <highlight-yellow>Ouro</highlight-yellow> :goldaom: e mude o Kuafu :aomr_kuafu_icon: Silo :aomr_silo: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>",
+              "description": "Recolha <highlight-yellow>250</highlight-yellow> de Ouro e mude o Kuafu :aomr_kuafu_icon: Silo :aomr_silo: para Madeira",
               "food": "-",
               "wood": "1",
               "gold": "0",
@@ -1014,7 +1014,7 @@
               "type": null
             },
             {
-              "description": "Depois do 9º camponês :aomr_peasant_icon: : crie novo Kuafu :aomr_kuafu_icon: para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Depois do 9º camponês :aomr_peasant_icon: : crie novo Kuafu :aomr_kuafu_icon: para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: depois Ouro",
               "food": "9",
               "wood": "1",
               "gold": "0",
@@ -1032,7 +1032,7 @@
               "type": "blue"
             },
             {
-              "description": "+3 Camponeses :aomr_peasant_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+3 Camponeses :aomr_peasant_icon: para Madeira",
               "food": "9",
               "wood": "4",
               "gold": "-",
@@ -1041,7 +1041,7 @@
               "type": null
             },
             {
-              "description": "Move Kuafu :aomr_kuafu_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-teal></highlight-teal> para o <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Move Kuafu :aomr_kuafu_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-teal></highlight-teal> para o Ouro",
               "food": "5",
               "wood": "4",
               "gold": "1",
@@ -1130,7 +1130,7 @@
           ],
           "table": [
             {
-              "description": "3 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
+              "description": "3 Aldeões Iniciais :aomr_villager_greek_icon: na madeira+ Armazém :aomr_storehouse_icon:",
               "food": "-",
               "wood": "3",
               "gold": "-",
@@ -1139,7 +1139,7 @@
               "type": null
             },
             {
-              "description": "Outro Aldeão Inicial :aomr_villager_greek_icon: no <highlight-orange>Doca</highlight-orange> :aomr_dock_icon: depois na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Outro Aldeão Inicial :aomr_villager_greek_icon: no <highlight-orange>Doca</highlight-orange> :aomr_dock_icon: depois na madeira",
               "food": "-",
               "wood": "4",
               "gold": "-",
@@ -1148,7 +1148,7 @@
               "type": null
             },
             {
-              "description": "6 barcos de pesca :aomr_type_ship_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "6 barcos de pesca :aomr_type_ship_icon: na Comida",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1157,7 +1157,7 @@
               "type": null
             },
             {
-              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "+2 Aldeões :aomr_villager_greek_icon: na Comida",
               "food": "2",
               "wood": "4",
               "gold": "-",
@@ -1166,7 +1166,7 @@
               "type": null
             },
             {
-              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
+              "description": "+2 Aldeões :aomr_villager_greek_icon: na Ouro + Armazém :aomr_storehouse_icon:",
               "food": "2",
               "wood": "4",
               "gold": "2",
@@ -1175,7 +1175,7 @@
               "type": null
             },
             {
-              "description": "Foco TC :aomr_town_center_greek_icon: : Aldeões :aomr_villager_greek_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Foco TC :aomr_town_center_greek_icon: : Aldeões :aomr_villager_greek_icon: na Comida",
               "food": "+",
               "wood": "4",
               "gold": "-",
@@ -1193,7 +1193,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 1 Aldeão :aomr_villager_greek_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: (<strong>≈</strong><code>2:30</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 1 Aldeão :aomr_villager_greek_icon: do Ouro (<strong>≈</strong><code>2:30</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1211,7 +1211,7 @@
               "type": "pink"
             },
             {
-              "description": "Rebalanceie os Aldeões :aomr_villager_greek_icon: : todos da Caça :aomr_caribou_icon: vão para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Rebalanceie os Aldeões :aomr_villager_greek_icon: : todos da Caça :aomr_caribou_icon: vão para madeira",
               "food": "6",
               "wood": "10",
               "gold": "4",
@@ -1220,7 +1220,7 @@
               "type": null
             },
             {
-              "description": "Com Aldeão :aomr_villager_greek_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> faça outras 2 <highlight-orange>Docas</highlight-orange> :aomr_dock_icon:",
+              "description": "Com Aldeão :aomr_villager_greek_icon: da madeira<highlight-brown></highlight-brown> faça outras 2 <highlight-orange>Docas</highlight-orange> :aomr_dock_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1277,12 +1277,12 @@
             },
             {
               "kind": "callout",
-              "text": "<highlight-pink>Cofre de Érebus</highlight-pink> :aomr_vaults_of_erebus_icon: é um UP de tecnologia de Hades :aomr_hades_icon: que fornece <highlight-yellow>ouro</highlight-yellow> :goldaom: passivamente!"
+              "text": "<highlight-pink>Cofre de Érebus</highlight-pink> :aomr_vaults_of_erebus_icon: é um UP de tecnologia de Hades :aomr_hades_icon: que fornece ouro passivamente!"
             }
           ],
           "table": [
             {
-              "description": "2 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "2 Aldeões Iniciais :aomr_villager_greek_icon: na comida + Celeiro :aomr_granary_icon:",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -1291,7 +1291,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões Iniciais :aomr_villager_greek_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões Iniciais :aomr_villager_greek_icon: no ouro + Armazém :aomr_storehouse_icon:",
               "food": "2",
               "wood": "-",
               "gold": "2",
@@ -1300,7 +1300,7 @@
               "type": null
             },
             {
-              "description": "+2 Aldeões :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
+              "description": "+2 Aldeões :aomr_villager_greek_icon: na madeira+ Armazém :aomr_storehouse_icon:",
               "food": "2",
               "wood": "2",
               "gold": "2",
@@ -1309,7 +1309,7 @@
               "type": null
             },
             {
-              "description": "+1 Aldeão :aomr_villager_greek_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Aldeão :aomr_villager_greek_icon: no ouro",
               "food": "2",
               "wood": "2",
               "gold": "3",
@@ -1318,7 +1318,7 @@
               "type": null
             },
             {
-              "description": "+1 Aldeão :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Aldeão :aomr_villager_greek_icon: na madeira",
               "food": "2",
               "wood": "3",
               "gold": "3",
@@ -1327,7 +1327,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com todos Aldeões :aomr_villager_greek_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>1:15</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com todos Aldeões :aomr_villager_greek_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>1:15</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1336,7 +1336,7 @@
               "type": "blue"
             },
             {
-              "description": "Todos os Aldeões :aomr_villager_greek_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: vão para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletar <highlight-blue>Favor</highlight-blue> :favoraom:",
+              "description": "Todos os Aldeões :aomr_villager_greek_icon: do ouro vão para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletar Favor",
               "food": "2",
               "wood": "3",
               "gold": "0",
@@ -1345,7 +1345,7 @@
               "type": null
             },
             {
-              "description": "+3 Aldeões :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Aldeões :aomr_villager_greek_icon: na comida",
               "food": "5",
               "wood": "3",
               "gold": "0",
@@ -1354,7 +1354,7 @@
               "type": null
             },
             {
-              "description": "+1 Aldeão :aomr_villager_greek_icon: para <highlight-blue></highlight-blue> coletar <highlight-blue>Favor</highlight-blue> :favoraom: <highlight-gray>(totalizando 4) → até 15 de favor</highlight-gray> :favoraom:",
+              "description": "+1 Aldeão :aomr_villager_greek_icon: para coletar Favor <highlight-gray>(totalizando 4) → até 15 de favor</highlight-gray>",
               "food": "5",
               "wood": "3",
               "gold": "0",
@@ -1363,7 +1363,7 @@
               "type": null
             },
             {
-              "description": "+1 Aldeão :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Aldeão :aomr_villager_greek_icon: na comida",
               "food": "6",
               "wood": "3",
               "gold": "0",
@@ -1372,7 +1372,7 @@
               "type": null
             },
             {
-              "description": "Pesquise <highlight-pink>Cofre de Érebus</highlight-pink> :aomr_vaults_of_erebus_icon: e mova todos os Aldeões :aomr_villager_greek_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Pesquise <highlight-pink>Cofre de Érebus</highlight-pink> :aomr_vaults_of_erebus_icon: e mova todos os Aldeões :aomr_villager_greek_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: para comida",
               "food": "10",
               "wood": "3",
               "gold": "0",
@@ -1381,7 +1381,7 @@
               "type": "hint"
             },
             {
-              "description": "+1 Aldeão :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Aldeão :aomr_villager_greek_icon: na comida",
               "food": "11",
               "wood": "3",
               "gold": "0",
@@ -1390,7 +1390,7 @@
               "type": null
             },
             {
-              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: da madeira",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1399,7 +1399,7 @@
               "type": null
             },
             {
-              "description": "+3 Aldeões :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Aldeões :aomr_villager_greek_icon: na comida",
               "food": "14",
               "wood": "3",
               "gold": "1",
@@ -1444,7 +1444,7 @@
               "type": "pink"
             },
             {
-              "description": "Ajustar Macro :aomr_villager_greek_icon: →<highlight-yellow>ouro</highlight-yellow> :goldaom: →<highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Ajustar Macro :aomr_villager_greek_icon: →ouro →comida",
               "food": "-",
               "wood": "-",
               "gold": "+",
@@ -1471,7 +1471,7 @@
               "type": "hint"
             },
             {
-              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Construir 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Aldeão :aomr_villager_greek_icon: da madeira",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1530,7 +1530,7 @@
           ],
           "table": [
             {
-              "description": "Use o poder divíno <highlight-purple>Pedra da Atração</highlight-purple> :aomr_lure_power_icon: na <highlight-red>Caça</highlight-red> :foodaom:",
+              "description": "Use o poder divíno <highlight-purple>Pedra da Atração</highlight-purple> :aomr_lure_power_icon: na Caça",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1539,7 +1539,7 @@
               "type": null
             },
             {
-              "description": "4 Aldeões Iniciais :aomr_villager_greek_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "4 Aldeões Iniciais :aomr_villager_greek_icon: na comida",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -1548,7 +1548,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões :aomr_villager_greek_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões :aomr_villager_greek_icon: no ouro + Armazém :aomr_storehouse_icon:",
               "food": "4",
               "wood": "-",
               "gold": "2",
@@ -1557,7 +1557,7 @@
               "type": null
             },
             {
-              "description": "+3 Aldeões :aomr_villager_greek_icon: para a <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Aldeões :aomr_villager_greek_icon: para a comida",
               "food": "7",
               "wood": "-",
               "gold": "2",
@@ -1575,7 +1575,7 @@
               "type": "blue"
             },
             {
-              "description": "O Aldeão :aomr_villager_greek_icon: permanece no <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletando <highlight-blue>Favor</highlight-blue> :favoraom:",
+              "description": "O Aldeão :aomr_villager_greek_icon: permanece no <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-blue></highlight-blue> coletando Favor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1584,7 +1584,7 @@
               "type": null
             },
             {
-              "description": "2 Aldeões :aomr_villager_greek_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Armazém :aomr_storehouse_icon:",
+              "description": "2 Aldeões :aomr_villager_greek_icon: na madeira+ Armazém :aomr_storehouse_icon:",
               "food": "7",
               "wood": "2",
               "gold": "2",
@@ -1593,7 +1593,7 @@
               "type": null
             },
             {
-              "description": "+2 Aldeões :aomr_villager_greek_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+2 Aldeões :aomr_villager_greek_icon: para o ouro",
               "food": "7",
               "wood": "2",
               "gold": "4",
@@ -1611,7 +1611,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Aldeões :aomr_villager_greek_icon: : da <highlight-red>comida</highlight-red> :foodaom: para +2 <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Realoque os Aldeões :aomr_villager_greek_icon: : da comida para +2 madeira",
               "food": "5",
               "wood": "4",
               "gold": "4",
@@ -1751,7 +1751,7 @@
               "type": null
             },
             {
-              "description": "3 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "3 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na Comida + Celeiro :aomr_granary_icon:",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -1760,7 +1760,7 @@
               "type": null
             },
             {
-              "description": "+1 Trabalhador :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "+1 Trabalhador :aomr_laborer_icon: na Comida",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -1769,7 +1769,7 @@
               "type": null
             },
             {
-              "description": "Pre Queue →<highlight-pink>Pecuária</highlight-pink> :aomr_husbandry_icon: +<highlight-pink>Enchente do Nilo</highlight-pink> :aomr_flood_of_the_nile_icon: (para <highlight-red>Comida</highlight-red> :foodaom: passiva)",
+              "description": "Pre Queue →<highlight-pink>Pecuária</highlight-pink> :aomr_husbandry_icon: +<highlight-pink>Enchente do Nilo</highlight-pink> :aomr_flood_of_the_nile_icon: (para Comida passiva)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1778,7 +1778,7 @@
               "type": "hint"
             },
             {
-              "description": "+1 Trabalhador :aomr_laborer_icon: na <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> até <highlight-brown>108</highlight-brown> no total , depois no <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Trabalhador :aomr_laborer_icon: na Madeira<highlight-brown></highlight-brown> até <highlight-brown>108</highlight-brown> no total , depois no Ouro",
               "food": "4",
               "wood": "1",
               "gold": "-",
@@ -1787,7 +1787,7 @@
               "type": null
             },
             {
-              "description": "+6 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon: +<highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
+              "description": "+6 Trabalhadores :aomr_laborer_icon: no Ouro + Campo de Mineração :aomr_mining_camp_icon: +<highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
               "food": "4",
               "wood": "0",
               "gold": "6",
@@ -1805,7 +1805,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: para construir <highlight-blue>Casa</highlight-blue> :aomr_house_icon: depois volta",
+              "description": "1 Trabalhador :aomr_laborer_icon: do Ouro para construir <highlight-blue>Casa</highlight-blue> :aomr_house_icon: depois volta",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1814,7 +1814,7 @@
               "type": null
             },
             {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na Comida",
               "food": "9",
               "wood": "-",
               "gold": "6",
@@ -1823,7 +1823,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 3 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:50</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 3 Trabalhadores :aomr_laborer_icon: do Ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:50</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1841,7 +1841,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +5 <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +5 ouro",
               "food": "4",
               "wood": "-",
               "gold": "11",
@@ -1850,7 +1850,7 @@
               "type": null
             },
             {
-              "description": "Realoque 2 Trabalhadores :aomr_laborer_icon: para construir +2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: depois <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Realoque 2 Trabalhadores :aomr_laborer_icon: para construir +2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: depois Madeira",
               "food": "2",
               "wood": "-",
               "gold": "11",
@@ -1963,7 +1963,7 @@
               "type": null
             },
             {
-              "description": "4 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "4 Trabalhadores :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na Comida + Celeiro :aomr_granary_icon:",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -1981,7 +1981,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon:",
+              "description": "1 Trabalhador :aomr_laborer_icon: no Ouro + Campo de Mineração :aomr_mining_camp_icon:",
               "food": "4",
               "wood": "-",
               "gold": "1",
@@ -1990,7 +1990,7 @@
               "type": null
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>(até 120 para <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon: , depois muda para o <highlight-yellow>Ouro</highlight-yellow> :goldaom: )",
+              "description": "1 Trabalhador :aomr_laborer_icon: na madeira(até 120 para <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon: , depois muda para o Ouro )",
               "food": "4",
               "wood": "1",
               "gold": "1",
@@ -2008,7 +2008,7 @@
               "type": "hint"
             },
             {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na reveza entre <highlight-red>Comida</highlight-red> :foodaom: e <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na reveza entre Comida e Ouro",
               "food": "5",
               "wood": "0",
               "gold": "4",
@@ -2017,7 +2017,7 @@
               "type": null
             },
             {
-              "description": "Próximo Trabalhador :aomr_laborer_icon: fará as <highlight-blue>Casas</highlight-blue> :aomr_house_icon: protegendo passagens (depois para <highlight-red>Comida</highlight-red> :foodaom: )",
+              "description": "Próximo Trabalhador :aomr_laborer_icon: fará as <highlight-blue>Casas</highlight-blue> :aomr_house_icon: protegendo passagens (depois para Comida )",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2026,7 +2026,7 @@
               "type": null
             },
             {
-              "description": "2 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: constrói o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:35</code>)",
+              "description": "2 Trabalhadores :aomr_laborer_icon: do Ouro constrói o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2035,7 +2035,7 @@
               "type": "blue"
             },
             {
-              "description": "+2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "+2 Trabalhadores :aomr_laborer_icon: no Ouro",
               "food": "7",
               "wood": "0",
               "gold": "6",
@@ -2044,7 +2044,7 @@
               "type": null
             },
             {
-              "description": "+1 Trabalhador :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "+1 Trabalhador :aomr_laborer_icon: na Comida",
               "food": "8",
               "wood": "0",
               "gold": "6",
@@ -2053,7 +2053,7 @@
               "type": null
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>+ Campo Madeireiro :aomr_lumber_camp_icon:",
+              "description": "1 Trabalhador :aomr_laborer_icon: na madeira+ Campo Madeireiro :aomr_lumber_camp_icon:",
               "food": "8",
               "wood": "1",
               "gold": "6",
@@ -2071,7 +2071,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Trabalhadores :aomr_laborer_icon: e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 Ouro",
               "food": "3",
               "wood": "0",
               "gold": "10",
@@ -2089,7 +2089,7 @@
               "type": "pink"
             },
             {
-              "description": "7 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: para fazer o 2º TC :aomr_town_center_egyptian_icon:",
+              "description": "7 Trabalhadores :aomr_laborer_icon: do Ouro com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: para fazer o 2º TC :aomr_town_center_egyptian_icon:",
               "food": "3",
               "wood": "-",
               "gold": "3",
@@ -2153,7 +2153,7 @@
             },
             {
               "kind": "callout",
-              "text": "Então é uma opção usar o <highlight-yellow>Ouro</highlight-yellow> :goldaom: que iria para o TC em <highlight-gray>soldados</highlight-gray> :aomr_axeman_icon: :aomr_spearman_icon: ou até mais <highlight-teal>Sarcedotes</highlight-teal><highlight-teal>:aomr_priest_icon:</highlight-teal> para segurar MUs :aomr_type_myth_unit_icon: !"
+              "text": "Então é uma opção usar o Ouro que iria para o TC em <highlight-gray>soldados</highlight-gray> :aomr_axeman_icon: :aomr_spearman_icon: ou até mais <highlight-teal>Sarcedotes</highlight-teal><highlight-teal>:aomr_priest_icon:</highlight-teal> para segurar MUs :aomr_type_myth_unit_icon: !"
             }
           ]
         }
@@ -2185,7 +2185,7 @@
           ],
           "table": [
             {
-              "description": "1 Trabalhador Inicial :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Coloca sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: depois na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "1 Trabalhador Inicial :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Coloca sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: depois na Comida + Celeiro :aomr_granary_icon:",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -2194,7 +2194,7 @@
               "type": null
             },
             {
-              "description": "2 Trabalhadores Iniciais :aomr_laborer_icon: na <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>(até pegar <highlight-brown>10</highlight-brown> cada, no total <highlight-brown>120</highlight-brown> :aomr_pickaxe_icon: ), depois na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "2 Trabalhadores Iniciais :aomr_laborer_icon: na Madeira<highlight-brown></highlight-brown>(até pegar <highlight-brown>10</highlight-brown> cada, no total <highlight-brown>120</highlight-brown> :aomr_pickaxe_icon: ), depois na Comida",
               "food": "-",
               "wood": "2",
               "gold": "-",
@@ -2212,7 +2212,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: para <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "1 Trabalhador :aomr_laborer_icon: para Comida",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -2221,7 +2221,7 @@
               "type": null
             },
             {
-              "description": "3 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon:",
+              "description": "3 Trabalhadores :aomr_laborer_icon: no Ouro + Campo de Mineração :aomr_mining_camp_icon:",
               "food": "4",
               "wood": "-",
               "gold": "3",
@@ -2239,7 +2239,7 @@
               "type": "hint"
             },
             {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom: até avançar de era",
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na Comida até avançar de era",
               "food": "12",
               "wood": "-",
               "gold": "3",
@@ -2248,7 +2248,7 @@
               "type": null
             },
             {
-              "description": "Ao pegar <highlight-yellow>200</highlight-yellow> :goldaom: → Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Ao pegar 200 → Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Trabalhadores :aomr_laborer_icon: do Ouro",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2293,7 +2293,7 @@
               "type": "pink"
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: do ouro :goldaom: → Mercado :aomr_market_icon: + 2 Arsenais :aomr_armory_icon:",
+              "description": "1 Trabalhador :aomr_laborer_icon: do ouro → Mercado :aomr_market_icon: + 2 Arsenais :aomr_armory_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2302,7 +2302,7 @@
               "type": null
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: do ouro :goldaom: → Casa :aomr_house_icon:",
+              "description": "1 Trabalhador :aomr_laborer_icon: do ouro → Casa :aomr_house_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2359,7 +2359,7 @@
             },
             {
               "kind": "paragraph",
-              "text": "1. Usar <highlight-purple>Visão</highlight-purple> :aomr_vision_icon: +<highlight-purple>Areais Móveis</highlight-purple> :aomr_shifting_sands_icon: para teleportar <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: + Trabalhadores :aomr_laborer_icon: para <highlight-yellow>mina</highlight-yellow> :goldaom: avançada."
+              "text": "1. Usar <highlight-purple>Visão</highlight-purple> :aomr_vision_icon: +<highlight-purple>Areais Móveis</highlight-purple> :aomr_shifting_sands_icon: para teleportar <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: + Trabalhadores :aomr_laborer_icon: para mina avançada."
             },
             {
               "kind": "paragraph",
@@ -2481,12 +2481,12 @@
             },
             {
               "kind": "callout",
-              "text": "Todo Rush é uma bomba relógio ⏰:aomr_type_siege_weapon_icon: , se não conseguir negar acesso ao mapa e dar <highlight-yellow>GC</highlight-yellow> :goldaom: , você corre grande risco de ficar atrás em <highlight-blue>eco</highlight-blue> e sofrer uma virada!"
+              "text": "Todo Rush é uma bomba relógio ⏰:aomr_type_siege_weapon_icon: , se não conseguir negar acesso ao mapa e dar GC , você corre grande risco de ficar atrás em <highlight-blue>eco</highlight-blue> e sofrer uma virada!"
             }
           ],
           "table": [
             {
-              "description": "2 Trabalhadores Iniciais :aomr_laborer_icon: na <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>(até pegar <highlight-brown>20</highlight-brown> com os 2, no total <highlight-brown>120</highlight-brown> :aomr_pickaxe_icon: ), depois na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "2 Trabalhadores Iniciais :aomr_laborer_icon: na Madeira<highlight-brown></highlight-brown>(até pegar <highlight-brown>20</highlight-brown> com os 2, no total <highlight-brown>120</highlight-brown> :aomr_pickaxe_icon: ), depois na Comida",
               "food": "-",
               "wood": "2",
               "gold": "-",
@@ -2495,7 +2495,7 @@
               "type": null
             },
             {
-              "description": "1 Trabalhador Inicial :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Coloca na <highlight-red>Comida</highlight-red> :foodaom: + Celeiro :aomr_granary_icon:",
+              "description": "1 Trabalhador Inicial :aomr_laborer_icon: + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Coloca na Comida + Celeiro :aomr_granary_icon:",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -2513,7 +2513,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Trabalhador :aomr_laborer_icon: sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: (próximo a torre :aomr_sentry_tower_icon: avançada), depois move para <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "1 Trabalhador :aomr_laborer_icon: sobe 1 <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim: (próximo a torre :aomr_sentry_tower_icon: avançada), depois move para Comida",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -2522,7 +2522,7 @@
               "type": null
             },
             {
-              "description": "3 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Campo de Mineração :aomr_mining_camp_icon:",
+              "description": "3 Trabalhadores :aomr_laborer_icon: no Ouro + Campo de Mineração :aomr_mining_camp_icon:",
               "food": "4",
               "wood": "-",
               "gold": "3",
@@ -2549,7 +2549,7 @@
               "type": null
             },
             {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na Comida",
               "food": "8",
               "wood": "-",
               "gold": "3",
@@ -2558,7 +2558,7 @@
               "type": null
             },
             {
-              "description": "Ao pegar <highlight-yellow>200</highlight-yellow> :goldaom: → Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Trabalhadores :aomr_laborer_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
+              "description": "Ao pegar 200 → Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Trabalhadores :aomr_laborer_icon: do Ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2567,7 +2567,7 @@
               "type": "blue"
             },
             {
-              "description": "2 Trabalhadores :aomr_laborer_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "2 Trabalhadores :aomr_laborer_icon: no Ouro",
               "food": "8",
               "wood": "-",
               "gold": "5",
@@ -2612,7 +2612,7 @@
               "type": "pink"
             },
             {
-              "description": "Imediatamente: 3 Trabalhadores :aomr_laborer_icon: da <highlight-red>Comida</highlight-red> :foodaom: sobe 4 <highlight-blue>Quartel</highlight-blue> :aomr_barracks_icon: ao redor do <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim:",
+              "description": "Imediatamente: 3 Trabalhadores :aomr_laborer_icon: da Comida sobe 4 <highlight-blue>Quartel</highlight-blue> :aomr_barracks_icon: ao redor do <highlight-blue>Monumento</highlight-blue> :aomr_monuments_retold_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2621,7 +2621,7 @@
               "type": null
             },
             {
-              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Foco TC :aomr_town_center_egyptian_icon: : Trabalhadores :aomr_laborer_icon: na Comida",
               "food": "+",
               "wood": "1",
               "gold": "7",
@@ -2678,7 +2678,7 @@
           ],
           "table": [
             {
-              "description": "O TC :aomr_town_center_norse_icon: começa criando Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "O TC :aomr_town_center_norse_icon: começa criando Anão :aomr_dwarf_icon: para o ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2687,7 +2687,7 @@
               "type": null
             },
             {
-              "description": "2 Coletores iniciais :aomr_gatherer_icon: na <highlight-red>comida</highlight-red> :foodaom: junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "2 Coletores iniciais :aomr_gatherer_icon: na comida junto com Carro de Boi :aomr_ox_cart_icon:",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -2705,7 +2705,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Coletor inicial :aomr_gatherer_icon: constrói 1 Carro de Boi :aomr_ox_cart_icon: (que irá para o <highlight-yellow>ouro</highlight-yellow> :goldaom: )",
+              "description": "1 Coletor inicial :aomr_gatherer_icon: constrói 1 Carro de Boi :aomr_ox_cart_icon: (que irá para o ouro )",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2714,7 +2714,7 @@
               "type": null
             },
             {
-              "description": "TC :aomr_town_center_norse_icon: : Alterne entre Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom: e Coletor :aomr_gatherer_icon: para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown><highlight-default>até 3</highlight-default>",
+              "description": "TC :aomr_town_center_norse_icon: : Alterne entre Anão :aomr_dwarf_icon: para o ouro e Coletor :aomr_gatherer_icon: para madeira<highlight-brown></highlight-brown><highlight-default>até 3</highlight-default>",
               "food": "3",
               "wood": "3",
               "gold": "3",
@@ -2732,7 +2732,7 @@
               "type": null
             },
             {
-              "description": "TC :aomr_town_center_norse_icon: : Foque Coletores :aomr_gatherer_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "TC :aomr_town_center_norse_icon: : Foque Coletores :aomr_gatherer_icon: na comida",
               "food": "5",
               "wood": "3",
               "gold": "3",
@@ -2741,7 +2741,7 @@
               "type": null
             },
             {
-              "description": "Finalizando a árvore da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> troque os Coletores para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Finalizando a árvore da madeira<highlight-brown></highlight-brown> troque os Coletores para comida",
               "food": "8",
               "wood": "0",
               "gold": "3",
@@ -2759,7 +2759,7 @@
               "type": "blue"
             },
             {
-              "description": "TC :aomr_town_center_norse_icon: : Foque Coletores :aomr_gatherer_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "TC :aomr_town_center_norse_icon: : Foque Coletores :aomr_gatherer_icon: na comida",
               "food": "12",
               "wood": "-",
               "gold": "3",
@@ -2890,7 +2890,7 @@
           ],
           "table": [
             {
-              "description": "3 Coletores Iniciais :aomr_gatherer_icon: para <highlight-yellow>Ouro</highlight-yellow> :goldaom: com Carroça de Boi :aomr_ox_cart_icon: (até <highlight-yellow>150</highlight-yellow> :goldaom: <highlight-gray>/2950</highlight-gray>)",
+              "description": "3 Coletores Iniciais :aomr_gatherer_icon: para Ouro com Carroça de Boi :aomr_ox_cart_icon: (até 150 <highlight-gray>/2950</highlight-gray>)",
               "food": "-",
               "wood": "-",
               "gold": "3",
@@ -2899,7 +2899,7 @@
               "type": null
             },
             {
-              "description": "1 Coletor :aomr_gatherer_icon: para <highlight-brown>Árvore</highlight-brown> :woodaom: (próximo do TC :aomr_town_center_norse_icon: )",
+              "description": "1 Coletor :aomr_gatherer_icon: para Árvore (próximo do TC :aomr_town_center_norse_icon: )",
               "food": "-",
               "wood": "1",
               "gold": "3",
@@ -2908,7 +2908,7 @@
               "type": null
             },
             {
-              "description": "Transfira Coletores do <highlight-yellow>Ouro</highlight-yellow> :aomr_gatherer_icon: :goldaom: para <highlight-red>Comida</highlight-red> :foodaom: (após <highlight-yellow>150</highlight-yellow> :goldaom: ) (<strong>≈</strong><code>0:35</code>)",
+              "description": "Transfira Coletores do Ouro :aomr_gatherer_icon: para Comida (após 150 ) (<strong>≈</strong><code>0:35</code>)",
               "food": "3",
               "wood": "1",
               "gold": "0",
@@ -2917,7 +2917,7 @@
               "type": null
             },
             {
-              "description": "Foque o TC :aomr_town_center_norse_icon: na <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Foque o TC :aomr_town_center_norse_icon: na Comida",
               "food": "3",
               "wood": "1",
               "gold": "0",
@@ -2971,7 +2971,7 @@
               "type": null
             },
             {
-              "description": "Foque o TC :aomr_town_center_norse_icon: na <highlight-brown>Madeira</highlight-brown> :woodaom:",
+              "description": "Foque o TC :aomr_town_center_norse_icon: na Madeira",
               "food": "6",
               "wood": "3",
               "gold": "4",
@@ -2998,7 +2998,7 @@
               "type": null
             },
             {
-              "description": "Foque o TC :aomr_town_center_norse_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: após 1 Coletor <highlight-yellow></highlight-yellow> :aomr_gatherer_icon: para <highlight-brown>Madeira</highlight-brown> :woodaom:",
+              "description": "Foque o TC :aomr_town_center_norse_icon: no ouro após 1 Coletor :aomr_gatherer_icon: para madeira",
               "food": "6",
               "wood": "4",
               "gold": "4",
@@ -3007,7 +3007,7 @@
               "type": null
             },
             {
-              "description": "Construa <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Coletor do <highlight-yellow>Ouro</highlight-yellow> :aomr_gatherer_icon: :goldaom:",
+              "description": "Construa <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Coletor do Ouro :aomr_gatherer_icon:",
               "food": "6",
               "wood": "4",
               "gold": "4",
@@ -3065,7 +3065,7 @@
             },
             {
               "kind": "callout",
-              "text": "Esse start funciona melhor com <highlight-orange>caça agressiva</highlight-orange> :aomr_rhinoceros_icon: ! Elas facilitam a coleta de <highlight-red>comida</highlight-red> :foodaom: próxima ao TC :aomr_town_center_norse_icon: sem necessidade de outro Carro de Boi :aomr_ox_cart_icon: ."
+              "text": "Esse start funciona melhor com <highlight-orange>caça agressiva</highlight-orange> :aomr_rhinoceros_icon: ! Elas facilitam a coleta de comida próxima ao TC :aomr_town_center_norse_icon: sem necessidade de outro Carro de Boi :aomr_ox_cart_icon: ."
             },
             {
               "kind": "callout",
@@ -3074,7 +3074,7 @@
           ],
           "table": [
             {
-              "description": "2 Coletores inicial :aomr_gatherer_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "2 Coletores inicial :aomr_gatherer_icon: no ouro junto com Carro de Boi :aomr_ox_cart_icon:",
               "food": "-",
               "wood": "-",
               "gold": "2",
@@ -3083,7 +3083,7 @@
               "type": null
             },
             {
-              "description": "1 Coletor inicial :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Coletor inicial :aomr_gatherer_icon: para comida",
               "food": "1",
               "wood": "-",
               "gold": "2",
@@ -3092,7 +3092,7 @@
               "type": null
             },
             {
-              "description": "+3 Coletor :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Coletor :aomr_gatherer_icon: para comida",
               "food": "4",
               "wood": "-",
               "gold": "2",
@@ -3119,7 +3119,7 @@
               "type": "red"
             },
             {
-              "description": "+3 Coletor :aomr_gatherer_icon: para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>(colete o suficiente para +1 Carro de Boi :aomr_ox_cart_icon: )",
+              "description": "+3 Coletor :aomr_gatherer_icon: para madeira<highlight-brown></highlight-brown>(colete o suficiente para +1 Carro de Boi :aomr_ox_cart_icon: )",
               "food": "4",
               "wood": "3",
               "gold": "2",
@@ -3128,7 +3128,7 @@
               "type": null
             },
             {
-              "description": "+1 Coletor :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Coletor :aomr_gatherer_icon: para comida",
               "food": "5",
               "wood": "3",
               "gold": "2",
@@ -3146,7 +3146,7 @@
               "type": null
             },
             {
-              "description": "+1 Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Anão :aomr_dwarf_icon: para o ouro",
               "food": "5",
               "wood": "3",
               "gold": "3",
@@ -3155,7 +3155,7 @@
               "type": null
             },
             {
-              "description": "+2 Coletor :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Coletor :aomr_gatherer_icon: para comida",
               "food": "7",
               "wood": "3",
               "gold": "3",
@@ -3173,7 +3173,7 @@
               "type": "hint"
             },
             {
-              "description": "Constrói +1 Carro de Boi :aomr_ox_cart_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Constrói +1 Carro de Boi :aomr_ox_cart_icon: para comida",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3182,7 +3182,7 @@
               "type": null
             },
             {
-              "description": "+3 Anão :aomr_dwarf_icon: para o <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+3 Anão :aomr_dwarf_icon: para o ouro",
               "food": "7",
               "wood": "3",
               "gold": "6",
@@ -3263,7 +3263,7 @@
               "type": "hint"
             },
             {
-              "description": "Upgrade <highlight-pink>Rigsthula</highlight-pink> :aomr_rigsthula_icon: (150 <highlight-yellow>ouro</highlight-yellow> :goldaom: +20 <highlight-blue>favor</highlight-blue> :favoraom: ) → +20% de taxa de treinamento e pesquisa",
+              "description": "Upgrade <highlight-pink>Rigsthula</highlight-pink> :aomr_rigsthula_icon: (150 ouro +20 favor ) → +20% de taxa de treinamento e pesquisa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3301,7 +3301,7 @@
             },
             {
               "kind": "callout",
-              "text": "Após dispor anões :aomr_dwarf_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: e <highlight-brown>madeira</highlight-brown> :woodaom: você focará na <highlight-red>comida</highlight-red> :foodaom: . Nesse momento, dependendo do mapa, há 2 cenários:"
+              "text": "Após dispor anões :aomr_dwarf_icon: no ouro e madeira você focará na comida . Nesse momento, dependendo do mapa, há 2 cenários:"
             }
           ],
           "table": [
@@ -3315,7 +3315,7 @@
               "type": "hint"
             },
             {
-              "description": "3 anões iniciais :aomr_dwarf_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "3 anões iniciais :aomr_dwarf_icon: no ouro junto com Carro de Boi :aomr_ox_cart_icon:",
               "food": "-",
               "wood": "-",
               "gold": "3",
@@ -3333,7 +3333,7 @@
               "type": null
             },
             {
-              "description": "+2 anões :aomr_dwarf_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+2 anões :aomr_dwarf_icon: no ouro",
               "food": "-",
               "wood": "-",
               "gold": "5",
@@ -3342,7 +3342,7 @@
               "type": null
             },
             {
-              "description": "3 anões :aomr_dwarf_icon: na <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "3 anões :aomr_dwarf_icon: na madeira",
               "food": "-",
               "wood": "3",
               "gold": "5",
@@ -3351,7 +3351,7 @@
               "type": null
             },
             {
-              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Upgrade no Armadura :aomr_copper_armor_icon: → :aomr_dwarf_icon: para <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Upgrade no Armadura :aomr_copper_armor_icon: → :aomr_dwarf_icon: para ouro",
               "food": "-",
               "wood": "-",
               "gold": "+1",
@@ -3360,7 +3360,7 @@
               "type": "hint"
             },
             {
-              "description": "Próximos anões :aomr_dwarf_icon: na <highlight-red>comida</highlight-red> :foodaom: <highlight-gray>(Total: 8) → Verificar dica acima!</highlight-gray> :aomr_rhinoceros_icon: | :aomr_caribou_icon: <highlight-teal></highlight-teal>",
+              "description": "Próximos anões :aomr_dwarf_icon: na comida <highlight-gray>(Total: 8) → Verificar dica acima!</highlight-gray> :aomr_rhinoceros_icon: | :aomr_caribou_icon: <highlight-teal></highlight-teal>",
               "food": "8",
               "wood": "3",
               "gold": "6",
@@ -3378,7 +3378,7 @@
               "type": null
             },
             {
-              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Upgrade no Armas :aomr_copper_weapons_icon: → :aomr_dwarf_icon: para <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Upgrade no Armas :aomr_copper_weapons_icon: → :aomr_dwarf_icon: para madeira",
               "food": "-",
               "wood": "+1",
               "gold": "-",
@@ -3387,7 +3387,7 @@
               "type": "hint"
             },
             {
-              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Upgrade no Escudo :aomr_copper_shields_icon: → :aomr_dwarf_icon: para <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Upgrade no Escudo :aomr_copper_shields_icon: → :aomr_dwarf_icon: para madeira",
               "food": "-",
               "wood": "+1",
               "gold": "-",
@@ -3396,7 +3396,7 @@
               "type": "hint"
             },
             {
-              "description": "Transferir 1 anão do <highlight-yellow>ouro</highlight-yellow> :goldaom: para <highlight-brown>madeira</highlight-brown> :woodaom: logo depois do Escudo :aomr_copper_shields_icon:",
+              "description": "Transferir 1 anão do ouro para madeira logo depois do Escudo :aomr_copper_shields_icon:",
               "food": "8",
               "wood": "6",
               "gold": "5",
@@ -3492,7 +3492,7 @@
           ],
           "table": [
             {
-              "description": "Foco do TC :aomr_town_center_norse_icon: com Coletores :aomr_gatherer_icon: para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Foco do TC :aomr_town_center_norse_icon: com Coletores :aomr_gatherer_icon: para comida",
               "food": "+",
               "wood": "-",
               "gold": "-",
@@ -3501,7 +3501,7 @@
               "type": null
             },
             {
-              "description": "3 Anões iniciais :aomr_dwarf_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-gray>(até coletar toda madeira)</highlight-gray> junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "3 Anões iniciais :aomr_dwarf_icon: na madeira<highlight-gray>(até coletar toda madeira)</highlight-gray> junto com Carro de Boi :aomr_ox_cart_icon:",
               "food": "-",
               "wood": "3",
               "gold": "-",
@@ -3519,7 +3519,7 @@
               "type": null
             },
             {
-              "description": "Transfira o Carro de Boi :aomr_ox_cart_icon: para os Coletores :aomr_gatherer_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Transfira o Carro de Boi :aomr_ox_cart_icon: para os Coletores :aomr_gatherer_icon: na comida",
               "food": "12",
               "wood": "3",
               "gold": "-",
@@ -3537,7 +3537,7 @@
               "type": "hint"
             },
             {
-              "description": "Transferir Anões iniciais :aomr_dwarf_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> para o <highlight-yellow>ouro</highlight-yellow> :goldaom: perto do TC",
+              "description": "Transferir Anões iniciais :aomr_dwarf_icon: da madeira<highlight-brown></highlight-brown> para o ouro perto do TC",
               "food": "-",
               "wood": "0",
               "gold": "3",
@@ -3546,7 +3546,7 @@
               "type": null
             },
             {
-              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Anões :aomr_dwarf_icon: nascem indo para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "<highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: : Anões :aomr_dwarf_icon: nascem indo para madeira",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3582,7 +3582,7 @@
               "type": "blue"
             },
             {
-              "description": "+1 Coletor :aomr_gatherer_icon: para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Coletor :aomr_gatherer_icon: para madeira",
               "food": "12",
               "wood": "3",
               "gold": "3",
@@ -3695,7 +3695,7 @@
           ],
           "table": [
             {
-              "description": "2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -3713,7 +3713,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "1 Cidadão :aomr_citizen_icon: na madeira",
               "food": "2",
               "wood": "1",
               "gold": "-",
@@ -3722,7 +3722,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: + Guilda Econômica :aomr_economic_guild_icon: por perto da mina",
+              "description": "1 Cidadão :aomr_citizen_icon: no ouro + 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: + Guilda Econômica :aomr_economic_guild_icon: por perto da mina",
               "food": "2",
               "wood": "1",
               "gold": "1",
@@ -3731,7 +3731,7 @@
               "type": null
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Cidadão :aomr_citizen_icon: no ouro",
               "food": "2",
               "wood": "1",
               "gold": "2",
@@ -3740,7 +3740,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "4",
               "wood": "1",
               "gold": "2",
@@ -3749,7 +3749,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:15</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:15</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3758,7 +3758,7 @@
               "type": "blue"
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Cidadão :aomr_citizen_icon: na comida",
               "food": "5",
               "wood": "1",
               "gold": "2",
@@ -3767,7 +3767,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na madeira",
               "food": "5",
               "wood": "3",
               "gold": "2",
@@ -3785,7 +3785,7 @@
               "type": "pink"
             },
             {
-              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da <highlight-red>comida</highlight-red> :foodaom: para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da comida para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para madeira",
               "food": "2",
               "wood": "4",
               "gold": "4",
@@ -3803,7 +3803,7 @@
               "type": "pink"
             },
             {
-              "description": "Mova 3 Cidadãos :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: para o 2º TC",
+              "description": "Mova 3 Cidadãos :aomr_citizen_icon: do ouro para o 2º TC",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3889,7 +3889,7 @@
           ],
           "table": [
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "1 Cidadão Inicial :aomr_citizen_icon: na madeira",
               "food": "-",
               "wood": "1",
               "gold": "-",
@@ -3898,7 +3898,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_icon: no ouro",
               "food": "-",
               "wood": "-",
               "gold": "1",
@@ -3916,7 +3916,7 @@
               "type": "hint"
             },
             {
-              "description": "O Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: constrói 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina",
+              "description": "O Cidadão :aomr_citizen_icon: do ouro constrói 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3925,7 +3925,7 @@
               "type": null
             },
             {
-              "description": "+3 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Cidadãos :aomr_citizen_icon: na comida",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -3934,7 +3934,7 @@
               "type": null
             },
             {
-              "description": "O Cidadão Inicial :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> sairá após coletar <highlight-brown>180</highlight-brown> para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "O Cidadão Inicial :aomr_citizen_icon: na madeira sairá após coletar <highlight-brown>180</highlight-brown> para comida",
               "food": "4",
               "wood": "0",
               "gold": "1",
@@ -3943,7 +3943,7 @@
               "type": null
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Cidadão :aomr_citizen_icon: na comida",
               "food": "5",
               "wood": "0",
               "gold": "1",
@@ -3952,7 +3952,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>1:40</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>1:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3961,7 +3961,7 @@
               "type": "blue"
             },
             {
-              "description": "Cidadão :aomr_citizen_icon: que fez o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: mova para <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Cidadão :aomr_citizen_icon: que fez o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: mova para comida",
               "food": "6",
               "wood": "0",
               "gold": "0",
@@ -3970,7 +3970,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "7",
               "wood": "0",
               "gold": "0",
@@ -3988,7 +3988,7 @@
               "type": "pink"
             },
             {
-              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da <highlight-red>comida</highlight-red> :foodaom: para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "<strong>Realoque os Cidadãos</strong><strong>:aomr_citizen_icon:</strong><strong>:</strong> da comida para construir <highlight-blue>Guilda</highlight-blue> :aomr_economic_guild_icon: depois para madeira",
               "food": "3",
               "wood": "3",
               "gold": "2",
@@ -4105,7 +4105,7 @@
           ],
           "table": [
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: na comida",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -4114,7 +4114,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: construindo <highlight-blue>Guilda Econômica</highlight-blue> :aomr_economic_guild_icon: , depois <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: construindo <highlight-blue>Guilda Econômica</highlight-blue> :aomr_economic_guild_icon: , depois comida",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -4150,7 +4150,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> dessa <highlight-purple>Floresta de Gaia</highlight-purple> :aomr_gaia_forest_icon:",
+              "description": "1 Cidadão :aomr_citizen_icon: na madeira dessa <highlight-purple>Floresta de Gaia</highlight-purple> :aomr_gaia_forest_icon:",
               "food": "2",
               "wood": "1",
               "gold": "-",
@@ -4159,7 +4159,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: criando 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: depois no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "1 Cidadão :aomr_citizen_icon: criando 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: depois no ouro",
               "food": "2",
               "wood": "1",
               "gold": "1",
@@ -4168,7 +4168,7 @@
               "type": null
             },
             {
-              "description": "+3 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Cidadão :aomr_citizen_icon: na comida",
               "food": "5",
               "wood": "1",
               "gold": "1",
@@ -4177,7 +4177,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4186,7 +4186,7 @@
               "type": "blue"
             },
             {
-              "description": "+3 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Cidadãos :aomr_citizen_icon: na comida",
               "food": "8",
               "wood": "1",
               "gold": "1",
@@ -4222,7 +4222,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadãos :aomr_citizen_icon: cria <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: depois vai para <highlight-red>comida</highlight-red> :foodaom: da Galinha 🐓",
+              "description": "1 Cidadãos :aomr_citizen_icon: cria <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: depois vai para comida da Galinha 🐓",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -4249,7 +4249,7 @@
               "type": null
             },
             {
-              "description": "Nos 150 <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> coloca Arsenal :aomr_armory_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow>",
+              "description": "Nos 150 madeira coloca Arsenal :aomr_armory_icon: com Cidadão :aomr_citizen_icon: do ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -4258,7 +4258,7 @@
               "type": null
             },
             {
-              "description": "Novos Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Novos Cidadãos :aomr_citizen_icon: na comida",
               "food": "+",
               "wood": "-",
               "gold": "-",
@@ -4335,7 +4335,7 @@
           ],
           "table": [
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: na comida",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -4344,7 +4344,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: construindo <highlight-blue>Guilda Econômica</highlight-blue> :aomr_economic_guild_icon: , depois <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: construindo <highlight-blue>Guilda Econômica</highlight-blue> :aomr_economic_guild_icon: , depois comida",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -4380,7 +4380,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> dessa <highlight-purple>Floresta de Gaia</highlight-purple> :aomr_gaia_forest_icon:",
+              "description": "1 Cidadão :aomr_citizen_icon: na madeira dessa <highlight-purple>Floresta de Gaia</highlight-purple> :aomr_gaia_forest_icon:",
               "food": "2",
               "wood": "1",
               "gold": "-",
@@ -4389,7 +4389,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "1 Cidadão :aomr_citizen_icon: no ouro",
               "food": "2",
               "wood": "1",
               "gold": "1",
@@ -4398,7 +4398,7 @@
               "type": null
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Cidadão :aomr_citizen_icon: na madeira",
               "food": "2",
               "wood": "2",
               "gold": "1",
@@ -4407,7 +4407,7 @@
               "type": null
             },
             {
-              "description": "Faça 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina com Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Faça 1 <highlight-blue>Mansão</highlight-blue> :aomr_manor_icon: por perto da mina com Cidadão :aomr_citizen_icon: no ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -4416,7 +4416,7 @@
               "type": null
             },
             {
-              "description": "+3 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+3 Cidadãos :aomr_citizen_icon: na comida",
               "food": "5",
               "wood": "2",
               "gold": "1",
@@ -4425,7 +4425,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Cidadão :aomr_citizen_icon: do ouro <highlight-teal></highlight-teal>(<strong>≈</strong><code>2:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4434,7 +4434,7 @@
               "type": "blue"
             },
             {
-              "description": "Transfira os 2 Cidadãos :aomr_citizen_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> para a <highlight-red>comida</highlight-red> :foodaom: <highlight-gray>(frutinhas)</highlight-gray>",
+              "description": "Transfira os 2 Cidadãos :aomr_citizen_icon: da madeira para a comida <highlight-gray>(frutinhas)</highlight-gray>",
               "food": "7",
               "wood": "0",
               "gold": "1",
@@ -4443,7 +4443,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "8",
               "wood": "0",
               "gold": "1",
@@ -4535,7 +4535,7 @@
           ],
           "table": [
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: na comida",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -4544,7 +4544,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: construindo <highlight-blue>Guilda Econômica</highlight-blue> :aomr_economic_guild_icon: , depois <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "1 Cidadão Inicial :aomr_citizen_hero_icon: construindo <highlight-blue>Guilda Econômica</highlight-blue> :aomr_economic_guild_icon: , depois comida",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -4562,7 +4562,7 @@
               "type": "hint"
             },
             {
-              "description": "Coloque <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: perto do TC, para <highlight-blue>favor</highlight-blue> :favoraom: rápido e depois Sobe 1 deles para Herói :aomr_oracle_hero_icon:",
+              "description": "Coloque <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: perto do TC, para favor rápido e depois Sobe 1 deles para Herói :aomr_oracle_hero_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4580,7 +4580,7 @@
               "type": "hint"
             },
             {
-              "description": "+1 Cidadão :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+1 Cidadão :aomr_citizen_icon: na comida",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -4589,7 +4589,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown> da <highlight-purple>Floresta de Gaia</highlight-purple> :aomr_gaia_forest_icon: e transforma em <highlight-orange>herói</highlight-orange> :aomr_citizen_hero_icon:",
+              "description": "1 Cidadão :aomr_citizen_icon: na madeira da <highlight-purple>Floresta de Gaia</highlight-purple> :aomr_gaia_forest_icon: e transforma em <highlight-orange>herói</highlight-orange> :aomr_citizen_hero_icon:",
               "food": "3",
               "wood": "1",
               "gold": "-",
@@ -4598,7 +4598,7 @@
               "type": null
             },
             {
-              "description": "1 Cidadão :aomr_citizen_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: e transforma em <highlight-orange>herói</highlight-orange> :aomr_citizen_hero_icon:",
+              "description": "1 Cidadão :aomr_citizen_icon: no ouro e transforma em <highlight-orange>herói</highlight-orange> :aomr_citizen_hero_icon:",
               "food": "3",
               "wood": "-",
               "gold": "1",
@@ -4607,7 +4607,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom: e transforma em <highlight-orange>herói</highlight-orange> :aomr_citizen_hero_icon: + Mansão :aomr_manor_icon:",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na comida e transforma em <highlight-orange>herói</highlight-orange> :aomr_citizen_hero_icon: + Mansão :aomr_manor_icon:",
               "food": "5",
               "wood": "1",
               "gold": "1",
@@ -4616,7 +4616,7 @@
               "type": null
             },
             {
-              "description": "+2 Cidadãos :aomr_citizen_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Cidadãos :aomr_citizen_icon: na comida",
               "food": "7",
               "wood": "1",
               "gold": "1",
@@ -4625,7 +4625,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Cidadãos :aomr_citizen_icon: da <highlight-red>comida</highlight-red> :foodaom: e do <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-teal></highlight-teal>(<strong>≈</strong>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Cidadãos :aomr_citizen_icon: da comida e do ouro <highlight-teal></highlight-teal>(<strong>≈</strong>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4701,7 +4701,7 @@
             },
             {
               "kind": "callout",
-              "text": "Lembre-se sempre de <strong>espalhar</strong> as construções e <strong>conectá-las</strong> para gerar <highlight-blue>favor</highlight-blue> :favoraom:"
+              "text": "Lembre-se sempre de <strong>espalhar</strong> as construções e <strong>conectá-las</strong> para gerar favor"
             }
           ],
           "table": [
@@ -4724,7 +4724,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Camponês Inicial :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: 1 Camponês Inicial :aomr_peasant_icon: para <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Silo :aomr_silo: <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: na <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>+ Silo :aomr_silo: (até <highlight-brown>150</highlight-brown><highlight-brown>:woodaom:</highlight-brown>) depois <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "1 Camponês Inicial :aomr_peasant_icon: para Comida 1 Camponês Inicial :aomr_peasant_icon: para Ouro + Silo :aomr_silo: <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: na Madeira<highlight-brown></highlight-brown>+ Silo :aomr_silo: (até 150) depois Ouro",
               "food": "1",
               "wood": "1",
               "gold": "1",
@@ -4742,7 +4742,7 @@
               "type": "hint"
             },
             {
-              "description": "(Nos <highlight-brown>150</highlight-brown><highlight-brown>:woodaom:</highlight-brown>) Mudar <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: da <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> para <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "(Nos 150) Mudar <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: da Madeira<highlight-brown></highlight-brown> para Ouro",
               "food": "3",
               "wood": "0",
               "gold": "2",
@@ -4751,7 +4751,7 @@
               "type": null
             },
             {
-              "description": "Próximos Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "Próximos Camponeses :aomr_peasant_icon: para Comida",
               "food": "5",
               "wood": "0",
               "gold": "2",
@@ -4760,7 +4760,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Camponês :aomr_peasant_icon: da <highlight-red>Comida</highlight-red> :foodaom: (<strong>≈</strong><code>1:00</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com Camponês :aomr_peasant_icon: da Comida (<strong>≈</strong><code>1:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4769,7 +4769,7 @@
               "type": "blue"
             },
             {
-              "description": "Camponês :aomr_peasant_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "Camponês :aomr_peasant_icon: para Madeira",
               "food": "5",
               "wood": "1",
               "gold": "2",
@@ -4778,7 +4778,7 @@
               "type": null
             },
             {
-              "description": "Mudar <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: do <highlight-yellow>Ouro</highlight-yellow> :goldaom: e o Camponês :aomr_peasant_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>",
+              "description": "Mudar <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: do Ouro e o Camponês :aomr_peasant_icon: do <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: para Madeira<highlight-brown></highlight-brown>",
               "food": "5",
               "wood": "2",
               "gold": "1",
@@ -4796,7 +4796,7 @@
               "type": "hint"
             },
             {
-              "description": "Novo <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: no <highlight-yellow>Ouro</highlight-yellow> :goldaom: e sobe <highlight-blue>Casas</highlight-blue> :aomr_house_icon: <highlight-gray>(Total: 3 Kuafus e 7 Camponeses)</highlight-gray>",
+              "description": "Novo <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: no Ouro e sobe <highlight-blue>Casas</highlight-blue> :aomr_house_icon: <highlight-gray>(Total: 3 Kuafus e 7 Camponeses)</highlight-gray>",
               "food": "5",
               "wood": "3",
               "gold": "2",
@@ -4832,7 +4832,7 @@
               "type": "pink"
             },
             {
-              "description": "<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: da <highlight-brown>Madeira</highlight-brown> :woodaom: sobe <highlight-pink>Academia Imperial</highlight-pink> :aomr_imperial_academy: →<highlight-yellow>Nezha</highlight-yellow> :aomr_nezha_child_icon:",
+              "description": "<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: da Madeira sobe <highlight-pink>Academia Imperial</highlight-pink> :aomr_imperial_academy: →<highlight-yellow>Nezha</highlight-yellow> :aomr_nezha_child_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4850,7 +4850,7 @@
               "type": null
             },
             {
-              "description": "2 <highlight-orange>Kuafus</highlight-orange> :aomr_kuafu_icon: da <highlight-brown>Madeira</highlight-brown> :woodaom: para 2 TC :aomr_town_center_chinese:",
+              "description": "2 <highlight-orange>Kuafus</highlight-orange> :aomr_kuafu_icon: da Madeira para 2 TC :aomr_town_center_chinese:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4909,7 +4909,7 @@
           ],
           "table": [
             {
-              "description": "2 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: + Silo :aomr_silo:",
+              "description": "2 Camponeses :aomr_peasant_icon: para Comida + Silo :aomr_silo:",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -4918,7 +4918,7 @@
               "type": null
             },
             {
-              "description": "1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois vai para <highlight-yellow>Ouro</highlight-yellow> :goldaom: + Silo :aomr_silo:",
+              "description": "1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: constrói <highlight-blue>Casa</highlight-blue> :aomr_house_icon: e depois vai para Ouro + Silo :aomr_silo:",
               "food": "-",
               "wood": "-",
               "gold": "1",
@@ -4927,7 +4927,7 @@
               "type": null
             },
             {
-              "description": "+5 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom:",
+              "description": "+5 Camponeses :aomr_peasant_icon: para Comida",
               "food": "5",
               "wood": "-",
               "gold": "1",
@@ -4936,7 +4936,7 @@
               "type": null
             },
             {
-              "description": "Recolha 250 de <highlight-yellow>Ouro</highlight-yellow> :goldaom: e mude o Kuafu :aomr_kuafu_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>+ Silo :aomr_silo:",
+              "description": "Recolha 250 de Ouro e mude o Kuafu :aomr_kuafu_icon: para Madeira<highlight-brown></highlight-brown>+ Silo :aomr_silo:",
               "food": "5",
               "wood": "1",
               "gold": "0",
@@ -4945,7 +4945,7 @@
               "type": null
             },
             {
-              "description": "+3 Camponeses :aomr_peasant_icon: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+3 Camponeses :aomr_peasant_icon: para Madeira",
               "food": "5",
               "wood": "4",
               "gold": "0",
@@ -4963,7 +4963,7 @@
               "type": "blue"
             },
             {
-              "description": "Move <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: <highlight-teal></highlight-teal> para o <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "Move <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: <highlight-teal></highlight-teal> para o Ouro",
               "food": "5",
               "wood": "3",
               "gold": "1",
@@ -4972,7 +4972,7 @@
               "type": null
             },
             {
-              "description": "+1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: <highlight-teal></highlight-teal> para o <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "+1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: <highlight-teal></highlight-teal> para o Ouro",
               "food": "5",
               "wood": "3",
               "gold": "2",
@@ -4981,7 +4981,7 @@
               "type": null
             },
             {
-              "description": "+1 Camponeses :aomr_peasant_icon: para o <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Camponeses :aomr_peasant_icon: para o Ouro",
               "food": "5",
               "wood": "3",
               "gold": "3",
@@ -5008,7 +5008,7 @@
               "type": null
             },
             {
-              "description": "Mova 5 da <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> para <highlight-red>Comida</highlight-red> :foodaom: (árvore próxima do TC :aomr_town_center_chinese: )",
+              "description": "Mova 5 da Madeira<highlight-brown></highlight-brown> para Comida (árvore próxima do TC :aomr_town_center_chinese: )",
               "food": "2",
               "wood": "8",
               "gold": "3",
@@ -5035,7 +5035,7 @@
               "type": "pink"
             },
             {
-              "description": "Volte os Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: (após acabar a 1 madeira)",
+              "description": "Volte os Camponeses :aomr_peasant_icon: para Comida (após acabar a 1 madeira)",
               "food": "7",
               "wood": "3",
               "gold": "2",
@@ -5044,7 +5044,7 @@
               "type": null
             },
             {
-              "description": "2 Novos Camponeses :aomr_peasant_icon: para <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "2 Novos Camponeses :aomr_peasant_icon: para Ouro",
               "food": "7",
               "wood": "3",
               "gold": "4",
@@ -5062,7 +5062,7 @@
               "type": null
             },
             {
-              "description": "+2 Camponeses :aomr_peasant_icon: para <highlight-red>Comida</highlight-red> :foodaom: nas frutas",
+              "description": "+2 Camponeses :aomr_peasant_icon: para Comida nas frutas",
               "food": "9",
               "wood": "3",
               "gold": "4",
@@ -5071,7 +5071,7 @@
               "type": null
             },
             {
-              "description": "+1 Novo <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: <highlight-teal></highlight-teal> para <highlight-yellow>Ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Novo <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: <highlight-teal></highlight-teal> para Ouro",
               "food": "7",
               "wood": "3",
               "gold": "5",
@@ -5080,7 +5080,7 @@
               "type": null
             },
             {
-              "description": "<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: do TC constrói Silo :aomr_silo: para <highlight-brown>Madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: do TC constrói Silo :aomr_silo: para Madeira",
               "food": "8",
               "wood": "7",
               "gold": "5",
@@ -5126,12 +5126,12 @@
             },
             {
               "kind": "callout",
-              "text": "<strong>Sobre:</strong> A ideia por trás desse start é aproveitar as <highlight-teal>fazendas prósperas</highlight-teal> :aomr_farm_icon: :aomr_prosperous_seeds: de Shennong para <highlight-pink><strong>esconder</strong></highlight-pink> unidades do <highlight-yellow>ouro</highlight-yellow> :goldaom: de possíveis <highlight-red>RAIDs</highlight-red> futuros."
+              "text": "<strong>Sobre:</strong> A ideia por trás desse start é aproveitar as <highlight-teal>fazendas prósperas</highlight-teal> :aomr_farm_icon: :aomr_prosperous_seeds: de Shennong para <highlight-pink><strong>esconder</strong></highlight-pink> unidades do ouro de possíveis <highlight-red>RAIDs</highlight-red> futuros."
             }
           ],
           "table": [
             {
-              "description": "2 Camponeses inicias :aomr_peasant_icon: criam 2 <highlight-teal>fazendas</highlight-teal> :aomr_farm_icon: com <highlight-purple>prosperidade</highlight-purple> :aomr_prosperous_seeds: ao redor da <highlight-yellow>mina de ouro</highlight-yellow> :goldaom: e 1 Kuafu inicial :aomr_kuafu_icon: cria o Silo :aomr_silo: entre elas (ver imagem acima)",
+              "description": "2 Camponeses inicias :aomr_peasant_icon: criam 2 <highlight-teal>fazendas</highlight-teal> :aomr_farm_icon: com <highlight-purple>prosperidade</highlight-purple> :aomr_prosperous_seeds: ao redor da mina de ouro e 1 Kuafu inicial :aomr_kuafu_icon: cria o Silo :aomr_silo: entre elas (ver imagem acima)",
               "food": "2",
               "wood": "1",
               "gold": "-",
@@ -5140,7 +5140,7 @@
               "type": null
             },
             {
-              "description": "Próximo Camponês :aomr_peasant_icon: <highlight-brown></highlight-brown> e <highlight-orange>Kuafu</highlight-orange> inicial :aomr_kuafu_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown><highlight-default>(até 50)</highlight-default>",
+              "description": "Próximo Camponês :aomr_peasant_icon: <highlight-brown></highlight-brown> e <highlight-orange>Kuafu</highlight-orange> inicial :aomr_kuafu_icon: na madeira<highlight-brown></highlight-brown><highlight-default>(até 50)</highlight-default>",
               "food": "2",
               "wood": "2",
               "gold": "-",
@@ -5158,7 +5158,7 @@
               "type": "hint"
             },
             {
-              "description": "Próximo Camponês :aomr_peasant_icon: na <highlight-red>comida</highlight-red> :foodaom: <highlight-gray>(da caça que você enviou)</highlight-gray>(<strong>≈</strong><code><strong>0:37</strong></code>)",
+              "description": "Próximo Camponês :aomr_peasant_icon: na comida <highlight-gray>(da caça que você enviou)</highlight-gray>(<strong>≈</strong><code><strong>0:37</strong></code>)",
               "food": "3",
               "wood": "2",
               "gold": "-",
@@ -5167,7 +5167,7 @@
               "type": null
             },
             {
-              "description": "Depois do <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: e o Camponês :aomr_peasant_icon: pegar 50 de <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> transferi-los para o <highlight-yellow>ouro</highlight-yellow> :goldaom: e <highlight-red>comida</highlight-red> :foodaom: respectivamente.<highlight-gray></highlight-gray>(<strong>≈</strong><code><strong>0:37</strong></code>)",
+              "description": "Depois do <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: e o Camponês :aomr_peasant_icon: pegar 50 de madeira<highlight-brown></highlight-brown> transferi-los para o ouro e comida respectivamente.<highlight-gray></highlight-gray>(<strong>≈</strong><code><strong>0:37</strong></code>)",
               "food": "4",
               "wood": "0",
               "gold": "1",
@@ -5176,7 +5176,7 @@
               "type": null
             },
             {
-              "description": "+1 Camponês :aomr_peasant_icon: na <highlight-red>comida</highlight-red> :foodaom: depois roda <highlight-orange><highlight-default_background>Kuafu</highlight-default_background></highlight-orange> :aomr_kuafu_icon: (<strong>≈</strong><code><strong>1:10</strong></code>)",
+              "description": "+1 Camponês :aomr_peasant_icon: na comida depois roda <highlight-orange><highlight-default_background>Kuafu</highlight-default_background></highlight-orange> :aomr_kuafu_icon: (<strong>≈</strong><code><strong>1:10</strong></code>)",
               "food": "5",
               "wood": "0",
               "gold": "1",
@@ -5185,7 +5185,7 @@
               "type": null
             },
             {
-              "description": "2 Camponeses :aomr_peasant_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>+Silo :aomr_silo:",
+              "description": "2 Camponeses :aomr_peasant_icon: na madeira<highlight-brown></highlight-brown>+Silo :aomr_silo:",
               "food": "5",
               "wood": "2",
               "gold": "1",
@@ -5194,7 +5194,7 @@
               "type": null
             },
             {
-              "description": "+1 Kuafu :aomr_kuafu_icon: sobe <highlight-orange>Casa</highlight-orange> :aomr_house_icon: depois vai na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+1 Kuafu :aomr_kuafu_icon: sobe <highlight-orange>Casa</highlight-orange> :aomr_house_icon: depois vai na madeira",
               "food": "5",
               "wood": "3",
               "gold": "1",
@@ -5203,7 +5203,7 @@
               "type": null
             },
             {
-              "description": "+3 Camponês :aomr_peasant_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown>",
+              "description": "+3 Camponês :aomr_peasant_icon: na madeira",
               "food": "5",
               "wood": "6",
               "gold": "1",
@@ -5212,7 +5212,7 @@
               "type": null
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com o Kuafu :aomr_kuafu_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: (<strong>≈</strong><code><strong>3:00</strong></code>)<highlight-gray>(volta pro</highlight-gray><highlight-yellow>ouro</highlight-yellow><highlight-gray>depois)</highlight-gray>",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com o Kuafu :aomr_kuafu_icon: do ouro (<strong>≈</strong><code><strong>3:00</strong></code>)<highlight-gray>(volta pro ouro depois)</highlight-gray>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5230,7 +5230,7 @@
               "type": "hint"
             },
             {
-              "description": "+1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: <highlight-gray>(total: 3 Kuafus</highlight-gray><highlight-gray>:aomr_kuafu_icon:</highlight-gray><highlight-gray>e 10 Camponeses</highlight-gray><highlight-gray>:aomr_peasant_icon:</highlight-gray><highlight-gray>)</highlight-gray>",
+              "description": "+1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: no ouro <highlight-gray>(total: 3 Kuafus</highlight-gray><highlight-gray>:aomr_kuafu_icon:</highlight-gray><highlight-gray>e 10 Camponeses</highlight-gray><highlight-gray>:aomr_peasant_icon:</highlight-gray><highlight-gray>)</highlight-gray>",
               "food": "5",
               "wood": "6",
               "gold": "2",
@@ -5248,7 +5248,7 @@
               "type": "pink"
             },
             {
-              "description": "Reorganize camponeses :aomr_peasant_icon: <highlight-gray>(deixe apenas os da fazenda, todos para</highlight-gray><highlight-brown>madeira</highlight-brown><highlight-gray>:woodaom:</highlight-gray><highlight-gray>)</highlight-gray>",
+              "description": "Reorganize camponeses :aomr_peasant_icon: <highlight-gray>(deixe apenas os da fazenda, todos para madeira)</highlight-gray>",
               "food": "2",
               "wood": "8",
               "gold": "2",
@@ -5266,7 +5266,7 @@
               "type": "hint"
             },
             {
-              "description": "<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: da <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> sobe <highlight-orange>Casas</highlight-orange> :aomr_house_icon:",
+              "description": "<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: da madeira<highlight-brown></highlight-brown> sobe <highlight-orange>Casas</highlight-orange> :aomr_house_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5293,7 +5293,7 @@
               "type": "pink"
             },
             {
-              "description": "Próximo da fila:<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: depois camponês :aomr_peasant_icon: <highlight-gray>(revezando)</highlight-gray>",
+              "description": "Próximo da fila:<highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: no ouro depois camponês :aomr_peasant_icon: <highlight-gray>(revezando)</highlight-gray>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5302,7 +5302,7 @@
               "type": null
             },
             {
-              "description": "2 <highlight-orange>Kuafus</highlight-orange> :aomr_kuafu_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: fazem 3 <highlight-orange>Campo Militar</highlight-orange><highlight-orange>:aomr_military_camp:</highlight-orange>",
+              "description": "2 <highlight-orange>Kuafus</highlight-orange> :aomr_kuafu_icon: do ouro fazem 3 <highlight-orange>Campo Militar</highlight-orange><highlight-orange>:aomr_military_camp:</highlight-orange>",
               "food": "2",
               "wood": "8",
               "gold": "0",
@@ -5311,7 +5311,7 @@
               "type": null
             },
             {
-              "description": "Camponês :aomr_peasant_icon: na <highlight-brown>madeira</highlight-brown> :woodaom: farão 2 <highlight-teal>fazendas</highlight-teal> :aomr_farm_icon: com <highlight-purple>properidade</highlight-purple> :aomr_prosperous_seeds: no TC :aomr_town_center_chinese:",
+              "description": "Camponês :aomr_peasant_icon: na madeira farão 2 <highlight-teal>fazendas</highlight-teal> :aomr_farm_icon: com <highlight-purple>properidade</highlight-purple> :aomr_prosperous_seeds: no TC :aomr_town_center_chinese:",
               "food": "4",
               "wood": "7",
               "gold": "2",
@@ -5329,7 +5329,7 @@
               "type": "hint"
             },
             {
-              "description": "Depois pode ir para aquela <highlight-red>caça inicial</highlight-red> :foodaom: com Camponeses :aomr_peasant_icon: e Kuafus :aomr_kuafu_icon:",
+              "description": "Depois pode ir para aquela caça inicial com Camponeses :aomr_peasant_icon: e Kuafus :aomr_kuafu_icon:",
               "food": "12",
               "wood": "3",
               "gold": "3",
@@ -5382,7 +5382,7 @@
             {
               "kind": "heading",
               "level": 3,
-              "text": "Pós-Nerf → +0.5 <highlight-yellow>ouro</highlight-yellow> :goldaom: /segundo por nível"
+              "text": "Pós-Nerf → +0.5 ouro /segundo por nível"
             },
             {
               "kind": "callout",
@@ -5390,16 +5390,16 @@
             },
             {
               "kind": "callout",
-              "text": ":aomr_amaterasu_icon: <strong>Caminho do Sol:</strong>+1 <highlight-yellow>ouro</highlight-yellow> :goldaom: /segundo por nível de <highlight-orange>Bushidō</highlight-orange> desbloqueado."
+              "text": ":aomr_amaterasu_icon: <strong>Caminho do Sol:</strong>+1 ouro /segundo por nível de <highlight-orange>Bushidō</highlight-orange> desbloqueado."
             },
             {
               "kind": "callout",
-              "text": "Não precisava de ninguém no <highlight-yellow>ouro</highlight-yellow> :goldaom: no começo do start! Agora precisa pelo menos 1."
+              "text": "Não precisava de ninguém no ouro no começo do start! Agora precisa pelo menos 1."
             }
           ],
           "table": [
             {
-              "description": "3 Plebeus Iniciais :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom: + :aomr_watermill_icon: Moinho de Água",
+              "description": "3 Plebeus Iniciais :aomr_commoner_icon: na comida + :aomr_watermill_icon: Moinho de Água",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -5426,7 +5426,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Plebeu :aomr_commoner_icon: no <highlight-red></highlight-red><highlight-yellow>ouro</highlight-yellow> :goldaom: + :aomr_watermill_icon: Moinho de Água",
+              "description": "1 Plebeu :aomr_commoner_icon: no <highlight-red></highlight-red>ouro + :aomr_watermill_icon: Moinho de Água",
               "food": "3",
               "wood": "-",
               "gold": "1",
@@ -5435,7 +5435,7 @@
               "type": null
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Plebeus :aomr_commoner_icon: comida",
               "food": "5",
               "wood": "-",
               "gold": "1",
@@ -5444,7 +5444,7 @@
               "type": null
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: <highlight-brown>madeira</highlight-brown> :woodaom: + :aomr_watermill_icon: Moinho de Água",
+              "description": "+2 Plebeus :aomr_commoner_icon: madeira + :aomr_watermill_icon: Moinho de Água",
               "food": "5",
               "wood": "2",
               "gold": "1",
@@ -5453,7 +5453,7 @@
               "type": null
             },
             {
-              "description": "UP tecnologia <highlight-pink>Kagura</highlight-pink> no <highlight-blue>Santuário</highlight-blue> :aomr_shrine_icon: (<highlight-blue>5</highlight-blue> :favoraom: ) → para <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: extra",
+              "description": "UP tecnologia <highlight-pink>Kagura</highlight-pink> no <highlight-blue>Santuário</highlight-blue> :aomr_shrine_icon: (5 ) → para <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: extra",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5462,7 +5462,7 @@
               "type": "hint"
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Plebeus :aomr_commoner_icon: comida",
               "food": "7",
               "wood": "2",
               "gold": "1",
@@ -5489,7 +5489,7 @@
               "type": "hint"
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "+2 Plebeus :aomr_commoner_icon: madeira",
               "food": "7",
               "wood": "4",
               "gold": "1",
@@ -5525,7 +5525,7 @@
               "type": "pink"
             },
             {
-              "description": "Construa +2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "Construa +2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da madeira",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5534,7 +5534,7 @@
               "type": null
             },
             {
-              "description": "Realoque os Plebeus :aomr_commoner_icon: : +3 <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Plebeus :aomr_commoner_icon: : +3 ouro",
               "food": "4",
               "wood": "4",
               "gold": "3",
@@ -5579,7 +5579,7 @@
               "type": null
             },
             {
-              "description": "Novos Plebeus :aomr_commoner_icon: do TC :aomr_town_center_japanese_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Novos Plebeus :aomr_commoner_icon: do TC :aomr_town_center_japanese_icon: na comida",
               "food": "12",
               "wood": "5",
               "gold": "3",
@@ -5588,7 +5588,7 @@
               "type": null
             },
             {
-              "description": "Novos Plebeus :aomr_commoner_icon: do TC :aomr_town_center_japanese_icon: na <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Novos Plebeus :aomr_commoner_icon: do TC :aomr_town_center_japanese_icon: na ouro",
               "food": "12",
               "wood": "5",
               "gold": "3",
@@ -5647,7 +5647,7 @@
           ],
           "table": [
             {
-              "description": "3 Plebeus :aomr_commoner_icon: <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "3 Plebeus :aomr_commoner_icon: comida",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -5665,7 +5665,7 @@
               "type": "hint"
             },
             {
-              "description": "2 Plebeus :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + :aomr_mining_camp_icon: (até <highlight-yellow>150</highlight-yellow> para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: )",
+              "description": "2 Plebeus :aomr_commoner_icon: no ouro + :aomr_mining_camp_icon: (até <highlight-yellow>150</highlight-yellow> para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: )",
               "food": "5",
               "wood": "-",
               "gold": "2",
@@ -5674,7 +5674,7 @@
               "type": null
             },
             {
-              "description": "+5 Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+5 Plebeus :aomr_commoner_icon: na comida",
               "food": "8",
               "wood": "-",
               "gold": "2",
@@ -5701,7 +5701,7 @@
               "type": "blue"
             },
             {
-              "description": "Com <highlight-yellow>25</highlight-yellow> de <highlight-yellow>ouro</highlight-yellow> :goldaom: transfira para <highlight-brown>madeira</highlight-brown> :woodaom: (+ :aomr_watermill_icon: Moinho de Água)",
+              "description": "Com <highlight-yellow>25</highlight-yellow> de ouro transfira para madeira (+ :aomr_watermill_icon: Moinho de Água)",
               "food": "8",
               "wood": "2",
               "gold": "0",
@@ -5710,7 +5710,7 @@
               "type": null
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: <highlight-brown>madeira</highlight-brown> :woodaom: + :aomr_watermill_icon: já posicionado na floresta do <highlight-blue>Santuário</highlight-blue> :aomr_shrine_icon:",
+              "description": "+2 Plebeus :aomr_commoner_icon: madeira + :aomr_watermill_icon: já posicionado na floresta do <highlight-blue>Santuário</highlight-blue> :aomr_shrine_icon:",
               "food": "8",
               "wood": "4",
               "gold": "0",
@@ -5746,7 +5746,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Plebeus :aomr_commoner_icon: : +3 na <highlight-brown>madeira</highlight-brown> :woodaom: e +3 <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Plebeus :aomr_commoner_icon: : +3 na madeira e +3 ouro",
               "food": "3",
               "wood": "6",
               "gold": "3",
@@ -5764,7 +5764,7 @@
               "type": null
             },
             {
-              "description": "Construa 2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "Construa 2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da madeira",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5850,7 +5850,7 @@
               "type": "hint"
             },
             {
-              "description": "2 <strong>Plebeus Iniciais</strong> :aomr_commoner_icon: <highlight-red>comida</highlight-red> :foodaom: + :aomr_watermill_icon: <highlight-orange>Moinho</highlight-orange>(perto da <highlight-brown>madeira</highlight-brown> :woodaom: )",
+              "description": "2 <strong>Plebeus Iniciais</strong> :aomr_commoner_icon: comida + :aomr_watermill_icon: <highlight-orange>Moinho</highlight-orange>(perto da madeira )",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -5859,7 +5859,7 @@
               "type": null
             },
             {
-              "description": "Outro <strong>Plebeu Inicial</strong> :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + :aomr_mining_camp_icon:",
+              "description": "Outro <strong>Plebeu Inicial</strong> :aomr_commoner_icon: no ouro + :aomr_mining_camp_icon:",
               "food": "2",
               "wood": "-",
               "gold": "1",
@@ -5877,7 +5877,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Plebeu :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "1 Plebeu :aomr_commoner_icon: na madeira",
               "food": "2",
               "wood": "1",
               "gold": "1",
@@ -5886,7 +5886,7 @@
               "type": null
             },
             {
-              "description": "+5 Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom: <highlight-gray>(total: 7)</highlight-gray> cria outro :aomr_watermill_icon: <highlight-orange>Moinho</highlight-orange> para Caça :aomr_caribou_icon:",
+              "description": "+5 Plebeus :aomr_commoner_icon: na comida <highlight-gray>(total: 7)</highlight-gray> cria outro :aomr_watermill_icon: <highlight-orange>Moinho</highlight-orange> para Caça :aomr_caribou_icon:",
               "food": "7",
               "wood": "1",
               "gold": "1",
@@ -5895,7 +5895,7 @@
               "type": null
             },
             {
-              "description": "+3 Plebeus :aomr_commoner_icon: <highlight-brown>madeira</highlight-brown> :woodaom: <highlight-gray>(total: 4)</highlight-gray> e sobe <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
+              "description": "+3 Plebeus :aomr_commoner_icon: madeira <highlight-gray>(total: 4)</highlight-gray> e sobe <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
               "food": "7",
               "wood": "4",
               "gold": "1",
@@ -5922,7 +5922,7 @@
               "type": "hint"
             },
             {
-              "description": "+1 Plebeu :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Plebeu :aomr_commoner_icon: no ouro",
               "food": "7",
               "wood": "4",
               "gold": "2",
@@ -5985,7 +5985,7 @@
               "type": null
             },
             {
-              "description": "Realoque Plebeus :aomr_commoner_icon: da <highlight-red>comida</highlight-red> :foodaom: para <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "Realoque Plebeus :aomr_commoner_icon: da comida para madeira",
               "food": "5",
               "wood": "6",
               "gold": "2",
@@ -5994,7 +5994,7 @@
               "type": null
             },
             {
-              "description": "+1 Plebeu :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Plebeu :aomr_commoner_icon: no ouro",
               "food": "5",
               "wood": "6",
               "gold": "3",
@@ -6030,7 +6030,7 @@
               "type": "hint"
             },
             {
-              "description": "+2 Plebeu :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+2 Plebeu :aomr_commoner_icon: no ouro",
               "food": "5",
               "wood": "6",
               "gold": "5",
@@ -6039,7 +6039,7 @@
               "type": null
             },
             {
-              "description": "Plebeus :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown> :woodaom: e depois equilibre sua macro na necessidade",
+              "description": "Plebeus :aomr_commoner_icon: na madeira e depois equilibre sua macro na necessidade",
               "food": "5",
               "wood": "7",
               "gold": "5",
@@ -6089,7 +6089,7 @@
           ],
           "table": [
             {
-              "description": "3 Plebeus iniciais :aomr_commoner_icon: <highlight-red>comida</highlight-red> :foodaom: + :aomr_watermill_icon: Moinho de Água",
+              "description": "3 Plebeus iniciais :aomr_commoner_icon: comida + :aomr_watermill_icon: Moinho de Água",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -6107,7 +6107,7 @@
               "type": "hint"
             },
             {
-              "description": "2 Plebeus :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + :aomr_mining_camp_icon: (até <highlight-yellow>150</highlight-yellow> para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: )",
+              "description": "2 Plebeus :aomr_commoner_icon: no ouro + :aomr_mining_camp_icon: (até <highlight-yellow>150</highlight-yellow> para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: )",
               "food": "3",
               "wood": "-",
               "gold": "2",
@@ -6116,7 +6116,7 @@
               "type": null
             },
             {
-              "description": "+5 Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+5 Plebeus :aomr_commoner_icon: na comida",
               "food": "8",
               "wood": "-",
               "gold": "2",
@@ -6143,7 +6143,7 @@
               "type": "blue"
             },
             {
-              "description": "Com <highlight-yellow>25</highlight-yellow> de <highlight-yellow>ouro</highlight-yellow> :goldaom: transfira para <highlight-brown>madeira</highlight-brown> :woodaom: (+ :aomr_watermill_icon: Moinho de Água)",
+              "description": "Com <highlight-yellow>25</highlight-yellow> de ouro transfira para madeira (+ :aomr_watermill_icon: Moinho de Água)",
               "food": "8",
               "wood": "2",
               "gold": "0",
@@ -6152,7 +6152,7 @@
               "type": null
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: <highlight-brown>madeira</highlight-brown> :woodaom: + :aomr_watermill_icon: já posicionado na floresta do <highlight-blue>Santuário</highlight-blue> :aomr_shrine_icon:",
+              "description": "+2 Plebeus :aomr_commoner_icon: madeira + :aomr_watermill_icon: já posicionado na floresta do <highlight-blue>Santuário</highlight-blue> :aomr_shrine_icon:",
               "food": "8",
               "wood": "4",
               "gold": "-",
@@ -6188,7 +6188,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Plebeus :aomr_commoner_icon: : +3 na <highlight-brown>madeira</highlight-brown> :woodaom: e +3 <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Plebeus :aomr_commoner_icon: : +3 na madeira e +3 ouro",
               "food": "3",
               "wood": "6",
               "gold": "3",
@@ -6206,7 +6206,7 @@
               "type": null
             },
             {
-              "description": "Construa 2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "Construa 2 <highlight-blue>Casas</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da madeira",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6322,7 +6322,7 @@
               "type": null
             },
             {
-              "description": "2 Plebeus iniciais :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>+ :aomr_watermill_icon: Moinho de Água",
+              "description": "2 Plebeus iniciais :aomr_commoner_icon: na madeira<highlight-brown></highlight-brown>+ :aomr_watermill_icon: Moinho de Água",
               "food": "-",
               "wood": "2",
               "gold": "-",
@@ -6331,7 +6331,7 @@
               "type": null
             },
             {
-              "description": "1 Plebeu inicial :aomr_commoner_icon: constrói <highlight-blue>Doca</highlight-blue> :aomr_dock_icon: depois <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown>",
+              "description": "1 Plebeu inicial :aomr_commoner_icon: constrói <highlight-blue>Doca</highlight-blue> :aomr_dock_icon: depois madeira<highlight-brown></highlight-brown>",
               "food": "-",
               "wood": "2→3",
               "gold": "-",
@@ -6349,7 +6349,7 @@
               "type": null
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+2 Plebeus :aomr_commoner_icon: na comida",
               "food": "2",
               "wood": "-",
               "gold": "-",
@@ -6358,7 +6358,7 @@
               "type": null
             },
             {
-              "description": "+3 Plebeus :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown> :woodaom: (Total: 6)",
+              "description": "+3 Plebeus :aomr_commoner_icon: na madeira (Total: 6)",
               "food": "2",
               "wood": "6",
               "gold": "-",
@@ -6367,7 +6367,7 @@
               "type": null
             },
             {
-              "description": "2 Plebeus :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> cria <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
+              "description": "2 Plebeus :aomr_commoner_icon: na madeira<highlight-brown></highlight-brown> cria <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6376,7 +6376,7 @@
               "type": "hint"
             },
             {
-              "description": "2 Plebeus :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + :aomr_mining_camp_icon:",
+              "description": "2 Plebeus :aomr_commoner_icon: no ouro + :aomr_mining_camp_icon:",
               "food": "6",
               "wood": "6",
               "gold": "2",
@@ -6385,7 +6385,7 @@
               "type": null
             },
             {
-              "description": "+1 Plebeu :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom: (Total: 3)",
+              "description": "+1 Plebeu :aomr_commoner_icon: na comida (Total: 3)",
               "food": "8",
               "wood": "6",
               "gold": "2",
@@ -6394,7 +6394,7 @@
               "type": null
             },
             {
-              "description": "Plebeu :aomr_commoner_icon: da <highlight-brown>madeira</highlight-brown> :woodaom: fazer nova <highlight-blue>Doca</highlight-blue> :aomr_dock_icon: <highlight-gray>(autoqueue</highlight-gray><highlight-gray>:autoqueue_px112:</highlight-gray><highlight-gray>de</highlight-gray><highlight-pink>barcos</highlight-pink><highlight-gray>:aomr_type_ship_icon:</highlight-gray><highlight-gray>)</highlight-gray>",
+              "description": "Plebeu :aomr_commoner_icon: da madeira fazer nova <highlight-blue>Doca</highlight-blue> :aomr_dock_icon: <highlight-gray>(autoqueue</highlight-gray><highlight-gray>:autoqueue_px112:</highlight-gray><highlight-gray>de</highlight-gray><highlight-pink>barcos</highlight-pink><highlight-gray>:aomr_type_ship_icon:</highlight-gray><highlight-gray>)</highlight-gray>",
               "food": "9",
               "wood": "<highlight-red>-1</highlight-red>",
               "gold": "2",
@@ -6403,7 +6403,7 @@
               "type": null
             },
             {
-              "description": "+1 Plebeu :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown><highlight-default>(Total: 7)</highlight-default>",
+              "description": "+1 Plebeu :aomr_commoner_icon: na madeira<highlight-brown></highlight-brown><highlight-default>(Total: 7)</highlight-default>",
               "food": "9",
               "wood": "7",
               "gold": "2",
@@ -6412,7 +6412,7 @@
               "type": null
             },
             {
-              "description": "+1 Plebeu :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: (Total: 3)",
+              "description": "+1 Plebeu :aomr_commoner_icon: no ouro (Total: 3)",
               "food": "9",
               "wood": "7",
               "gold": "3",
@@ -6421,7 +6421,7 @@
               "type": null
             },
             {
-              "description": "Plebeu :aomr_commoner_icon: na <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> cria +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
+              "description": "Plebeu :aomr_commoner_icon: na madeira<highlight-brown></highlight-brown> cria +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6430,7 +6430,7 @@
               "type": "hint"
             },
             {
-              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Plebeus :aomr_commoner_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: (<strong>≈</strong><code>3:20</code>)",
+              "description": "Construa o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: com 2 Plebeus :aomr_commoner_icon: do ouro (<strong>≈</strong><code>3:20</code>)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6439,7 +6439,7 @@
               "type": "blue"
             },
             {
-              "description": "+3 Plebeu :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom: (Total: 5)",
+              "description": "+3 Plebeu :aomr_commoner_icon: na comida (Total: 5)",
               "food": "18",
               "wood": "7",
               "gold": "3",
@@ -6448,7 +6448,7 @@
               "type": null
             },
             {
-              "description": "+1 Plebeu :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+1 Plebeu :aomr_commoner_icon: no ouro",
               "food": "18",
               "wood": "7",
               "gold": "4",
@@ -6475,7 +6475,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Plebeus :aomr_commoner_icon: : 3 da <highlight-red>comida</highlight-red> :foodaom: → 2 <highlight-brown>madeira</highlight-brown><highlight-brown>:woodaom:</highlight-brown><highlight-brown></highlight-brown> e 1 <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Realoque os Plebeus :aomr_commoner_icon: : 3 da comida → 2 madeira<highlight-brown></highlight-brown> e 1 ouro",
               "food": "12",
               "wood": "8",
               "gold": "5",
@@ -6511,7 +6511,7 @@
               "type": "pink"
             },
             {
-              "description": "Próximos Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom: e subir 2 <highlight-orange>Estábulos</highlight-orange> :aomr_japanese_stable_icon:",
+              "description": "Próximos Plebeus :aomr_commoner_icon: na comida e subir 2 <highlight-orange>Estábulos</highlight-orange> :aomr_japanese_stable_icon:",
               "food": "+",
               "wood": "8",
               "gold": "5",
@@ -6520,7 +6520,7 @@
               "type": null
             },
             {
-              "description": "Revezar Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom: e <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Revezar Plebeus :aomr_commoner_icon: na comida e ouro",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6569,7 +6569,7 @@
           ],
           "table": [
             {
-              "description": "3 Plebeus iniciais :aomr_commoner_icon: <highlight-red>comida</highlight-red> :foodaom: + :aomr_watermill_icon: Moinho de Água",
+              "description": "3 Plebeus iniciais :aomr_commoner_icon: comida + :aomr_watermill_icon: Moinho de Água",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -6587,7 +6587,7 @@
               "type": "hint"
             },
             {
-              "description": "2 Plebeus :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom: + :aomr_mining_camp_icon: (até <highlight-yellow>150</highlight-yellow> para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: )<highlight-gray>/2875</highlight-gray>",
+              "description": "2 Plebeus :aomr_commoner_icon: no ouro + :aomr_mining_camp_icon: (até <highlight-yellow>150</highlight-yellow> para o <highlight-blue>Templo</highlight-blue> :aomr_temple_icon: )<highlight-gray>/2875</highlight-gray>",
               "food": "3",
               "wood": "-",
               "gold": "2",
@@ -6596,7 +6596,7 @@
               "type": null
             },
             {
-              "description": "+5 Plebeus :aomr_commoner_icon: na <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "+5 Plebeus :aomr_commoner_icon: na comida",
               "food": "8",
               "wood": "-",
               "gold": "2",
@@ -6623,7 +6623,7 @@
               "type": "blue"
             },
             {
-              "description": "+2 Plebeus :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "+2 Plebeus :aomr_commoner_icon: no ouro",
               "food": "8",
               "wood": "-",
               "gold": "4",
@@ -6650,7 +6650,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Plebeus :aomr_commoner_icon: : +4 na <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "Realoque os Plebeus :aomr_commoner_icon: : +4 na madeira",
               "food": "4",
               "wood": "4",
               "gold": "4",
@@ -6659,7 +6659,7 @@
               "type": null
             },
             {
-              "description": "Construa 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Construa 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: do ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6668,7 +6668,7 @@
               "type": null
             },
             {
-              "description": "Construa +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da <highlight-red>comida</highlight-red> :foodaom:",
+              "description": "Construa +1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Plebeus :aomr_commoner_icon: da comida",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6695,7 +6695,7 @@
               "type": "hint"
             },
             {
-              "description": "Novos Plebeus :aomr_commoner_icon: no <highlight-yellow>ouro</highlight-yellow> :goldaom:",
+              "description": "Novos Plebeus :aomr_commoner_icon: no ouro",
               "food": "4",
               "wood": "4",
               "gold": "7",
@@ -6704,7 +6704,7 @@
               "type": null
             },
             {
-              "description": "Transfira 2 Plebeus :aomr_commoner_icon: da <highlight-red>comida</highlight-red> :foodaom: para a <highlight-brown>madeira</highlight-brown> :woodaom:",
+              "description": "Transfira 2 Plebeus :aomr_commoner_icon: da comida para a madeira",
               "food": "2",
               "wood": "6",
               "gold": "7",
@@ -6713,7 +6713,7 @@
               "type": null
             },
             {
-              "description": "(<strong>≈</strong><code>5:00</code>) 6 Plebeus :aomr_commoner_icon: do <highlight-yellow>ouro</highlight-yellow> :goldaom: para novo TC :aomr_town_center_japanese_icon: depois para caça :aomr_caribou_icon:",
+              "description": "(<strong>≈</strong><code>5:00</code>) 6 Plebeus :aomr_commoner_icon: do ouro para novo TC :aomr_town_center_japanese_icon: depois para caça :aomr_caribou_icon:",
               "food": "2",
               "wood": "6",
               "gold": "2",

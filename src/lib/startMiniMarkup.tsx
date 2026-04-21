@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { expandResourceKeywords } from "@/lib/startResourceKeywords";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 import { getTokenLabel } from "@/lib/notionTokenLabels";
 
@@ -152,7 +153,17 @@ export function parseStartMiniMarkup(text: string, baseKey = "m"): ReactNode[] {
   return nodes;
 }
 
-export function StartMiniMarkup({ text, className }: { text: string; className?: string }) {
+export function StartMiniMarkup({
+  text,
+  className,
+  expandResources,
+}: {
+  text: string;
+  className?: string;
+  /** Quando true (starts estruturados), «comida»/«madeira»/«ouro»/«favor» viram highlight + :token:. */
+  expandResources?: boolean;
+}) {
   if (!text) return null;
-  return <span className={className}>{parseStartMiniMarkup(text)}</span>;
+  const processed = expandResources ? expandResourceKeywords(text) : text;
+  return <span className={className}>{parseStartMiniMarkup(processed)}</span>;
 }
