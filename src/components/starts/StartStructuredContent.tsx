@@ -1,5 +1,6 @@
 import { StartMiniMarkup } from "@/lib/startMiniMarkup";
 import type { StartBuildSegment, StartFooterBlock, StartLeadBlock, StartTableRow } from "@/data/catalog";
+import { cn } from "@/lib/cn";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 import { getTokenLabel } from "@/lib/notionTokenLabels";
 
@@ -14,8 +15,8 @@ function ResourceColumnHeader({
 }) {
   const src = getTokenAssetUrl(token);
   return (
-    <span className="inline-flex items-center justify-center gap-1">
-      {labelClassName ? <span className={labelClassName}>{label}</span> : <span>{label}</span>}
+    <span className="inline-flex items-center justify-center gap-0 sm:gap-1">
+      <span className={cn(labelClassName, src && "sr-only sm:not-sr-only")}>{label}</span>
       {src ? (
         <img
           src={src}
