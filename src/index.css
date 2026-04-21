@@ -235,6 +235,7 @@ body {
 .start-structured .start-col-desc {
   width: 56%;
   min-width: 11rem;
+  white-space: pre-line;
 }
 
 .start-structured .start-col-res {

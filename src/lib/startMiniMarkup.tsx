@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { cn } from "@/lib/cn";
 import { expandStartInlineKeywords } from "@/lib/startResourceKeywords";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 import { getTokenLabel } from "@/lib/notionTokenLabels";
@@ -165,5 +166,9 @@ export function StartMiniMarkup({
 }) {
   if (!text) return null;
   const processed = expandResources ? expandStartInlineKeywords(text) : text;
-  return <span className={className}>{parseStartMiniMarkup(processed)}</span>;
+  return (
+    <span className={cn(expandResources && "min-w-0 whitespace-pre-line", className)}>
+      {parseStartMiniMarkup(processed)}
+    </span>
+  );
 }

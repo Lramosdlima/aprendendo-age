@@ -108,7 +108,7 @@ function CalloutBlock({ children }: { children: React.ReactNode }) {
       <div className="text-xl leading-none text-zinc-500" aria-hidden>
         ●
       </div>
-      <div className="min-w-0 flex-1 text-sm leading-relaxed text-zinc-200">{children}</div>
+      <div className="min-w-0 flex-1 whitespace-pre-line text-sm leading-relaxed text-zinc-200">{children}</div>
     </figure>
   );
 }
@@ -128,7 +128,7 @@ function LeadBlocks({ blocks }: { blocks: StartLeadBlock[] }) {
         return (
           <Tag
             key={i}
-            className="mt-6 font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95 first:mt-0"
+            className="mt-6 whitespace-pre-line font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95 first:mt-0"
           >
             <StartMiniMarkup text={b.text} expandResources />
           </Tag>
@@ -160,7 +160,7 @@ function FooterBlocks({ blocks }: { blocks: StartFooterBlock[] }) {
         return (
           <Tag
             key={i}
-            className="mt-6 font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95"
+            className="mt-6 whitespace-pre-line font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95"
           >
             <StartMiniMarkup text={b.text} expandResources />
           </Tag>
