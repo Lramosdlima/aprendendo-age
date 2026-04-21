@@ -47,7 +47,7 @@ function GodpowerNumerosCompare({ g1, g2 }: { g1: G; g2: G }) {
         label="Custo repetir"
         left={displayNum(g1.custo_repetir)}
         right={displayNum(g2.custo_repetir)}
-        numericPair={numericPairFrom(g1.custo_repetir, g2.custo_repetir, true)}
+        numericPair={{...numericPairFrom(g1.custo_repetir, g2.custo_repetir, true), lowerIsBetter: true}}
       />
       <CompareInfoRow
         label="Incremento por uso"
