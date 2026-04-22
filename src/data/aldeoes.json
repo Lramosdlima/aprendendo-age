@@ -25,7 +25,7 @@
     "velocidade_construcao_porcento": 0,
     "panteao": "Grego",
     "panteao_id": 1,
-    "icon": "aomr_settler_icon"
+    "icon": "aomr_villager_greek_icon"
   },
   {
     "id": 2,
@@ -276,5 +276,33 @@
     "panteao": "Egípcio",
     "panteao_id": 2,
     "icon": "aomr_laborer_icon"
+  },
+  {
+    "id": 11,
+    "nome": "Colono",
+    "ingles": "Settler",
+    "recursos": 50,
+    "carne": 50,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 60,
+    "gado_galinhas": 54,
+    "frutinhas": 42,
+    "fazenda": 42,
+    "arvore": 60,
+    "mina": 51,
+    "velocidade_construcao": 54,
+    "cacar_porcento": 0,
+    "gado_porcento": 0,
+    "frutinhas_porcento": 0,
+    "fazenda_porcento": 0,
+    "arvore_porcento": 0,
+    "mina_porcento": 0,
+    "velocidade_construcao_porcento": 0,
+    "panteao": "Astecas",
+    "panteao_id": 7,
+    "icon": "aomr_settler_icon"
   }
 ]
