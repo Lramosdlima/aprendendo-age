@@ -96,7 +96,7 @@
       61
     ],
     "panteao_id": 2,
-    "icon": "aomr_town_center_greek_icon"
+    "icon": "aomr_town_center_egyptian_icon"
   },
   {
     "id": 4,
@@ -134,7 +134,7 @@
     ],
     "unidades_id": 14,
     "panteao_id": 3,
-    "icon": "aomr_town_center_greek_icon"
+    "icon": "aomr_town_center_norse_icon"
   },
   {
     "id": 5,
@@ -165,7 +165,7 @@
     "era_id": 2,
     "tecnologias_id": "29500f30e21180888b25f958d43e6616",
     "panteao_id": 4,
-    "icon": "aomr_town_center_greek_icon"
+    "icon": "aomr_town_center_atlantean_icon"
   },
   {
     "id": 6,
@@ -200,7 +200,7 @@
       "2b200f30e211801eb5dbd00aff735786"
     ],
     "panteao_id": 5,
-    "icon": "aomr_town_center_greek_icon"
+    "icon": "aomr_town_center_chinese"
   },
   {
     "id": 7,
@@ -236,7 +236,47 @@
     ],
     "unidades_id": 139,
     "panteao_id": 6,
-    "icon": "aomr_town_center_greek_icon"
+    "icon": "aomr_town_center_japanese_icon"
+  },
+  {
+    "id": 9,
+    "nome": "Centro Urbano (Asteca)",
+    "tipo": [
+      {
+        "type": "Básico"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 2400,
+    "dano_perfurante": 10,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 10,
+    "armadura_anticorte": 50,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 10,
+    "madeira": 350,
+    "ouro": 350,
+    "guarnicao": 25,
+    "custo": 700,
+    "era": "Clássica :aomr_classical_age_icon:",
+    "ingles": "Town Center",
+    "no_projeteis": 2,
+    "tecnologias": "Pedreiros, Arquitetos, Centro Urbano Fortificado, Segredo dos Titãs",
+    "tempo_construir_segundos": 150,
+    "unidades": "Quimchim Spy",
+    "era_id": 2,
+    "tecnologias_ids": [
+      "29500f30e211805f9a00d2bd0f4bfd32",
+      "29500f30e21180a3b670dab9aedda3bf",
+      "29500f30e21180a0963ec1cf50203f4f",
+      "29500f30e21180888b25f958d43e6616"
+    ],
+    "unidades_ids": [
+      160
+    ],
+    "panteao_id": 7,
+    "icon": "aomr_town_center_icon"
   },
   {
     "id": 8,
@@ -523,6 +563,35 @@
     ],
     "panteao_id": 5,
     "icon": "aomr_silo"
+  },
+  {
+    "id": 10,
+    "nome": "Calpulli",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 400,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 75,
+    "ouro": 0,
+    "custo": 75,
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Calpulli",
+    "tecnologias": "",
+    "tempo_construir_segundos": 15,
+    "era_id": 1,
+    "tecnologias_ids": [],
+    "panteao_id": 7,
+    "icon": "aomr_calpulli_icon"
   },
   {
     "id": 21,
@@ -904,6 +973,41 @@
       126
     ],
     "panteao_id": 6,
+    "icon": "aomr_temple_icon"
+  },
+  {
+    "id": 12,
+    "nome": "Templo (Asteca)",
+    "tipo": [
+      {
+        "type": "Básico"
+      },
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 1200,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 150,
+    "ouro": 150,
+    "guarnicao": 5,
+    "custo": 300,
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "",
+    "tempo_construir_segundos": 40,
+    "unidades": "Warrior Priest (Herói)",
+    "era_id": 1,
+    "tecnologias_ids": [],
+    "unidades_ids": [
+      161
+    ],
+    "panteao_id": 7,
     "icon": "aomr_temple_icon"
   },
   {
@@ -1615,6 +1719,67 @@
     "icon": "aomr_machine_workshop"
   },
   {
+    "id": 74,
+    "nome": "Cabana de Guerra",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 1200,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 75,
+    "ouro": 20,
+    "custo": 95,
+    "era": "Clássica :aomr_classical_age_icon:",
+    "ingles": "War Hut",
+    "tempo_construir_segundos": 25,
+    "unidades": "Tlamanih Spearman, Tequihua Archer",
+    "era_id": 2,
+    "unidades_ids": [
+      162,
+      163
+    ],
+    "panteao_id": 7,
+    "icon": "aomr_war_hut_icon"
+  },
+  {
+    "id": 75,
+    "nome": "Cabana do Nobre",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 1200,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 75,
+    "ouro": 25,
+    "custo": 100,
+    "era": "Clássica :aomr_classical_age_icon:",
+    "ingles": "Noble's Hut",
+    "tempo_construir_segundos": 25,
+    "unidades": "Coyote Warrior, Ocelotl Warrior, Eagle Warrior",
+    "era_id": 2,
+    "unidades_ids": [
+      164,
+      165,
+      167
+    ],
+    "panteao_id": 7,
+    "icon": "aomr_noble_hut_icon"
+  },
+  {
     "id": 46,
     "nome": "Doca (Grego)",
     "tipo": [
@@ -1757,6 +1922,64 @@
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 5,
+    "icon": "aomr_dock_icon"
+  },
+  {
+    "id": 78,
+    "nome": "Doca (Japonês)",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
+    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
+    "pontos_de_vida": 1600,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 100,
+    "ouro": 0,
+    "guarnicao": 10,
+    "custo": 100,
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
+    "tempo_construir_segundos": 30,
+    "era_id": 1,
+    "panteao_id": 6,
+    "icon": "aomr_dock_icon"
+  },
+  {
+    "id": 79,
+    "nome": "Doca (Asteca)",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Recurso ⚒"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 1600,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 100,
+    "ouro": 0,
+    "guarnicao": 10,
+    "custo": 100,
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
+    "tempo_construir_segundos": 30,
+    "era_id": 1,
+    "panteao_id": 7,
     "icon": "aomr_dock_icon"
   },
   {
@@ -1911,6 +2134,30 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 6,
+    "icon": "aomr_market_icon"
+  },
+  {
+    "id": 80,
+    "nome": "Mercado (Asteca)",
+    "tipo": [
+      {
+        "type": "Utilidade ⏫"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 1200,
+    "dps": 0,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 90,
+    "armadura_anticontucao": 5,
+    "madeira": 150,
+    "ouro": 0,
+    "custo": 150,
+    "era": "Clássica :aomr_classical_age_icon:",
+    "ingles": "Market",
+    "tempo_construir_segundos": 40,
+    "era_id": 2,
+    "panteao_id": 7,
     "icon": "aomr_market_icon"
   },
   {
@@ -2138,6 +2385,53 @@
     ],
     "panteao_id": 5,
     "icon": "aomr_baolei"
+  },
+  {
+    "id": 77,
+    "nome": "Grande Templo",
+    "tipo": [
+      {
+        "type": "Militar",
+        "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Proteção 🧱"
+      }
+    ],
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
+    "pontos_de_vida": 3000,
+    "dano_perfurante": 12,
+    "alcance": 20,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 12,
+    "armadura_anticontucao": 5,
+    "armadura_anticorte": 50,
+    "armadura_antiperfurante": 90,
+    "madeira": 300,
+    "ouro": 300,
+    "guarnicao": 20,
+    "custo": 608,
+    "era": "Heróica :aomr_heroic_age_icon:",
+    "favor": 8,
+    "ingles": "Great Temple",
+    "no_projeteis": 3,
+    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas",
+    "tempo_construir_segundos": 115,
+    "unidades": "Otontin Smasher, Shorn One, Jaguar Rider, Quinametzin",
+    "era_id": 3,
+    "tecnologias_ids": [
+      "29500f30e2118087abd3f910d9ec1712",
+      "29500f30e2118039ad21d9884f5fa8c3",
+      "29500f30e21180998804e464501be2e0"
+    ],
+    "unidades_ids": [
+      168,
+      169,
+      170,
+      171
+    ],
+    "panteao_id": 7,
+    "icon": "aomr_great_temple_icon"
   },
   {
     "id": 62,
@@ -2522,217 +2816,5 @@
     "tecnologias_id": "2a900f30e211807fa7a0c6b01fd9de68",
     "panteao_id": 3,
     "icon": "aomr_ox_cart_icon"
-  },
-  {
-    "id": 73,
-    "nome": "Calpulli",
-    "tipo": [
-      {
-        "type": "Básico"
-      },
-      {
-        "type": "Recurso ⚒"
-      }
-    ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 400,
-    "dps": 0,
-    "armadura_anticorte": 40,
-    "armadura_antiperfurante": 90,
-    "armadura_anticontucao": 5,
-    "madeira": 75,
-    "ouro": 0,
-    "custo": 75,
-    "era": "Arcaica :aomr_archaic_age_icon:",
-    "ingles": "Calpulli",
-    "tecnologias": "",
-    "tempo_construir_segundos": 15,
-    "era_id": 1,
-    "tecnologias_ids": [],
-    "panteao_id": 7,
-    "icon": "aomr_calpulli_icon"
-  },
-  {
-    "id": 74,
-    "nome": "Cabana de Guerra",
-    "tipo": [
-      {
-        "type": "Militar",
-        "icon": "aomr_type_infantry_icon"
-      }
-    ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 1200,
-    "dps": 0,
-    "armadura_anticorte": 40,
-    "armadura_antiperfurante": 90,
-    "armadura_anticontucao": 5,
-    "madeira": 75,
-    "ouro": 20,
-    "custo": 95,
-    "era": "Clássica :aomr_classical_age_icon:",
-    "ingles": "War Hut",
-    "tempo_construir_segundos": 25,
-    "unidades": "Tlamanih Spearman, Tequihua Archer",
-    "era_id": 2,
-    "unidades_ids": [
-      162,
-      163
-    ],
-    "panteao_id": 7,
-    "icon": null
-  },
-  {
-    "id": 75,
-    "nome": "Cabana do Nobre",
-    "tipo": [
-      {
-        "type": "Militar",
-        "icon": "aomr_type_infantry_icon"
-      }
-    ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 1200,
-    "dps": 0,
-    "armadura_anticorte": 40,
-    "armadura_antiperfurante": 90,
-    "armadura_anticontucao": 5,
-    "madeira": 75,
-    "ouro": 25,
-    "custo": 100,
-    "era": "Clássica :aomr_classical_age_icon:",
-    "ingles": "Noble's Hut",
-    "tempo_construir_segundos": 25,
-    "unidades": "Coyote Warrior, Ocelotl Warrior, Eagle Warrior",
-    "era_id": 2,
-    "unidades_ids": [
-      164,
-      165,
-      167
-    ],
-    "panteao_id": 7,
-    "icon": null
-  },
-  {
-    "id": 76,
-    "nome": "Templo (Asteca)",
-    "tipo": [
-      {
-        "type": "Básico"
-      },
-      {
-        "type": "Militar",
-        "icon": "aomr_type_infantry_icon"
-      }
-    ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 1200,
-    "dps": 0,
-    "armadura_anticorte": 40,
-    "armadura_antiperfurante": 90,
-    "armadura_anticontucao": 5,
-    "madeira": 150,
-    "ouro": 150,
-    "guarnicao": 5,
-    "custo": 300,
-    "era": "Arcaica :aomr_archaic_age_icon:",
-    "ingles": "Temple",
-    "tecnologias": "",
-    "tempo_construir_segundos": 40,
-    "unidades": "Warrior Priest (Herói)",
-    "era_id": 1,
-    "tecnologias_ids": [],
-    "unidades_ids": [
-      161
-    ],
-    "panteao_id": 7,
-    "icon": "aomr_temple_icon"
-  },
-  {
-    "id": 77,
-    "nome": "Grande Templo",
-    "tipo": [
-      {
-        "type": "Militar",
-        "icon": "aomr_type_infantry_icon"
-      },
-      {
-        "type": "Proteção 🧱"
-      }
-    ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 3000,
-    "dano_perfurante": 12,
-    "alcance": 20,
-    "velocidade_de_ataque_atk_s": 1,
-    "dps": 12,
-    "armadura_anticontucao": 5,
-    "armadura_anticorte": 50,
-    "armadura_antiperfurante": 90,
-    "madeira": 300,
-    "ouro": 300,
-    "guarnicao": 20,
-    "custo": 608,
-    "era": "Heróica :aomr_heroic_age_icon:",
-    "favor": 8,
-    "ingles": "Great Temple",
-    "no_projeteis": 3,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas",
-    "tempo_construir_segundos": 115,
-    "unidades": "Otontin Smasher, Shorn One, Jaguar Rider, Quinametzin",
-    "era_id": 3,
-    "tecnologias_ids": [
-      "29500f30e2118087abd3f910d9ec1712",
-      "29500f30e2118039ad21d9884f5fa8c3",
-      "29500f30e21180998804e464501be2e0"
-    ],
-    "unidades_ids": [
-      168,
-      169,
-      170,
-      171
-    ],
-    "panteao_id": 7,
-    "icon": null
-  },
-  {
-    "id": 79,
-    "nome": "Centro Urbano (Asteca)",
-    "tipo": [
-      {
-        "type": "Básico"
-      }
-    ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 2400,
-    "dano_perfurante": 10,
-    "alcance": 18,
-    "velocidade_de_ataque_atk_s": 1,
-    "dps": 10,
-    "armadura_anticorte": 50,
-    "armadura_antiperfurante": 90,
-    "armadura_anticontucao": 10,
-    "madeira": 350,
-    "ouro": 350,
-    "guarnicao": 25,
-    "custo": 700,
-    "era": "Clássica :aomr_classical_age_icon:",
-    "ingles": "Town Center",
-    "no_projeteis": 2,
-    "tecnologias": "Pedreiros, Arquitetos, Centro Urbano Fortificado, Segredo dos Titãs",
-    "tempo_construir_segundos": 150,
-    "unidades": "Quimchim Spy",
-    "era_id": 2,
-    "tecnologias_ids": [
-      "29500f30e211805f9a00d2bd0f4bfd32",
-      "29500f30e21180a3b670dab9aedda3bf",
-      "29500f30e21180a0963ec1cf50203f4f",
-      "29500f30e21180888b25f958d43e6616"
-    ],
-    "unidades_ids": [
-      160
-    ],
-    "panteao_id": 7,
-    "icon": "aomr_town_center_greek_icon"
   }
 ]

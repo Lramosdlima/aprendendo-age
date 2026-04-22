@@ -14,3 +14,12 @@ const PANTHEON_TINT_RGBA: Record<string, string> = {
 export function pantheonCardTint(panteao: string): string | undefined {
   return PANTHEON_TINT_RGBA[panteao];
 }
+
+/**
+ * O campo `panteao` em Notion/JSON às vezes lista várias civilizações (vários tokens `:aomr_pantheon_*` separados por vírgula).
+ * Nesse caso não se deve aplicar um único tinte.
+ */
+export function panteaoFieldHasMultiplePantheons(panteao: string | undefined): boolean {
+  if (!panteao) return false;
+  return (panteao.match(/:aomr_pantheon_/g) ?? []).length > 1;
+}

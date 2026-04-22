@@ -7,9 +7,10 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { construcoes, construcaoSlugById } from "@/data/catalog";
+import { construcoes, construcaoSlugById, panteaoById } from "@/data/catalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { panteaoFieldHasMultiplePantheons, pantheonCardTint } from "@/lib/pantheonCardTint";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { hasTipoContent, tipoItemsToSearchBlob } from "@/lib/unidadeTipo";
 
@@ -46,6 +47,13 @@ export function ConstrucoesPage() {
               to={`/construcoes/${construcaoSlugById.get(c.id) ?? c.id}`}
               linkState={listIndexState}
               title={c.nome}
+              cardTint={
+                panteaoFieldHasMultiplePantheons(c.panteao)
+                  ? undefined
+                  : pantheonCardTint(
+                      (c.panteao_id != null ? panteaoById.get(c.panteao_id) : undefined)?.nome ?? "",
+                    )
+              }
               subtitle={
                 hasTipoContent(c.tipo) ? (
                   <UnidadeTipoLine tipo={c.tipo} colored shell="none" />
