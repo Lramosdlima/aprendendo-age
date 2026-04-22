@@ -1,5 +1,6 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
+import { DeusPortraitHeaderActions } from "@/components/deus/DeusPortraitHeaderActions";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
@@ -14,12 +15,15 @@ import {
   panteaoById,
   panteaoSlugById,
 } from "@/data/catalog";
-import { formatGodNameForMetaNotion, formatGodNameStringForMetaNotion } from "@/lib/deusAssetUrl";
+import { formatGodNameForMetaNotion, formatGodNameStringForMetaNotion, getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { formatEraNameForMetaNotion } from "@/lib/eraMetaNotion";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { formatPantheonNameForMetaNotion } from "@/lib/pantheonAssetUrl";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 
 export function GodpowerDetailPage() {
+  const { pathname, search: locSearch } = useLocation();
+  const deusLinkFromPowerState = listIndexLinkStateFromLocation(pathname, locSearch);
   const { slug } = useParams();
   const g = slug ? godpowerBySlug.get(slug) : undefined;
 
@@ -37,10 +41,31 @@ export function GodpowerDetailPage() {
   const panteao = g.panteao_id != null ? panteaoById.get(g.panteao_id) : undefined;
   const powerIcon = getGodPowerAssetUrl(g);
 
+  const deusSlug = deus ? (deusSlugById.get(deus.id) ?? String(deus.id)) : undefined;
+  const godHeaderPortraits =
+    deus && deusSlug ? (
+      <DeusPortraitHeaderActions
+        linkState={deusLinkFromPowerState}
+        items={[
+          {
+            key: String(deus.id),
+            slug: deusSlug,
+            nome: deus.nome,
+            src: getDeusAssetUrl(deus),
+          },
+        ]}
+      />
+    ) : null;
+
   return (
     <div>
       <BackLink to="/poderes">Poderes divinos</BackLink>
-      <PageHeader title={g.nome} description={g.ingles ? `Inglês: ${g.ingles}` : undefined} headerIconSrc={powerIcon} />
+      <PageHeader
+        title={g.nome}
+        description={g.ingles ? `Inglês: ${g.ingles}` : undefined}
+        headerIconSrc={powerIcon}
+        actions={godHeaderPortraits}
+      />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Ligações">

@@ -46,6 +46,16 @@ function buildAvaliacaoLabel(n: number | null | undefined): string {
   }
 }
 
+/** Texto do link "← …" conforme a origem (lista de deuses, start ou poder divino). */
+function deusBackLinkLabel(backTo: string): string {
+  if (backTo === "/starts" || backTo.startsWith("/starts?")) return "Starts & build orders";
+  if (backTo.startsWith("/starts/")) return "Voltar ao start";
+  if (backTo.startsWith("/poderes/compare")) return "Comparar poderes";
+  if (backTo.startsWith("/poderes/")) return "Voltar ao poder divino";
+  if (backTo === "/poderes" || backTo.startsWith("/poderes?")) return "Poderes divinos";
+  return "Deuses";
+}
+
 /** Cor do texto conforme a nota (5 verde → 1 vermelho). */
 function buildAvaliacaoScoreClassName(n: number | null | undefined): string {
   const base = "text-xs font-semibold leading-tight";
@@ -69,13 +79,14 @@ function buildAvaliacaoScoreClassName(n: number | null | undefined): string {
 export function DeusDetailPage() {
   const { state: navState } = useLocation();
   const backToList = listIndexReturnTo("/deuses", navState);
+  const backLinkLabel = deusBackLinkLabel(backToList);
   const { slug } = useParams();
   const d = slug ? deusBySlug.get(slug) : undefined;
 
   if (!d) {
     return (
       <div>
-        <BackLink to={backToList}>Deuses</BackLink>
+        <BackLink to={backToList}>{backLinkLabel}</BackLink>
         <p className="text-zinc-400">Deus não encontrado.</p>
       </div>
     );
@@ -121,7 +132,7 @@ export function DeusDetailPage() {
 
   return (
     <div>
-      <BackLink to={backToList}>Deuses</BackLink>
+      <BackLink to={backToList}>{backLinkLabel}</BackLink>
       <PageHeader
         title={d.nome}
         description={
