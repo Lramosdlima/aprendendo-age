@@ -1,8 +1,12 @@
 import tokenAssetMap from "@/data/token_asset_map.json";
 
-/** Normaliza nome EN do JSON para chave de busca (minúsculas). */
-function normEn(s: string): string {
-  return s.trim().toLowerCase();
+/** Chave de busca: minúsculas e sem diacríticos (ex.: Tlálocan ↔ tlalocan no nome do ficheiro). */
+function lookupKey(s: string): string {
+  return s
+    .trim()
+    .normalize("NFD")
+    .replace(/\p{M}+/gu, "")
+    .toLowerCase();
 }
 
 function stemToLookupKey(basename: string): string {
@@ -10,7 +14,7 @@ function stemToLookupKey(basename: string): string {
   if (s.endsWith("_power_icon")) s = s.slice(0, -"_power_icon".length);
   else if (s.endsWith("_icon")) s = s.slice(0, -"_icon".length);
   else if (s.endsWith("_power")) s = s.slice(0, -"_power".length);
-  return s.replace(/_/g, " ").trim().toLowerCase();
+  return lookupKey(s.replace(/_/g, " "));
 }
 
 function buildGodPowerUrlByEnglish(): Map<string, string> {
@@ -32,5 +36,5 @@ const urlByEnglish = buildGodPowerUrlByEnglish();
  */
 export function getGodPowerAssetUrl(ingles: string | undefined): string | undefined {
   if (!ingles?.trim()) return undefined;
-  return urlByEnglish.get(normEn(ingles));
+  return urlByEnglish.get(lookupKey(ingles));
 }
