@@ -60,7 +60,6 @@ export function TecnologiaDetailPage() {
       <BackLink to={backToList}>Tecnologias</BackLink>
       <PageHeader
         title={t.nome || `Sem título (#${tecIndex >= 0 ? tecIndex : "?"})`}
-        description={tecIndex >= 0 ? `Lista JSON: #${tecIndex}` : undefined}
         headerIconSrc={getTecnologiaAssetUrl(t)}
       />
 
