@@ -6,7 +6,8 @@
     "madeira": 0,
     "ouro": 0,
     "tempo_seg": 0,
-    "ingles": "Archaic"
+    "ingles": "Archaic",
+    "icon": "aomr_archaic_age_icon"
   },
   {
     "id": 2,
@@ -24,7 +25,8 @@
       24,
       25,
       26
-    ]
+    ],
+    "icon": "aomr_classical_age_icon"
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
       27,
       51,
       34
-    ]
+    ],
+    "icon": "aomr_heroic_age_icon"
   },
   {
     "id": 4,
@@ -57,7 +60,8 @@
       60,
       61,
       68
-    ]
+    ],
+    "icon": "aomr_mythic_age_icon"
   },
   {
     "id": 5,
@@ -68,6 +72,7 @@
     "tempo_seg": 5400,
     "requisitos_para_subir_de_era": "Maravilha",
     "ingles": "Wonder",
-    "requisitos_para_subir_de_era_id": 71
+    "requisitos_para_subir_de_era_id": 71,
+    "icon": "aomr_wonder_age_icon"
   }
 ]

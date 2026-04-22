@@ -43,7 +43,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 35,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hoplite_icon"
   },
   {
     "id": 2,
@@ -89,7 +90,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
     "construcao_id": 37,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hippeus_icon"
   },
   {
     "id": 3,
@@ -136,7 +138,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
     "construcao_id": 36,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_toxotes_icon"
   },
   {
     "id": 4,
@@ -182,7 +185,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 3,
     "construcao_id": 35,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hypaspist_icon"
   },
   {
     "id": 5,
@@ -228,7 +232,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 37,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_prodromos_icon"
   },
   {
     "id": 6,
@@ -275,7 +280,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
     "construcao_id": 36,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_peltast_icon"
   },
   {
     "id": 7,
@@ -321,7 +327,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 38,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_axeman_icon"
   },
   {
     "id": 8,
@@ -367,7 +374,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 38,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_spearman_icon"
   },
   {
     "id": 9,
@@ -414,7 +422,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
     "construcao_id": 38,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_slinger_icon"
   },
   {
     "id": 10,
@@ -469,7 +478,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 58,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_camel_rider_icon"
   },
   {
     "id": 12,
@@ -520,7 +530,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 58,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_chariot_archer_icon"
   },
   {
     "id": 13,
@@ -571,7 +582,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 58,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_war_elephant_icon"
   },
   {
     "id": 14,
@@ -608,7 +620,8 @@
       39,
       4
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_berserk_icon"
   },
   {
     "id": 15,
@@ -659,7 +672,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 39,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_throwing_axeman_icon"
   },
   {
     "id": 16,
@@ -705,7 +719,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 39,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_hirdman_icon"
   },
   {
     "id": 17,
@@ -751,7 +766,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
     "construcao_id": 40,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_raiding_cavalry_icon"
   },
   {
     "id": 18,
@@ -797,7 +813,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
     "construcao_id": 59,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_huskarl_icon"
   },
   {
     "id": 19,
@@ -831,7 +848,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 40,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_jarl_icon"
   },
   {
     "id": 20,
@@ -865,7 +883,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 41,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_murmillo_icon"
   },
   {
     "id": 21,
@@ -911,7 +930,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 42,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_katapeltes_icon"
   },
   {
     "id": 22,
@@ -962,7 +982,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
     "era_id": 2,
     "construcao_id": 42,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_turma_icon"
   },
   {
     "id": 23,
@@ -1018,7 +1039,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
     "construcao_id": 42,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_cheiroballista_icon"
   },
   {
     "id": 24,
@@ -1064,7 +1086,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 41,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_contarius_icon"
   },
   {
     "id": 25,
@@ -1111,7 +1134,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
     "construcao_id": 41,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_arcus_icon"
   },
   {
     "id": 26,
@@ -1145,7 +1169,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 43,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_dao_swordsman_icon"
   },
   {
     "id": 27,
@@ -1191,7 +1216,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
     "construcao_id": 43,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_ge_halberdier_icon"
   },
   {
     "id": 28,
@@ -1238,7 +1264,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
     "construcao_id": 43,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_wuzu_javelineer_icon"
   },
   {
     "id": 29,
@@ -1290,7 +1317,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
     "construcao_id": 45,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_fire_archer_icon"
   },
   {
     "id": 30,
@@ -1325,7 +1353,8 @@
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
     "construcao_id": 45,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_chu_ko_nu_icon"
   },
   {
     "id": 31,
@@ -1371,7 +1400,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 61,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_white_horse_cavalry_icon"
   },
   {
     "id": 32,
@@ -1416,7 +1446,8 @@
         "type": "SoftCounter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_samurai_icon"
   },
   {
     "id": 33,
@@ -1466,7 +1497,8 @@
         "type": "SoftCounter Artilharia",
         "icon": "aomr_type_archer_icon"
       }
-    ]
+    ],
+    "icon": "aomr_shinobi_icon"
   },
   {
     "id": 34,
@@ -1509,7 +1541,8 @@
     "era_id": 4,
     "construcao_id": 57,
     "god_dono_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_myrmidon_icon"
   },
   {
     "id": 35,
@@ -1558,7 +1591,8 @@
     "era_id": 4,
     "construcao_id": 57,
     "god_dono_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_gastraphetoros_icon"
   },
   {
     "id": 36,
@@ -1600,7 +1634,8 @@
     "era_id": 4,
     "construcao_id": 57,
     "god_dono_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hetairos_icon"
   },
   {
     "id": 37,
@@ -1655,7 +1690,8 @@
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 4,
     "construcao_id": 60,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_fanatic_icon"
   },
   {
     "id": 38,
@@ -1710,7 +1746,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 4,
     "construcao_id": 61,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_tiger_cavalry_icon"
   },
   {
     "id": 39,
@@ -1751,7 +1788,8 @@
     "era_id": 1,
     "construcao_id": 21,
     "god_dono_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_pegasus_icon"
   },
   {
     "id": 40,
@@ -1799,7 +1837,8 @@
     "era_id": 2,
     "construcao_id": 21,
     "god_dono_id": 21,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_minotaur_icon"
   },
   {
     "id": 41,
@@ -1848,7 +1887,8 @@
     "era_id": 2,
     "construcao_id": 21,
     "god_dono_id": 20,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_centaur_icon"
   },
   {
     "id": 42,
@@ -1901,7 +1941,8 @@
     "era_id": 2,
     "construcao_id": 21,
     "god_dono_id": 22,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_cyclops_icon"
   },
   {
     "id": 43,
@@ -1949,7 +1990,8 @@
     "era_id": 2,
     "construcao_id": 22,
     "god_dono_id": 31,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_anubite_icon"
   },
   {
     "id": 44,
@@ -1998,7 +2040,8 @@
     "era_id": 2,
     "construcao_id": 22,
     "god_dono_id": 30,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_wadjet_icon"
   },
   {
     "id": 45,
@@ -2047,7 +2090,8 @@
     "era_id": 2,
     "construcao_id": 22,
     "god_dono_id": 29,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_sphinx_icon"
   },
   {
     "id": 46,
@@ -2096,7 +2140,8 @@
     "era_id": 2,
     "construcao_id": 23,
     "god_dono_id": 40,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_troll_icon"
   },
   {
     "id": 47,
@@ -2145,7 +2190,8 @@
     "era_id": 2,
     "construcao_id": 23,
     "god_dono_id": 39,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_einherjar_icon"
   },
   {
     "id": 49,
@@ -2197,7 +2243,8 @@
     "era_id": 2,
     "construcao_id": 23,
     "god_dono_id": 38,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_valkyrie_icon"
   },
   {
     "id": 50,
@@ -2252,7 +2299,8 @@
     "era_id": 2,
     "construcao_id": 23,
     "god_dono_id": 65,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_draugr_icon"
   },
   {
     "id": 51,
@@ -2301,7 +2349,8 @@
     "era_id": 2,
     "construcao_id": 24,
     "god_dono_id": 48,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_promethean_icon"
   },
   {
     "id": 53,
@@ -2349,7 +2398,8 @@
     "era_id": 2,
     "construcao_id": 24,
     "god_dono_id": 47,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_automaton_icon"
   },
   {
     "id": 54,
@@ -2392,7 +2442,8 @@
     "era_id": 2,
     "construcao_id": 24,
     "god_dono_id": 49,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_caladria_icon"
   },
   {
     "id": 55,
@@ -2440,7 +2491,8 @@
     "era_id": 2,
     "construcao_id": 25,
     "god_dono_id": 56,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_qilin_icon"
   },
   {
     "id": 56,
@@ -2488,7 +2540,8 @@
     "era_id": 2,
     "construcao_id": 25,
     "god_dono_id": 57,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_yazi_icon"
   },
   {
     "id": 57,
@@ -2537,7 +2590,8 @@
     "era_id": 2,
     "construcao_id": 25,
     "god_dono_id": 58,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_qiongqi_icon"
   },
   {
     "id": 58,
@@ -2589,7 +2643,8 @@
       21
     ],
     "god_dono_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_jason_icon"
   },
   {
     "id": 59,
@@ -2641,7 +2696,8 @@
       21
     ],
     "god_dono_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_theseus_icon"
   },
   {
     "id": 60,
@@ -2693,7 +2749,8 @@
       21
     ],
     "god_dono_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_ajax_icon"
   },
   {
     "id": 61,
@@ -2744,7 +2801,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 1,
     "construcao_id": 3,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_pharaoh_icon"
   },
   {
     "id": 62,
@@ -2802,7 +2860,8 @@
       3,
       22
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_priest_icon"
   },
   {
     "id": 63,
@@ -2850,7 +2909,8 @@
       23,
       40
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_hersir_icon"
   },
   {
     "id": 64,
@@ -2893,7 +2953,8 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 1,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_oracle_hero_icon"
   },
   {
     "id": 65,
@@ -2945,7 +3006,8 @@
       25,
       44
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_pioneer_icon"
   },
   {
     "id": 66,
@@ -2994,7 +3056,8 @@
     "era_id": 3,
     "construcao_id": 21,
     "god_dono_id": 24,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hydra_icon"
   },
   {
     "id": 67,
@@ -3043,7 +3106,8 @@
     "era_id": 3,
     "construcao_id": 21,
     "god_dono_id": 23,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_manticore_icon"
   },
   {
     "id": 68,
@@ -3092,7 +3156,8 @@
     "era_id": 3,
     "construcao_id": 21,
     "god_dono_id": 25,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_nemean_lion_icon"
   },
   {
     "id": 69,
@@ -3141,7 +3206,8 @@
     "era_id": 3,
     "construcao_id": 22,
     "god_dono_id": 32,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_petsuchos_icon"
   },
   {
     "id": 70,
@@ -3199,7 +3265,8 @@
     "era_id": 3,
     "construcao_id": 22,
     "god_dono_id": 34,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_scarab_icon"
   },
   {
     "id": 71,
@@ -3247,7 +3314,8 @@
     "era_id": 3,
     "construcao_id": 22,
     "god_dono_id": 33,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_scorpion_man_icon"
   },
   {
     "id": 72,
@@ -3299,7 +3367,8 @@
       46,
       42
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_frost_giant_icon"
   },
   {
     "id": 73,
@@ -3352,7 +3421,8 @@
     "era_id": 3,
     "construcao_id": 23,
     "god_dono_id": 43,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_battle_boar_icon"
   },
   {
     "id": 74,
@@ -3408,7 +3478,8 @@
       46,
       41
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_mountain_giant_icon"
   },
   {
     "id": 75,
@@ -3456,7 +3527,8 @@
     "era_id": 3,
     "construcao_id": 23,
     "god_dono_id": 66,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_rock_giant_icon"
   },
   {
     "id": 76,
@@ -3514,7 +3586,8 @@
     "era_id": 3,
     "construcao_id": 24,
     "god_dono_id": 50,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_behemoth_icon"
   },
   {
     "id": 77,
@@ -3563,7 +3636,8 @@
     "era_id": 3,
     "construcao_id": 24,
     "god_dono_id": 51,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_satyr_icon"
   },
   {
     "id": 78,
@@ -3616,7 +3690,8 @@
     "era_id": 3,
     "construcao_id": 24,
     "god_dono_id": 52,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_stymphalian_bird_icon"
   },
   {
     "id": 79,
@@ -3665,7 +3740,8 @@
     "era_id": 3,
     "construcao_id": 25,
     "god_dono_id": 59,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_taowu_icon"
   },
   {
     "id": 80,
@@ -3714,7 +3790,8 @@
     "era_id": 3,
     "construcao_id": 25,
     "god_dono_id": 60,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_taotie_icon"
   },
   {
     "id": 81,
@@ -3763,7 +3840,8 @@
     "era_id": 3,
     "construcao_id": 25,
     "god_dono_id": 61,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_baihu_icon"
   },
   {
     "id": 82,
@@ -3810,7 +3888,8 @@
       21
     ],
     "god_dono_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_heracles_icon"
   },
   {
     "id": 83,
@@ -3857,7 +3936,8 @@
       21
     ],
     "god_dono_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_atalanta_icon"
   },
   {
     "id": 84,
@@ -3904,7 +3984,8 @@
       21
     ],
     "god_dono_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_achilles_icon"
   },
   {
     "id": 85,
@@ -3950,7 +4031,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 3,
     "construcao_id": 40,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_godi_icon"
   },
   {
     "id": 86,
@@ -3993,7 +4075,8 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_murmillo_hero_icon"
   },
   {
     "id": 87,
@@ -4047,7 +4130,8 @@
         "type": "HardCounter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_katapeltes_hero_icon"
   },
   {
     "id": 88,
@@ -4105,7 +4189,8 @@
         "type": "HardCounter Artilharia",
         "icon": "aomr_type_archer_icon"
       }
-    ]
+    ],
+    "icon": "aomr_turma_hero_icon"
   },
   {
     "id": 89,
@@ -4169,7 +4254,8 @@
         "type": "HardCounter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_cheiroballista_hero_icon"
   },
   {
     "id": 90,
@@ -4223,7 +4309,8 @@
         "type": "SoftCounter Artilharia",
         "icon": "aomr_type_archer_icon"
       }
-    ]
+    ],
+    "icon": "aomr_contarius_hero_icon"
   },
   {
     "id": 91,
@@ -4277,7 +4364,8 @@
         "type": "SoftCounter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_arcus_hero_icon"
   },
   {
     "id": 94,
@@ -4319,7 +4407,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 3,
     "construcao_id": 44,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_sage_icon"
   },
   {
     "id": 95,
@@ -4367,7 +4456,8 @@
       57
     ],
     "god_dono_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_odysseus_icon"
   },
   {
     "id": 96,
@@ -4415,7 +4505,8 @@
       57
     ],
     "god_dono_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hippolyta_icon"
   },
   {
     "id": 97,
@@ -4463,7 +4554,8 @@
       57
     ],
     "god_dono_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_chiron_icon"
   },
   {
     "id": 98,
@@ -4486,7 +4578,8 @@
     "era_id": 4,
     "construcao_id": 21,
     "god_dono_id": 27,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_medusa_icon"
   },
   {
     "id": 99,
@@ -4509,7 +4602,8 @@
     "era_id": 4,
     "construcao_id": 21,
     "god_dono_id": 26,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_colossus_icon"
   },
   {
     "id": 100,
@@ -4532,7 +4626,8 @@
     "era_id": 4,
     "construcao_id": 21,
     "god_dono_id": 28,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_chimera_icon"
   },
   {
     "id": 101,
@@ -4555,7 +4650,8 @@
     "era_id": 4,
     "construcao_id": 22,
     "god_dono_id": 35,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_mummy_icon"
   },
   {
     "id": 102,
@@ -4578,7 +4674,8 @@
     "era_id": 4,
     "construcao_id": 22,
     "god_dono_id": 37,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_avenger_icon"
   },
   {
     "id": 103,
@@ -4601,7 +4698,8 @@
     "era_id": 4,
     "construcao_id": 22,
     "god_dono_id": 36,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_phoenix_icon"
   },
   {
     "id": 104,
@@ -4627,7 +4725,8 @@
       44,
       46
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_fire_giant_icon"
   },
   {
     "id": 105,
@@ -4650,7 +4749,8 @@
     "era_id": 4,
     "construcao_id": 23,
     "god_dono_id": 45,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_fenris_wolf_brood_icon"
   },
   {
     "id": 106,
@@ -4673,7 +4773,8 @@
     "era_id": 4,
     "construcao_id": 23,
     "god_dono_id": 67,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_fafnir_icon"
   },
   {
     "id": 107,
@@ -4696,7 +4797,8 @@
     "era_id": 4,
     "construcao_id": 24,
     "god_dono_id": 54,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_centimanus_icon"
   },
   {
     "id": 108,
@@ -4719,7 +4821,8 @@
     "era_id": 4,
     "construcao_id": 24,
     "god_dono_id": 53,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_argus_icon"
   },
   {
     "id": 109,
@@ -4742,7 +4845,8 @@
     "era_id": 4,
     "construcao_id": 24,
     "god_dono_id": 55,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_lampades_icon"
   },
   {
     "id": 110,
@@ -4765,7 +4869,8 @@
     "era_id": 4,
     "construcao_id": 25,
     "god_dono_id": 63,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_hundun_icon"
   },
   {
     "id": 111,
@@ -4792,7 +4897,8 @@
     "era_id": 4,
     "construcao_id": 25,
     "god_dono_id": 62,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_qinglong_icon"
   },
   {
     "id": 112,
@@ -4819,7 +4925,8 @@
     "era_id": 4,
     "construcao_id": 25,
     "god_dono_id": 64,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_zhuque_icon"
   },
   {
     "id": 113,
@@ -4855,7 +4962,8 @@
     "era_id": 1,
     "construcao_id": 23,
     "god_dono_id": 8,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_raven_icon"
   },
   {
     "id": 114,
@@ -4876,7 +4984,8 @@
     "god_dono": "Zeus",
     "era_id": 4,
     "god_dono_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_bellerophon_icon"
   },
   {
     "id": 115,
@@ -4904,7 +5013,8 @@
     "god_dono": "Poseidon",
     "era_id": 4,
     "god_dono_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_polyphemus_icon"
   },
   {
     "id": 116,
@@ -4925,7 +5035,8 @@
     "god_dono": "Hades",
     "era_id": 4,
     "god_dono_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_perseus_icon"
   },
   {
     "id": 117,
@@ -4966,7 +5077,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
     "construcao_id": 44,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_nezha_child_icon"
   },
   {
     "id": 118,
@@ -5008,7 +5120,8 @@
     "fraco_contra": "Herói :aomr_type_hero_icon:",
     "era_id": 3,
     "construcao_id": 44,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_jiang_ziya_icon"
   },
   {
     "id": 119,
@@ -5039,7 +5152,8 @@
     "era_id": 4,
     "construcao_id": 44,
     "god_dono_id": 13,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_yang_jian_icon"
   },
   {
     "id": 120,
@@ -5070,7 +5184,8 @@
     "era_id": 4,
     "construcao_id": 44,
     "god_dono_id": 14,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_li_jing_icon"
   },
   {
     "id": 121,
@@ -5102,7 +5217,8 @@
     "era_id": 4,
     "construcao_id": 44,
     "god_dono_id": 15,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_wen_zhong_icon"
   },
   {
     "id": 122,
@@ -5164,7 +5280,8 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 4,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_fanatic_hero_icon"
   },
   {
     "id": 123,
@@ -5202,7 +5319,8 @@
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
     "era_id": 4,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_hero_of_ragnarok_icon"
   },
   {
     "id": 124,
@@ -5243,7 +5361,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 3,
     "construcao_id": 44,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_nezha_youth_icon"
   },
   {
     "id": 125,
@@ -5284,7 +5403,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 4,
     "construcao_id": 44,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_nezha_icon"
   },
   {
     "id": 126,
@@ -5338,7 +5458,8 @@
       18,
       19
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_kitsune_icon"
   },
   {
     "id": 127,
@@ -5384,7 +5505,8 @@
     "era_id": 2,
     "construcao_id": 26,
     "god_dono_id": 68,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_kamaitachi_icon"
   },
   {
     "id": 128,
@@ -5435,7 +5557,8 @@
     "era_id": 2,
     "construcao_id": 26,
     "god_dono_id": 69,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_wanyudo_icon"
   },
   {
     "id": 129,
@@ -5481,7 +5604,8 @@
     "era_id": 2,
     "construcao_id": 26,
     "god_dono_id": 70,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_jorogumo_icon"
   },
   {
     "id": 130,
@@ -5527,7 +5651,8 @@
     "era_id": 3,
     "construcao_id": 26,
     "god_dono_id": 71,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_tengu_icon"
   },
   {
     "id": 131,
@@ -5573,7 +5698,8 @@
     "era_id": 3,
     "construcao_id": 26,
     "god_dono_id": 73,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_raiju_icon"
   },
   {
     "id": 132,
@@ -5624,7 +5750,8 @@
     "era_id": 3,
     "construcao_id": 26,
     "god_dono_id": 72,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_oni_icon"
   },
   {
     "id": 134,
@@ -5672,7 +5799,8 @@
     "era_id": 4,
     "construcao_id": 26,
     "god_dono_id": 76,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_shinigami_icon"
   },
   {
     "id": 135,
@@ -5722,7 +5850,8 @@
     "era_id": 4,
     "construcao_id": 26,
     "god_dono_id": 75,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_onmoraki_icon"
   },
   {
     "id": 136,
@@ -5775,7 +5904,8 @@
     "era_id": 4,
     "construcao_id": 26,
     "god_dono_id": 74,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_asura_icon"
   },
   {
     "id": 138,
@@ -5811,7 +5941,8 @@
     "era_id": 1,
     "construcao_id": 21,
     "god_dono_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_shade_of_hades_icon"
   },
   {
     "id": 139,
@@ -5853,7 +5984,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 1,
     "construcao_id": 7,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_miko_icon"
   },
   {
     "id": 140,
@@ -5897,7 +6029,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
     "construcao_id": 65,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_bushi_icon"
   },
   {
     "id": 141,
@@ -5942,7 +6075,8 @@
         "type": "HardCounter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_yari_spearman_icon"
   },
   {
     "id": 142,
@@ -5988,7 +6122,8 @@
         "type": "SoftCounter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_yumi_archer_icon"
   },
   {
     "id": 143,
@@ -6032,7 +6167,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 2,
     "construcao_id": 63,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_bushi_icon"
   },
   {
     "id": 144,
@@ -6070,7 +6206,8 @@
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 3,
     "construcao_id": 66,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_yumi_horse_archer_icon"
   },
   {
     "id": 145,
@@ -6119,7 +6256,8 @@
         "type": "SoftCounter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
-    ]
+    ],
+    "icon": "aomr_naginata_rider_icon"
   },
   {
     "id": 146,
@@ -6164,7 +6302,8 @@
     "fraco_contra": "Herói :aomr_type_hero_icon:",
     "era_id": 4,
     "construcao_id": 68,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_onmyoji_icon"
   },
   {
     "id": 147,
@@ -6208,7 +6347,8 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon: | Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
     "construcao_id": 66,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_daimyo_icon"
   },
   {
     "id": 151,
@@ -6235,7 +6375,8 @@
     "era_id": 4,
     "construcao_id": 57,
     "god_dono_id": 78,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_harpy_demeter_icon"
   },
   {
     "id": 152,
@@ -6262,7 +6403,8 @@
     "era_id": 2,
     "construcao_id": 21,
     "god_dono_id": 79,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_lykaon_icon"
   },
   {
     "id": 153,
@@ -6289,7 +6431,8 @@
     "era_id": 3,
     "construcao_id": 21,
     "god_dono_id": 80,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hamadryad_icon"
   },
   {
     "id": 154,
@@ -6312,7 +6455,8 @@
     "era_id": 4,
     "construcao_id": 21,
     "god_dono_id": 81,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_siren_icon"
   },
   {
     "id": 155,
@@ -6335,7 +6479,8 @@
     "era_id": 3,
     "construcao_id": 1,
     "god_dono_id": 78,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_icarus_icon"
   },
   {
     "id": 157,
@@ -6358,7 +6503,8 @@
     "era_id": 1,
     "construcao_id": 1,
     "god_dono_id": 78,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_orpheus_icon"
   },
   {
     "id": 158,
@@ -6381,7 +6527,8 @@
     "era_id": 2,
     "construcao_id": 1,
     "god_dono_id": 78,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_iolaus_icon"
   },
   {
     "id": 159,
@@ -6402,7 +6549,8 @@
     "god_dono": "Deméter",
     "era_id": 4,
     "god_dono_id": 78,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_midas_icon"
   },
   {
     "id": 160,
@@ -6452,7 +6600,8 @@
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 1,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_quimchim_spy_icon"
   },
   {
     "id": 161,
@@ -6491,7 +6640,8 @@
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "era_id": 1,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_warrior_priest_hero_icon"
   },
   {
     "id": 162,
@@ -6536,7 +6686,8 @@
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_tlamanih_spearman_icon"
   },
   {
     "id": 163,
@@ -6582,7 +6733,8 @@
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_tequihua_archer_icon"
   },
   {
     "id": 164,
@@ -6627,7 +6779,8 @@
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_coyote_warrior_icon"
   },
   {
     "id": 165,
@@ -6660,7 +6813,8 @@
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_ocelotl_warrior_icon"
   },
   {
     "id": 167,
@@ -6700,7 +6854,8 @@
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_eagle_warrior_icon"
   },
   {
     "id": 168,
@@ -6743,7 +6898,8 @@
     "forte_contra": "Construção :aomr_type_building_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 3,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_medium_otontin_smasher_icon"
   },
   {
     "id": 169,
@@ -6788,7 +6944,8 @@
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "era_id": 3,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_medium_shorn_one_icon"
   },
   {
     "id": 170,
@@ -6833,7 +6990,8 @@
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "era_id": 4,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_jaguar_rider_icon"
   },
   {
     "id": 171,
@@ -6884,6 +7042,7 @@
     "forte_contra": "Construção :aomr_type_building_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Herói :aomr_type_hero_icon:",
     "era_id": 4,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": null
   }
 ]

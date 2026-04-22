@@ -81,7 +81,7 @@ export function DeusDetailPage() {
     );
   }
 
-  const deusIcon = getDeusAssetUrl(d.nome);
+  const deusIcon = getDeusAssetUrl(d);
 
   const panteao = d.panteao_id != null ? panteaoById.get(d.panteao_id) : undefined;
   const era = d.era_id != null ? eraById.get(d.era_id) : undefined;

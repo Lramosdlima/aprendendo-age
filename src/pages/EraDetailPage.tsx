@@ -24,7 +24,7 @@ export function EraDetailPage() {
   const reqIds = (e as { requisitos_para_subir_de_era_ids?: number[] }).requisitos_para_subir_de_era_ids;
   const reqSingle = (e as { requisitos_para_subir_de_era_id?: number }).requisitos_para_subir_de_era_id;
 
-  const eraIcon = getEraAssetUrl(e.id);
+  const eraIcon = getEraAssetUrl(e);
 
   const reqLinks = (reqIds ?? (reqSingle != null ? [reqSingle] : []))
     .map((cid) => {

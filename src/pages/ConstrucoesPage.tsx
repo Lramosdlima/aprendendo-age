@@ -52,7 +52,7 @@ export function ConstrucoesPage() {
                 ) : undefined
               }
               meta={<MetaNotionLine parts={[c.panteao, c.era]} />}
-              watermarkSrc={getConstrucaoAssetUrl(c.ingles)}
+              watermarkSrc={getConstrucaoAssetUrl(c)}
             />
           </li>
         ))}

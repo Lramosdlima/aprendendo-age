@@ -18,7 +18,7 @@ export function AldeoesPage() {
               cardTint={pantheonCardTint(panteaoById.get(a.panteao_id)?.nome ?? "")}
               subtitle={a.panteao ? <NotionText text={a.panteao} /> : undefined}
               meta={a.ingles ? a.ingles : undefined}
-              watermarkSrc={getAldeaoAssetUrl(a.ingles)}
+              watermarkSrc={getAldeaoAssetUrl(a)}
             />
           </li>
         ))}

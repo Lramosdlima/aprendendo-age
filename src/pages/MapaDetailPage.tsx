@@ -28,8 +28,8 @@ export function MapaDetailPage() {
     );
   }
 
-  const mapaIcon = getMapaAssetUrl(m.ingles);
-  const previewUrl = getMapaPreviewUrl(m.ingles);
+  const mapaIcon = getMapaAssetUrl(m);
+  const previewUrl = getMapaPreviewUrl(m);
 
   return (
     <AppPageDetail

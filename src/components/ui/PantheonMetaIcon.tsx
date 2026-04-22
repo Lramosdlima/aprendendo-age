@@ -10,7 +10,8 @@ type PantheonMetaIconProps = {
 
 /** Ícone da civilização (`assets/pantheons`) antes do texto da meta, quando o JSON traz `panteao_id` / `panteoes_id`. */
 export function PantheonMetaIcon({ panteaoId }: PantheonMetaIconProps) {
-  const src = getPantheonWatermarkUrl(panteaoId);
+  const p = panteaoById.get(panteaoId);
+  const src = p ? getPantheonWatermarkUrl(p) : undefined;
   if (!src) return null;
   const nome = panteaoById.get(panteaoId)?.nome;
   return <img src={src} alt="" aria-hidden title={nome} className={imgClass} />;

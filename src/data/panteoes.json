@@ -23,7 +23,8 @@
       80,
       79
     ],
-    "vill_id": 1
+    "vill_id": 1,
+    "icon": "aomr_pantheon_greeks_icon"
   },
   {
     "id": 2,
@@ -46,7 +47,8 @@
       36,
       37
     ],
-    "vill_id": 10
+    "vill_id": 10,
+    "icon": "aomr_pantheon_egyptians_icon"
   },
   {
     "id": 3,
@@ -76,7 +78,8 @@
     "vill_ids": [
       6,
       2
-    ]
+    ],
+    "icon": "aomr_pantheon_norse_icon"
   },
   {
     "id": 4,
@@ -102,7 +105,8 @@
     "vill_ids": [
       4,
       5
-    ]
+    ],
+    "icon": "aomr_pantheon_atlanteans_icon"
   },
   {
     "id": 5,
@@ -130,7 +134,8 @@
       3,
       7,
       8
-    ]
+    ],
+    "icon": "aomr_pantheon_chinese_icon"
   },
   {
     "id": 6,
@@ -153,7 +158,8 @@
       75,
       76
     ],
-    "vill_id": 9
+    "vill_id": 9,
+    "icon": "aomr_pantheon_japanese_icon"
   },
   {
     "id": 7,
@@ -172,6 +178,7 @@
       91,
       92,
       93
-    ]
+    ],
+    "icon": "aomr_pantheon_azteca_icon"
   }
 ]

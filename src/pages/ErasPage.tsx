@@ -17,7 +17,7 @@ export function ErasPage() {
               meta={
                 e.tempo_seg != null && e.tempo_seg > 0 ? `${Math.round(e.tempo_seg / 60)} min` : "Inicial"
               }
-              watermarkSrc={getEraAssetUrl(e.id)}
+              watermarkSrc={getEraAssetUrl(e)}
             />
           </li>
         ))}

@@ -50,7 +50,8 @@
       158,
       155
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_town_center_greek_icon"
   },
   {
     "id": 3,
@@ -94,7 +95,8 @@
       62,
       61
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_town_center_greek_icon"
   },
   {
     "id": 4,
@@ -131,7 +133,8 @@
       "29500f30e21180888b25f958d43e6616"
     ],
     "unidades_id": 14,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_town_center_greek_icon"
   },
   {
     "id": 5,
@@ -161,7 +164,8 @@
     "tempo_construir_segundos": 150,
     "era_id": 2,
     "tecnologias_id": "29500f30e21180888b25f958d43e6616",
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_town_center_greek_icon"
   },
   {
     "id": 6,
@@ -195,7 +199,8 @@
       "2b200f30e2118000b5aee94521a06bae",
       "2b200f30e211801eb5dbd00aff735786"
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_town_center_greek_icon"
   },
   {
     "id": 7,
@@ -230,7 +235,8 @@
       "2b800f30e21180ed8d15c42cfd146ae8"
     ],
     "unidades_id": 139,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_town_center_greek_icon"
   },
   {
     "id": 8,
@@ -255,7 +261,8 @@
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_id": "2b200f30e21180d88cbbe6e49f2601e4",
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_house_icon"
   },
   {
     "id": 11,
@@ -278,7 +285,8 @@
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Manor",
     "era_id": 1,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_manor_icon"
   },
   {
     "id": 14,
@@ -313,7 +321,8 @@
       "29500f30e21180a7b5bcf9825899020e",
       "29500f30e21180dcbb49f1aa7336abfc"
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_storehouse_icon"
   },
   {
     "id": 15,
@@ -347,7 +356,8 @@
       "29500f30e21180f4ad0bcbbc785bfa25",
       "29500f30e211807f9bf0f7e80238f103"
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_granary_icon"
   },
   {
     "id": 16,
@@ -377,7 +387,8 @@
     "e_uma_construcao_usada_como_ponto_de_entrega_de_ouro": "goldaom:.",
     "era_id": 1,
     "tecnologias_id": "29500f30e2118049b752f3de95be8821",
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_mining_camp_icon"
   },
   {
     "id": 17,
@@ -408,7 +419,8 @@
       "29500f30e21180659739d32e99305c79",
       "2a800f30e211806fa17bf4221b198d40"
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_lumber_camp_icon"
   },
   {
     "id": 18,
@@ -441,7 +453,8 @@
       "2a800f30e21180e0875ce61333b69184",
       "2a800f30e2118074804dc972fcba2406"
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_granary_icon"
   },
   {
     "id": 19,
@@ -474,7 +487,8 @@
       "29500f30e2118042bc49d5bd9f416771",
       "2a900f30e211804eba64f2122c0e6c97"
     ],
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_economic_guild_icon"
   },
   {
     "id": 20,
@@ -507,7 +521,8 @@
       "2e700f30e21180b48bd8c64c34db9dbd",
       "2b200f30e21180d88cbbe6e49f2601e4"
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_silo"
   },
   {
     "id": 21,
@@ -588,7 +603,8 @@
       153,
       152
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 22,
@@ -644,7 +660,8 @@
       102,
       103
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 23,
@@ -706,7 +723,8 @@
       105,
       106
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 24,
@@ -767,7 +785,8 @@
       108,
       109
     ],
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 25,
@@ -825,7 +844,8 @@
       111,
       112
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 26,
@@ -883,7 +903,8 @@
       131,
       126
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 27,
@@ -924,7 +945,8 @@
       "2a300f30e21180b182ecc1ac1228b58e",
       "2a300f30e21180c3a363ff2c9735b1dc"
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_armory_icon"
   },
   {
     "id": 28,
@@ -955,7 +977,8 @@
       "2a800f30e211809ba1cef6c6f9e36237",
       "2a800f30e21180c4b3e2d478e79f2149"
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_armory_icon"
   },
   {
     "id": 29,
@@ -980,7 +1003,8 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_id": "2a800f30e21180d48ffbe93f81fd8799",
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_armory_icon"
   },
   {
     "id": 31,
@@ -1009,7 +1033,8 @@
       "2b200f30e211804a84a1fec3a7c4a562",
       "2b200f30e211804b97a2e6a44b5006cb"
     ],
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_armory_icon"
   },
   {
     "id": 32,
@@ -1038,7 +1063,8 @@
       "2b200f30e211808b812ae6fc4e0312d7",
       "2b200f30e21180d0bf1dd6400b9f1556"
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_armory_icon"
   },
   {
     "id": 33,
@@ -1066,7 +1092,8 @@
       "2b800f30e2118058a272e2a065789876",
       "2b200f30e2118018adf6d40212380afa"
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_armory_icon"
   },
   {
     "id": 34,
@@ -1096,7 +1123,8 @@
       "2a800f30e21180e0ba88ed7447dce7a7",
       "2a800f30e21180e38fede4fb52e77dc0"
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_dwarven_armory_icon"
   },
   {
     "id": 35,
@@ -1135,7 +1163,8 @@
       4,
       1
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_military_academy_icon"
   },
   {
     "id": 36,
@@ -1175,7 +1204,8 @@
       6,
       3
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_archery_range_icon"
   },
   {
     "id": 37,
@@ -1214,7 +1244,8 @@
       5,
       2
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_stable_icon"
   },
   {
     "id": 38,
@@ -1266,7 +1297,8 @@
       9,
       7
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_barracks_icon"
   },
   {
     "id": 39,
@@ -1313,7 +1345,8 @@
       15,
       14
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_longhouse_icon"
   },
   {
     "id": 40,
@@ -1359,7 +1392,8 @@
       63,
       85
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_great_hall_icon"
   },
   {
     "id": 41,
@@ -1404,7 +1438,8 @@
       20,
       25
     ],
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_military_barracks_icon"
   },
   {
     "id": 42,
@@ -1446,7 +1481,8 @@
       21,
       22
     ],
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_counter-barracks_icon"
   },
   {
     "id": 43,
@@ -1491,7 +1527,8 @@
       27,
       26
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_military_academy_icon"
   },
   {
     "id": 44,
@@ -1535,7 +1572,8 @@
       125,
       117
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_imperial_academy"
   },
   {
     "id": 45,
@@ -1573,7 +1611,8 @@
       29,
       30
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_machine_workshop"
   },
   {
     "id": 46,
@@ -1601,7 +1640,8 @@
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_dock_icon"
   },
   {
     "id": 47,
@@ -1629,7 +1669,8 @@
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_dock_icon"
   },
   {
     "id": 48,
@@ -1657,7 +1698,8 @@
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_dock_icon"
   },
   {
     "id": 49,
@@ -1685,7 +1727,8 @@
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_dock_icon"
   },
   {
     "id": 50,
@@ -1713,7 +1756,8 @@
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_dock_icon"
   },
   {
     "id": 51,
@@ -1742,7 +1786,8 @@
       "29500f30e2118059a1b9cb7351f3fe54",
       "29500f30e2118074bdebccf07983108e"
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_market_icon"
   },
   {
     "id": 52,
@@ -1767,7 +1812,8 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_id": "2a800f30e211802bad29c6756f35589e",
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_market_icon"
   },
   {
     "id": 53,
@@ -1790,7 +1836,8 @@
     "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_market_icon"
   },
   {
     "id": 54,
@@ -1813,7 +1860,8 @@
     "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_market_icon"
   },
   {
     "id": 55,
@@ -1838,7 +1886,8 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_id": "2b200f30e2118032a6c1e0ccba610132",
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_market_icon"
   },
   {
     "id": 56,
@@ -1861,7 +1910,8 @@
     "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_market_icon"
   },
   {
     "id": 57,
@@ -1907,7 +1957,8 @@
       95,
       151
     ],
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_fortress_icon"
   },
   {
     "id": 58,
@@ -1957,7 +2008,8 @@
       10,
       13
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_migdol_stronghold_icon"
   },
   {
     "id": 59,
@@ -1999,7 +2051,8 @@
       "2a900f30e211801cb4adf8d956252fc7"
     ],
     "unidades_id": 18,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_hill_fort_icon"
   },
   {
     "id": 60,
@@ -2040,7 +2093,8 @@
       "2b200f30e21180efb921dd12bf870b01"
     ],
     "unidades_id": 37,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_palace_icon"
   },
   {
     "id": 61,
@@ -2082,7 +2136,8 @@
       31,
       38
     ],
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_baolei"
   },
   {
     "id": 62,
@@ -2116,7 +2171,8 @@
       "29500f30e2118039ad21d9884f5fa8c3",
       "2a800f30e211805e880ce9d31cf36125"
     ],
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_siege_works_icon"
   },
   {
     "id": 63,
@@ -2154,7 +2210,8 @@
       33,
       143
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_dojo_icon"
   },
   {
     "id": 64,
@@ -2191,7 +2248,8 @@
       "2b800f30e21180b7a9ecc0a20e4e8887",
       "2b200f30e21180f39f31dce7c16d3603"
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_shrine_icon"
   },
   {
     "id": 65,
@@ -2230,7 +2288,8 @@
       141,
       142
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_guardhouse_icon"
   },
   {
     "id": 66,
@@ -2266,7 +2325,8 @@
       145,
       147
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_stable_icon"
   },
   {
     "id": 67,
@@ -2300,7 +2360,8 @@
       "29500f30e2118042bc49d5bd9f416771",
       "2b200f30e21180cb983dc6c216d0a397"
     ],
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_watermill_icon"
   },
   {
     "id": 68,
@@ -2344,7 +2405,8 @@
       "2b800f30e2118030b6a5cd2404f42222"
     ],
     "unidades_id": 146,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_castle_icon"
   },
   {
     "id": 69,
@@ -2371,7 +2433,8 @@
     "tecnologias_ids": [
       "29500f30e21180fc98ccddb7862a6e7c",
       "29500f30e211803c87cedcb432ce6273"
-    ]
+    ],
+    "icon": "aomr_wooden_wall_icon"
   },
   {
     "id": 70,
@@ -2412,7 +2475,8 @@
       "29500f30e211807e80e9de45423abf02",
       "2b200f30e211803da085df69958bf2c0",
       "2b200f30e21180959b79cf558a439244"
-    ]
+    ],
+    "icon": "aomr_sentry_tower_icon"
   },
   {
     "id": 71,
@@ -2434,7 +2498,8 @@
     "era": "Mítica :aomr_mythic_age_icon:",
     "ingles": "Wonder",
     "tempo_construir_segundos": 5400,
-    "era_id": 4
+    "era_id": 4,
+    "icon": "aomr_wonder_icon"
   },
   {
     "id": 72,
@@ -2455,7 +2520,8 @@
     "tecnologias": "Colheita de Inverno",
     "era_id": 1,
     "tecnologias_id": "2a900f30e211807fa7a0c6b01fd9de68",
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_ox_cart_icon"
   },
   {
     "id": 73,
@@ -2483,7 +2549,8 @@
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_calpulli_icon"
   },
   {
     "id": 74,
@@ -2512,7 +2579,8 @@
       162,
       163
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": null
   },
   {
     "id": 75,
@@ -2542,7 +2610,8 @@
       165,
       167
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": null
   },
   {
     "id": 76,
@@ -2576,7 +2645,8 @@
     "unidades_ids": [
       161
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_temple_icon"
   },
   {
     "id": 77,
@@ -2622,7 +2692,8 @@
       170,
       171
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": null
   },
   {
     "id": 79,
@@ -2661,6 +2732,7 @@
     "unidades_ids": [
       160
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_town_center_greek_icon"
   }
 ]

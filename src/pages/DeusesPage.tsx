@@ -66,7 +66,7 @@ export function DeusesPage() {
                   <MetaNotionLine parts={[d.panteao, d.era]} />
                 </span>
               }
-              watermarkSrc={getDeusAssetUrl(d.nome)}
+              watermarkSrc={getDeusAssetUrl(d)}
             />
           </li>
         ))}

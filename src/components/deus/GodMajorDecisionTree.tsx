@@ -16,7 +16,7 @@ function PortraitLink({
   size?: "md" | "lg";
   className?: string;
 }) {
-  const src = getDeusAssetUrl(deus.nome);
+  const src = getDeusAssetUrl(deus);
   const slug = deusSlugById.get(deus.id) ?? String(deus.id);
   const box =
     size === "lg"

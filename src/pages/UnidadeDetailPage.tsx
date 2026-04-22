@@ -25,7 +25,7 @@ export function UnidadeDetailPage() {
     );
   }
 
-  const unidadeIcon = getUnidadeAssetUrl(u.ingles);
+  const unidadeIcon = getUnidadeAssetUrl(u);
 
   return (
     <div>

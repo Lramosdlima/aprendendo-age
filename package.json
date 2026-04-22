@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "data:notion": "python scripts/build_notion_supplement.py",
+    "data:assign-icons": "node scripts/assign-entity-icons.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -7,7 +7,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_acropolis_icon"
   },
   {
     "nome": "Alfheim",
@@ -17,7 +18,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_alfheim_icon"
   },
   {
     "nome": "Anatólia",
@@ -27,7 +29,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_anatolia_icon"
   },
   {
     "nome": "Arena",
@@ -37,7 +40,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_arena_icon"
   },
   {
     "nome": "Arquipélago",
@@ -47,7 +51,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_archipelago_icon"
   },
   {
     "nome": "Aïr",
@@ -57,7 +62,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_air_icon"
   },
   {
     "nome": "Bosque de Bambu",
@@ -67,7 +73,8 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_bamboo_grove_icon"
   },
   {
     "nome": "Buraco d’Água",
@@ -77,7 +84,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_watering_hole_icon"
   },
   {
     "nome": "Corrida do Ouro",
@@ -87,7 +95,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_gold_rush_icon"
   },
   {
     "nome": "Dança da Cobra",
@@ -97,7 +106,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": false,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_snake_dance_icon"
   },
   {
     "nome": "Elísio",
@@ -107,7 +117,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_elysium_icon"
   },
   {
     "nome": "Estepe",
@@ -117,7 +128,8 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_steppe_icon"
   },
   {
     "nome": "Floresta das Trevas",
@@ -127,7 +139,8 @@
     "origem": "AoM: Tale of the Dragon (2016)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_mirkwood_icon"
   },
   {
     "nome": "Floresta de Ferro",
@@ -137,7 +150,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_ironwood_icon"
   },
   {
     "nome": "Gizé",
@@ -147,7 +161,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_giza_icon"
   },
   {
     "nome": "Grande Muralha",
@@ -157,7 +172,8 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_great_wall_icon"
   },
   {
     "nome": "Ilhas",
@@ -167,7 +183,8 @@
     "origem": "AoM: Titans (2003)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_islands_icon"
   },
   {
     "nome": "Jotunheim",
@@ -177,7 +194,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_jotunheim_icon"
   },
   {
     "nome": "Kerlaugar",
@@ -187,7 +205,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_kerlaugar_icon"
   },
   {
     "nome": "Kii",
@@ -197,7 +216,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_kii_icon"
   },
   {
     "nome": "Lago Fantasma",
@@ -207,7 +227,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_ghost_lake_icon"
   },
   {
     "nome": "Lago Qinghai",
@@ -217,7 +238,8 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_qinghai_lake_icon"
   },
   {
     "nome": "Lagoa Azul",
@@ -227,7 +249,8 @@
     "origem": "AoM: Tale of the Dragon (2016)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_blue_lagoon_icon"
   },
   {
     "nome": "Mar dos Vermes",
@@ -237,7 +260,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_sea_of_worms_icon"
   },
   {
     "nome": "Mar Negro",
@@ -247,7 +271,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_black_sea_icon"
   },
   {
     "nome": "Mediterrâneo",
@@ -257,7 +282,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_mediterranean_icon"
   },
   {
     "nome": "Megalópole",
@@ -267,7 +293,8 @@
     "origem": "AoM: Titans (2003)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_megalopolis_icon"
   },
   {
     "nome": "Midgard",
@@ -277,7 +304,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_midgard_icon"
   },
   {
     "nome": "Migração de Equipe",
@@ -287,7 +315,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_team_migration_icon"
   },
   {
     "nome": "Miragem",
@@ -297,7 +326,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_mirage_icon"
   },
   {
     "nome": "Monte Olimpo",
@@ -307,7 +337,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_mount_olympus_icon"
   },
   {
     "nome": "Muspellheim",
@@ -317,7 +348,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_muspellheim_icon"
   },
   {
     "nome": "Nômade",
@@ -327,7 +359,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_nomad_icon"
   },
   {
     "nome": "Nômade de Terra",
@@ -337,7 +370,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_land_nomad_icon"
   },
   {
     "nome": "Okuchichibu",
@@ -347,7 +381,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_okuchichibu_icon"
   },
   {
     "nome": "Oásis",
@@ -360,7 +395,8 @@
     "tipo": "Terra 🌳",
     "no_oasis_so_tem_1_zona_de_caca_inicial": "aomr_caribou_icon: na sua base junto com as frutinhas :aomr_berry_bush_icon: e galinhas :aomr_chicken_icon:. Por causa disso, sair da base é quase que imediato após a passagem para Clássica :aomr_classical_age_icon:.",
     "entao_sabendo_disso_voce_podera_raidar_seu_rival_muito_cedo_porem_nesse_mapa_tambem_tem_muita_cabra": "aomr_goat_icon:. Então se você for alvo dessa agressividade, você poderá recorrer as suas cabras :aomr_goat_icon:.",
-    "esse_mapa_existem_3_variacoes": ""
+    "esse_mapa_existem_3_variacoes": "",
+    "icon": "aomr_oasis_icon"
   },
   {
     "nome": "Pastagens de Aso",
@@ -370,7 +406,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_aso_grasslands_icon"
   },
   {
     "nome": "Planalto",
@@ -380,7 +417,8 @@
     "origem": "AoM: Titans (2003)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_highland_icon"
   },
   {
     "nome": "Pântano",
@@ -390,7 +428,8 @@
     "origem": "AoM: Titans (2003)",
     "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_marsh_icon"
   },
   {
     "nome": "Rio Amarelo",
@@ -400,7 +439,8 @@
     "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_yellow_river_icon"
   },
   {
     "nome": "Rio Estige",
@@ -410,7 +450,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_river_styx_icon"
   },
   {
     "nome": "Rio Nilo",
@@ -420,7 +461,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_river_nile_icon"
   },
   {
     "nome": "Rota da Seda",
@@ -430,7 +472,8 @@
     "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_silk_road_icon"
   },
   {
     "nome": "Savana",
@@ -440,7 +483,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_savannah_icon"
   },
   {
     "nome": "Senjōgahara",
@@ -450,7 +494,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_senjogahara_icon"
   },
   {
     "nome": "Setonaikai",
@@ -460,7 +505,8 @@
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_setonaikai_icon"
   },
   {
     "nome": "Terra da Flor de Pêssego",
@@ -470,7 +516,8 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_peach_blossom_land_icon"
   },
   {
     "nome": "Tundra",
@@ -480,7 +527,8 @@
     "origem": "AoM: Titans (2003)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_tundra_icon"
   },
   {
     "nome": "Vale dos Reis",
@@ -490,7 +538,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_valley_of_kings_icon"
   },
   {
     "nome": "Vaus do Nilo",
@@ -500,7 +549,8 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_nile_shallows_icon"
   },
   {
     "nome": "Vaus do Nilo",
@@ -509,7 +559,8 @@
     "saiu_da_ranqueada": false,
     "padrao": true,
     "partidas_rapidas": true,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_nile_shallows_icon"
   },
   {
     "nome": "Vinlandsaga",
@@ -519,7 +570,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊"
+    "tipo": "Naval 🌊",
+    "icon": "aomr_vinlandsaga_icon"
   },
   {
     "nome": "Érebo",
@@ -529,7 +581,8 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_erebus_icon"
   },
   {
     "nome": "Travessia do Rio de Sangue",
@@ -539,7 +592,8 @@
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳"
+    "tipo": "Naval 🌊, Terra 🌳",
+    "icon": "aomr_blood_river_crossing_icon"
   },
   {
     "nome": "Floresta Nebulosa",
@@ -549,7 +603,8 @@
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_cloud_forest_icon"
   },
   {
     "nome": "Crista de Obsidiana",
@@ -559,7 +614,8 @@
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_obsidian_ridge_icon"
   },
   {
     "nome": "Templo da Lua Jaguar",
@@ -569,7 +625,8 @@
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_temple_of_the_jaguar_moon_icon"
   },
   {
     "nome": "Vale da Serpente do Sol",
@@ -579,6 +636,7 @@
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Terra 🌳",
+    "icon": "aomr_valley_of_the_sun_serpent_icon"
   }
 ]

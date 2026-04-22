@@ -72,7 +72,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_zeus_icon"
   },
   {
     "id": 2,
@@ -147,7 +148,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_poseidon_icon"
   },
   {
     "id": 3,
@@ -223,7 +225,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_hades_icon"
   },
   {
     "id": 4,
@@ -309,7 +312,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_ra_icon"
   },
   {
     "id": 5,
@@ -396,7 +400,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_isis_icon"
   },
   {
     "id": 6,
@@ -484,7 +489,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_set_icon"
   },
   {
     "id": 7,
@@ -556,7 +562,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_thor_icon"
   },
   {
     "id": 8,
@@ -630,7 +637,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_odin_icon"
   },
   {
     "id": 9,
@@ -703,7 +711,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_loki_icon"
   },
   {
     "id": 10,
@@ -773,7 +782,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_oranos_icon"
   },
   {
     "id": 11,
@@ -843,7 +853,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_gaia_icon"
   },
   {
     "id": 12,
@@ -913,7 +924,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_kronos_icon"
   },
   {
     "id": 13,
@@ -1011,7 +1023,8 @@
           "texto": "Soldados Humanos :aomr_type_human_soldier_icon: e Armas de Cerco :aomr_type_siege_weapon_icon: causam +10% de dano."
         }
       ]
-    }
+    },
+    "icon": "aomr_fuxi_icon"
   },
   {
     "id": 14,
@@ -1122,7 +1135,8 @@
           "texto": "Ao passar o cursor sobre o ícone de Auspício do Criador :aomr_creators_auspice_icon:, no lado direito da barra de ferramentas de poder divino, são exibidos os bônus atuais e a quantidade de favores necessária para alcançar o próximo nível."
         }
       ]
-    }
+    },
+    "icon": "aomr_nuwa_icon"
   },
   {
     "id": 15,
@@ -1243,7 +1257,8 @@
           "texto": "Assim que um Templo :aomr_temple_icon: for construído, a unidade surge e a próxima unidade é escolhida. Portanto, qualquer favor :favoraom: obtido entre o momento em que o Ponto de Recompensa atingiu 1 e o momento em que o Templo foi construído não contribui para a redução dos Pontos de Recompensa da próxima unidade."
         }
       ]
-    }
+    },
+    "icon": "aomr_shennong_icon"
   },
   {
     "id": 16,
@@ -1306,7 +1321,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_freyr_icon"
   },
   {
     "id": 17,
@@ -1377,7 +1393,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_amaterasu_icon"
   },
   {
     "id": 18,
@@ -1452,7 +1469,8 @@
           "texto": "+4%/8%/12%/16%/20%/25%"
         }
       ]
-    }
+    },
+    "icon": "aomr_tsukuyomi_icon"
   },
   {
     "id": 19,
@@ -1525,7 +1543,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_susanoo_icon"
   },
   {
     "id": 20,
@@ -1550,7 +1569,8 @@
       "29c00f30e21180759b36c8ba7ce6ef9f"
     ],
     "unidades_exclusivas_id": 41,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hermes_icon"
   },
   {
     "id": 21,
@@ -1575,7 +1595,8 @@
       "29c00f30e21180788e59e0d681ae792d"
     ],
     "unidades_exclusivas_id": 40,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_athena_icon"
   },
   {
     "id": 22,
@@ -1601,7 +1622,8 @@
       "29c00f30e21180258e23e54a0af72cc4"
     ],
     "unidades_exclusivas_id": 42,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_ares_icon"
   },
   {
     "id": 23,
@@ -1626,7 +1648,8 @@
       "2a200f30e21180fc92e2d7108bd8a502"
     ],
     "unidades_exclusivas_id": 67,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_apollo_icon"
   },
   {
     "id": 24,
@@ -1651,7 +1674,8 @@
       "2a300f30e21180eeb2a7d048b868fc10"
     ],
     "unidades_exclusivas_id": 66,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_dionysus_icon"
   },
   {
     "id": 25,
@@ -1676,7 +1700,8 @@
       "2a300f30e21180b09e65eb23a0b41842"
     ],
     "unidades_exclusivas_id": 68,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_aphrodite_icon"
   },
   {
     "id": 26,
@@ -1703,7 +1728,8 @@
       "2a300f30e21180b182ecc1ac1228b58e"
     ],
     "unidades_exclusivas_id": 99,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hephaestus_icon"
   },
   {
     "id": 27,
@@ -1725,7 +1751,8 @@
       "2a300f30e21180ee9462e1ec5bbb9910"
     ],
     "unidades_exclusivas_id": 98,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hera_icon"
   },
   {
     "id": 28,
@@ -1750,7 +1777,8 @@
       "2a300f30e2118013af89e59776ea95ef"
     ],
     "unidades_exclusivas_id": 100,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_artemis_icon"
   },
   {
     "id": 29,
@@ -1776,7 +1804,8 @@
       "2a800f30e211806091bfd3661e4e477b"
     ],
     "unidades_exclusivas_id": 45,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_bast_icon"
   },
   {
     "id": 30,
@@ -1802,7 +1831,8 @@
       "2a800f30e2118074804dc972fcba2406"
     ],
     "unidades_exclusivas_id": 44,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_ptah_icon"
   },
   {
     "id": 31,
@@ -1827,7 +1857,8 @@
       "2a800f30e211802f8b4bdb6e2828032b"
     ],
     "unidades_exclusivas_id": 43,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_anubis_icon"
   },
   {
     "id": 32,
@@ -1852,7 +1883,8 @@
       "2a800f30e211802bad29c6756f35589e"
     ],
     "unidades_exclusivas_id": 69,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_sobek_icon"
   },
   {
     "id": 33,
@@ -1877,7 +1909,8 @@
       "2a800f30e21180b79c4cffa74be0f021"
     ],
     "unidades_exclusivas_id": 71,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_nephthys_icon"
   },
   {
     "id": 34,
@@ -1903,7 +1936,8 @@
       "2a800f30e211805e880ce9d31cf36125"
     ],
     "unidades_exclusivas_id": 70,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_sekhmet_icon"
   },
   {
     "id": 35,
@@ -1928,7 +1962,8 @@
       "2a800f30e21180e69109fc480672f10c"
     ],
     "unidades_exclusivas_id": 101,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_osiris_icon"
   },
   {
     "id": 36,
@@ -1953,7 +1988,8 @@
       "2a800f30e21180c8a482c0b6a3a4bb67"
     ],
     "unidades_exclusivas_id": 103,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_thoth_icon"
   },
   {
     "id": 37,
@@ -1978,7 +2014,8 @@
       "2a800f30e2118023ac3bef5775253d27"
     ],
     "unidades_exclusivas_id": 102,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_horus_icon"
   },
   {
     "id": 38,
@@ -2004,7 +2041,8 @@
       "2a800f30e21180b8aebbc80e4f4cffd8"
     ],
     "unidades_exclusivas_id": 49,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_freyja_icon"
   },
   {
     "id": 39,
@@ -2029,7 +2067,8 @@
       "2a800f30e211800cbaf6eb0419979ee3"
     ],
     "unidades_exclusivas_id": 47,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_heimdall_icon"
   },
   {
     "id": 40,
@@ -2054,7 +2093,8 @@
       "2a800f30e211805688fff37030b9586a"
     ],
     "unidades_exclusivas_id": 46,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_forseti_icon"
   },
   {
     "id": 41,
@@ -2079,7 +2119,8 @@
       "2a900f30e211804ab931df2a2349c682"
     ],
     "unidades_exclusivas_id": 74,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_njord_icon"
   },
   {
     "id": 42,
@@ -2104,7 +2145,8 @@
       "2a900f30e211807fa7a0c6b01fd9de68"
     ],
     "unidades_exclusivas_id": 72,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_skadi_icon"
   },
   {
     "id": 43,
@@ -2130,7 +2172,8 @@
       "2a900f30e211800fbd28d98924212fa8"
     ],
     "unidades_exclusivas_id": 73,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_bragi_icon"
   },
   {
     "id": 44,
@@ -2154,7 +2197,8 @@
       "2a900f30e211806c8877e3f5f3e19f4a"
     ],
     "unidades_exclusivas_id": 104,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_baldr_icon"
   },
   {
     "id": 45,
@@ -2179,7 +2223,8 @@
       "2a900f30e211801cb4adf8d956252fc7"
     ],
     "unidades_exclusivas_id": 105,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_tyr_icon"
   },
   {
     "id": 46,
@@ -2207,7 +2252,8 @@
       72,
       104
     ],
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_hel_icon"
   },
   {
     "id": 47,
@@ -2232,7 +2278,8 @@
       "2b200f30e211806ea2daec0f573a267f"
     ],
     "unidades_exclusivas_id": 53,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_leto_icon"
   },
   {
     "id": 48,
@@ -2257,7 +2304,8 @@
       "2a900f30e211804eba64f2122c0e6c97"
     ],
     "unidades_exclusivas_id": 51,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_prometheus_icon"
   },
   {
     "id": 49,
@@ -2282,7 +2330,8 @@
       "2b200f30e2118062b790e674e91166ac"
     ],
     "unidades_exclusivas_id": 54,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_oceanus_icon"
   },
   {
     "id": 50,
@@ -2307,7 +2356,8 @@
       "2b200f30e2118087aa4ee25ad7dfe66a"
     ],
     "unidades_exclusivas_id": 76,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_rheia_icon"
   },
   {
     "id": 51,
@@ -2332,7 +2382,8 @@
       "2b200f30e211803290abccfacca52734"
     ],
     "unidades_exclusivas_id": 77,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_hyperion_icon"
   },
   {
     "id": 52,
@@ -2357,7 +2408,8 @@
       "2b200f30e211801aad20f88523ad31de"
     ],
     "unidades_exclusivas_id": 78,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_theia_icon"
   },
   {
     "id": 53,
@@ -2382,7 +2434,8 @@
       "2b200f30e21180efb921dd12bf870b01"
     ],
     "unidades_exclusivas_id": 108,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_atlas_icon"
   },
   {
     "id": 54,
@@ -2407,7 +2460,8 @@
       "2b200f30e2118059ad61d631d44062d6"
     ],
     "unidades_exclusivas_id": 107,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_helios_icon"
   },
   {
     "id": 55,
@@ -2432,7 +2486,8 @@
       "2b200f30e211802fb706c9f185647749"
     ],
     "unidades_exclusivas_id": 109,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_hekate_icon"
   },
   {
     "id": 56,
@@ -2457,7 +2512,8 @@
       "2b200f30e2118071942ad13e2396e100"
     ],
     "unidades_exclusivas_id": 55,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_xuannu_icon"
   },
   {
     "id": 57,
@@ -2483,7 +2539,8 @@
       "2b200f30e21180a7bca8f3a9a8b1fa5d"
     ],
     "unidades_exclusivas_id": 56,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_chiyou_icon"
   },
   {
     "id": 58,
@@ -2509,7 +2566,8 @@
       "2b200f30e2118001a2ccec86f136fb1d"
     ],
     "unidades_exclusivas_id": 57,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_houtu_icon"
   },
   {
     "id": 59,
@@ -2534,7 +2592,8 @@
       "2b200f30e21180debeabd569ad6f990c"
     ],
     "unidades_exclusivas_id": 79,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_goumang_icon"
   },
   {
     "id": 60,
@@ -2559,7 +2618,8 @@
       "2b200f30e2118042a93be5376625d188"
     ],
     "unidades_exclusivas_id": 80,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_nuba_icon"
   },
   {
     "id": 61,
@@ -2584,7 +2644,8 @@
       "2b200f30e2118032a6c1e0ccba610132"
     ],
     "unidades_exclusivas_id": 81,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_rushou_icon"
   },
   {
     "id": 62,
@@ -2610,7 +2671,8 @@
       "2b200f30e211808b812ae6fc4e0312d7"
     ],
     "unidades_exclusivas_id": 111,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_gonggong_icon"
   },
   {
     "id": 63,
@@ -2636,7 +2698,8 @@
       "2b200f30e21180c2a258fc68dd0ae68e"
     ],
     "unidades_exclusivas_id": 110,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_huangdi_icon"
   },
   {
     "id": 64,
@@ -2662,7 +2725,8 @@
       "2e700f30e21180b48bd8c64c34db9dbd"
     ],
     "unidades_exclusivas_id": 112,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_zhurong_icon"
   },
   {
     "id": 65,
@@ -2685,7 +2749,8 @@
       "2a800f30e21180348ba3e55c08f5140a"
     ],
     "unidades_exclusivas_id": 50,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_ullr_icon"
   },
   {
     "id": 66,
@@ -2707,7 +2772,8 @@
       "2a900f30e2118010a690fbf217e3c32b"
     ],
     "unidades_exclusivas_id": 75,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_aegir_icon"
   },
   {
     "id": 67,
@@ -2730,7 +2796,8 @@
       "2a900f30e21180658ddefad6beba267d"
     ],
     "unidades_exclusivas_id": 106,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_vidar_icon"
   },
   {
     "id": 68,
@@ -2755,7 +2822,8 @@
       "2b200f30e21180f39f31dce7c16d3603"
     ],
     "unidades_exclusivas_id": 127,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_ame-no-uzume_icon"
   },
   {
     "id": 69,
@@ -2781,7 +2849,8 @@
       "2b200f30e21180eba3deda5849dc874f"
     ],
     "unidades_exclusivas_id": 128,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_minakatatomi_icon"
   },
   {
     "id": 70,
@@ -2807,7 +2876,8 @@
       "2b200f30e211809b9123e457fe540a6c"
     ],
     "unidades_exclusivas_id": 129,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_inari_okami_icon"
   },
   {
     "id": 71,
@@ -2832,7 +2902,8 @@
       "2b800f30e21180b78c19f0f808233a29"
     ],
     "unidades_exclusivas_id": 130,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_hachiman_icon"
   },
   {
     "id": 72,
@@ -2857,7 +2928,8 @@
       "2b800f30e21180b1b973eaf506086fb9"
     ],
     "unidades_exclusivas_id": 132,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_fujin_icon"
   },
   {
     "id": 73,
@@ -2882,7 +2954,8 @@
       "2b800f30e21180398f63c9c8f02bc121"
     ],
     "unidades_exclusivas_id": 131,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_raijin_icon"
   },
   {
     "id": 74,
@@ -2908,7 +2981,8 @@
       "2b800f30e2118097b8bffddb78c8cf32"
     ],
     "unidades_exclusivas_id": 136,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_takemikazuchi_icon"
   },
   {
     "id": 75,
@@ -2933,7 +3007,8 @@
       "2b800f30e21180ed8d15c42cfd146ae8"
     ],
     "unidades_exclusivas_id": 135,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_okuninushi_icon"
   },
   {
     "id": 76,
@@ -2959,7 +3034,8 @@
       "2b800f30e21180e090a2da68a3892f45"
     ],
     "unidades_exclusivas_id": 134,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_watatsumi_icon"
   },
   {
     "id": 78,
@@ -3016,7 +3092,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_demeter_icon"
   },
   {
     "id": 79,
@@ -3038,7 +3115,8 @@
       "30300f30e2118057afbfcce92d0d71c2"
     ],
     "unidades_exclusivas_id": 152,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_pan_icon"
   },
   {
     "id": 80,
@@ -3060,7 +3138,8 @@
       "30300f30e211808f98befcee372d38c1"
     ],
     "unidades_exclusivas_id": 153,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_hestia_icon"
   },
   {
     "id": 81,
@@ -3082,7 +3161,8 @@
       "30300f30e21180b2ac97e756590b0e00"
     ],
     "unidades_exclusivas_id": 154,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_persephone_icon"
   },
   {
     "id": 82,
@@ -3119,7 +3199,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_quetzalcoatl_icon"
   },
   {
     "id": 83,
@@ -3155,7 +3236,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_tezcatlipoca_icon"
   },
   {
     "id": 84,
@@ -3191,7 +3273,8 @@
           ]
         }
       ]
-    }
+    },
+    "icon": "aomr_huitzilopochtli_icon"
   },
   {
     "id": 85,
@@ -3207,7 +3290,8 @@
       84,
       83
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_malinalxochitl_icon"
   },
   {
     "id": 86,
@@ -3223,7 +3307,8 @@
       83,
       82
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_huehuecoyotl_icon"
   },
   {
     "id": 87,
@@ -3239,7 +3324,8 @@
       84,
       82
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_patecatl_icon"
   },
   {
     "id": 88,
@@ -3255,7 +3341,8 @@
       84,
       83
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_itzpapalotl_icon"
   },
   {
     "id": 89,
@@ -3271,7 +3358,8 @@
       84,
       82
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_coatlicue_icon"
   },
   {
     "id": 90,
@@ -3287,7 +3375,8 @@
       83,
       82
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_coyolxauhqui_icon"
   },
   {
     "id": 91,
@@ -3303,7 +3392,8 @@
       84,
       82
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_tlaloc_icon"
   },
   {
     "id": 92,
@@ -3319,7 +3409,8 @@
       83,
       82
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_xolotl_icon"
   },
   {
     "id": 93,
@@ -3335,6 +3426,7 @@
       84,
       83
     ],
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_mictlantecuhtli_icon"
   }
 ]

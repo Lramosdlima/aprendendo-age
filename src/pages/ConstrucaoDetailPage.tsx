@@ -36,7 +36,7 @@ export function ConstrucaoDetailPage() {
   }
 
   const era = c.era_id != null ? eraById.get(c.era_id) : undefined;
-  const construcaoIcon = getConstrucaoAssetUrl(c.ingles);
+  const construcaoIcon = getConstrucaoAssetUrl(c);
   const panteao = c.panteao_id != null ? panteaoById.get(c.panteao_id) : undefined;
 
   const unidadeLinks = (c.unidades_ids ?? [])

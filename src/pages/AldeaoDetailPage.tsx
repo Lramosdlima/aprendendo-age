@@ -22,7 +22,7 @@ export function AldeaoDetailPage() {
   }
 
   const panteao = a.panteao_id != null ? panteaoById.get(a.panteao_id) : undefined;
-  const aldeaoIcon = getAldeaoAssetUrl(a.ingles);
+  const aldeaoIcon = getAldeaoAssetUrl(a);
 
   return (
     <div>

@@ -73,8 +73,8 @@ export function GodpowerComparePage() {
     );
   }
 
-  const icon1 = getGodPowerAssetUrl(g1.ingles);
-  const icon2 = getGodPowerAssetUrl(g2.ingles);
+  const icon1 = getGodPowerAssetUrl(g1);
+  const icon2 = getGodPowerAssetUrl(g2);
 
   const [compareHeaderScrolled, setCompareHeaderScrolled] = useState(false);
 

@@ -24,7 +24,8 @@
     "mina_porcento": 0,
     "velocidade_construcao_porcento": 0,
     "panteao": "Grego",
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_settler_icon"
   },
   {
     "id": 2,
@@ -51,7 +52,8 @@
     "mina_porcento": 20,
     "velocidade_construcao_porcento": 0,
     "panteao": "Nórdico",
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_dwarf_icon"
   },
   {
     "id": 3,
@@ -78,7 +80,8 @@
     "mina_porcento": -20,
     "velocidade_construcao_porcento": -15,
     "panteao": "Chinês",
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_peasant_icon"
   },
   {
     "id": 4,
@@ -106,7 +109,8 @@
     "mina_porcento": "50,6%",
     "velocidade_construcao_porcento": 50,
     "panteao": "Atlante",
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_citizen_icon"
   },
   {
     "id": 5,
@@ -132,7 +136,8 @@
     "mina_porcento": "64,7%",
     "velocidade_construcao_porcento": 65,
     "panteao": "Atlante",
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_citizen_hero_icon"
   },
   {
     "id": 6,
@@ -159,7 +164,8 @@
     "mina_porcento": "-4,7%",
     "velocidade_construcao_porcento": 0,
     "panteao": "Nórdico",
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_gatherer_icon"
   },
   {
     "id": 7,
@@ -187,7 +193,8 @@
     "mina_porcento": 200,
     "velocidade_construcao_porcento": 200,
     "panteao": "Chinês",
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_kuafu_icon"
   },
   {
     "id": 8,
@@ -211,7 +218,8 @@
     "mina_porcento": 290,
     "velocidade_construcao_porcento": 290,
     "panteao": "Chinês",
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_kuafu_hero_icon"
   },
   {
     "id": 9,
@@ -238,7 +246,8 @@
     "mina_porcento": 0,
     "velocidade_construcao_porcento": 0,
     "panteao": "Japonês",
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_commoner_icon"
   },
   {
     "id": 10,
@@ -265,6 +274,7 @@
     "mina_porcento": -9,
     "velocidade_construcao_porcento": -25,
     "panteao": "Egípcio",
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_laborer_icon"
   }
 ]

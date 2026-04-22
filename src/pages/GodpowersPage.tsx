@@ -6,7 +6,7 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { godpowers, godpowerSlugById, panteaoById } from "@/data/catalog";
+import { deusById, godpowers, godpowerSlugById, panteaoById } from "@/data/catalog";
 import { formatGodNameForMetaNotion } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
@@ -89,6 +89,8 @@ export function GodpowersPage() {
           const slug = godpowerSlugById.get(g.id) ?? String(g.id);
           const selected = selectedSlugs.includes(slug);
           const selectDisabled = compareMode && selectedSlugs.length >= 2 && !selected;
+          const deus = g.god_id != null ? deusById.get(g.god_id) : undefined;
+          const godLine = deus ? formatGodNameForMetaNotion(deus) : g.god;
 
           return (
             <li key={g.id}>
@@ -97,8 +99,8 @@ export function GodpowersPage() {
                 title={g.nome}
                 cardTint={pantheonCardTint(panteaoById.get(g.panteao_id)?.nome ?? "")}
                 subtitle={g.descricao_resumida}
-                meta={<MetaNotionLine parts={[formatGodNameForMetaNotion(g.god), g.era, g.panteao]} />}
-                watermarkSrc={getGodPowerAssetUrl(g.ingles)}
+                meta={<MetaNotionLine parts={[godLine, g.era, g.panteao]} />}
+                watermarkSrc={getGodPowerAssetUrl(g)}
                 subtitleMinLines={3}
                 subtitleTag={false}
                 compareMode={compareMode}

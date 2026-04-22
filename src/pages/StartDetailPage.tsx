@@ -26,7 +26,7 @@ function startGodHeaderPortraits(labels: string[]): ReactNode {
       const d = deusByNome.get(nome);
       const slug = d ? deusSlugById.get(d.id) : undefined;
       if (!d || !slug) return null;
-      const src = getDeusAssetUrl(d.nome);
+      const src = getDeusAssetUrl(d);
       return { key: `${d.id}-${index}`, slug, nome: d.nome, src };
     })
     .filter((x): x is NonNullable<typeof x> => x != null);

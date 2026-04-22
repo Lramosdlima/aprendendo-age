@@ -32,7 +32,7 @@ export function PanteoesPage() {
               subtitle={p.description}
               meta={`${(p.deuses_ids ?? []).length} deuses`}
               subtitleTag={false}
-              watermarkSrc={getPantheonWatermarkUrl(p.id)}
+              watermarkSrc={getPantheonWatermarkUrl(p)}
             />
           </li>
         ))}

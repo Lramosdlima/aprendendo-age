@@ -31,8 +31,8 @@ export function UnidadeComparePage() {
     );
   }
 
-  const icon1 = getUnidadeAssetUrl(u1.ingles);
-  const icon2 = getUnidadeAssetUrl(u2.ingles);
+  const icon1 = getUnidadeAssetUrl(u1);
+  const icon2 = getUnidadeAssetUrl(u2);
 
   const [compareHeaderScrolled, setCompareHeaderScrolled] = useState(false);
 

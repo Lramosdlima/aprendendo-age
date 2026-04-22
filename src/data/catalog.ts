@@ -15,6 +15,8 @@ export type Mapa = {
   padrao: boolean;
   partidas_rapidas: boolean;
   tipo: string;
+  /** Token `aomr_…` em `token_asset_map` (preenchido no JSON; não deriva de `ingles`). */
+  icon: string | null;
 };
 import { buildIndexSlugMaps, buildRecordSlugMaps } from "@/lib/entitySlug";
 

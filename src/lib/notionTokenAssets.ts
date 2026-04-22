@@ -32,6 +32,14 @@ export function getTokenAssetUrl(token: string): string | undefined {
   return map[k] ?? TOKEN_FALLBACK_URL[k];
 }
 
+/** `icon` vindo de JSONs de dados (token `aomr_…` sem `:`) → URL pública. */
+export function getIconFieldUrl(icon: string | null | undefined): string | undefined {
+  if (icon == null) return undefined;
+  const t = String(icon).trim();
+  if (!t) return undefined;
+  return getTokenAssetUrl(t);
+}
+
 /** Padrão `:token:` usado nos exports Notion (letras, números, _ e -). */
 export const NOTION_TOKEN_IN_TEXT_RE = /:([a-z0-9_-]+):/gi;
 

@@ -14,7 +14,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 1,
     "era_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_bolt_icon"
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 2,
     "era_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_lure_power_icon"
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 3,
     "era_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_sentinel_power_icon"
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 4,
     "era_id": 1,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_rain_icon"
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 5,
     "era_id": 1,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_prosperity_icon"
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 6,
     "era_id": 1,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_vision_icon"
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 7,
     "era_id": 1,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_dwarven_mine_icon"
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 8,
     "era_id": 1,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_great_hunt_icon"
   },
   {
     "id": 9,
@@ -150,7 +158,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 9,
     "era_id": 1,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_spy_icon"
   },
   {
     "id": 10,
@@ -167,7 +176,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 10,
     "era_id": 1,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_shockwave_icon"
   },
   {
     "id": 11,
@@ -184,7 +194,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 11,
     "era_id": 1,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_gaia_forest_icon"
   },
   {
     "id": 12,
@@ -201,7 +212,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 12,
     "era_id": 1,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_deconstruction_icon"
   },
   {
     "id": 13,
@@ -218,7 +230,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 13,
     "era_id": 1,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_peachblossomspring_power"
   },
   {
     "id": 14,
@@ -235,7 +248,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 14,
     "era_id": 1,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_creation"
   },
   {
     "id": 15,
@@ -252,7 +266,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 15,
     "era_id": 1,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_prosperous_seeds"
   },
   {
     "id": 16,
@@ -269,7 +284,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 16,
     "era_id": 1,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_gullinbursti_icon"
   },
   {
     "id": 17,
@@ -286,7 +302,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 17,
     "era_id": 1,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_solar_shield"
   },
   {
     "id": 18,
@@ -303,7 +320,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 18,
     "era_id": 1,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_new_moon"
   },
   {
     "id": 19,
@@ -320,7 +338,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 19,
     "era_id": 1,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_kusanagi"
   },
   {
     "id": 20,
@@ -337,7 +356,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 20,
     "era_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_ceasefire_icon"
   },
   {
     "id": 21,
@@ -353,7 +373,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 21,
     "era_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_restoration_icon"
   },
   {
     "id": 22,
@@ -369,7 +390,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 22,
     "era_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_pestilence_icon"
   },
   {
     "id": 23,
@@ -385,7 +407,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 23,
     "era_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_underworld_passage_icon"
   },
   {
     "id": 24,
@@ -401,7 +424,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 24,
     "era_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_bronze_icon"
   },
   {
     "id": 25,
@@ -417,7 +441,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 25,
     "era_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_curse_icon"
   },
   {
     "id": 26,
@@ -433,7 +458,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 26,
     "era_id": 4,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_plenty_vault_icon"
   },
   {
     "id": 27,
@@ -449,7 +475,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 27,
     "era_id": 4,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_lightning_storm_icon"
   },
   {
     "id": 28,
@@ -465,7 +492,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 28,
     "era_id": 4,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_earthquake_icon"
   },
   {
     "id": 29,
@@ -481,7 +509,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 29,
     "era_id": 2,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_eclipse_icon"
   },
   {
     "id": 30,
@@ -497,7 +526,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 30,
     "era_id": 2,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_shifting_sands_icon"
   },
   {
     "id": 31,
@@ -513,7 +543,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 31,
     "era_id": 2,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_plague_of_serpents_icon"
   },
   {
     "id": 32,
@@ -529,7 +560,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 32,
     "era_id": 3,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_locust_swarm_icon"
   },
   {
     "id": 33,
@@ -545,7 +577,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 33,
     "era_id": 3,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_ancestors_icon"
   },
   {
     "id": 34,
@@ -561,7 +594,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 34,
     "era_id": 3,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_citadel_power_icon"
   },
   {
     "id": 35,
@@ -577,7 +611,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 35,
     "era_id": 4,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_son_of_osiris_power_icon"
   },
   {
     "id": 36,
@@ -593,7 +628,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 36,
     "era_id": 4,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_meteor_icon"
   },
   {
     "id": 37,
@@ -609,7 +645,8 @@
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "god_id": 37,
     "era_id": 4,
-    "panteao_id": 2
+    "panteao_id": 2,
+    "icon": "aomr_tornado_icon"
   },
   {
     "id": 38,
@@ -625,7 +662,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 38,
     "era_id": 2,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_forest_fire_icon"
   },
   {
     "id": 39,
@@ -641,7 +679,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 39,
     "era_id": 2,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_undermine_icon"
   },
   {
     "id": 40,
@@ -657,7 +696,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 40,
     "era_id": 2,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_healing_spring_power_icon"
   },
   {
     "id": 41,
@@ -673,7 +713,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 41,
     "era_id": 3,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_walking_woods_power_icon"
   },
   {
     "id": 42,
@@ -689,7 +730,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 42,
     "era_id": 3,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_frost_icon"
   },
   {
     "id": 43,
@@ -705,7 +747,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 43,
     "era_id": 3,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_flaming_weapons_icon"
   },
   {
     "id": 44,
@@ -721,7 +764,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 44,
     "era_id": 4,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_ragnarok_icon"
   },
   {
     "id": 45,
@@ -737,7 +781,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 45,
     "era_id": 4,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_fimbulwinter_icon"
   },
   {
     "id": 46,
@@ -753,7 +798,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 46,
     "era_id": 4,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_nidhogg_icon"
   },
   {
     "id": 47,
@@ -769,7 +815,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 47,
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_spider_lair_icon"
   },
   {
     "id": 48,
@@ -785,7 +832,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 48,
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_valor_icon"
   },
   {
     "id": 49,
@@ -801,7 +849,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 49,
     "era_id": 2,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_carnivora_power_icon"
   },
   {
     "id": 50,
@@ -817,7 +866,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 50,
     "era_id": 3,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_traitor_icon"
   },
   {
     "id": 51,
@@ -833,7 +883,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 51,
     "era_id": 3,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_chaos_icon"
   },
   {
     "id": 52,
@@ -849,7 +900,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 52,
     "era_id": 3,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_hesperides_icon"
   },
   {
     "id": 53,
@@ -865,7 +917,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 53,
     "era_id": 4,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_implode_icon"
   },
   {
     "id": 54,
@@ -881,7 +934,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 54,
     "era_id": 4,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_vortex_icon"
   },
   {
     "id": 55,
@@ -897,7 +951,8 @@
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "god_id": 55,
     "era_id": 4,
-    "panteao_id": 4
+    "panteao_id": 4,
+    "icon": "aomr_tartarian_gate_power_icon"
   },
   {
     "id": 56,
@@ -913,7 +968,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 56,
     "era_id": 2,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_vanish"
   },
   {
     "id": 57,
@@ -929,7 +985,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 57,
     "era_id": 2,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_lightning_weapons"
   },
   {
     "id": 58,
@@ -945,7 +1002,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 58,
     "era_id": 2,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_earth_wall_power"
   },
   {
     "id": 59,
@@ -961,7 +1019,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 59,
     "era_id": 3,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_forest_protection"
   },
   {
     "id": 60,
@@ -977,7 +1036,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 60,
     "era_id": 3,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_drought"
   },
   {
     "id": 61,
@@ -993,7 +1053,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 61,
     "era_id": 3,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_fei_beasts"
   },
   {
     "id": 62,
@@ -1009,7 +1070,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 62,
     "era_id": 4,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_great_flood"
   },
   {
     "id": 63,
@@ -1025,7 +1087,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 63,
     "era_id": 4,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_yinglongs_wrath"
   },
   {
     "id": 64,
@@ -1041,7 +1104,8 @@
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "god_id": 64,
     "era_id": 4,
-    "panteao_id": 5
+    "panteao_id": 5,
+    "icon": "aomr_blazing_prairie"
   },
   {
     "id": 65,
@@ -1057,7 +1121,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 65,
     "era_id": 2,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_asgardian_bastion_icon"
   },
   {
     "id": 66,
@@ -1073,7 +1138,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 66,
     "era_id": 3,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_tempest_icon"
   },
   {
     "id": 67,
@@ -1089,7 +1155,8 @@
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "god_id": 67,
     "era_id": 4,
-    "panteao_id": 3
+    "panteao_id": 3,
+    "icon": "aomr_inferno_icon"
   },
   {
     "id": 68,
@@ -1106,7 +1173,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 68,
     "era_id": 2,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_goshinboku_tree_icon"
   },
   {
     "id": 69,
@@ -1123,7 +1191,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 69,
     "era_id": 2,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_shrine_of_the_hunt_icon"
   },
   {
     "id": 70,
@@ -1140,7 +1209,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 70,
     "era_id": 2,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_swampland_icon"
   },
   {
     "id": 71,
@@ -1157,7 +1227,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 71,
     "era_id": 3,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_shogun_icon"
   },
   {
     "id": 72,
@@ -1174,7 +1245,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 73,
     "era_id": 3,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_thunder_burst_icon"
   },
   {
     "id": 73,
@@ -1191,7 +1263,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 72,
     "era_id": 3,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_smiting_gust_icon"
   },
   {
     "id": 74,
@@ -1208,7 +1281,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 74,
     "era_id": 4,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_divine_slash_icon"
   },
   {
     "id": 75,
@@ -1225,7 +1299,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 75,
     "era_id": 4,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_sacred_gate_icon"
   },
   {
     "id": 76,
@@ -1242,7 +1317,8 @@
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "god_id": 76,
     "era_id": 4,
-    "panteao_id": 6
+    "panteao_id": 6,
+    "icon": "aomr_dragon_typhoon_icon"
   },
   {
     "id": 78,
@@ -1255,7 +1331,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 78,
     "era_id": 1,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_wither_icon"
   },
   {
     "id": 79,
@@ -1268,7 +1345,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 79,
     "era_id": 2,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_arcadian_meadow_icon"
   },
   {
     "id": 80,
@@ -1281,7 +1359,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 80,
     "era_id": 3,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_communal_hearth_icon"
   },
   {
     "id": 81,
@@ -1295,7 +1374,8 @@
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "god_id": 81,
     "era_id": 4,
-    "panteao_id": 1
+    "panteao_id": 1,
+    "icon": "aomr_underworld_invasion_icon"
   },
   {
     "id": 82,
@@ -1309,7 +1389,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 84,
     "era_id": 1,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_blood_pact_icon"
   },
   {
     "id": 83,
@@ -1321,7 +1402,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 83,
     "era_id": 1,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_obsidian_mirror_icon"
   },
   {
     "id": 84,
@@ -1335,7 +1417,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 82,
     "era_id": 1,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_tailwind_icon"
   },
   {
     "id": 85,
@@ -1349,7 +1432,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 87,
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_agave_bloom_icon"
   },
   {
     "id": 86,
@@ -1363,7 +1447,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 85,
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_infestation_icon"
   },
   {
     "id": 87,
@@ -1377,7 +1462,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 86,
     "era_id": 2,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_lullaby_icon"
   },
   {
     "id": 88,
@@ -1391,7 +1477,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 88,
     "era_id": 3,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_purge_icon"
   },
   {
     "id": 89,
@@ -1405,7 +1492,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 90,
     "era_id": 3,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_starfall_icon"
   },
   {
     "id": 90,
@@ -1419,7 +1507,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 89,
     "era_id": 3,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_earth_monster_icon"
   },
   {
     "id": 91,
@@ -1433,7 +1522,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 93,
     "era_id": 4,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_volcano_icon"
   },
   {
     "id": 92,
@@ -1447,7 +1537,8 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 92,
     "era_id": 4,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_corrupted_ground_icon"
   },
   {
     "id": 93,
@@ -1460,6 +1551,7 @@
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "god_id": 91,
     "era_id": 4,
-    "panteao_id": 7
+    "panteao_id": 7,
+    "icon": "aomr_pillar_of_tlalocan_icon"
   }
 ]

@@ -125,7 +125,7 @@ export function UnidadesPage() {
                   hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
                 }
                 meta={<MetaNotionLine parts={[u.panteao, u.era]} />}
-                watermarkSrc={getUnidadeAssetUrl(u.ingles)}
+                watermarkSrc={getUnidadeAssetUrl(u)}
                 compareMode={compareMode}
                 selected={selected}
                 selectDisabled={selectDisabled}
