@@ -244,7 +244,7 @@ export function DeusDetailPage() {
       ) : null}
 
       {relacoes.length > 0 && !treeTiers ? (
-        <Section title="Deuses Menores" className="mt-6">
+        <Section title="Deuses Maiores" className="mt-6">
           <ul className="list-inside list-disc space-y-1">
             {relacoes.map((el, i) => (
               <li key={i}>{el}</li>
