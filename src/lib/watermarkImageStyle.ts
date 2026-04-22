@@ -1,5 +1,14 @@
 import type { CSSProperties } from "react";
 
+/**
+ * `url()` em CSS não tolera apóstrofos literais no path (ex.: `Freyr's_Gift`); quebra o estilo
+ * enquanto `<img src>` com o mesmo path funciona. Usa JSON.stringify para delimitar.
+ */
+/** Exportado para `EntityCard` (cover) e estilos de marca d’água. */
+export function cssUrl(value: string): string {
+  return `url(${JSON.stringify(value)})`;
+}
+
 /** Grelha (EntityCard): transição na faixa; encosta à direita com altura do card. */
 const MASK_ENTITY_STRIP =
   "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.90) 75%, rgba(0,0,0,1) 100%)";
@@ -28,7 +37,7 @@ function maskFromGradient(gradient: string): Pick<
  */
 export function watermarkStripImageStyle(imageUrl: string): CSSProperties {
   return {
-    backgroundImage: `url(${imageUrl})`,
+    backgroundImage: cssUrl(imageUrl),
     backgroundSize: "auto 100%",
     backgroundPosition: "right center",
     backgroundRepeat: "no-repeat",
@@ -42,7 +51,7 @@ export function watermarkStripImageStyle(imageUrl: string): CSSProperties {
  */
 export function sectionWatermarkStripStyle(imageUrl: string): CSSProperties {
   return {
-    backgroundImage: `url(${imageUrl})`,
+    backgroundImage: cssUrl(imageUrl),
     backgroundSize: "auto 100%",
     backgroundPosition: "right center",
     backgroundRepeat: "no-repeat",

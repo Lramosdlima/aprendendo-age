@@ -3,7 +3,7 @@ import { Link, type To } from "react-router-dom";
 
 import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
 import { cn } from "@/lib/cn";
-import { watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
+import { cssUrl, watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
 
 type EntityCardProps = {
   to: To;
@@ -114,7 +114,7 @@ export function EntityCard({
       >
         <div
           className="absolute inset-0 bg-cover bg-center saturate-125 opacity-[0.18] transition-opacity group-hover:opacity-[0.18]"
-          style={{ backgroundImage: `url(${backgroundCoverSrc})` }}
+          style={{ backgroundImage: cssUrl(backgroundCoverSrc!) }}
         />
       </div>
       <div
