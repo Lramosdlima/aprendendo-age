@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
+import { useLocation } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { cn } from "@/lib/cn";
 
@@ -44,6 +46,9 @@ export function AppPageDetail({
   className,
   children,
 }: AppPageDetailProps) {
+  const { state: navState } = useLocation();
+  const backHref = listIndexReturnTo(backTo, navState);
+
   return (
     <div className={cn(className)}>
       <div className="relative -mx-4 -mt-6 mb-8 md:-mx-10 md:-mt-10">
@@ -65,7 +70,7 @@ export function AppPageDetail({
           </div>
         ) : null}
         <div className="relative z-10 px-4 pt-6 md:px-10 md:pt-10">
-          <BackLink to={backTo}>{backLabel}</BackLink>
+          <BackLink to={backHref}>{backLabel}</BackLink>
           <PageHeader
             title={title}
             description={description}

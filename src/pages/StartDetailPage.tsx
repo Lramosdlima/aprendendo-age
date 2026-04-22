@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import { StartStructuredContent } from "@/components/starts/StartStructuredContent";
 import { StartVideosSection } from "@/components/starts/StartVideosSection";
@@ -8,6 +8,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { deuses, deusSlugById, startBySlug } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 /** Nomes em `starts_build_order.json` que não coincidem com `deuses_aom.json`. */
 const START_GOD_NAME_ALIASES: Record<string, string> = {
@@ -60,13 +61,15 @@ function startGodHeaderPortraits(labels: string[]): ReactNode {
 }
 
 export function StartDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/starts", navState);
   const { slug } = useParams();
   const s = slug ? startBySlug.get(slug) : undefined;
 
   if (!s) {
     return (
       <div>
-        <BackLink to="/starts">Starts</BackLink>
+        <BackLink to={backToList}>Starts</BackLink>
         <p className="text-zinc-400">Página não encontrada.</p>
       </div>
     );
@@ -78,7 +81,7 @@ export function StartDetailPage() {
 
   return (
     <div>
-      <BackLink to="/starts">Starts & build orders</BackLink>
+      <BackLink to={backToList}>Starts & build orders</BackLink>
       <PageHeader
         title={<NotionText text={s.titulo} />}
         description={s.descricao_curta}

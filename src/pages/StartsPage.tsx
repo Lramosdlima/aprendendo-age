@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { useLocation } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
@@ -6,6 +7,8 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { startsBuildOrder } from "@/data/catalog";
+import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matchesStart(
@@ -38,7 +41,12 @@ function StartGodTags({ names }: { names: string[] }) {
 }
 
 export function StartsPage() {
-  const [q, setQ] = useState("");
+  const { pathname, search: locSearch } = useLocation();
+  const listIndexState = useMemo(
+    () => listIndexLinkStateFromLocation(pathname, locSearch),
+    [pathname, locSearch],
+  );
+  const [q, setQ] = useListPageSearchQuery();
   const filtered = useMemo(() => {
     const list = startsBuildOrder.filter((s) => matchesStart(s, q));
     return [...list].sort((a, b) => {
@@ -69,6 +77,7 @@ export function StartsPage() {
             <EntityCard
               className="h-full"
               to={`/starts/${s.slug}`}
+              linkState={listIndexState}
               title={
                 <span className="flex w-full min-w-0 items-start justify-between gap-2">
                   <span className="min-w-0">

@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
@@ -17,16 +17,19 @@ import {
 } from "@/data/catalog";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { hasTipoContent } from "@/lib/unidadeTipo";
 
 export function ConstrucaoDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/construcoes", navState);
   const { slug } = useParams();
   const c = slug ? construcaoBySlug.get(slug) : undefined;
 
   if (!c) {
     return (
       <div>
-        <BackLink to="/construcoes">Construções</BackLink>
+        <BackLink to={backToList}>Construções</BackLink>
         <p className="text-zinc-400">Construção não encontrada.</p>
       </div>
     );
@@ -53,7 +56,7 @@ export function ConstrucaoDetailPage() {
 
   return (
     <div>
-      <BackLink to="/construcoes">Construções</BackLink>
+      <BackLink to={backToList}>Construções</BackLink>
       <PageHeader
         title={c.nome}
         description={c.ingles ? `Inglês: ${c.ingles}` : undefined}

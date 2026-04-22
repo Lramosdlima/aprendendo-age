@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import { DeusExplicacaoMaiorSection } from "@/components/deus/DeusExplicacaoMaiorSection";
 import { GodMajorDecisionTree } from "@/components/deus/GodMajorDecisionTree";
@@ -23,6 +23,7 @@ import {
   unidadeSlugById,
 } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { bucketMinorsByEra } from "@/lib/godMajorTree";
 import { parseStartReferences } from "@/lib/startLinksFromDeus";
 
@@ -66,13 +67,15 @@ function buildAvaliacaoScoreClassName(n: number | null | undefined): string {
 }
 
 export function DeusDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/deuses", navState);
   const { slug } = useParams();
   const d = slug ? deusBySlug.get(slug) : undefined;
 
   if (!d) {
     return (
       <div>
-        <BackLink to="/deuses">Deuses</BackLink>
+        <BackLink to={backToList}>Deuses</BackLink>
         <p className="text-zinc-400">Deus não encontrado.</p>
       </div>
     );
@@ -118,7 +121,7 @@ export function DeusDetailPage() {
 
   return (
     <div>
-      <BackLink to="/deuses">Deuses</BackLink>
+      <BackLink to={backToList}>Deuses</BackLink>
       <PageHeader
         title={d.nome}
         description={

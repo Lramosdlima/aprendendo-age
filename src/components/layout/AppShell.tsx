@@ -1,7 +1,21 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 import { cn } from "@/lib/cn";
+
+/**
+ * Rotas de listagem com `?search=` + restauração de scroll em memória: não
+ * forçar topo aqui; o `useListPageSearchQuery` controla. Detalhe (`/X/slug`,
+ * etc.) deve abrir com scroll no início, não herdar o do índice.
+ */
+const LIST_INDEX_PATHS = new Set([
+  "/construcoes",
+  "/deuses",
+  "/mapas",
+  "/starts",
+  "/tecnologias",
+  "/unidades",
+]);
 
 type NavItem =
   | { to: string; label: string; end?: boolean }
@@ -86,8 +100,15 @@ function MenuGlyph({ open }: { open: boolean }) {
 }
 
 export function AppShell() {
-  const pathname = useLocation().pathname;
+  const { pathname, key } = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useLayoutEffect(() => {
+    if (LIST_INDEX_PATHS.has(pathname)) {
+      return;
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, key]);
 
   useEffect(() => {
     setMobileMenuOpen(false);

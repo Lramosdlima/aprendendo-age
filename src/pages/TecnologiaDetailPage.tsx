@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
@@ -17,16 +17,19 @@ import {
   tecnologiaBySlug,
   tecnologias,
 } from "@/data/catalog";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 export function TecnologiaDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/tecnologias", navState);
   const { slug } = useParams();
   const t = slug ? tecnologiaBySlug.get(slug) : undefined;
 
   if (!t) {
     return (
       <div>
-        <BackLink to="/tecnologias">Tecnologias</BackLink>
+        <BackLink to={backToList}>Tecnologias</BackLink>
         <p className="text-zinc-400">Registro não encontrado.</p>
       </div>
     );
@@ -54,7 +57,7 @@ export function TecnologiaDetailPage() {
 
   return (
     <div>
-      <BackLink to="/tecnologias">Tecnologias</BackLink>
+      <BackLink to={backToList}>Tecnologias</BackLink>
       <PageHeader
         title={t.nome || `Sem título (#${tecIndex >= 0 ? tecIndex : "?"})`}
         description={tecIndex >= 0 ? `Lista JSON: #${tecIndex}` : undefined}

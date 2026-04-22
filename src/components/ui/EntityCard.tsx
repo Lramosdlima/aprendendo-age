@@ -1,12 +1,17 @@
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link, type To } from "react-router-dom";
 
 import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
 import { cn } from "@/lib/cn";
 import { watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
 
 type EntityCardProps = {
-  to: string;
+  to: To;
+  /**
+   * Passado a `<Link state>`, p.ex. a URL do índice (path + `?search=`) para
+   * restaurar o filtro ao voltar com "←" na página de detalhe.
+   */
+  linkState?: unknown;
   title: ReactNode;
   subtitle?: ReactNode;
   meta?: ReactNode;
@@ -33,6 +38,7 @@ type EntityCardProps = {
 
 export function EntityCard({
   to,
+  linkState,
   title,
   subtitle,
   meta,
@@ -199,7 +205,7 @@ export function EntityCard({
   }
 
   return (
-    <Link to={to} className={shellClass}>
+    <Link to={to} className={shellClass} state={linkState}>
       {bgCoverLayers}
       {tintLayers}
       {inner}

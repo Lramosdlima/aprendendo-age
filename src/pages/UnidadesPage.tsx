@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
@@ -8,7 +8,9 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
+import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import {
   hasTipoContent,
@@ -36,7 +38,12 @@ const toolbarBtn =
 
 export function UnidadesPage() {
   const navigate = useNavigate();
-  const [q, setQ] = useState("");
+  const { pathname, search: locSearch } = useLocation();
+  const listIndexState = useMemo(
+    () => listIndexLinkStateFromLocation(pathname, locSearch),
+    [pathname, locSearch],
+  );
+  const [q, setQ] = useListPageSearchQuery();
   const [compareMode, setCompareMode] = useState(false);
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
@@ -110,6 +117,7 @@ export function UnidadesPage() {
             <li key={u.id}>
               <EntityCard
                 to={`/unidades/${slug}`}
+                linkState={listIndexState}
                 title={u.nome}
                 cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
                 subtitleTag={false}

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { UnidadeCombateBody, UnidadeCustoBody, UnidadeVisaoGeralBody } from "@/components/unidade/UnidadeSectionBodies";
 import { BackLink } from "@/components/ui/BackLink";
@@ -8,15 +8,18 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 export function UnidadeDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/unidades", navState);
   const { slug } = useParams();
   const u = slug ? unidadeBySlug.get(slug) : undefined;
 
   if (!u) {
     return (
       <div>
-        <BackLink to="/unidades">Unidades</BackLink>
+        <BackLink to={backToList}>Unidades</BackLink>
         <p className="text-zinc-400">Unidade não encontrada.</p>
       </div>
     );
@@ -26,7 +29,7 @@ export function UnidadeDetailPage() {
 
   return (
     <div>
-      <BackLink to="/unidades">Unidades</BackLink>
+      <BackLink to={backToList}>Unidades</BackLink>
       <PageHeader
         title={u.nome}
         description={

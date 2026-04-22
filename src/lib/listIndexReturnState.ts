@@ -1,0 +1,38 @@
+/** Chave de `location.state` ao abrir o detalhe a partir de uma listagem. */
+export const LIST_INDEX_RETURN = "aprendendoListIndex" as const;
+
+export type ListIndexLinkState = { [K in typeof LIST_INDEX_RETURN]?: string };
+
+/**
+ * `state` a passar em `<Link state={...} />` a partir do índice (pathname + search
+ * com `?search=`), para o "← Voltar" reabrir a mesma listagem e filtro.
+ */
+export function listIndexLinkStateFromLocation(pathname: string, search: string): ListIndexLinkState {
+  return { [LIST_INDEX_RETURN]: `${pathname}${search}` };
+}
+
+/**
+ * URL completa (path + `?...`) de volta à listagem, ou o fallback (ex. `/deuses`)
+ * se não houver `state` (abrir detalhe em tab nova, partilhado, etc.).
+ */
+export function listIndexReturnTo(fallback: string, state: unknown): string {
+  if (!state || typeof state !== "object" || !(LIST_INDEX_RETURN in state)) {
+    return fallback;
+  }
+  const p = (state as ListIndexLinkState)[LIST_INDEX_RETURN];
+  if (typeof p !== "string" || p.length < 1) return fallback;
+  if (p === "/" || p.startsWith("/")) {
+    if (
+      p.startsWith("//") ||
+      p.includes("://") ||
+      p.includes(" ") ||
+      p.includes("\n") ||
+      p.includes("\r") ||
+      p.includes("\t")
+    ) {
+      return fallback;
+    }
+    return p;
+  }
+  return fallback;
+}

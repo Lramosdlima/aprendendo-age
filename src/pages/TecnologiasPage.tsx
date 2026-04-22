@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { useLocation } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
@@ -8,7 +9,9 @@ import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { tecnologias, tecnologiaSlugByIndex } from "@/data/catalog";
+import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 function matches(t: (typeof tecnologias)[number], q: string) {
@@ -21,7 +24,12 @@ function matches(t: (typeof tecnologias)[number], q: string) {
 }
 
 export function TecnologiasPage() {
-  const [q, setQ] = useState("");
+  const { pathname, search: locSearch } = useLocation();
+  const listIndexState = useMemo(
+    () => listIndexLinkStateFromLocation(pathname, locSearch),
+    [pathname, locSearch],
+  );
+  const [q, setQ] = useListPageSearchQuery();
   const filtered = useMemo(
     () => tecnologias.map((t, i) => ({ t, i })).filter(({ t }) => matches(t, q)),
     [q],
@@ -42,6 +50,7 @@ export function TecnologiasPage() {
           <li key={`${i}-${t.nome}`}>
             <EntityCard
               to={`/tecnologias/${tecnologiaSlugByIndex.get(i) ?? i}`}
+              linkState={listIndexState}
               title={t.nome || `(sem título #${i})`}
               cardTint={pantheonCardTint(t.panteoes ?? "")}
               watermarkSrc={getTecnologiaAssetUrl(t)}

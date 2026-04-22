@@ -1,11 +1,14 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { useLocation } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { mapas, mapaSlugByIndex } from "@/data/catalog";
+import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 
 function matches(m: (typeof mapas)[number], q: string, index: number) {
   if (!q.trim()) return true;
@@ -15,7 +18,12 @@ function matches(m: (typeof mapas)[number], q: string, index: number) {
 }
 
 export function MapasPage() {
-  const [q, setQ] = useState("");
+  const { pathname, search: locSearch } = useLocation();
+  const listIndexState = useMemo(
+    () => listIndexLinkStateFromLocation(pathname, locSearch),
+    [pathname, locSearch],
+  );
+  const [q, setQ] = useListPageSearchQuery();
   const filtered = useMemo(
     () => mapas.map((m, i) => ({ m, i })).filter(({ m, i }) => matches(m, q, i)),
     [q],
@@ -36,6 +44,7 @@ export function MapasPage() {
           <li key={`${m.nome}-${i}`}>
             <EntityCard
               to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
+              linkState={listIndexState}
               title={m.nome}
               subtitle={m.tipo}
               meta={m.origem}

@@ -1,0 +1,78 @@
+import { useCallback, useEffect, useLayoutEffect, useMemo } from "react";
+import { useLocation, useSearchParams } from "react-router-dom";
+
+const SEARCH_PARAM = "search";
+const SCROLL_PREFIX = "aprendendo-age:list-scroll:";
+
+function scrollStorageKey(pathname: string, search: string) {
+  return `${SCROLL_PREFIX}${pathname}${search}`;
+}
+
+/**
+ * Lê e atualiza o filtro de listagem na query `?search=`, com `replace` para não
+ * encher o histórico a cada tecla. Ao voltar do detalhe, o filtro volta com a URL.
+ *
+ * Persiste `window.scrollY` em `sessionStorage` por `pathname + search` (sem
+ * `ScrollRestoration` do RR, que exige data router com `RouterProvider`).
+ */
+export function useListPageSearchQuery() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { pathname, search } = useLocation();
+
+  const q = useMemo(() => searchParams.get(SEARCH_PARAM) ?? "", [searchParams]);
+
+  const scrollKey = useMemo(() => scrollStorageKey(pathname, search), [pathname, search]);
+
+  useLayoutEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(scrollKey);
+      if (raw == null) return;
+      const y = Number(raw);
+      if (!Number.isFinite(y) || y < 0) return;
+      window.scrollTo(0, y);
+    } catch {
+      /* sessionStorage indisponível */
+    }
+  }, [scrollKey]);
+
+  useEffect(() => {
+    let raf = 0;
+    const persist = () => {
+      try {
+        sessionStorage.setItem(scrollKey, String(window.scrollY));
+      } catch {
+        /* ignore */
+      }
+    };
+    const onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        persist();
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+      persist();
+    };
+  }, [scrollKey]);
+
+  const setQ = useCallback(
+    (next: string) => {
+      setSearchParams(
+        (prev) => {
+          const p = new URLSearchParams(prev);
+          if (next.trim()) p.set(SEARCH_PARAM, next);
+          else p.delete(SEARCH_PARAM);
+          return p;
+        },
+        { replace: true },
+      );
+    },
+    [setSearchParams],
+  );
+
+  return [q, setQ] as const;
+}

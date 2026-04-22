@@ -1,25 +1,28 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { AppPageDetail } from "@/components/layout/AppPageDetail";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { Section } from "@/components/ui/Section";
 import { mapaBySlug } from "@/data/catalog";
+import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 function fmtSimNao(v: boolean | undefined): string {
   if (v === undefined) return "—";
   return v ? "Sim" : "Não";
 }
-import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 
 export function MapaDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/mapas", navState);
   const { slug } = useParams();
   const m = slug ? mapaBySlug.get(slug) : undefined;
 
   if (!m) {
     return (
       <div>
-        <BackLink to="/mapas">Mapas</BackLink>
+        <BackLink to={backToList}>Mapas</BackLink>
         <p className="text-zinc-400">Mapa não encontrado.</p>
       </div>
     );

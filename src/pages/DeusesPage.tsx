@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { useLocation } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
@@ -8,7 +9,9 @@ import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { deuses, deusSlugById } from "@/data/catalog";
+import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matches(d: (typeof deuses)[number], q: string) {
@@ -22,7 +25,12 @@ function isHierarquiaMaior(h: string | undefined): boolean {
 }
 
 export function DeusesPage() {
-  const [q, setQ] = useState("");
+  const { pathname, search: locSearch } = useLocation();
+  const listIndexState = useMemo(
+    () => listIndexLinkStateFromLocation(pathname, locSearch),
+    [pathname, locSearch],
+  );
+  const [q, setQ] = useListPageSearchQuery();
   const filtered = useMemo(() => {
     const list = deuses.filter((d) => matches(d, q));
     return [...list].sort((a, b) => {
@@ -48,6 +56,7 @@ export function DeusesPage() {
           <li key={d.id}>
             <EntityCard
               to={`/deuses/${deusSlugById.get(d.id) ?? d.id}`}
+              linkState={listIndexState}
               title={d.nome}
               cardTint={pantheonCardTint(d.panteao)}
               subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
