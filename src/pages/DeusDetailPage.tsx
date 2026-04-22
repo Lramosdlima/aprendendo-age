@@ -272,7 +272,7 @@ export function DeusDetailPage() {
           </ul>
         </Section>
       ) : d.unidades_exclusivas ? (
-        <Section title="Unidades exclusivas (texto)" className="mt-6">
+        <Section title="Unidades exclusivas" className="mt-6">
           <NotionText text={d.unidades_exclusivas} />
         </Section>
       ) : null}
