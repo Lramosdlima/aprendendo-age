@@ -200,7 +200,7 @@ const PANTHEON_ID_TO_TOKEN = {
   4: "aomr_pantheon_atlanteans_icon",
   5: "aomr_pantheon_chinese_icon",
   6: "aomr_pantheon_japanese_icon",
-  7: "aomr_pantheon_azteca_icon",
+  7: "aomr_pantheon_aztecs_icon",
 };
 
 const ERA_ID_TO_TOKEN = {
