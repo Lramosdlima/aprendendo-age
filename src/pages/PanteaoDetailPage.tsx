@@ -51,19 +51,14 @@ export function PanteaoDetailPage() {
       ) : null}
 
       <div className="mt-6 space-y-0 rounded-2xl border border-aom-border bg-aom-card/60 p-5">
-        {"vill" in p && p.vill ? (
-          <InfoRow label="Trabalhadores">
+        {p.vill ? (
+          <InfoRow label="Aldeão">
             <NotionText text={String(p.vill)} />
           </InfoRow>
         ) : null}
         {p.starts ? (
           <InfoRow label="Starts (referências)">
             <NotionText text={p.starts} />
-          </InfoRow>
-        ) : null}
-        {p.deuses ? (
-          <InfoRow label="Deuses (texto)">
-            <NotionText text={p.deuses} />
           </InfoRow>
         ) : null}
         {deusLinks.length > 0 ? (

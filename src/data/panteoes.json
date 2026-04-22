@@ -165,7 +165,8 @@
     "id": 7,
     "nome": "Astecas",
     "description": "Os astecas exploram com Espião Quimichin que conseguem se esconder perto das árvores. Eles geram favor através da Tonalli, que é gerado ao derrotar unidades inimigas e coletado por Sarcedote de Guerra (Herói) ou torres. Também é possível devotar aldeões em Templos para gerar favor. Os astecas podem criar armadilhas escondidas com suas tropas.",
-    "deuses": "Quetzalcoatl, Tezcatlipoca, Huitzilopochtli, Malinalxochitl, Huehuecóyotl, Patecatl, Itzpapalotl, Coatlicue, Coyolxauhqui, Tlaloc, Xolotl, Mictlantecuhtli",
+    "deuses": "Que1tzalcoatl, Tezcatlipoca, Huitzilopochtli, Malinalxochitl, Huehuecóyotl, Patecatl, Itzpapalotl, Coatlicue, Coyolxauhqui, Tlaloc, Xolotl, Mictlantecuhtli",
+    "vill": "Colono",
     "deuses_ids": [
       82,
       83,
