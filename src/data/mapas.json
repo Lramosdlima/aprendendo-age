@@ -553,16 +553,6 @@
     "icon": "aomr_nile_shallows_icon"
   },
   {
-    "nome": "Vaus do Nilo",
-    "ingles": "Nile Shallows",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
-    "padrao": true,
-    "partidas_rapidas": true,
-    "tipo": "Terra 🌳",
-    "icon": "aomr_nile_shallows_icon"
-  },
-  {
     "nome": "Vinlandsaga",
     "ingles": "Vinlandsaga",
     "mapas_da_ranqueada": false,
