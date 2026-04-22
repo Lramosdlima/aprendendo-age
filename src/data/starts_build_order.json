@@ -6547,7 +6547,7 @@
   {
     "status": "new",
     "id": 32,
-    "titulo": "Huitzilopochtli (com Pacto Sanguinário)",
+    "titulo": "Huitzilopochtli (com Pacto de Sangue :aomr_blood_pact_icon:)",
     "author": ["TheRapl"],
     "god": ["Huitzilopochtli"],
     "notion_file_id": "00000000000000000000000000000000",
@@ -6613,7 +6613,7 @@
               "type": null
             },
             {
-              "description": "Use o poder divino <highlight-purple>Blood Pact</highlight-purple> no Colono da comida",
+              "description": "Use o poder divino <highlight-purple>Pacto de Sangue</highlight-purple> :aomr_blood_pact_icon: no Colono da comida",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6649,7 +6649,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Patecatl (eco) ou Malinalxochitl (ofensivo) (≈<code>3:06</code>)</strong>",
+              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Patecatl :aomr_patecatl_icon: (eco) ou Malinalxochitl :aomr_malinalxochitl_icon: (ofensivo) (≈<code>3:06</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6667,7 +6667,7 @@
               "type": null
             },
             {
-              "description": "Treine 3 <highlight-teal>Sarcerdote Guerreiro</highlight-teal> :aomr_warrior_priest_icon: para pegar Relíquias e se defender",
+              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon: para pegar Relíquias e se defender",
               "food": "4",
               "wood": "5",
               "gold": "5",
@@ -6694,7 +6694,7 @@
               "type": null
             },
             {
-              "description": "Construa 1 <highlight-blue>War Hut</highlight-blue> e 1 <highlight-blue>Noble's Hut</highlight-blue> com Colonos da comida",
+              "description": "Construa 1 <highlight-blue>Cabana de Guerra</highlight-blue> :aomr_war_hut_icon: e 1 <highlight-blue>Cabana do Nobre</highlight-blue> :aomr_noble_hut_icon: com Colonos da comida",
               "food": null,
               "wood": null,
               "gold": null,
