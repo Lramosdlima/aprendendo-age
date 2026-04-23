@@ -89,6 +89,11 @@ export type StartBuildOrder = {
   author: string[];
   /** Deuses major/minor inferidos do título ou da civilização. */
   god: string[];
+  /**
+   * Chave em `token_asset_map.json`: ícone do deus (se `god` tiver 1 nome) ou do panteão.
+   * @see panteoes.json `icon` / deuses `icon`
+   */
+  image: string;
   /** Nome do panteão em `panteoes.json` (ex.: Grego, Chinês); opcional se não houver match. */
   pantheon?: string;
   notion_file_id: string;

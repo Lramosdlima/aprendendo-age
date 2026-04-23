@@ -13,6 +13,7 @@ import {
   startBySlug,
   startsBuildOrder,
 } from "@/data/catalog";
+import { resolveStartImageToken } from "@/lib/resolveStartImageToken";
 import { buildStartSlug } from "@/lib/startSlug";
 
 const inputClass =
@@ -175,11 +176,16 @@ export function SecretStartBuilderPage() {
     const segs = segments.map(segmentToStructured).filter((s) => s.lead?.length || s.table?.length || s.footer?.length);
     if (!segs.some((s) => (s.table?.length ?? 0) > 0)) return null;
 
+    const pTrim = pantheon.trim();
     const base: Omit<StartBuildOrder, "slug"> = {
       id: maxStartId + 1,
       titulo: t,
       author,
       god: godNamesSelected,
+      image: resolveStartImageToken(
+        godNamesSelected,
+        pTrim || undefined,
+      ),
       notion_file_id: notionId.trim() || "00000000000000000000000000000000",
       youtube,
       descricao_curta: nome.trim() || "Rascunho gerado pelo builder secreto.",
@@ -190,8 +196,8 @@ export function SecretStartBuilderPage() {
       ...base,
       slug,
     };
-    if (pantheon.trim()) {
-      out.pantheon = pantheon.trim();
+    if (pTrim) {
+      out.pantheon = pTrim;
     }
     return out;
   }, [titulo, authors, youtubeText, godNamesSelected, segments, nome, notionId, slugOverride, pantheon, maxStartId]);

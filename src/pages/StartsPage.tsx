@@ -10,6 +10,7 @@ import { startsBuildOrder } from "@/data/catalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
+import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 function matchesStart(
   s: (typeof startsBuildOrder)[number],
@@ -78,6 +79,7 @@ export function StartsPage() {
               className="h-full"
               to={`/starts/${s.slug}`}
               linkState={listIndexState}
+              watermarkSrc={resolveTokenIconSrc(s.image)}
               title={
                 <span className="flex w-full min-w-0 items-start justify-between gap-2">
                   <span className="min-w-0">

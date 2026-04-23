@@ -2,10 +2,20 @@
   {
     "id": 1,
     "titulo": "Gregos",
-    "author": ["Moose"],
-    "god": ["Zeus", "Hades", "Poseidon", "Deméter"],
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Zeus",
+      "Hades",
+      "Poseidon",
+      "Deméter"
+    ],
     "notion_file_id": "28500f30e21180398f65d36e5df5fa0f",
-    "youtube": ["https://youtu.be/_0PBN1DrH44", "https://youtu.be/1MxHT7EJdxs"],
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -334,15 +344,25 @@
       ]
     },
     "pantheon": "Grego",
-    "slug": "gregos-moose"
+    "slug": "gregos-moose",
+    "image": "aomr_pantheon_greeks_icon"
   },
   {
     "id": 2,
     "titulo": "Egípcios",
-    "author": ["Moose"],
-    "god": ["Rá", "Ísis", "Set"],
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Rá",
+      "Ísis",
+      "Set"
+    ],
     "notion_file_id": "28500f30e21180bcac19d3ce77313730",
-    "youtube": ["https://youtu.be/_0PBN1DrH44", "https://youtu.be/1MxHT7EJdxs"],
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -504,15 +524,26 @@
       ]
     },
     "pantheon": "Egípcio",
-    "slug": "egipcios-moose"
+    "slug": "egipcios-moose",
+    "image": "aomr_pantheon_egyptians_icon"
   },
   {
     "id": 3,
     "titulo": "Nórdicos",
-    "author": ["Moose"],
-    "god": ["Odin", "Loki", "Thor", "Freyr"],
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Odin",
+      "Loki",
+      "Thor",
+      "Freyr"
+    ],
     "notion_file_id": "28500f30e211802e9d90d9c181d32fcb",
-    "youtube": ["https://youtu.be/_0PBN1DrH44", "https://youtu.be/1MxHT7EJdxs"],
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -728,15 +759,25 @@
       ]
     },
     "pantheon": "Nórdico",
-    "slug": "nordicos-moose"
+    "slug": "nordicos-moose",
+    "image": "aomr_pantheon_norse_icon"
   },
   {
     "id": 4,
     "titulo": "Atlantes",
-    "author": ["Moose"],
-    "god": ["Gaia", "Urano", "Cronos"],
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Gaia",
+      "Urano",
+      "Cronos"
+    ],
     "notion_file_id": "28500f30e21180fbb56bf7ffd0dec7e2",
-    "youtube": ["https://youtu.be/_0PBN1DrH44", "https://youtu.be/1MxHT7EJdxs"],
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -898,15 +939,24 @@
       ]
     },
     "pantheon": "Atlante",
-    "slug": "atlantes-moose"
+    "slug": "atlantes-moose",
+    "image": "aomr_pantheon_atlanteans_icon"
   },
   {
     "id": 5,
     "titulo": "Chineses",
-    "author": ["Moose"],
-    "god": ["Fu Xi", "Nu Wa", "Shennong"],
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Fu Xi",
+      "Nu Wa",
+      "Shennong"
+    ],
     "notion_file_id": "28500f30e211802885f9cec177b1ba64",
-    "youtube": ["https://youtu.be/1MxHT7EJdxs"],
+    "youtube": [
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -1054,15 +1104,25 @@
       ]
     },
     "pantheon": "Chinês",
-    "slug": "chineses-moose"
+    "slug": "chineses-moose",
+    "image": "aomr_pantheon_chinese_icon"
   },
   {
     "id": 6,
     "titulo": "Gregos (Mar 🌊:aomr_type_ship_icon:)",
-    "author": ["HuskSuppe"],
-    "god": ["Zeus", "Hades", "Poseidon", "Deméter"],
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Zeus",
+      "Hades",
+      "Poseidon",
+      "Deméter"
+    ],
     "notion_file_id": "2d200f30e211800c85ced0bc22fc227b",
-    "youtube": ["https://youtu.be/Rv2GToFC8x0"],
+    "youtube": [
+      "https://youtu.be/Rv2GToFC8x0"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -1196,15 +1256,22 @@
       ]
     },
     "pantheon": "Grego",
-    "slug": "gregos-mar-husksuppe"
+    "slug": "gregos-mar-husksuppe",
+    "image": "aomr_pantheon_greeks_icon"
   },
   {
     "id": 7,
     "titulo": ":aomr_hades_icon: Hades (com Cofre :aomr_vaults_of_erebus_icon:)",
-    "author": ["Aussie_Drongo"],
-    "god": ["Hades"],
+    "author": [
+      "Aussie_Drongo"
+    ],
+    "god": [
+      "Hades"
+    ],
     "notion_file_id": "28500f30e21180bb8fe8fd53f6bd33c4",
-    "youtube": ["https://youtu.be/ZQt5PmCZGSY"],
+    "youtube": [
+      "https://youtu.be/ZQt5PmCZGSY"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -1442,15 +1509,22 @@
       ]
     },
     "pantheon": "Grego",
-    "slug": "hades-com-cofre-aussie-drongo"
+    "slug": "hades-com-cofre-aussie-drongo",
+    "image": "aomr_hades_icon"
   },
   {
     "id": 8,
     "titulo": ":aomr_poseidon_icon: Poseidon (com :aomr_lure_power_icon:)",
-    "author": ["Mosca"],
-    "god": ["Poseidon"],
+    "author": [
+      "Mosca"
+    ],
+    "god": [
+      "Poseidon"
+    ],
     "notion_file_id": "28300f30e21180929adcdd1e79730000",
-    "youtube": ["https://youtu.be/WZiRB9sCU38"],
+    "youtube": [
+      "https://youtu.be/WZiRB9sCU38"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -1639,15 +1713,22 @@
       ]
     },
     "pantheon": "Grego",
-    "slug": "poseidon-com-mosca"
+    "slug": "poseidon-com-mosca",
+    "image": "aomr_poseidon_icon"
   },
   {
     "id": 9,
     "titulo": ":aomr_isis_icon: Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E)",
-    "author": ["Light Yagami"],
-    "god": ["Isis"],
+    "author": [
+      "Light Yagami"
+    ],
+    "god": [
+      "Isis"
+    ],
     "notion_file_id": "28300f30e21180a0a22ff1f5ab5c56fe",
-    "youtube": ["https://youtu.be/-sojDxdtSy4"],
+    "youtube": [
+      "https://youtu.be/-sojDxdtSy4"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -1854,15 +1935,22 @@
       ]
     },
     "pantheon": "Egípcio",
-    "slug": "isis-a-e-light-yagami"
+    "slug": "isis-a-e-light-yagami",
+    "image": "aomr_isis_icon"
   },
   {
     "id": 10,
     "titulo": ":aomr_ra_icon: Rá (2TC | Bast)",
-    "author": ["Light Yagami"],
-    "god": ["Ra"],
+    "author": [
+      "Light Yagami"
+    ],
+    "god": [
+      "Ra"
+    ],
     "notion_file_id": "2a300f30e211800e98afd303776045e1",
-    "youtube": ["https://youtu.be/8ziqMC_Njt4"],
+    "youtube": [
+      "https://youtu.be/8ziqMC_Njt4"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -2081,13 +2169,18 @@
       ]
     },
     "pantheon": "Egípcio",
-    "slug": "ra-2tc-bast-light-yagami"
+    "slug": "ra-2tc-bast-light-yagami",
+    "image": "aomr_ra_icon"
   },
   {
     "id": 11,
     "titulo": ":aomr_set_icon: Set FH Migdol Agresivo! ⏭",
-    "author": ["Cafeína [PSGM]"],
-    "god": ["Set"],
+    "author": [
+      "Cafeína [PSGM]"
+    ],
+    "god": [
+      "Set"
+    ],
     "notion_file_id": "31400f30e2118083ab54fba88ed727b8",
     "youtube": [],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
@@ -2356,15 +2449,22 @@
       ]
     },
     "pantheon": "Egípcio",
-    "slug": "set-fh-migdol-agresivo-cafeina-psgm"
+    "slug": "set-fh-migdol-agresivo-cafeina-psgm",
+    "image": "aomr_set_icon"
   },
   {
     "id": 12,
     "titulo": ":aomr_set_icon: Set Rush! :aomr_type_siege_weapon_icon:",
-    "author": ["Miniyeti"],
-    "god": ["Set"],
+    "author": [
+      "Miniyeti"
+    ],
+    "god": [
+      "Set"
+    ],
     "notion_file_id": "2a300f30e21180eb82eee9f3de936709",
-    "youtube": ["https://youtu.be/b9m6emrH7GM"],
+    "youtube": [
+      "https://youtu.be/b9m6emrH7GM"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -2564,13 +2664,18 @@
       ]
     },
     "pantheon": "Egípcio",
-    "slug": "set-rush-miniyeti"
+    "slug": "set-rush-miniyeti",
+    "image": "aomr_set_icon"
   },
   {
     "id": 13,
     "titulo": ":aomr_freyr_icon: Freyr",
-    "author": ["Scooby"],
-    "god": ["Freyr"],
+    "author": [
+      "Scooby"
+    ],
+    "god": [
+      "Freyr"
+    ],
     "notion_file_id": "28200f30e2118141a862c5602104d485",
     "youtube": [],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
@@ -2770,15 +2875,22 @@
       ]
     },
     "pantheon": "Nórdico",
-    "slug": "freyr-scooby"
+    "slug": "freyr-scooby",
+    "image": "aomr_freyr_icon"
   },
   {
     "id": 14,
     "titulo": ":aomr_freyr_icon: Freyr Rush/2TC :aomr_type_siege_weapon_icon:",
-    "author": ["Aussie_Drongo"],
-    "god": ["Freyr"],
+    "author": [
+      "Aussie_Drongo"
+    ],
+    "god": [
+      "Freyr"
+    ],
     "notion_file_id": "28200f30e211817a889ec4e52ac5094b",
-    "youtube": ["https://youtu.be/VUMgDXltBLk"],
+    "youtube": [
+      "https://youtu.be/VUMgDXltBLk"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -2940,15 +3052,22 @@
       ]
     },
     "pantheon": "Nórdico",
-    "slug": "freyr-rush-2tc-aussie-drongo"
+    "slug": "freyr-rush-2tc-aussie-drongo",
+    "image": "aomr_freyr_icon"
   },
   {
     "id": 15,
     "titulo": ":aomr_loki_icon: Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias)",
-    "author": ["HuskSuppe"],
-    "god": ["Loki"],
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Loki"
+    ],
     "notion_file_id": "28500f30e211802eabe3eafc8264633c",
-    "youtube": ["https://youtu.be/O-_xwvH--tY"],
+    "youtube": [
+      "https://youtu.be/O-_xwvH--tY"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -3172,13 +3291,18 @@
       ]
     },
     "pantheon": "Nórdico",
-    "slug": "loki-herliquias-husksuppe"
+    "slug": "loki-herliquias-husksuppe",
+    "image": "aomr_loki_icon"
   },
   {
     "id": 16,
     "titulo": ":aomr_thor_icon: Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:)",
-    "author": ["Borg"],
-    "god": ["Thor"],
+    "author": [
+      "Borg"
+    ],
+    "god": [
+      "Thor"
+    ],
     "notion_file_id": "2dd00f30e2118095a6b8e58d614037b6",
     "youtube": [],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
@@ -3355,15 +3479,23 @@
       ]
     },
     "pantheon": "Nórdico",
-    "slug": "thor-borg"
+    "slug": "thor-borg",
+    "image": "aomr_thor_icon"
   },
   {
     "id": 17,
     "titulo": ":aomr_thor_icon: Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:)",
-    "author": ["Moose"],
-    "god": ["Thor"],
+    "author": [
+      "Moose"
+    ],
+    "god": [
+      "Thor"
+    ],
     "notion_file_id": "28500f30e2118097bea7d038be0734e8",
-    "youtube": ["https://youtu.be/_0PBN1DrH44", "https://youtu.be/1MxHT7EJdxs"],
+    "youtube": [
+      "https://youtu.be/_0PBN1DrH44",
+      "https://youtu.be/1MxHT7EJdxs"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -3552,15 +3684,22 @@
       ]
     },
     "pantheon": "Nórdico",
-    "slug": "thor-moose"
+    "slug": "thor-moose",
+    "image": "aomr_thor_icon"
   },
   {
     "id": 18,
     "titulo": ":aomr_kronos_icon: Cronos 2TC",
-    "author": ["Tpisai"],
-    "god": ["Cronos"],
+    "author": [
+      "Tpisai"
+    ],
+    "god": [
+      "Cronos"
+    ],
     "notion_file_id": "28500f30e21180259646c5aa65a92a4a",
-    "youtube": ["https://youtu.be/f8z-usB3IKw"],
+    "youtube": [
+      "https://youtu.be/f8z-usB3IKw"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -3740,15 +3879,22 @@
       ]
     },
     "pantheon": "Atlante",
-    "slug": "cronos-2tc-tpisai"
+    "slug": "cronos-2tc-tpisai",
+    "image": "aomr_kronos_icon"
   },
   {
     "id": 19,
     "titulo": ":aomr_kronos_icon: Cronos Rush :aomr_type_siege_weapon_icon:",
-    "author": ["Morley Games"],
-    "god": ["Cronos"],
+    "author": [
+      "Morley Games"
+    ],
+    "god": [
+      "Cronos"
+    ],
     "notion_file_id": "28500f30e21180ceae2edb08b6209593",
-    "youtube": ["https://youtu.be/UmLxeuRJokI"],
+    "youtube": [
+      "https://youtu.be/UmLxeuRJokI"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -3946,15 +4092,22 @@
       ]
     },
     "pantheon": "Atlante",
-    "slug": "cronos-rush-morley-games"
+    "slug": "cronos-rush-morley-games",
+    "image": "aomr_kronos_icon"
   },
   {
     "id": 20,
     "titulo": ":aomr_gaia_icon: Gaia (FH ⏫:aomr_heroic_age_icon:)",
-    "author": ["Balerion"],
-    "god": ["Gaia"],
+    "author": [
+      "Balerion"
+    ],
+    "god": [
+      "Gaia"
+    ],
     "notion_file_id": "28500f30e21180f79b93ffbc9082b57b",
-    "youtube": ["https://youtu.be/9tFWpUUQAwQ"],
+    "youtube": [
+      "https://youtu.be/9tFWpUUQAwQ"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -4174,15 +4327,22 @@
       ]
     },
     "pantheon": "Atlante",
-    "slug": "gaia-fh-balerion"
+    "slug": "gaia-fh-balerion",
+    "image": "aomr_gaia_icon"
   },
   {
     "id": 21,
     "titulo": ":aomr_gaia_icon: Gaia Eco :aomr_economic_guild_icon:",
-    "author": ["Balerion"],
-    "god": ["Gaia"],
+    "author": [
+      "Balerion"
+    ],
+    "god": [
+      "Gaia"
+    ],
     "notion_file_id": "28500f30e21180f7aac8ce6ae70c7bdf",
-    "youtube": ["https://youtu.be/h7rzk9agp2o"],
+    "youtube": [
+      "https://youtu.be/h7rzk9agp2o"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -4362,13 +4522,18 @@
       ]
     },
     "pantheon": "Atlante",
-    "slug": "gaia-eco-balerion"
+    "slug": "gaia-eco-balerion",
+    "image": "aomr_gaia_icon"
   },
   {
     "id": 22,
     "titulo": ":aomr_gaia_icon: Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)",
-    "author": ["Boxer"],
-    "god": ["Gaia"],
+    "author": [
+      "Boxer"
+    ],
+    "god": [
+      "Gaia"
+    ],
     "notion_file_id": "2b300f30e21180df9628cd93850abdff",
     "youtube": [],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
@@ -4531,15 +4696,22 @@
       ]
     },
     "pantheon": "Atlante",
-    "slug": "gaia-heroica-anti-mu-boxer"
+    "slug": "gaia-heroica-anti-mu-boxer",
+    "image": "aomr_gaia_icon"
   },
   {
     "id": 23,
     "titulo": ":aomr_fuxi_icon: Fu Xi",
-    "author": ["HuskSuppe"],
-    "god": ["Fu Xi"],
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Fu Xi"
+    ],
     "notion_file_id": "2d400f30e21180b68687ee3cf9a009a8",
-    "youtube": ["https://youtu.be/yPITLNPFxBI"],
+    "youtube": [
+      "https://youtu.be/yPITLNPFxBI"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -4732,15 +4904,22 @@
       ]
     },
     "pantheon": "Chinês",
-    "slug": "fu-xi-husksuppe"
+    "slug": "fu-xi-husksuppe",
+    "image": "aomr_fuxi_icon"
   },
   {
     "id": 24,
     "titulo": ":aomr_shennong_icon: Shennong (2 TC :aomr_town_center_chinese:)",
-    "author": ["Morley"],
-    "god": ["Shennong"],
+    "author": [
+      "Morley"
+    ],
+    "god": [
+      "Shennong"
+    ],
     "notion_file_id": "28200f30e211816b921fcef811c85af7",
-    "youtube": ["https://youtu.be/bOn4ASvDmvU"],
+    "youtube": [
+      "https://youtu.be/bOn4ASvDmvU"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -4943,15 +5122,23 @@
       ]
     },
     "pantheon": "Chinês",
-    "slug": "shennong-2-tc-morley"
+    "slug": "shennong-2-tc-morley",
+    "image": "aomr_shennong_icon"
   },
   {
     "id": 25,
     "titulo": ":aomr_shennong_icon: Shennong Fazendeiro (:aomr_farm_icon::aomr_prosperous_seeds:)",
-    "author": ["HuskSuppe"],
-    "god": ["Shennong"],
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Shennong"
+    ],
     "notion_file_id": "2cb00f30e21180099a8de1b7e23179b5",
-    "youtube": ["https://youtu.be/wee5Mm6wJ2I", "https://youtu.be/DnWZ8PW7VzU"],
+    "youtube": [
+      "https://youtu.be/wee5Mm6wJ2I",
+      "https://youtu.be/DnWZ8PW7VzU"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -5189,15 +5376,24 @@
       ]
     },
     "pantheon": "Chinês",
-    "slug": "shennong-fazendeiro-husksuppe"
+    "slug": "shennong-fazendeiro-husksuppe",
+    "image": "aomr_shennong_icon"
   },
   {
     "id": 26,
     "titulo": ":aomr_amaterasu_icon: Amaterasu",
-    "author": ["MikeKing", "TheRapl"],
-    "god": ["Amaterasu"],
+    "author": [
+      "MikeKing",
+      "TheRapl"
+    ],
+    "god": [
+      "Amaterasu"
+    ],
     "notion_file_id": "28200f30e21181068ec1d6a95eece9b3",
-    "youtube": ["https://youtu.be/Wo1Qb4GjJyI", "https://youtu.be/GYfb2H01ev0"],
+    "youtube": [
+      "https://youtu.be/Wo1Qb4GjJyI",
+      "https://youtu.be/GYfb2H01ev0"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -5449,15 +5645,22 @@
       ]
     },
     "pantheon": "Japonês",
-    "slug": "amaterasu-mikeking-therapl"
+    "slug": "amaterasu-mikeking-therapl",
+    "image": "aomr_amaterasu_icon"
   },
   {
     "id": 27,
     "titulo": ":aomr_susanoo_icon: Susanoo",
-    "author": ["TheRapl"],
-    "god": ["Susanoo"],
+    "author": [
+      "TheRapl"
+    ],
+    "god": [
+      "Susanoo"
+    ],
     "notion_file_id": "28200f30e211819c92dcdf17a22db5df",
-    "youtube": ["https://youtu.be/JV4ksUDd7SQ"],
+    "youtube": [
+      "https://youtu.be/JV4ksUDd7SQ"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -5637,15 +5840,22 @@
       ]
     },
     "pantheon": "Japonês",
-    "slug": "susanoo-therapl"
+    "slug": "susanoo-therapl",
+    "image": "aomr_susanoo_icon"
   },
   {
     "id": 28,
     "titulo": ":aomr_susanoo_icon: Susanoo (++Mikos :aomr_miko_icon::favoraom:)",
-    "author": ["HuskSuppe"],
-    "god": ["Susanoo"],
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Susanoo"
+    ],
     "notion_file_id": "2d300f30e21180b693a9e4c30f92d1e9",
-    "youtube": ["https://youtu.be/yPITLNPFxBI"],
+    "youtube": [
+      "https://youtu.be/yPITLNPFxBI"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -5879,15 +6089,22 @@
       ]
     },
     "pantheon": "Japonês",
-    "slug": "susanoo-mikos-husksuppe"
+    "slug": "susanoo-mikos-husksuppe",
+    "image": "aomr_susanoo_icon"
   },
   {
     "id": 29,
     "titulo": ":aomr_tsukuyomi_icon: Tsukuyomi",
-    "author": ["TheRapl"],
-    "god": ["Tsukuyomi"],
+    "author": [
+      "TheRapl"
+    ],
+    "god": [
+      "Tsukuyomi"
+    ],
     "notion_file_id": "28200f30e211812ab55dd4020f51a0d0",
-    "youtube": ["https://youtu.be/Ua0z6kt75Iw"],
+    "youtube": [
+      "https://youtu.be/Ua0z6kt75Iw"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -6099,13 +6316,18 @@
       ]
     },
     "pantheon": "Japonês",
-    "slug": "tsukuyomi-therapl"
+    "slug": "tsukuyomi-therapl",
+    "image": "aomr_tsukuyomi_icon"
   },
   {
     "id": 30,
     "titulo": ":aomr_tsukuyomi_icon: Tsukuyomi (Mar 🌊)",
-    "author": ["Scooby"],
-    "god": ["Tsukuyomi"],
+    "author": [
+      "Scooby"
+    ],
+    "god": [
+      "Tsukuyomi"
+    ],
     "notion_file_id": "2cc00f30e211802c9354fb0cc22fc1cb",
     "youtube": [],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
@@ -6341,15 +6563,22 @@
       ]
     },
     "pantheon": "Japonês",
-    "slug": "tsukuyomi-mar-scooby"
+    "slug": "tsukuyomi-mar-scooby",
+    "image": "aomr_tsukuyomi_icon"
   },
   {
     "id": 31,
     "titulo": ":aomr_tsukuyomi_icon: Tsukuyomi (Rush+2TC)",
-    "author": ["HuskSuppe"],
-    "god": ["Tsukuyomi"],
+    "author": [
+      "HuskSuppe"
+    ],
+    "god": [
+      "Tsukuyomi"
+    ],
     "notion_file_id": "2d100f30e21180639454f8cbb197353f",
-    "youtube": ["https://youtu.be/1cG3tcC4cio"],
+    "youtube": [
+      "https://youtu.be/1cG3tcC4cio"
+    ],
     "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
     "structured": {
       "segments": [
@@ -6542,16 +6771,23 @@
       ]
     },
     "pantheon": "Japonês",
-    "slug": "tsukuyomi-rush-2tc-husksuppe"
+    "slug": "tsukuyomi-rush-2tc-husksuppe",
+    "image": "aomr_tsukuyomi_icon"
   },
   {
     "status": "new",
     "id": 32,
     "titulo": "Huitzilopochtli (com Pacto de Sangue :aomr_blood_pact_icon:)",
-    "author": ["TheRapl"],
-    "god": ["Huitzilopochtli"],
+    "author": [
+      "TheRapl"
+    ],
+    "god": [
+      "Huitzilopochtli"
+    ],
     "notion_file_id": "00000000000000000000000000000000",
-    "youtube": ["https://youtu.be/11ywODZ3SmM?si=SV9tZPsZ1N1E5yu1"],
+    "youtube": [
+      "https://youtu.be/11ywODZ3SmM?si=SV9tZPsZ1N1E5yu1"
+    ],
     "descricao_curta": "Huitzilopochtli 4:06 Build Order by TheRapl",
     "structured": {
       "segments": [
@@ -6707,7 +6943,8 @@
       ]
     },
     "slug": "huitzilopochtli-4-06-build-order-therapl",
-    "pantheon": "Astecas"
+    "pantheon": "Astecas",
+    "image": "aomr_huitzilopochtli_icon"
   },
   {
     "status": "new",
@@ -6860,6 +7097,7 @@
       ]
     },
     "slug": "tezcatlipoca-4-07-build-order-therapl",
-    "pantheon": "Astecas"
-  } 
+    "pantheon": "Astecas",
+    "image": "aomr_tezcatlipoca_icon"
+  }
 ]
