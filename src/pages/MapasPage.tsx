@@ -49,6 +49,7 @@ export function MapasPage() {
               subtitle={m.tipo}
               meta={m.origem}
               backgroundCoverSrc={getMapaPreviewUrl(m)}
+              backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
               watermarkSrc={getMapaAssetUrl(m)}
             />
           </li>

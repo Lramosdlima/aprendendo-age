@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
@@ -23,6 +23,8 @@ export type AppPageDetailProps = {
    * Compensa o padding do `<main>` para o fundo ir até ao topo da coluna.
    */
   heroBackgroundSrc?: string;
+  /** Se o URL principal (p.ex. preview) não carregar, tenta-se este. */
+  heroBackgroundFallbackSrc?: string;
   /** Junta-se ao `PageHeader` (por omissão `mb-0` porque o bloco hero já tem `mb-8`). */
   pageHeaderClassName?: string;
   className?: string;
@@ -42,23 +44,28 @@ export function AppPageDetail({
   descriptionTag,
   actions,
   heroBackgroundSrc,
+  heroBackgroundFallbackSrc,
   pageHeaderClassName,
   className,
   children,
 }: AppPageDetailProps) {
   const { state: navState } = useLocation();
   const backHref = listIndexReturnTo(backTo, navState);
+  const [heroSrc, setHeroSrc] = useState(heroBackgroundSrc);
+  useEffect(() => {
+    setHeroSrc(heroBackgroundSrc);
+  }, [heroBackgroundSrc]);
 
   return (
     <div className={cn(className)}>
       <div className="relative -mx-4 -mt-6 mb-8 md:-mx-10 md:-mt-10">
-        {heroBackgroundSrc ? (
+        {heroSrc ? (
           <div
             aria-hidden
             className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[min(46vh,400px)] overflow-hidden"
           >
             <img
-              src={heroBackgroundSrc}
+              src={heroSrc}
               alt=""
               className="h-full w-full object-cover object-center opacity-[0.22] saturate-125"
               style={{
@@ -66,6 +73,11 @@ export function AppPageDetail({
                 WebkitMaskImage: HERO_BACKGROUND_MASK,
               }}
               draggable={false}
+              onError={() => {
+                if (heroBackgroundFallbackSrc && heroSrc === heroBackgroundSrc) {
+                  setHeroSrc(heroBackgroundFallbackSrc);
+                }
+              }}
             />
           </div>
         ) : null}

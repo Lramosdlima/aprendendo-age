@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Link, type To } from "react-router-dom";
 
 import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
@@ -19,6 +19,8 @@ type EntityCardProps = {
   watermarkSrc?: string;
   /** Imagem de fundo em todo o card (cover, mesma opacidade suave que a faixa da marca d’água); por baixo do ícone e do texto. */
   backgroundCoverSrc?: string;
+  /** Se `backgroundCoverSrc` falhar ao carregar (ex. preview 404), usa-se esta URL. */
+  backgroundCoverFallbackSrc?: string;
   /** Se true, o subtítulo é mostrado dentro de {@link AppTag}. */
   subtitleTag?: boolean;
   /** Estilo do {@link AppTag} do subtítulo (`rich` = não forçar âmbar; útil com cores por tipo). */
@@ -44,6 +46,7 @@ export function EntityCard({
   meta,
   watermarkSrc,
   backgroundCoverSrc,
+  backgroundCoverFallbackSrc,
   subtitleTag = true,
   subtitleTagVariant = "amber",
   subtitleMinLines = 2,
@@ -54,8 +57,19 @@ export function EntityCard({
   selectDisabled,
   cardTint,
 }: EntityCardProps) {
+  const [coverSrc, setCoverSrc] = useState(backgroundCoverSrc);
+  useEffect(() => {
+    setCoverSrc(backgroundCoverSrc);
+  }, [backgroundCoverSrc]);
+
   const hasTint = Boolean(cardTint);
-  const hasBgCover = Boolean(backgroundCoverSrc);
+  const hasBgCover = Boolean(coverSrc);
+  const useCoverFallbackProbe =
+    Boolean(
+      backgroundCoverSrc &&
+        backgroundCoverFallbackSrc &&
+        backgroundCoverSrc !== backgroundCoverFallbackSrc,
+    );
   const useSubtitleTag = subtitleTag && subtitle != null && subtitle !== "";
   const subtitleBody = useSubtitleTag ? (
     <AppTag
@@ -114,7 +128,7 @@ export function EntityCard({
       >
         <div
           className="absolute inset-0 bg-cover bg-center saturate-125 opacity-[0.18] transition-opacity group-hover:opacity-[0.18]"
-          style={{ backgroundImage: cssUrl(backgroundCoverSrc!) }}
+          style={{ backgroundImage: cssUrl(coverSrc!) }}
         />
       </div>
       <div
@@ -180,6 +194,19 @@ export function EntityCard({
     </>
   );
 
+  const coverProbe =
+    useCoverFallbackProbe && hasBgCover && backgroundCoverFallbackSrc ? (
+      <img
+        key={backgroundCoverSrc}
+        src={backgroundCoverSrc}
+        alt=""
+        className="pointer-events-none h-px w-px max-h-0 max-w-0 overflow-hidden border-0 opacity-0"
+        onError={() => {
+          if (backgroundCoverFallbackSrc) setCoverSrc(backgroundCoverFallbackSrc);
+        }}
+      />
+    ) : null;
+
   if (compareMode) {
     return (
       <div
@@ -197,6 +224,7 @@ export function EntityCard({
           onToggleSelect?.();
         }}
       >
+        {coverProbe}
         {bgCoverLayers}
         {tintLayers}
         {inner}
@@ -206,6 +234,7 @@ export function EntityCard({
 
   return (
     <Link to={to} className={shellClass} state={linkState}>
+      {coverProbe}
       {bgCoverLayers}
       {tintLayers}
       {inner}

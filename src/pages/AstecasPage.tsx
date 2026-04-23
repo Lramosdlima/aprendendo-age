@@ -320,10 +320,10 @@ export function AstecasPage() {
                 to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
                 linkState={listIndexState}
                 title={m.nome}
-                cardTint={cardTint}
                 subtitle={m.tipo}
                 meta={m.origem}
                 backgroundCoverSrc={getMapaPreviewUrl(m)}
+                backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
                 watermarkSrc={getMapaAssetUrl(m)}
               />
             </li>

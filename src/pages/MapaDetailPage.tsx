@@ -39,6 +39,7 @@ export function MapaDetailPage() {
       description={m.ingles ? `Inglês: ${m.ingles}` : undefined}
       headerIconSrc={mapaIcon}
       heroBackgroundSrc={previewUrl}
+      heroBackgroundFallbackSrc={mapaIcon}
     >
       <Section title="Metadados">
         <div className="space-y-0">
