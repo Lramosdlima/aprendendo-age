@@ -6708,5 +6708,158 @@
     },
     "slug": "huitzilopochtli-4-06-build-order-therapl",
     "pantheon": "Astecas"
-  }
+  },
+  {
+    "status": "new",
+    "id": 33,
+    "titulo": "Tezcatlipoca 4:07 Build Order",
+    "author": [
+      "TheRapl"
+    ],
+    "god": [
+      "Tezcatlipoca"
+    ],
+    "notion_file_id": "00000000000000000000000000000000",
+    "youtube": [
+      "https://youtu.be/1XK2gUC-UE8?si=EaGSIVpr2b_vjGpp"
+    ],
+    "descricao_curta": "Tezcatlipoca 4:07 Build Order by TheRapl",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim :aomr_quimchim_spy_icon:"
+            },
+            {
+              "kind": "callout",
+              "text": "Tente sempre compartilhar o Calpulli  com algum recurso paralelo. Exemplo: Comida+Madeira ou Ouro+Madeira."
+            }
+          ],
+          "table": [
+            {
+              "description": "2 Colonos Iniciais na comida e 2 na madeira + Calpulli :aomr_calpulli_icon:",
+              "food": "2",
+              "wood": "2",
+              "gold": "-",
+              "favor": null,
+              "pop": "6/15",
+              "type": null
+            },
+            {
+              "description": "+1 Colono na comida",
+              "food": "3",
+              "wood": "2",
+              "gold": "-",
+              "favor": null,
+              "pop": "7/15",
+              "type": null
+            },
+            {
+              "description": "2 Colonos no ouro + Calpulli :aomr_calpulli_icon:",
+              "food": "3",
+              "wood": "2",
+              "gold": "2",
+              "favor": null,
+              "pop": "9/15",
+              "type": null
+            },
+            {
+              "description": "+6 Colono na comida (total: 9)",
+              "food": "9",
+              "wood": "2",
+              "gold": "2",
+              "favor": null,
+              "pop": "+/15",
+              "type": null
+            },
+            {
+              "description": "Com 200 de madeira construa 1 Casa :aomr_house_icon: com Colono da floresta",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Construa o Templo :aomr_temple_icon: com todos Colonos do ouro (<code>≈2:05</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "+2 ou 3 Colonos no ouro",
+              "food": "9",
+              "wood": "2",
+              "gold": "+",
+              "favor": null,
+              "pop": "17/25",
+              "type": null
+            },
+            {
+              "description": "Subindo de Era por Huehuecóyotl :aomr_huehuecoyotl_icon: (defensivo) ou Malinalxochitl :aomr_malinalxochitl_icon: (ofensivo) (<code>≈3:07</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Realoque os Colonos : da comida para ouro e madeira",
+              "food": "5",
+              "wood": "4",
+              "gold": "6",
+              "favor": null,
+              "pop": "17/25",
+              "type": null
+            },
+            {
+              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon: para pegar Relíquias e se defender",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subiu Era (≈<code>4:07</code>)</strong>",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Construa 1 <highlight-blue>Casa</highlight-blue> :aomr_house_icon: com Colono da floresta",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Construa 1 <highlight-blue>Cabana de Guerra</highlight-blue> :aomr_war_hut_icon: e 1 <highlight-blue>Cabana do Nobre</highlight-blue> :aomr_noble_hut_icon: com Colonos do ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            }
+          ]
+        }
+      ]
+    },
+    "slug": "tezcatlipoca-4-07-build-order-therapl",
+    "pantheon": "Astecas"
+  } 
 ]
