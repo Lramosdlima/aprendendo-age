@@ -2,6 +2,7 @@ import { useLayoutEffect, useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 import { cn } from "@/lib/cn";
+import { startNovoTagClassNav } from "@/pages/StartsPage";
 
 /**
  * Rotas de listagem com `?search=` + restauração de scroll em memória: não
@@ -18,8 +19,8 @@ const LIST_INDEX_PATHS = new Set([
 ]);
 
 type NavItem =
-  | { to: string; label: string; end?: boolean }
-  | { to: string; label: string; match: (pathname: string) => boolean };
+  | { to: string; label: string; end?: boolean; navNovo?: boolean }
+  | { to: string; label: string; match: (pathname: string) => boolean; navNovo?: boolean };
 
 const nav: NavItem[] = [
   { to: "/", label: "Início", end: true },
@@ -30,6 +31,7 @@ const nav: NavItem[] = [
     match: (p) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
   },
   { to: "/panteoes", label: "Panteões" },
+  { to: "/astecas", label: "Astecas", navNovo: true },
   { to: "/deuses", label: "Deuses" },
   { to: "/eras", label: "Eras" },
   { to: "/poderes", label: "Poderes divinos" },
@@ -42,7 +44,7 @@ const nav: NavItem[] = [
 
 function navClass(active: boolean) {
   return cn(
-    "block rounded-lg px-3 py-2 text-sm transition-colors",
+    "flex min-w-0 items-center justify-between gap-2 rounded-lg px-3 py-2 text-sm transition-colors",
     active
       ? "bg-amber-500/15 text-amber-200 ring-1 ring-amber-500/35"
       : "text-zinc-300 hover:bg-zinc-800/80 hover:text-white",
@@ -62,7 +64,12 @@ function ShellNavLinks({ pathname, onItemClick }: { pathname: string; onItemClic
             navClass("match" in item ? item.match(pathname) : isActive)
           }
         >
-          {item.label}
+          <span className="min-w-0 flex-1 truncate">{item.label}</span>
+          {item.navNovo ? (
+            <span className={startNovoTagClassNav} title="Conteúdo recente / novo">
+              Novo
+            </span>
+          ) : null}
         </NavLink>
       ))}
     </>
@@ -155,14 +162,19 @@ export function AppShell() {
         <div className="w-10 shrink-0" aria-hidden />
       </header>
 
-      <aside className="hidden shrink-0 border-aom-border border-b bg-zinc-950/80 md:block md:w-56 md:border-r md:border-b-0 md:py-6">
-        <div className="px-4 pb-3 pt-4 md:px-5 md:pb-6 md:pt-0">
+      <aside
+        className={cn(
+          "hidden shrink-0 border-b border-aom-border bg-zinc-950/95 backdrop-blur-sm md:flex md:flex-col md:w-56 md:border-r md:border-b-0 md:py-6",
+          "md:sticky md:top-0 md:z-20 md:self-start md:h-[100dvh] md:min-h-[100dvh] md:overflow-hidden",
+        )}
+      >
+        <div className="shrink-0 px-4 pb-3 pt-4 md:px-5 md:pb-6 md:pt-0">
           <div className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-wide text-amber-200">
             Aprendendo Age
           </div>
           <p className="mt-1 text-xs text-zinc-500">por Scooby Maníaco</p>
         </div>
-        <nav className="flex flex-col gap-1 px-2 pb-3 md:px-3 md:pb-0">
+        <nav className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto px-2 pb-3 md:px-3 md:pb-6">
           <ShellNavLinks pathname={pathname} />
         </nav>
       </aside>

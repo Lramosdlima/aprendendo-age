@@ -9,6 +9,7 @@ import { SearchField } from "@/components/ui/SearchField";
 import { startsBuildOrder } from "@/data/catalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import { cn } from "@/lib/cn";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
@@ -25,10 +26,18 @@ function matchesStart(
 const godTagClass =
   "inline-flex max-w-full shrink-0 items-center rounded border border-amber-600/45 bg-amber-500/10 px-1.5 py-0.5 text-sm font-medium leading-snug text-amber-200/90 [word-break:break-word]";
 
-const novoTagClass =
-  "inline-flex shrink-0 items-center rounded-md border border-sky-700/55 bg-sky-950/80 px-2 py-0.5 text-xs font-semibold text-sky-200";
+const startNovoTagClassBase =
+  "inline-flex shrink-0 items-center rounded border border-sky-700/55 bg-sky-950/80 font-semibold text-sky-200";
 
-function StartGodTags({ names }: { names: string[] }) {
+export const startNovoTagClass = cn(startNovoTagClassBase, "rounded-md px-2 py-0.5 text-xs");
+
+/** Variação menor (menu lateral / navegação). */
+export const startNovoTagClassNav = cn(
+  startNovoTagClassBase,
+  "px-1 py-px text-[0.6rem] leading-tight",
+);
+
+export function StartGodTags({ names }: { names: string[] }) {
   if (!names.length) return null;
   return (
     <span className="inline-flex max-w-full flex-wrap items-center gap-1 align-top">
@@ -86,7 +95,7 @@ export function StartsPage() {
                     <NotionText text={s.titulo} />
                   </span>
                   {s.status === "new" ? (
-                    <span className={novoTagClass} title="Novo">
+                    <span className={startNovoTagClass} title="Novo">
                       🔷 Novo !
                     </span>
                   ) : null}

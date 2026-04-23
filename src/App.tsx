@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AppShell } from "@/components/layout/AppShell";
 import { AldeaoDetailPage } from "@/pages/AldeaoDetailPage";
 import { AldeoesPage } from "@/pages/AldeoesPage";
+import { AstecasPage } from "@/pages/AstecasPage";
 import { ConstrucaoDetailPage } from "@/pages/ConstrucaoDetailPage";
 import { ConstrucoesPage } from "@/pages/ConstrucoesPage";
 import { DeusDetailPage } from "@/pages/DeusDetailPage";
@@ -39,6 +40,7 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="panteoes" element={<PanteoesPage />} />
           <Route path="panteoes/:slug" element={<PanteaoDetailPage />} />
+          <Route path="astecas" element={<AstecasPage />} />
           <Route path="deuses" element={<DeusesPage />} />
           <Route path="deuses/:slug" element={<DeusDetailPage />} />
           <Route path="eras" element={<ErasPage />} />
