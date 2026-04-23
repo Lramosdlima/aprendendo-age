@@ -24,7 +24,7 @@ type NavItem =
 
 const nav: NavItem[] = [
   { to: "/", label: "Início", end: true },
-  { to: "/starts", label: "Starts (Build Orders)" },
+  { to: "/starts", label: "Starts (Build Orders)", navNovo: true },
   {
     to: "/trilha-de-aprendizado",
     label: "Trilha de Aprendizado",
