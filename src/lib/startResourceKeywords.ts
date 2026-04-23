@@ -2,6 +2,7 @@
  * Recursos e trabalhadores nos starts: no JSON usamos só o texto;
  * na renderização expandimos para highlight + :token: (recursos) ou palavra + :token: (trabalhadores).
  */
+import { expandBuildingKeywords } from "@/lib/startBuildingKeywords";
 
 /** Evita expandir de novo se já houver :aomr_*: logo após a palavra. */
 const NOT_IF_ICON = String.raw`(?!\s*:aomr_)`;
@@ -118,7 +119,7 @@ export function expandResourceKeywords(text: string): string {
   return t;
 }
 
-/** Ordem: trabalhadores primeiro, depois recursos. */
+/** Ordem: trabalhadores → edifícios/estruturas (nome+ícone) → recursos. */
 export function expandStartInlineKeywords(text: string): string {
-  return expandResourceKeywords(expandWorkerKeywords(text));
+  return expandResourceKeywords(expandBuildingKeywords(expandWorkerKeywords(text)));
 }
