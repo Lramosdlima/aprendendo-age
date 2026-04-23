@@ -36,3 +36,16 @@ export function listIndexReturnTo(fallback: string, state: unknown): string {
   }
   return fallback;
 }
+
+const ASTECAS_INDEX = "/astecas";
+
+/**
+ * Rótulo do «Voltar» quando o `to` provém de {@link listIndexReturnTo} após o índice
+ * de Astecas (`/astecas`); caso contrário usa `defaultLabel` (ex.: "Unidades").
+ */
+export function listIndexBackLinkLabel(backTo: string, defaultLabel: string): string {
+  if (backTo === ASTECAS_INDEX || backTo.startsWith(`${ASTECAS_INDEX}?`)) {
+    return "Astecas";
+  }
+  return defaultLabel;
+}

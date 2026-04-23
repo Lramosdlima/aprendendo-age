@@ -19,18 +19,20 @@ import { formatGodNameForMetaNotion, formatGodNameStringForMetaNotion, getDeusAs
 import { formatEraNameForMetaNotion } from "@/lib/eraMetaNotion";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { formatPantheonNameForMetaNotion } from "@/lib/pantheonAssetUrl";
-import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import { listIndexBackLinkLabel, listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 export function GodpowerDetailPage() {
-  const { pathname, search: locSearch } = useLocation();
+  const { pathname, search: locSearch, state: navState } = useLocation();
   const deusLinkFromPowerState = listIndexLinkStateFromLocation(pathname, locSearch);
+  const backToList = listIndexReturnTo("/poderes", navState);
+  const backLabel = listIndexBackLinkLabel(backToList, "Poderes divinos");
   const { slug } = useParams();
   const g = slug ? godpowerBySlug.get(slug) : undefined;
 
   if (!g) {
     return (
       <div>
-        <BackLink to="/poderes">Poderes divinos</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Poder não encontrado.</p>
       </div>
     );
@@ -59,7 +61,7 @@ export function GodpowerDetailPage() {
 
   return (
     <div>
-      <BackLink to="/poderes">Poderes divinos</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={g.nome}
         description={g.ingles ? `Inglês: ${g.ingles}` : undefined}

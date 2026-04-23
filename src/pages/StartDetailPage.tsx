@@ -9,7 +9,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { deuses, deusSlugById, startBySlug } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
-import { listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { listIndexBackLinkLabel, listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 
 /** Nomes em `starts_build_order.json` que não coincidem com `deuses_aom.json`. */
@@ -41,6 +41,8 @@ function startGodHeaderPortraits(labels: string[], deusLinkState: ListIndexLinkS
 export function StartDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
   const backToList = listIndexReturnTo("/starts", navState);
+  const backLabel = listIndexBackLinkLabel(backToList, "Starts & build orders");
+  const backLabelNotFound = listIndexBackLinkLabel(backToList, "Starts");
   const deusLinkFromStartState = listIndexLinkStateFromLocation(pathname, locSearch);
   const { slug } = useParams();
   const s = slug ? startBySlug.get(slug) : undefined;
@@ -48,7 +50,7 @@ export function StartDetailPage() {
   if (!s) {
     return (
       <div>
-        <BackLink to={backToList}>Starts</BackLink>
+        <BackLink to={backToList}>{backLabelNotFound}</BackLink>
         <p className="text-zinc-400">Página não encontrada.</p>
       </div>
     );
@@ -60,7 +62,7 @@ export function StartDetailPage() {
 
   return (
     <div>
-      <BackLink to={backToList}>Starts & build orders</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={<NotionText text={s.titulo} />}
         description={s.descricao_curta}

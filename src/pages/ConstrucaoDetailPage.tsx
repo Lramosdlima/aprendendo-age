@@ -17,19 +17,20 @@ import {
 } from "@/data/catalog";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
-import { listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { hasTipoContent } from "@/lib/unidadeTipo";
 
 export function ConstrucaoDetailPage() {
   const { state: navState } = useLocation();
   const backToList = listIndexReturnTo("/construcoes", navState);
+  const backLabel = listIndexBackLinkLabel(backToList, "Construções");
   const { slug } = useParams();
   const c = slug ? construcaoBySlug.get(slug) : undefined;
 
   if (!c) {
     return (
       <div>
-        <BackLink to={backToList}>Construções</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Construção não encontrada.</p>
       </div>
     );
@@ -56,7 +57,7 @@ export function ConstrucaoDetailPage() {
 
   return (
     <div>
-      <BackLink to={backToList}>Construções</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={c.nome}
         description={c.ingles ? `Inglês: ${c.ingles}` : undefined}

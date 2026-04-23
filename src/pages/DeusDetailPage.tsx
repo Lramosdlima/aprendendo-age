@@ -48,6 +48,7 @@ function buildAvaliacaoLabel(n: number | null | undefined): string {
 
 /** Texto do link "← …" conforme a origem (lista de deuses, start ou poder divino). */
 function deusBackLinkLabel(backTo: string): string {
+  if (backTo === "/astecas" || backTo.startsWith("/astecas?")) return "Astecas";
   if (backTo === "/starts" || backTo.startsWith("/starts?")) return "Starts & build orders";
   if (backTo.startsWith("/starts/")) return "Voltar ao start";
   if (backTo.startsWith("/poderes/compare")) return "Comparar poderes";

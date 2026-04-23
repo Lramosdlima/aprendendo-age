@@ -8,18 +8,19 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
-import { listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 export function UnidadeDetailPage() {
   const { state: navState } = useLocation();
   const backToList = listIndexReturnTo("/unidades", navState);
+  const backLabel = listIndexBackLinkLabel(backToList, "Unidades");
   const { slug } = useParams();
   const u = slug ? unidadeBySlug.get(slug) : undefined;
 
   if (!u) {
     return (
       <div>
-        <BackLink to={backToList}>Unidades</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Unidade não encontrada.</p>
       </div>
     );
@@ -29,7 +30,7 @@ export function UnidadeDetailPage() {
 
   return (
     <div>
-      <BackLink to={backToList}>Unidades</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={u.nome}
         description={

@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
@@ -7,15 +7,19 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { aldeaoBySlug, panteaoById, panteaoSlugById } from "@/data/catalog";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 export function AldeaoDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/aldeoes", navState);
+  const backLabel = listIndexBackLinkLabel(backToList, "Aldeões");
   const { slug } = useParams();
   const a = slug ? aldeaoBySlug.get(slug) : undefined;
 
   if (!a) {
     return (
       <div>
-        <BackLink to="/aldeoes">Aldeões</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Registro não encontrado.</p>
       </div>
     );
@@ -26,7 +30,7 @@ export function AldeaoDetailPage() {
 
   return (
     <div>
-      <BackLink to="/aldeoes">Aldeões</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader title={a.nome} description={a.ingles ? `Inglês: ${a.ingles}` : undefined} headerIconSrc={aldeaoIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
