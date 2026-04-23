@@ -127,7 +127,7 @@ export function EntityCard({
         className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[inherit]"
       >
         <div
-          className="absolute inset-0 bg-cover bg-center saturate-125 opacity-[0.18] transition-opacity group-hover:opacity-[0.18]"
+          className="absolute inset-0 bg-cover bg-center saturate-125 opacity-[0.5] transition-opacity group-hover:opacity-[0.5]"
           style={{ backgroundImage: cssUrl(coverSrc!) }}
         />
       </div>
@@ -156,7 +156,7 @@ export function EntityCard({
           )}
         >
           <div
-            className="absolute inset-0 saturate-125 opacity-[0.18] transition-opacity group-hover:opacity-[0.18]"
+            className="absolute inset-0 saturate-125 opacity-[0.3] transition-opacity group-hover:opacity-[0.3]"
             style={watermarkStripImageStyle(watermarkSrc)}
           />
         </div>
