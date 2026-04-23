@@ -7099,5 +7099,176 @@
     "slug": "tezcatlipoca-4-07-build-order-therapl",
     "pantheon": "Astecas",
     "image": "aomr_tezcatlipoca_icon"
+  },
+  {
+    "id": 34,
+    "titulo": "Quetzalcoatl Build Order 4:07 by TheRapl",
+    "author": [
+      "TheRapl"
+    ],
+    "god": [
+      "Quetzalcoatl"
+    ],
+    "image": "aomr_quetzalcoatl_icon",
+    "notion_file_id": "00000000000000000000000000000000",
+    "youtube": [
+      "https://youtu.be/TutR7UkuliY?si=NCVKYseugtzWNa86"
+    ],
+    "descricao_curta": "Quetzalcoatl Build Order 4:07 by TheRapl",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim :aomr_quimchim_spy_icon:"
+            },
+            {
+              "kind": "callout",
+              "text": "Tente sempre compartilhar o Calpulli com algum recurso paralelo. Exemplo: Comida+Madeira ou Ouro+Madeira."
+            }
+          ],
+          "table": [
+            {
+              "description": "2 Colonos Iniciais na comida e 2 na madeira + Calpulli",
+              "food": "2",
+              "wood": "2",
+              "gold": "-",
+              "favor": null,
+              "pop": "6/15",
+              "type": null
+            },
+            {
+              "description": "Faça o upgrade do Calpulli do \"Calpulli (Curral)\" para comida",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+3 Colono na comida (total: 5)",
+              "food": "5",
+              "wood": "2",
+              "gold": "-",
+              "favor": null,
+              "pop": "9/15",
+              "type": null
+            },
+            {
+              "description": "2 Colonos no ouro + Calpulli",
+              "food": "5",
+              "wood": "2",
+              "gold": "2",
+              "favor": null,
+              "pop": "11/15",
+              "type": null
+            },
+            {
+              "description": "+3 Colono na comida (total: 8)",
+              "food": "8",
+              "wood": "2",
+              "gold": "2",
+              "favor": null,
+              "pop": "14/15",
+              "type": null
+            },
+            {
+              "description": "Com 200 de madeira construa 1 Casa com Colono da floresta",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Construa o Templo com todos Colonos do ouro (<code>≈2:35</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "+2 ou +3 Colonos no ouro",
+              "food": "8",
+              "wood": "4",
+              "gold": "4",
+              "favor": null,
+              "pop": "14/25",
+              "type": null
+            },
+            {
+              "description": "Subindo de Era por Patecatl :aomr_patecatl_icon: (defensivo) ou Huehuecóyotl :aomr_huehuecoyotl_icon: (semi-defensivo) (<code>≈3:07</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Com 100 de madeira faça o upgrade \"Calpulli (Posto Avançado de Lenha)\" para madeira",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Realoque os Colonos: da comida para ouro e madeira",
+              "food": "4",
+              "wood": "6",
+              "gold": "5",
+              "favor": null,
+              "pop": "17/25",
+              "type": null
+            },
+            {
+              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon: para pegar Relíquias e se defender",
+              "food": "4",
+              "wood": "6",
+              "gold": "5",
+              "favor": null,
+              "pop": "17/25",
+              "type": null
+            },
+            {
+              "description": ":aomr_classical_age_icon: <strong>Subiu Era (≈<code>4:07</code>)</strong>",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Faça o upgrade \"Calpulli (Oficina de Artesanato)\" para futuro ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Construa 1 Cabana de Guerra e 1 Cabana do Nobre com Colonos do ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            }
+          ]
+        }
+      ]
+    },
+    "slug": "quetzalcoatl-build-order-4-07-by-therapl-therapl",
+    "pantheon": "Astecas"
   }
 ]
