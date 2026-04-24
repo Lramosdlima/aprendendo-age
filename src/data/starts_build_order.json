@@ -7144,7 +7144,7 @@
               "type": null
             },
             {
-              "description": "Faça o upgrade do Calpulli do \"Calpulli (Curral :aomr_calpulli_ranch_icon:)\" para comida",
+              "description": "Faça o upgrade do Calpulli do \"Calpulli (Curral :aomr_calpulli_livestock_pen_icon:)\" para comida",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7279,7 +7279,7 @@
   {
     "status": "new",
     "id": 35,
-    "titulo": "Quetzalcoatl ECO (Todos Upgrades :aomr_calpulli_craft_workshop_icon: :aomr_calpulli_lumber_outpost_icon: :aomr_calpulli_ranch_icon: do Calpulli :aomr_calpulli_icon:) por HuskSuppe",
+    "titulo": "Quetzalcoatl ECO (Todos Upgrades :aomr_calpulli_craft_workshop_icon: :aomr_calpulli_lumber_outpost_icon: :aomr_calpulli_livestock_pen_icon: do Calpulli :aomr_calpulli_icon:) por HuskSuppe",
     "author": [
       "HuskSuppe"
     ],
@@ -7334,7 +7334,7 @@
               "type": null
             },
             {
-              "description": "Com 100 madeira faça o upgrade do Calpulli do \"Curral\" :calpulli_livestock_pen_icon:\" para comida",
+              "description": "Com 100 madeira faça o upgrade do Calpulli do \"Curral\" :aomr_calpulli_livestock_pen_icon:\" para comida",
               "food": null,
               "wood": null,
               "gold": null,
