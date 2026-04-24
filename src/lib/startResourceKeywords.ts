@@ -9,6 +9,10 @@
  * (equivalente ao padrão que vinha no JSON antes do título da etapa).
  */
 import { expandBuildingKeywords } from "@/lib/startBuildingKeywords";
+import {
+  expandClassicalAgeInlineKeywords,
+  expandStartGodHeroKeywords,
+} from "@/lib/startGodHeroKeywords";
 import { A, B, NOT_IF_ICON, U } from "@/lib/startKeywordBoundaries";
 
 /** Remove markup legado «palavra + ícone» antes de regravar o JSON (migração). */
@@ -120,7 +124,6 @@ const START_UNIT_RAW: Array<{
   { phrase: "Sarcerdote", token: "aomr_priest_icon", wrap: "teal" },
   { phrase: "Oráculos", token: "aomr_oracle_hero_icon", wrap: "teal" },
   { phrase: "Oráculo", token: "aomr_oracle_hero_icon", wrap: "teal" },
-  { phrase: "Huehuecóyotl", token: "aomr_huehuecoyotl_icon" },
   { phrase: "Kataskopos", token: "aomr_kataskopos_icon" },
   { phrase: "Pioneiro", token: "aomr_pioneer_icon" },
   { phrase: "Berserker", token: "aomr_berserk_icon", wrap: "teal" },
@@ -176,7 +179,9 @@ function expandClassicalAgePrefixLine(line: string): string {
   if (/^:aomr_classical_age_icon:\s/i.test(trimmed)) return line;
   if (
     /^<strong>Subindo de Era\b/i.test(trimmed) ||
-    /^<strong>Subiu Era\b/i.test(trimmed)
+    /^<strong>Subiu Era\b/i.test(trimmed) ||
+    /^Subindo de Era\b/i.test(trimmed) ||
+    /^Subiu Era\b/i.test(trimmed)
   ) {
     const leadLen = line.length - line.trimStart().length;
     const lead = line.slice(0, leadLen);
@@ -220,12 +225,16 @@ export function expandResourceKeywords(text: string): string {
   return t;
 }
 
-/** Ordem: trabalhadores → unidades (nome+ícone) → edifícios → recursos → prefixo Era Clássica nas linhas de passagem. */
+/** Ordem: trabalhadores → unidades → deuses/heróis → edifícios → recursos → Era Clássica (cabeçalho + menções inline). */
 export function expandStartInlineKeywords(text: string): string {
-  return expandClassicalAgePrefix(
-    expandResourceKeywords(
-      expandBuildingKeywords(
-        expandStartUnitKeywords(expandWorkerKeywords(text)),
+  return expandClassicalAgeInlineKeywords(
+    expandClassicalAgePrefix(
+      expandResourceKeywords(
+        expandBuildingKeywords(
+          expandStartGodHeroKeywords(
+            expandStartUnitKeywords(expandWorkerKeywords(text)),
+          ),
+        ),
       ),
     ),
   );

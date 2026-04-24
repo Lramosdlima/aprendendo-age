@@ -109,7 +109,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -127,7 +127,7 @@
               "type": null
             },
             {
-              "description": "Treinar Herói: :aomr_jason_icon: <highlight-orange>Jazão</highlight-orange>| :aomr_ajax_icon: <highlight-orange>Ajax</highlight-orange>|<highlight-orange></highlight-orange> :aomr_theseus_icon: <highlight-orange>Teseu</highlight-orange>",
+              "description": "Treinar Herói: Jazão | Ajax | Teseu",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -163,7 +163,7 @@
               "type": null
             },
             {
-              "description": "Treinar Herói: :aomr_achilles_icon: <highlight-orange>Aquiles</highlight-orange>|<highlight-orange></highlight-orange> :aomr_heracles_icon: <highlight-orange>Hércules</highlight-orange>|<highlight-orange>Atalanta</highlight-orange>",
+              "description": "Treinar Herói: Aquiles | Hércules | Atalanta",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -268,7 +268,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -286,7 +286,7 @@
               "type": null
             },
             {
-              "description": "Treinar Herói: :aomr_jason_icon: <highlight-orange>Jazão</highlight-orange>| :aomr_ajax_icon: <highlight-orange>Ajax</highlight-orange>|<highlight-orange></highlight-orange> :aomr_theseus_icon: <highlight-orange>Teseu</highlight-orange>",
+              "description": "Treinar Herói: Jazão | Ajax | Teseu",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -322,7 +322,7 @@
               "type": null
             },
             {
-              "description": "Treinar Herói: :aomr_achilles_icon: <highlight-orange>Aquiles</highlight-orange>|<highlight-orange></highlight-orange> :aomr_heracles_icon: <highlight-orange>Hércules</highlight-orange>|<highlight-orange>Atalanta</highlight-orange>",
+              "description": "Treinar Herói: Aquiles | Hércules | Atalanta",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -384,7 +384,7 @@
               "type": null
             },
             {
-              "description": "Explore com Sarcerdote → Com Set :aomr_set_icon: converta animais / Ou Ísis :aomr_isis_icon: coloque Obeliscos",
+              "description": "Explore com Sarcerdote → Com Set converta animais / Ou Ísis coloque Obeliscos",
               "food": null,
               "wood": null,
               "gold": null,
@@ -465,7 +465,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Anubis</strong> :aomr_anubis_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:15</code>)",
+              "description": "<strong>Subindo de Era por Anubis</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:15</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -682,7 +682,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Freya</strong> :aomr_freyja_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Freya</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -880,7 +880,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Oceano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Oceano</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1054,7 +1054,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: (<strong>≈</strong><code><strong>3:05</strong></code>)",
+              "description": "<strong>Subindo de Era por Chiyou</strong> (<strong>≈</strong><code><strong>3:05</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1207,7 +1207,7 @@
               "type": "blue"
             },
             {
-              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1283,7 +1283,7 @@
             },
             {
               "kind": "callout",
-              "text": "Cofre de Érebus é um UP de tecnologia de Hades :aomr_hades_icon: que fornece ouro passivamente!"
+              "text": "Cofre de Érebus é um UP de tecnologia de Hades que fornece ouro passivamente!"
             }
           ],
           "table": [
@@ -1414,7 +1414,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1432,7 +1432,7 @@
               "type": null
             },
             {
-              "description": "Treinar Herói: :aomr_ajax_icon: <highlight-orange>Ajax</highlight-orange>",
+              "description": "Treinar Herói: Ajax",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1468,7 +1468,7 @@
               "type": null
             },
             {
-              "description": "Treinar Herói: :aomr_achilles_icon: <highlight-orange>Aquiles</highlight-orange>",
+              "description": "Treinar Herói: Aquiles",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1495,7 +1495,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Afrodite</strong> :aomr_aphrodite_icon:",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Afrodite</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1609,7 +1609,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Hermes</strong> :aomr_hermes_icon: (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
+              "description": "<strong>Subindo de Era por Hermes</strong> (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1636,7 +1636,7 @@
               "type": null
             },
             {
-              "description": "(opcional) Treinar Herói :aomr_theseus_icon: <highlight-orange>Teseu</highlight-orange>",
+              "description": "(opcional) Treinar Herói Teseu",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1663,7 +1663,7 @@
               "type": null
             },
             {
-              "description": "(opcional) Treinar Heroína :aomr_atalanta_icon: <highlight-orange>Atalanta</highlight-orange>",
+              "description": "(opcional) Treinar Heroína Atalanta",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1672,7 +1672,7 @@
               "type": null
             },
             {
-              "description": "Raidar com Hippeus :aomr_hippeus_icon: + Herói :aomr_atalanta_icon: + Centauro :aomr_centaur_icon:",
+              "description": "Raidar com Hippeus :aomr_hippeus_icon: + Herói Atalanta + Centauro :aomr_centaur_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1690,7 +1690,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Afrodite</strong> :aomr_aphrodite_icon:",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Afrodite</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1699,7 +1699,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Hefesto</strong> :aomr_hephaestus_icon:",
+              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Hefesto</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1840,7 +1840,7 @@
               "type": "blue"
             },
             {
-              "description": "<strong>Subindo de Era por Bast</strong> :aomr_bast_icon: (<strong>≈</strong><code>3:35</code>)",
+              "description": "<strong>Subindo de Era por Bast</strong> (<strong>≈</strong><code>3:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1921,7 +1921,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Néftis</strong> :aomr_nephthys_icon:",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Néftis</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2071,7 +2071,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Bast</strong> :aomr_bast_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:40</code>)",
+              "description": "<strong>Subindo de Era por Bast</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2134,7 +2134,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Subindo de Era por Sobek</strong> :aomr_sobek_icon: (<strong>≈</strong><code>8:15</code>)",
+              "description": ":aomr_heroic_age_icon: <strong>Subindo de Era por Sobek</strong> (<strong>≈</strong><code>8:15</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2146,7 +2146,7 @@
           "footer": [
             {
               "kind": "callout",
-              "text": "Depois da passagem de Era :aomr_classical_age_icon: , o jogo fica muito adaptável."
+              "text": "Depois da passagem de Era , o jogo fica muito adaptável."
             },
             {
               "kind": "callout",
@@ -2154,7 +2154,7 @@
             },
             {
               "kind": "callout",
-              "text": "Saiba se é confiável fazer o 2º TC :aomr_town_center_egyptian_icon: ou lutar Clássica :aomr_classical_age_icon: com army dos Quarteis"
+              "text": "Saiba se é confiável fazer o 2º TC :aomr_town_center_egyptian_icon: ou lutar Clássica com army dos Quarteis"
             },
             {
               "kind": "callout",
@@ -2213,7 +2213,7 @@
               "type": null
             },
             {
-              "description": "Explore com Sarcerdote → Com Set :aomr_set_icon: converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
+              "description": "Explore com Sarcerdote → Com Set converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2276,7 +2276,7 @@
               "type": "hint"
             },
             {
-              "description": "<strong>Subindo de Era por Ptah</strong> :aomr_ptah_icon:",
+              "description": "<strong>Subindo de Era por Ptah</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2321,7 +2321,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Subindo de Era por Nephthys</strong> :aomr_nephthys_icon: (<strong>≈</strong><code>5:30</code>)",
+              "description": ":aomr_heroic_age_icon: <strong>Subindo de Era por Nephthys</strong> (<strong>≈</strong><code>5:30</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2433,7 +2433,7 @@
             },
             {
               "kind": "paragraph",
-              "text": "1. Egípcios :aomr_egyptians_icon: ou civs como Thor :aomr_thor_icon: , Hades :aomr_hades_icon: e Gaia :aomr_gaia_icon: ."
+              "text": "1. Egípcios :aomr_egyptians_icon: ou civs como Thor , Hades e Gaia ."
             },
             {
               "kind": "paragraph",
@@ -2476,7 +2476,7 @@
             },
             {
               "kind": "callout",
-              "text": "A ideia desse build order é <highlight-red>agressivar</highlight-red> na Clássica :aomr_classical_age_icon: !"
+              "text": "A ideia desse build order é <highlight-red>agressivar</highlight-red> na Clássica !"
             },
             {
               "kind": "callout",
@@ -2484,7 +2484,7 @@
             },
             {
               "kind": "callout",
-              "text": "Ótima pedida contra <highlight-pink>boomadores</highlight-pink>(Thor :aomr_thor_icon: , Gaia :aomr_gaia_icon: , Frey :aomr_freyr_icon: , Ísis :aomr_isis_icon: , Nuwa :aomr_nuwa_icon: )."
+              "text": "Ótima pedida contra <highlight-pink>boomadores</highlight-pink>(Thor , Gaia , Frey :aomr_freyr_icon: , Ísis , Nuwa )."
             },
             {
               "kind": "callout",
@@ -2515,7 +2515,7 @@
               "type": null
             },
             {
-              "description": "Explore com Sarcerdote → Com Set :aomr_set_icon: converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
+              "description": "Explore com Sarcerdote → Com Set converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2587,7 +2587,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Ptah</strong> :aomr_ptah_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
+              "description": "<strong>Subindo de Era por Ptah</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2780,7 +2780,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Ullr</strong> :aomr_ullr_icon: (<strong>≈</strong><code>3:16</code>)",
+              "description": "<strong>Subindo de Era por Ullr</strong> (<strong>≈</strong><code>3:16</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2852,7 +2852,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Aegir</strong> :aomr_aegir_icon:",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Aegir</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2861,7 +2861,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Vidar</strong> :aomr_vidar_icon:",
+              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Vidar</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2948,7 +2948,7 @@
               "type": "blue"
             },
             {
-              "description": "<strong>Subindo de Era por Ullr</strong> :aomr_ullr_icon: (<strong>≈</strong><code><strong>2:32</strong></code>)",
+              "description": "<strong>Subindo de Era por Ullr</strong> (<strong>≈</strong><code><strong>2:32</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3205,7 +3205,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Heimdall</strong> :aomr_heimdall_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:55</code>)",
+              "description": "<strong>Subindo de Era por Heimdall</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:55</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3438,7 +3438,7 @@
               "type": "hint"
             },
             {
-              "description": "<strong>Subindo de Era por Freya</strong> :aomr_freyja_icon: <strong>ou Forseti</strong> :aomr_forseti_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Freya ou Forseti</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3607,7 +3607,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Forseti</strong> :aomr_forseti_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Forseti</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3793,7 +3793,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Prometeus</strong> :aomr_prometheus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Prometeus</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3997,7 +3997,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Prometeus</strong> :aomr_prometheus_icon: (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
+              "description": "<strong>Subindo de Era por Prometeus</strong> (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4214,7 +4214,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Ocenano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Ocenano</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4286,7 +4286,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Theia</strong> :aomr_theia_icon: (<strong>≈</strong><code>6:00</code>)",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Theia</strong> (<strong>≈</strong><code>6:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4472,7 +4472,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Leto</strong> :aomr_leto_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Leto</strong> (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4655,7 +4655,7 @@
               "type": "blue"
             },
             {
-              "description": "<strong>Subindo de Era por Ocenano</strong> :aomr_oceanus_icon: (<strong>≈</strong>)",
+              "description": "<strong>Subindo de Era por Ocenano</strong> (<strong>≈</strong>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4836,7 +4836,7 @@
               "type": "hint"
             },
             {
-              "description": "<strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: (<strong>≈</strong><code><strong>3:00</strong></code>)",
+              "description": "<strong>Subindo de Era por Chiyou</strong> (<strong>≈</strong><code><strong>3:00</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5040,7 +5040,7 @@
               "type": null
             },
             {
-              "description": "Envie 1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: para o novo TC :aomr_town_center_chinese: com 75% do UP :aomr_classical_age_icon: (para adiantar)",
+              "description": "Envie 1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: para o novo TC :aomr_town_center_chinese: com 75% do UP (para adiantar)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5263,7 +5263,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era</strong>(<strong>≈</strong><code><strong>3:56</strong></code>)<strong>por Chiyou</strong> :aomr_chiyou_icon:",
+              "description": "<strong>Subindo de Era por Chiyou</strong> (<strong>≈</strong><code><strong>3:56</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5541,7 +5541,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Ame-No-Uzume</strong> :aomr_ame-no-uzume_icon: (<strong>≈</strong><code>2:45</code>)",
+              "description": "<strong>Subindo de Era por Ame-No-Uzume</strong> (<strong>≈</strong><code>2:45</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5595,7 +5595,7 @@
               "type": null
             },
             {
-              "description": "Construa 2 Dojos (Infantaria de Amaterasu :aomr_amaterasu_icon: tem benefícios)",
+              "description": "Construa 2 Dojos (Infantaria de Amaterasu tem benefícios)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5622,7 +5622,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Raijin</strong> :aomr_raijin_icon:",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Raijin</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5631,7 +5631,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Takemikazuchi</strong> :aomr_takemikazuchi_icon:",
+              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Takemikazuchi</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5754,7 +5754,7 @@
               "type": null
             },
             {
-              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 Miko no TC (15/15)",
+              "description": "Antes de subir , treine +1 Miko no TC (15/15)",
               "food": "8",
               "wood": "4",
               "gold": "0",
@@ -5763,7 +5763,7 @@
               "type": "hint"
             },
             {
-              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>) ou por Mina :aomr_minakatatomi_icon:",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> (<strong>≈</strong><code>3:00</code>) ou por Mina",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5817,7 +5817,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Raijin</strong> :aomr_raijin_icon:",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir por Raijin</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5826,7 +5826,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Takemikazuchi</strong> :aomr_takemikazuchi_icon:",
+              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir por Takemikazuchi</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5958,7 +5958,7 @@
               "type": null
             },
             {
-              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 Miko e +1 Santuário",
+              "description": "Antes de subir , treine +1 Miko e +1 Santuário",
               "food": "7",
               "wood": "4",
               "gold": "2",
@@ -5967,7 +5967,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>) ou por <strong>Minakatatomi</strong> :aomr_minakatatomi_icon:",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> (<strong>≈</strong><code>3:00</code>) ou por Minakatatomi",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6048,7 +6048,7 @@
               "type": "hint"
             },
             {
-              "description": "UPs:<highlight-pink>Nascente de Água Salgada</highlight-pink> :aomr_saltwater_spring_icon: e <highlight-pink>Kumiki</highlight-pink> :aomr_kumiki_icon: (caso Minakatatomi :aomr_minakatatomi_icon: )",
+              "description": "UPs:<highlight-pink>Nascente de Água Salgada</highlight-pink> :aomr_saltwater_spring_icon: e <highlight-pink>Kumiki</highlight-pink> :aomr_kumiki_icon: (caso Minakatatomi )",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6075,7 +6075,7 @@
               "type": null
             },
             {
-              "description": "Treinar Bushis ,Cavalaria Naginata e Arqueiros Yumi",
+              "description": "Treinar Bushis, Cavalaria Naginata e Arqueiros Yumi",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6198,7 +6198,7 @@
               "type": null
             },
             {
-              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 Miko no TC (15/15)",
+              "description": "Antes de subir , treine +1 Miko no TC (15/15)",
               "food": "8",
               "wood": "4",
               "gold": "-",
@@ -6207,7 +6207,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>)",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> (<strong>≈</strong><code>3:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6252,7 +6252,7 @@
               "type": "pink"
             },
             {
-              "description": "Construa 2 <highlight-blue>Estábulos</highlight-blue> :aomr_japanese_stable_icon: (Cavalaria de Tsukuyomi :aomr_tsukuyomi_icon: tem benefícios)",
+              "description": "Construa 2 <highlight-blue>Estábulos</highlight-blue> :aomr_japanese_stable_icon: (Cavalaria de Tsukuyomi tem benefícios)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6279,7 +6279,7 @@
               "type": null
             },
             {
-              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir na linha da Cavalaria →</strong> :aomr_fujin_icon: Jufin",
+              "description": ":aomr_heroic_age_icon: <strong>Sugestão: Ir na linha da Cavalaria →</strong> Jufin",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6288,7 +6288,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir na linha da Cavalaria →</strong> :aomr_watatsumi_icon: Watatsumi",
+              "description": ":aomr_mythic_age_icon: <strong>Sugestão: Ir na linha da Cavalaria →</strong> Watatsumi",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6495,7 +6495,7 @@
               "type": "hint"
             },
             {
-              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>4:10</code>)",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> (<strong>≈</strong><code>4:10</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6671,7 +6671,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>2:40</code>)",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> (<strong>≈</strong><code>2:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6885,7 +6885,7 @@
               "type": null
             },
             {
-              "description": "<strong>Subindo de Era por Patecatl :aomr_patecatl_icon: (eco) ou Malinalxochitl :aomr_malinalxochitl_icon: (ofensivo) (≈<code>3:06</code>)</strong>",
+              "description": "<strong>Subindo de Era por Patecatl (eco) ou Malinalxochitl (ofensivo) (≈<code>3:06</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7039,7 +7039,7 @@
               "type": null
             },
             {
-              "description": "Subindo de Era por Huehuecóyotl :aomr_huehuecoyotl_icon: (defensivo) ou Malinalxochitl :aomr_malinalxochitl_icon: (ofensivo) (<code>≈3:07</code>)",
+              "description": "Subindo de Era por Huehuecóyotl (defensivo) ou Malinalxochitl (ofensivo) (<code>≈3:07</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7126,7 +7126,7 @@
             },
             {
               "kind": "callout",
-              "text": "Upgrades do Calpulli são mais baratos com Quetzalcoatl :aomr_quetzalcoatl_icon: e podem ser feitos a partir da Arcaica, então aproveite para adiantar os upgrades do Calpulli para acelerar sua economia."
+              "text": "Upgrades do Calpulli são mais baratos com Quetzalcoatl e podem ser feitos a partir da Arcaica, então aproveite para adiantar os upgrades do Calpulli para acelerar sua economia."
             },
             {
               "kind": "callout",
@@ -7207,7 +7207,7 @@
               "type": null
             },
             {
-              "description": "Subindo de Era por Patecatl :aomr_patecatl_icon: (defensivo) ou Huehuecóyotl :aomr_huehuecoyotl_icon: (semi-defensivo) (<code>≈3:07</code>)",
+              "description": "Subindo de Era por Patecatl (defensivo) ou Huehuecóyotl (semi-defensivo) (<code>≈3:07</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7406,7 +7406,7 @@
               "type": null
             },
             {
-              "description": "Subindo de Era por Patecatl :aomr_patecatl_icon: (≈3:07)",
+              "description": "Subindo de Era por Patecatl (≈3:07)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7451,7 +7451,7 @@
               "type": "pink"
             },
             {
-              "description": "Construa 2 Cabana do Nobre com Colonos do ouro (foco do Quetzalcoatl :aomr_quetzalcoatl_icon:)",
+              "description": "Construa 2 Cabana do Nobre com Colonos do ouro (foco do Quetzalcoatl)",
               "food": null,
               "wood": null,
               "gold": null,
