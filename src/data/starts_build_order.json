@@ -23,7 +23,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Aldeões + Kataskopos :aomr_kataskopos_icon:"
+              "text": "Começa com 4 Aldeões + Kataskopos"
             },
             {
               "kind": "heading",
@@ -91,7 +91,7 @@
               "type": "blue"
             },
             {
-              "description": "O Aldeão permanece no Templo  coletando Favor",
+              "description": "O Aldeão permanece no Templo coletando Favor",
               "food": "9",
               "wood": "2",
               "gold": "1",
@@ -109,7 +109,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -136,7 +136,7 @@
               "type": "hint"
             },
             {
-              "description": "O Aldeão do Templo  constrói 1 Casa , depois volta para coletar Favor",
+              "description": "O Aldeão do Templo constrói 1 Casa , depois volta para coletar Favor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -145,7 +145,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -250,7 +250,7 @@
               "type": "hint"
             },
             {
-              "description": "O Aldeão permanece no Templo  coletando Favor",
+              "description": "O Aldeão permanece no Templo coletando Favor",
               "food": "7",
               "wood": "2",
               "gold": "2",
@@ -268,7 +268,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -295,7 +295,7 @@
               "type": null
             },
             {
-              "description": "O Aldeão do Templo  constrói 1 Casa , depois volta para coletar Favor",
+              "description": "O Aldeão do Templo constrói 1 Casa , depois volta para coletar Favor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -304,7 +304,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -370,12 +370,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Trabalhador + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
+              "text": "Começa com 3 Trabalhador + 1 Faraó + 1 Sarcerdote"
             }
           ],
           "table": [
             {
-              "description": "3 Trabalhadores + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na Comida + Celeiro",
+              "description": "3 Trabalhadores + 1 Faraó → Foco na Comida + Celeiro",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -384,7 +384,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: → Com Set :aomr_set_icon: converta animais / Ou Ísis :aomr_isis_icon: coloque Obeliscos",
+              "description": "Explore com Sarcerdote → Com Set :aomr_set_icon: converta animais / Ou Ísis :aomr_isis_icon: coloque Obeliscos",
               "food": null,
               "wood": null,
               "gold": null,
@@ -465,7 +465,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Anubis</strong> :aomr_anubis_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:15</code>)",
+              "description": "<strong>Subindo de Era por Anubis</strong> :aomr_anubis_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:15</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -474,7 +474,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Trabalhadores e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 Ouro",
+              "description": "Realoque os Trabalhadores e Faraó : +2 Ouro",
               "food": "6",
               "wood": "2",
               "gold": "7",
@@ -501,7 +501,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:15</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:15</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -551,7 +551,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Coletores + 1 Carro de Boi :aomr_ox_cart_icon: + 1 Berserker :aomr_berserk_icon:"
+              "text": "Começa com 3 Coletores + 1 Carro de Boi + 1 Berserker"
             }
           ],
           "table": [
@@ -565,7 +565,7 @@
               "type": null
             },
             {
-              "description": "3 Coletores inicial na comida junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "3 Coletores inicial na comida junto com Carro de Boi",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -574,7 +574,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói Casa",
+              "description": "Berseker constrói Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -592,7 +592,7 @@
               "type": "hint"
             },
             {
-              "description": "Anão para o ouro construindo Carro de Boi :aomr_ox_cart_icon:",
+              "description": "Anão para o ouro construindo Carro de Boi",
               "food": "3",
               "wood": "-",
               "gold": "1",
@@ -601,7 +601,7 @@
               "type": null
             },
             {
-              "description": "Coletor para madeira construindo Carro de Boi :aomr_ox_cart_icon:",
+              "description": "Coletor para madeira construindo Carro de Boi",
               "food": "3",
               "wood": "2",
               "gold": "1",
@@ -655,7 +655,7 @@
               "type": null
             },
             {
-              "description": "Construa o Templo com <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: (<strong>≈</strong><code>2:45</code>)",
+              "description": "Construa o Templo com Berseker (<strong>≈</strong><code>2:45</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -682,7 +682,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Freya</strong> :aomr_freyja_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Freya</strong> :aomr_freyja_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -700,7 +700,7 @@
               "type": null
             },
             {
-              "description": "Treine Hersirs :aomr_hersir_icon: e busque relíquias :aomr_relic_anim:",
+              "description": "Treine Hersirs e busque relíquias :aomr_relic_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -709,7 +709,7 @@
               "type": "hint"
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói +Casa",
+              "description": "Berseker constrói +Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -718,7 +718,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -745,7 +745,7 @@
               "type": null
             },
             {
-              "description": "Agressivar com [TA :aomr_throwing_axeman_icon: + Cavalaria Incursora :aomr_raiding_cavalry_icon: + Hersirs :aomr_hersir_icon: ]",
+              "description": "Agressivar com [TA :aomr_throwing_axeman_icon: + Cavalaria Incursora + Hersirs ]",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -785,7 +785,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos + 3 Oráculos :aomr_oracle_hero_icon:"
+              "text": "Começa com 2 Cidadãos + 3 Oráculos"
             }
           ],
           "table": [
@@ -799,7 +799,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
+              "description": "Explore com Oráculos → tecla de atalho padrão <code>/</code> para encontrá-los",
               "food": null,
               "wood": null,
               "gold": null,
@@ -880,7 +880,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Oceano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Oceano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -898,7 +898,7 @@
               "type": null
             },
             {
-              "description": "Treine +1 Oráculo :aomr_oracle_hero_icon:",
+              "description": "Treine +1 Oráculo",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -907,7 +907,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -964,7 +964,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro :aomr_pioneer_icon:"
+              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro"
             },
             {
               "kind": "callout",
@@ -991,7 +991,7 @@
               "type": null
             },
             {
-              "description": "Explore com Pioneiro :aomr_pioneer_icon: → Coloque Auto :autoqueue_px112: nos Balões :aomr_sky_lantern_icon:",
+              "description": "Explore com Pioneiro → Coloque Auto :autoqueue_px112: nos Balões :aomr_sky_lantern_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1045,7 +1045,7 @@
               "type": null
             },
             {
-              "description": "Move Kuafu do Templo  para o Ouro",
+              "description": "Move Kuafu do Templo para o Ouro",
               "food": "5",
               "wood": "4",
               "gold": "1",
@@ -1054,7 +1054,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: (<strong>≈</strong><code><strong>3:05</strong></code>)",
+              "description": "<strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: (<strong>≈</strong><code><strong>3:05</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1081,7 +1081,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:05</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:05</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1130,7 +1130,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Aldeões + Kataskopos :aomr_kataskopos_icon:"
+              "text": "Começa com 4 Aldeões + Kataskopos"
             }
           ],
           "table": [
@@ -1207,7 +1207,7 @@
               "type": "blue"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1234,7 +1234,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1279,7 +1279,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Aldeões + Kataskopos :aomr_kataskopos_icon:"
+              "text": "Começa com 4 Aldeões + Kataskopos"
             },
             {
               "kind": "callout",
@@ -1342,7 +1342,7 @@
               "type": "blue"
             },
             {
-              "description": "Todos os Aldeões do ouro vão para o Templo  coletar Favor",
+              "description": "Todos os Aldeões do ouro vão para o Templo coletar Favor",
               "food": "2",
               "wood": "3",
               "gold": "0",
@@ -1414,7 +1414,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
+              "description": "<strong>Subindo de Era por Atena</strong> :aomr_athena_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1441,7 +1441,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:25</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:25</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1532,7 +1532,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Aldeões + Kataskopos :aomr_kataskopos_icon:"
+              "text": "Começa com 4 Aldeões + Kataskopos"
             }
           ],
           "table": [
@@ -1582,7 +1582,7 @@
               "type": "blue"
             },
             {
-              "description": "O Aldeão permanece no Templo  coletando Favor",
+              "description": "O Aldeão permanece no Templo coletando Favor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1609,7 +1609,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Hermes</strong> :aomr_hermes_icon: (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
+              "description": "<strong>Subindo de Era por Hermes</strong> :aomr_hermes_icon: (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1645,7 +1645,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:16</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:16</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1736,12 +1736,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Trabalhador + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
+              "text": "Começa com 3 Trabalhador + 1 Faraó + 1 Sarcerdote"
             }
           ],
           "table": [
             {
-              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon:",
+              "description": "Explore com Sarcerdote",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1750,7 +1750,7 @@
               "type": "hint"
             },
             {
-              "description": "3 Trabalhadores + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Sobe 1 Monumento",
+              "description": "3 Trabalhadores + 1 Faraó → Sobe 1 Monumento",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1759,7 +1759,7 @@
               "type": null
             },
             {
-              "description": "3 Trabalhadores + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na Comida + Celeiro",
+              "description": "3 Trabalhadores + 1 Faraó → Foco na Comida + Celeiro",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -1804,7 +1804,7 @@
               "type": null
             },
             {
-              "description": "Sarcerdote :aomr_priest_icon: criando Obeliscos ao redor",
+              "description": "Sarcerdote criando Obeliscos ao redor",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1840,7 +1840,7 @@
               "type": "blue"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Bast</strong> :aomr_bast_icon: (<strong>≈</strong><code>3:35</code>)",
+              "description": "<strong>Subindo de Era por Bast</strong> :aomr_bast_icon: (<strong>≈</strong><code>3:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1849,7 +1849,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Trabalhadores e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +5 ouro",
+              "description": "Realoque os Trabalhadores e Faraó : +5 ouro",
               "food": "4",
               "wood": "-",
               "gold": "11",
@@ -1876,7 +1876,7 @@
               "type": "hint"
             },
             {
-              "description": "Crie <highlight-teal>Sarcerdotes</highlight-teal> :aomr_priest_icon: para pegar Relíquias",
+              "description": "Crie Sarcerdotes para pegar Relíquias",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1885,7 +1885,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:16</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:16</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -1894,7 +1894,7 @@
               "type": "pink"
             },
             {
-              "description": "6 Trabalhadores e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → 2º TC :aomr_town_center_egyptian_icon:",
+              "description": "6 Trabalhadores e Faraó → 2º TC :aomr_town_center_egyptian_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1958,12 +1958,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Trabalhador + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
+              "text": "Começa com 3 Trabalhador + 1 Faraó + 1 Sarcerdote"
             }
           ],
           "table": [
             {
-              "description": "3 Trabalhadores Iniciais + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: construindo Monumento",
+              "description": "3 Trabalhadores Iniciais + 1 Faraó construindo Monumento",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -1972,7 +1972,7 @@
               "type": null
             },
             {
-              "description": "4 Trabalhadores + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Foco na Comida + Celeiro",
+              "description": "4 Trabalhadores + 1 Faraó → Foco na Comida + Celeiro",
               "food": "4",
               "wood": "-",
               "gold": "-",
@@ -1981,7 +1981,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: → quando tiver ouro sobe Obelisco e empodera ele",
+              "description": "Explore com Sarcerdote → quando tiver ouro sobe Obelisco e empodera ele",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2008,7 +2008,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: empodera o Monumento",
+              "description": "Faraó empodera o Monumento",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2071,7 +2071,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Bast</strong> :aomr_bast_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:40</code>)",
+              "description": "<strong>Subindo de Era por Bast</strong> :aomr_bast_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2080,7 +2080,7 @@
               "type": "pink"
             },
             {
-              "description": "Realoque os Trabalhadores e <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: : +2 Ouro",
+              "description": "Realoque os Trabalhadores e Faraó : +2 Ouro",
               "food": "3",
               "wood": "0",
               "gold": "10",
@@ -2089,7 +2089,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:40</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2098,7 +2098,7 @@
               "type": "pink"
             },
             {
-              "description": "7 Trabalhadores do Ouro com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: para fazer o 2º TC :aomr_town_center_egyptian_icon:",
+              "description": "7 Trabalhadores do Ouro com Sarcerdote para fazer o 2º TC :aomr_town_center_egyptian_icon:",
               "food": "3",
               "wood": "-",
               "gold": "3",
@@ -2190,12 +2190,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Trabalhador + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
+              "text": "Começa com 3 Trabalhador + 1 Faraó + 1 Sarcerdote"
             }
           ],
           "table": [
             {
-              "description": "1 Trabalhador Inicial + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Coloca sobe 1 Monumento depois na Comida + Celeiro",
+              "description": "1 Trabalhador Inicial + 1 Faraó → Coloca sobe 1 Monumento depois na Comida + Celeiro",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -2213,7 +2213,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: → Com Set :aomr_set_icon: converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
+              "description": "Explore com Sarcerdote → Com Set :aomr_set_icon: converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2276,7 +2276,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ptah</strong> :aomr_ptah_icon:",
+              "description": "<strong>Subindo de Era por Ptah</strong> :aomr_ptah_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2294,7 +2294,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>",
+              "description": "<strong>Subiu Era</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2369,7 +2369,7 @@
             },
             {
               "kind": "paragraph",
-              "text": "1. Usar <highlight-purple>Visão</highlight-purple> :aomr_vision_icon: +<highlight-purple>Areais Móveis</highlight-purple> :aomr_shifting_sands_icon: para teleportar <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: + Trabalhadores para mina avançada."
+              "text": "1. Usar <highlight-purple>Visão</highlight-purple> :aomr_vision_icon: +<highlight-purple>Areais Móveis</highlight-purple> :aomr_shifting_sands_icon: para teleportar Faraó + Trabalhadores para mina avançada."
             },
             {
               "kind": "paragraph",
@@ -2425,7 +2425,7 @@
             },
             {
               "kind": "paragraph",
-              "text": "<highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: inicial + macaco + animais convertidos devem abrir o mapa."
+              "text": "Sarcerdote inicial + macaco + animais convertidos devem abrir o mapa."
             },
             {
               "kind": "paragraph",
@@ -2472,7 +2472,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Trabalhador + 1 Faraó :aomr_pharaoh_icon: + 1 Sarcerdote :aomr_priest_icon:"
+              "text": "Começa com 3 Trabalhador + 1 Faraó + 1 Sarcerdote"
             },
             {
               "kind": "callout",
@@ -2506,7 +2506,7 @@
               "type": null
             },
             {
-              "description": "1 Trabalhador Inicial + 1 <highlight-teal>Faraó</highlight-teal> :aomr_pharaoh_icon: → Coloca na Comida + Celeiro",
+              "description": "1 Trabalhador Inicial + 1 Faraó → Coloca na Comida + Celeiro",
               "food": "1",
               "wood": "-",
               "gold": "-",
@@ -2515,7 +2515,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: → Com Set :aomr_set_icon: converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
+              "description": "Explore com Sarcerdote → Com Set :aomr_set_icon: converta animais (preferência <highlight-pink>agressivos</highlight-pink>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2587,7 +2587,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ptah</strong> :aomr_ptah_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
+              "description": "<strong>Subindo de Era por Ptah</strong> :aomr_ptah_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:25</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2614,7 +2614,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:25</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:25</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2641,7 +2641,7 @@
               "type": null
             },
             {
-              "description": "Spam <highlight-red>soldados</highlight-red> :aomr_axeman_icon: :aomr_spearman_icon: nos Quarteis , alguns <highlight-teal>Sarcerdote</highlight-teal> :aomr_priest_icon: e <highlight-pink>Widgets</highlight-pink> :aomr_wadjet_icon:",
+              "description": "Spam <highlight-red>soldados</highlight-red> :aomr_axeman_icon: :aomr_spearman_icon: nos Quarteis , alguns Sarcerdote e <highlight-pink>Widgets</highlight-pink> :aomr_wadjet_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2685,7 +2685,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Coletores + 1 Carro de Boi :aomr_ox_cart_icon: + 1 Berserker :aomr_berserk_icon:"
+              "text": "Começa com 3 Coletores + 1 Carro de Boi + 1 Berserker"
             }
           ],
           "table": [
@@ -2699,7 +2699,7 @@
               "type": null
             },
             {
-              "description": "2 Coletores iniciais na comida junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "2 Coletores iniciais na comida junto com Carro de Boi",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -2708,7 +2708,7 @@
               "type": null
             },
             {
-              "description": "O Carro de Boi inicial :aomr_ox_cart_icon: upa a <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
+              "description": "O Carro de Boi inicial upa a <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2717,7 +2717,7 @@
               "type": "hint"
             },
             {
-              "description": "1 Coletor inicial constrói 1 Carro de Boi :aomr_ox_cart_icon: (que irá para o ouro )",
+              "description": "1 Coletor inicial constrói 1 Carro de Boi (que irá para o ouro )",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2735,7 +2735,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói +Casa",
+              "description": "Berseker constrói +Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2762,7 +2762,7 @@
               "type": null
             },
             {
-              "description": "Construa o Templo com <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: (<strong>≈</strong><code>2:35</code>)",
+              "description": "Construa o Templo com Berseker (<strong>≈</strong><code>2:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2780,7 +2780,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ullr</strong> :aomr_ullr_icon: (<strong>≈</strong><code>3:16</code>)",
+              "description": "<strong>Subindo de Era por Ullr</strong> :aomr_ullr_icon: (<strong>≈</strong><code>3:16</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2798,7 +2798,7 @@
               "type": null
             },
             {
-              "description": "Treine Hersirs :aomr_hersir_icon: e busque relíquias :aomr_relic_anim:",
+              "description": "Treine Hersirs e busque relíquias :aomr_relic_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2807,7 +2807,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói +Casa",
+              "description": "Berseker constrói +Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -2825,7 +2825,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:16</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:16</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2898,12 +2898,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Coletores + 1 Carro de Boi :aomr_ox_cart_icon: + 1 Berserker :aomr_berserk_icon:"
+              "text": "Começa com 3 Coletores + 1 Carro de Boi + 1 Berserker"
             }
           ],
           "table": [
             {
-              "description": "3 Coletores iniciais para Ouro com Carroça de Boi :aomr_ox_cart_icon: (até 150 <highlight-gray>/2950</highlight-gray>)",
+              "description": "3 Coletores iniciais para Ouro com Carro de Boi (até 150 <highlight-gray>/2950</highlight-gray>)",
               "food": "-",
               "wood": "-",
               "gold": "3",
@@ -2939,7 +2939,7 @@
               "type": null
             },
             {
-              "description": "Construa Templo (avançado) com a <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: (<strong>≈</strong><code>1:30</code>)",
+              "description": "Construa Templo (avançado) com a Berseker (<strong>≈</strong><code>1:30</code>)",
               "food": "8",
               "wood": "1",
               "gold": "0",
@@ -2948,7 +2948,7 @@
               "type": "blue"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ullr</strong> :aomr_ullr_icon: (<strong>≈</strong><code><strong>2:32</strong></code>)",
+              "description": "<strong>Subindo de Era por Ullr</strong> :aomr_ullr_icon: (<strong>≈</strong><code><strong>2:32</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -2966,7 +2966,7 @@
               "type": null
             },
             {
-              "description": "Construa Casa com <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon:",
+              "description": "Construa Casa com Berseker",
               "food": "6",
               "wood": "3",
               "gold": "4",
@@ -2975,7 +2975,7 @@
               "type": null
             },
             {
-              "description": "Coloque Hersirs :aomr_hersir_icon: na Fila",
+              "description": "Coloque Hersirs na Fila",
               "food": "6",
               "wood": "3",
               "gold": "4",
@@ -2993,7 +2993,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>3:42</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:42</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3057,7 +3057,7 @@
   },
   {
     "id": 15,
-    "titulo": ":aomr_loki_icon: Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias) - por HuskSuppe",
+    "titulo": ":aomr_loki_icon: Loki (:aomr_relic_anim: Herlíquias) - por HuskSuppe",
     "author": [
       "HuskSuppe"
     ],
@@ -3075,20 +3075,20 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Coletores + 1 Carro de Boi :aomr_ox_cart_icon: + 1 Berserker :aomr_berserk_icon:"
+              "text": "Começa com 3 Coletores + 1 Carro de Boi + 1 Berserker"
             },
             {
               "kind": "callout",
-              "text": "Esse start funciona melhor com <highlight-orange>caça agressiva</highlight-orange> :aomr_rhinoceros_icon: ! Elas facilitam a coleta de comida próxima ao TC :aomr_town_center_norse_icon: sem necessidade de outro Carro de Boi :aomr_ox_cart_icon: ."
+              "text": "Esse start funciona melhor com <highlight-orange>caça agressiva</highlight-orange> :aomr_rhinoceros_icon: ! Elas facilitam a coleta de comida próxima ao TC :aomr_town_center_norse_icon: sem necessidade de outro Carro de Boi ."
             },
             {
               "kind": "callout",
-              "text": "Caso contrário, use o <highlight-teal>Berserker</highlight-teal> :aomr_berserk_icon: para bater na <highlight-blue>caça passiva</highlight-blue> :aomr_caribou_icon:  de forma a fazer eles recuarem para próximo do TC :aomr_town_center_norse_icon: ."
+              "text": "Caso contrário, use o Berserker para bater na <highlight-blue>caça passiva</highlight-blue> :aomr_caribou_icon: de forma a fazer eles recuarem para próximo do TC :aomr_town_center_norse_icon: ."
             }
           ],
           "table": [
             {
-              "description": "2 Coletores inicial no ouro junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "2 Coletores inicial no ouro junto com Carro de Boi",
               "food": "-",
               "wood": "-",
               "gold": "2",
@@ -3115,7 +3115,7 @@
               "type": null
             },
             {
-              "description": "Construa o Templo com <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: (<strong>≈</strong><code>0:40</code>)",
+              "description": "Construa o Templo com Berseker (<strong>≈</strong><code>0:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3124,7 +3124,7 @@
               "type": "blue"
             },
             {
-              "description": "Treine imediatamente +2 <highlight-orange>Hersirs</highlight-orange> :aomr_hersir_icon: e busque TODAS relíquias :aomr_relic_anim: possíveis",
+              "description": "Treine imediatamente +2 Hersirs e busque TODAS relíquias :aomr_relic_anim: possíveis",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3133,7 +3133,7 @@
               "type": "red"
             },
             {
-              "description": "+3 Coletor para madeira(colete o suficiente para +1 Carro de Boi :aomr_ox_cart_icon: )",
+              "description": "+3 Coletor para madeira(colete o suficiente para +1 Carro de Boi )",
               "food": "4",
               "wood": "3",
               "gold": "2",
@@ -3151,7 +3151,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói Casa",
+              "description": "Berseker constrói Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3178,7 +3178,7 @@
               "type": null
             },
             {
-              "description": "Ao explorar com <highlight-orange>Hersir</highlight-orange> :aomr_hersir_icon: usar poder divino <highlight-purple>Espião</highlight-purple> :aomr_spy_icon: assim que possível no ouro",
+              "description": "Ao explorar com Hersir usar poder divino <highlight-purple>Espião</highlight-purple> :aomr_spy_icon: assim que possível no ouro",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3187,7 +3187,7 @@
               "type": "hint"
             },
             {
-              "description": "Constrói +1 Carro de Boi :aomr_ox_cart_icon: para comida",
+              "description": "Constrói +1 Carro de Boi para comida",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3205,7 +3205,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Heimdall</strong> :aomr_heimdall_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:55</code>)",
+              "description": "<strong>Subindo de Era por Heimdall</strong> :aomr_heimdall_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:55</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3223,7 +3223,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói +Casa",
+              "description": "Berseker constrói +Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3232,7 +3232,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:55</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:55</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3250,7 +3250,7 @@
               "type": null
             },
             {
-              "description": "Construa +2 Grande Salão→ Treine Cavalaria Incursora :aomr_raiding_cavalry_icon:",
+              "description": "Construa +2 Grande Salão→ Treine Cavalaria Incursora",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3312,7 +3312,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Anões + 1 Carro de Boi :aomr_ox_cart_icon: + 1 Berserker :aomr_berserk_icon:"
+              "text": "Começa com 3 Anões + 1 Carro de Boi + 1 Berserker"
             },
             {
               "kind": "callout",
@@ -3330,7 +3330,7 @@
               "type": "hint"
             },
             {
-              "description": "3 Anões iniciais no ouro junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "3 Anões iniciais no ouro junto com Carro de Boi",
               "food": "-",
               "wood": "-",
               "gold": "3",
@@ -3339,7 +3339,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói imediatamente uma <highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon:",
+              "description": "Berseker constrói imediatamente uma <highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3384,7 +3384,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói Casa",
+              "description": "Berseker constrói Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3420,7 +3420,7 @@
               "type": null
             },
             {
-              "description": "Construa o Templo com <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: (<strong>≈</strong><code>3:10</code>)",
+              "description": "Construa o Templo com Berseker (<strong>≈</strong><code>3:10</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3438,7 +3438,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Freya</strong> :aomr_freyja_icon: <strong>ou Forseti</strong> :aomr_forseti_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Freya</strong> :aomr_freyja_icon: <strong>ou Forseti</strong> :aomr_forseti_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3447,7 +3447,7 @@
               "type": "pink"
             },
             {
-              "description": "Treine Hersirs :aomr_hersir_icon: e busque relíquias :aomr_relic_anim:",
+              "description": "Treine Hersirs e busque relíquias :aomr_relic_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3456,7 +3456,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3503,7 +3503,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Anões + 1 Carro de Boi :aomr_ox_cart_icon: + 1 Berserker :aomr_berserk_icon:"
+              "text": "Começa com 3 Anões + 1 Carro de Boi + 1 Berserker"
             }
           ],
           "table": [
@@ -3517,7 +3517,7 @@
               "type": null
             },
             {
-              "description": "3 Anões iniciais na madeira<highlight-gray>(até coletar toda madeira)</highlight-gray> junto com Carro de Boi :aomr_ox_cart_icon:",
+              "description": "3 Anões iniciais na madeira<highlight-gray>(até coletar toda madeira)</highlight-gray> junto com Carro de Boi",
               "food": "-",
               "wood": "3",
               "gold": "-",
@@ -3526,7 +3526,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói <highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: +Casa",
+              "description": "Berseker constrói <highlight-blue>Armaria de Anões</highlight-blue> :aomr_dwarven_armory_icon: +Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3535,7 +3535,7 @@
               "type": null
             },
             {
-              "description": "Transfira o Carro de Boi :aomr_ox_cart_icon: para os Coletores na comida",
+              "description": "Transfira o Carro de Boi para os Coletores na comida",
               "food": "12",
               "wood": "3",
               "gold": "-",
@@ -3589,7 +3589,7 @@
               "type": "hint"
             },
             {
-              "description": "Construa o Templo com <highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: (<strong>≈</strong><code>2:35</code>)",
+              "description": "Construa o Templo com Berseker (<strong>≈</strong><code>2:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3607,7 +3607,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Forseti</strong> :aomr_forseti_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Forseti</strong> :aomr_forseti_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3625,7 +3625,7 @@
               "type": null
             },
             {
-              "description": "Crie +2 Carros de Boi :aomr_ox_cart_icon: para cada campo",
+              "description": "Crie +2 Carros de Boi para cada campo",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3634,7 +3634,7 @@
               "type": null
             },
             {
-              "description": "Treine Hersirs :aomr_hersir_icon: e busque relíquias :aomr_relic_anim:",
+              "description": "Treine Hersirs e busque relíquias :aomr_relic_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3643,7 +3643,7 @@
               "type": null
             },
             {
-              "description": "<highlight-teal>Berseker</highlight-teal> :aomr_berserk_icon: constrói +Casa",
+              "description": "Berseker constrói +Casa",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -3652,7 +3652,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3707,7 +3707,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos + 3 Oráculos :aomr_oracle_hero_icon:"
+              "text": "Começa com 2 Cidadãos + 3 Oráculos"
             }
           ],
           "table": [
@@ -3721,7 +3721,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
+              "description": "Explore com Oráculos → tecla de atalho padrão <code>/</code> para encontrá-los",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3793,7 +3793,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Prometeus</strong> :aomr_prometheus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Prometeus</strong> :aomr_prometheus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3811,7 +3811,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3902,7 +3902,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos + 3 Oráculos :aomr_oracle_hero_icon:"
+              "text": "Começa com 2 Cidadãos + 3 Oráculos"
             }
           ],
           "table": [
@@ -3925,7 +3925,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
+              "description": "Explore com Oráculos → tecla de atalho padrão <code>/</code> para encontrá-los",
               "food": null,
               "wood": null,
               "gold": null,
@@ -3997,7 +3997,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Prometeus</strong> :aomr_prometheus_icon: (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
+              "description": "<strong>Subindo de Era por Prometeus</strong> :aomr_prometheus_icon: (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4024,7 +4024,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>3:35</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:35</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4033,7 +4033,7 @@
               "type": "pink"
             },
             {
-              "description": "Junte seus <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: e transforme 1 deles em herói com <highlight-purple>Valor</highlight-purple> :aomr_valor_icon:",
+              "description": "Junte seus Oráculos e transforme 1 deles em herói com <highlight-purple>Valor</highlight-purple> :aomr_valor_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -4115,7 +4115,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos (Herói) :aomr_citizen_hero_icon: + 3 Oráculos :aomr_oracle_hero_icon:"
+              "text": "Começa com 2 Cidadãos (Herói) :aomr_citizen_hero_icon: + 3 Oráculos"
             },
             {
               "kind": "callout",
@@ -4151,7 +4151,7 @@
               "type": "hint"
             },
             {
-              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
+              "description": "Explore com Oráculos → tecla de atalho padrão <code>/</code> para encontrá-los",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4214,7 +4214,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ocenano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Ocenano</strong> :aomr_oceanus_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4250,7 +4250,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4350,7 +4350,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos (Herói) :aomr_citizen_hero_icon: + 3 Oráculos :aomr_oracle_hero_icon:"
+              "text": "Começa com 2 Cidadãos (Herói) :aomr_citizen_hero_icon: + 3 Oráculos"
             }
           ],
           "table": [
@@ -4382,7 +4382,7 @@
               "type": null
             },
             {
-              "description": "Explore com <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: → tecla de atalho padrão <code>/</code> para encontrá-los",
+              "description": "Explore com Oráculos → tecla de atalho padrão <code>/</code> para encontrá-los",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4472,7 +4472,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Leto</strong> :aomr_leto_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
+              "description": "<strong>Subindo de Era por Leto</strong> :aomr_leto_icon: (<strong>≈</strong><code><strong>3</strong></code><code>:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4490,7 +4490,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:20</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4543,7 +4543,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos (Herói) :aomr_citizen_hero_icon: + 3 Oráculos :aomr_oracle_hero_icon:"
+              "text": "Começa com 2 Cidadãos (Herói) :aomr_citizen_hero_icon: + 3 Oráculos"
             },
             {
               "kind": "callout",
@@ -4583,7 +4583,7 @@
               "type": "hint"
             },
             {
-              "description": "Coloque <highlight-teal>Oráculos</highlight-teal> :aomr_oracle_hero_icon: perto do TC, para favor rápido e depois Sobe 1 deles para Herói :aomr_oracle_hero_icon:",
+              "description": "Coloque Oráculos perto do TC, para favor rápido e depois Sobe 1 deles para Herói :aomr_oracle_hero_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4655,7 +4655,7 @@
               "type": "blue"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ocenano</strong> :aomr_oceanus_icon: (<strong>≈</strong>)",
+              "description": "<strong>Subindo de Era por Ocenano</strong> :aomr_oceanus_icon: (<strong>≈</strong>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4682,7 +4682,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4719,7 +4719,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro :aomr_pioneer_icon:"
+              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro"
             },
             {
               "kind": "callout",
@@ -4728,7 +4728,7 @@
           ],
           "table": [
             {
-              "description": "Explore com Pioneiro :aomr_pioneer_icon: → Coloque Auto :autoqueue_px112: nos Balões :aomr_sky_lantern_icon:",
+              "description": "Explore com Pioneiro → Coloque Auto :autoqueue_px112: nos Balões :aomr_sky_lantern_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4836,7 +4836,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: (<strong>≈</strong><code><strong>3:00</strong></code>)",
+              "description": "<strong>Subindo de Era por Chiyou</strong> :aomr_chiyou_icon: (<strong>≈</strong><code><strong>3:00</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4845,7 +4845,7 @@
               "type": "pink"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4927,7 +4927,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro :aomr_pioneer_icon:"
+              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro"
             }
           ],
           "table": [
@@ -4986,7 +4986,7 @@
               "type": "blue"
             },
             {
-              "description": "Move <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon:  para o Ouro",
+              "description": "Move <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: para o Ouro",
               "food": "5",
               "wood": "3",
               "gold": "1",
@@ -4995,7 +4995,7 @@
               "type": null
             },
             {
-              "description": "+1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon:  para o Ouro",
+              "description": "+1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: para o Ouro",
               "food": "5",
               "wood": "3",
               "gold": "2",
@@ -5013,7 +5013,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era</strong>(<strong>≈</strong><code><strong>2:45</strong></code>)",
+              "description": "<strong>Subindo de Era</strong>(<strong>≈</strong><code><strong>2:45</strong></code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5040,7 +5040,7 @@
               "type": null
             },
             {
-              "description": "Envie 1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon:  para o novo TC :aomr_town_center_chinese: com 75% do UP :aomr_classical_age_icon: (para adiantar)",
+              "description": "Envie 1 <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: para o novo TC :aomr_town_center_chinese: com 75% do UP :aomr_classical_age_icon: (para adiantar)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5049,7 +5049,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>3:45</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:45</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5094,7 +5094,7 @@
               "type": null
             },
             {
-              "description": "+1 Novo <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon:  para Ouro",
+              "description": "+1 Novo <highlight-orange>Kuafu</highlight-orange> :aomr_kuafu_icon: para Ouro",
               "food": "7",
               "wood": "3",
               "gold": "5",
@@ -5127,7 +5127,7 @@
   },
   {
     "id": 25,
-    "titulo": ":aomr_shennong_icon: Shennong Fazendeiro (:aomr_farm_icon::aomr_prosperous_seeds:)",
+    "titulo": ":aomr_shennong_icon: Shennong Fazendeiro (:aomr_farm_icon:aomr_prosperous_seeds:)",
     "author": [
       "HuskSuppe"
     ],
@@ -5146,7 +5146,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro :aomr_pioneer_icon:"
+              "text": "Começa com 2 Camponeses + 1 Kuafu + 1 Pioneiro"
             },
             {
               "kind": "callout",
@@ -5173,7 +5173,7 @@
               "type": null
             },
             {
-              "description": "Use o Pioneiro :aomr_pioneer_icon: para empurrar 2 caças :aomr_caribou_icon: para perto do TC :aomr_town_center_chinese: <highlight-gray>(caso sejam passivas)</highlight-gray>",
+              "description": "Use o Pioneiro para empurrar 2 caças :aomr_caribou_icon: para perto do TC :aomr_town_center_chinese: <highlight-gray>(caso sejam passivas)</highlight-gray>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5263,7 +5263,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era</strong>(<strong>≈</strong><code><strong>3:56</strong></code>)<strong>por Chiyou</strong> :aomr_chiyou_icon:",
+              "description": "<strong>Subindo de Era</strong>(<strong>≈</strong><code><strong>3:56</strong></code>)<strong>por Chiyou</strong> :aomr_chiyou_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5281,7 +5281,7 @@
               "type": null
             },
             {
-              "description": "Crie +1 Pioneiro :aomr_pioneer_icon: <highlight-gray>(busque relíquias)</highlight-gray>",
+              "description": "Crie +1 Pioneiro <highlight-gray>(busque relíquias)</highlight-gray>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5308,7 +5308,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:56</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:56</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5411,7 +5411,7 @@
             },
             {
               "kind": "callout",
-              "text": "Começa com 3 Plebeus + 1 Miko :aomr_miko_icon: + 1 Kitsune :aomr_kitsune_icon:"
+              "text": "Começa com 3 Plebeus + 1 Miko + 1 Kitsune :aomr_kitsune_icon:"
             },
             {
               "kind": "callout",
@@ -5433,7 +5433,7 @@
               "type": null
             },
             {
-              "description": "Construa um Santuário  com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Construa um Santuário com Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5478,7 +5478,7 @@
               "type": null
             },
             {
-              "description": "UP tecnologia <highlight-pink>Kagura</highlight-pink> no Santuário (5 ) → para <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: extra",
+              "description": "UP tecnologia <highlight-pink>Kagura</highlight-pink> no Santuário (5 ) → para Miko extra",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5496,7 +5496,7 @@
               "type": null
             },
             {
-              "description": "Construa o Templo com a <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: (<strong>≈</strong><code>1:55</code>)",
+              "description": "Construa o Templo com a Miko (<strong>≈</strong><code>1:55</code>)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5505,7 +5505,7 @@
               "type": "blue"
             },
             {
-              "description": "Pre-queue na tecnologia <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: <highlight-pink></highlight-pink>→ para pegar Relíquias :aomr_relic_anim:",
+              "description": "Pre-queue na tecnologia Guardiões Sagrados <highlight-pink></highlight-pink>→ para pegar Relíquias :aomr_relic_anim:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5523,7 +5523,7 @@
               "type": null
             },
             {
-              "description": "Após atualização <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: , pegue relíquias :aomr_relic_anim: com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Após atualização Guardiões Sagrados , pegue relíquias :aomr_relic_anim: com Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5532,7 +5532,7 @@
               "type": null
             },
             {
-              "description": "Construa +1 Santuário  com nova <highlight-teal>Miko</highlight-teal> do <highlight-pink>Kagura</highlight-pink>",
+              "description": "Construa +1 Santuário com nova <highlight-teal>Miko</highlight-teal> do <highlight-pink>Kagura</highlight-pink>",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5541,7 +5541,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Ame-No-Uzume</strong> :aomr_ame-no-uzume_icon: (<strong>≈</strong><code>2:45</code>)",
+              "description": "<strong>Subindo de Era por Ame-No-Uzume</strong> :aomr_ame-no-uzume_icon: (<strong>≈</strong><code>2:45</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5568,7 +5568,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>3:40</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5586,7 +5586,7 @@
               "type": "hint"
             },
             {
-              "description": "+1 <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: com +1 Santuário nas galinhas e florestas",
+              "description": "+1 Miko com +1 Santuário nas galinhas e florestas",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5668,7 +5668,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Plebeus + 1 Miko :aomr_miko_icon: + 1 Kitsune :aomr_kitsune_icon:"
+              "text": "Começa com 3 Plebeus + 1 Miko + 1 Kitsune :aomr_kitsune_icon:"
             }
           ],
           "table": [
@@ -5682,7 +5682,7 @@
               "type": null
             },
             {
-              "description": "Construa um Santuário  com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Construa um Santuário com Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5718,7 +5718,7 @@
               "type": "hint"
             },
             {
-              "description": "Construa o Templo com a <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: (<strong>≈</strong><code>1:45</code>)",
+              "description": "Construa o Templo com a Miko (<strong>≈</strong><code>1:45</code>)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5745,7 +5745,7 @@
               "type": null
             },
             {
-              "description": "Após atualização <highlight-pink>Guardiões Sagrados</highlight-pink>, pegue relíquias com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Após atualização <highlight-pink>Guardiões Sagrados</highlight-pink>, pegue relíquias com Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5754,7 +5754,7 @@
               "type": null
             },
             {
-              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:  no TC (15/15)",
+              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 Miko no TC (15/15)",
               "food": "8",
               "wood": "4",
               "gold": "0",
@@ -5763,7 +5763,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>) ou por Mina :aomr_minakatatomi_icon:",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>) ou por Mina :aomr_minakatatomi_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5781,7 +5781,7 @@
               "type": null
             },
             {
-              "description": "Construa +1 Santuário  com nova <highlight-teal>Miko</highlight-teal>",
+              "description": "Construa +1 Santuário com nova <highlight-teal>Miko</highlight-teal>",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5799,7 +5799,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5845,7 +5845,7 @@
   },
   {
     "id": 28,
-    "titulo": ":aomr_susanoo_icon: Susanoo (++Mikos :aomr_miko_icon::favoraom:) - por HuskSuppe",
+    "titulo": ":aomr_susanoo_icon: Susanoo (++Mikos :favoraom:) - por HuskSuppe",
     "author": [
       "HuskSuppe"
     ],
@@ -5863,12 +5863,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Plebeus + 1 Miko :aomr_miko_icon: + 1 Kitsune :aomr_kitsune_icon:"
+              "text": "Começa com 3 Plebeus + 1 Miko + 1 Kitsune :aomr_kitsune_icon:"
             }
           ],
           "table": [
             {
-              "description": "Imediatamente, coloca 1 <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: na Fila Inicial",
+              "description": "Imediatamente, coloca 1 Miko na Fila Inicial",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5895,7 +5895,7 @@
               "type": null
             },
             {
-              "description": "Construa 2 <highlight-blue>Santuários</highlight-blue>  com cada <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Construa 2 <highlight-blue>Santuários</highlight-blue> com cada Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5931,7 +5931,7 @@
               "type": null
             },
             {
-              "description": "Construa o Templo com a <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: (<strong>≈</strong><code>2:25</code>)",
+              "description": "Construa o Templo com a Miko (<strong>≈</strong><code>2:25</code>)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5940,7 +5940,7 @@
               "type": "blue"
             },
             {
-              "description": "Pre-queue na tecnologia <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: (para pegar relíquias)",
+              "description": "Pre-queue na tecnologia Guardiões Sagrados (para pegar relíquias)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -5958,7 +5958,7 @@
               "type": null
             },
             {
-              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: e +1 Santuário",
+              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 Miko e +1 Santuário",
               "food": "7",
               "wood": "4",
               "gold": "2",
@@ -5967,7 +5967,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>) ou por <strong>Minakatatomi</strong> :aomr_minakatatomi_icon:",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>) ou por <strong>Minakatatomi</strong> :aomr_minakatatomi_icon:",
               "food": null,
               "wood": null,
               "gold": null,
@@ -5994,7 +5994,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6030,7 +6030,7 @@
               "type": null
             },
             {
-              "description": "+1 <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "+1 Miko",
               "food": "5",
               "wood": "6",
               "gold": "3",
@@ -6075,7 +6075,7 @@
               "type": null
             },
             {
-              "description": "Treinar <highlight-orange>Bushis</highlight-orange> :aomr_bushi_icon: ,<highlight-teal>Cavalaria Naginata</highlight-teal> :aomr_naginata_rider_icon: e <highlight-blue>Arqueiros Yumi</highlight-blue> :aomr_yumi_archer_icon:",
+              "description": "Treinar Bushis ,Cavalaria Naginata e Arqueiros Yumi",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6112,7 +6112,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Plebeus + 1 Miko :aomr_miko_icon: + 1 Kitsune :aomr_kitsune_icon:"
+              "text": "Começa com 3 Plebeus + 1 Miko + 1 Kitsune :aomr_kitsune_icon:"
             }
           ],
           "table": [
@@ -6126,7 +6126,7 @@
               "type": null
             },
             {
-              "description": "Construa um Santuário  com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Construa um Santuário com Miko",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -6153,7 +6153,7 @@
               "type": null
             },
             {
-              "description": "Pre-queue na tecnologia <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: (para pegar relíquias :aomr_relic_anim: )",
+              "description": "Pre-queue na tecnologia Guardiões Sagrados (para pegar relíquias :aomr_relic_anim: )",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6162,7 +6162,7 @@
               "type": "hint"
             },
             {
-              "description": "Construa o Templo com a <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: (<strong>≈</strong><code>1:45</code>)",
+              "description": "Construa o Templo com a Miko (<strong>≈</strong><code>1:45</code>)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6189,7 +6189,7 @@
               "type": null
             },
             {
-              "description": "Após atualização <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: , pegue relíquias :aomr_relic_anim: com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Após atualização Guardiões Sagrados , pegue relíquias :aomr_relic_anim: com Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6198,7 +6198,7 @@
               "type": null
             },
             {
-              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:  no TC (15/15)",
+              "description": "Antes de subir :aomr_classical_age_icon: , treine +1 Miko no TC (15/15)",
               "food": "8",
               "wood": "4",
               "gold": "-",
@@ -6207,7 +6207,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>)",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>3:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6225,7 +6225,7 @@
               "type": null
             },
             {
-              "description": "Construa +1 Santuário  com nova <highlight-teal>Miko</highlight-teal>",
+              "description": "Construa +1 Santuário com nova <highlight-teal>Miko</highlight-teal>",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6243,7 +6243,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>3:40</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6337,12 +6337,12 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Plebeus + 1 Miko :aomr_miko_icon: + 1 Kitsune :aomr_kitsune_icon:"
+              "text": "Começa com 3 Plebeus + 1 Miko + 1 Kitsune :aomr_kitsune_icon:"
             }
           ],
           "table": [
             {
-              "description": "Construa um Santuário  com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Construa um Santuário com Miko",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6486,7 +6486,7 @@
               "type": null
             },
             {
-              "description": "Criar <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: (antes de passar de Era) e colocar Santuário ",
+              "description": "Criar Miko (antes de passar de Era) e colocar Santuário ",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6495,7 +6495,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>4:10</code>)",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>4:10</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6513,7 +6513,7 @@
               "type": null
             },
             {
-              "description": "UPs:<highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: <highlight-pink>Machadinha</highlight-pink> :aomr_hand_axe_icon: e <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
+              "description": "UPs:Guardiões Sagrados <highlight-pink>Machadinha</highlight-pink> :aomr_hand_axe_icon: e <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6531,7 +6531,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>4:58</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>4:58</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6586,7 +6586,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 3 Plebeus + 1 Miko :aomr_miko_icon: + 1 Kitsune :aomr_kitsune_icon:"
+              "text": "Começa com 3 Plebeus + 1 Miko + 1 Kitsune :aomr_kitsune_icon:"
             },
             {
               "kind": "callout",
@@ -6608,7 +6608,7 @@
               "type": null
             },
             {
-              "description": "Construa um Santuário  com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Construa um Santuário com Miko",
               "food": "3",
               "wood": "-",
               "gold": "-",
@@ -6635,7 +6635,7 @@
               "type": null
             },
             {
-              "description": "Pre-queue na tecnologia <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: (para pegar relíquias :aomr_relic_anim: )",
+              "description": "Pre-queue na tecnologia Guardiões Sagrados (para pegar relíquias :aomr_relic_anim: )",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6644,7 +6644,7 @@
               "type": "hint"
             },
             {
-              "description": "Construa o Templo com a <highlight-teal>Miko</highlight-teal> :aomr_miko_icon: (<strong>≈</strong><code>1:45</code>)",
+              "description": "Construa o Templo com a Miko (<strong>≈</strong><code>1:45</code>)",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6662,7 +6662,7 @@
               "type": null
             },
             {
-              "description": "Após atualização <highlight-pink>Guardiões Sagrados</highlight-pink> :aomr_sacred_custodians_icon: , pegue relíquias :aomr_relic_anim: com <highlight-teal>Miko</highlight-teal> :aomr_miko_icon:",
+              "description": "Após atualização Guardiões Sagrados , pegue relíquias :aomr_relic_anim: com Miko",
               "food": "-",
               "wood": "-",
               "gold": "-",
@@ -6671,7 +6671,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>2:40</code>)",
+              "description": "<strong>Subindo de Era por Inari Okami</strong> :aomr_inari_okami_icon: (<strong>≈</strong><code>2:40</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6707,7 +6707,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era</strong>(<strong>≈</strong><code>3:28</code>)",
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:28</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6795,7 +6795,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Colonos + 1 Espião Quimchim :aomr_quimchim_spy_icon:"
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim"
             },
             {
               "kind": "callout",
@@ -6885,7 +6885,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subindo de Era por Patecatl :aomr_patecatl_icon: (eco) ou Malinalxochitl :aomr_malinalxochitl_icon: (ofensivo) (≈<code>3:06</code>)</strong>",
+              "description": "<strong>Subindo de Era por Patecatl :aomr_patecatl_icon: (eco) ou Malinalxochitl :aomr_malinalxochitl_icon: (ofensivo) (≈<code>3:06</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6903,7 +6903,7 @@
               "type": null
             },
             {
-              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon: para pegar Relíquias e se defender",
+              "description": "Treine 3 Sarcerdote de Guerra para pegar Relíquias e se defender",
               "food": "4",
               "wood": "5",
               "gold": "5",
@@ -6912,7 +6912,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era (≈<code>4:06</code>)</strong>",
+              "description": "<strong>Subiu Era (≈<code>4:06</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -6967,7 +6967,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Colonos + 1 Espião Quimchim :aomr_quimchim_spy_icon:"
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim"
             },
             {
               "kind": "callout",
@@ -7057,7 +7057,7 @@
               "type": null
             },
             {
-              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon: para pegar Relíquias e se defender",
+              "description": "Treine 3 Sarcerdote de Guerra para pegar Relíquias e se defender",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7066,7 +7066,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era (≈<code>4:07</code>)</strong>",
+              "description": "<strong>Subiu Era (≈<code>4:07</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7122,7 +7122,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Colonos + 1 Espião Quimchim :aomr_quimchim_spy_icon:"
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim"
             },
             {
               "kind": "callout",
@@ -7234,7 +7234,7 @@
               "type": null
             },
             {
-              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon: para pegar Relíquias e se defender",
+              "description": "Treine 3 Sarcerdote de Guerra para pegar Relíquias e se defender",
               "food": "4",
               "wood": "6",
               "gold": "5",
@@ -7243,7 +7243,7 @@
               "type": null
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era (≈<code>4:07</code>)</strong>",
+              "description": "<strong>Subiu Era (≈<code>4:07</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7298,7 +7298,7 @@
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 4 Colonos + 1 Espião Quimchim :aomr_quimchim_spy_icon:"
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim"
             },
             {
               "kind": "callout",
@@ -7424,7 +7424,7 @@
               "type": null
             },
             {
-              "description": "Treine 3 <highlight-teal>Sarcerdote de Guerra</highlight-teal> :aomr_warrior_priest_hero_icon:",
+              "description": "Treine 3 Sarcerdote de Guerra",
               "food": null,
               "wood": null,
               "gold": null,
@@ -7442,7 +7442,7 @@
               "type": "hint"
             },
             {
-              "description": ":aomr_classical_age_icon: <strong>Subiu Era (≈<code>4:07</code>)</strong>",
+              "description": "<strong>Subiu Era (≈<code>4:07</code>)</strong>",
               "food": null,
               "wood": null,
               "gold": null,
