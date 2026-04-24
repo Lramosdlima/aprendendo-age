@@ -139,6 +139,9 @@ body {
 .start-notion-content .highlight-purple {
   color: #d8b4fe;
 }
+.start-notion-content .highlight-gray {
+  color: #9ca3af;
+}
 
 .start-notion-content .block-color-teal_background {
   background: rgba(45, 212, 191, 0.12);
@@ -294,4 +297,7 @@ body {
 }
 .start-structured .highlight-purple {
   color: #d8b4fe;
+}
+.start-structured .highlight-gray {
+  color: #9ca3af;
 }
