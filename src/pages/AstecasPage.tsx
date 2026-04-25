@@ -236,7 +236,7 @@ export function AstecasPage() {
                 cardTint={cardTint}
                 subtitleTag={false}
                 subtitle={hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined}
-                meta={<MetaNotionLine parts={[u.panteao, u.era]} />}
+                meta={<MetaNotionLine parts={[u.panteao, u.era, u.categoria?.filter((c) => c.type != null).map((c) => c.type).join(", ")]} />}
                 watermarkSrc={getUnidadeAssetUrl(u)}
               />
             </li>

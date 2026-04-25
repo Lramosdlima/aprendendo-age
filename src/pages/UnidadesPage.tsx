@@ -112,6 +112,7 @@ export function UnidadesPage() {
           const slug = unidadeSlugById.get(u.id) ?? String(u.id);
           const selected = selectedSlugs.includes(slug);
           const selectDisabled = compareMode && selectedSlugs.length >= 2 && !selected;
+          const categoriaText = u.categoria && u.categoria.map(c => c.type).join(", ");
 
           return (
             <li key={u.id}>
@@ -124,7 +125,7 @@ export function UnidadesPage() {
                 subtitle={
                   hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
                 }
-                meta={<MetaNotionLine parts={[u.panteao, u.era]} />}
+                meta={<MetaNotionLine parts={[u.panteao, u.era, categoriaText]} />}
                 watermarkSrc={getUnidadeAssetUrl(u)}
                 compareMode={compareMode}
                 selected={selected}
