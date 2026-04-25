@@ -141,7 +141,7 @@ export function expandClassicalAgeInlineKeywords(text: string): string {
       `${B}(${phraseSource(ph)})${NOT_IF_CLASSICAL}`,
       U,
     );
-    t = t.replace(re, (match, p1: string) => `${p1} :aomr_classical_age_icon:`);
+    t = t.replace(re, (match) => `${match} :aomr_classical_age_icon:`);
   }
   return t;
 }
