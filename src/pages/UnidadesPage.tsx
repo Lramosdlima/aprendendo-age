@@ -5,6 +5,7 @@ import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
+import { ModalApp } from "@/components/ui/ModalApp";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
@@ -46,6 +47,7 @@ export function UnidadesPage() {
   const [q, setQ] = useListPageSearchQuery();
   const [compareMode, setCompareMode] = useState(false);
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
+  const [beneficiosOpen, setBeneficiosOpen] = useState(false);
 
   const filtered = useMemo(() => unidades.filter((u) => matches(u, q)), [q]);
 
@@ -68,6 +70,7 @@ export function UnidadesPage() {
   }
 
   const canCompare = selectedSlugs.length === 2;
+  const beneficiosImgSrc = "/trilha-de-aprendizado/tipos-unidades-multiplicadores/Militares_Beneficios.png";
 
   return (
     <div>
@@ -76,6 +79,37 @@ export function UnidadesPage() {
           title="Unidades"
           description="Militares, mitológicas e heróis — filtros por nome ou papel."
           className="!mb-0"
+          actions={
+            <>
+              <button
+                type="button"
+                onClick={() => setBeneficiosOpen(true)}
+                title="Benefícios de Tropa"
+                aria-label="Abrir modal: Benefícios de Tropa"
+                className="group shrink-0 cursor-pointer rounded-xl border border-aom-border bg-zinc-900/60 shadow-sm shadow-black/30 transition hover:border-amber-400/50 hover:ring-1 hover:ring-amber-400/30"
+              >
+                <img
+                  src={beneficiosImgSrc}
+                  alt=""
+                  aria-hidden
+                  className="h-16 w-16 rounded-xl object-cover sm:h-20 sm:w-20"
+                />
+              </button>
+
+              <ModalApp
+                open={beneficiosOpen}
+                onClose={() => setBeneficiosOpen(false)}
+                title="Benefícios de Tropa"
+                description={
+                  <img
+                    src={beneficiosImgSrc}
+                    alt="Benefícios de Tropa"
+                    className="mt-1 w-full rounded-xl border border-aom-border bg-zinc-950/40 object-contain"
+                  />
+                }
+              />
+            </>
+          }
         />
 
         <div className="flex flex-wrap items-center justify-between gap-4">
