@@ -599,7 +599,7 @@
   {
     "nome": "Crista de Obsidiana",
     "ingles": "Obsidian Ridge",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
