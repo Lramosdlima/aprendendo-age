@@ -3,7 +3,13 @@ import { Link, type To } from "react-router-dom";
 
 import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
 import { cn } from "@/lib/cn";
+import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 import { cssUrl, watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
+
+export type EntityCardTitleIcon = {
+  icon: string;
+  label: string;
+};
 
 type EntityCardProps = {
   to: To;
@@ -36,6 +42,8 @@ type EntityCardProps = {
   selectDisabled?: boolean;
   /** Tinte de fundo (ex.: rgba) por baixo do cinza — mistura com o card sem substituir o visual base. */
   cardTint?: string;
+  /** Ícones à direita do título; `label` aparece no hover (atributo `title`). Sem entrada em `token_asset_map.json`, mostra o texto de `icon`. */
+  titleIcons?: EntityCardTitleIcon[];
 };
 
 export function EntityCard({
@@ -56,6 +64,7 @@ export function EntityCard({
   onToggleSelect,
   selectDisabled,
   cardTint,
+  titleIcons,
 }: EntityCardProps) {
   const [coverSrc, setCoverSrc] = useState(backgroundCoverSrc);
   useEffect(() => {
@@ -178,9 +187,34 @@ export function EntityCard({
               aria-label="Selecionar para comparar"
             />
           ) : null}
-          <span className="flex min-w-0 flex-1 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
-            {title}
-          </span>
+          <div className="flex min-w-0 flex-1 items-center gap-2">
+            <span className="min-w-0 flex-1 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100 group-hover:text-amber-50">
+              {title}
+            </span>
+            {titleIcons?.length ? (
+              <span className="flex shrink-0 items-center gap-1">
+                {titleIcons.map((ti, idx) => {
+                  const src = resolveTokenIconSrc(ti.icon);
+                  return (
+                    <span key={`${ti.icon}-${idx}`} title={ti.label} className="inline-flex">
+                      {src ? (
+                        <img
+                          src={src}
+                          alt=""
+                          draggable={false}
+                          className="size-5 object-contain"
+                        />
+                      ) : (
+                        <span className="max-w-[7rem] truncate text-xs font-normal normal-case text-amber-200/85">
+                          {ti.icon}
+                        </span>
+                      )}
+                    </span>
+                  );
+                })}
+              </span>
+            ) : null}
+          </div>
         </div>
         {subtitleMinLines === 3 ? (
           <p className="mt-2 line-clamp-3 min-h-[3lh] text-sm leading-relaxed text-zinc-400">

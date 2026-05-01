@@ -51,6 +51,11 @@ export function MapasPage() {
               backgroundCoverSrc={getMapaPreviewUrl(m)}
               backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
               watermarkSrc={getMapaAssetUrl(m)}
+              titleIcons={
+                m.mapas_da_ranqueada
+                  ? [{ icon: "aomr_type_hero_icon", label: "Tem na Ranqueada" }]
+                  : undefined
+              }
             />
           </li>
         ))}
