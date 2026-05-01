@@ -1516,7 +1516,7 @@
     "ingles": "Volcano",
     "god": "Mictlantecuhtli",
     "era": "Mítica :aomr_mythic_age_icon:",
-    "duracao_no_mapa_seg": 30,
+    "duracao_no_mapa_seg": 20,
     "custo_repetir": 350,
     "descricao_resumida": "Target a location to raise a mighty Volcano. It obliterates buildings as it rises, and bombards the surrounding area with molten rock.",
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
