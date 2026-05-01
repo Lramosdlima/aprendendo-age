@@ -244,8 +244,8 @@
   {
     "nome": "Lagoa Azul",
     "ingles": "Blue Lagoon",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Tale of the Dragon (2016)",
     "padrao": true,
     "partidas_rapidas": true,
