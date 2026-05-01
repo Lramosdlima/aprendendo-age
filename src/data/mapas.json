@@ -24,8 +24,8 @@
   {
     "nome": "Anatólia",
     "ingles": "Anatolia",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": false,
@@ -101,8 +101,8 @@
   {
     "nome": "Dança da Cobra",
     "ingles": "Snake Dance",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": false,
     "partidas_rapidas": true,
