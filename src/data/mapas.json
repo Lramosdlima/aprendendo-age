@@ -79,7 +79,7 @@
   {
     "nome": "Buraco d’Água",
     "ingles": "Watering Hole",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Original (2002)",
     "padrao": false,
@@ -288,8 +288,8 @@
   {
     "nome": "Megalópole",
     "ingles": "Megalopolis",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Titans (2003)",
     "padrao": true,
     "partidas_rapidas": true,
@@ -321,7 +321,7 @@
   {
     "nome": "Miragem",
     "ingles": "Mirage",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
     "origem": "AoM: Retold (2024)",
     "padrao": false,
@@ -588,7 +588,7 @@
   {
     "nome": "Floresta Nebulosa",
     "ingles": "Cloud Forest",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
