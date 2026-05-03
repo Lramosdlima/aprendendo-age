@@ -49,3 +49,21 @@ export function listIndexBackLinkLabel(backTo: string, defaultLabel: string): st
   }
   return defaultLabel;
 }
+
+function pathnameOnly(href: string): string {
+  const q = href.indexOf("?");
+  return q === -1 ? href : href.slice(0, q);
+}
+
+/**
+ * Rótulo do «Voltar» quando {@link listIndexReturnTo} pode apontar para a listagem
+ * (`listPath`, com ou sem `?search=`) ou para outra página (ex.: detalhe aberto via retrato).
+ */
+export function listOrDetailBackLinkLabel(backTo: string, listPath: string, listLabel: string): string {
+  const listBase = pathnameOnly(listPath);
+  const backPath = pathnameOnly(backTo);
+  if (backPath === listBase || backTo.startsWith(`${listBase}?`)) {
+    return listIndexBackLinkLabel(backTo, listLabel);
+  }
+  return "Voltar";
+}

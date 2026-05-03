@@ -8,12 +8,12 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
-import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { listIndexReturnTo, listOrDetailBackLinkLabel } from "@/lib/listIndexReturnState";
 
 export function UnidadeDetailPage() {
   const { state: navState } = useLocation();
   const backToList = listIndexReturnTo("/unidades", navState);
-  const backLabel = listIndexBackLinkLabel(backToList, "Unidades");
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/unidades", "Unidades");
   const { slug } = useParams();
   const u = slug ? unidadeBySlug.get(slug) : undefined;
 

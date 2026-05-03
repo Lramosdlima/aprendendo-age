@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
@@ -7,15 +7,19 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { construcaoById, construcaoSlugById, eraBySlug } from "@/data/catalog";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
+import { listIndexReturnTo, listOrDetailBackLinkLabel } from "@/lib/listIndexReturnState";
 
 export function EraDetailPage() {
+  const { state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/eras", navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/eras", "Eras");
   const { slug } = useParams();
   const e = slug ? eraBySlug.get(slug) : undefined;
 
   if (!e) {
     return (
       <div>
-        <BackLink to="/eras">Eras</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Era não encontrada.</p>
       </div>
     );
@@ -45,7 +49,7 @@ export function EraDetailPage() {
 
   return (
     <div>
-      <BackLink to="/eras">Eras</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader title={e.nome} description={e.hint} headerIconSrc={eraIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">

@@ -14,13 +14,17 @@ import { firstNome, firstNumId } from "@/lib/entityRefs";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
-import { listIndexBackLinkLabel, listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import {
+  listIndexLinkStateFromLocation,
+  listIndexReturnTo,
+  listOrDetailBackLinkLabel,
+} from "@/lib/listIndexReturnState";
 
 export function GodpowerDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
   const deusLinkFromPowerState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/poderes", navState);
-  const backLabel = listIndexBackLinkLabel(backToList, "Poderes divinos");
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/poderes", "Poderes divinos");
   const { slug } = useParams();
   const g = slug ? godpowerBySlug.get(slug) : undefined;
 

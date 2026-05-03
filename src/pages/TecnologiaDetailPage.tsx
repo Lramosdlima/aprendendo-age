@@ -21,20 +21,25 @@ import {
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
-import { listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import {
+  listIndexLinkStateFromLocation,
+  listIndexReturnTo,
+  listOrDetailBackLinkLabel,
+} from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 export function TecnologiaDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
   const tecLinkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/tecnologias", navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/tecnologias", "Tecnologias");
   const { slug } = useParams();
   const t = slug ? tecnologiaBySlug.get(slug) : undefined;
 
   if (!t) {
     return (
       <div>
-        <BackLink to={backToList}>Tecnologias</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Registro não encontrado.</p>
       </div>
     );
@@ -101,7 +106,7 @@ export function TecnologiaDetailPage() {
 
   return (
     <div>
-      <BackLink to={backToList}>Tecnologias</BackLink>
+      <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={t.nome || `Sem título (#${tecIndex >= 0 ? tecIndex : "?"})`}
         headerIconSrc={getTecnologiaAssetUrl(t)}

@@ -8,18 +8,24 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { aldeaoById, aldeaoSlugById, deusById, deusSlugById, panteaoBySlug, startById } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
-import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import {
+  listIndexLinkStateFromLocation,
+  listIndexReturnTo,
+  listOrDetailBackLinkLabel,
+} from "@/lib/listIndexReturnState";
 import { cn } from "@/lib/cn";
 
 export function PanteaoDetailPage() {
-  const { pathname, search: locSearch } = useLocation();
+  const { pathname, search: locSearch, state: navState } = useLocation();
+  const backToList = listIndexReturnTo("/panteoes", navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/panteoes", "Panteões");
   const { slug } = useParams();
   const p = slug ? panteaoBySlug.get(slug) : undefined;
 
   if (!p) {
     return (
       <div>
-        <BackLink to="/panteoes">Panteões</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
         <p className="text-zinc-400">Panteão não encontrado.</p>
       </div>
     );
@@ -105,7 +111,7 @@ export function PanteaoDetailPage() {
             "relative z-10 col-start-1 row-start-1 min-h-[100dvh] self-start px-4 pb-10 pt-1 md:px-10",
         )}
       >
-        <BackLink to="/panteoes">Panteões</BackLink>
+        <BackLink to={backToList}>{backLabel}</BackLink>
 
         {heroBackground ? (
           <header className="space-y-2" aria-labelledby="panteao-detail-heading">

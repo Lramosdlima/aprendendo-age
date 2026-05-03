@@ -8,12 +8,12 @@ import { Section } from "@/components/ui/Section";
 import { aldeaoBySlug, panteaoById, panteaoSlugById } from "@/data/catalog";
 import { firstNome, firstNumId } from "@/lib/entityRefs";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
-import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { listIndexReturnTo, listOrDetailBackLinkLabel } from "@/lib/listIndexReturnState";
 
 export function AldeaoDetailPage() {
   const { state: navState } = useLocation();
   const backToList = listIndexReturnTo("/aldeoes", navState);
-  const backLabel = listIndexBackLinkLabel(backToList, "Aldeões");
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/aldeoes", "Aldeões");
   const { slug } = useParams();
   const a = slug ? aldeaoBySlug.get(slug) : undefined;
 

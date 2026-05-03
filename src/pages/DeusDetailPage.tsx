@@ -56,13 +56,15 @@ function buildAvaliacaoLabel(n: number | null | undefined): string {
 
 /** Texto do link "← …" conforme a origem (lista de deuses, start ou poder divino). */
 function deusBackLinkLabel(backTo: string): string {
+  const pathOnly = backTo.split("?")[0];
+  if (pathOnly === "/deuses" || backTo.startsWith("/deuses?")) return "Deuses";
   if (backTo === "/astecas" || backTo.startsWith("/astecas?")) return "Astecas";
   if (backTo === "/starts" || backTo.startsWith("/starts?")) return "Starts & build orders";
   if (backTo.startsWith("/starts/")) return "Voltar ao start";
   if (backTo.startsWith("/poderes/compare")) return "Comparar poderes";
   if (backTo.startsWith("/poderes/")) return "Voltar ao poder divino";
   if (backTo === "/poderes" || backTo.startsWith("/poderes?")) return "Poderes divinos";
-  return "Deuses";
+  return "Voltar";
 }
 
 /** Cor do texto conforme a nota (5 verde → 1 vermelho). */

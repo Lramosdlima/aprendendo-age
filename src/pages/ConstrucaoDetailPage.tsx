@@ -20,7 +20,11 @@ import {
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
-import { listIndexBackLinkLabel, listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import {
+  listIndexLinkStateFromLocation,
+  listIndexReturnTo,
+  listOrDetailBackLinkLabel,
+} from "@/lib/listIndexReturnState";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { hasTipoContent } from "@/lib/unidadeTipo";
 
@@ -28,7 +32,7 @@ export function ConstrucaoDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/construcoes", navState);
-  const backLabel = listIndexBackLinkLabel(backToList, "Construções");
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/construcoes", "Construções");
   const { slug } = useParams();
   const c = slug ? construcaoBySlug.get(slug) : undefined;
 
