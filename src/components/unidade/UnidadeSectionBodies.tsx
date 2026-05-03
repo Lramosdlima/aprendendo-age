@@ -1,7 +1,8 @@
-import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import { InfoRow } from "@/components/ui/InfoRow";
+import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
+import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { NotionText } from "@/components/ui/NotionText";
@@ -14,14 +15,67 @@ import {
   hasCategoriaContent,
   hasTipoContent,
 } from "@/lib/unidadeTipo";
-import { construcaoSlugById, eraSlugById, panteaoSlugById, unidades } from "@/data/catalog";
+import {
+  construcaoById,
+  construcaoSlugById,
+  eraById,
+  eraSlugById,
+  panteaoById,
+  panteaoSlugById,
+  unidades,
+} from "@/data/catalog";
+import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { getEraAssetUrl } from "@/lib/eraAssetUrl";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
 type U = (typeof unidades)[number];
 
 export function UnidadeVisaoGeralBody({ u }: { u: U }) {
+  const { pathname, search: locSearch } = useLocation();
+  const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const panteaoRefs = u.panteao;
   const eraRefs = u.era;
   const constrRefs = u.construcao;
+
+  const panteoesPortraitItems =
+    Array.isArray(panteaoRefs) && panteaoRefs.length
+      ? panteaoRefs.map((r, i) => {
+          const p = panteaoById.get(r.id);
+          return {
+            key: `${r.id}-${i}`,
+            to: `/panteoes/${panteaoSlugById.get(r.id) ?? r.id}`,
+            nome: r.nome,
+            src: p ? getPantheonWatermarkUrl(p) : undefined,
+          };
+        })
+      : [];
+
+  const eraPortraitItems =
+    Array.isArray(eraRefs) && eraRefs.length
+      ? eraRefs.map((r, i) => {
+          const e = eraById.get(r.id);
+          return {
+            key: `${r.id}-${i}`,
+            to: `/eras/${eraSlugById.get(r.id) ?? r.id}`,
+            nome: r.nome,
+            src: e ? getEraAssetUrl(e) : undefined,
+          };
+        })
+      : [];
+
+  const construcaoPortraitItems =
+    Array.isArray(constrRefs) && constrRefs.length
+      ? constrRefs.map((r, i) => {
+          const c = construcaoById.get(r.id);
+          return {
+            key: `${r.id}-${i}`,
+            to: `/construcoes/${construcaoSlugById.get(r.id) ?? r.id}`,
+            nome: r.nome,
+            src: c ? getConstrucaoAssetUrl(c) : undefined,
+          };
+        })
+      : [];
 
   return (
     <div className="space-y-0">
@@ -35,55 +89,49 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
           <NotionText text={categoriaItemsToNotionText(u.categoria)} />
         </InfoRow>
       ) : null}
-      {Array.isArray(panteaoRefs) && panteaoRefs.length ? (
+      {panteoesPortraitItems.length ? (
         <InfoRow label="Panteão">
-          <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
-            {panteaoRefs.map((r, i) => (
-              <Fragment key={`${r.id}-${i}`}>
-                {i > 0 ? <span className="text-zinc-600">,</span> : null}
-                <Link
-                  to={`/panteoes/${panteaoSlugById.get(r.id) ?? r.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  <NotionText text={r.nome} />
-                </Link>
-              </Fragment>
-            ))}
-          </span>
+          <InfoRowPortraitOrText
+            portraits={
+              <PortraitHeaderActions
+                items={panteoesPortraitItems}
+                linkState={linkState}
+                size="sm"
+                justify="start"
+              />
+            }
+            textFallback={null}
+          />
         </InfoRow>
       ) : null}
-      {Array.isArray(eraRefs) && eraRefs.length ? (
+      {eraPortraitItems.length ? (
         <InfoRow label="Era">
-          <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
-            {eraRefs.map((r, i) => (
-              <Fragment key={`${r.id}-${i}`}>
-                {i > 0 ? <span className="text-zinc-600">,</span> : null}
-                <Link
-                  to={`/eras/${eraSlugById.get(r.id) ?? r.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  <NotionText text={r.nome} />
-                </Link>
-              </Fragment>
-            ))}
-          </span>
+          <InfoRowPortraitOrText
+            portraits={
+              <PortraitHeaderActions
+                items={eraPortraitItems}
+                linkState={linkState}
+                size="sm"
+                justify="start"
+              />
+            }
+            textFallback={null}
+          />
         </InfoRow>
       ) : null}
-      {Array.isArray(constrRefs) && constrRefs.length ? (
+      {construcaoPortraitItems.length ? (
         <InfoRow label="Construção">
-          <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
-            {constrRefs.map((r, i) => (
-              <Fragment key={`${r.id}-${i}`}>
-                {i > 0 ? <span className="text-zinc-600">,</span> : null}
-                <Link
-                  to={`/construcoes/${construcaoSlugById.get(r.id) ?? r.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  <NotionText text={r.nome} />
-                </Link>
-              </Fragment>
-            ))}
-          </span>
+          <InfoRowPortraitOrText
+            portraits={
+              <PortraitHeaderActions
+                items={construcaoPortraitItems}
+                linkState={linkState}
+                size="sm"
+                justify="start"
+              />
+            }
+            textFallback={null}
+          />
         </InfoRow>
       ) : null}
     </div>

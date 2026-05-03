@@ -2,8 +2,10 @@ import { Link, useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import {
@@ -17,11 +19,14 @@ import {
 } from "@/data/catalog";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
-import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { getEraAssetUrl } from "@/lib/eraAssetUrl";
+import { listIndexBackLinkLabel, listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { hasTipoContent } from "@/lib/unidadeTipo";
 
 export function ConstrucaoDetailPage() {
-  const { state: navState } = useLocation();
+  const { pathname, search: locSearch, state: navState } = useLocation();
+  const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/construcoes", navState);
   const backLabel = listIndexBackLinkLabel(backToList, "Construções");
   const { slug } = useParams();
@@ -74,30 +79,54 @@ export function ConstrucaoDetailPage() {
             ) : null}
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link
-                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  {panteao.nome}
-                </Link>
+                <InfoRowPortraitOrText
+                  portraits={
+                    <PortraitHeaderActions
+                      items={[
+                        {
+                          key: String(panteao.id),
+                          to: `/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`,
+                          nome: panteao.nome,
+                          src: getPantheonWatermarkUrl(panteao),
+                        },
+                      ]}
+                      linkState={linkState}
+                      size="sm"
+                      justify="start"
+                    />
+                  }
+                  textFallback={null}
+                />
               </InfoRow>
             ) : c.panteao ? (
               <InfoRow label="Panteão">
-                <NotionText text={c.panteao} />
+                <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={c.panteao} />} />
               </InfoRow>
             ) : null}
             {era ? (
               <InfoRow label="Era">
-                <Link
-                  to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  {era.nome}
-                </Link>
+                <InfoRowPortraitOrText
+                  portraits={
+                    <PortraitHeaderActions
+                      items={[
+                        {
+                          key: String(era.id),
+                          to: `/eras/${eraSlugById.get(era.id) ?? era.id}`,
+                          nome: era.nome,
+                          src: getEraAssetUrl(era),
+                        },
+                      ]}
+                      linkState={linkState}
+                      size="sm"
+                      justify="start"
+                    />
+                  }
+                  textFallback={null}
+                />
               </InfoRow>
             ) : c.era ? (
               <InfoRow label="Era">
-                <NotionText text={c.era} />
+                <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={c.era} />} />
               </InfoRow>
             ) : null}
           </div>

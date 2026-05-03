@@ -4,9 +4,11 @@ import { DeusExplicacaoMaiorSection } from "@/components/deus/DeusExplicacaoMaio
 import { GodMajorDecisionTree } from "@/components/deus/GodMajorDecisionTree";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import {
   deusById,
@@ -27,8 +29,11 @@ import {
 } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { firstNome, firstNumId, joinRefNomes } from "@/lib/entityRefs";
+import { getEraAssetUrl } from "@/lib/eraAssetUrl";
+import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { bucketMinorsByEra } from "@/lib/godMajorTree";
-import { listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
 /** Nota 1–5 da avaliação de build (Rush / Turtle / Eco). */
 function buildAvaliacaoLabel(n: number | null | undefined): string {
@@ -81,7 +86,8 @@ function buildAvaliacaoScoreClassName(n: number | null | undefined): string {
 }
 
 export function DeusDetailPage() {
-  const { state: navState } = useLocation();
+  const { pathname, search: locSearch, state: navState } = useLocation();
+  const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/deuses", navState);
   const backLinkLabel = deusBackLinkLabel(backToList);
   const { slug } = useParams();
@@ -155,47 +161,83 @@ export function DeusDetailPage() {
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title="Visão geral">
           <div className="space-y-0">
+          {d.hierarquia ? <InfoRow label="Hierarquia">{d.hierarquia}</InfoRow> : null}
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link
-                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  {panteao.nome}
-                </Link>
+                <InfoRowPortraitOrText
+                  portraits={
+                    <PortraitHeaderActions
+                      items={[
+                        {
+                          key: String(panteao.id),
+                          to: `/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`,
+                          nome: panteao.nome,
+                          src: getPantheonWatermarkUrl(panteao),
+                        },
+                      ]}
+                      linkState={linkState}
+                      size="sm"
+                      justify="start"
+                    />
+                  }
+                  textFallback={null}
+                />
               </InfoRow>
             ) : firstNome(d.panteao) ? (
-              <InfoRow label="Panteão (texto)">
-                <NotionText text={firstNome(d.panteao)!} />
+              <InfoRow label="Panteão">
+                <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(d.panteao)!} />} />
               </InfoRow>
             ) : null}
-            {d.hierarquia ? <InfoRow label="Hierarquia">{d.hierarquia}</InfoRow> : null}
             {era ? (
               <InfoRow label="Era">
-                <Link
-                  to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  {era.nome}
-                </Link>
+                <InfoRowPortraitOrText
+                  portraits={
+                    <PortraitHeaderActions
+                      items={[
+                        {
+                          key: String(era.id),
+                          to: `/eras/${eraSlugById.get(era.id) ?? era.id}`,
+                          nome: era.nome,
+                          src: getEraAssetUrl(era),
+                        },
+                      ]}
+                      linkState={linkState}
+                      size="sm"
+                      justify="start"
+                    />
+                  }
+                  textFallback={null}
+                />
               </InfoRow>
             ) : firstNome(d.era) ? (
               <InfoRow label="Era">
-                <NotionText text={firstNome(d.era)!} />
+                <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(d.era)!} />} />
               </InfoRow>
             ) : null}
             {gp ? (
               <InfoRow label="Poder divino">
-                <Link
-                  to={`/poderes/${godpowerSlugById.get(gp.id) ?? gp.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  {gp.nome}
-                </Link>
+                <InfoRowPortraitOrText
+                  portraits={
+                    <PortraitHeaderActions
+                      items={[
+                        {
+                          key: String(gp.id),
+                          to: `/poderes/${godpowerSlugById.get(gp.id) ?? gp.id}`,
+                          nome: gp.nome,
+                          src: getGodPowerAssetUrl(gp),
+                        },
+                      ]}
+                      linkState={linkState}
+                      size="sm"
+                      justify="start"
+                    />
+                  }
+                  textFallback={null}
+                />
               </InfoRow>
             ) : firstNome(d.godpower) ? (
               <InfoRow label="Poder divino">
-                <NotionText text={firstNome(d.godpower)!} />
+                <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(d.godpower)!} />} />
               </InfoRow>
             ) : null}
           </div>
