@@ -85,12 +85,6 @@ export function HomePage() {
         title="Aprendendo Age"
         description="Fala galeeera!! Aqui é o Scooby Maníaco e sejam bem vindos ao Aprendendo Age! Um site feito com muito carinho para a comunidade de Age of Mythology!"
       />
-      <AppBanner
-        type="Alert"
-        title="Bem vindo ao mais novo site Aprendendo Age!"
-        description="Estamos em fase de desenvolvimento para melhorar cada vez mais nosso querido site. Alguns recursos ainda estão sendo atualizados e ainda não se encontram aqui! Por favor, paciência que em breve teremos tudo aqui de volta!! Valeu galera!"
-        footer="Assinado: Scooby!"
-      />
       <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {tiles.map((t) => (
           <li key={t.to}>
