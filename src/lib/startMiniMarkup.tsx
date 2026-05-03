@@ -19,6 +19,7 @@ const KNOWN_TAGS = new Set([
   "highlight-orange",
   "highlight-pink",
   "highlight-purple",
+  "highlight-gray",
 ]);
 
 function highlightClass(tag: string): string {
