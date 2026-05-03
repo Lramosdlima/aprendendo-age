@@ -1,17 +1,6 @@
 import { Link } from "react-router-dom";
 
-import {
-  aldeoes,
-  construcoes,
-  deuses,
-  eras,
-  godpowers,
-  mapas,
-  panteoes,
-  startsBuildOrder,
-  tecnologias,
-  unidades,
-} from "@/data/catalog";
+import { deuses, mapas, startsBuildOrder, unidades } from "@/data/catalog";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { cn } from "@/lib/cn";
 
