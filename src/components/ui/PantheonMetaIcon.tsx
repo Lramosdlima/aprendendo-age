@@ -8,7 +8,7 @@ type PantheonMetaIconProps = {
   panteaoId: number;
 };
 
-/** Ícone da civilização (`assets/pantheons`) antes do texto da meta, quando o JSON traz `panteao_id` / `panteoes_id`. */
+/** Ícone da civilização (`assets/pantheons`) antes do texto da meta — recebe o id numérico do panteão (ex. `firstNumId(unidade.panteao)` ou `firstNumId(tecnologia.panteoes)`). */
 export function PantheonMetaIcon({ panteaoId }: PantheonMetaIconProps) {
   const p = panteaoById.get(panteaoId);
   const src = p ? getPantheonWatermarkUrl(p) : undefined;

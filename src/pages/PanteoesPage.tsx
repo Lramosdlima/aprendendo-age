@@ -10,7 +10,15 @@ import { panteoes, panteaoSlugById } from "@/data/catalog";
 function matches(p: (typeof panteoes)[number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  const blob = [p.nome, p.description ?? "", p.deuses ?? "", p.starts ?? ""].join(" ").toLowerCase();
+  const blob = [
+    p.nome,
+    p.description ?? "",
+    ...(Array.isArray(p.deuses) ? p.deuses.map((d) => d.nome) : []),
+    ...(Array.isArray(p.vill) ? p.vill.map((v) => v.nome) : []),
+    ...(Array.isArray(p.starts) ? p.starts.map((st) => st.nome) : []),
+  ]
+    .join(" ")
+    .toLowerCase();
   return blob.includes(s);
 }
 
@@ -30,7 +38,7 @@ export function PanteoesPage() {
               title={p.nome}
               cardTint={pantheonCardTint(p.nome)}
               subtitle={p.description}
-              meta={`${(p.deuses_ids ?? []).length} deuses`}
+              meta={`${(Array.isArray(p.deuses) ? p.deuses : []).length} deuses`}
               subtitleTag={false}
               backgroundCoverSrc={getPantheonHeroBackgroundUrl(p)}
               watermarkSrc={getPantheonWatermarkUrl(p)}

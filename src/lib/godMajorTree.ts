@@ -1,8 +1,9 @@
 import { deuses } from "@/data/catalog";
+import { firstNumId } from "@/lib/entityRefs";
 
 export type Deus = (typeof deuses)[number];
 
-/** Deuses menores do panteão do major, na ordem de `god_maior_relacao_ids`, agrupados por era de escolha. */
+/** Deuses menores do panteão do major, na ordem de `god_maior_relacao`, agrupados por era de escolha. */
 export type GodMajorTreeTiers = {
   classical: Deus[];
   heroic: Deus[];
@@ -10,12 +11,12 @@ export type GodMajorTreeTiers = {
 };
 
 /**
- * Agrupa IDs em `god_maior_relacao_ids` por `era_id` do deus menor (Clássica=2, Heróica=3, Mítica=4).
+ * Agrupa IDs em `god_maior_relacao` por `era[0].id` do deus menor (Clássica=2, Heróica=3, Mítica=4).
  * Preserva a ordem do array no JSON dentro de cada faixa.
  */
 export function bucketMinorsByEra(major: Deus, byId: Map<number, Deus>): GodMajorTreeTiers | null {
-  const ids = major.god_maior_relacao_ids;
-  if (!ids?.length) return null;
+  const ids = major.god_maior_relacao?.map((r) => r.id) ?? [];
+  if (!ids.length) return null;
 
   const classical: Deus[] = [];
   const heroic: Deus[] = [];
@@ -24,7 +25,7 @@ export function bucketMinorsByEra(major: Deus, byId: Map<number, Deus>): GodMajo
   for (const id of ids) {
     const minor = byId.get(id);
     if (!minor || minor.hierarquia !== "Menor") continue;
-    switch (minor.era_id) {
+    switch (firstNumId(minor.era)) {
       case 2:
         classical.push(minor);
         break;

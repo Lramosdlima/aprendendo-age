@@ -6,6 +6,7 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { aldeaoBySlug, panteaoById, panteaoSlugById } from "@/data/catalog";
+import { firstNome, firstNumId } from "@/lib/entityRefs";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
 
@@ -25,7 +26,8 @@ export function AldeaoDetailPage() {
     );
   }
 
-  const panteao = a.panteao_id != null ? panteaoById.get(a.panteao_id) : undefined;
+  const panteaoId = firstNumId(a.panteao);
+  const panteao = panteaoId != null ? panteaoById.get(panteaoId) : undefined;
   const aldeaoIcon = getAldeaoAssetUrl(a);
 
   return (
@@ -47,7 +49,7 @@ export function AldeaoDetailPage() {
               </InfoRow>
             ) : (
               <InfoRow label="Panteão">
-                <NotionText text={a.panteao} />
+                <NotionText text={firstNome(a.panteao) ?? ""} />
               </InfoRow>
             )}
             <InfoRow label="Vida">{a.vida ?? "—"}</InfoRow>

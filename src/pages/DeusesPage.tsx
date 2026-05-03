@@ -11,13 +11,26 @@ import { SearchField } from "@/components/ui/SearchField";
 import { deuses, deusSlugById } from "@/data/catalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { firstNome, firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matches(d: (typeof deuses)[number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  return [d.nome, d.panteao, d.hierarquia ?? "", d.era ?? "", d.foco ?? ""].join(" ").toLowerCase().includes(s);
+  const blob = [
+    d.nome,
+    firstNome(d.panteao) ?? "",
+    d.hierarquia ?? "",
+    firstNome(d.era) ?? "",
+    d.foco ?? "",
+    joinRefNomes(d.god_maior_relacao),
+    joinRefNomes(d.tecnologias),
+    joinRefNomes(d.unidades_exclusivas),
+  ]
+    .join(" ")
+    .toLowerCase();
+  return blob.includes(s);
 }
 
 function isHierarquiaMaior(h: string | undefined): boolean {
@@ -58,12 +71,12 @@ export function DeusesPage() {
               to={`/deuses/${deusSlugById.get(d.id) ?? d.id}`}
               linkState={listIndexState}
               title={d.nome}
-              cardTint={pantheonCardTint(d.panteao)}
+              cardTint={pantheonCardTint(firstNome(d.panteao) ?? "")}
               subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
               meta={
                 <span className="inline-flex flex-wrap items-baseline gap-x-0">
-                  {d.panteao_id != null ? <PantheonMetaIcon panteaoId={d.panteao_id} /> : null}
-                  <MetaNotionLine parts={[d.panteao, d.era]} />
+                  {firstNumId(d.panteao) != null ? <PantheonMetaIcon panteaoId={firstNumId(d.panteao)!} /> : null}
+                  <MetaNotionLine parts={[firstNome(d.panteao), firstNome(d.era)]} />
                 </span>
               }
               watermarkSrc={getDeusAssetUrl(d)}

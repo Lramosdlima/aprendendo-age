@@ -113,6 +113,9 @@ export const deuses = deusesJson;
 export const eras = erasJson;
 export const godpowers = godpowersJson;
 export const mapas = mapasJson as Mapa[];
+/** Referência `{ id, nome }` nos arrays `deuses`, `vill` e `starts` de `panteoes.json`. */
+export type PanteaoRef = { id: number; nome: string };
+
 export const panteoes = panteoesJson;
 export const tecnologias = tecnologiasJson;
 export const unidades = unidadesJson;

@@ -3,200 +3,644 @@
     "id": 1,
     "nome": "Grego",
     "description": "Os gregos são bons em reconhecimento, pois começam com um Kataskopos em terra e podem treinar Pégasos voadores no Templo . Adoradores de Poseidon também recebem um Hipocampo ao construir uma Doca . Soldados gregos tendem a ser mais fortes e mais caros do que os de outras civilizações. Os gregos só podem treinar um punhado de Heróis por vez, mas todos são excepcionalmente fortes. Heróis gregos também treinam mais rápido e têm maior dano contra unidades míticas em eras posteriores . Eles ganham Favor ao orar em Templos.",
-    "deuses": "Zeus, Poseidon, Hades, Hermes, Atena, Ares, Apolo, Dionísio, Afrodite, Hefesto, Hera, Ártemis, Deméter, Perséfone, Héstia, Pan",
-    "starts": "Gregos - por Moose, Poseidon (com :aomr_lure_power_icon:) - por Mosca, Hades (com Cofre :aomr_vaults_of_erebus_icon:)- por Aussie_Drongo, Gregos - por HuskSuppe (Mar 🌊:aomr_type_ship_icon:)",
-    "vill": "Aldeão",
-    "deuses_ids": [
-      1,
-      2,
-      3,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      78,
-      81,
-      80,
-      79
-    ],
-    "start_ids": [1, 8, 7, 6],
-    "vill_id": 1,
     "icon": "aomr_pantheon_greeks_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Greek.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Greek.png",
+    "deuses": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      },
+      {
+        "id": 2,
+        "nome": "Poseidon"
+      },
+      {
+        "id": 3,
+        "nome": "Hades"
+      },
+      {
+        "id": 20,
+        "nome": "Hermes"
+      },
+      {
+        "id": 21,
+        "nome": "Atena"
+      },
+      {
+        "id": 22,
+        "nome": "Ares"
+      },
+      {
+        "id": 23,
+        "nome": "Apolo"
+      },
+      {
+        "id": 24,
+        "nome": "Dionísio"
+      },
+      {
+        "id": 25,
+        "nome": "Afrodite"
+      },
+      {
+        "id": 26,
+        "nome": "Hefesto"
+      },
+      {
+        "id": 27,
+        "nome": "Hera"
+      },
+      {
+        "id": 28,
+        "nome": "Ártemis"
+      },
+      {
+        "id": 78,
+        "nome": "Deméter"
+      },
+      {
+        "id": 81,
+        "nome": "Perséfone"
+      },
+      {
+        "id": 80,
+        "nome": "Héstia"
+      },
+      {
+        "id": 79,
+        "nome": "Pan"
+      }
+    ],
+    "vill": [
+      {
+        "id": 1,
+        "nome": "Aldeão"
+      }
+    ],
+    "starts": [
+      {
+        "id": 1,
+        "nome": "Gregos - por Moose"
+      },
+      {
+        "id": 8,
+        "nome": "Poseidon (com :aomr_lure_power_icon:) - por Mosca"
+      },
+      {
+        "id": 7,
+        "nome": "Hades (com Cofre de Érebus) - por Aussie_Drongo"
+      },
+      {
+        "id": 6,
+        "nome": "Gregos (Mar 🌊:aomr_type_ship_icon:) - por HuskSuppe"
+      }
+    ]
   },
   {
     "id": 2,
     "nome": "Egípcio",
     "description": "Os egípcios exploram fazendo com que seus sacerdotes construam obeliscos . Os primeiros soldados egípcios tendem a ser mais especializados, mas treinam rapidamente. Suas unidades posteriores, da Fortaleza Migdol, são mais poderosas. Muitas construções egípcias custam ouro e várias outras são gratuitas, mas levam mais tempo para serem construídas. As construções egípcias são mais rápidas, coletam, treinam e pesquisam melhorias com mais rapidez e lutam melhor quando fortalecidas por um faraó . Os egípcios ganham Favor construindo Monumentos .",
-    "deuses": "Rá, Ísis, Set, Bast, Ptah, Anúbis, Hathor/Sobek, Néftis, Sekhmet, Osíris, Thoth, Hórus",
-    "starts": "Egípcios - por Moose, Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami, Rá (2TC | Bast) - por Light Yagami, Set Rush! :aomr_type_siege_weapon_icon: - por Miniyeti, Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM]",
-    "vill": "Trabalhador",
-    "deuses_ids": [
-      4,
-      5,
-      6,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37
-    ],
-    "start_ids": [2, 9, 10, 12, 11],
-    "vill_id": 10,
     "icon": "aomr_pantheon_egyptians_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_egyptian.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_egyptian.png",
+    "deuses": [
+      {
+        "id": 4,
+        "nome": "Rá"
+      },
+      {
+        "id": 5,
+        "nome": "Ísis"
+      },
+      {
+        "id": 6,
+        "nome": "Set"
+      },
+      {
+        "id": 29,
+        "nome": "Bast"
+      },
+      {
+        "id": 30,
+        "nome": "Ptah"
+      },
+      {
+        "id": 31,
+        "nome": "Anúbis"
+      },
+      {
+        "id": 32,
+        "nome": "Hathor/Sobek"
+      },
+      {
+        "id": 33,
+        "nome": "Néftis"
+      },
+      {
+        "id": 34,
+        "nome": "Sekhmet"
+      },
+      {
+        "id": 35,
+        "nome": "Osíris"
+      },
+      {
+        "id": 36,
+        "nome": "Thoth"
+      },
+      {
+        "id": 37,
+        "nome": "Hórus"
+      }
+    ],
+    "vill": [
+      {
+        "id": 10,
+        "nome": "Trabalhador"
+      }
+    ],
+    "starts": [
+      {
+        "id": 2,
+        "nome": "Egípcios - por Moose"
+      },
+      {
+        "id": 9,
+        "nome": "Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami"
+      },
+      {
+        "id": 10,
+        "nome": "Rá (2TC | Bast) - por Light Yagami"
+      },
+      {
+        "id": 12,
+        "nome": "Set Rush! :aomr_type_siege_weapon_icon: - por Miniyeti - por Miniyeti"
+      },
+      {
+        "id": 11,
+        "nome": "Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM] - por Cafeína [PSGM]"
+      }
+    ]
   },
   {
     "id": 3,
     "nome": "Nórdico",
     "description": "Os nórdicos não possuem batedores dedicados , então devem usar um Berserk ou outra infantaria. A infantaria nórdica também constrói edifícios ; seus aldeões , chamados coletores , apenas coletam recursos. Os nórdicos também podem treinar anões , que são mineradores especializados. Os nórdicos podem ter quantos heróis puderem pagar. Eles ganham favores lutando contra soldados inimigos e matando animais .",
-    "deuses": "Thor, Odin, Loki, Frey, Freyja, Heimdall, Forseti, Njord, Skadi, Bragi, Baldr, Tyr, Hel, Ullr, Aegir, Vidar",
-    "starts": "Nórdicos (exceto Thor ❌:aomr_thor_icon:) - por Moose, Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose, Freyr - por Scooby, Freyr Rush/2TC :aomr_type_siege_weapon_icon:- por Aussie_Drongo, Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias)- por HuskSuppe, Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg",
-    "vill": "Coletor, Anão",
-    "deuses_ids": [
-      7,
-      8,
-      9,
-      16,
-      38,
-      39,
-      40,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
-      65,
-      66,
-      67
-    ],
-    "vill_ids": [
-      6,
-      2
-    ],
-    "start_ids": [3, 17, 13, 14, 15, 16],
     "icon": "aomr_pantheon_norse_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Norse.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Norse.png",
+    "deuses": [
+      {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
+        "id": 8,
+        "nome": "Odin"
+      },
+      {
+        "id": 9,
+        "nome": "Loki"
+      },
+      {
+        "id": 16,
+        "nome": "Frey"
+      },
+      {
+        "id": 38,
+        "nome": "Freyja"
+      },
+      {
+        "id": 39,
+        "nome": "Heimdall"
+      },
+      {
+        "id": 40,
+        "nome": "Forseti"
+      },
+      {
+        "id": 41,
+        "nome": "Njord"
+      },
+      {
+        "id": 42,
+        "nome": "Skadi"
+      },
+      {
+        "id": 43,
+        "nome": "Bragi"
+      },
+      {
+        "id": 44,
+        "nome": "Baldr"
+      },
+      {
+        "id": 45,
+        "nome": "Tyr"
+      },
+      {
+        "id": 46,
+        "nome": "Hel"
+      },
+      {
+        "id": 65,
+        "nome": "Ullr"
+      },
+      {
+        "id": 66,
+        "nome": "Aegir"
+      },
+      {
+        "id": 67,
+        "nome": "Vidar"
+      }
+    ],
+    "vill": [
+      {
+        "id": 6,
+        "nome": "Coletor"
+      },
+      {
+        "id": 2,
+        "nome": "Anão"
+      }
+    ],
+    "starts": [
+      {
+        "id": 3,
+        "nome": "Nórdicos - por Moose"
+      },
+      {
+        "id": 17,
+        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose - por Moose"
+      },
+      {
+        "id": 13,
+        "nome": "Freyr (:aomr_pickaxe_icon:+:aomr_hand_axe_icon:) - por Scooby"
+      },
+      {
+        "id": 14,
+        "nome": "Freyr Rush/2TC :aomr_type_siege_weapon_icon: - por Aussie_Drongo - por Aussie_Drongo"
+      },
+      {
+        "id": 15,
+        "nome": "Loki (:aomr_relic_anim: Herlíquias) - por HuskSuppe - por HuskSuppe"
+      },
+      {
+        "id": 16,
+        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg - por Borg"
+      }
+    ]
   },
   {
     "id": 4,
     "nome": "Atlante",
     "description": "Os atlantes exploram usando seus Oráculos . Soldados atlantes são bastante caros, mas cada um deles pode ser transformado em Heróis . Em eras posteriores, as unidades que podem ser treinadas no Palácio são as mais poderosas. Cidadãos atlantes coletam recursos e constroem edifícios. Cidadãos são unidades lentas e caras que não precisam de um local de desembarque para coletar recursos. Os atlantes ganham Favor posicionando Oráculos pelo mapa para comungar com os deuses.",
-    "deuses": "Urano, Gaia, Cronos, Leto, Prometeu, Oceano, Rheia, Hyperion, Theia, Atlas, Hélios, Hécate",
-    "starts": "Atlantes - por Moose, Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games, Cronos 2TC - por Tpisai, Gaia Eco :aomr_economic_guild_icon: - por Balerion, Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion, Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)- por Boxer",
-    "vill": "Cidadão, Cidadão (Herói)",
-    "deuses_ids": [
-      10,
-      11,
-      12,
-      47,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      54,
-      55
-    ],
-    "vill_ids": [
-      4,
-      5
-    ],
-    "start_ids": [4, 19, 18, 21, 20, 22],
     "icon": "aomr_pantheon_atlanteans_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Atlantean.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Atlantean.png",
+    "deuses": [
+      {
+        "id": 10,
+        "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
+      },
+      {
+        "id": 12,
+        "nome": "Cronos"
+      },
+      {
+        "id": 47,
+        "nome": "Leto"
+      },
+      {
+        "id": 48,
+        "nome": "Prometeu"
+      },
+      {
+        "id": 49,
+        "nome": "Oceano"
+      },
+      {
+        "id": 50,
+        "nome": "Rheia"
+      },
+      {
+        "id": 51,
+        "nome": "Hyperion"
+      },
+      {
+        "id": 52,
+        "nome": "Theia"
+      },
+      {
+        "id": 53,
+        "nome": "Atlas"
+      },
+      {
+        "id": 54,
+        "nome": "Hélios"
+      },
+      {
+        "id": 55,
+        "nome": "Hécate"
+      }
+    ],
+    "vill": [
+      {
+        "id": 4,
+        "nome": "Cidadão"
+      },
+      {
+        "id": 5,
+        "nome": "Cidadão (Herói)"
+      }
+    ],
+    "starts": [
+      {
+        "id": 4,
+        "nome": "Atlantes - por Moose"
+      },
+      {
+        "id": 19,
+        "nome": "Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games - por Morley Games"
+      },
+      {
+        "id": 18,
+        "nome": "Cronos 2TC - por Tpisai - por Tpisai"
+      },
+      {
+        "id": 21,
+        "nome": "Gaia Eco - por Balerion - por Balerion"
+      },
+      {
+        "id": 20,
+        "nome": "Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion - por Balerion"
+      },
+      {
+        "id": 22,
+        "nome": "Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:) - por Boxer - por Boxer"
+      }
+    ]
   },
   {
     "id": 5,
     "nome": "Chinês",
     "description": "Os chineses se destacam na expansão, construindo cidades magníficas por todo o mapa. Cada edifício estende a Terra Favorecida, gerando Favor e concedendo bônus poderosos com base no Deus escolhido. Quanto maior o império, mais divinamente poderosos os chineses se tornam.",
     "dois_tipos_de_trabalhadores_alimentam_esse_crescimento": "o Camponês e o Kuafu . Os camponeses são menos eficientes do que os Aldeões de outras culturas, mas são apoiados pelos Kuafu, gigantes poderosos que se destacam na construção de edifícios.",
-    "deuses": "Fu Xi, Nu Wa, Shennong, Xuannü, Chiyou, Houtu, Goumang, Nüba, Rushou, Gonggong, Huangdi, Zhurong",
-    "starts": "Chineses - por Moose, Shennong (2 TC :aomr_town_center_chinese:) - por Morley, Shennong Fazendeiro (:aomr_farm_icon::aomr_prosperous_seeds:) por HuskSuppe, Fu Xi - HuskSuppe",
-    "vill": "Camponês, Kuafu, Kuafu (Herói)",
-    "deuses_ids": [
-      13,
-      14,
-      15,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
-      62,
-      63,
-      64
-    ],
-    "vill_ids": [
-      3,
-      7,
-      8
-    ],
-    "start_ids": [5, 24, 25, 23],
     "icon": "aomr_pantheon_chinese_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Chinese.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Chinese.png",
+    "deuses": [
+      {
+        "id": 13,
+        "nome": "Fu Xi"
+      },
+      {
+        "id": 14,
+        "nome": "Nu Wa"
+      },
+      {
+        "id": 15,
+        "nome": "Shennong"
+      },
+      {
+        "id": 56,
+        "nome": "Xuannü"
+      },
+      {
+        "id": 57,
+        "nome": "Chiyou"
+      },
+      {
+        "id": 58,
+        "nome": "Houtu"
+      },
+      {
+        "id": 59,
+        "nome": "Goumang"
+      },
+      {
+        "id": 60,
+        "nome": "Nüba"
+      },
+      {
+        "id": 61,
+        "nome": "Rushou"
+      },
+      {
+        "id": 62,
+        "nome": "Gonggong"
+      },
+      {
+        "id": 63,
+        "nome": "Huangdi"
+      },
+      {
+        "id": 64,
+        "nome": "Zhurong"
+      }
+    ],
+    "vill": [
+      {
+        "id": 3,
+        "nome": "Camponês"
+      },
+      {
+        "id": 7,
+        "nome": "Kuafu"
+      },
+      {
+        "id": 8,
+        "nome": "Kuafu (Herói)"
+      }
+    ],
+    "starts": [
+      {
+        "id": 5,
+        "nome": "Chineses - por Moose"
+      },
+      {
+        "id": 24,
+        "nome": "Shennong (2 TC :aomr_town_center_chinese:) - por Morley"
+      },
+      {
+        "id": 25,
+        "nome": "Shennong Fazendeiro (:aomr_farm_icon:aomr_prosperous_seeds:) - por HuskSuppe"
+      },
+      {
+        "id": 23,
+        "nome": "Fu Xi - por HuskSuppe"
+      }
+    ]
   },
   {
     "id": 6,
     "nome": "Japonês",
     "description": "Os japoneses exploram com unidades míticas Kitsune. Os soldados japoneses tendem a ser versáteis e poderosos, mas caros. Suas unidades de elite do Dojo são especialmente perigosas e contribuem para um medidor de Bushidō, que concede outros bônus.Os japoneses utilizam uma variedade de heróis de ataque à distância, montados e de infantaria de suas diferentes estruturas militares. Os japoneses ganham Favor ao fazer com que Mikos construam e cuidem de Santuários.",
-    "deuses": "Amaterasu, Tsukuyomi, Susanoo, Ame-no-Uzume, Minakatatomi, Inari Okami, Hachiman, Fujin, Raijin, Takemikazuchi, Okuninushi, Watatsumi",
-    "starts": "Amaterasu - por MikeKing | TheRapl, Tsukuyomi - por TheRapl, Susanoo - por TheRapl, Tsukuyomi (Mar 🌊) - por Scooby, Tsukuyomi (Rush+2TC) - por HuskSuppe, Susanoo (++Mikos :aomr_miko_icon::favoraom:) - por HuskSuppe",
-    "vill": "Plebeu",
-    "deuses_ids": [
-      17,
-      18,
-      19,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      74,
-      75,
-      76
-    ],
-    "vill_id": 9,
-    "start_ids": [26, 29, 27, 30, 31, 28],
     "icon": "aomr_pantheon_japanese_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_japanese.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_japanese.png",
+    "deuses": [
+      {
+        "id": 17,
+        "nome": "Amaterasu"
+      },
+      {
+        "id": 18,
+        "nome": "Tsukuyomi"
+      },
+      {
+        "id": 19,
+        "nome": "Susanoo"
+      },
+      {
+        "id": 68,
+        "nome": "Ame-no-Uzume"
+      },
+      {
+        "id": 69,
+        "nome": "Minakatatomi"
+      },
+      {
+        "id": 70,
+        "nome": "Inari Okami"
+      },
+      {
+        "id": 71,
+        "nome": "Hachiman"
+      },
+      {
+        "id": 72,
+        "nome": "Fujin"
+      },
+      {
+        "id": 73,
+        "nome": "Raijin"
+      },
+      {
+        "id": 74,
+        "nome": "Takemikazuchi"
+      },
+      {
+        "id": 75,
+        "nome": "Okuninushi"
+      },
+      {
+        "id": 76,
+        "nome": "Watatsumi"
+      }
+    ],
+    "vill": [
+      {
+        "id": 9,
+        "nome": "Plebeu"
+      }
+    ],
+    "starts": [
+      {
+        "id": 26,
+        "nome": "Amaterasu - por MikeKing"
+      },
+      {
+        "id": 29,
+        "nome": "Tsukuyomi - por TheRapl"
+      },
+      {
+        "id": 27,
+        "nome": "Susanoo - por TheRapl - por TheRapl"
+      },
+      {
+        "id": 30,
+        "nome": "Tsukuyomi (Mar 🌊) - por Scooby"
+      },
+      {
+        "id": 31,
+        "nome": "Tsukuyomi (Rush+2TC) - por HuskSuppe - por HuskSuppe"
+      },
+      {
+        "id": 28,
+        "nome": "Susanoo (++Mikos :favoraom:) - por HuskSuppe - por HuskSuppe"
+      }
+    ]
   },
   {
     "id": 7,
     "nome": "Astecas",
     "description": "Os astecas exploram com Espião Quimichin que conseguem se esconder perto das árvores. Eles geram favor através da Tonalli, que é gerado ao derrotar unidades inimigas e coletado por Sarcedote de Guerra (Herói) ou torres. Também é possível devotar aldeões em Templos para gerar favor. Os astecas podem criar armadilhas escondidas com suas tropas.",
-    "deuses": "Quetzalcoatl, Tezcatlipoca, Huitzilopochtli, Malinalxochitl, Huehuecóyotl, Patecatl, Itzpapalotl, Coatlicue, Coyolxauhqui, Tlaloc, Xolotl, Mictlantecuhtli",
-    "vill": "Colono",
-    "deuses_ids": [
-      82,
-      83,
-      84,
-      85,
-      86,
-      87,
-      88,
-      89,
-      90,
-      91,
-      92,
-      93
-    ],
-    "start_ids": [32, 33, 34, 35],
-    "vill_id": 11,
     "icon": "aomr_pantheon_aztecs_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Aztec.png"
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Aztec.png",
+    "deuses": [
+      {
+        "id": 82,
+        "nome": "Quetzalcoatl"
+      },
+      {
+        "id": 83,
+        "nome": "Tezcatlipoca"
+      },
+      {
+        "id": 84,
+        "nome": "Huitzilopochtli"
+      },
+      {
+        "id": 85,
+        "nome": "Malinalxochitl"
+      },
+      {
+        "id": 86,
+        "nome": "Huehuecóyotl"
+      },
+      {
+        "id": 87,
+        "nome": "Patecatl"
+      },
+      {
+        "id": 88,
+        "nome": "Itzpapalotl"
+      },
+      {
+        "id": 89,
+        "nome": "Coatlicue"
+      },
+      {
+        "id": 90,
+        "nome": "Coyolxauhqui"
+      },
+      {
+        "id": 91,
+        "nome": "Tlaloc"
+      },
+      {
+        "id": 92,
+        "nome": "Xolotl"
+      },
+      {
+        "id": 93,
+        "nome": "Mictlantecuhtli"
+      }
+    ],
+    "vill": [
+      {
+        "id": 11,
+        "nome": "Colono"
+      }
+    ],
+    "starts": [
+      {
+        "id": 32,
+        "nome": "Huitzilopochtli (com Pacto de Sangue :aomr_blood_pact_icon:) - por TheRapl - por TheRapl"
+      },
+      {
+        "id": 33,
+        "nome": "Tezcatlipoca 4:07 - por TheRapl - por TheRapl"
+      },
+      {
+        "id": 34,
+        "nome": "Quetzalcoatl (Calpulli :aomr_calpulli_icon: Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon:) por TheRapl - por TheRapl"
+      },
+      {
+        "id": 35,
+        "nome": "Quetzalcoatl ECO (Todos Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon::aomr_calpulli_livestock_pen_icon: do Calpulli :aomr_calpulli_icon:) por HuskSuppe - por HuskSuppe"
+      }
+    ]
   }
 ]

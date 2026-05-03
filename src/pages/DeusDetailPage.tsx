@@ -18,14 +18,17 @@ import {
   godpowerSlugById,
   panteaoById,
   panteaoSlugById,
+  startById,
+  tecnologias,
+  tecnologiaSlugByIndex,
   type DeusExplicacaoBloco,
   unidadeById,
   unidadeSlugById,
 } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
-import { listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { firstNome, firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import { bucketMinorsByEra } from "@/lib/godMajorTree";
-import { parseStartReferences } from "@/lib/startLinksFromDeus";
+import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 
 /** Nota 1–5 da avaliação de build (Rush / Turtle / Eco). */
 function buildAvaliacaoLabel(n: number | null | undefined): string {
@@ -95,14 +98,18 @@ export function DeusDetailPage() {
 
   const deusIcon = getDeusAssetUrl(d);
 
-  const panteao = d.panteao_id != null ? panteaoById.get(d.panteao_id) : undefined;
-  const era = d.era_id != null ? eraById.get(d.era_id) : undefined;
-  const gp = d.godpower_id != null ? godpowerById.get(d.godpower_id) : undefined;
+  const panteaoId = firstNumId(d.panteao);
+  const panteao = panteaoId != null ? panteaoById.get(panteaoId) : undefined;
+  const eraId = firstNumId(d.era);
+  const era = eraId != null ? eraById.get(eraId) : undefined;
+  const gpId = firstNumId(d.godpower);
+  const gp = gpId != null ? godpowerById.get(gpId) : undefined;
 
   const treeTiers = d.hierarquia === "Maior" ? bucketMinorsByEra(d, deusById) : null;
 
-  const relacoes = (d.god_maior_relacao_ids ?? [])
-    .map((rid) => {
+  const relacoes = (d.god_maior_relacao ?? [])
+    .map((rel) => {
+      const rid = rel.id;
       const x = deusById.get(rid);
       return x ? (
         <Link
@@ -110,14 +117,15 @@ export function DeusDetailPage() {
           to={`/deuses/${deusSlugById.get(rid) ?? rid}`}
           className="text-amber-200 underline-offset-2 hover:underline"
         >
-          {x.nome}
+          {rel.nome}
         </Link>
       ) : null;
     })
     .filter(Boolean);
 
-  const unidadesEx = (d.unidades_exclusivas_ids ?? [])
-    .map((uid) => {
+  const unidadesEx = (d.unidades_exclusivas ?? [])
+    .map((ref) => {
+      const uid = ref.id;
       const u = unidadeById.get(uid);
       return u ? (
         <Link
@@ -125,7 +133,7 @@ export function DeusDetailPage() {
           to={`/unidades/${unidadeSlugById.get(uid) ?? uid}`}
           className="text-amber-200 underline-offset-2 hover:underline"
         >
-          {u.nome}
+          {ref.nome}
         </Link>
       ) : null;
     })
@@ -137,7 +145,9 @@ export function DeusDetailPage() {
       <PageHeader
         title={d.nome}
         description={
-          [d.hierarquia, d.panteao].some(Boolean) ? <MetaNotionLine parts={[d.hierarquia, d.panteao]} /> : undefined
+          [d.hierarquia, firstNome(d.panteao)].some(Boolean) ? (
+            <MetaNotionLine parts={[d.hierarquia, firstNome(d.panteao)]} />
+          ) : undefined
         }
         headerIconSrc={deusIcon}
       />
@@ -154,9 +164,9 @@ export function DeusDetailPage() {
                   {panteao.nome}
                 </Link>
               </InfoRow>
-            ) : d.panteao ? (
+            ) : firstNome(d.panteao) ? (
               <InfoRow label="Panteão (texto)">
-                <NotionText text={d.panteao} />
+                <NotionText text={firstNome(d.panteao)!} />
               </InfoRow>
             ) : null}
             {d.hierarquia ? <InfoRow label="Hierarquia">{d.hierarquia}</InfoRow> : null}
@@ -169,9 +179,9 @@ export function DeusDetailPage() {
                   {era.nome}
                 </Link>
               </InfoRow>
-            ) : d.era ? (
+            ) : firstNome(d.era) ? (
               <InfoRow label="Era">
-                <NotionText text={d.era} />
+                <NotionText text={firstNome(d.era)!} />
               </InfoRow>
             ) : null}
             {gp ? (
@@ -183,9 +193,9 @@ export function DeusDetailPage() {
                   {gp.nome}
                 </Link>
               </InfoRow>
-            ) : d.godpower ? (
+            ) : firstNome(d.godpower) ? (
               <InfoRow label="Poder divino">
-                <NotionText text={d.godpower} />
+                <NotionText text={firstNome(d.godpower)!} />
               </InfoRow>
             ) : null}
           </div>
@@ -237,20 +247,23 @@ export function DeusDetailPage() {
         </Section>
       ) : null}
 
-      {d.starts ? (
+      {d.starts?.length ? (
         <Section title="Starts (referências)" className="mt-6">
           <ul className="list-inside list-disc space-y-2 text-sm">
-            {parseStartReferences(d.starts).map((item, i) => (
-              <li key={i}>
-                {item.kind === "link" ? (
-                  <Link to={`/starts/${item.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
-                    <NotionText text={item.titulo} />
-                  </Link>
-                ) : (
-                  <NotionText text={item.raw} />
-                )}
-              </li>
-            ))}
+            {d.starts.map(({ id: sid, nome }) => {
+              const s = startById.get(sid);
+              return (
+                <li key={sid}>
+                  {s ? (
+                    <Link to={`/starts/${s.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+                      <NotionText text={nome} />
+                    </Link>
+                  ) : (
+                    <NotionText text={nome} />
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </Section>
       ) : null}
@@ -263,15 +276,31 @@ export function DeusDetailPage() {
             ))}
           </ul>
         </Section>
-      ) : d.god_maior_relacao && !treeTiers ? (
+      ) : d.god_maior_relacao?.length && !treeTiers ? (
         <Section title="Deuses Menores" className="mt-6">
-          <NotionText text={d.god_maior_relacao} />
+          <NotionText text={joinRefNomes(d.god_maior_relacao)} />
         </Section>
       ) : null}
 
-      {d.tecnologias ? (
+      {d.tecnologias?.length ? (
         <Section title="Tecnologias" className="mt-6">
-          <NotionText text={d.tecnologias} />
+          <ul className="list-inside list-disc space-y-1.5 text-sm">
+            {d.tecnologias.map((t, i) => {
+              const ti = tecnologias.findIndex((x) => x.nome === t.nome);
+              const slug = ti >= 0 ? tecnologiaSlugByIndex.get(ti) : undefined;
+              return (
+                <li key={`${t.id}-${i}`}>
+                  {slug ? (
+                    <Link to={`/tecnologias/${slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+                      <NotionText text={t.nome} />
+                    </Link>
+                  ) : (
+                    <NotionText text={t.nome} />
+                  )}
+                </li>
+              );
+            })}
+          </ul>
         </Section>
       ) : null}
 
@@ -283,9 +312,9 @@ export function DeusDetailPage() {
             ))}
           </ul>
         </Section>
-      ) : d.unidades_exclusivas ? (
+      ) : d.unidades_exclusivas?.length ? (
         <Section title="Unidades exclusivas" className="mt-6">
-          <NotionText text={d.unidades_exclusivas} />
+          <NotionText text={joinRefNomes(d.unidades_exclusivas)} />
         </Section>
       ) : null}
     </div>

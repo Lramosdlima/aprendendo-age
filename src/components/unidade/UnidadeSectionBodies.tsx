@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 import { InfoRow } from "@/components/ui/InfoRow";
@@ -13,24 +14,14 @@ import {
   hasCategoriaContent,
   hasTipoContent,
 } from "@/lib/unidadeTipo";
-import {
-  construcaoById,
-  construcaoSlugById,
-  eraById,
-  eraSlugById,
-  panteaoById,
-  panteaoSlugById,
-  unidades,
-} from "@/data/catalog";
+import { construcaoSlugById, eraSlugById, panteaoSlugById, unidades } from "@/data/catalog";
 
 type U = (typeof unidades)[number];
 
 export function UnidadeVisaoGeralBody({ u }: { u: U }) {
-  const era = u.era_id != null ? eraById.get(u.era_id) : undefined;
-  const panteao =
-    u.panteao_id != null ? panteaoById.get(u.panteao_id) : undefined;
-  const constr =
-    u.construcao_id != null ? construcaoById.get(u.construcao_id) : undefined;
+  const panteaoRefs = u.panteao;
+  const eraRefs = u.era;
+  const constrRefs = u.construcao;
 
   return (
     <div className="space-y-0">
@@ -44,46 +35,55 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
           <NotionText text={categoriaItemsToNotionText(u.categoria)} />
         </InfoRow>
       ) : null}
-      {panteao ? (
+      {Array.isArray(panteaoRefs) && panteaoRefs.length ? (
         <InfoRow label="Panteão">
-          <Link
-            to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
-            className="text-amber-200 underline-offset-2 hover:underline"
-          >
-            {u.panteao?.trim() ? <NotionText text={u.panteao} /> : panteao.nome}
-          </Link>
-        </InfoRow>
-      ) : u.panteao ? (
-        <InfoRow label="Panteão">
-          <NotionText text={u.panteao} />
+          <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
+            {panteaoRefs.map((r, i) => (
+              <Fragment key={`${r.id}-${i}`}>
+                {i > 0 ? <span className="text-zinc-600">,</span> : null}
+                <Link
+                  to={`/panteoes/${panteaoSlugById.get(r.id) ?? r.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
+                  <NotionText text={r.nome} />
+                </Link>
+              </Fragment>
+            ))}
+          </span>
         </InfoRow>
       ) : null}
-      {era ? (
+      {Array.isArray(eraRefs) && eraRefs.length ? (
         <InfoRow label="Era">
-          <Link
-            to={`/eras/${eraSlugById.get(era.id) ?? era.id}`}
-            className="text-amber-200 underline-offset-2 hover:underline"
-          >
-            {u.era?.trim() ? <NotionText text={u.era} /> : era.nome}
-          </Link>
-        </InfoRow>
-      ) : u.era ? (
-        <InfoRow label="Era">
-          <NotionText text={u.era} />
+          <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
+            {eraRefs.map((r, i) => (
+              <Fragment key={`${r.id}-${i}`}>
+                {i > 0 ? <span className="text-zinc-600">,</span> : null}
+                <Link
+                  to={`/eras/${eraSlugById.get(r.id) ?? r.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
+                  <NotionText text={r.nome} />
+                </Link>
+              </Fragment>
+            ))}
+          </span>
         </InfoRow>
       ) : null}
-      {constr ? (
+      {Array.isArray(constrRefs) && constrRefs.length ? (
         <InfoRow label="Construção">
-          <Link
-            to={`/construcoes/${construcaoSlugById.get(constr.id) ?? constr.id}`}
-            className="text-amber-200 underline-offset-2 hover:underline"
-          >
-            {constr.nome}
-          </Link>
-        </InfoRow>
-      ) : u.construcao ? (
-        <InfoRow label="Construção">
-          <NotionText text={u.construcao} />
+          <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
+            {constrRefs.map((r, i) => (
+              <Fragment key={`${r.id}-${i}`}>
+                {i > 0 ? <span className="text-zinc-600">,</span> : null}
+                <Link
+                  to={`/construcoes/${construcaoSlugById.get(r.id) ?? r.id}`}
+                  className="text-amber-200 underline-offset-2 hover:underline"
+                >
+                  <NotionText text={r.nome} />
+                </Link>
+              </Fragment>
+            ))}
+          </span>
         </InfoRow>
       ) : null}
     </div>

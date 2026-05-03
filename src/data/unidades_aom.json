@@ -9,8 +9,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -25,7 +35,12 @@
     "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
-    "construcao": "Academia Militar",
+    "construcao": [
+      {
+        "id": 35,
+        "nome": "Academia Militar"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 40,
@@ -41,9 +56,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 35,
-    "panteao_id": 1,
     "icon": "aomr_hoplite_icon"
   },
   {
@@ -56,8 +68,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -72,7 +94,12 @@
     "dps": 10,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
-    "construcao": "Estábulo",
+    "construcao": [
+      {
+        "id": 37,
+        "nome": "Estábulo"
+      }
+    ],
     "comida": 40,
     "madeira": 0,
     "ouro": 80,
@@ -88,9 +115,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 2,
-    "construcao_id": 37,
-    "panteao_id": 1,
     "icon": "aomr_hippeus_icon"
   },
   {
@@ -103,8 +127,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -120,7 +154,12 @@
     "dps": 6,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 15,
-    "construcao": "Campo de Arqueiros",
+    "construcao": [
+      {
+        "id": 36,
+        "nome": "Campo de Arqueiros"
+      }
+    ],
     "comida": 0,
     "madeira": 55,
     "ouro": 35,
@@ -136,9 +175,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "construcao_id": 36,
-    "panteao_id": 1,
     "icon": "aomr_toxotes_icon"
   },
   {
@@ -151,8 +187,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -167,7 +213,12 @@
     "dps": 5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 10,
-    "construcao": "Academia Militar",
+    "construcao": [
+      {
+        "id": 35,
+        "nome": "Academia Militar"
+      }
+    ],
     "comida": 60,
     "madeira": 0,
     "ouro": 25,
@@ -183,9 +234,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 3,
-    "construcao_id": 35,
-    "panteao_id": 1,
     "icon": "aomr_hypaspist_icon"
   },
   {
@@ -198,8 +246,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -214,7 +272,12 @@
     "dps": 6.153846153846,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 10,
-    "construcao": "Estábulo",
+    "construcao": [
+      {
+        "id": 37,
+        "nome": "Estábulo"
+      }
+    ],
     "comida": 0,
     "madeira": 70,
     "ouro": 20,
@@ -230,9 +293,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 37,
-    "panteao_id": 1,
     "icon": "aomr_prodromos_icon"
   },
   {
@@ -245,8 +305,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -262,7 +332,12 @@
     "dps": 3.333333333333,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 40,
-    "construcao": "Campo de Arqueiros",
+    "construcao": [
+      {
+        "id": 36,
+        "nome": "Campo de Arqueiros"
+      }
+    ],
     "comida": 70,
     "madeira": 0,
     "ouro": 40,
@@ -278,9 +353,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 3,
-    "construcao_id": 36,
-    "panteao_id": 1,
     "icon": "aomr_peltast_icon"
   },
   {
@@ -293,8 +365,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -309,7 +391,12 @@
     "dps": 5,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
-    "construcao": "Quartel",
+    "construcao": [
+      {
+        "id": 38,
+        "nome": "Quartel"
+      }
+    ],
     "comida": 40,
     "madeira": 0,
     "ouro": 30,
@@ -325,9 +412,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 38,
-    "panteao_id": 2,
     "icon": "aomr_axeman_icon"
   },
   {
@@ -340,8 +424,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -356,7 +450,12 @@
     "dps": 6,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
-    "construcao": "Quartel",
+    "construcao": [
+      {
+        "id": 38,
+        "nome": "Quartel"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 25,
@@ -372,9 +471,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 38,
-    "panteao_id": 2,
     "icon": "aomr_spearman_icon"
   },
   {
@@ -387,8 +483,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -404,7 +510,12 @@
     "dps": 4,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 40,
-    "construcao": "Quartel",
+    "construcao": [
+      {
+        "id": 38,
+        "nome": "Quartel"
+      }
+    ],
     "comida": 0,
     "madeira": 55,
     "ouro": 25,
@@ -420,9 +531,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "construcao_id": 38,
-    "panteao_id": 2,
     "icon": "aomr_slinger_icon"
   },
   {
@@ -435,8 +543,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -456,7 +574,12 @@
     "dps": 8,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 40,
-    "construcao": "Fortaleza Migdol",
+    "construcao": [
+      {
+        "id": 58,
+        "nome": "Fortaleza Migdol"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 70,
@@ -476,9 +599,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 58,
-    "panteao_id": 2,
     "icon": "aomr_camel_rider_icon"
   },
   {
@@ -495,8 +615,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -512,7 +642,12 @@
     "dps": 7.333333333333,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 20,
-    "construcao": "Fortaleza Migdol",
+    "construcao": [
+      {
+        "id": 58,
+        "nome": "Fortaleza Migdol"
+      }
+    ],
     "comida": 0,
     "madeira": 100,
     "ouro": 40,
@@ -528,9 +663,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 58,
-    "panteao_id": 2,
     "icon": "aomr_chariot_archer_icon"
   },
   {
@@ -543,8 +675,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -564,7 +706,12 @@
     "dps": 15.714285714286,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 50,
-    "construcao": "Fortaleza Migdol",
+    "construcao": [
+      {
+        "id": 58,
+        "nome": "Fortaleza Migdol"
+      }
+    ],
     "comida": 180,
     "madeira": 0,
     "ouro": 70,
@@ -580,9 +727,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 58,
-    "panteao_id": 2,
     "icon": "aomr_war_elephant_icon"
   },
   {
@@ -595,8 +739,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [],
     "pontos_de_vida": 85,
@@ -605,7 +759,16 @@
     "dps": 9.285714285714,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 5,
-    "construcao": "Casa Comunal, Centro Urbano (Nórdico)",
+    "construcao": [
+      {
+        "id": 39,
+        "nome": "Casa Comunal"
+      },
+      {
+        "id": 4,
+        "nome": "Centro Urbano (Nórdico)"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 30,
@@ -615,12 +778,6 @@
     "forca_atributos": 88.085714285714,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 1,
-    "construcao_ids": [
-      39,
-      4
-    ],
-    "panteao_id": 3,
     "icon": "aomr_berserk_icon"
   },
   {
@@ -637,8 +794,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -654,7 +821,12 @@
     "dps": 4,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 15,
-    "construcao": "Casa Comunal",
+    "construcao": [
+      {
+        "id": 39,
+        "nome": "Casa Comunal"
+      }
+    ],
     "comida": 0,
     "madeira": 50,
     "ouro": 40,
@@ -670,9 +842,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 39,
-    "panteao_id": 3,
     "icon": "aomr_throwing_axeman_icon"
   },
   {
@@ -685,8 +854,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -701,7 +880,12 @@
     "dps": 5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 5,
-    "construcao": "Casa Comunal",
+    "construcao": [
+      {
+        "id": 39,
+        "nome": "Casa Comunal"
+      }
+    ],
     "comida": 40,
     "madeira": 0,
     "ouro": 45,
@@ -717,9 +901,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 39,
-    "panteao_id": 3,
     "icon": "aomr_hirdman_icon"
   },
   {
@@ -732,8 +913,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -748,7 +939,12 @@
     "dps": 8,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
-    "construcao": "Grande Salão",
+    "construcao": [
+      {
+        "id": 40,
+        "nome": "Grande Salão"
+      }
+    ],
     "comida": 40,
     "madeira": 0,
     "ouro": 50,
@@ -764,9 +960,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 2,
-    "construcao_id": 40,
-    "panteao_id": 3,
     "icon": "aomr_raiding_cavalry_icon"
   },
   {
@@ -779,8 +972,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -795,7 +998,12 @@
     "dps": 7,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 60,
-    "construcao": "Forte da Colina",
+    "construcao": [
+      {
+        "id": 59,
+        "nome": "Forte da Colina"
+      }
+    ],
     "comida": 0,
     "madeira": 75,
     "ouro": 40,
@@ -811,9 +1019,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 3,
-    "construcao_id": 59,
-    "panteao_id": 3,
     "icon": "aomr_huskarl_icon"
   },
   {
@@ -826,8 +1031,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [],
     "pontos_de_vida": 190,
@@ -836,7 +1051,12 @@
     "dps": 11,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 40,
-    "construcao": "Grande Salão",
+    "construcao": [
+      {
+        "id": 40,
+        "nome": "Grande Salão"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 80,
@@ -846,9 +1066,6 @@
     "forca_atributos": 188.3,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 40,
-    "panteao_id": 3,
     "icon": "aomr_jarl_icon"
   },
   {
@@ -861,8 +1078,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [],
     "pontos_de_vida": 110,
@@ -871,7 +1098,12 @@
     "dps": 8.75,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 5,
-    "construcao": "Quartel Militar",
+    "construcao": [
+      {
+        "id": 41,
+        "nome": "Quartel Militar"
+      }
+    ],
     "comida": 55,
     "madeira": 0,
     "ouro": 30,
@@ -881,9 +1113,6 @@
     "forca_atributos": 109.75,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 41,
-    "panteao_id": 4,
     "icon": "aomr_murmillo_icon"
   },
   {
@@ -896,8 +1125,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -912,7 +1151,12 @@
     "dps": 5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 10,
-    "construcao": "Contralquartel",
+    "construcao": [
+      {
+        "id": 42,
+        "nome": "Contralquartel"
+      }
+    ],
     "comida": 60,
     "madeira": 0,
     "ouro": 35,
@@ -928,9 +1172,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 42,
-    "panteao_id": 4,
     "icon": "aomr_katapeltes_icon"
   },
   {
@@ -947,8 +1188,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -964,7 +1215,12 @@
     "dps": 3.055555555556,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 40,
-    "construcao": "Contralquartel",
+    "construcao": [
+      {
+        "id": 42,
+        "nome": "Contralquartel"
+      }
+    ],
     "comida": 0,
     "madeira": 45,
     "ouro": 40,
@@ -980,9 +1236,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
-    "era_id": 2,
-    "construcao_id": 42,
-    "panteao_id": 4,
     "icon": "aomr_turma_icon"
   },
   {
@@ -999,8 +1252,18 @@
         "icon": "aomr_type_siege_weapon_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -1021,7 +1284,12 @@
     "dps": 1.5,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
-    "construcao": "Contralquartel",
+    "construcao": [
+      {
+        "id": 42,
+        "nome": "Contralquartel"
+      }
+    ],
     "comida": 0,
     "madeira": 115,
     "ouro": 100,
@@ -1037,9 +1305,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "construcao_id": 42,
-    "panteao_id": 4,
     "icon": "aomr_cheiroballista_icon"
   },
   {
@@ -1052,8 +1317,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -1068,7 +1343,12 @@
     "dps": 9,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
-    "construcao": "Quartel Militar",
+    "construcao": [
+      {
+        "id": 41,
+        "nome": "Quartel Militar"
+      }
+    ],
     "comida": 65,
     "madeira": 0,
     "ouro": 40,
@@ -1084,9 +1364,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 41,
-    "panteao_id": 4,
     "icon": "aomr_contarius_icon"
   },
   {
@@ -1099,8 +1376,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -1116,7 +1403,12 @@
     "dps": 5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 15,
-    "construcao": "Quartel Militar",
+    "construcao": [
+      {
+        "id": 41,
+        "nome": "Quartel Militar"
+      }
+    ],
     "comida": 0,
     "madeira": 60,
     "ouro": 35,
@@ -1132,9 +1424,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 3,
-    "construcao_id": 41,
-    "panteao_id": 4,
     "icon": "aomr_arcus_icon"
   },
   {
@@ -1147,8 +1436,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [],
     "pontos_de_vida": 135,
@@ -1157,7 +1456,12 @@
     "dps": 7.5,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 25,
-    "construcao": "Campo Militar",
+    "construcao": [
+      {
+        "id": 43,
+        "nome": "Campo Militar"
+      }
+    ],
     "comida": 30,
     "madeira": 0,
     "ouro": 55,
@@ -1167,9 +1471,6 @@
     "forca_atributos": 142.8,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 43,
-    "panteao_id": 5,
     "icon": "aomr_dao_swordsman_icon"
   },
   {
@@ -1182,8 +1483,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -1198,7 +1509,12 @@
     "dps": 3.636363636364,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 5,
-    "construcao": "Campo Militar",
+    "construcao": [
+      {
+        "id": 43,
+        "nome": "Campo Militar"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 35,
@@ -1214,9 +1530,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 43,
-    "panteao_id": 5,
     "icon": "aomr_ge_halberdier_icon"
   },
   {
@@ -1229,8 +1542,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -1246,7 +1569,12 @@
     "dps": 3.75,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 40,
-    "construcao": "Campo Militar",
+    "construcao": [
+      {
+        "id": 43,
+        "nome": "Campo Militar"
+      }
+    ],
     "comida": 0,
     "madeira": 75,
     "ouro": 10,
@@ -1262,9 +1590,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "construcao_id": 43,
-    "panteao_id": 5,
     "icon": "aomr_wuzu_javelineer_icon"
   },
   {
@@ -1277,8 +1602,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -1299,7 +1634,12 @@
     "dps": 4,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 10,
-    "construcao": "Oficina de Máquina",
+    "construcao": [
+      {
+        "id": 45,
+        "nome": "Oficina de Máquina"
+      }
+    ],
     "comida": 0,
     "madeira": 50,
     "ouro": 35,
@@ -1315,9 +1655,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "construcao_id": 45,
-    "panteao_id": 5,
     "icon": "aomr_fire_archer_icon"
   },
   {
@@ -1330,8 +1667,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [],
     "pontos_de_vida": 90,
@@ -1341,7 +1688,12 @@
     "dps": 2.857142857143,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 25,
-    "construcao": "Oficina de Máquina",
+    "construcao": [
+      {
+        "id": 45,
+        "nome": "Oficina de Máquina"
+      }
+    ],
     "comida": 0,
     "madeira": 90,
     "ouro": 55,
@@ -1351,9 +1703,6 @@
     "forca_atributos": 100.157142857143,
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 3,
-    "construcao_id": 45,
-    "panteao_id": 5,
     "icon": "aomr_chu_ko_nu_icon"
   },
   {
@@ -1366,8 +1715,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -1382,7 +1741,12 @@
     "dps": 10.833333333333,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 40,
-    "construcao": "Baolei",
+    "construcao": [
+      {
+        "id": 61,
+        "nome": "Baolei"
+      }
+    ],
     "comida": 45,
     "madeira": 0,
     "ouro": 85,
@@ -1398,9 +1762,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 61,
-    "panteao_id": 5,
     "icon": "aomr_white_horse_cavalry_icon"
   },
   {
@@ -1413,8 +1774,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -1429,7 +1800,12 @@
     "dps": 13.333333333333,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
-    "construcao": "Dojo",
+    "construcao": [
+      {
+        "id": 63,
+        "nome": "Dojo"
+      }
+    ],
     "comida": 105,
     "ouro": 75,
     "populacao": 4,
@@ -1438,9 +1814,6 @@
     "forca_atributos": 143.533333333333,
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 63,
-    "panteao_id": 6,
     "categoria": [
       {
         "type": "Soft-Counter Infantaria",
@@ -1463,8 +1836,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -1480,7 +1863,12 @@
     "dps": 3.333333333333,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 60,
-    "construcao": "Dojo",
+    "construcao": [
+      {
+        "id": 63,
+        "nome": "Dojo"
+      }
+    ],
     "comida": 65,
     "ouro": 90,
     "populacao": 4,
@@ -1489,9 +1877,6 @@
     "forca_atributos": 79.833333333333,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 3,
-    "construcao_id": 63,
-    "panteao_id": 6,
     "categoria": [
       {
         "type": "Soft-Counter Artilharia",
@@ -1510,8 +1895,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [
       {
@@ -1527,7 +1922,12 @@
     "dps": 21.428571428571,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 15,
-    "construcao": "Fortaleza",
+    "construcao": [
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "comida": 70,
     "madeira": 0,
     "ouro": 50,
@@ -1537,11 +1937,12 @@
     "forca_atributos": 171.428571428571,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "god_dono": "Zeus",
-    "era_id": 4,
-    "construcao_id": 57,
-    "god_dono_id": 1,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      }
+    ],
     "icon": "aomr_myrmidon_icon"
   },
   {
@@ -1554,8 +1955,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -1571,7 +1982,12 @@
     "dps": 5.714285714286,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 15,
-    "construcao": "Fortaleza",
+    "construcao": [
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "comida": 0,
     "madeira": 100,
     "ouro": 60,
@@ -1587,11 +2003,12 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "god_dono": "Hades",
-    "era_id": 4,
-    "construcao_id": 57,
-    "god_dono_id": 3,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 3,
+        "nome": "Hades"
+      }
+    ],
     "icon": "aomr_gastraphetoros_icon"
   },
   {
@@ -1604,8 +2021,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [
       {
@@ -1620,7 +2047,12 @@
     "dps": 8,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 40,
-    "construcao": "Fortaleza",
+    "construcao": [
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 90,
@@ -1630,11 +2062,12 @@
     "forca_atributos": 137,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "god_dono": "Poseidon",
-    "era_id": 4,
-    "construcao_id": 57,
-    "god_dono_id": 2,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 2,
+        "nome": "Poseidon"
+      }
+    ],
     "icon": "aomr_hetairos_icon"
   },
   {
@@ -1647,8 +2080,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -1668,7 +2111,12 @@
     "dps": 10.5,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 15,
-    "construcao": "Palácio",
+    "construcao": [
+      {
+        "id": 60,
+        "nome": "Palácio"
+      }
+    ],
     "comida": 75,
     "madeira": 0,
     "ouro": 55,
@@ -1688,9 +2136,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 4,
-    "construcao_id": 60,
-    "panteao_id": 4,
     "icon": "aomr_fanatic_icon"
   },
   {
@@ -1703,8 +2148,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -1724,7 +2179,12 @@
     "dps": 10.833333333333,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
-    "construcao": "Baolei",
+    "construcao": [
+      {
+        "id": 61,
+        "nome": "Baolei"
+      }
+    ],
     "comida": 115,
     "madeira": 0,
     "ouro": 50,
@@ -1744,9 +2204,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 4,
-    "construcao_id": 61,
-    "panteao_id": 5,
     "icon": "aomr_tiger_cavalry_icon"
   },
   {
@@ -1767,13 +2224,28 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "multiplicador": [],
     "pontos_de_vida": 100,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 50,
     "madeira": 0,
     "ouro": 0,
@@ -1784,11 +2256,12 @@
     "forca_atributos": 172,
     "forte_contra": "-",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Zeus",
-    "era_id": 1,
-    "construcao_id": 21,
-    "god_dono_id": 1,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      }
+    ],
     "icon": "aomr_pegasus_icon"
   },
   {
@@ -1801,8 +2274,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -1822,7 +2305,12 @@
     "dps": 15.454545454545,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 180,
@@ -1833,11 +2321,12 @@
     "forca_atributos": 336.954545454545,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Atena",
-    "era_id": 2,
-    "construcao_id": 21,
-    "god_dono_id": 21,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 21,
+        "nome": "Atena"
+      }
+    ],
     "icon": "aomr_minotaur_icon"
   },
   {
@@ -1850,8 +2339,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -1872,7 +2371,12 @@
     "dps": 12,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 20,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 0,
     "madeira": 180,
     "ouro": 0,
@@ -1883,11 +2387,12 @@
     "forca_atributos": 187.5,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hermes",
-    "era_id": 2,
-    "construcao_id": 21,
-    "god_dono_id": 20,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 20,
+        "nome": "Hermes"
+      }
+    ],
     "icon": "aomr_centaur_icon"
   },
   {
@@ -1904,8 +2409,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -1926,7 +2441,12 @@
     "dps": 11.428571428571,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 150,
     "madeira": 0,
     "ouro": 0,
@@ -1937,11 +2457,12 @@
     "forca_atributos": 612.928571428571,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Ares",
-    "era_id": 2,
-    "construcao_id": 21,
-    "god_dono_id": 22,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 22,
+        "nome": "Ares"
+      }
+    ],
     "icon": "aomr_cyclops_icon"
   },
   {
@@ -1954,8 +2475,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -1975,7 +2506,12 @@
     "dps": 13.75,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 100,
     "madeira": 0,
     "ouro": 0,
@@ -1986,11 +2522,12 @@
     "forca_atributos": 272.75,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Anúbis",
-    "era_id": 2,
-    "construcao_id": 22,
-    "god_dono_id": 31,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 31,
+        "nome": "Anúbis"
+      }
+    ],
     "icon": "aomr_anubite_icon"
   },
   {
@@ -2003,8 +2540,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2025,7 +2572,12 @@
     "dps": 8,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 25,
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 0,
     "madeira": 150,
     "ouro": 0,
@@ -2036,11 +2588,12 @@
     "forca_atributos": 227.8,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Ptah",
-    "era_id": 2,
-    "construcao_id": 22,
-    "god_dono_id": 30,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 30,
+        "nome": "Ptah"
+      }
+    ],
     "icon": "aomr_wadjet_icon"
   },
   {
@@ -2053,8 +2606,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2075,7 +2638,12 @@
     "dps": 11.538461538462,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 120,
@@ -2086,11 +2654,12 @@
     "forca_atributos": 341.838461538462,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Bast",
-    "era_id": 2,
-    "construcao_id": 22,
-    "god_dono_id": 29,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 29,
+        "nome": "Bast"
+      }
+    ],
     "icon": "aomr_sphinx_icon"
   },
   {
@@ -2103,8 +2672,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2125,7 +2704,12 @@
     "dps": 12,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 0,
     "madeira": 160,
     "ouro": 0,
@@ -2136,11 +2720,12 @@
     "forca_atributos": 268.5,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Forseti",
-    "era_id": 2,
-    "construcao_id": 23,
-    "god_dono_id": 40,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 40,
+        "nome": "Forseti"
+      }
+    ],
     "icon": "aomr_troll_icon"
   },
   {
@@ -2153,8 +2738,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2175,7 +2770,12 @@
     "dps": 15,
     "armadura_anticorte": 70,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 150,
@@ -2186,11 +2786,12 @@
     "forca_atributos": 329.8,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Heimdall",
-    "era_id": 2,
-    "construcao_id": 23,
-    "god_dono_id": 39,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 39,
+        "nome": "Heimdall"
+      }
+    ],
     "icon": "aomr_einherjar_icon"
   },
   {
@@ -2207,8 +2808,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2228,7 +2839,12 @@
     "dps": 11.666666666667,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 200,
     "madeira": 0,
     "ouro": 0,
@@ -2239,11 +2855,12 @@
     "forca_atributos": 192.666666666667,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Freyja",
-    "era_id": 2,
-    "construcao_id": 23,
-    "god_dono_id": 38,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 38,
+        "nome": "Freyja"
+      }
+    ],
     "icon": "aomr_valkyrie_icon"
   },
   {
@@ -2256,8 +2873,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2284,7 +2911,12 @@
     "dps": 9,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 30,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 0,
     "madeira": 225,
     "ouro": 0,
@@ -2295,11 +2927,12 @@
     "forca_atributos": 259.3,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Ullr",
-    "era_id": 2,
-    "construcao_id": 23,
-    "god_dono_id": 65,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 65,
+        "nome": "Ullr"
+      }
+    ],
     "icon": "aomr_draugr_icon"
   },
   {
@@ -2312,8 +2945,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2334,7 +2977,12 @@
     "dps": 10.909090909091,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 25,
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "comida": 90,
     "madeira": 0,
     "ouro": 0,
@@ -2345,11 +2993,12 @@
     "forca_atributos": 209.209090909091,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Prometeu",
-    "era_id": 2,
-    "construcao_id": 24,
-    "god_dono_id": 48,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 48,
+        "nome": "Prometeu"
+      }
+    ],
     "icon": "aomr_promethean_icon"
   },
   {
@@ -2362,8 +3011,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2383,7 +3042,12 @@
     "dps": 11,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 90,
@@ -2394,11 +3058,12 @@
     "forca_atributos": 273.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Leto",
-    "era_id": 2,
-    "construcao_id": 24,
-    "god_dono_id": 47,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 47,
+        "nome": "Leto"
+      }
+    ],
     "icon": "aomr_automaton_icon"
   },
   {
@@ -2419,15 +3084,30 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [],
     "pontos_de_vida": 100,
     "velocidade_de_ataque_atk_s": 0,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 45,
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "comida": 0,
     "madeira": 100,
     "ouro": 25,
@@ -2438,11 +3118,12 @@
     "forca_atributos": 81.5,
     "forte_contra": "-",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Oceano",
-    "era_id": 2,
-    "construcao_id": 24,
-    "god_dono_id": 49,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 49,
+        "nome": "Oceano"
+      }
+    ],
     "icon": "aomr_caladria_icon"
   },
   {
@@ -2455,8 +3136,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2476,7 +3167,12 @@
     "dps": 10,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "comida": 220,
     "madeira": 0,
     "ouro": 0,
@@ -2487,11 +3183,12 @@
     "forca_atributos": 272.3,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Xuannü",
-    "era_id": 2,
-    "construcao_id": 25,
-    "god_dono_id": 56,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 56,
+        "nome": "Xuannü"
+      }
+    ],
     "icon": "aomr_qilin_icon"
   },
   {
@@ -2504,8 +3201,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2525,7 +3232,12 @@
     "dps": 13.333333333333,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "comida": 0,
     "madeira": 140,
     "ouro": 0,
@@ -2536,11 +3248,12 @@
     "forca_atributos": 313.633333333333,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Chiyou",
-    "era_id": 2,
-    "construcao_id": 25,
-    "god_dono_id": 57,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 57,
+        "nome": "Chiyou"
+      }
+    ],
     "icon": "aomr_yazi_icon"
   },
   {
@@ -2553,8 +3266,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -2575,7 +3298,12 @@
     "dps": 16,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 200,
@@ -2586,11 +3314,12 @@
     "forca_atributos": 401,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Houtu",
-    "era_id": 2,
-    "construcao_id": 25,
-    "god_dono_id": 58,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 58,
+        "nome": "Houtu"
+      }
+    ],
     "icon": "aomr_qiongqi_icon"
   },
   {
@@ -2603,8 +3332,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2625,7 +3364,16 @@
     "dps": 10,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 35,
-    "construcao": "Centro Urbano (Grego), Templo (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 100,
     "madeira": 50,
     "ouro": 0,
@@ -2636,14 +3384,12 @@
     "forca_atributos": 202.3,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Zeus",
-    "era_id": 1,
-    "construcao_ids": [
-      1,
-      21
+    "god_dono": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      }
     ],
-    "god_dono_id": 1,
-    "panteao_id": 1,
     "icon": "aomr_jason_icon"
   },
   {
@@ -2656,8 +3402,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2678,7 +3434,16 @@
     "dps": 12.5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 40,
-    "construcao": "Centro Urbano (Grego), Templo (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 100,
     "madeira": 50,
     "ouro": 0,
@@ -2689,14 +3454,12 @@
     "forca_atributos": 199.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Poseidon",
-    "era_id": 1,
-    "construcao_ids": [
-      1,
-      21
+    "god_dono": [
+      {
+        "id": 2,
+        "nome": "Poseidon"
+      }
     ],
-    "god_dono_id": 2,
-    "panteao_id": 1,
     "icon": "aomr_theseus_icon"
   },
   {
@@ -2709,8 +3472,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2731,7 +3504,16 @@
     "dps": 15,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 35,
-    "construcao": "Centro Urbano (Grego), Templo (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 100,
     "madeira": 50,
     "ouro": 0,
@@ -2742,14 +3524,12 @@
     "forca_atributos": 202.3,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Hades",
-    "era_id": 1,
-    "construcao_ids": [
-      1,
-      21
+    "god_dono": [
+      {
+        "id": 3,
+        "nome": "Hades"
+      }
     ],
-    "god_dono_id": 3,
-    "panteao_id": 1,
     "icon": "aomr_ajax_icon"
   },
   {
@@ -2766,8 +3546,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2788,7 +3578,12 @@
     "dps": 8.4,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 30,
-    "construcao": "Centro Urbano (Egípcio)",
+    "construcao": [
+      {
+        "id": 3,
+        "nome": "Centro Urbano (Egípcio)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 0,
@@ -2799,9 +3594,6 @@
     "forca_atributos": 67.4,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 1,
-    "construcao_id": 3,
-    "panteao_id": 2,
     "icon": "aomr_pharaoh_icon"
   },
   {
@@ -2822,8 +3614,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2844,7 +3646,16 @@
     "dps": 1.875,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 1,
-    "construcao": "Centro Urbano (Egípcio), Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 3,
+        "nome": "Centro Urbano (Egípcio)"
+      },
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 100,
@@ -2855,12 +3666,6 @@
     "forca_atributos": 34.475,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 1,
-    "construcao_ids": [
-      3,
-      22
-    ],
-    "panteao_id": 2,
     "icon": "aomr_priest_icon"
   },
   {
@@ -2877,8 +3682,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2893,7 +3708,16 @@
     "dps": 5.866666666667,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 25,
-    "construcao": "Templo (Nórdico), Grande Salão",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      },
+      {
+        "id": 40,
+        "nome": "Grande Salão"
+      }
+    ],
     "comida": 80,
     "madeira": 0,
     "ouro": 40,
@@ -2904,12 +3728,6 @@
     "forca_atributos": 106.666666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "construcao_ids": [
-      23,
-      40
-    ],
-    "panteao_id": 3,
     "icon": "aomr_hersir_icon"
   },
   {
@@ -2926,8 +3744,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2952,8 +3780,6 @@
     "forca_atributos": 131.3,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 1,
-    "panteao_id": 4,
     "icon": "aomr_oracle_hero_icon"
   },
   {
@@ -2974,8 +3800,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -2990,7 +3826,16 @@
     "dps": 0.333333333333,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 30,
-    "construcao": "Templo (Chinês), Academia Imperial",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      },
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "comida": 0,
     "madeira": 75,
     "ouro": 30,
@@ -3001,12 +3846,6 @@
     "forca_atributos": 122.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 1,
-    "construcao_ids": [
-      25,
-      44
-    ],
-    "panteao_id": 5,
     "icon": "aomr_pioneer_icon"
   },
   {
@@ -3019,8 +3858,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3041,7 +3890,12 @@
     "dps": 20,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 250,
     "madeira": 0,
     "ouro": 0,
@@ -3052,11 +3906,12 @@
     "forca_atributos": 785,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Dionísio",
-    "era_id": 3,
-    "construcao_id": 21,
-    "god_dono_id": 24,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 24,
+        "nome": "Dionísio"
+      }
+    ],
     "icon": "aomr_hydra_icon"
   },
   {
@@ -3069,8 +3924,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3091,7 +3956,12 @@
     "dps": 11,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 0,
     "madeira": 250,
     "ouro": 0,
@@ -3102,11 +3972,12 @@
     "forca_atributos": 379.6,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Apolo",
-    "era_id": 3,
-    "construcao_id": 21,
-    "god_dono_id": 23,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 23,
+        "nome": "Apolo"
+      }
+    ],
     "icon": "aomr_manticore_icon"
   },
   {
@@ -3119,8 +3990,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3141,7 +4022,12 @@
     "dps": 20,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 250,
@@ -3152,11 +4038,12 @@
     "forca_atributos": 706.8,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Afrodite",
-    "era_id": 3,
-    "construcao_id": 21,
-    "god_dono_id": 25,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 25,
+        "nome": "Afrodite"
+      }
+    ],
     "icon": "aomr_nemean_lion_icon"
   },
   {
@@ -3169,8 +4056,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3191,7 +4088,12 @@
     "dps": 15,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 45,
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 200,
@@ -3202,11 +4104,12 @@
     "forca_atributos": 380.6,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hathor/Sobek",
-    "era_id": 3,
-    "construcao_id": 22,
-    "god_dono_id": 32,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 32,
+        "nome": "Hathor/Sobek"
+      }
+    ],
     "icon": "aomr_petsuchos_icon"
   },
   {
@@ -3223,8 +4126,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3250,7 +4163,12 @@
     "dps": 10,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 75,
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 240,
     "madeira": 0,
     "ouro": 0,
@@ -3261,11 +4179,12 @@
     "forca_atributos": 949.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Sekhmet",
-    "era_id": 3,
-    "construcao_id": 22,
-    "god_dono_id": 34,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 34,
+        "nome": "Sekhmet"
+      }
+    ],
     "icon": "aomr_scarab_icon"
   },
   {
@@ -3278,8 +4197,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3299,7 +4228,12 @@
     "dps": 25,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 40,
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "comida": 0,
     "madeira": 200,
     "ouro": 0,
@@ -3310,11 +4244,12 @@
     "forca_atributos": 547,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Néftis",
-    "era_id": 3,
-    "construcao_id": 22,
-    "god_dono_id": 33,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 33,
+        "nome": "Néftis"
+      }
+    ],
     "icon": "aomr_scorpion_man_icon"
   },
   {
@@ -3327,8 +4262,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3349,7 +4294,12 @@
     "dps": 18,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 70,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 200,
@@ -3360,14 +4310,16 @@
     "forca_atributos": 622.8,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hel, Skadi",
-    "era_id": 3,
-    "construcao_id": 23,
-    "god_dono_ids": [
-      46,
-      42
+    "god_dono": [
+      {
+        "id": 46,
+        "nome": "Hel"
+      },
+      {
+        "id": 42,
+        "nome": "Skadi"
+      }
     ],
-    "panteao_id": 3,
     "icon": "aomr_frost_giant_icon"
   },
   {
@@ -3384,8 +4336,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3406,7 +4368,12 @@
     "dps": 20,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 250,
@@ -3417,11 +4384,12 @@
     "forca_atributos": 717,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Bragi",
-    "era_id": 3,
-    "construcao_id": 23,
-    "god_dono_id": 43,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 43,
+        "nome": "Bragi"
+      }
+    ],
     "icon": "aomr_battle_boar_icon"
   },
   {
@@ -3438,8 +4406,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3460,7 +4438,12 @@
     "dps": 20,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 40,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 250,
     "madeira": 0,
     "ouro": 0,
@@ -3471,14 +4454,16 @@
     "forca_atributos": 1167.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hel, Njord",
-    "era_id": 3,
-    "construcao_id": 23,
-    "god_dono_ids": [
-      46,
-      41
+    "god_dono": [
+      {
+        "id": 46,
+        "nome": "Hel"
+      },
+      {
+        "id": 41,
+        "nome": "Njord"
+      }
     ],
-    "panteao_id": 3,
     "icon": "aomr_mountain_giant_icon"
   },
   {
@@ -3495,8 +4480,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3512,7 +4507,12 @@
     "dps": 14.285714285714,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 75,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "comida": 0,
     "madeira": 260,
     "ouro": 0,
@@ -3523,11 +4523,12 @@
     "forca_atributos": 854.485714285714,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Aegir",
-    "era_id": 3,
-    "construcao_id": 23,
-    "god_dono_id": 66,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 66,
+        "nome": "Aegir"
+      }
+    ],
     "icon": "aomr_rock_giant_icon"
   },
   {
@@ -3544,8 +4545,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3571,7 +4582,12 @@
     "dps": 13.333333333333,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 75,
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "comida": 250,
     "madeira": 0,
     "ouro": 0,
@@ -3582,11 +4598,12 @@
     "forca_atributos": 672.333333333333,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Rheia",
-    "era_id": 3,
-    "construcao_id": 24,
-    "god_dono_id": 50,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 50,
+        "nome": "Rheia"
+      }
+    ],
     "icon": "aomr_behemoth_icon"
   },
   {
@@ -3599,8 +4616,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3621,7 +4648,12 @@
     "dps": 20,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "comida": 0,
     "madeira": 250,
     "ouro": 0,
@@ -3632,11 +4664,12 @@
     "forca_atributos": 380.75,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hyperion",
-    "era_id": 3,
-    "construcao_id": 24,
-    "god_dono_id": 51,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 51,
+        "nome": "Hyperion"
+      }
+    ],
     "icon": "aomr_satyr_icon"
   },
   {
@@ -3653,8 +4686,18 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3675,7 +4718,12 @@
     "dps": 7.777777777778,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "comida": 0,
     "madeira": 200,
     "ouro": 50,
@@ -3686,11 +4734,12 @@
     "forca_atributos": 333.577777777778,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Theia",
-    "era_id": 3,
-    "construcao_id": 24,
-    "god_dono_id": 52,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 52,
+        "nome": "Theia"
+      }
+    ],
     "icon": "aomr_stymphalian_bird_icon"
   },
   {
@@ -3703,8 +4752,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3725,7 +4784,12 @@
     "dps": 10,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 75,
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "comida": 275,
     "madeira": 0,
     "ouro": 0,
@@ -3736,11 +4800,12 @@
     "forca_atributos": 756.7,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Goumang",
-    "era_id": 3,
-    "construcao_id": 25,
-    "god_dono_id": 59,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 59,
+        "nome": "Goumang"
+      }
+    ],
     "icon": "aomr_taowu_icon"
   },
   {
@@ -3753,8 +4818,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3775,7 +4850,12 @@
     "dps": 20.833333333333,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 260,
@@ -3786,11 +4866,12 @@
     "forca_atributos": 677.633333333333,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Nüba",
-    "era_id": 3,
-    "construcao_id": 25,
-    "god_dono_id": 60,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 60,
+        "nome": "Nüba"
+      }
+    ],
     "icon": "aomr_taotie_icon"
   },
   {
@@ -3803,8 +4884,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -3825,7 +4916,12 @@
     "dps": 30,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "comida": 120,
     "madeira": 150,
     "ouro": 0,
@@ -3836,11 +4932,12 @@
     "forca_atributos": 627.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Rushou",
-    "era_id": 3,
-    "construcao_id": 25,
-    "god_dono_id": 61,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 61,
+        "nome": "Rushou"
+      }
+    ],
     "icon": "aomr_baihu_icon"
   },
   {
@@ -3853,8 +4950,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -3870,7 +4977,16 @@
     "dps": 18.333333333333,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 30,
-    "construcao": "Centro Urbano (Grego), Templo (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 75,
     "madeira": 0,
     "ouro": 175,
@@ -3881,14 +4997,12 @@
     "forca_atributos": 289.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Zeus",
-    "era_id": 2,
-    "construcao_ids": [
-      1,
-      21
+    "god_dono": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      }
     ],
-    "god_dono_id": 1,
-    "panteao_id": 1,
     "icon": "aomr_heracles_icon"
   },
   {
@@ -3901,8 +5015,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -3918,7 +5042,16 @@
     "dps": 15.714285714286,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 30,
-    "construcao": "Centro Urbano (Grego), Templo (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 75,
     "madeira": 0,
     "ouro": 175,
@@ -3929,14 +5062,12 @@
     "forca_atributos": 265.314285714286,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Poseidon",
-    "era_id": 2,
-    "construcao_ids": [
-      1,
-      21
+    "god_dono": [
+      {
+        "id": 2,
+        "nome": "Poseidon"
+      }
     ],
-    "god_dono_id": 2,
-    "panteao_id": 1,
     "icon": "aomr_atalanta_icon"
   },
   {
@@ -3949,8 +5080,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -3966,7 +5107,16 @@
     "dps": 23.1,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 45,
-    "construcao": "Centro Urbano (Grego), Templo (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 75,
     "madeira": 0,
     "ouro": 175,
@@ -3977,14 +5127,12 @@
     "forca_atributos": 287.4,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Hades",
-    "era_id": 2,
-    "construcao_ids": [
-      1,
-      21
+    "god_dono": [
+      {
+        "id": 3,
+        "nome": "Hades"
+      }
     ],
-    "god_dono_id": 3,
-    "panteao_id": 1,
     "icon": "aomr_achilles_icon"
   },
   {
@@ -4001,8 +5149,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -4018,7 +5176,12 @@
     "dps": 5.866666666667,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 15,
-    "construcao": "Grande Salão",
+    "construcao": [
+      {
+        "id": 40,
+        "nome": "Grande Salão"
+      }
+    ],
     "comida": 0,
     "madeira": 80,
     "ouro": 40,
@@ -4029,9 +5192,6 @@
     "forca_atributos": 121.866666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 3,
-    "construcao_id": 40,
-    "panteao_id": 3,
     "icon": "aomr_godi_icon"
   },
   {
@@ -4048,8 +5208,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -4074,8 +5244,6 @@
     "forca_atributos": 103.875,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "panteao_id": 4,
     "icon": "aomr_murmillo_hero_icon"
   },
   {
@@ -4092,8 +5260,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -4123,8 +5301,6 @@
     "forca_atributos": 97.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "panteao_id": 4,
     "categoria": [
       {
         "type": "Hard-Counter Cavalaria",
@@ -4151,8 +5327,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -4182,8 +5368,6 @@
     "forca_atributos": 128.611111111111,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "panteao_id": 4,
     "categoria": [
       {
         "type": "Hard-Counter Artilharia",
@@ -4210,8 +5394,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -4247,8 +5441,6 @@
     "forca_atributos": 51.3,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "panteao_id": 4,
     "categoria": [
       {
         "type": "Hard-Counter Infantaria",
@@ -4271,8 +5463,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -4302,8 +5504,6 @@
     "forca_atributos": 132.55,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 3,
-    "panteao_id": 4,
     "categoria": [
       {
         "type": "Soft-Counter Artilharia",
@@ -4326,8 +5526,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -4357,8 +5567,6 @@
     "forca_atributos": 72.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 3,
-    "panteao_id": 4,
     "categoria": [
       {
         "type": "Soft-Counter Infantaria",
@@ -4377,8 +5585,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -4394,7 +5612,12 @@
     "dps": 8.8,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 25,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "comida": 100,
     "madeira": 0,
     "ouro": 150,
@@ -4405,9 +5628,6 @@
     "forca_atributos": 32.4,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 3,
-    "construcao_id": 44,
-    "panteao_id": 5,
     "icon": "aomr_sage_icon"
   },
   {
@@ -4420,8 +5640,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -4437,7 +5667,20 @@
     "dps": 11.458333333333,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
-    "construcao": "Centro Urbano (Grego), Templo (Grego), Fortaleza",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      },
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "comida": 0,
     "madeira": 250,
     "ouro": 100,
@@ -4448,15 +5691,12 @@
     "forca_atributos": 316.258333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Zeus",
-    "era_id": 3,
-    "construcao_ids": [
-      1,
-      21,
-      57
+    "god_dono": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      }
     ],
-    "god_dono_id": 1,
-    "panteao_id": 1,
     "icon": "aomr_odysseus_icon"
   },
   {
@@ -4469,8 +5709,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -4486,7 +5736,20 @@
     "dps": 11.029411764706,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
-    "construcao": "Centro Urbano (Grego), Templo (Grego), Fortaleza",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      },
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "comida": 0,
     "madeira": 250,
     "ouro": 100,
@@ -4497,15 +5760,12 @@
     "forca_atributos": 284.579411764706,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Poseidon",
-    "era_id": 3,
-    "construcao_ids": [
-      1,
-      21,
-      57
+    "god_dono": [
+      {
+        "id": 2,
+        "nome": "Poseidon"
+      }
     ],
-    "god_dono_id": 2,
-    "panteao_id": 1,
     "icon": "aomr_hippolyta_icon"
   },
   {
@@ -4518,8 +5778,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -4535,7 +5805,20 @@
     "dps": 10.833333333333,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
-    "construcao": "Centro Urbano (Grego), Templo (Grego), Fortaleza",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      },
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      },
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "comida": 0,
     "madeira": 250,
     "ouro": 100,
@@ -4546,15 +5829,12 @@
     "forca_atributos": 316.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Hades",
-    "era_id": 3,
-    "construcao_ids": [
-      1,
-      21,
-      57
+    "god_dono": [
+      {
+        "id": 3,
+        "nome": "Hades"
+      }
     ],
-    "god_dono_id": 3,
-    "panteao_id": 1,
     "icon": "aomr_chiron_icon"
   },
   {
@@ -4567,18 +5847,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hera",
-    "era_id": 4,
-    "construcao_id": 21,
-    "god_dono_id": 27,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 27,
+        "nome": "Hera"
+      }
+    ],
     "icon": "aomr_medusa_icon"
   },
   {
@@ -4591,18 +5887,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hefesto",
-    "era_id": 4,
-    "construcao_id": 21,
-    "god_dono_id": 26,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 26,
+        "nome": "Hefesto"
+      }
+    ],
     "icon": "aomr_colossus_icon"
   },
   {
@@ -4615,18 +5927,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Ártemis",
-    "era_id": 4,
-    "construcao_id": 21,
-    "god_dono_id": 28,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 28,
+        "nome": "Ártemis"
+      }
+    ],
     "icon": "aomr_chimera_icon"
   },
   {
@@ -4639,18 +5967,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Osíris",
-    "era_id": 4,
-    "construcao_id": 22,
-    "god_dono_id": 35,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 35,
+        "nome": "Osíris"
+      }
+    ],
     "icon": "aomr_mummy_icon"
   },
   {
@@ -4663,18 +6007,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hórus",
-    "era_id": 4,
-    "construcao_id": 22,
-    "god_dono_id": 37,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 37,
+        "nome": "Hórus"
+      }
+    ],
     "icon": "aomr_avenger_icon"
   },
   {
@@ -4687,18 +6047,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Egípcio)",
+    "construcao": [
+      {
+        "id": 22,
+        "nome": "Templo (Egípcio)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Thoth",
-    "era_id": 4,
-    "construcao_id": 22,
-    "god_dono_id": 36,
-    "panteao_id": 2,
+    "god_dono": [
+      {
+        "id": 36,
+        "nome": "Thoth"
+      }
+    ],
     "icon": "aomr_phoenix_icon"
   },
   {
@@ -4711,21 +6087,38 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Baldr, Hel",
-    "era_id": 4,
-    "construcao_id": 23,
-    "god_dono_ids": [
-      44,
-      46
+    "god_dono": [
+      {
+        "id": 44,
+        "nome": "Baldr"
+      },
+      {
+        "id": 46,
+        "nome": "Hel"
+      }
     ],
-    "panteao_id": 3,
     "icon": "aomr_fire_giant_icon"
   },
   {
@@ -4738,18 +6131,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Tyr",
-    "era_id": 4,
-    "construcao_id": 23,
-    "god_dono_id": 45,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 45,
+        "nome": "Tyr"
+      }
+    ],
     "icon": "aomr_fenris_wolf_brood_icon"
   },
   {
@@ -4762,18 +6171,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Vidar",
-    "era_id": 4,
-    "construcao_id": 23,
-    "god_dono_id": 67,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 67,
+        "nome": "Vidar"
+      }
+    ],
     "icon": "aomr_fafnir_icon"
   },
   {
@@ -4786,18 +6211,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hélios",
-    "era_id": 4,
-    "construcao_id": 24,
-    "god_dono_id": 54,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 54,
+        "nome": "Hélios"
+      }
+    ],
     "icon": "aomr_centimanus_icon"
   },
   {
@@ -4810,18 +6251,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Atlas",
-    "era_id": 4,
-    "construcao_id": 24,
-    "god_dono_id": 53,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 53,
+        "nome": "Atlas"
+      }
+    ],
     "icon": "aomr_argus_icon"
   },
   {
@@ -4834,18 +6291,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Atlante)",
+    "construcao": [
+      {
+        "id": 24,
+        "nome": "Templo (Atlante)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hécate",
-    "era_id": 4,
-    "construcao_id": 24,
-    "god_dono_id": 55,
-    "panteao_id": 4,
+    "god_dono": [
+      {
+        "id": 55,
+        "nome": "Hécate"
+      }
+    ],
     "icon": "aomr_lampades_icon"
   },
   {
@@ -4858,18 +6331,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Huangdi",
-    "era_id": 4,
-    "construcao_id": 25,
-    "god_dono_id": 63,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 63,
+        "nome": "Huangdi"
+      }
+    ],
     "icon": "aomr_hundun_icon"
   },
   {
@@ -4886,18 +6375,34 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Gonggong",
-    "era_id": 4,
-    "construcao_id": 25,
-    "god_dono_id": 62,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 62,
+        "nome": "Gonggong"
+      }
+    ],
     "icon": "aomr_qinglong_icon"
   },
   {
@@ -4914,18 +6419,34 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Chinês)",
+    "construcao": [
+      {
+        "id": 25,
+        "nome": "Templo (Chinês)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Zhurong",
-    "era_id": 4,
-    "construcao_id": 25,
-    "god_dono_id": 64,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 64,
+        "nome": "Zhurong"
+      }
+    ],
     "icon": "aomr_zhuque_icon"
   },
   {
@@ -4946,23 +6467,39 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "multiplicador": [],
     "pontos_de_vida": 30,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 60,
-    "construcao": "Templo (Nórdico)",
+    "construcao": [
+      {
+        "id": 23,
+        "nome": "Templo (Nórdico)"
+      }
+    ],
     "tempo_treinamento": 180,
     "velocidade_movimento": 4,
     "forca_atributos": -66,
     "forte_contra": "-",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Odin",
-    "era_id": 1,
-    "construcao_id": 23,
-    "god_dono_id": 8,
-    "panteao_id": 3,
+    "god_dono": [
+      {
+        "id": 8,
+        "nome": "Odin"
+      }
+    ],
     "icon": "aomr_raven_icon"
   },
   {
@@ -4975,16 +6512,28 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Zeus",
-    "era_id": 4,
-    "god_dono_id": 1,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 1,
+        "nome": "Zeus"
+      }
+    ],
     "icon": "aomr_bellerophon_icon"
   },
   {
@@ -4997,8 +6546,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5010,10 +6569,12 @@
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Poseidon",
-    "era_id": 4,
-    "god_dono_id": 2,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 2,
+        "nome": "Poseidon"
+      }
+    ],
     "icon": "aomr_polyphemus_icon"
   },
   {
@@ -5026,16 +6587,28 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Hades",
-    "era_id": 4,
-    "god_dono_id": 3,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 3,
+        "nome": "Hades"
+      }
+    ],
     "icon": "aomr_perseus_icon"
   },
   {
@@ -5048,8 +6621,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5064,7 +6647,12 @@
     "dps": 7.5,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 30,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 150,
@@ -5075,9 +6663,6 @@
     "forca_atributos": 209.5,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "construcao_id": 44,
-    "panteao_id": 5,
     "icon": "aomr_nezha_child_icon"
   },
   {
@@ -5090,8 +6675,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5107,7 +6702,12 @@
     "dps": 13.333333333333,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 40,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "comida": 150,
     "madeira": 250,
     "ouro": 0,
@@ -5118,9 +6718,6 @@
     "forca_atributos": 129.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "era_id": 3,
-    "construcao_id": 44,
-    "panteao_id": 5,
     "icon": "aomr_jiang_ziya_icon"
   },
   {
@@ -5133,8 +6730,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5144,15 +6751,21 @@
       }
     ],
     "dano_cortante": 14,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Fu Xi",
-    "era_id": 4,
-    "construcao_id": 44,
-    "god_dono_id": 13,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 13,
+        "nome": "Fu Xi"
+      }
+    ],
     "icon": "aomr_yang_jian_icon"
   },
   {
@@ -5165,8 +6778,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5176,15 +6799,21 @@
       }
     ],
     "dano_perfurante": 9,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Nu Wa",
-    "era_id": 4,
-    "construcao_id": 44,
-    "god_dono_id": 14,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 14,
+        "nome": "Nu Wa"
+      }
+    ],
     "icon": "aomr_li_jing_icon"
   },
   {
@@ -5197,8 +6826,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5209,15 +6848,21 @@
     ],
     "dano_cortante": 10,
     "dano_contundente": 50,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Shennong",
-    "era_id": 4,
-    "construcao_id": 44,
-    "god_dono_id": 15,
-    "panteao_id": 5,
+    "god_dono": [
+      {
+        "id": 15,
+        "nome": "Shennong"
+      }
+    ],
     "icon": "aomr_wen_zhong_icon"
   },
   {
@@ -5234,8 +6879,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -5279,8 +6934,6 @@
     ],
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 4,
-    "panteao_id": 4,
     "icon": "aomr_fanatic_hero_icon"
   },
   {
@@ -5297,8 +6950,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Nórdico :aomr_pantheon_norse_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5318,8 +6981,6 @@
     "forca_atributos": 241.376923076923,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "era_id": 4,
-    "panteao_id": 3,
     "icon": "aomr_hero_of_ragnarok_icon"
   },
   {
@@ -5332,8 +6993,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5348,7 +7019,12 @@
     "dps": 10,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 30,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 300,
@@ -5359,9 +7035,6 @@
     "forca_atributos": 212,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 3,
-    "construcao_id": 44,
-    "panteao_id": 5,
     "icon": "aomr_nezha_youth_icon"
   },
   {
@@ -5374,8 +7047,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinês :aomr_pantheon_chinese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5390,7 +7073,12 @@
     "dps": 11.666666666667,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 30,
-    "construcao": "Academia Imperial",
+    "construcao": [
+      {
+        "id": 44,
+        "nome": "Academia Imperial"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 450,
@@ -5401,9 +7089,6 @@
     "forca_atributos": 233.666666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 4,
-    "construcao_id": 44,
-    "panteao_id": 5,
     "icon": "aomr_nezha_icon"
   },
   {
@@ -5420,8 +7105,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5441,7 +7136,12 @@
     "dps": 4,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "comida": 25,
     "favor": 8,
     "populacao": 1,
@@ -5450,15 +7150,20 @@
     "forca_atributos": 151.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Amaterasu, Tsukuyomi, Susanoo",
-    "era_id": 1,
-    "construcao_id": 26,
-    "god_dono_ids": [
-      17,
-      18,
-      19
+    "god_dono": [
+      {
+        "id": 17,
+        "nome": "Amaterasu"
+      },
+      {
+        "id": 18,
+        "nome": "Tsukuyomi"
+      },
+      {
+        "id": 19,
+        "nome": "Susanoo"
+      }
     ],
-    "panteao_id": 6,
     "icon": "aomr_kitsune_icon"
   },
   {
@@ -5471,8 +7176,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5492,7 +7207,12 @@
     "dps": 17.142857142857,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 30,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "comida": 150,
     "favor": 12,
     "populacao": 3,
@@ -5501,11 +7221,12 @@
     "forca_atributos": 299.142857142857,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Ame-no-Uzume",
-    "era_id": 2,
-    "construcao_id": 26,
-    "god_dono_id": 68,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 68,
+        "nome": "Ame-no-Uzume"
+      }
+    ],
     "icon": "aomr_kamaitachi_icon"
   },
   {
@@ -5522,8 +7243,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5544,7 +7275,12 @@
     "dps": 1.388888888889,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 65,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "madeira": 140,
     "favor": 15,
     "populacao": 2,
@@ -5553,11 +7289,12 @@
     "forca_atributos": 303.388888888889,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Minakatatomi",
-    "era_id": 2,
-    "construcao_id": 26,
-    "god_dono_id": 69,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 69,
+        "nome": "Minakatatomi"
+      }
+    ],
     "icon": "aomr_wanyudo_icon"
   },
   {
@@ -5570,8 +7307,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5591,7 +7338,12 @@
     "dps": 13.333333333333,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "ouro": 160,
     "favor": 18,
     "populacao": 3,
@@ -5600,11 +7352,12 @@
     "forca_atributos": 424.333333333333,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Inari Okami",
-    "era_id": 2,
-    "construcao_id": 26,
-    "god_dono_id": 70,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 70,
+        "nome": "Inari Okami"
+      }
+    ],
     "icon": "aomr_jorogumo_icon"
   },
   {
@@ -5617,8 +7370,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5638,7 +7401,12 @@
     "dps": 20,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "madeira": 200,
     "favor": 15,
     "populacao": 3,
@@ -5647,11 +7415,12 @@
     "forca_atributos": 592.3,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hachiman",
-    "era_id": 3,
-    "construcao_id": 26,
-    "god_dono_id": 71,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 71,
+        "nome": "Hachiman"
+      }
+    ],
     "icon": "aomr_tengu_icon"
   },
   {
@@ -5664,8 +7433,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5685,7 +7464,12 @@
     "dps": 24,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "ouro": 220,
     "favor": 20,
     "populacao": 3,
@@ -5694,11 +7478,12 @@
     "forca_atributos": 697.5,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Raijin",
-    "era_id": 3,
-    "construcao_id": 26,
-    "god_dono_id": 73,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 73,
+        "nome": "Raijin"
+      }
+    ],
     "icon": "aomr_raiju_icon"
   },
   {
@@ -5715,8 +7500,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5737,7 +7532,12 @@
     "dps": 16,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "comida": 300,
     "favor": 20,
     "populacao": 4,
@@ -5746,11 +7546,12 @@
     "forca_atributos": 1040.7,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Fujin",
-    "era_id": 3,
-    "construcao_id": 26,
-    "god_dono_id": 72,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 72,
+        "nome": "Fujin"
+      }
+    ],
     "icon": "aomr_oni_icon"
   },
   {
@@ -5763,8 +7564,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5786,7 +7597,12 @@
     "dps": 31,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "madeira": 275,
     "favor": 25,
     "populacao": 3,
@@ -5795,11 +7611,12 @@
     "forca_atributos": 265.3,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Watatsumi",
-    "era_id": 4,
-    "construcao_id": 26,
-    "god_dono_id": 76,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 76,
+        "nome": "Watatsumi"
+      }
+    ],
     "icon": "aomr_shinigami_icon"
   },
   {
@@ -5816,8 +7633,18 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5837,7 +7664,12 @@
     "dps": 40,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 55,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "comida": 250,
     "favor": 30,
     "populacao": 4,
@@ -5846,11 +7678,12 @@
     "forca_atributos": 541.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Okuninushi",
-    "era_id": 4,
-    "construcao_id": 26,
-    "god_dono_id": 75,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 75,
+        "nome": "Okuninushi"
+      }
+    ],
     "icon": "aomr_onmoraki_icon"
   },
   {
@@ -5867,8 +7700,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
@@ -5890,7 +7733,12 @@
     "dps": 17.5,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 65,
-    "construcao": "Templo (Japonês)",
+    "construcao": [
+      {
+        "id": 26,
+        "nome": "Templo (Japonês)"
+      }
+    ],
     "comida": 250,
     "ouro": 150,
     "favor": 30,
@@ -5900,11 +7748,12 @@
     "forca_atributos": 911.7,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Takemikazuchi",
-    "era_id": 4,
-    "construcao_id": 26,
-    "god_dono_id": 74,
-    "panteao_id": 6,
+    "god_dono": [
+      {
+        "id": 74,
+        "nome": "Takemikazuchi"
+      }
+    ],
     "icon": "aomr_asura_icon"
   },
   {
@@ -5917,8 +7766,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "multiplicador": [],
     "pontos_de_vida": 100,
     "dano_cortante": 12,
@@ -5926,7 +7785,12 @@
     "dps": 6,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 100,
@@ -5937,11 +7801,12 @@
     "forca_atributos": 159.5,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Hades",
-    "era_id": 1,
-    "construcao_id": 21,
-    "god_dono_id": 3,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 3,
+        "nome": "Hades"
+      }
+    ],
     "icon": "aomr_shade_of_hades_icon"
   },
   {
@@ -5958,8 +7823,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -5974,7 +7849,12 @@
     "dps": 4,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
-    "construcao": "Centro Urbano (Japonês)",
+    "construcao": [
+      {
+        "id": 7,
+        "nome": "Centro Urbano (Japonês)"
+      }
+    ],
     "comida": 50,
     "populacao": 1,
     "tempo_treinamento": 9,
@@ -5982,9 +7862,6 @@
     "forca_atributos": 82.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 1,
-    "construcao_id": 7,
-    "panteao_id": 6,
     "icon": "aomr_miko_icon"
   },
   {
@@ -6001,8 +7878,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -6017,7 +7904,12 @@
     "dps": 4.666666666667,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 25,
-    "construcao": "Posto de Vigia",
+    "construcao": [
+      {
+        "id": 65,
+        "nome": "Posto de Vigia"
+      }
+    ],
     "madeira": 60,
     "ouro": 50,
     "favor": 2,
@@ -6027,9 +7919,6 @@
     "forca_atributos": 100.866666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "construcao_id": 65,
-    "panteao_id": 6,
     "icon": "aomr_bushi_icon"
   },
   {
@@ -6042,8 +7931,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -6058,7 +7957,12 @@
     "dps": 6.666666666667,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
-    "construcao": "Posto de Vigia",
+    "construcao": [
+      {
+        "id": 65,
+        "nome": "Posto de Vigia"
+      }
+    ],
     "comida": 55,
     "ouro": 25,
     "populacao": 2,
@@ -6067,9 +7971,6 @@
     "forca_atributos": 211.466666666667,
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "construcao_id": 65,
-    "panteao_id": 6,
     "categoria": [
       {
         "type": "Hard-Counter Cavalaria",
@@ -6088,8 +7989,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -6105,7 +8016,12 @@
     "dps": 5.333333333333,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 15,
-    "construcao": "Posto de Vigia",
+    "construcao": [
+      {
+        "id": 65,
+        "nome": "Posto de Vigia"
+      }
+    ],
     "madeira": 50,
     "ouro": 40,
     "populacao": 2,
@@ -6114,9 +8030,6 @@
     "forca_atributos": 95.333333333333,
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "construcao_id": 65,
-    "panteao_id": 6,
     "categoria": [
       {
         "type": "Soft-Counter Infantaria",
@@ -6139,8 +8052,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -6155,7 +8078,12 @@
     "dps": 10.666666666667,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 20,
-    "construcao": "Dojo",
+    "construcao": [
+      {
+        "id": 63,
+        "nome": "Dojo"
+      }
+    ],
     "comida": 130,
     "ouro": 90,
     "favor": 4,
@@ -6165,9 +8093,6 @@
     "forca_atributos": 139.966666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 2,
-    "construcao_id": 63,
-    "panteao_id": 6,
     "icon": "aomr_bushi_icon"
   },
   {
@@ -6184,8 +8109,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [],
     "pontos_de_vida": 90,
@@ -6195,7 +8130,12 @@
     "dps": 9,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 25,
-    "construcao": "Estábulo",
+    "construcao": [
+      {
+        "id": 66,
+        "nome": "Estábulo"
+      }
+    ],
     "madeira": 75,
     "ouro": 45,
     "populacao": 3,
@@ -6204,9 +8144,6 @@
     "forca_atributos": 110,
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 3,
-    "construcao_id": 66,
-    "panteao_id": 6,
     "icon": "aomr_yumi_horse_archer_icon"
   },
   {
@@ -6219,8 +8156,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -6235,7 +8182,12 @@
     "dps": 9,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
-    "construcao": "Estábulo",
+    "construcao": [
+      {
+        "id": 66,
+        "nome": "Estábulo"
+      }
+    ],
     "comida": 45,
     "ouro": 70,
     "populacao": 3,
@@ -6244,9 +8196,6 @@
     "forca_atributos": 148.5,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 2,
-    "construcao_id": 66,
-    "panteao_id": 6,
     "categoria": [
       {
         "type": "Soft-Counter Artilharia",
@@ -6273,8 +8222,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -6291,7 +8250,12 @@
     "dps": 9.333333333333,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 30,
-    "construcao": "Castelo",
+    "construcao": [
+      {
+        "id": 68,
+        "nome": "Castelo"
+      }
+    ],
     "ouro": 250,
     "favor": 5,
     "populacao": 3,
@@ -6300,9 +8264,6 @@
     "forca_atributos": 22.133333333333,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "era_id": 4,
-    "construcao_id": 68,
-    "panteao_id": 6,
     "icon": "aomr_onmyoji_icon"
   },
   {
@@ -6319,8 +8280,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japonês :aomr_pantheon_japanese_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -6335,7 +8306,12 @@
     "dps": 10,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
-    "construcao": "Estábulo",
+    "construcao": [
+      {
+        "id": 66,
+        "nome": "Estábulo"
+      }
+    ],
     "comida": 50,
     "ouro": 110,
     "favor": 2,
@@ -6345,9 +8321,6 @@
     "forca_atributos": 163.5,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon: | Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "construcao_id": 66,
-    "panteao_id": 6,
     "icon": "aomr_daimyo_icon"
   },
   {
@@ -6364,18 +8337,34 @@
         "icon": "aomr_type_flying_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Fortaleza",
+    "construcao": [
+      {
+        "id": 57,
+        "nome": "Fortaleza"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Deméter",
-    "era_id": 4,
-    "construcao_id": 57,
-    "god_dono_id": 78,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 78,
+        "nome": "Deméter"
+      }
+    ],
     "icon": "aomr_harpy_demeter_icon"
   },
   {
@@ -6388,9 +8377,24 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
-    "construcao": "Templo (Grego)",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "madeira": 80,
     "ouro": 100,
     "favor": 15,
@@ -6399,11 +8403,12 @@
     "forca_atributos": -113,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Pan",
-    "era_id": 2,
-    "construcao_id": 21,
-    "god_dono_id": 79,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 79,
+        "nome": "Pan"
+      }
+    ],
     "icon": "aomr_lykaon_icon"
   },
   {
@@ -6416,10 +8421,25 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "madeira": 150,
     "ouro": 100,
     "favor": 25,
@@ -6427,11 +8447,12 @@
     "forca_atributos": -128,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Héstia",
-    "era_id": 3,
-    "construcao_id": 21,
-    "god_dono_id": 80,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 80,
+        "nome": "Héstia"
+      }
+    ],
     "icon": "aomr_hamadryad_icon"
   },
   {
@@ -6444,18 +8465,34 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
-    "construcao": "Templo (Grego)",
+    "construcao": [
+      {
+        "id": 21,
+        "nome": "Templo (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "god_dono": "Perséfone",
-    "era_id": 4,
-    "construcao_id": 21,
-    "god_dono_id": 81,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 81,
+        "nome": "Perséfone"
+      }
+    ],
     "icon": "aomr_siren_icon"
   },
   {
@@ -6468,18 +8505,34 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "construcao": "Centro Urbano (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Deméter",
-    "era_id": 3,
-    "construcao_id": 1,
-    "god_dono_id": 78,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 78,
+        "nome": "Deméter"
+      }
+    ],
     "icon": "aomr_icarus_icon"
   },
   {
@@ -6492,18 +8545,34 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "construcao": "Centro Urbano (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Deméter",
-    "era_id": 1,
-    "construcao_id": 1,
-    "god_dono_id": 78,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 78,
+        "nome": "Deméter"
+      }
+    ],
     "icon": "aomr_orpheus_icon"
   },
   {
@@ -6516,18 +8585,34 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
-    "construcao": "Centro Urbano (Grego)",
+    "construcao": [
+      {
+        "id": 1,
+        "nome": "Centro Urbano (Grego)"
+      }
+    ],
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Deméter",
-    "era_id": 2,
-    "construcao_id": 1,
-    "god_dono_id": 78,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 78,
+        "nome": "Deméter"
+      }
+    ],
     "icon": "aomr_iolaus_icon"
   },
   {
@@ -6540,16 +8625,28 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Grego :aomr_pantheon_greeks_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "forca_atributos": 0,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "god_dono": "Deméter",
-    "era_id": 4,
-    "god_dono_id": 78,
-    "panteao_id": 1,
+    "god_dono": [
+      {
+        "id": 78,
+        "nome": "Deméter"
+      }
+    ],
     "icon": "aomr_midas_icon"
   },
   {
@@ -6566,8 +8663,18 @@
         "icon": "aomr_type_scout_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -6583,8 +8690,12 @@
     "dps": 1.538461538462,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 45,
-    "construcao": "Centro Urbano (Asteca)",
-    "construcao_id": 9,
+    "construcao": [
+      {
+        "id": 9,
+        "nome": "Centro Urbano (Asteca)"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 0,
@@ -6599,8 +8710,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 1,
-    "panteao_id": 7,
     "icon": "aomr_quimchim_spy_icon"
   },
   {
@@ -6613,8 +8722,18 @@
         "icon": "aomr_type_hero_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Arcaica :aomr_archaic_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 1,
+        "nome": "Arcaica :aomr_archaic_age_icon:"
+      }
+    ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
@@ -6629,8 +8748,12 @@
     "dps": 2,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 35,
-    "construcao": "Templo (Asteca)",
-    "construcao_id": 12,
+    "construcao": [
+      {
+        "id": 12,
+        "nome": "Templo (Asteca)"
+      }
+    ],
     "comida": 40,
     "madeira": 0,
     "ouro": 70,
@@ -6639,8 +8762,6 @@
     "forca_atributos": 94.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "era_id": 1,
-    "panteao_id": 7,
     "icon": "aomr_warrior_priest_hero_icon"
   },
   {
@@ -6653,8 +8774,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
@@ -6669,8 +8800,12 @@
     "dps": 6,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
-    "construcao": "War Hut",
-    "construcao_id": 74,
+    "construcao": [
+      {
+        "id": 74,
+        "nome": "War Hut"
+      }
+    ],
     "comida": 45,
     "madeira": 0,
     "ouro": 25,
@@ -6685,8 +8820,6 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "panteao_id": 7,
     "icon": "aomr_tlamanih_spearman_icon"
   },
   {
@@ -6699,8 +8832,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -6716,8 +8859,12 @@
     "dps": 5.555555555556,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 15,
-    "construcao": "War Hut",
-    "construcao_id": 74,
+    "construcao": [
+      {
+        "id": 74,
+        "nome": "War Hut"
+      }
+    ],
     "comida": 0,
     "madeira": 50,
     "ouro": 30,
@@ -6732,8 +8879,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "panteao_id": 7,
     "icon": "aomr_tequihua_archer_icon"
   },
   {
@@ -6746,8 +8891,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -6762,8 +8917,12 @@
     "dps": 5.833333333333,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 45,
-    "construcao": "Noble's Hut",
-    "construcao_id": 75,
+    "construcao": [
+      {
+        "id": 75,
+        "nome": "Noble's Hut"
+      }
+    ],
     "comida": 30,
     "madeira": 0,
     "ouro": 55,
@@ -6778,8 +8937,6 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "panteao_id": 7,
     "icon": "aomr_coyote_warrior_icon"
   },
   {
@@ -6792,8 +8949,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [],
     "pontos_de_vida": 155,
@@ -6802,8 +8969,12 @@
     "dps": 12.5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 15,
-    "construcao": "Noble's Hut",
-    "construcao_id": 75,
+    "construcao": [
+      {
+        "id": 75,
+        "nome": "Noble's Hut"
+      }
+    ],
     "comida": 70,
     "madeira": 0,
     "ouro": 60,
@@ -6812,8 +8983,6 @@
     "forca_atributos": 154,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 2,
-    "panteao_id": 7,
     "icon": "aomr_ocelotl_warrior_icon"
   },
   {
@@ -6826,8 +8995,18 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Clássica :aomr_classical_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 2,
+        "nome": "Clássica :aomr_classical_age_icon:"
+      }
+    ],
     "counter_de": "Todos👥",
     "multiplicador": [
       {
@@ -6843,8 +9022,12 @@
     "dps": 6.666666666667,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 30,
-    "construcao": "Noble's Hut",
-    "construcao_id": 75,
+    "construcao": [
+      {
+        "id": 75,
+        "nome": "Noble's Hut"
+      }
+    ],
     "comida": 0,
     "madeira": 75,
     "ouro": 45,
@@ -6853,8 +9036,6 @@
     "forca_atributos": 138.166666666667,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "era_id": 2,
-    "panteao_id": 7,
     "icon": "aomr_eagle_warrior_icon"
   },
   {
@@ -6871,8 +9052,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:",
     "multiplicador": [
       {
@@ -6887,8 +9078,12 @@
     "dps": 8.642857142857,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 65,
-    "construcao": "Great Temple",
-    "construcao_id": 77,
+    "construcao": [
+      {
+        "id": 77,
+        "nome": "Great Temple"
+      }
+    ],
     "comida": 0,
     "madeira": 150,
     "ouro": 100,
@@ -6897,8 +9092,6 @@
     "forca_atributos": 236.842857142857,
     "forte_contra": "Construção :aomr_type_building_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 3,
-    "panteao_id": 7,
     "icon": "aomr_medium_otontin_smasher_icon"
   },
   {
@@ -6911,8 +9104,18 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Heróica :aomr_heroic_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 3,
+        "nome": "Heróica :aomr_heroic_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
@@ -6927,8 +9130,12 @@
     "dps": 11,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 20,
-    "construcao": "Great Temple",
-    "construcao_id": 77,
+    "construcao": [
+      {
+        "id": 77,
+        "nome": "Great Temple"
+      }
+    ],
     "comida": 90,
     "madeira": 0,
     "ouro": 45,
@@ -6943,8 +9150,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "era_id": 3,
-    "panteao_id": 7,
     "icon": "aomr_medium_shorn_one_icon"
   },
   {
@@ -6957,8 +9162,18 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
@@ -6973,8 +9188,12 @@
     "dps": 15.230769230769,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 40,
-    "construcao": "Great Temple",
-    "construcao_id": 77,
+    "construcao": [
+      {
+        "id": 77,
+        "nome": "Great Temple"
+      }
+    ],
     "comida": 65,
     "madeira": 0,
     "ouro": 95,
@@ -6989,8 +9208,6 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "era_id": 4,
-    "panteao_id": 7,
     "icon": "aomr_jaguar_rider_icon"
   },
   {
@@ -7007,8 +9224,18 @@
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
-    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "era": "Mítica :aomr_mythic_age_icon:",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+      }
+    ],
+    "era": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
     "counter_de": "Construção:aomr_type_building_icon:",
     "multiplicador": [
       {
@@ -7030,8 +9257,12 @@
     "dps": 3.333333333333,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 80,
-    "construcao": "Great Temple",
-    "construcao_id": 77,
+    "construcao": [
+      {
+        "id": 77,
+        "nome": "Great Temple"
+      }
+    ],
     "comida": 0,
     "madeira": 0,
     "ouro": 300,
@@ -7041,8 +9272,6 @@
     "forca_atributos": 447.333333333333,
     "forte_contra": "Construção :aomr_type_building_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Herói :aomr_type_hero_icon:",
-    "era_id": 4,
-    "panteao_id": 7,
     "icon": "aomr_quinametzin_icon"
   }
 ]

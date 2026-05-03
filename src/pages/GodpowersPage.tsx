@@ -9,12 +9,16 @@ import { SearchField } from "@/components/ui/SearchField";
 import { deusById, godpowers, godpowerSlugById, panteaoById } from "@/data/catalog";
 import { formatGodNameForMetaNotion } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
+import { firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
 function matches(g: (typeof godpowers)[number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  return [g.nome, g.god ?? "", g.era ?? "", g.panteao ?? "", g.descricao_resumida ?? ""].join(" ").toLowerCase().includes(s);
+  return [g.nome, joinRefNomes(g.god), joinRefNomes(g.era), joinRefNomes(g.panteao), g.descricao_resumida ?? ""]
+    .join(" ")
+    .toLowerCase()
+    .includes(s);
 }
 
 const toolbarBtn =
@@ -89,17 +93,19 @@ export function GodpowersPage() {
           const slug = godpowerSlugById.get(g.id) ?? String(g.id);
           const selected = selectedSlugs.includes(slug);
           const selectDisabled = compareMode && selectedSlugs.length >= 2 && !selected;
-          const deus = g.god_id != null ? deusById.get(g.god_id) : undefined;
-          const godLine = deus ? formatGodNameForMetaNotion(deus) : g.god;
+          const godRefId = firstNumId(g.god);
+          const deus = godRefId != null ? deusById.get(godRefId) : undefined;
+          const godLine = deus ? formatGodNameForMetaNotion(deus) : joinRefNomes(g.god);
+          const pId = firstNumId(g.panteao);
 
           return (
             <li key={g.id}>
               <EntityCard
                 to={`/poderes/${slug}`}
                 title={g.nome}
-                cardTint={pantheonCardTint(panteaoById.get(g.panteao_id)?.nome ?? "")}
+                cardTint={pantheonCardTint(pId != null ? (panteaoById.get(pId)?.nome ?? "") : "")}
                 subtitle={g.descricao_resumida}
-                meta={<MetaNotionLine parts={[godLine, g.era, g.panteao]} />}
+                meta={<MetaNotionLine parts={[godLine, joinRefNomes(g.era), joinRefNomes(g.panteao)]} />}
                 watermarkSrc={getGodPowerAssetUrl(g)}
                 subtitleMinLines={3}
                 subtitleTag={false}

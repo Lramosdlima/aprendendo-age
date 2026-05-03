@@ -30,6 +30,7 @@ import { getAldeaoAssetUrl, getConstrucaoAssetUrl, getMapaAssetUrl, getMapaPrevi
 import { formatGodNameForMetaNotion, getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import { firstNome, firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { panteaoFieldHasMultiplePantheons, pantheonCardTint } from "@/lib/pantheonCardTint";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
@@ -56,7 +57,7 @@ export function AstecasPage() {
   const deusesAztecas = useMemo(
     () =>
       [...deuses]
-        .filter((d) => d.panteao_id === AZTEC_PANTEON_ID)
+        .filter((d) => firstNumId(d.panteao) === AZTEC_PANTEON_ID)
         .sort((a, b) => {
           const aM = a.hierarquia?.toLowerCase() === "maior" ? 0 : 1;
           const bM = b.hierarquia?.toLowerCase() === "maior" ? 0 : 1;
@@ -69,20 +70,20 @@ export function AstecasPage() {
   const godpowersAztecas = useMemo(
     () =>
       [...godpowers]
-        .filter((g) => g.panteao_id === AZTEC_PANTEON_ID)
+        .filter((g) => firstNumId(g.panteao) === AZTEC_PANTEON_ID)
         .sort((a, b) => a.id - b.id),
     [],
   );
 
   const aldeoesAztecas = useMemo(
-    () => aldeoes.filter((a) => a.panteao_id === AZTEC_PANTEON_ID),
+    () => aldeoes.filter((a) => firstNumId(a.panteao) === AZTEC_PANTEON_ID),
     [],
   );
 
   const unidadesAztecas = useMemo(
     () =>
       [...unidades]
-        .filter((u) => u.panteao_id === AZTEC_PANTEON_ID)
+        .filter((u) => firstNumId(u.panteao) === AZTEC_PANTEON_ID)
         .sort((a, b) => a.id - b.id),
     [],
   );
@@ -126,14 +127,14 @@ export function AstecasPage() {
             description={<NotionText text={panteaoAzteca.description} />}
           />
           <div className="mb-10 -mt-2 space-y-0 rounded-2xl border border-aom-border bg-aom-card/60 p-5">
-            {panteaoAzteca.vill ? (
+            {Array.isArray(panteaoAzteca.vill) && panteaoAzteca.vill.length > 0 ? (
               <InfoRow label="Aldeão" icon="aomr_settler_icon">
-                {panteaoAzteca.vill}
+                {panteaoAzteca.vill.map((v) => v.nome).join(", ")}
               </InfoRow>
             ) : null}
-            {panteaoAzteca.deuses ? (
+            {Array.isArray(panteaoAzteca.deuses) && panteaoAzteca.deuses.length > 0 ? (
               <InfoRow label="Deuses" icon={panteaoAzteca.icon ?? undefined}>
-                <NotionText text={panteaoAzteca.deuses} />
+                {panteaoAzteca.deuses.map((d) => d.nome).join(", ")}
               </InfoRow>
             ) : null}
             {panteaoFichaSlug ? (
@@ -169,8 +170,8 @@ export function AstecasPage() {
                 subtitle={d.foco ? <NotionText text={d.foco} /> : undefined}
                 meta={
                   <span className="inline-flex flex-wrap items-baseline gap-x-0">
-                    {d.panteao_id != null ? <PantheonMetaIcon panteaoId={d.panteao_id} /> : null}
-                    <MetaNotionLine parts={[d.panteao, d.era]} />
+                    {firstNumId(d.panteao) != null ? <PantheonMetaIcon panteaoId={firstNumId(d.panteao)!} /> : null}
+                    <MetaNotionLine parts={[firstNome(d.panteao), firstNome(d.era)]} />
                   </span>
                 }
                 watermarkSrc={getDeusAssetUrl(d)}
@@ -184,8 +185,9 @@ export function AstecasPage() {
         <h2 className={sectionTitleClass}>Poderes divinos</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {godpowersAztecas.map((g) => {
-            const deus = g.god_id != null ? deusById.get(g.god_id) : undefined;
-            const godLine = deus ? formatGodNameForMetaNotion(deus) : g.god;
+            const gid = firstNumId(g.god);
+            const deus = gid != null ? deusById.get(gid) : undefined;
+            const godLine = deus ? formatGodNameForMetaNotion(deus) : joinRefNomes(g.god);
             return (
               <li key={g.id}>
                 <EntityCard
@@ -194,7 +196,7 @@ export function AstecasPage() {
                   title={g.nome}
                   cardTint={cardTint}
                   subtitle={g.descricao_resumida}
-                  meta={<MetaNotionLine parts={[godLine, g.era, g.panteao]} />}
+                  meta={<MetaNotionLine parts={[godLine, joinRefNomes(g.era), joinRefNomes(g.panteao)]} />}
                   watermarkSrc={getGodPowerAssetUrl(g)}
                   subtitleMinLines={3}
                   subtitleTag={false}
@@ -215,7 +217,7 @@ export function AstecasPage() {
                 linkState={listIndexState}
                 title={a.nome}
                 cardTint={cardTint}
-                subtitle={a.panteao ? <NotionText text={a.panteao} /> : undefined}
+                subtitle={firstNome(a.panteao) ? <NotionText text={firstNome(a.panteao)!} /> : undefined}
                 meta={a.ingles ? a.ingles : undefined}
                 watermarkSrc={getAldeaoAssetUrl(a)}
               />
@@ -236,7 +238,15 @@ export function AstecasPage() {
                 cardTint={cardTint}
                 subtitleTag={false}
                 subtitle={hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined}
-                meta={<MetaNotionLine parts={[u.panteao, u.era, u.categoria?.filter((c) => c.type != null).map((c) => c.type).join(", ")]} />}
+                meta={
+                  <MetaNotionLine
+                    parts={[
+                      joinRefNomes(u.panteao),
+                      joinRefNomes(u.era),
+                      u.categoria?.filter((c) => c.type != null).map((c) => c.type).join(", "),
+                    ]}
+                  />
+                }
                 watermarkSrc={getUnidadeAssetUrl(u)}
               />
             </li>

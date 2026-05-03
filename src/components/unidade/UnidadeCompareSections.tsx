@@ -21,85 +21,87 @@ import {
   hasCategoriaContent,
   hasTipoContent,
 } from "@/lib/unidadeTipo";
-import {
-  construcaoById,
-  construcaoSlugById,
-  eraById,
-  eraSlugById,
-  panteaoById,
-  panteaoSlugById,
-  unidades,
-} from "@/data/catalog";
+import { construcaoSlugById, eraSlugById, panteaoSlugById, unidades } from "@/data/catalog";
 
 type U = (typeof unidades)[number];
 
+function hasRefList(v: unknown): v is { id: number; nome: string }[] {
+  return Array.isArray(v) && v.length > 0 && typeof (v as { id: number }[])[0]?.id === "number";
+}
+
 function renderPanteaoCell(u: U) {
-  const panteao = u.panteao_id != null ? panteaoById.get(u.panteao_id) : undefined;
-  if (panteao) {
+  const refs = u.panteao;
+  if (hasRefList(refs)) {
     return (
-      <Link
-        to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
-        className="text-amber-200 underline-offset-2 hover:underline"
-      >
-        {u.panteao?.trim() ? <NotionText text={u.panteao} /> : panteao.nome}
-      </Link>
+      <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
+        {refs.map((r, i) => (
+          <Fragment key={`${r.id}-${i}`}>
+            {i > 0 ? <span className="text-zinc-600">,</span> : null}
+            <Link
+              to={`/panteoes/${panteaoSlugById.get(r.id) ?? r.id}`}
+              className="text-amber-200 underline-offset-2 hover:underline"
+            >
+              <NotionText text={r.nome} />
+            </Link>
+          </Fragment>
+        ))}
+      </span>
     );
-  }
-  if (u.panteao) {
-    return <NotionText text={u.panteao} />;
   }
   return "—";
 }
 
 function showPanteaoRow(u1: U, u2: U) {
-  const p1 = u1.panteao_id != null ? panteaoById.get(u1.panteao_id) : undefined;
-  const p2 = u2.panteao_id != null ? panteaoById.get(u2.panteao_id) : undefined;
-  return !!(p1 || u1.panteao || p2 || u2.panteao);
+  return !!(hasRefList(u1.panteao) || hasRefList(u2.panteao));
 }
 
 function renderEraCell(u: U) {
-  const era = u.era_id != null ? eraById.get(u.era_id) : undefined;
-  if (era) {
+  const refs = u.era;
+  if (hasRefList(refs)) {
     return (
-      <Link to={`/eras/${eraSlugById.get(era.id) ?? era.id}`} className="text-amber-200 underline-offset-2 hover:underline">
-        {u.era?.trim() ? <NotionText text={u.era} /> : era.nome}
-      </Link>
+      <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
+        {refs.map((r, i) => (
+          <Fragment key={`${r.id}-${i}`}>
+            {i > 0 ? <span className="text-zinc-600">,</span> : null}
+            <Link to={`/eras/${eraSlugById.get(r.id) ?? r.id}`} className="text-amber-200 underline-offset-2 hover:underline">
+              <NotionText text={r.nome} />
+            </Link>
+          </Fragment>
+        ))}
+      </span>
     );
-  }
-  if (u.era) {
-    return <NotionText text={u.era} />;
   }
   return "—";
 }
 
 function showEraRow(u1: U, u2: U) {
-  const e1 = u1.era_id != null ? eraById.get(u1.era_id) : undefined;
-  const e2 = u2.era_id != null ? eraById.get(u2.era_id) : undefined;
-  return !!(e1 || u1.era || e2 || u2.era);
+  return !!(hasRefList(u1.era) || hasRefList(u2.era));
 }
 
 function renderConstrucaoCell(u: U) {
-  const constr = u.construcao_id != null ? construcaoById.get(u.construcao_id) : undefined;
-  if (constr) {
+  const refs = u.construcao;
+  if (hasRefList(refs)) {
     return (
-      <Link
-        to={`/construcoes/${construcaoSlugById.get(constr.id) ?? constr.id}`}
-        className="text-amber-200 underline-offset-2 hover:underline"
-      >
-        {constr.nome}
-      </Link>
+      <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
+        {refs.map((r, i) => (
+          <Fragment key={`${r.id}-${i}`}>
+            {i > 0 ? <span className="text-zinc-600">,</span> : null}
+            <Link
+              to={`/construcoes/${construcaoSlugById.get(r.id) ?? r.id}`}
+              className="text-amber-200 underline-offset-2 hover:underline"
+            >
+              <NotionText text={r.nome} />
+            </Link>
+          </Fragment>
+        ))}
+      </span>
     );
-  }
-  if (u.construcao) {
-    return <NotionText text={u.construcao} />;
   }
   return "—";
 }
 
 function showConstrucaoRow(u1: U, u2: U) {
-  const c1 = u1.construcao_id != null ? construcaoById.get(u1.construcao_id) : undefined;
-  const c2 = u2.construcao_id != null ? construcaoById.get(u2.construcao_id) : undefined;
-  return !!(c1 || u1.construcao || c2 || u2.construcao);
+  return !!(hasRefList(u1.construcao) || hasRefList(u2.construcao));
 }
 
 function numericPairFrom(a: unknown, b: unknown) {

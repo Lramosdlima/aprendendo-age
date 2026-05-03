@@ -16,6 +16,7 @@ import {
   panteaoSlugById,
 } from "@/data/catalog";
 import { formatGodNameForMetaNotion, formatGodNameStringForMetaNotion, getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { firstNome, firstNumId } from "@/lib/entityRefs";
 import { formatEraNameForMetaNotion } from "@/lib/eraMetaNotion";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { formatPantheonNameForMetaNotion } from "@/lib/pantheonAssetUrl";
@@ -38,9 +39,12 @@ export function GodpowerDetailPage() {
     );
   }
 
-  const deus = g.god_id != null ? deusById.get(g.god_id) : undefined;
-  const era = g.era_id != null ? eraById.get(g.era_id) : undefined;
-  const panteao = g.panteao_id != null ? panteaoById.get(g.panteao_id) : undefined;
+  const godId = firstNumId(g.god);
+  const eraId = firstNumId(g.era);
+  const panteaoId = firstNumId(g.panteao);
+  const deus = godId != null ? deusById.get(godId) : undefined;
+  const era = eraId != null ? eraById.get(eraId) : undefined;
+  const panteao = panteaoId != null ? panteaoById.get(panteaoId) : undefined;
   const powerIcon = getGodPowerAssetUrl(g);
 
   const deusSlug = deus ? (deusSlugById.get(deus.id) ?? String(deus.id)) : undefined;
@@ -81,9 +85,9 @@ export function GodpowerDetailPage() {
                   <NotionText text={formatGodNameForMetaNotion(deus)} />
                 </Link>
               </InfoRow>
-            ) : g.god ? (
+            ) : firstNome(g.god) ? (
               <InfoRow label="Deus">
-                <NotionText text={formatGodNameStringForMetaNotion(g.god, g.god_id)} />
+                <NotionText text={formatGodNameStringForMetaNotion(firstNome(g.god), godId)} />
               </InfoRow>
             ) : null}
             {era ? (
@@ -95,9 +99,9 @@ export function GodpowerDetailPage() {
                   <NotionText text={formatEraNameForMetaNotion(era)} />
                 </Link>
               </InfoRow>
-            ) : g.era ? (
+            ) : firstNome(g.era) ? (
               <InfoRow label="Era">
-                <NotionText text={g.era} />
+                <NotionText text={firstNome(g.era) ?? ""} />
               </InfoRow>
             ) : null}
             {panteao ? (
@@ -109,9 +113,9 @@ export function GodpowerDetailPage() {
                   <NotionText text={formatPantheonNameForMetaNotion(panteao)} />
                 </Link>
               </InfoRow>
-            ) : g.panteao ? (
+            ) : firstNome(g.panteao) ? (
               <InfoRow label="Panteão">
-                <NotionText text={g.panteao} />
+                <NotionText text={firstNome(g.panteao) ?? ""} />
               </InfoRow>
             ) : null}
           </div>

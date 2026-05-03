@@ -11,6 +11,7 @@ import { SearchField } from "@/components/ui/SearchField";
 import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import {
@@ -24,8 +25,8 @@ function matches(u: (typeof unidades)[number], q: string) {
   return [
     u.nome,
     tipoItemsToSearchBlob(u.tipo),
-    u.panteao ?? "",
-    u.era ?? "",
+    joinRefNomes(u.panteao),
+    joinRefNomes(u.era),
     tipoItemsToSearchBlob(u.categoria),
     u.forte_contra ?? "",
   ]
@@ -147,6 +148,8 @@ export function UnidadesPage() {
           const selected = selectedSlugs.includes(slug);
           const selectDisabled = compareMode && selectedSlugs.length >= 2 && !selected;
           const categoriaText = u.categoria && u.categoria.map(c => c.type).join(", ");
+          const pIdUn = firstNumId(u.panteao);
+          const panteaoNomeCard = pIdUn != null ? (panteaoById.get(pIdUn)?.nome ?? "") : "";
 
           return (
             <li key={u.id}>
@@ -154,12 +157,12 @@ export function UnidadesPage() {
                 to={`/unidades/${slug}`}
                 linkState={listIndexState}
                 title={u.nome}
-                cardTint={pantheonCardTint(panteaoById.get(u.panteao_id)?.nome ?? "")}
+                cardTint={pantheonCardTint(panteaoNomeCard)}
                 subtitleTag={false}
                 subtitle={
                   hasTipoContent(u.tipo) ? <UnidadeTipoLine tipo={u.tipo} colored /> : undefined
                 }
-                meta={<MetaNotionLine parts={[u.panteao, u.era, categoriaText]} />}
+                meta={<MetaNotionLine parts={[joinRefNomes(u.panteao), joinRefNomes(u.era), categoriaText]} />}
                 watermarkSrc={getUnidadeAssetUrl(u)}
                 compareMode={compareMode}
                 selected={selected}

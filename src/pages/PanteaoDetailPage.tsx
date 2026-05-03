@@ -9,7 +9,6 @@ import { Section } from "@/components/ui/Section";
 import { aldeaoById, aldeaoSlugById, deusById, deusSlugById, panteaoBySlug, startById } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
-import { parseStartReferences } from "@/lib/startLinksFromDeus";
 import { cn } from "@/lib/cn";
 
 export function PanteaoDetailPage() {
@@ -29,33 +28,26 @@ export function PanteaoDetailPage() {
   const heroBackground =
     "hero_background" in p && typeof p.hero_background === "string" ? p.hero_background : undefined;
 
-  const ext = p as typeof p & { vill_ids?: number[]; vill_id?: number; start_ids?: number[] };
-  const villIds = ext.vill_ids?.length ? ext.vill_ids : ext.vill_id != null ? [ext.vill_id] : [];
-
-  const villLinks = villIds
-    .map((aid) => {
-      const a = aldeaoById.get(aid);
+  const villEntries = Array.isArray(p.vill) ? p.vill : [];
+  const villLinks = villEntries
+    .map((item) => {
+      const a = aldeaoById.get(item.id);
       if (!a) return null;
-      const slug = aldeaoSlugById.get(aid) ?? String(aid);
+      const slug = aldeaoSlugById.get(item.id) ?? String(item.id);
       return (
-        <Link key={aid} to={`/aldeoes/${slug}`} className="text-amber-200 underline-offset-2 hover:underline">
-          {a.nome}
+        <Link key={item.id} to={`/aldeoes/${slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+          {item.nome}
         </Link>
       );
     })
     .filter(Boolean);
 
-  const startItemsFromIds =
-    ext.start_ids?.map((sid) => startById.get(sid)).filter((s): s is NonNullable<typeof s> => s != null) ?? [];
-
-  const startRefItems =
-    startItemsFromIds.length > 0 ? null
-    : p.starts ? parseStartReferences(p.starts)
-    : null;
+  const startEntries = Array.isArray(p.starts) ? p.starts : [];
 
   const deusLinkState = listIndexLinkStateFromLocation(pathname, locSearch);
-  const deusPortraitItems = (p.deuses_ids ?? [])
-    .map((did) => {
+  const deusEntries = Array.isArray(p.deuses) ? p.deuses : [];
+  const deusPortraitItems = deusEntries
+    .map(({ id: did }) => {
       const d = deusById.get(did);
       const dslug = d ? deusSlugById.get(did) : undefined;
       if (!d || !dslug) return null;
@@ -160,42 +152,25 @@ export function PanteaoDetailPage() {
                 ))}
               </span>
             </InfoRow>
-          ) : p.vill ? (
-            <InfoRow label="Aldeão">
-              <NotionText text={String(p.vill)} />
-            </InfoRow>
           ) : null}
-          {startItemsFromIds.length > 0 ? (
+          {startEntries.length > 0 ? (
             <InfoRow label="Starts (referências)">
               <ul className="list-inside list-disc space-y-1.5 text-sm">
-                {startItemsFromIds.map((s) => (
-                  <li key={s.id}>
-                    <Link to={`/starts/${s.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
-                      <NotionText text={s.titulo} />
-                    </Link>
-                  </li>
-                ))}
+                {startEntries.map(({ id: sid, nome }) => {
+                  const s = startById.get(sid);
+                  return (
+                    <li key={sid}>
+                      {s ? (
+                        <Link to={`/starts/${s.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+                          <NotionText text={nome} />
+                        </Link>
+                      ) : (
+                        <NotionText text={nome} />
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
-            </InfoRow>
-          ) : startRefItems?.length ? (
-            <InfoRow label="Starts (referências)">
-              <ul className="list-inside list-disc space-y-1.5 text-sm">
-                {startRefItems.map((item, i) => (
-                  <li key={i}>
-                    {item.kind === "link" ? (
-                      <Link to={`/starts/${item.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
-                        <NotionText text={item.titulo} />
-                      </Link>
-                    ) : (
-                      <NotionText text={item.raw} />
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </InfoRow>
-          ) : p.starts ? (
-            <InfoRow label="Starts (referências)">
-              <NotionText text={p.starts} />
             </InfoRow>
           ) : null}
           {deusPortraitItems.length > 0 ? (

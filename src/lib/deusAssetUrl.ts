@@ -13,7 +13,7 @@ export function formatGodNameForMetaNotion(deus: { nome: string; icon?: string |
 }
 
 /**
- * Só o nome (string), sem objeto deus — resolve ícone via `deuses` por `deusById` (ex. god_id em poderes) ou fica sem token.
+ * Só o nome (string), sem objeto deus — resolve ícone via `deuses` por `deusById` (ex. `firstNumId(godpower.god)` em poderes) ou fica sem token.
  */
 export function formatGodNameStringForMetaNotion(nome: string | null | undefined, godId?: number | null): string {
   if (!nome?.trim()) return "";

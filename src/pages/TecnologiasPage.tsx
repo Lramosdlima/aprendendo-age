@@ -10,6 +10,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import { tecnologias, tecnologiaSlugByIndex } from "@/data/catalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { firstNumId, joinRefNomesOrString } from "@/lib/entityRefs";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
@@ -17,7 +18,14 @@ import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 function matches(t: (typeof tecnologias)[number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  return [t.nome, t.beneficia ?? "", t.panteoes ?? "", t.eras ?? "", t.god_especifico ?? "", t.construcao_origem ?? ""]
+  return [
+    t.nome,
+    t.beneficia ?? "",
+    joinRefNomesOrString(t.panteoes),
+    joinRefNomesOrString(t.eras),
+    joinRefNomesOrString(t.god_especifico),
+    joinRefNomesOrString(t.construcao_origem),
+  ]
     .join(" ")
     .toLowerCase()
     .includes(s);
@@ -52,13 +60,15 @@ export function TecnologiasPage() {
               to={`/tecnologias/${tecnologiaSlugByIndex.get(i) ?? i}`}
               linkState={listIndexState}
               title={t.nome || `(sem título #${i})`}
-              cardTint={pantheonCardTint(t.panteoes ?? "")}
+              cardTint={pantheonCardTint(joinRefNomesOrString(t.panteoes))}
               watermarkSrc={getTecnologiaAssetUrl(t)}
               subtitle={t.beneficia ? <NotionText text={t.beneficia} /> : undefined}
               meta={
                 <span className="inline-flex flex-wrap items-baseline gap-x-0">
-                  {t.panteoes_id != null ? <PantheonMetaIcon panteaoId={t.panteoes_id} /> : null}
-                  <MetaNotionLine parts={[t.panteoes, t.eras]} />
+                  {Array.isArray(t.panteoes) && firstNumId(t.panteoes) != null ? (
+                    <PantheonMetaIcon panteaoId={firstNumId(t.panteoes)!} />
+                  ) : null}
+                  <MetaNotionLine parts={[joinRefNomesOrString(t.panteoes), joinRefNomesOrString(t.eras)]} />
                 </span>
               }
             />
