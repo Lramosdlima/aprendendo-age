@@ -23,7 +23,7 @@
     "arvore_porcento": 0,
     "mina_porcento": 0,
     "velocidade_construcao_porcento": 0,
-    "panteao": "Grego",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "panteao_id": 1,
     "icon": "aomr_villager_greek_icon"
   },
@@ -51,7 +51,7 @@
     "arvore_porcento": -20,
     "mina_porcento": 20,
     "velocidade_construcao_porcento": 0,
-    "panteao": "Nórdico",
+    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "panteao_id": 3,
     "icon": "aomr_dwarf_icon"
   },
@@ -79,7 +79,7 @@
     "arvore_porcento": -20,
     "mina_porcento": -20,
     "velocidade_construcao_porcento": -15,
-    "panteao": "Chinês",
+    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "panteao_id": 5,
     "icon": "aomr_peasant_icon"
   },
@@ -108,7 +108,7 @@
     "arvore_porcento": 50,
     "mina_porcento": "50,6%",
     "velocidade_construcao_porcento": 50,
-    "panteao": "Atlante",
+    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "panteao_id": 4,
     "icon": "aomr_citizen_icon"
   },
@@ -135,7 +135,7 @@
     "arvore_porcento": 65,
     "mina_porcento": "64,7%",
     "velocidade_construcao_porcento": 65,
-    "panteao": "Atlante",
+    "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "panteao_id": 4,
     "icon": "aomr_citizen_hero_icon"
   },
@@ -163,7 +163,7 @@
     "arvore_porcento": -5,
     "mina_porcento": "-4,7%",
     "velocidade_construcao_porcento": 0,
-    "panteao": "Nórdico",
+    "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "panteao_id": 3,
     "icon": "aomr_gatherer_icon"
   },
@@ -192,7 +192,7 @@
     "arvore_porcento": 200,
     "mina_porcento": 200,
     "velocidade_construcao_porcento": 200,
-    "panteao": "Chinês",
+    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "panteao_id": 5,
     "icon": "aomr_kuafu_icon"
   },
@@ -217,7 +217,7 @@
     "arvore_porcento": 290,
     "mina_porcento": 290,
     "velocidade_construcao_porcento": 290,
-    "panteao": "Chinês",
+    "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "panteao_id": 5,
     "icon": "aomr_kuafu_hero_icon"
   },
@@ -245,7 +245,7 @@
     "arvore_porcento": 0,
     "mina_porcento": 0,
     "velocidade_construcao_porcento": 0,
-    "panteao": "Japonês",
+    "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "panteao_id": 6,
     "icon": "aomr_commoner_icon"
   },
@@ -273,7 +273,7 @@
     "arvore_porcento": -10,
     "mina_porcento": -9,
     "velocidade_construcao_porcento": -25,
-    "panteao": "Egípcio",
+    "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "panteao_id": 2,
     "icon": "aomr_laborer_icon"
   },
@@ -301,7 +301,7 @@
     "arvore_porcento": 0,
     "mina_porcento": 0,
     "velocidade_construcao_porcento": 0,
-    "panteao": "Astecas",
+    "panteao": "Astecas :aomr_pantheon_aztecs_icon:",
     "panteao_id": 7,
     "icon": "aomr_settler_icon"
   }
