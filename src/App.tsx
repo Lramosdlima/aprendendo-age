@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { AppShell } from "@/components/layout/AppShell";
+import { AldeaoComparePage } from "@/pages/AldeaoComparePage";
 import { AldeaoDetailPage } from "@/pages/AldeaoDetailPage";
 import { AldeoesPage } from "@/pages/AldeoesPage";
 import { AstecasPage } from "@/pages/AstecasPage";
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="unidades/compare/:slugA/:slugB" element={<UnidadeComparePage />} />
           <Route path="unidades/:slug" element={<UnidadeDetailPage />} />
           <Route path="aldeoes" element={<AldeoesPage />} />
+          <Route path="aldeoes/compare/:slugA/:slugB" element={<AldeaoComparePage />} />
           <Route path="aldeoes/:slug" element={<AldeaoDetailPage />} />
           <Route path="mapas" element={<MapasPage />} />
           <Route path="mapas/:slug" element={<MapaDetailPage />} />

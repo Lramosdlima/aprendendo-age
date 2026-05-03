@@ -1,37 +1,33 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import {
-  UnidadeCombateCompare,
-  UnidadeCustoCompare,
-  UnidadeVisaoGeralCompare,
-} from "@/components/unidade/UnidadeCompareSections";
+import { AldeaoBonusCompare, AldeaoColetaCompare, AldeaoGeralCompare } from "@/components/aldeao/AldeaoCompareSections";
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
+import { aldeaoBySlug } from "@/data/catalog";
+import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { cn } from "@/lib/cn";
-import { unidadeBySlug } from "@/data/catalog";
-import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
 const compareTitleClass =
   "text-xl leading-snug [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl";
 
-export function UnidadeComparePage() {
+export function AldeaoComparePage() {
   const { slugA, slugB } = useParams();
-  const u1 = slugA ? unidadeBySlug.get(slugA) : undefined;
-  const u2 = slugB ? unidadeBySlug.get(slugB) : undefined;
+  const a1 = slugA ? aldeaoBySlug.get(slugA) : undefined;
+  const a2 = slugB ? aldeaoBySlug.get(slugB) : undefined;
 
-  if (!u1 || !u2) {
+  if (!a1 || !a2) {
     return (
       <div>
-        <BackLink to="/unidades">Unidades</BackLink>
-        <p className="text-zinc-400">Uma ou ambas as unidades não foram encontradas.</p>
+        <BackLink to="/aldeoes">Aldeões</BackLink>
+        <p className="text-zinc-400">Um ou ambos os aldeões não foram encontrados.</p>
       </div>
     );
   }
 
-  const icon1 = getUnidadeAssetUrl(u1);
-  const icon2 = getUnidadeAssetUrl(u2);
+  const icon1 = getAldeaoAssetUrl(a1);
+  const icon2 = getAldeaoAssetUrl(a2);
 
   const [compareHeaderScrolled, setCompareHeaderScrolled] = useState(false);
 
@@ -45,7 +41,7 @@ export function UnidadeComparePage() {
 
   return (
     <div>
-      <BackLink to="/unidades">Unidades</BackLink>
+      <BackLink to="/aldeoes">Aldeões</BackLink>
 
       <div
         className={cn(
@@ -58,8 +54,8 @@ export function UnidadeComparePage() {
       >
         <header className="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
           <PageHeaderBlock
-            title={u1.nome}
-            description={u1.ingles ? `Inglês: ${u1.ingles}` : undefined}
+            title={a1.nome}
+            description={a1.ingles ? `Inglês: ${a1.ingles}` : undefined}
             headerIconSrc={icon1}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -67,8 +63,8 @@ export function UnidadeComparePage() {
           />
           <PageHeaderBlock
             align="end"
-            title={u2.nome}
-            description={u2.ingles ? `Inglês: ${u2.ingles}` : undefined}
+            title={a2.nome}
+            description={a2.ingles ? `Inglês: ${a2.ingles}` : undefined}
             headerIconSrc={icon2}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -77,17 +73,19 @@ export function UnidadeComparePage() {
         </header>
       </div>
 
-      <Section title="Visão geral">
-        <UnidadeVisaoGeralCompare u1={u1} u2={u2} />
-      </Section>
+      <div className="space-y-6">
+        <Section title="Geral">
+          <AldeaoGeralCompare a1={a1} a2={a2} />
+        </Section>
 
-      <Section title="Combate" className="mt-6">
-        <UnidadeCombateCompare u1={u1} u2={u2} />
-      </Section>
+        <Section title="Taxas de coleta (base)">
+          <AldeaoColetaCompare a1={a1} a2={a2} />
+        </Section>
 
-      <Section title="Custo e treino" className="mt-6">
-        <UnidadeCustoCompare u1={u1} u2={u2} />
-      </Section>
+        <Section title="Bônus percentuais">
+          <AldeaoBonusCompare a1={a1} a2={a2} />
+        </Section>
+      </div>
     </div>
   );
 }
