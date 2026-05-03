@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
 
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -54,14 +53,16 @@ export function TrilhaDeAprendizadoPage() {
                 <span className="text-red-400">forte</span> contra o que? O que é{" "}
                 <span className="text-sky-400">fraco</span>?
               </p>
-              <p className="pt-2">
-                <Link
-                  to="/trilha-de-aprendizado/tipos-unidades-multiplicadores"
-                  className="font-medium text-amber-200 underline decoration-amber-500/50 underline-offset-4 hover:text-amber-50"
-                >
-                  Tipos de Unidades e Multiplicadores →
-                </Link>
-              </p>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <li>
+                  <EntityCard
+                    to="/trilha-de-aprendizado/tipos-unidades-multiplicadores"
+                    title="Tipos de Unidades e Multiplicadores"
+                    subtitle="O que é forte contra o que e como ler multiplicadores."
+                    watermarkSrc={getTokenAssetUrl("aomr_type_myth_unit_icon")}
+                  />
+                </li>
+              </ul>
             </>
           }
         />
@@ -79,7 +80,7 @@ export function TrilhaDeAprendizadoPage() {
                     to="/eras"
                     title="Eras"
                     subtitle="Custos e requisitos para avançar."
-                    watermarkSrc={getTokenAssetUrl("aomr_classical_age_icon")}
+                    watermarkSrc={getTokenAssetUrl("aomr_wonder_age_icon")}
                   />
                 </li>
               </ul>
@@ -118,14 +119,16 @@ export function TrilhaDeAprendizadoPage() {
           body={
             <>
               <p>Precisa de velocidade nas ações? Aprenda atalhos importantes para construir, encontrar unidades e mais.</p>
-              <p className="pt-2">
-                <Link
-                  to="/trilha-de-aprendizado/atalhos-importantes"
-                  className="font-medium text-amber-200 underline decoration-amber-500/50 underline-offset-4 hover:text-amber-50"
-                >
-                  Atalhos importantes →
-                </Link>
-              </p>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <li>
+                  <EntityCard
+                    to="/trilha-de-aprendizado/atalhos-importantes"
+                    title="Atalhos importantes"
+                    subtitle="Teclas para construir rápido, achar unidades e gerenciar grupos."
+                    watermarkSrc={getTokenAssetUrl("AoMR_Rate_of_Fire_icon")}
+                  />
+                </li>
+              </ul>
             </>
           }
         />
@@ -164,14 +167,16 @@ export function TrilhaDeAprendizadoPage() {
                 Os starts levam da Arcaica à Clássica com uma estratégia em mente. No RTS existem arquétipos clássicos —
                 entenda como se relacionam.
               </p>
-              <p className="pt-2">
-                <Link
-                  to="/trilha-de-aprendizado/rush-turtle-boom"
-                  className="font-medium text-amber-200 underline decoration-amber-500/50 underline-offset-4 hover:text-amber-50"
-                >
-                  Rush? Turtle? Boomar? →
-                </Link>
-              </p>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <li>
+                  <EntityCard
+                    to="/trilha-de-aprendizado/rush-turtle-boom"
+                    title="Rush? Turtle? Boomar?"
+                    subtitle="Agressivo, defensivo e econômico — como costumam se contrapor."
+                    watermarkSrc={getTokenAssetUrl("aomr_classical_age_icon")}
+                  />
+                </li>
+              </ul>
             </>
           }
         />
