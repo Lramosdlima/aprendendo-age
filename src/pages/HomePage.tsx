@@ -64,7 +64,10 @@ export function HomePage() {
               Aprendendo Age
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-300 sm:text-lg">
-              Fala galeeera! Aqui é o Scooby Maníaco — um cantinho feito com carinho para a comunidade: listas, dicas e trilhas para evoluir no jogo! Comece por aqui:
+              Fala galeeera! Aqui é o Scooby Maníaco — um cantinho feito com carinho para a comunidade: listas, dicas e trilhas para evoluir no jogo! 
+            </p>
+            <p className="mx-auto mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-300 sm:text-lg">
+              Comece por aqui:
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
