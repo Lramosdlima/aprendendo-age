@@ -6,7 +6,7 @@ import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 export function ErasPage() {
   return (
     <div>
-      <PageHeader title="Eras" description="Custos cumulativos e requisitos para avançar." />
+      <PageHeader title="Eras" description="No Age of Mythology, a Era é uma evolução importante na jogabilidade! Iniciamos na Era Arcaica, já com poder divíno e determinadas construções básicas. Conforme avançamos no jogo, é necessário ir avançar nas Eras. Saiba mais sobre elas!" />
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {eras.map((e) => (
           <li key={e.id}>
