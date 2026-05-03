@@ -19,6 +19,9 @@ export type Mapa = {
   icon: string | null;
 };
 import { buildIndexSlugMaps, buildRecordSlugMaps } from "@/lib/entitySlug";
+import type { EntityNumRef } from "@/lib/entityRefs";
+import type { UnidadeMultiplicadorItem } from "@/lib/unidadeMultiplicador";
+import type { UnidadeTipoItem } from "@/lib/unidadeTipo";
 
 import panteoesJson from "./panteoes.json";
 import startsBuildOrderJson from "./starts_build_order.json";
@@ -111,14 +114,93 @@ export const aldeoes = aldeoesJson;
 export const construcoes = construcoesJson;
 export const deuses = deusesJson;
 export const eras = erasJson;
-export const godpowers = godpowersJson;
 export const mapas = mapasJson as Mapa[];
+
 /** Referência `{ id, nome }` nos arrays `deuses`, `vill` e `starts` de `panteoes.json`. */
-export type PanteaoRef = { id: number; nome: string };
+export type PanteaoRef = EntityNumRef;
+
+/** Entrada em `godpowers.json` — deus, era e panteão como listas de {@link EntityNumRef}. */
+export type Godpower = {
+  id: number;
+  nome: string;
+  god: EntityNumRef[];
+  era: EntityNumRef[];
+  panteao: EntityNumRef[];
+  icon: string;
+  ingles?: string;
+  cooldown_seg?: number;
+  duracao_no_mapa_seg?: number;
+  custo_repetir?: number;
+  incremento_por_uso?: string;
+  descricao_resumida?: string;
+  descricao_avancada?: string;
+};
+
+export const godpowers = godpowersJson as Godpower[];
+
+/** Entrada em `tecnologias.json` — custos e textos opcionais conforme a linha. */
+export type Tecnologia = {
+  nome: string;
+  eras: EntityNumRef[];
+  construcao_origem: EntityNumRef[] | string;
+  /** `"Geral"` ou lista quando há `panteoes` civ‑específico no dado. */
+  panteoes?: string | EntityNumRef[];
+  god_especifico?: string | EntityNumRef[];
+  beneficia?: string;
+  campo?: string;
+  comida?: number;
+  favor?: number;
+  icon: string;
+  ingles?: string;
+  madeira?: number;
+  ouro?: number;
+  tempo_s?: number;
+  tipo?: string;
+  todas_as_tecnologias?: string;
+};
+
+export const tecnologias = tecnologiasJson as Tecnologia[];
+
+/** Entrada em `unidades_aom.json` — campos de combate/recursos opcionais conforme o tipo de unidade. */
+export type Unidade = {
+  id: number;
+  nome: string;
+  panteao: EntityNumRef[];
+  era: EntityNumRef[];
+  tipo: UnidadeTipoItem[];
+  icon: string;
+  ingles?: string;
+  counter_de?: string;
+  multiplicador?: UnidadeMultiplicadorItem[];
+  categoria?: UnidadeTipoItem[];
+  forte_contra?: string;
+  fraco_contra?: string;
+  construcao?: EntityNumRef[];
+  god_dono?: EntityNumRef[];
+  pontos_de_vida?: number;
+  dano_cortante?: number;
+  dano_perfurante?: number;
+  dano_contundente?: number;
+  dano_divino?: number;
+  dano_area?: number;
+  alcance?: number;
+  velocidade_de_ataque_atk_s?: number;
+  dps?: number;
+  armadura_anticorte?: number;
+  armadura_antiperfurante?: number;
+  comida?: number;
+  madeira?: number;
+  ouro?: number;
+  favor?: number;
+  populacao?: number;
+  tempo_treinamento?: number;
+  velocidade_movimento?: number;
+  forca_atributos?: number;
+};
+
+export const unidades = unidadesJson as Unidade[];
 
 export const panteoes = panteoesJson;
-export const tecnologias = tecnologiasJson;
-export const unidades = unidadesJson;
 
 export const deusById = new Map(deuses.map((d) => [d.id, d]));
 export const panteaoById = new Map(panteoes.map((p) => [p.id, p]));

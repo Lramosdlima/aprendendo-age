@@ -6,7 +6,14 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { construcaoSlugById, deusSlugById, eraSlugById, panteaoSlugById, tecnologiaBySlug, tecnologias } from "@/data/catalog";
+import {
+  construcaoSlugById,
+  deusSlugById,
+  eraSlugById,
+  panteaoSlugById,
+  tecnologiaBySlug,
+  tecnologias,
+} from "@/data/catalog";
 import { listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
@@ -27,11 +34,10 @@ export function TecnologiaDetailPage() {
 
   const tecIndex = tecnologias.indexOf(t);
 
-  type NumRef = { id: number; nome: string };
-  const eraRefs = t.eras as NumRef[] | undefined;
-  const panteoesField = t.panteoes as string | NumRef[] | undefined;
-  const construcaoOrigemField = t.construcao_origem as string | NumRef[] | undefined;
-  const godEspecificoField = t.god_especifico as string | NumRef[] | undefined;
+  const eraRefs = t.eras;
+  const panteoesField = t.panteoes;
+  const construcaoOrigemField = t.construcao_origem;
+  const godEspecificoField = t.god_especifico;
 
   const deusesLinks =
     Array.isArray(godEspecificoField) && godEspecificoField.length
