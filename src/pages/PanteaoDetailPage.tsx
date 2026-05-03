@@ -5,7 +5,8 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { deusById, deusSlugById, panteaoBySlug } from "@/data/catalog";
+import { aldeaoById, aldeaoSlugById, deusById, deusSlugById, panteaoBySlug, startById } from "@/data/catalog";
+import { parseStartReferences } from "@/lib/startLinksFromDeus";
 import { cn } from "@/lib/cn";
 
 export function PanteaoDetailPage() {
@@ -23,6 +24,30 @@ export function PanteaoDetailPage() {
 
   const heroBackground =
     "hero_background" in p && typeof p.hero_background === "string" ? p.hero_background : undefined;
+
+  const ext = p as typeof p & { vill_ids?: number[]; vill_id?: number; start_ids?: number[] };
+  const villIds = ext.vill_ids?.length ? ext.vill_ids : ext.vill_id != null ? [ext.vill_id] : [];
+
+  const villLinks = villIds
+    .map((aid) => {
+      const a = aldeaoById.get(aid);
+      if (!a) return null;
+      const slug = aldeaoSlugById.get(aid) ?? String(aid);
+      return (
+        <Link key={aid} to={`/aldeoes/${slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+          {a.nome}
+        </Link>
+      );
+    })
+    .filter(Boolean);
+
+  const startItemsFromIds =
+    ext.start_ids?.map((sid) => startById.get(sid)).filter((s): s is NonNullable<typeof s> => s != null) ?? [];
+
+  const startRefItems =
+    startItemsFromIds.length > 0 ? null
+    : p.starts ? parseStartReferences(p.starts)
+    : null;
 
   const deusLinks = (p.deuses_ids ?? [])
     .map((did) => {
@@ -125,12 +150,51 @@ export function PanteaoDetailPage() {
             heroBackground && "border-aom-border/90 bg-aom-card/75 shadow-black/25 backdrop-blur-[2px]",
           )}
         >
-          {p.vill ? (
+          {villLinks.length > 0 ? (
+            <InfoRow label={villLinks.length > 1 ? "Aldeões" : "Aldeão"}>
+              <span className="flex flex-wrap gap-x-2 gap-y-1">
+                {villLinks.map((el, i) => (
+                  <span key={i}>
+                    {el}
+                    {i < villLinks.length - 1 ? "," : ""}
+                  </span>
+                ))}
+              </span>
+            </InfoRow>
+          ) : p.vill ? (
             <InfoRow label="Aldeão">
               <NotionText text={String(p.vill)} />
             </InfoRow>
           ) : null}
-          {p.starts ? (
+          {startItemsFromIds.length > 0 ? (
+            <InfoRow label="Starts (referências)">
+              <ul className="list-inside list-disc space-y-1.5 text-sm">
+                {startItemsFromIds.map((s) => (
+                  <li key={s.id}>
+                    <Link to={`/starts/${s.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+                      <NotionText text={s.titulo} />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </InfoRow>
+          ) : startRefItems?.length ? (
+            <InfoRow label="Starts (referências)">
+              <ul className="list-inside list-disc space-y-1.5 text-sm">
+                {startRefItems.map((item, i) => (
+                  <li key={i}>
+                    {item.kind === "link" ? (
+                      <Link to={`/starts/${item.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+                        <NotionText text={item.titulo} />
+                      </Link>
+                    ) : (
+                      <NotionText text={item.raw} />
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </InfoRow>
+          ) : p.starts ? (
             <InfoRow label="Starts (referências)">
               <NotionText text={p.starts} />
             </InfoRow>
