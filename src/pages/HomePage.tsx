@@ -37,11 +37,12 @@ export function HomePage() {
   return (
     <div className="-mx-4 -mt-6 space-y-10 md:-mx-10 md:-mt-10">
       <section
-        className="relative overflow-hidden border-b border-aom-border/80 shadow-[0_24px_80px_-20px_rgba(0,0,0,0.65)]"
+        className="relative flex min-h-[76dvh] flex-col overflow-hidden border-b border-aom-border/80 shadow-[0_24px_80px_-20px_rgba(0,0,0,0.65)] sm:min-h-[82dvh] md:min-h-[88dvh]"
         aria-labelledby="home-hero-heading"
       >
+        <div className="pointer-events-none absolute inset-0 bg-zinc-950" aria-hidden />
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="pointer-events-none absolute inset-0 bg-cover bg-top bg-no-repeat"
           style={{ backgroundImage: `url(${HERO_BG})` }}
           role="presentation"
         />
@@ -51,8 +52,8 @@ export function HomePage() {
         />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(245,158,11,0.12),transparent)]" aria-hidden />
 
-        <div className="relative px-4 py-12 sm:py-16 md:px-10 md:py-20">
-          <div className="mx-auto max-w-3xl text-center">
+        <div className="relative z-10 flex flex-1 flex-col justify-center px-4 pb-16 pt-[max(4.5rem,env(safe-area-inset-top,0px)+2.5rem)] sm:pb-20 sm:pt-24 md:px-10 md:pb-28 md:pt-28">
+          <div className="mx-auto w-full max-w-3xl text-center">
             <p className="font-[family-name:var(--font-display)] text-xs font-medium uppercase tracking-[0.2em] text-amber-400/90">
               Age of Mythology
             </p>
