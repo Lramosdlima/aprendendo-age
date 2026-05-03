@@ -78,8 +78,24 @@ export function AldeaoDetailPage() {
             <InfoRow label="População" icon="aomr_population_provision_icon">
               {a.populacao ?? "—"}
             </InfoRow>
-            <InfoRow label="Recursos (carry)">{a.recursos ?? "—"}</InfoRow>
-            {"ouro" in a && a.ouro != null ? <InfoRow label="Ouro (carry)">{a.ouro}</InfoRow> : null}
+            <InfoRow label="Recursos (custo)" icon="aomr_type_villager_icon">
+              {a.recursos ?? "—"}
+            </InfoRow>
+             {a.carne != null && (
+              <InfoRow label="Recursos (custo) - comida" icon="foodaom">
+                {a.carne}
+              </InfoRow>
+            )}
+             {a.madeira != null && (
+              <InfoRow label="Recursos (custo) - madeira" icon="woodaom">
+                {a.madeira}
+              </InfoRow>
+            )}
+             {a.ouro != null && (
+              <InfoRow label="Recursos (custo) - ouro" icon="aomr_gold_icon">
+                {a.ouro}
+              </InfoRow>
+            )}
             <InfoRow label="Treino (s)" icon="aomr_time_icon">
               {a.tempo_de_treinamento ?? "—"}
             </InfoRow>
@@ -91,26 +107,42 @@ export function AldeaoDetailPage() {
 
         <Section title="Taxas de coleta (base)">
           <div className="space-y-0">
-            <InfoRow label="Caçar">{a.cacar ?? "—"}</InfoRow>
-            <InfoRow label="Gado / galinhas">{a.gado_galinhas ?? "—"}</InfoRow>
-            <InfoRow label="Frutinhas">{a.frutinhas ?? "—"}</InfoRow>
-            <InfoRow label="Fazenda">{a.fazenda ?? "—"}</InfoRow>
-            <InfoRow label="Árvore">{a.arvore ?? "—"}</InfoRow>
-            <InfoRow label="Mina">{a.mina ?? "—"}</InfoRow>
-            <InfoRow label="Velocidade construção">{a.velocidade_construcao ?? "—"}</InfoRow>
+            <InfoRow label="Caçar" icon="aomr_caribou_icon">{a.cacar ?? "—"}</InfoRow>
+            <InfoRow label="Gado / galinhas" icon="aomr_cow_icon">{a.gado_galinhas ?? "—"}</InfoRow>
+            <InfoRow label="Frutinhas" icon="aomr_berry_bush_icon">{a.frutinhas ?? "—"}</InfoRow>
+            <InfoRow label="Fazenda" icon="aomr_farm_icon">{a.fazenda ?? "—"}</InfoRow>
+            <InfoRow label="Árvore" icon="aomr_tree_oak_icon">{a.arvore ?? "—"}</InfoRow>
+            <InfoRow label="Mina" icon="aomr_gold_mine_icon">{a.mina ?? "—"}</InfoRow>
+            <InfoRow label="Velocidade construção" icon="aomr_type_building_icon">
+              {a.velocidade_construcao ?? "—"}
+            </InfoRow>
           </div>
         </Section>
       </div>
 
       <Section title="Bônus percentuais" className="mt-6">
         <div className="space-y-0">
-          <InfoRow label="Caçar %">{a.cacar_porcento ?? 0}</InfoRow>
-          <InfoRow label="Gado %">{a.gado_porcento ?? 0}</InfoRow>
-          <InfoRow label="Frutinhas %">{a.frutinhas_porcento ?? 0}</InfoRow>
-          <InfoRow label="Fazenda %">{a.fazenda_porcento ?? 0}</InfoRow>
-          <InfoRow label="Árvore %">{a.arvore_porcento ?? 0}</InfoRow>
-          <InfoRow label="Mina %">{a.mina_porcento ?? 0}</InfoRow>
-          <InfoRow label="Construção %">{a.velocidade_construcao_porcento ?? 0}</InfoRow>
+          <InfoRow label="Caçar %" icon="aomr_caribou_icon">
+            {a.cacar_porcento ?? 0}
+          </InfoRow>
+          <InfoRow label="Gado %" icon="aomr_cow_icon">
+            {a.gado_porcento ?? 0}
+          </InfoRow>
+          <InfoRow label="Frutinhas %" icon="aomr_berry_bush_icon">
+            {a.frutinhas_porcento ?? 0}
+          </InfoRow>
+          <InfoRow label="Fazenda %" icon="aomr_farm_icon">
+            {a.fazenda_porcento ?? 0}
+          </InfoRow>
+          <InfoRow label="Árvore %" icon="aomr_tree_oak_icon">
+            {a.arvore_porcento ?? 0}
+          </InfoRow>
+          <InfoRow label="Mina %" icon="aomr_gold_mine_icon">
+            {a.mina_porcento ?? 0}
+          </InfoRow>
+          <InfoRow label="Construção %" icon="aomr_type_building_icon">
+            {a.velocidade_construcao_porcento ?? 0}
+          </InfoRow>
         </div>
       </Section>
     </div>
