@@ -1,17 +1,25 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import { aldeaoBySlug, panteaoById, panteaoSlugById } from "@/data/catalog";
 import { firstNome, firstNumId } from "@/lib/entityRefs";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
-import { listIndexReturnTo, listOrDetailBackLinkLabel } from "@/lib/listIndexReturnState";
+import {
+  listIndexLinkStateFromLocation,
+  listIndexReturnTo,
+  listOrDetailBackLinkLabel,
+} from "@/lib/listIndexReturnState";
+import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
 export function AldeaoDetailPage() {
-  const { state: navState } = useLocation();
+  const { pathname, search: locSearch, state: navState } = useLocation();
+  const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/aldeoes", navState);
   const backLabel = listOrDetailBackLinkLabel(backToList, "/aldeoes", "Aldeões");
   const { slug } = useParams();
@@ -40,24 +48,44 @@ export function AldeaoDetailPage() {
           <div className="space-y-0">
             {panteao ? (
               <InfoRow label="Panteão">
-                <Link
-                  to={`/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`}
-                  className="text-amber-200 underline-offset-2 hover:underline"
-                >
-                  {panteao.nome}
-                </Link>
+                <InfoRowPortraitOrText
+                  portraits={
+                    <PortraitHeaderActions
+                      items={[
+                        {
+                          key: String(panteao.id),
+                          to: `/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`,
+                          nome: panteao.nome,
+                          src: getPantheonWatermarkUrl(panteao),
+                        },
+                      ]}
+                      linkState={linkState}
+                      size="sm"
+                      justify="start"
+                    />
+                  }
+                  textFallback={null}
+                />
               </InfoRow>
-            ) : (
+            ) : firstNome(a.panteao) ? (
               <InfoRow label="Panteão">
-                <NotionText text={firstNome(a.panteao) ?? ""} />
+                <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(a.panteao)!} />} />
               </InfoRow>
-            )}
-            <InfoRow label="Vida">{a.vida ?? "—"}</InfoRow>
-            <InfoRow label="População">{a.populacao ?? "—"}</InfoRow>
+            ) : null}
+            <InfoRow label="Vida" icon="aomr_hit_points_icon">
+              {a.vida ?? "—"}
+            </InfoRow>
+            <InfoRow label="População" icon="aomr_population_provision_icon">
+              {a.populacao ?? "—"}
+            </InfoRow>
             <InfoRow label="Recursos (carry)">{a.recursos ?? "—"}</InfoRow>
             {"ouro" in a && a.ouro != null ? <InfoRow label="Ouro (carry)">{a.ouro}</InfoRow> : null}
-            <InfoRow label="Treino (s)">{a.tempo_de_treinamento ?? "—"}</InfoRow>
-            <InfoRow label="Treino patch (s)">{a.tempo_de_treinamento_patch_18_65484 ?? "—"}</InfoRow>
+            <InfoRow label="Treino (s)" icon="aomr_time_icon">
+              {a.tempo_de_treinamento ?? "—"}
+            </InfoRow>
+            <InfoRow label="Treino patch (s)" icon="aomr_time_icon">
+              {a.tempo_de_treinamento_patch_18_65484 ?? "—"}
+            </InfoRow>
           </div>
         </Section>
 

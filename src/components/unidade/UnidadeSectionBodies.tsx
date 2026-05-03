@@ -146,7 +146,7 @@ export function UnidadeCombateBody({ u }: { u: U }) {
       </InfoRow>
       <InfoRow label="Alcance" icon="rangeicon">
         {u.alcance ?? "—"}
-      </InfoRow>  
+      </InfoRow>
       <InfoRow label="Dano cortante" icon="hackdamage">
         {u.dano_cortante ?? "—"}
       </InfoRow>

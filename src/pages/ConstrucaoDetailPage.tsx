@@ -1,8 +1,8 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
-import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
+import { InfoRowPortraitCluster, InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
@@ -14,11 +14,13 @@ import {
   eraSlugById,
   panteaoById,
   panteaoSlugById,
+  tecnologias,
+  tecnologiaSlugByIndex,
   unidadeById,
   unidadeSlugById,
 } from "@/data/catalog";
 import { formatArmorPercent } from "@/lib/armorDisplay";
-import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { getConstrucaoAssetUrl, getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import {
   listIndexLinkStateFromLocation,
@@ -26,7 +28,48 @@ import {
   listOrDetailBackLinkLabel,
 } from "@/lib/listIndexReturnState";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
+import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 import { hasTipoContent } from "@/lib/unidadeTipo";
+import type { PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
+
+function splitCommaNames(raw: string | undefined): string[] {
+  if (!raw?.trim()) return [];
+  return raw.split(",").map((s) => s.trim()).filter(Boolean);
+}
+
+function tecnologiaPortraitItemsFromNames(names: string[]): PortraitHeaderItem[] {
+  return names.map((nome, i) => {
+    const idx = tecnologias.findIndex((t) => t.nome === nome);
+    const t = idx >= 0 ? tecnologias[idx] : undefined;
+    const slug = idx >= 0 ? tecnologiaSlugByIndex.get(idx) : undefined;
+    return {
+      key: `tec-${slug ?? nome}-${i}`,
+      to: slug ? `/tecnologias/${slug}` : "/tecnologias",
+      nome,
+      src: t ? getTecnologiaAssetUrl(t) : undefined,
+    };
+  });
+}
+
+function unidadeIdsFromConstrucao(c: { unidades_ids?: number[]; unidades_id?: number }): number[] {
+  const ids = [...(c.unidades_ids ?? [])];
+  const single = c.unidades_id;
+  if (typeof single === "number" && !ids.includes(single)) ids.push(single);
+  return ids;
+}
+
+function unidadePortraitItemsFromIds(ids: number[]): PortraitHeaderItem[] {
+  return ids.map((uid, i) => {
+    const u = unidadeById.get(uid);
+    const slug = unidadeSlugById.get(uid);
+    return {
+      key: `u-${uid}-${i}`,
+      to: `/unidades/${slug ?? uid}`,
+      nome: u?.nome ?? `#${uid}`,
+      src: u ? getUnidadeAssetUrl(u) : undefined,
+    };
+  });
+}
 
 export function ConstrucaoDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
@@ -49,20 +92,14 @@ export function ConstrucaoDetailPage() {
   const construcaoIcon = getConstrucaoAssetUrl(c);
   const panteao = c.panteao_id != null ? panteaoById.get(c.panteao_id) : undefined;
 
-  const unidadeLinks = (c.unidades_ids ?? [])
-    .map((uid) => {
-      const u = unidadeById.get(uid);
-      return u ? (
-        <Link
-          key={uid}
-          to={`/unidades/${unidadeSlugById.get(uid) ?? uid}`}
-          className="text-amber-200 underline-offset-2 hover:underline"
-        >
-          {u.nome}
-        </Link>
-      ) : null;
-    })
-    .filter(Boolean);
+  const tecnologiaNames = splitCommaNames(c.tecnologias);
+  const tecnologiaPortraitItems = tecnologiaNames.length ? tecnologiaPortraitItemsFromNames(tecnologiaNames) : [];
+
+  const unidadeIdList = unidadeIdsFromConstrucao(c);
+  const unidadePortraitItems = unidadeIdList.length ? unidadePortraitItemsFromIds(unidadeIdList) : [];
+
+  const showTecnologiasSection = tecnologiaPortraitItems.length > 0 || Boolean(c.tecnologias?.trim());
+  const showUnidadesSection = unidadePortraitItems.length > 0 || Boolean(c.unidades?.trim());
 
   return (
     <div>
@@ -188,26 +225,43 @@ export function ConstrucaoDetailPage() {
           </div>
         </Section>
 
-        {c.tecnologias ? (
+        {showTecnologiasSection ? (
           <Section title="Tecnologias">
-            <NotionText text={c.tecnologias} />
+            {tecnologiaPortraitItems.length > 0 ? (
+              <InfoRowPortraitCluster>
+                <PortraitHeaderActions
+                  items={tecnologiaPortraitItems}
+                  linkState={linkState}
+                  size="sm"
+                  justify="start"
+                />
+              </InfoRowPortraitCluster>
+            ) : (
+              <NotionText text={c.tecnologias!} />
+            )}
           </Section>
         ) : (
           <div />
         )}
       </div>
 
-      {unidadeLinks.length > 0 ? (
-        <Section title="Unidades relacionadas" className="mt-6">
-          <ul className="flex flex-wrap gap-2">
-            {unidadeLinks.map((el, i) => (
-              <li key={i}>{el}</li>
-            ))}
-          </ul>
-        </Section>
-      ) : c.unidades ? (
-        <Section title="Unidades" className="mt-6">
-          <NotionText text={c.unidades} />
+      {showUnidadesSection ? (
+        <Section
+          title={unidadePortraitItems.length > 0 ? "Unidades relacionadas" : "Unidades"}
+          className="mt-6"
+        >
+          {unidadePortraitItems.length > 0 ? (
+            <InfoRowPortraitCluster>
+              <PortraitHeaderActions
+                items={unidadePortraitItems}
+                linkState={linkState}
+                size="sm"
+                justify="start"
+              />
+            </InfoRowPortraitCluster>
+          ) : (
+            <NotionText text={c.unidades!} />
+          )}
         </Section>
       ) : null}
     </div>
