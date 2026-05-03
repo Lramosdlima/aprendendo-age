@@ -42,28 +42,33 @@ export function HomePage() {
       >
         <div className="pointer-events-none absolute inset-0 bg-zinc-950" aria-hidden />
         <div
-          className="pointer-events-none absolute inset-0 bg-cover bg-top bg-no-repeat"
+          className="pointer-events-none absolute inset-0 bg-cover bg-top bg-no-repeat brightness-[1.08] saturate-[1.03]"
           style={{ backgroundImage: `url(${HERO_BG})` }}
           role="presentation"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-br from-zinc-950/92 via-zinc-950/78 to-zinc-950/55"
+          className="absolute inset-0 bg-gradient-to-br from-zinc-950/68 via-zinc-950/48 to-zinc-950/28"
           aria-hidden
         />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(245,158,11,0.12),transparent)]" aria-hidden />
+        {/* Scrim em toda a largura: cobre título + parágrafos + CTAs; opacidade forte sobe mais para as letras. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-[8] h-[min(92dvh,52rem)] bg-[linear-gradient(to_top,rgba(9,9,11,0.92)_0%,rgba(9,9,11,0.88)_10%,rgba(9,9,11,0.78)_24%,rgba(9,9,11,0.62)_42%,rgba(9,9,11,0.48)_58%,rgba(9,9,11,0.28)_74%,rgba(9,9,11,0.12)_88%,transparent_100%)] sm:h-[min(90dvh,56rem)] md:h-[min(88dvh,60rem)]"
+        />
 
-        <div className="relative z-10 flex flex-1 flex-col justify-center px-4 pb-16 pt-[max(4.5rem,env(safe-area-inset-top,0px)+2.5rem)] sm:pb-20 sm:pt-24 md:px-10 md:pb-28 md:pt-28">
+        <div className="relative z-10 flex flex-1 flex-col justify-end px-4 pb-16 pt-[max(4.5rem,env(safe-area-inset-top,0px)+2.5rem)] sm:pb-20 sm:pt-24 md:px-10 md:pb-28 md:pt-28">
           <div className="mx-auto w-full max-w-3xl text-center">
             <p className="font-[family-name:var(--font-display)] text-xs font-medium uppercase tracking-[0.2em] text-amber-400/90">
               Age of Mythology
             </p>
-            <h1
+            {/* <h1
               id="home-hero-heading"
               className="mt-3 font-[family-name:var(--font-display)] text-4xl font-semibold tracking-tight text-amber-50 sm:text-5xl"
             >
               Aprendendo Age
-            </h1>
-            <p className="mx-auto mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-300 sm:text-lg">
+            </h1> */}
+                        <p className="mx-auto mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-300 sm:text-lg">
               Fala galeeera! Aqui é o Scooby Maníaco — um cantinho feito com carinho para a comunidade: listas, dicas e trilhas para evoluir no jogo! 
             </p>
             <p className="mx-auto mt-4 max-w-xl text-pretty text-base leading-relaxed text-zinc-300 sm:text-lg">
