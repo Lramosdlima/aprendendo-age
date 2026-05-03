@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { AppShell } from "@/components/layout/AppShell";
+import { startAppUpdateWatcher } from "@/lib/appUpdateWatcher";
 import { AldeaoComparePage } from "@/pages/AldeaoComparePage";
 import { AldeaoDetailPage } from "@/pages/AldeaoDetailPage";
 import { AldeoesPage } from "@/pages/AldeoesPage";
@@ -34,6 +36,8 @@ import { UnidadeDetailPage } from "@/pages/UnidadeDetailPage";
 import { UnidadesPage } from "@/pages/UnidadesPage";
 
 export default function App() {
+  useEffect(() => startAppUpdateWatcher(), []);
+
   return (
     <BrowserRouter>
       <Routes>
