@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 
 import { EntityCard } from "@/components/ui/EntityCard";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
+import { getPantheonHeroBackgroundUrl, getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { SearchField } from "@/components/ui/SearchField";
 import { panteoes, panteaoSlugById } from "@/data/catalog";
@@ -32,6 +32,7 @@ export function PanteoesPage() {
               subtitle={p.description}
               meta={`${(p.deuses_ids ?? []).length} deuses`}
               subtitleTag={false}
+              backgroundCoverSrc={getPantheonHeroBackgroundUrl(p)}
               watermarkSrc={getPantheonWatermarkUrl(p)}
             />
           </li>

@@ -1,5 +1,13 @@
 import { getIconFieldUrl, getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
+/** Arte de capa no card de listagem (`EntityCard` `backgroundCoverSrc`); ver `panteoes.json` `hero_background`. */
+export function getPantheonHeroBackgroundUrl(panteao: {
+  hero_background?: string | null;
+}): string | undefined {
+  const s = panteao.hero_background?.trim();
+  return s || undefined;
+}
+
 /** Marca d’água do card de panteão. */
 export function getPantheonWatermarkUrl(panteao: { id: number; icon?: string | null }): string | undefined {
   return getIconFieldUrl(panteao?.icon);
