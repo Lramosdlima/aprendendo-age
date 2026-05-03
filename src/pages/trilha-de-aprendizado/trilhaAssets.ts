@@ -10,6 +10,10 @@ export function atalhosImg(file: string): string {
   return `/trilha-de-aprendizado/atalhos-importantes/${encodeURIComponent(file)}`;
 }
 
+export function rushTurtleBoomarImg(file: string): string {
+  return `/trilha-de-aprendizado/rush-turtle-boomar/${encodeURIComponent(file)}`;
+}
+
 /** Avatar / arte que não existe em `/assets` (mapa de tokens). */
 export function trilhaShared(file: string): string {
   return `/trilha-de-aprendizado/shared/${encodeURIComponent(file)}`;

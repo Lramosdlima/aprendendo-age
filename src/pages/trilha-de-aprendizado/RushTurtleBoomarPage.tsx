@@ -7,6 +7,7 @@ import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 import { TrilhaCallout } from "./TrilhaCallout";
 import { TrilhaTokenImg } from "./TrilhaTokenImg";
+import { rushTurtleBoomarImg } from "./trilhaAssets";
 
 const PROF_AJAX_VIDEO = "https://www.youtube.com/embed/-N9ntWXsKWs";
 
@@ -36,27 +37,49 @@ export function RushTurtleBoomarPage() {
 
       <div className="space-y-6 text-sm leading-relaxed text-zinc-300">
         <p>Existem 3 estratégias principais no RTS. Esses arquétipos são:</p>
-        <ul className="list-disc pl-5">
-          <li>jogar de forma agressiva;</li>
-          <li>jogar de forma econômica;</li>
-          <li>jogar de forma defensiva.</li>
+        <ul className="list-disc space-y-2 pl-5 marker:text-zinc-500">
+          <li>
+            jogar de forma <span className="text-pink-400">agressiva</span>{" "}
+            <img
+              src={rushTurtleBoomarImg("Modo_Aggro.png")}
+              alt=""
+              className="inline-block h-7 w-7 align-[-0.15em] rounded object-contain sm:h-8 sm:w-8"
+            />
+            {";"}
+          </li>
+          <li>
+            jogar de forma <span className="text-blue-300">econômica</span>{" "}
+            <img
+              src={rushTurtleBoomarImg("Modo_Eco.png")}
+              alt=""
+              className="inline-block h-7 w-7 align-[-0.15em] rounded object-contain sm:h-8 sm:w-8"
+            />
+            {";"}
+          </li>
+          <li>
+            jogar de forma <span className="text-teal-300">defensiva</span>{" "}
+            <img
+              src={rushTurtleBoomarImg("Modo_Turtle.png")}
+              alt=""
+              className="inline-block h-7 w-7 align-[-0.15em] rounded object-contain sm:h-8 sm:w-8"
+            />
+            {"."}
+          </li>
         </ul>
-        <p>
-          Elas se combatem entre si, como pedra, papel e tesoura. No resumo clássico: Rush &gt; Eco &gt; Turtle (cada
-          estilo tem pontos fortes contra outro — na prática tudo depende de mapa, civ e execução).
-        </p>
-        <p>Você pode ver o vídeo de referência abaixo ou ler os resumos nesta página.</p>
-
+        <p>Elas se combatem entre si, como pedra ✊, papel 🖐 e tesoura ✌.</p>
+        <p>Em resumo: <span className="text-pink-400">Rush</span> &gt; <span className="text-blue-300">Eco</span> &gt; <span className="text-teal-300">Turtle</span> (cada
+          estilo tem pontos fortes contra outro — mas na prática tudo depende de mapa, panteão e execução).</p>
+        
         <TrilhaCallout variant="gray" icon="💡">
           <p className="font-medium text-zinc-200">Dica!</p>
           <p>
-            Escolha uma estratégia já pensando em deus + panteão — cada um tende a um arquétipo. Se o adversário ler sua
-            intenção, adaptar (turtle, boom, mudança de idade) é parte do jogo.
+            Normalmente é importante alinhar a estratégia já pensando em god/panteão — pois eles combinam com os arquétipos (Egípicio→Econômico, Nórdico→Agressivo).
+            MAS, se o adversário ler seu estilo, tente adaptar! Ou seja, é normal um egípicio fazer economia, então ao invés disso faça rush e surpreenda seu adversário!
           </p>
           <p>
-            Se sua <span className="text-pink-400">agressividade</span> encontrar{" "}
-            <span className="text-teal-300">turtle</span>, pode migrar para{" "}
-            <span className="text-purple-300">eco</span> e <span className="text-purple-300">boom</span> rumo à era
+            Outro exemplo: Se sua <span className="text-pink-400">agressividade</span> encontrar{" "}
+            <span className="text-teal-300">turtle</span>, você ainda pode mudar para {" "}
+            <span className="text-blue-300">eco</span>/<span className="text-blue-300">boom</span> rumo à era
             heróica{" "}
             <img
               src={getTokenAssetUrl("aomr_heroic_age_icon")}
@@ -69,13 +92,18 @@ export function RushTurtleBoomarPage() {
               alt=""
               className="inline h-[1em] w-[1em] align-[-0.15em] object-contain"
             />
-            . Quem joga <span className="text-teal-300">turtle</span> pode responder com boom ou pressão quando o inimigo
-            investe em economia. <span className="text-purple-300">Boomar</span> pode ser segundo centro da cidade{" "}
+            . O mesmo acontece com quem joga <span className="text-teal-300">turtle</span>, podendo mudar para <span className="text-blue-300">boom</span> ou <span className="text-pink-400">agressividade</span> quando o inimigo
+            investe em <span className="text-blue-300">economia</span>. 
+          </p>
+          <p>
+            O Termo <span className="text-blue-300">Boomar</span> pode ser 2º centro da cidade{" "}
             <TrilhaTokenImg token="aomr_town_center_egyptian_icon" /> ou juntar recursos <TrilhaTokenImg token="foodaom" />
             <TrilhaTokenImg token="goldaom" /> para FH (
             <em>Fast Heroic</em>).
           </p>
         </TrilhaCallout>
+
+        <p>Você pode ver o vídeo de referência abaixo ou ler os resumos nesta página:</p>
 
         <div className="aspect-video w-full max-w-3xl overflow-hidden rounded-xl border border-aom-border bg-black/40">
           <iframe
@@ -90,51 +118,85 @@ export function RushTurtleBoomarPage() {
           <strong className="text-zinc-300">Referência:</strong> Professor Ajax
         </blockquote>
 
-        <section className="space-y-4 rounded-xl border border-pink-900/40 bg-pink-950/20 p-5">
-          <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-pink-200">Rush! (Push!)</h2>
-          <p>Priorizar produção militar e pressão cedo — jogo agressivo.</p>
-          <p>
-            <span className="text-emerald-400">Prós:</span> dano cedo (muitas vezes na Clássica), atrasando economia
-            inimiga.
-          </p>
-          <p>
-            <span className="text-red-400">Contras:</span> pode ser punido por <strong className="text-teal-300">turtle</strong>{" "}
-            bem executado.
-          </p>
+        <section className="rounded-xl border border-pink-900/40 bg-pink-950/20 p-5">
+          <div className="flex flex-row items-start gap-4 sm:gap-5">
+            <img
+              src={rushTurtleBoomarImg("Modo_Aggro.png")}
+              alt="Ilustração do arquétipo rush (agressivo)"
+              className="w-24 shrink-0 self-start rounded-lg border border-aom-border object-contain sm:w-36"
+            />
+            <div className="min-w-0 flex-1 space-y-4">
+              <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-pink-200">Rush! (Push!)</h2>
+              <p>Priorizar produção militar e pressão cedo — jogo agressivo.</p>
+              <p>
+                <span className="text-emerald-400">Prós:</span> dano cedo (muitas vezes na Clássica), atrasando economia
+                inimiga.
+              </p>
+              <p>
+                <span className="text-red-400">Contras:</span> pode ser punido por <strong className="text-teal-300">turtle</strong>{" "}
+                bem executado.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section className="space-y-4 rounded-xl border border-teal-900/40 bg-teal-950/20 p-5">
-          <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-teal-200">
-            Turtle (modo tartaruga)
-          </h2>
-          <p>Jogo fechado: equilíbrio entre defesas (muros, torres) e crescimento.</p>
-          <p>
-            <span className="text-emerald-400">Prós:</span> base sólida para mid/late com tecnologias e exército.
-          </p>
-          <p>
-            <span className="text-red-400">Contras:</span> pode sofrer contra quem maximiza <strong className="text-purple-300">eco</strong> e
-            ultrapassa em economia.
-          </p>
+        <section className="rounded-xl border border-teal-900/40 bg-teal-950/20 p-5">
+          <div className="flex flex-row items-start gap-4 sm:gap-5">
+            <img
+              src={rushTurtleBoomarImg("Modo_Turtle.png")}
+              alt="Ilustração do arquétipo turtle (defensivo)"
+              className="w-24 shrink-0 self-start rounded-lg border border-aom-border object-contain sm:w-36"
+            />
+            <div className="min-w-0 flex-1 space-y-4">
+              <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-teal-200">
+                Turtle (modo tartaruga)
+              </h2>
+              <p>Jogo fechado: equilíbrio entre defesas (muros, torres) e crescimento.</p>
+              <p>
+                <span className="text-emerald-400">Prós:</span> base sólida para mid/late com tecnologias e exército.
+              </p>
+              <p>
+                <span className="text-red-400">Contras:</span> pode sofrer contra quem maximiza <strong className="text-blue-300">eco</strong> e
+                ultrapassa em economia.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section className="space-y-4 rounded-xl border border-purple-900/40 bg-purple-950/25 p-5">
-          <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-purple-200">
-            Eco (Boom!)
-          </h2>
-          <p>Foco em aldeões, recursos e expansão — “boomar” a economia.</p>
-          <p>
-            <span className="text-emerald-400">Prós:</span> forte no late game com upgrades completos; pouco gasto militar no
-            começo.
-          </p>
-          <p>
-            <span className="text-red-400">Contras:</span> vulnerável a <strong className="text-pink-300">rush</strong> se não
-            houver defesa ou scouting.
-          </p>
+        <section className="rounded-xl border border-blue-900/40 bg-blue-950/25 p-5">
+          <div className="flex flex-row items-start gap-4 sm:gap-5">
+            <img
+              src={rushTurtleBoomarImg("Modo_Eco.png")}
+              alt="Ilustração do arquétipo eco (econômico)"
+              className="w-24 shrink-0 self-start rounded-lg border border-aom-border object-contain sm:w-36"
+            />
+            <div className="min-w-0 flex-1 space-y-4">
+              <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-blue-200">
+                Eco (Boom!)
+              </h2>
+              <p>Foco em aldeões, recursos e expansão — “boomar” a economia.</p>
+              <p>
+                <span className="text-emerald-400">Prós:</span> forte no late game com upgrades completos; pouco gasto militar no
+                começo.
+              </p>
+              <p>
+                <span className="text-red-400">Contras:</span> vulnerável a <strong className="text-pink-300">rush</strong> se não
+                houver defesa ou scouting.
+              </p>
+            </div>
+          </div>
         </section>
+
+        <img
+          src={rushTurtleBoomarImg("Contra - RTS Estratégia.png")}
+          alt="Rush, eco e turtle: como os arquétipos se contrapõem no RTS"
+          className="mt-4 max-w-full rounded-lg border border-aom-border"
+        />
+
 
         <section>
           <h2 className="mb-3 font-[family-name:var(--font-display)] text-xl font-semibold text-amber-100">
-            Deuses maiores e nota de Rush (legado)
+            Deuses maiores e nota de Rush
           </h2>
           <p className="mb-4 text-zinc-400">
             Tabela resumida do material original (nota só de <strong>Rush</strong>). Para Turtle, Eco e detalhes, explore
