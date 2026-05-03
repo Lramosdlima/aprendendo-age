@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+import { cn } from "@/lib/cn";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 
 export type DeusPortraitHeaderItem = {
@@ -15,13 +16,15 @@ const cardClass =
 type Props = {
   items: DeusPortraitHeaderItem[];
   linkState: ListIndexLinkState;
+  /** Ex.: `justify-start` quando o bloco fica dentro de `InfoRow` (não no canto do `PageHeader`). */
+  className?: string;
 };
 
-export function DeusPortraitHeaderActions({ items, linkState }: Props) {
+export function DeusPortraitHeaderActions({ items, linkState, className }: Props) {
   if (items.length === 0) return null;
 
   return (
-    <div className="flex flex-row flex-wrap items-center justify-end gap-2">
+    <div className={cn("flex flex-row flex-wrap items-center justify-end gap-2", className)}>
       {items.map((item) => (
         <Link
           key={item.key}

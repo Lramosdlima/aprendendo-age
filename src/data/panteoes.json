@@ -3,10 +3,11 @@
     "id": 1,
     "nome": "Grego",
     "description": "Os gregos são bons em reconhecimento, pois começam com um Kataskopos em terra e podem treinar Pégasos voadores no Templo . Adoradores de Poseidon também recebem um Hipocampo ao construir uma Doca . Soldados gregos tendem a ser mais fortes e mais caros do que os de outras civilizações. Os gregos só podem treinar um punhado de Heróis por vez, mas todos são excepcionalmente fortes. Heróis gregos também treinam mais rápido e têm maior dano contra unidades míticas em eras posteriores . Eles ganham Favor ao orar em Templos.",
-    "deuses": "Poseidon, Hades, Hermes, Atena, Ares, Apolo, Dionísio, Afrodite, Hefesto, Hera, Ártemis, Deméter, Perséfone, Héstia, Pan",
+    "deuses": "Zeus, Poseidon, Hades, Hermes, Atena, Ares, Apolo, Dionísio, Afrodite, Hefesto, Hera, Ártemis, Deméter, Perséfone, Héstia, Pan",
     "starts": "Gregos - por Moose, Poseidon (com :aomr_lure_power_icon:) - por Mosca, Hades (com Cofre :aomr_vaults_of_erebus_icon:)- por Aussie_Drongo, Gregos - por HuskSuppe (Mar 🌊:aomr_type_ship_icon:)",
     "vill": "Aldeão",
     "deuses_ids": [
+      1,
       2,
       3,
       20,

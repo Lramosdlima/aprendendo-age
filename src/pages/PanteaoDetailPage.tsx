@@ -1,15 +1,19 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
+import { DeusPortraitHeaderActions } from "@/components/deus/DeusPortraitHeaderActions";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { aldeaoById, aldeaoSlugById, deusById, deusSlugById, panteaoBySlug, startById } from "@/data/catalog";
+import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { parseStartReferences } from "@/lib/startLinksFromDeus";
 import { cn } from "@/lib/cn";
 
 export function PanteaoDetailPage() {
+  const { pathname, search: locSearch } = useLocation();
   const { slug } = useParams();
   const p = slug ? panteaoBySlug.get(slug) : undefined;
 
@@ -49,20 +53,15 @@ export function PanteaoDetailPage() {
     : p.starts ? parseStartReferences(p.starts)
     : null;
 
-  const deusLinks = (p.deuses_ids ?? [])
+  const deusLinkState = listIndexLinkStateFromLocation(pathname, locSearch);
+  const deusPortraitItems = (p.deuses_ids ?? [])
     .map((did) => {
       const d = deusById.get(did);
-      return d ? (
-        <Link
-          key={did}
-          to={`/deuses/${deusSlugById.get(did) ?? did}`}
-          className="text-amber-200 underline-offset-2 hover:underline"
-        >
-          {d.nome}
-        </Link>
-      ) : null;
+      const dslug = d ? deusSlugById.get(did) : undefined;
+      if (!d || !dslug) return null;
+      return { key: String(did), slug: dslug, nome: d.nome, src: getDeusAssetUrl(d) };
     })
-    .filter(Boolean);
+    .filter((x): x is NonNullable<typeof x> => x != null);
 
   const sectionOnHeroClass =
     heroBackground &&
@@ -199,16 +198,13 @@ export function PanteaoDetailPage() {
               <NotionText text={p.starts} />
             </InfoRow>
           ) : null}
-          {deusLinks.length > 0 ? (
-            <InfoRow label="Deuses (links)">
-              <span className="flex flex-wrap gap-x-2 gap-y-1">
-                {deusLinks.map((el, i) => (
-                  <span key={i}>
-                    {el}
-                    {i < deusLinks.length - 1 ? "," : ""}
-                  </span>
-                ))}
-              </span>
+          {deusPortraitItems.length > 0 ? (
+            <InfoRow label="Deuses">
+              <DeusPortraitHeaderActions
+                items={deusPortraitItems}
+                linkState={deusLinkState}
+                className="justify-start"
+              />
             </InfoRow>
           ) : null}
         </div>
