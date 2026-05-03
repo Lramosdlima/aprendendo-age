@@ -46,22 +46,26 @@ export function EraDetailPage() {
   return (
     <div>
       <BackLink to="/eras">Eras</BackLink>
-      <PageHeader title={e.nome} description={e.ingles ? `Inglês: ${e.ingles}` : undefined} headerIconSrc={eraIcon} />
+      <PageHeader title={e.nome} description={e.hint} headerIconSrc={eraIcon} />
 
       <div className="grid gap-6 lg:grid-cols-2">
+        <Section title="Descrição">
+          <NotionText text={e.description} />
+        </Section>
+
         <Section title="Custos (avanço)">
           <div className="space-y-0">
             <InfoRow label="Comida" icon="foodaom">
-              {e.comida ?? 0}
+              {e.comida === 0 ? "Não tem" : e.comida ?? 0 }
             </InfoRow>
             <InfoRow label="Madeira" icon="woodaom">
-              {e.madeira ?? 0}
+              {e.madeira === 0 ? "Não tem" : e.madeira  ?? 0 }
             </InfoRow>
             <InfoRow label="Ouro" icon="goldaom">
-              {e.ouro ?? 0}
+              {e.ouro === 0 ? "Não tem" : e.ouro ?? 0 }
             </InfoRow>
             <InfoRow label="Tempo base (s)" icon="aomr_time_icon">
-              {e.tempo_seg ?? 0}
+              {e.tempo_seg === 0 ? "Inicial" : e.tempo_seg ?? 0 }
             </InfoRow>
           </div>
         </Section>
@@ -77,11 +81,6 @@ export function EraDetailPage() {
                   </li>
                 ))}
               </ul>
-            ) : null}
-            {e.requisitos_para_subir_de_era ? (
-              <p className={reqLinks.length > 0 ? "mt-4 text-sm" : "text-sm"}>
-                <NotionText text={e.requisitos_para_subir_de_era} />
-              </p>
             ) : null}
           </Section>
         )}

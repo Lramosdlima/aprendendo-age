@@ -7,6 +7,8 @@
     "ouro": 0,
     "tempo_seg": 0,
     "ingles": "Archaic",
+    "description": "Essa é a 1ª Era do jogo! Já começa com acesso a 1 poder divíno :favoraom: e algumas construções básicas, como Casa :aomr_house_icon:, Templo :aomr_temple_icon: e lugares de coleta de recurso. Seu start é importante para definir o ritmo da partida, então escolha bem baseado na estratégia (Rush :aggro_icon:, Turtle :turtle_icon: ou Eco :eco_icon:)!",
+    "hint": "Build Order importante!",
     "icon": "aomr_archaic_age_icon"
   },
   {
@@ -18,6 +20,8 @@
     "tempo_seg": 60,
     "requisitos_para_subir_de_era": "Templo (Grego), Templo (Egípcio), Templo (Nórdico), Templo (Atlante), Templo (Chinês), Templo (Japonês)",
     "ingles": "Classical",
+    "description": "A partir daqui podemos escolher 1 entre 2 deuses menores (com passiva, unidades míticas, poder divino e tecnologias exclusivas). Temos acesso as primeiras cabanas para treinar tropas. A depender de sua estratégia, coloque em prática seu Rush :aggro_icon:, Turtle :turtle_icon: ou Eco :eco_icon:!",
+    "hint": "Ideal: Passe no tempo de 3-5 minutos!",
     "requisitos_para_subir_de_era_ids": [
       21,
       22,
@@ -37,6 +41,8 @@
     "tempo_seg": 75,
     "requisitos_para_subir_de_era": "Armaria (Grega), Mercado (Grego), Armaria de Anões",
     "ingles": "Heroic",
+    "description": "Geralmente necessário para ter mais poder de destruição para construções na fortaleza :aomr_fortress_icon: (utilizando unidades de cerco :aomr_type_siege_weapon_icon:) ou para acessar tropas mais poderosas.",
+    "hint": "Ideal: tempo de 8-10 minutos!",
     "requisitos_para_subir_de_era_ids": [
       27,
       51,
@@ -53,6 +59,8 @@
     "tempo_seg": 120,
     "requisitos_para_subir_de_era": "Fortaleza, Fortaleza Migdol, Forte da Colina, Palácio, Baolei, Castelo",
     "ingles": "Mythic",
+    "description": "Essa era geralmente é alcançada em partidas mais longas ou mais boomadas (estratégia de só economia). Os poderes divinos muito poderosos aqui e as tropas ainda mais!",
+    "hint": "Comum: tempo de 15-30 minutos, mas depende muito!",
     "requisitos_para_subir_de_era_ids": [
       57,
       58,
@@ -72,6 +80,8 @@
     "tempo_seg": 5400,
     "requisitos_para_subir_de_era": "Maravilha",
     "ingles": "Wonder",
+    "description": "Muito raro de acontecer em partidas! Ao construir a Maravilha :aomr_wonder_icon:, suas unidades míticas :aomr_type_myth_unit_icon: ficam mais fortes e poderes divinos mais baratos e rápidos para reutilizar. A partida tem que estar muito acirrada para alguém arriscar isso, mas é uma estratégia possível para vencer a partida!",
+    "hint": "Raro: Pode ocorre mais em partidas de equipe (TG) ou todos contra (FFA)",
     "requisitos_para_subir_de_era_id": 71,
     "icon": "aomr_wonder_age_icon"
   }
