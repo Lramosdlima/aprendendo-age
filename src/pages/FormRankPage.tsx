@@ -157,6 +157,56 @@ function splitCategoryLabel(categoryLabel: string): { rank: string; era: string 
   return { rank: parts[0] ?? categoryLabel, era: parts[1] ?? "" };
 }
 
+/**
+ * Ícone da era (moldura) + retrato circular centrado — mesmo layout em Perfil e Deuses.
+ * AJUSTE MANUAL: tamanhos em `w-[9rem]…`, retrato `h-[5.75rem]…` / `sm:h-24`.
+ */
+function MolduraAgeAvatar({
+  tierId,
+  ageToken,
+  portraitUrl,
+  emptyFallback,
+}: {
+  tierId: RankTierId;
+  ageToken: string;
+  portraitUrl: string | null | undefined;
+  emptyFallback: ReactNode;
+}) {
+  const theme = TIER_ACHIEVEMENT_THEME[tierId];
+  const ageSrc = getTokenAssetUrl(ageToken);
+  return (
+    <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.75rem] md:w-[10rem]">
+      <div
+        className={cn("pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl", theme.iconBlurClass)}
+        aria-hidden
+      />
+      {ageSrc ? (
+        <img
+          src={ageSrc}
+          alt=""
+          className="absolute left-1/2 top-1/2 z-[1] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+          width={160}
+          height={160}
+        />
+      ) : null}
+      <div className="absolute inset-0 z-[2] flex items-center justify-center">
+        <div
+          className={cn(
+            "h-[5.75rem] w-[5.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-24 sm:w-24",
+            theme.stepRing,
+          )}
+        >
+          {portraitUrl ? (
+            <img src={portraitUrl} alt="" className="h-full w-full rounded-full object-cover" width={96} height={96} />
+          ) : (
+            emptyFallback
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function PlayerHero({
   player,
   row1v1,
@@ -169,44 +219,15 @@ function PlayerHero({
   classification: ReturnType<typeof getRankClassification>;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[classification.tierId];
-  const ageSrc = getTokenAssetUrl(classification.ageToken);
   const { rank: rankWord, era: eraWord } = splitCategoryLabel(classification.categoryLabel);
 
   const innerAvatar = (
-    <div className="relative mx-auto w-fit">
-      <div className={cn("pointer-events-none absolute -inset-8 rounded-full blur-3xl sm:-inset-10", theme.iconBlurClass)} aria-hidden />
-      <div className="relative flex flex-col items-center">
-        {ageSrc ? (
-          <img
-            src={ageSrc}
-            alt=""
-            className="relative z-[1] h-[min(40vw,11rem)] w-[min(40vw,11rem)] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.55)] sm:h-48 sm:w-48"
-            width={192}
-            height={192}
-          />
-        ) : null}
-        <div className="relative z-[2] -mt-10 flex justify-center sm:-mt-12">
-          <div
-            className={cn(
-              "rounded-full border-[3px] bg-zinc-950/90 p-0.5 shadow-[0_12px_40px_-8px_rgba(0,0,0,0.9)] ring-2 ring-inset",
-              theme.stepRing,
-            )}
-          >
-            {player.playerAvatarUrl ? (
-              <img
-                src={player.playerAvatarUrl}
-                alt=""
-                className="h-20 w-20 rounded-full object-cover sm:h-24 sm:w-24"
-                width={96}
-                height={96}
-              />
-            ) : (
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-zinc-800 text-2xl text-zinc-500 sm:h-24 sm:w-24">?</div>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
+    <MolduraAgeAvatar
+      tierId={classification.tierId}
+      ageToken={classification.ageToken}
+      portraitUrl={player.playerAvatarUrl}
+      emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-2xl text-zinc-500">?</div>}
+    />
   );
 
   return (
@@ -257,11 +278,11 @@ function PlayerHero({
           <p className="mb-5 text-center text-[11px] text-zinc-600">Dados da fila Sup 1v1 no AoM Stats.</p>
           <div className="grid min-w-0 grid-cols-1 gap-3 sm:gap-4 sm:[grid-template-columns:repeat(3,minmax(0,1fr))]">
             <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
-            <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
             <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
+            <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
           </div>
           <div className="mt-3 grid min-w-0 grid-cols-1 gap-3 sm:[grid-template-columns:repeat(2,minmax(0,1fr))]">
-            <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
+            <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
             {row1v1.rank ? (
               <StatSubCard tierId={classification.tierId} title="Rank (leaderboard)" value={row1v1.rank} sub="Posição global" />
             ) : (
@@ -295,7 +316,6 @@ function PlayerHero({
 function GodAchievementCard({ god }: { god: GodStatRow }) {
   const cls = getRankClassification(god.elo);
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
-  const ageSrc = getTokenAssetUrl(cls.ageToken);
   const portrait = getGodPortraitUrl(god.god);
   const { rank: rankWord, era: eraWord } = splitCategoryLabel(cls.categoryLabel);
 
@@ -304,43 +324,12 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
       <div className="flex w-full min-w-0 max-w-full flex-col items-center px-3 pb-8 pt-7 sm:px-4 sm:pb-9 sm:pt-8 md:px-5">
         <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">Deus · Sup 1v1</p>
 
-        {/*
-          AJUSTE MANUAL — tamanho do ícone da ERA (anel exterior):
-          ↓ largura/altura do quadrado que contém o PNG da era (ex.: subir para sm:w-40).
-        */}
-        <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.75rem] md:w-[10rem]">
-          <div
-            className={cn("pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl", theme.iconBlurClass)}
-            aria-hidden
-          />
-          {ageSrc ? (
-            <img
-              src={ageSrc}
-              alt=""
-              className="absolute left-1/2 top-1/2 z-[1] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
-              width={132}
-              height={132}
-            />
-          ) : null}
-          {/*
-            AJUSTE MANUAL — tamanho do RETRATO do deus (círculo interior):
-            ↓ h-[…rem] w-[…rem] e sm:h-… sm:w-… (cerca de 70–75% do lado do quadrado da era costuma ficar bem).
-          */}
-          <div className="absolute inset-0 z-[2] flex items-center justify-center">
-            <div
-              className={cn(
-                "h-[5.75rem] w-[5.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-24 sm:w-24",
-                theme.stepRing,
-              )}
-            >
-              {portrait ? (
-                <img src={portrait} alt="" className="h-full w-full rounded-full object-cover" width={76} height={76} />
-              ) : (
-                <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>
-              )}
-            </div>
-          </div>
-        </div>
+        <MolduraAgeAvatar
+          tierId={cls.tierId}
+          ageToken={cls.ageToken}
+          portraitUrl={portrait}
+          emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>}
+        />
 
         <h3 className="mt-5 text-center font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-amber-50/95 sm:text-xl">
           {god.god}
