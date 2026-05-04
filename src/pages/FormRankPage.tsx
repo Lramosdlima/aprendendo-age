@@ -1,4 +1,4 @@
-import { type FormEvent, useState } from "react";
+import { type FormEvent, type ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -13,13 +13,16 @@ import {
 } from "@/lib/formRetoldApi";
 import { getGodPortraitUrl } from "@/lib/godIconFromName";
 import { cn } from "@/lib/cn";
-import { type RankTierId, getRankClassification } from "@/lib/rankClassification";
+import { type RankTierId, TIER_ACHIEVEMENT_THEME, getRankClassification } from "@/lib/rankClassification";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
+
+const GRID_SCRIM =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M40 0L40 80M0 40L80 40'/%3E%3C/g%3E%3C/svg%3E\")";
 
 function HintBadge({ label }: { label: string }) {
   return (
     <span
-      className="inline-flex h-6 w-6 shrink-0 cursor-help items-center justify-center rounded-full border border-zinc-600 bg-zinc-800/90 text-[11px] font-semibold text-zinc-400"
+      className="inline-flex h-6 w-6 shrink-0 cursor-help items-center justify-center rounded-full border border-white/35 bg-white/5 text-[11px] font-semibold text-white/90"
       title={label}
     >
       ?
@@ -27,93 +30,94 @@ function HintBadge({ label }: { label: string }) {
   );
 }
 
-function AgeBadge({ token }: { token: string }) {
-  const src = getTokenAssetUrl(token);
-  if (!src) return null;
-  return (
-    <img
-      src={src}
-      alt=""
-      className="h-9 w-9 shrink-0 rounded-lg border border-aom-border bg-zinc-900/80 object-contain p-0.5 shadow-md shadow-black/40"
-      width={36}
-      height={36}
-    />
-  );
-}
-
-function ProfileAvatarBlock({
-  avatarUrl,
-  profileUrl,
-  name,
-  rankClass,
+function AchievementShell({
+  tierId,
+  className,
+  children,
 }: {
-  avatarUrl: string | null;
-  profileUrl: string;
-  name: string;
-  rankClass: ReturnType<typeof getRankClassification>;
+  tierId: RankTierId;
+  className?: string;
+  children: ReactNode;
 }) {
-  const ageSrc = getTokenAssetUrl(rankClass.ageToken);
-  const inner = (
-    <div className="relative mx-auto w-fit">
+  const theme = TIER_ACHIEVEMENT_THEME[tierId];
+  return (
+    <div
+      className={cn(
+        "relative overflow-hidden rounded-3xl border border-aom-border/60 shadow-[0_40px_100px_-40px_rgba(0,0,0,0.85)]",
+        theme.surfaceClass,
+        className,
+      )}
+    >
       <div
-        className={cn("pointer-events-none absolute -inset-6 rounded-full blur-2xl", rankClass.avatarGlowClass)}
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        style={{ backgroundImage: GRID_SCRIM }}
         aria-hidden
       />
-      <div
-        className={cn(
-          "relative rounded-full border-4 bg-zinc-950/80 p-1 shadow-[0_0_40px_-8px_rgba(0,0,0,0.9)] ring-4 ring-inset",
-          rankClass.avatarRingClass,
-        )}
-      >
-        {avatarUrl ? (
-          <img src={avatarUrl} alt="" className="h-28 w-28 rounded-full object-cover sm:h-32 sm:w-32" width={128} height={128} />
-        ) : (
-          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-3xl text-zinc-500 sm:h-32 sm:w-32">?</div>
-        )}
-      </div>
-      {ageSrc ? (
-        <div className="absolute -bottom-1 -right-1 flex h-12 w-12 items-center justify-center rounded-full border-2 border-zinc-900 bg-zinc-950/95 p-1 shadow-lg">
-          <img src={ageSrc} alt="" className="h-9 w-9 object-contain" width={36} height={36} />
-        </div>
-      ) : null}
-    </div>
-  );
-
-  if (profileUrl) {
-    return (
-      <a href={profileUrl} target="_blank" rel="noreferrer noopener" className="block outline-none ring-amber-500/0 transition hover:ring-2 hover:ring-amber-500/30 rounded-full" title={`Perfil de ${name} no AoM Stats`}>
-        {inner}
-      </a>
-    );
-  }
-  return inner;
-}
-
-function StatLine({ k, v }: { k: string; v: string }) {
-  return (
-    <div className="flex items-baseline justify-between gap-4 border-b border-zinc-800/80 py-2.5 last:border-0">
-      <span className="text-sm text-zinc-500">{k}</span>
-      <span className="text-right font-mono text-sm font-medium text-zinc-100">{v}</span>
+      <div className="relative">{children}</div>
     </div>
   );
 }
 
-function CategoryLine({
+function StatSubCard({
+  tierId,
   title,
   value,
-  rankClass,
-  hint,
+  sub,
 }: {
+  tierId: RankTierId;
   title: string;
   value: string;
-  rankClass: ReturnType<typeof getRankClassification>;
+  sub?: string;
+}) {
+  const theme = TIER_ACHIEVEMENT_THEME[tierId];
+  return (
+    <div
+      className={cn(
+        "flex min-w-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/55 px-4 py-4 text-center shadow-inner shadow-black/40 backdrop-blur-sm ring-2 ring-inset sm:px-5 sm:py-5",
+        theme.stepRing,
+      )}
+    >
+      <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">{title}</span>
+      <span
+        className={cn(
+          "mt-2 block w-full min-w-0 px-2.5 text-base font-semibold tabular-nums tracking-tight sm:px-3 sm:text-lg md:text-xl",
+          theme.stepAccent,
+        )}
+      >
+        {value}
+      </span>
+      {sub ? <span className="mt-1 font-mono text-[11px] text-zinc-500">{sub}</span> : null}
+    </div>
+  );
+}
+
+function CategorySubCard({
+  tierId,
+  ageToken,
+  label,
+  value,
+  hint,
+}: {
+  tierId: RankTierId;
+  ageToken: string;
+  label: string;
+  value: string;
   hint: string;
 }) {
+  const theme = TIER_ACHIEVEMENT_THEME[tierId];
+  const ageSrc = getTokenAssetUrl(ageToken);
   return (
-    <div className="flex items-center gap-3 rounded-xl border border-aom-border/50 bg-zinc-900/50 px-3 py-3 sm:px-4">
-      <AgeBadge token={rankClass.ageToken} />
+    <div
+      className={cn(
+        "flex items-center gap-3 rounded-2xl border border-aom-border/50 bg-zinc-950/55 px-3 py-3 shadow-inner shadow-black/40 ring-2 ring-inset sm:px-4",
+        theme.stepRing,
+      )}
+    >
+      {ageSrc ? (
+        <img src={ageSrc} alt="" className="h-10 w-10 shrink-0 rounded-lg border border-aom-border/60 bg-black/20 object-contain p-0.5" width={40} height={40} />
+      ) : null}
       <div className="min-w-0 flex-1">
-        <p className="text-[11px] font-medium uppercase tracking-wider text-zinc-500">{title}</p>
+        <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">{label}</p>
         <p className="truncate text-sm font-semibold text-zinc-100">{value}</p>
       </div>
       <HintBadge label={hint} />
@@ -121,42 +125,213 @@ function CategoryLine({
   );
 }
 
-const TIER_LABEL_CLASS: Record<RankTierId, string> = {
-  bronze: "text-amber-200/95",
-  prata: "text-zinc-200",
-  ouro: "text-amber-100/95",
-  esmeralda: "text-emerald-200/95",
-  diamante: "text-sky-200/95",
-};
+function splitCategoryLabel(categoryLabel: string): { rank: string; era: string } {
+  const parts = categoryLabel.split("|").map((s) => s.trim());
+  return { rank: parts[0] ?? categoryLabel, era: parts[1] ?? "" };
+}
 
-function GodMiniCard({ god }: { god: GodStatRow }) {
-  const portrait = getGodPortraitUrl(god.god);
-  const cls = getRankClassification(god.elo);
-  const era = getTokenAssetUrl(cls.ageToken);
-  const eraLabel = cls.categoryLabel.split("|")[1]?.trim() ?? cls.categoryLabel;
+function PlayerHero({
+  player,
+  row1v1,
+  rr,
+  classification,
+}: {
+  player: PlayerStatsResponse;
+  row1v1: ProfileStatRow;
+  rr: number;
+  classification: ReturnType<typeof getRankClassification>;
+}) {
+  const theme = TIER_ACHIEVEMENT_THEME[classification.tierId];
+  const ageSrc = getTokenAssetUrl(classification.ageToken);
+  const { rank: rankWord, era: eraWord } = splitCategoryLabel(classification.categoryLabel);
+
+  const innerAvatar = (
+    <div className="relative mx-auto w-fit">
+      <div className={cn("pointer-events-none absolute -inset-8 rounded-full blur-3xl sm:-inset-10", theme.iconBlurClass)} aria-hidden />
+      <div className="relative flex flex-col items-center">
+        {ageSrc ? (
+          <img
+            src={ageSrc}
+            alt=""
+            className="relative z-[1] h-[min(40vw,11rem)] w-[min(40vw,11rem)] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.55)] sm:h-48 sm:w-48"
+            width={192}
+            height={192}
+          />
+        ) : null}
+        <div className="relative z-[2] -mt-10 flex justify-center sm:-mt-12">
+          <div
+            className={cn(
+              "rounded-full border-[3px] bg-zinc-950/90 p-0.5 shadow-[0_12px_40px_-8px_rgba(0,0,0,0.9)] ring-2 ring-inset",
+              theme.stepRing,
+            )}
+          >
+            {player.playerAvatarUrl ? (
+              <img
+                src={player.playerAvatarUrl}
+                alt=""
+                className="h-20 w-20 rounded-full object-cover sm:h-24 sm:w-24"
+                width={96}
+                height={96}
+              />
+            ) : (
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-zinc-800 text-2xl text-zinc-500 sm:h-24 sm:w-24">?</div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
-    <div className="flex flex-col items-center rounded-2xl border border-aom-border/55 bg-zinc-900/45 px-3 py-4 text-center shadow-inner shadow-black/30">
-      <p className="w-full truncate text-sm font-semibold text-amber-100/95">{god.god}</p>
-      <div className={cn("relative mt-3", cls.avatarGlowClass, "rounded-full p-[3px]")}>
-        <div className={cn("rounded-full border-2 bg-zinc-950 p-0.5", cls.avatarRingClass)}>
-          {portrait ? (
-            <img src={portrait} alt="" className="h-14 w-14 rounded-full object-cover" width={56} height={56} />
-          ) : (
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>
-          )}
+    <AchievementShell tierId={classification.tierId} className="mx-auto max-w-xl">
+      <div className="px-4 pb-10 pt-8 sm:px-8 sm:pb-12 sm:pt-10">
+        <p className="mb-6 text-center font-mono text-[10px] font-medium uppercase tracking-[0.35em] text-white/85">Perfil · Sup 1v1</p>
+
+        {player.profileUrl ? (
+          <a
+            href={player.profileUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="block outline-none transition hover:opacity-95"
+            title={`Abrir perfil de ${player.profileName} no AoM Stats`}
+          >
+            {innerAvatar}
+          </a>
+        ) : (
+          innerAvatar
+        )}
+
+        <h2 className="mt-8 text-center font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
+          <span className={theme.titleRankClass}>{rankWord}</span>
+          {eraWord ? (
+            <>
+              <span className="text-zinc-500"> | </span>
+              <span className="text-zinc-200">{eraWord}</span>
+            </>
+          ) : null}
+        </h2>
+
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-center">
+          {player.clanTag ? (
+            <span
+              className="rounded-md border border-amber-700/40 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-amber-200/95"
+              title={player.funStats?.clan_name ?? player.clanTag}
+            >
+              [{player.clanTag}]
+            </span>
+          ) : null}
+          <span className="font-[family-name:var(--font-display)] text-lg font-medium text-zinc-100 sm:text-xl">{player.profileName}</span>
         </div>
-        {era ? (
-          <span className="absolute -bottom-1 -right-0.5 flex h-7 w-7 items-center justify-center rounded-full border border-zinc-800 bg-zinc-950 p-0.5 shadow">
-            <img src={era} alt="" className="h-5 w-5 object-contain" />
-          </span>
-        ) : null}
+
+        <p className="mt-2 text-center text-[11px] text-zinc-500">Subcategoria atual: {classification.subcategoryLabel}</p>
+
+        <div className="mt-10 w-full">
+          <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
+          <p className="mb-5 text-center text-[11px] text-zinc-600">Dados da fila Sup 1v1 no AoM Stats.</p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+            <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
+            <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
+            <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
+          </div>
+          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
+            {row1v1.rank ? (
+              <StatSubCard tierId={classification.tierId} title="Rank (leaderboard)" value={row1v1.rank} sub="Posição global" />
+            ) : (
+              <StatSubCard tierId={classification.tierId} title="Partidas" value={`${row1v1.wins + row1v1.losses}`} sub="Vitórias + derrotas" />
+            )}
+          </div>
+        </div>
+
+        <div className="mt-10 space-y-3">
+          <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Classificação</p>
+          <CategorySubCard
+            tierId={classification.tierId}
+            ageToken={classification.ageToken}
+            label="Categoria"
+            value={classification.categoryLabel}
+            hint={classification.hintCategory}
+          />
+          <CategorySubCard
+            tierId={classification.tierId}
+            ageToken={classification.ageToken}
+            label="Subcategoria"
+            value={classification.subcategoryLabel}
+            hint={classification.hintSub}
+          />
+        </div>
       </div>
-      <p className="mt-3 font-mono text-lg font-semibold text-zinc-100">{god.elo}</p>
-      <p className="mt-1 text-[11px] text-zinc-500">WR {god.winRate}</p>
-      <p className={cn("mt-2 text-xs font-medium", TIER_LABEL_CLASS[cls.tierId])}>{eraLabel}</p>
-      <p className="text-[11px] text-zinc-400">({cls.subcategoryLabel})</p>
-    </div>
+    </AchievementShell>
+  );
+}
+
+function GodAchievementCard({ god }: { god: GodStatRow }) {
+  const cls = getRankClassification(god.elo);
+  const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
+  const ageSrc = getTokenAssetUrl(cls.ageToken);
+  const portrait = getGodPortraitUrl(god.god);
+  const { rank: rankWord, era: eraWord } = splitCategoryLabel(cls.categoryLabel);
+
+  return (
+    <AchievementShell tierId={cls.tierId} className="h-full">
+      <div className="flex flex-col items-center px-4 pb-8 pt-7 sm:px-5 sm:pb-9 sm:pt-8">
+        <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">Deus · Sup 1v1</p>
+
+        <div className="relative mx-auto aspect-square w-[8.25rem] sm:w-36">
+          <div
+            className={cn("pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl", theme.iconBlurClass)}
+            aria-hidden
+          />
+          {ageSrc ? (
+            <img
+              src={ageSrc}
+              alt=""
+              className="absolute left-1/2 top-1/2 z-[1] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+              width={132}
+              height={132}
+            />
+          ) : null}
+          <div className="absolute inset-0 z-[2] flex items-center justify-center">
+            <div
+              className={cn(
+                "h-[4.75rem] w-[4.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-20 sm:w-20",
+                theme.stepRing,
+              )}
+            >
+              {portrait ? (
+                <img src={portrait} alt="" className="h-full w-full rounded-full object-cover" width={76} height={76} />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <h3 className="mt-5 text-center font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-amber-50/95 sm:text-xl">
+          {god.god}
+        </h3>
+
+        <p className="mt-1 text-center font-[family-name:var(--font-display)] text-sm sm:text-base">
+          <span className={theme.titleRankClass}>{rankWord}</span>
+          {eraWord ? (
+            <>
+              <span className="text-zinc-500"> | </span>
+              <span className="text-zinc-300">{eraWord}</span>
+            </>
+          ) : null}
+        </p>
+        <p className="mt-1 text-center text-xs text-zinc-500">({cls.subcategoryLabel})</p>
+
+        <div className="mt-6 w-full">
+          <p className="mb-3 text-center text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
+          <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+            <StatSubCard tierId={cls.tierId} title="RR" value={String(god.elo)} />
+            <StatSubCard tierId={cls.tierId} title="WR" value={god.winRate} />
+            <StatSubCard tierId={cls.tierId} title="Jogos" value={String(god.games)} />
+          </div>
+        </div>
+      </div>
+    </AchievementShell>
   );
 }
 
@@ -228,98 +403,74 @@ export function FormRankPage() {
         }
       />
 
-      <div className="mx-auto max-w-xl rounded-2xl border border-aom-border/60 bg-zinc-900/35 p-5 shadow-lg shadow-black/20 sm:p-6">
-        <p className="text-center text-xs font-medium uppercase tracking-[0.18em] text-amber-500/90">AoM Stats</p>
-        <p className="mt-2 text-center text-sm text-zinc-400">Digite o nome do jogador (idêntico ao do jogo).</p>
-        <form onSubmit={onSubmit} className={cn("mt-6 space-y-4", loading && "pointer-events-none opacity-70")}>
-          <label className="block">
-            <span className="sr-only">Nome do jogador</span>
-            <input
-              type="text"
-              value={name}
-              onChange={(ev) => setName(ev.target.value)}
+      <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-6 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-7">
+        <div className="relative z-[1]">
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">AOM STATS</p>
+          <p className="mt-2 text-center text-sm leading-relaxed text-zinc-400">Digite o nome do jogador (idêntico ao do jogo).</p>
+          <form onSubmit={onSubmit} className={cn("mt-6 space-y-4", loading && "pointer-events-none opacity-70")}>
+            <label className="block">
+              <span className="sr-only">Nome do jogador</span>
+              <input
+                type="text"
+                value={name}
+                onChange={(ev) => setName(ev.target.value)}
+                disabled={loading}
+                placeholder="Ex: Mosca_"
+                autoComplete="off"
+                className="w-full rounded-xl border border-zinc-600/90 bg-black/35 px-4 py-3.5 text-sm text-white placeholder:text-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-amber-500/25 disabled:cursor-not-allowed"
+              />
+            </label>
+            <button
+              type="submit"
               disabled={loading}
-              placeholder="Ex: Mosca_"
-              autoComplete="off"
-              className="w-full rounded-xl border border-aom-border bg-zinc-950/80 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-amber-500/45 focus:outline-none focus:ring-2 focus:ring-amber-500/20 disabled:cursor-not-allowed"
-            />
-          </label>
-          <button
-            type="submit"
-            disabled={loading}
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 px-4 py-3 text-sm font-semibold text-zinc-950 shadow-lg shadow-amber-900/25 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            {loading ? (
-              <>
-                <span
-                  className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-zinc-950/30 border-t-zinc-950"
-                  aria-hidden
-                />
-                Carregando…
-              </>
-            ) : (
-              "Aplicar"
-            )}
-          </button>
-        </form>
-        {error ? (
-          <p className="mt-4 rounded-lg border border-red-900/40 bg-red-950/30 px-3 py-2 text-center text-sm text-red-200" role="alert">
-            {error}
-          </p>
-        ) : null}
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 px-4 py-3.5 text-sm font-bold text-black shadow-md shadow-black/20 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {loading ? (
+                <>
+                  <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-black/20 border-t-black" aria-hidden />
+                  Carregando…
+                </>
+              ) : (
+                "Aplicar"
+              )}
+            </button>
+          </form>
+          {error ? (
+            <p className="mt-4 rounded-xl border border-red-900/45 bg-red-950/35 px-3 py-2 text-center text-sm text-red-200" role="alert">
+              {error}
+            </p>
+          ) : null}
+        </div>
       </div>
 
       {player && row1v1 && classification && rr != null ? (
-        <div className="space-y-8">
-          <section
-            aria-labelledby="result-main-heading"
-            className="mx-auto max-w-xl overflow-hidden rounded-3xl border border-aom-border/60 bg-gradient-to-b from-zinc-900/80 to-zinc-950/95 shadow-[0_32px_80px_-32px_rgba(0,0,0,0.85)]"
-          >
+        <div className="space-y-12">
+          <section aria-labelledby="result-main-heading">
             <h2 id="result-main-heading" className="sr-only">
               Resultado: {player.profileName}
             </h2>
-            <div className="border-b border-aom-border/40 bg-zinc-950/50 px-4 py-8 sm:px-8">
-              <ProfileAvatarBlock
-                avatarUrl={player.playerAvatarUrl}
-                profileUrl={player.profileUrl}
-                name={player.profileName}
-                rankClass={classification}
-              />
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-center">
-                {player.clanTag ? (
-                  <span
-                    className="rounded-md border border-amber-600/35 bg-amber-950/40 px-2 py-0.5 font-mono text-xs font-semibold text-amber-200"
-                    title={player.funStats?.clan_name ?? player.clanTag}
-                  >
-                    [{player.clanTag}]
-                  </span>
-                ) : null}
-                <span className="font-[family-name:var(--font-display)] text-xl font-semibold text-amber-50 sm:text-2xl">{player.profileName}</span>
-              </div>
-            </div>
-            <div className="space-y-0 px-4 py-2 sm:px-6">
-              <StatLine k="RR" v={String(rr)} />
-              <StatLine k="Taxa de vitória" v={row1v1.winRate} />
-              <StatLine k="Vitórias" v={String(row1v1.wins)} />
-              <StatLine k="Derrotas" v={String(row1v1.losses)} />
-              {row1v1.rank ? <StatLine k="Rank (leaderboard)" v={row1v1.rank} /> : null}
-            </div>
-            <div className="space-y-3 px-4 pb-6 pt-4 sm:px-6">
-              <CategoryLine title="Categoria" value={classification.categoryLabel} rankClass={classification} hint={classification.hintCategory} />
-              <CategoryLine title="Subcategoria" value={classification.subcategoryLabel} rankClass={classification} hint={classification.hintSub} />
-            </div>
+            <PlayerHero player={player} row1v1={row1v1} rr={rr} classification={classification} />
           </section>
 
-          <section aria-labelledby="gods-heading" className="mx-auto max-w-xl">
-            <h3 id="gods-heading" className="mb-4 text-center font-[family-name:var(--font-display)] text-lg font-semibold text-zinc-200">
-              Principais deuses (Sup 1v1)
+          <section aria-labelledby="gods-heading" className="mx-auto max-w-4xl">
+            <p className="mb-2 text-center font-mono text-[10px] font-medium uppercase tracking-[0.28em] text-zinc-500">Progressão</p>
+            <h3 id="gods-heading" className="text-center font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-zinc-100 sm:text-2xl">
+              Principais deuses
             </h3>
+            <p className="mx-auto mt-2 max-w-md text-center text-[11px] text-zinc-500">Top 3 por RR na fila Sup 1v1 — mesmo estilo de conquista por faixa.</p>
             {gods.length === 0 ? (
-              <p className="rounded-xl border border-zinc-800 bg-zinc-900/40 py-6 text-center text-sm text-zinc-500">Nenhuma estatística de deuses encontrada.</p>
+              <p className="mx-auto mt-8 max-w-xl rounded-2xl border border-aom-border/50 bg-zinc-950/60 py-8 text-center text-sm text-zinc-500">
+                Nenhuma estatística de deuses encontrada.
+              </p>
             ) : (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                {gods.map((g) => (
-                  <GodMiniCard key={g.god} god={g} />
+              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5">
+                {gods.map((g, i) => (
+                  <div key={g.god} className="relative">
+                    <p className="mb-2 text-center font-mono text-[9px] font-medium uppercase tracking-[0.35em] text-zinc-500">
+                      {i + 1} / {gods.length}
+                    </p>
+                    <GodAchievementCard god={g} />
+                  </div>
                 ))}
               </div>
             )}
