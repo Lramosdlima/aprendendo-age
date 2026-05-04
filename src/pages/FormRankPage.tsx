@@ -439,6 +439,7 @@ export function FormRankPage() {
   const [player, setPlayer] = useState<PlayerStatsResponse | null>(null);
   const [row1v1, setRow1v1] = useState<ProfileStatRow | undefined>(undefined);
   const [gods, setGods] = useState<GodStatRow[]>([]);
+  const [godsLoading, setGodsLoading] = useState(false);
 
   const rr = row1v1 ? parseElo(row1v1.elo) : undefined;
   const classification = rr != null ? getRankClassification(rr) : null;
@@ -449,6 +450,7 @@ export function FormRankPage() {
       setPlayer(null);
       setRow1v1(undefined);
       setGods([]);
+      setGodsLoading(false);
       setError(null);
       setLoading(false);
       return;
@@ -462,6 +464,7 @@ export function FormRankPage() {
       setPlayer(null);
       setRow1v1(undefined);
       setGods([]);
+      setGodsLoading(false);
       try {
         const data = await fetchPlayerStats(playerParam);
         if (cancelled) return;
@@ -480,11 +483,15 @@ export function FormRankPage() {
         if (cancelled) return;
         setPlayer(data);
         setRow1v1(one);
+        setGodsLoading(true);
+        setGods([]);
         try {
           const g = await fetchGodStats(data.profileId);
           if (!cancelled) setGods(g.slice(0, 3));
         } catch {
           if (!cancelled) setGods([]);
+        } finally {
+          if (!cancelled) setGodsLoading(false);
         }
       } catch (err) {
         if (!cancelled) setError(err instanceof Error ? err.message : "Falha ao buscar os dados.");
@@ -495,6 +502,7 @@ export function FormRankPage() {
 
     return () => {
       cancelled = true;
+      setGodsLoading(false);
     };
   }, [playerParam]);
 
@@ -565,7 +573,15 @@ export function FormRankPage() {
               Principais deuses
             </h3>
             <p className="mx-auto mt-2 max-w-md text-center text-[11px] text-zinc-500">Top 3 por RR na fila Sup 1v1 — mesmo estilo de conquista por faixa.</p>
-            {gods.length === 0 ? (
+            {godsLoading ? (
+              <div className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center rounded-2xl border border-aom-border/50 bg-zinc-950/60 py-12 text-center">
+                <span
+                  className="inline-block h-8 w-8 animate-spin rounded-full border-2 border-zinc-500/30 border-t-zinc-300"
+                  aria-hidden
+                />
+                <p className="mt-4 text-sm text-zinc-500">Carregando principais deuses…</p>
+              </div>
+            ) : gods.length === 0 ? (
               <p className="mx-auto mt-8 max-w-xl rounded-2xl border border-aom-border/50 bg-zinc-950/60 py-8 text-center text-sm text-zinc-500">
                 Nenhuma estatística de deuses encontrada.
               </p>
