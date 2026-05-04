@@ -329,7 +329,7 @@ function PlayerHero({
         <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-center">
           {player.clanTag ? (
             <span
-              className="rounded-md border border-amber-700/40 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-amber-200/95"
+              className="rounded-md border border-zinc-500/45 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-zinc-100"
               title={player.funStats?.clan_name ?? player.clanTag}
             >
               {player.clanTag}
