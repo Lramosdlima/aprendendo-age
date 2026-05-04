@@ -275,17 +275,29 @@ export function RankPage() {
         aria-label="Atalhos para divisões"
         className="sticky top-[calc(env(safe-area-inset-top,0px)+4.25rem)] z-20 -mx-1 flex flex-wrap justify-center gap-2 rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-3 shadow-lg shadow-black/40 backdrop-blur-md sm:top-6 sm:px-4 md:top-8"
       >
-        {TIERS.map((t) => (
-          <a
-            key={t.id}
-            href={`#${t.id}`}
-            className={cn(
-              "rounded-full border border-aom-border/60 bg-zinc-900/80 px-3 py-1.5 text-xs font-medium text-zinc-300 transition hover:border-amber-500/40 hover:text-amber-100",
-            )}
-          >
-            {t.rankName}
-          </a>
-        ))}
+        {TIERS.map((t) => {
+          const iconSrc = getTokenAssetUrl(t.token);
+          return (
+            <a
+              key={t.id}
+              href={`#${t.id}`}
+              className={cn(
+                "inline-flex items-center gap-1.5 rounded-full border border-aom-border/60 bg-zinc-900/80 px-3 py-1.5 text-xs font-medium text-zinc-300 transition hover:border-amber-500/40 hover:text-amber-100",
+              )}
+            >
+              {iconSrc ? (
+                <img
+                  src={iconSrc}
+                  alt=""
+                  className="h-4 w-4 shrink-0 object-contain opacity-95 sm:h-[1.125rem] sm:w-[1.125rem]"
+                  width={18}
+                  height={18}
+                />
+              ) : null}
+              <span>{t.rankName}</span>
+            </a>
+          );
+        })}
       </nav>
 
       <div className="space-y-12 md:space-y-16">
