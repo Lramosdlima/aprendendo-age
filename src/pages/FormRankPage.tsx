@@ -326,7 +326,7 @@ function PlayerHero({
 
   return (
     <>
-      <AchievementShell tierId={classification.tierId} className="mx-auto max-w-xl">
+      <AchievementShell tierId={classification.tierId} className="mx-auto w-full max-w-xl lg:max-w-5xl xl:max-w-6xl">
       <div className="px-4 pb-10 pt-8 sm:px-8 sm:pb-12 sm:pt-10">
         <p className="mb-6 text-center font-mono text-[10px] font-medium uppercase tracking-[0.35em] text-white/85">Perfil · Sup 1v1</p>
 
@@ -389,41 +389,45 @@ function PlayerHero({
           <span className="font-[family-name:var(--font-display)] text-lg font-medium text-zinc-100 sm:text-xl">{player.profileName}</span>
         </div>
 
-        <div className="mt-10 w-full min-w-0">
-          <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
-          <div className="grid min-w-0 grid-cols-1 gap-3 sm:gap-4 sm:[grid-template-columns:repeat(3,minmax(0,1fr))]">
-            <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
-            <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
-            <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
+        <div className="mt-10 grid min-w-0 grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start lg:gap-12">
+          <div className="min-w-0 space-y-4">
+            <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 lg:mb-3 lg:text-left">
+              Estatísticas
+            </p>
+            <div className="grid min-w-0 grid-cols-1 gap-3 sm:gap-4 sm:[grid-template-columns:repeat(3,minmax(0,1fr))]">
+              <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
+              <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
+              <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
+            </div>
+            <div className="grid min-w-0 grid-cols-1 gap-3 sm:[grid-template-columns:repeat(2,minmax(0,1fr))]">
+              <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
+              {row1v1.rank ? (
+                <StatSubCard tierId={classification.tierId} title="Rank (leaderboard)" value={row1v1.rank} sub="Posição global" />
+              ) : (
+                <StatSubCard tierId={classification.tierId} title="Partidas" value={`${row1v1.wins + row1v1.losses}`} sub="Vitórias + derrotas" />
+              )}
+            </div>
           </div>
-          <div className="mt-3 grid min-w-0 grid-cols-1 gap-3 sm:[grid-template-columns:repeat(2,minmax(0,1fr))]">
-            <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
-            {row1v1.rank ? (
-              <StatSubCard tierId={classification.tierId} title="Rank (leaderboard)" value={row1v1.rank} sub="Posição global" />
-            ) : (
-              <StatSubCard tierId={classification.tierId} title="Partidas" value={`${row1v1.wins + row1v1.losses}`} sub="Vitórias + derrotas" />
-            )}
-          </div>
-        </div>
 
-        <div className="mt-10 space-y-3">
-          <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Classificação</p>
-          <CategorySubCard
-            tierId={classification.tierId}
-            ageToken={classification.ageToken}
-            label="Categoria"
-            value={classification.categoryLabel}
-            hint={classification.hintCategory}
-            onOpenRankGuide={() => setRankGuideOpen(true)}
-          />
-          <CategorySubCard
-            tierId={classification.tierId}
-            ageToken={classification.ageToken}
-            label="Subcategoria"
-            value={classification.subcategoryLabel}
-            hint={classification.hintSub}
-            onOpenRankGuide={() => setRankGuideOpen(true)}
-          />
+          <div className="min-w-0 space-y-3">
+            <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 lg:mb-3 lg:text-left">Classificação</p>
+            <CategorySubCard
+              tierId={classification.tierId}
+              ageToken={classification.ageToken}
+              label="Categoria"
+              value={classification.categoryLabel}
+              hint={classification.hintCategory}
+              onOpenRankGuide={() => setRankGuideOpen(true)}
+            />
+            <CategorySubCard
+              tierId={classification.tierId}
+              ageToken={classification.ageToken}
+              label="Subcategoria"
+              value={classification.subcategoryLabel}
+              hint={classification.hintSub}
+              onOpenRankGuide={() => setRankGuideOpen(true)}
+            />
+          </div>
         </div>
       </div>
     </AchievementShell>
