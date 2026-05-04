@@ -22,6 +22,7 @@ import { MapasPage } from "@/pages/MapasPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
+import { RankPage } from "@/pages/RankPage";
 import { SecretStartBuilderPage } from "@/pages/SecretStartBuilderPage";
 import { StartDetailPage } from "@/pages/StartDetailPage";
 import { StartsPage } from "@/pages/StartsPage";
@@ -68,6 +69,7 @@ export default function App() {
           <Route path="starts" element={<StartsPage />} />
           <Route path="starts/:slug" element={<StartDetailPage />} />
           <Route path="admin/novo-start" element={<SecretStartBuilderPage />} />
+          <Route path="rank" element={<RankPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
           <Route
             path="trilha-de-aprendizado/tipos-unidades-multiplicadores"
