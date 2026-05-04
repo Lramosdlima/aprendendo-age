@@ -19,7 +19,7 @@ import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 const GRID_SCRIM =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M40 0L40 80M0 40L80 40'/%3E%3C/g%3E%3C/svg%3E\")";
 
-/** Retratos em `public/assets/rank` — só FormRankPage (título do perfil + moldura dos deuses); Classificação continua com tokens de eras. */
+/** Retratos em `public/assets/rank` — moldura/título no FormRankPage (perfil, deuses); Classificação continua com tokens de eras. */
 const FORM_RANK_PORTRAIT: Record<RankTierId, string> = {
   bronze: "/assets/rank/Portrait_Archaic.png",
   prata: "/assets/rank/Portrait_Classical.png",
@@ -31,6 +31,9 @@ const FORM_RANK_PORTRAIT: Record<RankTierId, string> = {
 function getFormRankPortraitPath(tierId: RankTierId): string {
   return FORM_RANK_PORTRAIT[tierId];
 }
+
+/** GIF atrás da moldura + avatar só no tier Diamante (`public/assets/rank`). */
+const FORM_RANK_BORDA_CHAMAS = "/assets/rank/borda-chamas.gif";
 
 function HintBadge({ label }: { label: string }) {
   return (
@@ -190,22 +193,35 @@ function MolduraAgeAvatar({
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = frameImageSrc?.trim() ? frameImageSrc : getTokenAssetUrl(ageToken);
+  const showFlames = tierId === "diamante";
   return (
     <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.75rem] md:w-[10rem]">
       <div
-        className={cn("pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl", theme.iconBlurClass)}
+        className={cn(
+          "pointer-events-none absolute left-1/2 top-1/2 z-0 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl",
+          theme.iconBlurClass,
+        )}
         aria-hidden
       />
+      {showFlames ? (
+        <img
+          src={FORM_RANK_BORDA_CHAMAS}
+          alt=""
+          className="pointer-events-none absolute left-1/2 top-1/2 z-[1] h-[118%] w-[118%] -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.92]"
+          width={200}
+          height={200}
+        />
+      ) : null}
       {ageSrc ? (
         <img
           src={ageSrc}
           alt=""
-          className="absolute left-1/2 top-1/2 z-[1] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+          className="absolute left-1/2 top-1/2 z-[2] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
           width={160}
           height={160}
         />
       ) : null}
-      <div className="absolute inset-0 z-[2] flex items-center justify-center">
+      <div className="absolute inset-0 z-[3] flex items-center justify-center">
         <div
           className={cn(
             "h-[5.75rem] w-[5.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-24 sm:w-24",
@@ -241,6 +257,7 @@ function PlayerHero({
     <MolduraAgeAvatar
       tierId={classification.tierId}
       ageToken={classification.ageToken}
+      frameImageSrc={getFormRankPortraitPath(classification.tierId)}
       portraitUrl={player.playerAvatarUrl}
       emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-2xl text-zinc-500">?</div>}
     />
@@ -266,13 +283,24 @@ function PlayerHero({
         )}
 
         <h2 className="mt-8 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-center font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
-          <img
-            src={getFormRankPortraitPath(classification.tierId)}
-            alt=""
-            className="h-9 w-9 shrink-0 object-contain opacity-95 drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)] sm:h-10 sm:w-10 md:h-11 md:w-11"
-            width={44}
-            height={44}
-          />
+          <span className="relative flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12 md:h-[3.25rem] md:w-[3.25rem]">
+            {classification.tierId === "diamante" ? (
+              <img
+                src={FORM_RANK_BORDA_CHAMAS}
+                alt=""
+                className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[145%] w-[145%] -translate-x-1/2 -translate-y-1/2 object-contain opacity-90"
+                width={72}
+                height={72}
+              />
+            ) : null}
+            <img
+              src={getFormRankPortraitPath(classification.tierId)}
+              alt=""
+              className="relative z-[1] h-9 w-9 object-contain opacity-95 drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)] sm:h-10 sm:w-10 md:h-11 md:w-11"
+              width={44}
+              height={44}
+            />
+          </span>
           <span className="min-w-0">
             <span className={theme.titleRankClass}>{rankWord}</span>
             {eraWord ? (
@@ -290,17 +318,14 @@ function PlayerHero({
               className="rounded-md border border-amber-700/40 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-amber-200/95"
               title={player.funStats?.clan_name ?? player.clanTag}
             >
-              [{player.clanTag}]
+              {player.clanTag}
             </span>
           ) : null}
           <span className="font-[family-name:var(--font-display)] text-lg font-medium text-zinc-100 sm:text-xl">{player.profileName}</span>
         </div>
 
-        <p className="mt-2 text-center text-[11px] text-zinc-500">Subcategoria atual: {classification.subcategoryLabel}</p>
-
         <div className="mt-10 w-full min-w-0">
           <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
-          <p className="mb-5 text-center text-[11px] text-zinc-600">Dados da fila Sup 1v1 no AoM Stats.</p>
           <div className="grid min-w-0 grid-cols-1 gap-3 sm:gap-4 sm:[grid-template-columns:repeat(3,minmax(0,1fr))]">
             <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
             <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
