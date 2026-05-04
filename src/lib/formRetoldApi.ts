@@ -30,17 +30,79 @@ export type GodStatRow = {
   games: number;
 };
 
+/** Linha devolvida por `GET /api/search-players/:name` (subset do AoM Stats). */
+export type AomStatsSearchProfileRow = {
+  profile_id: number;
+  alias: string;
+  country: string | null;
+  avatar_link: string | null;
+  clan_name?: string | null;
+};
+
+export class AmbiguousPlayerError extends Error {
+  readonly profiles: AomStatsSearchProfileRow[];
+
+  constructor(profiles: AomStatsSearchProfileRow[]) {
+    super("Vários jogadores encontrados para essa pesquisa.");
+    this.name = "AmbiguousPlayerError";
+    this.profiles = profiles;
+  }
+}
+
 function statsUrl(playerName: string) {
   return `${FORM_RETOLD_ORIGIN}/api/stats/${encodeURIComponent(playerName.trim())}`;
+}
+
+function statsByIdUrl(profileId: number) {
+  return `${FORM_RETOLD_ORIGIN}/api/stats-by-id/${profileId}`;
+}
+
+function searchPlayersUrl(playerName: string) {
+  return `${FORM_RETOLD_ORIGIN}/api/search-players/${encodeURIComponent(playerName.trim())}`;
 }
 
 function godsUrl(profileId: number) {
   return `${FORM_RETOLD_ORIGIN}/api/gods/${profileId}`;
 }
 
+export async function searchPlayersByName(playerName: string): Promise<AomStatsSearchProfileRow[]> {
+  const res = await fetch(searchPlayersUrl(playerName));
+  const body: unknown = await res.json().catch(() => null);
+  if (!res.ok) {
+    const msg =
+      body && typeof body === "object" && "error" in body && typeof (body as { error: unknown }).error === "string"
+        ? (body as { error: string }).error
+        : `Não foi possível pesquisar jogadores (${res.status}).`;
+    throw new Error(msg);
+  }
+  if (body && typeof body === "object" && "profiles" in body && Array.isArray((body as { profiles: unknown }).profiles)) {
+    return (body as { profiles: AomStatsSearchProfileRow[] }).profiles;
+  }
+  return [];
+}
+
+export async function fetchPlayerStatsByProfileId(profileId: number): Promise<PlayerStatsResponse> {
+  const res = await fetch(statsByIdUrl(profileId));
+  const body: unknown = await res.json().catch(() => null);
+  if (!res.ok) {
+    const msg =
+      body && typeof body === "object" && "error" in body && typeof (body as { error: unknown }).error === "string"
+        ? (body as { error: string }).error
+        : `Não foi possível carregar o jogador (${res.status}).`;
+    throw new Error(msg);
+  }
+  return body as PlayerStatsResponse;
+}
+
 export async function fetchPlayerStats(playerName: string): Promise<PlayerStatsResponse> {
   const res = await fetch(statsUrl(playerName));
   const body: unknown = await res.json().catch(() => null);
+  if (res.status === 409 && body && typeof body === "object" && "profiles" in body) {
+    const raw = (body as { profiles: unknown }).profiles;
+    if (Array.isArray(raw)) {
+      throw new AmbiguousPlayerError(raw as AomStatsSearchProfileRow[]);
+    }
+  }
   if (!res.ok) {
     const msg =
       body && typeof body === "object" && "error" in body && typeof (body as { error: unknown }).error === "string"

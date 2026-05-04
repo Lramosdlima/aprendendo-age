@@ -4,10 +4,13 @@ import { Link, useSearchParams } from "react-router-dom";
 import { ModalApp } from "@/components/ui/ModalApp";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
+  AmbiguousPlayerError,
   fetchGodStats,
   fetchPlayerStats,
+  fetchPlayerStatsByProfileId,
   parseElo,
   pickSup1v1Row,
+  type AomStatsSearchProfileRow,
   type GodStatRow,
   type PlayerStatsResponse,
   type ProfileStatRow,
@@ -503,8 +506,11 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
 
 export function FormRankPage() {
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const playerParam = searchParams.get("player")?.trim() ?? "";
+  const aomstatsIdParam = searchParams.get("aomstats_id")?.trim() ?? "";
+  const aomstatsIdNum = aomstatsIdParam ? Number.parseInt(aomstatsIdParam, 10) : NaN;
+  const hasAomstatsId = Number.isFinite(aomstatsIdNum) && aomstatsIdNum > 0;
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -512,13 +518,16 @@ export function FormRankPage() {
   const [row1v1, setRow1v1] = useState<ProfileStatRow | undefined>(undefined);
   const [gods, setGods] = useState<GodStatRow[]>([]);
   const [godsLoading, setGodsLoading] = useState(false);
+  const [pickModalOpen, setPickModalOpen] = useState(false);
+  const [pickProfiles, setPickProfiles] = useState<AomStatsSearchProfileRow[]>([]);
+  const [pickSelectedId, setPickSelectedId] = useState<number | null>(null);
 
   const rr = row1v1 ? parseElo(row1v1.elo) : undefined;
   const classification = rr != null ? getRankClassification(rr) : null;
 
-  /** Mesmo fluxo do form-retold: `?player=Nome` dispara a consulta ao abrir ou ao mudar a query. */
+  /** `?player=` e/ou `?aomstats_id=` — com ID a consulta é inequívoca. */
   useEffect(() => {
-    if (!playerParam) {
+    if (!playerParam && !hasAomstatsId) {
       setPlayer(null);
       setRow1v1(undefined);
       setGods([]);
@@ -538,7 +547,25 @@ export function FormRankPage() {
       setGods([]);
       setGodsLoading(false);
       try {
-        const data = await fetchPlayerStats(playerParam);
+        let data: PlayerStatsResponse;
+        if (hasAomstatsId) {
+          data = await fetchPlayerStatsByProfileId(aomstatsIdNum);
+        } else {
+          try {
+            data = await fetchPlayerStats(playerParam);
+          } catch (amb) {
+            if (amb instanceof AmbiguousPlayerError) {
+              if (!cancelled) {
+                setPickProfiles(amb.profiles);
+                setPickSelectedId(null);
+                setPickModalOpen(true);
+                setLoading(false);
+              }
+              return;
+            }
+            throw amb;
+          }
+        }
         if (cancelled) return;
 
         const one = pickSup1v1Row(data.profileStats);
@@ -576,7 +603,23 @@ export function FormRankPage() {
       cancelled = true;
       setGodsLoading(false);
     };
-  }, [playerParam]);
+  }, [playerParam, aomstatsIdParam, hasAomstatsId, aomstatsIdNum]);
+
+  function applyPickedProfile() {
+    if (pickSelectedId == null) return;
+    const row = pickProfiles.find((p) => p.profile_id === pickSelectedId);
+    if (!row) return;
+    setPickModalOpen(false);
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        next.set("player", (row.alias ?? playerParam).trim() || playerParam);
+        next.set("aomstats_id", String(row.profile_id));
+        return next;
+      },
+      { replace: true },
+    );
+  }
 
   return (
     <div className="space-y-8 pb-16">
@@ -594,10 +637,10 @@ export function FormRankPage() {
         }
       />
 
-      {!playerParam ? (
+      {!playerParam && !hasAomstatsId ? (
         <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-6 text-center shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-7">
           <p className="text-sm leading-relaxed text-zinc-400">
-            Nenhum jogador na URL. Volte ao guia de ranks, digite o nome no campo de consulta e use <span className="font-semibold text-zinc-200">Consultar Rank</span> para abrir esta página com os dados.
+            Nenhum jogador na URL. Volte ao guia de ranks, digite o nome e use <span className="font-semibold text-zinc-200">Consultar Rank</span> — com vários resultados escolha o perfil no AoM Stats. Opcionalmente pode usar <span className="font-mono text-zinc-300">?aomstats_id=</span> para um perfil específico.
           </p>
           <Link
             to="/rank"
@@ -613,7 +656,11 @@ export function FormRankPage() {
             aria-hidden
           />
           <p className="mt-4 text-sm text-zinc-400">
-            Carregando dados de <span className="font-medium text-zinc-200">{playerParam}</span>…
+            Carregando dados de{" "}
+            <span className="font-medium text-zinc-200">
+              {playerParam || (hasAomstatsId ? `perfil #${aomstatsIdNum}` : "…")}
+            </span>
+            …
           </p>
         </div>
       ) : error && !(player && row1v1 && classification && rr != null) ? (
@@ -672,6 +719,69 @@ export function FormRankPage() {
           </section>
         </div>
       ) : null}
+
+      <ModalApp
+        open={pickModalOpen}
+        onClose={() => {
+          setPickModalOpen(false);
+          setPickProfiles([]);
+          setPickSelectedId(null);
+        }}
+        title="Qual jogador deseja consultar?"
+        description="Vários perfis no AoM Stats correspondem a essa pesquisa. Selecione o jogador correto para carregar o RR e as estatísticas."
+        className="max-w-lg"
+      >
+        <ul className="max-h-[min(50vh,22rem)] space-y-2 overflow-y-auto pr-0.5" role="list">
+          {pickProfiles.map((p) => {
+            const active = pickSelectedId === p.profile_id;
+            return (
+              <li key={p.profile_id}>
+                <button
+                  type="button"
+                  onClick={() => setPickSelectedId(p.profile_id)}
+                  className={cn(
+                    "flex w-full items-center gap-3 rounded-xl border p-3 text-left transition",
+                    "border-zinc-600/80 bg-zinc-900/60 hover:border-amber-500/40",
+                    active && "border-amber-500/60 ring-2 ring-amber-500/25",
+                  )}
+                >
+                  {p.avatar_link ? (
+                    <img src={p.avatar_link} alt="" className="h-11 w-11 shrink-0 rounded-full object-cover" width={44} height={44} />
+                  ) : (
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-sm text-zinc-500">?</div>
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <div className="text-sm text-zinc-200">
+                      {(p.clan_name ?? "").trim() ? (
+                        <span className="text-amber-200/90">[{(p.clan_name ?? "").trim()}] </span>
+                      ) : null}
+                      <span className="font-medium">{p.alias || p.profile_id}</span>
+                    </div>
+                    <div className="font-mono text-xs text-zinc-500">ID {p.profile_id}</div>
+                  </div>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <button
+            type="button"
+            disabled={pickSelectedId == null}
+            onClick={applyPickedProfile}
+            className="rounded-xl bg-amber-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            Continuar com este perfil
+          </button>
+          <Link
+            to="/rank"
+            className="inline-flex items-center rounded-xl border border-aom-border bg-zinc-900/80 px-4 py-2.5 text-sm font-medium text-zinc-300 transition hover:border-amber-500/35 hover:text-amber-100"
+            onClick={() => setPickModalOpen(false)}
+          >
+            Voltar ao guia
+          </Link>
+        </div>
+      </ModalApp>
     </div>
   );
 }
