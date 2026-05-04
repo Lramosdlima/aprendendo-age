@@ -63,30 +63,51 @@ function StatSubCard({
   title,
   value,
   sub,
+  /** Grelha estreita (cards de deus em 3 colunas no desktop). */
+  tight,
 }: {
   tierId: RankTierId;
   title: string;
   value: string;
   sub?: string;
+  tight?: boolean;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   return (
     <div
       className={cn(
-        "flex min-w-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/55 px-4 py-4 text-center shadow-inner shadow-black/40 backdrop-blur-sm ring-2 ring-inset sm:px-5 sm:py-5",
+        "box-border flex min-h-0 min-w-0 flex-col items-center justify-center rounded-2xl border border-aom-border/50 bg-zinc-950/55 text-center shadow-inner shadow-black/40 backdrop-blur-sm ring-inset",
         theme.stepRing,
+        /* AJUSTE MANUAL (padding dos mini-stats): altere px-/py- abaixo. */
+        tight ? "ring-1 px-3.5 py-4 sm:px-4 sm:py-4" : "ring-2 px-4 py-4 sm:px-5 sm:py-5",
       )}
     >
-      <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">{title}</span>
       <span
         className={cn(
-          "mt-2 block w-full min-w-0 px-2.5 text-base font-semibold tabular-nums tracking-tight sm:px-3 sm:text-lg md:text-xl",
+          "max-w-full shrink-0 font-medium uppercase tracking-[0.18em] text-zinc-500",
+          tight ? "text-[10px] leading-tight sm:text-[10px]" : "text-[10px] tracking-[0.2em]",
+        )}
+      >
+        {title}
+      </span>
+      <span
+        className={cn(
+          /* RR / WR / números: nunca partir ao meio (evita "148" + "8"). Sem break-words aqui. */
+          "mt-2 block w-full max-w-full text-center font-semibold tabular-nums leading-none tracking-tight whitespace-nowrap",
+          tight
+            ? /* AJUSTE MANUAL (tamanho do número nos deuses): altere text-[11px] / sm:text-xs. */
+              "px-1 text-[11px] sm:px-2 sm:text-xs md:text-[0.8125rem]"
+            : "min-w-0 px-2.5 text-base sm:px-3 sm:text-lg md:text-xl",
           theme.stepAccent,
         )}
       >
         {value}
       </span>
-      {sub ? <span className="mt-1 font-mono text-[11px] text-zinc-500">{sub}</span> : null}
+      {sub ? (
+        <span className="mt-1.5 max-w-full shrink-0 px-2 text-center font-mono text-[10px] leading-snug text-zinc-500 sm:text-[11px]">
+          {sub}
+        </span>
+      ) : null}
     </div>
   );
 }
@@ -225,15 +246,15 @@ function PlayerHero({
 
         <p className="mt-2 text-center text-[11px] text-zinc-500">Subcategoria atual: {classification.subcategoryLabel}</p>
 
-        <div className="mt-10 w-full">
+        <div className="mt-10 w-full min-w-0">
           <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
           <p className="mb-5 text-center text-[11px] text-zinc-600">Dados da fila Sup 1v1 no AoM Stats.</p>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+          <div className="grid min-w-0 grid-cols-1 gap-3 sm:gap-4 sm:[grid-template-columns:repeat(3,minmax(0,1fr))]">
             <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
             <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
             <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
           </div>
-          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="mt-3 grid min-w-0 grid-cols-1 gap-3 sm:[grid-template-columns:repeat(2,minmax(0,1fr))]">
             <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
             {row1v1.rank ? (
               <StatSubCard tierId={classification.tierId} title="Rank (leaderboard)" value={row1v1.rank} sub="Posição global" />
@@ -274,10 +295,14 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
 
   return (
     <AchievementShell tierId={cls.tierId} className="h-full">
-      <div className="flex flex-col items-center px-4 pb-8 pt-7 sm:px-5 sm:pb-9 sm:pt-8">
+      <div className="flex min-w-0 flex-col items-center px-4 pb-8 pt-7 sm:px-5 sm:pb-9 sm:pt-8">
         <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">Deus · Sup 1v1</p>
 
-        <div className="relative mx-auto aspect-square w-[8.25rem] sm:w-36">
+        {/*
+          AJUSTE MANUAL — tamanho do ícone da ERA (anel exterior):
+          ↓ largura/altura do quadrado que contém o PNG da era (ex.: subir para sm:w-40).
+        */}
+        <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.0rem]">
           <div
             className={cn("pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl", theme.iconBlurClass)}
             aria-hidden
@@ -291,10 +316,14 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
               height={132}
             />
           ) : null}
+          {/*
+            AJUSTE MANUAL — tamanho do RETRATO do deus (círculo interior):
+            ↓ h-[…rem] w-[…rem] e sm:h-… sm:w-… (cerca de 70–75% do lado do quadrado da era costuma ficar bem).
+          */}
           <div className="absolute inset-0 z-[2] flex items-center justify-center">
             <div
               className={cn(
-                "h-[4.75rem] w-[4.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-20 sm:w-20",
+                "h-[5.75rem] w-[5.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-24 sm:w-24",
                 theme.stepRing,
               )}
             >
@@ -322,12 +351,17 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
         </p>
         <p className="mt-1 text-center text-xs text-zinc-500">({cls.subcategoryLabel})</p>
 
-        <div className="mt-6 w-full">
+        <div className="mt-6 w-full min-w-0">
           <p className="mb-3 text-center text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
-          <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
-            <StatSubCard tierId={cls.tierId} title="RR" value={String(god.elo)} />
-            <StatSubCard tierId={cls.tierId} title="WR" value={god.winRate} />
-            <StatSubCard tierId={cls.tierId} title="Jogos" value={String(god.games)} />
+          {/*
+            AJUSTE MANUAL — layout RR/WR/Jogos:
+            - Abaixo do breakpoint `sm`: 1 coluna (cada stat em linha própria = mais largura).
+            - A partir de `sm`: 3 colunas. Ajuste `gap-*` ou troque `repeat(3,…)` se quiser.
+          */}
+          <div className="grid w-full min-w-0 grid-cols-1 gap-2.5 sm:grid-cols-[repeat(3,minmax(0,1fr))] sm:gap-3">
+            <StatSubCard tight tierId={cls.tierId} title="RR" value={String(god.elo)} />
+            <StatSubCard tight tierId={cls.tierId} title="WR" value={god.winRate} />
+            <StatSubCard tight tierId={cls.tierId} title="Jogos" value={String(god.games)} />
           </div>
         </div>
       </div>
