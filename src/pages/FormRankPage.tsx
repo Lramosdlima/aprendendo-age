@@ -1,5 +1,5 @@
-import { type FormEvent, type ReactNode, useState } from "react";
-import { Link } from "react-router-dom";
+import { type FormEvent, type ReactNode, useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
@@ -18,6 +18,19 @@ import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 const GRID_SCRIM =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M40 0L40 80M0 40L80 40'/%3E%3C/g%3E%3C/svg%3E\")";
+
+/** Retratos em `public/assets/rank` — só FormRankPage (título do perfil + moldura dos deuses); Classificação continua com tokens de eras. */
+const FORM_RANK_PORTRAIT: Record<RankTierId, string> = {
+  bronze: "/assets/rank/Portrait_Archaic.png",
+  prata: "/assets/rank/Portrait_Classical.png",
+  ouro: "/assets/rank/Portrait_Heroic.png",
+  esmeralda: "/assets/rank/Portrait_Mythic.png",
+  diamante: "/assets/rank/Portrait_Wonder.png",
+};
+
+function getFormRankPortraitPath(tierId: RankTierId): string {
+  return FORM_RANK_PORTRAIT[tierId];
+}
 
 function HintBadge({ label }: { label: string }) {
   return (
@@ -164,16 +177,19 @@ function splitCategoryLabel(categoryLabel: string): { rank: string; era: string 
 function MolduraAgeAvatar({
   tierId,
   ageToken,
+  /** Se definido (ex.: `/assets/rank/Portrait_*.png`), substitui o ícone de era dos tokens Notion só neste componente. */
+  frameImageSrc,
   portraitUrl,
   emptyFallback,
 }: {
   tierId: RankTierId;
   ageToken: string;
+  frameImageSrc?: string;
   portraitUrl: string | null | undefined;
   emptyFallback: ReactNode;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
-  const ageSrc = getTokenAssetUrl(ageToken);
+  const ageSrc = frameImageSrc?.trim() ? frameImageSrc : getTokenAssetUrl(ageToken);
   return (
     <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.75rem] md:w-[10rem]">
       <div
@@ -249,14 +265,23 @@ function PlayerHero({
           innerAvatar
         )}
 
-        <h2 className="mt-8 text-center font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
-          <span className={theme.titleRankClass}>{rankWord}</span>
-          {eraWord ? (
-            <>
-              <span className="text-zinc-500"> | </span>
-              <span className="text-zinc-200">{eraWord}</span>
-            </>
-          ) : null}
+        <h2 className="mt-8 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-center font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
+          <img
+            src={getFormRankPortraitPath(classification.tierId)}
+            alt=""
+            className="h-9 w-9 shrink-0 object-contain opacity-95 drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)] sm:h-10 sm:w-10 md:h-11 md:w-11"
+            width={44}
+            height={44}
+          />
+          <span className="min-w-0">
+            <span className={theme.titleRankClass}>{rankWord}</span>
+            {eraWord ? (
+              <>
+                <span className="text-zinc-500"> | </span>
+                <span className="text-zinc-200">{eraWord}</span>
+              </>
+            ) : null}
+          </span>
         </h2>
 
         <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-center">
@@ -327,6 +352,7 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
         <MolduraAgeAvatar
           tierId={cls.tierId}
           ageToken={cls.ageToken}
+          frameImageSrc={getFormRankPortraitPath(cls.tierId)}
           portraitUrl={portrait}
           emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>}
         />
@@ -366,6 +392,9 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
 
 export function FormRankPage() {
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const playerParam = searchParams.get("player")?.trim() ?? "";
+
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -376,7 +405,63 @@ export function FormRankPage() {
   const rr = row1v1 ? parseElo(row1v1.elo) : undefined;
   const classification = rr != null ? getRankClassification(rr) : null;
 
-  async function onSubmit(e: FormEvent) {
+  /** Mesmo fluxo do form-retold: `?player=Nome` dispara a consulta ao abrir ou ao mudar a query. */
+  useEffect(() => {
+    if (!playerParam) {
+      setPlayer(null);
+      setRow1v1(undefined);
+      setGods([]);
+      setError(null);
+      setLoading(false);
+      return;
+    }
+
+    setName(playerParam);
+    let cancelled = false;
+
+    void (async () => {
+      setError(null);
+      setLoading(true);
+      setPlayer(null);
+      setRow1v1(undefined);
+      setGods([]);
+      try {
+        const data = await fetchPlayerStats(playerParam);
+        if (cancelled) return;
+
+        const one = pickSup1v1Row(data.profileStats);
+        if (!one) {
+          setError("Resposta sem estatísticas de modo.");
+          return;
+        }
+        const eloNum = parseElo(one.elo);
+        if (eloNum == null) {
+          setError(`Dados de ${data.profileName} carregados, mas o RR de Sup 1v1 não foi encontrado.`);
+          setPlayer(data);
+          return;
+        }
+        if (cancelled) return;
+        setPlayer(data);
+        setRow1v1(one);
+        try {
+          const g = await fetchGodStats(data.profileId);
+          if (!cancelled) setGods(g.slice(0, 3));
+        } catch {
+          if (!cancelled) setGods([]);
+        }
+      } catch (err) {
+        if (!cancelled) setError(err instanceof Error ? err.message : "Falha ao buscar os dados.");
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [playerParam]);
+
+  function onSubmit(e: FormEvent) {
     e.preventDefault();
     const q = name.trim();
     if (!q) {
@@ -384,36 +469,7 @@ export function FormRankPage() {
       return;
     }
     setError(null);
-    setLoading(true);
-    setPlayer(null);
-    setRow1v1(undefined);
-    setGods([]);
-    try {
-      const data = await fetchPlayerStats(q);
-      const one = pickSup1v1Row(data.profileStats);
-      if (!one) {
-        setError("Resposta sem estatísticas de modo.");
-        return;
-      }
-      const eloNum = parseElo(one.elo);
-      if (eloNum == null) {
-        setError(`Dados de ${data.profileName} carregados, mas o RR de Sup 1v1 não foi encontrado.`);
-        setPlayer(data);
-        return;
-      }
-      setPlayer(data);
-      setRow1v1(one);
-      try {
-        const g = await fetchGodStats(data.profileId);
-        setGods(g.slice(0, 3));
-      } catch {
-        setGods([]);
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Falha ao buscar os dados.");
-    } finally {
-      setLoading(false);
-    }
+    setSearchParams({ player: q });
   }
 
   return (
