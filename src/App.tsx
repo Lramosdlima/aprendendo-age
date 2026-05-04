@@ -7,6 +7,7 @@ import { AldeaoComparePage } from "@/pages/AldeaoComparePage";
 import { AldeaoDetailPage } from "@/pages/AldeaoDetailPage";
 import { AldeoesPage } from "@/pages/AldeoesPage";
 import { AstecasPage } from "@/pages/AstecasPage";
+import { ClansPage } from "@/pages/ClansPage";
 import { ConstrucaoDetailPage } from "@/pages/ConstrucaoDetailPage";
 import { ConstrucoesPage } from "@/pages/ConstrucoesPage";
 import { DeusDetailPage } from "@/pages/DeusDetailPage";
@@ -72,6 +73,7 @@ export default function App() {
           <Route path="admin/novo-start" element={<SecretStartBuilderPage />} />
           <Route path="rank" element={<RankPage />} />
           <Route path="rank/form" element={<FormRankPage />} />
+          <Route path="clans" element={<ClansPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
           <Route
             path="trilha-de-aprendizado/tipos-unidades-multiplicadores"

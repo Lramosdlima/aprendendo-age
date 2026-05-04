@@ -41,6 +41,8 @@ const nav: NavItem[] = [
   { to: "/mapas", label: "Mapas" },
   { to: "/tecnologias", label: "Tecnologias" },
   { to: "/rank", label: "Rank (RR)", navNovo: true , match: (p) => p === "/rank" || p.startsWith("/rank/") },
+  // TODO: Ainda está em teste o CLAN
+  // { to: "/clans", label: "Clãs" },
 ];
 
 function navClass(active: boolean) {
