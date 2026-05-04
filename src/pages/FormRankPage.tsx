@@ -65,12 +65,15 @@ function StatSubCard({
   sub,
   /** Grelha estreita (cards de deus em 3 colunas no desktop). */
   tight,
+  /** WR costuma ser mais largo (ex.: 100.00%) — fonte um pouco menor + tracking mais apertado. */
+  wrTight,
 }: {
   tierId: RankTierId;
   title: string;
   value: string;
   sub?: string;
   tight?: boolean;
+  wrTight?: boolean;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   return (
@@ -79,7 +82,7 @@ function StatSubCard({
         "box-border flex min-h-0 min-w-0 flex-col items-center justify-center rounded-2xl border border-aom-border/50 bg-zinc-950/55 text-center shadow-inner shadow-black/40 backdrop-blur-sm ring-inset",
         theme.stepRing,
         /* AJUSTE MANUAL (padding dos mini-stats): altere px-/py- abaixo. */
-        tight ? "ring-1 px-3.5 py-4 sm:px-4 sm:py-4" : "ring-2 px-4 py-4 sm:px-5 sm:py-5",
+        tight ? "ring-1 px-2.5 py-3.5 sm:px-3 sm:py-3.5" : "ring-2 px-4 py-4 sm:px-5 sm:py-5",
       )}
     >
       <span
@@ -92,11 +95,14 @@ function StatSubCard({
       </span>
       <span
         className={cn(
-          /* RR / WR / números: nunca partir ao meio (evita "148" + "8"). Sem break-words aqui. */
-          "mt-2 block w-full max-w-full text-center font-semibold tabular-nums leading-none tracking-tight whitespace-nowrap",
+          /* RR / WR / números: uma linha; não usar break-words (partia "1488"). */
+          "mt-2 block w-full min-w-0 max-w-full text-center font-semibold tabular-nums leading-none whitespace-nowrap",
           tight
-            ? /* AJUSTE MANUAL (tamanho do número nos deuses): altere text-[11px] / sm:text-xs. */
-              "px-1 text-[11px] sm:px-2 sm:text-xs md:text-[0.8125rem]"
+            ? wrTight
+              ? /* WR: mais compacto para caber em colunas estreitas */
+                "px-0.5 text-[10px] tracking-tighter sm:px-1 sm:text-[11px] md:text-xs"
+              : /* AJUSTE MANUAL (tamanho RR/Jogos nos deuses) */
+                "px-1 text-[11px] tracking-tight sm:px-1.5 sm:text-xs md:text-sm"
             : "min-w-0 px-2.5 text-base sm:px-3 sm:text-lg md:text-xl",
           theme.stepAccent,
         )}
@@ -295,14 +301,14 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
 
   return (
     <AchievementShell tierId={cls.tierId} className="h-full">
-      <div className="flex min-w-0 flex-col items-center px-4 pb-8 pt-7 sm:px-5 sm:pb-9 sm:pt-8">
+      <div className="flex w-full min-w-0 max-w-full flex-col items-center px-3 pb-8 pt-7 sm:px-4 sm:pb-9 sm:pt-8 md:px-5">
         <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">Deus · Sup 1v1</p>
 
         {/*
           AJUSTE MANUAL — tamanho do ícone da ERA (anel exterior):
           ↓ largura/altura do quadrado que contém o PNG da era (ex.: subir para sm:w-40).
         */}
-        <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.0rem]">
+        <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.75rem] md:w-[10rem]">
           <div
             className={cn("pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl", theme.iconBlurClass)}
             aria-hidden
@@ -355,12 +361,12 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
           <p className="mb-3 text-center text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
           {/*
             AJUSTE MANUAL — layout RR/WR/Jogos:
-            - Abaixo do breakpoint `sm`: 1 coluna (cada stat em linha própria = mais largura).
-            - A partir de `sm`: 3 colunas. Ajuste `gap-*` ou troque `repeat(3,…)` se quiser.
+            - Abaixo de sm: 1 coluna.
+            - sm+: 3 colunas iguais (mesma largura). WR usa tipografia mais compacta (wrTight) para caber a %.
           */}
-          <div className="grid w-full min-w-0 grid-cols-1 gap-2.5 sm:grid-cols-[repeat(3,minmax(0,1fr))] sm:gap-3">
+          <div className="grid w-full min-w-0 grid-cols-1 gap-2.5 sm:grid-cols-[repeat(3,minmax(0,1fr))] sm:gap-x-2.5 sm:gap-y-2 md:gap-x-3 md:gap-y-2.5">
             <StatSubCard tight tierId={cls.tierId} title="RR" value={String(god.elo)} />
-            <StatSubCard tight tierId={cls.tierId} title="WR" value={god.winRate} />
+            <StatSubCard tight wrTight tierId={cls.tierId} title="WR" value={god.winRate} />
             <StatSubCard tight tierId={cls.tierId} title="Jogos" value={String(god.games)} />
           </div>
         </div>
@@ -486,7 +492,7 @@ export function FormRankPage() {
             <PlayerHero player={player} row1v1={row1v1} rr={rr} classification={classification} />
           </section>
 
-          <section aria-labelledby="gods-heading" className="mx-auto max-w-4xl">
+          <section aria-labelledby="gods-heading" className="mx-auto w-full max-w-[min(100%,88rem)] px-2 sm:px-4 md:px-6">
             <p className="mb-2 text-center font-mono text-[10px] font-medium uppercase tracking-[0.28em] text-zinc-500">Progressão</p>
             <h3 id="gods-heading" className="text-center font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-zinc-100 sm:text-2xl">
               Principais deuses
@@ -497,7 +503,7 @@ export function FormRankPage() {
                 Nenhuma estatística de deuses encontrada.
               </p>
             ) : (
-              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5">
+              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5 md:gap-6 lg:gap-8">
                 {gods.map((g, i) => (
                   <div key={g.god} className="relative">
                     <p className="mb-2 text-center font-mono text-[9px] font-medium uppercase tracking-[0.35em] text-zinc-500">
