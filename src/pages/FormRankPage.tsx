@@ -32,6 +32,14 @@ function getFormRankPortraitPath(tierId: RankTierId): string {
   return FORM_RANK_PORTRAIT[tierId];
 }
 
+/** Classes em `index.css` — mesmo critério do form-retold (Ouro+). */
+function rankPortraitShineClass(tierId: RankTierId): string | undefined {
+  if (tierId === "ouro") return "shine-ouro";
+  if (tierId === "esmeralda") return "shine-esmeralda";
+  if (tierId === "diamante") return "shine-diamante";
+  return undefined;
+}
+
 /** GIF atrás da moldura + avatar só no tier Diamante (`public/assets/rank`). */
 const FORM_RANK_BORDA_CHAMAS = "/assets/rank/borda-chamas.gif";
 
@@ -216,7 +224,10 @@ function MolduraAgeAvatar({
         <img
           src={ageSrc}
           alt=""
-          className="absolute left-1/2 top-1/2 z-[2] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+          className={cn(
+            "absolute left-1/2 top-1/2 z-[2] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain",
+            rankPortraitShineClass(tierId) ?? "drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]",
+          )}
           width={160}
           height={160}
         />
@@ -296,7 +307,10 @@ function PlayerHero({
             <img
               src={getFormRankPortraitPath(classification.tierId)}
               alt=""
-              className="relative z-[1] h-9 w-9 object-contain opacity-95 drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)] sm:h-10 sm:w-10 md:h-11 md:w-11"
+              className={cn(
+                "relative z-[1] h-9 w-9 object-contain opacity-95 sm:h-10 sm:w-10 md:h-11 md:w-11",
+                rankPortraitShineClass(classification.tierId) ?? "drop-shadow-[0_6px_16px_rgba(0,0,0,0.45)]",
+              )}
               width={44}
               height={44}
             />

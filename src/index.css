@@ -301,3 +301,43 @@ body {
 .start-structured .highlight-gray {
   color: #9ca3af;
 }
+
+/* FormRankPage — brilho pulsante na moldura de rank (form-retold `shine-*` / `pulsar-*`) */
+@keyframes pulsar-ouro {
+  from {
+    filter: drop-shadow(0 0 6px #ffd700) drop-shadow(0 0 12px #ffa500);
+  }
+  to {
+    filter: drop-shadow(0 0 15px #ffd700) drop-shadow(0 0 25px #ffa500);
+  }
+}
+
+@keyframes pulsar-esmeralda {
+  from {
+    filter: drop-shadow(0 0 6px #50c878) drop-shadow(0 0 12px #2ecc71);
+  }
+  to {
+    filter: drop-shadow(0 0 15px #50c878) drop-shadow(0 0 25px #2ecc71);
+  }
+}
+
+@keyframes pulsar-diamante {
+  from {
+    filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 18px #00bfff);
+  }
+  to {
+    filter: drop-shadow(0 0 18px #00ffff) drop-shadow(0 0 30px #00bfff);
+  }
+}
+
+.shine-ouro {
+  animation: pulsar-ouro 1.5s ease-in-out infinite alternate;
+}
+
+.shine-esmeralda {
+  animation: pulsar-esmeralda 1.5s ease-in-out infinite alternate;
+}
+
+.shine-diamante {
+  animation: pulsar-diamante 1.2s ease-in-out infinite alternate;
+}
