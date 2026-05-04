@@ -1,6 +1,7 @@
-import { type ReactNode, useEffect, useState } from "react";
+import { Fragment, type ReactNode, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
+import { ModalApp } from "@/components/ui/ModalApp";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   fetchGodStats,
@@ -13,6 +14,7 @@ import {
 } from "@/lib/formRetoldApi";
 import { getGodPortraitUrl } from "@/lib/godIconFromName";
 import { cn } from "@/lib/cn";
+import { RANK_GUIDE_TIERS } from "@/lib/rankGuideTiers";
 import { type RankTierId, TIER_ACHIEVEMENT_THEME, getRankClassification } from "@/lib/rankClassification";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
@@ -42,17 +44,6 @@ function rankPortraitShineClass(tierId: RankTierId): string | undefined {
 
 /** GIF atrás da moldura + avatar só no tier Diamante (`public/assets/rank`). */
 const FORM_RANK_BORDA_CHAMAS = "/assets/rank/borda-chamas.gif";
-
-function HintBadge({ label }: { label: string }) {
-  return (
-    <span
-      className="inline-flex h-6 w-6 shrink-0 cursor-help items-center justify-center rounded-full border border-white/35 bg-white/5 text-[11px] font-semibold text-white/90"
-      title={label}
-    >
-      ?
-    </span>
-  );
-}
 
 function AchievementShell({
   tierId,
@@ -148,12 +139,14 @@ function CategorySubCard({
   label,
   value,
   hint,
+  onOpenRankGuide,
 }: {
   tierId: RankTierId;
   ageToken: string;
   label: string;
   value: string;
   hint: string;
+  onOpenRankGuide: () => void;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = getTokenAssetUrl(ageToken);
@@ -171,7 +164,63 @@ function CategorySubCard({
         <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">{label}</p>
         <p className="truncate text-sm font-semibold text-zinc-100">{value}</p>
       </div>
-      <HintBadge label={hint} />
+      <button
+        type="button"
+        onClick={onOpenRankGuide}
+        title={hint}
+        aria-label={`${hint}. Abrir resumo das divisões de RR.`}
+        className="inline-flex h-6 w-6 shrink-0 cursor-pointer items-center justify-center rounded-full border border-white/35 bg-white/5 text-[11px] font-semibold text-white/90 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500/30"
+      >
+        ?
+      </button>
+    </div>
+  );
+}
+
+/** Conteúdo do modal: mesma progressão que `TierAchievement` em `RankPage`. */
+function RankGuideModalContent() {
+  return (
+    <div className="overflow-x-auto pb-1">
+      <div className="flex min-w-0 items-stretch gap-0.5 sm:gap-1">
+        {RANK_GUIDE_TIERS.map((tier, i) => {
+          const iconSrc = getTokenAssetUrl(tier.token);
+          return (
+            <Fragment key={tier.id}>
+              <div className="flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/80 px-2 py-3 sm:w-[8.25rem] sm:px-2.5 md:w-[9rem] md:px-3">
+                {iconSrc ? (
+                  <img src={iconSrc} alt="" className="h-10 w-10 object-contain sm:h-11 sm:w-11" width={44} height={44} />
+                ) : (
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-dashed border-zinc-600 text-zinc-600 sm:h-11 sm:w-11">—</div>
+                )}
+                <p className={cn("mt-2 text-center font-[family-name:var(--font-display)] text-xs font-semibold leading-tight sm:text-[13px]", tier.titleClass)}>
+                  {tier.rankName}
+                  <span className="mt-0.5 block text-[10px] font-normal normal-case tracking-normal text-zinc-400 sm:text-[11px]">{tier.eraName}</span>
+                </p>
+                <p className="mt-1 text-center font-mono text-[9px] leading-tight text-zinc-500">{tier.rrBand}</p>
+                <ul className="mt-2.5 w-full space-y-1">
+                  {tier.steps.map((step) => (
+                    <li
+                      key={step.label}
+                      className={cn(
+                        "rounded-lg border border-aom-border/40 bg-black/25 px-1 py-1 text-center shadow-inner ring-1 ring-inset",
+                        tier.stepRing,
+                      )}
+                    >
+                      <span className={cn("block text-[10px] font-semibold leading-tight", tier.stepAccent)}>{step.label}</span>
+                      <span className="mt-0.5 block font-mono text-[9px] text-zinc-500">{step.rr} RR</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {i < RANK_GUIDE_TIERS.length - 1 ? (
+                <div className="flex shrink-0 items-center self-center px-0.5 text-zinc-600 sm:px-1" aria-hidden>
+                  <span className="text-base leading-none sm:text-lg">→</span>
+                </div>
+              ) : null}
+            </Fragment>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -261,6 +310,7 @@ function PlayerHero({
   rr: number;
   classification: ReturnType<typeof getRankClassification>;
 }) {
+  const [rankGuideOpen, setRankGuideOpen] = useState(false);
   const theme = TIER_ACHIEVEMENT_THEME[classification.tierId];
   const { rank: rankWord, era: eraWord } = splitCategoryLabel(classification.categoryLabel);
 
@@ -275,7 +325,8 @@ function PlayerHero({
   );
 
   return (
-    <AchievementShell tierId={classification.tierId} className="mx-auto max-w-xl">
+    <>
+      <AchievementShell tierId={classification.tierId} className="mx-auto max-w-xl">
       <div className="px-4 pb-10 pt-8 sm:px-8 sm:pb-12 sm:pt-10">
         <p className="mb-6 text-center font-mono text-[10px] font-medium uppercase tracking-[0.35em] text-white/85">Perfil · Sup 1v1</p>
 
@@ -363,6 +414,7 @@ function PlayerHero({
             label="Categoria"
             value={classification.categoryLabel}
             hint={classification.hintCategory}
+            onOpenRankGuide={() => setRankGuideOpen(true)}
           />
           <CategorySubCard
             tierId={classification.tierId}
@@ -370,10 +422,26 @@ function PlayerHero({
             label="Subcategoria"
             value={classification.subcategoryLabel}
             hint={classification.hintSub}
+            onOpenRankGuide={() => setRankGuideOpen(true)}
           />
         </div>
       </div>
     </AchievementShell>
+
+      <ModalApp
+        open={rankGuideOpen}
+        onClose={() => setRankGuideOpen(false)}
+        title="Divisões de ranque (RR)"
+        description={
+          <span>
+            Mesma referência do guia <strong className="text-zinc-200">Veja sua RR em Rank</strong>: progressão da esquerda para a direita, com ícone da era, nome da divisão, era alternativa e subdivisões com intervalo de RR.
+          </span>
+        }
+        className="max-w-[min(96vw,80rem)]"
+      >
+        <RankGuideModalContent />
+      </ModalApp>
+    </>
   );
 }
 
