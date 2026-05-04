@@ -4,8 +4,6 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { cn } from "@/lib/cn";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
-import { TrilhaCallout } from "./trilha-de-aprendizado/TrilhaCallout";
-
 type RankStep = { label: string; rr: string };
 
 type RankTier = {
@@ -23,9 +21,6 @@ type RankTier = {
   stepRing: string;
   stepAccent: string;
 };
-
-const AOMSTATS_PROFILES = "https://aomstats.io/profiles?s=";
-const FORM_RETOLD = "https://form-retold.vercel.app/";
 
 const TIERS: RankTier[] = [
   {
@@ -54,7 +49,7 @@ const TIERS: RankTier[] = [
     eraName: "Clássico",
     rrBand: "1000 – 1299 RR",
     playerShare: "≈ 36,7%",
-    narrative: ["Maior concentração ativa.", "Jogadores estáveis, mas ainda inconsistentes."],
+    narrative: ["Maior concentração ativa.", "Jogadores casuais, mas ainda inconsistentes."],
     steps: [
       { label: "Prata III", rr: "1000–1099" },
       { label: "Prata II", rr: "1100–1199" },
@@ -73,7 +68,7 @@ const TIERS: RankTier[] = [
     eraName: "Heróico",
     rrBand: "1300 – 1599 RR",
     playerShare: "≈ 11,7%",
-    narrative: ["Acima da média.", "Aqui o jogador já “joga bem”."],
+    narrative: ["Acima da média!", "Aqui o jogador já “joga bem”."],
     steps: [
       { label: "Ouro III", rr: "1300–1399" },
       { label: "Ouro II", rr: "1400–1499" },
@@ -92,7 +87,7 @@ const TIERS: RankTier[] = [
     eraName: "Mítico",
     rrBand: "1600 – 1799 RR",
     playerShare: "≈ 3,0%",
-    narrative: ["Jogadores fortes.", "Já começa a rarear bastante na distribuição."],
+    narrative: ["Jogadores fortes!", "Já começa a rarear bastante na distribuição."],
     steps: [
       { label: "Esmeralda III", rr: "1600–1699" },
       { label: "Esmeralda II", rr: "1700–1749" },
@@ -111,7 +106,7 @@ const TIERS: RankTier[] = [
     eraName: "Divino",
     rrBand: "1800 – +",
     playerShare: "≈ 1,7%",
-    narrative: ["Elite do jogo!", "A parte final representa os melhores ~10% dos jogadores — prestígio real."],
+    narrative: ["Elite do jogo!", "A parte final representa os melhores ~10% dos jogadores — prestígio real!"],
     steps: [
       { label: "Diamante III", rr: "1800–1899" },
       { label: "Diamante II", rr: "1900–1999" },
@@ -229,34 +224,22 @@ export function RankPage() {
         headerIconSrc={headerIcon}
         description={
           <>
-            Como ler sua pontuação ranqueada (RR) e onde cada divisão começa — no estilo das eras do jogo, em formato fácil de navegar.
+            Já se perguntou: Como que seria meu Elo baseado no Rank? Fizemos um sistema baseado na pontuação ranqueada (RR) com cada divisão no estilo das eras do jogo! Confira!
           </>
         }
       />
 
-      <p className="max-w-2xl text-sm leading-relaxed text-zinc-300 sm:text-[0.9375rem]">
-        Para ver o elo, acesse{" "}
-        <a
-          href={AOMSTATS_PROFILES}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="font-medium text-amber-400/95 underline decoration-amber-500/40 underline-offset-2 hover:text-amber-300 [word-break:break-all]"
-        >
-          aomstats.io/profiles?s=
-        </a>
-        . Ou, no jogo, abra seu perfil: o ranking aparece como{" "}
-        <strong className="text-zinc-100">Pontuação Ranqueada</strong>.
-      </p>
-
-      <TrilhaCallout variant="gray" icon={<span aria-hidden>✨</span>}>
-        <p>
-          <strong className="text-zinc-200">Bordas personalizadas:</strong> existe um sistema experimental para visualizar seu rank com bordas por progresso. Envie seus dados no formulário:{" "}
-          <a href={FORM_RETOLD} target="_blank" rel="noreferrer noopener" className="font-medium text-amber-300/95 underline-offset-2 hover:text-amber-200">
-            form-retold.vercel.app
-          </a>
-          .
+      <div className="flex flex-col items-stretch gap-3 rounded-2xl border border-aom-border/50 bg-zinc-900/40 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+        <p className="text-sm text-zinc-400 sm:max-w-md">
+          Consulte agora seu Elo de RR no estilo das Eras do Age of Mythology!
         </p>
-      </TrilhaCallout>
+        <Link
+          to="/rank/form"
+          className="inline-flex shrink-0 items-center justify-center rounded-xl bg-amber-500 px-5 py-2.5 text-sm font-semibold text-zinc-950 shadow-lg shadow-amber-900/25 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/35"
+        >
+          Consultar Rank
+        </Link>
+      </div>
 
       <nav
         aria-label="Atalhos para divisões"
@@ -307,14 +290,6 @@ export function RankPage() {
           <p>🔹 Diamante é pequeno e aspiracional.</p>
         </div>
       </section>
-
-      <p className="text-center text-xs text-zinc-600">
-        Conteúdo alinhado ao guia original da trilha. Voltar ao{" "}
-        <Link to="/trilha-de-aprendizado" className="text-amber-400/90 underline-offset-2 hover:text-amber-300">
-          início da trilha
-        </Link>
-        .
-      </p>
     </div>
   );
 }

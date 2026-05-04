@@ -30,7 +30,6 @@ const nav: NavItem[] = [
     label: "Trilha de Aprendizado",
     match: (p) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
   },
-  { to: "/rank", label: "Rank (RR)" },
   { to: "/panteoes", label: "Panteões" },
   { to: "/astecas", label: "Astecas", navNovo: true },
   { to: "/deuses", label: "Deuses" },
@@ -41,6 +40,7 @@ const nav: NavItem[] = [
   { to: "/aldeoes", label: "Aldeões" },
   { to: "/mapas", label: "Mapas" },
   { to: "/tecnologias", label: "Tecnologias" },
+  { to: "/rank", label: "Rank (RR)", navNovo: true , match: (p) => p === "/rank" || p.startsWith("/rank/") },
 ];
 
 function navClass(active: boolean) {
