@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { type FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { PageHeader } from "@/components/ui/PageHeader";
 import { cn } from "@/lib/cn";
@@ -216,6 +217,20 @@ function TierAchievement({ tier, index }: { tier: RankTier; index: number }) {
 
 export function RankPage() {
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
+  const navigate = useNavigate();
+  const [playerQuery, setPlayerQuery] = useState("");
+  const [formError, setFormError] = useState<string | null>(null);
+
+  function onConsultRank(e: FormEvent) {
+    e.preventDefault();
+    const q = playerQuery.trim();
+    if (!q) {
+      setFormError("Digite o nome do jogador (igual ao do jogo).");
+      return;
+    }
+    setFormError(null);
+    navigate({ pathname: "/rank/form", search: new URLSearchParams({ player: q }).toString() });
+  }
 
   return (
     <div className="space-y-10 pb-16">
@@ -229,16 +244,37 @@ export function RankPage() {
         }
       />
 
-      <div className="flex flex-col items-stretch gap-3 rounded-2xl border border-aom-border/50 bg-zinc-900/40 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
-        <p className="text-sm text-zinc-400 sm:max-w-md">
-          Consulte agora seu Elo de RR no estilo das Eras do Age of Mythology!
+      <div className="rounded-2xl border border-aom-border/50 bg-zinc-900/40 p-4 sm:p-5">
+        <p className="text-sm leading-relaxed text-zinc-400 sm:max-w-2xl">
+          Consulte agora seu Elo de RR no estilo das Eras do Age of Mythology! Digite o nome do jogador (idêntico ao do jogo) e abra a consulta no AoM Stats.
         </p>
-        <Link
-          to="/rank/form"
-          className="inline-flex shrink-0 items-center justify-center rounded-xl bg-amber-500 px-5 py-2.5 text-sm font-semibold text-zinc-950 shadow-lg shadow-amber-900/25 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/35"
-        >
-          Consultar Rank
-        </Link>
+        <form onSubmit={onConsultRank} className="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row sm:items-stretch sm:gap-3">
+          <label className="min-w-0 flex-1">
+            <span className="sr-only">Nome do jogador</span>
+            <input
+              type="text"
+              value={playerQuery}
+              onChange={(ev) => {
+                setPlayerQuery(ev.target.value);
+                if (formError) setFormError(null);
+              }}
+              placeholder="Ex: Mosca_"
+              autoComplete="off"
+              className="w-full rounded-xl border border-zinc-600/90 bg-black/35 px-4 py-3.5 text-sm text-white placeholder:text-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-amber-500/25"
+            />
+          </label>
+          <button
+            type="submit"
+            className="inline-flex shrink-0 items-center justify-center rounded-xl bg-amber-500 px-5 py-3.5 text-sm font-bold text-zinc-950 shadow-lg shadow-amber-900/25 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500/35 sm:min-w-[10.5rem]"
+          >
+            Consultar Rank
+          </button>
+        </form>
+        {formError ? (
+          <p className="mt-3 rounded-xl border border-red-900/45 bg-red-950/35 px-3 py-2 text-center text-sm text-red-200" role="alert">
+            {formError}
+          </p>
+        ) : null}
       </div>
 
       <nav

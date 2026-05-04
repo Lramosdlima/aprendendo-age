@@ -1,4 +1,4 @@
-import { type FormEvent, type ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -392,10 +392,9 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
 
 export function FormRankPage() {
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const playerParam = searchParams.get("player")?.trim() ?? "";
 
-  const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [player, setPlayer] = useState<PlayerStatsResponse | null>(null);
@@ -416,7 +415,6 @@ export function FormRankPage() {
       return;
     }
 
-    setName(playerParam);
     let cancelled = false;
 
     void (async () => {
@@ -461,23 +459,12 @@ export function FormRankPage() {
     };
   }, [playerParam]);
 
-  function onSubmit(e: FormEvent) {
-    e.preventDefault();
-    const q = name.trim();
-    if (!q) {
-      setError("Digite o nome do jogador (igual ao do jogo).");
-      return;
-    }
-    setError(null);
-    setSearchParams({ player: q });
-  }
-
   return (
     <div className="space-y-8 pb-16">
       <PageHeader
         title="Classificação por RR"
         headerIconSrc={headerIcon}
-        description="Consulta direta ao AoM Stats — mesmo backend do formulário Retold."
+        description="Consulta direta ao AoM Stats — use o formulário no guia de ranks para informar o jogador."
         actions={
           <Link
             to="/rank"
@@ -488,45 +475,41 @@ export function FormRankPage() {
         }
       />
 
-      <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-6 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-7">
-        <div className="relative z-[1]">
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">AOM STATS</p>
-          <p className="mt-2 text-center text-sm leading-relaxed text-zinc-400">Digite o nome do jogador (idêntico ao do jogo).</p>
-          <form onSubmit={onSubmit} className={cn("mt-6 space-y-4", loading && "pointer-events-none opacity-70")}>
-            <label className="block">
-              <span className="sr-only">Nome do jogador</span>
-              <input
-                type="text"
-                value={name}
-                onChange={(ev) => setName(ev.target.value)}
-                disabled={loading}
-                placeholder="Ex: Mosca_"
-                autoComplete="off"
-                className="w-full rounded-xl border border-zinc-600/90 bg-black/35 px-4 py-3.5 text-sm text-white placeholder:text-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-amber-500/25 disabled:cursor-not-allowed"
-              />
-            </label>
-            <button
-              type="submit"
-              disabled={loading}
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 px-4 py-3.5 text-sm font-bold text-black shadow-md shadow-black/20 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-60"
-            >
-              {loading ? (
-                <>
-                  <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-black/20 border-t-black" aria-hidden />
-                  Carregando…
-                </>
-              ) : (
-                "Aplicar"
-              )}
-            </button>
-          </form>
-          {error ? (
-            <p className="mt-4 rounded-xl border border-red-900/45 bg-red-950/35 px-3 py-2 text-center text-sm text-red-200" role="alert">
-              {error}
-            </p>
-          ) : null}
+      {!playerParam ? (
+        <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-6 text-center shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-7">
+          <p className="text-sm leading-relaxed text-zinc-400">
+            Nenhum jogador na URL. Volte ao guia de ranks, digite o nome no campo de consulta e use <span className="font-semibold text-zinc-200">Consultar Rank</span> para abrir esta página com os dados.
+          </p>
+          <Link
+            to="/rank"
+            className="mt-5 inline-flex items-center justify-center rounded-xl border border-aom-border bg-zinc-900/80 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-amber-500/35 hover:text-amber-100"
+          >
+            ← Guia de ranks
+          </Link>
         </div>
-      </div>
+      ) : loading && !(player && row1v1 && classification && rr != null) ? (
+        <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-8 text-center shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-10">
+          <span
+            className="inline-block h-8 w-8 animate-spin rounded-full border-2 border-amber-500/25 border-t-amber-500"
+            aria-hidden
+          />
+          <p className="mt-4 text-sm text-zinc-400">
+            Carregando dados de <span className="font-medium text-zinc-200">{playerParam}</span>…
+          </p>
+        </div>
+      ) : error && !(player && row1v1 && classification && rr != null) ? (
+        <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-6 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-7">
+          <p className="rounded-xl border border-red-900/45 bg-red-950/35 px-3 py-2 text-center text-sm text-red-200" role="alert">
+            {error}
+          </p>
+          <Link
+            to="/rank"
+            className="mt-5 flex w-full items-center justify-center rounded-xl border border-aom-border bg-zinc-900/80 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-amber-500/35 hover:text-amber-100"
+          >
+            ← Voltar e tentar de novo
+          </Link>
+        </div>
+      ) : null}
 
       {player && row1v1 && classification && rr != null ? (
         <div className="space-y-12">
