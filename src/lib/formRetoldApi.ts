@@ -1,5 +1,25 @@
 const FORM_RETOLD_ORIGIN = import.meta.env.VITE_FORM_RETOLD_ORIGIN ?? "https://form-retold.vercel.app";
 
+// Chave de API do app "aprendendo-age-web" registrada em
+// `form-retold/backend/authorizedApps.json`. A protecao real nao vem da chave
+// estar escondida (ela vai parar no bundle), mas sim do servidor validar o
+// `Origin` da requisicao contra a lista permitida desse app. Para rotacionar:
+// no repositorio `form-retold` rodar `npm run keys -- rotate aprendendo-age-web`
+// e atualizar `VITE_FORM_RETOLD_API_KEY` no Vercel/`.env.local`.
+const FORM_RETOLD_API_KEY =
+  (import.meta.env.VITE_FORM_RETOLD_API_KEY as string | undefined) ??
+  "aprendendoage_01eb7e465ba25afa7a9740082306ba9db82d5cd6529b4e59";
+
+function buildHeaders(extra?: HeadersInit): Headers {
+  const headers = new Headers(extra);
+  if (FORM_RETOLD_API_KEY) headers.set("X-API-Key", FORM_RETOLD_API_KEY);
+  return headers;
+}
+
+function apiFetch(input: string, init?: RequestInit): Promise<Response> {
+  return fetch(input, { ...init, headers: buildHeaders(init?.headers) });
+}
+
 export type ProfileStatRow = {
   mode: string;
   rank: string;
@@ -66,7 +86,7 @@ function godsUrl(profileId: number) {
 }
 
 export async function searchPlayersByName(playerName: string): Promise<AomStatsSearchProfileRow[]> {
-  const res = await fetch(searchPlayersUrl(playerName));
+  const res = await apiFetch(searchPlayersUrl(playerName));
   const body: unknown = await res.json().catch(() => null);
   if (!res.ok) {
     const msg =
@@ -82,7 +102,7 @@ export async function searchPlayersByName(playerName: string): Promise<AomStatsS
 }
 
 export async function fetchPlayerStatsByProfileId(profileId: number): Promise<PlayerStatsResponse> {
-  const res = await fetch(statsByIdUrl(profileId));
+  const res = await apiFetch(statsByIdUrl(profileId));
   const body: unknown = await res.json().catch(() => null);
   if (!res.ok) {
     const msg =
@@ -95,7 +115,7 @@ export async function fetchPlayerStatsByProfileId(profileId: number): Promise<Pl
 }
 
 export async function fetchPlayerStats(playerName: string): Promise<PlayerStatsResponse> {
-  const res = await fetch(statsUrl(playerName));
+  const res = await apiFetch(statsUrl(playerName));
   const body: unknown = await res.json().catch(() => null);
   if (res.status === 409 && body && typeof body === "object" && "profiles" in body) {
     const raw = (body as { profiles: unknown }).profiles;
@@ -114,7 +134,7 @@ export async function fetchPlayerStats(playerName: string): Promise<PlayerStatsR
 }
 
 export async function fetchGodStats(profileId: number): Promise<GodStatRow[]> {
-  const res = await fetch(godsUrl(profileId));
+  const res = await apiFetch(godsUrl(profileId));
   const body: unknown = await res.json().catch(() => null);
   if (!res.ok) {
     return [];
