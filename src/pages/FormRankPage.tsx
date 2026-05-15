@@ -18,7 +18,14 @@ import {
 import { getGodPortraitUrl } from "@/lib/godIconFromName";
 import { cn } from "@/lib/cn";
 import { RANK_GUIDE_TIERS } from "@/lib/rankGuideTiers";
-import { type RankTierId, TIER_ACHIEVEMENT_THEME, getRankClassification } from "@/lib/rankClassification";
+import {
+  type RankRomanStep,
+  type RankTierId,
+  TIER_ACHIEVEMENT_THEME,
+  getRankClassification,
+  rankRomanMedallionClass,
+  rankRomanStepFromRr,
+} from "@/lib/rankClassification";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 const GRID_SCRIM =
@@ -244,18 +251,21 @@ function MolduraAgeAvatar({
   frameImageSrc,
   portraitUrl,
   emptyFallback,
+  /** Selo romano na base da moldura (centro), alinhado ao overlay HUD Meta. */
+  romanBadge,
 }: {
   tierId: RankTierId;
   ageToken: string;
   frameImageSrc?: string;
   portraitUrl: string | null | undefined;
   emptyFallback: ReactNode;
+  romanBadge?: { step: RankRomanStep; medallionClass: string };
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = frameImageSrc?.trim() ? frameImageSrc : getTokenAssetUrl(ageToken);
   const showFlames = tierId === "diamante";
   return (
-    <div className="relative mx-auto aspect-square w-[9rem] sm:w-[9.75rem] md:w-[10rem]">
+    <div className="relative mx-auto aspect-square w-[9rem] overflow-visible sm:w-[9.75rem] md:w-[10rem]">
       <div
         className={cn(
           "pointer-events-none absolute left-1/2 top-1/2 z-0 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl",
@@ -298,6 +308,25 @@ function MolduraAgeAvatar({
           )}
         </div>
       </div>
+      {romanBadge ? (
+        <div
+          className={cn(
+            "pointer-events-none absolute bottom-0 left-1/2 z-[5] flex h-7 min-w-[2.55rem] -translate-x-1/2 translate-y-[18%] items-center justify-center rounded-lg border-[3px] px-2.5 py-0 shadow-[0_3px_10px_rgba(0,0,0,0.78),inset_0_1px_0_rgba(255,255,255,0.14)] ring-2 ring-black/55 sm:h-8 sm:min-w-[2.95rem] sm:translate-y-[16%] sm:px-3 sm:rounded-xl md:h-9 md:min-w-[3.35rem] md:px-3.5 md:border-[3.5px]",
+            romanBadge.medallionClass,
+          )}
+          title={`Subdivisão do rank: ${romanBadge.step}`}
+          aria-hidden
+        >
+          <span
+            className={cn(
+              "font-[family-name:var(--font-display)] text-sm font-semibold leading-none tracking-tight sm:text-[15px] md:text-lg",
+              "[text-shadow:0_0_0.5px_rgba(0,0,0,0.95),0_1px_0_rgba(255,255,255,0.28)]",
+            )}
+          >
+            {romanBadge.step}
+          </span>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -316,6 +345,8 @@ function PlayerHero({
   const [rankGuideOpen, setRankGuideOpen] = useState(false);
   const theme = TIER_ACHIEVEMENT_THEME[classification.tierId];
   const { rank: rankWord, era: eraWord } = splitCategoryLabel(classification.categoryLabel);
+  const romanStep = rankRomanStepFromRr(rr);
+  const romanMedallion = rankRomanMedallionClass(classification.tierId);
 
   const innerAvatar = (
     <MolduraAgeAvatar
@@ -324,6 +355,7 @@ function PlayerHero({
       frameImageSrc={getFormRankPortraitPath(classification.tierId)}
       portraitUrl={player.playerAvatarUrl}
       emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-2xl text-zinc-500">?</div>}
+      romanBadge={{ step: romanStep, medallionClass: romanMedallion }}
     />
   );
 
@@ -457,6 +489,8 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
   const portrait = getGodPortraitUrl(god.god);
   const { rank: rankWord, era: eraWord } = splitCategoryLabel(cls.categoryLabel);
+  const godRomanStep = rankRomanStepFromRr(god.elo);
+  const godRomanMedallion = rankRomanMedallionClass(cls.tierId);
 
   return (
     <AchievementShell tierId={cls.tierId} className="h-full">
@@ -469,6 +503,7 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
           frameImageSrc={getFormRankPortraitPath(cls.tierId)}
           portraitUrl={portrait}
           emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>}
+          romanBadge={{ step: godRomanStep, medallionClass: godRomanMedallion }}
         />
 
         <h3 className="mt-5 text-center font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-amber-50/95 sm:text-xl">

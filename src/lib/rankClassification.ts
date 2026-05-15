@@ -53,6 +53,53 @@ export const TIER_ACHIEVEMENT_THEME: Record<
   },
 };
 
+/** Subdivisão I / II / III — mesmas faixas que `getRankClassification` e `RANK_GUIDE_TIERS`. */
+export type RankRomanStep = "I" | "II" | "III";
+
+export function rankRomanStepFromRr(rr: number): RankRomanStep {
+  const n = Number.isFinite(rr) ? Math.max(0, Math.floor(rr)) : 0;
+  if (n < 1000) {
+    if (n < 800) return "III";
+    if (n < 900) return "II";
+    return "I";
+  }
+  if (n < 1300) {
+    if (n < 1100) return "III";
+    if (n < 1200) return "II";
+    return "I";
+  }
+  if (n < 1600) {
+    if (n < 1400) return "III";
+    if (n < 1500) return "II";
+    return "I";
+  }
+  if (n < 1800) {
+    if (n < 1700) return "III";
+    if (n < 1750) return "II";
+    return "I";
+  }
+  if (n < 1900) return "III";
+  if (n < 2000) return "II";
+  return "I";
+}
+
+/** Superfície do selo romano (gradiente + borda) — alinhado ao overlay HUD Meta. */
+export function rankRomanMedallionClass(tierId: RankTierId): string {
+  const map: Record<RankTierId, string> = {
+    bronze:
+      "border-amber-800/55 bg-[radial-gradient(circle_at_35%_25%,rgba(251,191,36,0.22),rgba(28,25,23,0.95)_45%,rgba(12,10,8,1))] text-amber-50",
+    prata:
+      "border-zinc-400/45 bg-[radial-gradient(circle_at_35%_25%,rgba(228,228,231,0.2),rgba(39,39,42,0.95)_45%,rgba(9,9,11,1))] text-zinc-50",
+    ouro:
+      "border-amber-500/40 bg-[radial-gradient(circle_at_35%_25%,rgba(250,204,21,0.18),rgba(66,32,6,0.92)_42%,rgba(15,10,4,1))] text-amber-50",
+    esmeralda:
+      "border-emerald-600/45 bg-[radial-gradient(circle_at_35%_25%,rgba(52,211,153,0.2),rgba(6,46,32,0.92)_42%,rgba(3,15,10,1))] text-emerald-50",
+    diamante:
+      "border-sky-500/45 bg-[radial-gradient(circle_at_35%_25%,rgba(56,189,248,0.22),rgba(12,44,68,0.92)_42%,rgba(3,12,22,1))] text-sky-50",
+  };
+  return map[tierId];
+}
+
 export type RankClassification = {
   tierId: RankTierId;
   /** Texto completo da categoria (ex.: Diamante | Titã). */
