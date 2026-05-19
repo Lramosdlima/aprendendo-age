@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { SpreadsheetExpandableStack } from "@/components/spreadsheet/SpreadsheetExpandableStack";
-import { SpreadsheetPlainNumCell, SpreadsheetStatCell } from "@/components/spreadsheet/SpreadsheetStatCell";
+import { SpreadsheetStatCell } from "@/components/spreadsheet/SpreadsheetStatCell";
 import { SpreadsheetRefChip } from "@/components/spreadsheet/SpreadsheetRefChip";
 import {
   SpreadsheetBody,
@@ -241,25 +241,25 @@ export function UnidadesSpreadsheet({
                 <SpreadsheetStatCell field="pontos_de_vida" value={u.pontos_de_vida} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.dano_cortante} />
+                <SpreadsheetStatCell field="dano_cortante" value={u.dano_cortante} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.dano_perfurante} />
+                <SpreadsheetStatCell field="dano_perfurante" value={u.dano_perfurante} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.alcance} />
+                <SpreadsheetStatCell field="alcance" value={u.alcance} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.dano_contundente} />
+                <SpreadsheetStatCell field="dano_contundente" value={u.dano_contundente} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.dano_divino} />
+                <SpreadsheetStatCell field="dano_divino" value={u.dano_divino} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.dano_area} />
+                <SpreadsheetStatCell field="dano_area" value={u.dano_area} />
               </SpreadsheetTd>
               <SpreadsheetTd>
-                <SpreadsheetPlainNumCell value={u.velocidade_de_ataque_atk_s} />
+                <SpreadsheetStatCell field="velocidade_de_ataque_atk_s" value={u.velocidade_de_ataque_atk_s} />
               </SpreadsheetTd>
               <SpreadsheetTd>
                 <SpreadsheetStatCell field="dps" value={u.dps} />

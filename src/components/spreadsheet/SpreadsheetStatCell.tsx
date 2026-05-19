@@ -5,9 +5,8 @@ import {
   formatSpreadsheetStatValue,
   UNIDADE_STAT_VISUAL,
   type SpreadsheetStatVisualSpec,
+  type UnidadeSpreadsheetStatField,
 } from "@/lib/unidadeSpreadsheetVisual";
-
-type UnidadeStatField = keyof typeof UNIDADE_STAT_VISUAL;
 
 function parseStatNumber(value: unknown): number | null {
   if (value == null || value === "") return null;
@@ -33,7 +32,13 @@ function renderVisual(n: number, spec: SpreadsheetStatVisualSpec) {
 }
 
 /** Célula numérica com barra ou anel conforme `UNIDADE_STAT_VISUAL`. */
-export function SpreadsheetStatCell({ field, value }: { field: UnidadeStatField; value: unknown }) {
+export function SpreadsheetStatCell({
+  field,
+  value,
+}: {
+  field: UnidadeSpreadsheetStatField;
+  value: unknown;
+}) {
   const n = parseStatNumber(value);
   if (n == null) return <span className="text-zinc-500">—</span>;
 
