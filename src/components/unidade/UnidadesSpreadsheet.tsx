@@ -68,32 +68,38 @@ export function UnidadesSpreadsheet({
         <SpreadsheetTh className="min-w-[8.5rem]">Soldado</SpreadsheetTh>
         <SpreadsheetTh>Inglês</SpreadsheetTh>
         <SpreadsheetTh className="min-w-[7rem]">Tipo</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[8rem]">Forte contra</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[8rem]">Fraco contra</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[8rem]" icon="aomr_better_icon">
+          Forte contra
+        </SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[8rem]" icon="aomr_worse_icon">
+          Fraco contra
+        </SpreadsheetTh>
         <SpreadsheetTh>Panteão</SpreadsheetTh>
         <SpreadsheetTh>Era</SpreadsheetTh>
         <SpreadsheetTh className="min-w-[7rem]">Counter de</SpreadsheetTh>
         <SpreadsheetTh className="min-w-[7rem]">Multiplicador</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[8rem]">Construção</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[6.5rem]">Pontos de vida</SpreadsheetTh>
-        <SpreadsheetTh>Dano cortante</SpreadsheetTh>
-        <SpreadsheetTh>Dano perfurante</SpreadsheetTh>
-        <SpreadsheetTh>Alcance</SpreadsheetTh>
-        <SpreadsheetTh>Dano contundente</SpreadsheetTh>
-        <SpreadsheetTh>Dano divino</SpreadsheetTh>
-        <SpreadsheetTh>Dano área</SpreadsheetTh>
-        <SpreadsheetTh>Vel. ataque (atk/s)</SpreadsheetTh>
-        <SpreadsheetTh>DPS</SpreadsheetTh>
-        <SpreadsheetTh>Arm. anticorte</SpreadsheetTh>
-        <SpreadsheetTh>Arm. antiperf.</SpreadsheetTh>
-        <SpreadsheetTh>Comida</SpreadsheetTh>
-        <SpreadsheetTh>Madeira</SpreadsheetTh>
-        <SpreadsheetTh>Ouro</SpreadsheetTh>
-        <SpreadsheetTh>Favor</SpreadsheetTh>
-        <SpreadsheetTh>População</SpreadsheetTh>
-        <SpreadsheetTh>Tempo treino</SpreadsheetTh>
-        <SpreadsheetTh>Vel. movimento</SpreadsheetTh>
-        <SpreadsheetTh>Força atributos</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_type_building_icon" className="min-w-[8rem]">Construção</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[6.5rem]" icon="aomr_hit_points_icon">
+          Pontos de vida
+        </SpreadsheetTh>
+        <SpreadsheetTh icon="hackdamage">Dano cortante</SpreadsheetTh>
+        <SpreadsheetTh icon="piercedamage">Dano perfurante</SpreadsheetTh>
+        <SpreadsheetTh icon="rangeicon">Alcance</SpreadsheetTh>
+        <SpreadsheetTh icon="crushdamage">Dano contundente</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_divine_damage_icon">Dano divino</SpreadsheetTh>
+        <SpreadsheetTh icon="attack_cur">Dano área</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_rate_of_fire_icon">Vel. ataque (atk/s)</SpreadsheetTh>
+        <SpreadsheetTh icon="attack_cur">DPS</SpreadsheetTh>
+        <SpreadsheetTh icon="hackarmor">Arm. anticorte</SpreadsheetTh>
+        <SpreadsheetTh icon="piercearmor">Arm. antiperf.</SpreadsheetTh>
+        <SpreadsheetTh icon="foodaom">Comida</SpreadsheetTh>
+        <SpreadsheetTh icon="woodaom">Madeira</SpreadsheetTh>
+        <SpreadsheetTh icon="goldaom">Ouro</SpreadsheetTh>
+        <SpreadsheetTh icon="favoraom">Favor</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_population_provision_icon">População</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_time_icon">Tempo treino</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_speed_icon">Vel. movimento</SpreadsheetTh>
+        <SpreadsheetTh icon="attack_cur">Força atributos</SpreadsheetTh>
       </SpreadsheetHead>
       <SpreadsheetBody>
         {rows.map((u) => {

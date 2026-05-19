@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 import { cn } from "@/lib/cn";
 import { SPREADSHEET_VIEWPORT_HEIGHT_VAR } from "@/lib/listPageStickyOffset";
+import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 type SpreadsheetTableProps = {
   children: ReactNode;
@@ -39,8 +40,28 @@ export function SpreadsheetHead({ children }: { children: ReactNode }) {
   );
 }
 
-export function SpreadsheetTh({ children, className }: { children: ReactNode; className?: string }) {
-  return <th className={cn("whitespace-nowrap bg-zinc-950 px-3 py-2.5 font-medium", className)}>{children}</th>;
+export function SpreadsheetTh({
+  children,
+  className,
+  icon,
+}: {
+  children: ReactNode;
+  className?: string;
+  /** Chave em `token_asset_map.json` (mesmo padrão do `InfoRow`). */
+  icon?: string;
+}) {
+  const iconSrc = icon ? resolveTokenIconSrc(icon) : undefined;
+
+  return (
+    <th className={cn("whitespace-nowrap bg-zinc-950 px-3 py-2.5 font-medium", className)}>
+      <span className="inline-flex items-center gap-1.5">
+        {iconSrc ? (
+          <img src={iconSrc} alt="" aria-hidden className="size-4 shrink-0 object-contain opacity-90" />
+        ) : null}
+        <span>{children}</span>
+      </span>
+    </th>
+  );
 }
 
 export function SpreadsheetBody({ children }: { children: ReactNode }) {
