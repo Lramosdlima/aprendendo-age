@@ -61,7 +61,9 @@ export function GodpowersSpreadsheet({
   return (
     <SpreadsheetTable tableClassName="min-w-[1280px]">
       <SpreadsheetHead>
-        <SpreadsheetTh className="min-w-[8rem]">GodPower</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[8rem]" stickyColumn>
+          GodPower
+        </SpreadsheetTh>
         <SpreadsheetTh>Inglês</SpreadsheetTh>
         <SpreadsheetTh>God</SpreadsheetTh>
         <SpreadsheetTh>Era</SpreadsheetTh>
@@ -94,6 +96,7 @@ export function GodpowersSpreadsheet({
           return (
             <SpreadsheetTr
               key={g.id}
+              selected={compareMode && selected}
               className={cn(
                 compareMode && "cursor-pointer",
                 compareMode && selected && "bg-amber-500/10 ring-1 ring-inset ring-amber-500/40",
@@ -103,7 +106,7 @@ export function GodpowersSpreadsheet({
                 compareMode && (selected || !selectDisabled) ? () => onToggleSelect?.(slug) : undefined
               }
             >
-              <SpreadsheetTd>
+              <SpreadsheetTd stickyColumn>
                 {compareMode ? (
                   <span className="inline-flex max-w-full items-center gap-2 font-medium text-zinc-100">
                     <span

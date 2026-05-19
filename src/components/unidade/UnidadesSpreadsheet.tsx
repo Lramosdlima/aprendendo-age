@@ -65,7 +65,9 @@ export function UnidadesSpreadsheet({
   return (
     <SpreadsheetTable tableClassName="min-w-[2600px]">
       <SpreadsheetHead>
-        <SpreadsheetTh className="min-w-[8.5rem]">Soldado</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[8.5rem]" stickyColumn>
+          Soldado
+        </SpreadsheetTh>
         <SpreadsheetTh>Inglês</SpreadsheetTh>
         <SpreadsheetTh className="min-w-[7rem]">Tipo</SpreadsheetTh>
         <SpreadsheetTh className="min-w-[8rem]" icon="aomr_better_icon">
@@ -129,6 +131,7 @@ export function UnidadesSpreadsheet({
           return (
             <SpreadsheetTr
               key={u.id}
+              selected={compareMode && selected}
               className={cn(
                 compareMode && "cursor-pointer",
                 compareMode && selected && "bg-amber-500/10 ring-1 ring-inset ring-amber-500/40",
@@ -138,7 +141,7 @@ export function UnidadesSpreadsheet({
                 compareMode && (selected || !selectDisabled) ? () => onToggleSelect?.(slug) : undefined
               }
             >
-              <SpreadsheetTd>
+              <SpreadsheetTd stickyColumn>
                 {compareMode ? (
                   <span className="inline-flex max-w-full items-center gap-2 font-medium text-zinc-100">
                     <span
