@@ -12,6 +12,7 @@ import {
   SpreadsheetTr,
 } from "@/components/spreadsheet/SpreadsheetTable";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
+import { NotionCounterIconsRow } from "@/components/ui/NotionTokensOnly";
 import { NotionText } from "@/components/ui/NotionText";
 import type { Unidade } from "@/data/catalog";
 import { unidadeSlugById } from "@/data/catalog";
@@ -173,18 +174,14 @@ export function UnidadesSpreadsheet({
               </SpreadsheetTd>
               <SpreadsheetTd>
                 {hasText(u.forte_contra) ? (
-                  <span className="text-sm text-zinc-300">
-                    <NotionText text={u.forte_contra!} />
-                  </span>
+                  <NotionCounterIconsRow text={u.forte_contra!} />
                 ) : (
                   "—"
                 )}
               </SpreadsheetTd>
               <SpreadsheetTd>
                 {hasText(u.fraco_contra) ? (
-                  <span className="text-sm text-zinc-300">
-                    <NotionText text={u.fraco_contra!} />
-                  </span>
+                  <NotionCounterIconsRow text={u.fraco_contra!} />
                 ) : (
                   "—"
                 )}
