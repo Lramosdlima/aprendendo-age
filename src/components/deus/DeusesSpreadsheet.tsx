@@ -46,7 +46,7 @@ export function DeusesSpreadsheet({ rows, linkState, onPreview }: DeusesSpreadsh
   return (
     <SpreadsheetTable>
         <SpreadsheetHead>
-          <SpreadsheetTh>Deus</SpreadsheetTh>
+          <SpreadsheetTh stickyColumn>Deus</SpreadsheetTh>
           <SpreadsheetTh>Foco</SpreadsheetTh>
           <SpreadsheetTh>Panteão</SpreadsheetTh>
           <SpreadsheetTh>Era</SpreadsheetTh>
@@ -81,7 +81,7 @@ export function DeusesSpreadsheet({ rows, linkState, onPreview }: DeusesSpreadsh
 
             return (
               <SpreadsheetTr key={d.id}>
-                <SpreadsheetTd>
+                <SpreadsheetTd stickyColumn>
                   {deusLink ? (
                     <Link
                       to={deusLink.to}
