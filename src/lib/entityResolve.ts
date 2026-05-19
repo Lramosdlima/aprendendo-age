@@ -1,4 +1,6 @@
 import {
+  construcaoById,
+  construcaoSlugById,
   deusById,
   deusSlugById,
   eraById,
@@ -17,7 +19,7 @@ import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
-import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { getConstrucaoAssetUrl, getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import type { EntityNumRef, EntityStrRef } from "@/lib/entityRefs";
 
 export type EntityLinkKind =
@@ -26,7 +28,8 @@ export type EntityLinkKind =
   | "era"
   | "godpower"
   | "unidade"
-  | "tecnologia";
+  | "tecnologia"
+  | "construcao";
 
 export type ResolvedEntityLink = {
   kind: EntityLinkKind;
@@ -94,6 +97,17 @@ export function resolveUnidadeLink(id: number, label?: string): ResolvedEntityLi
   };
 }
 
+export function resolveConstrucaoLink(id: number, label?: string): ResolvedEntityLink | null {
+  const c = construcaoById.get(id);
+  if (!c) return null;
+  return {
+    kind: "construcao",
+    to: `/construcoes/${construcaoSlugById.get(id) ?? id}`,
+    label: label ?? c.nome,
+    imageSrc: getConstrucaoAssetUrl(c),
+  };
+}
+
 export function resolveTecnologiaLink(ref: EntityStrRef): ResolvedEntityLink | null {
   const ti = tecnologiaIndexByNome(ref.nome);
   if (ti < 0) return null;
@@ -121,6 +135,8 @@ export function resolveEntityNumRef(kind: Exclude<EntityLinkKind, "tecnologia">,
       return resolveGodpowerLink(ref.id, ref.nome);
     case "unidade":
       return resolveUnidadeLink(ref.id, ref.nome);
+    case "construcao":
+      return resolveConstrucaoLink(ref.id, ref.nome);
     default:
       return null;
   }
