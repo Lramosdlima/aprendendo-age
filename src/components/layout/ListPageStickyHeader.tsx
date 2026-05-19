@@ -1,6 +1,7 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { cn } from "@/lib/cn";
+import { LIST_PAGE_STICKY_BOTTOM_VAR } from "@/lib/listPageStickyOffset";
 
 type ListPageStickyHeaderProps = {
   children: ReactNode;
@@ -13,6 +14,7 @@ type ListPageStickyHeaderProps = {
  */
 export function ListPageStickyHeader({ children }: ListPageStickyHeaderProps) {
   const [scrolled, setScrolled] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const threshold = 10;
@@ -22,8 +24,34 @@ export function ListPageStickyHeader({ children }: ListPageStickyHeaderProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+
+    const sync = () => {
+      document.documentElement.style.setProperty(
+        LIST_PAGE_STICKY_BOTTOM_VAR,
+        `${root.getBoundingClientRect().bottom}px`,
+      );
+    };
+
+    sync();
+    const ro = new ResizeObserver(sync);
+    ro.observe(root);
+    window.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("scroll", sync);
+      window.removeEventListener("resize", sync);
+      document.documentElement.style.removeProperty(LIST_PAGE_STICKY_BOTTOM_VAR);
+    };
+  }, []);
+
   return (
     <div
+      ref={rootRef}
       className={cn(
         "sticky top-16 z-20 mb-8 -mx-4 px-4 py-2.5 md:top-0 md:-mx-10 md:px-10",
         "border-b border-transparent transition-[background-color,box-shadow,backdrop-filter,border-color] duration-200 ease-out",
