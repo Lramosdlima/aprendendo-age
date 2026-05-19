@@ -1,16 +1,18 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { cn } from "@/lib/cn";
-import { LIST_PAGE_STICKY_BOTTOM_VAR } from "@/lib/listPageStickyOffset";
+import {
+  LIST_PAGE_STICKY_BOTTOM_VAR,
+  SPREADSHEET_VIEWPORT_HEIGHT_VAR,
+} from "@/lib/listPageStickyOffset";
 
 type ListPageStickyHeaderProps = {
   children: ReactNode;
 };
 
 /**
- * Cabeçalho de listagem fixo ao rolar (título + filtros), com fundo escuro e sombra
- * após pequeno scroll — mesmo padrão em Unidades, Deuses, etc.
- * Abaixo do breakpoint `md`, `top-16` alinha sob a barra do AppShell (hambúrguer); em `md` ou maior usa `top-0`.
+ * Cabeçalho de listagem fixo ao rolar (título + filtros), com card escuro em largura total.
+ * Abaixo do breakpoint `md`, `top-16` alinha sob a barra do AppShell; em `md` ou maior usa `top-0`.
  */
 export function ListPageStickyHeader({ children }: ListPageStickyHeaderProps) {
   const [scrolled, setScrolled] = useState(false);
@@ -29,9 +31,11 @@ export function ListPageStickyHeader({ children }: ListPageStickyHeaderProps) {
     if (!root) return;
 
     const sync = () => {
+      const bottom = root.getBoundingClientRect().bottom;
+      document.documentElement.style.setProperty(LIST_PAGE_STICKY_BOTTOM_VAR, `${bottom}px`);
       document.documentElement.style.setProperty(
-        LIST_PAGE_STICKY_BOTTOM_VAR,
-        `${root.getBoundingClientRect().bottom}px`,
+        SPREADSHEET_VIEWPORT_HEIGHT_VAR,
+        `calc(100dvh - ${bottom}px - 1.25rem)`,
       );
     };
 
@@ -46,6 +50,7 @@ export function ListPageStickyHeader({ children }: ListPageStickyHeaderProps) {
       window.removeEventListener("scroll", sync);
       window.removeEventListener("resize", sync);
       document.documentElement.style.removeProperty(LIST_PAGE_STICKY_BOTTOM_VAR);
+      document.documentElement.style.removeProperty(SPREADSHEET_VIEWPORT_HEIGHT_VAR);
     };
   }, []);
 
@@ -53,14 +58,19 @@ export function ListPageStickyHeader({ children }: ListPageStickyHeaderProps) {
     <div
       ref={rootRef}
       className={cn(
-        "sticky top-16 z-20 mb-8 -mx-4 px-4 py-2.5 md:top-0 md:-mx-10 md:px-10",
-        "border-b border-transparent transition-[background-color,box-shadow,backdrop-filter,border-color] duration-200 ease-out",
-        scrolled
-          ? "border-zinc-800/90 bg-zinc-950/93 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.82)] backdrop-blur-md ring-1 ring-black/45"
-          : "bg-transparent shadow-none ring-0",
+        "sticky top-16 z-20 mb-4 box-border w-[calc(100%+2rem)] max-w-none shrink-0",
+        "-mx-4 md:top-0 md:w-[calc(100%+5rem)] md:-mx-10",
       )}
     >
-      <div className="flex flex-col gap-8">{children}</div>
+      <div
+        className={cn(
+          "box-border w-full rounded-xl border border-aom-border bg-zinc-950/95 px-4 py-4 shadow-[0_8px_32px_-10px_rgba(0,0,0,0.75)] backdrop-blur-sm md:px-5 md:py-5",
+          "transition-[box-shadow,ring-color] duration-200 ease-out",
+          scrolled ? "shadow-[0_12px_40px_-8px_rgba(0,0,0,0.88)] ring-1 ring-zinc-800/80" : "ring-1 ring-aom-border/60",
+        )}
+      >
+        <div className="flex w-full max-w-full flex-col items-start gap-8">{children}</div>
+      </div>
     </div>
   );
 }

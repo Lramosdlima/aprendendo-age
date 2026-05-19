@@ -131,7 +131,7 @@ export type Godpower = {
   cooldown_seg?: number;
   duracao_no_mapa_seg?: number;
   custo_repetir?: number;
-  incremento_por_uso?: string;
+  incremento_por_uso?: string | number;
   descricao_resumida?: string;
   descricao_avancada?: string;
 };

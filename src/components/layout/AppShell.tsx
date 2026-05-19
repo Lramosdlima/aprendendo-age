@@ -12,6 +12,7 @@ import { startNovoTagClassNav } from "@/pages/StartsPage";
 const LIST_INDEX_PATHS = new Set([
   "/construcoes",
   "/deuses",
+  "/poderes",
   "/mapas",
   "/starts",
   "/tecnologias",

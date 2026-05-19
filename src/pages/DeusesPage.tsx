@@ -11,6 +11,7 @@ import { ListViewModeToggle } from "@/components/list/ListViewModeToggle";
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 
 import { SpreadsheetHoverPreview } from "@/components/spreadsheet/SpreadsheetHoverPreview";
+import { SpreadsheetPageWidth } from "@/components/spreadsheet/SpreadsheetPageWidth";
 
 import { EntityCard } from "@/components/ui/EntityCard";
 
@@ -126,7 +127,7 @@ export function DeusesPage() {
 
   return (
 
-    <div>
+    <div className="w-full min-w-0">
 
       <ListPageStickyHeader>
 
@@ -136,7 +137,7 @@ export function DeusesPage() {
 
           description="Escolhas de maiores e menores com foco e referências de build."
 
-          className="!mb-0"
+          className="!mb-0 w-full"
 
           actions={
 
@@ -204,15 +205,13 @@ export function DeusesPage() {
 
       ) : (
 
-        <DeusesSpreadsheet
-
-          rows={filtered}
-
-          linkState={listIndexState}
-
-          onPreview={setSpreadsheetPreview}
-
-        />
+        <SpreadsheetPageWidth>
+          <DeusesSpreadsheet
+            rows={filtered}
+            linkState={listIndexState}
+            onPreview={setSpreadsheetPreview}
+          />
+        </SpreadsheetPageWidth>
 
       )}
 

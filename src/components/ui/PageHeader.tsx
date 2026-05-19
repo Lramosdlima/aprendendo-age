@@ -111,7 +111,12 @@ export function PageHeader({
   className,
 }: PageHeaderProps) {
   return (
-    <header className={cn("mb-8 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between", className)}>
+    <header
+      className={cn(
+        "mb-8 flex w-full max-w-full flex-col gap-3 sm:flex-row sm:items-start sm:justify-between",
+        className,
+      )}
+    >
       <PageHeaderBlock
         title={title}
         description={description}
