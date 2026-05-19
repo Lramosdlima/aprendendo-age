@@ -111,13 +111,18 @@ export function resolveConstrucaoLink(id: number, label?: string): ResolvedEntit
 export function resolveTecnologiaLink(ref: EntityStrRef): ResolvedEntityLink | null {
   const ti = tecnologiaIndexByNome(ref.nome);
   if (ti < 0) return null;
-  const t = tecnologias[ti];
-  const slug = tecnologiaSlugByIndex.get(ti);
+  return resolveTecnologiaLinkByIndex(ti, ref.nome);
+}
+
+export function resolveTecnologiaLinkByIndex(index: number, label?: string): ResolvedEntityLink | null {
+  const t = tecnologias[index];
+  if (!t) return null;
+  const slug = tecnologiaSlugByIndex.get(index);
   if (!slug) return null;
   return {
     kind: "tecnologia",
     to: `/tecnologias/${slug}`,
-    label: ref.nome,
+    label: label ?? t.nome,
     imageSrc: getTecnologiaAssetUrl(t),
   };
 }

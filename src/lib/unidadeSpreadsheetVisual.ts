@@ -31,6 +31,7 @@ export type UnidadeSpreadsheetStatField =
   | "favor"
   | "populacao"
   | "tempo_treinamento"
+  | "tempo_s"
   | "velocidade_movimento"
   | "forca_atributos";
 
@@ -53,6 +54,7 @@ export const UNIDADE_STAT_VISUAL: Record<UnidadeSpreadsheetStatField, Spreadshee
   favor: { kind: "ring", max: 30, ringClass: "stroke-blue-500" },
   populacao: { kind: "ring", max: 10, ringClass: "stroke-zinc-500" },
   tempo_treinamento: { kind: "ring", max: 180, ringClass: "stroke-rose-400" },
+  tempo_s: { kind: "ring", max: 180, ringClass: "stroke-rose-400" },
   velocidade_movimento: { kind: "bar", max: 7, barClass: "bg-orange-500" },
   forca_atributos: { kind: "bar", max: 500, barClass: "bg-amber-500" },
 };
