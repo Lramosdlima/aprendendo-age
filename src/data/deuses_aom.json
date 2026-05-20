@@ -211,7 +211,7 @@
         "nome": "Isca"
       }
     ],
-    "rush": 3,
+    "rush": 5,
     "turtle": 4,
     "eco": 3,
     "foco": "Cavalaria :aomr_type_cavalry_icon: & Construções",
@@ -1100,7 +1100,7 @@
         "nome": "Visão"
       }
     ],
-    "rush": 4,
+    "rush": 5,
     "turtle": 4,
     "eco": 3,
     "foco": "Unidades do Quartel :aomr_barracks_icon:",
@@ -1354,8 +1354,8 @@
         "nome": "Mina Enânica"
       }
     ],
-    "rush": 1,
-    "turtle": 2,
+    "rush": 4,
+    "turtle": 5,
     "eco": 4,
     "foco": "Anões :aomr_dwarf_icon: & Armaria :aomr_dwarven_armory_icon:",
     "god_maior_relacao": [
@@ -1543,8 +1543,8 @@
         "nome": "Grande Caça"
       }
     ],
-    "rush": 5,
-    "turtle": 2,
+    "rush": 4,
+    "turtle": 3,
     "eco": 4,
     "foco": "Unidades do Grande Salão :aomr_great_hall_icon:",
     "god_maior_relacao": [
@@ -2109,8 +2109,8 @@
         "nome": "Floresta de Gaia"
       }
     ],
-    "rush": 2,
-    "turtle": 3,
+    "rush": 3,
+    "turtle": 4,
     "eco": 5,
     "foco": "Economia :foodaom::woodaom::goldaom: & Construções :aomr_type_building_icon:",
     "god_maior_relacao": [
@@ -2302,8 +2302,8 @@
       }
     ],
     "rush": 5,
-    "turtle": 1,
-    "eco": 1,
+    "turtle": 3,
+    "eco": 4,
     "foco": "Unidades Míticas :aomr_type_myth_unit_icon: & Cerco :aomr_type_siege_weapon_icon:",
     "god_maior_relacao": [
       {
@@ -2922,9 +2922,9 @@
         "nome": "Sementes Prósperas"
       }
     ],
-    "rush": 4,
-    "turtle": 2,
-    "eco": 3,
+    "rush": 2,
+    "turtle": 4,
+    "eco": 4,
     "foco": "Fazendas :aomr_farm_icon:, Und. Míticas :aomr_type_myth_unit_icon: & Cura ✨",
     "god_maior_relacao": [
       {
@@ -3165,7 +3165,7 @@
       }
     ],
     "rush": 4,
-    "turtle": 4,
+    "turtle": 5,
     "eco": 4,
     "foco": "Tecnologia ⏫ & Defesas :aomr_type_human_soldier_icon:️",
     "god_maior_relacao": [
@@ -3324,7 +3324,7 @@
         "nome": "Escudo Solar"
       }
     ],
-    "rush": 4,
+    "rush": 3,
     "turtle": 4,
     "eco": 4,
     "foco": "Economia :foodaom::woodaom::goldaom: & Samurais :aomr_samurai_icon:",
@@ -3503,7 +3503,7 @@
       }
     ],
     "rush": 4,
-    "turtle": 2,
+    "turtle": 4,
     "eco": 4,
     "foco": "Tecnologia ⏫, Shinobi :aomr_shinobi_icon: & Cavalaria :aomr_type_cavalry_icon:",
     "god_maior_relacao": [
@@ -3692,7 +3692,7 @@
         "nome": "Kusanagi"
       }
     ],
-    "rush": 3,
+    "rush": 4,
     "turtle": 4,
     "eco": 4,
     "foco": "Unidades Míticas :aomr_type_myth_unit_icon: & GodPowers :favoraom:",
@@ -7174,7 +7174,10 @@
         }
       ]
     },
-    "icon": "aomr_demeter_icon"
+    "icon": "aomr_demeter_icon",
+    "rush": 3,
+    "turtle": 4,
+    "eco": 5
   },
   {
     "id": 79,
@@ -7397,7 +7400,10 @@
       }
     ],
     "tecnologias": [],
-    "unidades_exclusivas": []
+    "unidades_exclusivas": [],
+    "rush": 4,
+    "turtle": 3,
+    "eco": 5
   },
   {
     "id": 83,
@@ -7466,7 +7472,10 @@
       }
     ],
     "tecnologias": [],
-    "unidades_exclusivas": []
+    "unidades_exclusivas": [],
+    "rush": 4,
+    "turtle": 4,
+    "eco": 3
   },
   {
     "id": 84,
@@ -7535,7 +7544,10 @@
       }
     ],
     "tecnologias": [],
-    "unidades_exclusivas": []
+    "unidades_exclusivas": [],
+    "rush": 5,
+    "turtle": 2,
+    "eco": 4
   },
   {
     "id": 85,
