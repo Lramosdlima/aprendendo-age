@@ -1,5 +1,6 @@
 import { Link, useLocation, useParams } from "react-router-dom";
 
+import { DeusBuildAvaliacaoCards } from "@/components/deus/DeusBuildAvaliacaoCards";
 import { DeusExplicacaoMaiorSection } from "@/components/deus/DeusExplicacaoMaiorSection";
 import { GodMajorDecisionTree } from "@/components/deus/GodMajorDecisionTree";
 import { BackLink } from "@/components/ui/BackLink";
@@ -35,25 +36,6 @@ import { bucketMinorsByEra } from "@/lib/godMajorTree";
 import { listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
-/** Nota 1–5 da avaliação de build (Rush / Turtle / Eco). */
-function buildAvaliacaoLabel(n: number | null | undefined): string {
-  if (n == null || Number.isNaN(n)) return "—";
-  switch (n) {
-    case 5:
-      return "Excelente";
-    case 4:
-      return "Ótimo";
-    case 3:
-      return "Bom";
-    case 2:
-      return "Ruim";
-    case 1:
-      return "Péssimo";
-    default:
-      return String(n);
-  }
-}
-
 /** Texto do link "← …" conforme a origem (lista de deuses, start ou poder divino). */
 function deusBackLinkLabel(backTo: string): string {
   const pathOnly = backTo.split("?")[0];
@@ -65,26 +47,6 @@ function deusBackLinkLabel(backTo: string): string {
   if (backTo.startsWith("/poderes/")) return "Voltar ao poder divino";
   if (backTo === "/poderes" || backTo.startsWith("/poderes?")) return "Poderes divinos";
   return "Voltar";
-}
-
-/** Cor do texto conforme a nota (5 verde → 1 vermelho). */
-function buildAvaliacaoScoreClassName(n: number | null | undefined): string {
-  const base = "text-xs font-semibold leading-tight";
-  if (n == null || Number.isNaN(n)) return `${base} text-zinc-500`;
-  switch (n) {
-    case 5:
-      return `${base} text-emerald-400`;
-    case 4:
-      return `${base} text-lime-300`;
-    case 3:
-      return `${base} text-yellow-400`;
-    case 2:
-      return `${base} text-orange-400`;
-    case 1:
-      return `${base} text-red-400`;
-    default:
-      return `${base} text-zinc-400`;
-  }
 }
 
 export function DeusDetailPage() {
@@ -246,38 +208,7 @@ export function DeusDetailPage() {
         </Section>
 
         <Section title="Avaliação (builds)">
-          <div className="flex flex-wrap items-start justify-start gap-3 sm:gap-4">
-            <section className="flex size-24 min-h-0 flex-col items-center justify-center gap-0.5 rounded-xl border border-pink-900/40 bg-pink-950/20 px-1.5 py-2 text-center sm:size-28">
-              <h3 className="font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight text-pink-200 sm:text-xs">
-                Rush
-              </h3>
-              <p className={`${buildAvaliacaoScoreClassName(d.rush)} max-w-full break-words`}>
-                {buildAvaliacaoLabel(d.rush)}
-              </p>
-            </section>
-            <section className="flex size-24 min-h-0 flex-col items-center justify-center gap-0.5 rounded-xl border border-teal-900/40 bg-teal-950/20 px-1.5 py-2 text-center sm:size-28">
-              <h3 className="font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight text-teal-200 sm:text-xs">
-                Turtle
-              </h3>
-              <p className={`${buildAvaliacaoScoreClassName(d.turtle)} max-w-full break-words`}>
-                {buildAvaliacaoLabel(d.turtle)}
-              </p>
-            </section>
-            <section className="flex size-24 min-h-0 flex-col items-center justify-center gap-0.5 rounded-xl border border-purple-900/40 bg-purple-950/25 px-1.5 py-2 text-center sm:size-28">
-              <h3 className="font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight text-purple-200 sm:text-xs">
-                Eco
-              </h3>
-              <p className={`${buildAvaliacaoScoreClassName(d.eco)} max-w-full break-words`}>
-                {buildAvaliacaoLabel(d.eco)}
-              </p>
-            </section>
-          </div>
-          {d.foco ? (
-            <p className="mt-4 text-sm">
-              <span className="text-zinc-500">Foco: </span>
-              <NotionText text={d.foco} />
-            </p>
-          ) : null}
+          <DeusBuildAvaliacaoCards rush={d.rush} turtle={d.turtle} eco={d.eco} foco={d.foco} />
         </Section>
       </div>
 
