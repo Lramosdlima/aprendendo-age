@@ -1692,7 +1692,7 @@
   {
     "status": "new",
     "id": 36,
-    "titulo": "Deméter por Mosca",
+    "titulo": "Safe Deméter por Mosca",
     "author": [
       {
         "name": "Mosca",
@@ -1907,6 +1907,208 @@
       ]
     },
     "slug": "demeter-por-mosca-mosca-moose-aom",
+    "pantheon": "Grego"
+  },
+   {
+    "status": "new",
+    "id": 37,
+    "titulo": "2 TC :aomr_town_center_icon: Deméter por TheRapl",
+    "author": [
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/ytc/AGIKgqNqj8n9sXoQh1l7mLZt2e5a9b6v0sK8n2w=s160-c-k-c0x00ffffff-no-rj"
+      },
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
+    ],
+    "god": ["Deméter"],
+    "image": "aomr_demeter_icon",
+    "notion_file_id": "00000000000000000000000000000000",
+    "youtube": ["https://www.youtube.com/watch?v=RT94YGSl5ZY"],
+    "descricao_curta": "Rascunho gerado pelo builder secreto.",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "heading",
+              "level": 1,
+              "text": "Deméter"
+            },
+            {
+              "kind": "callout",
+              "text": "Começa com 4 Aldeões + Kataskopos"
+            },
+            {
+              "kind": "callout",
+              "text": "Deméter :aomr_demeter_icon: te dá muitas opções defensivas e econômicas. Então valide antes quem você está enfrentando:\n\n• Se encontrar um agressivo: vá por defesa e treine suas tropas.\n•  Se encontrar outro econômico ou passivo: faça <highlight-pink>Pioneiros de Pã</highlight-pink> :aomr_pans_pioneers_icon: e 2º TC :aomr_town_center_icon:"
+            },
+            {
+              "kind": "callout",
+              "text": " É possível ir com o Kataskopos na base inimiga e utilizar o poder <highlight-purple>Secar</highlight-purple> :aomr_wither_icon: na floresta dele.\n\nIsso te dará uma pequena vantagem do tempo e recurso de entrega dele. Funciona melhor contra Gregos, Chineses, Japoneses e Astecas. No caso de Egípcios, Nórdicos e Atlantes, não faz diferença. Então também pode ser utilizado nas fazendas :aomr_farm_icon: posteriormente."
+            }
+          ],
+          "table": [
+            {
+              "description": "4 Aldeões iniciais na comida + Celeiro",
+              "food": "4",
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": "5/15",
+              "type": null
+            },
+            {
+              "description": "2 Aldeões no ouro + Armazém <highlight-gray>(que possa ser compartilhável com madeira)</highlight-gray>",
+              "food": "4",
+              "wood": null,
+              "gold": "2",
+              "favor": null,
+              "pop": "7/15",
+              "type": null
+            },
+            {
+              "description": "1 Aldeão na madeira <highlight-gray>(mesmo Armazém do ouro)</highlight-gray>",
+              "food": "4",
+              "wood": "1",
+              "gold": "2",
+              "favor": null,
+              "pop": "8/15",
+              "type": null
+            },
+            {
+              "description": "Próximos 3 Aldeões na comida",
+              "food": "7",
+              "wood": "1",
+              "gold": "2",
+              "favor": null,
+              "pop": "11/15",
+              "type": null
+            },
+            {
+              "description": "Construa o Templo com 2 Aldeões do Ouro (<strong>≈</strong><code>1:40</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": "12/15",
+              "type": "blue"
+            },
+            {
+              "description": "1 Aldeão fica no Templo junto com os pastáveis :aomr_cow_icon::aomr_goat_icon::aomr_pig_icon:",
+              "food": "7",
+              "wood": "1",
+              "gold": "1",
+              "favor": "1",
+              "pop": "12/15",
+              "type": "hint"
+            },
+            {
+              "description": "+3 Aldeões na madeira",
+              "food": "5",
+              "wood": "4",
+              "gold": "3",
+              "favor": "1",
+              "pop": "14/15",
+              "type": null
+            },
+            {
+              "description": "<strong>Subindo de Era por Pan :aomr_pan_icon:</strong> (<strong>≈</strong><code>2:31</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Rebalanceie os Aldeões imediatamente",
+              "food": "4",
+              "wood": "6",
+              "gold": "2",
+              "favor": "1",
+              "pop": "14/15",
+              "type": null
+            },
+            {
+              "description": "Construir 1 Casa com Aldeão da madeira",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Treinar Herói: <highlight-yellow>Orfeu</highlight-yellow> :aomr_orpheus_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:34</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "UP a tecnologia <highlight-pink>Pioneiros de Pã</highlight-pink> :aomr_pans_pioneers_icon: <highlight-gray>(assim que passar de era)</highlight-gray> e mover Aldeão do Templo para o ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Licaão :aomr_lykaon_icon: (treinado no Templo) no ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Demais aldeões que nascerem coloque no ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            },
+            {
+              "description": "Deixe 3 aldeões no ouro e na madeira e vá para o 2º TC :aomr_town_center_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "OPÇÕES) Suba Campo de Arqueiros e treine tropas",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            }
+          ]
+        }
+      ]
+    },
+    "slug": "demeter-por-rapl-rapl-moose-aom",
     "pantheon": "Grego"
   },
   {
