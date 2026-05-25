@@ -1338,16 +1338,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 21,
-        "nome": "Atena"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 3,
         "nome": "Hades"
+      },
+      {
+        "id": 21,
+        "nome": "Atena"
       }
     ],
     "ingles": "Labyrinth of Minos",
@@ -1384,16 +1384,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 21,
-        "nome": "Atena"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 3,
         "nome": "Hades"
+      },
+      {
+        "id": 21,
+        "nome": "Atena"
       }
     ],
     "ingles": "Aegis Shield",
@@ -1429,16 +1429,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 21,
-        "nome": "Atena"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 3,
         "nome": "Hades"
+      },
+      {
+        "id": 21,
+        "nome": "Atena"
       }
     ],
     "ingles": "Sarissa",
@@ -1475,16 +1475,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 20,
-        "nome": "Hermes"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 2,
         "nome": "Poseidon"
+      },
+      {
+        "id": 20,
+        "nome": "Hermes"
       }
     ],
     "ingles": "Sylvan Lore",
@@ -1524,16 +1524,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 20,
-        "nome": "Hermes"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 2,
         "nome": "Poseidon"
+      },
+      {
+        "id": 20,
+        "nome": "Hermes"
       }
     ],
     "ingles": "Spirited Charge",
@@ -1571,16 +1571,16 @@
     "favor": 3,
     "god_especifico": [
       {
-        "id": 20,
-        "nome": "Hermes"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 2,
         "nome": "Poseidon"
+      },
+      {
+        "id": 20,
+        "nome": "Hermes"
       }
     ],
     "ingles": "Winged Messenger",
@@ -1617,16 +1617,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 22,
-        "nome": "Ares"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 22,
+        "nome": "Ares"
       }
     ],
     "ingles": "Will of Kronos",
@@ -1672,16 +1672,16 @@
     "favor": 15,
     "god_especifico": [
       {
-        "id": 22,
-        "nome": "Ares"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 22,
+        "nome": "Ares"
       }
     ],
     "ingles": "Phobos&#x27; Spear of Panic",
@@ -1722,16 +1722,16 @@
     "favor": 12,
     "god_especifico": [
       {
-        "id": 22,
-        "nome": "Ares"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 22,
+        "nome": "Ares"
       }
     ],
     "ingles": "Enyo&#x27;s Bow of Horror",
@@ -1773,16 +1773,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 22,
-        "nome": "Ares"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 22,
+        "nome": "Ares"
       }
     ],
     "ingles": "Deimos&#x27; Sword of Dread",
@@ -1844,16 +1844,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 23,
-        "nome": "Apolo"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 3,
         "nome": "Hades"
+      },
+      {
+        "id": 23,
+        "nome": "Apolo"
       }
     ],
     "ingles": "Oracle",
@@ -1892,16 +1892,16 @@
     "favor": 12,
     "god_especifico": [
       {
-        "id": 23,
-        "nome": "Apolo"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 3,
         "nome": "Hades"
+      },
+      {
+        "id": 23,
+        "nome": "Apolo"
       }
     ],
     "ingles": "Temple of Healing",
@@ -1942,16 +1942,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 23,
-        "nome": "Apolo"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 3,
         "nome": "Hades"
+      },
+      {
+        "id": 23,
+        "nome": "Apolo"
       }
     ],
     "ingles": "Sun Ray",
@@ -1987,16 +1987,16 @@
     "favor": 25,
     "god_especifico": [
       {
-        "id": 24,
-        "nome": "Dionísio"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 2,
         "nome": "Poseidon"
+      },
+      {
+        "id": 24,
+        "nome": "Dionísio"
       }
     ],
     "ingles": "Chthonic Rites",
@@ -2033,16 +2033,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 24,
-        "nome": "Dionísio"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 2,
         "nome": "Poseidon"
+      },
+      {
+        "id": 24,
+        "nome": "Dionísio"
       }
     ],
     "ingles": "Dionysia",
@@ -2079,16 +2079,16 @@
     "favor": 30,
     "god_especifico": [
       {
-        "id": 24,
-        "nome": "Dionísio"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
       },
       {
         "id": 2,
         "nome": "Poseidon"
+      },
+      {
+        "id": 24,
+        "nome": "Dionísio"
       }
     ],
     "ingles": "Thracian Horses",
@@ -2123,16 +2123,16 @@
     ],
     "god_especifico": [
       {
-        "id": 25,
-        "nome": "Afrodite"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 25,
+        "nome": "Afrodite"
       }
     ],
     "ingles": "Golden Apples",
@@ -2169,16 +2169,16 @@
     "favor": 25,
     "god_especifico": [
       {
-        "id": 25,
-        "nome": "Afrodite"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 25,
+        "nome": "Afrodite"
       }
     ],
     "ingles": "Divine Blood",
@@ -2219,16 +2219,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 25,
-        "nome": "Afrodite"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 25,
+        "nome": "Afrodite"
       }
     ],
     "ingles": "Roar of Orthus",
@@ -2263,20 +2263,20 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 26,
-        "nome": "Hefesto"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 26,
+        "nome": "Hefesto"
       }
     ],
     "ingles": "Hand of Talos",
@@ -2312,20 +2312,20 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 26,
-        "nome": "Hefesto"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 26,
+        "nome": "Hefesto"
       }
     ],
     "ingles": "Shoulder of Talos",
@@ -2362,20 +2362,20 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 26,
-        "nome": "Hefesto"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 26,
+        "nome": "Hefesto"
       }
     ],
     "ingles": "Forge of Olympus",
@@ -2413,20 +2413,20 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 26,
-        "nome": "Hefesto"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 26,
+        "nome": "Hefesto"
       }
     ],
     "ingles": "Olympian Weapons",
@@ -2468,12 +2468,12 @@
     "favor": 30,
     "god_especifico": [
       {
-        "id": 27,
-        "nome": "Hera"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 27,
+        "nome": "Hera"
       }
     ],
     "ingles": "Argive Patronage",
@@ -2509,12 +2509,12 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 27,
-        "nome": "Hera"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 27,
+        "nome": "Hera"
       }
     ],
     "ingles": "Face of the Gorgon",
@@ -2552,12 +2552,12 @@
     "favor": 25,
     "god_especifico": [
       {
-        "id": 27,
-        "nome": "Hera"
-      },
-      {
         "id": 1,
         "nome": "Zeus"
+      },
+      {
+        "id": 27,
+        "nome": "Hera"
       }
     ],
     "ingles": "Monstrous Rage",
@@ -2595,16 +2595,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 28,
-        "nome": "Ártemis"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 28,
+        "nome": "Ártemis"
       }
     ],
     "ingles": "Flames of Typhon",
@@ -2645,16 +2645,16 @@
     "favor": 30,
     "god_especifico": [
       {
-        "id": 28,
-        "nome": "Ártemis"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 28,
+        "nome": "Ártemis"
       }
     ],
     "ingles": "Shafts of Plague",
@@ -2692,16 +2692,16 @@
     "favor": 20,
     "god_especifico": [
       {
-        "id": 28,
-        "nome": "Ártemis"
+        "id": 2,
+        "nome": "Poseidon"
       },
       {
         "id": 3,
         "nome": "Hades"
       },
       {
-        "id": 2,
-        "nome": "Poseidon"
+        "id": 28,
+        "nome": "Ártemis"
       }
     ],
     "ingles": "Beast Slayer",
@@ -3414,16 +3414,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 29,
-        "nome": "Bast"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 29,
+        "nome": "Bast"
       }
     ],
     "ingles": "Sacred Cats",
@@ -3462,16 +3462,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 29,
-        "nome": "Bast"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 29,
+        "nome": "Bast"
       }
     ],
     "ingles": "Adze of Wepwawet",
@@ -3508,16 +3508,16 @@
     "favor": 5,
     "god_especifico": [
       {
-        "id": 29,
-        "nome": "Bast"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 29,
+        "nome": "Bast"
       }
     ],
     "ingles": "Criosphinx",
@@ -3555,16 +3555,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 29,
-        "nome": "Bast"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 29,
+        "nome": "Bast"
       }
     ],
     "ingles": "Hieracosphinx",
@@ -3607,16 +3607,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 30,
-        "nome": "Ptah"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 30,
+        "nome": "Ptah"
       }
     ],
     "ingles": "Scalloped Axe",
@@ -3655,16 +3655,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 30,
-        "nome": "Ptah"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 30,
+        "nome": "Ptah"
       }
     ],
     "ingles": "Leather Frame Shield",
@@ -3704,16 +3704,16 @@
     "favor": 15,
     "god_especifico": [
       {
-        "id": 30,
-        "nome": "Ptah"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 30,
+        "nome": "Ptah"
       }
     ],
     "ingles": "Electrum Bullets",
@@ -3751,16 +3751,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 30,
-        "nome": "Ptah"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 30,
+        "nome": "Ptah"
       }
     ],
     "ingles": "Shaduf",
@@ -3797,16 +3797,16 @@
     "favor": 10,
     "god_especifico": [
       {
-        "id": 31,
-        "nome": "Anúbis"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 31,
+        "nome": "Anúbis"
       }
     ],
     "ingles": "Feet of the Jackal",
@@ -3849,16 +3849,16 @@
     "favor": 12,
     "god_especifico": [
       {
-        "id": 31,
-        "nome": "Anúbis"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 31,
+        "nome": "Anúbis"
       }
     ],
     "ingles": "Serpent Spear",
@@ -3892,16 +3892,16 @@
     ],
     "god_especifico": [
       {
-        "id": 31,
-        "nome": "Anúbis"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 31,
+        "nome": "Anúbis"
       }
     ],
     "ingles": "Necropolis",
@@ -3938,16 +3938,16 @@
     "favor": 15,
     "god_especifico": [
       {
-        "id": 32,
-        "nome": "Hathor/Sobek"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 32,
+        "nome": "Hathor/Sobek"
       }
     ],
     "ingles": "Crocodilopolis",
@@ -3983,16 +3983,16 @@
     ],
     "god_especifico": [
       {
-        "id": 32,
-        "nome": "Hathor/Sobek"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 32,
+        "nome": "Hathor/Sobek"
       }
     ],
     "ingles": "Sun-dried Mud-brick",
@@ -4031,16 +4031,16 @@
     ],
     "god_especifico": [
       {
-        "id": 32,
-        "nome": "Hathor/Sobek"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 32,
+        "nome": "Hathor/Sobek"
       }
     ],
     "ingles": "Dark Water",
@@ -4076,16 +4076,16 @@
     ],
     "god_especifico": [
       {
-        "id": 34,
-        "nome": "Sekhmet"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 34,
+        "nome": "Sekhmet"
       }
     ],
     "ingles": "Bone Bow",
@@ -4123,16 +4123,16 @@
     ],
     "god_especifico": [
       {
-        "id": 34,
-        "nome": "Sekhmet"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 34,
+        "nome": "Sekhmet"
       }
     ],
     "ingles": "Slings of the Sun",
@@ -4165,16 +4165,16 @@
     ],
     "god_especifico": [
       {
-        "id": 34,
-        "nome": "Sekhmet"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 34,
+        "nome": "Sekhmet"
       }
     ],
     "ingles": "Crimson Linen",
@@ -4208,16 +4208,16 @@
     ],
     "god_especifico": [
       {
-        "id": 34,
-        "nome": "Sekhmet"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 34,
+        "nome": "Sekhmet"
       }
     ],
     "ingles": "Force of the West Wind",
@@ -4256,16 +4256,16 @@
     ],
     "god_especifico": [
       {
-        "id": 33,
-        "nome": "Néftis"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 33,
+        "nome": "Néftis"
       }
     ],
     "ingles": "Funeral Rites",
@@ -4303,16 +4303,16 @@
     ],
     "god_especifico": [
       {
-        "id": 33,
-        "nome": "Néftis"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 33,
+        "nome": "Néftis"
       }
     ],
     "ingles": "Spirit of Maat",
@@ -4346,16 +4346,16 @@
     ],
     "god_especifico": [
       {
-        "id": 33,
-        "nome": "Néftis"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 33,
+        "nome": "Néftis"
       }
     ],
     "ingles": "Nebty",
@@ -4393,16 +4393,16 @@
     ],
     "god_especifico": [
       {
-        "id": 35,
-        "nome": "Osíris"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 35,
+        "nome": "Osíris"
       }
     ],
     "ingles": "Desert Wind",
@@ -4440,16 +4440,16 @@
     ],
     "god_especifico": [
       {
-        "id": 35,
-        "nome": "Osíris"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 35,
+        "nome": "Osíris"
       }
     ],
     "ingles": "New Kingdom",
@@ -4479,16 +4479,16 @@
     ],
     "god_especifico": [
       {
-        "id": 35,
-        "nome": "Osíris"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 5,
         "nome": "Ísis"
+      },
+      {
+        "id": 35,
+        "nome": "Osíris"
       }
     ],
     "ingles": "Atef Crown",
@@ -4522,16 +4522,16 @@
     ],
     "god_especifico": [
       {
-        "id": 37,
-        "nome": "Hórus"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 37,
+        "nome": "Hórus"
       }
     ],
     "ingles": "Axe of Vengeance",
@@ -4565,16 +4565,16 @@
     ],
     "god_especifico": [
       {
-        "id": 37,
-        "nome": "Hórus"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 37,
+        "nome": "Hórus"
       }
     ],
     "ingles": "Spear of Horus",
@@ -4608,16 +4608,16 @@
     ],
     "god_especifico": [
       {
-        "id": 37,
-        "nome": "Hórus"
-      },
-      {
         "id": 5,
         "nome": "Ísis"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 37,
+        "nome": "Hórus"
       }
     ],
     "ingles": "Greatest of Fifty",
@@ -4651,16 +4651,16 @@
     ],
     "god_especifico": [
       {
-        "id": 36,
-        "nome": "Thoth"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 36,
+        "nome": "Thoth"
       }
     ],
     "ingles": "Valley of the Kings",
@@ -4693,16 +4693,16 @@
     ],
     "god_especifico": [
       {
-        "id": 36,
-        "nome": "Thoth"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 36,
+        "nome": "Thoth"
       }
     ],
     "ingles": "Book of Thoth",
@@ -4740,16 +4740,16 @@
     ],
     "god_especifico": [
       {
-        "id": 36,
-        "nome": "Thoth"
-      },
-      {
         "id": 4,
         "nome": "Rá"
       },
       {
         "id": 6,
         "nome": "Set"
+      },
+      {
+        "id": 36,
+        "nome": "Thoth"
       }
     ],
     "ingles": "Tusks of Apedemak",
@@ -5785,8 +5785,8 @@
     ],
     "god_especifico": [
       {
-        "id": 38,
-        "nome": "Freyja"
+        "id": 7,
+        "nome": "Thor"
       },
       {
         "id": 8,
@@ -5797,8 +5797,8 @@
         "nome": "Loki"
       },
       {
-        "id": 7,
-        "nome": "Thor"
+        "id": 38,
+        "nome": "Freyja"
       }
     ],
     "ingles": "Disablot",
@@ -5832,8 +5832,8 @@
     ],
     "god_especifico": [
       {
-        "id": 38,
-        "nome": "Freyja"
+        "id": 7,
+        "nome": "Thor"
       },
       {
         "id": 8,
@@ -5844,8 +5844,8 @@
         "nome": "Loki"
       },
       {
-        "id": 7,
-        "nome": "Thor"
+        "id": 38,
+        "nome": "Freyja"
       }
     ],
     "ingles": "Thundering Hooves",
@@ -5881,8 +5881,8 @@
     ],
     "god_especifico": [
       {
-        "id": 38,
-        "nome": "Freyja"
+        "id": 7,
+        "nome": "Thor"
       },
       {
         "id": 8,
@@ -5893,8 +5893,8 @@
         "nome": "Loki"
       },
       {
-        "id": 7,
-        "nome": "Thor"
+        "id": 38,
+        "nome": "Freyja"
       }
     ],
     "ingles": "Sessrumnir",
@@ -5928,16 +5928,16 @@
     ],
     "god_especifico": [
       {
-        "id": 40,
-        "nome": "Forseti"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 40,
+        "nome": "Forseti"
       }
     ],
     "ingles": "Hall of Thanes",
@@ -5971,16 +5971,16 @@
     ],
     "god_especifico": [
       {
-        "id": 40,
-        "nome": "Forseti"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 40,
+        "nome": "Forseti"
       }
     ],
     "ingles": "Dwarven Breastplate",
@@ -6014,16 +6014,16 @@
     ],
     "god_especifico": [
       {
-        "id": 40,
-        "nome": "Forseti"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 40,
+        "nome": "Forseti"
       }
     ],
     "ingles": "Cave Troll",
@@ -6057,16 +6057,16 @@
     ],
     "god_especifico": [
       {
-        "id": 39,
-        "nome": "Heimdall"
-      },
-      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 39,
+        "nome": "Heimdall"
       }
     ],
     "ingles": "Gjallarhorn",
@@ -6101,16 +6101,16 @@
     ],
     "god_especifico": [
       {
-        "id": 39,
-        "nome": "Heimdall"
-      },
-      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 39,
+        "nome": "Heimdall"
       }
     ],
     "ingles": "Safeguard",
@@ -6145,16 +6145,16 @@
     ],
     "god_especifico": [
       {
-        "id": 39,
-        "nome": "Heimdall"
-      },
-      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 39,
+        "nome": "Heimdall"
       }
     ],
     "ingles": "Rigsthula",
@@ -6187,12 +6187,12 @@
     ],
     "god_especifico": [
       {
-        "id": 65,
-        "nome": "Ullr"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 65,
+        "nome": "Ullr"
       }
     ],
     "ingles": "Valgaldr",
@@ -6228,12 +6228,12 @@
     ],
     "god_especifico": [
       {
-        "id": 65,
-        "nome": "Ullr"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 65,
+        "nome": "Ullr"
       }
     ],
     "ingles": "Servants of Glory",
@@ -6271,12 +6271,12 @@
     ],
     "god_especifico": [
       {
-        "id": 65,
-        "nome": "Ullr"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 65,
+        "nome": "Ullr"
       }
     ],
     "ingles": "Ring Oath",
@@ -6309,12 +6309,12 @@
     ],
     "god_especifico": [
       {
-        "id": 65,
-        "nome": "Ullr"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 65,
+        "nome": "Ullr"
       }
     ],
     "ingles": "Valgaldr",
@@ -6348,16 +6348,16 @@
     ],
     "god_especifico": [
       {
-        "id": 42,
-        "nome": "Skadi"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 8,
         "nome": "Odin"
+      },
+      {
+        "id": 42,
+        "nome": "Skadi"
       }
     ],
     "ingles": "Rime",
@@ -6392,16 +6392,16 @@
     ],
     "god_especifico": [
       {
-        "id": 42,
-        "nome": "Skadi"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 8,
         "nome": "Odin"
+      },
+      {
+        "id": 42,
+        "nome": "Skadi"
       }
     ],
     "ingles": "Huntress&#x27; Axe",
@@ -6435,16 +6435,16 @@
     ],
     "god_especifico": [
       {
-        "id": 42,
-        "nome": "Skadi"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 8,
         "nome": "Odin"
+      },
+      {
+        "id": 42,
+        "nome": "Skadi"
       }
     ],
     "ingles": "Winter Harvest",
@@ -6480,10 +6480,6 @@
     ],
     "god_especifico": [
       {
-        "id": 43,
-        "nome": "Bragi"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
@@ -6494,6 +6490,10 @@
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 43,
+        "nome": "Bragi"
       }
     ],
     "ingles": "Call of Valhalla",
@@ -6527,10 +6527,6 @@
     ],
     "god_especifico": [
       {
-        "id": 43,
-        "nome": "Bragi"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
@@ -6541,6 +6537,10 @@
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 43,
+        "nome": "Bragi"
       }
     ],
     "ingles": "Thurisaz Rune",
@@ -6574,10 +6574,6 @@
     ],
     "god_especifico": [
       {
-        "id": 43,
-        "nome": "Bragi"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
@@ -6588,6 +6584,10 @@
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 43,
+        "nome": "Bragi"
       }
     ],
     "ingles": "Swine Array",
@@ -6621,16 +6621,16 @@
     ],
     "god_especifico": [
       {
-        "id": 41,
-        "nome": "Njord"
-      },
-      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 41,
+        "nome": "Njord"
       }
     ],
     "ingles": "Ring Giver",
@@ -6664,16 +6664,16 @@
     ],
     "god_especifico": [
       {
-        "id": 41,
-        "nome": "Njord"
-      },
-      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 41,
+        "nome": "Njord"
       }
     ],
     "ingles": "Vikings",
@@ -6706,16 +6706,16 @@
     ],
     "god_especifico": [
       {
-        "id": 41,
-        "nome": "Njord"
-      },
-      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 41,
+        "nome": "Njord"
       }
     ],
     "ingles": "Jotuns",
@@ -6750,12 +6750,12 @@
     ],
     "god_especifico": [
       {
-        "id": 66,
-        "nome": "Aegir"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 66,
+        "nome": "Aegir"
       }
     ],
     "ingles": "Granite Maw",
@@ -6792,12 +6792,12 @@
     ],
     "god_especifico": [
       {
-        "id": 66,
-        "nome": "Aegir"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 66,
+        "nome": "Aegir"
       }
     ],
     "ingles": "Feasts of Renown",
@@ -6834,12 +6834,12 @@
     ],
     "god_especifico": [
       {
-        "id": 66,
-        "nome": "Aegir"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 66,
+        "nome": "Aegir"
       }
     ],
     "ingles": "Nine Waves",
@@ -6874,16 +6874,16 @@
     ],
     "god_especifico": [
       {
-        "id": 44,
-        "nome": "Baldr"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 8,
         "nome": "Odin"
+      },
+      {
+        "id": 44,
+        "nome": "Baldr"
       }
     ],
     "ingles": "Sons of Sleipnir",
@@ -6916,16 +6916,16 @@
     ],
     "god_especifico": [
       {
-        "id": 44,
-        "nome": "Baldr"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
       {
         "id": 8,
         "nome": "Odin"
+      },
+      {
+        "id": 44,
+        "nome": "Baldr"
       }
     ],
     "ingles": "Dwarven Auger",
@@ -6959,10 +6959,6 @@
     ],
     "god_especifico": [
       {
-        "id": 45,
-        "nome": "Tyr"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
@@ -6973,6 +6969,10 @@
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 45,
+        "nome": "Tyr"
       }
     ],
     "ingles": "Berserkergang",
@@ -7004,10 +7004,6 @@
     ],
     "god_especifico": [
       {
-        "id": 45,
-        "nome": "Tyr"
-      },
-      {
         "id": 7,
         "nome": "Thor"
       },
@@ -7018,6 +7014,10 @@
       {
         "id": 9,
         "nome": "Loki"
+      },
+      {
+        "id": 45,
+        "nome": "Tyr"
       }
     ],
     "ingles": "Bravery",
@@ -7050,16 +7050,16 @@
     ],
     "god_especifico": [
       {
-        "id": 46,
-        "nome": "Hel"
-      },
-      {
         "id": 9,
         "nome": "Loki"
       },
       {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 46,
+        "nome": "Hel"
       }
     ],
     "ingles": "Rampage",
@@ -7091,16 +7091,16 @@
     ],
     "god_especifico": [
       {
-        "id": 46,
-        "nome": "Hel"
-      },
-      {
         "id": 9,
         "nome": "Loki"
       },
       {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 46,
+        "nome": "Hel"
       }
     ],
     "ingles": "Granite Blood",
@@ -7139,12 +7139,12 @@
     ],
     "god_especifico": [
       {
-        "id": 67,
-        "nome": "Vidar"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 67,
+        "nome": "Vidar"
       }
     ],
     "ingles": "Twilight of the Gods",
@@ -7177,12 +7177,12 @@
     ],
     "god_especifico": [
       {
-        "id": 67,
-        "nome": "Vidar"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 67,
+        "nome": "Vidar"
       }
     ],
     "ingles": "Avenging Spirit",
@@ -7216,12 +7216,12 @@
     ],
     "god_especifico": [
       {
-        "id": 67,
-        "nome": "Vidar"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 67,
+        "nome": "Vidar"
       }
     ],
     "ingles": "Silent Resolve",
@@ -7253,12 +7253,12 @@
     ],
     "god_especifico": [
       {
-        "id": 67,
-        "nome": "Vidar"
-      },
-      {
         "id": 16,
         "nome": "Frey"
+      },
+      {
+        "id": 67,
+        "nome": "Vidar"
       }
     ],
     "ingles": "Fury of the Fallen",
@@ -7290,16 +7290,16 @@
     ],
     "god_especifico": [
       {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
-      },
-      {
-        "id": 7,
-        "nome": "Thor"
       },
       {
         "id": 16,
@@ -7332,16 +7332,16 @@
     ],
     "god_especifico": [
       {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
-      },
-      {
-        "id": 7,
-        "nome": "Thor"
       },
       {
         "id": 16,
@@ -7374,16 +7374,16 @@
     ],
     "god_especifico": [
       {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
-      },
-      {
-        "id": 7,
-        "nome": "Thor"
       },
       {
         "id": 16,
@@ -7416,16 +7416,16 @@
     ],
     "god_especifico": [
       {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
-      },
-      {
-        "id": 7,
-        "nome": "Thor"
       },
       {
         "id": 16,
@@ -7458,16 +7458,16 @@
     ],
     "god_especifico": [
       {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
-      },
-      {
-        "id": 7,
-        "nome": "Thor"
       },
       {
         "id": 16,
@@ -7500,16 +7500,16 @@
     ],
     "god_especifico": [
       {
+        "id": 7,
+        "nome": "Thor"
+      },
+      {
         "id": 8,
         "nome": "Odin"
       },
       {
         "id": 9,
         "nome": "Loki"
-      },
-      {
-        "id": 7,
-        "nome": "Thor"
       },
       {
         "id": 16,
@@ -7644,16 +7644,16 @@
     ],
     "god_especifico": [
       {
-        "id": 48,
-        "nome": "Prometeu"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 48,
+        "nome": "Prometeu"
       }
     ],
     "ingles": "Alluvial Clay",
@@ -7687,16 +7687,16 @@
     ],
     "god_especifico": [
       {
-        "id": 48,
-        "nome": "Prometeu"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 48,
+        "nome": "Prometeu"
       }
     ],
     "ingles": "Heart of the Titans",
@@ -7728,16 +7728,16 @@
     ],
     "god_especifico": [
       {
-        "id": 48,
-        "nome": "Prometeu"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 48,
+        "nome": "Prometeu"
       }
     ],
     "ingles": "Theft of Fire",
@@ -7775,16 +7775,16 @@
     ],
     "god_especifico": [
       {
-        "id": 47,
-        "nome": "Leto"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 47,
+        "nome": "Leto"
       }
     ],
     "ingles": "Hephaestus Revenge",
@@ -7821,16 +7821,16 @@
     ],
     "god_especifico": [
       {
-        "id": 47,
-        "nome": "Leto"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 47,
+        "nome": "Leto"
       }
     ],
     "ingles": "Volcanic Forge",
@@ -7864,16 +7864,16 @@
     ],
     "god_especifico": [
       {
-        "id": 47,
-        "nome": "Leto"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 47,
+        "nome": "Leto"
       }
     ],
     "ingles": "Perception",
@@ -7906,16 +7906,16 @@
     ],
     "god_especifico": [
       {
-        "id": 49,
-        "nome": "Oceano"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 49,
+        "nome": "Oceano"
       }
     ],
     "ingles": "Bite Of The Shark",
@@ -7954,16 +7954,16 @@
     ],
     "god_especifico": [
       {
-        "id": 49,
-        "nome": "Oceano"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 49,
+        "nome": "Oceano"
       }
     ],
     "ingles": "Weightless Mace",
@@ -7998,16 +7998,16 @@
     ],
     "god_especifico": [
       {
-        "id": 49,
-        "nome": "Oceano"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 49,
+        "nome": "Oceano"
       }
     ],
     "ingles": "Frontline Heroics",
@@ -8040,16 +8040,16 @@
     ],
     "god_especifico": [
       {
-        "id": 51,
-        "nome": "Hyperion"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 51,
+        "nome": "Hyperion"
       }
     ],
     "ingles": "Gemini",
@@ -8081,16 +8081,16 @@
     ],
     "god_especifico": [
       {
-        "id": 51,
-        "nome": "Hyperion"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 51,
+        "nome": "Hyperion"
       }
     ],
     "ingles": "Heroic Renewal",
@@ -8123,16 +8123,16 @@
     ],
     "god_especifico": [
       {
-        "id": 51,
-        "nome": "Hyperion"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 51,
+        "nome": "Hyperion"
       }
     ],
     "ingles": "Sons Of The Sun",
@@ -8165,16 +8165,16 @@
     ],
     "god_especifico": [
       {
-        "id": 50,
-        "nome": "Rheia"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 50,
+        "nome": "Rheia"
       }
     ],
     "ingles": "Horns Of Consecration",
@@ -8207,16 +8207,16 @@
     ],
     "god_especifico": [
       {
-        "id": 50,
-        "nome": "Rheia"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 50,
+        "nome": "Rheia"
       }
     ],
     "ingles": "Orichalcum Mail",
@@ -8248,16 +8248,16 @@
     ],
     "god_especifico": [
       {
-        "id": 50,
-        "nome": "Rheia"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 50,
+        "nome": "Rheia"
       }
     ],
     "ingles": "Rheias Gift",
@@ -8290,16 +8290,16 @@
     ],
     "god_especifico": [
       {
-        "id": 52,
-        "nome": "Theia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 52,
+        "nome": "Theia"
       }
     ],
     "ingles": "Prophetic Sight",
@@ -8333,16 +8333,16 @@
     ],
     "god_especifico": [
       {
-        "id": 52,
-        "nome": "Theia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 52,
+        "nome": "Theia"
       }
     ],
     "ingles": "Poseidons Secret",
@@ -8380,16 +8380,16 @@
     ],
     "god_especifico": [
       {
-        "id": 52,
-        "nome": "Theia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 52,
+        "nome": "Theia"
       }
     ],
     "ingles": "Lance Of Stone",
@@ -8428,16 +8428,16 @@
     ],
     "god_especifico": [
       {
-        "id": 54,
-        "nome": "Hélios"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 54,
+        "nome": "Hélios"
       }
     ],
     "ingles": "Halo Of The Sun",
@@ -8466,16 +8466,16 @@
     ],
     "god_especifico": [
       {
-        "id": 54,
-        "nome": "Hélios"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 54,
+        "nome": "Hélios"
       }
     ],
     "ingles": "Petrification",
@@ -8504,16 +8504,16 @@
     ],
     "god_especifico": [
       {
-        "id": 54,
-        "nome": "Hélios"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 54,
+        "nome": "Hélios"
       }
     ],
     "ingles": "Titanomachy",
@@ -8542,16 +8542,16 @@
     ],
     "god_especifico": [
       {
-        "id": 53,
-        "nome": "Atlas"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 53,
+        "nome": "Atlas"
       }
     ],
     "ingles": "Guardian Of Io",
@@ -8580,16 +8580,16 @@
     ],
     "god_especifico": [
       {
-        "id": 53,
-        "nome": "Atlas"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 53,
+        "nome": "Atlas"
       }
     ],
     "ingles": "Devotees Of Atlas",
@@ -8618,16 +8618,16 @@
     ],
     "god_especifico": [
       {
-        "id": 53,
-        "nome": "Atlas"
-      },
-      {
         "id": 11,
         "nome": "Gaia"
       },
       {
         "id": 12,
         "nome": "Cronos"
+      },
+      {
+        "id": 53,
+        "nome": "Atlas"
       }
     ],
     "ingles": "Titan Shield",
@@ -8656,16 +8656,16 @@
     ],
     "god_especifico": [
       {
-        "id": 55,
-        "nome": "Hécate"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 55,
+        "nome": "Hécate"
       }
     ],
     "ingles": "Asper Blood",
@@ -8694,16 +8694,16 @@
     ],
     "god_especifico": [
       {
-        "id": 55,
-        "nome": "Hécate"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 55,
+        "nome": "Hécate"
       }
     ],
     "ingles": "Mythic Rejuvenation",
@@ -8732,16 +8732,16 @@
     ],
     "god_especifico": [
       {
-        "id": 55,
-        "nome": "Hécate"
-      },
-      {
         "id": 10,
         "nome": "Urano"
       },
       {
         "id": 11,
         "nome": "Gaia"
+      },
+      {
+        "id": 55,
+        "nome": "Hécate"
       }
     ],
     "ingles": "Celerity",
@@ -8976,16 +8976,16 @@
     ],
     "god_especifico": [
       {
-        "id": 56,
-        "nome": "Xuannü"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 56,
+        "nome": "Xuannü"
       }
     ],
     "ingles": "Divine Books",
@@ -9020,16 +9020,16 @@
     ],
     "god_especifico": [
       {
-        "id": 56,
-        "nome": "Xuannü"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 56,
+        "nome": "Xuannü"
       }
     ],
     "ingles": "Reincarnation",
@@ -9061,16 +9061,16 @@
     ],
     "god_especifico": [
       {
-        "id": 56,
-        "nome": "Xuannü"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 56,
+        "nome": "Xuannü"
       }
     ],
     "ingles": "Qilin%27s Blessing",
@@ -9099,16 +9099,16 @@
     ],
     "god_especifico": [
       {
-        "id": 57,
-        "nome": "Chiyou"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 57,
+        "nome": "Chiyou"
       }
     ],
     "ingles": "Master Of Weaponry",
@@ -9141,16 +9141,16 @@
     ],
     "god_especifico": [
       {
-        "id": 57,
-        "nome": "Chiyou"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 57,
+        "nome": "Chiyou"
       }
     ],
     "ingles": "Spoils Of War",
@@ -9182,16 +9182,16 @@
     ],
     "god_especifico": [
       {
-        "id": 57,
-        "nome": "Chiyou"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 57,
+        "nome": "Chiyou"
       }
     ],
     "ingles": "Son Of Loong",
@@ -9224,16 +9224,16 @@
     ],
     "god_especifico": [
       {
-        "id": 57,
-        "nome": "Chiyou"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 57,
+        "nome": "Chiyou"
       }
     ],
     "ingles": "Rage Of Slaughter",
@@ -9271,16 +9271,16 @@
     ],
     "god_especifico": [
       {
-        "id": 58,
-        "nome": "Houtu"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 58,
+        "nome": "Houtu"
       }
     ],
     "ingles": "Advanced Defenses",
@@ -9317,16 +9317,16 @@
     ],
     "god_especifico": [
       {
-        "id": 58,
-        "nome": "Houtu"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 58,
+        "nome": "Houtu"
       }
     ],
     "ingles": "Chasing The Sun",
@@ -9359,16 +9359,16 @@
     ],
     "god_especifico": [
       {
-        "id": 58,
-        "nome": "Houtu"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 58,
+        "nome": "Houtu"
       }
     ],
     "ingles": "Abundance",
@@ -9400,16 +9400,16 @@
     ],
     "god_especifico": [
       {
-        "id": 58,
-        "nome": "Houtu"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 58,
+        "nome": "Houtu"
       }
     ],
     "ingles": "Sinister Defiance",
@@ -9445,16 +9445,16 @@
     ],
     "god_especifico": [
       {
-        "id": 59,
-        "nome": "Goumang"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 59,
+        "nome": "Goumang"
       }
     ],
     "ingles": "Vibrant Land",
@@ -9487,16 +9487,16 @@
     ],
     "god_especifico": [
       {
-        "id": 59,
-        "nome": "Goumang"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 59,
+        "nome": "Goumang"
       }
     ],
     "ingles": "Hooves Of The Wind",
@@ -9529,16 +9529,16 @@
     ],
     "god_especifico": [
       {
-        "id": 59,
-        "nome": "Goumang"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 59,
+        "nome": "Goumang"
       }
     ],
     "ingles": "Frenzied Dash",
@@ -9570,16 +9570,16 @@
     ],
     "god_especifico": [
       {
-        "id": 60,
-        "nome": "Nüba"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 60,
+        "nome": "Nüba"
       }
     ],
     "ingles": "Scorching Feathers",
@@ -9612,16 +9612,16 @@
     ],
     "god_especifico": [
       {
-        "id": 60,
-        "nome": "Nüba"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 60,
+        "nome": "Nüba"
       }
     ],
     "ingles": "Rock Solid",
@@ -9655,16 +9655,16 @@
     ],
     "god_especifico": [
       {
-        "id": 60,
-        "nome": "Nüba"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 60,
+        "nome": "Nüba"
       }
     ],
     "ingles": "Bottomless Stomach",
@@ -9696,16 +9696,16 @@
     ],
     "god_especifico": [
       {
-        "id": 61,
-        "nome": "Rushou"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 61,
+        "nome": "Rushou"
       }
     ],
     "ingles": "Gilded Shields",
@@ -9741,16 +9741,16 @@
     ],
     "god_especifico": [
       {
-        "id": 61,
-        "nome": "Rushou"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 61,
+        "nome": "Rushou"
       }
     ],
     "ingles": "Divine Judgement",
@@ -9783,16 +9783,16 @@
     ],
     "god_especifico": [
       {
-        "id": 61,
-        "nome": "Rushou"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 61,
+        "nome": "Rushou"
       }
     ],
     "ingles": "Autumn Of Abundance",
@@ -9825,16 +9825,16 @@
     ],
     "god_especifico": [
       {
-        "id": 62,
-        "nome": "Gonggong"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 62,
+        "nome": "Gonggong"
       }
     ],
     "ingles": "Shaker Of Heaven",
@@ -9867,16 +9867,16 @@
     ],
     "god_especifico": [
       {
-        "id": 62,
-        "nome": "Gonggong"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 62,
+        "nome": "Gonggong"
       }
     ],
     "ingles": "Tempestuous Storm",
@@ -9911,16 +9911,16 @@
     ],
     "god_especifico": [
       {
-        "id": 62,
-        "nome": "Gonggong"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 62,
+        "nome": "Gonggong"
       }
     ],
     "ingles": "Last Stand",
@@ -9953,16 +9953,16 @@
     ],
     "god_especifico": [
       {
-        "id": 62,
-        "nome": "Gonggong"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 14,
         "nome": "Nu Wa"
+      },
+      {
+        "id": 62,
+        "nome": "Gonggong"
       }
     ],
     "ingles": "Rising Tide",
@@ -9996,16 +9996,16 @@
     ],
     "god_especifico": [
       {
-        "id": 63,
-        "nome": "Huangdi"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 63,
+        "nome": "Huangdi"
       }
     ],
     "ingles": "Xuanyuan%27s Bloodline",
@@ -10039,16 +10039,16 @@
     ],
     "god_especifico": [
       {
-        "id": 63,
-        "nome": "Huangdi"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 63,
+        "nome": "Huangdi"
       }
     ],
     "ingles": "Leizu%27s Silk",
@@ -10083,16 +10083,16 @@
     ],
     "god_especifico": [
       {
-        "id": 63,
-        "nome": "Huangdi"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 63,
+        "nome": "Huangdi"
       }
     ],
     "ingles": "Imperial Order",
@@ -10134,16 +10134,16 @@
     ],
     "god_especifico": [
       {
-        "id": 63,
-        "nome": "Huangdi"
-      },
-      {
         "id": 13,
         "nome": "Fu Xi"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 63,
+        "nome": "Huangdi"
       }
     ],
     "ingles": "Power Of Chaos",
@@ -10175,16 +10175,16 @@
     ],
     "god_especifico": [
       {
-        "id": 64,
-        "nome": "Zhurong"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 64,
+        "nome": "Zhurong"
       }
     ],
     "ingles": "Flaming Blood",
@@ -10216,16 +10216,16 @@
     ],
     "god_especifico": [
       {
-        "id": 64,
-        "nome": "Zhurong"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 64,
+        "nome": "Zhurong"
       }
     ],
     "ingles": "Song Of Midsummer",
@@ -10260,16 +10260,16 @@
     ],
     "god_especifico": [
       {
-        "id": 64,
-        "nome": "Zhurong"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 64,
+        "nome": "Zhurong"
       }
     ],
     "ingles": "Southern Fire",
@@ -10410,16 +10410,16 @@
     ],
     "god_especifico": [
       {
-        "id": 68,
-        "nome": "Ame-no-Uzume"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 68,
+        "nome": "Ame-no-Uzume"
       }
     ],
     "ingles": "Wind Sickles",
@@ -10456,16 +10456,16 @@
     ],
     "god_especifico": [
       {
-        "id": 68,
-        "nome": "Ame-no-Uzume"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 68,
+        "nome": "Ame-no-Uzume"
       }
     ],
     "ingles": "Katagi",
@@ -10498,16 +10498,16 @@
     ],
     "god_especifico": [
       {
-        "id": 68,
-        "nome": "Ame-no-Uzume"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 68,
+        "nome": "Ame-no-Uzume"
       }
     ],
     "ingles": "Gohei Wands",
@@ -10541,16 +10541,16 @@
     ],
     "god_especifico": [
       {
-        "id": 69,
-        "nome": "Minakatatomi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 69,
+        "nome": "Minakatatomi"
       }
     ],
     "ingles": "Condemned Soul",
@@ -10579,16 +10579,16 @@
     ],
     "god_especifico": [
       {
-        "id": 69,
-        "nome": "Minakatatomi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 69,
+        "nome": "Minakatatomi"
       }
     ],
     "ingles": "Saltwater Spring",
@@ -10621,16 +10621,16 @@
     ],
     "god_especifico": [
       {
-        "id": 69,
-        "nome": "Minakatatomi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 69,
+        "nome": "Minakatatomi"
       }
     ],
     "ingles": "Hunters Strength",
@@ -10659,16 +10659,16 @@
     ],
     "god_especifico": [
       {
-        "id": 69,
-        "nome": "Minakatatomi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 69,
+        "nome": "Minakatatomi"
       }
     ],
     "ingles": "Kumiki",
@@ -10697,16 +10697,16 @@
     ],
     "god_especifico": [
       {
-        "id": 70,
-        "nome": "Inari Okami"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 70,
+        "nome": "Inari Okami"
       }
     ],
     "ingles": "Deadly Snare",
@@ -10740,16 +10740,16 @@
     ],
     "god_especifico": [
       {
-        "id": 70,
-        "nome": "Inari Okami"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 70,
+        "nome": "Inari Okami"
       }
     ],
     "ingles": "Wisdom Of Nine",
@@ -10784,16 +10784,16 @@
     ],
     "god_especifico": [
       {
-        "id": 70,
-        "nome": "Inari Okami"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 70,
+        "nome": "Inari Okami"
       }
     ],
     "ingles": "Sashimono Bannermen",
@@ -10827,16 +10827,16 @@
     ],
     "god_especifico": [
       {
-        "id": 70,
-        "nome": "Inari Okami"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 70,
+        "nome": "Inari Okami"
       }
     ],
     "ingles": "Ivory Netsuke",
@@ -10870,16 +10870,16 @@
     ],
     "god_especifico": [
       {
-        "id": 71,
-        "nome": "Hachiman"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 71,
+        "nome": "Hachiman"
       }
     ],
     "ingles": "Ascetic Practices",
@@ -10916,16 +10916,16 @@
     ],
     "god_especifico": [
       {
-        "id": 71,
-        "nome": "Hachiman"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 71,
+        "nome": "Hachiman"
       }
     ],
     "ingles": "Golden Kite",
@@ -10963,16 +10963,16 @@
     ],
     "god_especifico": [
       {
-        "id": 71,
-        "nome": "Hachiman"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 71,
+        "nome": "Hachiman"
       }
     ],
     "ingles": "Eight Banners",
@@ -11006,16 +11006,16 @@
     ],
     "god_especifico": [
       {
-        "id": 73,
-        "nome": "Raijin"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 73,
+        "nome": "Raijin"
       }
     ],
     "ingles": "Thunderous Presence",
@@ -11048,16 +11048,16 @@
     ],
     "god_especifico": [
       {
-        "id": 73,
-        "nome": "Raijin"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 73,
+        "nome": "Raijin"
       }
     ],
     "ingles": "Den Den Drums",
@@ -11090,16 +11090,16 @@
     ],
     "god_especifico": [
       {
-        "id": 73,
-        "nome": "Raijin"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 73,
+        "nome": "Raijin"
       }
     ],
     "ingles": "Hannya Mask",
@@ -11128,16 +11128,16 @@
     ],
     "god_especifico": [
       {
-        "id": 72,
-        "nome": "Fujin"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 72,
+        "nome": "Fujin"
       }
     ],
     "ingles": "Deadly Rage",
@@ -11171,16 +11171,16 @@
     ],
     "god_especifico": [
       {
-        "id": 72,
-        "nome": "Fujin"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 72,
+        "nome": "Fujin"
       }
     ],
     "ingles": "Oni Mask",
@@ -11214,16 +11214,16 @@
     ],
     "god_especifico": [
       {
-        "id": 72,
-        "nome": "Fujin"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 72,
+        "nome": "Fujin"
       }
     ],
     "ingles": "Gales Fury",
@@ -11258,16 +11258,16 @@
     ],
     "god_especifico": [
       {
-        "id": 74,
-        "nome": "Takemikazuchi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 74,
+        "nome": "Takemikazuchi"
       }
     ],
     "ingles": "Burning Malevolence",
@@ -11304,16 +11304,16 @@
     ],
     "god_especifico": [
       {
-        "id": 74,
-        "nome": "Takemikazuchi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 74,
+        "nome": "Takemikazuchi"
       }
     ],
     "ingles": "Sumo Training",
@@ -11346,16 +11346,16 @@
     ],
     "god_especifico": [
       {
-        "id": 74,
-        "nome": "Takemikazuchi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 74,
+        "nome": "Takemikazuchi"
       }
     ],
     "ingles": "Ten-fist Sword",
@@ -11389,16 +11389,16 @@
     ],
     "god_especifico": [
       {
-        "id": 74,
-        "nome": "Takemikazuchi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 74,
+        "nome": "Takemikazuchi"
       }
     ],
     "ingles": "Sojutsu",
@@ -11431,16 +11431,16 @@
     ],
     "god_especifico": [
       {
-        "id": 75,
-        "nome": "Okuninushi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 75,
+        "nome": "Okuninushi"
       }
     ],
     "ingles": "Restless Army",
@@ -11474,16 +11474,16 @@
     ],
     "god_especifico": [
       {
-        "id": 75,
-        "nome": "Okuninushi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 75,
+        "nome": "Okuninushi"
       }
     ],
     "ingles": "Divine Prefecture",
@@ -11515,16 +11515,16 @@
     ],
     "god_especifico": [
       {
-        "id": 75,
-        "nome": "Okuninushi"
-      },
-      {
         "id": 17,
         "nome": "Amaterasu"
       },
       {
         "id": 18,
         "nome": "Tsukuyomi"
+      },
+      {
+        "id": 75,
+        "nome": "Okuninushi"
       }
     ],
     "ingles": "Mechanical Artisans",
@@ -11559,16 +11559,16 @@
     ],
     "god_especifico": [
       {
-        "id": 76,
-        "nome": "Watatsumi"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 76,
+        "nome": "Watatsumi"
       }
     ],
     "ingles": "Eternal Haunting",
@@ -11600,16 +11600,16 @@
     ],
     "god_especifico": [
       {
-        "id": 76,
-        "nome": "Watatsumi"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 76,
+        "nome": "Watatsumi"
       }
     ],
     "ingles": "Seaside Infiltrators",
@@ -11642,16 +11642,16 @@
     ],
     "god_especifico": [
       {
-        "id": 76,
-        "nome": "Watatsumi"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 76,
+        "nome": "Watatsumi"
       }
     ],
     "ingles": "Onmyodo",
@@ -11683,16 +11683,16 @@
     ],
     "god_especifico": [
       {
-        "id": 76,
-        "nome": "Watatsumi"
-      },
-      {
         "id": 18,
         "nome": "Tsukuyomi"
       },
       {
         "id": 19,
         "nome": "Susanoo"
+      },
+      {
+        "id": 76,
+        "nome": "Watatsumi"
       }
     ],
     "ingles": "Asymmetrical Bows",
@@ -11912,12 +11912,12 @@
     ],
     "god_especifico": [
       {
-        "id": 11,
-        "nome": "Gaia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
       },
       {
         "id": 12,
@@ -11950,12 +11950,12 @@
     ],
     "god_especifico": [
       {
-        "id": 11,
-        "nome": "Gaia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
       },
       {
         "id": 12,
@@ -11988,12 +11988,12 @@
     ],
     "god_especifico": [
       {
-        "id": 11,
-        "nome": "Gaia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
       },
       {
         "id": 12,
@@ -12026,12 +12026,12 @@
     ],
     "god_especifico": [
       {
-        "id": 11,
-        "nome": "Gaia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
       },
       {
         "id": 12,
@@ -12064,12 +12064,12 @@
     ],
     "god_especifico": [
       {
-        "id": 11,
-        "nome": "Gaia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
       },
       {
         "id": 12,
@@ -12102,12 +12102,12 @@
     ],
     "god_especifico": [
       {
-        "id": 11,
-        "nome": "Gaia"
-      },
-      {
         "id": 10,
         "nome": "Urano"
+      },
+      {
+        "id": 11,
+        "nome": "Gaia"
       },
       {
         "id": 12,
@@ -12140,16 +12140,16 @@
     ],
     "god_especifico": [
       {
-        "id": 64,
-        "nome": "Zhurong"
-      },
-      {
         "id": 14,
         "nome": "Nu Wa"
       },
       {
         "id": 15,
         "nome": "Shennong"
+      },
+      {
+        "id": 64,
+        "nome": "Zhurong"
       }
     ],
     "ingles": "Slash And Burn",
@@ -12214,12 +12214,12 @@
     ],
     "god_especifico": [
       {
-        "id": 79,
-        "nome": "Pan"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 79,
+        "nome": "Pan"
       }
     ],
     "ingles": "Thorned Walls",
@@ -12246,12 +12246,12 @@
     ],
     "god_especifico": [
       {
-        "id": 79,
-        "nome": "Pan"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 79,
+        "nome": "Pan"
       }
     ],
     "ingles": "Pan&#x27;s Pioneers",
@@ -12278,12 +12278,12 @@
     ],
     "god_especifico": [
       {
-        "id": 79,
-        "nome": "Pan"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 79,
+        "nome": "Pan"
       }
     ],
     "ingles": "Predatory Instinct",
@@ -12311,12 +12311,12 @@
     ],
     "god_especifico": [
       {
-        "id": 80,
-        "nome": "Héstia"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 80,
+        "nome": "Héstia"
       }
     ],
     "ingles": "Gracious Hospitality",
@@ -12339,12 +12339,12 @@
     ],
     "god_especifico": [
       {
-        "id": 80,
-        "nome": "Héstia"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 80,
+        "nome": "Héstia"
       }
     ],
     "ingles": "Hallowed Woodlands",
@@ -12370,12 +12370,12 @@
     ],
     "god_especifico": [
       {
-        "id": 80,
-        "nome": "Héstia"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 80,
+        "nome": "Héstia"
       }
     ],
     "ingles": "Fated Arrows",
@@ -12398,12 +12398,12 @@
     ],
     "god_especifico": [
       {
-        "id": 81,
-        "nome": "Perséfone"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 81,
+        "nome": "Perséfone"
       }
     ],
     "ingles": "Sacred Land",
@@ -12429,12 +12429,12 @@
     ],
     "god_especifico": [
       {
-        "id": 81,
-        "nome": "Perséfone"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 81,
+        "nome": "Perséfone"
       }
     ],
     "ingles": "Enchanted Hymn",
@@ -12461,12 +12461,12 @@
     ],
     "god_especifico": [
       {
-        "id": 81,
-        "nome": "Perséfone"
-      },
-      {
         "id": 78,
         "nome": "Deméter"
+      },
+      {
+        "id": 81,
+        "nome": "Perséfone"
       }
     ],
     "ingles": "Pious Sacrifice",
