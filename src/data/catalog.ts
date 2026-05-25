@@ -81,6 +81,11 @@ export type DeusExplicacaoMaior = {
   blocos: DeusExplicacaoBloco[];
 };
 
+export type StartBuildOrderAuthor = {
+  name: string;
+  imageUrl?: string;
+};
+
 export type StartBuildOrder = {
   id: number;
   /** Rota `/starts/:slug` — derivado de título + autores (ver `buildStartSlug`). */
@@ -89,7 +94,7 @@ export type StartBuildOrder = {
   status?: string;
   titulo: string;
   /** Autor(es) do build (após « - por » no Notion); vários separados por | no texto original. */
-  author: string[];
+  author: StartBuildOrderAuthor[];
   /** Deuses major/minor inferidos do título ou da civilização. */
   god: string[];
   /**

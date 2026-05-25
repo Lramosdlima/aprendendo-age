@@ -3,7 +3,10 @@
     "id": 1,
     "titulo": "Gregos",
     "author": [
-      "Moose"
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Zeus",
@@ -351,7 +354,10 @@
     "id": 2,
     "titulo": "Egípcios",
     "author": [
-      "Moose"
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Rá",
@@ -531,7 +537,10 @@
     "id": 3,
     "titulo": "Nórdicos",
     "author": [
-      "Moose"
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Odin",
@@ -766,7 +775,10 @@
     "id": 4,
     "titulo": "Atlantes",
     "author": [
-      "Moose"
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Gaia",
@@ -946,7 +958,10 @@
     "id": 5,
     "titulo": "Chineses",
     "author": [
-      "Moose"
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Fu Xi",
@@ -1111,7 +1126,10 @@
     "id": 6,
     "titulo": "Gregos (Mar 🌊:aomr_type_ship_icon:) by HuskSuppe",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Zeus",
@@ -1263,7 +1281,10 @@
     "id": 7,
     "titulo": ":aomr_hades_icon: Hades (com Cofre de Érebus) by Aussie_Drongo",
     "author": [
-      "Aussie_Drongo"
+      {
+        "name": "Aussie_Drongo",
+        "imageUrl": "/assets/authors/aussie-drongo.jpg"
+      }
     ],
     "god": [
       "Hades"
@@ -1516,7 +1537,10 @@
     "id": 8,
     "titulo": ":aomr_poseidon_icon: Poseidon (com :aomr_lure_power_icon:) by Mosca",
     "author": [
-      "Mosca"
+      {
+        "name": "Mosca",
+        "imageUrl": "https://avatars.steamstatic.com/75a5dba664799f61a349072e4d808a3e030af87d_full.jpg"
+      }
     ],
     "god": [
       "Poseidon"
@@ -1720,7 +1744,10 @@
     "id": 9,
     "titulo": ":aomr_isis_icon: Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E)",
     "author": [
-      "Light Yagami"
+      {
+        "name": "KevenAoM",
+        "imageUrl": "https://avatars.steamstatic.com/097e9348a2cb2b97527eb8f1cf8582e4b7c3fdca_full.jpg"
+      }
     ],
     "god": [
       "Isis"
@@ -1942,7 +1969,10 @@
     "id": 10,
     "titulo": ":aomr_ra_icon: Rá (2TC | Bast)",
     "author": [
-      "Light Yagami"
+      {
+        "name": "KevenAoM",
+        "imageUrl": "https://avatars.steamstatic.com/097e9348a2cb2b97527eb8f1cf8582e4b7c3fdca_full.jpg"
+      }
     ],
     "god": [
       "Ra"
@@ -2176,7 +2206,10 @@
     "id": 11,
     "titulo": ":aomr_set_icon: Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM]",
     "author": [
-      "Cafeína [PSGM]"
+      {
+        "name": "Cafeína [PSGM]",
+        "imageUrl": "https://avatars.steamstatic.com/c169a4e0670e4fb33ce0fb1d9321b80a73adc7a0_full.jpg"
+      }
     ],
     "god": [
       "Set"
@@ -2456,7 +2489,10 @@
     "id": 12,
     "titulo": ":aomr_set_icon: Set Rush! :aomr_type_siege_weapon_icon: - por Miniyeti",
     "author": [
-      "Miniyeti"
+      {
+        "name": "Miniyeti",
+        "imageUrl": "https://avatars.steamstatic.com/49d94564bef50f7ae277379ab49d745e18590301_full.jpg"
+      }
     ],
     "god": [
       "Set"
@@ -2671,7 +2707,10 @@
     "id": 13,
     "titulo": ":aomr_freyr_icon: Freyr (:aomr_pickaxe_icon:+:aomr_hand_axe_icon:)",
     "author": [
-      "Scooby"
+      {
+        "name": "Scooby",
+        "imageUrl": "https://avatars.steamstatic.com/e7aa65e3502bb3bd7042e75d71ca6659448c914f_full.jpg"
+      }
     ],
     "god": [
       "Freyr"
@@ -2882,7 +2921,10 @@
     "id": 14,
     "titulo": ":aomr_freyr_icon: Freyr Rush/2TC :aomr_type_siege_weapon_icon: - por Aussie_Drongo",
     "author": [
-      "Aussie_Drongo"
+      {
+        "name": "Aussie_Drongo",
+        "imageUrl": "/assets/authors/aussie-drongo.jpg"
+      }
     ],
     "god": [
       "Freyr"
@@ -3059,7 +3101,10 @@
     "id": 15,
     "titulo": ":aomr_loki_icon: Loki (:aomr_relic_anim: Herlíquias) - por HuskSuppe",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Loki"
@@ -3298,7 +3343,10 @@
     "id": 16,
     "titulo": ":aomr_thor_icon: Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg",
     "author": [
-      "Borg"
+      {
+        "name": "Borg",
+        "imageUrl": "https://avatars.steamstatic.com/e8d3ec2a254a5285a35665a42d720fa0191ba02d_full.jpg"
+      }
     ],
     "god": [
       "Thor"
@@ -3486,7 +3534,10 @@
     "id": 17,
     "titulo": ":aomr_thor_icon: Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose",
     "author": [
-      "Moose"
+      {
+        "name": "Moose",
+        "imageUrl": "https://yt3.googleusercontent.com/doYIQ7DUckOTiQwwCIyBrsMoMYmzaXYbhJnIJqCPS176Sztk_NNsLq1MV-0bHRDeuxqu0rPmTA=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Thor"
@@ -3691,7 +3742,10 @@
     "id": 18,
     "titulo": ":aomr_kronos_icon: Cronos 2TC - por Tpisai",
     "author": [
-      "Tpisai"
+      {
+        "name": "Tpisai",
+        "imageUrl": "https://yt3.googleusercontent.com/WWfxNF1Dpk_pnIRXyI7sksFQOgQYI8eGqZSOcSNJXoYiceQlHF4RCTY0Is9E99IaugRiBO0Hgg=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Cronos"
@@ -3886,7 +3940,10 @@
     "id": 19,
     "titulo": ":aomr_kronos_icon: Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games",
     "author": [
-      "Morley Games"
+      {
+        "name": "Morley Games",
+        "imageUrl": "https://yt3.googleusercontent.com/whaU7TrzxilqsCWJfKdcBCaEjRqpGL8Dt6JaWUqhrOJkjKnFmRDNYcqWswb5fb3OHzaTBAYg=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Cronos"
@@ -4099,7 +4156,10 @@
     "id": 20,
     "titulo": ":aomr_gaia_icon: Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion",
     "author": [
-      "Balerion"
+      {
+        "name": "Balerion",
+        "imageUrl": "https://avatars.steamstatic.com/4f89f3484a373cd69e4b8ce2513c06c0a4109e5c_full.jpg"
+      }
     ],
     "god": [
       "Gaia"
@@ -4334,7 +4394,10 @@
     "id": 21,
     "titulo": ":aomr_gaia_icon: Gaia Eco - por Balerion",
     "author": [
-      "Balerion"
+      {
+        "name": "Balerion",
+        "imageUrl": "https://avatars.steamstatic.com/4f89f3484a373cd69e4b8ce2513c06c0a4109e5c_full.jpg"
+      }
     ],
     "god": [
       "Gaia"
@@ -4529,7 +4592,10 @@
     "id": 22,
     "titulo": ":aomr_gaia_icon: Gaia Heróica :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:) - por Boxer",
     "author": [
-      "Boxer"
+      {
+        "name": "Boxer",
+        "imageUrl": "https://avatars.steamstatic.com/704973e6dcff2ddbc4cc3ece429d96c4e88cfab1_full.jpg"
+      }
     ],
     "god": [
       "Gaia"
@@ -4703,7 +4769,10 @@
     "id": 23,
     "titulo": ":aomr_fuxi_icon: Fu Xi",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Fu Xi"
@@ -4911,7 +4980,10 @@
     "id": 24,
     "titulo": ":aomr_shennong_icon: Shennong (2 TC :aomr_town_center_chinese:)",
     "author": [
-      "Morley"
+      {
+        "name": "Morley",
+        "imageUrl": "https://yt3.googleusercontent.com/whaU7TrzxilqsCWJfKdcBCaEjRqpGL8Dt6JaWUqhrOJkjKnFmRDNYcqWswb5fb3OHzaTBAYg=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Shennong"
@@ -5129,7 +5201,10 @@
     "id": 25,
     "titulo": ":aomr_shennong_icon: Shennong Fazendeiro (:aomr_farm_icon:aomr_prosperous_seeds:)",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Shennong"
@@ -5383,8 +5458,14 @@
     "id": 26,
     "titulo": ":aomr_amaterasu_icon: Amaterasu",
     "author": [
-      "MikeKing",
-      "TheRapl"
+      {
+        "name": "MikeKing",
+        "imageUrl": "https://yt3.googleusercontent.com/ZdngRgAr5yXgzcYVJkXCfpI5RwylL8DwbUnIzUmogxNwCnz-1WBJBbEBXWNGL_jGW7ORpzL_=s160-c-k-c0x00ffffff-no-rj"
+      },
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/0jz4T0uQ3pmAl953SR6BFeqs8dgNPvJcEjkcwR7UhbbyQZwcslyEIdgCY5owdCF1HV0SvfFz3A=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Amaterasu"
@@ -5652,7 +5733,10 @@
     "id": 27,
     "titulo": ":aomr_susanoo_icon: Susanoo - por TheRapl",
     "author": [
-      "TheRapl"
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/0jz4T0uQ3pmAl953SR6BFeqs8dgNPvJcEjkcwR7UhbbyQZwcslyEIdgCY5owdCF1HV0SvfFz3A=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Susanoo"
@@ -5847,7 +5931,10 @@
     "id": 28,
     "titulo": ":aomr_susanoo_icon: Susanoo (++Mikos :favoraom:) - por HuskSuppe",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Susanoo"
@@ -6096,7 +6183,10 @@
     "id": 29,
     "titulo": ":aomr_tsukuyomi_icon: Tsukuyomi",
     "author": [
-      "TheRapl"
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/0jz4T0uQ3pmAl953SR6BFeqs8dgNPvJcEjkcwR7UhbbyQZwcslyEIdgCY5owdCF1HV0SvfFz3A=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Tsukuyomi"
@@ -6323,7 +6413,10 @@
     "id": 30,
     "titulo": ":aomr_tsukuyomi_icon: Tsukuyomi (Mar 🌊)",
     "author": [
-      "Scooby"
+      {
+        "name": "Scooby",
+        "imageUrl": "https://avatars.steamstatic.com/e7aa65e3502bb3bd7042e75d71ca6659448c914f_full.jpg"
+      }
     ],
     "god": [
       "Tsukuyomi"
@@ -6570,7 +6663,10 @@
     "id": 31,
     "titulo": ":aomr_tsukuyomi_icon: Tsukuyomi (Rush+2TC) - por HuskSuppe",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Tsukuyomi"
@@ -6779,7 +6875,10 @@
     "id": 32,
     "titulo": "Huitzilopochtli (com Pacto de Sangue :aomr_blood_pact_icon:) - por TheRapl",
     "author": [
-      "TheRapl"
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/0jz4T0uQ3pmAl953SR6BFeqs8dgNPvJcEjkcwR7UhbbyQZwcslyEIdgCY5owdCF1HV0SvfFz3A=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Huitzilopochtli"
@@ -6951,7 +7050,10 @@
     "id": 33,
     "titulo": "Tezcatlipoca 4:07 - por TheRapl",
     "author": [
-      "TheRapl"
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/0jz4T0uQ3pmAl953SR6BFeqs8dgNPvJcEjkcwR7UhbbyQZwcslyEIdgCY5owdCF1HV0SvfFz3A=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Tezcatlipoca"
@@ -7105,7 +7207,10 @@
     "id": 34,
     "titulo": "Quetzalcoatl (Calpulli :aomr_calpulli_icon: Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon:) por TheRapl",
     "author": [
-      "TheRapl"
+      {
+        "name": "TheRapl",
+        "imageUrl": "https://yt3.googleusercontent.com/0jz4T0uQ3pmAl953SR6BFeqs8dgNPvJcEjkcwR7UhbbyQZwcslyEIdgCY5owdCF1HV0SvfFz3A=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Quetzalcoatl"
@@ -7281,7 +7386,10 @@
     "id": 35,
     "titulo": "Quetzalcoatl ECO (Todos Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon::aomr_calpulli_livestock_pen_icon: do Calpulli :aomr_calpulli_icon:) por HuskSuppe",
     "author": [
-      "HuskSuppe"
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
     ],
     "god": [
       "Quetzalcoatl"

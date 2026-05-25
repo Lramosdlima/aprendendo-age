@@ -1,4 +1,5 @@
 import type { StartBuildOrder } from "@/data/catalog";
+import { startAuthorName } from "@/lib/startAuthor";
 
 /** Remove apenas `:tokens:` Notion no início do título (para casar com `deuses_aom.json` sem ícones). */
 export function stripLeadingNotionTokens(text: string): string {
@@ -14,14 +15,14 @@ export function stripLeadingNotionTokens(text: string): string {
 export function buildStartLookupKey(s: StartBuildOrder): string {
   const t = s.titulo.trim();
   if (!s.author?.length) return t;
-  return `${t} - por ${s.author.map((a) => a.trim()).join(" | ")}`;
+  return `${t} - por ${s.author.map((a) => startAuthorName(a)).join(" | ")}`;
 }
 
 /** Mesma chave com ícones `:token:` removidos do nome (lista de deuses não os inclui). */
 export function buildStartLookupKeyWithoutIcons(s: StartBuildOrder): string {
   const t = stripLeadingNotionTokens(s.titulo);
   if (!s.author?.length) return t;
-  return `${t} - por ${s.author.map((a) => a.trim()).join(" | ")}`;
+  return `${t} - por ${s.author.map((a) => startAuthorName(a)).join(" | ")}`;
 }
 
 /**

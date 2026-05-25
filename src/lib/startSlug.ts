@@ -19,9 +19,14 @@ export function slugifyStartSegment(raw: string): string {
  * Slug estável para rotas: `titulo` + `author` (vários autores concatenados com hífen).
  * Colisões devem ser resolvidas ao gerar dados (sufixo `-2`, `-3`, …).
  */
-export function buildStartSlug(s: { titulo: string; author: string[] }): string {
+export function buildStartSlug(s: {
+  titulo: string;
+  author: Array<string | { name: string }>;
+}): string {
   const title = slugifyStartSegment(s.titulo);
-  const authors = s.author.map((a) => slugifyStartSegment(a)).filter(Boolean);
+  const authors = s.author
+    .map((a) => slugifyStartSegment(typeof a === "string" ? a : a.name))
+    .filter(Boolean);
   const authorJoined = authors.join("-");
   const combined = authorJoined ? `${title}-${authorJoined}` : title;
   return combined || "start";

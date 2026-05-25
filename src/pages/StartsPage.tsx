@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useLocation } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
+import { StartAuthorsMeta, startAuthorsSearchText } from "@/components/start/StartAuthorsMeta";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -19,7 +20,7 @@ function matchesStart(
 ): boolean {
   if (!q.trim()) return true;
   const needle = q.toLowerCase().trim();
-  const hay = [s.titulo, ...s.author, ...s.god].join(" ").toLowerCase();
+  const hay = [s.titulo, startAuthorsSearchText(s.author), ...s.god].join(" ").toLowerCase();
   return hay.includes(needle);
 }
 
@@ -104,14 +105,7 @@ export function StartsPage() {
               subtitleTag={false}
               subtitle={s.god.length ? <StartGodTags names={s.god} /> : undefined}
               cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : undefined}
-              meta={
-                <span
-                  className={s.author.length ? "" : "invisible select-none"}
-                  aria-hidden={s.author.length === 0}
-                >
-                  {s.author.length ? s.author.join(" · ") : "—"}
-                </span>
-              }
+              meta={<StartAuthorsMeta authors={s.author} />}
             />
           </li>
         ))}

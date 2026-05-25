@@ -14,6 +14,7 @@ import {
   startsBuildOrder,
 } from "@/data/catalog";
 import { resolveStartImageToken } from "@/lib/resolveStartImageToken";
+import { startAuthorFromString } from "@/lib/startAuthor";
 import { buildStartSlug } from "@/lib/startSlug";
 
 const inputClass =
@@ -168,7 +169,7 @@ export function SecretStartBuilderPage() {
   const builtStart = useMemo((): StartBuildOrder | null => {
     const t = titulo.trim();
     if (!t) return null;
-    const author = authors.map((a) => a.trim()).filter(Boolean);
+    const author = authors.map((a) => a.trim()).filter(Boolean).map(startAuthorFromString);
     const youtube = youtubeText
       .split(/[\s,]+/)
       .map((u) => u.trim())

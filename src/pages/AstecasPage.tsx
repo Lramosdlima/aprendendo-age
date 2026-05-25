@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import { StartAuthorsMeta } from "@/components/start/StartAuthorsMeta";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
@@ -304,14 +305,7 @@ export function AstecasPage() {
                 subtitleTag={false}
                 subtitle={s.god.length ? <StartGodTags names={s.god} /> : undefined}
                 cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : cardTint}
-                meta={
-                  <span
-                    className={s.author.length ? "" : "invisible select-none"}
-                    aria-hidden={s.author.length === 0}
-                  >
-                    {s.author.length ? s.author.join(" · ") : "—"}
-                  </span>
-                }
+                meta={<StartAuthorsMeta authors={s.author} />}
               />
             </li>
           ))}
