@@ -12,7 +12,7 @@ type Props = {
   items: DeusPortraitHeaderItem[];
   linkState: ListIndexLinkState;
   className?: string;
-  size?: "md" | "sm";
+  size?: "md" | "sm" | "xs";
   justify?: "end" | "center" | "start";
 };
 

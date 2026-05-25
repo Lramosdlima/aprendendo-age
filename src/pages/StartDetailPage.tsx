@@ -1,43 +1,14 @@
-import type { ReactNode } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
-import { DeusPortraitHeaderActions } from "@/components/deus/DeusPortraitHeaderActions";
 import { StartAuthorsMeta } from "@/components/start/StartAuthorsMeta";
+import { StartGodPortraits } from "@/components/start/StartGodPortraits";
 import { StartStructuredContent } from "@/components/starts/StartStructuredContent";
 import { StartVideosSection } from "@/components/starts/StartVideosSection";
 import { BackLink } from "@/components/ui/BackLink";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { deuses, deusSlugById, startBySlug } from "@/data/catalog";
-import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
+import { startBySlug } from "@/data/catalog";
 import { listIndexBackLinkLabel, listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
-import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
-
-/** Nomes em `starts_build_order.json` que não coincidem com `deuses_aom.json`. */
-const START_GOD_NAME_ALIASES: Record<string, string> = {
-  Isis: "Ísis",
-  Ra: "Rá",
-  Freyr: "Frey",
-};
-
-const deusByNome = new Map(deuses.map((d) => [d.nome, d] as const));
-
-function startGodHeaderPortraits(labels: string[], deusLinkState: ListIndexLinkState): ReactNode {
-  const resolved = labels
-    .map((label, index) => {
-      const nome = START_GOD_NAME_ALIASES[label] ?? label;
-      const d = deusByNome.get(nome);
-      const slug = d ? deusSlugById.get(d.id) : undefined;
-      if (!d || !slug) return null;
-      const src = getDeusAssetUrl(d);
-      return { key: `${d.id}-${index}`, slug, nome: d.nome, src };
-    })
-    .filter((x): x is NonNullable<typeof x> => x != null);
-
-  if (resolved.length === 0) return null;
-
-  return <DeusPortraitHeaderActions items={resolved} linkState={deusLinkState} />;
-}
 
 export function StartDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
@@ -71,7 +42,7 @@ export function StartDetailPage() {
             <StartAuthorsMeta authors={s.author} className="text-sm text-zinc-300" />
           ) : undefined
         }
-        actions={startGodHeaderPortraits(s.god, deusLinkFromStartState)}
+        actions={<StartGodPortraits names={s.god} linkState={deusLinkFromStartState} />}
       />
 
       {hasStructured ? <StartStructuredContent segments={s.structured.segments} /> : null}

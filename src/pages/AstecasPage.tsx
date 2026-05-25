@@ -36,7 +36,8 @@ import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { panteaoFieldHasMultiplePantheons, pantheonCardTint } from "@/lib/pantheonCardTint";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 import { hasTipoContent } from "@/lib/unidadeTipo";
-import { StartGodTags, startNovoTagClass } from "@/pages/StartsPage";
+import { StartGodPortraits } from "@/components/start/StartGodPortraits";
+import { startNovoTagClass } from "@/pages/StartsPage";
 
 const AZTEC_PANTEON_ID = 7;
 const MAPAS_OBSIDIAN_ORIGEM = "AoM: Obsidian Mirror (2026)";
@@ -303,7 +304,7 @@ export function AstecasPage() {
                   </span>
                 }
                 subtitleTag={false}
-                subtitle={s.god.length ? <StartGodTags names={s.god} /> : undefined}
+                subtitle={s.god.length ? <StartGodPortraits names={s.god} /> : undefined}
                 cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : cardTint}
                 meta={<StartAuthorsMeta authors={s.author} />}
               />

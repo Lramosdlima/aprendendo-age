@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { StartAuthorsMeta, startAuthorsSearchText } from "@/components/start/StartAuthorsMeta";
+import { StartGodPortraits } from "@/components/start/StartGodPortraits";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -24,9 +25,6 @@ function matchesStart(
   return hay.includes(needle);
 }
 
-const godTagClass =
-  "inline-flex max-w-full shrink-0 items-center rounded border border-amber-600/45 bg-amber-500/10 px-1.5 py-0.5 text-sm font-medium leading-snug text-amber-200/90 [word-break:break-word]";
-
 const startNovoTagClassBase =
   "inline-flex shrink-0 items-center rounded border border-sky-700/55 bg-sky-950/80 font-semibold text-sky-200";
 
@@ -37,19 +35,6 @@ export const startNovoTagClassNav = cn(
   startNovoTagClassBase,
   "px-1 py-px text-[0.6rem] leading-tight",
 );
-
-export function StartGodTags({ names }: { names: string[] }) {
-  if (!names.length) return null;
-  return (
-    <span className="inline-flex max-w-full flex-wrap items-center gap-1 align-top">
-      {names.map((name, i) => (
-        <span key={`${name}-${i}`} className={godTagClass}>
-          {name}
-        </span>
-      ))}
-    </span>
-  );
-}
 
 export function StartsPage() {
   const { pathname, search: locSearch } = useLocation();
@@ -103,7 +88,7 @@ export function StartsPage() {
                 </span>
               }
               subtitleTag={false}
-              subtitle={s.god.length ? <StartGodTags names={s.god} /> : undefined}
+              subtitle={s.god.length ? <StartGodPortraits names={s.god} /> : undefined}
               cardTint={s.pantheon ? pantheonCardTint(s.pantheon) : undefined}
               meta={<StartAuthorsMeta authors={s.author} />}
             />
