@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
 import { DeusPortraitHeaderActions } from "@/components/deus/DeusPortraitHeaderActions";
+import { StartAuthorsMeta } from "@/components/start/StartAuthorsMeta";
 import { StartStructuredContent } from "@/components/starts/StartStructuredContent";
 import { StartVideosSection } from "@/components/starts/StartVideosSection";
 import { BackLink } from "@/components/ui/BackLink";
@@ -65,7 +66,11 @@ export function StartDetailPage() {
       <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={<NotionText text={s.titulo} />}
-        description={s.descricao_curta}
+        description={
+          s.author.length ? (
+            <StartAuthorsMeta authors={s.author} className="text-sm text-zinc-300" />
+          ) : undefined
+        }
         actions={startGodHeaderPortraits(s.god, deusLinkFromStartState)}
       />
 
