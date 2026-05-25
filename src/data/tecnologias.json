@@ -1,7 +1,7 @@
 [
   {
     "nome": "Machado de Mão",
-    "beneficia": ":woodaom: Madeira",
+    "beneficia": ":woodaom: <highlight-brown>Madeira</highlight-brown>",
     "comida": 120,
     "construcao_origem": [
       {
@@ -33,7 +33,7 @@
   },
   {
     "nome": "Picareta",
-    "beneficia": ":goldaom: Ouro",
+    "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow>",
     "comida": 50,
     "construcao_origem": [
       {
@@ -65,7 +65,7 @@
   },
   {
     "nome": "Pecuária",
-    "beneficia": ":foodaom: Comida",
+    "beneficia": "<highlight-red>:foodaom:</highlight-red><highlight-red>Comida</highlight-red>",
     "construcao_origem": [
       {
         "id": 15,
@@ -101,7 +101,7 @@
   },
   {
     "nome": "Armas de Cobre",
-    "beneficia": "+Dano",
+    "beneficia": "<highlight-orange>+Dano</highlight-orange>",
     "comida": 100,
     "construcao_origem": [
       {
@@ -119,13 +119,13 @@
     "ouro": 100,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_copper_weapons_icon",
     "campo": ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
   },
   {
     "nome": "Armadura de Cobre",
-    "beneficia": ":hackarmor: Anti-cortante",
+    "beneficia": "<highlight-brown>:hackarmor:</highlight-brown><highlight-brown>Anti-cortante</highlight-brown>",
     "comida": 75,
     "construcao_origem": [
       {
@@ -143,13 +143,13 @@
     "ouro": 75,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_copper_armor_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage:"
   },
   {
     "nome": "Escudos de Cobre",
-    "beneficia": ":piercearmor: Anti-perfurante",
+    "beneficia": "<highlight-brown>:piercearmor:</highlight-brown><highlight-brown>Anti-perfurante</highlight-brown>",
     "construcao_origem": [
       {
         "id": 27,
@@ -167,13 +167,13 @@
     "ouro": 75,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_copper_shields_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage:"
   },
   {
     "nome": "Equipamento de Sobrevivência",
-    "beneficia": ":aomr_type_villager_icon: Aldeão (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 15,
@@ -191,13 +191,13 @@
     "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_survival_equipment_icon",
     "campo": ":aomr_type_villager_icon: Aldeão: Ataque de longo alcance de Dano (Todos os Tipos) +50% :piercedamage:"
   },
   {
     "nome": "Arado",
-    "beneficia": ":aomr_farm_icon: Fazenda",
+    "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
         "id": 15,
@@ -221,7 +221,7 @@
   },
   {
     "nome": "Torre de Vigia",
-    "beneficia": "Torre (:piercedamage:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:piercedamage:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -239,13 +239,13 @@
     "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 15,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_watch_tower_greek_icon",
     "campo": ":aomr_sentry_tower_icon: Torre de Sentinela: Ativa a Ação de Ataque de Longo Alcance alcance. :piercedamage:"
   },
   {
     "nome": "Fogueiras Sinalizadoras",
-    "beneficia": "Torre (:los_icon_aoe3de:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -268,7 +268,7 @@
   },
   {
     "nome": "Muralha de Pedra",
-    "beneficia": "Muro (:los_icon_aoe3de::aomr_hit_points_icon::hackarmor:)",
+    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:los_icon_aoe3de::aomr_hit_points_icon::hackarmor:)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -286,7 +286,7 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_fortified_wall_greek_icon",
     "campo": ":aomr_wooden_wall_icon: Muralha: -10% de vulnerabilidade a ataques de Golpear :hackarmor:"
   },
@@ -310,7 +310,7 @@
     "madeira": 300,
     "panteoes": "Geral",
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_masons_icon",
     "campo": ":aomr_type_building_icon: Construção: Pontos de Vida +20% :aomr_hit_points_icon:"
   },
@@ -334,13 +334,13 @@
     "madeira": 500,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_architects_icon",
     "campo": ":aomr_type_building_icon: Construção: Pontos de Vida +30% :aomr_hit_points_icon:"
   },
   {
     "nome": "Arco de Serra",
-    "beneficia": ":woodaom: Madeira",
+    "beneficia": ":woodaom: <highlight-brown>Madeira</highlight-brown>",
     "comida": 250,
     "construcao_origem": [
       {
@@ -364,7 +364,7 @@
   },
   {
     "nome": "Poço de Mina",
-    "beneficia": ":goldaom: Ouro",
+    "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow>",
     "comida": 150,
     "construcao_origem": [
       {
@@ -388,7 +388,7 @@
   },
   {
     "nome": "Irrigação",
-    "beneficia": ":aomr_farm_icon: Fazenda",
+    "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
         "id": 15,
@@ -412,7 +412,7 @@
   },
   {
     "nome": "Centro Urbano Fortificado",
-    "beneficia": ":aomr_town_center_greek_icon: TC (:aomr_hit_points_icon::aomr_population_provision_icon:)",
+    "beneficia": ":aomr_town_center_greek_icon: <highlight-purple>TC</highlight-purple> (:aomr_hit_points_icon::aomr_population_provision_icon:)",
     "construcao_origem": [
       {
         "id": 1,
@@ -430,13 +430,13 @@
     "ouro": 400,
     "panteoes": "Geral",
     "tempo_s": 60,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_fortified_town_center_icon",
     "campo": ":aomr_town_center_greek_icon: Centro Urbano: Ataque de Longo Alcance de Dano (Todos os Tipos) +50% :piercedamage:"
   },
   {
     "nome": "Armas de Bronze",
-    "beneficia": "+Dano",
+    "beneficia": "<highlight-orange>+Dano</highlight-orange>",
     "comida": 200,
     "construcao_origem": [
       {
@@ -454,13 +454,13 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_bronze_weapons_icon",
     "campo": ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
   },
   {
     "nome": "Armadura de Bronze",
-    "beneficia": ":hackarmor: Anti-cortante",
+    "beneficia": "<highlight-brown>:hackarmor:</highlight-brown><highlight-brown>Anti-cortante</highlight-brown>",
     "comida": 200,
     "construcao_origem": [
       {
@@ -478,12 +478,12 @@
     "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_bronze_armor_icon"
   },
   {
     "nome": "Escudos de Bronze",
-    "beneficia": ":piercearmor: Anti-perfurante",
+    "beneficia": "<highlight-brown>:piercearmor:</highlight-brown><highlight-brown>Anti-perfurante</highlight-brown>",
     "construcao_origem": [
       {
         "id": 27,
@@ -501,13 +501,13 @@
     "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_bronze_shields_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar"
   },
   {
     "nome": "Balística",
-    "beneficia": ":rangeicon: Rastreio",
+    "beneficia": ":rangeicon: <highlight-red>Rastreio</highlight-red>",
     "construcao_origem": [
       {
         "id": 27,
@@ -525,13 +525,13 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 50,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_ballistics_icon",
     "campo": ":aomr_type_building_icon: Construção: Define Avaliação de Rastreio para 99.00 :rangeicon:"
   },
   {
     "nome": "Ameias",
-    "beneficia": "Torre (:aomr_type_cavalry_icon::rangeicon:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_type_cavalry_icon::rangeicon:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -549,13 +549,13 @@
     "madeira": 150,
     "panteoes": "Geral",
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_crenellations_icon",
     "campo": ":aomr_sentry_tower_icon: Torre: Defina Avaliação de Rastreamento para 99,00"
   },
   {
     "nome": "Torre de Guarda",
-    "beneficia": "Torre (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -573,13 +573,13 @@
     "ouro": 300,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_guard_tower_greek_icon",
     "campo": ":aomr_machine_workshop: Oficina de Máquinas: Todas as Ações de Dano (Todos os Tipos) +50%"
   },
   {
     "nome": "Óleo Fervente",
-    "beneficia": "Torre (ataque próximo)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (ataque próximo)",
     "comida": 100,
     "construcao_origem": [
       {
@@ -597,13 +597,13 @@
     "madeira": 300,
     "panteoes": "Geral",
     "tempo_s": 50,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_boiling_oil_icon",
     "campo": ":aomr_fortress_icon: Fortalezas: Ativa a Ação de Ataque Corpo a Corpo"
   },
   {
     "nome": "Pombos Correio",
-    "beneficia": "Torre (:los_icon_aoe3de:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -626,7 +626,7 @@
   },
   {
     "nome": "Muralha Fortificada",
-    "beneficia": "Muro (:aomr_hit_points_icon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:aomr_hit_points_icon::los_icon_aoe3de:)",
     "comida": 500,
     "construcao_origem": [
       {
@@ -644,13 +644,13 @@
     "ouro": 400,
     "panteoes": "Geral",
     "tempo_s": 50,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_fortified_wall_greek_icon",
     "campo": ":aomr_wooden_wall_icon: Muralha: Adicional 3.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Cavalos de Carga",
-    "beneficia": ":aomr_type_siege_weapon_icon: Cerco (:aomr_speed_icon:)",
+    "beneficia": "<highlight-orange>:aomr_type_siege_weapon_icon:</highlight-orange><highlight-orange>Cerco</highlight-orange> (:aomr_speed_icon:)",
     "comida": 300,
     "construcao_origem": [
       {
@@ -684,13 +684,13 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_draft_horses_icon",
     "campo": ":aomr_type_siege_weapon_icon: Arma de Cerco: Velocidade +20% :aomr_speed_icon:"
   },
   {
     "nome": "Coletores de Impostos",
-    "beneficia": "Taxa do Mercado (Redução de Penalidade)",
+    "beneficia": "<highlight-yellow>Taxa do Mercado</highlight-yellow> (Redução de Penalidade)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -708,12 +708,12 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 35,
-    "tipo": "Econômico 💰, Utilidade 🔧",
+    "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_tax_collectors_icon"
   },
   {
     "nome": "Carpinteiros",
-    "beneficia": ":woodaom: Madeira",
+    "beneficia": ":woodaom: <highlight-brown>Madeira</highlight-brown>",
     "comida": 300,
     "construcao_origem": [
       {
@@ -737,7 +737,7 @@
   },
   {
     "nome": "Pedreira",
-    "beneficia": ":goldaom: Ouro",
+    "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow>",
     "comida": 200,
     "construcao_origem": [
       {
@@ -761,7 +761,7 @@
   },
   {
     "nome": "Controle de Enchentes",
-    "beneficia": ":aomr_farm_icon: Fazenda",
+    "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
         "id": 15,
@@ -785,7 +785,7 @@
   },
   {
     "nome": "Armas de Ferro",
-    "beneficia": "+Dano",
+    "beneficia": "<highlight-orange>+Dano</highlight-orange>",
     "comida": 450,
     "construcao_origem": [
       {
@@ -803,13 +803,13 @@
     "ouro": 450,
     "panteoes": "Geral",
     "tempo_s": 50,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_iron_weapons_icon",
     "campo": ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
   },
   {
     "nome": "Armadura de Ferro",
-    "beneficia": ":hackarmor: Anti-cortante",
+    "beneficia": "<highlight-brown>:hackarmor:</highlight-brown><highlight-brown>Anti-cortante</highlight-brown>",
     "comida": 400,
     "construcao_origem": [
       {
@@ -827,13 +827,13 @@
     "ouro": 400,
     "panteoes": "Geral",
     "tempo_s": 50,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_iron_armor_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar"
   },
   {
     "nome": "Escudos de Ferro",
-    "beneficia": ":piercearmor: Anti-perfurante",
+    "beneficia": "<highlight-brown>:piercearmor:</highlight-brown><highlight-brown>Anti-perfurante</highlight-brown>",
     "construcao_origem": [
       {
         "id": 27,
@@ -851,13 +851,13 @@
     "ouro": 350,
     "panteoes": "Geral",
     "tempo_s": 50,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_iron_shields_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar"
   },
   {
     "nome": "Breu Incendiário",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (contra :aomr_type_building_icon:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (contra:aomr_type_building_icon:)",
     "construcao_origem": [
       {
         "id": 27,
@@ -875,13 +875,13 @@
     "ouro": 300,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_burning_pitch_icon",
     "campo": ":aomr_draugr_icon: Draugr: Adicionado 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:"
   },
   {
     "nome": "Engenheiros",
-    "beneficia": ":aomr_type_siege_weapon_icon: Cerco (:crushdamage::rangeicon:)",
+    "beneficia": "<highlight-orange>:aomr_type_siege_weapon_icon:</highlight-orange><highlight-orange>Cerco</highlight-orange> (:crushdamage::rangeicon:)",
     "comida": 300,
     "construcao_origem": [
       {
@@ -915,7 +915,7 @@
     "ouro": 500,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_engineers_icon",
     "campo": ":aomr_type_siege_weapon_icon: Arma de Cerco: Adicional 1.00 ao Todas as Ações Bônus de Dano contra Muralha"
   },
@@ -959,13 +959,13 @@
     "ouro": 600,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_advanced_fortifications_icon",
     "campo": ":aomr_fortress_icon: :aomr_migdol_stronghold_icon: :aomr_hill_fort_icon: :aomr_palace_icon: :aomr_baolei: :aomr_castle_icon: Fortalezas: -10% de vulnerabilidade a ataques de Golpear :hackdamage:"
   },
   {
     "nome": "Cunhagem",
-    "beneficia": ":aomr_caravan_greek_icon: Caravana (:aomr_speed_icon:)",
+    "beneficia": ":aomr_caravan_greek_icon: <highlight-yellow>Caravana</highlight-yellow> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 51,
@@ -982,13 +982,13 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Econômico 💰, Utilidade 🔧",
+    "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_coinage_icon",
     "campo": ":aomr_caravan_greek_icon: Caravana: Velocidade +20% :aomr_speed_icon:"
   },
   {
     "nome": "Embaixadores",
-    "beneficia": "Taxa do Mercado",
+    "beneficia": "<highlight-yellow>Taxa do Mercado</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 51,
@@ -1005,12 +1005,12 @@
     "ouro": 250,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Econômico 💰, Utilidade 🔧",
+    "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_ambassadors_icon"
   },
   {
     "nome": "Segredo dos Titãs",
-    "beneficia": "Titã",
+    "beneficia": "<highlight-pink>Titã</highlight-pink>",
     "comida": 800,
     "construcao_origem": [
       {
@@ -1055,7 +1055,7 @@
   },
   {
     "nome": "Ascendência Olímpica",
-    "beneficia": ":aomr_type_hero_icon: Heróis (:aomr_hit_points_icon::aomr_time_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Heróis</highlight-yellow> (:aomr_hit_points_icon::aomr_time_icon:)",
     "comida": 100,
     "construcao_origem": [
       {
@@ -1084,13 +1084,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_olympian_parentage_icon",
     "campo": ":aomr_type_hero_icon: Herói: Tempo de treinamento -50% :aomr_time_icon:"
   },
   {
     "nome": "Cofre de Érebus",
-    "beneficia": ":goldaom: Ouro (passivo)",
+    "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow> (passivo)",
     "construcao_origem": [
       {
         "id": 21,
@@ -1124,7 +1124,7 @@
   },
   {
     "nome": "Senhor dos Cavalos",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon::los_icon_aoe3de:)",
     "comida": 75,
     "construcao_origem": [
       {
@@ -1153,13 +1153,13 @@
       }
     ],
     "tempo_s": 25,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_lord_of_horses_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Adicional 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
   },
   {
     "nome": "Labirinto de Minos",
-    "beneficia": ":aomr_minotaur_icon: Minotauro (:aomr_speed_icon::aomr_hit_points_icon:)",
+    "beneficia": ":aomr_minotaur_icon: <highlight-pink>Minotauro</highlight-pink> (:aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -1196,13 +1196,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_labyrinth_of_minos_icon",
     "campo": ":aomr_minotaur_icon: Minotauro: Pontos de Vida +30% :aomr_hit_points_icon:"
   },
   {
     "nome": "Égide",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:piercearmor:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:piercearmor:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -1239,13 +1239,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_aegis_shield_icon",
     "campo": ":aomr_type_infantry_icon: Infantaria: -15% de vulnerável a ataques de Furar :piercearmor:"
   },
   {
     "nome": "Sarissa",
-    "beneficia": ":aomr_hoplite_icon: Hoplita (:hackdamage::rangeicon:)",
+    "beneficia": ":aomr_hoplite_icon: <highlight-red>Hoplita</highlight-red> (:hackdamage::rangeicon:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -1282,13 +1282,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_sarissa_icon",
     "campo": ":aomr_hoplite_icon: Hoplita: Ataque Corpo a Corpo de Dano (Golpear) +10% :hackdamage:"
   },
   {
     "nome": "Sabedoria Silvana",
-    "beneficia": ":aomr_centaur_icon: Centauro (:aomr_hit_points_icon::rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_centaur_icon: <highlight-pink>Centauro</highlight-pink> (:aomr_hit_points_icon::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -1331,7 +1331,7 @@
   },
   {
     "nome": "Avanço Intrépido",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:hackdamage:) + :aomr_centaur_icon: Centauro (:piercedamage:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:hackdamage:)+:aomr_centaur_icon: <highlight-pink>Centauro</highlight-pink> (:piercedamage:)",
     "comida": 125,
     "construcao_origem": [
       {
@@ -1368,7 +1368,7 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_spirited_charge_icon",
     "campo": ":aomr_centaur_icon: Centauro: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:"
   },
@@ -1417,7 +1417,7 @@
   },
   {
     "nome": "Vontade de Cronos",
-    "beneficia": ":aomr_cyclops_icon: Ciclope (:hackdamage:)",
+    "beneficia": ":aomr_cyclops_icon: <highlight-pink>Ciclope</highlight-pink> (:hackdamage:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -1454,13 +1454,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_will_of_kronos_icon",
     "campo": ":aomr_cyclops_icon: Ciclope: Adiciona 1.50 à Ataque Corpo a Corpo Área de Dano :hackdamage:"
   },
   {
     "nome": "Lança do Pânico de Fobos",
-    "beneficia": ":aomr_hoplite_icon: Hoplita + :aomr_prodromos_icon: Prodromos",
+    "beneficia": ":aomr_hoplite_icon: <highlight-red>Hoplita</highlight-red>+:aomr_prodromos_icon: <highlight-teal>Prodromos</highlight-teal>",
     "comida": 100,
     "construcao_origem": [
       {
@@ -1497,7 +1497,7 @@
         "nome": "Poseidon"
       }
     ],
-    "ingles": "Phobos' Spear of Panic",
+    "ingles": "Phobos&#x27; Spear of Panic",
     "panteoes": [
       {
         "id": 1,
@@ -1505,13 +1505,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_phobos_spear_of_panic_icon",
     "campo": ":aomr_prodromos_icon: Prodromos: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:"
   },
   {
     "nome": "Arco do Horror de Ênio",
-    "beneficia": ":aomr_toxotes_icon: Toxotes",
+    "beneficia": ":aomr_toxotes_icon: <highlight-blue>Toxotes</highlight-blue>",
     "construcao_origem": [
       {
         "id": 21,
@@ -1543,7 +1543,7 @@
         "nome": "Poseidon"
       }
     ],
-    "ingles": "Enyo's Bow of Horror",
+    "ingles": "Enyo&#x27;s Bow of Horror",
     "madeira": 125,
     "panteoes": [
       {
@@ -1552,13 +1552,13 @@
       }
     ],
     "tempo_s": 20,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_enyos_bow_of_horror_icon",
     "campo": ":piercedamage: Flecha Flamejante: Adiciona 15.00 de velocidade :aomr_rate_of_fire_icon:"
   },
   {
     "nome": "Espada do Medo de Deimos",
-    "beneficia": ":aomr_hypaspist_icon: Hipaspista ativado ✅",
+    "beneficia": ":aomr_hypaspist_icon: <highlight-red>Hipaspista</highlight-red><highlight-teal>ativado ✅</highlight-teal>",
     "construcao_origem": [
       {
         "id": 21,
@@ -1590,7 +1590,7 @@
         "nome": "Poseidon"
       }
     ],
-    "ingles": "Deimos' Sword of Dread",
+    "ingles": "Deimos&#x27; Sword of Dread",
     "ouro": 150,
     "panteoes": [
       {
@@ -1599,13 +1599,13 @@
       }
     ],
     "tempo_s": 20,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_deimos_sword_of_dread_icon",
     "campo": ":aomr_hypaspist_icon: Hipaspista ativado na Clássica :aomr_classical_age_icon:"
   },
   {
     "nome": "Oniciência",
-    "beneficia": "LOS :los_icon_aoe3de:",
+    "beneficia": "LOS:los_icon_aoe3de:",
     "construcao_origem": [
       {
         "id": 21,
@@ -1627,7 +1627,7 @@
   },
   {
     "nome": "Oráculo",
-    "beneficia": ":los_icon_aoe3de: +LOS",
+    "beneficia": ":los_icon_aoe3de:+LOS",
     "construcao_origem": [
       {
         "id": 21,
@@ -1713,7 +1713,7 @@
   },
   {
     "nome": "Raio de Sol",
-    "beneficia": ":aomr_type_archer_icon: Artilharia",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>",
     "comida": 100,
     "construcao_origem": [
       {
@@ -1754,13 +1754,13 @@
       }
     ],
     "tempo_s": 30,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_sun_ray_icon",
     "campo": ":aomr_type_archer_icon: Unidade de Longo Alcance: Adiciona 20.00 de Projetil LoS :los_icon_aoe3de:"
   },
   {
     "nome": "Ritos Ctônicos",
-    "beneficia": ":aomr_hydra_icon: Hidra",
+    "beneficia": "<highlight-pink>:aomr_hydra_icon:</highlight-pink><highlight-pink>Hidra</highlight-pink>",
     "construcao_origem": [
       {
         "id": 21,
@@ -1797,7 +1797,7 @@
       }
     ],
     "tempo_s": 25,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_chthonic_rites_icon",
     "campo": ":aomr_hydra_icon: Hidra: Adiciona 4.00 à Taxa de Regeneração"
   },
@@ -1840,12 +1840,12 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_dionysia_icon"
   },
   {
     "nome": "Cavalaria Trácios",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -1882,13 +1882,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_thracian_horses_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Roubos de Vida :aomr_hit_points_icon: por 30.00% do dano causado por Todas as Ações contra Unidade."
   },
   {
     "nome": "Maçãs Douradas",
-    "beneficia": ":aomr_type_villager_icon: Aldeão (:favoraom:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:favoraom:)",
     "comida": 100,
     "construcao_origem": [
       {
@@ -1931,7 +1931,7 @@
   },
   {
     "nome": "Sangue Divino",
-    "beneficia": ":aomr_type_villager_icon: Aldeão",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue>",
     "comida": 100,
     "construcao_origem": [
       {
@@ -1968,13 +1968,13 @@
       }
     ],
     "tempo_s": 30,
-    "tipo": "Econômico 💰, Utilidade 🔧",
+    "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_divine_blood_icon",
     "campo": ":aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Ouro :goldaom:"
   },
   {
     "nome": "Rugido de Ortros",
-    "beneficia": ":aomr_nemean_lion_icon: Leão de Nemeia",
+    "beneficia": ":aomr_nemean_lion_icon: <highlight-pink>Leão de Nemeia</highlight-pink>",
     "comida": 300,
     "construcao_origem": [
       {
@@ -2011,13 +2011,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_roar_of_orthus_icon",
     "campo": ":aomr_nemean_lion_icon: Leão de Nemeia: de Área de Dano Rugido +100%"
   },
   {
     "nome": "Mão de Talos",
-    "beneficia": ":aomr_colossus_icon: Colosso (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_colossus_icon: <highlight-pink>Colosso</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -2058,13 +2058,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_hand_of_talos_icon",
     "campo": ":aomr_colossus_icon: Colosso: Pontos de Vida +25% :aomr_hit_points_icon:"
   },
   {
     "nome": "Ombro de Talos",
-    "beneficia": ":aomr_colossus_icon: Colosso (:aomr_hit_points_icon::hackdamage:)",
+    "beneficia": ":aomr_colossus_icon: <highlight-pink>Colosso</highlight-pink> (:aomr_hit_points_icon::hackdamage:)",
     "construcao_origem": [
       {
         "id": 21,
@@ -2105,13 +2105,13 @@
       }
     ],
     "tempo_s": 50,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_shoulder_of_talos_icon",
     "campo": ":aomr_colossus_icon: Colosso: -20% de vulnerabilidade a ataques de Golpear :hackdamage:"
   },
   {
     "nome": "Forja do Olimpo",
-    "beneficia": ":aomr_armory_icon: Arsenal (-75% :foodaom::woodaom::goldaom:)",
+    "beneficia": ":aomr_armory_icon: Arsenal (-75%:foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 27,
@@ -2158,7 +2158,7 @@
   },
   {
     "nome": "Armas Olímpicas",
-    "beneficia": ":aomr_myrmidon_icon: Mirmidão :aomr_hetairos_icon: Hetairos :aomr_gastraphetoros_icon: Gastrafeta",
+    "beneficia": ":aomr_myrmidon_icon: Mirmidão:aomr_hetairos_icon: Hetairos:aomr_gastraphetoros_icon: Gastrafeta",
     "construcao_origem": [
       {
         "id": 27,
@@ -2199,7 +2199,7 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_olympian_weapons_icon",
     "campo": ":aomr_gastraphetoros_icon: Gastrafeta: Adiciona 1.00 ao Ataque de longo alcance Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
   },
@@ -2245,7 +2245,7 @@
   },
   {
     "nome": "Rosto da Górgona",
-    "beneficia": ":aomr_medusa_icon: Medusa",
+    "beneficia": ":aomr_medusa_icon: <highlight-pink>Medusa</highlight-pink>",
     "construcao_origem": [
       {
         "id": 21,
@@ -2278,13 +2278,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_face_of_the_gorgon_icon",
     "campo": ":aomr_medusa_icon: Medusa: -25% de Tempo de Recarga de Habilidade"
   },
   {
     "nome": "Fúria Monstruosa",
-    "beneficia": ":aomr_type_myth_unit_icon: MU (:aomr_rate_of_fire_icon: :aomr_speed_icon:)",
+    "beneficia": ":aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink> (:aomr_rate_of_fire_icon::aomr_speed_icon:)",
     "comida": 250,
     "construcao_origem": [
       {
@@ -2317,13 +2317,13 @@
       }
     ],
     "tempo_s": 30,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_monstrous_rage_icon",
     "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +15% :aomr_speed_icon:"
   },
   {
     "nome": "Chamas de Tifão",
-    "beneficia": ":aomr_chimera_icon: Quimera",
+    "beneficia": ":aomr_chimera_icon: <highlight-pink>Quimera</highlight-pink>",
     "comida": 300,
     "construcao_origem": [
       {
@@ -2360,13 +2360,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_flames_of_typhon_icon",
     "campo": ":aomr_chimera_icon: Efeitos de área de fogo de quimera: +40% de Taxa de Modificação de Área de dano :aomr_type_siege_weapon_icon:"
   },
   {
     "nome": "Lanças da Praga",
-    "beneficia": ":aomr_type_archer_icon: Artilharia",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>",
     "construcao_origem": [
       {
         "id": 27,
@@ -2407,13 +2407,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_shafts_of_plague_icon",
     "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 0,25 de dano Divino :aomr_divine_damage_icon: ao longo do tempo contra a Unidade (exceto Cerco) por 6,0 segundos."
   },
   {
     "nome": "Matador de Feras",
-    "beneficia": ":aomr_type_hero_icon: Herói",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow>",
     "comida": 125,
     "construcao_origem": [
       {
@@ -2451,13 +2451,13 @@
       }
     ],
     "tempo_s": 30,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_beast_slayer_icon",
     "campo": ":aomr_type_hero_icon: Herói: Adiciona 2.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
   },
   {
     "nome": "Infantaria Média",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -2491,13 +2491,13 @@
     "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_infantry_icon",
     "campo": ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
   },
   {
     "nome": "Soldados de Longo Alcance Médios",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (:aomr_hit_points_icon::piercedamage: :rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_hit_points_icon::piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 36,
@@ -2531,13 +2531,13 @@
     "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_ranged_soldiers_icon",
     "campo": ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
   },
   {
     "nome": "Cavalaria Média",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -2559,13 +2559,13 @@
     "ouro": 100,
     "panteoes": "Geral",
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_cavalry_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Convocar Infantaria",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_time_icon:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_time_icon:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -2593,7 +2593,7 @@
   },
   {
     "nome": "Convocar Soldados de Longo Alcance",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (:aomr_time_icon:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 36,
@@ -2621,7 +2621,7 @@
   },
   {
     "nome": "Convocar Cavalaria",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_time_icon:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_time_icon:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -2649,7 +2649,7 @@
   },
   {
     "nome": "Cavalaria Pesada",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 400,
     "construcao_origem": [
       {
@@ -2671,13 +2671,13 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_cavalry_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Infantaria Pesada",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 300,
     "construcao_origem": [
       {
@@ -2711,13 +2711,13 @@
     "ouro": 300,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_infantry_icon",
     "campo": ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
   },
   {
     "nome": "Soldados de Longo Alcance Pesados",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (:aomr_hit_points_icon::piercedamage: :rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_hit_points_icon::piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 36,
@@ -2751,13 +2751,13 @@
     "ouro": 300,
     "panteoes": "Geral",
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_ranged_soldiers_icon",
     "campo": ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
   },
   {
     "nome": "Infantaria Campeã",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 500,
     "construcao_origem": [
       {
@@ -2791,13 +2791,13 @@
     "ouro": 400,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_infantry_icon",
     "campo": ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
   },
   {
     "nome": "Soldados de Longo Alcance Campeãos",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (:aomr_hit_points_icon::piercedamage: :rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_hit_points_icon::piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 36,
@@ -2831,13 +2831,13 @@
     "ouro": 400,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_ranged_soldiers_icon",
     "campo": ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
   },
   {
     "nome": "Recrutar Infantaria",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria ()",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> ()",
     "comida": 200,
     "construcao_origem": [
       {
@@ -2865,7 +2865,7 @@
   },
   {
     "nome": "Recrutar Soldados de Longo Alcance",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (:aomr_time_icon:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 36,
@@ -2893,7 +2893,7 @@
   },
   {
     "nome": "Recrutar Cavalaria",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_time_icon:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_time_icon:)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -2921,7 +2921,7 @@
   },
   {
     "nome": "Cavalaria Campeã",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 700,
     "construcao_origem": [
       {
@@ -2943,13 +2943,13 @@
     "ouro": 200,
     "panteoes": "Geral",
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_cavalry_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Pele de Rinocerante",
-    "beneficia": "Aldeão (:hackarmor::piercearmor:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:hackarmor::piercearmor:)",
     "comida": 50,
     "construcao_origem": [
       {
@@ -2978,13 +2978,13 @@
       }
     ],
     "tempo_s": 15,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_skin_of_the_rhino_icon",
     "campo": ":aomr_laborer_icon: Trabalhador: -25% de vulnerabilidade a ataques de Furar :piercedamage:"
   },
   {
     "nome": "Enchente do Nilo",
-    "beneficia": ":foodaom: Comida (passiva)",
+    "beneficia": "<highlight-red>:foodaom:</highlight-red><highlight-red>Comida</highlight-red> (passiva)",
     "construcao_origem": [
       {
         "id": 18,
@@ -3018,7 +3018,7 @@
   },
   {
     "nome": "Clarividência",
-    "beneficia": ":aomr_vision_icon: Visão",
+    "beneficia": ":aomr_vision_icon: <highlight-purple>Visão</highlight-purple>",
     "construcao_origem": [
       {
         "id": 22,
@@ -3047,12 +3047,12 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Econômico 💰, Utilidade 🔧",
+    "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_clairvoyance_icon"
   },
   {
     "nome": "Gatos Sagrados",
-    "beneficia": ":aomr_type_villager_icon: Aldeão (:aomr_farm_icon: :aomr_caribou_icon: :aomr_cow_icon: :aomr_berry_bush_icon:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon:)",
     "construcao_origem": [
       {
         "id": 18,
@@ -3095,7 +3095,7 @@
   },
   {
     "nome": "Enxó de Wepwawet",
-    "beneficia": ":woodaom: Madeira",
+    "beneficia": ":woodaom: <highlight-brown>Madeira</highlight-brown>",
     "construcao_origem": [
       {
         "id": 17,
@@ -3138,7 +3138,7 @@
   },
   {
     "nome": "Criosfinge",
-    "beneficia": ":aomr_sphinx_icon: Esfinge (:aomr_hit_points_icon::hackdamage::crushdamage:)",
+    "beneficia": ":aomr_sphinx_icon: <highlight-pink>Esfinge</highlight-pink> (:aomr_hit_points_icon::hackdamage::crushdamage:)",
     "construcao_origem": [
       {
         "id": 22,
@@ -3175,13 +3175,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_criosphinx_icon",
     "campo": ":aomr_sphinx_icon: Esfinge: Pontos de Vida +20% :aomr_hit_points_icon:"
   },
   {
     "nome": "Hierocosfinge",
-    "beneficia": ":aomr_sphinx_icon: Esfinge (:aomr_speed_icon::hackdamage::crushdamage:)",
+    "beneficia": ":aomr_sphinx_icon: <highlight-pink>Esfinge</highlight-pink> (:aomr_speed_icon::hackdamage::crushdamage:)",
     "construcao_origem": [
       {
         "id": 22,
@@ -3218,13 +3218,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_hieracosphinx_icon",
     "campo": ":aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Esmagar) +50% :crushdamage:"
   },
   {
     "nome": "Machado Dentado",
-    "beneficia": ":aomr_axeman_icon: Machadeiro (:hackdamage:)",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:hackdamage:)",
     "comida": 50,
     "construcao_origem": [
       {
@@ -3265,13 +3265,13 @@
       }
     ],
     "tempo_s": 30,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_scalloped_axe_icon",
     "campo": ":aomr_axeman_icon: Machadeiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:"
   },
   {
     "nome": "Escudo de Couro",
-    "beneficia": ":aomr_spearman_icon: Lanceiro (:hackarmor:)",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
         "id": 28,
@@ -3312,13 +3312,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_leather_frame_shield_icon",
     "campo": ":aomr_spearman_icon: Lanceiro: -15% de vulnerabilidade a ataques de Furar :hackdamage::hackarmor:"
   },
   {
     "nome": "Projéteis de Electro",
-    "beneficia": ":aomr_slinger_icon: Fundeiro (:piercedamage::aomr_divine_damage_icon:)",
+    "beneficia": ":aomr_slinger_icon: <highlight-red>Fundeiro</highlight-red> (:piercedamage::aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 28,
@@ -3359,13 +3359,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_electrum_bullets_icon",
     "campo": ":aomr_slinger_icon: Fundeiro: Adiciona 0.50 ao Ataque de longo alcance"
   },
   {
     "nome": "Shaduf",
-    "beneficia": ":aomr_farm_icon: Fazenda",
+    "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
         "id": 18,
@@ -3402,13 +3402,13 @@
       }
     ],
     "tempo_s": 20,
-    "tipo": "Econômico 💰, Utilidade 🔧",
+    "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_shaduf_icon",
     "campo": ":aomr_farm_icon: Fazenda: -50% de Tempo de Construção :aomr_time_icon:"
   },
   {
     "nome": "Pés de Chacal",
-    "beneficia": ":aomr_anubite_icon: Anubita",
+    "beneficia": ":aomr_anubite_icon: <highlight-pink>Anubita</highlight-pink>",
     "construcao_origem": [
       {
         "id": 22,
@@ -3445,13 +3445,13 @@
       }
     ],
     "tempo_s": 30,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_feet_of_the_jackal_icon",
     "campo": ":aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Aldeão +20% :aomr_type_villager_icon:"
   },
   {
     "nome": "Lança da Serpente",
-    "beneficia": ":aomr_spearman_icon: Lanceiro (:aomr_divine_damage_icon: )",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_divine_damage_icon:)",
     "comida": 125,
     "construcao_origem": [
       {
@@ -3488,13 +3488,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_serpent_spear_icon",
     "campo": ":aomr_spearman_icon: Lanceiro: Adiciona 0,125 de dano Divino :aomr_divine_damage_icon: ao longo do tempo contra a Unidade (exceto Cerco) por 6,0 segundos."
   },
   {
     "nome": "Necrópole",
-    "beneficia": ":aomr_monuments_retold_anim: Monumento (+:favoraom:)",
+    "beneficia": ":aomr_monuments_retold_anim: <highlight-orange>Monumento</highlight-orange> (+:favoraom:)",
     "construcao_origem": [
       {
         "id": 22,
@@ -3537,7 +3537,7 @@
   },
   {
     "nome": "Crocodilopolis",
-    "beneficia": ":aomr_petsuchos_icon: Petsuchos",
+    "beneficia": ":aomr_petsuchos_icon: <highlight-pink>Petsuchos</highlight-pink>",
     "construcao_origem": [
       {
         "id": 22,
@@ -3574,13 +3574,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_crocodilopolis_icon",
     "campo": ":aomr_petsuchos_icon: Petsuchos: Adiciona 6.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Tijolo de Barro Seco ao Sol",
-    "beneficia": ":aomr_type_building_icon: Construção (:aomr_hit_points_icon::aomr_time_icon: -:goldaom:)",
+    "beneficia": ":aomr_type_building_icon: Construção (:aomr_hit_points_icon::aomr_time_icon:-: goldaom:)",
     "construcao_origem": [
       {
         "id": 3,
@@ -3614,13 +3614,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_sun_dried_mud_brick_icon",
     "campo": ":aomr_type_building_icon: Construção: -15% de Tempo de Construção :aomr_time_icon:"
   },
   {
     "nome": "Água Escuro",
-    "beneficia": ":aomr_camel_rider_icon: Cameleiro (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-red>Cameleiro</highlight-red> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -3658,13 +3658,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_dark_water_icon",
     "campo": ":aomr_camel_rider_icon: Cameleiro: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
   },
   {
     "nome": "Arco de Osso Seco",
-    "beneficia": ":aomr_chariot_archer_icon: Arqueiro em Biga (:rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_chariot_archer_icon: <highlight-blue>Arqueiro em Biga</highlight-blue> (:rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 28,
@@ -3698,13 +3698,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_bone_bow_icon",
     "campo": ":aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Fundas do Sol",
-    "beneficia": ":aomr_slinger_icon: Fundeiro (:piercedamage:→:aomr_type_infantry_icon:)",
+    "beneficia": ":aomr_slinger_icon: <highlight-red>Fundeiro</highlight-red> (:piercedamage:→:aomr_type_infantry_icon:)",
     "construcao_origem": [
       {
         "id": 28,
@@ -3742,13 +3742,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_slings_of_the_sun_icon",
     "campo": ":aomr_slinger_icon: Fundeiro: Adiciona 0.75 ao Ataque de longo alcance Bônus de Dano contra Infantaria :piercedamage::aomr_type_infantry_icon:"
   },
   {
     "nome": "Linho Carmesim",
-    "beneficia": ":aomr_scarab_icon: Escaravelho + :aomr_type_myth_unit_icon: MU",
+    "beneficia": ":aomr_scarab_icon: <highlight-pink>Escaravelho</highlight-pink>+:aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
         "id": 22,
@@ -3782,13 +3782,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_crimson_linen_icon",
     "campo": ":aomr_scarab_icon: Escaravelho: Roubos de Vida por 75.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:"
   },
   {
     "nome": "Força do Vento Oeste",
-    "beneficia": ":aomr_catapult_icon: Catapulta ativada ✅",
+    "beneficia": ":aomr_catapult_icon: <highlight-brown>Catapulta</highlight-brown><highlight-teal>ativada</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 62,
@@ -3822,13 +3822,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_force_of_the_west_wind_icon",
     "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Todas as Ações de Dano (Esmagar) +15% :crushdamage:"
   },
   {
     "nome": "Ritos Funerários",
-    "beneficia": ":goldaom: Ouro",
+    "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 22,
@@ -3872,7 +3872,7 @@
   },
   {
     "nome": "Espírito de Maat",
-    "beneficia": ":aomr_priest_icon::aomr_pharaoh_icon: Curador :aomr_hit_points_icon:",
+    "beneficia": ":aomr_priest_icon::aomr_pharaoh_icon: Curador:aomr_hit_points_icon:",
     "construcao_origem": [
       {
         "id": 22,
@@ -3916,7 +3916,7 @@
   },
   {
     "nome": "Nebty",
-    "beneficia": ":aomr_priest_icon: Sacerdote | :aomr_pharaoh_icon: Faraó (:aomr_type_myth_unit_icon::aomr_hit_points_icon:)",
+    "beneficia": ":aomr_priest_icon: <highlight-yellow>Sacerdote</highlight-yellow>|:aomr_pharaoh_icon: <highlight-yellow>Faraó</highlight-yellow> (:aomr_type_myth_unit_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 3,
@@ -3950,13 +3950,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_nebty_icon",
     "campo": ":aomr_pharaoh_icon: Faraó (Novo Reino) (Herói): Pontos de Vida +10% :aomr_hit_points_icon:"
   },
   {
     "nome": "Vento do Deserto",
-    "beneficia": ":aomr_camel_rider_icon: Cameleiro (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -3995,7 +3995,7 @@
   },
   {
     "nome": "Novo Reino",
-    "beneficia": "2 Faraós :aomr_pharaoh_icon:",
+    "beneficia": "<highlight-yellow>2 Faraós</highlight-yellow><highlight-yellow>:aomr_pharaoh_icon:</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 22,
@@ -4038,7 +4038,7 @@
   },
   {
     "nome": "Coroa de Atef",
-    "beneficia": ":aomr_mummy_icon: Múmia",
+    "beneficia": "<highlight-pink>:aomr_mummy_icon:</highlight-pink><highlight-pink>Múmia</highlight-pink>",
     "construcao_origem": [
       {
         "id": 22,
@@ -4077,7 +4077,7 @@
   },
   {
     "nome": "Machado de Vingança",
-    "beneficia": ":aomr_axeman_icon: Machadeiro (:aomr_type_building_icon::hackdamage:)",
+    "beneficia": "<highlight-red>:aomr_axeman_icon:</highlight-red><highlight-red>Machadeiro</highlight-red> (:aomr_type_building_icon::hackdamage:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4111,13 +4111,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_axe_of_vengeance_icon",
     "campo": ":aomr_axeman_icon: Machadeiro: Para cada 1% de PV perdidos, modifique Dano em 0.50% :hackdamage:"
   },
   {
     "nome": "Lança de Hórus",
-    "beneficia": ":aomr_spearman_icon: Lanceiro (:hackdamage::aomr_type_cavalry_icon:)",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:hackdamage::aomr_type_cavalry_icon:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4151,13 +4151,13 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_spear_of_horus_icon",
     "campo": ":aomr_spearman_icon: Lanceiro: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :hackdamage::aomr_type_cavalry_icon:"
   },
   {
     "nome": "Maior de Cinquenta",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon::aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4191,7 +4191,7 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_greatest_of_fifty_icon",
     "campo": ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
   },
@@ -4236,7 +4236,7 @@
   },
   {
     "nome": "Livro de Thoth",
-    "beneficia": ":aomr_type_villager_icon: Aldeão (:aomr_farm_icon: :aomr_caribou_icon: :aomr_cow_icon: :aomr_berry_bush_icon: :woodaom: :goldaom:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon::woodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 3,
@@ -4276,7 +4276,7 @@
   },
   {
     "nome": "Presas de Apedemak",
-    "beneficia": ":aomr_war_elephant_icon: Elefante de Guerra",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefante de Guerra</highlight-teal>",
     "construcao_origem": [
       {
         "id": 58,
@@ -4315,7 +4315,7 @@
   },
   {
     "nome": "Lanceiros Médios",
-    "beneficia": "Lanceiro ()",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4349,12 +4349,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_spearmen_icon"
   },
   {
     "nome": "Machadeiros Médios",
-    "beneficia": "Machadeiro ()",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4388,12 +4388,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_axemen_icon"
   },
   {
     "nome": "Fundeiros Médios",
-    "beneficia": "Fundeiro ()",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4427,7 +4427,7 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_slingers_icon"
   },
   {
@@ -4510,7 +4510,7 @@
   },
   {
     "nome": "Lanceiros Pesados",
-    "beneficia": "Lanceiro ()",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4544,12 +4544,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_spearmen_icon"
   },
   {
     "nome": "Machadeiros Pesados",
-    "beneficia": "Machadeiro ()",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4583,12 +4583,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_axemen_icon"
   },
   {
     "nome": "Fundeiros Pesados",
-    "beneficia": "Fundeiro ()",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4622,12 +4622,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_slingers_icon"
   },
   {
     "nome": "Cameleiros Pesados",
-    "beneficia": "Cameleiro  ()",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4661,12 +4661,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_camel_riders_icon"
   },
   {
     "nome": "Elefantes Pesados",
-    "beneficia": "Elefantes de Guerra  ()",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4700,12 +4700,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_elephants_icon"
   },
   {
     "nome": "Lanceiros Campeões",
-    "beneficia": "Lanceiro ()",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4739,12 +4739,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_spearmen_icon"
   },
   {
     "nome": "Machadeiros Campeões",
-    "beneficia": "Machadeiro ()",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4778,12 +4778,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_axemen_icon"
   },
   {
     "nome": "Fundeiros Campeões",
-    "beneficia": "Fundeiro ()",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4817,12 +4817,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_slingers_icon"
   },
   {
     "nome": "Cameleiros Campeões",
-    "beneficia": "Cameleiro  ()",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4856,12 +4856,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_camel_riders_icon"
   },
   {
     "nome": "Elefantes Campeões",
-    "beneficia": "Elefantes de Guerra  ()",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4895,7 +4895,7 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_elephants_icon"
   },
   {
@@ -4978,7 +4978,7 @@
   },
   {
     "nome": "Bigas Pesadas",
-    "beneficia": "Arqueiro de Biga  ()",
+    "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -5012,12 +5012,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_chariots_icon"
   },
   {
     "nome": "Bigas Campeãs",
-    "beneficia": "Arqueiro de Biga  ()",
+    "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -5051,12 +5051,12 @@
         "nome": "Egípcio"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_chariots_icon"
   },
   {
     "nome": "Martelo do Trovão",
-    "beneficia": ":aomr_hersir_icon: Hersir (Herói) (+:hackdamage:+:favoraom:)",
+    "beneficia": "<highlight-yellow>:aomr_hersir_icon:</highlight-yellow><highlight-yellow>Hersir (Herói)</highlight-yellow> (+:hackdamage:+:favoraom:)",
     "construcao_origem": [
       {
         "id": 34,
@@ -5085,13 +5085,13 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Econômico 💰, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Econômico 💰 Ofensivo ⚔",
     "icon": "aomr_hammer_of_thunder_icon",
     "campo": ":aomr_hersir_icon: Hersir (Herói): Coleta Automática taxa de trabalho para Favor +50% :favoraom:"
   },
   {
     "nome": "Hamask",
-    "beneficia": ":aomr_berserk_icon: Berserker (:aomr_speed_icon: + :aomr_type_myth_unit_icon:)",
+    "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:aomr_speed_icon:+:aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -5120,7 +5120,7 @@
       }
     ],
     "tempo_s": 40,
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_hamask_icon",
     "campo": ":aomr_berserk_icon: Berserker: Ataque Corpo a Corpo de Bônus de Dano contra Unidade Mitológica +50% :aomr_type_myth_unit_icon:"
   },
@@ -5181,7 +5181,7 @@
         "nome": "Frey"
       }
     ],
-    "ingles": "Freyr's Gift",
+    "ingles": "Freyr&#x27;s Gift",
     "panteoes": [
       {
         "id": 3,
@@ -5189,12 +5189,12 @@
       }
     ],
     "tempo_s": 20,
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_freyrs_gift_icon"
   },
   {
     "nome": "Armas Enânicas",
-    "beneficia": ":aomr_type_human_soldier_icon: Soldado :aomr_type_hero_icon: Herói :aomr_type_ship_icon: Navio :aomr_type_building_icon: Construção (:hackdamage::piercedamage:)",
+    "beneficia": ":aomr_type_human_soldier_icon: Soldado:aomr_type_hero_icon: Herói:aomr_type_ship_icon: Navio:aomr_type_building_icon: Construção (:hackdamage::piercedamage:)",
     "construcao_origem": [
       {
         "id": 34,
@@ -5220,13 +5220,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_dwarven_weapons_icon",
     "campo": ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage::piercedamage:"
   },
   {
     "nome": "Armadura de Ferro Meteórico",
-    "beneficia": ":aomr_type_human_soldier_icon: Soldado :aomr_type_hero_icon: Herói :aomr_type_ship_icon: Navio  Construção (:hackarmor::crusharmor:)",
+    "beneficia": ":aomr_type_human_soldier_icon: Soldado:aomr_type_hero_icon: Herói:aomr_type_ship_icon: Navio :aomr_type_building_icon: Construção (:hackarmor::crusharmor:)",
     "construcao_origem": [
       {
         "id": 34,
@@ -5252,13 +5252,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_meteoric_iron_armor_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage: :crusharmor:"
   },
   {
     "nome": "Escudo de Escamas de Dragão",
-    "beneficia": ":aomr_type_human_soldier_icon: Soldado :aomr_type_hero_icon: Herói :aomr_type_ship_icon: Navio (:piercearmor:)",
+    "beneficia": ":aomr_type_human_soldier_icon: Soldado:aomr_type_hero_icon: Herói:aomr_type_ship_icon: Navio (:piercearmor:)",
     "construcao_origem": [
       {
         "id": 34,
@@ -5284,13 +5284,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_dragonscale_shields_icon",
     "campo": ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage::piercearmor:"
   },
   {
     "nome": "Dísablót",
-    "beneficia": ":aomr_valkyrie_icon: Valquíria",
+    "beneficia": ":aomr_valkyrie_icon: <highlight-pink>Valquíria</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -5328,13 +5328,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_disablot_icon",
     "campo": ":aomr_valkyrie_icon: Valquíria: Curar taxa de trabalho para Unidade +33% :aomr_hit_points_icon:"
   },
   {
     "nome": "Cascos Trovejantes",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_speed_icon::aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 40,
@@ -5372,13 +5372,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_thundering_hooves_icon",
     "campo": ":aomr_valkyrie_icon: Valquíria: Pontos de Vida +10% :aomr_hit_points_icon:"
   },
   {
     "nome": "Sessrúmnir",
-    "beneficia": ":aomr_type_hero_icon: Herói | :aomr_godi_icon: Godi ativado ✅",
+    "beneficia": "<highlight-yellow>:aomr_type_hero_icon:</highlight-yellow><highlight-yellow>Herói</highlight-yellow>|<highlight-yellow>:aomr_godi_icon:</highlight-yellow><highlight-yellow>Godi</highlight-yellow><highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 40,
@@ -5416,13 +5416,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_sessrumnir_icon",
     "campo": ":aomr_godi_icon: Godi (Herói) ativado ✅"
   },
   {
     "nome": "Salão dos Thanes",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria | :aomr_type_hero_icon: Herói (:aomr_speed_icon:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red>|:aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 23,
@@ -5462,7 +5462,7 @@
   },
   {
     "nome": "Peitoral Enânico",
-    "beneficia": ":aomr_hirdman_icon: Hird | :aomr_berserk_icon: Berserker (:hackarmor:)",
+    "beneficia": ":aomr_hirdman_icon: <highlight-red>Hird</highlight-red>|:aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
         "id": 29,
@@ -5496,13 +5496,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_dwarven_breastplate_icon",
     "campo": ":aomr_berserk_icon: Berserker: -15% de vulnerabilidade a ataques de Golpear :hackdamage::hackarmor:"
   },
   {
     "nome": "Troll das Cavernas",
-    "beneficia": ":aomr_troll_icon: Troll",
+    "beneficia": ":aomr_troll_icon: <highlight-pink>Troll</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -5536,13 +5536,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_cave_troll_icon",
     "campo": ":aomr_troll_icon: Troll: Ataque de longo alcance carregado de Dano (Todos os Tipos) +100%"
   },
   {
     "nome": "Gjallarhorn",
-    "beneficia": ":aomr_einherjar_icon: Einheri",
+    "beneficia": "<highlight-pink>:aomr_einherjar_icon:</highlight-pink><highlight-pink>Einheri</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -5576,13 +5576,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_gjallarhorn_icon",
     "campo": ":aomr_einherjar_icon: Einheri: Adiciona 5.00 à duração de efeito de Impulso 💪"
   },
   {
     "nome": "Salvaguarda",
-    "beneficia": ":aomr_type_tower_icon: Torre | :aomr_type_wall_icon: Muralha | :aomr_type_building_icon: Construção (:aomr_hit_points_icon: custo:goldaom:)",
+    "beneficia": ":aomr_type_tower_icon: Torre |:aomr_type_wall_icon: Muralha |:aomr_type_building_icon: Construção (:aomr_hit_points_icon: custo:goldaom:)",
     "construcao_origem": [
       {
         "id": 23,
@@ -5616,7 +5616,7 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:",
+    "tipo": "Defensivo 🛡",
     "icon": "aomr_safeguard_icon",
     "campo": ":aomr_type_building_icon: Construção: -50% de custo de Ouro :goldaom:"
   },
@@ -5662,7 +5662,7 @@
   },
   {
     "nome": "Valgaldr",
-    "beneficia": ":aomr_draugr_icon: Draugr",
+    "beneficia": ":aomr_draugr_icon: <highlight-pink>Draugr</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -5692,13 +5692,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_valgaldr_icon",
     "campo": ":aomr_draugr_icon: Draugr: Adiciona 5.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Servos da Glória",
-    "beneficia": ":aomr_berserk_icon: Berserker | :aomr_hirdman_icon: Hird | :aomr_throwing_axeman_icon: TA (:aomr_speed_icon:)",
+    "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red>|:aomr_hirdman_icon: <highlight-red>Hird</highlight-red>|:aomr_throwing_axeman_icon: <highlight-blue>TA</highlight-blue> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -5734,7 +5734,7 @@
   },
   {
     "nome": "Juramento do Anel",
-    "beneficia": ":aomr_asgardian_bastion_icon: Baluarte Asgardiano (menos :favoraom:)",
+    "beneficia": ":aomr_asgardian_bastion_icon: <highlight-purple>Baluarte Asgardiano</highlight-purple> (menos:favoraom:)",
     "construcao_origem": [
       {
         "id": 4,
@@ -5769,7 +5769,7 @@
   },
   {
     "nome": "Ydalir",
-    "beneficia": ":aomr_portable_ram_icon: Aríete Portátil ativado ✅",
+    "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown><highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 59,
@@ -5805,7 +5805,7 @@
   },
   {
     "nome": "Geada",
-    "beneficia": ":aomr_frost_giant_icon: Gigante de Gelo",
+    "beneficia": ":aomr_frost_giant_icon: <highlight-pink>Gigante de Gelo</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -5839,13 +5839,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_rime_icon",
     "campo": ":aomr_frost_giant_icon: Gigante de Gelo: -25% de Tempo de Recarga de Habilidade :aomr_time_icon:"
   },
   {
     "nome": "Machado da Caça",
-    "beneficia": ":aomr_throwing_axeman_icon: TA (:rangeicon: rastreio e alcance)",
+    "beneficia": ":aomr_throwing_axeman_icon: <highlight-blue>TA</highlight-blue> (:rangeicon: rastreio e alcance)",
     "construcao_origem": [
       {
         "id": 39,
@@ -5872,20 +5872,20 @@
         "nome": "Odin"
       }
     ],
-    "ingles": "Huntress' Axe",
+    "ingles": "Huntress&#x27; Axe",
     "panteoes": [
       {
         "id": 3,
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_huntress_axe_icon",
     "campo": ":aomr_throwing_axeman_icon: Lançador de Machados: Define Avaliação de Rastreio para 99.00 :rangeicon:"
   },
   {
     "nome": "Colheita de Inverno",
-    "beneficia": ":aomr_type_villager_icon: Aldeão  (:aomr_farm_icon: :aomr_caribou_icon: :aomr_cow_icon: :aomr_berry_bush_icon:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon:)",
     "construcao_origem": [
       {
         "id": 72,
@@ -5925,7 +5925,7 @@
   },
   {
     "nome": "Chamado de Valhalla",
-    "beneficia": ":aomr_berserk_icon: Berserker (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -5963,13 +5963,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Econômico 💰",
+    "tipo": "Defensivo 🛡 Econômico 💰",
     "icon": "aomr_call_of_valhalla_icon",
     "campo": ":aomr_berserk_icon: Berserker: Recursos devolvidos ao morrer: 0.5 Favor :favoraom:"
   },
   {
     "nome": "Runa de Thurisaz",
-    "beneficia": ":aomr_type_myth_unit_icon: Unidade Mitológica (:aomr_speed_icon: regen:aomr_hit_points_icon:)",
+    "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>Unidade Mitológica</highlight-pink> (:aomr_speed_icon: <highlight-red>regen</highlight-red><highlight-red>:aomr_hit_points_icon:</highlight-red>)",
     "construcao_origem": [
       {
         "id": 23,
@@ -6013,7 +6013,7 @@
   },
   {
     "nome": "Formação Svinfylking",
-    "beneficia": ":aomr_hirdman_icon: Hird (:hackdamage: e +:aomr_type_cavalry_icon:)",
+    "beneficia": ":aomr_hirdman_icon: <highlight-red>Hird</highlight-red> (:hackdamage: e +:aomr_type_cavalry_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -6051,13 +6051,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_swine_array_icon",
     "campo": ":aomr_hirdman_icon: Hird: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
   },
   {
     "nome": "Doador do Anel",
-    "beneficia": ":aomr_jarl_icon: Jarl (:aomr_hit_points_icon: e :hackdamage::aomr_type_myth_unit_icon:)",
+    "beneficia": "<highlight-teal>:aomr_jarl_icon:</highlight-teal><highlight-teal>Jarl</highlight-teal> (:aomr_hit_points_icon: e:hackdamage::aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
         "id": 40,
@@ -6091,13 +6091,13 @@
         "nome": "Nórdico"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_ring_giver_icon",
     "campo": ":aomr_jarl_icon: Jarl: Adiciona 1.00 ao Ataque Corpo a Corpo :hackdamage: Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
   },
   {
     "nome": "Vinkings",
-    "beneficia": ":aomr_raiding_cavalry_icon: Cavalaria Incursora (:aomr_divine_damage_icon:)",
+    "beneficia": ":aomr_raiding_cavalry_icon: <highlight-teal>Cavalaria Incursora</highlight-teal> (:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 40,
@@ -6136,7 +6136,7 @@
   },
   {
     "nome": "Jotuns",
-    "beneficia": ":aomr_mountain_giant_icon: Gigante de Montanha",
+    "beneficia": "<highlight-pink>:aomr_mountain_giant_icon:</highlight-pink><highlight-pink>Gigante de Montanha</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -6175,7 +6175,7 @@
   },
   {
     "nome": "Estômago de Ferro",
-    "beneficia": ":aomr_rock_giant_icon: Gigante das Rochas",
+    "beneficia": "<highlight-pink>:aomr_rock_giant_icon:</highlight-pink><highlight-pink>Gigante das Rochas</highlight-pink>",
     "construcao_origem": [
       {
         "id": 23,
@@ -6210,7 +6210,7 @@
   },
   {
     "nome": "Banquetes Renomados",
-    "beneficia": ":aomr_town_center_norse_icon: TC | :aomr_hill_fort_icon: Fortalezas :aomr_hit_points_icon:+:foodaom: (passivo)",
+    "beneficia": ":aomr_town_center_norse_icon: TC |:aomr_hill_fort_icon: Fortalezas:aomr_hit_points_icon:+:foodaom:(passivo)",
     "construcao_origem": [
       {
         "id": 59,
@@ -6249,7 +6249,7 @@
   },
   {
     "nome": "Nove Ondas",
-    "beneficia": ":aomr_type_hero_icon: Herói | :aomr_type_siege_weapon_icon: Cerco",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow>|:aomr_type_siege_weapon_icon: <highlight-brown>Cerco</highlight-brown>",
     "construcao_origem": [
       {
         "id": 23,
@@ -6284,7 +6284,7 @@
   },
   {
     "nome": "Filhos de Sleipnir",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal>",
     "construcao_origem": [
       {
         "id": 40,
@@ -6323,7 +6323,7 @@
   },
   {
     "nome": "Verrumão dos Anões",
-    "beneficia": ":aomr_portable_ram_icon: Aríete Portátil",
+    "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown>",
     "construcao_origem": [
       {
         "id": 59,
@@ -6362,7 +6362,7 @@
   },
   {
     "nome": "Fúria Berserker",
-    "beneficia": ":aomr_berserk_icon: Berserker (:hackdamage:→:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:hackdamage:→:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -6405,7 +6405,7 @@
   },
   {
     "nome": "Bravura",
-    "beneficia": ":aomr_huskarl_icon: Huskarl (:crushdamage: +:hackdamage:)",
+    "beneficia": ":aomr_huskarl_icon: <highlight-red>Huskarl</highlight-red> (:crushdamage:+:hackdamage:)",
     "construcao_origem": [
       {
         "id": 59,
@@ -6448,7 +6448,7 @@
   },
   {
     "nome": "Rompante",
-    "beneficia": ":aomr_type_myth_unit_icon: MU (:aomr_time_icon:)",
+    "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>MU</highlight-pink> (:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 23,
@@ -6487,7 +6487,7 @@
   },
   {
     "nome": "Sangue de Granito",
-    "beneficia": ":aomr_mountain_giant_icon: :aomr_fire_giant_icon: :aomr_frost_giant_icon: :aomr_rock_giant_icon: Gigantes (:aomr_hit_points_icon:)",
+    "beneficia": "<highlight-pink>:aomr_mountain_giant_icon:</highlight-pink><highlight-pink>:aomr_fire_giant_icon:</highlight-pink><highlight-pink>:aomr_frost_giant_icon:</highlight-pink><highlight-pink>:aomr_rock_giant_icon:</highlight-pink><highlight-pink>Gigantes</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 23,
@@ -6526,7 +6526,7 @@
   },
   {
     "nome": "Crepúsculo dos Deuses",
-    "beneficia": ":aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon: & :aomr_type_hero_icon:)",
+    "beneficia": ":aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon:&:aomr_type_hero_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -6565,7 +6565,7 @@
   },
   {
     "nome": "Espírito Vingativo",
-    "beneficia": ":aomr_hersir_icon: Hersir (Herói) (++:hackdamage:)",
+    "beneficia": "<highlight-yellow>:aomr_hersir_icon:</highlight-yellow><highlight-yellow>Hersir (Herói)</highlight-yellow> (++:hackdamage:)",
     "construcao_origem": [
       {
         "id": 40,
@@ -6600,7 +6600,7 @@
   },
   {
     "nome": "Determinação Silenciosa",
-    "beneficia": ":aomr_berserk_icon: Berserker (:hackdamage:)",
+    "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:hackdamage:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -6635,7 +6635,7 @@
   },
   {
     "nome": "Fúria dos Caídos",
-    "beneficia": ":aomr_berserk_icon: Berserker (💀)",
+    "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (💀)",
     "construcao_origem": [
       {
         "id": 39,
@@ -6922,7 +6922,7 @@
   },
   {
     "nome": "Caos Temporal",
-    "beneficia": ":time_shift_aom: Deslocamento Temporal",
+    "beneficia": "<highlight-orange>:time_shift_aom:</highlight-orange><highlight-orange>Deslocamento Temporal</highlight-orange>",
     "construcao_origem": [
       {
         "id": 24,
@@ -6952,7 +6952,7 @@
   },
   {
     "nome": "Velocidade Empírica",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_speed_icon:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -6983,7 +6983,7 @@
   },
   {
     "nome": "Canais",
-    "beneficia": ":aomr_ability_lush_icon: Exuberância (:aomr_speed_icon:)",
+    "beneficia": "<highlight-orange>:aomr_ability_lush_icon:</highlight-orange><highlight-orange>Exuberância</highlight-orange> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7013,7 +7013,7 @@
   },
   {
     "nome": "Argila Aluvial",
-    "beneficia": ":aomr_promethean_icon: Prometeano (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_promethean_icon: <highlight-pink>Prometeano</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7052,7 +7052,7 @@
   },
   {
     "nome": "Coração de Titãs",
-    "beneficia": ":aomr_type_hero_icon: Promoção de Herói",
+    "beneficia": ":aomr_type_hero_icon: Promoção de<highlight-yellow>Herói</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 24,
@@ -7091,7 +7091,7 @@
   },
   {
     "nome": "Roubo do Fogo",
-    "beneficia": ":aomr_citizen_hero_icon: Cidadão (Herói) (:aomr_farm_icon: :aomr_caribou_icon: :aomr_cow_icon: :aomr_berry_bush_icon: :goldaom: :woodaom: :aomr_type_building_icon:)",
+    "beneficia": "<highlight-yellow>:aomr_citizen_hero_icon:</highlight-yellow><highlight-yellow>Cidadão (Herói)</highlight-yellow> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon::goldaom::woodaom::aomr_type_building_icon:)",
     "construcao_origem": [
       {
         "id": 19,
@@ -7130,7 +7130,7 @@
   },
   {
     "nome": "Vingança de Hefesto",
-    "beneficia": ":aomr_automaton_icon: Autômato (:aomr_hit_points_icon:)",
+    "beneficia": "<highlight-pink>:aomr_automaton_icon:</highlight-pink><highlight-pink>Autômato</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7169,7 +7169,7 @@
   },
   {
     "nome": "Forja Vulcânica",
-    "beneficia": ":aomr_type_human_soldier_icon: Soldado | :aomr_type_hero_icon: Herói | :aomr_automaton_icon: Autômato (:piercearmor:)",
+    "beneficia": ":aomr_type_human_soldier_icon: Soldado |:aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow>|<highlight-pink>:aomr_automaton_icon:</highlight-pink><highlight-pink>Autômato</highlight-pink> (:piercearmor:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7212,7 +7212,7 @@
   },
   {
     "nome": "Percepção",
-    "beneficia": ":aomr_oracle_hero_icon: Oráculo (:los_icon_aoe3de: :favoraom:)",
+    "beneficia": "<highlight-yellow>:aomr_oracle_hero_icon:</highlight-yellow><highlight-yellow>Oráculo</highlight-yellow> (:los_icon_aoe3de::favoraom:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7251,7 +7251,7 @@
   },
   {
     "nome": "Mordida do Turbarão",
-    "beneficia": ":aomr_murmillo_icon: Murmilo | :aomr_fanatic_icon: Fanático (:hackdamage: :aomr_divine_damage_icon:)",
+    "beneficia": ":aomr_murmillo_icon: <highlight-red>Murmilo</highlight-red>|:aomr_fanatic_icon: <highlight-red>Fanático</highlight-red> (:hackdamage::aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 31,
@@ -7290,7 +7290,7 @@
   },
   {
     "nome": "Maça sem Peso",
-    "beneficia": ":aomr_katapeltes_icon: Katapeltes (:aomr_speed_icon: :hackdamage:)",
+    "beneficia": ":aomr_katapeltes_icon: <highlight-red>Katapeltes</highlight-red> (:aomr_speed_icon::hackdamage:)",
     "construcao_origem": [
       {
         "id": 31,
@@ -7329,7 +7329,7 @@
   },
   {
     "nome": "Heroísmo da Linha de Frente",
-    "beneficia": ":aomr_type_hero_icon::aomr_type_infantry_icon: Herói de Infantaria (:foodaom::goldaom:)",
+    "beneficia": ":aomr_type_hero_icon::aomr_type_infantry_icon: <highlight-yellow>Herói de</highlight-yellow><highlight-red>Infantaria</highlight-red> (:foodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 41,
@@ -7368,7 +7368,7 @@
   },
   {
     "nome": "Gêmeos",
-    "beneficia": ":aomr_satyr_icon: Sátiro (:piercedamage:)",
+    "beneficia": "<highlight-pink>:aomr_satyr_icon:</highlight-pink><highlight-pink>Sátiro</highlight-pink> (:piercedamage:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7407,7 +7407,7 @@
   },
   {
     "nome": "Renovação Heróica",
-    "beneficia": ":aomr_type_hero_icon: Herói (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7446,7 +7446,7 @@
   },
   {
     "nome": "Filhos do Sol",
-    "beneficia": ":aomr_oracle_hero_icon: Oráculo (zero:favoraom:)",
+    "beneficia": "<highlight-yellow>:aomr_oracle_hero_icon:</highlight-yellow><highlight-yellow>Oráculo</highlight-yellow> (zero:favoraom:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7485,7 +7485,7 @@
   },
   {
     "nome": "Chifres da Consagração",
-    "beneficia": ":aomr_fanatic_icon: Fanático ativado ✅",
+    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red><highlight-teal>ativado</highlight-teal><highlight-red>✅</highlight-red>",
     "construcao_origem": [
       {
         "id": 60,
@@ -7524,7 +7524,7 @@
   },
   {
     "nome": "Cota de Oricalco",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:hackarmor:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
         "id": 42,
@@ -7602,7 +7602,7 @@
   },
   {
     "nome": "Visão Profética",
-    "beneficia": ":aomr_oracle_hero_icon: Oráculo (:favoraom:)",
+    "beneficia": "<highlight-yellow>:aomr_oracle_hero_icon:</highlight-yellow><highlight-yellow>Oráculo</highlight-yellow> (:favoraom:)",
     "construcao_origem": [
       {
         "id": 24,
@@ -7641,7 +7641,7 @@
   },
   {
     "nome": "Segredo de Poseidon",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_speed_icon: -:foodaom::woodaom::goldaom:)",
+    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon:-: foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 41,
@@ -7680,7 +7680,7 @@
   },
   {
     "nome": "Lança de Pedra",
-    "beneficia": ":aomr_contarius_icon: Contarius (:hackdamage:)",
+    "beneficia": ":aomr_contarius_icon: <highlight-teal>Contarius</highlight-teal> (:hackdamage:)",
     "construcao_origem": [
       {
         "id": 41,
@@ -7719,7 +7719,7 @@
   },
   {
     "nome": "Auréola do Sol",
-    "beneficia": "Arcus |  Sifão",
+    "beneficia": "<highlight-blue>Arcus</highlight-blue>| Sifão",
     "construcao_origem": [
       {
         "id": 41,
@@ -7761,7 +7761,7 @@
   },
   {
     "nome": "Petrificação",
-    "beneficia": "Cerco",
+    "beneficia": "<highlight-brown>Cerco</highlight-brown>",
     "construcao_origem": [
       {
         "id": 60,
@@ -7799,7 +7799,7 @@
   },
   {
     "nome": "Titanomaquia",
-    "beneficia": "Centimanos",
+    "beneficia": "<highlight-pink>Centimanos</highlight-pink>",
     "construcao_origem": [
       {
         "id": 24,
@@ -7837,7 +7837,7 @@
   },
   {
     "nome": "Guardião do Io",
-    "beneficia": "Argos",
+    "beneficia": "<highlight-pink>Argos</highlight-pink>",
     "construcao_origem": [
       {
         "id": 24,
@@ -7875,7 +7875,7 @@
   },
   {
     "nome": "Devotos de Atlas",
-    "beneficia": "Fanático",
+    "beneficia": "<highlight-red>Fanático</highlight-red>",
     "construcao_origem": [
       {
         "id": 60,
@@ -7951,7 +7951,7 @@
   },
   {
     "nome": "Sangue de Ásper",
-    "beneficia": "Lâmpade",
+    "beneficia": "<highlight-pink>Lâmpade</highlight-pink>",
     "construcao_origem": [
       {
         "id": 24,
@@ -7989,7 +7989,7 @@
   },
   {
     "nome": "Rejuvenescimento Mítico",
-    "beneficia": "MU",
+    "beneficia": "<highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
         "id": 24,
@@ -8027,7 +8027,7 @@
   },
   {
     "nome": "Celeridade",
-    "beneficia": "MU",
+    "beneficia": "<highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
         "id": 24,
@@ -8065,7 +8065,7 @@
   },
   {
     "nome": "Armas Celestiais",
-    "beneficia": ":aomr_type_hero_icon: Herói (:aomr_divine_damage_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 44,
@@ -8096,7 +8096,7 @@
   },
   {
     "nome": "Tai Chi",
-    "beneficia": ":aomr_type_hero_icon: Herói (:hackarmor::piercearmor::aomr_time_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:hackarmor::piercearmor::aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 44,
@@ -8127,7 +8127,7 @@
   },
   {
     "nome": "Chefe Kuafu",
-    "beneficia": ":aomr_kuafu_hero_icon: Kuafu Herói",
+    "beneficia": "<highlight-blue>:aomr_kuafu_hero_icon:</highlight-blue><highlight-orange>Kuafu Herói</highlight-orange>",
     "construcao_origem": [
       {
         "id": 6,
@@ -8188,7 +8188,7 @@
   },
   {
     "nome": "Medicina Herbal",
-    "beneficia": "Sábio (Herói)",
+    "beneficia": "<highlight-yellow>Sábio (Herói)</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 44,
@@ -8218,7 +8218,7 @@
   },
   {
     "nome": "Pêssego da Imortalidade",
-    "beneficia": "Herói |  MU",
+    "beneficia": "<highlight-yellow>Herói</highlight-yellow>|<highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
         "id": 44,
@@ -8248,7 +8248,7 @@
   },
   {
     "nome": "Livros Divinos",
-    "beneficia": ":aomr_military_camp: Campo Militar",
+    "beneficia": "<highlight-red>:aomr_military_camp:</highlight-red><highlight-red>Campo Militar</highlight-red>",
     "construcao_origem": [
       {
         "id": 43,
@@ -8330,7 +8330,7 @@
   },
   {
     "nome": "Bênção de Qilin",
-    "beneficia": "Qilin",
+    "beneficia": "<highlight-pink>Qilin</highlight-pink>",
     "construcao_origem": [
       {
         "id": 25,
@@ -8368,7 +8368,7 @@
   },
   {
     "nome": "Mestre das Armas",
-    "beneficia": ":aomr_ge_halberdier_icon: Alabardeiro Ge (:rangeicon:&:aomr_type_cavalry_icon:❄️)",
+    "beneficia": "<highlight-red>:aomr_ge_halberdier_icon:</highlight-red><highlight-red>Alabardeiro Ge</highlight-red> (:rangeicon:&:aomr_type_cavalry_icon:❄️)",
     "construcao_origem": [
       {
         "id": 43,
@@ -8407,7 +8407,7 @@
   },
   {
     "nome": "Espólios de Guerra",
-    "beneficia": ":aomr_type_siege_weapon_icon::aomr_type_building_icon: (:woodaom::goldaom:)",
+    "beneficia": "💥:aomr_type_building_icon:(:woodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8445,7 +8445,7 @@
   },
   {
     "nome": "Filho de Loong",
-    "beneficia": ":aomr_yazi_icon: Yazi (:aomr_hit_points_icon: & :hackdamage:)",
+    "beneficia": "<highlight-pink>:aomr_yazi_icon:</highlight-pink><highlight-pink>Yazi</highlight-pink> (:aomr_hit_points_icon:&:hackdamage:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8484,7 +8484,7 @@
   },
   {
     "nome": "Fúria de Matança",
-    "beneficia": ":aomr_yazi_icon: Yazi (:aomr_hit_points_icon: & :hackdamage::aomr_hit_points_icon:)",
+    "beneficia": "<highlight-pink>:aomr_yazi_icon:</highlight-pink><highlight-pink>Yazi</highlight-pink> (:aomr_hit_points_icon:&:hackdamage::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8523,7 +8523,7 @@
   },
   {
     "nome": "Defesas Avançadas",
-    "beneficia": ":aomr_sentry_tower_icon: Torre de Sentinela e :aomr_baolei: Baolei (:piercedamage::rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_sentry_tower_icon: Torre de Sentinela e:aomr_baolei: Baolei (:piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -8644,7 +8644,7 @@
   },
   {
     "nome": "Determinação Sinistra",
-    "beneficia": ":aomr_qiongqi_icon: Qiongqi (:hackarmor::piercearmor:)",
+    "beneficia": "<highlight-pink>:aomr_qiongqi_icon:</highlight-pink><highlight-pink>Qiongqi</highlight-pink> (:hackarmor::piercearmor:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8683,7 +8683,7 @@
   },
   {
     "nome": "Terreno Vibrante",
-    "beneficia": ":aomr_type_villager_icon: Aldeão (:woodaom:) e :aomr_house_icon: →",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:woodaom:) e:aomr_house_icon:→",
     "construcao_origem": [
       {
         "id": 20,
@@ -8726,7 +8726,7 @@
   },
   {
     "nome": "Cascos do Vento",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:hackarmor::aomr_speed_icon:)",
+    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:hackarmor::aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 61,
@@ -8765,7 +8765,7 @@
   },
   {
     "nome": "Corrida Frenética",
-    "beneficia": ":aomr_taowu_icon: Taowu (+:hackdamage:)",
+    "beneficia": "<highlight-pink>:aomr_taowu_icon:</highlight-pink><highlight-pink>Taowu</highlight-pink> (+:hackdamage:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8804,7 +8804,7 @@
   },
   {
     "nome": "Penas Ardentes",
-    "beneficia": ":aomr_type_archer_icon: Artilharia (🚫:hackarmor::piercearmor: + :aomr_rate_of_fire_icon:)",
+    "beneficia": "<highlight-blue>:aomr_type_archer_icon:</highlight-blue><highlight-blue>Artilharia</highlight-blue> (🚫:hackarmor::piercearmor:+:aomr_rate_of_fire_icon:)",
     "construcao_origem": [
       {
         "id": 32,
@@ -8843,7 +8843,7 @@
   },
   {
     "nome": "Rocha Sólida",
-    "beneficia": ":aomr_type_myth_unit_icon: MU (:hackarmor::piercearmor:)",
+    "beneficia": ":aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink> (:hackarmor::piercearmor:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8882,7 +8882,7 @@
   },
   {
     "nome": "Estômago sem fundo",
-    "beneficia": ":aomr_taotie_icon: Taotis (:aomr_time_icon:)",
+    "beneficia": "<highlight-pink>:aomr_taotie_icon:</highlight-pink><highlight-pink>Taotis</highlight-pink> (:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 25,
@@ -8921,7 +8921,7 @@
   },
   {
     "nome": "Escudos Dourados",
-    "beneficia": ":aomr_dao_swordsman_icon: Espadachim de Dao (:hackarmor:)",
+    "beneficia": "<highlight-red>:aomr_dao_swordsman_icon:</highlight-red><highlight-red>Espadachim de Dao</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
         "id": 43,
@@ -8960,7 +8960,7 @@
   },
   {
     "nome": "Julgamento Divino",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_divine_damage_icon: & :aomr_type_myth_unit_icon:)",
+    "beneficia": "<highlight-red>:aomr_type_infantry_icon:</highlight-red><highlight-red>Infantaria</highlight-red> (:aomr_divine_damage_icon:&:aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
         "id": 43,
@@ -9042,7 +9042,7 @@
   },
   {
     "nome": "Agitador do Céu",
-    "beneficia": ":aomr_type_hero_icon: Herói (:aomr_hit_points_icon: & :aomr_type_myth_unit_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_hit_points_icon:&:aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
         "id": 32,
@@ -9081,7 +9081,7 @@
   },
   {
     "nome": "Tempestade Turbulenta",
-    "beneficia": ":aomr_type_hero_icon: Herói (:foodaom::woodaom::goldaom: &:aomr_time_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:foodaom::woodaom::goldaom:&:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 44,
@@ -9120,7 +9120,7 @@
   },
   {
     "nome": "Última Resistência",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria ()",
+    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 61,
@@ -9159,7 +9159,7 @@
   },
   {
     "nome": "Maré Crescente",
-    "beneficia": ":aomr_qinglong_icon: QingLong",
+    "beneficia": "<highlight-pink>:aomr_qinglong_icon:</highlight-pink><highlight-pink>QingLong</highlight-pink>",
     "construcao_origem": [
       {
         "id": 25,
@@ -9198,7 +9198,7 @@
   },
   {
     "nome": "Linhagem de Xuanyuan",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:hackdamage: ao 💀)",
+    "beneficia": "<highlight-red>:aomr_type_infantry_icon:</highlight-red><highlight-red>Infantaria</highlight-red> (:hackdamage: ao 💀)",
     "construcao_origem": [
       {
         "id": 43,
@@ -9237,7 +9237,7 @@
   },
   {
     "nome": "Seda de Leizu",
-    "beneficia": ":aomr_type_villager_icon: Aldeão & :aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_villager_icon: Aldeão &:aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 45,
@@ -9276,7 +9276,7 @@
   },
   {
     "nome": "Ordem Imperial",
-    "beneficia": ":aomr_dao_swordsman_icon: :aomr_ge_halberdier_icon: :aomr_wuzu_javelineer_icon: :aomr_military_camp: (custos :foodaom::woodaom::goldaom:)",
+    "beneficia": ":aomr_dao_swordsman_icon: <highlight-red>:aomr_ge_halberdier_icon:</highlight-red>:aomr_wuzu_javelineer_icon: <highlight-red>:aomr_military_camp:</highlight-red> (custos:foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 43,
@@ -9315,7 +9315,7 @@
   },
   {
     "nome": "Poder do Caos",
-    "beneficia": ":aomr_hundun_icon: Hundun",
+    "beneficia": "<highlight-pink>:aomr_hundun_icon:</highlight-pink><highlight-pink>Hundun</highlight-pink>",
     "construcao_origem": [
       {
         "id": 25,
@@ -9354,7 +9354,7 @@
   },
   {
     "nome": "Sangue Flamejante",
-    "beneficia": ":aomr_type_myth_unit_icon: MU",
+    "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
         "id": 25,
@@ -9393,7 +9393,7 @@
   },
   {
     "nome": "Canção do Solstício de Verão",
-    "beneficia": ":aomr_zhuque_icon: Zhuque",
+    "beneficia": "<highlight-pink>:aomr_zhuque_icon:</highlight-pink><highlight-pink>Zhuque</highlight-pink>",
     "construcao_origem": [
       {
         "id": 25,
@@ -9432,7 +9432,7 @@
   },
   {
     "nome": "Chama do Sul",
-    "beneficia": ":aomr_fire_archer_icon: Arqueiro de Fogo (:piercedamage: & :piercedamage::aomr_divine_damage_icon:)",
+    "beneficia": "<highlight-blue>:aomr_fire_archer_icon:</highlight-blue><highlight-blue>Arqueiro de Fogo</highlight-blue> (:piercedamage:&:piercedamage::aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 45,
@@ -9471,7 +9471,7 @@
   },
   {
     "nome": "Kagura",
-    "beneficia": ":aomr_miko_icon: Miko (Heroína)",
+    "beneficia": "<highlight-yellow>:aomr_miko_icon:</highlight-yellow><highlight-yellow>Miko (Heroína)</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 64,
@@ -9503,7 +9503,7 @@
   },
   {
     "nome": "Tenshu",
-    "beneficia": "Torre | :aomr_castle_icon: Fortaleza",
+    "beneficia": "Torre |:aomr_castle_icon: Fortaleza",
     "construcao_origem": [
       {
         "id": 70,
@@ -9529,13 +9529,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_tenshu_icon",
     "campo": ":aomr_castle_icon: Fortalezas: Adiciona 5.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Ondas Esmagadoras",
-    "beneficia": ":aomr_type_myth_unit_icon: MU (:aomr_speed_icon: e :aomr_divine_damage_icon:)",
+    "beneficia": ":aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink> (:aomr_speed_icon: e:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 26,
@@ -9561,13 +9561,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_crushing_waves_icon",
     "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 1.00 ao Todas as Ações Dano (Divino) :aomr_divine_damage_icon:"
   },
   {
     "nome": "Foices de Vento",
-    "beneficia": ":aomr_kamaitachi_icon: Kamaitachi",
+    "beneficia": ":aomr_kamaitachi_icon: <highlight-pink>Kamaitachi</highlight-pink>",
     "construcao_origem": [
       {
         "id": 26,
@@ -9601,13 +9601,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_wind_sickles_icon",
     "campo": ":aomr_kamaitachi_icon: Kamaitachi: Todas as Ações de Dano (Todos os Tipos) +40% :hackdamage:"
   },
   {
     "nome": "Katagi",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon: ++:amaterasu_tier_1_icon:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon:++:amaterasu_tier_1_icon:)",
     "construcao_origem": [
       {
         "id": 65,
@@ -9650,7 +9650,7 @@
   },
   {
     "nome": "Varinhas de Gohei",
-    "beneficia": ":aomr_miko_icon: Miko | :aomr_shrine_icon: Santuário",
+    "beneficia": "<highlight-yellow>:aomr_miko_icon:</highlight-yellow><highlight-yellow>Miko</highlight-yellow>|:aomr_shrine_icon: Santuário",
     "construcao_origem": [
       {
         "id": 64,
@@ -9689,7 +9689,7 @@
   },
   {
     "nome": "Alma Condenada",
-    "beneficia": "Wanyudo",
+    "beneficia": "<highlight-pink>Wanyudo</highlight-pink>",
     "construcao_origem": [
       {
         "id": 26,
@@ -9727,7 +9727,7 @@
   },
   {
     "nome": "Nascente de Água Salgada",
-    "beneficia": "Aldeão ( )",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 67,
@@ -9765,7 +9765,7 @@
   },
   {
     "nome": "Força de Caçador",
-    "beneficia": "Artilharia ()",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 33,
@@ -9807,7 +9807,7 @@
   },
   {
     "nome": "Kumiki",
-    "beneficia": "Artilharia e  Cerco (⤵️)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>e<highlight-orange>Cerco</highlight-orange> (⤵️)",
     "construcao_origem": [
       {
         "id": 65,
@@ -9845,7 +9845,7 @@
   },
   {
     "nome": "Arapuca Mortal",
-    "beneficia": ":aomr_jorogumo_icon: Jorogumo (:aomr_divine_damage_icon:)",
+    "beneficia": ":aomr_jorogumo_icon: <highlight-pink>Jorogumo</highlight-pink> (:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
         "id": 26,
@@ -9879,13 +9879,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_deadly_snare_icon",
     "campo": ":aomr_jorogumo_icon: Jorogumo: Adiciona 1.00 de dano de Divino ao longo do tempo para Ataque Corpo a Corpo em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:"
   },
   {
     "nome": "Sabedoria dos Nove",
-    "beneficia": ":aomr_kitsune_icon: Kitsune (:los_icon_aoe3de::aomr_speed_icon::aomr_hit_points_icon:)",
+    "beneficia": "<highlight-pink>:aomr_kitsune_icon:</highlight-pink><highlight-pink>Kitsune</highlight-pink> (:los_icon_aoe3de::aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 26,
@@ -9919,13 +9919,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_wisdom_of_nine_icon",
     "campo": ":aomr_kitsune_icon: Kitsune: Pontos de Vida +75% :aomr_hit_points_icon:"
   },
   {
     "nome": "Vassalos Sashimono",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_hit_points_icon: e ++:aomr_type_cavalry_icon:)",
+    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon: e ++:aomr_type_cavalry_icon:)",
     "construcao_origem": [
       {
         "id": 66,
@@ -9959,13 +9959,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_sashimono_bannermen_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
   },
   {
     "nome": "Netsuke de Marfim",
-    "beneficia": ":goldaom: Ouro (passivo)",
+    "beneficia": "<highlight-yellow>:goldaom:</highlight-yellow><highlight-yellow>Ouro</highlight-yellow> (passivo)",
     "construcao_origem": [
       {
         "id": 26,
@@ -10004,7 +10004,7 @@
   },
   {
     "nome": "Práticas Ascéticas",
-    "beneficia": ":aomr_tengu_icon: Tengu",
+    "beneficia": "<highlight-pink>:aomr_tengu_icon:</highlight-pink><highlight-pink>Tengu</highlight-pink>",
     "construcao_origem": [
       {
         "id": 26,
@@ -10038,13 +10038,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_ascetic_practices_icon",
     "campo": ":aomr_tengu_icon: Tengu: Adiciona 5.00 LDV :los_icon_aoe3de:"
   },
   {
     "nome": "Pipa de Ouro",
-    "beneficia": ":aomr_type_archer_icon: Artilharia ( e ++)",
+    "beneficia": "<highlight-blue>:aomr_type_archer_icon:</highlight-blue><highlight-blue>Artilharia</highlight-blue> (e ++)",
     "construcao_origem": [
       {
         "id": 33,
@@ -10078,13 +10078,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Ofensivo ⚔",
     "icon": "aomr_golden_kite_icon",
     "campo": ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +15%"
   },
   {
     "nome": "Oito Estandartes",
-    "beneficia": ":aomr_type_hero_icon: Herói (:aomr_time_icon::aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_time_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 68,
@@ -10118,13 +10118,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_eight_banners_icon",
     "campo": ":aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:"
   },
   {
     "nome": "Presente Trovejante",
-    "beneficia": ":aomr_raiju_icon: Raijin (:hackdamage::aomr_speed_icon:)",
+    "beneficia": "<highlight-pink>:aomr_raiju_icon:</highlight-pink><highlight-pink>Raijin</highlight-pink> (:hackdamage::aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 26,
@@ -10163,7 +10163,7 @@
   },
   {
     "nome": "Tambores Den Den",
-    "beneficia": "God Power  (+ barato)",
+    "beneficia": "<highlight-purple>God Power</highlight-purple> (+ barato)",
     "construcao_origem": [
       {
         "id": 26,
@@ -10201,7 +10201,7 @@
   },
   {
     "nome": "Máscara de Hannya",
-    "beneficia": "Infantaria (→)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (→)",
     "construcao_origem": [
       {
         "id": 65,
@@ -10243,7 +10243,7 @@
   },
   {
     "nome": "Fúria Mortal",
-    "beneficia": ":aomr_oni_icon: Oni (:hackdamage::hackarmor:)",
+    "beneficia": "<highlight-pink>:aomr_oni_icon:</highlight-pink><highlight-pink>Oni</highlight-pink> (:hackdamage::hackarmor:)",
     "construcao_origem": [
       {
         "id": 26,
@@ -10277,13 +10277,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Ofensivo :aomr_type_infantry_icon:",
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_deadly_rage_icon",
     "campo": ":aomr_oni_icon: Oni: -20% de vulnerabilidade a ataques de Golpear :hackarmor:"
   },
   {
     "nome": "Máscara Oni",
-    "beneficia": ":aomr_type_myth_unit_icon: MU (:aomr_time_icon::aomr_hit_points_icon:)",
+    "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>MU</highlight-pink> (:aomr_time_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 26,
@@ -10317,13 +10317,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Defensivo :aomr_type_human_soldier_icon:, Utilidade 🔧",
+    "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_oni_mask_icon",
     "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -40% :aomr_time_icon:"
   },
   {
     "nome": "Fúria do Vendaval",
-    "beneficia": ":aomr_type_cavalry_icon: Cavalaria (:aomr_speed_icon: & :aomr_rate_of_fire_icon::hackdamage:)",
+    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon:&:aomr_rate_of_fire_icon::hackdamage:)",
     "construcao_origem": [
       {
         "id": 66,
@@ -10357,13 +10357,13 @@
         "nome": "Japonês"
       }
     ],
-    "tipo": "Ofensivo :aomr_type_infantry_icon:, Utilidade 🔧",
+    "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_gales_fury_icon",
     "campo": ":aomr_type_cavalry_icon: Cavalaria: Ataque de longo alcance Intervalo de Ataque 10% :aomr_rate_of_fire_icon::hackdamage:"
   },
   {
     "nome": "Malevolência Ardente",
-    "beneficia": ":aomr_asura_icon: Asura",
+    "beneficia": "<highlight-pink>:aomr_asura_icon:</highlight-pink><highlight-pink>Asura</highlight-pink>",
     "construcao_origem": [
       {
         "id": 26,
@@ -10402,7 +10402,7 @@
   },
   {
     "nome": "Treinamento de Sumô",
-    "beneficia": ":aomr_type_infantry_icon: Infantaria (:aomr_hit_points_icon:&:crushdamage:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon:&:crushdamage:)",
     "construcao_origem": [
       {
         "id": 63,
@@ -10445,7 +10445,7 @@
   },
   {
     "nome": "Espada Dez Punhos",
-    "beneficia": ":aomr_samurai_icon: Samurai (:hackdamage:)",
+    "beneficia": "<highlight-red>:aomr_samurai_icon:</highlight-red><highlight-red>Samurai</highlight-red> (:hackdamage:)",
     "construcao_origem": [
       {
         "id": 63,
@@ -10484,7 +10484,7 @@
   },
   {
     "nome": "Sojutsu",
-    "beneficia": ":aomr_yari_spearman_icon: Lanceiro Yari (:aomr_rate_of_fire_icon: :aomr_speed_icon:)",
+    "beneficia": "<highlight-red>:aomr_yari_spearman_icon:</highlight-red><highlight-red>Lanceiro Yari</highlight-red> (:aomr_rate_of_fire_icon::aomr_speed_icon:)",
     "construcao_origem": [
       {
         "id": 65,
@@ -10523,7 +10523,7 @@
   },
   {
     "nome": "Exército Inquieto",
-    "beneficia": ":aomr_onmoraki_icon: Onmoraki",
+    "beneficia": ":aomr_onmoraki_icon: <highlight-pink>Onmoraki</highlight-pink>",
     "construcao_origem": [
       {
         "id": 26,
@@ -10601,7 +10601,7 @@
   },
   {
     "nome": "Artesão Mecânicos",
-    "beneficia": ":aomr_oyumi_icon: Oyumi",
+    "beneficia": ":aomr_oyumi_icon: <highlight-orange>Oyumi</highlight-orange>",
     "construcao_origem": [
       {
         "id": 68,
@@ -10640,7 +10640,7 @@
   },
   {
     "nome": "Assombração Eterna",
-    "beneficia": ":aomr_shinigami_icon: Shinigami",
+    "beneficia": "<highlight-pink>:aomr_shinigami_icon:</highlight-pink><highlight-pink>Shinigami</highlight-pink>",
     "construcao_origem": [
       {
         "id": 26,
@@ -10679,7 +10679,7 @@
   },
   {
     "nome": "Infiltradores à Beira-mar",
-    "beneficia": ":aomr_shinobi_icon: Shinobi",
+    "beneficia": ":aomr_shinobi_icon: <highlight-blue>Shinobi</highlight-blue>",
     "construcao_origem": [
       {
         "id": 63,
@@ -10718,7 +10718,7 @@
   },
   {
     "nome": "Onmyodo",
-    "beneficia": ":aomr_onmyoji_icon: Onmyoji",
+    "beneficia": ":aomr_onmyoji_icon: <highlight-orange>Onmyoji</highlight-orange>",
     "construcao_origem": [
       {
         "id": 68,
@@ -10757,7 +10757,7 @@
   },
   {
     "nome": "Arcos Assimétricos",
-    "beneficia": "Cavalheiro Arqueiro Yumi",
+    "beneficia": "<highlight-blue>Cavalheiro Arqueiro Yumi</highlight-blue>",
     "construcao_origem": [
       {
         "id": 66,
@@ -10796,7 +10796,7 @@
   },
   {
     "nome": "Mãos de Faraó",
-    "beneficia": ":aomr_priest_icon: Sarcedote",
+    "beneficia": "<highlight-yellow>:aomr_priest_icon:</highlight-yellow><highlight-yellow>Sarcedote</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 22,
@@ -10838,7 +10838,7 @@
   },
   {
     "nome": "Luz Divina",
-    "beneficia": ":aomr_pioneer_icon: Pioneiro (Herói)",
+    "beneficia": "<highlight-yellow>:aomr_pioneer_icon:</highlight-yellow><highlight-yellow>Pioneiro (Herói)</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 25,
@@ -10881,7 +10881,7 @@
   },
   {
     "nome": "Guardiões Sagrados",
-    "beneficia": ":aomr_miko_icon: Miko (Heroína)",
+    "beneficia": "<highlight-yellow>:aomr_miko_icon:</highlight-yellow><highlight-yellow>Miko (Heroína)</highlight-yellow>",
     "comida": 25,
     "construcao_origem": [
       {
@@ -11196,7 +11196,7 @@
   },
   {
     "nome": "Cortar e Queimar",
-    "beneficia": ":aomr_type_villager_icon: Aldeão (:aomr_farm_icon:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_farm_icon:)",
     "construcao_origem": [
       {
         "id": 20,
@@ -11235,7 +11235,7 @@
   },
   {
     "nome": "Trabalho Divino",
-    "beneficia": ":aomr_type_villager_icon: Aldeão",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue>",
     "comida": 200,
     "construcao_origem": [
       {
@@ -11269,7 +11269,7 @@
   },
   {
     "nome": "Paredes de Espinhos",
-    "beneficia": "Muro (:hackdamage:)",
+    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:hackdamage:)",
     "eras": [
       {
         "id": 2,
@@ -11298,7 +11298,7 @@
   },
   {
     "nome": "Pioneiros de Pã",
-    "beneficia": ":aomr_lykaon_icon: Licaão (+1 ao subir TC)",
+    "beneficia": ":aomr_lykaon_icon: <highlight-pink>Licaão</highlight-pink> (+1 ao subir TC)",
     "eras": [
       {
         "id": 2,
@@ -11315,7 +11315,7 @@
         "nome": "Deméter"
       }
     ],
-    "ingles": "Pan's Pioneers",
+    "ingles": "Pan&#x27;s Pioneers",
     "panteoes": [
       {
         "id": 1,
@@ -11327,7 +11327,7 @@
   },
   {
     "nome": "Instinto Predatório",
-    "beneficia": ":aomr_lykaon_icon: Licaão",
+    "beneficia": ":aomr_lykaon_icon: <highlight-pink>Licaão</highlight-pink>",
     "eras": [
       {
         "id": 2,
@@ -11356,7 +11356,7 @@
   },
   {
     "nome": "Hospitalidade Graciosa",
-    "beneficia": "População  (com )",
+    "beneficia": "População (com )",
     "eras": [
       {
         "id": 3,
@@ -11384,7 +11384,7 @@
   },
   {
     "nome": "Florestas Sagradas",
-    "beneficia": ":aomr_hamadryad_icon: Hemadríades",
+    "beneficia": ":aomr_hamadryad_icon: <highlight-pink>Hemadríades</highlight-pink>",
     "eras": [
       {
         "id": 3,
@@ -11413,7 +11413,7 @@
   },
   {
     "nome": "Flechas Predestinadas",
-    "beneficia": "Artilharia",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>",
     "eras": [
       {
         "id": 3,
@@ -11441,7 +11441,7 @@
   },
   {
     "nome": "Terra Sagrada",
-    "beneficia": ":aomr_farm_icon: Fazenda (:aomr_hit_points_icon: cura)",
+    "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal> (:aomr_hit_points_icon: cura)",
     "eras": [
       {
         "id": 4,
@@ -11470,7 +11470,7 @@
   },
   {
     "nome": "Hino Encantado",
-    "beneficia": ":aomr_siren_icon: Sirênico",
+    "beneficia": "<highlight-pink>:aomr_siren_icon:</highlight-pink><highlight-pink>Sirênico</highlight-pink>",
     "eras": [
       {
         "id": 4,
@@ -11499,7 +11499,7 @@
   },
   {
     "nome": "Sacrifício Piedoso",
-    "beneficia": "Hoplita (:aomr_rate_of_fire_icon: velocidade de ataque)",
+    "beneficia": "<highlight-red>Hoplita</highlight-red> (:aomr_rate_of_fire_icon: velocidade de ataque)",
     "eras": [
       {
         "id": 4,

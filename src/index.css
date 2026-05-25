@@ -64,6 +64,35 @@ body {
   background: #27272a;
 }
 
+/* NotionText / beneficia de tecnologias — cores do legado Notion */
+.notion-rich-text .highlight-red {
+  color: #fca5a5;
+}
+.notion-rich-text .highlight-yellow {
+  color: #fde047;
+}
+.notion-rich-text .highlight-brown {
+  color: #d4a574;
+}
+.notion-rich-text .highlight-blue {
+  color: #93c5fd;
+}
+.notion-rich-text .highlight-teal {
+  color: #5eead4;
+}
+.notion-rich-text .highlight-orange {
+  color: #fdba74;
+}
+.notion-rich-text .highlight-pink {
+  color: #f9a8d4;
+}
+.notion-rich-text .highlight-purple {
+  color: #d8b4fe;
+}
+.notion-rich-text .highlight-gray {
+  color: #9ca3af;
+}
+
 /* Ícones inline para :token: (NotionText e replaceNotionTokensInHtml) */
 .notion-token-inline {
   display: inline-block;
