@@ -3,7 +3,9 @@ import { useLocation, useParams } from "react-router-dom";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { InfoRowPortraitCluster } from "@/components/ui/InfoRowPortraitCluster";
+import { TecnologiaTipoBadges } from "@/components/tecnologia/TecnologiaTipoBadges";
 import { NotionText } from "@/components/ui/NotionText";
+import { hasTecnologiaTipo } from "@/lib/tecnologiaTipo";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { PortraitHeaderActions, type PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
@@ -120,6 +122,11 @@ export function TecnologiaDetailPage() {
             {t.beneficia ? (
               <InfoRow label="Beneficia">
                 <NotionText text={t.beneficia} />
+              </InfoRow>
+            ) : null}
+            {hasTecnologiaTipo(t.tipo) || t.tipo?.trim() ? (
+              <InfoRow label="Tipo">
+                <TecnologiaTipoBadges tipo={t.tipo} />
               </InfoRow>
             ) : null}
             {panteoesPortraitItems.length > 0 ? (

@@ -5,6 +5,7 @@ import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { ListViewModeToggle } from "@/components/list/ListViewModeToggle";
 import { SpreadsheetHoverPreview } from "@/components/spreadsheet/SpreadsheetHoverPreview";
 import { SpreadsheetPageWidth } from "@/components/spreadsheet/SpreadsheetPageWidth";
+import { TecnologiaTipoBadges } from "@/components/tecnologia/TecnologiaTipoBadges";
 import { TecnologiasSpreadsheet } from "@/components/tecnologia/TecnologiasSpreadsheet";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
@@ -101,11 +102,14 @@ export function TecnologiasPage() {
                 watermarkSrc={getTecnologiaAssetUrl(t)}
                 subtitle={t.beneficia ? <NotionText text={t.beneficia} /> : undefined}
                 meta={
-                  <span className="inline-flex flex-wrap items-baseline gap-x-0">
-                    {Array.isArray(t.panteoes) && firstNumId(t.panteoes) != null ? (
-                      <PantheonMetaIcon panteaoId={firstNumId(t.panteoes)!} />
-                    ) : null}
-                    <MetaNotionLine parts={[joinRefNomesOrString(t.panteoes), joinRefNomesOrString(t.eras)]} />
+                  <span className="flex flex-col gap-1.5">
+                    <span className="inline-flex flex-wrap items-baseline gap-x-0">
+                      {Array.isArray(t.panteoes) && firstNumId(t.panteoes) != null ? (
+                        <PantheonMetaIcon panteaoId={firstNumId(t.panteoes)!} />
+                      ) : null}
+                      <MetaNotionLine parts={[joinRefNomesOrString(t.panteoes), joinRefNomesOrString(t.eras)]} />
+                    </span>
+                    {t.tipo?.trim() ? <TecnologiaTipoBadges tipo={t.tipo} /> : null}
                   </span>
                 }
               />

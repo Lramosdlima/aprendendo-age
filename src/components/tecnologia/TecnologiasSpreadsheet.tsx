@@ -11,6 +11,7 @@ import {
   SpreadsheetTh,
   SpreadsheetTr,
 } from "@/components/spreadsheet/SpreadsheetTable";
+import { TecnologiaTipoBadges } from "@/components/tecnologia/TecnologiaTipoBadges";
 import { NotionText } from "@/components/ui/NotionText";
 import type { Tecnologia } from "@/data/catalog";
 import { firstNumId, joinRefNomesOrString } from "@/lib/entityRefs";
@@ -162,9 +163,7 @@ export function TecnologiasSpreadsheet({ rows, linkState, onPreview }: Tecnologi
               </SpreadsheetTd>
               <SpreadsheetTd>
                 {hasText(t.tipo) ? (
-                  <span className="text-sm text-zinc-300">
-                    <NotionText text={t.tipo!} />
-                  </span>
+                  <TecnologiaTipoBadges tipo={t.tipo} />
                 ) : (
                   "—"
                 )}
