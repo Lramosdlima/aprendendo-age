@@ -8150,7 +8150,7 @@
   },
   {
     "nome": "Chifres da Consagração",
-    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red><highlight-teal>ativado</highlight-teal> <highlight-red>✅</highlight-red>",
+    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red> <highlight-teal>ativado</highlight-teal> <highlight-red>✅</highlight-red>",
     "construcao_origem": [
       {
         "id": 60,
