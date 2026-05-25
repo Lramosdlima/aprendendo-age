@@ -142,7 +142,7 @@ export function DeusDetailPage() {
         headerIconSrc={deusIcon}
       />
 
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className={d.hierarquia === "Maior" ? "grid gap-6 lg:grid-cols-2" : "grid gap-6"}>
         <Section title="Visão geral">
           <div className="space-y-0">
           {d.hierarquia ? <InfoRow label="Hierarquia">{d.hierarquia}</InfoRow> : null}
@@ -227,9 +227,11 @@ export function DeusDetailPage() {
           </div>
         </Section>
 
-        <Section title="Avaliação (builds)">
-          <DeusBuildAvaliacaoCards rush={d.rush} turtle={d.turtle} eco={d.eco} foco={d.foco} />
-        </Section>
+        {d.hierarquia === "Maior" ? (
+          <Section title="Avaliação Arquétipo RTS">
+            <DeusBuildAvaliacaoCards rush={d.rush} turtle={d.turtle} eco={d.eco} foco={d.foco} />
+          </Section>
+        ) : null}
       </div>
 
       {d.hierarquia === "Maior" && d.explicacao_maior?.blocos?.length ? (
