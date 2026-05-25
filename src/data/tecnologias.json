@@ -3066,6 +3066,38 @@
     ]
   },
   {
+    "nome": "Cavalaria Campeã",
+    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
+    "comida": 700,
+    "construcao_origem": [
+      {
+        "id": 37,
+        "nome": "Estábulo"
+      },
+      {
+        "id": 40,
+        "nome": "Grande Salão"
+      }
+    ],
+    "eras": [
+      {
+        "id": 4,
+        "nome": "Mítica :aomr_mythic_age_icon:"
+      }
+    ],
+    "ingles": "Champion Cavalry",
+    "ouro": 200,
+    "panteoes": "Geral",
+    "tempo_s": 40,
+    "tipo": "Defensivo 🛡 Ofensivo ⚔",
+    "icon": "aomr_champion_cavalry_icon",
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    ]
+  },
+  {
     "nome": "Infantaria Campeã",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "comida": 500,
@@ -3163,7 +3195,7 @@
   },
   {
     "nome": "Recrutar Infantaria",
-    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> ()",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_time_icon:)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -3249,38 +3281,6 @@
     "icon": "aomr_conscript_cavalry_icon",
     "campo": [
       ":aomr_type_cavalry_icon: Cavalaria: Tempo de treino -20% :aomr_time_icon:"
-    ]
-  },
-  {
-    "nome": "Cavalaria Campeã",
-    "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
-    "comida": 700,
-    "construcao_origem": [
-      {
-        "id": 37,
-        "nome": "Estábulo"
-      },
-      {
-        "id": 40,
-        "nome": "Grande Salão"
-      }
-    ],
-    "eras": [
-      {
-        "id": 4,
-        "nome": "Mítica :aomr_mythic_age_icon:"
-      }
-    ],
-    "ingles": "Champion Cavalry",
-    "ouro": 200,
-    "panteoes": "Geral",
-    "tempo_s": 40,
-    "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_cavalry_icon",
-    "campo": [
-      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +20% :aomr_hit_points_icon:",
-      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:",
-      ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
     ]
   },
   {
@@ -4769,7 +4769,7 @@
   },
   {
     "nome": "Lanceiros Médios",
-    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4808,7 +4808,7 @@
   },
   {
     "nome": "Machadeiros Médios",
-    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4847,7 +4847,7 @@
   },
   {
     "nome": "Fundeiros Médios",
-    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4886,7 +4886,7 @@
   },
   {
     "nome": "Convocar Soldados de Quartel",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -4925,7 +4925,7 @@
   },
   {
     "nome": "Convocar Soldados de Migdol",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -4964,7 +4964,7 @@
   },
   {
     "nome": "Lanceiros Pesados",
-    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5003,7 +5003,7 @@
   },
   {
     "nome": "Machadeiros Pesados",
-    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5042,7 +5042,7 @@
   },
   {
     "nome": "Fundeiros Pesados",
-    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5081,7 +5081,7 @@
   },
   {
     "nome": "Cameleiros Pesados",
-    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> ()",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -5120,7 +5120,7 @@
   },
   {
     "nome": "Elefantes Pesados",
-    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> ()",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -5159,7 +5159,7 @@
   },
   {
     "nome": "Lanceiros Campeões",
-    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5198,7 +5198,7 @@
   },
   {
     "nome": "Machadeiros Campeões",
-    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5237,7 +5237,7 @@
   },
   {
     "nome": "Fundeiros Campeões",
-    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5276,7 +5276,7 @@
   },
   {
     "nome": "Cameleiros Campeões",
-    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> ()",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -5315,7 +5315,7 @@
   },
   {
     "nome": "Elefantes Campeões",
-    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> ()",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -5354,7 +5354,7 @@
   },
   {
     "nome": "Recrutar Soldados de Quartel",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 38,
@@ -5393,7 +5393,7 @@
   },
   {
     "nome": "Recrutar Soldados do Migdol",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -5432,7 +5432,7 @@
   },
   {
     "nome": "Bigas Pesadas",
-    "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> ()",
+    "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -5471,7 +5471,7 @@
   },
   {
     "nome": "Bigas Campeãs",
-    "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> ()",
+    "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 58,
@@ -7275,7 +7275,7 @@
   },
   {
     "nome": "Convocar Unidades da Casa Comunal",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -7317,7 +7317,7 @@
   },
   {
     "nome": "Convocar Unidades do Grande Salão",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 40,
@@ -7359,7 +7359,7 @@
   },
   {
     "nome": "Convocar Unidades do Forte da Colina",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 59,
@@ -7401,7 +7401,7 @@
   },
   {
     "nome": "Recrutar Unidades da Casa Comunal",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 39,
@@ -7443,7 +7443,7 @@
   },
   {
     "nome": "Recrutar Unidades do Grande Salão",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 40,
@@ -7485,7 +7485,7 @@
   },
   {
     "nome": "Recrutar Unidades do Forte da Colina",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 59,
@@ -11897,7 +11897,7 @@
   },
   {
     "nome": "Convocar Soldados da Linha Principal",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 41,
@@ -11935,7 +11935,7 @@
   },
   {
     "nome": "Convocar Contrassoldados",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 42,
@@ -11973,7 +11973,7 @@
   },
   {
     "nome": "Convocar Soldado do Palácio",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 60,
@@ -12011,7 +12011,7 @@
   },
   {
     "nome": "Recrutar Soldados da Linha Principal",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 41,
@@ -12049,7 +12049,7 @@
   },
   {
     "nome": "Recrutar Contrassoldados",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 42,
@@ -12087,7 +12087,7 @@
   },
   {
     "nome": "Recrutar Soldado do Palácio",
-    "beneficia": "()",
+    "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
         "id": 60,
