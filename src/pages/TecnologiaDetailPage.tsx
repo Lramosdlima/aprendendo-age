@@ -1,15 +1,16 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { InfoRowPortraitCluster } from "@/components/ui/InfoRowPortraitCluster";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
+import { PortraitHeaderActions, type PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import {
   construcaoById,
   construcaoSlugById,
+  deusById,
   deusSlugById,
   eraById,
   eraSlugById,
@@ -18,6 +19,7 @@ import {
   tecnologiaBySlug,
   tecnologias,
 } from "@/data/catalog";
+import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
@@ -52,17 +54,17 @@ export function TecnologiaDetailPage() {
   const construcaoOrigemField = t.construcao_origem;
   const godEspecificoField = t.god_especifico;
 
-  const deusesLinks =
+  const deusPortraitItems: PortraitHeaderItem[] =
     Array.isArray(godEspecificoField) && godEspecificoField.length
-      ? godEspecificoField.map((r, j) => (
-          <Link
-            key={`${r.id}-${j}`}
-            to={`/deuses/${deusSlugById.get(r.id) ?? r.id}`}
-            className="text-amber-200 underline-offset-2 hover:underline"
-          >
-            {r.nome}
-          </Link>
-        ))
+      ? godEspecificoField.map((r, i) => {
+          const d = deusById.get(r.id);
+          return {
+            key: `${r.id}-${i}`,
+            to: `/deuses/${deusSlugById.get(r.id) ?? r.id}`,
+            nome: r.nome,
+            src: d ? getDeusAssetUrl(d) : undefined,
+          };
+        })
       : [];
 
   const panteoesPortraitItems =
@@ -168,12 +170,15 @@ export function TecnologiaDetailPage() {
         </Section>
 
         <Section title="Deuses">
-          {deusesLinks.length > 0 ? (
-            <ul className="flex flex-wrap gap-2">
-              {deusesLinks.map((el, j) => (
-                <li key={j}>{el}</li>
-              ))}
-            </ul>
+          {deusPortraitItems.length > 0 ? (
+            <InfoRowPortraitCluster>
+              <PortraitHeaderActions
+                items={deusPortraitItems}
+                linkState={tecLinkState}
+                size="sm"
+                justify="start"
+              />
+            </InfoRowPortraitCluster>
           ) : typeof godEspecificoField === "string" && godEspecificoField.trim() ? (
             <NotionText text={godEspecificoField} />
           ) : (
