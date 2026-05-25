@@ -29,7 +29,10 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_hand_axe_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:\n:aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga da Madeira :woodaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga da Madeira :woodaom:"
+    ]
   },
   {
     "nome": "Picareta",
@@ -61,7 +64,10 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_pickaxe_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +10% :goldaom:\n:aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +10% :goldaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Pecuária",
@@ -97,7 +103,11 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_husbandry_icon",
-    "campo": ":aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon: Animal Para Criação: Coleta Automática de Taxas de Trabalho para Comida +25% :foodaom:\n:aomr_type_villager_icon: Aldeão: Adicional de 15,00 à Capacidade de Carga de Comida :foodaom:\n:aomr_type_villager_icon: Aldeão: Coleta de Taxas de Trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:"
+    "campo": [
+      ":aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon: Animal Para Criação: Coleta Automática de Taxas de Trabalho para Comida +25% :foodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional de 15,00 à Capacidade de Carga de Comida :foodaom:",
+      ":aomr_type_villager_icon: Aldeão: Coleta de Taxas de Trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:"
+    ]
   },
   {
     "nome": "Armas de Cobre",
@@ -121,7 +131,12 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_copper_weapons_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
+    ]
   },
   {
     "nome": "Armadura de Cobre",
@@ -145,7 +160,12 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_copper_armor_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackdamage:\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear :hackdamage:\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear :hackdamage:\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackdamage:",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear :hackdamage:",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear :hackdamage:",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage:"
+    ]
   },
   {
     "nome": "Escudos de Cobre",
@@ -169,7 +189,11 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_copper_shields_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar :piercedamage:\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercedamage:\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar :piercedamage:",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercedamage:",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage:"
+    ]
   },
   {
     "nome": "Equipamento de Sobrevivência",
@@ -193,7 +217,11 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_survival_equipment_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_type_villager_icon: Aldeão: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:\n:aomr_type_villager_icon: Aldeão: Ataque de longo alcance de Dano (Todos os Tipos) +50% :piercedamage:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_type_villager_icon: Aldeão: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:",
+      ":aomr_type_villager_icon: Aldeão: Ataque de longo alcance de Dano (Todos os Tipos) +50% :piercedamage:"
+    ]
   },
   {
     "nome": "Arado",
@@ -217,11 +245,13 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰",
     "icon": "aomr_plow_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:"
+    ]
   },
   {
     "nome": "Torre de Vigia",
-    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:piercedamage:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:piercedamage:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -241,11 +271,13 @@
     "tempo_s": 15,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_watch_tower_greek_icon",
-    "campo": ":aomr_sentry_tower_icon: Torre de Sentinela: Ativa a Ação de Ataque de Longo Alcance alcance. :piercedamage:"
+    "campo": [
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Ativa a Ação de Ataque de Longo Alcance alcance. :piercedamage:"
+    ]
   },
   {
     "nome": "Fogueiras Sinalizadoras",
-    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -264,11 +296,13 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_signal_fires_icon",
-    "campo": ":aomr_type_building_icon: Construção que não é muralha: Adicional 6,00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_type_building_icon: Construção que não é muralha: Adicional 6,00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Muralha de Pedra",
-    "beneficia": ":aomr_type_wall_icon: <highlight-brown>Muro</highlight-brown> (:los_icon_aoe3de::aomr_hit_points_icon::hackarmor:)",
+    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:los_icon_aoe3de::aomr_hit_points_icon::hackarmor:)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -288,7 +322,11 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_fortified_wall_greek_icon",
-    "campo": ":aomr_wooden_wall_icon: Muralha: Pontos de Vida + 100% :aomr_hit_points_icon:\n:aomr_wooden_wall_icon: Muralha: Adicional 7,00 LDV :los_icon_aoe3de:\n:aomr_wooden_wall_icon: Muralha: -10% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    "campo": [
+      ":aomr_wooden_wall_icon: Muralha: Pontos de Vida + 100% :aomr_hit_points_icon:",
+      ":aomr_wooden_wall_icon: Muralha: Adicional 7,00 LDV :los_icon_aoe3de:",
+      ":aomr_wooden_wall_icon: Muralha: -10% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    ]
   },
   {
     "nome": "Pedreiros",
@@ -312,7 +350,9 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_masons_icon",
-    "campo": ":aomr_type_building_icon: Construção: Pontos de Vida +20% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_building_icon: Construção: Pontos de Vida +20% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Arquitetos",
@@ -336,7 +376,9 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_architects_icon",
-    "campo": ":aomr_type_building_icon: Construção: Pontos de Vida +30% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_building_icon: Construção: Pontos de Vida +30% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Arco de Serra",
@@ -360,7 +402,10 @@
     "tempo_s": 45,
     "tipo": "Econômico 💰",
     "icon": "aomr_bow_saw_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +15% :woodaom:\n:aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga da Madeira :woodaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +15% :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga da Madeira :woodaom:"
+    ]
   },
   {
     "nome": "Poço de Mina",
@@ -384,7 +429,10 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰",
     "icon": "aomr_shaft_mine_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +15% :goldaom:\n:aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +15% :goldaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Irrigação",
@@ -408,7 +456,9 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_irrigation_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:"
+    ]
   },
   {
     "nome": "Centro Urbano Fortificado",
@@ -432,7 +482,13 @@
     "tempo_s": 60,
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_fortified_town_center_icon",
-    "campo": ":aomr_town_center_greek_icon: Centro Urbano: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_town_center_greek_icon: Centro Urbano: Aumenta o Limite Populacional em 10 :aomr_population_provision_icon:\n:aomr_town_center_greek_icon: Centro da Cidadela: Aumenta o Limite Populacional em 10 :aomr_population_provision_icon:\n:aomr_town_center_greek_icon: Centro Urbano: Adiciona 2,00 ao Ataque de Longo Alcance Máximo :rangeicon:\n:aomr_town_center_greek_icon: Centro Urbano: Ataque de Longo Alcance de Dano (Todos os Tipos) +50% :piercedamage:"
+    "campo": [
+      ":aomr_town_center_greek_icon: Centro Urbano: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_town_center_greek_icon: Centro Urbano: Aumenta o Limite Populacional em 10 :aomr_population_provision_icon:",
+      ":aomr_town_center_greek_icon: Centro da Cidadela: Aumenta o Limite Populacional em 10 :aomr_population_provision_icon:",
+      ":aomr_town_center_greek_icon: Centro Urbano: Adiciona 2,00 ao Ataque de Longo Alcance Máximo :rangeicon:",
+      ":aomr_town_center_greek_icon: Centro Urbano: Ataque de Longo Alcance de Dano (Todos os Tipos) +50% :piercedamage:"
+    ]
   },
   {
     "nome": "Armas de Bronze",
@@ -456,7 +512,12 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_bronze_weapons_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
+    ]
   },
   {
     "nome": "Armadura de Bronze",
@@ -480,7 +541,12 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_bronze_armor_icon",
-    "campo": "Soldado Humano: -10% de vulnerabilidade a ataques de Golpear\nHerói: -15% de vulnerabilidade a ataques de Golpear\nNavio: -10% de vulnerabilidade a ataques de Golpear\nNavio: -10% de vulnerabilidade a ataques de Esmagar"
+    "campo": [
+      "Soldado Humano: -10% de vulnerabilidade a ataques de Golpear",
+      "Herói: -15% de vulnerabilidade a ataques de Golpear",
+      "Navio: -10% de vulnerabilidade a ataques de Golpear",
+      "Navio: -10% de vulnerabilidade a ataques de Esmagar"
+    ]
   },
   {
     "nome": "Escudos de Bronze",
@@ -504,7 +570,11 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_bronze_shields_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar"
+    ]
   },
   {
     "nome": "Balística",
@@ -528,11 +598,17 @@
     "tempo_s": 50,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_ballistics_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Adicional 3.00 à Avaliação de Rastreio :rangeicon:\n:aomr_type_hero_icon: Herói: Adicional 3.00 à Avaliação de Rastreio :rangeicon:\n:aomr_type_ship_icon: Navio de Guerra: Adicional 3.00 à Avaliação de Rastreio :rangeicon:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Adicional 3.00 à Avaliação de Rastreio :rangeicon:\n:aomr_type_building_icon: Construção: Define Avaliação de Rastreio para 99.00 :rangeicon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adicional 3.00 à Avaliação de Rastreio :rangeicon:",
+      ":aomr_type_hero_icon: Herói: Adicional 3.00 à Avaliação de Rastreio :rangeicon:",
+      ":aomr_type_ship_icon: Navio de Guerra: Adicional 3.00 à Avaliação de Rastreio :rangeicon:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Adicional 3.00 à Avaliação de Rastreio :rangeicon:",
+      ":aomr_type_building_icon: Construção: Define Avaliação de Rastreio para 99.00 :rangeicon:"
+    ]
   },
   {
     "nome": "Ameias",
-    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_type_cavalry_icon::rangeicon:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_type_cavalry_icon::rangeicon:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -552,11 +628,15 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_crenellations_icon",
-    "campo": ":aomr_type_building_icon: Construção: Adicional de 0,25 a Todas as Ações Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:\n:aomr_sentry_tower_icon: Torre: Adicional de 2,00 ao Ataque de longo alcance Máximo :rangeicon:\n:aomr_sentry_tower_icon: Torre: Defina Avaliação de Rastreamento para 99,00"
+    "campo": [
+      ":aomr_type_building_icon: Construção: Adicional de 0,25 a Todas as Ações Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:",
+      ":aomr_sentry_tower_icon: Torre: Adicional de 2,00 ao Ataque de longo alcance Máximo :rangeicon:",
+      ":aomr_sentry_tower_icon: Torre: Defina Avaliação de Rastreamento para 99,00"
+    ]
   },
   {
     "nome": "Torre de Guarda",
-    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -576,11 +656,16 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_guard_tower_greek_icon",
-    "campo": ":aomr_sentry_tower_icon: Torre de Sentinela: Todas as Ações de Dano (Todos os Tipos) +50%\n:aomr_sentry_tower_icon: Torre de Sentinela: Pontos de Vida +50% :aomr_hit_points_icon:\n:aomr_military_camp: Campo Militar: Todas as Ações de Dano (Todos os Tipos) +50%\n:aomr_machine_workshop: Oficina de Máquinas: Todas as Ações de Dano (Todos os Tipos) +50%"
+    "campo": [
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Todas as Ações de Dano (Todos os Tipos) +50%",
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Pontos de Vida +50% :aomr_hit_points_icon:",
+      ":aomr_military_camp: Campo Militar: Todas as Ações de Dano (Todos os Tipos) +50%",
+      ":aomr_machine_workshop: Oficina de Máquinas: Todas as Ações de Dano (Todos os Tipos) +50%"
+    ]
   },
   {
     "nome": "Óleo Fervente",
-    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (ataque próximo)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (ataque próximo)",
     "comida": 100,
     "construcao_origem": [
       {
@@ -600,11 +685,14 @@
     "tempo_s": 50,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_boiling_oil_icon",
-    "campo": ":aomr_sentry_tower_icon: Torre de Sentinela: Ativa a Ação de Ataque Corpo a Corpo\n:aomr_fortress_icon: Fortalezas: Ativa a Ação de Ataque Corpo a Corpo"
+    "campo": [
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Ativa a Ação de Ataque Corpo a Corpo",
+      ":aomr_fortress_icon: Fortalezas: Ativa a Ação de Ataque Corpo a Corpo"
+    ]
   },
   {
     "nome": "Pombos Correio",
-    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
+    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -623,11 +711,13 @@
     "tempo_s": 45,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_carrier_pigeons_icon",
-    "campo": ":aomr_type_building_icon: Construção que não é parede: Adicionada 6.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_type_building_icon: Construção que não é parede: Adicionada 6.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Muralha Fortificada",
-    "beneficia": ":aomr_type_wall_icon: <highlight-brown>Muro</highlight-brown> (:aomr_hit_points_icon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:aomr_hit_points_icon::los_icon_aoe3de:)",
     "comida": 500,
     "construcao_origem": [
       {
@@ -647,7 +737,10 @@
     "tempo_s": 50,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_fortified_wall_greek_icon",
-    "campo": ":aomr_wooden_wall_icon: Muralha: Pontos de Vida + 100% :aomr_hit_points_icon:\n:aomr_wooden_wall_icon: Muralha: Adicional 3.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_wooden_wall_icon: Muralha: Pontos de Vida + 100% :aomr_hit_points_icon:",
+      ":aomr_wooden_wall_icon: Muralha: Adicional 3.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Cavalos de Carga",
@@ -687,7 +780,9 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_draft_horses_icon",
-    "campo": ":aomr_type_siege_weapon_icon: Arma de Cerco: Velocidade +20% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_type_siege_weapon_icon: Arma de Cerco: Velocidade +20% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Coletores de Impostos",
@@ -711,7 +806,11 @@
     "tempo_s": 35,
     "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_tax_collectors_icon",
-    "campo": "👤 Jogador: Redução de Penalidade de Tributo -50%\n👤 Jogador: Penalidade de Compra de Mercado reduzida em -25%.\n👤 Jogador: Penalidade de Venda de Mercado reduzida em -25%."
+    "campo": [
+      "👤 Jogador: Redução de Penalidade de Tributo -50%",
+      "👤 Jogador: Penalidade de Compra de Mercado reduzida em -25%.",
+      "👤 Jogador: Penalidade de Venda de Mercado reduzida em -25%."
+    ]
   },
   {
     "nome": "Carpinteiros",
@@ -735,7 +834,10 @@
     "tempo_s": 55,
     "tipo": "Econômico 💰",
     "icon": "aomr_carpenters_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +20% :woodaom:\n:aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Madeira :woodaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +20% :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Madeira :woodaom:"
+    ]
   },
   {
     "nome": "Pedreira",
@@ -759,7 +861,10 @@
     "tempo_s": 50,
     "tipo": "Econômico 💰",
     "icon": "aomr_quarry_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +20% :goldaom:\n:aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +20% :goldaom:",
+      ":aomr_type_villager_icon: Aldeão: Adicional 5,00 à Capacidade de Carga de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Controle de Enchentes",
@@ -783,7 +888,9 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰",
     "icon": "aomr_flood_control_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:"
+    ]
   },
   {
     "nome": "Armas de Ferro",
@@ -807,7 +914,12 @@
     "tempo_s": 50,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_iron_weapons_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10%\n:aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10%",
+      ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10%"
+    ]
   },
   {
     "nome": "Armadura de Ferro",
@@ -831,7 +943,12 @@
     "tempo_s": 50,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_iron_armor_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar"
+    ]
   },
   {
     "nome": "Escudos de Ferro",
@@ -855,7 +972,11 @@
     "tempo_s": 50,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_iron_shields_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar"
+    ]
   },
   {
     "nome": "Breu Incendiário",
@@ -879,7 +1000,17 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_burning_pitch_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Adicional 3.00 ao Ataque de longo alcance :piercedamage: Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_throwing_axeman_icon: Lançador de Machados: Adicional -2.00 ao Ataque de longo alcance :piercedamage: Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_type_archer_ship_icon: Navio de Flechas: Adicional 3.00 ao Ataque de longo alcance :piercedamage: Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Adicional 1.50 ao Ataque de longo :piercedamage: alcance Bônus de Dano contra Navio :aomr_type_ship_icon:\n:aomr_type_archer_ship_icon: Navio de Flechas: Ataque de longo alcance de Dano (Todos os Tipos) +15%\n:aomr_centaur_icon: Centauro: Adicional 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_medusa_icon: Medusa: Adicional 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_satyr_icon: Sátiro: Adicional 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_draugr_icon: Draugr: Adicionado 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adicional 3.00 ao Ataque de longo alcance :piercedamage: Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional -2.00 ao Ataque de longo alcance :piercedamage: Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_type_archer_ship_icon: Navio de Flechas: Adicional 3.00 ao Ataque de longo alcance :piercedamage: Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adicional 1.50 ao Ataque de longo :piercedamage: alcance Bônus de Dano contra Navio :aomr_type_ship_icon:",
+      ":aomr_type_archer_ship_icon: Navio de Flechas: Ataque de longo alcance de Dano (Todos os Tipos) +15%",
+      ":aomr_centaur_icon: Centauro: Adicional 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_medusa_icon: Medusa: Adicional 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_satyr_icon: Sátiro: Adicional 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_draugr_icon: Draugr: Adicionado 3.00 ao Ataque de longo alcance Bônus de Dano contra Construção :aomr_type_building_icon:"
+    ]
   },
   {
     "nome": "Engenheiros",
@@ -919,7 +1050,18 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_engineers_icon",
-    "campo": ":aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Todos os Tipos) +50% :crushdamage:\n:aomr_petrobolos_icon: Petrobolos: Adiciona 2,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_catapult_icon: Catapulta: Adiciona 2,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_fire_siphon_icon: Sifão de Fogo: Adiciona 2,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_oyumi_icon: Oyumi: Adiciona 2,00 ao Ataque de longo alcance Máximo :rangeicon:\n:aomr_petrobolos_icon: Petrobolos: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:\n:aomr_catapult_icon: Catapulta: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:\n:aomr_fire_siphon_icon: Sifão de Fogo: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:\n:aomr_onmyoji_icon: Oyumi: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:\n:aomr_type_siege_weapon_icon: Arma de Cerco: Adicional 1.00 ao Todas as Ações Bônus de Dano contra Muralha"
+    "campo": [
+      ":aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Todos os Tipos) +50% :crushdamage:",
+      ":aomr_petrobolos_icon: Petrobolos: Adiciona 2,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_catapult_icon: Catapulta: Adiciona 2,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_fire_siphon_icon: Sifão de Fogo: Adiciona 2,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_oyumi_icon: Oyumi: Adiciona 2,00 ao Ataque de longo alcance Máximo :rangeicon:",
+      ":aomr_petrobolos_icon: Petrobolos: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:",
+      ":aomr_catapult_icon: Catapulta: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:",
+      ":aomr_fire_siphon_icon: Sifão de Fogo: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:",
+      ":aomr_onmyoji_icon: Oyumi: Adiciona 2,00 ao Quebra de Muralha Alcance Máximo :rangeicon:",
+      ":aomr_type_siege_weapon_icon: Arma de Cerco: Adicional 1.00 ao Todas as Ações Bônus de Dano contra Muralha"
+    ]
   },
   {
     "nome": "Fortificações Avançadas",
@@ -963,7 +1105,10 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_advanced_fortifications_icon",
-    "campo": ":aomr_fortress_icon: :aomr_migdol_stronghold_icon: :aomr_hill_fort_icon: :aomr_palace_icon: :aomr_baolei: :aomr_castle_icon: Fortalezas: Todas as Ações de Dano (Todos os Tipos) +50%\n:aomr_fortress_icon: :aomr_migdol_stronghold_icon: :aomr_hill_fort_icon: :aomr_palace_icon: :aomr_baolei: :aomr_castle_icon: Fortalezas: -10% de vulnerabilidade a ataques de Golpear :hackdamage:"
+    "campo": [
+      ":aomr_fortress_icon: :aomr_migdol_stronghold_icon: :aomr_hill_fort_icon: :aomr_palace_icon: :aomr_baolei: :aomr_castle_icon: Fortalezas: Todas as Ações de Dano (Todos os Tipos) +50%",
+      ":aomr_fortress_icon: :aomr_migdol_stronghold_icon: :aomr_hill_fort_icon: :aomr_palace_icon: :aomr_baolei: :aomr_castle_icon: Fortalezas: -10% de vulnerabilidade a ataques de Golpear :hackdamage:"
+    ]
   },
   {
     "nome": "Cunhagem",
@@ -986,7 +1131,9 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_coinage_icon",
-    "campo": ":aomr_caravan_greek_icon: Caravana: Velocidade +20% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_caravan_greek_icon: Caravana: Velocidade +20% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Embaixadores",
@@ -1009,7 +1156,11 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_ambassadors_icon",
-    "campo": "👤 Jogador: Penalidade de Tributo Removido\n👤 Jogador: Penalidade de Compra de Mercado reduzida em -25%.\n👤 Jogador: Penalidade de Venda de Mercado reduzida em -25%."
+    "campo": [
+      "👤 Jogador: Penalidade de Tributo Removido",
+      "👤 Jogador: Penalidade de Compra de Mercado reduzida em -25%.",
+      "👤 Jogador: Penalidade de Venda de Mercado reduzida em -25%."
+    ]
   },
   {
     "nome": "Segredo dos Titãs",
@@ -1089,7 +1240,10 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_olympian_parentage_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_type_hero_icon: Herói: Tempo de treinamento -50% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_type_hero_icon: Herói: Tempo de treinamento -50% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Cofre de Érebus",
@@ -1124,7 +1278,9 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰",
     "icon": "aomr_vaults_of_erebus_icon",
-    "campo": "👤 Jogador: Adicional 2.00 à Ouro Taxa de Ganhos de Recursos :goldaom:"
+    "campo": [
+      "👤 Jogador: Adicional 2.00 à Ouro Taxa de Ganhos de Recursos :goldaom:"
+    ]
   },
   {
     "nome": "Senhor dos Cavalos",
@@ -1159,7 +1315,10 @@
     "tempo_s": 25,
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_lord_of_horses_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Adicional 4.00 LDV :los_icon_aoe3de:\n:aomr_type_cavalry_icon: Cavalaria: Adicional 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Adicional 4.00 LDV :los_icon_aoe3de:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adicional 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Labirinto de Minos",
@@ -1202,7 +1361,10 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_labyrinth_of_minos_icon",
-    "campo": ":aomr_minotaur_icon: Minotauro: Velocidade + 15% :aomr_speed_icon:\n:aomr_minotaur_icon: Minotauro: Pontos de Vida +30% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_minotaur_icon: Minotauro: Velocidade + 15% :aomr_speed_icon:",
+      ":aomr_minotaur_icon: Minotauro: Pontos de Vida +30% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Égide",
@@ -1245,7 +1407,9 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_aegis_shield_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: -15% de vulnerável a ataques de Furar :piercearmor:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: -15% de vulnerável a ataques de Furar :piercearmor:"
+    ]
   },
   {
     "nome": "Sarissa",
@@ -1288,7 +1452,10 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_sarissa_icon",
-    "campo": ":aomr_hoplite_icon: Hoplita: Adiciona 0,50 ao Ataque Corpo a Corpo Alcance Máximo :rangeicon:\n:aomr_hoplite_icon: Hoplita: Ataque Corpo a Corpo de Dano (Golpear) +10% :hackdamage:"
+    "campo": [
+      ":aomr_hoplite_icon: Hoplita: Adiciona 0,50 ao Ataque Corpo a Corpo Alcance Máximo :rangeicon:",
+      ":aomr_hoplite_icon: Hoplita: Ataque Corpo a Corpo de Dano (Golpear) +10% :hackdamage:"
+    ]
   },
   {
     "nome": "Sabedoria Silvana",
@@ -1331,7 +1498,12 @@
     "tempo_s": 40,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_sylvan_lore_icon",
-    "campo": ":aomr_centaur_icon: Centauro: Adicional 3.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_centaur_icon: Centauro: Adicional 3.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_centaur_icon: Centauro: Adicional 1.00 LDV :los_icon_aoe3de:\n:aomr_centaur_icon: Centauro: Pontos de Vida +35% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_centaur_icon: Centauro: Adicional 3.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_centaur_icon: Centauro: Adicional 3.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_centaur_icon: Centauro: Adicional 1.00 LDV :los_icon_aoe3de:",
+      ":aomr_centaur_icon: Centauro: Pontos de Vida +35% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Avanço Intrépido",
@@ -1374,7 +1546,12 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_spirited_charge_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:\n:aomr_centaur_icon: Centauro: Velocidade +10% :aomr_speed_icon:\n:aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:\n:aomr_centaur_icon: Centauro: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_centaur_icon: Centauro: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:",
+      ":aomr_centaur_icon: Centauro: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:"
+    ]
   },
   {
     "nome": "Mensageiro Alado",
@@ -1417,7 +1594,10 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_winged_messenger_icon",
-    "campo": ":aomr_pegasus_icon: Pégaso: Velocidade +20% :aomr_speed_icon:\n:aomr_pegasus_icon: Pégaso: Adicional 6.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_pegasus_icon: Pégaso: Velocidade +20% :aomr_speed_icon:",
+      ":aomr_pegasus_icon: Pégaso: Adicional 6.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Vontade de Cronos",
@@ -1460,7 +1640,10 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_will_of_kronos_icon",
-    "campo": ":aomr_cyclops_icon: Ciclope: Adiciona 1.50 à Arremessar Área de Dano :hackdamage:\n:aomr_cyclops_icon: Ciclope: Adiciona 1.50 à Ataque Corpo a Corpo Área de Dano :hackdamage:"
+    "campo": [
+      ":aomr_cyclops_icon: Ciclope: Adiciona 1.50 à Arremessar Área de Dano :hackdamage:",
+      ":aomr_cyclops_icon: Ciclope: Adiciona 1.50 à Ataque Corpo a Corpo Área de Dano :hackdamage:"
+    ]
   },
   {
     "nome": "Lança do Pânico de Fobos",
@@ -1511,7 +1694,11 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_phobos_spear_of_panic_icon",
-    "campo": ":aomr_hoplite_icon: Hoplita: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:\n:aomr_militia_icon: Milícia: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:\n:aomr_prodromos_icon: Prodromos: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_hoplite_icon: Hoplita: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:",
+      ":aomr_militia_icon: Milícia: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:",
+      ":aomr_prodromos_icon: Prodromos: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Arco do Horror de Ênio",
@@ -1558,11 +1745,15 @@
     "tempo_s": 20,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_enyos_bow_of_horror_icon",
-    "campo": ":aomr_toxotes_icon: Toxotes: Ataque de longo alcance de Dano (Todos os Tipos) +10%\n:piercedamage: Flecha: Adiciona 15.00 de velocidade :aomr_rate_of_fire_icon:\n:piercedamage: Flecha Flamejante: Adiciona 15.00 de velocidade :aomr_rate_of_fire_icon:"
+    "campo": [
+      ":aomr_toxotes_icon: Toxotes: Ataque de longo alcance de Dano (Todos os Tipos) +10%",
+      ":piercedamage: Flecha: Adiciona 15.00 de velocidade :aomr_rate_of_fire_icon:",
+      ":piercedamage: Flecha Flamejante: Adiciona 15.00 de velocidade :aomr_rate_of_fire_icon:"
+    ]
   },
   {
     "nome": "Espada do Medo de Deimos",
-    "beneficia": ":aomr_hypaspist_icon: <highlight-red>Hipaspista</highlight-red> <highlight-teal>ativado ✅</highlight-teal>",
+    "beneficia": ":aomr_hypaspist_icon: <highlight-red>Hipaspista</highlight-red><highlight-teal>ativado ✅</highlight-teal>",
     "construcao_origem": [
       {
         "id": 21,
@@ -1605,7 +1796,10 @@
     "tempo_s": 20,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_deimos_sword_of_dread_icon",
-    "campo": ":aomr_hypaspist_icon: Hipaspista: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15%\n:aomr_hypaspist_icon: Hipaspista ativado na Clássica :aomr_classical_age_icon:"
+    "campo": [
+      ":aomr_hypaspist_icon: Hipaspista: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15%",
+      ":aomr_hypaspist_icon: Hipaspista ativado na Clássica :aomr_classical_age_icon:"
+    ]
   },
   {
     "nome": "Oniciência",
@@ -1628,7 +1822,9 @@
     "tempo_s": 5,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_omniscience_icon",
-    "campo": "100 :goldaom: de ouro × custo da população total de inimigos :aomr_population_provision_icon:"
+    "campo": [
+      "100 :goldaom: de ouro × custo da população total de inimigos :aomr_population_provision_icon:"
+    ]
   },
   {
     "nome": "Oráculo",
@@ -1671,7 +1867,12 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_oracle_icon",
-    "campo": "👥 Unidade: Adiciona 5.00 LDV :los_icon_aoe3de:\n:aomr_type_building_icon: Construção: Adiciona 5.00 LDV :los_icon_aoe3de:\n👤 Jogador: Revelar Interface de Inimigos :los_icon_aoe3de:\n👤 Jogador: Revelar Interface de Aliados :los_icon_aoe3de:"
+    "campo": [
+      "👥 Unidade: Adiciona 5.00 LDV :los_icon_aoe3de:",
+      ":aomr_type_building_icon: Construção: Adiciona 5.00 LDV :los_icon_aoe3de:",
+      "👤 Jogador: Revelar Interface de Inimigos :los_icon_aoe3de:",
+      "👤 Jogador: Revelar Interface de Aliados :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Templo de Cura",
@@ -1714,7 +1915,9 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_temple_of_healing_icon",
-    "campo": ":aomr_temple_icon: Templo: Ativa a Ação de Cura em Área :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_temple_icon: Templo: Ativa a Ação de Cura em Área :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Raio de Sol",
@@ -1761,7 +1964,10 @@
     "tempo_s": 30,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_sun_ray_icon",
-    "campo": ":aomr_type_archer_icon: Unidade de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +15% :piercedamage:\n:aomr_type_archer_icon: Unidade de Longo Alcance: Adiciona 20.00 de Projetil LoS :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_type_archer_icon: Unidade de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +15% :piercedamage:",
+      ":aomr_type_archer_icon: Unidade de Longo Alcance: Adiciona 20.00 de Projetil LoS :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Ritos Ctônicos",
@@ -1804,7 +2010,10 @@
     "tempo_s": 25,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_chthonic_rites_icon",
-    "campo": ":aomr_hydra_icon: Hidra: Adiciona 4.00 à Taxa de Regeneração\nCila: Adiciona 4.00 à Taxa de Regeneração"
+    "campo": [
+      ":aomr_hydra_icon: Hidra: Adiciona 4.00 à Taxa de Regeneração",
+      "Cila: Adiciona 4.00 à Taxa de Regeneração"
+    ]
   },
   {
     "nome": "Dionísia",
@@ -1847,7 +2056,9 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_dionysia_icon",
-    "campo": "👥 Unidade: Pontos de Vida +5%"
+    "campo": [
+      "👥 Unidade: Pontos de Vida +5%"
+    ]
   },
   {
     "nome": "Cavalaria Trácios",
@@ -1890,7 +2101,9 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_thracian_horses_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Roubos de Vida :aomr_hit_points_icon: por 30.00% do dano causado por Todas as Ações contra Unidade."
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Roubos de Vida :aomr_hit_points_icon: por 30.00% do dano causado por Todas as Ações contra Unidade."
+    ]
   },
   {
     "nome": "Maçãs Douradas",
@@ -1933,7 +2146,9 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_golden_apples_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Templo +20%"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Templo +20%"
+    ]
   },
   {
     "nome": "Sangue Divino",
@@ -1976,7 +2191,14 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_divine_blood_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Velocidade +20% :aomr_speed_icon:\n:aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Centro Urbano +15% :aomr_town_center_greek_icon:\n:aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Construção +15% :aomr_type_building_icon:\n:aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Comida :foodaom:\n:aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Madeira :woodaom:\n:aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Velocidade +20% :aomr_speed_icon:",
+      ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Centro Urbano +15% :aomr_town_center_greek_icon:",
+      ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Construção +15% :aomr_type_building_icon:",
+      ":aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Comida :foodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Madeira :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adiciona 10.00 à Capacidade de Carga de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Rugido de Ortros",
@@ -2019,7 +2241,9 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_roar_of_orthus_icon",
-    "campo": ":aomr_nemean_lion_icon: Leão de Nemeia: de Área de Dano Rugido +100%"
+    "campo": [
+      ":aomr_nemean_lion_icon: Leão de Nemeia: de Área de Dano Rugido +100%"
+    ]
   },
   {
     "nome": "Mão de Talos",
@@ -2066,7 +2290,9 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_hand_of_talos_icon",
-    "campo": ":aomr_colossus_icon: Colosso: Pontos de Vida +25% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_colossus_icon: Colosso: Pontos de Vida +25% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Ombro de Talos",
@@ -2113,7 +2339,10 @@
     "tempo_s": 50,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_shoulder_of_talos_icon",
-    "campo": ":aomr_colossus_icon: Colosso: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_colossus_icon: Colosso: -20% de vulnerabilidade a ataques de Golpear :hackdamage:"
+    "campo": [
+      ":aomr_colossus_icon: Colosso: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_colossus_icon: Colosso: -20% de vulnerabilidade a ataques de Golpear :hackdamage:"
+    ]
   },
   {
     "nome": "Forja do Olimpo",
@@ -2160,7 +2389,11 @@
     "tempo_s": 5,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_forge_of_olympus_icon",
-    "campo": ":aomr_armory_icon: Armaria: -75% de custo de Tecnologias de Comida :foodaom:\n:aomr_armory_icon: Armaria: -75% de custo de Tecnologias de Madeira :woodaom:\n:aomr_armory_icon: Armaria: -75% de custo de Tecnologias de Ouro :goldaom:"
+    "campo": [
+      ":aomr_armory_icon: Armaria: -75% de custo de Tecnologias de Comida :foodaom:",
+      ":aomr_armory_icon: Armaria: -75% de custo de Tecnologias de Madeira :woodaom:",
+      ":aomr_armory_icon: Armaria: -75% de custo de Tecnologias de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Armas Olímpicas",
@@ -2207,7 +2440,14 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_olympian_weapons_icon",
-    "campo": ":aomr_hetairos_icon: Hetairos: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:\n:aomr_myrmidon_icon: Mirmidão: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:\n:aomr_gastraphetoros_icon: Gastrafeta: Ataque de longo alcance de Dano (Todos os Tipos) +20% :piercedamage:\n:aomr_hetairos_icon: Hetairos: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:\n:aomr_myrmidon_icon: Mirmidão: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:\n:aomr_gastraphetoros_icon: Gastrafeta: Adiciona 1.00 ao Ataque de longo alcance Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    "campo": [
+      ":aomr_hetairos_icon: Hetairos: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
+      ":aomr_myrmidon_icon: Mirmidão: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
+      ":aomr_gastraphetoros_icon: Gastrafeta: Ataque de longo alcance de Dano (Todos os Tipos) +20% :piercedamage:",
+      ":aomr_hetairos_icon: Hetairos: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:",
+      ":aomr_myrmidon_icon: Mirmidão: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:",
+      ":aomr_gastraphetoros_icon: Gastrafeta: Adiciona 1.00 ao Ataque de longo alcance Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    ]
   },
   {
     "nome": "Patrocínio Argivo",
@@ -2247,7 +2487,9 @@
     "tempo_s": 40,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_argive_patronage_icon",
-    "campo": ":aomr_fortress_icon: Fortaleza: Invoca um Mirmidão :aomr_myrmidon_icon: a cada 60 segundos"
+    "campo": [
+      ":aomr_fortress_icon: Fortaleza: Invoca um Mirmidão :aomr_myrmidon_icon: a cada 60 segundos"
+    ]
   },
   {
     "nome": "Rosto da Górgona",
@@ -2286,7 +2528,10 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_face_of_the_gorgon_icon",
-    "campo": ":aomr_medusa_icon: Medusa: Adiciona 5.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_medusa_icon: Medusa: -25% de Tempo de Recarga de Habilidade"
+    "campo": [
+      ":aomr_medusa_icon: Medusa: Adiciona 5.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_medusa_icon: Medusa: -25% de Tempo de Recarga de Habilidade"
+    ]
   },
   {
     "nome": "Fúria Monstruosa",
@@ -2325,7 +2570,11 @@
     "tempo_s": 30,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_monstrous_rage_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Ataque de longo alcance Intervalo de Ataque -25% :aomr_rate_of_fire_icon:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Ataque Corpo a Corpo Intervalo de Ataque -25% :aomr_rate_of_fire_icon:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +15% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Ataque de longo alcance Intervalo de Ataque -25% :aomr_rate_of_fire_icon:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Ataque Corpo a Corpo Intervalo de Ataque -25% :aomr_rate_of_fire_icon:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +15% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Chamas de Tifão",
@@ -2368,7 +2617,11 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_flames_of_typhon_icon",
-    "campo": ":aomr_chimera_icon: Quimera: Ataque Corpo a Corpo de Dano (Todos os Tipos) +40%\n:aomr_chimera_icon: Quimera: Ataque de longo alcance carregado de Dano (Todos os Tipos) +40%\n:aomr_chimera_icon: Efeitos de área de fogo de quimera: +40% de Taxa de Modificação de Área de dano 💥"
+    "campo": [
+      ":aomr_chimera_icon: Quimera: Ataque Corpo a Corpo de Dano (Todos os Tipos) +40%",
+      ":aomr_chimera_icon: Quimera: Ataque de longo alcance carregado de Dano (Todos os Tipos) +40%",
+      ":aomr_chimera_icon: Efeitos de área de fogo de quimera: +40% de Taxa de Modificação de Área de dano 💥"
+    ]
   },
   {
     "nome": "Lanças da Praga",
@@ -2415,7 +2668,10 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_shafts_of_plague_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 0,25 de dano Divino :aomr_divine_damage_icon: ao longo do tempo contra a Unidade (exceto Cerco) por 6,0 segundos."
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 0,25 de dano Divino :aomr_divine_damage_icon: ao longo do tempo contra a Unidade (exceto Cerco) por 6,0 segundos."
+    ]
   },
   {
     "nome": "Matador de Feras",
@@ -2459,7 +2715,9 @@
     "tempo_s": 30,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_beast_slayer_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Adiciona 2.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Adiciona 2.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    ]
   },
   {
     "nome": "Infantaria Média",
@@ -2499,7 +2757,12 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_infantry_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Pontos de Vida + 10% :aomr_hit_points_icon:\n:aomr_type_infantry_icon: Infantaria: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage:\n:aomr_type_infantry_icon: Infantaria: Adicional 1,00 LDV :los_icon_aoe3de:\n:aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Pontos de Vida + 10% :aomr_hit_points_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage:",
+      ":aomr_type_infantry_icon: Infantaria: Adicional 1,00 LDV :los_icon_aoe3de:",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Soldados de Longo Alcance Médios",
@@ -2539,7 +2802,18 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_ranged_soldiers_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 1,00 LDV :los_icon_aoe3de:\n:aomr_peltast_icon: Peltasta: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_turma_icon: Turma: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_turma_hero_icon: Turma (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_cheiroballista_icon: Quirobalista: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_cheiroballista_hero_icon: Quirobalista (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_wuzu_javelineer_icon: Lanceiro Wuzu: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 1,00 LDV :los_icon_aoe3de:",
+      ":aomr_peltast_icon: Peltasta: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_turma_icon: Turma: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_turma_hero_icon: Turma (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_cheiroballista_icon: Quirobalista: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_cheiroballista_hero_icon: Quirobalista (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_wuzu_javelineer_icon: Lanceiro Wuzu: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Cavalaria Média",
@@ -2567,7 +2841,11 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_medium_cavalry_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:\n:aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Convocar Infantaria",
@@ -2595,7 +2873,9 @@
     "tempo_s": 20,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_levy_infantry_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Tempo de treinamento -20% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Tempo de treinamento -20% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Convocar Soldados de Longo Alcance",
@@ -2623,7 +2903,9 @@
     "tempo_s": 20,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_levy_ranged_soldiers_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Tempo de treinamento -20% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Tempo de treinamento -20% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Convocar Cavalaria",
@@ -2651,7 +2933,9 @@
     "tempo_s": 20,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_levy_cavalry_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Tempo de treino -20% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Tempo de treino -20% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Cavalaria Pesada",
@@ -2679,7 +2963,11 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_cavalry_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +15% :aomr_hit_points_icon:\n:aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage: :piercedamage:\n:aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +15% :aomr_hit_points_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage: :piercedamage:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Infantaria Pesada",
@@ -2719,7 +3007,12 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_infantry_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Pontos de Vida + 15% :aomr_hit_points_icon:\n:aomr_type_infantry_icon: Infantaria: Todas as Ações de Dano (Todos os Tipos) +15% :hackdamage:\n:aomr_type_infantry_icon: Infantaria: Adicional 1,00 LDV :los_icon_aoe3de:\n:aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Pontos de Vida + 15% :aomr_hit_points_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Todas as Ações de Dano (Todos os Tipos) +15% :hackdamage:",
+      ":aomr_type_infantry_icon: Infantaria: Adicional 1,00 LDV :los_icon_aoe3de:",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Soldados de Longo Alcance Pesados",
@@ -2759,7 +3052,18 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_heavy_ranged_soldiers_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +15% :piercedamage:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 1,00 LDV :los_icon_aoe3de:\n:aomr_peltast_icon: Peltasta: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_turma_icon: Turma: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_turma_hero_icon: Turma (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_cheiroballista_icon: Quirobalista: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_cheiroballista_hero_icon: Quirobalista (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_wuzu_javelineer_icon: Lanceiro Wuzu: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +15% :piercedamage:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 1,00 LDV :los_icon_aoe3de:",
+      ":aomr_peltast_icon: Peltasta: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_turma_icon: Turma: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_turma_hero_icon: Turma (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_cheiroballista_icon: Quirobalista: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_cheiroballista_hero_icon: Quirobalista (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_wuzu_javelineer_icon: Lanceiro Wuzu: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Infantaria Campeã",
@@ -2799,7 +3103,12 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_infantry_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Pontos de Vida + 20% :aomr_hit_points_icon:\n:aomr_type_infantry_icon: Infantaria: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage:\n:aomr_type_infantry_icon: Infantaria: Adicional 1,00 LDV :los_icon_aoe3de:\n:aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Pontos de Vida + 20% :aomr_hit_points_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage:",
+      ":aomr_type_infantry_icon: Infantaria: Adicional 1,00 LDV :los_icon_aoe3de:",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Adicional 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Soldados de Longo Alcance Campeãos",
@@ -2839,11 +3148,22 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_ranged_soldiers_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +20% :piercedamage:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 1,00 LDV :los_icon_aoe3de:\n:aomr_peltast_icon: Peltasta: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_turma_icon: Turma: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_turma_hero_icon: Turma (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_cheiroballista_icon: Quirobalista: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_cheiroballista_hero_icon: Quirobalista (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_wuzu_javelineer_icon: Lanceiro Wuzu: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +20% :piercedamage:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Adiciona 1,00 LDV :los_icon_aoe3de:",
+      ":aomr_peltast_icon: Peltasta: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_turma_icon: Turma: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_turma_hero_icon: Turma (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_cheiroballista_icon: Quirobalista: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_cheiroballista_hero_icon: Quirobalista (Herói): Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_wuzu_javelineer_icon: Lanceiro Wuzu: Adiciona 1,00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 1,00 ao Ataque de longo Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Recrutar Infantaria",
-    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_time_icon:)",
+    "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> ()",
     "comida": 200,
     "construcao_origem": [
       {
@@ -2867,7 +3187,9 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_conscript_infantry_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Tempo de treinamento -20%"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Tempo de treinamento -20%"
+    ]
   },
   {
     "nome": "Recrutar Soldados de Longo Alcance",
@@ -2895,7 +3217,9 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_conscript_ranged_soldiers_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Tempo de treinamento -20% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Tempo de treinamento -20% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Recrutar Cavalaria",
@@ -2923,7 +3247,9 @@
     "tempo_s": 30,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_conscript_cavalry_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Tempo de treino -20% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Tempo de treino -20% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Cavalaria Campeã",
@@ -2951,7 +3277,11 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_champion_cavalry_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:\n:aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adicional 1.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Pele de Rinocerante",
@@ -2986,7 +3316,10 @@
     "tempo_s": 15,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_skin_of_the_rhino_icon",
-    "campo": ":aomr_laborer_icon: Trabalhador: -25% de vulnerabilidade a ataques de Golpear :hackdamage:\n:aomr_laborer_icon: Trabalhador: -25% de vulnerabilidade a ataques de Furar :piercedamage:"
+    "campo": [
+      ":aomr_laborer_icon: Trabalhador: -25% de vulnerabilidade a ataques de Golpear :hackdamage:",
+      ":aomr_laborer_icon: Trabalhador: -25% de vulnerabilidade a ataques de Furar :piercedamage:"
+    ]
   },
   {
     "nome": "Enchente do Nilo",
@@ -3021,7 +3354,9 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰",
     "icon": "aomr_flood_of_the_nile_icon",
-    "campo": "👤 Jogador: Adiciona 1.00 à Comida :foodaom: Taxa de Ganhos de Recursos"
+    "campo": [
+      "👤 Jogador: Adiciona 1.00 à Comida :foodaom: Taxa de Ganhos de Recursos"
+    ]
   },
   {
     "nome": "Clarividência",
@@ -3056,7 +3391,10 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_clairvoyance_icon",
-    "campo": "👤 Jogador: Define custo de Favor :favoraom: de Visão :aomr_vision_icon: para 0.00\n👤 Jogador: -50% de tempo de recarga de Visão :aomr_time_icon:"
+    "campo": [
+      "👤 Jogador: Define custo de Favor :favoraom: de Visão :aomr_vision_icon: para 0.00",
+      "👤 Jogador: -50% de tempo de recarga de Visão :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Gatos Sagrados",
@@ -3099,7 +3437,12 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_sacred_cats_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +5% :aomr_farm_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +5% :aomr_farm_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:"
+    ]
   },
   {
     "nome": "Enxó de Wepwawet",
@@ -3142,7 +3485,10 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰",
     "icon": "aomr_adze_of_wepwawet_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:\n:aomr_type_villager_icon: Aldeão: Adiciona 5.00 ao Ataque de Corte :hackdamage: Bônus de Dano contra Árvore :aomr_tree_oak_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adiciona 5.00 ao Ataque de Corte :hackdamage: Bônus de Dano contra Árvore :aomr_tree_oak_icon:"
+    ]
   },
   {
     "nome": "Criosfinge",
@@ -3185,7 +3531,11 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_criosphinx_icon",
-    "campo": ":aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Golpear) +20% :hackdamage:\n:aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Esmagar) +50% :crushdamage:\n:aomr_sphinx_icon: Esfinge: Pontos de Vida +20% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Golpear) +20% :hackdamage:",
+      ":aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Esmagar) +50% :crushdamage:",
+      ":aomr_sphinx_icon: Esfinge: Pontos de Vida +20% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Hierocosfinge",
@@ -3228,7 +3578,11 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_hieracosphinx_icon",
-    "campo": ":aomr_sphinx_icon: Esfinge: Velocidade +10% :aomr_speed_icon:\n:aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Golpear) +20% :hackdamage:\n:aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Esmagar) +50% :crushdamage:"
+    "campo": [
+      ":aomr_sphinx_icon: Esfinge: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Golpear) +20% :hackdamage:",
+      ":aomr_sphinx_icon: Esfinge: Ataque Corpo a Corpo de Dano (Esmagar) +50% :crushdamage:"
+    ]
   },
   {
     "nome": "Machado Dentado",
@@ -3275,7 +3629,9 @@
     "tempo_s": 30,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_scalloped_axe_icon",
-    "campo": ":aomr_axeman_icon: Machadeiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:"
+    "campo": [
+      ":aomr_axeman_icon: Machadeiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:"
+    ]
   },
   {
     "nome": "Escudo de Couro",
@@ -3322,7 +3678,9 @@
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_leather_frame_shield_icon",
-    "campo": ":aomr_spearman_icon: Lanceiro: -15% de vulnerabilidade a ataques de Furar :hackdamage: :hackarmor:"
+    "campo": [
+      ":aomr_spearman_icon: Lanceiro: -15% de vulnerabilidade a ataques de Furar :hackdamage: :hackarmor:"
+    ]
   },
   {
     "nome": "Projéteis de Electro",
@@ -3369,7 +3727,11 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_electrum_bullets_icon",
-    "campo": ":aomr_slinger_icon: Fundeiro: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:\n:aomr_slinger_icon: Fundeiro: Adiciona 0.50 ao Ataque de longo alcance\nDano (Divino) :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_slinger_icon: Fundeiro: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:",
+      ":aomr_slinger_icon: Fundeiro: Adiciona 0.50 ao Ataque de longo alcance",
+      "Dano (Divino) :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Shaduf",
@@ -3412,7 +3774,10 @@
     "tempo_s": 20,
     "tipo": "Econômico 💰 Utilidade 🔧",
     "icon": "aomr_shaduf_icon",
-    "campo": ":aomr_farm_icon: Fazenda: -50% de custo de Ouro :goldaom:\n:aomr_farm_icon: Fazenda: -50% de Tempo de Construção :aomr_time_icon:"
+    "campo": [
+      ":aomr_farm_icon: Fazenda: -50% de custo de Ouro :goldaom:",
+      ":aomr_farm_icon: Fazenda: -50% de Tempo de Construção :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Pés de Chacal",
@@ -3455,7 +3820,15 @@
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_feet_of_the_jackal_icon",
-    "campo": ":aomr_anubite_icon: Anubita: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:\n:aomr_anubite_icon: Anubita: Pontos de Vida +40% :aomr_hit_points_icon:\n:aomr_anubite_icon: Anubita: Adiciona 3.00 ao Ataque com Salto Alcance\nMáximo :rangeicon:\n:aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Soldado Humano +20% :aomr_type_human_soldier_icon:\n:aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Unidade Mitológica +20% :aomr_type_myth_unit_icon:\n:aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Aldeão +20% :aomr_type_villager_icon:"
+    "campo": [
+      ":aomr_anubite_icon: Anubita: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
+      ":aomr_anubite_icon: Anubita: Pontos de Vida +40% :aomr_hit_points_icon:",
+      ":aomr_anubite_icon: Anubita: Adiciona 3.00 ao Ataque com Salto Alcance",
+      "Máximo :rangeicon:",
+      ":aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Soldado Humano +20% :aomr_type_human_soldier_icon:",
+      ":aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Unidade Mitológica +20% :aomr_type_myth_unit_icon:",
+      ":aomr_anubite_icon: Anubita: Ataque com Salto taxa de trabalho para Aldeão +20% :aomr_type_villager_icon:"
+    ]
   },
   {
     "nome": "Lança da Serpente",
@@ -3498,7 +3871,9 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_serpent_spear_icon",
-    "campo": ":aomr_spearman_icon: Lanceiro: Adiciona 0,125 de dano Divino :aomr_divine_damage_icon: ao longo do tempo contra a Unidade (exceto Cerco) por 6,0 segundos."
+    "campo": [
+      ":aomr_spearman_icon: Lanceiro: Adiciona 0,125 de dano Divino :aomr_divine_damage_icon: ao longo do tempo contra a Unidade (exceto Cerco) por 6,0 segundos."
+    ]
   },
   {
     "nome": "Necrópole",
@@ -3541,7 +3916,9 @@
     "tempo_s": 30,
     "tipo": "Econômico 💰",
     "icon": "aomr_necropolis_icon",
-    "campo": ":aomr_monuments_retold_anim: Monumento: Coleta Automática taxa de trabalho para Favor +25% :favoraom:"
+    "campo": [
+      ":aomr_monuments_retold_anim: Monumento: Coleta Automática taxa de trabalho para Favor +25% :favoraom:"
+    ]
   },
   {
     "nome": "Crocodilopolis",
@@ -3584,7 +3961,10 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_crocodilopolis_icon",
-    "campo": ":aomr_petsuchos_icon: Petsuchos: Adiciona 6.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_petsuchos_icon: Petsuchos: Adiciona 6.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_petsuchos_icon: Petsuchos: Adiciona 6.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_petsuchos_icon: Petsuchos: Adiciona 6.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Tijolo de Barro Seco ao Sol",
@@ -3624,7 +4004,11 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_sun_dried_mud_brick_icon",
-    "campo": ":aomr_type_building_icon: Construção: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_building_icon: Construção: -10% de custo de Ouro :goldaom:\n:aomr_type_building_icon: Construção: -15% de Tempo de Construção :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_building_icon: Construção: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_building_icon: Construção: -10% de custo de Ouro :goldaom:",
+      ":aomr_type_building_icon: Construção: -15% de Tempo de Construção :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Água Escuro",
@@ -3668,7 +4052,12 @@
     ],
     "tipo": "Defensivo 🛡",
     "icon": "aomr_dark_water_icon",
-    "campo": ":aomr_camel_rider_icon: Cameleiro: Pontos de Vida +15% :aomr_hit_points_icon:\n🐪 Caravana: Pontos de Vida +15% :aomr_hit_points_icon:\n:aomr_camel_rider_icon: Cameleiro: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:\n🐪Caravana: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_camel_rider_icon: Cameleiro: Pontos de Vida +15% :aomr_hit_points_icon:",
+      "🐪 Caravana: Pontos de Vida +15% :aomr_hit_points_icon:",
+      ":aomr_camel_rider_icon: Cameleiro: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:",
+      "🐪Caravana: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Arco de Osso Seco",
@@ -3708,7 +4097,10 @@
     ],
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_bone_bow_icon",
-    "campo": ":aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Fundas do Sol",
@@ -3752,7 +4144,9 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_slings_of_the_sun_icon",
-    "campo": ":aomr_slinger_icon: Fundeiro: Adiciona 0.75 ao Ataque de longo alcance Bônus de Dano contra Infantaria :piercedamage: :aomr_type_infantry_icon:"
+    "campo": [
+      ":aomr_slinger_icon: Fundeiro: Adiciona 0.75 ao Ataque de longo alcance Bônus de Dano contra Infantaria :piercedamage: :aomr_type_infantry_icon:"
+    ]
   },
   {
     "nome": "Linho Carmesim",
@@ -3792,11 +4186,14 @@
     ],
     "tipo": "Defensivo 🛡",
     "icon": "aomr_crimson_linen_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Roubos de Vida por 25.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:\n:aomr_scarab_icon: Escaravelho: Roubos de Vida por 75.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Roubos de Vida por 25.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:",
+      ":aomr_scarab_icon: Escaravelho: Roubos de Vida por 75.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Força do Vento Oeste",
-    "beneficia": ":aomr_catapult_icon: <highlight-brown>Catapulta</highlight-brown> <highlight-teal>ativada</highlight-teal>✅",
+    "beneficia": ":aomr_catapult_icon: <highlight-brown>Catapulta</highlight-brown><highlight-teal>ativada</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 62,
@@ -3832,7 +4229,11 @@
     ],
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_force_of_the_west_wind_icon",
-    "campo": ":aomr_catapult_icon: Catapulta ativado ✅\n:aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Esmagar) +15% :crushdamage:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Todas as Ações de Dano (Esmagar) +15% :crushdamage:"
+    "campo": [
+      ":aomr_catapult_icon: Catapulta ativado ✅",
+      ":aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Esmagar) +15% :crushdamage:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Todas as Ações de Dano (Esmagar) +15% :crushdamage:"
+    ]
   },
   {
     "nome": "Ritos Funerários",
@@ -3876,7 +4277,10 @@
     ],
     "tipo": "Econômico 💰",
     "icon": "aomr_funeral_rites_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: Recursos devolvidos ao morrer: 8 Ouro :goldaom:\n:aomr_type_hero_icon: Herói: Recursos devolvidos ao morrer: 8 Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: Recursos devolvidos ao morrer: 8 Ouro :goldaom:",
+      ":aomr_type_hero_icon: Herói: Recursos devolvidos ao morrer: 8 Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Espírito de Maat",
@@ -3920,7 +4324,10 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_spirit_of_maat_icon",
-    "campo": ":aomr_priest_icon: :aomr_pharaoh_icon: Curador: Curar taxa de trabalho para Unidade +50% :aomr_hit_points_icon:\n:aomr_priest_icon: Sacerdote (Herói): -30% de custo de Ouro :goldaom:"
+    "campo": [
+      ":aomr_priest_icon: :aomr_pharaoh_icon: Curador: Curar taxa de trabalho para Unidade +50% :aomr_hit_points_icon:",
+      ":aomr_priest_icon: Sacerdote (Herói): -30% de custo de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Nebty",
@@ -3960,7 +4367,14 @@
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_nebty_icon",
-    "campo": ":aomr_priest_icon: Sacerdote (Herói): Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:\n:aomr_pharaoh_icon: Faraó (Herói): Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:\n:aomr_pharaoh_icon: Faraó (Novo Reino) (Herói): Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:\n:aomr_priest_icon: Sacerdote (Herói): Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_pharaoh_icon: Faraó (Herói): Pontos de Vida + 10% :aomr_hit_points_icon:\n:aomr_pharaoh_icon: Faraó (Novo Reino) (Herói): Pontos de Vida +10% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_priest_icon: Sacerdote (Herói): Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:",
+      ":aomr_pharaoh_icon: Faraó (Herói): Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:",
+      ":aomr_pharaoh_icon: Faraó (Novo Reino) (Herói): Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:",
+      ":aomr_priest_icon: Sacerdote (Herói): Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_pharaoh_icon: Faraó (Herói): Pontos de Vida + 10% :aomr_hit_points_icon:",
+      ":aomr_pharaoh_icon: Faraó (Novo Reino) (Herói): Pontos de Vida +10% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Vento do Deserto",
@@ -3999,7 +4413,11 @@
       }
     ],
     "icon": "aomr_desert_wind_icon",
-    "campo": ":aomr_camel_rider_icon: Cameleiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:\n:aomr_camel_rider_icon: Cameleiro: Pontos de Vida +15% :aomr_hit_points_icon:\n:aomr_camel_rider_icon: Cameleiro: Velocidade +15% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_camel_rider_icon: Cameleiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
+      ":aomr_camel_rider_icon: Cameleiro: Pontos de Vida +15% :aomr_hit_points_icon:",
+      ":aomr_camel_rider_icon: Cameleiro: Velocidade +15% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Novo Reino",
@@ -4081,7 +4499,11 @@
       }
     ],
     "icon": "aomr_atef_crown_icon",
-    "campo": ":aomr_mummy_icon: Múmia: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_mummy_icon: Múmia: Ataque de longo alcance de Dano (Todos os Tipos) +40%\nLacaio: +100% de vida útil"
+    "campo": [
+      ":aomr_mummy_icon: Múmia: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_mummy_icon: Múmia: Ataque de longo alcance de Dano (Todos os Tipos) +40%",
+      "Lacaio: +100% de vida útil"
+    ]
   },
   {
     "nome": "Machado de Vingança",
@@ -4121,7 +4543,10 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_axe_of_vengeance_icon",
-    "campo": ":aomr_axeman_icon: Machadeiro: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Construção :aomr_type_building_icon:\n:aomr_axeman_icon: Machadeiro: Para cada 1% de PV perdidos, modifique Dano em 0.50% :hackdamage:"
+    "campo": [
+      ":aomr_axeman_icon: Machadeiro: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Construção :aomr_type_building_icon:",
+      ":aomr_axeman_icon: Machadeiro: Para cada 1% de PV perdidos, modifique Dano em 0.50% :hackdamage:"
+    ]
   },
   {
     "nome": "Lança de Hórus",
@@ -4161,7 +4586,10 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_spear_of_horus_icon",
-    "campo": ":aomr_spearman_icon: Lanceiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:\n:aomr_spearman_icon: Lanceiro: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :hackdamage: :aomr_type_cavalry_icon:"
+    "campo": [
+      ":aomr_spearman_icon: Lanceiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:",
+      ":aomr_spearman_icon: Lanceiro: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :hackdamage: :aomr_type_cavalry_icon:"
+    ]
   },
   {
     "nome": "Maior de Cinquenta",
@@ -4201,7 +4629,10 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_greatest_of_fifty_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Vale dos Reis",
@@ -4241,7 +4672,9 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_valley_of_the_kings_icon",
-    "campo": "⏫ Fortalecedor: Define taxa de capacitação de Chance de Treino Duplo para 1.00"
+    "campo": [
+      "⏫ Fortalecedor: Define taxa de capacitação de Chance de Treino Duplo para 1.00"
+    ]
   },
   {
     "nome": "Livro de Thoth",
@@ -4281,7 +4714,14 @@
     ],
     "tipo": "Econômico 💰",
     "icon": "aomr_book_of_thoth_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +10% :goldaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +10% :aomr_farm_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +10% :goldaom:"
+    ]
   },
   {
     "nome": "Presas de Apedemak",
@@ -4320,7 +4760,12 @@
       }
     ],
     "icon": "aomr_tusks_of_apedemak_icon",
-    "campo": ":aomr_war_elephant_icon: Elefante de Guerra: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:\n:aomr_war_elephant_icon: Elefante de Guerra: -10% de custo de Comida :foodaom:\n:aomr_war_elephant_icon: Elefante de Guerra: -10% de custo de Ouro :goldaom:\n:aomr_war_elephant_icon: Elefante de Guerra: Adiciona-1 ao Limite Populacional :aomr_population_provision_icon:"
+    "campo": [
+      ":aomr_war_elephant_icon: Elefante de Guerra: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:",
+      ":aomr_war_elephant_icon: Elefante de Guerra: -10% de custo de Comida :foodaom:",
+      ":aomr_war_elephant_icon: Elefante de Guerra: -10% de custo de Ouro :goldaom:",
+      ":aomr_war_elephant_icon: Elefante de Guerra: Adiciona-1 ao Limite Populacional :aomr_population_provision_icon:"
+    ]
   },
   {
     "nome": "Lanceiros Médios",
@@ -4402,7 +4847,7 @@
   },
   {
     "nome": "Fundeiros Médios",
-    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:piercedamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4441,7 +4886,7 @@
   },
   {
     "nome": "Convocar Soldados de Quartel",
-    "beneficia": ":aomr_barracks_icon: Quartel (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4480,7 +4925,7 @@
   },
   {
     "nome": "Convocar Soldados de Migdol",
-    "beneficia": ":aomr_migdol_stronghold_icon: Quartel (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4519,7 +4964,7 @@
   },
   {
     "nome": "Lanceiros Pesados",
-    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4558,7 +5003,7 @@
   },
   {
     "nome": "Machadeiros Pesados",
-    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4597,7 +5042,7 @@
   },
   {
     "nome": "Fundeiros Pesados",
-    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:piercedamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4636,7 +5081,7 @@
   },
   {
     "nome": "Cameleiros Pesados",
-    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4675,7 +5120,7 @@
   },
   {
     "nome": "Elefantes Pesados",
-    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4714,7 +5159,7 @@
   },
   {
     "nome": "Lanceiros Campeões",
-    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4753,7 +5198,7 @@
   },
   {
     "nome": "Machadeiros Campeões",
-    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4792,7 +5237,7 @@
   },
   {
     "nome": "Fundeiros Campeões",
-    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:piercedamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 38,
@@ -4831,7 +5276,7 @@
   },
   {
     "nome": "Cameleiros Campeões",
-    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -4870,7 +5315,7 @@
   },
   {
     "nome": "Elefantes Campeões",
-    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
+    "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> ()",
     "construcao_origem": [
       {
         "id": 58,
@@ -5096,7 +5541,10 @@
     "tempo_s": 40,
     "tipo": "Econômico 💰 Ofensivo ⚔",
     "icon": "aomr_hammer_of_thunder_icon",
-    "campo": ":aomr_hersir_icon: Hersir (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:\n:aomr_hersir_icon: Hersir (Herói): Coleta Automática taxa de trabalho para Favor +50% :favoraom:"
+    "campo": [
+      ":aomr_hersir_icon: Hersir (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
+      ":aomr_hersir_icon: Hersir (Herói): Coleta Automática taxa de trabalho para Favor +50% :favoraom:"
+    ]
   },
   {
     "nome": "Hamask",
@@ -5131,7 +5579,10 @@
     "tempo_s": 40,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_hamask_icon",
-    "campo": ":aomr_berserk_icon: Berserker: Velocidade +10% :aomr_speed_icon:\n:aomr_berserk_icon: Berserker: Ataque Corpo a Corpo de Bônus de Dano contra Unidade Mitológica +50% :aomr_type_myth_unit_icon:"
+    "campo": [
+      ":aomr_berserk_icon: Berserker: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_berserk_icon: Berserker: Ataque Corpo a Corpo de Bônus de Dano contra Unidade Mitológica +50% :aomr_type_myth_unit_icon:"
+    ]
   },
   {
     "nome": "Olhos na Floresta",
@@ -5166,7 +5617,9 @@
     "tempo_s": 40,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_eyes_in_the_forest_icon",
-    "campo": "👥 Unidade: Animais e objetos naturais dentro da linha de visão das unidades do jogador revelam um raio de 30 :los_icon_aoe3de: ao seu redor por 6 segundos."
+    "campo": [
+      "👥 Unidade: Animais e objetos naturais dentro da linha de visão das unidades do jogador revelam um raio de 30 :los_icon_aoe3de: ao seu redor por 6 segundos."
+    ]
   },
   {
     "nome": "Dádiva de Frey",
@@ -5201,7 +5654,9 @@
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_freyrs_gift_icon",
-    "campo": "👥 Unidade: Pontos de Vida + 10% :aomr_hit_points_icon:"
+    "campo": [
+      "👥 Unidade: Pontos de Vida + 10% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Armas Enânicas",
@@ -5233,7 +5688,12 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_dwarven_weapons_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:\n:aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:\n:aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:\n:aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:",
+      ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:",
+      ":aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:",
+      ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:"
+    ]
   },
   {
     "nome": "Armadura de Ferro Meteórico",
@@ -5265,7 +5725,12 @@
     ],
     "tipo": "Defensivo 🛡",
     "icon": "aomr_meteoric_iron_armor_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage: :crusharmor:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage: :crusharmor:"
+    ]
   },
   {
     "nome": "Escudo de Escamas de Dragão",
@@ -5297,7 +5762,11 @@
     ],
     "tipo": "Defensivo 🛡",
     "icon": "aomr_dragonscale_shields_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:\n:aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:",
+      ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:"
+    ]
   },
   {
     "nome": "Dísablót",
@@ -5341,7 +5810,10 @@
     ],
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_disablot_icon",
-    "campo": ":aomr_valkyrie_icon: Valquíria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +50% :hackdamage:\n:aomr_valkyrie_icon: Valquíria: Curar taxa de trabalho para Unidade +33% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_valkyrie_icon: Valquíria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +50% :hackdamage:",
+      ":aomr_valkyrie_icon: Valquíria: Curar taxa de trabalho para Unidade +33% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Cascos Trovejantes",
@@ -5385,11 +5857,16 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_thundering_hooves_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:\n:aomr_valkyrie_icon: Valquíria: Velocidade +10% :aomr_speed_icon:\n:aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_valkyrie_icon: Valquíria: Pontos de Vida +10% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_valkyrie_icon: Valquíria: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_valkyrie_icon: Valquíria: Pontos de Vida +10% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Sessrúmnir",
-    "beneficia": "<highlight-yellow>:aomr_type_hero_icon:</highlight-yellow><highlight-yellow>Herói</highlight-yellow>|<highlight-yellow>:aomr_godi_icon:</highlight-yellow><highlight-yellow>Godi</highlight-yellow> <highlight-teal>ativado</highlight-teal>✅",
+    "beneficia": "<highlight-yellow>:aomr_type_hero_icon:</highlight-yellow><highlight-yellow>Herói</highlight-yellow>|<highlight-yellow>:aomr_godi_icon:</highlight-yellow><highlight-yellow>Godi</highlight-yellow><highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 40,
@@ -5429,7 +5906,10 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_sessrumnir_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_godi_icon: Godi (Herói) ativado ✅"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_godi_icon: Godi (Herói) ativado ✅"
+    ]
   },
   {
     "nome": "Salão dos Thanes",
@@ -5469,7 +5949,10 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_hall_of_thanes_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Velocidade +5% :aomr_speed_icon:\n:aomr_type_hero_icon: Herói: Velocidade +5% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Velocidade +5% :aomr_speed_icon:",
+      ":aomr_type_hero_icon: Herói: Velocidade +5% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Peitoral Enânico",
@@ -5509,7 +5992,10 @@
     ],
     "tipo": "Defensivo 🛡",
     "icon": "aomr_dwarven_breastplate_icon",
-    "campo": ":aomr_hirdman_icon: Hird: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:\n:aomr_berserk_icon: Berserker: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:"
+    "campo": [
+      ":aomr_hirdman_icon: Hird: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
+      ":aomr_berserk_icon: Berserker: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:"
+    ]
   },
   {
     "nome": "Troll das Cavernas",
@@ -5549,7 +6035,10 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_cave_troll_icon",
-    "campo": ":aomr_troll_icon: Troll: Adiciona 1.50 à Ataque de longo alcance carregado Área de Dano\n:aomr_troll_icon: Troll: Ataque de longo alcance carregado de Dano (Todos os Tipos) +100%"
+    "campo": [
+      ":aomr_troll_icon: Troll: Adiciona 1.50 à Ataque de longo alcance carregado Área de Dano",
+      ":aomr_troll_icon: Troll: Ataque de longo alcance carregado de Dano (Todos os Tipos) +100%"
+    ]
   },
   {
     "nome": "Gjallarhorn",
@@ -5589,7 +6078,11 @@
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_gjallarhorn_icon",
-    "campo": ":aomr_einherjar_icon: Einheri: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:\n:aomr_einherjar_icon: Einheri: Pontos de Vida + 10% :aomr_hit_points_icon:\n:aomr_einherjar_icon: Einheri: Adiciona 5.00 à duração de efeito de Impulso 💪"
+    "campo": [
+      ":aomr_einherjar_icon: Einheri: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:",
+      ":aomr_einherjar_icon: Einheri: Pontos de Vida + 10% :aomr_hit_points_icon:",
+      ":aomr_einherjar_icon: Einheri: Adiciona 5.00 à duração de efeito de Impulso 💪"
+    ]
   },
   {
     "nome": "Salvaguarda",
@@ -5629,7 +6122,11 @@
     ],
     "tipo": "Defensivo 🛡",
     "icon": "aomr_safeguard_icon",
-    "campo": ":aomr_type_tower_icon: Torre de Sentinela: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_type_wall_icon: Muralha: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_type_building_icon: Construção: -50% de custo de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_tower_icon: Torre de Sentinela: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_type_wall_icon: Muralha: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_type_building_icon: Construção: -50% de custo de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Rigsthula",
@@ -5669,7 +6166,9 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_rigsthula_icon",
-    "campo": ":aomr_type_building_icon: Construção: +20% de Taxa de Trabalho de Treinamento ⏩ e Pesquisa ⏫"
+    "campo": [
+      ":aomr_type_building_icon: Construção: +20% de Taxa de Trabalho de Treinamento ⏩ e Pesquisa ⏫"
+    ]
   },
   {
     "nome": "Valgaldr",
@@ -5705,7 +6204,12 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_valgaldr_icon",
-    "campo": ":aomr_draugr_icon: Draugr: Todas as Ações de Dano (Todos os Tipos) +20% :piercedamage:\n:aomr_draugr_icon: Draugr: Adiciona 5.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_draugr_icon: Draugr: Adiciona 5.00 ao Ataque de longo alcance carregado Alcance Máximo :rangeicon:\n:aomr_draugr_icon: Draugr: Adiciona 5.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_draugr_icon: Draugr: Todas as Ações de Dano (Todos os Tipos) +20% :piercedamage:",
+      ":aomr_draugr_icon: Draugr: Adiciona 5.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_draugr_icon: Draugr: Adiciona 5.00 ao Ataque de longo alcance carregado Alcance Máximo :rangeicon:",
+      ":aomr_draugr_icon: Draugr: Adiciona 5.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Servos da Glória",
@@ -5741,7 +6245,14 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_servants_of_glory_icon",
-    "campo": ":aomr_hirdman_icon: Hird: Velocidade +5% :aomr_speed_icon:\n:aomr_throwing_axeman_icon: Lançador de Machados: Velocidade +5% :aomr_speed_icon:\n:aomr_berserk_icon: Berserker: Velocidade +5% :aomr_speed_icon:\n:aomr_hirdman_icon: Hird: Ativa a Ação\n:aomr_throwing_axeman_icon: Lançador de Machados: Ativa a Ação\n:aomr_berserk_icon: Berserker: Ativa a Ação"
+    "campo": [
+      ":aomr_hirdman_icon: Hird: Velocidade +5% :aomr_speed_icon:",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Velocidade +5% :aomr_speed_icon:",
+      ":aomr_berserk_icon: Berserker: Velocidade +5% :aomr_speed_icon:",
+      ":aomr_hirdman_icon: Hird: Ativa a Ação",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Ativa a Ação",
+      ":aomr_berserk_icon: Berserker: Ativa a Ação"
+    ]
   },
   {
     "nome": "Juramento do Anel",
@@ -5777,11 +6288,13 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_ring_oath_icon",
-    "campo": "👤 Jogador: -50% de custo de Favor :favoraom: de Baluarte Asgardiano :aomr_asgardian_bastion_icon:"
+    "campo": [
+      "👤 Jogador: -50% de custo de Favor :favoraom: de Baluarte Asgardiano :aomr_asgardian_bastion_icon:"
+    ]
   },
   {
     "nome": "Ydalir",
-    "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown> <highlight-teal>ativado</highlight-teal>✅",
+    "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown><highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 59,
@@ -5813,7 +6326,10 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_valgaldr_icon",
-    "campo": ":aomr_portable_ram_icon: Aríete Portátil ativado ✅\n:aomr_hill_fort_icon: Fortalezas: +20% de Taxa de Trabalho de Treinamento ⏩ e Pesquisa ⏫"
+    "campo": [
+      ":aomr_portable_ram_icon: Aríete Portátil ativado ✅",
+      ":aomr_hill_fort_icon: Fortalezas: +20% de Taxa de Trabalho de Treinamento ⏩ e Pesquisa ⏫"
+    ]
   },
   {
     "nome": "Geada",
@@ -5853,7 +6369,11 @@
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_rime_icon",
-    "campo": ":aomr_frost_giant_icon: Gigante de Gelo: Pontos de Vida +33% :aomr_hit_points_icon:\n:aomr_frost_giant_icon: Gigante de Gelo: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:\n:aomr_frost_giant_icon: Gigante de Gelo: -25% de Tempo de Recarga de Habilidade :aomr_time_icon:"
+    "campo": [
+      ":aomr_frost_giant_icon: Gigante de Gelo: Pontos de Vida +33% :aomr_hit_points_icon:",
+      ":aomr_frost_giant_icon: Gigante de Gelo: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
+      ":aomr_frost_giant_icon: Gigante de Gelo: -25% de Tempo de Recarga de Habilidade :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Machado da Caça",
@@ -5893,7 +6413,10 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_huntress_axe_icon",
-    "campo": ":aomr_throwing_axeman_icon: Lançador de Machados: Adiciona 1.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_throwing_axeman_icon: Lançador de Machados: Define Avaliação de Rastreio para 99.00 :rangeicon:"
+    "campo": [
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Adiciona 1.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_throwing_axeman_icon: Lançador de Machados: Define Avaliação de Rastreio para 99.00 :rangeicon:"
+    ]
   },
   {
     "nome": "Colheita de Inverno",
@@ -5933,7 +6456,12 @@
     ],
     "tipo": "Econômico 💰",
     "icon": "aomr_winter_harvest_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +20% :aomr_farm_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:\n:aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +20% :aomr_farm_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:",
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:"
+    ]
   },
   {
     "nome": "Chamado de Valhalla",
@@ -5977,7 +6505,10 @@
     ],
     "tipo": "Defensivo 🛡 Econômico 💰",
     "icon": "aomr_call_of_valhalla_icon",
-    "campo": ":aomr_berserk_icon: Berserker: Pontos de Vida + 10% :aomr_hit_points_icon:\n:aomr_berserk_icon: Berserker: Recursos devolvidos ao morrer: 0.5 Favor :favoraom:"
+    "campo": [
+      ":aomr_berserk_icon: Berserker: Pontos de Vida + 10% :aomr_hit_points_icon:",
+      ":aomr_berserk_icon: Berserker: Recursos devolvidos ao morrer: 0.5 Favor :favoraom:"
+    ]
   },
   {
     "nome": "Runa de Thurisaz",
@@ -6021,7 +6552,10 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_thurisaz_rune_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Formação Svinfylking",
@@ -6065,7 +6599,10 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_swine_array_icon",
-    "campo": ":aomr_hirdman_icon: Hird: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:\n:aomr_hirdman_icon: Hird: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
+    "campo": [
+      ":aomr_hirdman_icon: Hird: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:",
+      ":aomr_hirdman_icon: Hird: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
+    ]
   },
   {
     "nome": "Doador do Anel",
@@ -6105,7 +6642,10 @@
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_ring_giver_icon",
-    "campo": ":aomr_jarl_icon: Jarl: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_jarl_icon: Jarl: Adiciona 1.00 ao Ataque Corpo a Corpo :hackdamage: Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    "campo": [
+      ":aomr_jarl_icon: Jarl: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_jarl_icon: Jarl: Adiciona 1.00 ao Ataque Corpo a Corpo :hackdamage: Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    ]
   },
   {
     "nome": "Vinkings",
@@ -6144,7 +6684,10 @@
       }
     ],
     "icon": "aomr_vikings_icon",
-    "campo": ":aomr_raiding_cavalry_icon: Cavalaria Incursora: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:\n👤 Jogador: Adiciona 10.00 Ouro :goldaom: ao Cavalaria Incursora :aomr_raiding_cavalry_icon: ganho de Recompensa"
+    "campo": [
+      ":aomr_raiding_cavalry_icon: Cavalaria Incursora: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:",
+      "👤 Jogador: Adiciona 10.00 Ouro :goldaom: ao Cavalaria Incursora :aomr_raiding_cavalry_icon: ganho de Recompensa"
+    ]
   },
   {
     "nome": "Jotuns",
@@ -6183,7 +6726,12 @@
       }
     ],
     "icon": "aomr_jotuns_icon",
-    "campo": ":aomr_mountain_giant_icon: Gigante de Montanha: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_mountain_giant_icon: Gigante de Montanha: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:\n:aomr_mountain_giant_icon: Gigante de Montanha: Velocidade +25% :aomr_speed_icon:\n:aomr_mountain_giant_icon: Gigante de Montanha: Ativa a Ação de Bote"
+    "campo": [
+      ":aomr_mountain_giant_icon: Gigante de Montanha: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_mountain_giant_icon: Gigante de Montanha: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:",
+      ":aomr_mountain_giant_icon: Gigante de Montanha: Velocidade +25% :aomr_speed_icon:",
+      ":aomr_mountain_giant_icon: Gigante de Montanha: Ativa a Ação de Bote"
+    ]
   },
   {
     "nome": "Estômago de Ferro",
@@ -6218,7 +6766,10 @@
       }
     ],
     "icon": "aomr_granite_maw_icon",
-    "campo": ":aomr_rock_giant_icon: Gigante das Rochas: Ativa a Ação de Ataque Corpo a Corpo :hackdamage:\n:aomr_rock_giant_icon: Gigante das Rochas: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage:"
+    "campo": [
+      ":aomr_rock_giant_icon: Gigante das Rochas: Ativa a Ação de Ataque Corpo a Corpo :hackdamage:",
+      ":aomr_rock_giant_icon: Gigante das Rochas: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage:"
+    ]
   },
   {
     "nome": "Banquetes Renomados",
@@ -6257,7 +6808,14 @@
       }
     ],
     "icon": "aomr_feasts_of_renown_icon",
-    "campo": ":aomr_town_center_norse_icon: Centro Urbano: Ativa a Ação de Cura em Área :aomr_hit_points_icon:\n:aomr_hill_fort_icon: Fortalezas: Ativa a Ação de Cura em Área :aomr_hit_points_icon:\n:aomr_town_center_norse_icon: Centro Urbano: Ativa a Ação de Coleta Automática :foodaom:\n:aomr_town_center_norse_icon: Centro Urbano: Adiciona 0.50 à Coleta Automática taxa de trabalho para Comida :foodaom:\n:aomr_hill_fort_icon: Fortalezas: Ativa a Ação de Coleta Automática :foodaom:\n:aomr_hill_fort_icon: Fortalezas: Adiciona 0.50 à Coleta Automática taxa de trabalho para Comida :foodaom:"
+    "campo": [
+      ":aomr_town_center_norse_icon: Centro Urbano: Ativa a Ação de Cura em Área :aomr_hit_points_icon:",
+      ":aomr_hill_fort_icon: Fortalezas: Ativa a Ação de Cura em Área :aomr_hit_points_icon:",
+      ":aomr_town_center_norse_icon: Centro Urbano: Ativa a Ação de Coleta Automática :foodaom:",
+      ":aomr_town_center_norse_icon: Centro Urbano: Adiciona 0.50 à Coleta Automática taxa de trabalho para Comida :foodaom:",
+      ":aomr_hill_fort_icon: Fortalezas: Ativa a Ação de Coleta Automática :foodaom:",
+      ":aomr_hill_fort_icon: Fortalezas: Adiciona 0.50 à Coleta Automática taxa de trabalho para Comida :foodaom:"
+    ]
   },
   {
     "nome": "Nove Ondas",
@@ -6292,7 +6850,12 @@
       }
     ],
     "icon": "aomr_nine_waves_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Velocidade +10% :aomr_speed_icon:\n:aomr_type_siege_weapon_icon: Arma de Cerco: Velocidade +10% :aomr_speed_icon:\n:aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:\n:aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Todos os Tipos) +20% :crushdamage:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_siege_weapon_icon: Arma de Cerco: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:",
+      ":aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Todos os Tipos) +20% :crushdamage:"
+    ]
   },
   {
     "nome": "Filhos de Sleipnir",
@@ -6331,7 +6894,10 @@
       }
     ],
     "icon": "aomr_sons_of_sleipnir_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:\n:aomr_type_cavalry_icon: Cavalaria: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Soldado de Longo Alcance :aomr_type_archer_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Soldado de Longo Alcance :aomr_type_archer_icon:"
+    ]
   },
   {
     "nome": "Verrumão dos Anões",
@@ -6370,7 +6936,11 @@
       }
     ],
     "icon": "aomr_dwarven_auger_icon",
-    "campo": ":aomr_portable_ram_icon: Aríete Portátil: Tempo de treinamento -25% :aomr_time_icon:\n:aomr_portable_ram_icon: Aríete Portátil: Velocidade +10% :aomr_speed_icon:\n:aomr_portable_ram_icon: Aríete Portátil: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :crushdamage:"
+    "campo": [
+      ":aomr_portable_ram_icon: Aríete Portátil: Tempo de treinamento -25% :aomr_time_icon:",
+      ":aomr_portable_ram_icon: Aríete Portátil: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_portable_ram_icon: Aríete Portátil: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :crushdamage:"
+    ]
   },
   {
     "nome": "Fúria Berserker",
@@ -6413,7 +6983,9 @@
       }
     ],
     "icon": "aomr_berserkergang_icon",
-    "campo": ":aomr_berserk_icon: Berserker: Roubos de Vida por 35.00% do dano causado por Todas as Ações contra Unidade. :hackdamage: :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_berserk_icon: Berserker: Roubos de Vida por 35.00% do dano causado por Todas as Ações contra Unidade. :hackdamage: :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Bravura",
@@ -6456,7 +7028,10 @@
       }
     ],
     "icon": "aomr_bravery_icon",
-    "campo": ":aomr_huskarl_icon: Huscarl: Adiciona 1.25 ao Ataque Corpo a Corpo Bônus de Dano contra Construção :crushdamage:\n:aomr_huskarl_icon: Huscarl: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:"
+    "campo": [
+      ":aomr_huskarl_icon: Huscarl: Adiciona 1.25 ao Ataque Corpo a Corpo Bônus de Dano contra Construção :crushdamage:",
+      ":aomr_huskarl_icon: Huscarl: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:"
+    ]
   },
   {
     "nome": "Rompante",
@@ -6495,7 +7070,9 @@
       }
     ],
     "icon": "aomr_rampage_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -95% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -95% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Sangue de Granito",
@@ -6534,7 +7111,12 @@
       }
     ],
     "icon": "aomr_granite_blood_icon",
-    "campo": ":aomr_mountain_giant_icon: Gigante de Montanha: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_fire_giant_icon: Gigante de Fogo: Pontos de Vida +40% :aomr_hit_points_icon:\n:aomr_frost_giant_icon: Gigante de Gelo: Pontos de Vida +40% :aomr_hit_points_icon:\n:aomr_rock_giant_icon: Gigante das Rochas: Pontos de Vida +20% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_mountain_giant_icon: Gigante de Montanha: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_fire_giant_icon: Gigante de Fogo: Pontos de Vida +40% :aomr_hit_points_icon:",
+      ":aomr_frost_giant_icon: Gigante de Gelo: Pontos de Vida +40% :aomr_hit_points_icon:",
+      ":aomr_rock_giant_icon: Gigante das Rochas: Pontos de Vida +20% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Crepúsculo dos Deuses",
@@ -6573,7 +7155,10 @@
       }
     ],
     "icon": "aomr_twilight_of_the_gods_icon",
-    "campo": ":aomr_type_human_soldier_icon: Soldado Humano: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_human_soldier_icon: Soldado Humano: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Herói :aomr_type_hero_icon:"
+    "campo": [
+      ":aomr_type_human_soldier_icon: Soldado Humano: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_human_soldier_icon: Soldado Humano: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Herói :aomr_type_hero_icon:"
+    ]
   },
   {
     "nome": "Espírito Vingativo",
@@ -6608,7 +7193,11 @@
       }
     ],
     "icon": "aomr_avenging_spirit_icon",
-    "campo": ":aomr_hersir_icon: Hersir: +20% de dano (após infligir 50 de dano total) :hackdamage:\n:aomr_hersir_icon: Hersir: +40% de dano (após infligir 150 de dano total) :hackdamage:\n:aomr_hersir_icon: Hersir: +60% de dano (após infligir 300 de dano total) :hackdamage:"
+    "campo": [
+      ":aomr_hersir_icon: Hersir: +20% de dano (após infligir 50 de dano total) :hackdamage:",
+      ":aomr_hersir_icon: Hersir: +40% de dano (após infligir 150 de dano total) :hackdamage:",
+      ":aomr_hersir_icon: Hersir: +60% de dano (após infligir 300 de dano total) :hackdamage:"
+    ]
   },
   {
     "nome": "Determinação Silenciosa",
@@ -6643,7 +7232,9 @@
       }
     ],
     "icon": "aomr_silent_resolve_icon",
-    "campo": ":aomr_berserk_icon: Berserker: Ativa a Ação de Bônus de Dano por Inatividade :hackdamage:"
+    "campo": [
+      ":aomr_berserk_icon: Berserker: Ativa a Ação de Bônus de Dano por Inatividade :hackdamage:"
+    ]
   },
   {
     "nome": "Fúria dos Caídos",
@@ -6678,11 +7269,13 @@
       }
     ],
     "icon": "aomr_fury_of_the_fallen_icon",
-    "campo": ":aomr_berserk_icon: Impulso de Morte: Berserker próximo ganha +15% de dano (acumula) por um breve período de tempo."
+    "campo": [
+      ":aomr_berserk_icon: Impulso de Morte: Berserker próximo ganha +15% de dano (acumula) por um breve período de tempo."
+    ]
   },
   {
     "nome": "Convocar Unidades da Casa Comunal",
-    "beneficia": ":aomr_longhouse_icon: Casa Comunal (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 39,
@@ -6724,7 +7317,7 @@
   },
   {
     "nome": "Convocar Unidades do Grande Salão",
-    "beneficia": ":aomr_great_hall_icon: Grande Salão (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 40,
@@ -6766,7 +7359,7 @@
   },
   {
     "nome": "Convocar Unidades do Forte da Colina",
-    "beneficia": ":aomr_hill_fort_icon: Forte da Colina (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 59,
@@ -6808,7 +7401,7 @@
   },
   {
     "nome": "Recrutar Unidades da Casa Comunal",
-    "beneficia": ":aomr_longhouse_icon: Casa Comunal (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 39,
@@ -6850,7 +7443,7 @@
   },
   {
     "nome": "Recrutar Unidades do Grande Salão",
-    "beneficia": ":aomr_great_hall_icon: Grande Salão (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 40,
@@ -6892,7 +7485,7 @@
   },
   {
     "nome": "Recrutar Unidades do Forte da Colina",
-    "beneficia": ":aomr_hill_fort_icon: Forte da Colina (:aomr_time_icon:)",
+    "beneficia": "()",
     "construcao_origem": [
       {
         "id": 59,
@@ -6961,7 +7554,12 @@
       }
     ],
     "icon": "aomr_temporal_chaos_icon",
-    "campo": "👤 Jogador: Adiciona 2 ao Limite de Deslocamentos Temporais Simultâneos :time_shift_aom:\n👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Palácio :aomr_palace_icon:\n👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Torre de Sentinela\n👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Torre Espelho"
+    "campo": [
+      "👤 Jogador: Adiciona 2 ao Limite de Deslocamentos Temporais Simultâneos :time_shift_aom:",
+      "👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Palácio :aomr_palace_icon:",
+      "👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Torre de Sentinela",
+      "👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Torre Espelho"
+    ]
   },
   {
     "nome": "Velocidade Empírica",
@@ -6992,7 +7590,9 @@
       }
     ],
     "icon": "aomr_empyrian_speed_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Canais",
@@ -7023,7 +7623,9 @@
       }
     ],
     "icon": "aomr_channels_icon",
-    "campo": "👥 Unidade: Velocidade de Movimento em Exuberância + 15% :aomr_ability_lush_icon: :aomr_speed_icon:"
+    "campo": [
+      "👥 Unidade: Velocidade de Movimento em Exuberância + 15% :aomr_ability_lush_icon: :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Argila Aluvial",
@@ -7062,11 +7664,15 @@
       }
     ],
     "icon": "aomr_alluvial_clay_icon",
-    "campo": ":aomr_promethean_icon: Prometeano: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_promethean_icon: Prole de Prometeano: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_promethean_icon: Prometeano: Adiciona 1 à geração de Prole de Prometeano na ocorrência de Morte"
+    "campo": [
+      ":aomr_promethean_icon: Prometeano: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_promethean_icon: Prole de Prometeano: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_promethean_icon: Prometeano: Adiciona 1 à geração de Prole de Prometeano na ocorrência de Morte"
+    ]
   },
   {
     "nome": "Coração de Titãs",
-    "beneficia": ":aomr_type_hero_icon: Promoção de <highlight-yellow>Herói</highlight-yellow>",
+    "beneficia": ":aomr_type_hero_icon: Promoção de<highlight-yellow>Herói</highlight-yellow>",
     "construcao_origem": [
       {
         "id": 24,
@@ -7101,7 +7707,9 @@
       }
     ],
     "icon": "aomr_heart_of_the_titans_icon",
-    "campo": ":aomr_type_hero_icon: Promoção de Herói: -75% de Pontos de Pesquisa"
+    "campo": [
+      ":aomr_type_hero_icon: Promoção de Herói: -75% de Pontos de Pesquisa"
+    ]
   },
   {
     "nome": "Roubo do Fogo",
@@ -7140,7 +7748,15 @@
       }
     ],
     "icon": "aomr_theft_of_fire_icon",
-    "campo": ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Fazenda +20% :aomr_farm_icon:\n:aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Animal Para Caça +20% :aomr_caribou_icon: :aomr_rhinoceros_icon:\n:aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Animal Para Criação +20% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:\n:aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Arbusto frutífero +20% :aomr_berry_bush_icon:\n:aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Ouro +20% :goldaom:\n:aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Madeira +20% :woodaom:\n:aomr_citizen_hero_icon: Cidadão (Herói): Construir taxa de trabalho para Construção +20% :aomr_type_building_icon:"
+    "campo": [
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Fazenda +20% :aomr_farm_icon:",
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Animal Para Caça +20% :aomr_caribou_icon: :aomr_rhinoceros_icon:",
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Animal Para Criação +20% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:",
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Arbusto frutífero +20% :aomr_berry_bush_icon:",
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Ouro +20% :goldaom:",
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Madeira +20% :woodaom:",
+      ":aomr_citizen_hero_icon: Cidadão (Herói): Construir taxa de trabalho para Construção +20% :aomr_type_building_icon:"
+    ]
   },
   {
     "nome": "Vingança de Hefesto",
@@ -7179,7 +7795,10 @@
       }
     ],
     "icon": "aomr_hephaestus_revenge_icon",
-    "campo": ":aomr_automaton_icon: Automato: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:\n:aomr_automaton_icon: Automato: Pontos de Vida +30% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_automaton_icon: Automato: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:",
+      ":aomr_automaton_icon: Automato: Pontos de Vida +30% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Forja Vulcânica",
@@ -7222,7 +7841,11 @@
       }
     ],
     "icon": "aomr_volcanic_forge_icon",
-    "campo": ":aomr_automaton_icon: Automato: -20% de vulnerabilidade a ataques de Furar :piercearmor:\n:aomr_type_human_soldier_icon: Soldado Humano: -15% de vulnerabilidade a ataques de Furar :piercearmor:\n:aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercearmor:"
+    "campo": [
+      ":aomr_automaton_icon: Automato: -20% de vulnerabilidade a ataques de Furar :piercearmor:",
+      ":aomr_type_human_soldier_icon: Soldado Humano: -15% de vulnerabilidade a ataques de Furar :piercearmor:",
+      ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercearmor:"
+    ]
   },
   {
     "nome": "Percepção",
@@ -7261,7 +7884,10 @@
       }
     ],
     "icon": "aomr_perception_icon",
-    "campo": ":aomr_oracle_hero_icon: Oráculo: LDV +10% :los_icon_aoe3de:\n:aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:"
+    "campo": [
+      ":aomr_oracle_hero_icon: Oráculo: LDV +10% :los_icon_aoe3de:",
+      ":aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:"
+    ]
   },
   {
     "nome": "Mordida do Turbarão",
@@ -7300,7 +7926,16 @@
       }
     ],
     "icon": "aomr_bite_of_the_shark_icon",
-    "campo": ":aomr_murmillo_icon: Murmilo: Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:\n:aomr_murmillo_hero_icon: Murmilo (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:\n:aomr_fanatic_icon: Fanático: Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:\n:aomr_fanatic_hero_icon: Fanático (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:\n:aomr_murmillo_icon: Murmilo: Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:\n:aomr_murmillo_hero_icon: Murmilo (Herói): Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:\n:aomr_fanatic_icon: Fanático: Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:\n:aomr_fanatic_hero_icon: Fanático (Herói): Adiciona 0,25 de dano Divino ao longo do tempo à Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_murmillo_icon: Murmilo: Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:",
+      ":aomr_murmillo_hero_icon: Murmilo (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:",
+      ":aomr_fanatic_icon: Fanático: Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:",
+      ":aomr_fanatic_hero_icon: Fanático (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +5% :hackdamage:",
+      ":aomr_murmillo_icon: Murmilo: Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:",
+      ":aomr_murmillo_hero_icon: Murmilo (Herói): Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:",
+      ":aomr_fanatic_icon: Fanático: Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:",
+      ":aomr_fanatic_hero_icon: Fanático (Herói): Adiciona 0,25 de dano Divino ao longo do tempo à Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Maça sem Peso",
@@ -7339,7 +7974,12 @@
       }
     ],
     "icon": "aomr_weightless_mace_icon",
-    "campo": ":aomr_katapeltes_icon: Katapeltes: Velocidade + 10% :aomr_speed_icon:\n:aomr_katapeltes_hero_icon: Katapeltes (Herói): Velocidade +10% :aomr_speed_icon:\n:aomr_katapeltes_icon: Katapeltes: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:\n:aomr_katapeltes_hero_icon: Katapeltes (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:"
+    "campo": [
+      ":aomr_katapeltes_icon: Katapeltes: Velocidade + 10% :aomr_speed_icon:",
+      ":aomr_katapeltes_hero_icon: Katapeltes (Herói): Velocidade +10% :aomr_speed_icon:",
+      ":aomr_katapeltes_icon: Katapeltes: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
+      ":aomr_katapeltes_hero_icon: Katapeltes (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:"
+    ]
   },
   {
     "nome": "Heroísmo da Linha de Frente",
@@ -7378,7 +8018,10 @@
       }
     ],
     "icon": "aomr_frontline_heroics_icon",
-    "campo": ":aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Comida :foodaom:\n:aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Comida :foodaom:",
+      ":aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Gêmeos",
@@ -7417,7 +8060,9 @@
       }
     ],
     "icon": "aomr_gemini_icon",
-    "campo": ":aomr_satyr_icon: Sátiro: Ataque de longo alcance carregado de Dano (Todos os Tipos) +50% :piercedamage:"
+    "campo": [
+      ":aomr_satyr_icon: Sátiro: Ataque de longo alcance carregado de Dano (Todos os Tipos) +50% :piercedamage:"
+    ]
   },
   {
     "nome": "Renovação Heróica",
@@ -7456,7 +8101,10 @@
       }
     ],
     "icon": "aomr_heroic_renewal_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:\n:aomr_type_hero_icon: Herói: Pontos de Vida +10% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:",
+      ":aomr_type_hero_icon: Herói: Pontos de Vida +10% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Filhos do Sol",
@@ -7495,11 +8143,14 @@
       }
     ],
     "icon": "aomr_sons_of_the_sun_icon",
-    "campo": ":aomr_oracle_hero_icon: Oráculo (Herói) ativado\n:aomr_oracle_hero_icon: Oráculo (Herói): Define Favor custo para 0.00 :favoraom:"
+    "campo": [
+      ":aomr_oracle_hero_icon: Oráculo (Herói) ativado",
+      ":aomr_oracle_hero_icon: Oráculo (Herói): Define Favor custo para 0.00 :favoraom:"
+    ]
   },
   {
     "nome": "Chifres da Consagração",
-    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red> <highlight-teal>ativado</highlight-teal><highlight-red>✅</highlight-red>",
+    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red><highlight-teal>ativado</highlight-teal><highlight-red>✅</highlight-red>",
     "construcao_origem": [
       {
         "id": 60,
@@ -7534,7 +8185,10 @@
       }
     ],
     "icon": "aomr_horns_of_consecration_icon",
-    "campo": ":aomr_fanatic_icon: Fanático ativado ✅\n:aomr_fanatic_icon: Fanático: Tempo de treinamento -20% :aomr_time_icon:"
+    "campo": [
+      ":aomr_fanatic_icon: Fanático ativado ✅",
+      ":aomr_fanatic_icon: Fanático: Tempo de treinamento -20% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Cota de Oricalco",
@@ -7573,7 +8227,9 @@
       }
     ],
     "icon": "aomr_orichalcum_mail_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: -15% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: -15% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    ]
   },
   {
     "nome": "O Presente de Reia",
@@ -7613,7 +8269,9 @@
     ],
     "icon": "aomr_rheias_gift_icon",
     "todas_as_tecnologias": "-100% de custo de Favor :favoraom:",
-    "campo": "⏫ Todas as tecnologias: -100% de custo de Favor :favoraom:"
+    "campo": [
+      "⏫ Todas as tecnologias: -100% de custo de Favor :favoraom:"
+    ]
   },
   {
     "nome": "Visão Profética",
@@ -7652,11 +8310,15 @@
       }
     ],
     "icon": "aomr_prophetic_sight_icon",
-    "campo": ":aomr_oracle_hero_icon: Oráculo: Coleta Automática de Favor taxa de trabalho para Favor +10% :favoraom:\n:aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:\n:aomr_oracle_hero_icon: Oráculo: Ativa a Ação de Revelar Interface de Inimigos"
+    "campo": [
+      ":aomr_oracle_hero_icon: Oráculo: Coleta Automática de Favor taxa de trabalho para Favor +10% :favoraom:",
+      ":aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:",
+      ":aomr_oracle_hero_icon: Oráculo: Ativa a Ação de Revelar Interface de Inimigos"
+    ]
   },
   {
     "nome": "Segredo de Poseidon",
-    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon:-:foodaom::woodaom::goldaom:)",
+    "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon:-: foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
         "id": 41,
@@ -7691,7 +8353,15 @@
       }
     ],
     "icon": "aomr_poseidons_secret_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:\n:aomr_type_cavalry_icon: Cavalaria: -10% de custo de Comida :foodaom:\n:aomr_type_cavalry_icon: Cavalaria: -10% de custo de Madeira :woodaom:\n:aomr_type_cavalry_icon: Cavalaria: -10% de custo de Ouro :goldaom:\n:aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Comida :foodaom:\n:aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Madeira :woodaom:\n:aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: -10% de custo de Comida :foodaom:",
+      ":aomr_type_cavalry_icon: Cavalaria: -10% de custo de Madeira :woodaom:",
+      ":aomr_type_cavalry_icon: Cavalaria: -10% de custo de Ouro :goldaom:",
+      ":aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Comida :foodaom:",
+      ":aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Madeira :woodaom:",
+      ":aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Lança de Pedra",
@@ -7730,7 +8400,12 @@
       }
     ],
     "icon": "aomr_lance_of_stone_icon",
-    "campo": ":aomr_contarius_icon: Contarius: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:\n:aomr_contarius_hero_icon: Contarius (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:\n:aomr_contarius_icon: Contarius: Ataque Corpo a Corpo enreda Todos para 70.00% da velocidade por 2.00 segundos :aomr_rate_of_fire_icon:\n:aomr_contarius_hero_icon: Contarius (Herói): Ataque Corpo a Corpo enreda Todos para 70.00% da velocidade por 2.00 segundos :aomr_rate_of_fire_icon:"
+    "campo": [
+      ":aomr_contarius_icon: Contarius: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
+      ":aomr_contarius_hero_icon: Contarius (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
+      ":aomr_contarius_icon: Contarius: Ataque Corpo a Corpo enreda Todos para 70.00% da velocidade por 2.00 segundos :aomr_rate_of_fire_icon:",
+      ":aomr_contarius_hero_icon: Contarius (Herói): Ataque Corpo a Corpo enreda Todos para 70.00% da velocidade por 2.00 segundos :aomr_rate_of_fire_icon:"
+    ]
   },
   {
     "nome": "Auréola do Sol",
@@ -8107,7 +8782,13 @@
       }
     ],
     "icon": "aomr_celestial_weapons_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:\n:aomr_sage_icon: Sábio (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:\n:aomr_nezha_child_icon: Nezha (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:\n:aomr_jiang_ziya_icon: Jiang Ziya (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:\n:aomr_yang_jian_icon: Yang Jian (Herói): Adiciona 2.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:",
+      ":aomr_sage_icon: Sábio (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:",
+      ":aomr_nezha_child_icon: Nezha (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:",
+      ":aomr_jiang_ziya_icon: Jiang Ziya (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:",
+      ":aomr_yang_jian_icon: Yang Jian (Herói): Adiciona 2.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Tai Chi",
@@ -8138,7 +8819,11 @@
       }
     ],
     "icon": "aomr_tai_chi_icon",
-    "campo": ":aomr_type_hero_icon: Herói: -10% de vulnerabilidade a ataques de Furar :piercearmor:\n:aomr_type_hero_icon: Herói: -10% de vulnerabilidade a ataques de Golpear :hackarmor:\n:aomr_type_hero_icon: Herói: Tempo de treinamento -25% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: -10% de vulnerabilidade a ataques de Furar :piercearmor:",
+      ":aomr_type_hero_icon: Herói: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
+      ":aomr_type_hero_icon: Herói: Tempo de treinamento -25% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Chefe Kuafu",
@@ -8199,7 +8884,16 @@
       }
     ],
     "icon": "aomr_mountainous_might_icon",
-    "campo": ":aomr_kuafu_icon: Kuafu: Todas as Ações de Dano (Todos os Tipos) +50% :hackdamage:\n:aomr_kuafu_hero_icon: Kuafu (Herói): Todas as Ações de Dano (Todos os Tipos) +50% :hackdamage:\n:aomr_kuafu_icon: Kuafu: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_kuafu_hero_icon: Kuafu (Herói): Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_kuafu_icon: Kuafu: Adiciona 10.00 LDV :los_icon_aoe3de:\n:aomr_kuafu_hero_icon: Kuafu (Herói): Adiciona 10.00 LDV :los_icon_aoe3de:\n:aomr_kuafu_icon: Kuafu: Adiciona 10.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_kuafu_hero_icon: Kuafu (Herói): Adiciona 10.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_kuafu_icon: Kuafu: Todas as Ações de Dano (Todos os Tipos) +50% :hackdamage:",
+      ":aomr_kuafu_hero_icon: Kuafu (Herói): Todas as Ações de Dano (Todos os Tipos) +50% :hackdamage:",
+      ":aomr_kuafu_icon: Kuafu: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_kuafu_hero_icon: Kuafu (Herói): Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_kuafu_icon: Kuafu: Adiciona 10.00 LDV :los_icon_aoe3de:",
+      ":aomr_kuafu_hero_icon: Kuafu (Herói): Adiciona 10.00 LDV :los_icon_aoe3de:",
+      ":aomr_kuafu_icon: Kuafu: Adiciona 10.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_kuafu_hero_icon: Kuafu (Herói): Adiciona 10.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Medicina Herbal",
@@ -8302,7 +8996,12 @@
       }
     ],
     "icon": "aomr_divine_books_icon",
-    "campo": ":aomr_military_camp: Pátio de Treinamento: -25% de custo de Comida :foodaom:\n:aomr_military_camp: Pátio de Treinamento: -25% de custo de Madeira :woodaom:\n:aomr_military_camp: Pátio de Treinamento: -25% de custo de Ouro :goldaom:\n:aomr_military_camp: Pátio de Treinamento: Ritmo de Treinamento +50% :aomr_time_icon:"
+    "campo": [
+      ":aomr_military_camp: Pátio de Treinamento: -25% de custo de Comida :foodaom:",
+      ":aomr_military_camp: Pátio de Treinamento: -25% de custo de Madeira :woodaom:",
+      ":aomr_military_camp: Pátio de Treinamento: -25% de custo de Ouro :goldaom:",
+      ":aomr_military_camp: Pátio de Treinamento: Ritmo de Treinamento +50% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Reencarnação",
@@ -8341,7 +9040,9 @@
       }
     ],
     "icon": "aomr_reincarnation_icon",
-    "campo": ":aomr_temple_icon: Templo: Invoca um novo Soldado Humano para cada 5 Soldados Humanos de um tipo que morreram"
+    "campo": [
+      ":aomr_temple_icon: Templo: Invoca um novo Soldado Humano para cada 5 Soldados Humanos de um tipo que morreram"
+    ]
   },
   {
     "nome": "Bênção de Qilin",
@@ -8418,7 +9119,10 @@
       }
     ],
     "icon": "aomr_master_of_weaponry_icon",
-    "campo": ":aomr_ge_halberdier_icon: Alabardeiro Ge: Adiciona 1.00 ao Ataque Corpo a Corpo Alcance Máximo :rangeicon:\n:aomr_ge_halberdier_icon: Alabardeiro Ge: Ataque Corpo a Corpo enreda Cavalaria para 60.00% da velocidade por 2.00 segundos. :aomr_type_cavalry_icon:❄️"
+    "campo": [
+      ":aomr_ge_halberdier_icon: Alabardeiro Ge: Adiciona 1.00 ao Ataque Corpo a Corpo Alcance Máximo :rangeicon:",
+      ":aomr_ge_halberdier_icon: Alabardeiro Ge: Ataque Corpo a Corpo enreda Cavalaria para 60.00% da velocidade por 2.00 segundos. :aomr_type_cavalry_icon:❄️"
+    ]
   },
   {
     "nome": "Espólios de Guerra",
@@ -8457,7 +9161,9 @@
       }
     ],
     "icon": "aomr_spoils_of_war_icon",
-    "campo": "👤 Jogador: 50% do custo das construções inimigas destruídas é concedido ao jogador. :aomr_type_building_icon: :woodaom: :goldaom:"
+    "campo": [
+      "👤 Jogador: 50% do custo das construções inimigas destruídas é concedido ao jogador. :aomr_type_building_icon: :woodaom: :goldaom:"
+    ]
   },
   {
     "nome": "Filho de Loong",
@@ -8496,7 +9202,10 @@
       }
     ],
     "icon": "aomr_son_of_loong_icon",
-    "campo": ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:\n:aomr_yazi_icon: Yazi: Todas as Ações de Dano (Todos os Tipos) +25% :hackdamage:"
+    "campo": [
+      ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:",
+      ":aomr_yazi_icon: Yazi: Todas as Ações de Dano (Todos os Tipos) +25% :hackdamage:"
+    ]
   },
   {
     "nome": "Fúria de Matança",
@@ -8535,11 +9244,15 @@
       }
     ],
     "icon": "aomr_rage_of_slaughter_icon",
-    "campo": ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:\n:aomr_yazi_icon: Yazi: Roubos de Vida por 50.00% do dano causado por Todas as Ações contra Unidade. :hackdamage: :aomr_hit_points_icon:\n:aomr_yazi_icon: Yazi: Ativa ao derrotar um inimigo: Ganha 80% de Roubo de Vida por 10 segundos"
+    "campo": [
+      ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:",
+      ":aomr_yazi_icon: Yazi: Roubos de Vida por 50.00% do dano causado por Todas as Ações contra Unidade. :hackdamage: :aomr_hit_points_icon:",
+      ":aomr_yazi_icon: Yazi: Ativa ao derrotar um inimigo: Ganha 80% de Roubo de Vida por 10 segundos"
+    ]
   },
   {
     "nome": "Defesas Avançadas",
-    "beneficia": ":aomr_sentry_tower_icon: Torre de Sentinela e :aomr_baolei: Baolei (:piercedamage::rangeicon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_sentry_tower_icon: Torre de Sentinela e:aomr_baolei: Baolei (:piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -8578,7 +9291,14 @@
       }
     ],
     "icon": "aomr_advanced_defenses_icon",
-    "campo": ":aomr_sentry_tower_icon: Torre de Sentinela: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:\n:aomr_sentry_tower_icon: Torre de Sentinela: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_sentry_tower_icon: Torre de Sentinela: Adiciona 2.00 LDV :los_icon_aoe3de:\n:aomr_baolei: Baolei: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:\n:aomr_baolei: Baolei: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_baolei: Baolei: Adiciona 2.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:",
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_sentry_tower_icon: Torre de Sentinela: Adiciona 2.00 LDV :los_icon_aoe3de:",
+      ":aomr_baolei: Baolei: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:",
+      ":aomr_baolei: Baolei: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_baolei: Baolei: Adiciona 2.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Perseguindo o Sol",
@@ -8617,7 +9337,10 @@
       }
     ],
     "icon": "aomr_chasing_the_sun_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Construção + 10% 🔨 :aomr_type_building_icon:\n:aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Assentamento +10% 🔨 :aomr_town_center_chinese:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Construção + 10% 🔨 :aomr_type_building_icon:",
+      ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Assentamento +10% 🔨 :aomr_town_center_chinese:"
+    ]
   },
   {
     "nome": "Abundância",
@@ -8656,7 +9379,9 @@
       }
     ],
     "icon": "aomr_abundance_icon",
-    "campo": ":favoraom: Terreno Favorável: A entrega de recursos gera 5% a mais."
+    "campo": [
+      ":favoraom: Terreno Favorável: A entrega de recursos gera 5% a mais."
+    ]
   },
   {
     "nome": "Determinação Sinistra",
@@ -8695,7 +9420,9 @@
       }
     ],
     "icon": "aomr_sinister_defiance_icon",
-    "campo": ":aomr_qiongqi_icon: Qiongqi: Ganha 1% de Amadura Antiperfurante e de Corte para cada unidade inimiga dentro de 6 de alcance (Máx: 25) :hackarmor: :piercearmor:"
+    "campo": [
+      ":aomr_qiongqi_icon: Qiongqi: Ganha 1% de Amadura Antiperfurante e de Corte para cada unidade inimiga dentro de 6 de alcance (Máx: 25) :hackarmor: :piercearmor:"
+    ]
   },
   {
     "nome": "Terreno Vibrante",
@@ -8738,7 +9465,10 @@
       }
     ],
     "icon": "aomr_vibrant_land_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +15% :woodaom:\n:aomr_house_icon: Casa: Agora funciona como um local de entrega de madeira e invoca uma árvore a cada 120 segundos :woodaom: :aomr_tree_oak_icon:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +15% :woodaom:",
+      ":aomr_house_icon: Casa: Agora funciona como um local de entrega de madeira e invoca uma árvore a cada 120 segundos :woodaom: :aomr_tree_oak_icon:"
+    ]
   },
   {
     "nome": "Cascos do Vento",
@@ -8777,7 +9507,10 @@
       }
     ],
     "icon": "aomr_hooves_of_the_wind_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: -10% de vulnerabilidade a ataques de Golpear :hackarmor:\n:aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
+      ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Corrida Frenética",
@@ -8816,7 +9549,9 @@
       }
     ],
     "icon": "aomr_frenzied_dash_icon",
-    "campo": ":aomr_taowu_icon: Táowù: Carregar de Dano (Todos os Tipos) +50% :hackdamage:"
+    "campo": [
+      ":aomr_taowu_icon: Táowù: Carregar de Dano (Todos os Tipos) +50% :hackdamage:"
+    ]
   },
   {
     "nome": "Penas Ardentes",
@@ -8855,7 +9590,10 @@
       }
     ],
     "icon": "aomr_scorching_feathers_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Habilita Penas Ardentes, que reduz a armadura contra corte e antiperfurante do inimigo em 1% por acerto por 5 segundos 🚫 :hackarmor: :piercearmor:\n:aomr_type_archer_icon: Soldado de Longo Alcance: Velocidade de ataque aumentada em +5% :aomr_rate_of_fire_icon:"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Habilita Penas Ardentes, que reduz a armadura contra corte e antiperfurante do inimigo em 1% por acerto por 5 segundos 🚫 :hackarmor: :piercearmor:",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Velocidade de ataque aumentada em +5% :aomr_rate_of_fire_icon:"
+    ]
   },
   {
     "nome": "Rocha Sólida",
@@ -8894,7 +9632,11 @@
       }
     ],
     "icon": "aomr_rock_solid_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Habilita Rocha Sólida, que reduz a armadura contra corte e antiperfurante enquanto fica parada até um máximo de -40% de Vulnerabilidade\n:aomr_type_myth_unit_icon: Unidade Mitológica: Vulnerabilidade a ataques cortantes -10% :hackarmor:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Vulnerabilidade a ataques perfurantes -10% :piercearmor:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Habilita Rocha Sólida, que reduz a armadura contra corte e antiperfurante enquanto fica parada até um máximo de -40% de Vulnerabilidade",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Vulnerabilidade a ataques cortantes -10% :hackarmor:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Vulnerabilidade a ataques perfurantes -10% :piercearmor:"
+    ]
   },
   {
     "nome": "Estômago sem fundo",
@@ -8933,7 +9675,9 @@
       }
     ],
     "icon": "aomr_bottomless_stomach_icon",
-    "campo": ":aomr_taotie_icon: Taotie: -50% de Tempo de Recarga de Habilidade :aomr_time_icon:"
+    "campo": [
+      ":aomr_taotie_icon: Taotie: -50% de Tempo de Recarga de Habilidade :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Escudos Dourados",
@@ -8972,7 +9716,9 @@
       }
     ],
     "icon": "aomr_gilded_shields_icon",
-    "campo": ":aomr_dao_swordsman_icon: Espadachim de Dao: -20% de vulnerabilidade a ataques de Furar :hackarmor:"
+    "campo": [
+      ":aomr_dao_swordsman_icon: Espadachim de Dao: -20% de vulnerabilidade a ataques de Furar :hackarmor:"
+    ]
   },
   {
     "nome": "Julgamento Divino",
@@ -9015,7 +9761,10 @@
       }
     ],
     "icon": "aomr_divine_judgement_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:\n:aomr_type_infantry_icon: Infantaria: Adiciona 0.25 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Adiciona 0.25 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    ]
   },
   {
     "nome": "Outono da Abundância",
@@ -9054,7 +9803,10 @@
       }
     ],
     "icon": "aomr_autumn_of_abundance_icon",
-    "campo": ":aomr_pixiu_icon: Pixiu: define Comércio a taxa de trabalho para Comida em 0.20 :foodaom:\n:aomr_pixiu_icon: Pixiu: define Comércio a taxa de trabalho para Madeira em 0.20 :woodaom:"
+    "campo": [
+      ":aomr_pixiu_icon: Pixiu: define Comércio a taxa de trabalho para Comida em 0.20 :foodaom:",
+      ":aomr_pixiu_icon: Pixiu: define Comércio a taxa de trabalho para Madeira em 0.20 :woodaom:"
+    ]
   },
   {
     "nome": "Agitador do Céu",
@@ -9093,7 +9845,10 @@
       }
     ],
     "icon": "aomr_shaker_of_heaven_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Pontos de Vida +30% :aomr_hit_points_icon:\n:aomr_type_hero_icon: Herói: Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Pontos de Vida +30% :aomr_hit_points_icon:",
+      ":aomr_type_hero_icon: Herói: Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
+    ]
   },
   {
     "nome": "Tempestade Turbulenta",
@@ -9132,7 +9887,12 @@
       }
     ],
     "icon": "aomr_tempestuous_storm_icon",
-    "campo": ":aomr_type_hero_icon: Herói: -25% de Tempo de Recarga de Habilidade :aomr_time_icon:\n:aomr_type_hero_icon: Herói: -15% de custo de Comida :foodaom:\n:aomr_type_hero_icon: Herói: -15% de custo de Madeira :woodaom:\n:aomr_type_hero_icon: Herói: -15% de custo de Ouro :goldaom:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: -25% de Tempo de Recarga de Habilidade :aomr_time_icon:",
+      ":aomr_type_hero_icon: Herói: -15% de custo de Comida :foodaom:",
+      ":aomr_type_hero_icon: Herói: -15% de custo de Madeira :woodaom:",
+      ":aomr_type_hero_icon: Herói: -15% de custo de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Última Resistência",
@@ -9171,7 +9931,10 @@
       }
     ],
     "icon": "aomr_last_stand_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Golpear Armadura em 0.30%.\n:aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Furar Armadura em 0.30%."
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Golpear Armadura em 0.30%.",
+      ":aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Furar Armadura em 0.30%."
+    ]
   },
   {
     "nome": "Maré Crescente",
@@ -9210,7 +9973,11 @@
       }
     ],
     "icon": "aomr_rising_tide_icon",
-    "campo": ":aomr_qinglong_icon: Qinglong: Permite Veterania, que fortalece o Qinglong com -25% de Intervalo de Ataque por nível.\n🌀 Veterania Nível 1: 150 de Dano\n🌀 Veterania Nível 2: 500 de Dano"
+    "campo": [
+      ":aomr_qinglong_icon: Qinglong: Permite Veterania, que fortalece o Qinglong com -25% de Intervalo de Ataque por nível.",
+      "🌀 Veterania Nível 1: 150 de Dano",
+      "🌀 Veterania Nível 2: 500 de Dano"
+    ]
   },
   {
     "nome": "Linhagem de Xuanyuan",
@@ -9249,7 +10016,11 @@
       }
     ],
     "icon": "aomr_xuanyuan_27s_bloodline_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Ao Morrer: Causa 25% de Dano à Infantaria próxima. :hackdamage:\n:aomr_type_infantry_icon: Infantaria: Ao Morrer: Dá 25% de Roubo de Vida à Infantaria próxima. :hackdamage: :aomr_hit_points_icon:\n:aomr_time_icon: Duração: 3 segundos."
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Ao Morrer: Causa 25% de Dano à Infantaria próxima. :hackdamage:",
+      ":aomr_type_infantry_icon: Infantaria: Ao Morrer: Dá 25% de Roubo de Vida à Infantaria próxima. :hackdamage: :aomr_hit_points_icon:",
+      ":aomr_time_icon: Duração: 3 segundos."
+    ]
   },
   {
     "nome": "Seda de Leizu",
@@ -9288,7 +10059,12 @@
       }
     ],
     "icon": "aomr_leizu_27s_silk_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_human_soldier_icon: Soldado Humano: Pontos de Vida + 10% :aomr_hit_points_icon:\n:aomr_type_villager_icon: Aldeão: -10% de vulnerabilidade a ataques de Golpear :hackarmor:\n:aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_human_soldier_icon: Soldado Humano: Pontos de Vida + 10% :aomr_hit_points_icon:",
+      ":aomr_type_villager_icon: Aldeão: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
+      ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    ]
   },
   {
     "nome": "Ordem Imperial",
@@ -9327,7 +10103,19 @@
       }
     ],
     "icon": "aomr_imperial_order_icon",
-    "campo": ":aomr_dao_swordsman_icon: Espadachim de Dao: -20% de custo de Comida :foodaom:\n:aomr_dao_swordsman_icon: Espadachim de Dao: -20% de custo de Ouro :goldaom:\n<highlight-red> :aomr_ge_halberdier_icon:</highlight-red>Alabardeiro Ge: -20% de custo de Comida :foodaom:\n<highlight-red> :aomr_ge_halberdier_icon:</highlight-red>Alabardeiro Ge: -20% de custo de Ouro :goldaom:\n:aomr_wuzu_javelineer_icon: Lanceiro Wuzu: -20% de custo de Madeira :woodaom:\n:aomr_wuzu_javelineer_icon: Lanceiro Wuzu: -20% de custo de Ouro :goldaom:\n<highlight-red> :aomr_military_camp:</highlight-red>Campo Militar: -20% de custo de Madeira :woodaom:\n<highlight-red> :aomr_military_camp:</highlight-red>Campo Militar: -20% de custo de Ouro :goldaom:\n<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Comida :foodaom:\n<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Madeira :woodaom:\n<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Ouro :goldaom:"
+    "campo": [
+      ":aomr_dao_swordsman_icon: Espadachim de Dao: -20% de custo de Comida :foodaom:",
+      ":aomr_dao_swordsman_icon: Espadachim de Dao: -20% de custo de Ouro :goldaom:",
+      "<highlight-red> :aomr_ge_halberdier_icon:</highlight-red>Alabardeiro Ge: -20% de custo de Comida :foodaom:",
+      "<highlight-red> :aomr_ge_halberdier_icon:</highlight-red>Alabardeiro Ge: -20% de custo de Ouro :goldaom:",
+      ":aomr_wuzu_javelineer_icon: Lanceiro Wuzu: -20% de custo de Madeira :woodaom:",
+      ":aomr_wuzu_javelineer_icon: Lanceiro Wuzu: -20% de custo de Ouro :goldaom:",
+      "<highlight-red> :aomr_military_camp:</highlight-red>Campo Militar: -20% de custo de Madeira :woodaom:",
+      "<highlight-red> :aomr_military_camp:</highlight-red>Campo Militar: -20% de custo de Ouro :goldaom:",
+      "<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Comida :foodaom:",
+      "<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Madeira :woodaom:",
+      "<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Ouro :goldaom:"
+    ]
   },
   {
     "nome": "Poder do Caos",
@@ -9366,7 +10154,9 @@
       }
     ],
     "icon": "aomr_power_of_chaos_icon",
-    "campo": ":aomr_hundun_icon: Hundun: Banimento de Dano (Divino) +200% :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_hundun_icon: Hundun: Banimento de Dano (Divino) +200% :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Sangue Flamejante",
@@ -9405,7 +10195,9 @@
       }
     ],
     "icon": "aomr_flaming_blood_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Ativa a Ação de Sangue Flamejante"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Ativa a Ação de Sangue Flamejante"
+    ]
   },
   {
     "nome": "Canção do Solstício de Verão",
@@ -9444,7 +10236,12 @@
       }
     ],
     "icon": "aomr_song_of_midsummer_icon",
-    "campo": ":aomr_zhuque_icon: Zhuque: Ativa a Ação de Descida Curativa\n:aomr_zhuque_icon: Zhuque (Pousado): Adiciona 40.00 à Taxa de Regeneração :aomr_hit_points_icon:\n:aomr_zhuque_icon: Zhuque: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_zhuque_icon: Zhuque (Pousado): Pontos de Vida +25% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_zhuque_icon: Zhuque: Ativa a Ação de Descida Curativa",
+      ":aomr_zhuque_icon: Zhuque (Pousado): Adiciona 40.00 à Taxa de Regeneração :aomr_hit_points_icon:",
+      ":aomr_zhuque_icon: Zhuque: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_zhuque_icon: Zhuque (Pousado): Pontos de Vida +25% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Chama do Sul",
@@ -9483,7 +10280,11 @@
       }
     ],
     "icon": "aomr_southern_fire_icon",
-    "campo": ":aomr_fire_archer_icon: Arqueiro de Fogo: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:\n:aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 0.20 de dano de Divino ao longo do tempo para Ataque de longo alcance em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon: :piercedamage:\n:aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 0.20 de dano de Divino ao longo do tempo para Ataque de longo alcance em relação a Construção por 6.00 segundos. :aomr_divine_damage_icon: :piercedamage:"
+    "campo": [
+      ":aomr_fire_archer_icon: Arqueiro de Fogo: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:",
+      ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 0.20 de dano de Divino ao longo do tempo para Ataque de longo alcance em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon: :piercedamage:",
+      ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 0.20 de dano de Divino ao longo do tempo para Ataque de longo alcance em relação a Construção por 6.00 segundos. :aomr_divine_damage_icon: :piercedamage:"
+    ]
   },
   {
     "nome": "Kagura",
@@ -9515,7 +10316,10 @@
     ],
     "tipo": "Utilidade 🔧",
     "icon": "aomr_kagura_icon",
-    "campo": ":aomr_miko_icon: Miko (Heroína): Curar taxa de trabalho para Unidade +25% :aomr_hit_points_icon:\n:aomr_miko_icon: Miko (Heroína): Tempo de treinamento -25% :aomr_time_icon:"
+    "campo": [
+      ":aomr_miko_icon: Miko (Heroína): Curar taxa de trabalho para Unidade +25% :aomr_hit_points_icon:",
+      ":aomr_miko_icon: Miko (Heroína): Tempo de treinamento -25% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Tenshu",
@@ -9547,7 +10351,12 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_tenshu_icon",
-    "campo": ":aomr_sentry_tower_icon: Torre: Todas as Ações de Dano (Todos os Tipos) +40% :piercedamage:\n:aomr_castle_icon: Fortalezas: Todas as Ações de Dano (Todos os Tipos) +20% :piercedamage:\n:aomr_sentry_tower_icon: Torre: Adiciona 5.00 LDV :los_icon_aoe3de:\n:aomr_castle_icon: Fortalezas: Adiciona 5.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_sentry_tower_icon: Torre: Todas as Ações de Dano (Todos os Tipos) +40% :piercedamage:",
+      ":aomr_castle_icon: Fortalezas: Todas as Ações de Dano (Todos os Tipos) +20% :piercedamage:",
+      ":aomr_sentry_tower_icon: Torre: Adiciona 5.00 LDV :los_icon_aoe3de:",
+      ":aomr_castle_icon: Fortalezas: Adiciona 5.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Ondas Esmagadoras",
@@ -9579,7 +10388,10 @@
     ],
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_crushing_waves_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 1.00 ao Todas as Ações Dano (Divino) :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 1.00 ao Todas as Ações Dano (Divino) :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Foices de Vento",
@@ -9619,7 +10431,9 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_wind_sickles_icon",
-    "campo": ":aomr_kamaitachi_icon: Kamaitachi: Todas as Ações de Dano (Todos os Tipos) +40% :hackdamage:"
+    "campo": [
+      ":aomr_kamaitachi_icon: Kamaitachi: Todas as Ações de Dano (Todos os Tipos) +40% :hackdamage:"
+    ]
   },
   {
     "nome": "Katagi",
@@ -9662,7 +10476,10 @@
       }
     ],
     "icon": "aomr_katagi_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_infantry_icon: Infantaria: Adiciona 75.00 ao morrer EXP de Bushido :amaterasu_tier_1_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Adiciona 75.00 ao morrer EXP de Bushido :amaterasu_tier_1_icon:"
+    ]
   },
   {
     "nome": "Varinhas de Gohei",
@@ -9701,7 +10518,11 @@
       }
     ],
     "icon": "aomr_gohei_wands_icon",
-    "campo": ":aomr_miko_icon: Miko (Heroína): Coletar taxa de trabalho para Santuário +10%\n:aomr_shrine_icon: Santuário: Adiciona 2.00 LDV :los_icon_aoe3de:\n:aomr_shrine_icon: Santuário: Adiciona 2.00 ao Área de Contribuição de Recurso Alcance Máximo :rangeicon:"
+    "campo": [
+      ":aomr_miko_icon: Miko (Heroína): Coletar taxa de trabalho para Santuário +10%",
+      ":aomr_shrine_icon: Santuário: Adiciona 2.00 LDV :los_icon_aoe3de:",
+      ":aomr_shrine_icon: Santuário: Adiciona 2.00 ao Área de Contribuição de Recurso Alcance Máximo :rangeicon:"
+    ]
   },
   {
     "nome": "Alma Condenada",
@@ -9743,7 +10564,7 @@
   },
   {
     "nome": "Nascente de Água Salgada",
-    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_caribou_icon: :aomr_rhinoceros_icon:)",
+    "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 67,
@@ -9781,7 +10602,7 @@
   },
   {
     "nome": "Força de Caçador",
-    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:piercedamage:)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> ()",
     "construcao_origem": [
       {
         "id": 33,
@@ -9823,7 +10644,7 @@
   },
   {
     "nome": "Kumiki",
-    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> e <highlight-orange>Cerco</highlight-orange> (⤵️)",
+    "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>e<highlight-orange>Cerco</highlight-orange> (⤵️)",
     "construcao_origem": [
       {
         "id": 65,
@@ -9897,7 +10718,10 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_deadly_snare_icon",
-    "campo": ":aomr_jorogumo_icon: Jorogumo: Adiciona 2.00 de dano de Divino ao longo do tempo para Arremessar em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:\n:aomr_jorogumo_icon: Jorogumo: Adiciona 1.00 de dano de Divino ao longo do tempo para Ataque Corpo a Corpo em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:"
+    "campo": [
+      ":aomr_jorogumo_icon: Jorogumo: Adiciona 2.00 de dano de Divino ao longo do tempo para Arremessar em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:",
+      ":aomr_jorogumo_icon: Jorogumo: Adiciona 1.00 de dano de Divino ao longo do tempo para Ataque Corpo a Corpo em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:"
+    ]
   },
   {
     "nome": "Sabedoria dos Nove",
@@ -9937,7 +10761,11 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_wisdom_of_nine_icon",
-    "campo": ":aomr_kitsune_icon: Kitsune: Adiciona 5.00 LDV :los_icon_aoe3de:\n:aomr_kitsune_icon: Kitsune: Adiciona 1.00 ao Impulso de Velocidade Limite de Pilha :aomr_speed_icon:\n:aomr_kitsune_icon: Kitsune: Pontos de Vida +75% :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_kitsune_icon: Kitsune: Adiciona 5.00 LDV :los_icon_aoe3de:",
+      ":aomr_kitsune_icon: Kitsune: Adiciona 1.00 ao Impulso de Velocidade Limite de Pilha :aomr_speed_icon:",
+      ":aomr_kitsune_icon: Kitsune: Pontos de Vida +75% :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Vassalos Sashimono",
@@ -9977,7 +10805,10 @@
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_sashimono_bannermen_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:\n:aomr_type_cavalry_icon: Cavalaria: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
+    ]
   },
   {
     "nome": "Netsuke de Marfim",
@@ -10017,7 +10848,10 @@
     ],
     "tipo": "Econômico 💰",
     "icon": "aomr_ivory_netsuke_icon",
-    "campo": "👤 Jogador: Adiciona 0.40 Ouro ao Unidade Mitológica ganho de Recompensa :goldaom:\n👤 Jogador: Adiciona 0.04 Ouro ao Tita ganho de Recompensa :goldaom:"
+    "campo": [
+      "👤 Jogador: Adiciona 0.40 Ouro ao Unidade Mitológica ganho de Recompensa :goldaom:",
+      "👤 Jogador: Adiciona 0.04 Ouro ao Tita ganho de Recompensa :goldaom:"
+    ]
   },
   {
     "nome": "Práticas Ascéticas",
@@ -10057,7 +10891,13 @@
     ],
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_ascetic_practices_icon",
-    "campo": ":aomr_tengu_icon: Tengu: Dano taxa de impulso para Ataque com Salto +50%\n:aomr_tengu_icon: Tengu: Armadura (Golpear) taxa de impulso para Ataque com Salto +15% :hackdamage:\n:aomr_tengu_icon: Tengu: Armadura (Furar) taxa de impulso para Ataque com Salto +15% :piercedamage:\n:aomr_tengu_icon: Tengu: Adiciona 5.00 ao Ataque com Salto Alcance Máximo :rangeicon:\n:aomr_tengu_icon: Tengu: Adiciona 5.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_tengu_icon: Tengu: Dano taxa de impulso para Ataque com Salto +50%",
+      ":aomr_tengu_icon: Tengu: Armadura (Golpear) taxa de impulso para Ataque com Salto +15% :hackdamage:",
+      ":aomr_tengu_icon: Tengu: Armadura (Furar) taxa de impulso para Ataque com Salto +15% :piercedamage:",
+      ":aomr_tengu_icon: Tengu: Adiciona 5.00 ao Ataque com Salto Alcance Máximo :rangeicon:",
+      ":aomr_tengu_icon: Tengu: Adiciona 5.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Pipa de Ouro",
@@ -10097,7 +10937,14 @@
     ],
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_golden_kite_icon",
-    "campo": ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Bônus de Dano contra Unidade Mitológica +25%\n:aomr_onmyoji_icon: Onmyoji (Herói): Ataque de longo alcance de Bônus de Dano contra Unidade Mitológica +25%\n:aomr_onna_musha_icon: Onna-musha (Herói): Ataque Corpo a Corpo Carregado de Bônus de Dano contra Unidade Mitológica +25%\n:aomr_type_hero_icon: Herói: Ataque Corpo a Corpo de Bônus de Dano contra Unidade Mitológica +25%\n:aomr_type_archer_icon: Soldado de Longo Alcance: Todas as Ações de Dano (Todos os Tipos) +15%\n:aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +15%"
+    "campo": [
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Bônus de Dano contra Unidade Mitológica +25%",
+      ":aomr_onmyoji_icon: Onmyoji (Herói): Ataque de longo alcance de Bônus de Dano contra Unidade Mitológica +25%",
+      ":aomr_onna_musha_icon: Onna-musha (Herói): Ataque Corpo a Corpo Carregado de Bônus de Dano contra Unidade Mitológica +25%",
+      ":aomr_type_hero_icon: Herói: Ataque Corpo a Corpo de Bônus de Dano contra Unidade Mitológica +25%",
+      ":aomr_type_archer_icon: Soldado de Longo Alcance: Todas as Ações de Dano (Todos os Tipos) +15%",
+      ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +15%"
+    ]
   },
   {
     "nome": "Oito Estandartes",
@@ -10137,7 +10984,10 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_eight_banners_icon",
-    "campo": ":aomr_type_hero_icon: Herói: Tempo de treinamento -30% :aomr_time_icon:\n:aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_type_hero_icon: Herói: Tempo de treinamento -30% :aomr_time_icon:",
+      ":aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Presente Trovejante",
@@ -10176,7 +11026,10 @@
       }
     ],
     "icon": "aomr_thunderous_presence_icon",
-    "campo": ":aomr_raiju_icon: Raiju: Todas as Ações de Dano (Todos os Tipos) +35% :hackdamage:\n:aomr_raiju_icon: Raiju: Velocidade + 10% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_raiju_icon: Raiju: Todas as Ações de Dano (Todos os Tipos) +35% :hackdamage:",
+      ":aomr_raiju_icon: Raiju: Velocidade + 10% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Tambores Den Den",
@@ -10296,7 +11149,10 @@
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
     "icon": "aomr_deadly_rage_icon",
-    "campo": ":aomr_oni_icon: Oni: Todas as Ações de Dano (Todos os Tipos) +30% :hackdamage:\n:aomr_oni_icon: Oni: -20% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    "campo": [
+      ":aomr_oni_icon: Oni: Todas as Ações de Dano (Todos os Tipos) +30% :hackdamage:",
+      ":aomr_oni_icon: Oni: -20% de vulnerabilidade a ataques de Golpear :hackarmor:"
+    ]
   },
   {
     "nome": "Máscara Oni",
@@ -10336,7 +11192,10 @@
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
     "icon": "aomr_oni_mask_icon",
-    "campo": ":aomr_type_myth_unit_icon: Unidade Mitológica: Pontos de Vida +25% :aomr_hit_points_icon:\n:aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -40% :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Pontos de Vida +25% :aomr_hit_points_icon:",
+      ":aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -40% :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Fúria do Vendaval",
@@ -10376,7 +11235,11 @@
     ],
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
     "icon": "aomr_gales_fury_icon",
-    "campo": ":aomr_type_cavalry_icon: Cavalaria: Velocidade +5% :aomr_speed_icon:\n:aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo Intervalo de Ataque 10% :aomr_rate_of_fire_icon: :hackdamage:\n:aomr_type_cavalry_icon: Cavalaria: Ataque de longo alcance Intervalo de Ataque 10% :aomr_rate_of_fire_icon: :hackdamage:"
+    "campo": [
+      ":aomr_type_cavalry_icon: Cavalaria: Velocidade +5% :aomr_speed_icon:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo Intervalo de Ataque 10% :aomr_rate_of_fire_icon: :hackdamage:",
+      ":aomr_type_cavalry_icon: Cavalaria: Ataque de longo alcance Intervalo de Ataque 10% :aomr_rate_of_fire_icon: :hackdamage:"
+    ]
   },
   {
     "nome": "Malevolência Ardente",
@@ -10415,7 +11278,10 @@
       }
     ],
     "icon": "aomr_burning_malevolence_icon",
-    "campo": ":aomr_asura_icon: Asura: Ataque Corpo a Corpo Intervalo de Ataque -25% :aomr_rate_of_fire_icon:\n:aomr_asura_icon: Asura: Ataque de longo alcance Intervalo de Ataque -25% :aomr_rate_of_fire_icon:"
+    "campo": [
+      ":aomr_asura_icon: Asura: Ataque Corpo a Corpo Intervalo de Ataque -25% :aomr_rate_of_fire_icon:",
+      ":aomr_asura_icon: Asura: Ataque de longo alcance Intervalo de Ataque -25% :aomr_rate_of_fire_icon:"
+    ]
   },
   {
     "nome": "Treinamento de Sumô",
@@ -10458,7 +11324,10 @@
       }
     ],
     "icon": "aomr_sumo_training_icon",
-    "campo": ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +20% :aomr_hit_points_icon:\n:aomr_type_infantry_icon: Infantaria: Adiciona 0.50 ao Todas as Ações Bônus de Dano contra Construção :crushdamage: :aomr_type_building_icon:"
+    "campo": [
+      ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +20% :aomr_hit_points_icon:",
+      ":aomr_type_infantry_icon: Infantaria: Adiciona 0.50 ao Todas as Ações Bônus de Dano contra Construção :crushdamage: :aomr_type_building_icon:"
+    ]
   },
   {
     "nome": "Espada Dez Punhos",
@@ -10497,7 +11366,11 @@
       }
     ],
     "icon": "aomr_ten_fist_sword_icon",
-    "campo": ":aomr_samurai_icon: Samurai: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage:\n:aomr_samurai_icon: Samurai: Adiciona 1 à geração de Espada Ronin na ocorrência de Morte\n:aomr_samurai_icon: Samurai Hatamoto: Adiciona 1 à geração de Espada Ronin na ocorrência de Morte"
+    "campo": [
+      ":aomr_samurai_icon: Samurai: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage:",
+      ":aomr_samurai_icon: Samurai: Adiciona 1 à geração de Espada Ronin na ocorrência de Morte",
+      ":aomr_samurai_icon: Samurai Hatamoto: Adiciona 1 à geração de Espada Ronin na ocorrência de Morte"
+    ]
   },
   {
     "nome": "Sojutsu",
@@ -10536,7 +11409,10 @@
       }
     ],
     "icon": "aomr_sojutsu_icon",
-    "campo": ":aomr_yari_spearman_icon: Lanceiro Yari: Ataque Corpo a Corpo Intervalo de Ataque -15% :aomr_rate_of_fire_icon:\n:aomr_yari_spearman_icon: Lanceiro Yari: Velocidade +15% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_yari_spearman_icon: Lanceiro Yari: Ataque Corpo a Corpo Intervalo de Ataque -15% :aomr_rate_of_fire_icon:",
+      ":aomr_yari_spearman_icon: Lanceiro Yari: Velocidade +15% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Exército Inquieto",
@@ -10575,7 +11451,11 @@
       }
     ],
     "icon": "aomr_restless_army_icon",
-    "campo": ":aomr_onmoraki_icon: Onmoraki: Velocidade +10% :aomr_speed_icon:\n:aomr_wretch_icon: Miserável: Velocidade +10% :aomr_speed_icon:\n:aomr_onmoraki_icon: Onmoraki: Adiciona 4.00 ao Número de Projéteis de Ataque de longo alcance carregado"
+    "campo": [
+      ":aomr_onmoraki_icon: Onmoraki: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_wretch_icon: Miserável: Velocidade +10% :aomr_speed_icon:",
+      ":aomr_onmoraki_icon: Onmoraki: Adiciona 4.00 ao Número de Projéteis de Ataque de longo alcance carregado"
+    ]
   },
   {
     "nome": "Província Divina",
@@ -10614,7 +11494,9 @@
       }
     ],
     "icon": "aomr_divine_prefecture_icon",
-    "campo": ":aomr_type_building_icon: Construção: +60% de Taxa de Trabalho de Treinamento e Pesquisa :aomr_time_icon:"
+    "campo": [
+      ":aomr_type_building_icon: Construção: +60% de Taxa de Trabalho de Treinamento e Pesquisa :aomr_time_icon:"
+    ]
   },
   {
     "nome": "Artesão Mecânicos",
@@ -10653,7 +11535,12 @@
       }
     ],
     "icon": "aomr_mechanical_artisans_icon",
-    "campo": ":aomr_oyumi_icon: Oyumi: Todas as Ações de Dano (Furar) +50% :piercedamage:\n:aomr_oyumi_icon: Oyumi: Adiciona 4.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_oyumi_icon: Oyumi: Adiciona 4.00 ao Quebra de Muralha Alcance Máximo :rangeicon:\n:aomr_oyumi_icon: Oyumi: Adiciona 4.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_oyumi_icon: Oyumi: Todas as Ações de Dano (Furar) +50% :piercedamage:",
+      ":aomr_oyumi_icon: Oyumi: Adiciona 4.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_oyumi_icon: Oyumi: Adiciona 4.00 ao Quebra de Muralha Alcance Máximo :rangeicon:",
+      ":aomr_oyumi_icon: Oyumi: Adiciona 4.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Assombração Eterna",
@@ -10692,7 +11579,9 @@
       }
     ],
     "icon": "aomr_eternal_haunting_icon",
-    "campo": ":aomr_shinigami_icon: Shinigami Fantasmagórico: Adiciona 1 Shinigami Vingativo ao morrer em um Templo."
+    "campo": [
+      ":aomr_shinigami_icon: Shinigami Fantasmagórico: Adiciona 1 Shinigami Vingativo ao morrer em um Templo."
+    ]
   },
   {
     "nome": "Infiltradores à Beira-mar",
@@ -10731,7 +11620,10 @@
       }
     ],
     "icon": "aomr_seaside_infiltrators_icon",
-    "campo": ":aomr_shinobi_icon: Shinobi: Ativa a Ação de Bomba de Fumaça\n:aomr_shinobi_icon: Shinobi: Velocidade +10% :aomr_speed_icon:"
+    "campo": [
+      ":aomr_shinobi_icon: Shinobi: Ativa a Ação de Bomba de Fumaça",
+      ":aomr_shinobi_icon: Shinobi: Velocidade +10% :aomr_speed_icon:"
+    ]
   },
   {
     "nome": "Onmyodo",
@@ -10770,7 +11662,9 @@
       }
     ],
     "icon": "aomr_onmyodo_icon",
-    "campo": ":aomr_onmyoji_icon: Onmyoji (Herói): Todas as Ações de Dano (Todos os Tipos) +20%"
+    "campo": [
+      ":aomr_onmyoji_icon: Onmyoji (Herói): Todas as Ações de Dano (Todos os Tipos) +20%"
+    ]
   },
   {
     "nome": "Arcos Assimétricos",
@@ -10809,7 +11703,11 @@
       }
     ],
     "icon": "aomr_asymmetrical_bows_icon",
-    "campo": ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:\n:aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Adiciona 2.00 LDV :los_icon_aoe3de:"
+    "campo": [
+      ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:",
+      ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Adiciona 2.00 LDV :los_icon_aoe3de:"
+    ]
   },
   {
     "nome": "Mãos de Faraó",
@@ -10851,7 +11749,11 @@
     "tempo_s": 28,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_hands_of_the_pharaoh_icon",
-    "campo": ":aomr_priest_icon: Sacerdote (Herói): Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_priest_icon: Sacerdote (Herói): Adiciona 2.00 LDV :los_icon_aoe3de:\n:aomr_priest_icon: Sacerdote (Herói): Ativa a Ação de Pegada"
+    "campo": [
+      ":aomr_priest_icon: Sacerdote (Herói): Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_priest_icon: Sacerdote (Herói): Adiciona 2.00 LDV :los_icon_aoe3de:",
+      ":aomr_priest_icon: Sacerdote (Herói): Ativa a Ação de Pegada"
+    ]
   },
   {
     "nome": "Luz Divina",
@@ -10894,7 +11796,12 @@
     "tempo_s": 20,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_divine_light_icon",
-    "campo": ":aomr_sky_lantern_icon: Lanterna de Papel: Adiciona 2.00 LDV :los_icon_aoe3de:\n:aomr_pioneer_icon: Pioneiro (Herói): Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:\n:aomr_pioneer_icon: Pioneiro (Herói): Adiciona 2.00 LDV :los_icon_aoe3de:\n:aomr_pioneer_icon: Pioneiro (Herói): Ativa a Ação de Pegada"
+    "campo": [
+      ":aomr_sky_lantern_icon: Lanterna de Papel: Adiciona 2.00 LDV :los_icon_aoe3de:",
+      ":aomr_pioneer_icon: Pioneiro (Herói): Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
+      ":aomr_pioneer_icon: Pioneiro (Herói): Adiciona 2.00 LDV :los_icon_aoe3de:",
+      ":aomr_pioneer_icon: Pioneiro (Herói): Ativa a Ação de Pegada"
+    ]
   },
   {
     "nome": "Guardiões Sagrados",
@@ -10937,7 +11844,10 @@
     "tempo_s": 20,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_sacred_custodians_icon",
-    "campo": ":aomr_miko_icon: Miko (Heroína): Curar taxa de trabalho para Unidade +50% :aomr_hit_points_icon:\n:aomr_miko_icon: Miko (Heroína): Ativa a Ação de Pegada :aomr_relic_anim:"
+    "campo": [
+      ":aomr_miko_icon: Miko (Heroína): Curar taxa de trabalho para Unidade +50% :aomr_hit_points_icon:",
+      ":aomr_miko_icon: Miko (Heroína): Ativa a Ação de Pegada :aomr_relic_anim:"
+    ]
   },
   {
     "nome": "Jardins de Sakuras",
@@ -10981,7 +11891,9 @@
     "tempo_s": 20,
     "tipo": "Econômico 💰",
     "icon": "aomr_sakura_gardens_icon",
-    "campo": ":aomr_shrine_icon: Santuário: Ativa a Ação de Surgimento de Cereja :aomr_tree_oak_icon:"
+    "campo": [
+      ":aomr_shrine_icon: Santuário: Ativa a Ação de Surgimento de Cereja :aomr_tree_oak_icon:"
+    ]
   },
   {
     "nome": "Convocar Soldados da Linha Principal",
@@ -11248,7 +12160,10 @@
       }
     ],
     "icon": "aomr_slash_and_burn_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +15%\n:aomr_farm_icon: Fazenda: -80% de custo de Madeira :woodaom:"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +15%",
+      ":aomr_farm_icon: Fazenda: -80% de custo de Madeira :woodaom:"
+    ]
   },
   {
     "nome": "Trabalho Divino",
@@ -11282,11 +12197,15 @@
     ],
     "tempo_s": 40,
     "icon": "aomr_divine_labor_icon",
-    "campo": ":aomr_type_villager_icon: Aldeão: Adiciona 5,00 à Capacidade de Carga de Madeira :woodaom:\n:aomr_type_villager_icon: Aldeão: Adiciona 5,00 à Capacidade de Carga de Ouro :goldaom:\n:aomr_type_villager_icon: Aldeão: Soma 18,00 em cura :aomr_hit_points_icon: de entrega"
+    "campo": [
+      ":aomr_type_villager_icon: Aldeão: Adiciona 5,00 à Capacidade de Carga de Madeira :woodaom:",
+      ":aomr_type_villager_icon: Aldeão: Adiciona 5,00 à Capacidade de Carga de Ouro :goldaom:",
+      ":aomr_type_villager_icon: Aldeão: Soma 18,00 em cura :aomr_hit_points_icon: de entrega"
+    ]
   },
   {
     "nome": "Paredes de Espinhos",
-    "beneficia": ":aomr_type_wall_icon: <highlight-brown>Muro</highlight-brown> (:hackdamage:)",
+    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:hackdamage:)",
     "eras": [
       {
         "id": 2,
@@ -11311,7 +12230,10 @@
       }
     ],
     "icon": "aomr_thorned_walls_icon",
-    "campo": ":aomr_wooden_wall_icon: Muralha: Ativa a Ação de Refletir Ataque\n:aomr_wooden_wall_icon: Muralha: Adiciona 3.00 ao Refletir Ataque Dano (Golpear) :hackdamage:"
+    "campo": [
+      ":aomr_wooden_wall_icon: Muralha: Ativa a Ação de Refletir Ataque",
+      ":aomr_wooden_wall_icon: Muralha: Adiciona 3.00 ao Refletir Ataque Dano (Golpear) :hackdamage:"
+    ]
   },
   {
     "nome": "Pioneiros de Pã",
@@ -11340,7 +12262,10 @@
       }
     ],
     "icon": "aomr_pans_pioneers_icon",
-    "campo": ":aomr_village_center_egyptians_icon: Centro de Aldeia: Adiciona 1 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção\n:aomr_town_center_greek_icon: Centro Urbano: Adiciona 2 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção"
+    "campo": [
+      ":aomr_village_center_egyptians_icon: Centro de Aldeia: Adiciona 1 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção",
+      ":aomr_town_center_greek_icon: Centro Urbano: Adiciona 2 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção"
+    ]
   },
   {
     "nome": "Instinto Predatório",
@@ -11369,7 +12294,11 @@
       }
     ],
     "icon": "aomr_predatory_instinct_icon",
-    "campo": ":aomr_lykaon_icon: Licaão: Adiciona 2.00 ao Ataque Corpo a Corpo Dano (Todos os Tipos) :hackdamage:\n:aomr_lykaon_icon: Licaão: Velocidade +20% :aomr_speed_icon:\n:aomr_lykaon_icon: Licaão: transforma a vontade"
+    "campo": [
+      ":aomr_lykaon_icon: Licaão: Adiciona 2.00 ao Ataque Corpo a Corpo Dano (Todos os Tipos) :hackdamage:",
+      ":aomr_lykaon_icon: Licaão: Velocidade +20% :aomr_speed_icon:",
+      ":aomr_lykaon_icon: Licaão: transforma a vontade"
+    ]
   },
   {
     "nome": "Hospitalidade Graciosa",
@@ -11426,7 +12355,9 @@
       }
     ],
     "icon": "aomr_hallowed_woodlands_icon",
-    "campo": ":aomr_hamadryad_icon: Hamadríade: Ativa a Ação de Manto da Floresta"
+    "campo": [
+      ":aomr_hamadryad_icon: Hamadríade: Ativa a Ação de Manto da Floresta"
+    ]
   },
   {
     "nome": "Flechas Predestinadas",
@@ -11483,7 +12414,9 @@
       }
     ],
     "icon": "aomr_sacred_land_icon",
-    "campo": ":aomr_farm_icon: Fazenda: Ativa a Ação de Curar :aomr_hit_points_icon:"
+    "campo": [
+      ":aomr_farm_icon: Fazenda: Ativa a Ação de Curar :aomr_hit_points_icon:"
+    ]
   },
   {
     "nome": "Hino Encantado",
@@ -11512,7 +12445,10 @@
       }
     ],
     "icon": "aomr_enchanted_hymn_icon",
-    "campo": ":aomr_siren_icon: Sirênico: Ária Atraente de Dano (Golpear) +50% :hackdamage:\n:aomr_siren_icon: Sirênico: Velocidade da unidade selecionada +50% 💗"
+    "campo": [
+      ":aomr_siren_icon: Sirênico: Ária Atraente de Dano (Golpear) +50% :hackdamage:",
+      ":aomr_siren_icon: Sirênico: Velocidade da unidade selecionada +50% 💗"
+    ]
   },
   {
     "nome": "Sacrifício Piedoso",
@@ -11541,6 +12477,8 @@
       }
     ],
     "icon": "aomr_pious_sacrifice_icon",
-    "campo": "☠ Ao morrer, unidades humanas próximas recebem -10% de velocidade de ataque por 5 s. Pode acumular 5 vezes, até um máximo de -50%. :aomr_rate_of_fire_icon: :hackdamage:"
+    "campo": [
+      "☠ Ao morrer, unidades humanas próximas recebem -10% de velocidade de ataque por 5 s. Pode acumular 5 vezes, até um máximo de -50%. :aomr_rate_of_fire_icon: :hackdamage:"
+    ]
   }
 ]

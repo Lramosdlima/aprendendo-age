@@ -194,9 +194,15 @@ export function TecnologiaDetailPage() {
         </Section>
       </div>
 
-      {t.campo ? (
+      {t.campo && t.campo.length > 0 ? (
         <Section title="Campo / efeito" className="mt-6">
-          <NotionText text={t.campo} />
+          <ul className="space-y-3">
+            {t.campo.map((line, i) => (
+              <li key={i} className="text-sm text-zinc-300">
+                <NotionText text={line} />
+              </li>
+            ))}
+          </ul>
         </Section>
       ) : null}
     </div>

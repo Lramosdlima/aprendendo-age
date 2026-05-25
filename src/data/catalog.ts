@@ -152,7 +152,8 @@ export type Tecnologia = {
   panteoes?: string | EntityNumRef[];
   god_especifico?: string | EntityNumRef[];
   beneficia?: string;
-  campo?: string;
+  /** Cada item = um efeito mecânico (parágrafo do corpo da página Notion). */
+  campo?: string[];
   comida?: number;
   favor?: number;
   icon: string;

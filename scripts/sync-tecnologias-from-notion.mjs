@@ -216,20 +216,35 @@ function cleanupCampo(t) {
     .trim();
 }
 
-function extractCampoFromHtml(html) {
-  const body = html.match(/<div class="page-body">([\s\S]*?)<\/div><\/article>/)?.[1];
-  if (!body?.trim()) return undefined;
+function extractPageBodyHtml(html) {
+  const start = html.indexOf('<div class="page-body">');
+  if (start < 0) return "";
+  const slice = html.slice(start + '<div class="page-body">'.length);
+  const end = slice.indexOf("</article>");
+  return end < 0 ? slice : slice.slice(0, end);
+}
 
-  const parts = [];
+/** Efeitos mecânicos: um item por <p> no page-body (ignora blockquote de lore). */
+function extractCampoFromHtml(html) {
+  const body = extractPageBodyHtml(html);
+  if (!body.trim()) return undefined;
+
+  const lines = [];
   for (const m of body.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
     const inner = m[1].replace(/<br\s*\/?>/gi, " ").trim();
     const plain = inner.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
     if (!plain) continue;
     const line = cleanupCampo(htmlInlineToMarkup(inner));
-    if (line) parts.push(line);
+    if (line) lines.push(line);
   }
-  if (!parts.length) return undefined;
-  return parts.length === 1 ? parts[0] : parts.join("\n");
+  return lines.length ? lines : undefined;
+}
+
+function campoEquals(a, b) {
+  const na = Array.isArray(a) ? a : a ? [a] : [];
+  const nb = Array.isArray(b) ? b : b ? [b] : [];
+  if (na.length !== nb.length) return false;
+  return na.every((line, i) => line === nb[i]);
 }
 
 function loadHtmlByName() {
@@ -291,17 +306,29 @@ for (const t of tecnologias) {
   }
 
   if (html.campo != null) {
-    if (html.campo !== t.campo) {
-      changes.push({ nome: t.nome, field: "campo", from: t.campo, to: html.campo });
+    if (!campoEquals(t.campo, html.campo)) {
+      changes.push({
+        nome: t.nome,
+        field: "campo",
+        from: t.campo,
+        to: html.campo,
+        lines: html.campo.length,
+      });
     }
     t.campo = html.campo;
+  } else if (t.campo != null) {
+    changes.push({ nome: t.nome, field: "campo", from: t.campo, to: undefined, lines: 0 });
+    delete t.campo;
   }
 }
 
 console.log(`HTML pages loaded: ${htmlByName.size}`);
 console.log(`Changes: ${changes.length}`);
 for (const c of changes.slice(0, 40)) {
-  console.log(`- ${c.nome} [${c.field}]: ${JSON.stringify(c.from)} → ${JSON.stringify(c.to)}`);
+  const extra = c.lines != null ? ` (${c.lines} linha(s))` : "";
+  const from = c.from == null ? "—" : JSON.stringify(c.from);
+  const to = c.to == null ? "—" : JSON.stringify(c.to);
+  console.log(`- ${c.nome} [${c.field}]${extra}: ${from} → ${to}`);
 }
 if (changes.length > 40) console.log(`... +${changes.length - 40} more`);
 
@@ -311,8 +338,12 @@ const broken = tecnologias.filter(
 console.log(`Still with empty (): ${broken.length}`);
 for (const t of broken.slice(0, 12)) console.log(`  ${t.nome}: ${t.beneficia}`);
 
-const semCampo = tecnologias.filter((t) => !t.campo?.trim());
+const semCampo = tecnologias.filter(
+  (t) => !Array.isArray(t.campo) || t.campo.length === 0,
+);
+const multiCampo = tecnologias.filter((t) => Array.isArray(t.campo) && t.campo.length > 1);
 console.log(`Without campo: ${semCampo.length}`);
+console.log(`With 2+ campo lines: ${multiCampo.length}`);
 
 if (changes.length) {
   const payload = `${JSON.stringify(tecnologias, null, 2)}\n`;

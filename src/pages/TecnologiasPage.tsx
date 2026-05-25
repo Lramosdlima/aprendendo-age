@@ -21,6 +21,7 @@ import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
+import { campoSearchBlob } from "@/lib/tecnologiaCampo";
 
 function matches(t: (typeof tecnologias)[number], q: string) {
   if (!q.trim()) return true;
@@ -30,7 +31,7 @@ function matches(t: (typeof tecnologias)[number], q: string) {
     t.ingles ?? "",
     t.tipo ?? "",
     t.beneficia ?? "",
-    t.campo ?? "",
+    campoSearchBlob(t.campo),
     joinRefNomesOrString(t.panteoes),
     joinRefNomesOrString(t.eras),
     joinRefNomesOrString(t.god_especifico),
