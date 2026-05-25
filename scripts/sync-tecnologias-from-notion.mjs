@@ -206,6 +206,32 @@ function parseLinkName(td) {
   return names.join(", ");
 }
 
+/** Texto mecânico do corpo da página (parágrafos após «Beneficia» na planilha). */
+function cleanupCampo(t) {
+  return t
+    .replace(/:([a-z0-9_-]+):(?=:)/gi, ":$1: ")
+    .replace(/([^\s:]):([a-z0-9_-]+):/g, "$1 :$2:")
+    .replace(/:([a-z0-9_-]+):(?=[A-Za-zÀ-ú])/gi, ":$1: ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractCampoFromHtml(html) {
+  const body = html.match(/<div class="page-body">([\s\S]*?)<\/div><\/article>/)?.[1];
+  if (!body?.trim()) return undefined;
+
+  const parts = [];
+  for (const m of body.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
+    const inner = m[1].replace(/<br\s*\/?>/gi, " ").trim();
+    const plain = inner.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    if (!plain) continue;
+    const line = cleanupCampo(htmlInlineToMarkup(inner));
+    if (line) parts.push(line);
+  }
+  if (!parts.length) return undefined;
+  return parts.length === 1 ? parts[0] : parts.join("\n");
+}
+
 function loadHtmlByName() {
   const map = new Map();
   for (const file of fs.readdirSync(htmlDir)) {
@@ -214,7 +240,12 @@ function loadHtmlByName() {
     const nome = extractPageTitle(html);
     if (!nome || nome === "Sem título") continue;
     const props = extractProperties(html);
-    map.set(nome, { props, beneficia: beneficiaFromProps(props), tipo: tipoFromProps(props) });
+    map.set(nome, {
+      props,
+      beneficia: beneficiaFromProps(props),
+      tipo: tipoFromProps(props),
+      campo: extractCampoFromHtml(html),
+    });
   }
   return map;
 }
@@ -258,6 +289,13 @@ for (const t of tecnologias) {
     changes.push({ nome: t.nome, field: "ingles", from: t.ingles, to: ing });
     t.ingles = ing;
   }
+
+  if (html.campo != null) {
+    if (html.campo !== t.campo) {
+      changes.push({ nome: t.nome, field: "campo", from: t.campo, to: html.campo });
+    }
+    t.campo = html.campo;
+  }
 }
 
 console.log(`HTML pages loaded: ${htmlByName.size}`);
@@ -273,8 +311,14 @@ const broken = tecnologias.filter(
 console.log(`Still with empty (): ${broken.length}`);
 for (const t of broken.slice(0, 12)) console.log(`  ${t.nome}: ${t.beneficia}`);
 
+const semCampo = tecnologias.filter((t) => !t.campo?.trim());
+console.log(`Without campo: ${semCampo.length}`);
+
 if (changes.length) {
-  fs.writeFileSync(jsonPath, `${JSON.stringify(tecnologias, null, 2)}\n`);
+  const payload = `${JSON.stringify(tecnologias, null, 2)}\n`;
+  const tmpPath = `${jsonPath}.tmp`;
+  fs.writeFileSync(tmpPath, payload, "utf8");
+  fs.renameSync(tmpPath, jsonPath);
   console.log("Updated", jsonPath);
 } else {
   console.log("No changes");
