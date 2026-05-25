@@ -1753,7 +1753,7 @@
   },
   {
     "nome": "Espada do Medo de Deimos",
-    "beneficia": ":aomr_hypaspist_icon: <highlight-red>Hipaspista</highlight-red><highlight-teal>ativado ✅</highlight-teal>",
+    "beneficia": ":aomr_hypaspist_icon: <highlight-red>Hipaspista</highlight-red> <highlight-teal>ativado ✅</highlight-teal>",
     "construcao_origem": [
       {
         "id": 21,
@@ -4193,7 +4193,7 @@
   },
   {
     "nome": "Força do Vento Oeste",
-    "beneficia": ":aomr_catapult_icon: <highlight-brown>Catapulta</highlight-brown><highlight-teal>ativada</highlight-teal>✅",
+    "beneficia": ":aomr_catapult_icon: <highlight-brown>Catapulta</highlight-brown> <highlight-teal>ativada</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 62,
@@ -5866,7 +5866,7 @@
   },
   {
     "nome": "Sessrúmnir",
-    "beneficia": "<highlight-yellow>:aomr_type_hero_icon:</highlight-yellow><highlight-yellow>Herói</highlight-yellow>|<highlight-yellow>:aomr_godi_icon:</highlight-yellow><highlight-yellow>Godi</highlight-yellow><highlight-teal>ativado</highlight-teal>✅",
+    "beneficia": "<highlight-yellow>:aomr_type_hero_icon:</highlight-yellow><highlight-yellow>Herói</highlight-yellow>|<highlight-yellow>:aomr_godi_icon:</highlight-yellow><highlight-yellow>Godi</highlight-yellow> <highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 40,
@@ -6294,7 +6294,7 @@
   },
   {
     "nome": "Ydalir",
-    "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown><highlight-teal>ativado</highlight-teal>✅",
+    "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown> <highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
         "id": 59,
@@ -8150,7 +8150,7 @@
   },
   {
     "nome": "Chifres da Consagração",
-    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red><highlight-teal>ativado</highlight-teal><highlight-red>✅</highlight-red>",
+    "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red><highlight-teal>ativado</highlight-teal> <highlight-red>✅</highlight-red>",
     "construcao_origem": [
       {
         "id": 60,
