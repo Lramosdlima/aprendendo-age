@@ -5,11 +5,11 @@ import { DeusExplicacaoMaiorSection } from "@/components/deus/DeusExplicacaoMaio
 import { GodMajorDecisionTree } from "@/components/deus/GodMajorDecisionTree";
 import { BackLink } from "@/components/ui/BackLink";
 import { InfoRow } from "@/components/ui/InfoRow";
-import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
+import { InfoRowPortraitCluster, InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
+import { PortraitHeaderActions, type PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import {
   deusById,
@@ -34,7 +34,36 @@ import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { bucketMinorsByEra } from "@/lib/godMajorTree";
 import { listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
+import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
+
+function tecnologiaPortraitItemsFromRefs(refs: { id: string; nome: string }[]): PortraitHeaderItem[] {
+  return refs.map((ref, i) => {
+    const idx = tecnologias.findIndex((t) => t.nome === ref.nome);
+    const t = idx >= 0 ? tecnologias[idx] : undefined;
+    const slug = idx >= 0 ? tecnologiaSlugByIndex.get(idx) : undefined;
+    return {
+      key: `tec-${ref.id}-${i}`,
+      to: slug ? `/tecnologias/${slug}` : "/tecnologias",
+      nome: ref.nome,
+      src: t ? getTecnologiaAssetUrl(t) : undefined,
+    };
+  });
+}
+
+function unidadePortraitItemsFromRefs(refs: { id: number; nome: string }[]): PortraitHeaderItem[] {
+  return refs.map((ref, i) => {
+    const u = unidadeById.get(ref.id);
+    const slug = unidadeSlugById.get(ref.id);
+    return {
+      key: `u-${ref.id}-${i}`,
+      to: `/unidades/${slug ?? ref.id}`,
+      nome: ref.nome,
+      src: u ? getUnidadeAssetUrl(u) : undefined,
+    };
+  });
+}
 
 /** Texto do link "← …" conforme a origem (lista de deuses, start ou poder divino). */
 function deusBackLinkLabel(backTo: string): string {
@@ -93,21 +122,12 @@ export function DeusDetailPage() {
     })
     .filter(Boolean);
 
-  const unidadesEx = (d.unidades_exclusivas ?? [])
-    .map((ref) => {
-      const uid = ref.id;
-      const u = unidadeById.get(uid);
-      return u ? (
-        <Link
-          key={uid}
-          to={`/unidades/${unidadeSlugById.get(uid) ?? uid}`}
-          className="text-amber-200 underline-offset-2 hover:underline"
-        >
-          {ref.nome}
-        </Link>
-      ) : null;
-    })
-    .filter(Boolean);
+  const tecnologiaPortraitItems = d.tecnologias?.length
+    ? tecnologiaPortraitItemsFromRefs(d.tecnologias)
+    : [];
+  const unidadePortraitItems = d.unidades_exclusivas?.length
+    ? unidadePortraitItemsFromRefs(d.unidades_exclusivas)
+    : [];
 
   return (
     <div>
@@ -257,35 +277,29 @@ export function DeusDetailPage() {
         </Section>
       ) : null}
 
-      {d.tecnologias?.length ? (
+      {tecnologiaPortraitItems.length > 0 ? (
         <Section title="Tecnologias" className="mt-6">
-          <ul className="list-inside list-disc space-y-1.5 text-sm">
-            {d.tecnologias.map((t, i) => {
-              const ti = tecnologias.findIndex((x) => x.nome === t.nome);
-              const slug = ti >= 0 ? tecnologiaSlugByIndex.get(ti) : undefined;
-              return (
-                <li key={`${t.id}-${i}`}>
-                  {slug ? (
-                    <Link to={`/tecnologias/${slug}`} className="text-amber-200 underline-offset-2 hover:underline">
-                      <NotionText text={t.nome} />
-                    </Link>
-                  ) : (
-                    <NotionText text={t.nome} />
-                  )}
-                </li>
-              );
-            })}
-          </ul>
+          <InfoRowPortraitCluster>
+            <PortraitHeaderActions
+              items={tecnologiaPortraitItems}
+              linkState={linkState}
+              size="sm"
+              justify="start"
+            />
+          </InfoRowPortraitCluster>
         </Section>
       ) : null}
 
-      {unidadesEx.length > 0 ? (
+      {unidadePortraitItems.length > 0 ? (
         <Section title="Unidades exclusivas" className="mt-6">
-          <ul className="flex flex-wrap gap-2">
-            {unidadesEx.map((el, i) => (
-              <li key={i}>{el}</li>
-            ))}
-          </ul>
+          <InfoRowPortraitCluster>
+            <PortraitHeaderActions
+              items={unidadePortraitItems}
+              linkState={linkState}
+              size="sm"
+              justify="start"
+            />
+          </InfoRowPortraitCluster>
         </Section>
       ) : d.unidades_exclusivas?.length ? (
         <Section title="Unidades exclusivas" className="mt-6">
