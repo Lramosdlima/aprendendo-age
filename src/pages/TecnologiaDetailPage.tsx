@@ -7,7 +7,10 @@ import { TecnologiaTipoBadges } from "@/components/tecnologia/TecnologiaTipoBadg
 import { NotionText } from "@/components/ui/NotionText";
 import { hasTecnologiaTipo } from "@/lib/tecnologiaTipo";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { PortraitHeaderActions, type PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
+import {
+  PortraitHeaderActions,
+  type PortraitHeaderItem,
+} from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import {
   construcaoById,
@@ -36,7 +39,11 @@ export function TecnologiaDetailPage() {
   const { pathname, search: locSearch, state: navState } = useLocation();
   const tecLinkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/tecnologias", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/tecnologias", "Tecnologias");
+  const backLabel = listOrDetailBackLinkLabel(
+    backToList,
+    "/tecnologias",
+    "Tecnologias",
+  );
   const { slug } = useParams();
   const t = slug ? tecnologiaBySlug.get(slug) : undefined;
 
@@ -168,43 +175,42 @@ export function TecnologiaDetailPage() {
                   />
                 </InfoRowPortraitCluster>
               </InfoRow>
-            ) : typeof construcaoOrigemField === "string" && construcaoOrigemField.trim() ? (
+            ) : typeof construcaoOrigemField === "string" &&
+              construcaoOrigemField.trim() ? (
               <InfoRow label="Construção de origem">
                 <NotionText text={construcaoOrigemField} />
               </InfoRow>
             ) : null}
+            {deusPortraitItems.length > 0 ? (
+              <InfoRow label="Deus específico">
+                <InfoRowPortraitCluster>
+                  <PortraitHeaderActions
+                    items={deusPortraitItems}
+                    linkState={tecLinkState}
+                    size="sm"
+                    justify="start"
+                  />
+                </InfoRowPortraitCluster>
+              </InfoRow>
+            ) : null}
+            
           </div>
         </Section>
-
-        <Section title="Deuses">
-          {deusPortraitItems.length > 0 ? (
-            <InfoRowPortraitCluster>
-              <PortraitHeaderActions
-                items={deusPortraitItems}
-                linkState={tecLinkState}
-                size="sm"
-                justify="start"
-              />
-            </InfoRowPortraitCluster>
-          ) : typeof godEspecificoField === "string" && godEspecificoField.trim() ? (
-            <NotionText text={godEspecificoField} />
-          ) : (
-            <p className="text-zinc-500">—</p>
-          )}
-        </Section>
+        {t.campo && t.campo.length > 0 ? (
+          <Section title="Campo / efeito">
+            <div className="flex flex-col gap-3">
+              {t.campo.map((line, i) => (
+                <p
+                  key={i}
+                  className="m-0 block w-full leading-relaxed text-zinc-300"
+                >
+                  <NotionText text={line} className="block" />
+                </p>
+              ))}
+            </div>
+          </Section>
+        ) : null}
       </div>
-
-      {t.campo && t.campo.length > 0 ? (
-        <Section title="Campo / efeito" className="mt-6">
-          <ul className="space-y-3">
-            {t.campo.map((line, i) => (
-              <li key={i} className="text-sm text-zinc-300">
-                <NotionText text={line} />
-              </li>
-            ))}
-          </ul>
-        </Section>
-      ) : null}
     </div>
   );
 }

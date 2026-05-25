@@ -251,7 +251,7 @@
   },
   {
     "nome": "Torre de Vigia",
-    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:piercedamage:)",
+    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:piercedamage:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -277,7 +277,7 @@
   },
   {
     "nome": "Fogueiras Sinalizadoras",
-    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -302,7 +302,7 @@
   },
   {
     "nome": "Muralha de Pedra",
-    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:los_icon_aoe3de::aomr_hit_points_icon::hackarmor:)",
+    "beneficia": ":aomr_type_wall_icon: <highlight-brown>Muro</highlight-brown> (:los_icon_aoe3de::aomr_hit_points_icon::hackarmor:)",
     "comida": 200,
     "construcao_origem": [
       {
@@ -608,7 +608,7 @@
   },
   {
     "nome": "Ameias",
-    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_type_cavalry_icon::rangeicon:)",
+    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_type_cavalry_icon::rangeicon:)",
     "comida": 150,
     "construcao_origem": [
       {
@@ -636,7 +636,7 @@
   },
   {
     "nome": "Torre de Guarda",
-    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_hit_points_icon:)",
+    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -665,7 +665,7 @@
   },
   {
     "nome": "Óleo Fervente",
-    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (ataque próximo)",
+    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (ataque próximo)",
     "comida": 100,
     "construcao_origem": [
       {
@@ -692,7 +692,7 @@
   },
   {
     "nome": "Pombos Correio",
-    "beneficia": ":aomr_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
         "id": 70,
@@ -717,7 +717,7 @@
   },
   {
     "nome": "Muralha Fortificada",
-    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:aomr_hit_points_icon::los_icon_aoe3de:)",
+    "beneficia": ":aomr_type_wall_icon: <highlight-brown>Muro</highlight-brown> (:aomr_hit_points_icon::los_icon_aoe3de:)",
     "comida": 500,
     "construcao_origem": [
       {
@@ -12205,7 +12205,7 @@
   },
   {
     "nome": "Paredes de Espinhos",
-    "beneficia": ":aomr_wall_icon: <highlight-brown>Muro</highlight-brown> (:hackdamage:)",
+    "beneficia": ":aomr_type_wall_icon: <highlight-brown>Muro</highlight-brown> (:hackdamage:)",
     "eras": [
       {
         "id": 2,
