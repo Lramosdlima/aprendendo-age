@@ -9041,7 +9041,7 @@
   {
     "id": 168,
     "nome": "Esmagador Otontin",
-    "ingles": "Medium Otontin Smasher",
+    "ingles": "Otontin Smasher",
     "tipo": [
       {
         "type": "Cerco",
@@ -9097,7 +9097,7 @@
   {
     "id": 169,
     "nome": "Tosquiado",
-    "ingles": "Medium Shorn One",
+    "ingles": "Shorn One",
     "tipo": [
       {
         "type": "Infantaria",
