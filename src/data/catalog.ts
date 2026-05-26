@@ -104,7 +104,6 @@ export type StartBuildOrder = {
   image: string;
   /** Nome do panteão em `panteoes.json` (ex.: Grego, Chinês); opcional se não houver match. */
   pantheon?: string;
-  notion_file_id: string;
   youtube: string[];
   descricao_curta: string;
   /** Conteúdo em dados (mini-markup), sem HTML do Notion. */

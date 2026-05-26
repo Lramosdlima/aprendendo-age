@@ -191,13 +191,11 @@ def build_starts(asset_map: dict[str, str]) -> list[dict]:
     for i, fp in enumerate(files, start=1):
         text = fp.read_text(encoding="utf-8", errors="replace")
         title = strip_html_title(text)
-        notion_id = fp.stem.split()[-1] if " " in fp.stem else fp.stem
         conteudo_html = extract_page_body_html(text, asset_map)
         rows.append(
             {
                 "id": i,
                 "titulo": title,
-                "notion_file_id": notion_id,
                 "youtube": extract_youtube(text),
                 "descricao_curta": "Sequência em tabela e notas exportadas do Notion.",
                 "conteudo_html": conteudo_html,

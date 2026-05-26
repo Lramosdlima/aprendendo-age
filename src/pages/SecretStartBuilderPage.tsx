@@ -13,9 +13,18 @@ import {
   startBySlug,
   startsBuildOrder,
 } from "@/data/catalog";
+import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 import { resolveStartImageToken } from "@/lib/resolveStartImageToken";
 import { startAuthorFromString } from "@/lib/startAuthor";
 import { buildStartSlug } from "@/lib/startSlug";
+
+const RESOURCE_FIELD_ICONS = {
+  food: "foodaom",
+  wood: "woodaom",
+  gold: "goldaom",
+  favor: "favoraom",
+  pop: "aomr_population_provision_icon",
+} as const;
 
 const inputClass =
   "w-full rounded-lg border border-aom-border bg-aom-card px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-500 focus:border-amber-500/50 focus:outline-none focus:ring-2 focus:ring-amber-500/25";
@@ -101,6 +110,105 @@ function emptySegment(): EditorSegment {
   };
 }
 
+function editorRowHasContent(row: EditorRow): boolean {
+  return !!(
+    row.description.trim() ||
+    row.food.trim() ||
+    row.wood.trim() ||
+    row.gold.trim() ||
+    row.favor.trim() ||
+    row.pop.trim() ||
+    row.type
+  );
+}
+
+function editorCalloutHasContent(c: EditorLeadCallout): boolean {
+  return !!c.text.trim();
+}
+
+function editorSegmentHasContent(seg: EditorSegment): boolean {
+  return !!(
+    seg.heading.trim() ||
+    seg.footer.trim() ||
+    seg.callouts.some(editorCalloutHasContent) ||
+    seg.rows.some(editorRowHasContent)
+  );
+}
+
+/** Botão remover: visível se o item tem conteúdo ou há mais de um no grupo. */
+function canShowRemoveButton(hasContent: boolean, count: number): boolean {
+  return hasContent || count > 1;
+}
+
+function cellToEditor(v: string | null | undefined): string {
+  if (v == null) return "";
+  return String(v);
+}
+
+function tableRowToEditor(r: StartTableRow): EditorRow {
+  return {
+    id: uid(),
+    description: r.description ?? "",
+    food: cellToEditor(r.food),
+    wood: cellToEditor(r.wood),
+    gold: cellToEditor(r.gold),
+    favor: cellToEditor(r.favor),
+    pop: cellToEditor(r.pop),
+    type: r.type ?? "",
+  };
+}
+
+function segmentFromStructured(seg: StartBuildSegment): EditorSegment {
+  let heading = "";
+  const callouts: EditorLeadCallout[] = [];
+  for (const block of seg.lead ?? []) {
+    if (block.kind === "heading" && block.level === 1 && !heading) {
+      heading = block.text;
+    } else if (block.kind === "callout") {
+      callouts.push({ id: uid(), text: block.text });
+    } else if (block.kind === "heading") {
+      callouts.push({ id: uid(), text: block.text });
+    }
+  }
+  let footer = "";
+  for (const block of seg.footer ?? []) {
+    if (block.kind === "paragraph") {
+      footer = block.text;
+    } else if (block.kind === "callout" || block.kind === "heading") {
+      footer = footer ? `${footer}\n\n${block.text}` : block.text;
+    }
+  }
+  const rows = (seg.table ?? []).map(tableRowToEditor);
+  return {
+    id: uid(),
+    heading,
+    callouts: callouts.length ? callouts : [emptyLeadCallout()],
+    footer,
+    rows: rows.length ? rows : [emptyRow()],
+  };
+}
+
+function isStartBuildOrder(obj: unknown): obj is StartBuildOrder {
+  if (!obj || typeof obj !== "object") return false;
+  const o = obj as Record<string, unknown>;
+  return typeof o.titulo === "string" && typeof o.structured === "object" && o.structured !== null;
+}
+
+function parseImportJson(raw: string): StartBuildOrder {
+  const trimmed = raw.trim();
+  if (!trimmed) throw new Error("Cole um JSON ou escolha um arquivo .json.");
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(trimmed);
+  } catch {
+    throw new Error("JSON inválido — verifique vírgulas, aspas e chaves.");
+  }
+  if (!isStartBuildOrder(parsed)) {
+    throw new Error("O JSON precisa ser um start com «titulo» e «structured» (como no export desta página).");
+  }
+  return parsed;
+}
+
 function segmentToStructured(seg: EditorSegment): StartBuildSegment {
   const lead: StartBuildSegment["lead"] = [];
   if (seg.heading.trim()) {
@@ -133,7 +241,9 @@ function segmentToStructured(seg: EditorSegment): StartBuildSegment {
   };
 }
 
-const deusesSorted = [...deuses].sort((a, b) => a.nome.localeCompare(b.nome, "pt"));
+const deusesSorted = [...deuses]
+  .filter((d) => d.hierarquia?.toLowerCase() === "maior")
+  .sort((a, b) => a.nome.localeCompare(b.nome, "pt"));
 
 export function SecretStartBuilderPage() {
   const [nome, setNome] = useState("");
@@ -143,10 +253,11 @@ export function SecretStartBuilderPage() {
   const [godFilter, setGodFilter] = useState("");
   const [godsChecked, setGodsChecked] = useState<Record<number, boolean>>({});
   const [pantheon, setPantheon] = useState("");
-  const [notionId, setNotionId] = useState("");
   const [slugOverride, setSlugOverride] = useState("");
   const [segments, setSegments] = useState<EditorSegment[]>([emptySegment()]);
   const [copyState, setCopyState] = useState<"idle" | "ok" | "err">("idle");
+  const [importText, setImportText] = useState("");
+  const [importMessage, setImportMessage] = useState<{ kind: "ok" | "err"; text: string } | null>(null);
 
   const maxStartId = useMemo(() => Math.max(0, ...startsBuildOrder.map((s) => s.id)), []);
 
@@ -187,7 +298,6 @@ export function SecretStartBuilderPage() {
         godNamesSelected,
         pTrim || undefined,
       ),
-      notion_file_id: notionId.trim() || "00000000000000000000000000000000",
       youtube,
       descricao_curta: nome.trim() || "Rascunho gerado pelo builder secreto.",
       structured: { segments: segs },
@@ -201,7 +311,7 @@ export function SecretStartBuilderPage() {
       out.pantheon = pTrim;
     }
     return out;
-  }, [titulo, authors, youtubeText, godNamesSelected, segments, nome, notionId, slugOverride, pantheon, maxStartId]);
+  }, [titulo, authors, youtubeText, godNamesSelected, segments, nome, slugOverride, pantheon, maxStartId]);
 
   const slugPreview = builtStart?.slug ?? "";
   const slugCollision = slugPreview && startBySlug.has(slugPreview);
@@ -217,6 +327,56 @@ export function SecretStartBuilderPage() {
       return next;
     });
   }, []);
+
+  const reorderRows = useCallback((segmentIndex: number, from: number, to: number) => {
+    if (from === to || from < 0 || to < 0) return;
+    setSegments((prev) =>
+      prev.map((s, j) => {
+        if (j !== segmentIndex) return s;
+        const rows = [...s.rows];
+        const [m] = rows.splice(from, 1);
+        rows.splice(to, 0, m);
+        return { ...s, rows };
+      }),
+    );
+  }, []);
+
+  const applyImportedStart = useCallback((start: StartBuildOrder) => {
+    setNome(start.descricao_curta ?? "");
+    setTitulo(start.titulo ?? "");
+    setYoutubeText((start.youtube ?? []).join("\n"));
+    const names = (start.author ?? []).map((a) => (typeof a === "string" ? a : a.name)).filter(Boolean);
+    setAuthors(names.length ? names : [""]);
+    setPantheon(start.pantheon ?? "");
+    setSlugOverride(start.slug ?? "");
+    const checked: Record<number, boolean> = {};
+    for (const d of deusesSorted) {
+      if ((start.god ?? []).includes(d.nome)) checked[d.id] = true;
+    }
+    setGodsChecked(checked);
+    const segs = (start.structured?.segments ?? []).map(segmentFromStructured);
+    setSegments(segs.length ? segs : [emptySegment()]);
+  }, []);
+
+  const runImport = useCallback(
+    (raw: string, successLabel?: string) => {
+      try {
+        const parsed = parseImportJson(raw);
+        applyImportedStart(parsed);
+        setImportText(JSON.stringify(parsed, null, 2));
+        setImportMessage({
+          kind: "ok",
+          text: successLabel ?? "Importado — revise os campos e exporte quando estiver pronto.",
+        });
+      } catch (err) {
+        setImportMessage({
+          kind: "err",
+          text: err instanceof Error ? err.message : "Não foi possível importar.",
+        });
+      }
+    },
+    [applyImportedStart],
+  );
 
   const copyJson = useCallback(async () => {
     if (!jsonText) return;
@@ -272,10 +432,6 @@ export function SecretStartBuilderPage() {
                   rows={3}
                   placeholder="https://youtu.be/..."
                 />
-              </label>
-              <label className="block sm:col-span-2">
-                <span className="mb-1 block text-xs font-medium text-zinc-400">ID Notion (opcional, 32 hex)</span>
-                <input className={inputClass} value={notionId} onChange={(e) => setNotionId(e.target.value)} placeholder="00000000000000000000000000000000" />
               </label>
               <label className="block sm:col-span-2">
                 <span className="mb-1 block text-xs font-medium text-zinc-400">Slug manual (opcional)</span>
@@ -336,6 +492,7 @@ export function SecretStartBuilderPage() {
 
           <section className="rounded-xl border border-aom-border bg-aom-card/40 p-4 sm:p-5">
             <h2 className="mb-3 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100/95">Deuses (god)</h2>
+            <p className="mb-3 text-xs text-zinc-500">Apenas deuses maiores (<code className="text-zinc-400">hierarquia: Maior</code>).</p>
             <input
               className={`${inputClass} mb-3`}
               value={godFilter}
@@ -377,7 +534,7 @@ export function SecretStartBuilderPage() {
               </button>
             </div>
             <p className="mb-4 text-xs text-zinc-500">
-              Arraste pelo ícone ⋮⋮ à esquerda para reordenar. Cada segmento pode ter título (heading), vários callouts antes da tabela, a tabela e rodapé opcional.
+              Arraste pelo ícone ⋮⋮ para reordenar segmentos ou linhas da tabela. Cada segmento pode ter título (heading), vários callouts antes da tabela, a tabela e rodapé opcional.
               Tipos de linha da tabela: os mesmos usados em{" "}
               <code className="text-zinc-400">starts_build_order.json</code> (hint, blue, pink, …).
             </p>
@@ -389,7 +546,8 @@ export function SecretStartBuilderPage() {
                   onDrop={(e) => {
                     e.preventDefault();
                     const raw = e.dataTransfer.getData("text/plain");
-                    const from = Number.parseInt(raw, 10);
+                    if (!raw.startsWith("segment:")) return;
+                    const from = Number.parseInt(raw.slice(8), 10);
                     if (Number.isNaN(from) || from === si) return;
                     reorderSegments(from, si);
                   }}
@@ -400,7 +558,7 @@ export function SecretStartBuilderPage() {
                       draggable
                       onDragStart={(e) => {
                         e.dataTransfer.effectAllowed = "move";
-                        e.dataTransfer.setData("text/plain", String(si));
+                        e.dataTransfer.setData("text/plain", `segment:${si}`);
                       }}
                       className="cursor-grab select-none px-1.5 py-2 text-zinc-500 active:cursor-grabbing"
                       title="Arrastar para reordenar"
@@ -425,26 +583,27 @@ export function SecretStartBuilderPage() {
                           <div key={c.id} className="rounded-lg border border-aom-border/60 bg-aom-card/25 p-2">
                             <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
                               <span className="text-xs text-zinc-500">Callout {ci + 1}</span>
-                              <button
-                                type="button"
-                                className="rounded border border-zinc-600 px-2 py-0.5 text-xs text-zinc-400 hover:bg-zinc-800"
-                                onClick={() =>
-                                  setSegments((prev) =>
-                                    prev.map((s, j) =>
-                                      j === si
-                                        ? {
-                                            ...s,
-                                            callouts:
-                                              s.callouts.length <= 1 ? s.callouts : s.callouts.filter((_, k) => k !== ci),
-                                          }
-                                        : s,
-                                    ),
-                                  )
-                                }
-                                disabled={seg.callouts.length <= 1}
-                              >
-                                Remover callout
-                              </button>
+                              {canShowRemoveButton(editorCalloutHasContent(c), seg.callouts.length) ? (
+                                <button
+                                  type="button"
+                                  className="rounded border border-zinc-600 px-2 py-0.5 text-xs text-zinc-400 hover:bg-zinc-800"
+                                  onClick={() =>
+                                    setSegments((prev) =>
+                                      prev.map((s, j) =>
+                                        j === si
+                                          ? {
+                                              ...s,
+                                              callouts:
+                                                s.callouts.length <= 1 ? s.callouts : s.callouts.filter((_, k) => k !== ci),
+                                            }
+                                          : s,
+                                      ),
+                                    )
+                                  }
+                                >
+                                  Remover callout
+                                </button>
+                              ) : null}
                             </div>
                             <textarea
                               className={cnTextarea()}
@@ -484,19 +643,53 @@ export function SecretStartBuilderPage() {
                         </button>
                       </div>
                     </div>
-                    <button
-                      type="button"
-                      className="shrink-0 rounded border border-red-900/60 px-2 py-1 text-xs text-red-300 hover:bg-red-950/40"
-                      onClick={() => setSegments((prev) => (prev.length <= 1 ? prev : prev.filter((_, j) => j !== si)))}
-                    >
-                      Remover segmento
-                    </button>
+                    {canShowRemoveButton(editorSegmentHasContent(seg), segments.length) ? (
+                      <button
+                        type="button"
+                        className="shrink-0 rounded border border-red-900/60 px-2 py-1 text-xs text-red-300 hover:bg-red-950/40"
+                        onClick={() => setSegments((prev) => (prev.length <= 1 ? prev : prev.filter((_, j) => j !== si)))}
+                      >
+                        Remover segmento
+                      </button>
+                    ) : null}
                   </div>
 
                   <div className="ml-8 space-y-2 border-l border-zinc-700/60 pl-3">
                     {seg.rows.map((row, ri) => (
-                      <div key={row.id} className="rounded-lg border border-aom-border/60 bg-aom-card/30 p-2">
+                      <div
+                        key={row.id}
+                        onDragOver={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                        }}
+                        onDrop={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          const raw = e.dataTransfer.getData("text/plain");
+                          if (!raw.startsWith("row:")) return;
+                          const [, segPart, rowPart] = raw.split(":");
+                          const fromSi = Number.parseInt(segPart ?? "", 10);
+                          const fromRi = Number.parseInt(rowPart ?? "", 10);
+                          if (fromSi !== si || Number.isNaN(fromRi) || fromRi === ri) return;
+                          reorderRows(si, fromRi, ri);
+                        }}
+                        className="rounded-lg border border-aom-border/60 bg-aom-card/30 p-2"
+                      >
                         <div className="mb-2 flex flex-wrap items-center gap-2">
+                          <span
+                            draggable
+                            onDragStart={(e) => {
+                              e.stopPropagation();
+                              e.dataTransfer.effectAllowed = "move";
+                              e.dataTransfer.setData("text/plain", `row:${si}:${ri}`);
+                            }}
+                            className="cursor-grab select-none px-1 text-zinc-500 active:cursor-grabbing"
+                            title="Arrastar para reordenar linha"
+                            role="button"
+                            tabIndex={0}
+                          >
+                            ⋮⋮
+                          </span>
                           <span className="text-xs text-zinc-500">Linha {ri + 1}</span>
                           <label className="ml-auto flex items-center gap-1 text-xs text-zinc-400">
                             Tipo
@@ -524,25 +717,26 @@ export function SecretStartBuilderPage() {
                               ))}
                             </select>
                           </label>
-                          <button
-                            type="button"
-                            className="rounded border border-zinc-600 px-2 py-0.5 text-xs text-zinc-400 hover:bg-zinc-800"
-                            onClick={() =>
-                              setSegments((prev) =>
-                                prev.map((s, j) =>
-                                  j === si
-                                    ? {
-                                        ...s,
-                                        rows: s.rows.length <= 1 ? s.rows : s.rows.filter((_, k) => k !== ri),
-                                      }
-                                    : s,
-                                ),
-                              )
-                            }
-                            disabled={seg.rows.length <= 1}
-                          >
-                            Remover linha
-                          </button>
+                          {canShowRemoveButton(editorRowHasContent(row), seg.rows.length) ? (
+                            <button
+                              type="button"
+                              className="rounded border border-zinc-600 px-2 py-0.5 text-xs text-zinc-400 hover:bg-zinc-800"
+                              onClick={() =>
+                                setSegments((prev) =>
+                                  prev.map((s, j) =>
+                                    j === si
+                                      ? {
+                                          ...s,
+                                          rows: s.rows.length <= 1 ? s.rows : s.rows.filter((_, k) => k !== ri),
+                                        }
+                                      : s,
+                                  ),
+                                )
+                              }
+                            >
+                              Remover linha
+                            </button>
+                          ) : null}
                         </div>
                         <input
                           className={`${inputClass} mb-1`}
@@ -558,24 +752,36 @@ export function SecretStartBuilderPage() {
                           placeholder="Descrição (mini-markup / :aomr_…:)"
                         />
                         <div className="grid grid-cols-2 gap-1 sm:grid-cols-5">
-                          {(["food", "wood", "gold", "favor", "pop"] as const).map((field) => (
-                            <input
-                              key={field}
-                              className={`${inputClass} !py-1.5 text-xs`}
-                              value={row[field]}
-                              onChange={(e) => {
-                                const v = e.target.value;
-                                setSegments((prev) =>
-                                  prev.map((s, j) =>
-                                    j === si
-                                      ? { ...s, rows: s.rows.map((r, k) => (k === ri ? { ...r, [field]: v } : r)) }
-                                      : s,
-                                  ),
-                                );
-                              }}
-                              placeholder={field}
-                            />
-                          ))}
+                          {(["food", "wood", "gold", "favor", "pop"] as const).map((field) => {
+                            const iconSrc = getTokenAssetUrl(RESOURCE_FIELD_ICONS[field]);
+                            return (
+                              <div key={field} className="flex min-w-0 items-center gap-1">
+                                {iconSrc ? (
+                                  <img
+                                    src={iconSrc}
+                                    alt=""
+                                    className="h-4 w-4 shrink-0 object-contain opacity-90"
+                                    title={field}
+                                  />
+                                ) : null}
+                                <input
+                                  className={`${inputClass} min-w-0 !py-1.5 text-xs`}
+                                  value={row[field]}
+                                  onChange={(e) => {
+                                    const v = e.target.value;
+                                    setSegments((prev) =>
+                                      prev.map((s, j) =>
+                                        j === si
+                                          ? { ...s, rows: s.rows.map((r, k) => (k === ri ? { ...r, [field]: v } : r)) }
+                                          : s,
+                                      ),
+                                    );
+                                  }}
+                                  placeholder={field}
+                                />
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
                     ))}
@@ -611,6 +817,56 @@ export function SecretStartBuilderPage() {
                 </li>
               ))}
             </ul>
+          </section>
+
+          <section className="rounded-xl border border-aom-border bg-aom-card/40 p-4 sm:p-5">
+            <h2 className="mb-2 font-[family-name:var(--font-display)] text-base font-semibold text-amber-100/95">Importar</h2>
+            <p className="mb-3 text-sm text-zinc-400">
+              Cole o JSON exportado desta página (ou de <code className="text-zinc-500">starts_build_order.json</code>) ou escolha um arquivo{" "}
+              <code className="text-zinc-500">.json</code>. Metadados e segmentos substituem o formulário atual.
+            </p>
+            <textarea
+              className={cnTextarea()}
+              value={importText}
+              onChange={(e) => setImportText(e.target.value)}
+              rows={6}
+              placeholder='{ "titulo": "...", "structured": { "segments": [...] }, ... }'
+            />
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                className="rounded-lg border border-amber-600/50 bg-amber-500/10 px-4 py-2 text-sm text-amber-100 hover:bg-amber-500/20"
+                onClick={() => runImport(importText)}
+              >
+                Importar do texto
+              </button>
+              <label className="cursor-pointer rounded-lg border border-aom-border px-4 py-2 text-sm text-zinc-100 hover:bg-zinc-800">
+                Escolher .json
+                <input
+                  type="file"
+                  accept=".json,application/json"
+                  className="sr-only"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    e.target.value = "";
+                    if (!file) return;
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                      const text = String(reader.result ?? "");
+                      runImport(text, `Arquivo «${file.name}» importado.`);
+                    };
+                    reader.onerror = () =>
+                      setImportMessage({ kind: "err", text: "Não foi possível ler o arquivo." });
+                    reader.readAsText(file);
+                  }}
+                />
+              </label>
+            </div>
+            {importMessage ? (
+              <p className={`mt-2 text-sm ${importMessage.kind === "ok" ? "text-emerald-400" : "text-red-400"}`}>
+                {importMessage.text}
+              </p>
+            ) : null}
           </section>
 
           <section className="rounded-xl border border-aom-border bg-aom-card/40 p-4 sm:p-5">
