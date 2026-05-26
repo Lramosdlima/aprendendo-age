@@ -312,9 +312,12 @@ body {
 
 .start-structured .start-col-pop {
   width: 10%;
+  min-width: 3.6rem;
   max-width: 4.75rem;
   text-align: center;
   white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 .start-structured .start-row-hint td {
