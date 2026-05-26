@@ -1,5 +1,8 @@
+import { Fragment } from "react";
+
 import { StartAuthorAvatar } from "@/components/start/StartAuthorAvatar";
 import type { StartBuildOrderAuthor } from "@/data/catalog";
+import { cn } from "@/lib/cn";
 import { formatStartAuthors } from "@/lib/startAuthor";
 
 type Props = {
@@ -19,13 +22,23 @@ export function StartAuthorsMeta({ authors, separator = " · ", className }: Pro
   }
 
   return (
-    <span className={className ?? "inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1"}>
+    <span
+      className={cn("inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1.5", className)}
+    >
       {authors.map((author, i) => (
-        <span key={`${author.name}-${i}`} className="inline-flex min-w-0 items-center gap-1.5">
-          {i > 0 ? <span className="shrink-0 text-zinc-500" aria-hidden>{separator.trim()}</span> : null}
-          <StartAuthorAvatar name={author.name} imageUrl={author.imageUrl} />
-          <span className="min-w-0 truncate">{author.name}</span>
-        </span>
+        <Fragment key={`${author.name}-${i}`}>
+          {i > 0 ? (
+            <span className="shrink-0 self-center text-zinc-500" aria-hidden>
+              {separator}
+            </span>
+          ) : null}
+          <span className="inline-flex min-w-0 items-center gap-1.5">
+            <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center">
+              <StartAuthorAvatar name={author.name} imageUrl={author.imageUrl} className="h-5 w-5" />
+            </span>
+            <span className="min-w-0 truncate leading-5">{author.name}</span>
+          </span>
+        </Fragment>
       ))}
     </span>
   );
