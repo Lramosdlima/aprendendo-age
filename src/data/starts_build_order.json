@@ -4348,95 +4348,58 @@
   },
   {
     "id": 19,
-    "titulo": ":aomr_kronos_icon: Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games",
+    "titulo": "Cronos Rush - por MilanoGods",
     "author": [
       {
-        "name": "Morley Games",
-        "imageUrl": "https://yt3.googleusercontent.com/whaU7TrzxilqsCWJfKdcBCaEjRqpGL8Dt6JaWUqhrOJkjKnFmRDNYcqWswb5fb3OHzaTBAYg=s160-c-k-c0x00ffffff-no-rj"
+        "name": "MilanoGods",
+        "imageUrl": "https://yt3.googleusercontent.com/rAZOzuzKa5M6CLkMqo599Ah8TlkXFXu3Luz9GCoLR7PLW7tYQNCgGEhGAnMHAnE_iHsFEOtgyA=s160-c-k-c0x00ffffff-no-rj"
       }
     ],
     "god": [
       "Cronos"
     ],
-    "youtube": [
-      "https://youtu.be/UmLxeuRJokI"
-    ],
-    "descricao_curta": "Sequência de ações para o início do jogo da Arcaica até a Clássica.",
+    "image": "aomr_kronos_icon",
+    "youtube": ["https://youtu.be/444fM8mHQ8U?si=GwUMkXtS8E1E9Ngf"],
+    "descricao_curta": "Rascunho gerado pelo builder secreto.",
     "structured": {
       "segments": [
         {
           "lead": [
             {
               "kind": "callout",
-              "text": "Começa com 2 Cidadãos + 3 Oráculos"
+              "text": "Começa com 2 Cidadãos  + 3 Oráculos"
             }
           ],
           "table": [
             {
-              "description": "1 Cidadão Inicial na madeira",
-              "food": "-",
-              "wood": "1",
-              "gold": "-",
-              "favor": null,
-              "pop": "7/15",
-              "type": null
-            },
-            {
-              "description": "1 Cidadão Inicial no ouro",
-              "food": "-",
-              "wood": "-",
-              "gold": "1",
-              "favor": null,
-              "pop": "7/15",
-              "type": null
-            },
-            {
-              "description": "Explore com Oráculos → tecla de atalho padrão <code>/</code> para encontrá-los",
-              "food": null,
+              "description": "2 Cidadãos Iniciais na comida",
+              "food": "2",
               "wood": null,
               "gold": null,
               "favor": null,
-              "pop": null,
-              "type": "hint"
-            },
-            {
-              "description": "O Cidadão do ouro constrói 1 Mansão por perto da mina",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
+              "pop": "7/15",
               "type": null
             },
             {
-              "description": "+3 Cidadãos na comida",
-              "food": "3",
-              "wood": "-",
-              "gold": "-",
+              "description": "Próximo Cidadão no ouro",
+              "food": "2",
+              "wood": null,
+              "gold": "1",
               "favor": null,
-              "pop": "7/35",
+              "pop": "9/15",
               "type": null
             },
             {
-              "description": "O Cidadão Inicial na madeira sairá após coletar <highlight-brown>180</highlight-brown> para comida",
+              "description": "+2 Cidadãos na comida",
               "food": "4",
-              "wood": "0",
+              "wood": null,
               "gold": "1",
               "favor": null,
-              "pop": "9/35",
+              "pop": "13/15",
               "type": null
             },
             {
-              "description": "+1 Cidadão na comida",
-              "food": "5",
-              "wood": "0",
-              "gold": "1",
-              "favor": null,
-              "pop": "15/35",
-              "type": null
-            },
-            {
-              "description": "Construa o Templo com Cidadão do ouro (<strong>≈</strong><code>1:40</code>)",
+              "description": "Construa o Templo com Cidadão do ouro (ao alcançar 150 :goldaom:)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4445,43 +4408,34 @@
               "type": "blue"
             },
             {
-              "description": "Cidadão que fez o Templo mova para comida",
-              "food": "6",
-              "wood": "0",
-              "gold": "0",
-              "favor": null,
-              "pop": "17/35",
-              "type": null
-            },
-            {
-              "description": "+2 Cidadãos na comida",
-              "food": "7",
-              "wood": "0",
-              "gold": "0",
-              "favor": null,
-              "pop": "19/35",
-              "type": null
-            },
-            {
-              "description": "<strong>Subindo de Era por Prometeus</strong> (<strong>≈</strong><code><strong>2</strong></code><code>:35</code>)",
-              "food": null,
+              "description": "+1 Cidadão no Ouro",
+              "food": "4",
               "wood": null,
-              "gold": null,
+              "gold": "2",
               "favor": null,
-              "pop": null,
+              "pop": "15/15",
+              "type": null
+            },
+            {
+              "description": "Subindo de Era por Prometeus (<strong>≈</strong><code>2:00</code>)",
+              "food": "4",
+              "wood": null,
+              "gold": "1",
+              "favor": null,
+              "pop": "15/15",
               "type": "pink"
             },
             {
-              "description": "<strong>Realoque os Cidadãos</strong> da comida para construir Guilda depois para madeira",
-              "food": "3",
-              "wood": "3",
-              "gold": "2",
+              "description": "Realoque os Cidadãos da comida para madeira",
+              "food": "2",
+              "wood": "2",
+              "gold": "1",
               "favor": null,
-              "pop": "19/35",
+              "pop": "15/15",
               "type": null
             },
             {
-              "description": "Mova o Templo com <highlight-orange>Deslocamento do Tempo</highlight-orange> :time_shift_aom: de Cronos :aomr_kronos_icon: (para perto rival)",
+              "description": "Após os 80 de madeira sobe a Mansão como Cidadão da comida",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4490,7 +4444,7 @@
               "type": "hint"
             },
             {
-              "description": "<strong>Subiu Era</strong>(<strong>≈</strong><code>3:35</code>)",
+              "description": "Subiu Era (<strong>≈</strong><code>3:00</code>)",
               "food": null,
               "wood": null,
               "gold": null,
@@ -4499,67 +4453,65 @@
               "type": "pink"
             },
             {
-              "description": "Junte seus Oráculos e transforme 1 deles em herói com <highlight-purple>Valor</highlight-purple> :aomr_valor_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
+              "description": "<highlight-orange>Deslocamento do Tempo</highlight-orange> :time_shift_aom: de Cronos :aomr_kronos_icon: no Templo (para perto do inimigo)",
+              "food": null,
+              "wood": null,
+              "gold": null,
               "favor": null,
-              "pop": "-",
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Sobe o Contralquartel com da comida (ataque com Turmas :aomr_turma_icon:)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
               "type": null
             },
             {
-              "description": "Treine 2 <highlight-pink>Prometeanos</highlight-pink> :aomr_promethean_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
+              "description": "Foco em madeira e ouro enquanto ataca com <highlight-pink>Prometeanos</highlight-pink> :aomr_promethean_icon: e Turmas :aomr_turma_icon:",
+              "food": "2",
+              "wood": "+",
+              "gold": "+",
               "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": "Construa Contra-Quartel e envie ele com <highlight-orange>Deslocamento do Tempo</highlight-orange> :time_shift_aom:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
-              "type": null
-            },
-            {
-              "description": "Treine <highlight-brown>Turmas</highlight-brown> :aomr_turma_icon:",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
-              "favor": null,
-              "pop": "-",
+              "pop": null,
               "type": null
             },
             {
               "description": "Ataque com poder divino <highlight-purple>Descontrução</highlight-purple> :aomr_deconstruction_icon: <highlight-purple></highlight-purple> no Templo rival",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
+              "food": null,
+              "wood": null,
+              "gold": null,
               "favor": null,
-              "pop": "-",
-              "type": null
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "Pegue um Oráculo e transforme 1 herói com <highlight-purple>Valor</highlight-purple> :aomr_valor_icon:",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
             },
             {
               "description": "<highlight-gray>(volte se necessário e busque aplicar a vantagem)</highlight-gray>",
-              "food": "-",
-              "wood": "-",
-              "gold": "-",
+              "food": null,
+              "wood": null,
+              "gold": null,
               "favor": null,
-              "pop": "-",
+              "pop": null,
               "type": null
             }
-          ],
-          "footer": []
+          ]
         }
       ]
     },
-    "pantheon": "Atlante",
-    "slug": "cronos-rush-morley-games",
-    "image": "aomr_kronos_icon"
+    "slug": "cronos-rush-por-milanogods-milanogods",
+    "pantheon": "Atlante"
   },
   {
     "id": 20,
