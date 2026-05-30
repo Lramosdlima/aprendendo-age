@@ -39,7 +39,13 @@ function getFormRankPortraitPath(tierId: RankTierId): string {
 export { getFormRankPortraitPath };
 
 /** Classes em `index.css` — mesmo critério do form-retold (Ouro+). */
-function rankPortraitShineClass(tierId: RankTierId): string | undefined {
+function rankPortraitShineClass(tierId: RankTierId, compact = false): string | undefined {
+  if (compact) {
+    if (tierId === "ouro") return "shine-ouro-compact";
+    if (tierId === "esmeralda") return "shine-esmeralda-compact";
+    if (tierId === "diamante") return "shine-diamante-compact";
+    return undefined;
+  }
   if (tierId === "ouro") return "shine-ouro";
   if (tierId === "esmeralda") return "shine-esmeralda";
   if (tierId === "diamante") return "shine-diamante";
@@ -301,8 +307,8 @@ export function MolduraAgeAvatar({
           alt=""
           className={cn(
             "absolute left-1/2 top-1/2 z-[2] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain",
-            rankPortraitShineClass(tierId) ??
-              (compact ? "drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]" : "drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"),
+            rankPortraitShineClass(tierId, compact) ??
+              (compact ? "drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)]" : "drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"),
           )}
           width={compact ? 56 : 160}
           height={compact ? 56 : 160}

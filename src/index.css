@@ -407,6 +407,46 @@ body {
   animation: pulsar-diamante 1.2s ease-in-out infinite alternate;
 }
 
+/* Corrida AoM — brilho mais contido nos avatares compactos */
+@keyframes pulsar-ouro-compact {
+  from {
+    filter: drop-shadow(0 0 2px #ffd700) drop-shadow(0 0 4px #ffa500);
+  }
+  to {
+    filter: drop-shadow(0 0 5px #ffd700) drop-shadow(0 0 8px #ffa500);
+  }
+}
+
+@keyframes pulsar-esmeralda-compact {
+  from {
+    filter: drop-shadow(0 0 2px #50c878) drop-shadow(0 0 4px #2ecc71);
+  }
+  to {
+    filter: drop-shadow(0 0 5px #50c878) drop-shadow(0 0 8px #2ecc71);
+  }
+}
+
+@keyframes pulsar-diamante-compact {
+  from {
+    filter: drop-shadow(0 0 2px #00ffff) drop-shadow(0 0 5px #00bfff);
+  }
+  to {
+    filter: drop-shadow(0 0 6px #00ffff) drop-shadow(0 0 10px #00bfff);
+  }
+}
+
+.shine-ouro-compact {
+  animation: pulsar-ouro-compact 1.5s ease-in-out infinite alternate;
+}
+
+.shine-esmeralda-compact {
+  animation: pulsar-esmeralda-compact 1.5s ease-in-out infinite alternate;
+}
+
+.shine-diamante-compact {
+  animation: pulsar-diamante-compact 1.2s ease-in-out infinite alternate;
+}
+
 /* Corrida AoM — salto ocasional dos avatares na pista */
 @keyframes race-avatar-hop {
   0%,

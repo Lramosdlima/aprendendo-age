@@ -157,7 +157,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
       <p className="mb-8 text-center text-sm text-zinc-400">{t("pages.players.raceDesc")}</p>
 
       <div
-        className="relative mx-auto w-full max-w-md px-4 pb-8 pt-4 sm:px-8"
+        className="relative mx-auto w-full max-w-md overflow-visible px-4 pb-8 pt-6 sm:px-8"
         style={{ minHeight: `${trackMinHeight}px` }}
       >
         {/* Faixa útil da pista — marcos, linha e avatares compartilham 0% (base) e 100% (topo) */}
@@ -229,8 +229,8 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             );
           })}
 
-          {/* Jogadores na linha vertical */}
-          <div className="pointer-events-none absolute inset-0 z-30">
+          {/* Jogadores na linha vertical — overflow visible para o brilho da moldura */}
+          <div className="pointer-events-none absolute inset-0 z-30 overflow-visible">
             {placed.map((player) => (
               <RaceAvatar
                 key={player.id}

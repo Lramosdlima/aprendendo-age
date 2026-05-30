@@ -11,8 +11,11 @@ export const RACE_AVATAR_RENDER_PX = 64;
 /** Desconto top-8 + bottom-8 do container externo. */
 export const RACE_TRACK_LANE_INSET_PX = 64;
 
+/** Espaço extra no topo/base para o brilho da moldura não ser cortado. */
+export const RACE_AVATAR_GLOW_PAD_PX = 14;
+
 /** Classe Tailwind da faixa útil da pista (alinha com a linha vertical tracejada). */
-export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 top-8 bottom-8 overflow-hidden";
+export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 top-8 bottom-8";
 
 export type RaceTierBand = {
   tierId: RankTierId;
@@ -63,15 +66,15 @@ export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, in
   percent: tierSegmentStartPercent(index),
 }));
 
-/** Ponta superior — centro do avatar encostado no topo da faixa (sem vazar). */
+/** Ponta superior — reserva metade do avatar + folga para o brilho. */
 export function trackTopPercent(laneHeightPx: number): number {
-  const inset = ((RACE_AVATAR_RENDER_PX / 2) / laneHeightPx) * 100;
+  const inset = ((RACE_AVATAR_RENDER_PX / 2 + RACE_AVATAR_GLOW_PAD_PX) / laneHeightPx) * 100;
   return 100 - inset;
 }
 
-/** Ponta inferior — centro do avatar encostado na base da faixa. */
+/** Ponta inferior — reserva metade do avatar + folga para o brilho. */
 export function trackBottomPercent(laneHeightPx: number): number {
-  const inset = ((RACE_AVATAR_RENDER_PX / 2) / laneHeightPx) * 100;
+  const inset = ((RACE_AVATAR_RENDER_PX / 2 + RACE_AVATAR_GLOW_PAD_PX) / laneHeightPx) * 100;
   return inset;
 }
 
@@ -121,42 +124,42 @@ export function rrToTrackPercent(rr: number, maxRrInLobby: number): number {
   return clampPercent(bandBottom + t * bandSpan);
 }
 
-function resolveBandCollisions(
+function resolveCollisions(
   players: Array<{ id: string; rr: number }>,
   ideals: Map<string, number>,
-  bandMin: number,
-  bandMax: number,
+  trackMin: number,
+  trackMax: number,
   minGap: number,
 ): Map<string, number> {
   const positions = new Map<string, number>();
   const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
 
-  let prev = bandMin - minGap;
+  let prev = trackMin - minGap;
   for (const player of sorted) {
     let pos = Math.max(ideals.get(player.id)!, prev + minGap);
-    pos = Math.min(pos, bandMax);
+    pos = Math.min(pos, trackMax);
     positions.set(player.id, pos);
     prev = pos;
   }
 
   for (let i = sorted.length - 2; i >= 0; i -= 1) {
     const player = sorted[i]!;
-    const aboveId = sorted[i + 1]!.id;
-    let pos = Math.min(positions.get(player.id)!, positions.get(aboveId)! - minGap);
-    pos = Math.max(pos, bandMin);
+    const above = sorted[i + 1]!;
+    let pos = Math.min(positions.get(player.id)!, positions.get(above.id)! - minGap);
+    pos = Math.max(pos, trackMin);
     positions.set(player.id, pos);
   }
 
   return positions;
 }
 
+/** Centro a centro: altura do avatar + meio avatar de folga entre bordas. */
 function minVerticalGapPercent(laneHeightPx: number): number {
-  return (RACE_AVATAR_RENDER_PX / laneHeightPx) * 100;
+  return ((RACE_AVATAR_RENDER_PX * 1.5) / laneHeightPx) * 100;
 }
 
 /**
- * Posiciona avatares na linha vertical, alinhados às faixas de elo.
- * Colisões são resolvidas dentro de cada faixa, sem empurrar jogadores para outros elos.
+ * Posiciona avatares na linha vertical, alinhados ao RR e com folga mínima entre eles.
  */
 export function layoutRaceAvatars(
   players: Array<{ id: string; rr: number }>,
@@ -169,35 +172,16 @@ export function layoutRaceAvatars(
   const trackTop = trackTopPercent(laneHeightPx);
   const minGap = minVerticalGapPercent(laneHeightPx);
 
-  const byBand = new Map<number, Array<{ id: string; rr: number }>>();
-  for (const player of players) {
-    const { index } = findTierBand(player.rr);
-    const list = byBand.get(index) ?? [];
-    list.push(player);
-    byBand.set(index, list);
-  }
-
-  const positions = new Map<string, number>();
-
-  for (const [bandIndex, bandPlayers] of byBand) {
-    const bandMin = Math.max(tierBandBottomPercent(bandIndex), trackBottom);
-    const bandMax = Math.min(tierBandTopPercent(bandIndex), trackTop);
-
-    const ideals = new Map<string, number>();
-    for (const player of bandPlayers) {
-      ideals.set(
-        player.id,
-        clampPercent(clamp(rrToTrackPercent(player.rr, maxRr), bandMin, bandMax)),
-      );
-    }
-
-    const resolved = resolveBandCollisions(bandPlayers, ideals, bandMin, bandMax, minGap);
-    for (const [id, pos] of resolved) {
-      positions.set(id, pos);
-    }
-  }
-
   const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
+  const ideals = new Map<string, number>();
+  for (const player of sorted) {
+    ideals.set(
+      player.id,
+      clampPercent(clamp(rrToTrackPercent(player.rr, maxRr), trackBottom, trackTop)),
+    );
+  }
+
+  const positions = resolveCollisions(sorted, ideals, trackBottom, trackTop, minGap);
 
   return sorted.map((player) => {
     const bottomPercent = positions.get(player.id)!;
@@ -214,8 +198,12 @@ export function raceTrackMinHeightPx(_playerCount: number, players: Array<{ rr: 
   const baseSegmentPx = 168;
   const laneBase = baseSegmentPx * RACE_TIER_BANDS.length;
   const count = Math.max(players.length, 1);
-  const neededLane = Math.ceil(count * RACE_AVATAR_RENDER_PX) + 160;
-  return Math.min(Math.max(laneBase + neededLane + RACE_TRACK_LANE_INSET_PX, 960), 2400);
+  const minGapPx = RACE_AVATAR_RENDER_PX * 1.5;
+  const neededLane = Math.ceil(count * minGapPx) + 200;
+  return Math.min(
+    Math.max(laneBase + neededLane + RACE_TRACK_LANE_INSET_PX + RACE_AVATAR_GLOW_PAD_PX * 2, 960),
+    3200,
+  );
 }
 
 /** @deprecated Mantido para compatibilidade; avatares ficam na linha central. */
