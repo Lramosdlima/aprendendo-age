@@ -186,7 +186,6 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             if (!tier) return null;
             const iconSrc = getTokenAssetUrl(tier.token);
             const theme = TIER_ACHIEVEMENT_THEME[marker.tierId];
-            const isBronzeStart = marker.tierId === "bronze";
 
             return (
               <div
@@ -213,18 +212,9 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
                     <p className="mt-0.5 font-mono text-[9px] text-zinc-500">{tier.rrBand}</p>
                   </div>
 
-                  <div
-                    className={cn(
-                      "absolute bottom-0 flex items-center gap-2",
-                      isBronzeStart ? "left-1/2" : "left-[7.5rem] sm:left-[8.25rem]",
-                      "right-0",
-                    )}
-                  >
+                  <div className="absolute bottom-0 left-[7.5rem] right-0 flex items-center gap-2 sm:left-[8.25rem]">
                     <div
-                      className={cn(
-                        "h-px min-w-0 flex-1 bg-gradient-to-r to-transparent",
-                        isBronzeStart ? "from-amber-500/55" : "from-amber-500/40",
-                      )}
+                      className="h-px min-w-0 flex-1 bg-gradient-to-r from-amber-500/40 to-transparent"
                       aria-hidden
                     />
                     <div
