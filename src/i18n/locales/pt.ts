@@ -618,6 +618,9 @@ export const ptMessages: TranslationTree = {
       raceStart: "Largada",
       raceFinish: "Meta",
       racePlayerRr: "{{name}}, RR {{rr}}",
+      raceAvatarOpen: "Ver perfil de {{name}} na corrida",
+      racePopoverRr: "RR atual",
+      racePopoverRank: "Rank",
       raceSnapshotHint: "Posições baseadas no snapshot RR salvo no cadastro/perfil.",
     },
     admin: {

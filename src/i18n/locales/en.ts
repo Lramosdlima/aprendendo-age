@@ -615,6 +615,9 @@ export const enMessages: TranslationTree = {
       raceStart: "Start",
       raceFinish: "Finish",
       racePlayerRr: "{{name}}, RR {{rr}}",
+      raceAvatarOpen: "View {{name}} on the race track",
+      racePopoverRr: "Current RR",
+      racePopoverRank: "Rank",
       raceSnapshotHint: "Positions based on the RR snapshot saved at registration/profile sync.",
     },
     admin: {

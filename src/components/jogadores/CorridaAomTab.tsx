@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
+import { RacePlayerPopover } from "@/components/jogadores/RacePlayerPopover";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
@@ -49,9 +50,13 @@ function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
 function RaceAvatar({
   player,
   hopping,
+  selected,
+  onSelect,
 }: {
   player: PlacedPlayer;
   hopping: boolean;
+  selected: boolean;
+  onSelect: (player: PlacedPlayer, anchor: HTMLElement) => void;
 }) {
   const { t } = useTranslation();
   const cls = getRankClassification(player.rr);
@@ -60,19 +65,25 @@ function RaceAvatar({
 
   return (
     <div
-      className="group absolute flex flex-col items-center"
+      className="absolute flex flex-col items-center"
       style={{
         bottom: `${player.bottomPercent}%`,
         left: "50%",
         transform: "translate(-50%, 50%)",
-        zIndex: player.zIndex,
+        zIndex: selected ? 250 : player.zIndex,
       }}
-      title={`${label} · RR ${player.rr}`}
     >
-      <div
+      <button
+        type="button"
+        aria-expanded={selected}
+        aria-label={t("pages.players.raceAvatarOpen", { name: label })}
+        onClick={(e) => onSelect(player, e.currentTarget)}
         className={cn(
-          "race-avatar-hop relative h-11 w-11 rounded-full border-2 bg-zinc-950 p-0.5 shadow-lg shadow-black/50 sm:h-12 sm:w-12",
+          "race-avatar-hop relative rounded-full border-2 bg-zinc-950 p-0.5 shadow-lg shadow-black/50 transition",
+          "h-11 w-11 cursor-pointer sm:h-12 sm:w-12",
+          "hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
           theme.stepRing,
+          selected && "ring-2 ring-amber-300/70 ring-offset-2 ring-offset-zinc-950",
           hopping && "is-hopping",
         )}
       >
@@ -90,10 +101,7 @@ function RaceAvatar({
             ?
           </div>
         )}
-      </div>
-      <span className="pointer-events-none mt-1 max-w-[5.5rem] truncate rounded bg-black/55 px-1.5 py-0.5 text-[10px] font-medium text-zinc-200 opacity-0 transition-opacity group-hover:opacity-100">
-        {label}
-      </span>
+      </button>
       <span className="sr-only">
         {t("pages.players.racePlayerRr", { name: label, rr: player.rr })}
       </span>
@@ -125,6 +133,12 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   }, [players, trackMinHeight]);
 
   const hoppingIds = useRandomHopPlayerIds(placed.map((p) => p.id));
+
+  const [popover, setPopover] = useState<{ player: PlacedPlayer; anchor: HTMLElement } | null>(null);
+
+  const handleAvatarSelect = (player: PlacedPlayer, anchor: HTMLElement) => {
+    setPopover((prev) => (prev?.player.id === player.id ? null : { player, anchor }));
+  };
 
   if (players.length === 0) {
     return (
@@ -207,9 +221,23 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         {/* Jogadores na pista */}
         <div className="absolute bottom-8 left-1/2 top-8 w-0 -translate-x-1/2">
           {placed.map((player) => (
-            <RaceAvatar key={player.id} player={player} hopping={hoppingIds.has(player.id)} />
+            <RaceAvatar
+              key={player.id}
+              player={player}
+              hopping={hoppingIds.has(player.id)}
+              selected={popover?.player.id === player.id}
+              onSelect={handleAvatarSelect}
+            />
           ))}
         </div>
+
+        {popover ? (
+          <RacePlayerPopover
+            player={popover.player}
+            anchorEl={popover.anchor}
+            onClose={() => setPopover(null)}
+          />
+        ) : null}
 
         {/* Meta (topo) */}
         <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 text-center">
