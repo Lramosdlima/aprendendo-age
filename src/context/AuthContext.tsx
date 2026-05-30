@@ -62,6 +62,11 @@ const PROFILE_SELECT =
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
+/** GoTrue mantém lock durante onAuthStateChange — adiar evita deadlock ao consultar profiles. */
+function deferAuthSideEffect(fn: () => void): void {
+  window.setTimeout(fn, 0);
+}
+
 function mapRowToProfile(
   user: User,
   row: {
@@ -123,19 +128,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const loadProfileForUser = useCallback(
     async (u: User) => {
-      if (!supabase) return;
+      if (!supabase) {
+        setProfileLoadState("ready");
+        return;
+      }
       setProfileLoadState("loading");
       setProfile(mapRowToProfile(u, null));
       setStatus("authenticated");
 
-      const { data, error } = await supabase.from("profiles").select(PROFILE_SELECT).eq("id", u.id).single();
+      try {
+        const { data, error } = await supabase.from("profiles").select(PROFILE_SELECT).eq("id", u.id).single();
 
-      if (!error && data) {
-        setProfile(mapRowToProfile(u, data));
-      } else {
+        if (!error && data) {
+          setProfile(mapRowToProfile(u, data));
+        } else {
+          setProfile(mapRowToProfile(u, null));
+        }
+      } catch {
         setProfile(mapRowToProfile(u, null));
+      } finally {
+        setProfileLoadState("ready");
       }
-      setProfileLoadState("ready");
     },
     [supabase],
   );
@@ -234,26 +247,35 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     let cancelled = false;
 
-    async function applySession(s: Session | null) {
+    function scheduleProfileLoad(u: User) {
+      deferAuthSideEffect(() => {
+        if (cancelled) return;
+        void loadProfileForUser(u);
+      });
+    }
+
+    function applySession(s: Session | null) {
       if (!s?.user) {
         clearLocalAuth();
         return;
       }
       setUser(s.user);
       setSession(s);
-      await loadProfileForUser(s.user);
+      scheduleProfileLoad(s.user);
     }
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (_event, sess) => {
+    } = supabase.auth.onAuthStateChange((event, sess) => {
       if (cancelled) return;
-      await applySession(sess);
-    });
 
-    void supabase.auth.getSession().then(({ data: { session: sess } }) => {
-      if (cancelled) return;
-      void applySession(sess);
+      if (event === "TOKEN_REFRESHED" && sess?.user) {
+        setUser(sess.user);
+        setSession(sess);
+        return;
+      }
+
+      applySession(sess);
     });
 
     return () => {
