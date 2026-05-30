@@ -613,13 +613,13 @@ export const ptMessages: TranslationTree = {
       unconfigured:
         "Supabase não configurado neste deploy. Defina VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY na Vercel e faça redeploy.",
       raceDesc:
-        "Pista vertical de elos — quanto mais alto, maior o RR. Avatares saltam de vez em quando na corrida!",
+        "Pista de elos — quanto mais alto, maior o RR. Clique nos avatares para ver mais detalhes!",
       raceEmpty: "Nenhum jogador com AoM Stats sincronizado ainda. Vincule seu perfil em Configurações.",
       racePlayerRr: "{{name}}, RR {{rr}}",
       raceAvatarOpen: "Ver perfil de {{name}} na corrida",
       racePopoverRr: "RR atual",
       racePopoverRank: "Rank",
-      raceSnapshotHint: "Posições baseadas no snapshot RR salvo no cadastro/perfil.",
+      raceSnapshotHint: "As posições e rr são atualizadas com tempo.",
     },
     admin: {
       secretBuilder: {

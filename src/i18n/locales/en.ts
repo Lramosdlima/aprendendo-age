@@ -610,13 +610,13 @@ export const enMessages: TranslationTree = {
       unconfigured:
         "Supabase is not configured for this deploy. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY on Vercel and redeploy.",
       raceDesc:
-        "Vertical tier track — the higher the position, the higher the RR. Avatars hop along the track from time to time!",
+        "Tier track — the higher the position, the higher the RR. Click avatars for more details!",
       raceEmpty: "No players with synced AoM Stats yet. Link your profile in Settings.",
       racePlayerRr: "{{name}}, RR {{rr}}",
       raceAvatarOpen: "View {{name}} on the race track",
       racePopoverRr: "Current RR",
       racePopoverRank: "Rank",
-      raceSnapshotHint: "Positions based on the RR snapshot saved at registration/profile sync.",
+      raceSnapshotHint: "Positions and RR are updated over time.",
     },
     admin: {
       secretBuilder: {
