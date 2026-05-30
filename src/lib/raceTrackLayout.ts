@@ -75,10 +75,6 @@ export function trackBottomPercent(laneHeightPx: number): number {
   return inset;
 }
 
-function trackUsableSpanPercent(laneHeightPx: number): number {
-  return trackTopPercent(laneHeightPx) - trackBottomPercent(laneHeightPx);
-}
-
 /** Altura útil da faixa a partir do minHeight do container externo. */
 export function raceTrackLaneHeightPx(outerHeightPx: number): number {
   return Math.max(outerHeightPx - RACE_TRACK_LANE_INSET_PX, 320);
