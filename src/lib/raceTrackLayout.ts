@@ -35,6 +35,7 @@ const SEGMENT_HEIGHT_PERCENT = 100 / RACE_TIER_BANDS.length;
 
 export type RaceAvatarPlacement = {
   id: string;
+  /** Centro do avatar (% a partir da base da pista). */
   bottomPercent: number;
   zIndex: number;
 };
@@ -132,22 +133,49 @@ function resolveCollisions(
   minGap: number,
 ): Map<string, number> {
   const positions = new Map<string, number>();
-  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
+  const sorted = [...players].sort(
+    (a, b) => ideals.get(a.id)! - ideals.get(b.id)! || a.rr - b.rr || a.id.localeCompare(b.id),
+  );
 
-  let prev = trackMin - minGap;
   for (const player of sorted) {
-    let pos = Math.max(ideals.get(player.id)!, prev + minGap);
-    pos = Math.min(pos, trackMax);
-    positions.set(player.id, pos);
-    prev = pos;
+    positions.set(player.id, ideals.get(player.id)!);
   }
 
-  for (let i = sorted.length - 2; i >= 0; i -= 1) {
-    const player = sorted[i]!;
-    const above = sorted[i + 1]!;
-    let pos = Math.min(positions.get(player.id)!, positions.get(above.id)! - minGap);
-    pos = Math.max(pos, trackMin);
-    positions.set(player.id, pos);
+  for (let pass = 0; pass < sorted.length; pass += 1) {
+    let changed = false;
+
+    for (let i = 0; i < sorted.length - 1; i += 1) {
+      const lower = sorted[i]!;
+      const higher = sorted[i + 1]!;
+      const idealLow = ideals.get(lower.id)!;
+      const idealHigh = ideals.get(higher.id)!;
+      let posLow = positions.get(lower.id)!;
+      let posHigh = positions.get(higher.id)!;
+
+      if (posHigh - posLow >= minGap) continue;
+
+      // RR muito próximos — mantém centro no marco de cada um (pode sobrepor levemente)
+      if (idealHigh - idealLow < minGap) continue;
+
+      posHigh = idealHigh;
+      posLow = Math.min(idealLow, posHigh - minGap);
+      posLow = Math.max(trackMin, posLow);
+
+      if (posLow !== positions.get(lower.id)! || posHigh !== positions.get(higher.id)!) {
+        positions.set(lower.id, posLow);
+        positions.set(higher.id, posHigh);
+        changed = true;
+      }
+    }
+
+    if (!changed) break;
+  }
+
+  for (const player of sorted) {
+    positions.set(
+      player.id,
+      clampPercent(clamp(positions.get(player.id)!, trackMin, trackMax)),
+    );
   }
 
   return positions;
@@ -175,10 +203,7 @@ export function layoutRaceAvatars(
   const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
   const ideals = new Map<string, number>();
   for (const player of sorted) {
-    ideals.set(
-      player.id,
-      clampPercent(clamp(rrToTrackPercent(player.rr, maxRr), trackBottom, trackTop)),
-    );
+    ideals.set(player.id, rrToTrackPercent(player.rr, maxRr));
   }
 
   const positions = resolveCollisions(sorted, ideals, trackBottom, trackTop, minGap);

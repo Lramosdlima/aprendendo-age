@@ -50,6 +50,7 @@ function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
   return hoppingIds;
 }
 
+/** Centro do avatar na linha do RR (`bottom` + translateY 50%). */
 function raceAvatarTransform(): string {
   return "translate(-50%, 50%)";
 }
