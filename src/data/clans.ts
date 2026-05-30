@@ -1,3 +1,5 @@
+import clansJson from "./locale/pt/clans.json";
+
 /**
  * Lista de clãs exibida em `/clans`.
  * Para logo: coloque o arquivo em `public/clans/` (ex.: `public/clans/cbb.png`)
@@ -10,9 +12,4 @@ export type ClanEntry = {
   logoSrc?: string;
 };
 
-export const clans: ClanEntry[] = [
-  { slug: "caok", tag: "CaOK", name: "Clan Age Of Kings" },
-  { slug: "cbb", tag: "CBB", name: "Clan Bom De Briga" },
-  { slug: "psgm", tag: "PSGM", name: "PROSTAGMA" },
-  { slug: "disc", tag: "DISC", name: "DISCÓRDIA" },
-];
+export const clans = clansJson as ClanEntry[];

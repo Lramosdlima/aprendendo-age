@@ -5,26 +5,26 @@
     "ingles": "Hoplite",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Soft-Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "1.25"
       }
@@ -38,7 +38,7 @@
     "construcao": [
       {
         "id": 35,
-        "nome": "Academia Military"
+        "nome": "Academia Militar"
       }
     ],
     "comida": 50,
@@ -50,11 +50,11 @@
     "forca_atributos": 118.3,
     "categoria": [
       {
-        "type": "Soft-Counter Cavalry",
+        "type": "Soft-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_hoplite_icon"
   },
@@ -64,20 +64,20 @@
     "ingles": "Hippeus",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -97,7 +97,7 @@
     "construcao": [
       {
         "id": 37,
-        "nome": "Estábulo"
+        "nome": "Stable"
       }
     ],
     "comida": 40,
@@ -114,7 +114,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_hippeus_icon"
   },
   {
@@ -130,19 +130,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.25"
       }
@@ -157,7 +157,7 @@
     "construcao": [
       {
         "id": 36,
-        "nome": "Campo de Archers"
+        "nome": "Archers Field"
       }
     ],
     "comida": 0,
@@ -169,12 +169,12 @@
     "forca_atributos": 93,
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_toxotes_icon"
   },
   {
@@ -183,26 +183,26 @@
     "ingles": "Hypapist",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "5"
       }
@@ -216,7 +216,7 @@
     "construcao": [
       {
         "id": 35,
-        "nome": "Academia Military"
+        "nome": "Academia Militar"
       }
     ],
     "comida": 60,
@@ -228,11 +228,11 @@
     "forca_atributos": 95.3,
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_hypaspist_icon"
   },
@@ -242,26 +242,26 @@
     "ingles": "Prodromos",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "3.5"
       }
@@ -275,7 +275,7 @@
     "construcao": [
       {
         "id": 37,
-        "nome": "Estábulo"
+        "nome": "Stable"
       }
     ],
     "comida": 0,
@@ -287,12 +287,12 @@
     "forca_atributos": 127.153846153846,
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_prodromos_icon"
   },
   {
@@ -308,13 +308,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -335,7 +335,7 @@
     "construcao": [
       {
         "id": 36,
-        "nome": "Campo de Archers"
+        "nome": "Archers Field"
       }
     ],
     "comida": 70,
@@ -352,7 +352,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_peltast_icon"
   },
   {
@@ -361,7 +361,7 @@
     "ingles": "Axeman",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -374,13 +374,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "4"
       }
@@ -406,11 +406,11 @@
     "forca_atributos": 95.8,
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_axeman_icon"
   },
@@ -420,7 +420,7 @@
     "ingles": "Spearman",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -433,13 +433,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "1.75"
       }
@@ -465,11 +465,11 @@
     "forca_atributos": 94,
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_spearman_icon"
   },
@@ -492,7 +492,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -530,7 +530,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_slinger_icon"
   },
   {
@@ -539,7 +539,7 @@
     "ingles": "Camel Rider",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -552,10 +552,10 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
         "type": "Artilharia",
@@ -563,7 +563,7 @@
         "value": "1.25"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "2"
       }
@@ -577,7 +577,7 @@
     "construcao": [
       {
         "id": 58,
-        "nome": "Fortress Migdol"
+        "nome": "Migdol Fortress"
       }
     ],
     "comida": 50,
@@ -593,12 +593,12 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Soft-Counter Cavalry",
+        "type": "Soft-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalry :aomr_type_cavalry_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_camel_rider_icon"
   },
   {
@@ -611,7 +611,7 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -624,13 +624,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.5"
       }
@@ -645,7 +645,7 @@
     "construcao": [
       {
         "id": 58,
-        "nome": "Fortress Migdol"
+        "nome": "Migdol Fortress"
       }
     ],
     "comida": 0,
@@ -657,12 +657,12 @@
     "forca_atributos": 111.333333333333,
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon: | Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_chariot_archer_icon"
   },
   {
@@ -671,7 +671,7 @@
     "ingles": "War Elephant",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -684,13 +684,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Soft-Artillery :aomr_type_archer_icon:",
     "multiplicador": [
       {
-        "type": "Construção",
+        "type": "Building",
         "icon": "aomr_type_building_icon",
         "value": "4"
       },
@@ -709,7 +709,7 @@
     "construcao": [
       {
         "id": 58,
-        "nome": "Fortress Migdol"
+        "nome": "Migdol Fortress"
       }
     ],
     "comida": 180,
@@ -726,7 +726,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_war_elephant_icon"
   },
   {
@@ -735,20 +735,20 @@
     "ingles": "Berserker",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -762,11 +762,11 @@
     "construcao": [
       {
         "id": 39,
-        "nome": "House Comunal"
+        "nome": "Casa Comunal"
       },
       {
         "id": 4,
-        "nome": "Centro Urbano (Norse)"
+        "nome": "Urban Center (Nordic)"
       }
     ],
     "comida": 50,
@@ -776,7 +776,7 @@
     "tempo_treinamento": 9,
     "velocidade_movimento": 4.8,
     "forca_atributos": 88.085714285714,
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_berserk_icon"
   },
@@ -790,26 +790,26 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "3"
       }
@@ -824,7 +824,7 @@
     "construcao": [
       {
         "id": 39,
-        "nome": "House Comunal"
+        "nome": "Casa Comunal"
       }
     ],
     "comida": 0,
@@ -836,12 +836,12 @@
     "forca_atributos": 106,
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_throwing_axeman_icon"
   },
   {
@@ -850,26 +850,26 @@
     "ingles": "Hirdman",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "4"
       }
@@ -883,7 +883,7 @@
     "construcao": [
       {
         "id": 39,
-        "nome": "House Comunal"
+        "nome": "Casa Comunal"
       }
     ],
     "comida": 40,
@@ -895,11 +895,11 @@
     "forca_atributos": 81.3,
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_hirdman_icon"
   },
@@ -909,20 +909,20 @@
     "ingles": "Raiding Cavalry",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -942,7 +942,7 @@
     "construcao": [
       {
         "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Great Hall"
       }
     ],
     "comida": 40,
@@ -959,7 +959,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_raiding_cavalry_icon"
   },
   {
@@ -968,20 +968,20 @@
     "ingles": "Huscarl",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -1018,7 +1018,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_huskarl_icon"
   },
   {
@@ -1027,20 +1027,20 @@
     "ingles": "Jarl",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1054,7 +1054,7 @@
     "construcao": [
       {
         "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Great Hall"
       }
     ],
     "comida": 50,
@@ -1065,7 +1065,7 @@
     "velocidade_movimento": 4.8,
     "forca_atributos": 188.3,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_jarl_icon"
   },
   {
@@ -1074,7 +1074,7 @@
     "ingles": "Murmillo",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1087,7 +1087,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1101,7 +1101,7 @@
     "construcao": [
       {
         "id": 41,
-        "nome": "Quartel Military"
+        "nome": "Quartel Militar"
       }
     ],
     "comida": 55,
@@ -1111,7 +1111,7 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 4.5,
     "forca_atributos": 109.75,
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_murmillo_icon"
   },
@@ -1121,7 +1121,7 @@
     "ingles": "Katapeltes",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1134,13 +1134,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "4"
       }
@@ -1166,11 +1166,11 @@
     "forca_atributos": 109.5,
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_katapeltes_icon"
   },
@@ -1184,7 +1184,7 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -1197,7 +1197,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -1235,7 +1235,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon: | Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon: | Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_turma_icon"
   },
   {
@@ -1248,7 +1248,7 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       }
     ],
@@ -1261,13 +1261,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "5"
       },
@@ -1299,12 +1299,12 @@
     "forca_atributos": 94.8,
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_cheiroballista_icon"
   },
   {
@@ -1313,7 +1313,7 @@
     "ingles": "Contarius",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -1326,7 +1326,7 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -1346,7 +1346,7 @@
     "construcao": [
       {
         "id": 41,
-        "nome": "Quartel Military"
+        "nome": "Quartel Militar"
       }
     ],
     "comida": 65,
@@ -1363,7 +1363,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_contarius_icon"
   },
   {
@@ -1385,13 +1385,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.25"
       }
@@ -1406,7 +1406,7 @@
     "construcao": [
       {
         "id": 41,
-        "nome": "Quartel Military"
+        "nome": "Quartel Militar"
       }
     ],
     "comida": 0,
@@ -1418,12 +1418,12 @@
     "forca_atributos": 88.5,
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_arcus_icon"
   },
   {
@@ -1432,7 +1432,7 @@
     "ingles": "Dao Swordsman",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1445,7 +1445,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -1459,7 +1459,7 @@
     "construcao": [
       {
         "id": 43,
-        "nome": "Campo Military"
+        "nome": "Campo Militar"
       }
     ],
     "comida": 30,
@@ -1469,7 +1469,7 @@
     "tempo_treinamento": 14,
     "velocidade_movimento": 3.8,
     "forca_atributos": 142.8,
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_dao_swordsman_icon"
   },
@@ -1479,7 +1479,7 @@
     "ingles": "Ge Halberdier",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1492,13 +1492,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "5"
       }
@@ -1512,7 +1512,7 @@
     "construcao": [
       {
         "id": 43,
-        "nome": "Campo Military"
+        "nome": "Campo Militar"
       }
     ],
     "comida": 50,
@@ -1524,11 +1524,11 @@
     "forca_atributos": 90.136363636364,
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_ge_halberdier_icon"
   },
@@ -1551,7 +1551,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -1572,7 +1572,7 @@
     "construcao": [
       {
         "id": 43,
-        "nome": "Campo Military"
+        "nome": "Campo Militar"
       }
     ],
     "comida": 0,
@@ -1589,7 +1589,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_wuzu_javelineer_icon"
   },
   {
@@ -1611,18 +1611,18 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Hard-Counter Infantry :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "3"
       },
       {
-        "type": "Construção",
+        "type": "Building",
         "icon": "aomr_type_building_icon",
         "value": "6"
       }
@@ -1637,7 +1637,7 @@
     "construcao": [
       {
         "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "Machine Workshop"
       }
     ],
     "comida": 0,
@@ -1649,12 +1649,12 @@
     "forca_atributos": 104,
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_fire_archer_icon"
   },
   {
@@ -1676,7 +1676,7 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1691,7 +1691,7 @@
     "construcao": [
       {
         "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "Machine Workshop"
       }
     ],
     "comida": 0,
@@ -1701,8 +1701,8 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 3.8,
     "forca_atributos": 100.157142857143,
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_chu_ko_nu_icon"
   },
   {
@@ -1711,7 +1711,7 @@
     "ingles": "White Horse Cavalry",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -1724,7 +1724,7 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -1761,7 +1761,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_white_horse_cavalry_icon"
   },
   {
@@ -1770,7 +1770,7 @@
     "ingles": "Samurai",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1783,13 +1783,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.5"
       }
@@ -1812,11 +1812,11 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.2,
     "forca_atributos": 143.533333333333,
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1828,11 +1828,11 @@
     "ingles": "Shinobi",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1845,10 +1845,10 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soft-Artilharia :aomr_type_archer_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Soft-Artillery :aomr_type_archer_icon:",
     "multiplicador": [
       {
         "type": "Artilharia",
@@ -1891,14 +1891,14 @@
     "ingles": "Myrmidon",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -1910,7 +1910,7 @@
     "counter_de": "Todos👥",
     "multiplicador": [
       {
-        "type": "Greek",
+        "type": "Grego",
         "icon": "aomr_pantheon_greeks_icon",
         "value": "10 (dano divino) ignora armaduras"
       }
@@ -1925,7 +1925,7 @@
     "construcao": [
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "comida": 70,
@@ -1935,7 +1935,7 @@
     "tempo_treinamento": 6.5,
     "velocidade_movimento": 4.5,
     "forca_atributos": 171.428571428571,
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "god_dono": [
       {
@@ -1958,7 +1958,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -1967,10 +1967,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Soft-Infantry :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Construção",
+        "type": "Building",
         "icon": "aomr_type_building_icon",
         "value": "20"
       }
@@ -1985,7 +1985,7 @@
     "construcao": [
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "comida": 0,
@@ -1997,12 +1997,12 @@
     "forca_atributos": 67.514285714286,
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "god_dono": [
       {
         "id": 3,
@@ -2017,14 +2017,14 @@
     "ingles": "Hetairos",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -2050,7 +2050,7 @@
     "construcao": [
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "comida": 50,
@@ -2061,7 +2061,7 @@
     "velocidade_movimento": 5,
     "forca_atributos": 137,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "god_dono": [
       {
         "id": 2,
@@ -2076,7 +2076,7 @@
     "ingles": "Fanatic",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -2092,15 +2092,15 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Soft-Cavalry :aomr_type_cavalry_icon:, Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.5"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "1.5"
       }
@@ -2114,7 +2114,7 @@
     "construcao": [
       {
         "id": 60,
-        "nome": "Palácio"
+        "nome": "Palace"
       }
     ],
     "comida": 75,
@@ -2126,15 +2126,15 @@
     "forca_atributos": 149.8,
     "categoria": [
       {
-        "type": "Soft-Counter Cavalry",
+        "type": "Soft-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       },
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_fanatic_icon"
   },
@@ -2144,7 +2144,7 @@
     "ingles": "Tiger Cavalry",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -2160,7 +2160,7 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
         "type": "Artilharia",
@@ -2168,7 +2168,7 @@
         "value": "1.5"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "2"
       }
@@ -2198,12 +2198,12 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Soft-Counter Cavalry",
+        "type": "Soft-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalry :aomr_type_cavalry_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Artilharia :aomr_type_archer_icon: | Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_tiger_cavalry_icon"
   },
   {
@@ -2227,13 +2227,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "multiplicador": [],
@@ -2277,19 +2277,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -2342,19 +2342,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -2401,7 +2401,7 @@
     "ingles": "Ciclope",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -2412,19 +2412,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -2484,13 +2484,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -2525,7 +2525,7 @@
     "god_dono": [
       {
         "id": 31,
-        "nome": "Anúbis"
+        "nome": "Anubis"
       }
     ],
     "icon": "aomr_anubite_icon"
@@ -2549,13 +2549,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -2615,13 +2615,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -2675,19 +2675,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -2741,19 +2741,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -2796,8 +2796,8 @@
   },
   {
     "id": 49,
-    "nome": "Valquíria",
-    "ingles": "Valquíria",
+    "nome": "Valkyrie",
+    "ingles": "Valkyrie",
     "tipo": [
       {
         "type": "Curandeiro✨",
@@ -2811,19 +2811,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -2876,19 +2876,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -2954,13 +2954,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -3003,8 +3003,8 @@
   },
   {
     "id": 53,
-    "nome": "Autômato",
-    "ingles": "Autômato",
+    "nome": "Automaton",
+    "ingles": "Automaton",
     "tipo": [
       {
         "type": "Mythic",
@@ -3020,13 +3020,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -3093,7 +3093,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3145,13 +3145,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -3210,13 +3210,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -3275,13 +3275,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -3335,24 +3335,24 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "12x (hack)"
       },
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "9x (pierce)"
       }
@@ -3367,7 +3367,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -3382,7 +3382,7 @@
     "tempo_treinamento": 5,
     "velocidade_movimento": 4.3,
     "forca_atributos": 202.3,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -3405,24 +3405,24 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "12x (hack)"
       },
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "9x (pierce)"
       }
@@ -3437,7 +3437,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -3452,7 +3452,7 @@
     "tempo_treinamento": 5,
     "velocidade_movimento": 4.3,
     "forca_atributos": 199.8,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -3475,24 +3475,24 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "12x (hack)"
       },
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "9x (pierce)"
       }
@@ -3507,7 +3507,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -3522,7 +3522,7 @@
     "tempo_treinamento": 5,
     "velocidade_movimento": 4.3,
     "forca_atributos": 202.3,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -3555,20 +3555,20 @@
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2.5"
       },
       {
         "type": "Texto",
         "icon": "",
-        "value": "+1.2:aomr_pantheon_greeks_icon:(divine só míticos)"
+        "value": "+1.2:aomr_pantheon_greeks_icon:(divine só myth)"
       }
     ],
     "pontos_de_vida": 100,
@@ -3581,7 +3581,7 @@
     "construcao": [
       {
         "id": 3,
-        "nome": "Centro Urbano (Egyptian)"
+        "nome": "Urban Center (Egyptian)"
       }
     ],
     "comida": 0,
@@ -3592,7 +3592,7 @@
     "tempo_treinamento": 90,
     "velocidade_movimento": 4,
     "forca_atributos": 67.4,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_pharaoh_icon"
   },
@@ -3623,20 +3623,20 @@
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "5"
       },
       {
         "type": "Texto",
         "icon": "",
-        "value": "+0.5:aomr_pantheon_greeks_icon:(divine só míticos)"
+        "value": "+0.5:aomr_pantheon_greeks_icon:(divine só myth)"
       }
     ],
     "pontos_de_vida": 80,
@@ -3649,7 +3649,7 @@
     "construcao": [
       {
         "id": 3,
-        "nome": "Centro Urbano (Egyptian)"
+        "nome": "Urban Center (Egyptian)"
       },
       {
         "id": 22,
@@ -3664,7 +3664,7 @@
     "tempo_treinamento": 10,
     "velocidade_movimento": 3.6,
     "forca_atributos": 34.475,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_priest_icon"
   },
@@ -3678,26 +3678,26 @@
         "icon": "aomr_type_hero_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6"
       }
@@ -3715,7 +3715,7 @@
       },
       {
         "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Great Hall"
       }
     ],
     "comida": 80,
@@ -3726,7 +3726,7 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 4.8,
     "forca_atributos": 106.666666666667,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_hersir_icon"
   },
@@ -3753,13 +3753,13 @@
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6"
       }
@@ -3778,7 +3778,7 @@
     "tempo_treinamento": 10,
     "velocidade_movimento": 4.2,
     "forca_atributos": 131.3,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_oracle_hero_icon"
   },
@@ -3809,13 +3809,13 @@
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "11"
       }
@@ -3844,7 +3844,7 @@
     "tempo_treinamento": 12,
     "velocidade_movimento": 4,
     "forca_atributos": 122.833333333333,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_pioneer_icon"
   },
@@ -3861,19 +3861,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -3909,7 +3909,7 @@
     "god_dono": [
       {
         "id": 24,
-        "nome": "Dionísio"
+        "nome": "Dionysus"
       }
     ],
     "icon": "aomr_hydra_icon"
@@ -3927,19 +3927,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -3993,19 +3993,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -4065,13 +4065,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4118,7 +4118,7 @@
     "ingles": "Scarab",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -4135,13 +4135,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4151,7 +4151,7 @@
         "value": "0.5%"
       },
       {
-        "type": "Construção",
+        "type": "Building",
         "icon": "aomr_type_building_icon",
         "value": "1"
       }
@@ -4206,13 +4206,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -4247,7 +4247,7 @@
     "god_dono": [
       {
         "id": 33,
-        "nome": "Néftis"
+        "nome": "Nephthys"
       }
     ],
     "icon": "aomr_scorpion_man_icon"
@@ -4265,19 +4265,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4328,7 +4328,7 @@
     "ingles": "Battle Boar",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -4339,19 +4339,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4398,7 +4398,7 @@
     "ingles": "Mountain Giant",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -4409,19 +4409,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "1"
       },
@@ -4472,7 +4472,7 @@
     "ingles": "Rock Giant",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -4483,16 +4483,16 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
         "type": "Hero",
@@ -4537,7 +4537,7 @@
     "ingles": "Behemoth",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -4554,13 +4554,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4570,7 +4570,7 @@
         "value": "0.5%"
       },
       {
-        "type": "Construção",
+        "type": "Building",
         "icon": "aomr_type_building_icon",
         "value": "1"
       }
@@ -4625,13 +4625,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -4695,13 +4695,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -4761,13 +4761,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4827,13 +4827,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4893,13 +4893,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -4953,19 +4953,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       }
@@ -4980,7 +4980,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -4995,7 +4995,7 @@
     "tempo_treinamento": 18,
     "velocidade_movimento": 5,
     "forca_atributos": 289.833333333333,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -5018,19 +5018,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "7"
       }
@@ -5045,7 +5045,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -5060,7 +5060,7 @@
     "tempo_treinamento": 18,
     "velocidade_movimento": 5.6,
     "forca_atributos": 265.314285714286,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -5083,19 +5083,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       }
@@ -5110,7 +5110,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -5125,7 +5125,7 @@
     "tempo_treinamento": 18,
     "velocidade_movimento": 5.3,
     "forca_atributos": 287.4,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -5152,19 +5152,19 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6"
       }
@@ -5179,7 +5179,7 @@
     "construcao": [
       {
         "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Great Hall"
       }
     ],
     "comida": 0,
@@ -5190,7 +5190,7 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 4,
     "forca_atributos": 121.866666666667,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_godi_icon"
   },
@@ -5204,7 +5204,7 @@
         "icon": "aomr_type_hero_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -5217,13 +5217,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "5.5"
       }
@@ -5242,7 +5242,7 @@
     "tempo_treinamento": 3,
     "velocidade_movimento": 4.5,
     "forca_atributos": 103.875,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_murmillo_hero_icon"
   },
@@ -5256,7 +5256,7 @@
         "icon": "aomr_type_hero_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -5269,18 +5269,18 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Hard-Counter Cavalry :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "9"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "4"
       }
@@ -5299,11 +5299,11 @@
     "tempo_treinamento": 3,
     "velocidade_movimento": 4.5,
     "forca_atributos": 97.833333333333,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -5319,7 +5319,7 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       },
       {
@@ -5336,13 +5336,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Hard-Counter Artilharia :aomr_type_archer_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Hard-Counter Artillery :aomr_type_archer_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       },
@@ -5366,7 +5366,7 @@
     "tempo_treinamento": 3,
     "velocidade_movimento": 5,
     "forca_atributos": 128.611111111111,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "categoria": [
       {
@@ -5386,7 +5386,7 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -5403,18 +5403,18 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Hard-Counter Infantry :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "5"
       },
@@ -5439,11 +5439,11 @@
     "tempo_treinamento": 3,
     "velocidade_movimento": 3.8,
     "forca_atributos": 51.3,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -5455,7 +5455,7 @@
     "ingles": "Contarius (Hero)",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       },
       {
@@ -5472,13 +5472,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Soft-Artilharia :aomr_type_archer_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Soft-Artillery :aomr_type_archer_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "7"
       },
@@ -5502,7 +5502,7 @@
     "tempo_treinamento": 3,
     "velocidade_movimento": 6.05,
     "forca_atributos": 132.55,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "categoria": [
       {
@@ -5535,18 +5535,18 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Soft-Infantry :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "5.5"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.25"
       }
@@ -5565,11 +5565,11 @@
     "tempo_treinamento": 3,
     "velocidade_movimento": 4.3,
     "forca_atributos": 72.8,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -5594,13 +5594,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "4"
       }
@@ -5626,7 +5626,7 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 3.6,
     "forca_atributos": 32.4,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_sage_icon"
   },
@@ -5643,19 +5643,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       }
@@ -5670,7 +5670,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -5678,7 +5678,7 @@
       },
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "comida": 0,
@@ -5689,7 +5689,7 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
     "forca_atributos": 316.258333333333,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -5712,19 +5712,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       }
@@ -5739,7 +5739,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -5747,7 +5747,7 @@
       },
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "comida": 0,
@@ -5758,7 +5758,7 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
     "forca_atributos": 284.579411764706,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -5781,19 +5781,19 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       }
@@ -5808,7 +5808,7 @@
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       },
       {
         "id": 21,
@@ -5816,7 +5816,7 @@
       },
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "comida": 0,
@@ -5827,7 +5827,7 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 5.5,
     "forca_atributos": 316.833333333333,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -5850,7 +5850,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5890,7 +5890,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5930,7 +5930,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5952,7 +5952,7 @@
     "god_dono": [
       {
         "id": 28,
-        "nome": "Ártemis"
+        "nome": "Artemis"
       }
     ],
     "icon": "aomr_chimera_icon"
@@ -5992,7 +5992,7 @@
     "god_dono": [
       {
         "id": 35,
-        "nome": "Osíris"
+        "nome": "Osiris"
       }
     ],
     "icon": "aomr_mummy_icon"
@@ -6032,7 +6032,7 @@
     "god_dono": [
       {
         "id": 37,
-        "nome": "Hórus"
+        "nome": "Horus"
       }
     ],
     "icon": "aomr_avenger_icon"
@@ -6090,7 +6090,7 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
@@ -6134,7 +6134,7 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
@@ -6174,7 +6174,7 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
@@ -6236,7 +6236,7 @@
     "god_dono": [
       {
         "id": 54,
-        "nome": "Hélios"
+        "nome": "Helios"
       }
     ],
     "icon": "aomr_centimanus_icon"
@@ -6316,7 +6316,7 @@
     "god_dono": [
       {
         "id": 55,
-        "nome": "Hécate"
+        "nome": "Hecate"
       }
     ],
     "icon": "aomr_lampades_icon"
@@ -6470,13 +6470,13 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "multiplicador": [],
@@ -6515,7 +6515,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6524,9 +6524,9 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -6549,7 +6549,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6558,16 +6558,16 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "10"
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -6590,7 +6590,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6599,9 +6599,9 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -6630,13 +6630,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6.5"
       }
@@ -6661,7 +6661,7 @@
     "tempo_treinamento": 10,
     "velocidade_movimento": 5,
     "forca_atributos": 209.5,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_nezha_child_icon"
   },
@@ -6684,13 +6684,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "5"
       }
@@ -6716,7 +6716,7 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.5,
     "forca_atributos": 129.833333333333,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Hero :aomr_type_hero_icon:",
     "icon": "aomr_jiang_ziya_icon"
   },
@@ -6742,10 +6742,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "10"
       }
@@ -6758,7 +6758,7 @@
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -6790,10 +6790,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "7"
       }
@@ -6806,7 +6806,7 @@
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -6838,10 +6838,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6"
       }
@@ -6855,7 +6855,7 @@
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
@@ -6875,7 +6875,7 @@
         "icon": "aomr_type_hero_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -6891,20 +6891,20 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:, Soft-Cavalry :aomr_type_cavalry_icon:, Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Soft-Cavalry :aomr_type_cavalry_icon:, Soft-Infantry :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.5"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "1.5"
       }
@@ -6924,15 +6924,15 @@
     "forca_atributos": 126.1,
     "categoria": [
       {
-        "type": "Soft-Counter Cavalry",
+        "type": "Soft-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       },
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_fanatic_hero_icon"
   },
@@ -6946,14 +6946,14 @@
         "icon": "aomr_type_hero_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
     "era": [
@@ -6962,10 +6962,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "4"
       }
@@ -7002,13 +7002,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6.5"
       }
@@ -7033,7 +7033,7 @@
     "tempo_treinamento": 10,
     "velocidade_movimento": 5,
     "forca_atributos": 212,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_nezha_youth_icon"
   },
@@ -7059,10 +7059,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6.5"
       }
@@ -7087,7 +7087,7 @@
     "tempo_treinamento": 15,
     "velocidade_movimento": 5,
     "forca_atributos": 233.666666666667,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_nezha_icon"
   },
@@ -7114,13 +7114,13 @@
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7185,13 +7185,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -7235,7 +7235,7 @@
     "ingles": "Wanyūdō",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -7252,13 +7252,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7316,13 +7316,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -7379,13 +7379,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       },
@@ -7442,13 +7442,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7492,7 +7492,7 @@
     "ingles": "Oni",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -7509,13 +7509,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7579,7 +7579,7 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7648,7 +7648,7 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7692,7 +7692,7 @@
     "ingles": "Asura",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -7712,10 +7712,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:, Soldados Humanos :aomr_type_human_soldier_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -7769,13 +7769,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "multiplicador": [],
@@ -7832,13 +7832,13 @@
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "10"
       }
@@ -7852,7 +7852,7 @@
     "construcao": [
       {
         "id": 7,
-        "nome": "Centro Urbano (Japanese)"
+        "nome": "Urban Center (Japanese)"
       }
     ],
     "comida": 50,
@@ -7860,7 +7860,7 @@
     "tempo_treinamento": 9,
     "velocidade_movimento": 3.8,
     "forca_atributos": 82.8,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_miko_icon"
   },
@@ -7887,13 +7887,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "8"
       }
@@ -7907,7 +7907,7 @@
     "construcao": [
       {
         "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Watch Post"
       }
     ],
     "madeira": 60,
@@ -7917,7 +7917,7 @@
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.2,
     "forca_atributos": 100.866666666667,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_bushi_icon"
   },
@@ -7927,7 +7927,7 @@
     "ingles": "Yari Spearman",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -7940,13 +7940,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "3"
       }
@@ -7960,7 +7960,7 @@
     "construcao": [
       {
         "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Watch Post"
       }
     ],
     "comida": 55,
@@ -7969,11 +7969,11 @@
     "tempo_treinamento": 8,
     "velocidade_movimento": 4.8,
     "forca_atributos": 211.466666666667,
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -7998,13 +7998,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.25"
       }
@@ -8019,7 +8019,7 @@
     "construcao": [
       {
         "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Watch Post"
       }
     ],
     "madeira": 50,
@@ -8028,11 +8028,11 @@
     "tempo_treinamento": 12,
     "velocidade_movimento": 4,
     "forca_atributos": 95.333333333333,
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -8048,7 +8048,7 @@
         "icon": "aomr_type_hero_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -8061,13 +8061,13 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "6"
       }
@@ -8091,7 +8091,7 @@
     "tempo_treinamento": 26,
     "velocidade_movimento": 4.3,
     "forca_atributos": 139.966666666667,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_bushi_icon"
   },
@@ -8105,7 +8105,7 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -8118,7 +8118,7 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -8133,7 +8133,7 @@
     "construcao": [
       {
         "id": 66,
-        "nome": "Estábulo"
+        "nome": "Stable"
       }
     ],
     "madeira": 75,
@@ -8142,8 +8142,8 @@
     "tempo_treinamento": 16,
     "velocidade_movimento": 5,
     "forca_atributos": 110,
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_yumi_horse_archer_icon"
   },
   {
@@ -8152,7 +8152,7 @@
     "ingles": "Naginata Rider",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -8165,10 +8165,10 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
         "type": "Artilharia",
@@ -8185,7 +8185,7 @@
     "construcao": [
       {
         "id": 66,
-        "nome": "Estábulo"
+        "nome": "Stable"
       }
     ],
     "comida": 45,
@@ -8195,14 +8195,14 @@
     "velocidade_movimento": 6,
     "forca_atributos": 148.5,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "categoria": [
       {
         "type": "Soft-Counter Artilharia",
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Soft-Counter Cavalry",
+        "type": "Soft-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
@@ -8234,10 +8234,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "3"
       }
@@ -8272,7 +8272,7 @@
     "ingles": "Daimyo (Hero)",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       },
       {
@@ -8289,13 +8289,13 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "5"
       }
@@ -8309,7 +8309,7 @@
     "construcao": [
       {
         "id": 66,
-        "nome": "Estábulo"
+        "nome": "Stable"
       }
     ],
     "comida": 50,
@@ -8319,8 +8319,8 @@
     "tempo_treinamento": 19,
     "velocidade_movimento": 5.5,
     "forca_atributos": 163.5,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
-    "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon: | Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
+    "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon: | Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_daimyo_icon"
   },
   {
@@ -8340,7 +8340,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8353,7 +8353,7 @@
     "construcao": [
       {
         "id": 57,
-        "nome": "Fortress"
+        "nome": "Strength"
       }
     ],
     "forca_atributos": 0,
@@ -8362,7 +8362,7 @@
     "god_dono": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "icon": "aomr_harpy_demeter_icon"
@@ -8380,13 +8380,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "construcao": [
@@ -8424,13 +8424,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -8450,7 +8450,7 @@
     "god_dono": [
       {
         "id": 80,
-        "nome": "Héstia"
+        "nome": "Hestia"
       }
     ],
     "icon": "aomr_hamadryad_icon"
@@ -8468,7 +8468,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8490,7 +8490,7 @@
     "god_dono": [
       {
         "id": 81,
-        "nome": "Perséfone"
+        "nome": "Persephone"
       }
     ],
     "icon": "aomr_siren_icon"
@@ -8508,29 +8508,29 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "icon": "aomr_icarus_icon"
@@ -8548,29 +8548,29 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "icon": "aomr_orpheus_icon"
@@ -8588,29 +8588,29 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "construcao": [
       {
         "id": 1,
-        "nome": "Centro Urbano (Greek)"
+        "nome": "Centro Urbano (Grego)"
       }
     ],
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "icon": "aomr_iolaus_icon"
@@ -8628,7 +8628,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8637,14 +8637,14 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "forca_atributos": 0,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "god_dono": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "icon": "aomr_midas_icon"
@@ -8666,19 +8666,19 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.25"
       }
@@ -8693,7 +8693,7 @@
     "construcao": [
       {
         "id": 9,
-        "nome": "Centro Urbano (Aztec)"
+        "nome": "Urban Center (Aztec)"
       }
     ],
     "comida": 0,
@@ -8704,12 +8704,12 @@
     "forca_atributos": 180.838461538462,
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_quimchim_spy_icon"
   },
   {
@@ -8725,19 +8725,19 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "counter_de": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "7"
       }
@@ -8760,7 +8760,7 @@
     "populacao": 2,
     "velocidade_movimento": 4.8,
     "forca_atributos": 94.8,
-    "forte_contra": "Criatura Mythic :aomr_type_myth_unit_icon:",
+    "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_warrior_priest_hero_icon"
   },
@@ -8770,26 +8770,26 @@
     "ingles": "Tlamanih Spearman",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Cavalry :aomr_type_cavalry_icon:",
+    "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "3.5"
       }
@@ -8814,11 +8814,11 @@
     "forca_atributos": 108.8,
     "categoria": [
       {
-        "type": "Hard-Counter Cavalry",
+        "type": "Hard-Counter Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "forte_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_tlamanih_spearman_icon"
   },
@@ -8835,19 +8835,19 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "counter_de": "Soft-Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.25"
       }
@@ -8873,12 +8873,12 @@
     "forca_atributos": 133.055555555556,
     "categoria": [
       {
-        "type": "Soft-Counter Infantry",
+        "type": "Soft-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_tequihua_archer_icon"
   },
   {
@@ -8887,20 +8887,20 @@
     "ingles": "Coyote Warrior",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -8936,7 +8936,7 @@
       }
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_coyote_warrior_icon"
   },
   {
@@ -8945,20 +8945,20 @@
     "ingles": "Ocelotl Warrior",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -8981,7 +8981,7 @@
     "populacao": 3,
     "velocidade_movimento": 4.5,
     "forca_atributos": 154,
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_ocelotl_warrior_icon"
   },
@@ -8998,13 +8998,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -9034,8 +9034,8 @@
     "populacao": 3,
     "velocidade_movimento": 4.5,
     "forca_atributos": 138.166666666667,
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
-    "fraco_contra": "Cavalry :aomr_type_cavalry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
+    "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_eagle_warrior_icon"
   },
   {
@@ -9044,30 +9044,30 @@
     "ingles": "Otontin Smasher",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:",
     "multiplicador": [
       {
-        "type": "Construção",
+        "type": "Building",
         "icon": "aomr_type_building_icon",
         "value": "8"
       }
@@ -9090,8 +9090,8 @@
     "populacao": 4,
     "velocidade_movimento": 3.2,
     "forca_atributos": 236.842857142857,
-    "forte_contra": "Construção :aomr_type_building_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Construction :aomr_type_building_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_medium_otontin_smasher_icon"
   },
   {
@@ -9100,26 +9100,26 @@
     "ingles": "Shorn One",
     "tipo": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "counter_de": "Hard-Counter Infantry :aomr_type_infantry_icon:",
+    "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Infantry",
+        "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "3"
       }
@@ -9144,11 +9144,11 @@
     "forca_atributos": 191.8,
     "categoria": [
       {
-        "type": "Hard-Counter Infantry",
+        "type": "Hard-Counter Infantaria",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
     "icon": "aomr_medium_shorn_one_icon"
   },
@@ -9158,14 +9158,14 @@
     "ingles": "Jaguar Rider",
     "tipo": [
       {
-        "type": "Cavalry",
+        "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9206,8 +9206,8 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "forte_contra": "Infantry :aomr_type_infantry_icon: | Cavalry :aomr_type_cavalry_icon:",
-    "fraco_contra": "Infantry :aomr_type_infantry_icon:",
+    "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
+    "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
     "icon": "aomr_jaguar_rider_icon"
   },
   {
@@ -9216,7 +9216,7 @@
     "ingles": "Quinametzin",
     "tipo": [
       {
-        "type": "Siege",
+        "type": "Cerco",
         "icon": "aomr_type_siege_weapon_icon"
       },
       {
@@ -9227,7 +9227,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
+        "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9236,10 +9236,10 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "counter_de": "Construção:aomr_type_building_icon:",
+    "counter_de": "Construction:aomr_type_building_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
+        "type": "Unidade myth",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2"
       },
@@ -9270,7 +9270,7 @@
     "populacao": 4,
     "velocidade_movimento": 3,
     "forca_atributos": 447.333333333333,
-    "forte_contra": "Construção :aomr_type_building_icon:",
+    "forte_contra": "Construction :aomr_type_building_icon:",
     "fraco_contra": "Infantry :aomr_type_infantry_icon: | Hero :aomr_type_hero_icon:",
     "icon": "aomr_quinametzin_icon"
   }

@@ -9,10 +9,10 @@ const root = new URL("../", import.meta.url);
 const read = (p) => JSON.parse(fs.readFileSync(new URL(p, root), "utf8"));
 const write = (p, data) => fs.writeFileSync(new URL(p, root), JSON.stringify(data, null, 2) + "\n", "utf8");
 
-const construcoes = read("src/data/construcoes.json");
-const eras = read("src/data/eras.json");
-const deuses = read("src/data/deuses_aom.json");
-const panteoes = read("src/data/panteoes.json");
+const construcoes = read("src/data/locale/pt/construcoes.json");
+const eras = read("src/data/locale/pt/eras.json");
+const deuses = read("src/data/locale/pt/deuses_aom.json");
+const panteoes = read("src/data/locale/pt/panteoes.json");
 
 const construcaoById = new Map(construcoes.map((c) => [c.id, c]));
 const eraById = new Map(eras.map((e) => [e.id, e]));
@@ -135,12 +135,12 @@ function migrateUnidades(list) {
   });
 }
 
-const godpowers = read("src/data/godpowers.json");
-const tecnologias = read("src/data/tecnologias.json");
-const unidades = read("src/data/unidades_aom.json");
+const godpowers = read("src/data/locale/pt/godpowers.json");
+const tecnologias = read("src/data/locale/pt/tecnologias.json");
+const unidades = read("src/data/locale/pt/unidades_aom.json");
 
-write("src/data/godpowers.json", migrateGodpowers(godpowers));
-write("src/data/tecnologias.json", migrateTecnologias(tecnologias));
-write("src/data/unidades_aom.json", migrateUnidades(unidades));
+write("src/data/locale/pt/godpowers.json", migrateGodpowers(godpowers));
+write("src/data/locale/pt/tecnologias.json", migrateTecnologias(tecnologias));
+write("src/data/locale/pt/unidades_aom.json", migrateUnidades(unidades));
 
 console.log("OK: godpowers", godpowers.length, "tecnologias", tecnologias.length, "unidades", unidades.length);

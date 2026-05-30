@@ -180,10 +180,10 @@ function parseStartsRefs(startsText, startByCanonicalKey, starts) {
   return out;
 }
 
-const deuses = read("src/data/deuses_aom.json");
-const aldeoes = read("src/data/aldeoes.json");
-const starts = read("src/data/starts_build_order.json");
-const godpowers = read("src/data/godpowers.json");
+const deuses = read("src/data/locale/pt/deuses_aom.json");
+const aldeoes = read("src/data/locale/pt/aldeoes.json");
+const starts = read("src/data/locale/pt/starts_build_order.json");
+const godpowers = read("src/data/locale/pt/godpowers.json");
 const godpowerById = new Map(godpowers.map((g) => [g.id, g]));
 const deusById = new Map(deuses.map((d) => [d.id, d]));
 const startByCanonicalKey = buildStartLookupMap(starts);
@@ -243,6 +243,6 @@ const deusesOut = deuses.map((x) => {
   return o;
 });
 
-fs.writeFileSync(new URL("src/data/aldeoes.json", root), `${JSON.stringify(aldeoesOut, null, 2)}\n`);
-fs.writeFileSync(new URL("src/data/deuses_aom.json", root), `${JSON.stringify(deusesOut, null, 2)}\n`);
+fs.writeFileSync(new URL("src/data/locale/pt/aldeoes.json", root), `${JSON.stringify(aldeoesOut, null, 2)}\n`);
+fs.writeFileSync(new URL("src/data/locale/pt/deuses_aom.json", root), `${JSON.stringify(deusesOut, null, 2)}\n`);
 console.log("OK: aldeoes", aldeoesOut.length, "deuses", deusesOut.length);

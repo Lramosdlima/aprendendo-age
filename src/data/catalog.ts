@@ -1,9 +1,9 @@
-import aldeoesJson from "./aldeoes.json";
-import construcoesJson from "./construcoes.json";
-import deusesJson from "./deuses_aom.json";
-import erasJson from "./eras.json";
-import godpowersJson from "./godpowers.json";
-import mapasJson from "./mapas.json";
+import aldeoesJson from "./locale/pt/aldeoes.json";
+import construcoesJson from "./locale/pt/construcoes.json";
+import deusesJson from "./locale/pt/deuses_aom.json";
+import erasJson from "./locale/pt/eras.json";
+import godpowersJson from "./locale/pt/godpowers.json";
+import mapasJson from "./locale/pt/mapas.json";
 
 /** Entrada em `mapas.json` — campos sim/não são booleanos para i18n. */
 export type Mapa = {
@@ -23,10 +23,10 @@ import type { EntityNumRef } from "@/lib/entityRefs";
 import type { UnidadeMultiplicadorItem } from "@/lib/unidadeMultiplicador";
 import type { UnidadeTipoItem } from "@/lib/unidadeTipo";
 
-import panteoesJson from "./panteoes.json";
-import startsBuildOrderJson from "./starts_build_order.json";
-import tecnologiasJson from "./tecnologias.json";
-import unidadesJson from "./unidades_aom.json";
+import panteoesJson from "./locale/pt/panteoes.json";
+import startsBuildOrderJson from "./locale/pt/starts_build_order.json";
+import tecnologiasJson from "./locale/pt/tecnologias.json";
+import unidadesJson from "./locale/pt/unidades_aom.json";
 
 export type StartTableRow = {
   description: string;

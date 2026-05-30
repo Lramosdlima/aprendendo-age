@@ -7,8 +7,8 @@
     "madeira": 0,
     "ouro": 0,
     "tempo_seg": 0,
-    "description": "This is the 1st Age of the game! Starts with access to 1 god power :favoraom: e some basic buildings, como House :aomr_house_icon:, Temple :aomr_temple_icon: e lugares de coleta de recurso. Your start is important to set the pace of the match, so choose wisely based on your strategy (Rush :aggro_icon:, Turtle :turtle_icon: ou Eco :eco_icon:)!",
-    "hint": "Build order important!",
+    "description": "This is the 1st Age of the game! It starts with access to 1 divine power :favoraom: and some basic buildings, such as House :aomr_house_icon:, Temple :aomr_temple_icon: and resource collection places. Your start is important to define the pace of the match, so choose wisely based on the (Rush :aggro_icon:, Turtle :turtle_icon: or Eco :eco_icon:) strategy!",
+    "hint": "Build Order importante!",
     "icon": "aomr_archaic_age_icon"
   },
   {
@@ -20,8 +20,8 @@
     "ouro": 0,
     "tempo_seg": 60,
     "requisitos_para_subir_de_era": "Temple (Greek), Temple (Egyptian), Temple (Norse), Temple (Atlantean), Temple (Chinese), Temple (Japanese)",
-    "description": "From here we can choose 1 of 2 minor gods (with passive, myth units, god power, and exclusive technologies). We gain access to the first barracks to train troops. Depending on your strategy, put your Rush :aggro_icon:, Turtle :turtle_icon: ou Eco :eco_icon:!",
-    "hint": "Ideal: Age up in 3-5 minutes!",
+    "description": "From here we can choose 1 of 2 minor gods (with passive, myth units, god power, and exclusive technologies). We have access to the first huts to train troops. Depending on your strategy, put into practice your Rush :aggro_icon:, Turtle :turtle_icon: or Eco :eco_icon:!",
+    "hint": "Ideal: Spend in 3-5 minutes!",
     "requisitos_para_subir_de_era_ids": [
       21,
       22,
@@ -40,8 +40,8 @@
     "madeira": 0,
     "ouro": 500,
     "tempo_seg": 75,
-    "requisitos_para_subir_de_era": "Armory (Grega), Market (Greek), Armory de Anões",
-    "description": "Usually needed for more destruction power for fortress buildings :aomr_fortress_icon: (using siege units :aomr_type_siege_weapon_icon:) or to access more powerful troops.",
+    "requisitos_para_subir_de_era": "Armory (Grega), Market (Grego), Dwarven Armory",
+    "description": "Generally necessary to have more destructive power for buildings in the fortress :aomr_fortress_icon: (using siege units :aomr_type_siege_weapon_icon:) or to access more powerful troops.",
     "hint": "Ideal: time of 8-10 minutes!",
     "requisitos_para_subir_de_era_ids": [
       27,
@@ -58,9 +58,9 @@
     "madeira": 0,
     "ouro": 1200,
     "tempo_seg": 120,
-    "requisitos_para_subir_de_era": "Fortress, Fortress Migdol, Forte da Colina, Palácio, Baolei, Castelo",
-    "description": "Essa era geralmente é alcançada em partidas mais longas ou mais boomadas (estratégia de só economia). Os god powers muito poderosos aqui e as tropas ainda mais!",
-    "hint": "Comum: tempo de 15-30 minutos, mas depende muito!",
+    "requisitos_para_subir_de_era": "Fortress, Migdol Fortress, Hill Fort, Palace, Baolei, Castle",
+    "description": "This era is usually reached in longer or more boomy (strategy of only economy) matches. The divine powers very powerful here and the troops even more so!",
+    "hint": "Common: time of 15-30 minutes, but it really depends!",
     "requisitos_para_subir_de_era_ids": [
       57,
       58,
@@ -80,8 +80,8 @@
     "ouro": 5000,
     "tempo_seg": 5400,
     "requisitos_para_subir_de_era": "Maravilha",
-    "description": "Muito raro de acontecer em partidas! Ao construir a Maravilha :aomr_wonder_icon:, suas myth units :aomr_type_myth_unit_icon: ficam mais fortes e god powers mais baratos e rápidos para reutilizar. A partida tem que estar muito acirrada para alguém arriscar isso, mas é uma estratégia possível para vencer a partida!",
-    "hint": "Raro: Pode ocorre mais em partidas de equipe (TG) ou todos contra (FFA)",
+    "description": "Very rare to happen in matches! When you build the :aomr_wonder_icon: Wonder, your :aomr_type_myth_unit_icon: mythic units become stronger and divine powers are cheaper and quicker to reuse. The match has to be very close for someone to risk this, but it is a possible strategy to win the match!",
+    "hint": "Rare: May occur more in (TG) team matches or all matches against (FFA)",
     "requisitos_para_subir_de_era_id": 71,
     "icon": "aomr_wonder_age_icon"
   }

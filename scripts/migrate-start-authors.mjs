@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const jsonPath = path.join(__dirname, "../src/data/starts_build_order.json");
+const jsonPath = path.join(__dirname, "../src/data/locale/pt/starts_build_order.json");
 
 const AUTHOR_NAME_ALIASES = { "Light Yagami": "KevenAoM" };
 

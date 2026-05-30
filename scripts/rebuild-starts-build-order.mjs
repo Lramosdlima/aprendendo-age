@@ -10,8 +10,8 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 
-const startsPath = join(root, "src/data/starts_build_order.json");
-const panteoesPath = join(root, "src/data/panteoes.json");
+const startsPath = join(root, "src/data/locale/pt/starts_build_order.json");
+const panteoesPath = join(root, "src/data/locale/pt/panteoes.json");
 
 function norm(s) {
   return String(s)

@@ -2,13 +2,12 @@
   {
     "id": 1,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
     "alcance": 18,
@@ -21,11 +20,12 @@
     "ouro": 350,
     "guarnicao": 25,
     "custo": 700,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Pedreiros, Arquitetos, Centro Urbano Fortificado, Segredo dos Titãs, Maçãs Douradas, Sangue Divino, Trabalho Divino",
+    "tecnologias": "Bricklayers, Architects, Fortified Town Center, Secret of the Titans, Golden Apples, Divine Blood, Divine Work",
     "tempo_construir_segundos": 150,
-    "unidades": "Teseu, Ajax, Jazão, Aquíles, Hércules, Atalanta, Hipólita, Quíron, Odisseu, Orfeu, Iolau, Ícaro",
+    "unidades": "Theseus, Ajax, Jason, Achilles, Hercules, Atalanta, Hippolyta, Chiron, Odysseus, Orpheus, Iolaus, Icarus",
     "era_id": 2,
     "tecnologias_ids": [
       "29500f30e211805f9a00d2bd0f4bfd32",
@@ -56,7 +56,6 @@
   {
     "id": 3,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
@@ -75,11 +74,12 @@
     "ouro": 550,
     "guarnicao": 25,
     "custo": 550,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Segredo dos Titãs, Pele de Rinocerante, Ritos Funerários, Espírito de Maat, Nebty, Livro de Thoth, Novo Reino, Tijolo de Barro Seco ao Sol",
+    "tecnologias": "Secret of the Titans, Rhino Skin, Funeral Rites, Spirit of Maat, Nebty, Book of Thoth, New Kingdom, Sun-Dried Clay Brick",
     "tempo_construir_segundos": 150,
-    "unidades": "Sarcedote, Faraó",
+    "unidades": "Sarcedote, Pharaoh",
     "era_id": 2,
     "tecnologias_ids": [
       "29500f30e21180888b25f958d43e6616",
@@ -101,13 +101,12 @@
   {
     "id": 4,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
     "alcance": 18,
@@ -120,9 +119,10 @@
     "ouro": 350,
     "guarnicao": 25,
     "custo": 700,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Juramento do Anel, Rigsthula, Dádiva de Frey, Segredo dos Titãs",
+    "tecnologias": "Oath of the Ring, Rigsthula, Gift of Frey, Secret of the Titans",
     "tempo_construir_segundos": 150,
     "unidades": "Berserker",
     "era_id": 2,
@@ -139,7 +139,6 @@
   {
     "id": 5,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
@@ -158,9 +157,10 @@
     "ouro": 350,
     "guarnicao": 25,
     "custo": 700,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Segredo dos Titãs",
+    "tecnologias": "Secret of the Titans",
     "tempo_construir_segundos": 150,
     "era_id": 2,
     "tecnologias_id": "29500f30e21180888b25f958d43e6616",
@@ -170,7 +170,6 @@
   {
     "id": 6,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
@@ -189,9 +188,10 @@
     "ouro": 350,
     "guarnicao": 25,
     "custo": 700,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Segredo dos Titãs, Perseguindo o Sol, Chefe Kuafu",
+    "tecnologias": "Secret of the Titans, Chasing the Sun, Chief Kuafu",
     "tempo_construir_segundos": 150,
     "era_id": 2,
     "tecnologias_ids": [
@@ -205,7 +205,6 @@
   {
     "id": 7,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
@@ -224,11 +223,12 @@
     "ouro": 350,
     "guarnicao": 25,
     "custo": 700,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Segredo dos Titãs, Província Divina",
+    "tecnologias": "Secret of the Titans, Divine Province",
     "tempo_construir_segundos": 150,
-    "unidades": "Miko (Heroína)",
+    "unidades": "Miko (Heroine)",
     "era_id": 2,
     "tecnologias_ids": [
       "29500f30e21180888b25f958d43e6616",
@@ -241,13 +241,12 @@
   {
     "id": 9,
     "nome": "Town Center",
-    "ingles": "Town Center",
     "tipo": [
       {
         "type": "Basic"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 2400,
     "dano_perfurante": 10,
     "alcance": 18,
@@ -260,9 +259,10 @@
     "ouro": 350,
     "guarnicao": 25,
     "custo": 700,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Town Center",
     "no_projeteis": 2,
-    "tecnologias": "Pedreiros, Arquitetos, Centro Urbano Fortificado, Segredo dos Titãs",
+    "tecnologias": "Bricklayers, Architects, Fortified Urban Center, Secret of the Titans",
     "tempo_construir_segundos": 150,
     "unidades": "Quimchim Spy",
     "era_id": 2,
@@ -281,13 +281,12 @@
   {
     "id": 8,
     "nome": "House",
-    "ingles": "House",
     "tipo": [
       {
         "type": "Basic"
       }
     ],
-    "panteao": "Chinese :aomr_pantheon_chinese_icon:, Egyptian :aomr_pantheon_egyptians_icon:, Greek :aomr_pantheon_greeks_icon:, Japanese :aomr_pantheon_japanese_icon:, Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Chinese :aomr_pantheon_chinese_icon:, Egyptian :aomr_pantheon_egyptians_icon:, Greek :aomr_pantheon_greeks_icon:, Japanese :aomr_pantheon_japanese_icon:, Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 450,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -296,7 +295,8 @@
     "madeira": 50,
     "ouro": 0,
     "custo": 50,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "House",
     "tecnologias": "Terreno Vibrante",
     "tempo_construir_segundos": 15,
     "era_id": 1,
@@ -307,7 +307,6 @@
   {
     "id": 11,
     "nome": "Manor",
-    "ingles": "Manor",
     "tipo": [
       {
         "type": "Basic"
@@ -323,7 +322,8 @@
     "ouro": 20,
     "guarnicao": 2,
     "custo": 100,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Manor",
     "era_id": 1,
     "panteao_id": 4,
     "icon": "aomr_manor_icon"
@@ -331,16 +331,15 @@
   {
     "id": 14,
     "nome": "Storehouse",
-    "ingles": "Storehouse",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -349,8 +348,9 @@
     "madeira": 50,
     "ouro": 0,
     "custo": 50,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Machado de Mão, Picareta, Arco de Serra, Poço de Mina, Pedreira, Carpinteiros",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Storehouse",
+    "tecnologias": "Hand Axe, Pickaxe, Saw Bow, Mine Shaft, Quarry, Carpenters",
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
@@ -367,16 +367,15 @@
   {
     "id": 15,
     "nome": "Granary",
-    "ingles": "Granary",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -385,8 +384,9 @@
     "madeira": 50,
     "ouro": 0,
     "custo": 50,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Pecuária, Equipamento de Sobrevivência, Arado, Irrigação, Controle de Enchentes",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Granary",
+    "tecnologias": "Livestock, Survival Equipment, Plow, Irrigation, Flood Control",
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
@@ -402,13 +402,12 @@
   {
     "id": 16,
     "nome": "Mining Camp",
-    "ingles": "Mining Camp",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Egyptian :aomr_pantheon_egyptians_icon:, Japanese :aomr_pantheon_japanese_icon:",
@@ -420,7 +419,8 @@
     "madeira": 0,
     "ouro": 0,
     "custo": 0,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Mining Camp",
     "tecnologias": "Picareta",
     "tempo_construir_segundos": 15,
     "disponivel_apenas_para_egipcios": "aomr_egyptians_icon: e japoneses :aomr_japaneses_icon:.",
@@ -433,13 +433,12 @@
   {
     "id": 17,
     "nome": "Lumber Camp",
-    "ingles": "Lumber Camp",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Egyptian :aomr_pantheon_egyptians_icon:",
@@ -451,8 +450,9 @@
     "madeira": 0,
     "ouro": 0,
     "custo": 0,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Machado de Mão, Enxó de Wepwawet",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Lumber Camp",
+    "tecnologias": "Hand Axe, Wepwawet Adze",
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
@@ -465,13 +465,12 @@
   {
     "id": 18,
     "nome": "Granary",
-    "ingles": "Granary",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Egyptian :aomr_pantheon_egyptians_icon:",
@@ -483,8 +482,9 @@
     "madeira": 0,
     "ouro": 0,
     "custo": 0,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Pecuária, Enchente do Nilo, Gatos Sagrados, Shaduf",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Granary",
+    "tecnologias": "Livestock, Flood of the Nile, Sacred Cats, Shaduf",
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
@@ -499,13 +499,12 @@
   {
     "id": 19,
     "nome": "Economic Guild",
-    "ingles": "Economic Guild",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Atlantean :aomr_pantheon_atlanteans_icon:",
@@ -517,8 +516,9 @@
     "madeira": 50,
     "ouro": 15,
     "custo": 65,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Machado de Mão, Picareta, Pecuária, Roubo do Fogo",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Economic Guild",
+    "tecnologias": "Hand Axe, Pickaxe, Livestock, Fire Steal",
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
@@ -533,13 +533,12 @@
   {
     "id": 20,
     "nome": "Silo",
-    "ingles": "Silo",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Chinese :aomr_pantheon_chinese_icon:",
@@ -551,8 +550,9 @@
     "madeira": 50,
     "ouro": 0,
     "custo": 50,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Poder Montanhoso, Abundância, Cortar e Queimar, Terreno Vibrante",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Silo",
+    "tecnologias": "Mountainous Power, Abundance, Slash and Burn, Vibrant Terrain",
     "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
@@ -567,16 +567,15 @@
   {
     "id": 10,
     "nome": "Calpulli",
-    "ingles": "Calpulli",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 400,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -585,7 +584,8 @@
     "madeira": 75,
     "ouro": 0,
     "custo": 75,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Calpulli",
     "tecnologias": "",
     "tempo_construir_segundos": 15,
     "era_id": 1,
@@ -596,17 +596,16 @@
   {
     "id": 21,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -616,10 +615,11 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 300,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Ascendência Olímpica, Cofre de Érebus, Senhor dos Cavalos, Labirinto de Minos, Égide, Sarissa, Sabedoria Silvana, Avanço Intrépido, Mensageiro Alado, Vontade de Cronos, Lança do Pânico de Fobos, Arco do Horror de Ênio, Espada do Medo de Deimos, Oniciência, Oráculo, Temple de Cura, Ritos Ctônicos, Dionísia, Rugido de Ortros, Mão de Talos, Ombro de Talos, Rosto da Górgona, Fúria Monstruosa, Chamas de Tifão",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "Olympian Ascendancy, Vault of Erebus, Lord of Horses, Labyrinth of Minos, Aegis, Sarissa, Silvan Wisdom, Intrepid Advance, Winged Messenger, Will of Kronos, Spear of Panic of Phobos, Bow of Horror of Ennius, Sword of Fear of Deimos, Omniscience, Oracle, Temple of Healing, Chthonic Rites, Dionysia, Roar of Orthros, Hand of Talos, Shoulder of Talos, Face of the Gorgon, Monstrous Fury, Flames of Typhon",
     "tempo_construir_segundos": 40,
-    "unidades": "Centauro, Pégasos, Minotauro, Ciclope, Teseu, Leão de Neméia, Mantícora, Ajax, Jazão, Hidra, Aquíles, Hércules, Atalanta, Hipólita, Quíron, Odisseu, Sombra de Hades, Medusa, Colosso, Quimera, Sirênico, Hamadríade, Licaão",
+    "unidades": "Centaur, Pegasus, Minotaur, Cyclops, Theseus, Nemean Lion, Manticore, Ajax, Jason, Hydra, Achilles, Hercules, Atalanta, Hippolyta, Chiron, Odysseus, Shadow of Hades, Medusa, Colossus, Chimera, Sirenicus, Hamadryad, Lycaon",
     "era_id": 1,
     "tecnologias_ids": [
       "29c00f30e211808c8555efa7380cce2d",
@@ -678,13 +678,12 @@
   {
     "id": 22,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -698,10 +697,11 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 150,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Criosfinge, Hierocosfinge, Pés de Chacal, Clarividência, Crocodilopolis, Linho Carmesim, Novo Reino, Coroa de Atef, Ritos Funerários, Espírito de Maat, Necrópole, Mãos de Faraó",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "Criosphinx, Hierocosphinx, Jackal's Feet, Clairvoyance, Crocodilepolis, Crimson Linen, New Kingdom, Crown of Atef, Funeral Rites, Spirit of Maat, Necropolis, Hands of Pharaoh",
     "tempo_construir_segundos": 40,
-    "unidades": "Esfinge, Anubita, Wadjet, Escaravelho, Petsuchos, Sarcedote, Homem Escorpião, Múmia, Vingador, Fênix",
+    "unidades": "Sphinx, Anubita, Wadjet, Scarab, Petsuchos, Sarcedote, Scorpion Man, Mummy, Avenger, Phoenix",
     "era_id": 1,
     "tecnologias_ids": [
       "2a800f30e21180528133f5cf20520fe6",
@@ -735,17 +735,16 @@
   {
     "id": 23,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -755,10 +754,11 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 285,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Valgaldr, Dísablót, Gjallarhorn, Troll das Cavernas, Salão dos Thanes, Salvaguarda, Olhos na Floresta, Geada, Runa de Thurisaz, Jotuns, Estômago de Ferro, Banquetes Renomados, Nove Ondas, Sangue de Granito, Rompante",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "Valgaldr, Disblot, Gjallarhorn, Cave Troll, Hall of Thanes, Safeguard, Eyes in the Forest, Frost, Rune of Thurisaz, Jotuns, Iron Stomach, Renowned Banquets, Nine Waves, Blood of Granite, Rampage",
     "tempo_construir_segundos": 40,
-    "unidades": "Troll, Einheri, Valquíria, Draugr, Gigante da Montanha, Gigante das Rochas, Javali de Batalha, Hersir, Gigante de Gelo, Corvo, Gigante de Fogo, Lobo de Fenrir, Fafnir",
+    "unidades": "Troll, Einheri, Valkyrie, Draugr, Mountain Giant, Rock Giant, Battle Boar, Hersir, Frost Giant, Raven, Fire Giant, Fenrir Wolf, Fafnir",
     "era_id": 1,
     "tecnologias_ids": [
       "2a800f30e211800f9064deaa0deeaaa8",
@@ -798,13 +798,12 @@
   {
     "id": 24,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -818,10 +817,11 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 300,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Caos Temporal, Canais, Velocidade Empírica, Argila Aluvial, Coração de Titãs, Vingança de Hefesto, Forja Vulcânica, Percepção, Gêmeos, Renovação Heroca, Filhos do Sol, O Presente de Reia, Visão Profética, Titanomaquia, Sangue de Ásper, Guardião do Io, Celeridade, Rejuvenescimento Mítico",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "Temporal Chaos, Channels, Empirical Speed, Alluvial Clay, Heart of the Titans, Hephaestus' Revenge, Volcanic Forge, Perception, Gemini, Heroic Renewal, Children of the Sun, Rhea's Gift, Prophetic Vision, Titanomachy, Blood of Asper, Guardian of Io, Celerity, Mythic Rejuvenation",
     "tempo_construir_segundos": 40,
-    "unidades": "Autômato, Prometeano, Caladria, Pássaro de Estínfalo, Beemote, Sátiro, Centimanus, Argos, Lâmpade",
+    "unidades": "Automaton, Promethean, Caladria, Stymphalian Bird, Behemoth, Satyr, Centimanus, Argos, Lamp",
     "era_id": 1,
     "tecnologias_ids": [
       "2a900f30e211804aa0e3ed31891ce19f",
@@ -860,13 +860,12 @@
   {
     "id": 25,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -880,8 +879,9 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 300,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Luz Divina, Bênção de Qilin, Filho de Loong, Fúria de Matança, Determinação Sinistra, Corrida Frenética, Estômago sem fundo, Maré Crescente, Poder do Caos, Canção do Solstício de Verão, Sangue Flamejante, Rocha Sólida, Espólios de Guerra, Reencarnação",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "Divine Light, Blessing of Qilin, Son of Loong, Slaughter Fury, Grim Resolve, Frenzied Sprint, Bottomless Stomach, Rising Tide, Power of Chaos, Song of Midsummer, Flaming Blood, Solid Rock, Spoils of War, Reincarnation",
     "tempo_construir_segundos": 40,
     "unidades": "Qilin, Qiongqi, Yazi, Taowu, Baihu, Pioneiro, Taotie, Hundun, Qinglong, Zhuque",
     "era_id": 1,
@@ -919,13 +919,12 @@
   {
     "id": 26,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -939,8 +938,9 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 300,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Ondas Esmagadoras, Arapuca Mortal, Sabedoria dos Nove, Netsuke de Marfim, Foices de Vento, Alma Condenada, Práticas Ascéticas, Fúria Mortal, Presente Trovejante, Assombração Eterna, Exército Inquieto, Malevolência Ardente, Tambores Den Den, Máscara Oni",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
+    "tecnologias": "Crushing Waves, Deadly Trap, Wisdom of the Nine, Netsuke of Ivory, Scythes of Wind, Doomed Soul, Ascetic Practices, Deadly Fury, Thundering Gift, Eternal Haunt, Restless Army, Burning Malevolence, Den Den Drums, Oni Mask",
     "tempo_construir_segundos": 40,
     "unidades": "Tengu, Shinigami, Kamaitachi, Jorogumo, Wanyūdō, Onmoraki, Asura, Oni, Raiju, Kitsune",
     "era_id": 1,
@@ -978,17 +978,16 @@
   {
     "id": 12,
     "nome": "Temple",
-    "ingles": "Temple",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -998,7 +997,8 @@
     "ouro": 150,
     "guarnicao": 5,
     "custo": 300,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Temple",
     "tecnologias": "",
     "tempo_construir_segundos": 40,
     "unidades": "Warrior Priest (Hero)",
@@ -1013,13 +1013,12 @@
   {
     "id": 27,
     "nome": "Armory",
-    "ingles": "Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1029,7 +1028,8 @@
     "ouro": 0,
     "custo": 150,
     "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Armas de Cobre, Armadura de Cobre, Escudos de Cobre, Armadura de Bronze, Escudos de Bronze, Armas de Bronze, Balística, Armas de Ferro, Armadura de Ferro, Escudos de Ferro, Breu Incendiário, Raio de Sol, Forja do Olimpo, Armas Olímpicas, Lanças da Praga",
+    "ingles": "Armory",
+    "tecnologias": "Weapons of Copper, Armor of Copper, Shields of Copper, Armor of Bronze, Shields of Bronze, Weapons of Bronze, Ballistics, Weapons of Iron, Armor of Iron, Shields of Iron, Incendiary Pitch, Ray of Sun, Forge of the Olympus, Olympic Weapons, Spears from Prague",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_ids": [
@@ -1055,7 +1055,6 @@
   {
     "id": 28,
     "nome": "Armory",
-    "ingles": "Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -1070,8 +1069,9 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Machado Dentado, Escudo de Couro, Projéteis de Electro, Arco de Osso Seco, Fundas do Sol",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Armory",
+    "tecnologias": "Jagged Axe, Leather Shield, Electro Projectiles, Dry Bone Bow, Sun Slings",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_ids": [
@@ -1087,13 +1087,12 @@
   {
     "id": 29,
     "nome": "Armory",
-    "ingles": "Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1103,7 +1102,8 @@
     "ouro": 0,
     "custo": 135,
     "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Peitoral Enânico",
+    "ingles": "Armory",
+    "tecnologias": "Dwarven Chestplate",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_id": "2a800f30e21180d48ffbe93f81fd8799",
@@ -1113,7 +1113,6 @@
   {
     "id": 31,
     "nome": "Armory",
-    "ingles": "Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -1128,8 +1127,9 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Forja Vulcânica, Mordida do Turbarão, Maça sem Peso",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Armory",
+    "tecnologias": "Volcanic Forge, Shark's Bite, Weightless Mace",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_ids": [
@@ -1143,7 +1143,6 @@
   {
     "id": 32,
     "nome": "Armory",
-    "ingles": "Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -1158,8 +1157,9 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Penas Ardentes, Agitador do Céu, Julgamento Divino",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Armory",
+    "tecnologias": "Burning Feathers, Heaven Shaker, Divine Judgment",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_ids": [
@@ -1173,7 +1173,6 @@
   {
     "id": 33,
     "nome": "Armory",
-    "ingles": "Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -1188,8 +1187,9 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Pipa de Ouro, Força de Caçador",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Armory",
+    "tecnologias": "Kite of Gold, Strength of Hunter",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_ids": [
@@ -1202,13 +1202,12 @@
   {
     "id": 34,
     "nome": "Dwarven Armory",
-    "ingles": "Dwarven Armory",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1217,8 +1216,9 @@
     "madeira": 135,
     "ouro": 0,
     "custo": 135,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Martelo do Trovão, Armas Enânicas, Armadura de Ferro Meteórico, Escudo de Escamas de Dragão",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dwarven Armory",
+    "tecnologias": "Hammer of the Thunder, Dwarven Weapons, Armor of Meteoric Iron, Shield of Dragonscales",
     "tempo_construir_segundos": 40,
     "era_id": 1,
     "tecnologias_ids": [
@@ -1233,14 +1233,13 @@
   {
     "id": 35,
     "nome": "Military Academy",
-    "ingles": "Military Academy",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1249,8 +1248,9 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Espada do Medo de Deimos, Lança do Pânico de Fobos, Infantry Média, Convocar Infantry, Infantry Pesada, Infantry Campeã, Recrutar Infantry",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Military Academy",
+    "tecnologias": "Deimos's Sword of Fear, Phobos' Spear of Panic, Medium Infantry, Summon Infantry, Heavy Infantry, Champion Infantry, Recruit Infantry",
     "tempo_construir_segundos": 25,
     "unidades": "Hipaspista, Hoplita",
     "era_id": 2,
@@ -1273,14 +1273,13 @@
   {
     "id": 36,
     "nome": "Archery Range",
-    "ingles": "Archery Range",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1289,8 +1288,9 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Raio de Sol, Lanças da Praga, Arco do Horror de Ênio, Soldados de Longo Alcance Médios, Convocar Soldados de Longo Alcance, Soldados de Longo Alcance Pesados, Soldados de Longo Alcance Campeãos, Recrutar Soldados de Longo Alcance",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Archery Range",
+    "tecnologias": "Sunbeam, Plague Spears, Ennius' Horror Bow, Medium Ranged Soldiers, Summon Ranged Soldiers, Heavy Ranged Soldiers, Champion Ranged Soldiers, Recruit Ranged Soldiers",
     "tempo_construir_segundos": 25,
     "unidades": "Peltasta, Toxote",
     "era_id": 2,
@@ -1314,14 +1314,13 @@
   {
     "id": 37,
     "nome": "Stable",
-    "ingles": "Stable",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1330,8 +1329,9 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Cavalry Trácios, Lança do Pânico de Fobos, Cavalry Média, Convocar Cavalry, Cavalry Pesada, Recrutar Cavalry, Cavalry Campeã",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Stable",
+    "tecnologias": "Thracian Cavalry, Spear of Panic of Phobos, Medium Cavalry, Summon Cavalry, Heavy Cavalry, Recruit Cavalry, Champion Cavalry",
     "tempo_construir_segundos": 25,
     "unidades": "Prodromos, Hippeis",
     "era_id": 2,
@@ -1354,10 +1354,9 @@
   {
     "id": 38,
     "nome": "Barracks",
-    "ingles": "Barracks",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1370,8 +1369,9 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Machado Dentado, Escudo de Couro, Projéteis de Electro, Fundas do Sol, Lança da Serpente, Machado de Vingança, Lança de Hórus, Major de Cinquenta, Lanceiros Médios, Machadeiros Médios, Fundeiros Médios, Lanceiros Pesados, Machadeiros Pesados, Fundeiros Pesados, Convocar Soldados de Quartel, Lanceiros Campeões, Machadeiros Campeões, Fundeiros Campeões, Recrutar Soldados de Quartel",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Barracks",
+    "tecnologias": "Jagged Axe, Leather Shield, Electro Projectiles, Sun Slings, Serpent Spear, Vengeance Axe, Spear of Horus, Greater of Fifty, Medium Spearmen, Medium Axemen, Medium Slingers, Heavy Spearmen, Heavy Axemen, Heavy Slingers, Summon Barracks Soldiers, Champion Spearmen, Champion Axemen, Champion Slingers, Recruit Barracks Soldiers Barracks",
     "tempo_construir_segundos": 25,
     "unidades": "Lanceiro, Fundeiro, Machadeiro",
     "era_id": 2,
@@ -1407,14 +1407,13 @@
   {
     "id": 39,
     "nome": "Longhouse",
-    "ingles": "Longhouse",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1423,10 +1422,11 @@
     "madeira": 90,
     "ouro": 0,
     "custo": 90,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Infantry Média, Infantry Pesada, Infantry Campeã, Servos da Glória, Hamask, Convocar Unidades da House Comunal, Recrutar Unidades da House Comunal, Machado da Caça, Chamado de Valhalla, Formação Svinfylking, Fúria Berserker, Crepúsculo dos Deuses, Determinação Silenciosa, Fúria dos Caídos",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Longhouse",
+    "tecnologias": "Medium Infantry, Heavy Infantry, Champion Infantry, Servants of Glory, Hamask, Summon Household Units, Recruit Household Units, Hunting Axe, Call of Valhalla, Svinfylking Formation, Berserker Fury, Twilight of the Gods, Silent Resolve, Rage of the Fallen",
     "tempo_construir_segundos": 25,
-    "unidades": "Hird, Lançador de Machados, Berserker",
+    "unidades": "Hird, Ax Thrower, Berserker",
     "era_id": 2,
     "tecnologias_ids": [
       "2a300f30e21180b99605c55553585a0c",
@@ -1455,14 +1455,13 @@
   {
     "id": 40,
     "nome": "Great Hall",
-    "ingles": "Great Hall",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1620,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1471,10 +1470,11 @@
     "madeira": 135,
     "ouro": 0,
     "custo": 135,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Cavalry Média, Cavalry Pesada, Cavalry Campeã, Cascos Trovejantes, Sessrúmnir, Convocar Unidades do Grande Salão, Recrutar Unidades do Grande Salão, Doador do Anel, Vinkings, Filhos de Sleipnir, Espírito Vingativo, Crepúsculo dos Deuses",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Great Hall",
+    "tecnologias": "Medium Cavalry, Heavy Cavalry, Champion Cavalry, Thundering Hooves, Sessrúmnir, Summon Great Hall Units, Recruit Great Hall Units, Giver of the Ring, Vinkings, Sons of Sleipnir, Vengeful Spirit, Twilight of the Gods",
     "tempo_construir_segundos": 40,
-    "unidades": "Jarl, Cavalry Incursora, Hersir, Goldi",
+    "unidades": "Jarl, Cavalaria Incursora, Hersir, Goldi",
     "era_id": 2,
     "tecnologias_ids": [
       "2a300f30e2118091b7faf75d3e144559",
@@ -1502,10 +1502,9 @@
   {
     "id": 41,
     "nome": "Military Barracks",
-    "ingles": "Military Barracks",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1518,8 +1517,9 @@
     "madeira": 75,
     "ouro": 35,
     "custo": 110,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Infantry Média, Soldados de Longo Alcance Médios, Infantry Pesada, Soldados de Longo Alcance Pesados, Infantry Campeã, Soldados de Longo Alcance Campeãos, Convocar Soldados da Linha Principal, Heroísmo da Linha de Frente, Segredo de Poseidon, Lança de Pedra, Recrutar Soldados da Linha Principal, Auréola do Sol",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Military Barracks",
+    "tecnologias": "Medium Infantry, Medium Long Range Soldiers, Heavy Infantry, Heavy Long Range Soldiers, Champion Infantry, Champion Long Range Soldiers, Summon Main Line Soldiers, Front Line Heroism, Secret of Poseidon, Stone Spear, Recruit Main Line Soldiers, Sun Halo",
     "tempo_construir_segundos": 30,
     "unidades": "Contarius, Murmilo, Arcus",
     "era_id": 2,
@@ -1548,10 +1548,9 @@
   {
     "id": 42,
     "nome": "Counter Barracks",
-    "ingles": "Counter Barracks",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1564,8 +1563,9 @@
     "madeira": 100,
     "ouro": 35,
     "custo": 135,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Infantry Média, Soldados de Longo Alcance Médios, Infantry Pesada, Soldados de Longo Alcance Pesados, Infantry Campeã, Soldados de Longo Alcance Campeãos, Convocar Contrassoldados, Cota de Oricalco, Recrutar Contrassoldados",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Counter Barracks",
+    "tecnologias": "Medium Infantry, Medium Ranged Soldiers, Heavy Infantry, Heavy Ranged Soldiers, Champion Infantry, Champion Ranged Soldiers, Summon Countersoldiers, Orichalcum Mail, Recruit Countersoldiers",
     "tempo_construir_segundos": 25,
     "unidades": "Chierobalista, Katapeltes, Turma",
     "era_id": 2,
@@ -1591,10 +1591,9 @@
   {
     "id": 43,
     "nome": "Military Academy",
-    "ingles": "Military Academy",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1607,10 +1606,11 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Infantry Média, Soldados de Longo Alcance Médios, Infantry Pesada, Soldados de Longo Alcance Pesados, Infantry Campeã, Soldados de Longo Alcance Campeãos, Escudos Dourados, Julgamento Divino, Mestre das Armas, Ordem Imperial, Linhagem de Xuanyuan, Livros Divinos",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Military Academy",
+    "tecnologias": "Medium Infantry, Medium Long-Range Soldiers, Heavy Infantry, Heavy Long-Range Soldiers, Champion Infantry, Champion Long-Range Soldiers, Golden Shields, Divine Judgment, Weapon Master, Imperial Order, Xuanyuan Bloodline, Divine Books",
     "tempo_construir_segundos": 30,
-    "unidades": "Lanceiro Wuzu, Alabardeiro Ge, Espadachim de Dao",
+    "unidades": "Wuzu Spearman, Ge Halberdier, Dao Swordsman",
     "era_id": 2,
     "tecnologias_ids": [
       "2a300f30e21180b99605c55553585a0c",
@@ -1637,10 +1637,9 @@
   {
     "id": 44,
     "nome": "Imperial Academy",
-    "ingles": "Imperial Academy",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1653,10 +1652,11 @@
     "madeira": 125,
     "ouro": 0,
     "custo": 125,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Armas Celestiais, Tai Chi, Medicina Herbal, Pêssego da Imortalidade, Tempestade Turbulenta",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Imperial Academy",
+    "tecnologias": "Celestial Weapons, Tai Chi, Herbal Medicine, Peach of Immortality, Turbulent Storm",
     "tempo_construir_segundos": 30,
-    "unidades": "Pioneiro, Sábio, Jiang Ziya, Yang Jian, Wen Zhong, Li Jing, Nezha (Jovem), Nezha (Hero), Nezha (Criança)",
+    "unidades": "Pioneer, Sage, Jiang Ziya, Yang Jian, Wen Zhong, Li Jing, Nezha (Young), Nezha (Hero), Nezha (Child)",
     "era_id": 2,
     "tecnologias_ids": [
       "2b200f30e21180088a0ecaac98efc4c5",
@@ -1682,10 +1682,9 @@
   {
     "id": 45,
     "nome": "Machine Workshop",
-    "ingles": "Machine Workshop",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -1698,10 +1697,11 @@
     "madeira": 125,
     "ouro": 25,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Soldados de Longo Alcance Médios, Soldados de Longo Alcance Pesados, Soldados de Longo Alcance Campeãos, Seda de Leizu, Chama do Sul, Livros Divinos",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Machine Workshop",
+    "tecnologias": "Medium Long-Range Soldiers, Heavy Long-Range Soldiers, Champion Long-Range Soldiers, Silk of Leizu, Southern Flame, Divine Books",
     "tempo_construir_segundos": 45,
-    "unidades": "Arqueiro de Fogo, Chu Ko Nu",
+    "unidades": "Fire Archer, Chu Ko Nu",
     "era_id": 2,
     "tecnologias_ids": [
       "2a300f30e211806aaa2cff3fbf79ccc3",
@@ -1721,14 +1721,13 @@
   {
     "id": 74,
     "nome": "War Hut",
-    "ingles": "War Hut",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1737,7 +1736,8 @@
     "madeira": 75,
     "ouro": 20,
     "custo": 95,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "War Hut",
     "tempo_construir_segundos": 25,
     "unidades": "Tlamanih Spearman, Tequihua Archer",
     "era_id": 2,
@@ -1751,14 +1751,13 @@
   {
     "id": 75,
     "nome": "Noble's Hut",
-    "ingles": "Noble's Hut",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1767,7 +1766,8 @@
     "madeira": 75,
     "ouro": 25,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Noble's Hut",
     "tempo_construir_segundos": 25,
     "unidades": "Coyote Warrior, Ocelotl Warrior, Eagle Warrior",
     "era_id": 2,
@@ -1782,17 +1782,16 @@
   {
     "id": 46,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1600,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1802,7 +1801,8 @@
     "ouro": 0,
     "guarnicao": 10,
     "custo": 100,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 1,
@@ -1811,14 +1811,13 @@
   {
     "id": 47,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Egyptian :aomr_pantheon_egyptians_icon:",
@@ -1831,7 +1830,8 @@
     "ouro": 50,
     "guarnicao": 10,
     "custo": 50,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 2,
@@ -1840,17 +1840,16 @@
   {
     "id": 48,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1440,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1860,7 +1859,8 @@
     "ouro": 0,
     "guarnicao": 10,
     "custo": 90,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 3,
@@ -1869,14 +1869,13 @@
   {
     "id": 49,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Atlantean :aomr_pantheon_atlanteans_icon:",
@@ -1889,7 +1888,8 @@
     "ouro": 0,
     "guarnicao": 10,
     "custo": 125,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 4,
@@ -1898,14 +1898,13 @@
   {
     "id": 50,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Chinese :aomr_pantheon_chinese_icon:",
@@ -1918,7 +1917,8 @@
     "ouro": 0,
     "guarnicao": 10,
     "custo": 100,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 5,
@@ -1927,14 +1927,13 @@
   {
     "id": 78,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Japanese :aomr_pantheon_japanese_icon:",
@@ -1947,7 +1946,8 @@
     "ouro": 0,
     "guarnicao": 10,
     "custo": 100,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 6,
@@ -1956,17 +1956,16 @@
   {
     "id": 79,
     "nome": "Dock",
-    "ingles": "Dock",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1600,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -1976,7 +1975,8 @@
     "ouro": 0,
     "guarnicao": 10,
     "custo": 100,
-    "era": "Archaic :aomr_archaic_age_icon:",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 7,
@@ -1985,13 +1985,12 @@
   {
     "id": 51,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -2000,8 +1999,9 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Coletores de Impostos, Embaixadores, Cunhagem",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
+    "tecnologias": "Tax Collectors, Ambassadors, Coinage",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_ids": [
@@ -2015,7 +2015,6 @@
   {
     "id": 52,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -2030,8 +2029,9 @@
     "madeira": 0,
     "ouro": 0,
     "custo": 0,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Água Escuro",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
+    "tecnologias": "Dark Water",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_id": "2a800f30e211802bad29c6756f35589e",
@@ -2041,13 +2041,12 @@
   {
     "id": 53,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 1080,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -2056,7 +2055,8 @@
     "madeira": 135,
     "ouro": 0,
     "custo": 135,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 3,
@@ -2065,7 +2065,6 @@
   {
     "id": 54,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -2080,7 +2079,8 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 4,
@@ -2089,7 +2089,6 @@
   {
     "id": 55,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -2104,8 +2103,9 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Outono da Abundância",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
+    "tecnologias": "Autumn of Abundance",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "tecnologias_id": "2b200f30e2118032a6c1e0ccba610132",
@@ -2115,7 +2115,6 @@
   {
     "id": 56,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
@@ -2130,7 +2129,8 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 6,
@@ -2139,13 +2139,12 @@
   {
     "id": 80,
     "nome": "Market",
-    "ingles": "Market",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -2154,7 +2153,8 @@
     "madeira": 150,
     "ouro": 0,
     "custo": 150,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 7,
@@ -2163,17 +2163,16 @@
   {
     "id": 57,
     "nome": "Fortress",
-    "ingles": "Fortress",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
         "type": "Proteção 🧱"
       }
     ],
-    "panteao": "Greek :aomr_pantheon_greeks_icon:",
+    "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 3000,
     "dps": 0,
     "armadura_anticorte": 50,
@@ -2182,11 +2181,12 @@
     "madeira": 300,
     "ouro": 300,
     "custo": 610,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 10,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Patrocínio Argivo, Matador de Feras",
+    "ingles": "Fortress",
+    "tecnologias": "Packhorses, Engineers, Advanced Fortifications, Argive Patronage, Beast Slayer",
     "tempo_construir_segundos": 150,
-    "unidades": "Gastrafeta, Hetairos, Mirmidão, Hipólita, Quíron, Odisseu, Harpia",
+    "unidades": "Gastraphetes, Hetairos, Myrmidon, Hippolyta, Chiron, Odysseus, Harpy",
     "era_id": 3,
     "tecnologias_ids": [
       "29500f30e2118087abd3f910d9ec1712",
@@ -2210,10 +2210,9 @@
   {
     "id": 58,
     "nome": "Migdol Stronghold",
-    "ingles": "Migdol Stronghold",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
@@ -2229,11 +2228,12 @@
     "madeira": 0,
     "ouro": 500,
     "custo": 510,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 10,
-    "tecnologias": "Fortificações Avançadas, Água Escuro, Presas de Apedemak, Vale dos Reis, Vento do Deserto, Cameleiros Pesados, Bigas Pesadas, Elefantes Pesados, Convocar Soldados de Migdol, Cameleiros Campeões, Bigas Campeãs, Elefantes Campeões, Recrutar Soldados do Migdol",
+    "ingles": "Migdol Stronghold",
+    "tecnologias": "Advanced Fortifications, Dark Water, Fangs of Apedemak, Valley of the Kings, Desert Wind, Heavy Camel Riders, Heavy Chariots, Heavy Elephants, Summon Migdol Soldiers, Champion Camel Riders, Champion Chariots, Champion Elephants, Recruit Migdol Soldiers",
     "tempo_construir_segundos": 115,
-    "unidades": "Arqueiro em Biga, Cameleiro, Elefante de Guerra",
+    "unidades": "Chariot Archer, Camel Rider, War Elephant",
     "era_id": 3,
     "tecnologias_ids": [
       "29500f30e21180998804e464501be2e0",
@@ -2261,17 +2261,16 @@
   {
     "id": 59,
     "nome": "Hill Fort",
-    "ingles": "Hill Fort",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
         "type": "Proteção 🧱"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 2700,
     "dps": 0,
     "armadura_anticorte": 50,
@@ -2280,9 +2279,10 @@
     "madeira": 270,
     "ouro": 300,
     "custo": 580,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 10,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Ydalir, Convocar Unidades do Forte da Colina, Recrutar Unidades do Forte da Colina, Banquetes Renomados, Verrumão dos Anões, Bravura",
+    "ingles": "Hill Fort",
+    "tecnologias": "Packhorses, Engineers, Advanced Fortifications, Ydalir, Summon Hillfort Units, Recruit Hillfort Units, Renowned Banquets, Dwarf Warmer, Bravery",
     "tempo_construir_segundos": 115,
     "unidades": "Huscarl",
     "era_id": 3,
@@ -2304,10 +2304,9 @@
   {
     "id": 60,
     "nome": "Palace",
-    "ingles": "Palace",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
@@ -2323,11 +2322,12 @@
     "madeira": 300,
     "ouro": 300,
     "custo": 610,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 10,
-    "tecnologias": "Fortificações Avançadas, Convocar Soldado do Palácio, Chifres da Consagração, Recrutar Soldado do Palácio, Auréola do Sol, Petrificação, Devotos de Atlas, Escudo dos Titãs",
+    "ingles": "Palace",
+    "tecnologias": "Advanced Fortifications, Summon Palace Soldier, Horns of Consecration, Recruit Palace Soldier, Sun Halo, Petrification, Devotees of Atlas, Titan Shield",
     "tempo_construir_segundos": 115,
-    "unidades": "Fanático",
+    "unidades": "Fanatic",
     "era_id": 3,
     "tecnologias_ids": [
       "29500f30e21180998804e464501be2e0",
@@ -2346,10 +2346,9 @@
   {
     "id": 61,
     "nome": "Baolei",
-    "ingles": "Baolei",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
@@ -2365,11 +2364,12 @@
     "madeira": 250,
     "ouro": 250,
     "custo": 510,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 10,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Defesas Avançadas, Cascos do Vento, Última Resistência",
+    "ingles": "Baolei",
+    "tecnologias": "Packhorses, Engineers, Advanced Fortifications, Advanced Defenses, Windhoofs, Last Stand",
     "tempo_construir_segundos": 115,
-    "unidades": "Cavalry de Cavalo Branco, Cavalry de Tigre",
+    "unidades": "White Horse Cavalry, Tiger Cavalry",
     "era_id": 3,
     "tecnologias_ids": [
       "29500f30e2118087abd3f910d9ec1712",
@@ -2389,17 +2389,16 @@
   {
     "id": 77,
     "nome": "Great Temple",
-    "ingles": "Great Temple",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
         "type": "Proteção 🧱"
       }
     ],
-    "panteao": "Aztecs :aomr_pantheon_azteca_icon:",
+    "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 3000,
     "dano_perfurante": 12,
     "alcance": 20,
@@ -2412,10 +2411,11 @@
     "ouro": 300,
     "guarnicao": 20,
     "custo": 608,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 8,
+    "ingles": "Great Temple",
     "no_projeteis": 3,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas",
+    "tecnologias": "Packhorses, Engineers, Advanced Fortifications",
     "tempo_construir_segundos": 115,
     "unidades": "Otontin Smasher, Shorn One, Jaguar Rider, Quinametzin",
     "era_id": 3,
@@ -2436,10 +2436,9 @@
   {
     "id": 62,
     "nome": "Siege Works",
-    "ingles": "Siege Works",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
@@ -2455,9 +2454,10 @@
     "madeira": 0,
     "ouro": 75,
     "custo": 75,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 0,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Força do Vento Oeste",
+    "ingles": "Siege Works",
+    "tecnologias": "Packhorses, Engineers, Force of the West Wind",
     "tempo_construir_segundos": 115,
     "era_id": 3,
     "tecnologias_ids": [
@@ -2471,10 +2471,9 @@
   {
     "id": 63,
     "nome": "Dojo",
-    "ingles": "Dojo",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -2488,7 +2487,8 @@
     "ouro": 50,
     "custo": 150,
     "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Máscara de Hannya, Infiltradores à Beira-mar, Treinamento de Sumô, Espada Dez Punhos, Katagi",
+    "ingles": "Dojo",
+    "tecnologias": "Hannya Mask, Seaside Infiltrators, Sumo Training, Ten Fist Sword, Katagi",
     "tempo_construir_segundos": 30,
     "unidades": "Samurai, Shinobi, Onna-musha (Hero)",
     "era_id": 2,
@@ -2510,10 +2510,9 @@
   {
     "id": 64,
     "nome": "Shrine",
-    "ingles": "Shrine",
     "tipo": [
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       },
       {
         "type": "Utilidade ⏫"
@@ -2529,12 +2528,13 @@
     "ouro": 0,
     "guarnicao": 1,
     "custo": 75,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Guardiões Sagrados, Kagura, Jardins de Sakuras, Varinhas de Gohei",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Shrine",
+    "tecnologias": "Sacred Guardians, Kagura, Sakura Gardens, Gohei Wands",
     "tempo_construir_segundos": 15,
-    "e_o_principal_metodo_de_geracao_de_favor": "favoraom: para os japoneses :aomr_japaneses_icon:, quando fortalecidos por Mikos. Santuários localizados perto de recursos naturais geram favor :favoraom: mais rapidamente.",
-    "visualmente_as_arvores": "woodaom: dentro do alcance da aura do Santuário se transformam em cerejeiras em plena floração, enquanto animais 🦌 e minas de ouro :goldaom: adquirem um brilho sobrenatural.",
-    "quando_o_santuario_e_posicionado_perto_de_recursos_de_coleta": "foodaom::woodaom::goldaom:), os mesmo são aumentados sua quantidade com o tempo, ou seja, subindo lentamente a quantidade a ser coletada.",
+    "e_o_principal_metodo_de_geracao_de_favor": "favoraom: for the Japanese :aomr_japaneses_icon:, when strengthened by Mikos. Shrines located near natural resources generate favor :favoraom: more quickly.",
+    "visualmente_as_arvores": "woodaom: within range of the Sanctuary's aura transform into cherry trees in full bloom, while animals 🦌 and gold mines :goldaom: take on an otherworldly glow.",
+    "quando_o_santuario_e_posicionado_perto_de_recursos_de_coleta": "foodaom::woodaom::goldaom:), their quantity increases over time, that is, the quantity to be collected slowly increases.",
     "era_id": 1,
     "tecnologias_ids": [
       "2b800f30e21180aa8a8bebbc8a6a6f1f",
@@ -2548,10 +2548,9 @@
   {
     "id": 65,
     "nome": "Guardhouse",
-    "ingles": "Guardhouse",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -2564,10 +2563,11 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Kumiki, Força de Caçador, Máscara de Hannya, Sojutsu, Treinamento de Sumô, Katagi",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Guardhouse",
+    "tecnologias": "Kumiki, Hunter's Strength, Hannya's Mask, Sojutsu, Sumo Training, Katagi",
     "tempo_construir_segundos": 25,
-    "unidades": "Bushi (Hero), Lanceiro Yari, Arqueiro Yumi",
+    "unidades": "Bushi (Hero), Spearman Yari, Archer Yumi",
     "era_id": 2,
     "tecnologias_ids": [
       "2b200f30e211808baa75cc2f4aac1c22",
@@ -2588,10 +2588,9 @@
   {
     "id": 66,
     "nome": "Stable",
-    "ingles": "Stable",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       }
     ],
@@ -2604,10 +2603,11 @@
     "madeira": 100,
     "ouro": 0,
     "custo": 100,
-    "era": "Classical :aomr_classical_age_icon:",
-    "tecnologias": "Fúria do Vendaval, Vassalos Sashimono, Arcos Assimétricos",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Stable",
+    "tecnologias": "Gale's Fury, Sashimono Vassals, Asymmetrical Bows",
     "tempo_construir_segundos": 25,
-    "unidades": "Cavalry de Arqueiro Yumi, Cavaleiro Naginata, Daimyo (Hero)",
+    "unidades": "Yumi Archer Cavalry, Naginata Knight, Daimyo (Hero)",
     "era_id": 2,
     "tecnologias_ids": [
       "2b800f30e21180b1b973eaf506086fb9",
@@ -2625,13 +2625,12 @@
   {
     "id": 67,
     "nome": "Watermill",
-    "ingles": "Watermill",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
     "panteao": "Japanese :aomr_pantheon_japanese_icon:",
@@ -2643,12 +2642,13 @@
     "madeira": 25,
     "ouro": 0,
     "custo": 25,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Pecuária, Nascente de Água Salgada",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Watermill",
+    "tecnologias": "Livestock, Saltwater Spring",
     "tempo_construir_segundos": 15,
     "disponivel_apenas_para_os_japoneses": "aomr_japaneses_icon:.",
-    "e_um_ponto_de_entrega_de_alimentos": "foodaom: e madeira :woodaom: coletados pelos Plebeus.",
-    "melhorias_na_producao_de_alimentos": "foodaom: e madeira :woodaom:  também são pesquisadas aqui.",
+    "e_um_ponto_de_entrega_de_alimentos": "foodaom: and wood :woodaom: collected by the Commoners.",
+    "melhorias_na_producao_de_alimentos": "foodaom: and wood :woodaom: are also searched here.",
     "era_id": 1,
     "tecnologias_ids": [
       "29500f30e2118042bc49d5bd9f416771",
@@ -2660,10 +2660,9 @@
   {
     "id": 68,
     "nome": "Castle",
-    "ingles": "Castle",
     "tipo": [
       {
-        "type": "Militaryy",
+        "type": "Militar",
         "icon": "aomr_type_infantry_icon"
       },
       {
@@ -2683,10 +2682,11 @@
     "ouro": 300,
     "guarnicao": 20,
     "custo": 610,
-    "era": "Heroca :aomr_heroic_age_icon:",
+    "era": "Heroic :aomr_heroic_age_icon:",
     "favor": 10,
+    "ingles": "Castle",
     "no_projeteis": 3,
-    "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Onmyodo, Oito Estandartes, Artesão Mecânicos",
+    "tecnologias": "Packhorses, Engineers, Advanced Fortifications, Onmyodo, Eight Banners, Craftsman Mechanics",
     "tempo_construir_segundos": 150,
     "unidades": "Onmyyoji (Hero)",
     "era_id": 3,
@@ -2705,13 +2705,12 @@
   {
     "id": 69,
     "nome": "Wooden Wall",
-    "ingles": "Wooden Wall",
     "tipo": [
       {
         "type": "Proteção 🧱"
       }
     ],
-    "panteao": "General",
+    "panteao": "Geral",
     "pontos_de_vida": 300,
     "dps": 0,
     "armadura_anticorte": 50,
@@ -2720,8 +2719,9 @@
     "madeira": 0,
     "ouro": 3,
     "custo": 3,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Muralha de Pedra, Muralha Fortificada",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "Wooden Wall",
+    "tecnologias": "Stone Wall, Fortified Wall",
     "tempo_construir_segundos": 5,
     "era_id": 1,
     "tecnologias_ids": [
@@ -2733,7 +2733,6 @@
   {
     "id": 70,
     "nome": "Sentry Tower",
-    "ingles": "Sentry Tower",
     "tipo": [
       {
         "type": "Proteção 🧱"
@@ -2742,7 +2741,7 @@
         "type": "Visão 👁‍🗨"
       }
     ],
-    "panteao": "General",
+    "panteao": "Geral",
     "pontos_de_vida": 600,
     "dano_perfurante": 8,
     "alcance": 18,
@@ -2755,9 +2754,10 @@
     "ouro": 100,
     "guarnicao": 10,
     "custo": 250,
-    "era": "Classical :aomr_classical_age_icon:",
+    "era": "Classic :aomr_classical_age_icon:",
+    "ingles": "Sentry Tower",
     "no_projeteis": 2,
-    "tecnologias": "Torre de Vigia, Fogueiras Sinalizadoras, Ameias, Torre de Guarda, Óleo Fervente, Pombos Correio, Tenshu, Defesas Avançadas",
+    "tecnologias": "Watchtower, Signal Fires, Battlements, Guard Tower, Boiling Oil, Homing Pigeons, Tenshu, Advanced Defenses",
     "tempo_construir_segundos": 120,
     "era_id": 2,
     "tecnologias_ids": [
@@ -2775,13 +2775,12 @@
   {
     "id": 71,
     "nome": "Wonder",
-    "ingles": "Wonder",
     "tipo": [
       {
         "type": "Utilidade ⏫"
       }
     ],
-    "panteao": "General",
+    "panteao": "Geral",
     "pontos_de_vida": 9999,
     "dps": 0,
     "armadura_anticorte": 40,
@@ -2791,6 +2790,7 @@
     "ouro": 5000,
     "custo": 10000,
     "era": "Mythic :aomr_mythic_age_icon:",
+    "ingles": "Wonder",
     "tempo_construir_segundos": 5400,
     "era_id": 4,
     "icon": "aomr_wonder_icon"
@@ -2798,20 +2798,20 @@
   {
     "id": 72,
     "nome": "OX",
-    "ingles": "OX",
     "tipo": [
       {
         "type": "Basic"
       },
       {
-        "type": "Resource ⚒"
+        "type": "Recurso ⚒"
       }
     ],
-    "panteao": "Norse :aomr_pantheon_norse_icon:",
+    "panteao": "Nordic :aomr_pantheon_norse_icon:",
     "dps": 0,
     "custo": 0,
-    "era": "Archaic :aomr_archaic_age_icon:",
-    "tecnologias": "Colheita de Inverno",
+    "era": "Arcaica :aomr_archaic_age_icon:",
+    "ingles": "OX",
+    "tecnologias": "Winter Harvest",
     "era_id": 1,
     "tecnologias_id": "2a900f30e211807fa7a0c6b01fd9de68",
     "panteao_id": 3,

@@ -9,7 +9,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const startsPath = join(__dirname, "..", "src/data/starts_build_order.json");
+const startsPath = join(__dirname, "..", "src/data/locale/pt/starts_build_order.json");
 
 /** Alinhado a `panteoes.json` / campo `pantheon` nos starts */
 const PANTHEON_ORDER = [

@@ -5,14 +5,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -24,7 +24,7 @@
     "rush": 5,
     "turtle": 3,
     "eco": 3,
-    "foco": "Infantry :aomr_type_infantry_icon: & Heros :aomr_type_hero_icon:",
+    "foco": "Infantry :aomr_type_infantry_icon: & Heroes :aomr_type_hero_icon:",
     "god_maior_relacao": [
       {
         "id": 21,
@@ -40,7 +40,7 @@
       },
       {
         "id": 24,
-        "nome": "Dionísio"
+        "nome": "Dionysus"
       },
       {
         "id": 26,
@@ -54,15 +54,15 @@
     "tecnologias": [
       {
         "id": "29c00f30e211808c8555efa7380cce2d",
-        "nome": "Ascendência Olímpica"
+        "nome": "Olympic Ancestry"
       },
       {
         "id": "29c00f30e2118023accbe6772b776ea4",
-        "nome": "Labirinto de Minos"
+        "nome": "Labyrinth of Minos"
       },
       {
         "id": "29c00f30e21180b49740e4327f8e4d52",
-        "nome": "Égide"
+        "nome": "Aegis"
       },
       {
         "id": "29c00f30e21180788e59e0d681ae792d",
@@ -74,7 +74,7 @@
       },
       {
         "id": "29c00f30e2118053ae4beec46a91af11",
-        "nome": "Avanço Intrépido"
+        "nome": "Intrepid Advance"
       },
       {
         "id": "29c00f30e21180759b36c8ba7ce6ef9f",
@@ -82,35 +82,35 @@
       },
       {
         "id": "2a200f30e21180e09295e08128af4dd8",
-        "nome": "Oráculo"
+        "nome": "Oracle"
       },
       {
         "id": "2a200f30e2118076bcdff3fca134d53f",
-        "nome": "Temple de Cura"
+        "nome": "Temple of Healing"
       },
       {
         "id": "2a200f30e21180fc92e2d7108bd8a502",
-        "nome": "Raio de Sol"
+        "nome": "Sunbeam"
       },
       {
         "id": "2a300f30e21180398940d2af6649a5fe",
-        "nome": "Ritos Ctônicos"
+        "nome": "Chthonic Rites"
       },
       {
         "id": "2a300f30e21180d789d2ccbec331c483",
-        "nome": "Dionísia"
+        "nome": "Dionysia"
       },
       {
         "id": "2a300f30e21180eeb2a7d048b868fc10",
-        "nome": "Cavalry Trácios"
+        "nome": "Thracian Cavalry"
       },
       {
         "id": "2a300f30e21180f7a8f0c7252ec94543",
-        "nome": "Mão de Talos"
+        "nome": "Hand of Talos"
       },
       {
         "id": "2a300f30e21180aea2faed2ab1da193e",
-        "nome": "Ombro de Talos"
+        "nome": "Talos Shoulder"
       },
       {
         "id": "2a300f30e21180a8b08af2e3c5e741e8",
@@ -118,37 +118,37 @@
       },
       {
         "id": "2a300f30e21180b182ecc1ac1228b58e",
-        "nome": "Armas Olímpicas"
+        "nome": "Olympic weapons"
       },
       {
         "id": "2a300f30e211805d83c0e1c213037f62",
-        "nome": "Rosto da Górgona"
+        "nome": "Gorgon's Face"
       },
       {
         "id": "2a300f30e21180d0aab5d5a458bedd57",
-        "nome": "Patrocínio Argivo"
+        "nome": "Argive Patronage"
       },
       {
         "id": "2a300f30e21180ee9462e1ec5bbb9910",
-        "nome": "Fúria Monstruosa"
+        "nome": "Monstrous Fury"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 39,
-        "nome": "Pégasos"
+        "nome": "Pegasi"
       },
       {
         "id": 34,
-        "nome": "Mirmidão"
+        "nome": "Myrmidon"
       },
       {
         "id": 58,
-        "nome": "Jazão"
+        "nome": "Jason"
       },
       {
         "id": 82,
-        "nome": "Hércules"
+        "nome": "Hercules"
       },
       {
         "id": 95,
@@ -162,27 +162,27 @@
     "starts": [
       {
         "id": 1,
-        "nome": "Greeks - por Moose"
+        "nome": "Greeks - by Moose"
       },
       {
         "id": 6,
-        "nome": "Greeks - por HuskSuppe (Mar 🌊:aomr_type_ship_icon:)"
+        "nome": "Greeks - by HuskSuppe (Mar 🌊:aomr_type_ship_icon:)"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Infantry :aomr_type_infantry_icon: & Heros :aomr_type_hero_icon:"
+          "texto": "Focus: Infantry :aomr_type_infantry_icon: & Heroes :aomr_type_hero_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Starts with 10 de favor :favoraom:.",
-            "Ganha favor :favoraom: 20% mais rápido.",
-            "Unidades míticas :aomr_type_myth_unit_icon: custam 1 população a menos :aomr_population_provision_icon:.",
-            "A infantaria :aomr_type_infantry_icon: causa + 60% de dano a edifícios :aomr_type_building_icon:.",
-            "Os hoplitas :aomr_hoplite_icon: se movem 15% mais rápido :aomr_speed_icon:."
+            "Starts with 10 please :favoraom:.",
+            "Win please :favoraom: 20% faster.",
+            "Mythic units :aomr_type_myth_unit_icon: cost 1 population less :aomr_population_provision_icon:.",
+            ":aomr_type_infantry_icon: infantry deals +60% damage to :aomr_type_building_icon: buildings.",
+            ":aomr_hoplite_icon: hoplites move 15% faster than :aomr_speed_icon:."
           ]
         }
       ]
@@ -195,14 +195,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -214,7 +214,7 @@
     "rush": 5,
     "turtle": 4,
     "eco": 3,
-    "foco": "Cavalry :aomr_type_cavalry_icon: & Construções",
+    "foco": ":aomr_type_cavalry_icon: Cavalry & Buildings",
     "god_maior_relacao": [
       {
         "id": 20,
@@ -226,7 +226,7 @@
       },
       {
         "id": 24,
-        "nome": "Dionísio"
+        "nome": "Dionysus"
       },
       {
         "id": 25,
@@ -238,7 +238,7 @@
       },
       {
         "id": 28,
-        "nome": "Ártemis"
+        "nome": "Artemis"
       }
     ],
     "tecnologias": [
@@ -252,7 +252,7 @@
       },
       {
         "id": "29c00f30e2118053ae4beec46a91af11",
-        "nome": "Avanço Intrépido"
+        "nome": "Intrepid Advance"
       },
       {
         "id": "29c00f30e21180759b36c8ba7ce6ef9f",
@@ -260,39 +260,39 @@
       },
       {
         "id": "29c00f30e21180c781acc4ad336ae41d",
-        "nome": "Vontade de Cronos"
+        "nome": "Kronos' will"
       },
       {
         "id": "29c00f30e21180488dd2c354b1c53e90",
-        "nome": "Lança do Pânico de Fobos"
+        "nome": "Phobos Panic Spear"
       },
       {
         "id": "29c00f30e211805bb4fdc0691b29656a",
-        "nome": "Arco do Horror de Ênio"
+        "nome": "Enio's Horror Arc"
       },
       {
         "id": "29c00f30e21180258e23e54a0af72cc4",
-        "nome": "Espada do Medo de Deimos"
+        "nome": "Deimos's Sword of Fear"
       },
       {
         "id": "2a300f30e21180398940d2af6649a5fe",
-        "nome": "Ritos Ctônicos"
+        "nome": "Chthonic Rites"
       },
       {
         "id": "2a300f30e21180d789d2ccbec331c483",
-        "nome": "Dionísia"
+        "nome": "Dionysia"
       },
       {
         "id": "2a300f30e21180eeb2a7d048b868fc10",
-        "nome": "Cavalry Trácios"
+        "nome": "Thracian Cavalry"
       },
       {
         "id": "2a300f30e21180b09e65eb23a0b41842",
-        "nome": "Rugido de Ortros"
+        "nome": "Ortos' Roar"
       },
       {
         "id": "2a300f30e2118016ac4cc4faf7e76634",
-        "nome": "Maçãs Douradas"
+        "nome": "Golden Apples"
       },
       {
         "id": "2a300f30e21180a8b0f1f06b853cdef9",
@@ -300,11 +300,11 @@
       },
       {
         "id": "2a300f30e21180f7a8f0c7252ec94543",
-        "nome": "Mão de Talos"
+        "nome": "Hand of Talos"
       },
       {
         "id": "2a300f30e21180aea2faed2ab1da193e",
-        "nome": "Ombro de Talos"
+        "nome": "Talos Shoulder"
       },
       {
         "id": "2a300f30e21180a8b08af2e3c5e741e8",
@@ -312,19 +312,19 @@
       },
       {
         "id": "2a300f30e21180b182ecc1ac1228b58e",
-        "nome": "Armas Olímpicas"
+        "nome": "Olympic weapons"
       },
       {
         "id": "2a300f30e211806ab07adc77444323cf",
-        "nome": "Chamas de Tifão"
+        "nome": "Typhon's Flames"
       },
       {
         "id": "2a300f30e21180c3a363ff2c9735b1dc",
-        "nome": "Lanças da Praga"
+        "nome": "Plague Spears"
       },
       {
         "id": "2a300f30e2118013af89e59776ea95ef",
-        "nome": "Matador de Feras"
+        "nome": "Beast Slayer"
       }
     ],
     "unidades_exclusivas": [
@@ -334,7 +334,7 @@
       },
       {
         "id": 96,
-        "nome": "Hipólita"
+        "nome": "Hippolyta"
       },
       {
         "id": 115,
@@ -352,15 +352,15 @@
     "starts": [
       {
         "id": 8,
-        "nome": "Poseidon (com :aomr_lure_power_icon:) - por Mosca"
+        "nome": "Poseidon (with :aomr_lure_power_icon:) - by Mosca"
       },
       {
         "id": 1,
-        "nome": "Greeks - por Moose"
+        "nome": "Greeks - by Moose"
       },
       {
         "id": 6,
-        "nome": "Greeks - por HuskSuppe (Mar 🌊:aomr_type_ship_icon:)"
+        "nome": "Greeks - by HuskSuppe (Mar 🌊:aomr_type_ship_icon:)"
       }
     ],
     "explicacao_maior": {
@@ -372,11 +372,11 @@
         {
           "tipo": "lista",
           "itens": [
-            "Milícias :aomr_militia_icon: surgem de prédios destruídos.",
-            "Cavalry :aomr_type_cavalry_icon:, Caravanas e myth units :aomr_type_myth_unit_icon: têm + 0,1/0,2/0,3/0,4 de velocidade nas Eras Archaic/Classical/Heroica/Mythic, respectivamente.",
-            "Estábulos :aomr_stable_icon: e Markets :aomr_market_icon: são 30% mais baratos.",
-            "As taxas de câmbio do mercado melhoraram em 15%.",
-            "Um Hipocampo gratuito reaparece no primeiro Cais :aomr_dock_icon:."
+            ":aomr_militia_icon: militias emerge from destroyed buildings.",
+            ":aomr_type_cavalry_icon: Cavalry, Caravans, and :aomr_type_myth_unit_icon: mythic units have +0.1/0.2/0.3/0.4 speed in the Archaic/Classical/Heroic/Mythic Ages, respectively.",
+            "Stables :aomr_stable_icon: and Markets :aomr_market_icon: are 30% cheaper.",
+            "Market exchange rates improved by 15%.",
+            "A free Hippocampus reappears on the first :aomr_dock_icon: Pier."
           ]
         }
       ]
@@ -389,14 +389,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -432,21 +432,21 @@
       },
       {
         "id": 28,
-        "nome": "Ártemis"
+        "nome": "Artemis"
       }
     ],
     "tecnologias": [
       {
         "id": "29c00f30e211808bbfbae6b29a7052be",
-        "nome": "Cofre de Érebus"
+        "nome": "Erebus' Vault"
       },
       {
         "id": "29c00f30e2118023accbe6772b776ea4",
-        "nome": "Labirinto de Minos"
+        "nome": "Labyrinth of Minos"
       },
       {
         "id": "29c00f30e21180b49740e4327f8e4d52",
-        "nome": "Égide"
+        "nome": "Aegis"
       },
       {
         "id": "29c00f30e21180788e59e0d681ae792d",
@@ -454,39 +454,39 @@
       },
       {
         "id": "29c00f30e21180c781acc4ad336ae41d",
-        "nome": "Vontade de Cronos"
+        "nome": "Kronos' will"
       },
       {
         "id": "29c00f30e21180488dd2c354b1c53e90",
-        "nome": "Lança do Pânico de Fobos"
+        "nome": "Phobos Panic Spear"
       },
       {
         "id": "29c00f30e211805bb4fdc0691b29656a",
-        "nome": "Arco do Horror de Ênio"
+        "nome": "Enio's Horror Arc"
       },
       {
         "id": "29c00f30e21180258e23e54a0af72cc4",
-        "nome": "Espada do Medo de Deimos"
+        "nome": "Deimos's Sword of Fear"
       },
       {
         "id": "2a200f30e21180e09295e08128af4dd8",
-        "nome": "Oráculo"
+        "nome": "Oracle"
       },
       {
         "id": "2a200f30e2118076bcdff3fca134d53f",
-        "nome": "Temple de Cura"
+        "nome": "Temple of Healing"
       },
       {
         "id": "2a200f30e21180fc92e2d7108bd8a502",
-        "nome": "Raio de Sol"
+        "nome": "Sunbeam"
       },
       {
         "id": "2a300f30e21180b09e65eb23a0b41842",
-        "nome": "Rugido de Ortros"
+        "nome": "Ortos' Roar"
       },
       {
         "id": "2a300f30e2118016ac4cc4faf7e76634",
-        "nome": "Maçãs Douradas"
+        "nome": "Golden Apples"
       },
       {
         "id": "2a300f30e21180a8b0f1f06b853cdef9",
@@ -494,11 +494,11 @@
       },
       {
         "id": "2a300f30e21180f7a8f0c7252ec94543",
-        "nome": "Mão de Talos"
+        "nome": "Hand of Talos"
       },
       {
         "id": "2a300f30e21180aea2faed2ab1da193e",
-        "nome": "Ombro de Talos"
+        "nome": "Talos Shoulder"
       },
       {
         "id": "2a300f30e21180a8b08af2e3c5e741e8",
@@ -506,29 +506,29 @@
       },
       {
         "id": "2a300f30e21180b182ecc1ac1228b58e",
-        "nome": "Armas Olímpicas"
+        "nome": "Olympic weapons"
       },
       {
         "id": "2a300f30e211806ab07adc77444323cf",
-        "nome": "Chamas de Tifão"
+        "nome": "Typhon's Flames"
       },
       {
         "id": "2a300f30e21180c3a363ff2c9735b1dc",
-        "nome": "Lanças da Praga"
+        "nome": "Plague Spears"
       },
       {
         "id": "2a300f30e2118013af89e59776ea95ef",
-        "nome": "Matador de Feras"
+        "nome": "Beast Slayer"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 138,
-        "nome": "Sombra de Hades"
+        "nome": "Shadow of Hades"
       },
       {
         "id": 35,
-        "nome": "Gastrafeta"
+        "nome": "Gastraphetes"
       },
       {
         "id": 60,
@@ -536,11 +536,11 @@
       },
       {
         "id": 84,
-        "nome": "Aquíles"
+        "nome": "Achilles"
       },
       {
         "id": 97,
-        "nome": "Quíron"
+        "nome": "Chiron"
       },
       {
         "id": 116,
@@ -550,31 +550,31 @@
     "starts": [
       {
         "id": 7,
-        "nome": "Hades (com Cofre :aomr_vaults_of_erebus_icon:)- por Aussie_Drongo"
+        "nome": "Hades (with Vault :aomr_vaults_of_erebus_icon:)- by Aussie_Drongo"
       },
       {
         "id": 1,
-        "nome": "Greeks - por Moose"
+        "nome": "Greeks - by Moose"
       },
       {
         "id": 6,
-        "nome": "Greeks - por HuskSuppe (Mar 🌊:aomr_type_ship_icon:)"
+        "nome": "Greeks - by HuskSuppe (Mar 🌊:aomr_type_ship_icon:)"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Cavalry :aomr_type_cavalry_icon: & Construções :aomr_type_building_icon:"
+          "texto": "Focus: Cavalry :aomr_type_cavalry_icon: & Buildings :aomr_type_building_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "20% de chance de humanos caídos retornarem como Sombras de Hades :aomr_shade_of_hades_icon:.",
-            "Unidades míticas :aomr_type_myth_unit_icon: +15% de pontos de vida :aomr_hit_points_icon:.",
-            "Soldados :aomr_type_archer_icon: e heróis :aomr_type_hero_icon: de longo alcance +1 Linha de Visão e alcance :los_icon_aoe3de:.",
-            "Fortificações de longo alcance +2 de alcance :rangeicon:.",
-            "Balística :aomr_ballistics_icon: e Breu Incendiário :aomr_burning_pitch_icon: são pesquisados instantaneamente e gratuitamente em suas respectivas idades."
+            "20% chance of fallen humans returning as Shadows of Hades :aomr_shade_of_hades_icon:.",
+            "Mythic units :aomr_type_myth_unit_icon: +15% health :aomr_hit_points_icon:.",
+            ":aomr_type_archer_icon: soldiers and ranged :aomr_type_hero_icon: heroes +1 Line of Sight and :los_icon_aoe3de: range.",
+            "Ranged Fortifications +2 range :rangeicon:.",
+            "Ballistics :aomr_ballistics_icon: and Incendiary Pitch :aomr_burning_pitch_icon: are searched instantly and for free at their respective ages."
           ]
         }
       ]
@@ -583,18 +583,18 @@
   },
   {
     "id": 4,
-    "nome": "Rá",
+    "nome": "Frog",
     "panteao": [
       {
         "id": 2,
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -606,7 +606,7 @@
     "rush": 1,
     "turtle": 4,
     "eco": 5,
-    "foco": "Unidades do Migdol :aomr_migdol_stronghold_icon:",
+    "foco": "Migdol units :aomr_migdol_stronghold_icon:",
     "god_maior_relacao": [
       {
         "id": 29,
@@ -622,11 +622,11 @@
       },
       {
         "id": 33,
-        "nome": "Néftis"
+        "nome": "Nephthys"
       },
       {
         "id": 35,
-        "nome": "Osíris"
+        "nome": "Osiris"
       },
       {
         "id": 36,
@@ -636,11 +636,11 @@
     "tecnologias": [
       {
         "id": "2a800f30e211801ea0c0cd550c4e2acb",
-        "nome": "Pele de Rinocerante"
+        "nome": "Rhino Skin"
       },
       {
         "id": "2b800f30e2118091b6c5e7ff2694e428",
-        "nome": "Mãos de Faraó"
+        "nome": "Pharaoh's Hands"
       },
       {
         "id": "2a800f30e21180528133f5cf20520fe6",
@@ -656,7 +656,7 @@
       },
       {
         "id": "2a800f30e211806fa17bf4221b198d40",
-        "nome": "Enxó de Wepwawet"
+        "nome": "Wepwawet adze"
       },
       {
         "id": "2a800f30e21180ff8e97c7d60ed50c25",
@@ -664,11 +664,11 @@
       },
       {
         "id": "2a800f30e21180f199b8dc0786f6826e",
-        "nome": "Escudo de Couro"
+        "nome": "Leather Shield"
       },
       {
         "id": "2a800f30e211808bb375f40981b6449e",
-        "nome": "Projéteis de Electro"
+        "nome": "Electro projectiles"
       },
       {
         "id": "2a800f30e2118074804dc972fcba2406",
@@ -680,19 +680,19 @@
       },
       {
         "id": "2a800f30e211808fa65dd7be19a7721b",
-        "nome": "Tijolo de Barro Seco ao Sol"
+        "nome": "Sun-Dried Clay Brick"
       },
       {
         "id": "2a800f30e211802bad29c6756f35589e",
-        "nome": "Água Escuro"
+        "nome": "Dark Water"
       },
       {
         "id": "2a800f30e21180e09b28cdc676f71061",
-        "nome": "Ritos Funerários"
+        "nome": "Funeral Rites"
       },
       {
         "id": "2a800f30e211808fb769dd7f13e5fc3d",
-        "nome": "Espírito de Maat"
+        "nome": "Spirit of Maat"
       },
       {
         "id": "2a800f30e21180b79c4cffa74be0f021",
@@ -700,7 +700,7 @@
       },
       {
         "id": "2a800f30e21180e69109fc480672f10c",
-        "nome": "Coroa de Atef"
+        "nome": "Atef's Crown"
       },
       {
         "id": "2a800f30e21180e1af40e3b80b2d3ef9",
@@ -716,23 +716,23 @@
       },
       {
         "id": "2a800f30e21180f4a22ef39f1c00215e",
-        "nome": "Livro de Thoth"
+        "nome": "Book of Thoth"
       },
       {
         "id": "2a800f30e21180c8a482c0b6a3a4bb67",
-        "nome": "Presas de Apedemak"
+        "nome": "Apedemak Fangs"
       },
       {
         "id": "2a800f30e211801d8435ecc0e68c747c",
-        "nome": "Lanceiros Médios"
+        "nome": "Medium Lancers"
       },
       {
         "id": "2a800f30e21180d7abe9f56c9bbb8d0d",
-        "nome": "Machadeiros Médios"
+        "nome": "Medium Axes"
       },
       {
         "id": "2a800f30e21180879731efac0c351d01",
-        "nome": "Fundeiros Médios"
+        "nome": "Medium Slingers"
       },
       {
         "id": "2a800f30e21180488831d9d262d14ccb",
@@ -748,7 +748,7 @@
       },
       {
         "id": "2a800f30e211805d8ac0e46616ea6a19",
-        "nome": "Convocar Soldados de Quartel"
+        "nome": "Summon Barracks Soldiers"
       },
       {
         "id": "2a800f30e2118093b7a0c9b30a3f6adc",
@@ -764,35 +764,35 @@
       },
       {
         "id": "2a800f30e21180209b30c5fc8e57f3d4",
-        "nome": "Convocar Soldados de Migdol"
+        "nome": "Summon Migdol Soldiers"
       },
       {
         "id": "2a800f30e21180ea9de0fceca33234c6",
-        "nome": "Lanceiros Campeões"
+        "nome": "Champion Lancers"
       },
       {
         "id": "2a800f30e21180e38297dc2b416938b7",
-        "nome": "Machadeiros Campeões"
+        "nome": "Champion Axemen"
       },
       {
         "id": "2a800f30e21180a0befbddf416869f64",
-        "nome": "Fundeiros Campeões"
+        "nome": "Champion slingers"
       },
       {
         "id": "2a800f30e21180b6969bdafb15e4e929",
-        "nome": "Recrutar Soldados de Quartel"
+        "nome": "Recruit Barracks Soldiers"
       },
       {
         "id": "2a800f30e21180328885ec2d048accf2",
-        "nome": "Cameleiros Campeões"
+        "nome": "Champion Camelers"
       },
       {
         "id": "2a800f30e2118006ba67ec9ec43d429c",
-        "nome": "Bigas Campeãs"
+        "nome": "Champion Chariots"
       },
       {
         "id": "2a800f30e21180bf83d1e3df1c978018",
-        "nome": "Elefantes Campeões"
+        "nome": "Champion Elephants"
       },
       {
         "id": "2a800f30e21180a8869ef5e2ce7842e8",
@@ -802,26 +802,26 @@
     "starts": [
       {
         "id": 10,
-        "nome": "Rá (2TC | Bast) - por Light Yagami"
+        "nome": "Ra (2TC | Bast) - by Light Yagami"
       },
       {
         "id": 2,
-        "nome": "Egyptians - por Moose"
+        "nome": "Egyptians - by Moose"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Unidades do Migdol :aomr_migdol_stronghold_icon:"
+          "texto": "Focus: Migdol Units :aomr_migdol_stronghold_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Trabalhadores :aomr_laborer_icon: colhem frutas silvestres 25% mais rápido.",
-            "Cameleiro :aomr_camel_rider_icon:, Arqueiro de Biga :aomr_chariot_archer_icon: e Elefante de Guerra :aomr_war_elephant_icon: +15% de pontos de vida :aomr_hit_points_icon:.",
-            "Mandjet: Monumentos :aomr_monuments_retold_anim: fortalecidos por faraós :aomr_pharaoh_icon: fortalecem edifícios próximos (60% de eficiência dos faraós).",
-            "Sacerdotes :aomr_priest_icon: podem empodeirar ( 60% de eficiência dos faraós)."
+            ":aomr_laborer_icon: workers harvest berries 25% faster.",
+            "Camel Rider :aomr_camel_rider_icon:, Chariot Archer :aomr_chariot_archer_icon: and War Elephant :aomr_war_elephant_icon: +15% health :aomr_hit_points_icon:.",
+            "Mandjet: Monuments :aomr_monuments_retold_anim: strengthened by pharaohs :aomr_pharaoh_icon: strengthen nearby buildings (60% pharaoh efficiency).",
+            "Priests :aomr_priest_icon: can empower (60% efficiency of pharaohs)."
           ]
         }
       ]
@@ -831,18 +831,18 @@
   },
   {
     "id": 5,
-    "nome": "Ísis",
+    "nome": "Isis",
     "panteao": [
       {
         "id": 2,
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -862,7 +862,7 @@
       },
       {
         "id": 31,
-        "nome": "Anúbis"
+        "nome": "Anubis"
       },
       {
         "id": 32,
@@ -874,11 +874,11 @@
       },
       {
         "id": 35,
-        "nome": "Osíris"
+        "nome": "Osiris"
       },
       {
         "id": 37,
-        "nome": "Hórus"
+        "nome": "Horus"
       }
     ],
     "tecnologias": [
@@ -888,7 +888,7 @@
       },
       {
         "id": "2b800f30e2118091b6c5e7ff2694e428",
-        "nome": "Mãos de Faraó"
+        "nome": "Pharaoh's Hands"
       },
       {
         "id": "2a800f30e21180528133f5cf20520fe6",
@@ -904,19 +904,19 @@
       },
       {
         "id": "2a800f30e211806fa17bf4221b198d40",
-        "nome": "Enxó de Wepwawet"
+        "nome": "Wepwawet adze"
       },
       {
         "id": "2a800f30e21180d5af64ecb70c6e8288",
-        "nome": "Pés de Chacal"
+        "nome": "Jackal Feet"
       },
       {
         "id": "2a800f30e211809e9386ef55e0907d8e",
-        "nome": "Lança da Serpente"
+        "nome": "Serpent Spear"
       },
       {
         "id": "2a800f30e211802f8b4bdb6e2828032b",
-        "nome": "Necrópole"
+        "nome": "Necropolis"
       },
       {
         "id": "2a800f30e2118041bb3fc7d0c2a28ac7",
@@ -924,15 +924,15 @@
       },
       {
         "id": "2a800f30e211808fa65dd7be19a7721b",
-        "nome": "Tijolo de Barro Seco ao Sol"
+        "nome": "Sun-Dried Clay Brick"
       },
       {
         "id": "2a800f30e211802bad29c6756f35589e",
-        "nome": "Água Escuro"
+        "nome": "Dark Water"
       },
       {
         "id": "2a800f30e211809ba1cef6c6f9e36237",
-        "nome": "Arco de Osso Seco"
+        "nome": "Dry Bone Bow"
       },
       {
         "id": "2a800f30e21180c4b3e2d478e79f2149",
@@ -944,11 +944,11 @@
       },
       {
         "id": "2a800f30e211805e880ce9d31cf36125",
-        "nome": "Força do Vento Oeste"
+        "nome": "West Wind Strength"
       },
       {
         "id": "2a800f30e21180e69109fc480672f10c",
-        "nome": "Coroa de Atef"
+        "nome": "Atef's Crown"
       },
       {
         "id": "2a800f30e21180e1af40e3b80b2d3ef9",
@@ -960,27 +960,27 @@
       },
       {
         "id": "2a800f30e2118066a27cf849be4a64c0",
-        "nome": "Machado de Vingança"
+        "nome": "Vengeance Ax"
       },
       {
         "id": "2a800f30e2118056a7fcc9ae5e31b9c0",
-        "nome": "Lança de Hórus"
+        "nome": "Spear of Horus"
       },
       {
         "id": "2a800f30e2118023ac3bef5775253d27",
-        "nome": "Major de Cinquenta"
+        "nome": "Over Fifty"
       },
       {
         "id": "2a800f30e211801d8435ecc0e68c747c",
-        "nome": "Lanceiros Médios"
+        "nome": "Medium Lancers"
       },
       {
         "id": "2a800f30e21180d7abe9f56c9bbb8d0d",
-        "nome": "Machadeiros Médios"
+        "nome": "Medium Axes"
       },
       {
         "id": "2a800f30e21180879731efac0c351d01",
-        "nome": "Fundeiros Médios"
+        "nome": "Medium Slingers"
       },
       {
         "id": "2a800f30e21180488831d9d262d14ccb",
@@ -996,7 +996,7 @@
       },
       {
         "id": "2a800f30e211805d8ac0e46616ea6a19",
-        "nome": "Convocar Soldados de Quartel"
+        "nome": "Summon Barracks Soldiers"
       },
       {
         "id": "2a800f30e2118093b7a0c9b30a3f6adc",
@@ -1012,35 +1012,35 @@
       },
       {
         "id": "2a800f30e21180209b30c5fc8e57f3d4",
-        "nome": "Convocar Soldados de Migdol"
+        "nome": "Summon Migdol Soldiers"
       },
       {
         "id": "2a800f30e21180ea9de0fceca33234c6",
-        "nome": "Lanceiros Campeões"
+        "nome": "Champion Lancers"
       },
       {
         "id": "2a800f30e21180e38297dc2b416938b7",
-        "nome": "Machadeiros Campeões"
+        "nome": "Champion Axemen"
       },
       {
         "id": "2a800f30e21180a0befbddf416869f64",
-        "nome": "Fundeiros Campeões"
+        "nome": "Champion slingers"
       },
       {
         "id": "2a800f30e21180b6969bdafb15e4e929",
-        "nome": "Recrutar Soldados de Quartel"
+        "nome": "Recruit Barracks Soldiers"
       },
       {
         "id": "2a800f30e21180328885ec2d048accf2",
-        "nome": "Cameleiros Campeões"
+        "nome": "Champion Camelers"
       },
       {
         "id": "2a800f30e2118006ba67ec9ec43d429c",
-        "nome": "Bigas Campeãs"
+        "nome": "Champion Chariots"
       },
       {
         "id": "2a800f30e21180bf83d1e3df1c978018",
-        "nome": "Elefantes Campeões"
+        "nome": "Champion Elephants"
       },
       {
         "id": "2a800f30e21180a8869ef5e2ce7842e8",
@@ -1050,11 +1050,11 @@
     "starts": [
       {
         "id": 9,
-        "nome": "Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami"
+        "nome": "Isis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - by Light Yagami"
       },
       {
         "id": 2,
-        "nome": "Egyptians - por Moose"
+        "nome": "Egyptians - by Moose"
       }
     ],
     "explicacao_maior": {
@@ -1066,11 +1066,11 @@
         {
           "tipo": "lista",
           "itens": [
-            "Centros urbanos :aomr_town_center_egyptian_icon: e centros de cidadelas suportam +5 de população :aomr_population_provision_icon:.",
-            "Tecnologias (exceto Age-ups e Secrets of the Titans) custam -10%, exceto custos de favor.",
-            "Obeliscos :aomr_obelisk_icon: custam -5 de ouro :goldaom: e são construídos 60% mais rápido :aomr_time_icon:.",
-            "Escudo Divino: Os monumentos :aomr_monuments_retold_anim: protegem contra god powers inimigos (alcance 25 ; 50 quando fortalecido).",
-            "Monumentos Fortalecidos :aomr_monuments_retold_anim: também curam :aomr_hit_points_icon: unidades próximas no alcance de 50 em 1 HP/s (0,5× para unidades não inativas) e geram favor :favoraom: 100% mais rápido."
+            ":aomr_town_center_egyptian_icon: urban centers and citadel centers support +5 :aomr_population_provision_icon: population.",
+            "Technologies (except Age-ups and Secrets of the Titans) cost -10%, excluding favor costs.",
+            ":aomr_obelisk_icon: Obelisks cost -5 gold :goldaom: and are built 60% faster :aomr_time_icon:.",
+            "Divine Shield: :aomr_monuments_retold_anim: monuments protect against enemy divine powers (range 25; 50 when empowered).",
+            "Empowered Monuments :aomr_monuments_retold_anim: also heals :aomr_hit_points_icon: nearby units within range for 50 for 1 HP/s (0.5× for non-idle units) and generates favor :favoraom: 100% faster."
           ]
         }
       ]
@@ -1087,23 +1087,23 @@
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 6,
-        "nome": "Visão"
+        "nome": "Vision"
       }
     ],
     "rush": 5,
     "turtle": 4,
     "eco": 3,
-    "foco": "Unidades do Quartel :aomr_barracks_icon:",
+    "foco": ":aomr_barracks_icon: Barracks Units",
     "god_maior_relacao": [
       {
         "id": 30,
@@ -1111,11 +1111,11 @@
       },
       {
         "id": 31,
-        "nome": "Anúbis"
+        "nome": "Anubis"
       },
       {
         "id": 33,
-        "nome": "Néftis"
+        "nome": "Nephthys"
       },
       {
         "id": 34,
@@ -1127,17 +1127,17 @@
       },
       {
         "id": 37,
-        "nome": "Hórus"
+        "nome": "Horus"
       }
     ],
     "tecnologias": [
       {
         "id": "2a800f30e211802a9889e956511ad42c",
-        "nome": "Clarividência"
+        "nome": "Clairvoyance"
       },
       {
         "id": "2b800f30e2118091b6c5e7ff2694e428",
-        "nome": "Mãos de Faraó"
+        "nome": "Pharaoh's Hands"
       },
       {
         "id": "2a800f30e21180ff8e97c7d60ed50c25",
@@ -1145,11 +1145,11 @@
       },
       {
         "id": "2a800f30e21180f199b8dc0786f6826e",
-        "nome": "Escudo de Couro"
+        "nome": "Leather Shield"
       },
       {
         "id": "2a800f30e211808bb375f40981b6449e",
-        "nome": "Projéteis de Electro"
+        "nome": "Electro projectiles"
       },
       {
         "id": "2a800f30e2118074804dc972fcba2406",
@@ -1157,19 +1157,19 @@
       },
       {
         "id": "2a800f30e21180d5af64ecb70c6e8288",
-        "nome": "Pés de Chacal"
+        "nome": "Jackal Feet"
       },
       {
         "id": "2a800f30e211809e9386ef55e0907d8e",
-        "nome": "Lança da Serpente"
+        "nome": "Serpent Spear"
       },
       {
         "id": "2a800f30e211802f8b4bdb6e2828032b",
-        "nome": "Necrópole"
+        "nome": "Necropolis"
       },
       {
         "id": "2a800f30e211809ba1cef6c6f9e36237",
-        "nome": "Arco de Osso Seco"
+        "nome": "Dry Bone Bow"
       },
       {
         "id": "2a800f30e21180c4b3e2d478e79f2149",
@@ -1181,15 +1181,15 @@
       },
       {
         "id": "2a800f30e211805e880ce9d31cf36125",
-        "nome": "Força do Vento Oeste"
+        "nome": "West Wind Strength"
       },
       {
         "id": "2a800f30e21180e09b28cdc676f71061",
-        "nome": "Ritos Funerários"
+        "nome": "Funeral Rites"
       },
       {
         "id": "2a800f30e211808fb769dd7f13e5fc3d",
-        "nome": "Espírito de Maat"
+        "nome": "Spirit of Maat"
       },
       {
         "id": "2a800f30e21180b79c4cffa74be0f021",
@@ -1197,15 +1197,15 @@
       },
       {
         "id": "2a800f30e2118066a27cf849be4a64c0",
-        "nome": "Machado de Vingança"
+        "nome": "Vengeance Ax"
       },
       {
         "id": "2a800f30e2118056a7fcc9ae5e31b9c0",
-        "nome": "Lança de Hórus"
+        "nome": "Spear of Horus"
       },
       {
         "id": "2a800f30e2118023ac3bef5775253d27",
-        "nome": "Major de Cinquenta"
+        "nome": "Over Fifty"
       },
       {
         "id": "2a800f30e21180bc9680e35688768b56",
@@ -1213,23 +1213,23 @@
       },
       {
         "id": "2a800f30e21180f4a22ef39f1c00215e",
-        "nome": "Livro de Thoth"
+        "nome": "Book of Thoth"
       },
       {
         "id": "2a800f30e21180c8a482c0b6a3a4bb67",
-        "nome": "Presas de Apedemak"
+        "nome": "Apedemak Fangs"
       },
       {
         "id": "2a800f30e211801d8435ecc0e68c747c",
-        "nome": "Lanceiros Médios"
+        "nome": "Medium Lancers"
       },
       {
         "id": "2a800f30e21180d7abe9f56c9bbb8d0d",
-        "nome": "Machadeiros Médios"
+        "nome": "Medium Axes"
       },
       {
         "id": "2a800f30e21180879731efac0c351d01",
-        "nome": "Fundeiros Médios"
+        "nome": "Medium Slingers"
       },
       {
         "id": "2a800f30e21180488831d9d262d14ccb",
@@ -1245,7 +1245,7 @@
       },
       {
         "id": "2a800f30e211805d8ac0e46616ea6a19",
-        "nome": "Convocar Soldados de Quartel"
+        "nome": "Summon Barracks Soldiers"
       },
       {
         "id": "2a800f30e2118093b7a0c9b30a3f6adc",
@@ -1261,35 +1261,35 @@
       },
       {
         "id": "2a800f30e21180209b30c5fc8e57f3d4",
-        "nome": "Convocar Soldados de Migdol"
+        "nome": "Summon Migdol Soldiers"
       },
       {
         "id": "2a800f30e21180ea9de0fceca33234c6",
-        "nome": "Lanceiros Campeões"
+        "nome": "Champion Lancers"
       },
       {
         "id": "2a800f30e21180e38297dc2b416938b7",
-        "nome": "Machadeiros Campeões"
+        "nome": "Champion Axemen"
       },
       {
         "id": "2a800f30e21180a0befbddf416869f64",
-        "nome": "Fundeiros Campeões"
+        "nome": "Champion slingers"
       },
       {
         "id": "2a800f30e21180b6969bdafb15e4e929",
-        "nome": "Recrutar Soldados de Quartel"
+        "nome": "Recruit Barracks Soldiers"
       },
       {
         "id": "2a800f30e21180328885ec2d048accf2",
-        "nome": "Cameleiros Campeões"
+        "nome": "Champion Camelers"
       },
       {
         "id": "2a800f30e2118006ba67ec9ec43d429c",
-        "nome": "Bigas Campeãs"
+        "nome": "Champion Chariots"
       },
       {
         "id": "2a800f30e21180bf83d1e3df1c978018",
-        "nome": "Elefantes Campeões"
+        "nome": "Champion Elephants"
       },
       {
         "id": "2a800f30e21180a8869ef5e2ce7842e8",
@@ -1299,32 +1299,32 @@
     "starts": [
       {
         "id": 12,
-        "nome": "Set Rush! :aomr_type_siege_weapon_icon: - por Miniyeti"
+        "nome": "Set Rush! :aomr_type_siege_weapon_icon: - by Miniyeti"
       },
       {
         "id": 2,
-        "nome": "Egyptians - por Moose"
+        "nome": "Egyptians - by Moose"
       },
       {
         "id": 11,
-        "nome": "Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM]"
+        "nome": "Set FH Migdol Aggressive! ⏭ - by Caffeine [PSGM]"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Unidades do Quartel :aomr_barracks_icon:"
+          "texto": "Focus: :aomr_barracks_icon: Barracks Units"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Comece o jogo com um Babuíno de Set.",
-            "Os faraós :aomr_pharaoh_icon: podem invocar Animais de Set.",
-            "Os sacerdotes :aomr_priest_icon: podem converter animais selvagens, mas os animais convertidos perdem 25% de sua comida.",
-            "+5% de velocidade de Lanceiro :aomr_spearman_icon:, Machadeiro :aomr_axeman_icon: e Alabardeiro :aomr_slinger_icon:.",
-            "Quartel :aomr_barracks_icon:, Obras de Siege e Fortresss Migdol :aomr_migdol_stronghold_icon: custam -25% de ouro.",
-            "Devotos : Monumentos :aomr_monuments_retold_anim: reduzem o custo de unidades em Quartel :aomr_barracks_icon: e Fortress Migdol :aomr_migdol_stronghold_icon: próximos em 10% ."
+            "Start the game with a Set Baboon.",
+            ":aomr_pharaoh_icon: Pharaohs can summon Animals of Set.",
+            ":aomr_priest_icon: priests can convert wild animals, but converted animals lose 25% of their food.",
+            "+5% speed of Spearman :aomr_spearman_icon:, Axeman :aomr_axeman_icon: and Halberdier :aomr_slinger_icon:.",
+            "Barracks :aomr_barracks_icon:, Siege Works and Migdol Fortresses :aomr_migdol_stronghold_icon: cost -25% gold.",
+            "Devotees: :aomr_monuments_retold_anim: Monuments reduce the cost of units in nearby :aomr_barracks_icon: Barracks and :aomr_migdol_stronghold_icon: Migdol Fortress by 10%."
           ]
         }
       ]
@@ -1338,26 +1338,26 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 7,
-        "nome": "Mina Enânica"
+        "nome": "Dwarven Mine"
       }
     ],
     "rush": 4,
     "turtle": 5,
     "eco": 4,
-    "foco": "Anões :aomr_dwarf_icon: & Armory :aomr_dwarven_armory_icon:",
+    "foco": "Dwarves :aomr_dwarf_icon: & Armory :aomr_dwarven_armory_icon:",
     "god_maior_relacao": [
       {
         "id": 38,
@@ -1387,23 +1387,23 @@
     "tecnologias": [
       {
         "id": "2a800f30e21180fc9b02ec6d021ac749",
-        "nome": "Martelo do Trovão"
+        "nome": "Thunder Hammer"
       },
       {
         "id": "2a800f30e211801fb549e6185e2dbd03",
-        "nome": "Armas Enânicas"
+        "nome": "Dwarven Weapons"
       },
       {
         "id": "2a800f30e21180e0ba88ed7447dce7a7",
-        "nome": "Armadura de Ferro Meteórico"
+        "nome": "Meteoric Iron Armor"
       },
       {
         "id": "2a800f30e21180e38fede4fb52e77dc0",
-        "nome": "Escudo de Escamas de Dragão"
+        "nome": "Dragon Scale Shield"
       },
       {
         "id": "2a800f30e21180e79595e634b9bba97d",
-        "nome": "Dísablót"
+        "nome": "Disblot"
       },
       {
         "id": "2a800f30e211808e8629d69633954384",
@@ -1411,7 +1411,7 @@
       },
       {
         "id": "2a800f30e21180b8aebbc80e4f4cffd8",
-        "nome": "Sessrúmnir"
+        "nome": "Sessrumnir"
       },
       {
         "id": "2a800f30e211805688fff37030b9586a",
@@ -1419,11 +1419,11 @@
       },
       {
         "id": "2a800f30e21180839777effb63f8a49a",
-        "nome": "Salão dos Thanes"
+        "nome": "Hall of Thanes"
       },
       {
         "id": "2a800f30e21180d48ffbe93f81fd8799",
-        "nome": "Peitoral Enânico"
+        "nome": "Dwarven Chestplate"
       },
       {
         "id": "2a900f30e2118086ae6dd231b5cd7392",
@@ -1431,35 +1431,35 @@
       },
       {
         "id": "2a900f30e2118026921fefd486f04001",
-        "nome": "Machado da Caça"
+        "nome": "Hunting Ax"
       },
       {
         "id": "2a900f30e211807fa7a0c6b01fd9de68",
-        "nome": "Colheita de Inverno"
+        "nome": "Winter Harvest"
       },
       {
         "id": "2a900f30e21180a484aed31a475c2ea6",
-        "nome": "Runa de Thurisaz"
+        "nome": "Thurisaz Rune"
       },
       {
         "id": "2a900f30e21180e8aabfc21458437eca",
-        "nome": "Chamado de Valhalla"
+        "nome": "Call of Valhalla"
       },
       {
         "id": "2a900f30e211800fbd28d98924212fa8",
-        "nome": "Formação Svinfylking"
+        "nome": "Svinfylking Training"
       },
       {
         "id": "2a900f30e211802e8438c847057001d7",
-        "nome": "Filhos de Sleipnir"
+        "nome": "Children of Sleipnir"
       },
       {
         "id": "2a900f30e211806c8877e3f5f3e19f4a",
-        "nome": "Verrumão dos Anões"
+        "nome": "Dwarf Warmer"
       },
       {
         "id": "2a900f30e2118034b330d8d1f62b0b4e",
-        "nome": "Fúria Berserker"
+        "nome": "Berserker Fury"
       },
       {
         "id": "2a900f30e211801cb4adf8d956252fc7",
@@ -1467,53 +1467,53 @@
       },
       {
         "id": "2a900f30e211806186e9c166c6c17049",
-        "nome": "Convocar Unidades da House Comunal"
+        "nome": "Summon Common House Units"
       },
       {
         "id": "2a900f30e21180d0aca1f0733635dfb3",
-        "nome": "Convocar Unidades do Grande Salão"
+        "nome": "Summon Units from the Great Hall"
       },
       {
         "id": "2a900f30e21180839342c695982dbcbc",
-        "nome": "Convocar Unidades do Forte da Colina"
+        "nome": "Summon Hillfort Units"
       },
       {
         "id": "2a900f30e21180cda42af6725b85ba23",
-        "nome": "Recrutar Unidades da House Comunal"
+        "nome": "Recruit Common House Units"
       },
       {
         "id": "2a900f30e21180cb8b07fb9797a81f33",
-        "nome": "Recrutar Unidades do Grande Salão"
+        "nome": "Recruit Great Hall Units"
       },
       {
         "id": "2a900f30e21180c68d78d58de10e5a66",
-        "nome": "Recrutar Unidades do Forte da Colina"
+        "nome": "Recruit Hillfort Units"
       }
     ],
     "starts": [
       {
         "id": 17,
-        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose"
+        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - by Moose"
       },
       {
         "id": 16,
-        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg"
+        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - by Borg"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Anões :aomr_dwarf_icon: & Armory :aomr_dwarven_armory_icon:"
+          "texto": "Focus: Dwarves :aomr_dwarf_icon: & Armory :aomr_dwarven_armory_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Comece com 3 Anões :aomr_dwarf_icon: em vez de 3 Coletores :aomr_gatherer_icon:.",
-            "Anões :aomr_dwarf_icon: custam -10 de ouro e coletam comida e madeira 15% mais rápido, quase tão rápido quanto os coletores.",
-            "Constrói o Arsenal dos Anões :aomr_dwarven_armory_icon: em vez do Arsenal.",
-            "O Arsenal dos Anões :aomr_dwarven_armory_icon: pode ser construído e pesquisar melhorias em qualquer era, além de poder pesquisar três tecnologias adicionais.",
-            "Receba um Anão :aomr_dwarf_icon: grátis para cada melhoria de Arsenal Anão pesquisada."
+            "Start with 3 :aomr_dwarf_icon: Dwarves instead of 3 :aomr_gatherer_icon: Collectors.",
+            "Dwarves :aomr_dwarf_icon: cost -10 gold and gather food and wood 15% faster, almost as fast as gatherers.",
+            "Build the :aomr_dwarven_armory_icon: Dwarven Armory instead of the Armory.",
+            "The :aomr_dwarven_armory_icon: Dwarven Arsenal can be built and researched for improvements in any era, as well as being able to research three additional technologies.",
+            "Receive a free :aomr_dwarf_icon: Dwarf for every Dwarf Armory upgrade researched."
           ]
         }
       ]
@@ -1527,26 +1527,26 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 8,
-        "nome": "Grande Caça"
+        "nome": "Big Hunt"
       }
     ],
     "rush": 4,
     "turtle": 3,
     "eco": 4,
-    "foco": "Unidades do Grande Salão :aomr_great_hall_icon:",
+    "foco": "Great Hall Units :aomr_great_hall_icon:",
     "god_maior_relacao": [
       {
         "id": 38,
@@ -1584,7 +1584,7 @@
       },
       {
         "id": "2a800f30e21180e79595e634b9bba97d",
-        "nome": "Dísablót"
+        "nome": "Disblot"
       },
       {
         "id": "2a800f30e211808e8629d69633954384",
@@ -1592,7 +1592,7 @@
       },
       {
         "id": "2a800f30e21180b8aebbc80e4f4cffd8",
-        "nome": "Sessrúmnir"
+        "nome": "Sessrumnir"
       },
       {
         "id": "2a800f30e21180cfaa32e0431317656e",
@@ -1612,23 +1612,23 @@
       },
       {
         "id": "2a900f30e2118026921fefd486f04001",
-        "nome": "Machado da Caça"
+        "nome": "Hunting Ax"
       },
       {
         "id": "2a900f30e211807fa7a0c6b01fd9de68",
-        "nome": "Colheita de Inverno"
+        "nome": "Winter Harvest"
       },
       {
         "id": "2a900f30e21180a484aed31a475c2ea6",
-        "nome": "Runa de Thurisaz"
+        "nome": "Thurisaz Rune"
       },
       {
         "id": "2a900f30e21180e8aabfc21458437eca",
-        "nome": "Chamado de Valhalla"
+        "nome": "Call of Valhalla"
       },
       {
         "id": "2a900f30e211800fbd28d98924212fa8",
-        "nome": "Formação Svinfylking"
+        "nome": "Svinfylking Training"
       },
       {
         "id": "2a900f30e211804ab931df2a2349c682",
@@ -1644,15 +1644,15 @@
       },
       {
         "id": "2a900f30e211802e8438c847057001d7",
-        "nome": "Filhos de Sleipnir"
+        "nome": "Children of Sleipnir"
       },
       {
         "id": "2a900f30e211806c8877e3f5f3e19f4a",
-        "nome": "Verrumão dos Anões"
+        "nome": "Dwarf Warmer"
       },
       {
         "id": "2a900f30e2118034b330d8d1f62b0b4e",
-        "nome": "Fúria Berserker"
+        "nome": "Berserker Fury"
       },
       {
         "id": "2a900f30e211801cb4adf8d956252fc7",
@@ -1660,27 +1660,27 @@
       },
       {
         "id": "2a900f30e211806186e9c166c6c17049",
-        "nome": "Convocar Unidades da House Comunal"
+        "nome": "Summon Common House Units"
       },
       {
         "id": "2a900f30e21180d0aca1f0733635dfb3",
-        "nome": "Convocar Unidades do Grande Salão"
+        "nome": "Summon Units from the Great Hall"
       },
       {
         "id": "2a900f30e21180839342c695982dbcbc",
-        "nome": "Convocar Unidades do Forte da Colina"
+        "nome": "Summon Hillfort Units"
       },
       {
         "id": "2a900f30e21180cda42af6725b85ba23",
-        "nome": "Recrutar Unidades da House Comunal"
+        "nome": "Recruit Common House Units"
       },
       {
         "id": "2a900f30e21180cb8b07fb9797a81f33",
-        "nome": "Recrutar Unidades do Grande Salão"
+        "nome": "Recruit Great Hall Units"
       },
       {
         "id": "2a900f30e21180c68d78d58de10e5a66",
-        "nome": "Recrutar Unidades do Forte da Colina"
+        "nome": "Recruit Hillfort Units"
       }
     ],
     "unidades_exclusivas": [
@@ -1692,22 +1692,22 @@
     "starts": [
       {
         "id": 3,
-        "nome": "Norses (exceto Thor ❌:aomr_thor_icon:) - por Moose"
+        "nome": "Norsemen (except Thor ❌:aomr_thor_icon:) - by Moose"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Unidades do Grande Salão :aomr_great_hall_icon:"
+          "texto": "Focus: Great Hall Units :aomr_great_hall_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Caçadores :aomr_gatherer_icon::aomr_dwarf_icon: coletam 10% mais rápido :foodaom:.",
-            "Unidades do Grande Salão :aomr_great_hall_icon: geram +25% de favor :favoraom: em batalha.",
-            "Unidades humanas :aomr_type_human_soldier_icon: e heróis :aomr_type_hero_icon: regeneram 0,4 pontos de vida :aomr_hit_points_icon: por segundo.",
-            "Dois batedores Corvos :aomr_raven_icon: aparecem quando o primeiro Temple :aomr_temple_icon: é construído e reaparecem pouco tempo depois de serem mortos."
+            ":aomr_gatherer_icon::aomr_dwarf_icon: hunters collect 10% faster :foodaom:.",
+            ":aomr_great_hall_icon: Great Hall units generate +25% :favoraom: favor in battle.",
+            ":aomr_type_human_soldier_icon: human units and :aomr_type_hero_icon: heroes regenerate 0.4 :aomr_hit_points_icon: health points per second.",
+            "Two :aomr_raven_icon: Crow scouts appear when the first :aomr_temple_icon: Temple is built and reappear shortly after being killed."
           ]
         }
       ]
@@ -1720,26 +1720,26 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 9,
-        "nome": "Espião"
+        "nome": "Spy"
       }
     ],
     "rush": 4,
     "turtle": 3,
     "eco": 2,
-    "foco": "Unidades Mythics :aomr_type_myth_unit_icon:",
+    "foco": "Mythical Units :aomr_type_myth_unit_icon:",
     "god_maior_relacao": [
       {
         "id": 38,
@@ -1777,7 +1777,7 @@
       },
       {
         "id": "2a800f30e21180e79595e634b9bba97d",
-        "nome": "Dísablót"
+        "nome": "Disblot"
       },
       {
         "id": "2a800f30e211808e8629d69633954384",
@@ -1785,7 +1785,7 @@
       },
       {
         "id": "2a800f30e21180b8aebbc80e4f4cffd8",
-        "nome": "Sessrúmnir"
+        "nome": "Sessrumnir"
       },
       {
         "id": "2a800f30e211805688fff37030b9586a",
@@ -1793,11 +1793,11 @@
       },
       {
         "id": "2a800f30e21180839777effb63f8a49a",
-        "nome": "Salão dos Thanes"
+        "nome": "Hall of Thanes"
       },
       {
         "id": "2a800f30e21180d48ffbe93f81fd8799",
-        "nome": "Peitoral Enânico"
+        "nome": "Dwarven Chestplate"
       },
       {
         "id": "2a800f30e21180cfaa32e0431317656e",
@@ -1813,15 +1813,15 @@
       },
       {
         "id": "2a900f30e21180a484aed31a475c2ea6",
-        "nome": "Runa de Thurisaz"
+        "nome": "Thurisaz Rune"
       },
       {
         "id": "2a900f30e21180e8aabfc21458437eca",
-        "nome": "Chamado de Valhalla"
+        "nome": "Call of Valhalla"
       },
       {
         "id": "2a900f30e211800fbd28d98924212fa8",
-        "nome": "Formação Svinfylking"
+        "nome": "Svinfylking Training"
       },
       {
         "id": "2a900f30e211804ab931df2a2349c682",
@@ -1837,7 +1837,7 @@
       },
       {
         "id": "2a900f30e2118034b330d8d1f62b0b4e",
-        "nome": "Fúria Berserker"
+        "nome": "Berserker Fury"
       },
       {
         "id": "2a900f30e211801cb4adf8d956252fc7",
@@ -1845,7 +1845,7 @@
       },
       {
         "id": "2a900f30e21180938a9edfea1d9fea4b",
-        "nome": "Sangue de Granito"
+        "nome": "Granite Blood"
       },
       {
         "id": "2a900f30e21180ca9427c519fcca3a31",
@@ -1853,53 +1853,53 @@
       },
       {
         "id": "2a900f30e211806186e9c166c6c17049",
-        "nome": "Convocar Unidades da House Comunal"
+        "nome": "Summon Common House Units"
       },
       {
         "id": "2a900f30e21180d0aca1f0733635dfb3",
-        "nome": "Convocar Unidades do Grande Salão"
+        "nome": "Summon Units from the Great Hall"
       },
       {
         "id": "2a900f30e21180839342c695982dbcbc",
-        "nome": "Convocar Unidades do Forte da Colina"
+        "nome": "Summon Hillfort Units"
       },
       {
         "id": "2a900f30e21180cda42af6725b85ba23",
-        "nome": "Recrutar Unidades da House Comunal"
+        "nome": "Recruit Common House Units"
       },
       {
         "id": "2a900f30e21180cb8b07fb9797a81f33",
-        "nome": "Recrutar Unidades do Grande Salão"
+        "nome": "Recruit Great Hall Units"
       },
       {
         "id": "2a900f30e21180c68d78d58de10e5a66",
-        "nome": "Recrutar Unidades do Forte da Colina"
+        "nome": "Recruit Hillfort Units"
       }
     ],
     "starts": [
       {
         "id": 15,
-        "nome": "Loki (:aomr_hersir_icon::aomr_relic_anim: Herlíquias)- por HuskSuppe"
+        "nome": "Loki (:aomr_hersir_icon::aomr_relic_anim: Relics) - by HuskSuppe"
       },
       {
         "id": 3,
-        "nome": "Norses (exceto Thor ❌:aomr_thor_icon:) - por Moose"
+        "nome": "Norsemen (except Thor ❌:aomr_thor_icon:) - by Moose"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Unidades Mythics :aomr_type_myth_unit_icon:"
+          "texto": "Focus: Mythical Units :aomr_type_myth_unit_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Causar dano a unidades inimigas pode gerar myth units :aomr_type_myth_unit_icon:. (Soldados humanos :aomr_type_human_soldier_icon: contribuem com 10%; Hersirs :aomr_hersir_icon: com 50% do dano causado; outros não contribuem.)",
-            "Soldados humanos :aomr_type_human_soldier_icon: e heróis :aomr_type_hero_icon: + 10% de dano de contra-ataque.",
-            "Edifícios (construídos por unidades militares) são construídos 10% mais rápido :aomr_time_icon:.",
-            "Carros de boi :aomr_ox_cart_icon: são 50% mais baratos.",
-            "Transformar Coletores :aomr_gatherer_icon: e Anões :aomr_dwarf_icon: em Berserks :aomr_berserk_icon: é 50% mais barato ."
+            "Dealing damage to enemy units can spawn :aomr_type_myth_unit_icon: mythic units. (Human soldiers :aomr_type_human_soldier_icon: contribute 10%; Hersirs :aomr_hersir_icon: 50% of the damage dealt; others do not contribute.)",
+            "Human soldiers :aomr_type_human_soldier_icon: and heroes :aomr_type_hero_icon: + 10% counterattack damage.",
+            "Buildings (constructed by military units) are constructed 10% faster :aomr_time_icon:.",
+            "Bullock carts :aomr_ox_cart_icon: are 50% cheaper.",
+            "Turning Collectors :aomr_gatherer_icon: and Dwarves :aomr_dwarf_icon: into Berserks :aomr_berserk_icon: is 50% cheaper."
           ]
         }
       ]
@@ -1916,23 +1916,23 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 10,
-        "nome": "Onda de Choque"
+        "nome": "Shock wave"
       }
     ],
     "rush": 4,
     "turtle": 3,
     "eco": 1,
-    "foco": "Visão :los_icon_aoe3de: & Mobilidade :aomr_speed_icon:",
+    "foco": "Vision :los_icon_aoe3de: & Mobility :aomr_speed_icon:",
     "god_maior_relacao": [
       {
         "id": 48,
@@ -1952,17 +1952,17 @@
       },
       {
         "id": 54,
-        "nome": "Hélios"
+        "nome": "Helios"
       },
       {
         "id": 55,
-        "nome": "Hécate"
+        "nome": "Hecate"
       }
     ],
     "tecnologias": [
       {
         "id": "2a900f30e21180cd858ddc0bbe811ff4",
-        "nome": "Velocidade Empírica"
+        "nome": "Empirical Speed"
       },
       {
         "id": "2c300f30e211806c8aa0f31b9a6a2ca0",
@@ -1974,19 +1974,19 @@
       },
       {
         "id": "2c300f30e21180b09e11cce459351744",
-        "nome": "Convocar Soldado do Palácio"
+        "nome": "Summon Palace Soldier"
       },
       {
         "id": "2b200f30e211804a84a1fec3a7c4a562",
-        "nome": "Mordida do Turbarão"
+        "nome": "Shark Bite"
       },
       {
         "id": "2b200f30e211804b97a2e6a44b5006cb",
-        "nome": "Maça sem Peso"
+        "nome": "Weightless Apple"
       },
       {
         "id": "2b200f30e2118062b790e674e91166ac",
-        "nome": "Heroísmo da Linha de Frente"
+        "nome": "Frontline Heroism"
       },
       {
         "id": "2a900f30e21180f0a3d9c1e31b8506ce",
@@ -1994,7 +1994,7 @@
       },
       {
         "id": "2a900f30e2118050aa84c05e0d89129c",
-        "nome": "Coração de Titãs"
+        "nome": "Heart of Titans"
       },
       {
         "id": "2a900f30e211804eba64f2122c0e6c97",
@@ -2002,11 +2002,11 @@
       },
       {
         "id": "2b200f30e21180cd910be48bad879289",
-        "nome": "Gêmeos"
+        "nome": "Twins"
       },
       {
         "id": "2b200f30e2118062a881ff857cc48a04",
-        "nome": "Renovação Heroca"
+        "nome": "Heroic Renewal"
       },
       {
         "id": "2b200f30e211803290abccfacca52734",
@@ -2022,19 +2022,19 @@
       },
       {
         "id": "2c300f30e211803ebc28eb4a8e5be523",
-        "nome": "Recrutar Soldado do Palácio"
+        "nome": "Recruit Palace Soldier"
       },
       {
         "id": "2b200f30e21180cf9552d770fa5972aa",
-        "nome": "Visão Profética"
+        "nome": "Prophetic Vision"
       },
       {
         "id": "2b200f30e211802c8aa8d6ecdb62f3b1",
-        "nome": "Segredo de Poseidon"
+        "nome": "Poseidon's Secret"
       },
       {
         "id": "2b200f30e211801aad20f88523ad31de",
-        "nome": "Lança de Pedra"
+        "nome": "Stone Spear"
       },
       {
         "id": "2b200f30e2118059ad61d631d44062d6",
@@ -2042,19 +2042,19 @@
       },
       {
         "id": "2b200f30e21180baaf2fe000c61b4488",
-        "nome": "Auréola do Sol"
+        "nome": "Sun Halo"
       },
       {
         "id": "2b200f30e21180948ffec69648afc328",
-        "nome": "Petrificação"
+        "nome": "Petrification"
       },
       {
         "id": "2b200f30e21180cf87aaf90f9ead65be",
-        "nome": "Sangue de Ásper"
+        "nome": "Asper's Blood"
       },
       {
         "id": "2b200f30e21180cab704e54f47745bd5",
-        "nome": "Rejuvenescimento Mítico"
+        "nome": "Mythical Rejuvenation"
       },
       {
         "id": "2b200f30e211802fb706c9f185647749",
@@ -2064,22 +2064,22 @@
     "starts": [
       {
         "id": 4,
-        "nome": "Atlanteans - por Moose"
+        "nome": "Atlantes - by Moose"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Visão :los_icon_aoe3de: & Mobilidade :aomr_speed_icon:"
+          "texto": "Focus: Vision :los_icon_aoe3de: & Mobility :aomr_speed_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Pode construir uma nova Passagem Celeste :aomr_sky_passage_icon: a cada era.",
-            "As unidades podem entrar nas Passagens Celestes :aomr_sky_passage_icon: para viajar instantaneamente entre elas.",
-            "Todas as unidades têm +4 de Linha de Visão :los_icon_aoe3de:.",
-            "Unidades inimigas danificadas permanecem visíveis :los_icon_aoe3de: por 25 segundos."
+            "You can build a new Sky Passage :aomr_sky_passage_icon: every age.",
+            "Units can enter Skywalks :aomr_sky_passage_icon: to travel instantly between them.",
+            "All units have +4 Line of Sight :los_icon_aoe3de:.",
+            "Damaged enemy units remain visible :los_icon_aoe3de: for 25 seconds."
           ]
         }
       ]
@@ -2096,23 +2096,23 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 11,
-        "nome": "Floresta de Gaia"
+        "nome": "Gaia Forest"
       }
     ],
     "rush": 3,
     "turtle": 4,
     "eco": 5,
-    "foco": "Economia :foodaom::woodaom::goldaom: & Construções :aomr_type_building_icon:",
+    "foco": "Economy :foodaom::woodaom::goldaom: & Construction :aomr_type_building_icon:",
     "god_maior_relacao": [
       {
         "id": 47,
@@ -2136,7 +2136,7 @@
       },
       {
         "id": 55,
-        "nome": "Hécate"
+        "nome": "Hecate"
       }
     ],
     "tecnologias": [
@@ -2146,15 +2146,15 @@
       },
       {
         "id": "2b200f30e21180278e66d5dc7b786b52",
-        "nome": "Vingança de Hefesto"
+        "nome": "Hephaestus' Revenge"
       },
       {
         "id": "2b200f30e21180a3ba53eeb5fdaefc03",
-        "nome": "Forja Vulcânica"
+        "nome": "Volcanic Forge"
       },
       {
         "id": "2b200f30e211806ea2daec0f573a267f",
-        "nome": "Percepção"
+        "nome": "Perception"
       },
       {
         "id": "2c300f30e211806c8aa0f31b9a6a2ca0",
@@ -2166,31 +2166,31 @@
       },
       {
         "id": "2c300f30e21180b09e11cce459351744",
-        "nome": "Convocar Soldado do Palácio"
+        "nome": "Summon Palace Soldier"
       },
       {
         "id": "2b200f30e211804a84a1fec3a7c4a562",
-        "nome": "Mordida do Turbarão"
+        "nome": "Shark Bite"
       },
       {
         "id": "2b200f30e211804b97a2e6a44b5006cb",
-        "nome": "Maça sem Peso"
+        "nome": "Weightless Apple"
       },
       {
         "id": "2b200f30e2118062b790e674e91166ac",
-        "nome": "Heroísmo da Linha de Frente"
+        "nome": "Frontline Heroism"
       },
       {
         "id": "2b200f30e211802d8f43c8b8481f6049",
-        "nome": "Chifres da Consagração"
+        "nome": "Horns of Consecration"
       },
       {
         "id": "2b200f30e21180a2a008c0c908a1e428",
-        "nome": "Cota de Oricalco"
+        "nome": "Orichalco Quota"
       },
       {
         "id": "2b200f30e2118087aa4ee25ad7dfe66a",
-        "nome": "O Presente de Reia"
+        "nome": "Rhea's Gift"
       },
       {
         "id": "2c300f30e211804fa751de3f6ba5bacf",
@@ -2202,39 +2202,39 @@
       },
       {
         "id": "2c300f30e211803ebc28eb4a8e5be523",
-        "nome": "Recrutar Soldado do Palácio"
+        "nome": "Recruit Palace Soldier"
       },
       {
         "id": "2b200f30e21180cf9552d770fa5972aa",
-        "nome": "Visão Profética"
+        "nome": "Prophetic Vision"
       },
       {
         "id": "2b200f30e211802c8aa8d6ecdb62f3b1",
-        "nome": "Segredo de Poseidon"
+        "nome": "Poseidon's Secret"
       },
       {
         "id": "2b200f30e211801aad20f88523ad31de",
-        "nome": "Lança de Pedra"
+        "nome": "Stone Spear"
       },
       {
         "id": "2b200f30e2118023aa4efe33c5c12f79",
-        "nome": "Guardião do Io"
+        "nome": "Guardian of Io"
       },
       {
         "id": "2b200f30e21180c3a161ceb194c9088f",
-        "nome": "Devotos de Atlas"
+        "nome": "Atlas Devotees"
       },
       {
         "id": "2b200f30e21180efb921dd12bf870b01",
-        "nome": "Escudo dos Titãs"
+        "nome": "Titans' Shield"
       },
       {
         "id": "2b200f30e21180cf87aaf90f9ead65be",
-        "nome": "Sangue de Ásper"
+        "nome": "Asper's Blood"
       },
       {
         "id": "2b200f30e21180cab704e54f47745bd5",
-        "nome": "Rejuvenescimento Mítico"
+        "nome": "Mythical Rejuvenation"
       },
       {
         "id": "2b200f30e211802fb706c9f185647749",
@@ -2244,34 +2244,34 @@
     "starts": [
       {
         "id": 20,
-        "nome": "Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion"
+        "nome": "Gaia (FH ⏫:aomr_heroic_age_icon:) - by Balerion"
       },
       {
         "id": 21,
-        "nome": "Gaia Eco :aomr_economic_guild_icon: - por Balerion"
+        "nome": "Gaia Eco :aomr_economic_guild_icon: - by Balerion"
       },
       {
         "id": 4,
-        "nome": "Atlanteans - por Moose"
+        "nome": "Atlantes - by Moose"
       },
       {
         "id": 22,
-        "nome": "Gaia Heroca :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)- por Boxer"
+        "nome": "Heroic Gaia :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:)- by Boxer"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Economia :foodaom::woodaom::goldaom: & Construções :aomr_type_building_icon:"
+          "texto": "Focus: Economy :foodaom::woodaom::goldaom: & Construction :aomr_type_building_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Comece com 2 Cidadãos Heros :aomr_citizen_hero_icon: e promover Cidadãos a heróis custa -25%.",
-            "As melhorias da Guilda Econômica :aomr_economic_guild_icon: custam -30% e podem ser pesquisadas uma era antes.",
-            "Os edifícios econômicos (centros urbanos :aomr_town_center_atlantean_icon:, centros de vilas :aomr_village_center_atlanteans_icon:, mansões :aomr_manor_icon:, guildas econômicas :aomr_economic_guild_icon: e mercados :aomr_market_icon:) crescem exuberantes :aomr_ability_lush_icon:.",
-            "Lush :aomr_ability_lush_icon: cura as unidades e edifícios do jogador (1 ponto de vida :aomr_hit_points_icon: por segundo)."
+            "Start with 2 Hero Citizens :aomr_citizen_hero_icon: and promoting Citizens to heroes costs -25%.",
+            ":aomr_economic_guild_icon: Economic Guild upgrades cost -30% and can be researched an age earlier.",
+            "Economic buildings (urban centers :aomr_town_center_atlantean_icon:, village centers :aomr_village_center_atlanteans_icon:, mansions :aomr_manor_icon:, economic guilds :aomr_economic_guild_icon:, and markets :aomr_market_icon:) grow lushly :aomr_ability_lush_icon:.",
+            "Lush :aomr_ability_lush_icon: heals the player's units and buildings (1 hit point :aomr_hit_points_icon: per second)."
           ]
         }
       ]
@@ -2288,23 +2288,23 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 12,
-        "nome": "Desconstrução"
+        "nome": "Deconstruction"
       }
     ],
     "rush": 5,
     "turtle": 3,
     "eco": 4,
-    "foco": "Unidades Mythics :aomr_type_myth_unit_icon: & Siege :aomr_type_siege_weapon_icon:",
+    "foco": "Mythic Units :aomr_type_myth_unit_icon: & Siege :aomr_type_siege_weapon_icon:",
     "god_maior_relacao": [
       {
         "id": 47,
@@ -2328,7 +2328,7 @@
       },
       {
         "id": 54,
-        "nome": "Hélios"
+        "nome": "Helios"
       }
     ],
     "tecnologias": [
@@ -2338,15 +2338,15 @@
       },
       {
         "id": "2b200f30e21180278e66d5dc7b786b52",
-        "nome": "Vingança de Hefesto"
+        "nome": "Hephaestus' Revenge"
       },
       {
         "id": "2b200f30e21180a3ba53eeb5fdaefc03",
-        "nome": "Forja Vulcânica"
+        "nome": "Volcanic Forge"
       },
       {
         "id": "2b200f30e211806ea2daec0f573a267f",
-        "nome": "Percepção"
+        "nome": "Perception"
       },
       {
         "id": "2c300f30e211806c8aa0f31b9a6a2ca0",
@@ -2358,7 +2358,7 @@
       },
       {
         "id": "2c300f30e21180b09e11cce459351744",
-        "nome": "Convocar Soldado do Palácio"
+        "nome": "Summon Palace Soldier"
       },
       {
         "id": "2a900f30e21180f0a3d9c1e31b8506ce",
@@ -2366,7 +2366,7 @@
       },
       {
         "id": "2a900f30e2118050aa84c05e0d89129c",
-        "nome": "Coração de Titãs"
+        "nome": "Heart of Titans"
       },
       {
         "id": "2a900f30e211804eba64f2122c0e6c97",
@@ -2374,11 +2374,11 @@
       },
       {
         "id": "2b200f30e21180cd910be48bad879289",
-        "nome": "Gêmeos"
+        "nome": "Twins"
       },
       {
         "id": "2b200f30e2118062a881ff857cc48a04",
-        "nome": "Renovação Heroca"
+        "nome": "Heroic Renewal"
       },
       {
         "id": "2b200f30e211803290abccfacca52734",
@@ -2386,15 +2386,15 @@
       },
       {
         "id": "2b200f30e211802d8f43c8b8481f6049",
-        "nome": "Chifres da Consagração"
+        "nome": "Horns of Consecration"
       },
       {
         "id": "2b200f30e21180a2a008c0c908a1e428",
-        "nome": "Cota de Oricalco"
+        "nome": "Orichalco Quota"
       },
       {
         "id": "2b200f30e2118087aa4ee25ad7dfe66a",
-        "nome": "O Presente de Reia"
+        "nome": "Rhea's Gift"
       },
       {
         "id": "2c300f30e211804fa751de3f6ba5bacf",
@@ -2406,7 +2406,7 @@
       },
       {
         "id": "2c300f30e211803ebc28eb4a8e5be523",
-        "nome": "Recrutar Soldado do Palácio"
+        "nome": "Recruit Palace Soldier"
       },
       {
         "id": "2b200f30e2118059ad61d631d44062d6",
@@ -2414,52 +2414,52 @@
       },
       {
         "id": "2b200f30e21180baaf2fe000c61b4488",
-        "nome": "Auréola do Sol"
+        "nome": "Sun Halo"
       },
       {
         "id": "2b200f30e21180948ffec69648afc328",
-        "nome": "Petrificação"
+        "nome": "Petrification"
       },
       {
         "id": "2b200f30e2118023aa4efe33c5c12f79",
-        "nome": "Guardião do Io"
+        "nome": "Guardian of Io"
       },
       {
         "id": "2b200f30e21180c3a161ceb194c9088f",
-        "nome": "Devotos de Atlas"
+        "nome": "Atlas Devotees"
       },
       {
         "id": "2b200f30e21180efb921dd12bf870b01",
-        "nome": "Escudo dos Titãs"
+        "nome": "Titans' Shield"
       }
     ],
     "starts": [
       {
         "id": 19,
-        "nome": "Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games"
+        "nome": "Cronos Rush :aomr_type_siege_weapon_icon: - by Morley Games"
       },
       {
         "id": 18,
-        "nome": "Cronos 2TC - por Tpisai"
+        "nome": "Cronos 2TC - by Tpisai"
       },
       {
         "id": 4,
-        "nome": "Atlanteans - por Moose"
+        "nome": "Atlantes - by Moose"
       }
     ],
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Unidades Mythics :aomr_type_myth_unit_icon: & Siege :aomr_type_siege_weapon_icon:"
+          "texto": "Focus: Mythic Units :aomr_type_myth_unit_icon: & Siege :aomr_type_siege_weapon_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "É possível deslocar :time_shift_aom: edifícios para novos locais (torres :aomr_sentry_tower_icon: e palácios :aomr_palace_icon: custam 50% do preço para serem deslocados, outros são gratuitos).",
-            "Edifícios :aomr_type_building_icon: (exceto Portões Titãs) são construídos 25% mais rápido :aomr_time_icon: por Mansão :aomr_manor_icon: próxima.",
-            "Receba 2 myth units :aomr_type_myth_unit_icon: do Temple :aomr_temple_icon: grátis em vez de 1 ao avançar para a próxima era.",
-            "Unidades de cerco :aomr_type_siege_weapon_icon: e mítica :aomr_type_myth_unit_icon: perdidas retornam 20% do seu custo de recursos."
+            "It is possible to move :time_shift_aom: buildings to new locations (:aomr_sentry_tower_icon: towers and :aomr_palace_icon: palaces cost 50% of the price to move, others are free).",
+            ":aomr_type_building_icon: Buildings (except Titan Gates) are built 25% faster :aomr_time_icon: per nearby :aomr_manor_icon: Mansion.",
+            "Receive 2 free :aomr_type_myth_unit_icon: Temple Mythic Units :aomr_temple_icon: instead of 1 when advancing to the next era.",
+            "Lost siege :aomr_type_siege_weapon_icon: and mythic :aomr_type_myth_unit_icon: units return 20% of their resource cost."
           ]
         }
       ]
@@ -2476,23 +2476,23 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 13,
-        "nome": "A Primaveira da Flor de Persegueiro"
+        "nome": "The Spring of the Persegueiro Flower"
       }
     ],
     "rush": 4,
     "turtle": 2,
     "eco": 3,
-    "foco": "Soldados :aomr_type_human_soldier_icon: & Heros :aomr_type_hero_icon:",
+    "foco": ":aomr_type_human_soldier_icon: Soldiers & :aomr_type_hero_icon: Heroes",
     "god_maior_relacao": [
       {
         "id": 56,
@@ -2534,7 +2534,7 @@
       },
       {
         "id": "2b200f30e2118071942ad13e2396e100",
-        "nome": "Bênção de Qilin"
+        "nome": "Qilin's Blessing"
       },
       {
         "id": "2b200f30e21180abbe8ded0f8252e547",
@@ -2542,11 +2542,11 @@
       },
       {
         "id": "2b200f30e2118093a8d1d511be8b59c0",
-        "nome": "Reencarnação"
+        "nome": "Reincarnation"
       },
       {
         "id": "2b200f30e21180f49e42d0b9848b8e20",
-        "nome": "Filho de Loong"
+        "nome": "Son of Loong"
       },
       {
         "id": "2b200f30e211807fbdb8e925943d2621",
@@ -2554,15 +2554,15 @@
       },
       {
         "id": "2b200f30e2118065995dd0df9eaac60f",
-        "nome": "Espólios de Guerra"
+        "nome": "Spoils of War"
       },
       {
         "id": "2b200f30e21180a7bca8f3a9a8b1fa5d",
-        "nome": "Fúria de Matança"
+        "nome": "Killing Fury"
       },
       {
         "id": "2b200f30e21180debeabd569ad6f990c",
-        "nome": "Corrida Frenética"
+        "nome": "Frantic Race"
       },
       {
         "id": "2b200f30e21180d88cbbe6e49f2601e4",
@@ -2578,19 +2578,19 @@
       },
       {
         "id": "2b200f30e21180c1b796d4c40ac9d99f",
-        "nome": "Rocha Sólida"
+        "nome": "Solid Rock"
       },
       {
         "id": "2b200f30e2118042a93be5376625d188",
-        "nome": "Estômago sem fundo"
+        "nome": "Bottomless stomach"
       },
       {
         "id": "2b200f30e21180a7a27ec517d6ae0f6d",
-        "nome": "Maré Crescente"
+        "nome": "Rising Tide"
       },
       {
         "id": "2b200f30e211808b812ae6fc4e0312d7",
-        "nome": "Agitador do Céu"
+        "nome": "Sky Shaker"
       },
       {
         "id": "2b200f30e21180d3816ce415ad60e867",
@@ -2598,19 +2598,19 @@
       },
       {
         "id": "2b200f30e211804bbc9ff6c573e90b02",
-        "nome": "Última Resistência"
+        "nome": "Last Stand"
       },
       {
         "id": "2b200f30e21180c2a258fc68dd0ae68e",
-        "nome": "Poder do Caos"
+        "nome": "Chaos Power"
       },
       {
         "id": "2b200f30e21180cf8d82cc923ff27cac",
-        "nome": "Linhagem de Xuanyuan"
+        "nome": "Xuanyuan lineage"
       },
       {
         "id": "2b200f30e21180b0bf8dd5e75ab26990",
-        "nome": "Seda de Leizu"
+        "nome": "Leizu silk"
       },
       {
         "id": "2b200f30e211800f93edf64a61cba82f",
@@ -2626,22 +2626,22 @@
     "starts": [
       {
         "id": 5,
-        "nome": "Chineses - por Moose"
+        "nome": "Chinese - by Moose"
       },
       {
         "id": 23,
         "nome": "Fu Xi - HuskSuppe"
       }
     ],
-    "a_bencao_se_apresenta_de_duas_formas": "Yin, que concede prosperidade, e Yang, que concede força.",
-    "campo": "aomr_yang_icon:**Yang:** Fuxi está atualmente concedendo força no momento:",
-    "camponeses": "aomr_peasant_icon: e Kuafus :aomr_kuafu_icon: coletam :foodaom::woodaom::goldaom: 10% mais rápido.",
-    "soldados_humanos": "aomr_type_human_soldier_icon:  e Armas de Siege :aomr_type_siege_weapon_icon: causam +10% de dano.",
+    "a_bencao_se_apresenta_de_duas_formas": "Yin, which grants prosperity, and Yang, which grants strength.",
+    "campo": "aomr_yang_icon:**Yang:** Fuxi is currently granting strength at the moment:",
+    "camponeses": "aomr_peasant_icon: and Kuafus :aomr_kuafu_icon: collect :foodaom::woodaom::goldaom: 10% faster.",
+    "soldados_humanos": "aomr_type_human_soldier_icon: and :aomr_type_siege_weapon_icon: Siege Weapons deal +10% damage.",
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Soldados :aomr_type_human_soldier_icon: & Heros :aomr_type_hero_icon:"
+          "texto": "Focus: :aomr_type_human_soldier_icon: Soldiers & :aomr_type_hero_icon: Heroes"
         },
         {
           "tipo": "titulo",
@@ -2649,31 +2649,31 @@
         },
         {
           "tipo": "paragrafo",
-          "texto": "A bênção se apresenta de duas formas: Yin, que concede prosperidade, e Yang, que concede força."
+          "texto": "The blessing comes in two forms: Yin, which grants prosperity, and Yang, which grants strength."
         },
         {
           "tipo": "paragrafo",
-          "texto": "O jogo começa com a bênção Yin, que alterna a cada quatro minutos de jogo. O ícone à direita da barra de god powers exibe o ícone Yin ou Yang e um medidor circular que indica o tempo restante para a troca."
+          "texto": "The game starts with the Yin blessing, which alternates every four minutes of play. The icon to the right of the divine power bar displays the Yin or Yang icon and a circular meter that indicates the time remaining for the exchange."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Ao passar o cursor sobre o ícone, o bônus ativo e o tempo restante são exibidos em texto. Além disso, um som é reproduzido e uma notificação é exibida quando a bênção muda."
+          "texto": "When you hover the cursor over the icon, the active bonus and remaining time are displayed in text. Additionally, a sound plays and a notification appears when the blessing changes."
         },
         {
           "tipo": "paragrafo",
-          "texto": ":aomr_yin_icon: Yin: Fuxi está atualmente concedendo prosperidade no momento:"
+          "texto": ":aomr_yin_icon: Yin: Fuxi is currently granting prosperity at the moment:"
         },
         {
           "tipo": "paragrafo",
-          "texto": "Camponeses :aomr_peasant_icon: e Kuafus :aomr_kuafu_icon: coletam :foodaom::woodaom::goldaom: 10% mais rápido."
+          "texto": "Peasants :aomr_peasant_icon: and Kuafus :aomr_kuafu_icon: collect :foodaom::woodaom::goldaom: 10% faster."
         },
         {
           "tipo": "paragrafo",
-          "texto": ":aomr_yang_icon:Yang: Fuxi está atualmente concedendo força no momento:"
+          "texto": ":aomr_yang_icon:Yang: Fuxi is currently granting strength at the moment:"
         },
         {
           "tipo": "paragrafo",
-          "texto": "Soldados Humanos :aomr_type_human_soldier_icon: e Armas de Siege :aomr_type_siege_weapon_icon: causam +10% de dano."
+          "texto": "Human Soldiers :aomr_type_human_soldier_icon: and Siege Weapons :aomr_type_siege_weapon_icon: deal +10% damage."
         }
       ]
     },
@@ -2688,17 +2688,17 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 14,
-        "nome": "Criação"
+        "nome": "Creation"
       }
     ],
     "rush": 3,
@@ -2738,7 +2738,7 @@
       },
       {
         "id": "2b200f30e21180b9992df648b7b8cd69",
-        "nome": "Poder Montanhoso"
+        "nome": "Mountainous Power"
       },
       {
         "id": "2b800f30e21180f8a1daf84acaa2bd61",
@@ -2746,7 +2746,7 @@
       },
       {
         "id": "2b200f30e2118071942ad13e2396e100",
-        "nome": "Bênção de Qilin"
+        "nome": "Qilin's Blessing"
       },
       {
         "id": "2b200f30e21180abbe8ded0f8252e547",
@@ -2754,15 +2754,15 @@
       },
       {
         "id": "2b200f30e2118093a8d1d511be8b59c0",
-        "nome": "Reencarnação"
+        "nome": "Reincarnation"
       },
       {
         "id": "2b200f30e2118001a2ccec86f136fb1d",
-        "nome": "Determinação Sinistra"
+        "nome": "Sinister Determination"
       },
       {
         "id": "2b200f30e21180959b79cf558a439244",
-        "nome": "Defesas Avançadas"
+        "nome": "Advanced Defenses"
       },
       {
         "id": "2b200f30e2118000b5aee94521a06bae",
@@ -2770,11 +2770,11 @@
       },
       {
         "id": "2b200f30e211803a9195d0785d33e4f0",
-        "nome": "Abundância"
+        "nome": "Abundance"
       },
       {
         "id": "2b200f30e21180debeabd569ad6f990c",
-        "nome": "Corrida Frenética"
+        "nome": "Frantic Race"
       },
       {
         "id": "2b200f30e21180d88cbbe6e49f2601e4",
@@ -2794,15 +2794,15 @@
       },
       {
         "id": "2b200f30e2118032a6c1e0ccba610132",
-        "nome": "Outono da Abundância"
+        "nome": "Autumn of Abundance"
       },
       {
         "id": "2b200f30e21180a7a27ec517d6ae0f6d",
-        "nome": "Maré Crescente"
+        "nome": "Rising Tide"
       },
       {
         "id": "2b200f30e211808b812ae6fc4e0312d7",
-        "nome": "Agitador do Céu"
+        "nome": "Sky Shaker"
       },
       {
         "id": "2b200f30e21180d3816ce415ad60e867",
@@ -2810,11 +2810,11 @@
       },
       {
         "id": "2b200f30e211804bbc9ff6c573e90b02",
-        "nome": "Última Resistência"
+        "nome": "Last Stand"
       },
       {
         "id": "2b200f30e2118037874dd2e6d5ba49f8",
-        "nome": "Canção do Solstício de Verão"
+        "nome": "Midsummer Song"
       },
       {
         "id": "2b200f30e211800da248df0673159575",
@@ -2838,14 +2838,14 @@
     "starts": [
       {
         "id": 5,
-        "nome": "Chineses - por Moose"
+        "nome": "Chinese - by Moose"
       }
     ],
-    "bencao_divina": "Auspício da Criadora",
-    "em_terreno_favoravel": "as Fundações são construídas automaticamente.",
-    "na_maioria_dos_casos_os_jogadores_podem_alcancar_o_nivel_1_na_era_classica": "aomr_classical_age_icon:, enquanto os outros níveis não são facilmente atingíveis e exigem tempo e expansão consideráveis.",
-    "o_desconto_se_aplica_apenas_aos_camponeses": "aomr_peasant_icon:, não aos Kuafus :aomr_kuafu_icon: ou ao Hero Kuafu :aomr_kuafu_hero_icon:.",
-    "ao_passar_o_cursor_sobre_o_icone_de_auspicio_do_criador": "aomr_creators_auspice_icon:, no lado direito da barra de ferramentas de god power, são exibidos os bônus atuais e a quantidade de favores necessária para alcançar o próximo nível.",
+    "bencao_divina": "Auspice of the Creator",
+    "em_terreno_favoravel": "Foundations are built automatically.",
+    "na_maioria_dos_casos_os_jogadores_podem_alcancar_o_nivel_1_na_era_classica": "aomr_classical_age_icon:, while the other levels are not easily attainable and require considerable time and expansion.",
+    "o_desconto_se_aplica_apenas_aos_camponeses": "aomr_peasant_icon:, not to the Kuafus :aomr_kuafu_icon: or the Kuafu Hero :aomr_kuafu_hero_icon:.",
+    "ao_passar_o_cursor_sobre_o_icone_de_auspicio_do_criador": "aomr_creators_auspice_icon: on the right side of the divine power toolbar, the current bonuses and the amount of favors needed to reach the next level are displayed.",
     "explicacao_maior": {
       "blocos": [
         {
@@ -2858,43 +2858,43 @@
         },
         {
           "tipo": "paragrafo",
-          "texto": "Bênção Divina: Auspício da Criadora"
+          "texto": "Divine Blessing: Auspice of the Creator"
         },
         {
           "tipo": "paragrafo",
-          "texto": "Em Terreno Favorável: as Fundações são construídas automaticamente."
+          "texto": "In Favorable Terrain: Foundations are built automatically."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Construções espalham Terrenos Favoráveis com alcance + 1 maior."
+          "texto": "Buildings spread Favorable Terrains with +1 greater range."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Cavalry + 10% pontos de vida"
+          "texto": "Cavalry + 10% health"
         },
         {
           "tipo": "titulo",
-          "texto": ":aomr_creators_auspice_icon: Sob a Égide do Criador"
+          "texto": ":aomr_creators_auspice_icon: Under the Aegis of the Creator"
         },
         {
           "tipo": "paragrafo",
-          "texto": "Esta bênção divina possui diferentes níveis de benefícios. Os jogadores começam no Nível 0 e alcançam níveis superiores permanentemente, cada um acessado com base em limites de favor acumulado."
+          "texto": "This divine blessing has different levels of benefits. Players start at Level 0 and reach higher levels permanently, each accessed based on accumulated favor thresholds."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Não há limite de favor acumulado, portanto, o favor gasto ou acumulado não faz diferença. O favor não é gasto para acessar os níveis; os níveis são desbloqueados instantaneamente quando o jogador atinge os limites de favor necessários."
+          "texto": "There is on the accumulated favor limit, so favor spent or accumulated makes on the difference. The favor is not spent on access levels; Levels are unlocked instantly when the player reaches the required favor limits."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Na maioria dos casos, os jogadores podem alcançar o Nível 1 na Era Classical :aomr_classical_age_icon:, enquanto os outros níveis não são facilmente atingíveis e exigem tempo e expansão consideráveis."
+          "texto": "In most cases, players can reach Level 1 in Classic Age :aomr_classical_age_icon:, while the other levels are not easily attainable and require considerable time and expansion."
         },
         {
           "tipo": "paragrafo",
-          "texto": "O desconto se aplica apenas aos Camponeses :aomr_peasant_icon:, não aos Kuafus :aomr_kuafu_icon: ou ao Hero Kuafu :aomr_kuafu_hero_icon:."
+          "texto": "The discount only applies to Peasants :aomr_peasant_icon:, not Kuafus :aomr_kuafu_icon: or Kuafu Hero :aomr_kuafu_hero_icon:."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Ao passar o cursor sobre o ícone de Auspício do Criador :aomr_creators_auspice_icon:, no lado direito da barra de ferramentas de god power, são exibidos os bônus atuais e a quantidade de favores necessária para alcançar o próximo nível."
+          "texto": "Hovering the cursor over the :aomr_creators_auspice_icon: Creator's Auspex icon on the right side of the divine power toolbar displays the current bonuses and the amount of favors needed to reach the next level."
         }
       ]
     },
@@ -2909,23 +2909,23 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 15,
-        "nome": "Sementes Prósperas"
+        "nome": "Thriving Seeds"
       }
     ],
     "rush": 2,
     "turtle": 4,
     "eco": 4,
-    "foco": "Fazendas :aomr_farm_icon:, Und. Mythics :aomr_type_myth_unit_icon: & Cura ✨",
+    "foco": ":aomr_farm_icon: Farms, Und. Mythical :aomr_type_myth_unit_icon: & Healing ✨",
     "god_maior_relacao": [
       {
         "id": 57,
@@ -2959,7 +2959,7 @@
       },
       {
         "id": "2b200f30e2118023a226c1e5a6261f3a",
-        "nome": "Pêssego da Imortalidade"
+        "nome": "Peach of Immortality"
       },
       {
         "id": "2b800f30e21180f8a1daf84acaa2bd61",
@@ -2967,7 +2967,7 @@
       },
       {
         "id": "2b200f30e21180f49e42d0b9848b8e20",
-        "nome": "Filho de Loong"
+        "nome": "Son of Loong"
       },
       {
         "id": "2b200f30e211807fbdb8e925943d2621",
@@ -2975,19 +2975,19 @@
       },
       {
         "id": "2b200f30e2118065995dd0df9eaac60f",
-        "nome": "Espólios de Guerra"
+        "nome": "Spoils of War"
       },
       {
         "id": "2b200f30e21180a7bca8f3a9a8b1fa5d",
-        "nome": "Fúria de Matança"
+        "nome": "Killing Fury"
       },
       {
         "id": "2b200f30e2118001a2ccec86f136fb1d",
-        "nome": "Determinação Sinistra"
+        "nome": "Sinister Determination"
       },
       {
         "id": "2b200f30e21180959b79cf558a439244",
-        "nome": "Defesas Avançadas"
+        "nome": "Advanced Defenses"
       },
       {
         "id": "2b200f30e2118000b5aee94521a06bae",
@@ -2995,7 +2995,7 @@
       },
       {
         "id": "2b200f30e211803a9195d0785d33e4f0",
-        "nome": "Abundância"
+        "nome": "Abundance"
       },
       {
         "id": "2b200f30e21180018ecbd1725fccdc3d",
@@ -3003,11 +3003,11 @@
       },
       {
         "id": "2b200f30e21180c1b796d4c40ac9d99f",
-        "nome": "Rocha Sólida"
+        "nome": "Solid Rock"
       },
       {
         "id": "2b200f30e2118042a93be5376625d188",
-        "nome": "Estômago sem fundo"
+        "nome": "Bottomless stomach"
       },
       {
         "id": "2b200f30e2118093bdf5e207cb448f3c",
@@ -3019,19 +3019,19 @@
       },
       {
         "id": "2b200f30e2118032a6c1e0ccba610132",
-        "nome": "Outono da Abundância"
+        "nome": "Autumn of Abundance"
       },
       {
         "id": "2b200f30e21180c2a258fc68dd0ae68e",
-        "nome": "Poder do Caos"
+        "nome": "Chaos Power"
       },
       {
         "id": "2b200f30e21180cf8d82cc923ff27cac",
-        "nome": "Linhagem de Xuanyuan"
+        "nome": "Xuanyuan lineage"
       },
       {
         "id": "2b200f30e21180b0bf8dd5e75ab26990",
-        "nome": "Seda de Leizu"
+        "nome": "Leizu silk"
       },
       {
         "id": "2b200f30e211800f93edf64a61cba82f",
@@ -3039,7 +3039,7 @@
       },
       {
         "id": "2b200f30e2118037874dd2e6d5ba49f8",
-        "nome": "Canção do Solstício de Verão"
+        "nome": "Midsummer Song"
       },
       {
         "id": "2b200f30e211800da248df0673159575",
@@ -3063,39 +3063,39 @@
     "starts": [
       {
         "id": 24,
-        "nome": "Shennong (2 TC :aomr_town_center_chinese:) - por Morley"
+        "nome": "Shennong (2 TC :aomr_town_center_chinese:) - by Morley"
       },
       {
         "id": 5,
-        "nome": "Chineses - por Moose"
+        "nome": "Chinese - by Moose"
       },
       {
         "id": 25,
-        "nome": "Shennong Fazendeiro (:aomr_farm_icon::aomr_prosperous_seeds:) por HuskSuppe"
+        "nome": "Shennong Farmer (:aomr_farm_icon::aomr_prosperous_seeds:) by HuskSuppe"
       }
     ],
-    "assim_que_o_jogo_comeca_uma_unidade_mitica": "aomr_type_myth_unit_icon: aleatória é selecionada da próxima Era para ser gerada pela bênção divina Dádiva das Feras de Shennong.",
-    "essa_unidade_e_qualquer_unidade_mitica": "aomr_type_myth_unit_icon: que normalmente pode ser treinada no Temple :aomr_temple_icon: de qualquer deus principal chinês, mesmo que o jogador não tenha evoluído de Era com ela ou mesmo que ela seja concedida apenas por um deus menor ao qual Shennong não tenha acesso. Uma vez escolhida, seu custo em recursos é transformado em Pontos de Recompensa usando a fórmula:",
-    "p_0_2_f": "foodaom:) + (0,2 x W :woodaom:) + (0,2 x G :goldaom:) + (0,6 × Favor :favoraom:) )",
-    "a_partir_do_momento_em_que_a_unidade_mitica": "aomr_type_myth_unit_icon: é escolhida, conforme o jogador gera favor :favoraom:, a mesma quantidade de Pontos de Recompensa calculada pela fórmula acima é reduzida.",
-    "quando_chega_a_zero_a_unidade_mitica": "aomr_type_myth_unit_icon: é gerada gratuitamente no Temple :aomr_temple_icon: do jogador. A unidade é gerada mesmo que o jogador não tenha mais espaço populacional disponível. Após a geração de uma unidade, o jogo escolhe aleatoriamente a próxima unidade mítica a ser gerada.",
-    "dessa_forma_o_jogador_pode_obter_acesso_a_unidades_miticas_da_era_classica": "aomr_classical_age_icon: na Era Archaic :aomr_archaic_age_icon:, myth units da Era Heroica :aomr_heroic_age_icon: na Era Classical :aomr_classical_age_icon: e myth units :aomr_type_myth_unit_icon: da Era Mythic :aomr_mythic_age_icon: nas Eras Heroica :aomr_heroic_age_icon:, Mythic :aomr_mythic_age_icon: e das Maravilhas :aomr_wonder_age_icon:.",
-    "ao_passar_o_cursor_sobre_o_icone_dadiva_das_feras": "aomr_shennong_gift_all:, no lado direito da barra de ferramentas de god power, é possível visualizar a próxima unidade mítica e os Pontos de Recompensa restantes para gerá-la.",
-    "se_o_jogador_nao_possuir_um_templo": "aomr_temple_icon:, os Pontos de Recompensa da unidade mítica escolhida são reduzidos até atingirem 1, momento em que o mecanismo é pausado.",
-    "assim_que_um_templo": "aomr_temple_icon: for construído, a unidade surge e a próxima unidade é escolhida. Portanto, qualquer favor :favoraom: obtido entre o momento em que o Ponto de Recompensa atingiu 1 e o momento em que o Temple foi construído não contribui para a redução dos Pontos de Recompensa da próxima unidade.",
+    "assim_que_o_jogo_comeca_uma_unidade_mitica": "aomr_type_myth_unit_icon: Random is selected from the next Age to be generated by Shennong's Boon of Beasts divine blessing.",
+    "essa_unidade_e_qualquer_unidade_mitica": "aomr_type_myth_unit_icon: which can normally be trained in the :aomr_temple_icon: Temple of any major Chinese god, even if the player has not evolved Age with it or even if it is only granted by a minor god to which Shennong does not have access. Once chosen, its resource cost is transformed into Reward Points using the formula:",
+    "p_0_2_f": "foodaom:) + (0.2 x W :woodaom:) + (0.2 x G :goldaom:) + (0.6 × Favor :favoraom:) )",
+    "a_partir_do_momento_em_que_a_unidade_mitica": "aomr_type_myth_unit_icon: is chosen, as the player generates favor :favoraom:, the same amount of Reward Points calculated by the formula above is reduced.",
+    "quando_chega_a_zero_a_unidade_mitica": "aomr_type_myth_unit_icon: is generated for free in the player's :aomr_temple_icon: Temple. The unit is generated even if the player has no more population space available. After a unit is generated, the game randomly chooses the next mythical unit to be generated.",
+    "dessa_forma_o_jogador_pode_obter_acesso_a_unidades_miticas_da_era_classica": "aomr_classical_age_icon: in the Archaic Age :aomr_archaic_age_icon:, mythic units from the Heroic Age :aomr_heroic_age_icon: in the Classical Age :aomr_classical_age_icon:, and mythic units :aomr_type_myth_unit_icon: from the Mythic Age :aomr_mythic_age_icon: in the Heroic :aomr_heroic_age_icon:, Mythic :aomr_mythic_age_icon:, and Wonder Ages :aomr_wonder_age_icon:.",
+    "ao_passar_o_cursor_sobre_o_icone_dadiva_das_feras": "aomr_shennong_gift_all: On the right side of the divine power toolbar, you can view the next mythical unit and the remaining Reward Points to generate it.",
+    "se_o_jogador_nao_possuir_um_templo": "aomr_temple_icon: the Reward Points of the chosen mythical unit are reduced until they reach 1, at which point the mechanism is paused.",
+    "assim_que_um_templo": "aomr_temple_icon: is built, the unit appears and the next unit is chosen. Therefore, any favor :favoraom: obtained between the time the Reward Point reached 1 and the time the Temple was built does not contribute to reducing the next unit's Reward Points.",
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Fazendas :aomr_farm_icon:, Und. Mythics :aomr_type_myth_unit_icon: & Cura ✨"
+          "texto": "Focus: :aomr_farm_icon: Farms, Und. Mythical :aomr_type_myth_unit_icon: & Healing ✨"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Bênção Divina :aomr_shennong_gift_all: Dádiva das Feras: Shennong invoca myth units da próxima Era no Temple gratuitamente à medida que o jogador ganha favor .",
-            "Em Terreno Favorecido: Unidades míticas :aomr_type_myth_unit_icon: (terrestres, navais e voadoras, exceto Titãs) regeneram 1,5/3/4,5/6 pontos de vida :aomr_hit_points_icon: por segundo nas Eras Archaic :aomr_archaic_age_icon: / Classical :aomr_classical_age_icon: / Heroica :aomr_heroic_age_icon: / Mythic :aomr_mythic_age_icon: , respectivamente.",
-            "As fazendas :aomr_farm_icon: estão disponíveis na Era Archaic :aomr_archaic_age_icon: e são construídas automaticamente em Terrenos Favorecidos, quase instantaneamente.",
-            "Arado :aomr_plow_icon:, Irrigação :aomr_irrigation_icon: e Controle de Enchentes :aomr_flood_control_icon: são pesquisados instantaneamente e gratuitamente em suas respectivas Eras."
+            "Divine Blessing :aomr_shennong_gift_all: Boon of Beasts: Shennong summons mythical units from the next Age in the Temple for free as the player gains favor.",
+            "In Favored Landin: Mythic :aomr_type_myth_unit_icon: units (land, naval, and flying, except Titans) regenerate 1.5/3/4.5/6 :aomr_hit_points_icon: health per second in the Archaic :aomr_archaic_age_icon: / Classical :aomr_classical_age_icon: / Heroic :aomr_heroic_age_icon: / Mythic :aomr_mythic_age_icon: Ages, respectively.",
+            ":aomr_farm_icon: farms are available in the :aomr_archaic_age_icon: Archaic Age and are automatically built on Favored Land, almost instantly.",
+            "Plow :aomr_plow_icon:, Irrigation :aomr_irrigation_icon: and Flood Control :aomr_flood_control_icon: are searched instantly and for free in their respective Ages."
           ]
         },
         {
@@ -3104,11 +3104,11 @@
         },
         {
           "tipo": "paragrafo",
-          "texto": "Assim que o jogo começa, uma unidade mítica :aomr_type_myth_unit_icon: aleatória é selecionada da próxima Era para ser gerada pela bênção divina Dádiva das Feras de Shennong."
+          "texto": "As the game begins, a random :aomr_type_myth_unit_icon: mythic unit is selected from the next Age to be spawned by Shennong's Boon of the Beasts divine blessing."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Essa unidade é qualquer unidade mítica :aomr_type_myth_unit_icon: que normalmente pode ser treinada no Temple :aomr_temple_icon: de qualquer deus principal chinês, mesmo que o jogador não tenha evoluído de Era com ela ou mesmo que ela seja concedida apenas por um deus menor ao qual Shennong não tenha acesso. Uma vez escolhida, seu custo em recursos é transformado em Pontos de Recompensa usando a fórmula:"
+          "texto": "This unit is any :aomr_type_myth_unit_icon: mythical unit that can normally be trained in the :aomr_temple_icon: Temple of any Chinese major god, even if the player has not Age evolved with it or even if it is only granted by a minor god that Shennong does not have access to. Once chosen, its resource cost is transformed into Reward Points using the formula:"
         },
         {
           "tipo": "paragrafo",
@@ -3116,27 +3116,27 @@
         },
         {
           "tipo": "paragrafo",
-          "texto": "A partir do momento em que a unidade mítica :aomr_type_myth_unit_icon: é escolhida, conforme o jogador gera favor :favoraom:, a mesma quantidade de Pontos de Recompensa calculada pela fórmula acima é reduzida."
+          "texto": "From the moment the mythical unit :aomr_type_myth_unit_icon: is chosen, as the player generates favor :favoraom:, the same amount of Reward Points calculated by the formula above is reduced."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Quando chega a zero, a unidade mítica :aomr_type_myth_unit_icon: é gerada gratuitamente no Temple :aomr_temple_icon: do jogador. A unidade é gerada mesmo que o jogador não tenha mais espaço populacional disponível. Após a geração de uma unidade, o jogo escolhe aleatoriamente a próxima unidade mítica a ser gerada."
+          "texto": "When it reaches zero, the mythical unit :aomr_type_myth_unit_icon: is generated for free in the player's Temple :aomr_temple_icon:. The unit is generated even if the player has no more population space available. After a unit is generated, the game randomly chooses the next mythical unit to be generated."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Dessa forma, o jogador pode obter acesso a myth units da Era Classical :aomr_classical_age_icon: na Era Archaic :aomr_archaic_age_icon:, myth units da Era Heroica :aomr_heroic_age_icon: na Era Classical :aomr_classical_age_icon: e myth units :aomr_type_myth_unit_icon: da Era Mythic :aomr_mythic_age_icon: nas Eras Heroica :aomr_heroic_age_icon:, Mythic :aomr_mythic_age_icon: e das Maravilhas :aomr_wonder_age_icon:."
+          "texto": "This way, the player can gain access to mythic units from the Classical Age :aomr_classical_age_icon: in the Archaic Age :aomr_archaic_age_icon:, mythic units from the Heroic Age :aomr_heroic_age_icon: in the Classical Age :aomr_classical_age_icon:, and mythic units :aomr_type_myth_unit_icon: from the Mythic Age :aomr_mythic_age_icon: in the Heroic Age :aomr_heroic_age_icon:, Mythic Age :aomr_mythic_age_icon:, and the Wonder Ages :aomr_wonder_age_icon:."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Ao passar o cursor sobre o ícone Dádiva das Feras :aomr_shennong_gift_all:, no lado direito da barra de ferramentas de god power, é possível visualizar a próxima unidade mítica e os Pontos de Recompensa restantes para gerá-la."
+          "texto": "By hovering over the Boon of Beasts :aomr_shennong_gift_all: icon on the right side of the divine power toolbar, you can view the next mythical unit and the remaining Reward Points to generate it."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Se o jogador não possuir um Temple :aomr_temple_icon:, os Pontos de Recompensa da unidade mítica escolhida são reduzidos até atingirem 1, momento em que o mecanismo é pausado."
+          "texto": "If the player does not have a :aomr_temple_icon: Temple, the Reward Points of the chosen mythical unit are reduced until they reach 1, at which point the mechanism is paused."
         },
         {
           "tipo": "paragrafo",
-          "texto": "Assim que um Temple :aomr_temple_icon: for construído, a unidade surge e a próxima unidade é escolhida. Portanto, qualquer favor :favoraom: obtido entre o momento em que o Ponto de Recompensa atingiu 1 e o momento em que o Temple foi construído não contribui para a redução dos Pontos de Recompensa da próxima unidade."
+          "texto": "Once a :aomr_temple_icon: Temple is built, the unit spawns and the next unit is chosen. Therefore, any favor :favoraom: obtained between the time the Reward Point reached 1 and the time the Temple was built does not contribute to reducing the next unit's Reward Points."
         }
       ]
     },
@@ -3148,14 +3148,14 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3189,11 +3189,11 @@
     "tecnologias": [
       {
         "id": "2a800f30e211805ca799c8c67d9d5c82",
-        "nome": "Dádiva de Frey"
+        "nome": "Frey's Gift"
       },
       {
         "id": "2a900f30e21180938a9edfea1d9fea4b",
-        "nome": "Sangue de Granito"
+        "nome": "Granite Blood"
       },
       {
         "id": "2a900f30e21180ca9427c519fcca3a31",
@@ -3205,7 +3205,7 @@
       },
       {
         "id": "2a800f30e21180e881e5c3c7797bfa89",
-        "nome": "Servos da Glória"
+        "nome": "Servants of Glory"
       },
       {
         "id": "2a800f30e21180348ba3e55c08f5140a",
@@ -3217,7 +3217,7 @@
       },
       {
         "id": "2a900f30e21180ad8c3debb9af07b28a",
-        "nome": "Estômago de Ferro"
+        "nome": "Iron Stomach"
       },
       {
         "id": "2a900f30e211809f91e8d07aef989e62",
@@ -3229,57 +3229,57 @@
       },
       {
         "id": "2a900f30e2118083b78ffecaf8fe9612",
-        "nome": "Crepúsculo dos Deuses"
+        "nome": "Twilight of the Gods"
       },
       {
         "id": "2a900f30e211804da4b4f947a7c91bea",
-        "nome": "Espírito Vingativo"
+        "nome": "Vengeful Spirit"
       },
       {
         "id": "2a900f30e2118083a299eb0bebdc867e",
-        "nome": "Determinação Silenciosa"
+        "nome": "Silent Determination"
       },
       {
         "id": "2a900f30e21180658ddefad6beba267d",
-        "nome": "Fúria dos Caídos"
+        "nome": "Fury of the Fallen"
       },
       {
         "id": "2a900f30e211806186e9c166c6c17049",
-        "nome": "Convocar Unidades da House Comunal"
+        "nome": "Summon Common House Units"
       },
       {
         "id": "2a900f30e21180d0aca1f0733635dfb3",
-        "nome": "Convocar Unidades do Grande Salão"
+        "nome": "Summon Units from the Great Hall"
       },
       {
         "id": "2a900f30e21180839342c695982dbcbc",
-        "nome": "Convocar Unidades do Forte da Colina"
+        "nome": "Summon Hillfort Units"
       },
       {
         "id": "2a900f30e21180cda42af6725b85ba23",
-        "nome": "Recrutar Unidades da House Comunal"
+        "nome": "Recruit Common House Units"
       },
       {
         "id": "2a900f30e21180cb8b07fb9797a81f33",
-        "nome": "Recrutar Unidades do Grande Salão"
+        "nome": "Recruit Great Hall Units"
       },
       {
         "id": "2a900f30e21180c68d78d58de10e5a66",
-        "nome": "Recrutar Unidades do Forte da Colina"
+        "nome": "Recruit Hillfort Units"
       }
     ],
     "starts": [
       {
         "id": 13,
-        "nome": "Freyr - por Scooby"
+        "nome": "Freyr - by Scooby"
       },
       {
         "id": 14,
-        "nome": "Freyr Rush/2TC :aomr_type_siege_weapon_icon:- por Aussie_Drongo"
+        "nome": "Freyr Rush/2TC :aomr_type_siege_weapon_icon:- by Aussie_Drongo"
       },
       {
         "id": 3,
-        "nome": "Norses (exceto Thor ❌:aomr_thor_icon:) - por Moose"
+        "nome": "Norsemen (except Thor ❌:aomr_thor_icon:) - by Moose"
       }
     ],
     "explicacao_maior": {
@@ -3291,10 +3291,10 @@
         {
           "tipo": "lista",
           "itens": [
-            "Tecnologias custam -50% de comida :foodaom:, madeira :woodaom: e ouro :goldaom:, mas levam 150% mais tempo :aomr_time_icon: (para um total de 2,5×) para serem pesquisadas.",
-            "Forte da Colina :aomr_hill_fort_icon: e unidades do Forte da Colina +10% de dano.",
-            "Reparar edifícios :aomr_type_building_icon: é gratuito.",
-            "Coletores :aomr_gatherer_icon: e anões :aomr_dwarf_icon: também podem consertar qualquer construção :aomr_type_building_icon:. Eles consertam paredes 50% mais rápido do que construtores comuns."
+            "Technologies cost -50% food :foodaom:, wood :woodaom:, and gold :goldaom:, but take 150% more time :aomr_time_icon: (for a total of 2.5×) to research.",
+            "Hillfort :aomr_hill_fort_icon: and Hillfort units +10% damage.",
+            "Repairing :aomr_type_building_icon: buildings is free.",
+            "Collectors :aomr_gatherer_icon: and dwarves :aomr_dwarf_icon: can also repair any :aomr_type_building_icon: building. They repair walls 50% faster than regular builders."
           ]
         }
       ]
@@ -3311,11 +3311,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3361,11 +3361,11 @@
       },
       {
         "id": "2b800f30e21180aa8a8bebbc8a6a6f1f",
-        "nome": "Guardiões Sagrados"
+        "nome": "Holy Guardians"
       },
       {
         "id": "2b200f30e21180648549debc317f15a7",
-        "nome": "Foices de Vento"
+        "nome": "Wind Scythes"
       },
       {
         "id": "2b200f30e211804da5dee4e799e4ddd6",
@@ -3373,7 +3373,7 @@
       },
       {
         "id": "2b200f30e21180f39f31dce7c16d3603",
-        "nome": "Varinhas de Gohei"
+        "nome": "Gohei Wands"
       },
       {
         "id": "2b200f30e21180eba3deda5849dc874f",
@@ -3381,11 +3381,11 @@
       },
       {
         "id": "2b200f30e21180cb983dc6c216d0a397",
-        "nome": "Nascente de Água Salgada"
+        "nome": "Saltwater Spring"
       },
       {
         "id": "2b200f30e2118018adf6d40212380afa",
-        "nome": "Força de Caçador"
+        "nome": "Hunter's Strength"
       },
       {
         "id": "2b200f30e211808baa75cc2f4aac1c22",
@@ -3393,11 +3393,11 @@
       },
       {
         "id": "2b800f30e2118062a802f6cd7baed184",
-        "nome": "Práticas Ascéticas"
+        "nome": "Ascetic Practices"
       },
       {
         "id": "2b800f30e2118058a272e2a065789876",
-        "nome": "Pipa de Ouro"
+        "nome": "Golden Kite"
       },
       {
         "id": "2b800f30e21180b78c19f0f808233a29",
@@ -3413,19 +3413,19 @@
       },
       {
         "id": "2b800f30e21180398f63c9c8f02bc121",
-        "nome": "Máscara de Hannya"
+        "nome": "Hannya Mask"
       },
       {
         "id": "2b800f30e21180b7a9ecc0a20e4e8887",
-        "nome": "Jardins de Sakuras"
+        "nome": "Sakura Gardens"
       },
       {
         "id": "2b800f30e21180b49339e284deb9a58c",
-        "nome": "Malevolência Ardente"
+        "nome": "Burning Malevolence"
       },
       {
         "id": "2b800f30e21180ec93eaf4af997f7259",
-        "nome": "Treinamento de Sumô"
+        "nome": "Sumo Training"
       },
       {
         "id": "2b800f30e211807790f3c72e63022ffd",
@@ -3437,15 +3437,15 @@
       },
       {
         "id": "2b800f30e21180479ee9d4fe05a4b969",
-        "nome": "Exército Inquieto"
+        "nome": "Restless Army"
       },
       {
         "id": "2b800f30e21180ed8d15c42cfd146ae8",
-        "nome": "Província Divina"
+        "nome": "Divine Province"
       },
       {
         "id": "2b800f30e2118030b6a5cd2404f42222",
-        "nome": "Artesão Mecânicos"
+        "nome": "Craftsman Mechanics"
       }
     ],
     "unidades_exclusivas": [
@@ -3457,10 +3457,10 @@
     "starts": [
       {
         "id": 26,
-        "nome": "Amaterasu - por MikeKing | TheRapl"
+        "nome": "Amaterasu - by MikeKing | TheRapl"
       }
     ],
-    "campo": "aomr_champion_stable_soldiers_icon: Soldados do Estábulo Campeões |",
+    "campo": "aomr_champion_stable_soldiers_icon: Champion Stable Soldiers |",
     "explicacao_maior": {
       "blocos": [
         {
@@ -3470,10 +3470,10 @@
         {
           "tipo": "lista",
           "itens": [
-            "Ganha uma quantidade crescente de Ouro :goldaom: a cada nível do Bushidō.",
-            "Samurais :aomr_samurai_icon: e Onna-mushas :aomr_onna_musha_icon: ganham 300% mais XP fora de combate.",
-            "Santuários :aomr_shrine_icon: aumentam o conteúdo de recursos próximos, em até 150%.",
-            "Samurais :aomr_samurai_icon: e Onna-mushas :aomr_onna_musha_icon: regeneram pontos de vida (2x mais rápido em combate)."
+            "Earn an increasing amount of :goldaom: Gold with each Bushidō level.",
+            "Samurai :aomr_samurai_icon: and Onna-mushas :aomr_onna_musha_icon: gain 300% more XP out of combat.",
+            ":aomr_shrine_icon: Shrines increase the content of nearby resources by up to 150%.",
+            "Samurai :aomr_samurai_icon: and Onna-mushas :aomr_onna_musha_icon: regenerate health points (2x faster in combat)."
           ]
         }
       ]
@@ -3489,11 +3489,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3505,7 +3505,7 @@
     "rush": 4,
     "turtle": 4,
     "eco": 4,
-    "foco": "Tecnologia ⏫, Shinobi :aomr_shinobi_icon: & Cavalry :aomr_type_cavalry_icon:",
+    "foco": "Tecnologia ⏫, Shinobi :aomr_shinobi_icon: & Cavalaria :aomr_type_cavalry_icon:",
     "god_maior_relacao": [
       {
         "id": 68,
@@ -3539,11 +3539,11 @@
       },
       {
         "id": "2b800f30e21180aa8a8bebbc8a6a6f1f",
-        "nome": "Guardiões Sagrados"
+        "nome": "Holy Guardians"
       },
       {
         "id": "2b200f30e21180648549debc317f15a7",
-        "nome": "Foices de Vento"
+        "nome": "Wind Scythes"
       },
       {
         "id": "2b200f30e211804da5dee4e799e4ddd6",
@@ -3551,7 +3551,7 @@
       },
       {
         "id": "2b200f30e21180f39f31dce7c16d3603",
-        "nome": "Varinhas de Gohei"
+        "nome": "Gohei Wands"
       },
       {
         "id": "2b200f30e21180a99d83df32adfaccd9",
@@ -3567,15 +3567,15 @@
       },
       {
         "id": "2b200f30e211809b9123e457fe540a6c",
-        "nome": "Netsuke de Marfim"
+        "nome": "Ivory Netsuke"
       },
       {
         "id": "2b800f30e2118062a802f6cd7baed184",
-        "nome": "Práticas Ascéticas"
+        "nome": "Ascetic Practices"
       },
       {
         "id": "2b800f30e2118058a272e2a065789876",
-        "nome": "Pipa de Ouro"
+        "nome": "Golden Kite"
       },
       {
         "id": "2b800f30e21180b78c19f0f808233a29",
@@ -3583,39 +3583,39 @@
       },
       {
         "id": "2b800f30e21180e2a6c1e6499a6ea352",
-        "nome": "Fúria Mortal"
+        "nome": "Deadly Fury"
       },
       {
         "id": "2b800f30e211800e87dcd2ea80e6b985",
-        "nome": "Máscara Oni"
+        "nome": "Oni Mask"
       },
       {
         "id": "2b800f30e21180b1b973eaf506086fb9",
-        "nome": "Fúria do Vendaval"
+        "nome": "Gale's Fury"
       },
       {
         "id": "2b800f30e21180b7a9ecc0a20e4e8887",
-        "nome": "Jardins de Sakuras"
+        "nome": "Sakura Gardens"
       },
       {
         "id": "2b800f30e21180479ee9d4fe05a4b969",
-        "nome": "Exército Inquieto"
+        "nome": "Restless Army"
       },
       {
         "id": "2b800f30e21180ed8d15c42cfd146ae8",
-        "nome": "Província Divina"
+        "nome": "Divine Province"
       },
       {
         "id": "2b800f30e2118030b6a5cd2404f42222",
-        "nome": "Artesão Mecânicos"
+        "nome": "Craftsman Mechanics"
       },
       {
         "id": "2b800f30e21180cdb23fedb652b60440",
-        "nome": "Assombração Eterna"
+        "nome": "Eternal Haunt"
       },
       {
         "id": "2b800f30e21180828d17e6deec8c8c3d",
-        "nome": "Infiltradores à Beira-mar"
+        "nome": "Seaside Infiltrators"
       },
       {
         "id": "2b800f30e2118006baaefb8150be57d2",
@@ -3623,7 +3623,7 @@
       },
       {
         "id": "2b800f30e21180e090a2da68a3892f45",
-        "nome": "Arcos Assimétricos"
+        "nome": "Asymmetrical Arches"
       }
     ],
     "unidades_exclusivas": [
@@ -3635,31 +3635,31 @@
     "starts": [
       {
         "id": 29,
-        "nome": "Tsukuyomi - por TheRapl"
+        "nome": "Tsukuyomi - by TheRapl"
       },
       {
         "id": 30,
-        "nome": "Tsukuyomi (Mar 🌊) - por Scooby"
+        "nome": "Tsukuyomi (Mar 🌊) - by Scooby"
       },
       {
         "id": 31,
-        "nome": "Tsukuyomi (Rush+2TC) - por HuskSuppe"
+        "nome": "Tsukuyomi (Rush+2TC) - by HuskSuppe"
       }
     ],
-    "campo": "aomr_champion_stable_soldiers_icon: Soldados do Estábulo Campeões |",
+    "campo": "aomr_champion_stable_soldiers_icon: Champion Stable Soldiers |",
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Tecnologia ⏫, Shinobi :aomr_shinobi_icon: & Cavalry :aomr_type_cavalry_icon:"
+          "texto": "Foco: Tecnologia ⏫, Shinobi :aomr_shinobi_icon: & Cavalaria :aomr_type_cavalry_icon:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Aumenta o ataque de Shinobi :aomr_shinobi_icon: e Cavalry :aomr_naginata_rider_icon: :aomr_yumi_horse_archer_icon: a cada nível do Bushidō.",
+            "Increases the attack of Shinobi :aomr_shinobi_icon: and Cavalry :aomr_naginata_rider_icon: :aomr_yumi_horse_archer_icon: with each level of Bushidō.",
             "Cada tecnologia pesquisada concede XP do Bushido.",
-            "Avançar para a próxima Era é 25% mais rápido.",
-            "Uma Kitsune :aomr_kitsune_icon: grátis aparece no Temple :aomr_temple_icon: a cada Era."
+            "Advancing to the next Age is 25% faster.",
+            "A free :aomr_kitsune_icon: Kitsune appears in the :aomr_temple_icon: Temple every Age."
           ]
         },
         {
@@ -3679,11 +3679,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3695,7 +3695,7 @@
     "rush": 4,
     "turtle": 4,
     "eco": 4,
-    "foco": "Unidades Mythics :aomr_type_myth_unit_icon: & GodPowers :favoraom:",
+    "foco": "Mythic Units :aomr_type_myth_unit_icon: & GodPowers :favoraom:",
     "god_maior_relacao": [
       {
         "id": 69,
@@ -3729,7 +3729,7 @@
       },
       {
         "id": "2b800f30e21180aa8a8bebbc8a6a6f1f",
-        "nome": "Guardiões Sagrados"
+        "nome": "Holy Guardians"
       },
       {
         "id": "2b200f30e21180eba3deda5849dc874f",
@@ -3737,11 +3737,11 @@
       },
       {
         "id": "2b200f30e21180cb983dc6c216d0a397",
-        "nome": "Nascente de Água Salgada"
+        "nome": "Saltwater Spring"
       },
       {
         "id": "2b200f30e2118018adf6d40212380afa",
-        "nome": "Força de Caçador"
+        "nome": "Hunter's Strength"
       },
       {
         "id": "2b200f30e211808baa75cc2f4aac1c22",
@@ -3761,7 +3761,7 @@
       },
       {
         "id": "2b200f30e211809b9123e457fe540a6c",
-        "nome": "Netsuke de Marfim"
+        "nome": "Ivory Netsuke"
       },
       {
         "id": "2b800f30e21180328c74c529e438a230",
@@ -3773,31 +3773,31 @@
       },
       {
         "id": "2b800f30e21180398f63c9c8f02bc121",
-        "nome": "Máscara de Hannya"
+        "nome": "Hannya Mask"
       },
       {
         "id": "2b800f30e21180e2a6c1e6499a6ea352",
-        "nome": "Fúria Mortal"
+        "nome": "Deadly Fury"
       },
       {
         "id": "2b800f30e211800e87dcd2ea80e6b985",
-        "nome": "Máscara Oni"
+        "nome": "Oni Mask"
       },
       {
         "id": "2b800f30e21180b1b973eaf506086fb9",
-        "nome": "Fúria do Vendaval"
+        "nome": "Gale's Fury"
       },
       {
         "id": "2b800f30e21180b7a9ecc0a20e4e8887",
-        "nome": "Jardins de Sakuras"
+        "nome": "Sakura Gardens"
       },
       {
         "id": "2b800f30e21180b49339e284deb9a58c",
-        "nome": "Malevolência Ardente"
+        "nome": "Burning Malevolence"
       },
       {
         "id": "2b800f30e21180ec93eaf4af997f7259",
-        "nome": "Treinamento de Sumô"
+        "nome": "Sumo Training"
       },
       {
         "id": "2b800f30e211807790f3c72e63022ffd",
@@ -3809,11 +3809,11 @@
       },
       {
         "id": "2b800f30e21180cdb23fedb652b60440",
-        "nome": "Assombração Eterna"
+        "nome": "Eternal Haunt"
       },
       {
         "id": "2b800f30e21180828d17e6deec8c8c3d",
-        "nome": "Infiltradores à Beira-mar"
+        "nome": "Seaside Infiltrators"
       },
       {
         "id": "2b800f30e2118006baaefb8150be57d2",
@@ -3821,7 +3821,7 @@
       },
       {
         "id": "2b800f30e21180e090a2da68a3892f45",
-        "nome": "Arcos Assimétricos"
+        "nome": "Asymmetrical Arches"
       }
     ],
     "unidades_exclusivas": [
@@ -3833,27 +3833,27 @@
     "starts": [
       {
         "id": 27,
-        "nome": "Susanoo - por TheRapl"
+        "nome": "Susanoo - by TheRapl"
       },
       {
         "id": 28,
-        "nome": "Susanoo (++Mikos :aomr_miko_icon::favoraom:) - por HuskSuppe"
+        "nome": "Susanoo (++Mikos :aomr_miko_icon::favoraom:) - by HuskSuppe"
       }
     ],
-    "campo": "aomr_champion_stable_soldiers_icon: Soldados do Estábulo Campeões |",
+    "campo": "aomr_champion_stable_soldiers_icon: Champion Stable Soldiers |",
     "explicacao_maior": {
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Unidades Mythics :aomr_type_myth_unit_icon: & GodPowers :favoraom:"
+          "texto": "Focus: Mythic Units :aomr_type_myth_unit_icon: & GodPowers :favoraom:"
         },
         {
           "tipo": "lista",
           "itens": [
-            "Oferece uma recompensa maior de Favor :favoraom: a cada nível de Bushidō.",
-            "Unidades Mythics :aomr_type_myth_unit_icon: ganham XP de Bushidō passivamente e por meio de combate.",
-            "Invocar um Poder Divino torna os outros 25% mais baratos para reinvocar.",
-            "As habilidades especiais da unidade recarregam 25% mais rápido."
+            "Offers a greater reward of Favor :favoraom: with each Bushidō level.",
+            ":aomr_type_myth_unit_icon: Mythic Units gain Bushidō XP passively and through combat.",
+            "Summoning one Divine Power makes the other 25% cheaper to resummon.",
+            "Unit special abilities recharge 25% faster."
           ]
         }
       ]
@@ -3866,14 +3866,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -3882,7 +3882,7 @@
         "nome": "Cessar-Fogo"
       }
     ],
-    "foco": "Cavalry",
+    "foco": "Cavalaria",
     "god_maior_relacao": [
       {
         "id": 1,
@@ -3900,7 +3900,7 @@
       },
       {
         "id": "29c00f30e2118053ae4beec46a91af11",
-        "nome": "Avanço Intrépido"
+        "nome": "Intrepid Advance"
       },
       {
         "id": "29c00f30e21180759b36c8ba7ce6ef9f",
@@ -3921,23 +3921,23 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 21,
-        "nome": "Restauração"
+        "nome": "Restoration"
       }
     ],
-    "foco": "Infantry  & Defesa :aomr_type_human_soldier_icon:️",
+    "foco": "Infantaria  & Defesa :aomr_type_human_soldier_icon:️",
     "god_maior_relacao": [
       {
         "id": 1,
@@ -3951,11 +3951,11 @@
     "tecnologias": [
       {
         "id": "29c00f30e2118023accbe6772b776ea4",
-        "nome": "Labirinto de Minos"
+        "nome": "Labyrinth of Minos"
       },
       {
         "id": "29c00f30e21180b49740e4327f8e4d52",
-        "nome": "Égide"
+        "nome": "Aegis"
       },
       {
         "id": "29c00f30e21180788e59e0d681ae792d",
@@ -3976,20 +3976,20 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 22,
-        "nome": "Pestilência"
+        "nome": "Pestilence"
       }
     ],
     "foco": "Ataque dos Soldados Humanos",
@@ -4006,19 +4006,19 @@
     "tecnologias": [
       {
         "id": "29c00f30e21180c781acc4ad336ae41d",
-        "nome": "Vontade de Cronos"
+        "nome": "Kronos' will"
       },
       {
         "id": "29c00f30e21180488dd2c354b1c53e90",
-        "nome": "Lança do Pânico de Fobos"
+        "nome": "Phobos Panic Spear"
       },
       {
         "id": "29c00f30e211805bb4fdc0691b29656a",
-        "nome": "Arco do Horror de Ênio"
+        "nome": "Enio's Horror Arc"
       },
       {
         "id": "29c00f30e21180258e23e54a0af72cc4",
-        "nome": "Espada do Medo de Deimos"
+        "nome": "Deimos's Sword of Fear"
       }
     ],
     "unidades_exclusivas": [
@@ -4035,20 +4035,20 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 23,
-        "nome": "Passagem do Submundo"
+        "nome": "Underworld Passage"
       }
     ],
     "foco": "Artilharia",
@@ -4065,39 +4065,39 @@
     "tecnologias": [
       {
         "id": "2a200f30e21180e09295e08128af4dd8",
-        "nome": "Oráculo"
+        "nome": "Oracle"
       },
       {
         "id": "2a200f30e2118076bcdff3fca134d53f",
-        "nome": "Temple de Cura"
+        "nome": "Temple of Healing"
       },
       {
         "id": "2a200f30e21180fc92e2d7108bd8a502",
-        "nome": "Raio de Sol"
+        "nome": "Sunbeam"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 67,
-        "nome": "Mantícora"
+        "nome": "Manticore"
       }
     ],
     "icon": "aomr_apollo_icon"
   },
   {
     "id": 24,
-    "nome": "Dionísio",
+    "nome": "Dionysus",
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -4106,7 +4106,7 @@
         "nome": "Bronze"
       }
     ],
-    "foco": "Cavalry",
+    "foco": "Cavalaria",
     "god_maior_relacao": [
       {
         "id": 1,
@@ -4120,15 +4120,15 @@
     "tecnologias": [
       {
         "id": "2a300f30e21180398940d2af6649a5fe",
-        "nome": "Ritos Ctônicos"
+        "nome": "Chthonic Rites"
       },
       {
         "id": "2a300f30e21180d789d2ccbec331c483",
-        "nome": "Dionísia"
+        "nome": "Dionysia"
       },
       {
         "id": "2a300f30e21180eeb2a7d048b868fc10",
-        "nome": "Cavalry Trácios"
+        "nome": "Thracian Cavalry"
       }
     ],
     "unidades_exclusivas": [
@@ -4145,20 +4145,20 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 25,
-        "nome": "Maldição"
+        "nome": "Curse"
       }
     ],
     "foco": "Villagers",
@@ -4175,7 +4175,7 @@
     "tecnologias": [
       {
         "id": "2a300f30e2118016ac4cc4faf7e76634",
-        "nome": "Maçãs Douradas"
+        "nome": "Golden Apples"
       },
       {
         "id": "2a300f30e21180a8b0f1f06b853cdef9",
@@ -4183,13 +4183,13 @@
       },
       {
         "id": "2a300f30e21180b09e65eb23a0b41842",
-        "nome": "Rugido de Ortros"
+        "nome": "Ortos' Roar"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 68,
-        "nome": "Leão de Neméia"
+        "nome": "Nemean Lion"
       }
     ],
     "icon": "aomr_aphrodite_icon"
@@ -4200,10 +4200,10 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -4213,10 +4213,10 @@
     "godpower": [
       {
         "id": 26,
-        "nome": "Cofre da Abundância"
+        "nome": "Vault of Abundance"
       }
     ],
-    "foco": "Armadura e Armas de Soldados Humanos",
+    "foco": "Human Soldier Armor and Weapons",
     "god_maior_relacao": [
       {
         "id": 1,
@@ -4234,11 +4234,11 @@
     "tecnologias": [
       {
         "id": "2a300f30e21180f7a8f0c7252ec94543",
-        "nome": "Mão de Talos"
+        "nome": "Hand of Talos"
       },
       {
         "id": "2a300f30e21180aea2faed2ab1da193e",
-        "nome": "Ombro de Talos"
+        "nome": "Talos Shoulder"
       },
       {
         "id": "2a300f30e21180a8b08af2e3c5e741e8",
@@ -4246,7 +4246,7 @@
       },
       {
         "id": "2a300f30e21180b182ecc1ac1228b58e",
-        "nome": "Armas Olímpicas"
+        "nome": "Olympic weapons"
       }
     ],
     "unidades_exclusivas": [
@@ -4263,10 +4263,10 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -4276,10 +4276,10 @@
     "godpower": [
       {
         "id": 27,
-        "nome": "Tempestade de Raios"
+        "nome": "Lightning Storm"
       }
     ],
-    "foco": "Construções  & Unidades Mythics",
+    "foco": "Mythical Buildings & Units",
     "god_maior_relacao": [
       {
         "id": 1,
@@ -4289,15 +4289,15 @@
     "tecnologias": [
       {
         "id": "2a300f30e21180d0aab5d5a458bedd57",
-        "nome": "Patrocínio Argivo"
+        "nome": "Argive Patronage"
       },
       {
         "id": "2a300f30e211805d83c0e1c213037f62",
-        "nome": "Rosto da Górgona"
+        "nome": "Gorgon's Face"
       },
       {
         "id": "2a300f30e21180ee9462e1ec5bbb9910",
-        "nome": "Fúria Monstruosa"
+        "nome": "Monstrous Fury"
       }
     ],
     "unidades_exclusivas": [
@@ -4310,14 +4310,14 @@
   },
   {
     "id": 28,
-    "nome": "Ártemis",
+    "nome": "Artemis",
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -4344,15 +4344,15 @@
     "tecnologias": [
       {
         "id": "2a300f30e211806ab07adc77444323cf",
-        "nome": "Chamas de Tifão"
+        "nome": "Typhon's Flames"
       },
       {
         "id": "2a300f30e21180c3a363ff2c9735b1dc",
-        "nome": "Lanças da Praga"
+        "nome": "Plague Spears"
       },
       {
         "id": "2a300f30e2118013af89e59776ea95ef",
-        "nome": "Matador de Feras"
+        "nome": "Beast Slayer"
       }
     ],
     "unidades_exclusivas": [
@@ -4372,11 +4372,11 @@
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4389,11 +4389,11 @@
     "god_maior_relacao": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       }
     ],
     "tecnologias": [
@@ -4403,7 +4403,7 @@
       },
       {
         "id": "2a800f30e211806fa17bf4221b198d40",
-        "nome": "Enxó de Wepwawet"
+        "nome": "Wepwawet adze"
       },
       {
         "id": "2a800f30e21180528133f5cf20520fe6",
@@ -4431,24 +4431,24 @@
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 30,
-        "nome": "Areias Móveis"
+        "nome": "Shifting Sands"
       }
     ],
     "foco": "Tecnologia ⏫",
     "god_maior_relacao": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 6,
@@ -4462,11 +4462,11 @@
       },
       {
         "id": "2a800f30e21180f199b8dc0786f6826e",
-        "nome": "Escudo de Couro"
+        "nome": "Leather Shield"
       },
       {
         "id": "2a800f30e211808bb375f40981b6449e",
-        "nome": "Projéteis de Electro"
+        "nome": "Electro projectiles"
       },
       {
         "id": "2a800f30e2118074804dc972fcba2406",
@@ -4483,18 +4483,18 @@
   },
   {
     "id": 31,
-    "nome": "Anúbis",
+    "nome": "Anubis",
     "panteao": [
       {
         "id": 2,
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4507,7 +4507,7 @@
     "god_maior_relacao": [
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       },
       {
         "id": 6,
@@ -4517,15 +4517,15 @@
     "tecnologias": [
       {
         "id": "2a800f30e21180d5af64ecb70c6e8288",
-        "nome": "Pés de Chacal"
+        "nome": "Jackal Feet"
       },
       {
         "id": "2a800f30e211809e9386ef55e0907d8e",
-        "nome": "Lança da Serpente"
+        "nome": "Serpent Spear"
       },
       {
         "id": "2a800f30e211802f8b4bdb6e2828032b",
-        "nome": "Necrópole"
+        "nome": "Necropolis"
       }
     ],
     "unidades_exclusivas": [
@@ -4545,28 +4545,28 @@
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 32,
-        "nome": "Núvem de Garfanhotos"
+        "nome": "Cloud of Grasshoppers"
       }
     ],
-    "foco": "Construções  & Cameleiros",
+    "foco": "Constructions & Camelers",
     "god_maior_relacao": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       }
     ],
     "tecnologias": [
@@ -4576,11 +4576,11 @@
       },
       {
         "id": "2a800f30e211808fa65dd7be19a7721b",
-        "nome": "Tijolo de Barro Seco ao Sol"
+        "nome": "Sun-Dried Clay Brick"
       },
       {
         "id": "2a800f30e211802bad29c6756f35589e",
-        "nome": "Água Escuro"
+        "nome": "Dark Water"
       }
     ],
     "unidades_exclusivas": [
@@ -4593,18 +4593,18 @@
   },
   {
     "id": 33,
-    "nome": "Néftis",
+    "nome": "Nephthys",
     "panteao": [
       {
         "id": 2,
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -4613,11 +4613,11 @@
         "nome": "Ancestrais"
       }
     ],
-    "foco": "Faraós  & Sarcedotes",
+    "foco": "Pharaohs & Sarcedotes",
     "god_maior_relacao": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 6,
@@ -4627,11 +4627,11 @@
     "tecnologias": [
       {
         "id": "2a800f30e21180e09b28cdc676f71061",
-        "nome": "Ritos Funerários"
+        "nome": "Funeral Rites"
       },
       {
         "id": "2a800f30e211808fb769dd7f13e5fc3d",
-        "nome": "Espírito de Maat"
+        "nome": "Spirit of Maat"
       },
       {
         "id": "2a800f30e21180b79c4cffa74be0f021",
@@ -4641,7 +4641,7 @@
     "unidades_exclusivas": [
       {
         "id": 71,
-        "nome": "Homem Escorpião"
+        "nome": "Scorpio Man"
       }
     ],
     "icon": "aomr_nephthys_icon"
@@ -4655,11 +4655,11 @@
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -4668,11 +4668,11 @@
         "nome": "Cidadela"
       }
     ],
-    "foco": "Artilharia  & Siege",
+    "foco": "Artilharia  & Cerco",
     "god_maior_relacao": [
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       },
       {
         "id": 6,
@@ -4682,7 +4682,7 @@
     "tecnologias": [
       {
         "id": "2a800f30e211809ba1cef6c6f9e36237",
-        "nome": "Arco de Osso Seco"
+        "nome": "Dry Bone Bow"
       },
       {
         "id": "2a800f30e21180c4b3e2d478e79f2149",
@@ -4694,7 +4694,7 @@
       },
       {
         "id": "2a800f30e211805e880ce9d31cf36125",
-        "nome": "Força do Vento Oeste"
+        "nome": "West Wind Strength"
       }
     ],
     "unidades_exclusivas": [
@@ -4707,14 +4707,14 @@
   },
   {
     "id": 35,
-    "nome": "Osíris",
+    "nome": "Osiris",
     "panteao": [
       {
         "id": 2,
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -4724,18 +4724,18 @@
     "godpower": [
       {
         "id": 35,
-        "nome": "Filho de Osíris"
+        "nome": "Son of Osiris"
       }
     ],
-    "foco": "Cameleiros  & Faraós",
+    "foco": "Camel Riders & Pharaohs",
     "god_maior_relacao": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       }
     ],
     "tecnologias": [
@@ -4749,13 +4749,13 @@
       },
       {
         "id": "2a800f30e21180e69109fc480672f10c",
-        "nome": "Coroa de Atef"
+        "nome": "Atef's Crown"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 101,
-        "nome": "Múmia"
+        "nome": "Mummy"
       }
     ],
     "icon": "aomr_osiris_icon"
@@ -4769,7 +4769,7 @@
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -4782,11 +4782,11 @@
         "nome": "Meteoro"
       }
     ],
-    "foco": "Trabalhadores  & Elefantes de Guerra",
+    "foco": "Workers & War Elephants",
     "god_maior_relacao": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 6,
@@ -4800,31 +4800,31 @@
       },
       {
         "id": "2a800f30e21180f4a22ef39f1c00215e",
-        "nome": "Livro de Thoth"
+        "nome": "Book of Thoth"
       },
       {
         "id": "2a800f30e21180c8a482c0b6a3a4bb67",
-        "nome": "Presas de Apedemak"
+        "nome": "Apedemak Fangs"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 103,
-        "nome": "Fênix"
+        "nome": "Phoenix"
       }
     ],
     "icon": "aomr_thoth_icon"
   },
   {
     "id": 37,
-    "nome": "Hórus",
+    "nome": "Horus",
     "panteao": [
       {
         "id": 2,
         "nome": "Egyptian"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -4837,11 +4837,11 @@
         "nome": "Tornado"
       }
     ],
-    "foco": "Infantry",
+    "foco": "Infantaria",
     "god_maior_relacao": [
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       },
       {
         "id": 6,
@@ -4851,15 +4851,15 @@
     "tecnologias": [
       {
         "id": "2a800f30e2118066a27cf849be4a64c0",
-        "nome": "Machado de Vingança"
+        "nome": "Vengeance Ax"
       },
       {
         "id": "2a800f30e2118056a7fcc9ae5e31b9c0",
-        "nome": "Lança de Hórus"
+        "nome": "Spear of Horus"
       },
       {
         "id": "2a800f30e2118023ac3bef5775253d27",
-        "nome": "Major de Cinquenta"
+        "nome": "Over Fifty"
       }
     ],
     "unidades_exclusivas": [
@@ -4876,23 +4876,23 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 38,
-        "nome": "Incêndio Florestal"
+        "nome": "Forest Fire"
       }
     ],
-    "foco": "Cavalry",
+    "foco": "Cavalaria",
     "god_maior_relacao": [
       {
         "id": 7,
@@ -4910,7 +4910,7 @@
     "tecnologias": [
       {
         "id": "2a800f30e21180e79595e634b9bba97d",
-        "nome": "Dísablót"
+        "nome": "Disblot"
       },
       {
         "id": "2a800f30e211808e8629d69633954384",
@@ -4918,13 +4918,13 @@
       },
       {
         "id": "2a800f30e21180b8aebbc80e4f4cffd8",
-        "nome": "Sessrúmnir"
+        "nome": "Sessrumnir"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 49,
-        "nome": "Valquíria"
+        "nome": "Valkyrie"
       }
     ],
     "icon": "aomr_freyja_icon"
@@ -4935,14 +4935,14 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4990,20 +4990,20 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 40,
-        "nome": "Fonte de Cura"
+        "nome": "Source of Healing"
       }
     ],
     "foco": "Berserks  & Hersirs :aomr_hersir_icon:",
@@ -5020,11 +5020,11 @@
     "tecnologias": [
       {
         "id": "2a800f30e21180839777effb63f8a49a",
-        "nome": "Salão dos Thanes"
+        "nome": "Hall of Thanes"
       },
       {
         "id": "2a800f30e21180d48ffbe93f81fd8799",
-        "nome": "Peitoral Enânico"
+        "nome": "Dwarven Chestplate"
       },
       {
         "id": "2a800f30e211805688fff37030b9586a",
@@ -5045,20 +5045,20 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 41,
-        "nome": "Árvores Andantes"
+        "nome": "Walking Trees"
       }
     ],
     "foco": "Marinha  & Forte da Montanha",
@@ -5100,14 +5100,14 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -5134,17 +5134,17 @@
       },
       {
         "id": "2a900f30e2118026921fefd486f04001",
-        "nome": "Machado da Caça"
+        "nome": "Hunting Ax"
       },
       {
         "id": "2a900f30e211807fa7a0c6b01fd9de68",
-        "nome": "Colheita de Inverno"
+        "nome": "Winter Harvest"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 72,
-        "nome": "Gigante de Gelo"
+        "nome": "Ice Giant"
       }
     ],
     "icon": "aomr_skadi_icon"
@@ -5155,14 +5155,14 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -5189,21 +5189,21 @@
     "tecnologias": [
       {
         "id": "2a900f30e21180e8aabfc21458437eca",
-        "nome": "Chamado de Valhalla"
+        "nome": "Call of Valhalla"
       },
       {
         "id": "2a900f30e21180a484aed31a475c2ea6",
-        "nome": "Runa de Thurisaz"
+        "nome": "Thurisaz Rune"
       },
       {
         "id": "2a900f30e211800fbd28d98924212fa8",
-        "nome": "Formação Svinfylking"
+        "nome": "Svinfylking Training"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 73,
-        "nome": "Javali de Batalha"
+        "nome": "Battle Boar"
       }
     ],
     "icon": "aomr_bragi_icon"
@@ -5214,10 +5214,10 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -5230,7 +5230,7 @@
         "nome": "Ragnarok"
       }
     ],
-    "foco": "Siege  & Cavalry",
+    "foco": "Cerco  & Cavalaria",
     "god_maior_relacao": [
       {
         "id": 7,
@@ -5244,17 +5244,17 @@
     "tecnologias": [
       {
         "id": "2a900f30e211802e8438c847057001d7",
-        "nome": "Filhos de Sleipnir"
+        "nome": "Children of Sleipnir"
       },
       {
         "id": "2a900f30e211806c8877e3f5f3e19f4a",
-        "nome": "Verrumão dos Anões"
+        "nome": "Dwarf Warmer"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 104,
-        "nome": "Gigante de Fogo"
+        "nome": "Fire Giant"
       }
     ],
     "icon": "aomr_baldr_icon"
@@ -5265,10 +5265,10 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -5281,7 +5281,7 @@
         "nome": "Fimbulwinter"
       }
     ],
-    "foco": "Infantry",
+    "foco": "Infantaria",
     "god_maior_relacao": [
       {
         "id": 7,
@@ -5299,7 +5299,7 @@
     "tecnologias": [
       {
         "id": "2a900f30e2118034b330d8d1f62b0b4e",
-        "nome": "Fúria Berserker"
+        "nome": "Berserker Fury"
       },
       {
         "id": "2a900f30e211801cb4adf8d956252fc7",
@@ -5309,7 +5309,7 @@
     "unidades_exclusivas": [
       {
         "id": 105,
-        "nome": "Lobo de Fenrir"
+        "nome": "Fenrir Wolf"
       }
     ],
     "icon": "aomr_tyr_icon"
@@ -5320,10 +5320,10 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -5336,7 +5336,7 @@
         "nome": "Nidhogg"
       }
     ],
-    "foco": "Unidades Mythics",
+    "foco": "Mythic Units",
     "god_maior_relacao": [
       {
         "id": 9,
@@ -5354,7 +5354,7 @@
       },
       {
         "id": "2a900f30e21180938a9edfea1d9fea4b",
-        "nome": "Sangue de Granito"
+        "nome": "Granite Blood"
       }
     ],
     "unidades_exclusivas": [
@@ -5364,11 +5364,11 @@
       },
       {
         "id": 72,
-        "nome": "Gigante de Gelo"
+        "nome": "Ice Giant"
       },
       {
         "id": 104,
-        "nome": "Gigante de Fogo"
+        "nome": "Fire Giant"
       }
     ],
     "icon": "aomr_hel_icon"
@@ -5382,17 +5382,17 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 47,
-        "nome": "Covil de Aranhas"
+        "nome": "Spider Lair"
       }
     ],
     "foco": "Automatos",
@@ -5409,21 +5409,21 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180278e66d5dc7b786b52",
-        "nome": "Vingança de Hefesto"
+        "nome": "Hephaestus' Revenge"
       },
       {
         "id": "2b200f30e21180a3ba53eeb5fdaefc03",
-        "nome": "Forja Vulcânica"
+        "nome": "Volcanic Forge"
       },
       {
         "id": "2b200f30e211806ea2daec0f573a267f",
-        "nome": "Percepção"
+        "nome": "Perception"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 53,
-        "nome": "Autômato"
+        "nome": "Automaton"
       }
     ],
     "icon": "aomr_leto_icon"
@@ -5437,11 +5437,11 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5450,7 +5450,7 @@
         "nome": "Valentia"
       }
     ],
-    "foco": "Heros",
+    "foco": "Heroes",
     "god_maior_relacao": [
       {
         "id": 10,
@@ -5468,7 +5468,7 @@
       },
       {
         "id": "2a900f30e2118050aa84c05e0d89129c",
-        "nome": "Coração de Titãs"
+        "nome": "Heart of Titans"
       },
       {
         "id": "2a900f30e211804eba64f2122c0e6c97",
@@ -5492,20 +5492,20 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 49,
-        "nome": "Carnívora"
+        "nome": "Carnivorous"
       }
     ],
-    "foco": "Infantry",
+    "foco": "Infantaria",
     "god_maior_relacao": [
       {
         "id": 10,
@@ -5519,15 +5519,15 @@
     "tecnologias": [
       {
         "id": "2b200f30e211804a84a1fec3a7c4a562",
-        "nome": "Mordida do Turbarão"
+        "nome": "Shark Bite"
       },
       {
         "id": "2b200f30e211804b97a2e6a44b5006cb",
-        "nome": "Maça sem Peso"
+        "nome": "Weightless Apple"
       },
       {
         "id": "2b200f30e2118062b790e674e91166ac",
-        "nome": "Heroísmo da Linha de Frente"
+        "nome": "Frontline Heroism"
       }
     ],
     "unidades_exclusivas": [
@@ -5547,11 +5547,11 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -5560,7 +5560,7 @@
         "nome": "Traidor"
       }
     ],
-    "foco": "Geração de Favor",
+    "foco": "Favor Generation",
     "god_maior_relacao": [
       {
         "id": 11,
@@ -5574,15 +5574,15 @@
     "tecnologias": [
       {
         "id": "2b200f30e211802d8f43c8b8481f6049",
-        "nome": "Chifres da Consagração"
+        "nome": "Horns of Consecration"
       },
       {
         "id": "2b200f30e21180a2a008c0c908a1e428",
-        "nome": "Cota de Oricalco"
+        "nome": "Orichalco Quota"
       },
       {
         "id": "2b200f30e2118087aa4ee25ad7dfe66a",
-        "nome": "O Presente de Reia"
+        "nome": "Rhea's Gift"
       }
     ],
     "unidades_exclusivas": [
@@ -5602,11 +5602,11 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -5615,7 +5615,7 @@
         "nome": "Caos"
       }
     ],
-    "foco": "Heros",
+    "foco": "Heroes",
     "god_maior_relacao": [
       {
         "id": 10,
@@ -5629,11 +5629,11 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180cd910be48bad879289",
-        "nome": "Gêmeos"
+        "nome": "Twins"
       },
       {
         "id": "2b200f30e2118062a881ff857cc48a04",
-        "nome": "Renovação Heroca"
+        "nome": "Heroic Renewal"
       },
       {
         "id": "2b200f30e211803290abccfacca52734",
@@ -5643,7 +5643,7 @@
     "unidades_exclusivas": [
       {
         "id": 77,
-        "nome": "Sátiro"
+        "nome": "Satyr"
       }
     ],
     "icon": "aomr_hyperion_icon"
@@ -5657,20 +5657,20 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 52,
-        "nome": "Árvore de Hespérides"
+        "nome": "Hesperides Tree"
       }
     ],
-    "foco": "Cavalry",
+    "foco": "Cavalaria",
     "god_maior_relacao": [
       {
         "id": 10,
@@ -5684,21 +5684,21 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180cf9552d770fa5972aa",
-        "nome": "Visão Profética"
+        "nome": "Prophetic Vision"
       },
       {
         "id": "2b200f30e211802c8aa8d6ecdb62f3b1",
-        "nome": "Segredo de Poseidon"
+        "nome": "Poseidon's Secret"
       },
       {
         "id": "2b200f30e211801aad20f88523ad31de",
-        "nome": "Lança de Pedra"
+        "nome": "Stone Spear"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 78,
-        "nome": "Pássaro de Estínfalo"
+        "nome": "Stymphalus Bird"
       }
     ],
     "icon": "aomr_theia_icon"
@@ -5712,7 +5712,7 @@
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -5722,10 +5722,10 @@
     "godpower": [
       {
         "id": 53,
-        "nome": "Implodir/Implosão"
+        "nome": "Implode/Implosion"
       }
     ],
-    "foco": "Construções",
+    "foco": "Constructions",
     "god_maior_relacao": [
       {
         "id": 11,
@@ -5739,15 +5739,15 @@
     "tecnologias": [
       {
         "id": "2b200f30e2118023aa4efe33c5c12f79",
-        "nome": "Guardião do Io"
+        "nome": "Guardian of Io"
       },
       {
         "id": "2b200f30e21180c3a161ceb194c9088f",
-        "nome": "Devotos de Atlas"
+        "nome": "Atlas Devotees"
       },
       {
         "id": "2b200f30e21180efb921dd12bf870b01",
-        "nome": "Escudo dos Titãs"
+        "nome": "Titans' Shield"
       }
     ],
     "unidades_exclusivas": [
@@ -5760,14 +5760,14 @@
   },
   {
     "id": 54,
-    "nome": "Hélios",
+    "nome": "Helios",
     "panteao": [
       {
         "id": 4,
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -5777,10 +5777,10 @@
     "godpower": [
       {
         "id": 54,
-        "nome": "Vórtice"
+        "nome": "Vortex"
       }
     ],
-    "foco": "Siege",
+    "foco": "Cerco",
     "god_maior_relacao": [
       {
         "id": 10,
@@ -5794,11 +5794,11 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180baaf2fe000c61b4488",
-        "nome": "Auréola do Sol"
+        "nome": "Sun Halo"
       },
       {
         "id": "2b200f30e21180948ffec69648afc328",
-        "nome": "Petrificação"
+        "nome": "Petrification"
       },
       {
         "id": "2b200f30e2118059ad61d631d44062d6",
@@ -5815,14 +5815,14 @@
   },
   {
     "id": 55,
-    "nome": "Hécate",
+    "nome": "Hecate",
     "panteao": [
       {
         "id": 4,
         "nome": "Atlantean"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -5832,10 +5832,10 @@
     "godpower": [
       {
         "id": 55,
-        "nome": "Portão do Tartário"
+        "nome": "Tartary Gate"
       }
     ],
-    "foco": "Unidades Mythics :aomr_type_myth_unit_icon:",
+    "foco": "Mythical Units :aomr_type_myth_unit_icon:",
     "god_maior_relacao": [
       {
         "id": 10,
@@ -5849,11 +5849,11 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180cf87aaf90f9ead65be",
-        "nome": "Sangue de Ásper"
+        "nome": "Asper's Blood"
       },
       {
         "id": "2b200f30e21180cab704e54f47745bd5",
-        "nome": "Rejuvenescimento Mítico"
+        "nome": "Mythical Rejuvenation"
       },
       {
         "id": "2b200f30e211802fb706c9f185647749",
@@ -5863,7 +5863,7 @@
     "unidades_exclusivas": [
       {
         "id": 109,
-        "nome": "Lâmpade"
+        "nome": "Lamp"
       }
     ],
     "icon": "aomr_hekate_icon"
@@ -5877,11 +5877,11 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5890,7 +5890,7 @@
         "nome": "Desaparecimento"
       }
     ],
-    "foco": "Cura ✨ & Produção de Exército",
+    "foco": "✨ Healing & Army Production",
     "god_maior_relacao": [
       {
         "id": 13,
@@ -5908,11 +5908,11 @@
       },
       {
         "id": "2b200f30e2118093a8d1d511be8b59c0",
-        "nome": "Reencarnação"
+        "nome": "Reincarnation"
       },
       {
         "id": "2b200f30e2118071942ad13e2396e100",
-        "nome": "Bênção de Qilin"
+        "nome": "Qilin's Blessing"
       }
     ],
     "unidades_exclusivas": [
@@ -5932,20 +5932,20 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 57,
-        "nome": "Armas Relâmpago"
+        "nome": "Lightning Weapons"
       }
     ],
-    "foco": "Military  e Saques 🫴",
+    "foco": "Militar  e Saques 🫴",
     "god_maior_relacao": [
       {
         "id": 13,
@@ -5963,15 +5963,15 @@
       },
       {
         "id": "2b200f30e2118065995dd0df9eaac60f",
-        "nome": "Espólios de Guerra"
+        "nome": "Spoils of War"
       },
       {
         "id": "2b200f30e21180f49e42d0b9848b8e20",
-        "nome": "Filho de Loong"
+        "nome": "Son of Loong"
       },
       {
         "id": "2b200f30e21180a7bca8f3a9a8b1fa5d",
-        "nome": "Fúria de Matança"
+        "nome": "Killing Fury"
       }
     ],
     "unidades_exclusivas": [
@@ -5991,17 +5991,17 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 58,
-        "nome": "Muralha de Land"
+        "nome": "Earth Wall"
       }
     ],
     "foco": "Economia  & Defesa :aomr_type_human_soldier_icon:️",
@@ -6018,7 +6018,7 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180959b79cf558a439244",
-        "nome": "Defesas Avançadas"
+        "nome": "Advanced Defenses"
       },
       {
         "id": "2b200f30e2118000b5aee94521a06bae",
@@ -6026,11 +6026,11 @@
       },
       {
         "id": "2b200f30e211803a9195d0785d33e4f0",
-        "nome": "Abundância"
+        "nome": "Abundance"
       },
       {
         "id": "2b200f30e2118001a2ccec86f136fb1d",
-        "nome": "Determinação Sinistra"
+        "nome": "Sinister Determination"
       }
     ],
     "unidades_exclusivas": [
@@ -6050,20 +6050,20 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 59,
-        "nome": "Proteção Florestal"
+        "nome": "Forest Protection"
       }
     ],
-    "foco": "Cavalry  & Coleta de Madeira",
+    "foco": "Chivalry & Wood Gathering",
     "god_maior_relacao": [
       {
         "id": 13,
@@ -6085,7 +6085,7 @@
       },
       {
         "id": "2b200f30e21180debeabd569ad6f990c",
-        "nome": "Corrida Frenética"
+        "nome": "Frantic Race"
       }
     ],
     "unidades_exclusivas": [
@@ -6105,11 +6105,11 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -6118,7 +6118,7 @@
         "nome": "Seca"
       }
     ],
-    "foco": "Unidades Mythics  & Artilharia",
+    "foco": "Mythic Units & Artillery",
     "god_maior_relacao": [
       {
         "id": 13,
@@ -6136,11 +6136,11 @@
       },
       {
         "id": "2b200f30e21180c1b796d4c40ac9d99f",
-        "nome": "Rocha Sólida"
+        "nome": "Solid Rock"
       },
       {
         "id": "2b200f30e2118042a93be5376625d188",
-        "nome": "Estômago sem fundo"
+        "nome": "Bottomless stomach"
       }
     ],
     "unidades_exclusivas": [
@@ -6160,11 +6160,11 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -6173,7 +6173,7 @@
         "nome": "Bestas Fei"
       }
     ],
-    "foco": "Infantry  & Trade",
+    "foco": "Infantaria  & Trade",
     "god_maior_relacao": [
       {
         "id": 14,
@@ -6195,7 +6195,7 @@
       },
       {
         "id": "2b200f30e2118032a6c1e0ccba610132",
-        "nome": "Outono da Abundância"
+        "nome": "Autumn of Abundance"
       }
     ],
     "unidades_exclusivas": [
@@ -6215,7 +6215,7 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -6225,10 +6225,10 @@
     "godpower": [
       {
         "id": 62,
-        "nome": "Grande Dilúvio"
+        "nome": "Great Flood"
       }
     ],
-    "foco": "Heros  & Cavalry",
+    "foco": "Heroes & Chivalry",
     "god_maior_relacao": [
       {
         "id": 13,
@@ -6246,15 +6246,15 @@
       },
       {
         "id": "2b200f30e211804bbc9ff6c573e90b02",
-        "nome": "Última Resistência"
+        "nome": "Last Stand"
       },
       {
         "id": "2b200f30e21180a7a27ec517d6ae0f6d",
-        "nome": "Maré Crescente"
+        "nome": "Rising Tide"
       },
       {
         "id": "2b200f30e211808b812ae6fc4e0312d7",
-        "nome": "Agitador do Céu"
+        "nome": "Sky Shaker"
       }
     ],
     "unidades_exclusivas": [
@@ -6274,7 +6274,7 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -6284,7 +6284,7 @@
     "godpower": [
       {
         "id": 63,
-        "nome": "Ira de Yinglong"
+        "nome": "Yinglong's Wrath"
       }
     ],
     "foco": "Soldados Humanos",
@@ -6301,11 +6301,11 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180cf8d82cc923ff27cac",
-        "nome": "Linhagem de Xuanyuan"
+        "nome": "Xuanyuan lineage"
       },
       {
         "id": "2b200f30e21180b0bf8dd5e75ab26990",
-        "nome": "Seda de Leizu"
+        "nome": "Leizu silk"
       },
       {
         "id": "2b200f30e211800f93edf64a61cba82f",
@@ -6313,7 +6313,7 @@
       },
       {
         "id": "2b200f30e21180c2a258fc68dd0ae68e",
-        "nome": "Poder do Caos"
+        "nome": "Chaos Power"
       }
     ],
     "unidades_exclusivas": [
@@ -6333,7 +6333,7 @@
         "nome": "Chinese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -6346,7 +6346,7 @@
         "nome": "Pradaria Flamejante"
       }
     ],
-    "foco": "Unidades Mythics  & Fazendas :aomr_farm_icon:",
+    "foco": "Mythic Units & Farms :aomr_farm_icon:",
     "god_maior_relacao": [
       {
         "id": 14,
@@ -6364,7 +6364,7 @@
       },
       {
         "id": "2b200f30e2118037874dd2e6d5ba49f8",
-        "nome": "Canção do Solstício de Verão"
+        "nome": "Midsummer Song"
       },
       {
         "id": "2b200f30e21180a3ac81f57cd51b7593",
@@ -6389,14 +6389,14 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6405,7 +6405,7 @@
         "nome": "Baluarte Asgardiano"
       }
     ],
-    "foco": "Defesas :aomr_type_human_soldier_icon:️ & Und. da House Comunal",
+    "foco": "Defesas :aomr_type_human_soldier_icon:️ & Und. da Casa Comunal",
     "god_maior_relacao": [
       {
         "id": 16,
@@ -6423,7 +6423,7 @@
       },
       {
         "id": "2a800f30e21180e881e5c3c7797bfa89",
-        "nome": "Servos da Glória"
+        "nome": "Servants of Glory"
       },
       {
         "id": "2a800f30e21180348ba3e55c08f5140a",
@@ -6444,14 +6444,14 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -6460,7 +6460,7 @@
         "nome": "Tempestade"
       }
     ],
-    "foco": "Unidades Mythics  & Siege",
+    "foco": "Mythic Units & Siege",
     "god_maior_relacao": [
       {
         "id": 16,
@@ -6470,7 +6470,7 @@
     "tecnologias": [
       {
         "id": "2a900f30e21180ad8c3debb9af07b28a",
-        "nome": "Estômago de Ferro"
+        "nome": "Iron Stomach"
       },
       {
         "id": "2a900f30e211809f91e8d07aef989e62",
@@ -6495,10 +6495,10 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse"
+        "nome": "Nordic"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -6511,7 +6511,7 @@
         "nome": "Inferno"
       }
     ],
-    "foco": "Soldados Humanos  & Heros",
+    "foco": "Human Soldiers & Heroes",
     "god_maior_relacao": [
       {
         "id": 16,
@@ -6521,19 +6521,19 @@
     "tecnologias": [
       {
         "id": "2a900f30e2118083b78ffecaf8fe9612",
-        "nome": "Crepúsculo dos Deuses"
+        "nome": "Twilight of the Gods"
       },
       {
         "id": "2a900f30e211804da4b4f947a7c91bea",
-        "nome": "Espírito Vingativo"
+        "nome": "Vengeful Spirit"
       },
       {
         "id": "2a900f30e2118083a299eb0bebdc867e",
-        "nome": "Determinação Silenciosa"
+        "nome": "Silent Determination"
       },
       {
         "id": "2a900f30e21180658ddefad6beba267d",
-        "nome": "Fúria dos Caídos"
+        "nome": "Fury of the Fallen"
       }
     ],
     "unidades_exclusivas": [
@@ -6553,11 +6553,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6566,7 +6566,7 @@
         "nome": "Goushinboku"
       }
     ],
-    "foco": "Infantry  & Mikos :aomr_miko_icon:",
+    "foco": "Infantaria  & Mikos :aomr_miko_icon:",
     "god_maior_relacao": [
       {
         "id": 17,
@@ -6580,7 +6580,7 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180648549debc317f15a7",
-        "nome": "Foices de Vento"
+        "nome": "Wind Scythes"
       },
       {
         "id": "2b200f30e211804da5dee4e799e4ddd6",
@@ -6588,7 +6588,7 @@
       },
       {
         "id": "2b200f30e21180f39f31dce7c16d3603",
-        "nome": "Varinhas de Gohei"
+        "nome": "Gohei Wands"
       }
     ],
     "unidades_exclusivas": [
@@ -6608,20 +6608,20 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 69,
-        "nome": "Santuário da Caça"
+        "nome": "Hunting Sanctuary"
       }
     ],
-    "foco": "Artilharia  & Caça",
+    "foco": "Artillery & Hunting",
     "god_maior_relacao": [
       {
         "id": 17,
@@ -6635,11 +6635,11 @@
     "tecnologias": [
       {
         "id": "2b200f30e21180cb983dc6c216d0a397",
-        "nome": "Nascente de Água Salgada"
+        "nome": "Saltwater Spring"
       },
       {
         "id": "2b200f30e2118018adf6d40212380afa",
-        "nome": "Força de Caçador"
+        "nome": "Hunter's Strength"
       },
       {
         "id": "2b200f30e211808baa75cc2f4aac1c22",
@@ -6667,11 +6667,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6680,7 +6680,7 @@
         "nome": "Pantanal"
       }
     ],
-    "foco": "Cavalry  & Unidades Mythics",
+    "foco": "Cavalry & Mythic Units",
     "god_maior_relacao": [
       {
         "id": 18,
@@ -6706,7 +6706,7 @@
       },
       {
         "id": "2b200f30e211809b9123e457fe540a6c",
-        "nome": "Netsuke de Marfim"
+        "nome": "Ivory Netsuke"
       }
     ],
     "unidades_exclusivas": [
@@ -6726,11 +6726,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -6739,7 +6739,7 @@
         "nome": "Xogum"
       }
     ],
-    "foco": "Artilharia  & Heros",
+    "foco": "Artillery & Heroes",
     "god_maior_relacao": [
       {
         "id": 17,
@@ -6753,11 +6753,11 @@
     "tecnologias": [
       {
         "id": "2b800f30e2118062a802f6cd7baed184",
-        "nome": "Práticas Ascéticas"
+        "nome": "Ascetic Practices"
       },
       {
         "id": "2b800f30e2118058a272e2a065789876",
-        "nome": "Pipa de Ouro"
+        "nome": "Golden Kite"
       },
       {
         "id": "2b800f30e21180b78c19f0f808233a29",
@@ -6781,11 +6781,11 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
@@ -6794,7 +6794,7 @@
         "nome": "Lufada Impetuosa"
       }
     ],
-    "foco": "Cavalry  & Unidades Mythics",
+    "foco": "Cavalry & Mythic Units",
     "god_maior_relacao": [
       {
         "id": 18,
@@ -6808,15 +6808,15 @@
     "tecnologias": [
       {
         "id": "2b800f30e21180e2a6c1e6499a6ea352",
-        "nome": "Fúria Mortal"
+        "nome": "Deadly Fury"
       },
       {
         "id": "2b800f30e211800e87dcd2ea80e6b985",
-        "nome": "Máscara Oni"
+        "nome": "Oni Mask"
       },
       {
         "id": "2b800f30e21180b1b973eaf506086fb9",
-        "nome": "Fúria do Vendaval"
+        "nome": "Gale's Fury"
       }
     ],
     "unidades_exclusivas": [
@@ -6836,20 +6836,20 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 72,
-        "nome": "Rajada de Trovão"
+        "nome": "Gust of Thunder"
       }
     ],
-    "foco": "Infantry  & God Powers :favoraom:",
+    "foco": "Infantaria  & God Powers :favoraom:",
     "god_maior_relacao": [
       {
         "id": 17,
@@ -6871,7 +6871,7 @@
       },
       {
         "id": "2b800f30e21180398f63c9c8f02bc121",
-        "nome": "Máscara de Hannya"
+        "nome": "Hannya Mask"
       }
     ],
     "unidades_exclusivas": [
@@ -6891,7 +6891,7 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -6904,7 +6904,7 @@
         "nome": "Corte Divino"
       }
     ],
-    "foco": "Infantry  & Samurais",
+    "foco": "Infantaria  & Samurais",
     "god_maior_relacao": [
       {
         "id": 17,
@@ -6918,11 +6918,11 @@
     "tecnologias": [
       {
         "id": "2b800f30e21180b49339e284deb9a58c",
-        "nome": "Malevolência Ardente"
+        "nome": "Burning Malevolence"
       },
       {
         "id": "2b800f30e21180ec93eaf4af997f7259",
-        "nome": "Treinamento de Sumô"
+        "nome": "Sumo Training"
       },
       {
         "id": "2b800f30e211807790f3c72e63022ffd",
@@ -6950,7 +6950,7 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -6963,7 +6963,7 @@
         "nome": "Portal Sagrado"
       }
     ],
-    "foco": "Construções  & Siege",
+    "foco": "Constructions & Siege",
     "god_maior_relacao": [
       {
         "id": 17,
@@ -6977,15 +6977,15 @@
     "tecnologias": [
       {
         "id": "2b800f30e2118030b6a5cd2404f42222",
-        "nome": "Artesão Mecânicos"
+        "nome": "Craftsman Mechanics"
       },
       {
         "id": "2b800f30e21180479ee9d4fe05a4b969",
-        "nome": "Exército Inquieto"
+        "nome": "Restless Army"
       },
       {
         "id": "2b800f30e21180ed8d15c42cfd146ae8",
-        "nome": "Província Divina"
+        "nome": "Divine Province"
       }
     ],
     "unidades_exclusivas": [
@@ -7005,7 +7005,7 @@
         "nome": "Japanese"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -7015,10 +7015,10 @@
     "godpower": [
       {
         "id": 76,
-        "nome": "Tufão Dragão"
+        "nome": "Dragon Typhoon"
       }
     ],
-    "foco": "Shinobi  & Cavalry de Arqueiro Yumi",
+    "foco": "Shinobi & Yumi Archer Cavalry",
     "god_maior_relacao": [
       {
         "id": 18,
@@ -7032,11 +7032,11 @@
     "tecnologias": [
       {
         "id": "2b800f30e21180cdb23fedb652b60440",
-        "nome": "Assombração Eterna"
+        "nome": "Eternal Haunt"
       },
       {
         "id": "2b800f30e21180828d17e6deec8c8c3d",
-        "nome": "Infiltradores à Beira-mar"
+        "nome": "Seaside Infiltrators"
       },
       {
         "id": "2b800f30e2118006baaefb8150be57d2",
@@ -7044,7 +7044,7 @@
       },
       {
         "id": "2b800f30e21180e090a2da68a3892f45",
-        "nome": "Arcos Assimétricos"
+        "nome": "Asymmetrical Arches"
       }
     ],
     "unidades_exclusivas": [
@@ -7057,18 +7057,18 @@
   },
   {
     "id": 78,
-    "nome": "Deméter",
+    "nome": "Demeter",
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -7077,7 +7077,7 @@
         "nome": "Secar"
       }
     ],
-    "foco": "Expansão e Coleta de Recursos :goldaom:",
+    "foco": "Expansion and Resource Collection :goldaom:",
     "god_maior_relacao": [
       {
         "id": 79,
@@ -7085,11 +7085,11 @@
       },
       {
         "id": 80,
-        "nome": "Héstia"
+        "nome": "Hestia"
       },
       {
         "id": 81,
-        "nome": "Perséfone"
+        "nome": "Persephone"
       }
     ],
     "tecnologias": [
@@ -7111,7 +7111,7 @@
       },
       {
         "id": "30300f30e211809ca435fdd008b2b721",
-        "nome": "Land Sagrada"
+        "nome": "Terra Sagrada"
       },
       {
         "id": "30300f30e211805882fac699f6c0ed6b",
@@ -7119,19 +7119,19 @@
       },
       {
         "id": "30300f30e21180b2ac97e756590b0e00",
-        "nome": "Sacrifício Piedoso"
+        "nome": "Pious Sacrifice"
       },
       {
         "id": "30300f30e21180379bebe7372a0c2d2b",
-        "nome": "Paredes de Espinhos"
+        "nome": "Thorn Walls"
       },
       {
         "id": "30300f30e211802ab50df68ebdd79331",
-        "nome": "Pioneiros de Pã"
+        "nome": "Pioneers of Pan"
       },
       {
         "id": "30300f30e2118057afbfcce92d0d71c2",
-        "nome": "Instinto Predatório"
+        "nome": "Predatory Instinct"
       }
     ],
     "unidades_exclusivas": [
@@ -7141,7 +7141,7 @@
       },
       {
         "id": 155,
-        "nome": "Ícaro"
+        "nome": "Icarus"
       },
       {
         "id": 157,
@@ -7160,16 +7160,16 @@
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Expansão e Coleta de Recursos."
+          "texto": "Focus: Expansion and Resource Collection."
         },
         {
           "tipo": "lista",
           "itens": [
-            "Rebanhos :aomr_goat_icon: :aomr_cow_icon: :aomr_pig_icon: melhoram a taxa de coleta de Favor :favoraom: quando estão perto de um Temple :aomr_temple_icon:. (máx. 10 Rebanhos por Temple)",
-            "Centros Urbanos e de Vilas geram Rebanhos :aomr_goat_icon: :aomr_cow_icon: :aomr_pig_icon: ao Avançar de Era.",
-            "Construções :aomr_type_building_icon: são construídas mais rápido quando estão perto de minas de Ouro :goldaom:.",
-            "+1 Villagers :aomr_type_villager_icon: podem trabalhar em uma Fazenda :aomr_farm_icon:",
-            "Os Centros de Vila têm PV :aomr_hit_points_icon: adicional e aumento de ataque :hackdamage: por cada Villager guarnecido."
+            ":aomr_goat_icon: :aomr_cow_icon: :aomr_pig_icon: Herds improve :favoraom: Favor collection rate when near a :aomr_temple_icon: Temple. (max. 10 Herds per Temple)",
+            "Urban and Village Centers generate :aomr_goat_icon: :aomr_cow_icon: :aomr_pig_icon: Herds as the Age advances.",
+            ":aomr_type_building_icon: buildings are built faster when they are near :goldaom: gold mines.",
+            "+1 :aomr_type_villager_icon: Villagers can work on a :aomr_farm_icon: Farm",
+            "Town Halls have additional HP :aomr_hit_points_icon: and increased attack :hackdamage: for each Villager garrisoned."
           ]
         }
       ]
@@ -7185,78 +7185,78 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 79,
-        "nome": "Prado Arcádico"
+        "nome": "Arcadian Meadow"
       }
     ],
     "foco": "Defesa :aomr_type_human_soldier_icon:️",
     "god_maior_relacao": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "tecnologias": [
       {
         "id": "30300f30e21180379bebe7372a0c2d2b",
-        "nome": "Paredes de Espinhos"
+        "nome": "Thorn Walls"
       },
       {
         "id": "30300f30e211802ab50df68ebdd79331",
-        "nome": "Pioneiros de Pã"
+        "nome": "Pioneers of Pan"
       },
       {
         "id": "30300f30e2118057afbfcce92d0d71c2",
-        "nome": "Instinto Predatório"
+        "nome": "Predatory Instinct"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 152,
-        "nome": "Licaão"
+        "nome": "Lycaon"
       }
     ],
     "icon": "aomr_pan_icon"
   },
   {
     "id": 80,
-    "nome": "Héstia",
+    "nome": "Hestia",
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
     "godpower": [
       {
         "id": 80,
-        "nome": "Lareira Comunitária"
+        "nome": "Community Fireplace"
       }
     ],
-    "foco": "População  & Artilharia",
+    "foco": "Population & Artillery",
     "god_maior_relacao": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "tecnologias": [
@@ -7276,21 +7276,21 @@
     "unidades_exclusivas": [
       {
         "id": 153,
-        "nome": "Hamadríade"
+        "nome": "Hamadryad"
       }
     ],
     "icon": "aomr_hestia_icon"
   },
   {
     "id": 81,
-    "nome": "Perséfone",
+    "nome": "Persephone",
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek"
+        "nome": "Grego"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -7300,20 +7300,20 @@
     "godpower": [
       {
         "id": 81,
-        "nome": "Invasão do Submundo"
+        "nome": "Invasion of the Underworld"
       }
     ],
-    "foco": "Infantry",
+    "foco": "Infantaria",
     "god_maior_relacao": [
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       }
     ],
     "tecnologias": [
       {
         "id": "30300f30e211809ca435fdd008b2b721",
-        "nome": "Land Sagrada"
+        "nome": "Terra Sagrada"
       },
       {
         "id": "30300f30e211805882fac699f6c0ed6b",
@@ -7321,13 +7321,13 @@
       },
       {
         "id": "30300f30e21180b2ac97e756590b0e00",
-        "nome": "Sacrifício Piedoso"
+        "nome": "Pious Sacrifice"
       }
     ],
     "unidades_exclusivas": [
       {
         "id": 154,
-        "nome": "Sirênico"
+        "nome": "Sirenic"
       }
     ],
     "icon": "aomr_persephone_icon"
@@ -7338,17 +7338,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "foco": "Sacerdotes guerreiros :aomr_type_hero_icon: & guerreiros da Cabana dos Nobre :aomr_type_infantry_icon:",
+    "foco": "Warrior priests :aomr_type_hero_icon: & warriors of the Noble's Hut :aomr_type_infantry_icon:",
     "god_maior_relacao": [
       {
         "id": 87,
@@ -7379,15 +7379,15 @@
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Sacerdotes Guerreiros e Guerreiros da Cabana dos Nobres."
+          "texto": "Focus: Warrior Priests and Warriors of the Nobles' Hut."
         },
         {
           "tipo": "lista",
           "itens": [
-            "Sacerdotes Guerreiros geram 0,05 de Favor por segundo ao realizar Sangria nos Temples.",
+            "Warrior Priests generate 0.05 Favor per second when performing Bloodletting in Temples.",
             "Calpullis e seus adicionais custam -33%.",
-            "Unidades da Cabana dos Nobres +15% de pontos de vida.",
-            "Guerreiros Águia +2 de alcance"
+            "Nobles' Hut units +15% health.",
+            "Eagle Warriors +2 range"
           ]
         }
       ]
@@ -7396,7 +7396,7 @@
     "godpower": [
       {
         "id": 84,
-        "nome": "Vento de cauda"
+        "nome": "Tailwind"
       }
     ],
     "tecnologias": [],
@@ -7411,17 +7411,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "foco": "Defesa 🛡️ & myth units :aomr_type_myth_unit_icon:",
+    "foco": "Defense 🛡️ & mythical units :aomr_type_myth_unit_icon:",
     "god_maior_relacao": [
       {
         "id": 85,
@@ -7452,14 +7452,14 @@
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Defesa e Unidades Mythics."
+          "texto": "Focus: Defense and Mythical Units."
         },
         {
           "tipo": "lista",
           "itens": [
-            "A cada 2 Unidades Mythics perdidas, um Fragmento de Obsidiana é gerado; se o Fragmento sobreviver tempo suficiente, ele invoca uma Unidade Mythic gratuita da era atual.",
-            "Torres e Armadilhas Tzompantli são construídas 25% mais rápido e infligem +25% de dano.",
-            "Colonos Devotos concedem +10%/+20%/+30%/+40% mais Favor por era"
+            "For every 2 Mythic Units lost, an Obsidian Shard is generated; If the Shard survives long enough, it summons a free Mythic Unit from the current era.",
+            "Tzompantli Towers and Traps are built 25% faster and inflict +25% damage.",
+            "Devoted Colonists grant +10%/+20%/+30%/+40% more Favor per era"
           ]
         }
       ]
@@ -7468,7 +7468,7 @@
     "godpower": [
       {
         "id": 83,
-        "nome": "Espelho de Obsidiana"
+        "nome": "Obsidian Mirror"
       }
     ],
     "tecnologias": [],
@@ -7483,17 +7483,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Major",
+    "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Archaic :aomr_archaic_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "foco": "Conquista 💥 & expansão 💢",
+    "foco": "Conquest 💥 & Expansion 💢",
     "god_maior_relacao": [
       {
         "id": 87,
@@ -7524,14 +7524,14 @@
       "blocos": [
         {
           "tipo": "citacao",
-          "texto": "Foco: Conquista e Expansão."
+          "texto": "Focus: Conquest and Expansion."
         },
         {
           "tipo": "lista",
           "itens": [
-            "Temples, Grandes Temples, Centros de Vilarejo e Cidade reembolsam 33% do seu custo após a conclusão.",
-            "Coletar tonalli concede recursos adicionais de Favor equivalentes a 5% do custo da unidade derrotada.",
-            "Os Tosquiados têm +10% de pontos de vida e geram +100% mais tonalli em combate"
+            "Temples, Grand Temples, Village and City Centers refund 33% of their cost upon completion.",
+            "Collecting tonalli grants additional Favor resources equal to 5% of the cost of the defeated unit.",
+            "Sheared have +10% health and generate +100% more tonalli in combat"
           ]
         }
       ]
@@ -7540,7 +7540,7 @@
     "godpower": [
       {
         "id": 82,
-        "nome": "Pacto de Sangue"
+        "nome": "Blood Pact"
       }
     ],
     "tecnologias": [],
@@ -7555,17 +7555,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
-    "foco": "Venenos & maldições 💀",
+    "foco": "Poisons & curses 💀",
     "god_maior_relacao": [
       {
         "id": 84,
@@ -7580,7 +7580,7 @@
     "godpower": [
       {
         "id": 86,
-        "nome": "Insfestação"
+        "nome": "Insfestation"
       }
     ],
     "tecnologias": [],
@@ -7592,14 +7592,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "foco": "Armadilhas & furtividades",
@@ -7617,7 +7617,7 @@
     "godpower": [
       {
         "id": 87,
-        "nome": "Canção de Ninar"
+        "nome": "Lullaby"
       }
     ],
     "tecnologias": [],
@@ -7629,14 +7629,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classical :aomr_classical_age_icon:"
+        "nome": "Classic :aomr_classical_age_icon:"
       }
     ],
     "foco": "Colonos & cura ✨",
@@ -7654,7 +7654,7 @@
     "godpower": [
       {
         "id": 85,
-        "nome": "Florescimento de Agave"
+        "nome": "Agave Flowering"
       }
     ],
     "tecnologias": [],
@@ -7666,17 +7666,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "foco": "Tonalli & guerreiros da Cabana dos Nobre :aomr_type_infantry_icon:",
+    "foco": "Tonalli & warriors from the Noble Hut :aomr_type_infantry_icon:",
     "god_maior_relacao": [
       {
         "id": 84,
@@ -7691,7 +7691,7 @@
     "godpower": [
       {
         "id": 88,
-        "nome": "Eliminação"
+        "nome": "Elimination"
       }
     ],
     "tecnologias": [],
@@ -7703,17 +7703,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "foco": "Construções :aomr_type_building_icon: & cerco :aomr_type_siege_weapon_icon:",
+    "foco": ":aomr_type_building_icon: Buildings & :aomr_type_siege_weapon_icon: Siege",
     "god_maior_relacao": [
       {
         "id": 84,
@@ -7728,7 +7728,7 @@
     "godpower": [
       {
         "id": 90,
-        "nome": "Monstro da Land"
+        "nome": "Monstro da Terra"
       }
     ],
     "tecnologias": [],
@@ -7740,17 +7740,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 3,
-        "nome": "Heroca :aomr_heroic_age_icon:"
+        "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "foco": "Devoção & tecnologia ⏫",
+    "foco": "Devotion & technology ⏫",
     "god_maior_relacao": [
       {
         "id": 83,
@@ -7777,17 +7777,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "foco": "Economia & Grande Temple :aomr_type_building_icon:",
+    "foco": "Economy & Great Temple :aomr_type_building_icon:",
     "god_maior_relacao": [
       {
         "id": 84,
@@ -7802,7 +7802,7 @@
     "godpower": [
       {
         "id": 93,
-        "nome": "Pilar de Tlaloc"
+        "nome": "Tlaloc Pillar"
       }
     ],
     "tecnologias": [],
@@ -7814,17 +7814,17 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "foco": "Unidades míticas :aomr_type_myth_unit_icon:",
+    "foco": "Mythic Units :aomr_type_myth_unit_icon:",
     "god_maior_relacao": [
       {
         "id": 83,
@@ -7851,10 +7851,10 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs"
+        "nome": "Astecas"
       }
     ],
-    "hierarquia": "Minor",
+    "hierarquia": "Menor",
     "era": [
       {
         "id": 4,
@@ -7876,7 +7876,7 @@
     "godpower": [
       {
         "id": 91,
-        "nome": "Vulcão"
+        "nome": "Volcano"
       }
     ],
     "tecnologias": [],

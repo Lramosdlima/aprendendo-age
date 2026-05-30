@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 import { stripStartTextForData } from "../src/lib/startBuildingKeywords.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const path = join(__dirname, "../src/data/starts_build_order.json");
+const path = join(__dirname, "../src/data/locale/pt/starts_build_order.json");
 
 function walk(v: unknown): unknown {
   if (typeof v === "string") return stripStartTextForData(v);

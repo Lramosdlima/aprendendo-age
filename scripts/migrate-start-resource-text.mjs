@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const jsonPath = join(__dirname, "../src/data/starts_build_order.json");
+const jsonPath = join(__dirname, "../src/data/locale/pt/starts_build_order.json");
 
 function stripLegacyResourceMarkup(text) {
   let t = text;

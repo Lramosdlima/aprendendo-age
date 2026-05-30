@@ -27,7 +27,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Greek :aomr_pantheon_greeks_icon:"
+        "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ]
   },
@@ -59,7 +59,7 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ]
   },
@@ -187,7 +187,7 @@
     "panteao": [
       {
         "id": 3,
-        "nome": "Norse :aomr_pantheon_norse_icon:"
+        "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ]
   },
@@ -345,7 +345,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Aztecs :aomr_pantheon_aztecs_icon:"
+        "nome": "Astecas :aomr_pantheon_aztecs_icon:"
       }
     ]
   }

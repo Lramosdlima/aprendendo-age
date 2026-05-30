@@ -13,7 +13,7 @@ const root = path.join(__dirname, "..");
 const notionDir = path.join(root, "..", "Notion Aprendendo Age", "Aprendendo Age");
 const htmlDir = path.join(notionDir, "Tecnologias");
 const csvPath = path.join(notionDir, "Tecnologias 29500f30e2118062b0fcf262a3f188b4.csv");
-const jsonPath = path.join(root, "src/data/tecnologias.json");
+const jsonPath = path.join(root, "src/data/locale/pt/tecnologias.json");
 
 function parseCsvLine(line) {
   const out = [];

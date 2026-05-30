@@ -4,8 +4,7 @@
  * node scripts/add-start-slugs.mjs
  */
 import { readFileSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { localePtPath } from "./data-paths.mjs";
 
 const NOTION_TOKEN = /:[a-z0-9_-]+:/gi;
 
@@ -28,8 +27,7 @@ function buildStartSlug(s) {
   return combined || "start";
 }
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const startsPath = join(__dirname, "..", "src/data/starts_build_order.json");
+const startsPath = localePtPath("starts_build_order.json");
 
 const data = JSON.parse(readFileSync(startsPath, "utf8"));
 const used = new Map();

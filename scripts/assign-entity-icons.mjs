@@ -6,11 +6,12 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { LOCALE_PT, TOKEN_MAP } from "./data-paths.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA = path.join(__dirname, "../src/data");
+const DATA = LOCALE_PT;
 
-const tokenMap = JSON.parse(fs.readFileSync(path.join(DATA, "token_asset_map.json"), "utf8"));
+const tokenMap = JSON.parse(fs.readFileSync(TOKEN_MAP, "utf8"));
 
 // --- chaves (mesma lógica que entityWatermarkUrls + godPower + deus) ---
 

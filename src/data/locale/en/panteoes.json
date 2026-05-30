@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "nome": "Greek",
-    "description": "Os gregos são bons em reconhecimento, pois começam com um Kataskopos em terra e podem treinar Pégasos voadores no Temple . Adoradores de Poseidon também recebem um Hipocampo ao construir uma Doca . Soldados gregos tendem a ser mais fortes e mais caros do que os de outras civilizações. Os gregos só podem treinar um punhado de Heros por vez, mas todos são excepcionalmente fortes. Heros gregos também treinam mais rápido e têm maior dano contra myth units em eras posteriores . Eles ganham Favor ao orar em Temples.",
+    "nome": "Grego",
+    "description": "The Greeks are good at reconnaissance, as they start with a land-based Kataskopos and can train flying Pegasi in the Temple. Worshipers of Poseidon also receive a Hippocampus when building a Dock. Greek soldiers tend to be stronger and more expensive than those from other civilizations. The Greeks can only train a handful of Heroes at a time, but they are all exceptionally strong. Greek heroes also train faster and have greater damage against mythical units in later eras. They gain Favor by praying in Temples.",
     "icon": "aomr_pantheon_greeks_icon",
     "hero_background": "/assets/pantheons/UI_god_pantheon_Greek.png",
     "deuses": [
@@ -36,7 +36,7 @@
       },
       {
         "id": 24,
-        "nome": "Dionísio"
+        "nome": "Dionysus"
       },
       {
         "id": 25,
@@ -52,19 +52,19 @@
       },
       {
         "id": 28,
-        "nome": "Ártemis"
+        "nome": "Artemis"
       },
       {
         "id": 78,
-        "nome": "Deméter"
+        "nome": "Demeter"
       },
       {
         "id": 81,
-        "nome": "Perséfone"
+        "nome": "Persephone"
       },
       {
         "id": 80,
-        "nome": "Héstia"
+        "nome": "Hestia"
       },
       {
         "id": 79,
@@ -80,36 +80,36 @@
     "starts": [
       {
         "id": 1,
-        "nome": "Greeks - por Moose"
+        "nome": "Greeks - by Moose"
       },
       {
         "id": 8,
-        "nome": "Poseidon (com :aomr_lure_power_icon:) - por Mosca"
+        "nome": "Poseidon (with :aomr_lure_power_icon:) - by Mosca"
       },
       {
         "id": 7,
-        "nome": "Hades (com Cofre de Érebus) - por Aussie_Drongo"
+        "nome": "Hades (with Vault of Erebus) - by Aussie_Drongo"
       },
       {
         "id": 6,
-        "nome": "Greeks (Mar 🌊:aomr_type_ship_icon:) - por HuskSuppe"
+        "nome": "Greeks (Mar 🌊:aomr_type_ship_icon:) - by HuskSuppe"
       }
     ]
   },
   {
     "id": 2,
     "nome": "Egyptian",
-    "description": "Os egípcios exploram fazendo com que seus sacerdotes construam obeliscos . Os primeiros soldados egípcios tendem a ser mais especializados, mas treinam rapidamente. Suas unidades posteriores, da Fortress Migdol, são mais poderosas. Muitas construções egípcias custam ouro e várias outras são gratuitas, mas levam mais tempo para serem construídas. As construções egípcias são mais rápidas, coletam, treinam e pesquisam melhorias com mais rapidez e lutam melhor quando fortalecidas por um faraó . Os egípcios ganham Favor construindo Monumentos .",
+    "description": "The Egyptians explore by having their priests build obelisks. Early Egyptian soldiers tend to be more specialized, but they train quickly. Their later units, from Migdol Fortress, are more powerful. Many Egyptian buildings cost gold and several others are free, but take longer to build. Egyptian builds are faster, collect, train, and research upgrades faster, and fight better when empowered by a pharaoh. The Egyptians gain Favor by building Monuments.",
     "icon": "aomr_pantheon_egyptians_icon",
     "hero_background": "/assets/pantheons/UI_god_pantheon_egyptian.png",
     "deuses": [
       {
         "id": 4,
-        "nome": "Rá"
+        "nome": "Frog"
       },
       {
         "id": 5,
-        "nome": "Ísis"
+        "nome": "Isis"
       },
       {
         "id": 6,
@@ -125,7 +125,7 @@
       },
       {
         "id": 31,
-        "nome": "Anúbis"
+        "nome": "Anubis"
       },
       {
         "id": 32,
@@ -133,7 +133,7 @@
       },
       {
         "id": 33,
-        "nome": "Néftis"
+        "nome": "Nephthys"
       },
       {
         "id": 34,
@@ -141,7 +141,7 @@
       },
       {
         "id": 35,
-        "nome": "Osíris"
+        "nome": "Osiris"
       },
       {
         "id": 36,
@@ -149,7 +149,7 @@
       },
       {
         "id": 37,
-        "nome": "Hórus"
+        "nome": "Horus"
       }
     ],
     "vill": [
@@ -161,30 +161,30 @@
     "starts": [
       {
         "id": 2,
-        "nome": "Egyptians - por Moose"
+        "nome": "Egyptians - by Moose"
       },
       {
         "id": 9,
-        "nome": "Ísis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - por Light Yagami"
+        "nome": "Isis :aomr_ancestors_icon: :aomr_eclipse_icon: (A+E) - by Light Yagami"
       },
       {
         "id": 10,
-        "nome": "Rá (2TC | Bast) - por Light Yagami"
+        "nome": "Ra (2TC | Bast) - by Light Yagami"
       },
       {
         "id": 12,
-        "nome": "Set Rush! :aomr_type_siege_weapon_icon: - por Miniyeti - por Miniyeti"
+        "nome": "Set Rush! :aomr_type_siege_weapon_icon: - by Miniyeti - by Miniyeti"
       },
       {
         "id": 11,
-        "nome": "Set FH Migdol Agresivo! ⏭ - por Cafeína [PSGM] - por Cafeína [PSGM]"
+        "nome": "Set FH Migdol Aggressive! ⏭ - by Caffeine [PSGM] - by Caffeine [PSGM]"
       }
     ]
   },
   {
     "id": 3,
-    "nome": "Norse",
-    "description": "Os nórdicos não possuem batedores dedicados , então devem usar um Berserk ou outra infantaria. A infantaria nórdica também constrói edifícios ; seus aldeões , chamados coletores , apenas coletam recursos. Os nórdicos também podem treinar anões , que são mineradores especializados. Os nórdicos podem ter quantos heróis puderem pagar. Eles ganham favores lutando contra soldados inimigos e matando animais .",
+    "nome": "Nordic",
+    "description": "The Norse of the not have dedicated scouts, so they must use a Berserk or other infantry. Norse infantry also construct buildings; their villagers, called gatherers, only collect resources. Norsemen can also train dwarves, who are specialized miners. The Norse can have as many heroes as they can afford. They gain Favor by fighting enemy soldiers and killing animals.",
     "icon": "aomr_pantheon_norse_icon",
     "hero_background": "/assets/pantheons/UI_god_pantheon_Norse.png",
     "deuses": [
@@ -260,42 +260,42 @@
       },
       {
         "id": 2,
-        "nome": "Anão"
+        "nome": "Dwarf"
       }
     ],
     "starts": [
       {
         "id": 3,
-        "nome": "Norses - por Moose"
+        "nome": "Nordics - by Moose"
       },
       {
         "id": 17,
-        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Moose - por Moose"
+        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - by Moose - by Moose"
       },
       {
         "id": 13,
-        "nome": "Freyr (:aomr_pickaxe_icon:+:aomr_hand_axe_icon:) - por Scooby"
+        "nome": "Freyr (:aomr_pickaxe_icon:+:aomr_hand_axe_icon:) - by Scooby"
       },
       {
         "id": 14,
-        "nome": "Freyr Rush/2TC :aomr_type_siege_weapon_icon: - por Aussie_Drongo - por Aussie_Drongo"
+        "nome": "Freyr Rush/2TC :aomr_type_siege_weapon_icon: - by Aussie_Drongo - by Aussie_Drongo"
       },
       {
         "id": 15,
-        "nome": "Loki (:aomr_relic_anim: Herlíquias) - por HuskSuppe - por HuskSuppe"
+        "nome": "Loki (:aomr_relic_anim: Relics) - by HuskSuppe - by HuskSuppe"
       },
       {
         "id": 16,
-        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - por Borg - por Borg"
+        "nome": "Thor (:aomr_dwarven_mine_icon: :aomr_dwarven_armory_icon:) - by Borg - by Borg"
       }
     ]
   },
   {
     "id": 4,
     "nome": "Atlantean",
-    "description": "Os atlantes exploram usando seus Oráculos . Soldados atlantes são bastante caros, mas cada um deles pode ser transformado em Heros . Em eras posteriores, as unidades que podem ser treinadas no Palácio são as mais poderosas. Cidadãos atlantes coletam recursos e constroem edifícios. Cidadãos são unidades lentas e caras que não precisam de um local de desembarque para coletar recursos. Os atlantes ganham Favor posicionando Oráculos pelo mapa para comungar com os deuses.",
+    "description": "The Atlanteanans explore using their Oracles. Atlanteanan soldiers are quite expensive, but each of them can be turned into Heroes. In later eras, the units that can be trained in the Palace are the most powerful. Atlanteanan citizens collect resources and construct buildings. Citizens are slow and expensive units that of the not need a drop-off point to gather resources. Atlanteanans gain Favor by placing Oracles around the map to commune with the gods.",
     "icon": "aomr_pantheon_atlanteans_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Atlanteanan.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Atlantean.png",
     "deuses": [
       {
         "id": 10,
@@ -339,55 +339,55 @@
       },
       {
         "id": 54,
-        "nome": "Hélios"
+        "nome": "Helios"
       },
       {
         "id": 55,
-        "nome": "Hécate"
+        "nome": "Hecate"
       }
     ],
     "vill": [
       {
         "id": 4,
-        "nome": "Cidadão"
+        "nome": "Citizen"
       },
       {
         "id": 5,
-        "nome": "Cidadão (Hero)"
+        "nome": "Citizen (Hero)"
       }
     ],
     "starts": [
       {
         "id": 4,
-        "nome": "Atlanteans - por Moose"
+        "nome": "Atlantes - by Moose"
       },
       {
         "id": 19,
-        "nome": "Cronos Rush :aomr_type_siege_weapon_icon: - por Morley Games - por Morley Games"
+        "nome": "Cronos Rush :aomr_type_siege_weapon_icon: - by Morley Games - by Morley Games"
       },
       {
         "id": 18,
-        "nome": "Cronos 2TC - por Tpisai - por Tpisai"
+        "nome": "Cronos 2TC - by Tpisai - by Tpisai"
       },
       {
         "id": 21,
-        "nome": "Gaia Eco - por Balerion - por Balerion"
+        "nome": "Gaia Eco - by Balerion - by Balerion"
       },
       {
         "id": 20,
-        "nome": "Gaia (FH ⏫:aomr_heroic_age_icon:) - por Balerion - por Balerion"
+        "nome": "Gaia (FH ⏫:aomr_heroic_age_icon:) - by Balerion - by Balerion"
       },
       {
         "id": 22,
-        "nome": "Gaia Heroca :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:) - por Boxer - por Boxer"
+        "nome": "Heroic Gaia :aomr_citizen_hero_icon: (Anti MU :aomr_type_myth_unit_icon:) - by Boxer - by Boxer"
       }
     ]
   },
   {
     "id": 5,
     "nome": "Chinese",
-    "description": "Os chineses se destacam na expansão, construindo cidades magníficas por todo o mapa. Cada edifício estende a Land Favorecida, gerando Favor e concedendo bônus poderosos com base no Deus escolhido. Quanto maior o império, mais divinamente poderosos os chineses se tornam.",
-    "dois_tipos_de_trabalhadores_alimentam_esse_crescimento": "o Camponês e o Kuafu . Os camponeses são menos eficientes do que os Villagers de outras culturas, mas são apoiados pelos Kuafu, gigantes poderosos que se destacam na construção de edifícios.",
+    "description": "The Chinese excel at expansion, building magnificent cities all over the map. Each building extends the Favored Land, generating Favor and granting powerful bonuses based on the chosen God. The larger the empire, the more divinely powerful the Chinese became.",
+    "dois_tipos_de_trabalhadores_alimentam_esse_crescimento": "the Peasant and the Kuafu. Peasants are less efficient than Villagers from other cultures, but they are supported by the Kuafu, powerful giants who excel in building buildings.",
     "icon": "aomr_pantheon_chinese_icon",
     "hero_background": "/assets/pantheons/UI_god_pantheon_Chinese.png",
     "deuses": [
@@ -443,7 +443,7 @@
     "vill": [
       {
         "id": 3,
-        "nome": "Camponês"
+        "nome": "Peasant"
       },
       {
         "id": 7,
@@ -457,26 +457,26 @@
     "starts": [
       {
         "id": 5,
-        "nome": "Chineses - por Moose"
+        "nome": "Chinese - by Moose"
       },
       {
         "id": 24,
-        "nome": "Shennong (2 TC :aomr_town_center_chinese:) - por Morley"
+        "nome": "Shennong (2 TC :aomr_town_center_chinese:) - by Morley"
       },
       {
         "id": 25,
-        "nome": "Shennong Fazendeiro (:aomr_farm_icon:aomr_prosperous_seeds:) - por HuskSuppe"
+        "nome": "Shennong Farmer (:aomr_farm_icon:aomr_prosperous_seeds:) - by HuskSuppe"
       },
       {
         "id": 23,
-        "nome": "Fu Xi - por HuskSuppe"
+        "nome": "Fu Xi - by HuskSuppe"
       }
     ]
   },
   {
     "id": 6,
     "nome": "Japanese",
-    "description": "Os japoneses exploram com myth units Kitsune. Os soldados japoneses tendem a ser versáteis e poderosos, mas caros. Suas unidades de elite do Dojo são especialmente perigosas e contribuem para um medidor de Bushidō, que concede outros bônus.Os japoneses utilizam uma variedade de heróis de ataque à distância, montados e de infantaria de suas diferentes estruturas militares. Os japoneses ganham Favor ao fazer com que Mikos construam e cuidem de Santuários.",
+    "description": "The Japanese explore with mythical Kitsune units. Japanese soldiers tend to be versatile and powerful, but expensive. Their elite Dojo units are especially dangerous and contribute to a Bushidō meter, which grants other bonuses. The Japanese utilize a variety of ranged, mounted, and infantry heroes from their different military structures. The Japanese gain Favor by having Mikos build and care for Shrines.",
     "icon": "aomr_pantheon_japanese_icon",
     "hero_background": "/assets/pantheons/UI_god_pantheon_japanese.png",
     "deuses": [
@@ -538,34 +538,34 @@
     "starts": [
       {
         "id": 26,
-        "nome": "Amaterasu - por MikeKing"
+        "nome": "Amaterasu - by MikeKing"
       },
       {
         "id": 29,
-        "nome": "Tsukuyomi - por TheRapl"
+        "nome": "Tsukuyomi - by TheRapl"
       },
       {
         "id": 27,
-        "nome": "Susanoo - por TheRapl - por TheRapl"
+        "nome": "Susanoo - by TheRapl - by TheRapl"
       },
       {
         "id": 30,
-        "nome": "Tsukuyomi (Mar 🌊) - por Scooby"
+        "nome": "Tsukuyomi (Mar 🌊) - by Scooby"
       },
       {
         "id": 31,
-        "nome": "Tsukuyomi (Rush+2TC) - por HuskSuppe - por HuskSuppe"
+        "nome": "Tsukuyomi (Rush+2TC) - by HuskSuppe - by HuskSuppe"
       },
       {
         "id": 28,
-        "nome": "Susanoo (++Mikos :favoraom:) - por HuskSuppe - por HuskSuppe"
+        "nome": "Susanoo (++Mikos :favoraom:) - by HuskSuppe - by HuskSuppe"
       }
     ]
   },
   {
     "id": 7,
-    "nome": "Aztecs",
-    "description": "Os astecas exploram com Espião Quimichin que conseguem se esconder perto das árvores. Eles geram favor através da Tonalli, que é gerado ao derrotar unidades inimigas e coletado por Sarcedote de Guerra (Hero) ou torres. Também é possível devotar aldeões em Temples para gerar favor. Os astecas podem criar armadilhas escondidas com suas tropas.",
+    "nome": "Astecas",
+    "description": "The Aztecs explore with Quimichin Spy who manages to hide near the trees. They generate favor through Tonalli, which is generated by defeating enemy units and collected by Sarcedote of Guerra (Hero) or towers. It is also possible to devote villagers in Temples to generate favor. The Aztecs can create hidden traps with their troops.",
     "icon": "aomr_pantheon_aztecs_icon",
     "hero_background": "/assets/pantheons/UI_god_pantheon_Aztec.png",
     "deuses": [
@@ -627,19 +627,19 @@
     "starts": [
       {
         "id": 32,
-        "nome": "Huitzilopochtli (com Pacto de Sangue :aomr_blood_pact_icon:) - por TheRapl - por TheRapl"
+        "nome": "Huitzilopochtli (with Pact of Blood :aomr_blood_pact_icon:) - by TheRapl - by TheRapl"
       },
       {
         "id": 33,
-        "nome": "Tezcatlipoca 4:07 - por TheRapl - por TheRapl"
+        "nome": "Tezcatlipoca 4:07 - by TheRapl - by TheRapl"
       },
       {
         "id": 34,
-        "nome": "Quetzalcoatl (Calpulli :aomr_calpulli_icon: Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon:) por TheRapl - por TheRapl"
+        "nome": "Quetzalcoatl (Calpulli :aomr_calpulli_icon: Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon:) by TheRapl - by TheRapl"
       },
       {
         "id": 35,
-        "nome": "Quetzalcoatl ECO (Todos Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon::aomr_calpulli_livestock_pen_icon: do Calpulli :aomr_calpulli_icon:) por HuskSuppe - por HuskSuppe"
+        "nome": "Quetzalcoatl ECO (Todos Upgrades :aomr_calpulli_craft_workshop_icon::aomr_calpulli_lumber_outpost_icon::aomr_calpulli_livestock_pen_icon: do Calpulli :aomr_calpulli_icon:) by HuskSuppe - by HuskSuppe"
       }
     ]
   }

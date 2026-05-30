@@ -7,7 +7,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const jsonPath = join(__dirname, "../src/data/starts_build_order.json");
+const jsonPath = join(__dirname, "../src/data/locale/pt/starts_build_order.json");
 
 /** Ordem: frases longas primeiro. */
 const STRIPS = [
