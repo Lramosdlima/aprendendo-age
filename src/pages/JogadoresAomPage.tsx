@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { CorridaAomTab } from "@/components/jogadores/CorridaAomTab";
+import { JogadoresAomTab } from "@/components/jogadores/JogadoresAomTab";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
@@ -8,7 +9,7 @@ import { fetchAomRacePlayers, type AomRacePlayer } from "@/lib/playersApi";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
-type PlayersTabId = "corrida";
+type PlayersTabId = "corrida" | "jogadores";
 
 export function JogadoresAomPage() {
   const { t } = useTranslation();
@@ -61,7 +62,10 @@ export function JogadoresAomPage() {
     };
   }, [supabaseConfigured, t]);
 
-  const tabs: { id: PlayersTabId; labelKey: string }[] = [{ id: "corrida", labelKey: "pages.players.tabCorrida" }];
+  const tabs: { id: PlayersTabId; labelKey: string }[] = [
+    { id: "corrida", labelKey: "pages.players.tabCorrida" },
+    { id: "jogadores", labelKey: "pages.players.tabJogadores" },
+  ];
 
   return (
     <div className="space-y-8 pb-16">
@@ -116,7 +120,9 @@ export function JogadoresAomPage() {
         </p>
       ) : activeTab === "corrida" ? (
         <CorridaAomTab players={players} />
-      ) : null}
+      ) : (
+        <JogadoresAomTab players={players} />
+      )}
     </div>
   );
 }
