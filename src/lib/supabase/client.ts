@@ -29,6 +29,8 @@ export function createSupabasePublicClient(): SupabaseClient | null {
       persistSession: false,
       autoRefreshToken: false,
       detectSessionInUrl: false,
+      // Evita conflito com o cliente principal (mesmo storage key → warning GoTrueClient).
+      storageKey: `aprendendo-age-public-${env.url.replace(/\W/g, "").slice(-32)}`,
     },
   });
   return publicClient;

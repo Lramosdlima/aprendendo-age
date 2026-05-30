@@ -29,9 +29,7 @@ export function JogadoresAomPage() {
     }
 
     let cancelled = false;
-    let timedOut = false;
     const timeoutId = window.setTimeout(() => {
-      timedOut = true;
       if (!cancelled) {
         setError(t("pages.players.loadTimeout"));
         setLoading(false);
@@ -43,14 +41,17 @@ export function JogadoresAomPage() {
       setError(null);
       try {
         const list = await fetchAomRacePlayers();
-        if (cancelled || timedOut) return;
+        if (cancelled) return;
+        window.clearTimeout(timeoutId);
         setPlayers(list);
+        setError(null);
       } catch (err) {
-        if (cancelled || timedOut) return;
+        if (cancelled) return;
+        window.clearTimeout(timeoutId);
         setError(err instanceof Error ? err.message : t("pages.players.loadError"));
         setPlayers([]);
       } finally {
-        if (!cancelled && !timedOut) setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     })();
 

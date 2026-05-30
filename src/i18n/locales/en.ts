@@ -606,7 +606,7 @@ export const enMessages: TranslationTree = {
       tabCorrida: "AoM Race",
       loading: "Loading players…",
       loadError: "Could not load players.",
-      loadTimeout: "The request timed out. Check your Supabase connection.",
+      loadTimeout: "The request timed out. Please try again later.",
       unconfigured:
         "Supabase is not configured for this deploy. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY on Vercel and redeploy.",
       raceDesc:
