@@ -8,6 +8,7 @@ import { entityDisplayDescription } from "@/data/catalogLocale";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import {
   listIndexLinkStateFromLocation,
   listIndexReturnTo,
@@ -19,8 +20,9 @@ export function AldeaoDetailPage() {
   const { aldeaoBySlug } = useCatalog();
   const { pathname, search: locSearch, state: navState } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
-  const backToList = listIndexReturnTo("/aldeoes", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/aldeoes", t("nav.villagers"));
+  const villagersList = localeSectionPath(locale, "aldeoes");
+  const backToList = listIndexReturnTo(villagersList, navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, villagersList, t("nav.villagers"));
   const { slug } = useParams();
   const a = slug ? aldeaoBySlug.get(slug) : undefined;
 

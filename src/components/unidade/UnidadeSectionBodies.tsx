@@ -6,6 +6,9 @@ import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { NotionText } from "@/components/ui/NotionText";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import {
   hasMultiplicadorContent,
   multiplicadorItemsToNotionText,
@@ -15,23 +18,19 @@ import {
   hasCategoriaContent,
   hasTipoContent,
 } from "@/lib/unidadeTipo";
-import {
-  construcaoById,
-  construcaoSlugById,
-  eraById,
-  eraSlugById,
-  panteaoById,
-  panteaoSlugById,
-  unidades,
-} from "@/data/catalog";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
-type U = (typeof unidades)[number];
+type U = LocaleCatalog["unidades"][number];
 
 export function UnidadeVisaoGeralBody({ u }: { u: U }) {
+  const { t } = useTranslation();
+  const catalog = useCatalog();
+  const { locale, construcaoById, construcaoSlugById, eraById, eraSlugById, panteaoById, panteaoSlugById } =
+    catalog;
   const { pathname, search: locSearch } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const panteaoRefs = u.panteao;
@@ -44,7 +43,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
           const p = panteaoById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/panteoes/${panteaoSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "panteoes", panteaoSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: p ? getPantheonWatermarkUrl(p) : undefined,
           };
@@ -57,7 +56,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
           const e = eraById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/eras/${eraSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "eras", eraSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: e ? getEraAssetUrl(e) : undefined,
           };
@@ -70,7 +69,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
           const c = construcaoById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/construcoes/${construcaoSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "construcoes", construcaoSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: c ? getConstrucaoAssetUrl(c) : undefined,
           };
@@ -80,17 +79,17 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
   return (
     <div className="space-y-0">
       {hasTipoContent(u.tipo) ? (
-        <InfoRow label="Tipo">
+        <InfoRow label={t("common.type")}>
           <UnidadeTipoLine tipo={u.tipo} colored />
         </InfoRow>
       ) : null}
       {hasCategoriaContent(u.categoria) ? (
-        <InfoRow label="Categoria">
+        <InfoRow label={t("common.category")}>
           <NotionText text={categoriaItemsToNotionText(u.categoria)} />
         </InfoRow>
       ) : null}
       {panteoesPortraitItems.length ? (
-        <InfoRow label="Panteão">
+        <InfoRow label={t("common.pantheon")}>
           <InfoRowPortraitOrText
             portraits={
               <PortraitHeaderActions
@@ -105,7 +104,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
         </InfoRow>
       ) : null}
       {eraPortraitItems.length ? (
-        <InfoRow label="Era">
+        <InfoRow label={t("common.era")}>
           <InfoRowPortraitOrText
             portraits={
               <PortraitHeaderActions
@@ -120,7 +119,7 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
         </InfoRow>
       ) : null}
       {construcaoPortraitItems.length ? (
-        <InfoRow label="Construção">
+        <InfoRow label={t("spreadsheet.unidades.building")}>
           <InfoRowPortraitOrText
             portraits={
               <PortraitHeaderActions
@@ -139,46 +138,48 @@ export function UnidadeVisaoGeralBody({ u }: { u: U }) {
 }
 
 export function UnidadeCombateBody({ u }: { u: U }) {
+  const { t } = useTranslation();
+
   return (
     <div className="space-y-0">
-      <InfoRow label="Pontos de vida" icon="aomr_hit_points_icon">
+      <InfoRow label={t("spreadsheet.unidades.hitPoints")} icon="aomr_hit_points_icon">
         {u.pontos_de_vida ?? "—"}
       </InfoRow>
-      <InfoRow label="Alcance" icon="rangeicon">
+      <InfoRow label={t("spreadsheet.unidades.range")} icon="rangeicon">
         {u.alcance ?? "—"}
       </InfoRow>
-      <InfoRow label="Dano cortante" icon="hackdamage">
+      <InfoRow label={t("spreadsheet.unidades.hackDamage")} icon="hackdamage">
         {u.dano_cortante ?? "—"}
       </InfoRow>
-      <InfoRow label="Dano perfurante" icon="piercedamage">
+      <InfoRow label={t("spreadsheet.unidades.pierceDamage")} icon="piercedamage">
         {u.dano_perfurante ?? "—"}
       </InfoRow>
-      <InfoRow label="Velocidade de ataque (seg)" icon="aomr_rate_of_fire_icon">
+      <InfoRow label={t("spreadsheet.unidades.attackSpeed")} icon="aomr_rate_of_fire_icon">
         {u.velocidade_de_ataque_atk_s ?? "—"}
       </InfoRow>
-      <InfoRow label="DPS" icon="attack_cur">
+      <InfoRow label={t("spreadsheet.unidades.dps")} icon="attack_cur">
         {u.dps ?? "—"}
       </InfoRow>
-      <InfoRow label="Armadura de corte" icon="hackarmor">
+      <InfoRow label={t("spreadsheet.unidades.hackArmor")} icon="hackarmor">
         {formatArmorPercent(u.armadura_anticorte)}
       </InfoRow>
-      <InfoRow label="Armadura de perfuração" icon="piercearmor">
+      <InfoRow label={t("spreadsheet.unidades.pierceArmor")} icon="piercearmor">
         {formatArmorPercent(u.armadura_antiperfurante)}
       </InfoRow>
-      <InfoRow label="Counter de">
+      <InfoRow label={t("spreadsheet.unidades.counterOf")}>
         {u.counter_de ? <NotionText text={u.counter_de} /> : "—"}
       </InfoRow>
-      <InfoRow label="Multiplicador">
+      <InfoRow label={t("spreadsheet.unidades.multiplier")}>
         {hasMultiplicadorContent(u.multiplicador) ? (
           <NotionText text={multiplicadorItemsToNotionText(u.multiplicador)} />
         ) : (
           "—"
         )}
       </InfoRow>
-      <InfoRow label="Forte contra" icon="aomr_better_icon">
+      <InfoRow label={t("spreadsheet.unidades.strongAgainst")} icon="aomr_better_icon">
         {u.forte_contra ? <NotionText text={u.forte_contra} /> : "—"}
       </InfoRow>
-      <InfoRow label="Fraco contra" icon="aomr_worse_icon">
+      <InfoRow label={t("spreadsheet.unidades.weakAgainst")} icon="aomr_worse_icon">
         {u.fraco_contra ? <NotionText text={u.fraco_contra} /> : "—"}
       </InfoRow>
     </div>
@@ -186,27 +187,29 @@ export function UnidadeCombateBody({ u }: { u: U }) {
 }
 
 export function UnidadeCustoBody({ u }: { u: U }) {
+  const { t } = useTranslation();
+
   return (
     <div className="space-y-0">
-      <InfoRow label="Comida" icon="foodaom">
+      <InfoRow label={t("common.food")} icon="foodaom">
         {u.comida ?? "—"}
       </InfoRow>
-      <InfoRow label="Madeira" icon="woodaom">
+      <InfoRow label={t("common.wood")} icon="woodaom">
         {u.madeira ?? "—"}
       </InfoRow>
-      <InfoRow label="Ouro" icon="goldaom">
+      <InfoRow label={t("common.gold")} icon="goldaom">
         {u.ouro ?? "—"}
       </InfoRow>
-      <InfoRow label="População" icon="aomr_population_provision_icon">
+      <InfoRow label={t("spreadsheet.unidades.population")} icon="aomr_population_provision_icon">
         {u.populacao ?? "—"}
       </InfoRow>
-      <InfoRow label="Tempo treino (seg)" icon="aomr_time_icon">
+      <InfoRow label={t("spreadsheet.unidades.trainTime")} icon="aomr_time_icon">
         {u.tempo_treinamento ?? "—"}
       </InfoRow>
-      <InfoRow label="Velocidade movimento" icon="aomr_speed_icon">
+      <InfoRow label={t("spreadsheet.unidades.moveSpeed")} icon="aomr_speed_icon">
         {u.velocidade_movimento ?? "—"}
       </InfoRow>
-      <InfoRow label="Força atributos" icon="attack_cur">
+      <InfoRow label={t("spreadsheet.unidades.attributeStrength")} icon="attack_cur">
         {u.forca_atributos ?? "—"}
       </InfoRow>
     </div>

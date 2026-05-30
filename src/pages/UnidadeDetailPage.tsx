@@ -9,14 +9,16 @@ import { Section } from "@/components/ui/Section";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import { listIndexReturnTo, listOrDetailBackLinkLabel } from "@/lib/listIndexReturnState";
 
 export function UnidadeDetailPage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const { unidadeBySlug } = useCatalog();
   const { state: navState } = useLocation();
-  const backToList = listIndexReturnTo("/unidades", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/unidades", t("nav.units"));
+  const unitsList = localeSectionPath(locale, "unidades");
+  const backToList = listIndexReturnTo(unitsList, navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, unitsList, t("nav.units"));
   const { slug } = useParams();
   const u = slug ? unidadeBySlug.get(slug) : undefined;
 
