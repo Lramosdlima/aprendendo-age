@@ -606,6 +606,9 @@ export const enMessages: TranslationTree = {
       tabCorrida: "AoM Race",
       loading: "Loading players…",
       loadError: "Could not load players.",
+      loadTimeout: "The request timed out. Check your Supabase connection.",
+      unconfigured:
+        "Supabase is not configured for this deploy. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY on Vercel and redeploy.",
       raceDesc:
         "Vertical tier track — the higher the position, the higher the RR. Avatars hop along the track from time to time!",
       raceEmpty: "No players with synced AoM Stats yet. Link your profile in Settings.",

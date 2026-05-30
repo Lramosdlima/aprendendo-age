@@ -1,4 +1,4 @@
-import { createSupabaseClient } from "@/lib/supabase/client";
+import { createSupabasePublicClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 
 export type AomRacePlayer = {
@@ -55,7 +55,7 @@ export function playerDisplayLabel(player: AomRacePlayer): string {
 export async function fetchAomRacePlayers(): Promise<AomRacePlayer[]> {
   if (!isSupabaseConfigured()) return [];
 
-  const supabase = createSupabaseClient();
+  const supabase = createSupabasePublicClient();
   if (!supabase) return [];
 
   const { data, error } = await supabase

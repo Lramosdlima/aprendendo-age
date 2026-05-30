@@ -609,6 +609,9 @@ export const ptMessages: TranslationTree = {
       tabCorrida: "Corrida AoM",
       loading: "Carregando jogadores…",
       loadError: "Não foi possível carregar os jogadores.",
+      loadTimeout: "A consulta demorou demais. Verifique a conexão com o Supabase.",
+      unconfigured:
+        "Supabase não configurado neste deploy. Defina VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY na Vercel e faça redeploy.",
       raceDesc:
         "Pista vertical de elos — quanto mais alto, maior o RR. Avatares saltam de vez em quando na corrida!",
       raceEmpty: "Nenhum jogador com AoM Stats sincronizado ainda. Vincule seu perfil em Configurações.",

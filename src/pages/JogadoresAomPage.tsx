@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { fetchAomRacePlayers, type AomRacePlayer } from "@/lib/playersApi";
+import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 type PlayersTabId = "corrida";
@@ -12,35 +13,52 @@ type PlayersTabId = "corrida";
 export function JogadoresAomPage() {
   const { t } = useTranslation();
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
+  const supabaseConfigured = isSupabaseConfigured();
 
   const [activeTab, setActiveTab] = useState<PlayersTabId>("corrida");
   const [players, setPlayers] = useState<AomRacePlayer[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(supabaseConfigured);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!supabaseConfigured) {
+      setLoading(false);
+      setPlayers([]);
+      setError(null);
+      return;
+    }
+
     let cancelled = false;
+    let timedOut = false;
+    const timeoutId = window.setTimeout(() => {
+      timedOut = true;
+      if (!cancelled) {
+        setError(t("pages.players.loadTimeout"));
+        setLoading(false);
+      }
+    }, 20_000);
 
     void (async () => {
       setLoading(true);
       setError(null);
       try {
         const list = await fetchAomRacePlayers();
-        if (!cancelled) setPlayers(list);
+        if (cancelled || timedOut) return;
+        setPlayers(list);
       } catch (err) {
-        if (!cancelled) {
-          setError(err instanceof Error ? err.message : t("pages.players.loadError"));
-          setPlayers([]);
-        }
+        if (cancelled || timedOut) return;
+        setError(err instanceof Error ? err.message : t("pages.players.loadError"));
+        setPlayers([]);
       } finally {
-        if (!cancelled) setLoading(false);
+        if (!cancelled && !timedOut) setLoading(false);
       }
     })();
 
     return () => {
       cancelled = true;
+      window.clearTimeout(timeoutId);
     };
-  }, [t]);
+  }, [supabaseConfigured, t]);
 
   const tabs: { id: PlayersTabId; labelKey: string }[] = [{ id: "corrida", labelKey: "pages.players.tabCorrida" }];
 
@@ -87,6 +105,10 @@ export function JogadoresAomPage() {
           />
           <p className="mt-4 text-sm text-zinc-500">{t("pages.players.loading")}</p>
         </div>
+      ) : !supabaseConfigured ? (
+        <p className="rounded-xl border border-amber-900/45 bg-amber-950/35 px-4 py-3 text-sm text-amber-100/90" role="status">
+          {t("pages.players.unconfigured")}
+        </p>
       ) : error ? (
         <p className="rounded-xl border border-red-900/45 bg-red-950/35 px-4 py-3 text-sm text-red-200" role="alert">
           {error}

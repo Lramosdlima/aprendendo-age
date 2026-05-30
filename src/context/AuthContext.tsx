@@ -251,6 +251,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       await applySession(sess);
     });
 
+    void supabase.auth.getSession().then(({ data: { session: sess } }) => {
+      if (cancelled) return;
+      void applySession(sess);
+    });
+
     return () => {
       cancelled = true;
       subscription.unsubscribe();
