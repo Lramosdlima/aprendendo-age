@@ -9,6 +9,12 @@ import {
 } from "react";
 import type { Session, User } from "@supabase/supabase-js";
 
+import {
+  AOMSTATS_UNSYNC_DB_UPDATE,
+  aomStatsSyncPayloadToDbUpdate,
+  profileRowToAomStatsFields,
+  type AomStatsProfileSyncPayload,
+} from "@/lib/aomstatsProfileSync";
 import { authErrorMessage } from "@/lib/auth/authErrors";
 import { MIN_PASSWORD_LENGTH, SIGNUP_APP, parseUserRole, type UserRole } from "@/lib/auth/constants";
 import { createSupabaseClient } from "@/lib/supabase/client";
@@ -20,6 +26,15 @@ export type AppUserProfile = {
   role: UserRole;
   displayName: string | null;
   createdAt: string | null;
+  aomstatsId: string | null;
+  logoPath: string | null;
+  aomstatsAlias: string | null;
+  aomstatsRr: number | null;
+  aomstatsWins: number | null;
+  aomstatsLosses: number | null;
+  aomstatsWinRate: string | null;
+  aomstatsRank: string | null;
+  aomstatsSnapshotAt: string | null;
 };
 
 type AuthStatus = "loading" | "authenticated" | "unauthenticated" | "unconfigured";
@@ -37,21 +52,54 @@ type AuthContextValue = {
   signIn: (email: string, password: string) => Promise<AuthResult>;
   signUp: (nickname: string, email: string, password: string) => Promise<AuthResult>;
   signOut: () => Promise<void>;
+  syncAomStats: (payload: AomStatsProfileSyncPayload) => Promise<AuthResult>;
+  unsyncAomStats: () => Promise<AuthResult>;
   refreshProfile: () => Promise<void>;
 };
+
+const PROFILE_SELECT =
+  "role, display_name, created_at, aomstats_id, logo_path, aomstats_alias, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at";
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
 function mapRowToProfile(
   user: User,
-  row: { role: string | null; display_name: string | null; created_at: string | null } | null,
+  row: {
+    role: string | null;
+    display_name: string | null;
+    created_at: string | null;
+    aomstats_id: string | null;
+    logo_path: string | null;
+    aomstats_alias: string | null;
+    aomstats_rr: number | null;
+    aomstats_wins: number | null;
+    aomstats_losses: number | null;
+    aomstats_win_rate: string | null;
+    aomstats_rank: string | null;
+    aomstats_snapshot_at: string | null;
+  } | null,
 ): AppUserProfile {
+  const aom = row
+    ? profileRowToAomStatsFields(row)
+    : {
+        aomstatsId: null,
+        logoPath: null,
+        aomstatsAlias: null,
+        aomstatsRr: null,
+        aomstatsWins: null,
+        aomstatsLosses: null,
+        aomstatsWinRate: null,
+        aomstatsRank: null,
+        aomstatsSnapshotAt: null,
+      };
+
   return {
     id: user.id,
     email: user.email ?? null,
     role: parseUserRole(row?.role),
     displayName: row?.display_name ?? null,
     createdAt: row?.created_at ?? null,
+    ...aom,
   };
 }
 
@@ -80,11 +128,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setProfile(mapRowToProfile(u, null));
       setStatus("authenticated");
 
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("role, display_name, created_at")
-        .eq("id", u.id)
-        .single();
+      const { data, error } = await supabase.from("profiles").select(PROFILE_SELECT).eq("id", u.id).single();
 
       if (!error && data) {
         setProfile(mapRowToProfile(u, data));
@@ -147,6 +191,39 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [supabase],
   );
 
+  const syncAomStats = useCallback(
+    async (payload: AomStatsProfileSyncPayload): Promise<AuthResult> => {
+      if (!supabase) return { ok: false, message: "Auth não configurado." };
+      const {
+        data: { user: u },
+      } = await supabase.auth.getUser();
+      if (!u) return { ok: false, message: "Sessão inválida." };
+
+      const { error } = await supabase
+        .from("profiles")
+        .update(aomStatsSyncPayloadToDbUpdate(payload))
+        .eq("id", u.id);
+
+      if (error) return { ok: false, message: error.message };
+      await loadProfileForUser(u);
+      return { ok: true };
+    },
+    [loadProfileForUser, supabase],
+  );
+
+  const unsyncAomStats = useCallback(async (): Promise<AuthResult> => {
+    if (!supabase) return { ok: false, message: "Auth não configurado." };
+    const {
+      data: { user: u },
+    } = await supabase.auth.getUser();
+    if (!u) return { ok: false, message: "Sessão inválida." };
+
+    const { error } = await supabase.from("profiles").update(AOMSTATS_UNSYNC_DB_UPDATE).eq("id", u.id);
+    if (error) return { ok: false, message: error.message };
+    await loadProfileForUser(u);
+    return { ok: true };
+  }, [loadProfileForUser, supabase]);
+
   const signOut = useCallback(async () => {
     if (supabase) await supabase.auth.signOut();
     clearLocalAuth();
@@ -190,9 +267,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signIn,
       signUp,
       signOut,
+      syncAomStats,
+      unsyncAomStats,
       refreshProfile,
     }),
-    [profile, profileLoadState, refreshProfile, session, signIn, signOut, signUp, status, user],
+    [profile, profileLoadState, refreshProfile, session, signIn, signOut, signUp, status, syncAomStats, unsyncAomStats, user],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
