@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
+import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
@@ -10,7 +11,6 @@ import {
   rankRomanMedallionClass,
   rankRomanStepFromRr,
 } from "@/lib/rankClassification";
-import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 const GRID_SCRIM =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M40 0L40 80M0 40L80 40'/%3E%3C/g%3E%3C/svg%3E\")";
@@ -47,7 +47,7 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
   const cls = getRankClassification(player.rr);
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
   const label = playerDisplayLabel(player);
-  const tierIcon = getTokenAssetUrl(cls.ageToken);
+  const tierPortrait = getFormRankPortraitPath(cls.tierId);
   const roman = rankRomanStepFromRr(player.rr);
 
   useLayoutEffect(() => {
@@ -128,9 +128,13 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
             <p className="mt-0.5 truncate text-[11px] text-zinc-400">{cls.categoryLabel}</p>
           </div>
 
-          {tierIcon ? (
-            <img src={tierIcon} alt="" className="h-9 w-9 shrink-0 object-contain opacity-90" width={36} height={36} />
-          ) : null}
+          <img
+            src={tierPortrait}
+            alt=""
+            className="h-9 w-9 shrink-0 object-contain opacity-90"
+            width={36}
+            height={36}
+          />
         </div>
 
         <div className="mt-4 grid grid-cols-2 gap-2.5">
