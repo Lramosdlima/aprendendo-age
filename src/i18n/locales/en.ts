@@ -612,8 +612,6 @@ export const enMessages: TranslationTree = {
       raceDesc:
         "Vertical tier track — the higher the position, the higher the RR. Avatars hop along the track from time to time!",
       raceEmpty: "No players with synced AoM Stats yet. Link your profile in Settings.",
-      raceStart: "Start",
-      raceFinish: "Finish",
       racePlayerRr: "{{name}}, RR {{rr}}",
       raceAvatarOpen: "View {{name}} on the race track",
       racePopoverRr: "Current RR",

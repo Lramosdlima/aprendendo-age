@@ -238,20 +238,6 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             onClose={() => setPopover(null)}
           />
         ) : null}
-
-        {/* Meta (topo) */}
-        <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 text-center">
-          <span className="rounded-full border border-sky-500/40 bg-sky-500/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-sky-200/90">
-            {t("pages.players.raceFinish")}
-          </span>
-        </div>
-
-        {/* Largada (base) */}
-        <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 text-center">
-          <span className="rounded-full border border-amber-700/40 bg-amber-900/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200/80">
-            {t("pages.players.raceStart")}
-          </span>
-        </div>
       </div>
 
       <p className="mt-2 text-center text-xs text-zinc-600">{t("pages.players.raceSnapshotHint")}</p>

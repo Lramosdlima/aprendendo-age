@@ -615,8 +615,6 @@ export const ptMessages: TranslationTree = {
       raceDesc:
         "Pista vertical de elos — quanto mais alto, maior o RR. Avatares saltam de vez em quando na corrida!",
       raceEmpty: "Nenhum jogador com AoM Stats sincronizado ainda. Vincule seu perfil em Configurações.",
-      raceStart: "Largada",
-      raceFinish: "Meta",
       racePlayerRr: "{{name}}, RR {{rr}}",
       raceAvatarOpen: "Ver perfil de {{name}} na corrida",
       racePopoverRr: "RR atual",
