@@ -8,8 +8,8 @@ export const RACE_TRACK_MIN_RR = 0;
 /** Tamanho aproximado do avatar + margem (px). */
 export const RACE_AVATAR_BOX_PX = 48 + 8;
 
-const TRACK_BOTTOM_PADDING_PERCENT = 5;
-const TRACK_TOP_PADDING_PERCENT = 8;
+/** Classe Tailwind da faixa útil da pista (alinha com a linha vertical tracejada). */
+export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 top-8 bottom-8";
 
 export type RaceTierBand = {
   tierId: RankTierId;
@@ -25,8 +25,7 @@ export const RACE_TIER_BANDS: RaceTierBand[] = [
   { tierId: "diamante", rrMin: 1800, rrMax: RACE_TRACK_MAX_RR },
 ];
 
-const SEGMENT_HEIGHT_PERCENT =
-  (100 - TRACK_BOTTOM_PADDING_PERCENT - TRACK_TOP_PADDING_PERCENT) / RACE_TIER_BANDS.length;
+const SEGMENT_HEIGHT_PERCENT = 100 / RACE_TIER_BANDS.length;
 
 export type RaceAvatarPlacement = {
   id: string;
@@ -38,6 +37,7 @@ export type RaceTierMarker = {
   tierId: RankTierId;
   /** RR no início da faixa (badge à direita). */
   rrStart: number;
+  /** 0 = ponta inferior da pista; 100 = ponta superior. */
   percent: number;
 };
 
@@ -45,13 +45,13 @@ function clampPercent(value: number): number {
   return Math.min(100, Math.max(0, value));
 }
 
-function tierSegmentStartPercent(segmentIndex: number): number {
-  return TRACK_BOTTOM_PADDING_PERCENT + segmentIndex * SEGMENT_HEIGHT_PERCENT;
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
 }
 
-/** Centro visual de cada faixa de elo — espaçamento uniforme na pista. */
-export function tierSegmentCenterPercent(segmentIndex: number): number {
-  return tierSegmentStartPercent(segmentIndex) + SEGMENT_HEIGHT_PERCENT / 2;
+/** Início de cada faixa na pista (Bronze = 0% = ponta inferior). */
+function tierSegmentStartPercent(segmentIndex: number): number {
+  return segmentIndex * SEGMENT_HEIGHT_PERCENT;
 }
 
 export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, index) => ({
@@ -60,27 +60,29 @@ export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, in
   percent: tierSegmentStartPercent(index),
 }));
 
-function trackTopPercent(): number {
-  return 100 - TRACK_TOP_PADDING_PERCENT;
+/** Ponta superior da faixa útil (100%). */
+export function trackTopPercent(): number {
+  return 100;
 }
 
-function trackBottomPercent(): number {
-  return TRACK_BOTTOM_PADDING_PERCENT;
+/** Ponta inferior da faixa útil (0%). */
+export function trackBottomPercent(): number {
+  return 0;
 }
 
 function trackUsableSpanPercent(): number {
-  return trackTopPercent() - trackBottomPercent();
+  return 100;
 }
 
 /**
  * Escala linear 0 → maxRrInLobby na pista.
- * O maior RR da corrida ocupa a ponta superior da linha vertical.
+ * 0% = ponta inferior; 100% = ponta superior (top 1).
  */
 export function rrToTrackPercent(rr: number, maxRrInLobby: number): number {
   const r = Math.max(RACE_TRACK_MIN_RR, rr);
   const maxR = Math.max(maxRrInLobby, r, 1);
   const t = r / maxR;
-  return trackBottomPercent() + t * trackUsableSpanPercent();
+  return t * trackUsableSpanPercent();
 }
 
 function minVerticalGapPercent(trackHeightPx: number): number {
@@ -88,8 +90,8 @@ function minVerticalGapPercent(trackHeightPx: number): number {
 }
 
 /**
- * Posiciona avatares na linha vertical.
- * O jogador com maior RR fica sempre na ponta; os demais seguem escala proporcional.
+ * Posiciona avatares na linha vertical (0–100% da faixa).
+ * O maior RR fica na ponta superior (100%).
  */
 export function layoutRaceAvatars(
   players: Array<{ id: string; rr: number }>,
@@ -138,17 +140,13 @@ export function layoutRaceAvatars(
   });
 }
 
-function clamp(value: number, min: number, max: number): number {
-  return Math.min(max, Math.max(min, value));
-}
-
-/** Altura da pista: garante espaço vertical para todos os jogadores. */
+/** Altura mínima do container externo (faixa + top-8/bottom-8). */
 export function raceTrackMinHeightPx(_playerCount: number, players: Array<{ rr: number }> = []): number {
   const baseSegmentPx = 168;
-  const base = baseSegmentPx * RACE_TIER_BANDS.length + 120;
+  const laneBase = baseSegmentPx * RACE_TIER_BANDS.length;
   const count = Math.max(players.length, 1);
-  const neededForAll = Math.ceil((count * RACE_AVATAR_BOX_PX) / (trackUsableSpanPercent() / 100)) + 160;
-  return Math.min(Math.max(base, neededForAll, 960), 2400);
+  const neededForAll = Math.ceil((count * RACE_AVATAR_BOX_PX) / 1) + 160;
+  return Math.min(Math.max(laneBase + neededForAll, 960), 2400);
 }
 
 /** @deprecated Mantido para compatibilidade; avatares ficam na linha central. */

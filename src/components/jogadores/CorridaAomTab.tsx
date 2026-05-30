@@ -8,6 +8,7 @@ import {
   layoutRaceAvatars,
   raceTrackMinHeightPx,
   RACE_TIER_MARKERS,
+  RACE_TRACK_LANE_CLASS,
 } from "@/lib/raceTrackLayout";
 import { getRankGuideTiers } from "@/lib/rankGuideTiers";
 import { getRankClassification, TIER_ACHIEVEMENT_THEME } from "@/lib/rankClassification";
@@ -47,6 +48,12 @@ function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
   return hoppingIds;
 }
 
+function raceAvatarTransform(bottomPercent: number): string {
+  if (bottomPercent >= 99.5) return "translate(-50%, -50%)";
+  if (bottomPercent <= 0.5) return "translate(-50%, 50%)";
+  return "translate(-50%, 50%)";
+}
+
 function RaceAvatar({
   player,
   hopping,
@@ -69,7 +76,7 @@ function RaceAvatar({
       style={{
         bottom: `${player.bottomPercent}%`,
         left: "50%",
-        transform: "translate(-50%, 50%)",
+        transform: raceAvatarTransform(player.bottomPercent),
         zIndex: selected ? 250 : player.zIndex,
       }}
     >
@@ -157,96 +164,97 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         className="relative mx-auto w-full max-w-md px-4 pb-8 pt-4 sm:px-8"
         style={{ minHeight: `${trackMinHeight}px` }}
       >
-        {/* Pista vertical */}
-        <div
-          className="pointer-events-none absolute bottom-8 left-1/2 top-8 w-[3px] -translate-x-1/2 rounded-full"
-          aria-hidden
-          style={{
-            background:
-              "repeating-linear-gradient(to top, rgba(250,204,21,0.35) 0 12px, rgba(39,39,42,0.9) 12px 24px)",
-            boxShadow: "0 0 20px rgba(250,204,21,0.15)",
-          }}
-        />
-        <div
-          className="pointer-events-none absolute bottom-8 left-1/2 top-8 w-16 -translate-x-1/2 rounded-full border border-dashed border-zinc-700/40"
-          aria-hidden
-        />
+        {/* Faixa útil da pista — marcos, linha e avatares compartilham 0% (base) e 100% (topo) */}
+        <div className={cn(RACE_TRACK_LANE_CLASS)}>
+          <div
+            className="pointer-events-none absolute inset-y-0 left-1/2 w-[3px] -translate-x-1/2 rounded-full"
+            aria-hidden
+            style={{
+              background:
+                "repeating-linear-gradient(to top, rgba(250,204,21,0.35) 0 12px, rgba(39,39,42,0.9) 12px 24px)",
+              boxShadow: "0 0 20px rgba(250,204,21,0.15)",
+            }}
+          />
+          <div
+            className="pointer-events-none absolute inset-y-0 left-1/2 w-16 -translate-x-1/2 rounded-full border border-dashed border-zinc-700/40"
+            aria-hidden
+          />
 
-        {/* Marcos de elo */}
-        {RACE_TIER_MARKERS.map((marker) => {
-          const tier = tiers.find((x) => x.id === marker.tierId);
-          if (!tier) return null;
-          const iconSrc = getTokenAssetUrl(tier.token);
-          const theme = TIER_ACHIEVEMENT_THEME[marker.tierId];
-          const isBronzeStart = marker.tierId === "bronze";
+          {/* Marcos de elo — Bronze em bottom: 0% (ponta da pista) */}
+          {RACE_TIER_MARKERS.map((marker) => {
+            const tier = tiers.find((x) => x.id === marker.tierId);
+            if (!tier) return null;
+            const iconSrc = getTokenAssetUrl(tier.token);
+            const theme = TIER_ACHIEVEMENT_THEME[marker.tierId];
+            const isBronzeStart = marker.tierId === "bronze";
 
-          return (
-            <div
-              key={marker.tierId}
-              className="pointer-events-none absolute left-0 right-0 z-20"
-              style={{ bottom: `${marker.percent}%`, transform: "translateY(0)" }}
-            >
-              <div className="relative flex items-center">
-                <div
-                  className={cn(
-                    "flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-2.5 shadow-lg sm:w-[8.25rem] sm:px-2.5",
-                    theme.surfaceClass,
-                  )}
-                >
-                  {iconSrc ? (
-                    <img src={iconSrc} alt="" className="h-9 w-9 object-contain sm:h-10 sm:w-10" width={40} height={40} />
-                  ) : null}
-                  <p className={cn("mt-1.5 text-center font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight sm:text-xs", tier.titleClass)}>
-                    {tier.rankName}
-                    <span className="mt-0.5 block text-[9px] font-normal normal-case tracking-normal text-zinc-400">
-                      {tier.eraName}
-                    </span>
-                  </p>
-                  <p className="mt-0.5 font-mono text-[9px] text-zinc-500">{tier.rrBand}</p>
-                </div>
-
-                {/* Bronze: linha só da pista vertical (50%) até o badge — marco zero */}
-                <div
-                  className={cn(
-                    "absolute flex items-center gap-2",
-                    isBronzeStart ? "left-1/2" : "left-[7.5rem] sm:left-[8.25rem]",
-                    "right-0",
-                  )}
-                >
+            return (
+              <div
+                key={marker.tierId}
+                className="pointer-events-none absolute left-0 right-0 z-20"
+                style={{ bottom: `${marker.percent}%`, transform: "translateY(0)" }}
+              >
+                <div className="relative flex items-end pb-0">
                   <div
                     className={cn(
-                      "h-px min-w-0 flex-1 bg-gradient-to-r to-transparent",
-                      isBronzeStart ? "from-amber-500/55" : "from-amber-500/40",
+                      "flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-2.5 shadow-lg sm:w-[8.25rem] sm:px-2.5",
+                      theme.surfaceClass,
                     )}
-                    aria-hidden
-                  />
-                  <div
-                    className={cn(
-                      "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 bg-zinc-950 text-[10px] font-bold tabular-nums shadow-md sm:h-9 sm:w-9",
-                      theme.stepRing,
-                      theme.stepAccent,
-                    )}
-                    aria-hidden
                   >
-                    {marker.rrStart}
+                    {iconSrc ? (
+                      <img src={iconSrc} alt="" className="h-9 w-9 object-contain sm:h-10 sm:w-10" width={40} height={40} />
+                    ) : null}
+                    <p className={cn("mt-1.5 text-center font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight sm:text-xs", tier.titleClass)}>
+                      {tier.rankName}
+                      <span className="mt-0.5 block text-[9px] font-normal normal-case tracking-normal text-zinc-400">
+                        {tier.eraName}
+                      </span>
+                    </p>
+                    <p className="mt-0.5 font-mono text-[9px] text-zinc-500">{tier.rrBand}</p>
+                  </div>
+
+                  <div
+                    className={cn(
+                      "absolute bottom-0 flex items-center gap-2",
+                      isBronzeStart ? "left-1/2" : "left-[7.5rem] sm:left-[8.25rem]",
+                      "right-0",
+                    )}
+                  >
+                    <div
+                      className={cn(
+                        "h-px min-w-0 flex-1 bg-gradient-to-r to-transparent",
+                        isBronzeStart ? "from-amber-500/55" : "from-amber-500/40",
+                      )}
+                      aria-hidden
+                    />
+                    <div
+                      className={cn(
+                        "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 bg-zinc-950 text-[10px] font-bold tabular-nums shadow-md sm:h-9 sm:w-9",
+                        theme.stepRing,
+                        theme.stepAccent,
+                      )}
+                      aria-hidden
+                    >
+                      {marker.rrStart}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
 
-        {/* Jogadores na pista — acima dos marcos; cliques só nos avatares */}
-        <div className="pointer-events-none absolute bottom-8 left-1/2 top-8 z-30 w-0 -translate-x-1/2">
-          {placed.map((player) => (
-            <RaceAvatar
-              key={player.id}
-              player={player}
-              hopping={hoppingIds.has(player.id)}
-              selected={popover?.player.id === player.id}
-              onSelect={handleAvatarSelect}
-            />
-          ))}
+          {/* Jogadores na linha vertical */}
+          <div className="pointer-events-none absolute inset-0 z-30">
+            {placed.map((player) => (
+              <RaceAvatar
+                key={player.id}
+                player={player}
+                hopping={hoppingIds.has(player.id)}
+                selected={popover?.player.id === player.id}
+                onSelect={handleAvatarSelect}
+              />
+            ))}
+          </div>
         </div>
 
         {popover ? (
