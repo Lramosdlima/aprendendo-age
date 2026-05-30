@@ -4,10 +4,9 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
 import {
-  groupPlayersByRrBand,
-  horizontalSpreadIndex,
+  layoutRaceAvatars,
+  raceTrackMinHeightPx,
   RACE_TIER_MARKERS,
-  rrToTrackPercent,
 } from "@/lib/raceTrackLayout";
 import { getRankGuideTiers } from "@/lib/rankGuideTiers";
 import { getRankClassification, TIER_ACHIEVEMENT_THEME } from "@/lib/rankClassification";
@@ -16,6 +15,7 @@ import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 type PlacedPlayer = AomRacePlayer & {
   bottomPercent: number;
   offsetX: number;
+  zIndex: number;
 };
 
 function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
@@ -61,11 +61,12 @@ function RaceAvatar({
 
   return (
     <div
-      className="group absolute z-10 flex flex-col items-center"
+      className="group absolute flex flex-col items-center"
       style={{
         bottom: `${player.bottomPercent}%`,
         left: `calc(50% + ${player.offsetX}px)`,
         transform: "translate(-50%, 50%)",
+        zIndex: player.zIndex,
       }}
       title={`${label} · RR ${player.rr}`}
     >
@@ -106,22 +107,24 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   const tiers = useMemo(() => getRankGuideTiers(t), [t]);
 
   const placed = useMemo(() => {
-    const bands = groupPlayersByRrBand(players);
-    const result: PlacedPlayer[] = [];
+    const layout = layoutRaceAvatars(players);
+    const byId = new Map(players.map((p) => [p.id, p]));
 
-    for (const [, bandPlayers] of bands) {
-      const sorted = [...bandPlayers].sort((a, b) => a.id.localeCompare(b.id));
-      sorted.forEach((p, index) => {
-        result.push({
-          ...p,
-          bottomPercent: rrToTrackPercent(p.rr),
-          offsetX: horizontalSpreadIndex(index, sorted.length),
-        });
-      });
-    }
-
-    return result;
+    return layout
+      .map((slot) => {
+        const player = byId.get(slot.id);
+        if (!player) return null;
+        return {
+          ...player,
+          bottomPercent: slot.bottomPercent,
+          offsetX: slot.offsetX,
+          zIndex: slot.zIndex,
+        };
+      })
+      .filter((p): p is PlacedPlayer => p != null);
   }, [players]);
+
+  const trackMinHeight = useMemo(() => raceTrackMinHeightPx(players.length), [players.length]);
 
   const hoppingIds = useRandomHopPlayerIds(placed.map((p) => p.id));
 
@@ -137,7 +140,10 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
     <div className="mx-auto w-full max-w-2xl">
       <p className="mb-6 text-center text-sm text-zinc-400">{t("pages.players.raceDesc")}</p>
 
-      <div className="relative mx-auto min-h-[min(720px,85dvh)] w-full max-w-md px-4 pb-8 pt-4 sm:px-8">
+      <div
+        className="relative mx-auto w-full max-w-md overflow-visible px-4 pb-8 pt-4 sm:px-8"
+        style={{ minHeight: `min(${trackMinHeight}px, 92dvh)` }}
+      >
         {/* Pista vertical */}
         <div
           className="absolute bottom-8 left-1/2 top-8 w-[3px] -translate-x-1/2 rounded-full"
@@ -201,7 +207,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         })}
 
         {/* Jogadores na pista */}
-        <div className="absolute bottom-8 left-1/2 top-8 w-0 -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 top-8 w-0 -translate-x-1/2 overflow-visible">
           {placed.map((player) => (
             <RaceAvatar key={player.id} player={player} hopping={hoppingIds.has(player.id)} />
           ))}
