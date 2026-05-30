@@ -90,24 +90,86 @@ export function rrToTrackPercent(rr: number): number {
   return segmentStart + innerPad + t * usable;
 }
 
+function tierSegmentBounds(segmentIndex: number): { min: number; max: number } {
+  const innerPad = SEGMENT_HEIGHT_PERCENT * 0.08;
+  return {
+    min: tierSegmentStartPercent(segmentIndex) + innerPad,
+    max: tierSegmentStartPercent(segmentIndex) + SEGMENT_HEIGHT_PERCENT - innerPad,
+  };
+}
+
 function minVerticalGapPercent(trackHeightPx: number): number {
   return (RACE_AVATAR_BOX_PX / trackHeightPx) * 100;
 }
 
-function verticalCollides(a: number, b: number, minGap: number): boolean {
-  return Math.abs(a - b) < minGap;
-}
+function layoutPlayersInTierBand(
+  players: Array<{ id: string; rr: number }>,
+  segmentIndex: number,
+  trackHeightPx: number,
+): RaceAvatarPlacement[] {
+  if (players.length === 0) return [];
 
-function* verticalCandidates(target: number, minGap: number): Generator<number> {
-  yield target;
-  for (let step = 1; step <= 40; step += 1) {
-    yield target + step * minGap;
-    yield target - step * minGap;
+  const bounds = tierSegmentBounds(segmentIndex);
+  const span = bounds.max - bounds.min;
+  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
+
+  if (sorted.length === 1) {
+    const only = sorted[0]!;
+    const bottomPercent = clampPercent(clamp(rrToTrackPercent(only.rr), bounds.min, bounds.max));
+    return [{ id: only.id, bottomPercent, zIndex: 10 + Math.round(bottomPercent) }];
   }
+
+  const baseMinGap = minVerticalGapPercent(trackHeightPx);
+  const minGap = Math.min(baseMinGap, span / sorted.length);
+
+  const positions: number[] = [];
+  for (let i = 0; i < sorted.length; i += 1) {
+    const target = clampPercent(clamp(rrToTrackPercent(sorted[i]!.rr), bounds.min, bounds.max));
+    let pos = target;
+    if (i > 0) {
+      pos = Math.max(pos, positions[i - 1]! + minGap);
+    }
+    positions.push(Math.min(pos, bounds.max));
+  }
+
+  const overflow = positions[positions.length - 1]! - bounds.max;
+  if (overflow > 0) {
+    for (let i = 0; i < positions.length; i += 1) {
+      positions[i] = positions[i]! - overflow;
+    }
+    for (let i = 1; i < positions.length; i += 1) {
+      positions[i] = Math.max(positions[i]!, positions[i - 1]! + minGap);
+    }
+  }
+
+  const underflow = bounds.min - positions[0]!;
+  if (underflow > 0) {
+    for (let i = 0; i < positions.length; i += 1) {
+      positions[i] = positions[i]! + underflow;
+    }
+  }
+
+  // Se ainda não couber, distribui uniformemente mantendo a ordem de RR.
+  if (positions[positions.length - 1]! > bounds.max || positions[0]! < bounds.min) {
+    const step = span / sorted.length;
+    for (let i = 0; i < sorted.length; i += 1) {
+      positions[i] = bounds.min + step * i + step / 2;
+    }
+  }
+
+  return sorted.map((player, index) => {
+    const bottomPercent = clampPercent(positions[index]!);
+    return {
+      id: player.id,
+      bottomPercent,
+      zIndex: 10 + Math.round(bottomPercent),
+    };
+  });
 }
 
 /**
- * Posiciona avatares só na linha vertical central; empilha para cima/baixo se necessário.
+ * Posiciona avatares na linha vertical, sempre dentro da faixa do elo (RR).
+ * Colisões são resolvidas só dentro do mesmo tier — nunca empurra para bronze/prata etc.
  */
 export function layoutRaceAvatars(
   players: Array<{ id: string; rr: number }>,
@@ -115,29 +177,23 @@ export function layoutRaceAvatars(
 ): RaceAvatarPlacement[] {
   if (players.length === 0) return [];
 
-  const minGap = minVerticalGapPercent(trackHeightPx);
-  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
-  const occupied: number[] = [];
+  const byTier = new Map<number, Array<{ id: string; rr: number }>>();
+  for (const player of players) {
+    const segmentIndex = RACE_TIER_BANDS.indexOf(findTierBand(player.rr));
+    const list = byTier.get(segmentIndex) ?? [];
+    list.push(player);
+    byTier.set(segmentIndex, list);
+  }
 
-  return sorted.map((player) => {
-    const target = rrToTrackPercent(player.rr);
-    let bottomPercent = target;
+  const result: RaceAvatarPlacement[] = [];
+  for (const [segmentIndex, bandPlayers] of byTier) {
+    result.push(...layoutPlayersInTierBand(bandPlayers, segmentIndex, trackHeightPx));
+  }
+  return result;
+}
 
-    for (const candidate of verticalCandidates(target, minGap)) {
-      const clamped = clampPercent(candidate);
-      if (!occupied.some((other) => verticalCollides(clamped, other, minGap))) {
-        bottomPercent = clamped;
-        break;
-      }
-    }
-
-    occupied.push(bottomPercent);
-    return {
-      id: player.id,
-      bottomPercent,
-      zIndex: 10 + Math.round(bottomPercent),
-    };
-  });
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
 }
 
 function maxPlayersInTierBand(players: Array<{ rr: number }>): number {
@@ -149,14 +205,15 @@ function maxPlayersInTierBand(players: Array<{ rr: number }>): number {
   return Math.max(0, ...counts.values());
 }
 
-/** Altura da pista: faixas generosas + folga extra na faixa mais cheia. */
-export function raceTrackMinHeightPx(playerCount: number, players: Array<{ rr: number }> = []): number {
+/** Altura da pista: garante espaço vertical na faixa com mais jogadores. */
+export function raceTrackMinHeightPx(_playerCount: number, players: Array<{ rr: number }> = []): number {
   const baseSegmentPx = 168;
   const base = baseSegmentPx * RACE_TIER_BANDS.length + 120;
   const busiest = maxPlayersInTierBand(players);
-  const extra = Math.max(0, busiest - 1) * RACE_AVATAR_BOX_PX;
-  const byCount = playerCount > 12 ? (playerCount - 12) * 24 : 0;
-  return Math.min(Math.max(base + extra + byCount, 960), 1600);
+  const usableSegmentFraction = (SEGMENT_HEIGHT_PERCENT * 0.84) / 100;
+  const neededForBusiest =
+    busiest > 1 ? Math.ceil((busiest * RACE_AVATAR_BOX_PX) / usableSegmentFraction) + 160 : 0;
+  return Math.min(Math.max(base, neededForBusiest, 960), 2400);
 }
 
 /** @deprecated Mantido para compatibilidade; avatares ficam na linha central. */
