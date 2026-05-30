@@ -183,7 +183,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             <div
               key={marker.tierId}
               className="pointer-events-none absolute left-0 right-0 z-20 flex items-center gap-3"
-              style={{ bottom: `${marker.percent}%`, transform: "translateY(50%)" }}
+              style={{ bottom: `${marker.percent}%`, transform: "translateY(0)" }}
             >
               <div
                 className={cn(
@@ -213,7 +213,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
                 )}
                 aria-hidden
               >
-                {marker.rrCenter}
+                {marker.rrStart}
               </div>
             </div>
           );

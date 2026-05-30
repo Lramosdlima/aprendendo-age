@@ -15,16 +15,14 @@ export type RaceTierBand = {
   tierId: RankTierId;
   rrMin: number;
   rrMax: number;
-  /** RR de referência no badge à direita. */
-  rrCenter: number;
 };
 
 export const RACE_TIER_BANDS: RaceTierBand[] = [
-  { tierId: "bronze", rrMin: 0, rrMax: 999, rrCenter: 500 },
-  { tierId: "prata", rrMin: 1000, rrMax: 1299, rrCenter: 1150 },
-  { tierId: "ouro", rrMin: 1300, rrMax: 1599, rrCenter: 1450 },
-  { tierId: "esmeralda", rrMin: 1600, rrMax: 1799, rrCenter: 1700 },
-  { tierId: "diamante", rrMin: 1800, rrMax: RACE_TRACK_MAX_RR, rrCenter: 1950 },
+  { tierId: "bronze", rrMin: 0, rrMax: 999 },
+  { tierId: "prata", rrMin: 1000, rrMax: 1299 },
+  { tierId: "ouro", rrMin: 1300, rrMax: 1599 },
+  { tierId: "esmeralda", rrMin: 1600, rrMax: 1799 },
+  { tierId: "diamante", rrMin: 1800, rrMax: RACE_TRACK_MAX_RR },
 ];
 
 const SEGMENT_HEIGHT_PERCENT =
@@ -38,7 +36,8 @@ export type RaceAvatarPlacement = {
 
 export type RaceTierMarker = {
   tierId: RankTierId;
-  rrCenter: number;
+  /** RR no início da faixa (badge à direita). */
+  rrStart: number;
   percent: number;
 };
 
@@ -69,8 +68,8 @@ export function tierSegmentCenterPercent(segmentIndex: number): number {
 
 export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, index) => ({
   tierId: band.tierId,
-  rrCenter: band.rrCenter,
-  percent: tierSegmentCenterPercent(index),
+  rrStart: band.rrMin,
+  percent: tierSegmentStartPercent(index),
 }));
 
 /**
