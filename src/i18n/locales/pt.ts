@@ -157,6 +157,7 @@ export const ptMessages: TranslationTree = {
     maps: "Mapas",
     technologies: "Tecnologias",
     rank: "Rank (RR)",
+    players: "Jogadores AoM",
     clans: "Clãs",
   },
   pages: {
@@ -599,6 +600,22 @@ export const ptMessages: TranslationTree = {
         crushArmorTitle: "Proteção contundente",
         crushArmorDesc: "A maioria das unidades tem resistência altíssima a crush; o dano é pensado para construções.",
       },
+    },
+    players: {
+      pageTitle: "Jogadores AoM",
+      pageDescription:
+        "Comunidade Aprendendo Age com perfil sincronizado ao AoM Stats. Acompanhe a corrida pelos elos de RR.",
+      tabsLabel: "Seções de jogadores",
+      tabCorrida: "Corrida AoM",
+      loading: "Carregando jogadores…",
+      loadError: "Não foi possível carregar os jogadores.",
+      raceDesc:
+        "Pista vertical de elos — quanto mais alto, maior o RR. Avatares saltam de vez em quando na corrida!",
+      raceEmpty: "Nenhum jogador com AoM Stats sincronizado ainda. Vincule seu perfil em Configurações.",
+      raceStart: "Largada",
+      raceFinish: "Meta",
+      racePlayerRr: "{{name}}, RR {{rr}}",
+      raceSnapshotHint: "Posições baseadas no snapshot RR salvo no cadastro/perfil.",
     },
     admin: {
       secretBuilder: {

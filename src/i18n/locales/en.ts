@@ -157,6 +157,7 @@ export const enMessages: TranslationTree = {
     maps: "Maps",
     technologies: "Technologies",
     rank: "Rank (RR)",
+    players: "AoM Players",
     clans: "Clans",
   },
   pages: {
@@ -596,6 +597,22 @@ export const enMessages: TranslationTree = {
         crushArmorTitle: "Crush armor",
         crushArmorDesc: "Most units have extremely high crush resistance; crush damage is meant for buildings.",
       },
+    },
+    players: {
+      pageTitle: "AoM Players",
+      pageDescription:
+        "Aprendendo Age community members with AoM Stats profiles synced. Follow the RR tier race.",
+      tabsLabel: "Player sections",
+      tabCorrida: "AoM Race",
+      loading: "Loading players…",
+      loadError: "Could not load players.",
+      raceDesc:
+        "Vertical tier track — the higher the position, the higher the RR. Avatars hop along the track from time to time!",
+      raceEmpty: "No players with synced AoM Stats yet. Link your profile in Settings.",
+      raceStart: "Start",
+      raceFinish: "Finish",
+      racePlayerRr: "{{name}}, RR {{rr}}",
+      raceSnapshotHint: "Positions based on the RR snapshot saved at registration/profile sync.",
     },
     admin: {
       secretBuilder: {

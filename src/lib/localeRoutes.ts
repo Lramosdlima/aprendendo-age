@@ -15,6 +15,13 @@ export type LocaleSection =
 
 export type AuthSection = "login" | "register" | "profile";
 
+export type PlayersSection = "jogadores";
+
+const PLAYERS_SEGMENT: Record<Locale, string> = {
+  pt: "jogadores-aom",
+  en: "aom-players",
+};
+
 const SECTION_SEGMENT: Record<Locale, Record<LocaleSection, string>> = {
   pt: {
     panteoes: "panteoes",
@@ -77,6 +84,15 @@ export function localeSectionSegment(locale: Locale, section: LocaleSection): st
   return SECTION_SEGMENT[locale][section];
 }
 
+export function localePlayersPath(locale: Locale): string {
+  return `/${PLAYERS_SEGMENT[locale]}`;
+}
+
+export function playersSectionFromPathSegment(segment: string): PlayersSection | undefined {
+  if (segment === PLAYERS_SEGMENT.pt || segment === PLAYERS_SEGMENT.en) return "jogadores";
+  return undefined;
+}
+
 export function localeAuthSegment(locale: Locale, section: AuthSection): string {
   return AUTH_SEGMENT[locale][section];
 }
@@ -115,6 +131,16 @@ export function swapLocaleInPath(pathname: string, toLocale: Locale): string {
   const search = q === -1 ? "" : pathname.slice(q);
   const parts = pathOnly.split("/").filter(Boolean);
   if (parts.length === 0) return `/${search}`;
+
+  const playersSection = playersSectionFromPathSegment(parts[0]!);
+  if (playersSection) {
+    const fromLocale: Locale = toLocale === "pt" ? "en" : "pt";
+    if (parts[0] === PLAYERS_SEGMENT[fromLocale]) {
+      parts[0] = PLAYERS_SEGMENT[toLocale];
+      return `/${parts.join("/")}${search}`;
+    }
+    return `${pathname}`;
+  }
 
   const authSection = authSectionFromPathSegment(parts[0]!);
   if (authSection) {

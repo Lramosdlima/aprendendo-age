@@ -406,3 +406,21 @@ body {
 .shine-diamante {
   animation: pulsar-diamante 1.2s ease-in-out infinite alternate;
 }
+
+/* Corrida AoM — salto ocasional dos avatares na pista */
+@keyframes race-avatar-hop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  35% {
+    transform: translateY(-10px) scale(1.06);
+  }
+  55% {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+.race-avatar-hop.is-hopping {
+  animation: race-avatar-hop 0.65s ease-out;
+}

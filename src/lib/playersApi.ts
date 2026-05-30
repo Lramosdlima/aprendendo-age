@@ -1,0 +1,73 @@
+import { createSupabaseClient } from "@/lib/supabase/client";
+import { isSupabaseConfigured } from "@/lib/supabase/env";
+
+export type AomRacePlayer = {
+  id: string;
+  displayName: string | null;
+  aomstatsAlias: string | null;
+  logoPath: string | null;
+  aomstatsId: string | null;
+  rr: number;
+  wins: number | null;
+  losses: number | null;
+  winRate: string | null;
+  rank: string | null;
+  snapshotAt: string | null;
+};
+
+const PUBLIC_PLAYER_SELECT =
+  "id, display_name, aomstats_alias, logo_path, aomstats_id, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at";
+
+function mapRow(row: {
+  id: string;
+  display_name: string | null;
+  aomstats_alias: string | null;
+  logo_path: string | null;
+  aomstats_id: string | null;
+  aomstats_rr: number | null;
+  aomstats_wins: number | null;
+  aomstats_losses: number | null;
+  aomstats_win_rate: string | null;
+  aomstats_rank: string | null;
+  aomstats_snapshot_at: string | null;
+}): AomRacePlayer | null {
+  if (row.aomstats_rr == null || !row.aomstats_id) return null;
+  return {
+    id: row.id,
+    displayName: row.display_name,
+    aomstatsAlias: row.aomstats_alias,
+    logoPath: row.logo_path,
+    aomstatsId: row.aomstats_id,
+    rr: row.aomstats_rr,
+    wins: row.aomstats_wins,
+    losses: row.aomstats_losses,
+    winRate: row.aomstats_win_rate,
+    rank: row.aomstats_rank,
+    snapshotAt: row.aomstats_snapshot_at,
+  };
+}
+
+export function playerDisplayLabel(player: AomRacePlayer): string {
+  return player.aomstatsAlias?.trim() || player.displayName?.trim() || "?";
+}
+
+/** Lista jogadores com snapshot AoM Stats para a Corrida AoM. */
+export async function fetchAomRacePlayers(): Promise<AomRacePlayer[]> {
+  if (!isSupabaseConfigured()) return [];
+
+  const supabase = createSupabaseClient();
+  if (!supabase) return [];
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .select(PUBLIC_PLAYER_SELECT)
+    .not("aomstats_rr", "is", null)
+    .not("aomstats_id", "is", null)
+    .order("aomstats_rr", { ascending: false });
+
+  if (error) throw new Error(error.message);
+
+  return (data ?? [])
+    .map((row) => mapRow(row as Parameters<typeof mapRow>[0]))
+    .filter((p): p is AomRacePlayer => p != null);
+}

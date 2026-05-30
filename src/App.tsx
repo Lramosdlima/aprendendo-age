@@ -24,6 +24,7 @@ import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
 import { FormRankPage } from "@/pages/FormRankPage";
+import { JogadoresAomPage } from "@/pages/JogadoresAomPage";
 import { LoginPage } from "@/pages/LoginPage";
 import { ProfilePage } from "@/pages/ProfilePage";
 import { RegisterPage } from "@/pages/RegisterPage";
@@ -97,6 +98,8 @@ export default function App() {
           <Route path="admin/novo-start" element={<SecretStartBuilderPage />} />
           <Route path="rank" element={<RankPage />} />
           <Route path="rank/form" element={<FormRankPage />} />
+          <Route path="jogadores-aom" element={<JogadoresAomPage />} />
+          <Route path="aom-players" element={<JogadoresAomPage />} />
           <Route path="clans" element={<ClansPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
           <Route
