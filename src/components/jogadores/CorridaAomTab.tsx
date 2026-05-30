@@ -14,7 +14,6 @@ import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
 type PlacedPlayer = AomRacePlayer & {
   bottomPercent: number;
-  offsetX: number;
   zIndex: number;
 };
 
@@ -64,7 +63,7 @@ function RaceAvatar({
       className="group absolute flex flex-col items-center"
       style={{
         bottom: `${player.bottomPercent}%`,
-        left: `calc(50% + ${player.offsetX}px)`,
+        left: "50%",
         transform: "translate(-50%, 50%)",
         zIndex: player.zIndex,
       }}
@@ -106,8 +105,10 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   const { t } = useTranslation();
   const tiers = useMemo(() => getRankGuideTiers(t), [t]);
 
+  const trackMinHeight = useMemo(() => raceTrackMinHeightPx(players.length, players), [players]);
+
   const placed = useMemo(() => {
-    const layout = layoutRaceAvatars(players);
+    const layout = layoutRaceAvatars(players, trackMinHeight);
     const byId = new Map(players.map((p) => [p.id, p]));
 
     return layout
@@ -117,14 +118,11 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         return {
           ...player,
           bottomPercent: slot.bottomPercent,
-          offsetX: slot.offsetX,
           zIndex: slot.zIndex,
         };
       })
       .filter((p): p is PlacedPlayer => p != null);
-  }, [players]);
-
-  const trackMinHeight = useMemo(() => raceTrackMinHeightPx(players.length), [players.length]);
+  }, [players, trackMinHeight]);
 
   const hoppingIds = useRandomHopPlayerIds(placed.map((p) => p.id));
 
@@ -141,8 +139,8 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
       <p className="mb-6 text-center text-sm text-zinc-400">{t("pages.players.raceDesc")}</p>
 
       <div
-        className="relative mx-auto w-full max-w-md overflow-visible px-4 pb-8 pt-4 sm:px-8"
-        style={{ minHeight: `min(${trackMinHeight}px, 92dvh)` }}
+        className="relative mx-auto w-full max-w-md px-4 pb-8 pt-4 sm:px-8"
+        style={{ minHeight: `${trackMinHeight}px` }}
       >
         {/* Pista vertical */}
         <div
@@ -207,7 +205,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         })}
 
         {/* Jogadores na pista */}
-        <div className="absolute bottom-8 left-1/2 top-8 w-0 -translate-x-1/2 overflow-visible">
+        <div className="absolute bottom-8 left-1/2 top-8 w-0 -translate-x-1/2">
           {placed.map((player) => (
             <RaceAvatar key={player.id} player={player} hopping={hoppingIds.has(player.id)} />
           ))}

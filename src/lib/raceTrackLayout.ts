@@ -5,30 +5,36 @@ export const RACE_TRACK_MAX_RR = 2100;
 
 export const RACE_TRACK_MIN_RR = 0;
 
-/** Altura de referência da pista (px) para calcular espaçamento mínimo. */
-export const RACE_TRACK_REF_HEIGHT_PX = 640;
-
-/** Largura útil entre centros de avatares na horizontal. */
-export const RACE_AVATAR_SLOT_WIDTH_PX = 54;
-
 /** Tamanho aproximado do avatar + margem (px). */
 export const RACE_AVATAR_BOX_PX = 48 + 8;
 
-/** Passos de ajuste vertical quando a faixa horizontal está cheia (preserva RR aproximado). */
-const RACE_VERTICAL_NUDGE_STEPS = [0, 1.8, -1.8, 3.6, -3.6, 5.5, -5.5, 7.5, -7.5] as const;
+const TRACK_BOTTOM_PADDING_PERCENT = 5;
+const TRACK_TOP_PADDING_PERCENT = 8;
+
+export type RaceTierBand = {
+  tierId: RankTierId;
+  rrMin: number;
+  rrMax: number;
+  /** RR de referência no badge à direita. */
+  rrCenter: number;
+};
+
+export const RACE_TIER_BANDS: RaceTierBand[] = [
+  { tierId: "bronze", rrMin: 0, rrMax: 999, rrCenter: 500 },
+  { tierId: "prata", rrMin: 1000, rrMax: 1299, rrCenter: 1150 },
+  { tierId: "ouro", rrMin: 1300, rrMax: 1599, rrCenter: 1450 },
+  { tierId: "esmeralda", rrMin: 1600, rrMax: 1799, rrCenter: 1700 },
+  { tierId: "diamante", rrMin: 1800, rrMax: RACE_TRACK_MAX_RR, rrCenter: 1950 },
+];
+
+const SEGMENT_HEIGHT_PERCENT =
+  (100 - TRACK_BOTTOM_PADDING_PERCENT - TRACK_TOP_PADDING_PERCENT) / RACE_TIER_BANDS.length;
 
 export type RaceAvatarPlacement = {
   id: string;
   bottomPercent: number;
-  offsetX: number;
   zIndex: number;
 };
-
-/** Percentual vertical (0 = base/bronze, 100 = topo/diamante). */
-export function rrToTrackPercent(rr: number): number {
-  const clamped = Math.min(RACE_TRACK_MAX_RR, Math.max(RACE_TRACK_MIN_RR, rr));
-  return (clamped / RACE_TRACK_MAX_RR) * 100;
-}
 
 export type RaceTierMarker = {
   tierId: RankTierId;
@@ -36,15 +42,130 @@ export type RaceTierMarker = {
   percent: number;
 };
 
-export const RACE_TIER_MARKERS: RaceTierMarker[] = [
-  { tierId: "bronze", rrCenter: 500, percent: rrToTrackPercent(500) },
-  { tierId: "prata", rrCenter: 1150, percent: rrToTrackPercent(1150) },
-  { tierId: "ouro", rrCenter: 1450, percent: rrToTrackPercent(1450) },
-  { tierId: "esmeralda", rrCenter: 1700, percent: rrToTrackPercent(1700) },
-  { tierId: "diamante", rrCenter: 1950, percent: rrToTrackPercent(1950) },
-];
+function clampRr(rr: number): number {
+  return Math.min(RACE_TRACK_MAX_RR, Math.max(RACE_TRACK_MIN_RR, rr));
+}
 
-/** Agrupa jogadores por faixa de RR (degraus de 25) — legado / testes. */
+function clampPercent(value: number): number {
+  return Math.min(100, Math.max(0, value));
+}
+
+function findTierBand(rr: number): RaceTierBand {
+  const clamped = clampRr(rr);
+  return (
+    RACE_TIER_BANDS.find((band) => clamped >= band.rrMin && clamped <= band.rrMax) ??
+    RACE_TIER_BANDS[RACE_TIER_BANDS.length - 1]!
+  );
+}
+
+function tierSegmentStartPercent(segmentIndex: number): number {
+  return TRACK_BOTTOM_PADDING_PERCENT + segmentIndex * SEGMENT_HEIGHT_PERCENT;
+}
+
+/** Centro visual de cada faixa de elo — espaçamento uniforme na pista. */
+export function tierSegmentCenterPercent(segmentIndex: number): number {
+  return tierSegmentStartPercent(segmentIndex) + SEGMENT_HEIGHT_PERCENT / 2;
+}
+
+export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, index) => ({
+  tierId: band.tierId,
+  rrCenter: band.rrCenter,
+  percent: tierSegmentCenterPercent(index),
+}));
+
+/**
+ * Mapeia RR → posição vertical dentro da faixa do elo correspondente.
+ * Cada elo ocupa a mesma altura na pista (como o vão Bronze–Prata).
+ */
+export function rrToTrackPercent(rr: number): number {
+  const clamped = clampRr(rr);
+  const band = findTierBand(clamped);
+  const segmentIndex = RACE_TIER_BANDS.indexOf(band);
+  const span = Math.max(1, band.rrMax - band.rrMin);
+  const t = (clamped - band.rrMin) / span;
+
+  const innerPad = SEGMENT_HEIGHT_PERCENT * 0.12;
+  const segmentStart = tierSegmentStartPercent(segmentIndex);
+  const usable = SEGMENT_HEIGHT_PERCENT - innerPad * 2;
+
+  return segmentStart + innerPad + t * usable;
+}
+
+function minVerticalGapPercent(trackHeightPx: number): number {
+  return (RACE_AVATAR_BOX_PX / trackHeightPx) * 100;
+}
+
+function verticalCollides(a: number, b: number, minGap: number): boolean {
+  return Math.abs(a - b) < minGap;
+}
+
+function* verticalCandidates(target: number, minGap: number): Generator<number> {
+  yield target;
+  for (let step = 1; step <= 40; step += 1) {
+    yield target + step * minGap;
+    yield target - step * minGap;
+  }
+}
+
+/**
+ * Posiciona avatares só na linha vertical central; empilha para cima/baixo se necessário.
+ */
+export function layoutRaceAvatars(
+  players: Array<{ id: string; rr: number }>,
+  trackHeightPx: number,
+): RaceAvatarPlacement[] {
+  if (players.length === 0) return [];
+
+  const minGap = minVerticalGapPercent(trackHeightPx);
+  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
+  const occupied: number[] = [];
+
+  return sorted.map((player) => {
+    const target = rrToTrackPercent(player.rr);
+    let bottomPercent = target;
+
+    for (const candidate of verticalCandidates(target, minGap)) {
+      const clamped = clampPercent(candidate);
+      if (!occupied.some((other) => verticalCollides(clamped, other, minGap))) {
+        bottomPercent = clamped;
+        break;
+      }
+    }
+
+    occupied.push(bottomPercent);
+    return {
+      id: player.id,
+      bottomPercent,
+      zIndex: 10 + Math.round(bottomPercent),
+    };
+  });
+}
+
+function maxPlayersInTierBand(players: Array<{ rr: number }>): number {
+  const counts = new Map<number, number>();
+  for (const player of players) {
+    const index = RACE_TIER_BANDS.indexOf(findTierBand(player.rr));
+    counts.set(index, (counts.get(index) ?? 0) + 1);
+  }
+  return Math.max(0, ...counts.values());
+}
+
+/** Altura da pista: faixas generosas + folga extra na faixa mais cheia. */
+export function raceTrackMinHeightPx(playerCount: number, players: Array<{ rr: number }> = []): number {
+  const baseSegmentPx = 168;
+  const base = baseSegmentPx * RACE_TIER_BANDS.length + 120;
+  const busiest = maxPlayersInTierBand(players);
+  const extra = Math.max(0, busiest - 1) * RACE_AVATAR_BOX_PX;
+  const byCount = playerCount > 12 ? (playerCount - 12) * 24 : 0;
+  return Math.min(Math.max(base + extra + byCount, 960), 1600);
+}
+
+/** @deprecated Mantido para compatibilidade; avatares ficam na linha central. */
+export function horizontalSpreadIndex(_index: number, _total: number): number {
+  return 0;
+}
+
+/** @deprecated Agrupamento por banda de RR — use layoutRaceAvatars. */
 export function groupPlayersByRrBand<T extends { id: string; rr: number }>(players: T[]): Map<number, T[]> {
   const bands = new Map<number, T[]>();
   for (const p of players) {
@@ -54,95 +175,4 @@ export function groupPlayersByRrBand<T extends { id: string; rr: number }>(playe
     bands.set(band, list);
   }
   return bands;
-}
-
-/** Espalha índices simetricamente ao redor do centro da pista. */
-export function horizontalSpreadIndex(index: number, total: number, slotWidth = RACE_AVATAR_SLOT_WIDTH_PX): number {
-  if (total <= 1) return 0;
-  const center = (total - 1) / 2;
-  return (index - center) * slotWidth;
-}
-
-function clampPercent(value: number): number {
-  return Math.min(100, Math.max(0, value));
-}
-
-function buildHorizontalOffsets(maxSlots: number): number[] {
-  const offsets = [0];
-  for (let lane = 1; offsets.length < maxSlots; lane += 1) {
-    offsets.push(-lane * RACE_AVATAR_SLOT_WIDTH_PX);
-    if (offsets.length < maxSlots) {
-      offsets.push(lane * RACE_AVATAR_SLOT_WIDTH_PX);
-    }
-  }
-  return offsets;
-}
-
-function collides(
-  bottomPercent: number,
-  offsetX: number,
-  placed: Array<{ bottomPercent: number; offsetX: number }>,
-): boolean {
-  for (const other of placed) {
-    const verticalPx = (Math.abs(other.bottomPercent - bottomPercent) / 100) * RACE_TRACK_REF_HEIGHT_PX;
-    if (verticalPx >= RACE_AVATAR_BOX_PX) continue;
-
-    const horizontalPx = Math.abs(other.offsetX - offsetX);
-    if (horizontalPx < RACE_AVATAR_BOX_PX) {
-      return true;
-    }
-  }
-  return false;
-}
-
-function* candidatePlacements(targetPercent: number): Generator<{ bottomPercent: number; offsetX: number }> {
-  const horizontalOffsets = buildHorizontalOffsets(16);
-
-  for (const nudge of RACE_VERTICAL_NUDGE_STEPS) {
-    const bottomPercent = clampPercent(targetPercent + nudge);
-    for (const offsetX of horizontalOffsets) {
-      yield { bottomPercent, offsetX };
-    }
-  }
-}
-
-/**
- * Posiciona avatares evitando sobreposição: prioriza o RR real, depois espalha
- * na horizontal e só então aplica um leve ajuste vertical.
- */
-export function layoutRaceAvatars(players: Array<{ id: string; rr: number }>): RaceAvatarPlacement[] {
-  if (players.length === 0) return [];
-
-  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
-  const placed: RaceAvatarPlacement[] = [];
-  const occupied: Array<{ bottomPercent: number; offsetX: number }> = [];
-
-  for (const player of sorted) {
-    const targetPercent = rrToTrackPercent(player.rr);
-    let chosen = { bottomPercent: targetPercent, offsetX: 0 };
-
-    for (const candidate of candidatePlacements(targetPercent)) {
-      if (!collides(candidate.bottomPercent, candidate.offsetX, occupied)) {
-        chosen = candidate;
-        break;
-      }
-    }
-
-    occupied.push(chosen);
-    placed.push({
-      id: player.id,
-      bottomPercent: chosen.bottomPercent,
-      offsetX: chosen.offsetX,
-      zIndex: 10 + Math.round(chosen.bottomPercent),
-    });
-  }
-
-  return placed;
-}
-
-/** Altura mínima sugerida da pista conforme quantidade de jogadores. */
-export function raceTrackMinHeightPx(playerCount: number): number {
-  const base = 720;
-  if (playerCount <= 8) return base;
-  return Math.min(base + (playerCount - 8) * 36, 960);
 }
