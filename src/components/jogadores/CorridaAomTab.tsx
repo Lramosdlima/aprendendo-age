@@ -178,42 +178,59 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
           if (!tier) return null;
           const iconSrc = getTokenAssetUrl(tier.token);
           const theme = TIER_ACHIEVEMENT_THEME[marker.tierId];
+          const isBronzeStart = marker.tierId === "bronze";
 
           return (
             <div
               key={marker.tierId}
-              className="pointer-events-none absolute left-0 right-0 z-20 flex items-center gap-3"
+              className="pointer-events-none absolute left-0 right-0 z-20"
               style={{ bottom: `${marker.percent}%`, transform: "translateY(0)" }}
             >
-              <div
-                className={cn(
-                  "flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-2.5 shadow-lg sm:w-[8.25rem] sm:px-2.5",
-                  theme.surfaceClass,
-                )}
-              >
-                {iconSrc ? (
-                  <img src={iconSrc} alt="" className="h-9 w-9 object-contain sm:h-10 sm:w-10" width={40} height={40} />
-                ) : null}
-                <p className={cn("mt-1.5 text-center font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight sm:text-xs", tier.titleClass)}>
-                  {tier.rankName}
-                  <span className="mt-0.5 block text-[9px] font-normal normal-case tracking-normal text-zinc-400">
-                    {tier.eraName}
-                  </span>
-                </p>
-                <p className="mt-0.5 font-mono text-[9px] text-zinc-500">{tier.rrBand}</p>
-              </div>
+              <div className="relative flex items-center">
+                <div
+                  className={cn(
+                    "flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-2.5 shadow-lg sm:w-[8.25rem] sm:px-2.5",
+                    theme.surfaceClass,
+                  )}
+                >
+                  {iconSrc ? (
+                    <img src={iconSrc} alt="" className="h-9 w-9 object-contain sm:h-10 sm:w-10" width={40} height={40} />
+                  ) : null}
+                  <p className={cn("mt-1.5 text-center font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight sm:text-xs", tier.titleClass)}>
+                    {tier.rankName}
+                    <span className="mt-0.5 block text-[9px] font-normal normal-case tracking-normal text-zinc-400">
+                      {tier.eraName}
+                    </span>
+                  </p>
+                  <p className="mt-0.5 font-mono text-[9px] text-zinc-500">{tier.rrBand}</p>
+                </div>
 
-              <div className="h-px min-w-0 flex-1 bg-gradient-to-r from-amber-500/40 to-transparent" aria-hidden />
-
-              <div
-                className={cn(
-                  "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 bg-zinc-950 text-[10px] font-bold tabular-nums shadow-md sm:h-9 sm:w-9",
-                  theme.stepRing,
-                  theme.stepAccent,
-                )}
-                aria-hidden
-              >
-                {marker.rrStart}
+                {/* Bronze: linha só da pista vertical (50%) até o badge — marco zero */}
+                <div
+                  className={cn(
+                    "absolute flex items-center gap-2",
+                    isBronzeStart ? "left-1/2" : "left-[7.5rem] sm:left-[8.25rem]",
+                    "right-0",
+                  )}
+                >
+                  <div
+                    className={cn(
+                      "h-px min-w-0 flex-1 bg-gradient-to-r to-transparent",
+                      isBronzeStart ? "from-amber-500/55" : "from-amber-500/40",
+                    )}
+                    aria-hidden
+                  />
+                  <div
+                    className={cn(
+                      "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 bg-zinc-950 text-[10px] font-bold tabular-nums shadow-md sm:h-9 sm:w-9",
+                      theme.stepRing,
+                      theme.stepAccent,
+                    )}
+                    aria-hidden
+                  >
+                    {marker.rrStart}
+                  </div>
+                </div>
               </div>
             </div>
           );
