@@ -41,20 +41,8 @@ export type RaceTierMarker = {
   percent: number;
 };
 
-function clampRr(rr: number): number {
-  return Math.min(RACE_TRACK_MAX_RR, Math.max(RACE_TRACK_MIN_RR, rr));
-}
-
 function clampPercent(value: number): number {
   return Math.min(100, Math.max(0, value));
-}
-
-function findTierBand(rr: number): RaceTierBand {
-  const clamped = clampRr(rr);
-  return (
-    RACE_TIER_BANDS.find((band) => clamped >= band.rrMin && clamped <= band.rrMax) ??
-    RACE_TIER_BANDS[RACE_TIER_BANDS.length - 1]!
-  );
 }
 
 function tierSegmentStartPercent(segmentIndex: number): number {
@@ -72,93 +60,76 @@ export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, in
   percent: tierSegmentStartPercent(index),
 }));
 
-/**
- * Mapeia RR → posição vertical dentro da faixa do elo correspondente.
- * Cada elo ocupa a mesma altura na pista (como o vão Bronze–Prata).
- */
-export function rrToTrackPercent(rr: number): number {
-  const clamped = clampRr(rr);
-  const band = findTierBand(clamped);
-  const segmentIndex = RACE_TIER_BANDS.indexOf(band);
-  const span = Math.max(1, band.rrMax - band.rrMin);
-  const t = (clamped - band.rrMin) / span;
-
-  const innerPad = SEGMENT_HEIGHT_PERCENT * 0.12;
-  const segmentStart = tierSegmentStartPercent(segmentIndex);
-  const usable = SEGMENT_HEIGHT_PERCENT - innerPad * 2;
-
-  return segmentStart + innerPad + t * usable;
+function trackTopPercent(): number {
+  return 100 - TRACK_TOP_PADDING_PERCENT;
 }
 
-function tierSegmentBounds(segmentIndex: number): { min: number; max: number } {
-  const innerPad = SEGMENT_HEIGHT_PERCENT * 0.08;
-  return {
-    min: tierSegmentStartPercent(segmentIndex) + innerPad,
-    max: tierSegmentStartPercent(segmentIndex) + SEGMENT_HEIGHT_PERCENT - innerPad,
-  };
+function trackBottomPercent(): number {
+  return TRACK_BOTTOM_PADDING_PERCENT;
+}
+
+function trackUsableSpanPercent(): number {
+  return trackTopPercent() - trackBottomPercent();
+}
+
+/**
+ * Escala linear 0 → maxRrInLobby na pista.
+ * O maior RR da corrida ocupa a ponta superior da linha vertical.
+ */
+export function rrToTrackPercent(rr: number, maxRrInLobby: number): number {
+  const r = Math.max(RACE_TRACK_MIN_RR, rr);
+  const maxR = Math.max(maxRrInLobby, r, 1);
+  const t = r / maxR;
+  return trackBottomPercent() + t * trackUsableSpanPercent();
 }
 
 function minVerticalGapPercent(trackHeightPx: number): number {
   return (RACE_AVATAR_BOX_PX / trackHeightPx) * 100;
 }
 
-function layoutPlayersInTierBand(
+/**
+ * Posiciona avatares na linha vertical.
+ * O jogador com maior RR fica sempre na ponta; os demais seguem escala proporcional.
+ */
+export function layoutRaceAvatars(
   players: Array<{ id: string; rr: number }>,
-  segmentIndex: number,
   trackHeightPx: number,
 ): RaceAvatarPlacement[] {
   if (players.length === 0) return [];
 
-  const bounds = tierSegmentBounds(segmentIndex);
-  const span = bounds.max - bounds.min;
+  const maxRr = Math.max(...players.map((p) => p.rr));
+  const top = trackTopPercent();
+  const bottom = trackBottomPercent();
   const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
+  const minGap = Math.min(minVerticalGapPercent(trackHeightPx), trackUsableSpanPercent() / sorted.length);
 
-  if (sorted.length === 1) {
-    const only = sorted[0]!;
-    const bottomPercent = clampPercent(clamp(rrToTrackPercent(only.rr), bounds.min, bounds.max));
-    return [{ id: only.id, bottomPercent, zIndex: 10 + Math.round(bottomPercent) }];
+  const positions = new Map<string, number>();
+  for (const player of sorted) {
+    positions.set(player.id, clampPercent(clamp(rrToTrackPercent(player.rr, maxRr), bottom, top)));
   }
 
-  const baseMinGap = minVerticalGapPercent(trackHeightPx);
-  const minGap = Math.min(baseMinGap, span / sorted.length);
+  const topPlayer = sorted[sorted.length - 1]!;
+  positions.set(topPlayer.id, top);
 
-  const positions: number[] = [];
-  for (let i = 0; i < sorted.length; i += 1) {
-    const target = clampPercent(clamp(rrToTrackPercent(sorted[i]!.rr), bounds.min, bounds.max));
-    let pos = target;
-    if (i > 0) {
-      pos = Math.max(pos, positions[i - 1]! + minGap);
-    }
-    positions.push(Math.min(pos, bounds.max));
+  let prev = bottom - minGap;
+  for (const player of sorted) {
+    let pos = Math.max(positions.get(player.id)!, prev + minGap);
+    pos = Math.min(pos, top);
+    positions.set(player.id, pos);
+    prev = pos;
   }
 
-  const overflow = positions[positions.length - 1]! - bounds.max;
-  if (overflow > 0) {
-    for (let i = 0; i < positions.length; i += 1) {
-      positions[i] = positions[i]! - overflow;
-    }
-    for (let i = 1; i < positions.length; i += 1) {
-      positions[i] = Math.max(positions[i]!, positions[i - 1]! + minGap);
-    }
+  positions.set(topPlayer.id, top);
+  for (let i = sorted.length - 2; i >= 0; i -= 1) {
+    const player = sorted[i]!;
+    const aboveId = sorted[i + 1]!.id;
+    let pos = Math.min(positions.get(player.id)!, positions.get(aboveId)! - minGap);
+    pos = Math.max(pos, bottom);
+    positions.set(player.id, pos);
   }
 
-  const underflow = bounds.min - positions[0]!;
-  if (underflow > 0) {
-    for (let i = 0; i < positions.length; i += 1) {
-      positions[i] = positions[i]! + underflow;
-    }
-  }
-
-  // Se ainda não couber, distribui uniformemente mantendo a ordem de RR.
-  if (positions[positions.length - 1]! > bounds.max || positions[0]! < bounds.min) {
-    const step = span / sorted.length;
-    for (let i = 0; i < sorted.length; i += 1) {
-      positions[i] = bounds.min + step * i + step / 2;
-    }
-  }
-
-  return sorted.map((player, index) => {
-    const bottomPercent = clampPercent(positions[index]!);
+  return sorted.map((player) => {
+    const bottomPercent = positions.get(player.id)!;
     return {
       id: player.id,
       bottomPercent,
@@ -167,53 +138,17 @@ function layoutPlayersInTierBand(
   });
 }
 
-/**
- * Posiciona avatares na linha vertical, sempre dentro da faixa do elo (RR).
- * Colisões são resolvidas só dentro do mesmo tier — nunca empurra para bronze/prata etc.
- */
-export function layoutRaceAvatars(
-  players: Array<{ id: string; rr: number }>,
-  trackHeightPx: number,
-): RaceAvatarPlacement[] {
-  if (players.length === 0) return [];
-
-  const byTier = new Map<number, Array<{ id: string; rr: number }>>();
-  for (const player of players) {
-    const segmentIndex = RACE_TIER_BANDS.indexOf(findTierBand(player.rr));
-    const list = byTier.get(segmentIndex) ?? [];
-    list.push(player);
-    byTier.set(segmentIndex, list);
-  }
-
-  const result: RaceAvatarPlacement[] = [];
-  for (const [segmentIndex, bandPlayers] of byTier) {
-    result.push(...layoutPlayersInTierBand(bandPlayers, segmentIndex, trackHeightPx));
-  }
-  return result;
-}
-
 function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
 }
 
-function maxPlayersInTierBand(players: Array<{ rr: number }>): number {
-  const counts = new Map<number, number>();
-  for (const player of players) {
-    const index = RACE_TIER_BANDS.indexOf(findTierBand(player.rr));
-    counts.set(index, (counts.get(index) ?? 0) + 1);
-  }
-  return Math.max(0, ...counts.values());
-}
-
-/** Altura da pista: garante espaço vertical na faixa com mais jogadores. */
+/** Altura da pista: garante espaço vertical para todos os jogadores. */
 export function raceTrackMinHeightPx(_playerCount: number, players: Array<{ rr: number }> = []): number {
   const baseSegmentPx = 168;
   const base = baseSegmentPx * RACE_TIER_BANDS.length + 120;
-  const busiest = maxPlayersInTierBand(players);
-  const usableSegmentFraction = (SEGMENT_HEIGHT_PERCENT * 0.84) / 100;
-  const neededForBusiest =
-    busiest > 1 ? Math.ceil((busiest * RACE_AVATAR_BOX_PX) / usableSegmentFraction) + 160 : 0;
-  return Math.min(Math.max(base, neededForBusiest, 960), 2400);
+  const count = Math.max(players.length, 1);
+  const neededForAll = Math.ceil((count * RACE_AVATAR_BOX_PX) / (trackUsableSpanPercent() / 100)) + 160;
+  return Math.min(Math.max(base, neededForAll, 960), 2400);
 }
 
 /** @deprecated Mantido para compatibilidade; avatares ficam na linha central. */
