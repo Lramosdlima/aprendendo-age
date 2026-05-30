@@ -8,14 +8,14 @@ export const RACE_TRACK_MIN_RR = 0;
 /** Tamanho do avatar renderizado (px) — usar o maior breakpoint (moldura compacta). */
 export const RACE_AVATAR_RENDER_PX = 64;
 
-/** Desconto top-8 + bottom-8 do container externo. */
-export const RACE_TRACK_LANE_INSET_PX = 64;
+/** Desconto top/bottom da faixa (mobile top-12 + bottom-8). */
+export const RACE_TRACK_LANE_INSET_PX = 80;
 
 /** Espaço extra no topo/base para o brilho da moldura não ser cortado. */
-export const RACE_AVATAR_GLOW_PAD_PX = 14;
+export const RACE_AVATAR_GLOW_PAD_PX = 28;
 
 /** Classe Tailwind da faixa útil da pista (alinha com a linha vertical tracejada). */
-export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 top-8 bottom-8";
+export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 bottom-8 top-12 sm:top-8";
 
 export type RaceTierBand = {
   tierId: RankTierId;
@@ -213,7 +213,7 @@ export function layoutRaceAvatars(
     return {
       id: player.id,
       bottomPercent,
-      zIndex: 10 + Math.round(bottomPercent),
+      zIndex: Math.min(22, 10 + Math.round(bottomPercent / 15)),
     };
   });
 }

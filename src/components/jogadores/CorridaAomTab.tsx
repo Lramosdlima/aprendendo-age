@@ -77,7 +77,7 @@ function RaceAvatar({
         bottom: `${player.bottomPercent}%`,
         left: "50%",
         transform: raceAvatarTransform(),
-        zIndex: selected ? 250 : player.zIndex,
+        zIndex: selected ? 25 : player.zIndex,
       }}
     >
       <button
@@ -154,11 +154,11 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   }
 
   return (
-    <div className="mx-auto w-full max-w-2xl">
-      <p className="mb-8 text-center text-sm text-zinc-400">{t("pages.players.raceDesc")}</p>
+    <div className="relative z-0 mx-auto w-full max-w-2xl">
+      <p className="mb-6 text-center text-sm text-zinc-400 sm:mb-8">{t("pages.players.raceDesc")}</p>
 
       <div
-        className="relative mx-auto w-full max-w-md overflow-visible px-4 pb-8 pt-6 sm:px-8"
+        className="relative mx-auto w-full max-w-md overflow-x-hidden px-4 pb-8 pt-4 sm:overflow-visible sm:px-8 sm:pt-6"
         style={{ minHeight: `${trackMinHeight}px` }}
       >
         {/* Faixa útil da pista — marcos, linha e avatares compartilham 0% (base) e 100% (topo) */}
@@ -230,8 +230,8 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             );
           })}
 
-          {/* Jogadores na linha vertical — overflow visible para o brilho da moldura */}
-          <div className="pointer-events-none absolute inset-0 z-30 overflow-visible">
+          {/* Jogadores na linha vertical — z abaixo do header sticky (z-30) */}
+          <div className="pointer-events-none absolute inset-0 z-10 overflow-visible">
             {placed.map((player) => (
               <RaceAvatar
                 key={player.id}
