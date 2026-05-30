@@ -5,13 +5,7 @@ import { getFormRankPortraitPath, MolduraAgeAvatar } from "@/components/rank/ran
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
-import {
-  layoutRaceAvatars,
-  raceTrackLaneHeightPx,
-  raceTrackMinHeightPx,
-  RACE_TIER_MARKERS,
-  RACE_TRACK_LANE_CLASS,
-} from "@/lib/raceTrackLayout";
+import { computeRaceTrackLayout, RACE_TRACK_LANE_CLASS } from "@/lib/raceTrackLayout";
 import { getRankGuideTiers } from "@/lib/rankGuideTiers";
 import { getRankClassification, TIER_ACHIEVEMENT_THEME } from "@/lib/rankClassification";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
@@ -117,14 +111,13 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   const { t } = useTranslation();
   const tiers = useMemo(() => getRankGuideTiers(t), [t]);
 
-  const trackMinHeight = useMemo(() => raceTrackMinHeightPx(players.length, players), [players]);
-  const laneHeightPx = useMemo(() => raceTrackLaneHeightPx(trackMinHeight), [trackMinHeight]);
+  const layout = useMemo(() => computeRaceTrackLayout(players), [players]);
+  const trackMinHeight = layout.containerMinHeightPx;
 
   const placed = useMemo(() => {
-    const layout = layoutRaceAvatars(players, laneHeightPx);
     const byId = new Map(players.map((p) => [p.id, p]));
 
-    return layout
+    return layout.avatars
       .map((slot) => {
         const player = byId.get(slot.id);
         if (!player) return null;
@@ -135,7 +128,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         };
       })
       .filter((p): p is PlacedPlayer => p != null);
-  }, [players, laneHeightPx]);
+  }, [players, layout]);
 
   const hoppingIds = useRandomHopPlayerIds(placed.map((p) => p.id));
 
@@ -178,7 +171,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
           />
 
           {/* Marcos de elo — Bronze em bottom: 0% (ponta da pista) */}
-          {RACE_TIER_MARKERS.map((marker) => {
+          {layout.markers.map((marker) => {
             const tier = tiers.find((x) => x.id === marker.tierId);
             if (!tier) return null;
             const iconSrc = getTokenAssetUrl(tier.token);
