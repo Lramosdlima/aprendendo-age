@@ -6,6 +6,7 @@ import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
 import {
   layoutRaceAvatars,
+  raceTrackLaneHeightPx,
   raceTrackMinHeightPx,
   RACE_TIER_MARKERS,
   RACE_TRACK_LANE_CLASS,
@@ -48,9 +49,7 @@ function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
   return hoppingIds;
 }
 
-function raceAvatarTransform(bottomPercent: number): string {
-  if (bottomPercent >= 99.5) return "translate(-50%, -50%)";
-  if (bottomPercent <= 0.5) return "translate(-50%, 50%)";
+function raceAvatarTransform(): string {
   return "translate(-50%, 50%)";
 }
 
@@ -76,7 +75,7 @@ function RaceAvatar({
       style={{
         bottom: `${player.bottomPercent}%`,
         left: "50%",
-        transform: raceAvatarTransform(player.bottomPercent),
+        transform: raceAvatarTransform(),
         zIndex: selected ? 250 : player.zIndex,
       }}
     >
@@ -122,9 +121,10 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   const tiers = useMemo(() => getRankGuideTiers(t), [t]);
 
   const trackMinHeight = useMemo(() => raceTrackMinHeightPx(players.length, players), [players]);
+  const laneHeightPx = useMemo(() => raceTrackLaneHeightPx(trackMinHeight), [trackMinHeight]);
 
   const placed = useMemo(() => {
-    const layout = layoutRaceAvatars(players, trackMinHeight);
+    const layout = layoutRaceAvatars(players, laneHeightPx);
     const byId = new Map(players.map((p) => [p.id, p]));
 
     return layout
@@ -138,7 +138,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
         };
       })
       .filter((p): p is PlacedPlayer => p != null);
-  }, [players, trackMinHeight]);
+  }, [players, laneHeightPx]);
 
   const hoppingIds = useRandomHopPlayerIds(placed.map((p) => p.id));
 
@@ -158,7 +158,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
 
   return (
     <div className="mx-auto w-full max-w-2xl">
-      <p className="mb-6 text-center text-sm text-zinc-400">{t("pages.players.raceDesc")}</p>
+      <p className="mb-8 text-center text-sm text-zinc-400">{t("pages.players.raceDesc")}</p>
 
       <div
         className="relative mx-auto w-full max-w-md px-4 pb-8 pt-4 sm:px-8"

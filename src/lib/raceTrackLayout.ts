@@ -5,11 +5,14 @@ export const RACE_TRACK_MAX_RR = 2100;
 
 export const RACE_TRACK_MIN_RR = 0;
 
-/** Tamanho aproximado do avatar + margem (px). */
-export const RACE_AVATAR_BOX_PX = 48 + 8;
+/** Tamanho do avatar renderizado (px) — usar o maior breakpoint. */
+export const RACE_AVATAR_RENDER_PX = 52;
+
+/** Desconto top-8 + bottom-8 do container externo. */
+export const RACE_TRACK_LANE_INSET_PX = 64;
 
 /** Classe Tailwind da faixa útil da pista (alinha com a linha vertical tracejada). */
-export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 top-8 bottom-8";
+export const RACE_TRACK_LANE_CLASS = "absolute inset-x-0 top-8 bottom-8 overflow-hidden";
 
 export type RaceTierBand = {
   tierId: RankTierId;
@@ -60,54 +63,68 @@ export const RACE_TIER_MARKERS: RaceTierMarker[] = RACE_TIER_BANDS.map((band, in
   percent: tierSegmentStartPercent(index),
 }));
 
-/** Ponta superior da faixa útil (100%). */
-export function trackTopPercent(): number {
-  return 100;
+/** Ponta superior — centro do avatar encostado no topo da faixa (sem vazar). */
+export function trackTopPercent(laneHeightPx: number): number {
+  const inset = ((RACE_AVATAR_RENDER_PX / 2) / laneHeightPx) * 100;
+  return 100 - inset;
 }
 
-/** Ponta inferior da faixa útil (0%). */
-export function trackBottomPercent(): number {
-  return 0;
+/** Ponta inferior — centro do avatar encostado na base da faixa. */
+export function trackBottomPercent(laneHeightPx: number): number {
+  const inset = ((RACE_AVATAR_RENDER_PX / 2) / laneHeightPx) * 100;
+  return inset;
 }
 
-function trackUsableSpanPercent(): number {
-  return 100;
+function trackUsableSpanPercent(laneHeightPx: number): number {
+  return trackTopPercent(laneHeightPx) - trackBottomPercent(laneHeightPx);
+}
+
+/** Altura útil da faixa a partir do minHeight do container externo. */
+export function raceTrackLaneHeightPx(outerHeightPx: number): number {
+  return Math.max(outerHeightPx - RACE_TRACK_LANE_INSET_PX, 320);
 }
 
 /**
  * Escala linear 0 → maxRrInLobby na pista.
- * 0% = ponta inferior; 100% = ponta superior (top 1).
+ * Extremos reservam metade do avatar para não ultrapassar a faixa.
  */
-export function rrToTrackPercent(rr: number, maxRrInLobby: number): number {
+export function rrToTrackPercent(rr: number, maxRrInLobby: number, laneHeightPx: number): number {
   const r = Math.max(RACE_TRACK_MIN_RR, rr);
   const maxR = Math.max(maxRrInLobby, r, 1);
   const t = r / maxR;
-  return t * trackUsableSpanPercent();
+  const bottom = trackBottomPercent(laneHeightPx);
+  return bottom + t * trackUsableSpanPercent(laneHeightPx);
 }
 
-function minVerticalGapPercent(trackHeightPx: number): number {
-  return (RACE_AVATAR_BOX_PX / trackHeightPx) * 100;
+function minVerticalGapPercent(laneHeightPx: number): number {
+  return (RACE_AVATAR_RENDER_PX / laneHeightPx) * 100;
 }
 
 /**
- * Posiciona avatares na linha vertical (0–100% da faixa).
- * O maior RR fica na ponta superior (100%).
+ * Posiciona avatares na linha vertical, contidos na faixa.
+ * O maior RR fica no topo útil da pista (sem sobrepor o texto acima).
  */
 export function layoutRaceAvatars(
   players: Array<{ id: string; rr: number }>,
-  trackHeightPx: number,
+  laneHeightPx: number,
 ): RaceAvatarPlacement[] {
   if (players.length === 0) return [];
 
   const maxRr = Math.max(...players.map((p) => p.rr));
-  const top = trackTopPercent();
-  const bottom = trackBottomPercent();
+  const top = trackTopPercent(laneHeightPx);
+  const bottom = trackBottomPercent(laneHeightPx);
   const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
-  const minGap = Math.min(minVerticalGapPercent(trackHeightPx), trackUsableSpanPercent() / sorted.length);
+  const minGap = Math.min(
+    minVerticalGapPercent(laneHeightPx),
+    trackUsableSpanPercent(laneHeightPx) / sorted.length,
+  );
 
   const positions = new Map<string, number>();
   for (const player of sorted) {
-    positions.set(player.id, clampPercent(clamp(rrToTrackPercent(player.rr, maxRr), bottom, top)));
+    positions.set(
+      player.id,
+      clampPercent(clamp(rrToTrackPercent(player.rr, maxRr, laneHeightPx), bottom, top)),
+    );
   }
 
   const topPlayer = sorted[sorted.length - 1]!;
@@ -145,8 +162,8 @@ export function raceTrackMinHeightPx(_playerCount: number, players: Array<{ rr: 
   const baseSegmentPx = 168;
   const laneBase = baseSegmentPx * RACE_TIER_BANDS.length;
   const count = Math.max(players.length, 1);
-  const neededForAll = Math.ceil((count * RACE_AVATAR_BOX_PX) / 1) + 160;
-  return Math.min(Math.max(laneBase + neededForAll, 960), 2400);
+  const neededLane = Math.ceil(count * RACE_AVATAR_RENDER_PX) + 160;
+  return Math.min(Math.max(laneBase + neededLane + RACE_TRACK_LANE_INSET_PX, 960), 2400);
 }
 
 /** @deprecated Mantido para compatibilidade; avatares ficam na linha central. */
