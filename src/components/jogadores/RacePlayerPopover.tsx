@@ -55,13 +55,19 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
       setPosition(computePosition(anchorEl, popoverRef.current));
     };
     update();
+
+    const el = popoverRef.current;
+    const ro = el ? new ResizeObserver(update) : null;
+    if (el && ro) ro.observe(el);
+
     window.addEventListener("resize", update);
     window.addEventListener("scroll", update, true);
     return () => {
+      ro?.disconnect();
       window.removeEventListener("resize", update);
       window.removeEventListener("scroll", update, true);
     };
-  }, [anchorEl, player.id]);
+  }, [anchorEl, player.id, label, cls.categoryLabel, cls.subcategoryLabel]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -92,7 +98,7 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
       role="dialog"
       aria-label={label}
       className={cn(
-        "fixed z-[300] w-[min(17rem,calc(100vw-1.25rem))]",
+        "fixed z-[300] w-fit min-w-[17rem] max-w-[min(calc(100vw-1.25rem),28rem)]",
         "overflow-hidden rounded-2xl border border-aom-border/60 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]",
         theme.surfaceClass,
       )}
@@ -121,11 +127,11 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
             )}
           </div>
 
-          <div className="min-w-0 flex-1">
-            <p className="truncate font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50">
+          <div className="min-w-0 overflow-hidden">
+            <p className="truncate whitespace-nowrap font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50">
               {label}
             </p>
-            <p className="mt-0.5 truncate text-[11px] text-zinc-400">{cls.categoryLabel}</p>
+            <p className="mt-0.5 truncate whitespace-nowrap text-[11px] text-zinc-400">{cls.categoryLabel}</p>
           </div>
 
           <img
@@ -137,10 +143,10 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
           />
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-2.5">
+        <div className="mt-4 grid grid-cols-[1fr_auto] gap-2.5">
           <div
             className={cn(
-              "rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2.5 text-center ring-inset",
+              "min-w-[5.5rem] rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2.5 text-center ring-inset",
               theme.stepRing,
               "ring-1",
             )}
@@ -155,7 +161,7 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
 
           <div
             className={cn(
-              "flex flex-col items-center justify-center rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2.5 ring-inset",
+              "flex min-w-[5.5rem] flex-col items-center justify-center rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2.5 ring-inset",
               theme.stepRing,
               "ring-1",
             )}
@@ -163,7 +169,7 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
             <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-500">
               {t("pages.players.racePopoverRank")}
             </p>
-            <div className="mt-1.5 flex items-center gap-2">
+            <div className="mt-1.5 flex items-center gap-2 whitespace-nowrap">
               <span
                 className={cn(
                   "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-bold shadow-inner",
@@ -173,7 +179,7 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
               >
                 {roman}
               </span>
-              <span className={cn("text-sm font-semibold leading-tight", theme.titleRankClass)}>
+              <span className={cn("text-sm font-semibold leading-none", theme.titleRankClass)}>
                 {cls.subcategoryLabel}
               </span>
             </div>
