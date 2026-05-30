@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 import { RacePlayerPopover } from "@/components/jogadores/RacePlayerPopover";
+import { getFormRankPortraitPath, MolduraAgeAvatar } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
@@ -66,12 +67,11 @@ function RaceAvatar({
 }) {
   const { t } = useTranslation();
   const cls = getRankClassification(player.rr);
-  const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
   const label = playerDisplayLabel(player);
 
   return (
     <div
-      className="pointer-events-auto absolute h-12 w-12 shrink-0 sm:h-[3.25rem] sm:w-[3.25rem]"
+      className="pointer-events-auto absolute h-14 w-14 shrink-0 sm:h-16 sm:w-16"
       style={{
         bottom: `${player.bottomPercent}%`,
         left: "50%",
@@ -85,29 +85,25 @@ function RaceAvatar({
         aria-label={t("pages.players.raceAvatarOpen", { name: label })}
         onClick={(e) => onSelect(player, e.currentTarget)}
         className={cn(
-          "race-avatar-hop relative block h-full w-full touch-manipulation rounded-full border-2 bg-zinc-950 p-0 shadow-lg shadow-black/50 transition",
-          "cursor-pointer overflow-hidden",
+          "race-avatar-hop relative block h-full w-full touch-manipulation rounded-full bg-transparent p-0 transition",
+          "cursor-pointer overflow-visible",
           "hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
-          theme.stepRing,
           selected && "ring-2 ring-amber-300/70 ring-offset-2 ring-offset-zinc-950",
           hopping && "is-hopping",
         )}
       >
-        {player.logoPath ? (
-          <img
-            src={player.logoPath}
-            alt=""
-            className="pointer-events-none absolute inset-0 h-full w-full rounded-full object-cover"
-            width={48}
-            height={48}
-            loading="lazy"
-            draggable={false}
-          />
-        ) : (
-          <span className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">
-            ?
-          </span>
-        )}
+        <MolduraAgeAvatar
+          tierId={cls.tierId}
+          ageToken={cls.ageToken}
+          frameImageSrc={getFormRankPortraitPath(cls.tierId)}
+          portraitUrl={player.logoPath}
+          size="compact"
+          emptyFallback={
+            <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-[10px] text-zinc-500">
+              ?
+            </div>
+          }
+        />
       </button>
       <span className="sr-only">
         {t("pages.players.racePlayerRr", { name: label, rr: player.rr })}

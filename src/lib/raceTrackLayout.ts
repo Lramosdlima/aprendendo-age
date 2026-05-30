@@ -5,8 +5,8 @@ export const RACE_TRACK_MAX_RR = 2100;
 
 export const RACE_TRACK_MIN_RR = 0;
 
-/** Tamanho do avatar renderizado (px) — usar o maior breakpoint. */
-export const RACE_AVATAR_RENDER_PX = 52;
+/** Tamanho do avatar renderizado (px) — usar o maior breakpoint (moldura compacta). */
+export const RACE_AVATAR_RENDER_PX = 64;
 
 /** Desconto top-8 + bottom-8 do container externo. */
 export const RACE_TRACK_LANE_INSET_PX = 64;

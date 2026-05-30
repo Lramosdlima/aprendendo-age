@@ -36,6 +36,8 @@ function getFormRankPortraitPath(tierId: RankTierId): string {
   return FORM_RANK_PORTRAIT[tierId];
 }
 
+export { getFormRankPortraitPath };
+
 /** Classes em `index.css` — mesmo critério do form-retold (Ouro+). */
 function rankPortraitShineClass(tierId: RankTierId): string | undefined {
   if (tierId === "ouro") return "shine-ouro";
@@ -236,10 +238,10 @@ function splitCategoryLabel(categoryLabel: string): { rank: string; era: string 
 }
 
 /**
- * Ícone da era (moldura) + retrato circular centrado — mesmo layout em Perfil e Deuses.
+ * Ícone da era (moldura) + retrato circular centrado — mesmo layout em Perfil, Deuses e Corrida AoM.
  * AJUSTE MANUAL: tamanhos em `w-[9rem]…`, retrato `h-[5.75rem]…` / `sm:h-24`.
  */
-function MolduraAgeAvatar({
+export function MolduraAgeAvatar({
   tierId,
   ageToken,
   /** Se definido (ex.: `/assets/rank/Portrait_*.png`), substitui o ícone de era dos tokens Notion só neste componente. */
@@ -248,6 +250,7 @@ function MolduraAgeAvatar({
   emptyFallback,
   /** Selo romano na base da moldura (centro), alinhado ao overlay HUD Meta. */
   romanBadge,
+  size = "default",
   t,
 }: {
   tierId: RankTierId;
@@ -256,27 +259,40 @@ function MolduraAgeAvatar({
   portraitUrl: string | null | undefined;
   emptyFallback: ReactNode;
   romanBadge?: { step: RankRomanStep; medallionClass: string };
-  t: (key: string, params?: Record<string, string | number>) => string;
+  size?: "default" | "compact";
+  t?: (key: string, params?: Record<string, string | number>) => string;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = frameImageSrc?.trim() ? frameImageSrc : getTokenAssetUrl(ageToken);
   const showFlames = tierId === "diamante";
+  const compact = size === "compact";
+
   return (
-    <div className="relative mx-auto aspect-square w-[9rem] overflow-visible sm:w-[9.75rem] md:w-[10rem]">
-      <div
-        className={cn(
-          "pointer-events-none absolute left-1/2 top-1/2 z-0 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl",
-          theme.iconBlurClass,
-        )}
-        aria-hidden
-      />
+    <div
+      className={cn(
+        "relative mx-auto aspect-square overflow-visible",
+        compact ? "h-full w-full" : "w-[9rem] sm:w-[9.75rem] md:w-[10rem]",
+      )}
+    >
+      {!compact ? (
+        <div
+          className={cn(
+            "pointer-events-none absolute left-1/2 top-1/2 z-0 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl",
+            theme.iconBlurClass,
+          )}
+          aria-hidden
+        />
+      ) : null}
       {showFlames ? (
         <img
           src={FORM_RANK_BORDA_CHAMAS}
           alt=""
-          className="pointer-events-none absolute left-1/2 top-1/2 z-[1] h-[118%] w-[118%] -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.92]"
-          width={200}
-          height={200}
+          className={cn(
+            "pointer-events-none absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2 object-contain",
+            compact ? "h-full w-full opacity-90" : "h-[118%] w-[118%] opacity-[0.92]",
+          )}
+          width={compact ? 64 : 200}
+          height={compact ? 64 : 200}
         />
       ) : null}
       {ageSrc ? (
@@ -285,27 +301,37 @@ function MolduraAgeAvatar({
           alt=""
           className={cn(
             "absolute left-1/2 top-1/2 z-[2] h-[88%] w-[88%] -translate-x-1/2 -translate-y-1/2 object-contain",
-            rankPortraitShineClass(tierId) ?? "drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]",
+            rankPortraitShineClass(tierId) ??
+              (compact ? "drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]" : "drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"),
           )}
-          width={160}
-          height={160}
+          width={compact ? 56 : 160}
+          height={compact ? 56 : 160}
         />
       ) : null}
       <div className="absolute inset-0 z-[3] flex items-center justify-center">
         <div
           className={cn(
-            "h-[5.75rem] w-[5.75rem] shrink-0 rounded-full border-[2.5px] bg-zinc-950/90 p-[3px] shadow-lg ring-2 ring-inset sm:h-24 sm:w-24",
+            "shrink-0 rounded-full bg-zinc-950/90 shadow-lg ring-inset",
+            compact
+              ? "h-[58%] w-[58%] border-[2px] p-[2px] ring-1"
+              : "h-[5.75rem] w-[5.75rem] border-[2.5px] p-[3px] ring-2 sm:h-24 sm:w-24",
             theme.stepRing,
           )}
         >
           {portraitUrl ? (
-            <img src={portraitUrl} alt="" className="h-full w-full rounded-full object-cover" width={96} height={96} />
+            <img
+              src={portraitUrl}
+              alt=""
+              className="h-full w-full rounded-full object-cover"
+              width={compact ? 36 : 96}
+              height={compact ? 36 : 96}
+            />
           ) : (
             emptyFallback
           )}
         </div>
       </div>
-      {romanBadge ? (
+      {romanBadge && t ? (
         <div
           className={cn(
             "pointer-events-none absolute bottom-0 left-1/2 z-[5] flex h-7 min-w-[2.55rem] -translate-x-1/2 translate-y-[18%] items-center justify-center rounded-lg border-[3px] px-2.5 py-0 shadow-[0_3px_10px_rgba(0,0,0,0.78),inset_0_1px_0_rgba(255,255,255,0.14)] ring-2 ring-black/55 sm:h-8 sm:min-w-[2.95rem] sm:translate-y-[16%] sm:px-3 sm:rounded-xl md:h-9 md:min-w-[3.35rem] md:px-3.5 md:border-[3.5px]",
