@@ -65,7 +65,7 @@ function RaceAvatar({
 
   return (
     <div
-      className="absolute flex flex-col items-center"
+      className="pointer-events-auto absolute h-12 w-12 shrink-0 sm:h-[3.25rem] sm:w-[3.25rem]"
       style={{
         bottom: `${player.bottomPercent}%`,
         left: "50%",
@@ -79,8 +79,8 @@ function RaceAvatar({
         aria-label={t("pages.players.raceAvatarOpen", { name: label })}
         onClick={(e) => onSelect(player, e.currentTarget)}
         className={cn(
-          "race-avatar-hop relative rounded-full border-2 bg-zinc-950 p-0.5 shadow-lg shadow-black/50 transition",
-          "h-11 w-11 cursor-pointer sm:h-12 sm:w-12",
+          "race-avatar-hop relative block h-full w-full touch-manipulation rounded-full border-2 bg-zinc-950 p-0 shadow-lg shadow-black/50 transition",
+          "cursor-pointer overflow-hidden",
           "hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
           theme.stepRing,
           selected && "ring-2 ring-amber-300/70 ring-offset-2 ring-offset-zinc-950",
@@ -91,15 +91,16 @@ function RaceAvatar({
           <img
             src={player.logoPath}
             alt=""
-            className="h-full w-full rounded-full object-cover"
-            width={44}
-            height={44}
+            className="pointer-events-none absolute inset-0 h-full w-full rounded-full object-cover"
+            width={48}
+            height={48}
             loading="lazy"
+            draggable={false}
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">
+          <span className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">
             ?
-          </div>
+          </span>
         )}
       </button>
       <span className="sr-only">
@@ -158,7 +159,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
       >
         {/* Pista vertical */}
         <div
-          className="absolute bottom-8 left-1/2 top-8 w-[3px] -translate-x-1/2 rounded-full"
+          className="pointer-events-none absolute bottom-8 left-1/2 top-8 w-[3px] -translate-x-1/2 rounded-full"
           aria-hidden
           style={{
             background:
@@ -181,7 +182,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
           return (
             <div
               key={marker.tierId}
-              className="absolute left-0 right-0 z-20 flex items-center gap-3"
+              className="pointer-events-none absolute left-0 right-0 z-20 flex items-center gap-3"
               style={{ bottom: `${marker.percent}%`, transform: "translateY(50%)" }}
             >
               <div
@@ -218,8 +219,8 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
           );
         })}
 
-        {/* Jogadores na pista */}
-        <div className="absolute bottom-8 left-1/2 top-8 w-0 -translate-x-1/2">
+        {/* Jogadores na pista — acima dos marcos; cliques só nos avatares */}
+        <div className="pointer-events-none absolute bottom-8 left-1/2 top-8 z-30 w-0 -translate-x-1/2">
           {placed.map((player) => (
             <RaceAvatar
               key={player.id}
