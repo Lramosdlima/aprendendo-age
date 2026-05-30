@@ -1,7 +1,7 @@
 import { useLayoutEffect, useEffect, useMemo, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
-import { LanguageToggle } from "@/components/ui/LanguageToggle";
+import { SettingsMenu } from "@/components/ui/SettingsMenu";
 import { cn } from "@/lib/cn";
 import { useTranslation } from "@/hooks/useTranslation";
 import { localeSectionPath, sectionFromPathSegment, type LocaleSection } from "@/lib/localeRoutes";
@@ -172,7 +172,7 @@ export function AppShell() {
 
   return (
     <div className="flex min-h-screen flex-col md:flex-row">
-      <LanguageToggle />
+      <SettingsMenu />
 
       <header className="sticky top-0 z-30 flex min-h-16 shrink-0 items-center gap-3 border-b border-aom-border bg-zinc-950/95 px-3 py-3 backdrop-blur-sm md:hidden">
         <button

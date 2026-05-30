@@ -1,0 +1,162 @@
+import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+import { useAuth } from "@/context/AuthContext";
+import { useLocaleSwitch } from "@/hooks/useLocaleSwitch";
+import { useTranslation } from "@/hooks/useTranslation";
+import { cn } from "@/lib/cn";
+import { localeAuthPath } from "@/lib/localeRoutes";
+
+function GearIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width={20}
+      height={20}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" />
+    </svg>
+  );
+}
+
+function menuItemClassName() {
+  return cn(
+    "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm",
+    "text-zinc-200 transition-colors hover:bg-zinc-800/90 hover:text-white",
+  );
+}
+
+export function SettingsMenu({ className }: { className?: string }) {
+  const { t, locale } = useTranslation();
+  const { status } = useAuth();
+  const { targetFlag, switchLocale, switchLanguageLabel } = useLocaleSwitch();
+  const { pathname } = useLocation();
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  const isAuthenticated = status === "authenticated";
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node;
+      if (rootRef.current && !rootRef.current.contains(target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("touchstart", onPointerDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("touchstart", onPointerDown);
+    };
+  }, [open]);
+
+  return (
+    <div
+      ref={rootRef}
+      className={cn(
+        "fixed right-4 top-[max(1rem,env(safe-area-inset-top,0px)+0.5rem)] z-[60]",
+        className,
+      )}
+    >
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        aria-haspopup="menu"
+        aria-label={t("settings.openMenu")}
+        title={t("settings.title")}
+        className={cn(
+          "flex h-10 items-center gap-2 rounded-full border border-aom-border",
+          "bg-zinc-950/90 px-3 shadow-lg shadow-black/30 backdrop-blur-sm",
+          "text-zinc-200 transition hover:border-amber-500/45 hover:bg-zinc-900",
+          "focus:outline-none focus:ring-2 focus:ring-amber-500/35",
+        )}
+      >
+        <GearIcon className="shrink-0 text-amber-200/95" />
+        <span className="hidden text-sm font-medium text-amber-200/95 md:inline">{t("settings.title")}</span>
+      </button>
+
+      {open ? (
+        <div
+          role="menu"
+          aria-label={t("settings.title")}
+          className={cn(
+            "absolute right-0 mt-2 min-w-[11rem] rounded-xl border border-aom-border",
+            "bg-zinc-950/95 p-1.5 shadow-xl shadow-black/40 backdrop-blur-sm",
+          )}
+        >
+          {!isAuthenticated ? (
+            <>
+              <Link
+                role="menuitem"
+                to={localeAuthPath(locale, "login")}
+                className={menuItemClassName()}
+                onClick={() => setOpen(false)}
+              >
+                {t("settings.login")}
+              </Link>
+              <Link
+                role="menuitem"
+                to={localeAuthPath(locale, "register")}
+                className={menuItemClassName()}
+                onClick={() => setOpen(false)}
+              >
+                {t("settings.register")}
+              </Link>
+            </>
+          ) : (
+            <Link
+              role="menuitem"
+              to={localeAuthPath(locale, "profile")}
+              className={menuItemClassName()}
+              onClick={() => setOpen(false)}
+            >
+              {t("settings.profile")}
+            </Link>
+          )}
+
+          <div className="my-1 border-t border-aom-border/80" role="separator" />
+
+          <button
+            type="button"
+            role="menuitem"
+            className={menuItemClassName()}
+            onClick={() => {
+              switchLocale();
+              setOpen(false);
+            }}
+            aria-label={switchLanguageLabel}
+          >
+            <span aria-hidden className="text-base leading-none">
+              {targetFlag}
+            </span>
+            {t("settings.changeLanguage")}
+          </button>
+        </div>
+      ) : null}
+    </div>
+  );
+}

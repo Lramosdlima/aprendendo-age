@@ -24,6 +24,9 @@ import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
 import { FormRankPage } from "@/pages/FormRankPage";
+import { LoginPage } from "@/pages/LoginPage";
+import { ProfilePage } from "@/pages/ProfilePage";
+import { RegisterPage } from "@/pages/RegisterPage";
 import { RankPage } from "@/pages/RankPage";
 import { SecretStartBuilderPage } from "@/pages/SecretStartBuilderPage";
 import { StartDetailPage } from "@/pages/StartDetailPage";
@@ -102,6 +105,12 @@ export default function App() {
           />
           <Route path="trilha-de-aprendizado/atalhos-importantes" element={<AtalhosImportantesPage />} />
           <Route path="trilha-de-aprendizado/rush-turtle-boom" element={<RushTurtleBoomarPage />} />
+          <Route path="entrar" element={<LoginPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="cadastro" element={<RegisterPage />} />
+          <Route path="register" element={<RegisterPage />} />
+          <Route path="perfil" element={<ProfilePage />} />
+          <Route path="profile" element={<ProfilePage />} />
           <Route path="home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
