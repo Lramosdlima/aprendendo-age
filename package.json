@@ -10,6 +10,7 @@
     "data:notion": "python scripts/build_notion_supplement.py",
     "data:en-locale": "node scripts/translate-locale-en-api.mjs",
     "data:sync-en": "node scripts/sync-locale-en.mjs",
+    "data:sync-en-refs": "node scripts/sync-en-catalog-refs.mjs",
     "data:locale-check": "node scripts/extract-untranslated.mjs",
     "preview": "vite preview"
   },

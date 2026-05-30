@@ -345,7 +345,7 @@
         }
       ]
     },
-    "pantheon": "Grego",
+    "pantheon": "Greek",
     "slug": "gregos-moose",
     "image": "aomr_pantheon_greeks_icon"
   },
@@ -1267,7 +1267,7 @@
         }
       ]
     },
-    "pantheon": "Grego",
+    "pantheon": "Greek",
     "slug": "gregos-mar-husksuppe",
     "image": "aomr_pantheon_greeks_icon"
   },
@@ -1522,7 +1522,7 @@
         }
       ]
     },
-    "pantheon": "Grego",
+    "pantheon": "Greek",
     "slug": "hades-com-cofre-aussie-drongo",
     "image": "aomr_hades_icon"
   },
@@ -1728,7 +1728,7 @@
         }
       ]
     },
-    "pantheon": "Grego",
+    "pantheon": "Greek",
     "slug": "poseidon-com-mosca",
     "image": "aomr_poseidon_icon"
   },
@@ -1953,7 +1953,7 @@
       ]
     },
     "slug": "demeter-por-mosca-mosca-moose-aom",
-    "pantheon": "Grego"
+    "pantheon": "Greek"
   },
   {
     "status": "new",
@@ -2158,7 +2158,7 @@
       ]
     },
     "slug": "demeter-por-rapl-rapl-moose-aom",
-    "pantheon": "Grego"
+    "pantheon": "Greek"
   },
   {
     "id": 9,
@@ -7393,7 +7393,7 @@
       ]
     },
     "slug": "huitzilopochtli-4-06-build-order-therapl",
-    "pantheon": "Astecas",
+    "pantheon": "Aztecs",
     "image": "aomr_huitzilopochtli_icon"
   },
   {
@@ -7549,7 +7549,7 @@
       ]
     },
     "slug": "tezcatlipoca-4-07-build-order-therapl",
-    "pantheon": "Astecas",
+    "pantheon": "Aztecs",
     "image": "aomr_tezcatlipoca_icon"
   },
   {
@@ -7728,7 +7728,7 @@
       ]
     },
     "slug": "quetzalcoatl-build-order-4-07-by-therapl-therapl",
-    "pantheon": "Astecas"
+    "pantheon": "Aztecs"
   },
   {
     "status": "new",
@@ -7920,6 +7920,6 @@
       ]
     },
     "slug": "quetzalcoatl-eco-todos-upgrades-do-calpulli-husksuppe",
-    "pantheon": "Astecas"
+    "pantheon": "Aztecs"
   }
 ]

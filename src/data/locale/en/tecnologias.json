@@ -20,7 +20,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "ingles": "Hand Axe",
@@ -55,7 +55,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "ingles": "Pickaxe",
@@ -93,7 +93,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "ingles": "Husbandry",
@@ -122,7 +122,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Copper Weapons",
@@ -151,7 +151,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Copper Armor",
@@ -179,7 +179,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Copper Shields",
@@ -207,7 +207,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Survival Equipment",
@@ -235,7 +235,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Plow",
@@ -261,7 +261,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Watch Tower",
@@ -287,7 +287,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Signal Fires",
@@ -313,7 +313,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Stone Wall",
@@ -341,7 +341,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Masons",
@@ -619,7 +619,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Crenellations",
@@ -1220,7 +1220,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 10,
@@ -1234,7 +1234,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1257,7 +1257,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 15,
@@ -1272,7 +1272,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1295,7 +1295,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 5,
@@ -1309,7 +1309,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 25,
@@ -1332,7 +1332,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 20,
@@ -1355,7 +1355,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1378,7 +1378,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 20,
@@ -1401,7 +1401,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1423,7 +1423,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 20,
@@ -1446,7 +1446,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1469,7 +1469,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 20,
@@ -1492,7 +1492,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1518,7 +1518,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 20,
@@ -1540,7 +1540,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1565,7 +1565,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 3,
@@ -1588,7 +1588,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -1611,7 +1611,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -1634,7 +1634,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1666,7 +1666,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 15,
@@ -1688,7 +1688,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -1716,7 +1716,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 12,
@@ -1739,7 +1739,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 20,
@@ -1767,7 +1767,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -1790,7 +1790,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 20,
@@ -1861,7 +1861,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -1909,7 +1909,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -1958,7 +1958,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -2004,7 +2004,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 25,
@@ -2050,7 +2050,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2095,7 +2095,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2140,7 +2140,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -2185,7 +2185,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -2235,7 +2235,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2284,7 +2284,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2333,7 +2333,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 50,
@@ -2383,7 +2383,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 5,
@@ -2434,7 +2434,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2481,7 +2481,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2522,7 +2522,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2564,7 +2564,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -2611,7 +2611,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2662,7 +2662,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -2709,7 +2709,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -2748,7 +2748,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Medium Infantry",
@@ -2792,7 +2792,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Medium Ranged Soldiers",
@@ -2832,7 +2832,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Medium Cavalry",
@@ -2867,7 +2867,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 20,
@@ -2897,7 +2897,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 20,
@@ -2927,7 +2927,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 20,
@@ -3213,7 +3213,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -3243,7 +3243,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -3273,7 +3273,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 30,
@@ -3296,7 +3296,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 5,
@@ -3333,7 +3333,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 8,
@@ -3370,7 +3370,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 10,
@@ -3408,7 +3408,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3456,7 +3456,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3502,7 +3502,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 5,
@@ -3549,7 +3549,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3601,7 +3601,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3649,7 +3649,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3698,7 +3698,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 15,
@@ -3745,7 +3745,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3791,7 +3791,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 10,
@@ -3843,7 +3843,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "favor": 12,
@@ -3887,7 +3887,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -4779,7 +4779,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -4818,7 +4818,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -4857,7 +4857,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5520,7 +5520,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 10,
@@ -5558,7 +5558,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 12,
@@ -5596,7 +5596,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 2,
@@ -5634,7 +5634,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 150,
@@ -5670,7 +5670,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5707,7 +5707,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5744,7 +5744,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5780,7 +5780,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5827,7 +5827,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5876,7 +5876,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5923,7 +5923,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5966,7 +5966,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6009,7 +6009,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6052,7 +6052,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6096,7 +6096,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6140,7 +6140,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6182,7 +6182,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6223,7 +6223,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6266,7 +6266,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -6304,7 +6304,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7537,7 +7537,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7573,7 +7573,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7606,7 +7606,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7639,7 +7639,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7682,7 +7682,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7723,7 +7723,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7770,7 +7770,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7816,7 +7816,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7859,7 +7859,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7901,7 +7901,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7949,7 +7949,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -7993,7 +7993,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8765,7 +8765,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8802,7 +8802,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8837,7 +8837,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8867,7 +8867,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8907,7 +8907,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8937,7 +8937,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -8971,7 +8971,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9015,7 +9015,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9056,7 +9056,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9094,7 +9094,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9136,7 +9136,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9177,7 +9177,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9219,7 +9219,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9266,7 +9266,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9312,7 +9312,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9354,7 +9354,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -9395,7 +9395,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10298,7 +10298,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10333,7 +10333,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10370,7 +10370,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10405,7 +10405,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10451,7 +10451,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10493,7 +10493,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10536,7 +10536,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10574,7 +10574,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10616,7 +10616,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10654,7 +10654,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10692,7 +10692,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10735,7 +10735,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10779,7 +10779,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -10822,7 +10822,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -11721,7 +11721,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -11767,7 +11767,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -11816,7 +11816,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -12178,7 +12178,7 @@
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "favor": 15,
@@ -12192,7 +12192,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "tempo_s": 40,
@@ -12209,7 +12209,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -12226,7 +12226,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_thorned_walls_icon",
@@ -12241,7 +12241,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -12258,7 +12258,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_pans_pioneers_icon",
@@ -12273,7 +12273,7 @@
     "eras": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "god_especifico": [
@@ -12290,7 +12290,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_predatory_instinct_icon",
@@ -12323,7 +12323,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_gracious_hospitality_icon"
@@ -12351,7 +12351,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_hallowed_woodlands_icon",
@@ -12382,7 +12382,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_fated_arrows_icon"
@@ -12410,7 +12410,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_sacred_land_icon",
@@ -12441,7 +12441,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_enchanted_hymn_icon",
@@ -12473,7 +12473,7 @@
     "panteoes": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "icon": "aomr_pious_sacrifice_icon",

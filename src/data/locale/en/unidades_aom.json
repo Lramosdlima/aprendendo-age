@@ -12,13 +12,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Cavalaria :aomr_type_cavalry_icon:",
@@ -71,13 +71,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:",
@@ -130,13 +130,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -190,7 +190,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -249,7 +249,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -308,7 +308,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -374,7 +374,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
@@ -433,7 +433,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
@@ -492,7 +492,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -748,7 +748,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -803,7 +803,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
@@ -863,7 +863,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
@@ -922,7 +922,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -1087,7 +1087,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -1134,7 +1134,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
@@ -1197,7 +1197,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -1261,7 +1261,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Infantaria :aomr_type_infantry_icon:",
@@ -1445,7 +1445,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -1492,7 +1492,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
@@ -1551,7 +1551,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -1611,7 +1611,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Construction:aomr_type_building_icon:, Hard-Counter Infantry :aomr_type_infantry_icon:",
@@ -1783,7 +1783,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -1898,7 +1898,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -1958,7 +1958,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -2024,7 +2024,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -2227,13 +2227,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "multiplicador": [],
@@ -2277,13 +2277,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2342,13 +2342,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2412,13 +2412,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
@@ -2484,7 +2484,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2549,7 +2549,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2615,7 +2615,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2681,7 +2681,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2747,7 +2747,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2817,7 +2817,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2882,7 +2882,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -2954,7 +2954,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3020,7 +3020,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3093,7 +3093,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3145,7 +3145,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3210,7 +3210,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3275,7 +3275,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -3335,13 +3335,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3405,13 +3405,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3475,13 +3475,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3555,7 +3555,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3623,7 +3623,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3691,7 +3691,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3753,7 +3753,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3809,7 +3809,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -3861,7 +3861,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -3927,7 +3927,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -3993,7 +3993,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -4953,13 +4953,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -5018,13 +5018,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -5083,13 +5083,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -5217,7 +5217,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
@@ -5269,7 +5269,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Hard-Counter Cavalry :aomr_type_cavalry_icon:",
@@ -5336,7 +5336,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Hard-Counter Artillery :aomr_type_archer_icon:",
@@ -5403,7 +5403,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:, Hard-Counter Infantry :aomr_type_infantry_icon:",
@@ -5643,7 +5643,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5712,7 +5712,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5781,7 +5781,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5850,7 +5850,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5890,7 +5890,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -5930,7 +5930,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6476,7 +6476,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "multiplicador": [],
@@ -6515,7 +6515,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6549,7 +6549,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6590,7 +6590,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -6630,7 +6630,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -7114,7 +7114,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -7185,7 +7185,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -7252,7 +7252,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Construction:aomr_type_building_icon:, Human Soldiers :aomr_type_human_soldier_icon:",
@@ -7316,7 +7316,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
@@ -7769,13 +7769,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "multiplicador": [],
@@ -7832,7 +7832,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -7887,7 +7887,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -7940,7 +7940,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
@@ -7998,7 +7998,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -8061,7 +8061,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -8165,7 +8165,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
@@ -8340,7 +8340,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8380,13 +8380,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "construcao": [
@@ -8424,7 +8424,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8468,7 +8468,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8508,7 +8508,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8548,13 +8548,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -8588,13 +8588,13 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -8628,7 +8628,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego :aomr_pantheon_greeks_icon:"
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
     "era": [
@@ -8666,13 +8666,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -8725,13 +8725,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Mythical Creature :aomr_type_myth_unit_icon:",
@@ -8777,13 +8777,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Cavalaria :aomr_type_cavalry_icon:",
@@ -8835,13 +8835,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Soft-Infantaria :aomr_type_infantry_icon:",
@@ -8894,13 +8894,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Hard-Counter Artilharia :aomr_type_archer_icon:",
@@ -8952,13 +8952,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -8998,13 +8998,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -9055,7 +9055,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9107,7 +9107,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9165,7 +9165,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9227,7 +9227,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [

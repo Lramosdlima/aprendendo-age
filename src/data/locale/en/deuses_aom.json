@@ -5,14 +5,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -195,14 +195,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -389,14 +389,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -594,7 +594,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -842,7 +842,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -1091,7 +1091,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -1345,7 +1345,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -1534,7 +1534,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -1727,7 +1727,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -1920,7 +1920,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -2100,7 +2100,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -2292,7 +2292,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -2480,7 +2480,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -2692,7 +2692,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -2913,7 +2913,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3155,7 +3155,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3315,7 +3315,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3493,7 +3493,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3683,7 +3683,7 @@
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -3866,14 +3866,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -3921,14 +3921,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -3976,14 +3976,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4035,7 +4035,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -4090,7 +4090,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -4145,7 +4145,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -4200,7 +4200,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -4263,7 +4263,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -4314,7 +4314,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -4376,7 +4376,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4435,7 +4435,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4494,7 +4494,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4883,7 +4883,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4942,7 +4942,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -4997,7 +4997,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5386,7 +5386,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5441,7 +5441,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5496,7 +5496,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5881,7 +5881,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5936,7 +5936,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -5995,7 +5995,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6396,7 +6396,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6557,7 +6557,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6612,7 +6612,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -6671,7 +6671,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -7061,14 +7061,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "godpower": [
@@ -7185,14 +7185,14 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "godpower": [
@@ -7236,7 +7236,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -7287,7 +7287,7 @@
     "panteao": [
       {
         "id": 1,
-        "nome": "Grego"
+        "nome": "Greek"
       }
     ],
     "hierarquia": "Menor",
@@ -7338,14 +7338,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "foco": "Warrior priests :aomr_type_hero_icon: & warriors of the Noble's Hut :aomr_type_infantry_icon:",
@@ -7411,14 +7411,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "foco": "Defense 🛡️ & mythical units :aomr_type_myth_unit_icon:",
@@ -7483,14 +7483,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Maior",
     "era": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
     "foco": "Conquest 💥 & Expansion 💢",
@@ -7555,14 +7555,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "foco": "Poisons & curses 💀",
@@ -7592,14 +7592,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "foco": "Armadilhas & furtividades",
@@ -7629,14 +7629,14 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
     "era": [
       {
         "id": 2,
-        "nome": "Classic :aomr_classical_age_icon:"
+        "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
     "foco": "Colonos & cura ✨",
@@ -7666,7 +7666,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
@@ -7703,7 +7703,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
@@ -7740,7 +7740,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
@@ -7777,7 +7777,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
@@ -7814,7 +7814,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
@@ -7851,7 +7851,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas"
+        "nome": "Aztecs"
       }
     ],
     "hierarquia": "Menor",
