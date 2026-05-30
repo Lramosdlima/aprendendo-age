@@ -84,16 +84,74 @@ export function raceTrackLaneHeightPx(outerHeightPx: number): number {
   return Math.max(outerHeightPx - RACE_TRACK_LANE_INSET_PX, 320);
 }
 
+function findTierBand(rr: number): { band: RaceTierBand; index: number } {
+  const clampedRr = Math.max(RACE_TRACK_MIN_RR, rr);
+  for (let i = 0; i < RACE_TIER_BANDS.length; i += 1) {
+    const band = RACE_TIER_BANDS[i]!;
+    if (clampedRr >= band.rrMin && clampedRr <= band.rrMax) {
+      return { band, index: i };
+    }
+  }
+  const lastIndex = RACE_TIER_BANDS.length - 1;
+  return { band: RACE_TIER_BANDS[lastIndex]!, index: lastIndex };
+}
+
+function tierBandBottomPercent(bandIndex: number): number {
+  return bandIndex * SEGMENT_HEIGHT_PERCENT;
+}
+
+function tierBandTopPercent(bandIndex: number): number {
+  return (bandIndex + 1) * SEGMENT_HEIGHT_PERCENT;
+}
+
 /**
- * Escala linear 0 → maxRrInLobby na pista.
- * Extremos reservam metade do avatar para não ultrapassar a faixa.
+ * Posição na pista alinhada às faixas de elo (marcos 0, 1000, 1300…).
+ * Dentro de cada faixa, RR é interpolado linearmente entre rrMin e rrMax.
  */
-export function rrToTrackPercent(rr: number, maxRrInLobby: number, laneHeightPx: number): number {
-  const r = Math.max(RACE_TRACK_MIN_RR, rr);
-  const maxR = Math.max(maxRrInLobby, r, 1);
-  const t = r / maxR;
-  const bottom = trackBottomPercent(laneHeightPx);
-  return bottom + t * trackUsableSpanPercent(laneHeightPx);
+export function rrToTrackPercent(rr: number, maxRrInLobby: number): number {
+  const { band, index } = findTierBand(rr);
+  const bandBottom = tierBandBottomPercent(index);
+  const bandTop = tierBandTopPercent(index);
+  const bandSpan = bandTop - bandBottom;
+
+  const rrFloor = band.rrMin;
+  let rrCeiling = band.rrMax;
+  if (band.tierId === "diamante") {
+    rrCeiling = Math.max(maxRrInLobby, band.rrMax, rr);
+  }
+
+  const span = Math.max(rrCeiling - rrFloor, 1);
+  const t = clamp((rr - rrFloor) / span, 0, 1);
+  return clampPercent(bandBottom + t * bandSpan);
+}
+
+function resolveBandCollisions(
+  players: Array<{ id: string; rr: number }>,
+  ideals: Map<string, number>,
+  bandMin: number,
+  bandMax: number,
+  minGap: number,
+): Map<string, number> {
+  const positions = new Map<string, number>();
+  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
+
+  let prev = bandMin - minGap;
+  for (const player of sorted) {
+    let pos = Math.max(ideals.get(player.id)!, prev + minGap);
+    pos = Math.min(pos, bandMax);
+    positions.set(player.id, pos);
+    prev = pos;
+  }
+
+  for (let i = sorted.length - 2; i >= 0; i -= 1) {
+    const player = sorted[i]!;
+    const aboveId = sorted[i + 1]!.id;
+    let pos = Math.min(positions.get(player.id)!, positions.get(aboveId)! - minGap);
+    pos = Math.max(pos, bandMin);
+    positions.set(player.id, pos);
+  }
+
+  return positions;
 }
 
 function minVerticalGapPercent(laneHeightPx: number): number {
@@ -101,8 +159,8 @@ function minVerticalGapPercent(laneHeightPx: number): number {
 }
 
 /**
- * Posiciona avatares na linha vertical, contidos na faixa.
- * O maior RR fica no topo útil da pista (sem sobrepor o texto acima).
+ * Posiciona avatares na linha vertical, alinhados às faixas de elo.
+ * Colisões são resolvidas dentro de cada faixa, sem empurrar jogadores para outros elos.
  */
 export function layoutRaceAvatars(
   players: Array<{ id: string; rr: number }>,
@@ -111,41 +169,39 @@ export function layoutRaceAvatars(
   if (players.length === 0) return [];
 
   const maxRr = Math.max(...players.map((p) => p.rr));
-  const top = trackTopPercent(laneHeightPx);
-  const bottom = trackBottomPercent(laneHeightPx);
-  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
-  const minGap = Math.min(
-    minVerticalGapPercent(laneHeightPx),
-    trackUsableSpanPercent(laneHeightPx) / sorted.length,
-  );
+  const trackBottom = trackBottomPercent(laneHeightPx);
+  const trackTop = trackTopPercent(laneHeightPx);
+  const minGap = minVerticalGapPercent(laneHeightPx);
+
+  const byBand = new Map<number, Array<{ id: string; rr: number }>>();
+  for (const player of players) {
+    const { index } = findTierBand(player.rr);
+    const list = byBand.get(index) ?? [];
+    list.push(player);
+    byBand.set(index, list);
+  }
 
   const positions = new Map<string, number>();
-  for (const player of sorted) {
-    positions.set(
-      player.id,
-      clampPercent(clamp(rrToTrackPercent(player.rr, maxRr, laneHeightPx), bottom, top)),
-    );
+
+  for (const [bandIndex, bandPlayers] of byBand) {
+    const bandMin = Math.max(tierBandBottomPercent(bandIndex), trackBottom);
+    const bandMax = Math.min(tierBandTopPercent(bandIndex), trackTop);
+
+    const ideals = new Map<string, number>();
+    for (const player of bandPlayers) {
+      ideals.set(
+        player.id,
+        clampPercent(clamp(rrToTrackPercent(player.rr, maxRr), bandMin, bandMax)),
+      );
+    }
+
+    const resolved = resolveBandCollisions(bandPlayers, ideals, bandMin, bandMax, minGap);
+    for (const [id, pos] of resolved) {
+      positions.set(id, pos);
+    }
   }
 
-  const topPlayer = sorted[sorted.length - 1]!;
-  positions.set(topPlayer.id, top);
-
-  let prev = bottom - minGap;
-  for (const player of sorted) {
-    let pos = Math.max(positions.get(player.id)!, prev + minGap);
-    pos = Math.min(pos, top);
-    positions.set(player.id, pos);
-    prev = pos;
-  }
-
-  positions.set(topPlayer.id, top);
-  for (let i = sorted.length - 2; i >= 0; i -= 1) {
-    const player = sorted[i]!;
-    const aboveId = sorted[i + 1]!.id;
-    let pos = Math.min(positions.get(player.id)!, positions.get(aboveId)! - minGap);
-    pos = Math.max(pos, bottom);
-    positions.set(player.id, pos);
-  }
+  const sorted = [...players].sort((a, b) => a.rr - b.rr || a.id.localeCompare(b.id));
 
   return sorted.map((player) => {
     const bottomPercent = positions.get(player.id)!;
