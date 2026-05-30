@@ -1,8 +1,9 @@
-import { Fragment, type ReactNode, useEffect, useState } from "react";
+import { Fragment, type ReactNode, useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 import { ModalApp } from "@/components/ui/ModalApp";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { useTranslation } from "@/hooks/useTranslation";
 import {
   AmbiguousPlayerError,
   fetchGodStats,
@@ -17,7 +18,7 @@ import {
 } from "@/lib/formRetoldApi";
 import { getGodPortraitUrl } from "@/lib/godIconFromName";
 import { cn } from "@/lib/cn";
-import { RANK_GUIDE_TIERS } from "@/lib/rankGuideTiers";
+import { getRankGuideTiers } from "@/lib/rankGuideTiers";
 import {
   type RankRomanStep,
   type RankTierId,
@@ -150,6 +151,7 @@ function CategorySubCard({
   value,
   hint,
   onOpenRankGuide,
+  t,
 }: {
   tierId: RankTierId;
   ageToken: string;
@@ -157,6 +159,7 @@ function CategorySubCard({
   value: string;
   hint: string;
   onOpenRankGuide: () => void;
+  t: (key: string, params?: Record<string, string | number>) => string;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = getTokenAssetUrl(ageToken);
@@ -178,7 +181,7 @@ function CategorySubCard({
         type="button"
         onClick={onOpenRankGuide}
         title={hint}
-        aria-label={`${hint}. Abrir resumo das divisões de RR.`}
+        aria-label={t("pages.rank.openRankGuideHint", { hint })}
         className="inline-flex h-6 w-6 shrink-0 cursor-pointer items-center justify-center rounded-full border border-white/35 bg-white/5 text-[11px] font-semibold text-white/90 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-500/30"
       >
         ?
@@ -188,11 +191,12 @@ function CategorySubCard({
 }
 
 /** Conteúdo do modal: mesma progressão que `TierAchievement` em `RankPage`. */
-function RankGuideModalContent() {
+function RankGuideModalContent({ t }: { t: (key: string) => string }) {
+  const tiers = useMemo(() => getRankGuideTiers(t), [t]);
   return (
     <div className="overflow-x-auto pb-1">
       <div className="flex min-w-0 items-stretch gap-0.5 sm:gap-1">
-        {RANK_GUIDE_TIERS.map((tier, i) => {
+        {tiers.map((tier, i) => {
           const iconSrc = getTokenAssetUrl(tier.token);
           return (
             <Fragment key={tier.id}>
@@ -222,7 +226,7 @@ function RankGuideModalContent() {
                   ))}
                 </ul>
               </div>
-              {i < RANK_GUIDE_TIERS.length - 1 ? (
+              {i < tiers.length - 1 ? (
                 <div className="flex shrink-0 items-center self-center px-0.5 text-zinc-600 sm:px-1" aria-hidden>
                   <span className="text-base leading-none sm:text-lg">→</span>
                 </div>
@@ -253,6 +257,7 @@ function MolduraAgeAvatar({
   emptyFallback,
   /** Selo romano na base da moldura (centro), alinhado ao overlay HUD Meta. */
   romanBadge,
+  t,
 }: {
   tierId: RankTierId;
   ageToken: string;
@@ -260,6 +265,7 @@ function MolduraAgeAvatar({
   portraitUrl: string | null | undefined;
   emptyFallback: ReactNode;
   romanBadge?: { step: RankRomanStep; medallionClass: string };
+  t: (key: string, params?: Record<string, string | number>) => string;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = frameImageSrc?.trim() ? frameImageSrc : getTokenAssetUrl(ageToken);
@@ -314,7 +320,7 @@ function MolduraAgeAvatar({
             "pointer-events-none absolute bottom-0 left-1/2 z-[5] flex h-7 min-w-[2.55rem] -translate-x-1/2 translate-y-[18%] items-center justify-center rounded-lg border-[3px] px-2.5 py-0 shadow-[0_3px_10px_rgba(0,0,0,0.78),inset_0_1px_0_rgba(255,255,255,0.14)] ring-2 ring-black/55 sm:h-8 sm:min-w-[2.95rem] sm:translate-y-[16%] sm:px-3 sm:rounded-xl md:h-9 md:min-w-[3.35rem] md:px-3.5 md:border-[3.5px]",
             romanBadge.medallionClass,
           )}
-          title={`Subdivisão do rank: ${romanBadge.step}`}
+          title={t("pages.rank.rankSubdivisionTitle", { step: romanBadge.step })}
           aria-hidden
         >
           <span
@@ -342,6 +348,7 @@ function PlayerHero({
   rr: number;
   classification: ReturnType<typeof getRankClassification>;
 }) {
+  const { t } = useTranslation();
   const [rankGuideOpen, setRankGuideOpen] = useState(false);
   const theme = TIER_ACHIEVEMENT_THEME[classification.tierId];
   const { rank: rankWord, era: eraWord } = splitCategoryLabel(classification.categoryLabel);
@@ -356,6 +363,7 @@ function PlayerHero({
       portraitUrl={player.playerAvatarUrl}
       emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-2xl text-zinc-500">?</div>}
       romanBadge={{ step: romanStep, medallionClass: romanMedallion }}
+      t={t}
     />
   );
 
@@ -363,7 +371,9 @@ function PlayerHero({
     <>
       <AchievementShell tierId={classification.tierId} className="mx-auto w-full max-w-xl lg:max-w-5xl xl:max-w-6xl">
       <div className="px-4 pb-10 pt-8 sm:px-8 sm:pb-12 sm:pt-10">
-        <p className="mb-6 text-center font-mono text-[10px] font-medium uppercase tracking-[0.35em] text-white/85">Perfil · Sup 1v1</p>
+        <p className="mb-6 text-center font-mono text-[10px] font-medium uppercase tracking-[0.35em] text-white/85">
+          {t("pages.rank.profileSection")}
+        </p>
 
         {player.profileUrl ? (
           <a
@@ -371,7 +381,7 @@ function PlayerHero({
             target="_blank"
             rel="noreferrer noopener"
             className="block outline-none transition hover:opacity-95"
-            title={`Abrir perfil de ${player.profileName} no AoM Stats`}
+            title={t("pages.rank.openProfile", { name: player.profileName })}
           >
             {innerAvatar}
           </a>
@@ -427,40 +437,54 @@ function PlayerHero({
         <div className="mt-10 grid min-w-0 grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start lg:gap-12">
           <div className="min-w-0 space-y-4">
             <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 lg:mb-3 lg:text-left">
-              Estatísticas
+              {t("pages.rank.statistics")}
             </p>
             <div className="grid min-w-0 grid-cols-1 gap-3 sm:gap-4 sm:[grid-template-columns:repeat(3,minmax(0,1fr))]">
               <StatSubCard tierId={classification.tierId} title="RR" value={String(rr)} />
-              <StatSubCard tierId={classification.tierId} title="Vitórias" value={String(row1v1.wins)} />
-              <StatSubCard tierId={classification.tierId} title="Derrotas" value={String(row1v1.losses)} />
+              <StatSubCard tierId={classification.tierId} title={t("common.wins")} value={String(row1v1.wins)} />
+              <StatSubCard tierId={classification.tierId} title={t("common.losses")} value={String(row1v1.losses)} />
             </div>
             <div className="grid min-w-0 grid-cols-1 gap-3 sm:[grid-template-columns:repeat(2,minmax(0,1fr))]">
-              <StatSubCard tierId={classification.tierId} title="Taxa de vitória" value={row1v1.winRate} />
+              <StatSubCard tierId={classification.tierId} title={t("common.winRate")} value={row1v1.winRate} />
               {row1v1.rank ? (
-                <StatSubCard tierId={classification.tierId} title="Rank (leaderboard)" value={row1v1.rank} sub="Posição global" />
+                <StatSubCard
+                  tierId={classification.tierId}
+                  title={t("pages.rank.leaderboardRank")}
+                  value={row1v1.rank}
+                  sub={t("common.globalRank")}
+                />
               ) : (
-                <StatSubCard tierId={classification.tierId} title="Partidas" value={`${row1v1.wins + row1v1.losses}`} sub="Vitórias + derrotas" />
+                <StatSubCard
+                  tierId={classification.tierId}
+                  title={t("common.matches")}
+                  value={`${row1v1.wins + row1v1.losses}`}
+                  sub={t("common.winsPlusLosses")}
+                />
               )}
             </div>
           </div>
 
           <div className="min-w-0 space-y-3">
-            <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 lg:mb-3 lg:text-left">Classificação</p>
+            <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 lg:mb-3 lg:text-left">
+              {t("pages.rank.classification")}
+            </p>
             <CategorySubCard
               tierId={classification.tierId}
               ageToken={classification.ageToken}
-              label="Categoria"
+              label={t("common.category")}
               value={classification.categoryLabel}
               hint={classification.hintCategory}
               onOpenRankGuide={() => setRankGuideOpen(true)}
+              t={t}
             />
             <CategorySubCard
               tierId={classification.tierId}
               ageToken={classification.ageToken}
-              label="Subcategoria"
+              label={t("common.subcategory")}
               value={classification.subcategoryLabel}
               hint={classification.hintSub}
               onOpenRankGuide={() => setRankGuideOpen(true)}
+              t={t}
             />
           </div>
         </div>
@@ -470,21 +494,17 @@ function PlayerHero({
       <ModalApp
         open={rankGuideOpen}
         onClose={() => setRankGuideOpen(false)}
-        title="Divisões de ranque (RR)"
-        description={
-          <span>
-            Mesma referência do guia <strong className="text-zinc-200">Veja sua RR em Rank</strong>: progressão da esquerda para a direita, com ícone da era, nome da divisão, era alternativa e subdivisões com intervalo de RR.
-          </span>
-        }
+        title={t("pages.rank.rankDivisions")}
+        description={t("pages.rank.rankGuideModalDesc")}
         className="max-w-[min(96vw,80rem)]"
       >
-        <RankGuideModalContent />
+        <RankGuideModalContent t={t} />
       </ModalApp>
     </>
   );
 }
 
-function GodAchievementCard({ god }: { god: GodStatRow }) {
+function GodAchievementCard({ god, t }: { god: GodStatRow; t: (key: string) => string }) {
   const cls = getRankClassification(god.elo);
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
   const portrait = getGodPortraitUrl(god.god);
@@ -495,7 +515,9 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
   return (
     <AchievementShell tierId={cls.tierId} className="h-full">
       <div className="flex w-full min-w-0 max-w-full flex-col items-center px-3 pb-8 pt-7 sm:px-4 sm:pb-9 sm:pt-8 md:px-5">
-        <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">Deus · Sup 1v1</p>
+        <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">
+          {t("pages.rank.godSection")}
+        </p>
 
         <MolduraAgeAvatar
           tierId={cls.tierId}
@@ -504,6 +526,7 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
           portraitUrl={portrait}
           emptyFallback={<div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-xs text-zinc-500">—</div>}
           romanBadge={{ step: godRomanStep, medallionClass: godRomanMedallion }}
+          t={t}
         />
 
         <h3 className="mt-5 text-center font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-amber-50/95 sm:text-xl">
@@ -522,16 +545,13 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
         <p className="mt-1 text-center text-xs text-zinc-500">({cls.subcategoryLabel})</p>
 
         <div className="mt-6 w-full min-w-0">
-          <p className="mb-3 text-center text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">Estatísticas</p>
-          {/*
-            AJUSTE MANUAL — layout RR/WR/Jogos:
-            - Abaixo de sm: 1 coluna.
-            - sm+: 3 colunas iguais (mesma largura). WR usa tipografia mais compacta (wrTight) para caber a %.
-          */}
+          <p className="mb-3 text-center text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500">
+            {t("pages.rank.statistics")}
+          </p>
           <div className="grid w-full min-w-0 grid-cols-1 gap-2.5 sm:grid-cols-[repeat(3,minmax(0,1fr))] sm:gap-x-2.5 sm:gap-y-2 md:gap-x-3 md:gap-y-2.5">
             <StatSubCard tight tierId={cls.tierId} title="RR" value={String(god.elo)} />
-            <StatSubCard tight wrTight tierId={cls.tierId} title="WR" value={god.winRate} />
-            <StatSubCard tight tierId={cls.tierId} title="Jogos" value={String(god.games)} />
+            <StatSubCard tight wrTight tierId={cls.tierId} title={t("common.winRate")} value={god.winRate} />
+            <StatSubCard tight tierId={cls.tierId} title={t("pages.rank.games")} value={String(god.games)} />
           </div>
         </div>
       </div>
@@ -540,6 +560,7 @@ function GodAchievementCard({ god }: { god: GodStatRow }) {
 }
 
 export function FormRankPage() {
+  const { t } = useTranslation();
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
   const [searchParams, setSearchParams] = useSearchParams();
   const playerParam = searchParams.get("player")?.trim() ?? "";
@@ -659,29 +680,27 @@ export function FormRankPage() {
   return (
     <div className="space-y-8 pb-16">
       <PageHeader
-        title="Classificação por RR"
+        title={t("pages.rank.rrClassification")}
         headerIconSrc={headerIcon}
-        description="Consulta direta ao AoM Stats — use o formulário no guia de ranks para informar o jogador."
+        description={t("pages.rank.formDescription")}
         actions={
           <Link
             to="/rank"
             className="inline-flex items-center rounded-lg border border-aom-border bg-zinc-900/80 px-3 py-2 text-xs font-medium text-zinc-300 transition hover:border-amber-500/35 hover:text-amber-100"
           >
-            ← Guia de ranks
+            {t("pages.rank.backToGuide")}
           </Link>
         }
       />
 
       {!playerParam && !hasAomstatsId ? (
         <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-zinc-700/55 bg-zinc-950 p-6 text-center shadow-[0_20px_50px_-24px_rgba(0,0,0,0.85)] sm:p-7">
-          <p className="text-sm leading-relaxed text-zinc-400">
-            Nenhum jogador na URL. Volte ao guia de ranks, digite o nome e use <span className="font-semibold text-zinc-200">Consultar Rank</span> — com vários resultados escolha o perfil no AoM Stats. Opcionalmente pode usar <span className="font-mono text-zinc-300">?aomstats_id=</span> para um perfil específico.
-          </p>
+          <p className="text-sm leading-relaxed text-zinc-400">{t("pages.rank.noPlayerInUrl")}</p>
           <Link
             to="/rank"
             className="mt-5 inline-flex items-center justify-center rounded-xl border border-aom-border bg-zinc-900/80 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-amber-500/35 hover:text-amber-100"
           >
-            ← Guia de ranks
+            {t("pages.rank.backToGuide")}
           </Link>
         </div>
       ) : loading && !(player && row1v1 && classification && rr != null) ? (
@@ -691,11 +710,9 @@ export function FormRankPage() {
             aria-hidden
           />
           <p className="mt-4 text-sm text-zinc-400">
-            Carregando dados de{" "}
-            <span className="font-medium text-zinc-200">
-              {playerParam || (hasAomstatsId ? `perfil #${aomstatsIdNum}` : "…")}
-            </span>
-            …
+            {t("pages.rank.loadingData", {
+              name: playerParam || (hasAomstatsId ? `perfil #${aomstatsIdNum}` : "…"),
+            })}
           </p>
         </div>
       ) : error && !(player && row1v1 && classification && rr != null) ? (
@@ -707,7 +724,7 @@ export function FormRankPage() {
             to="/rank"
             className="mt-5 flex w-full items-center justify-center rounded-xl border border-aom-border bg-zinc-900/80 px-4 py-2.5 text-sm font-medium text-zinc-200 transition hover:border-amber-500/35 hover:text-amber-100"
           >
-            ← Voltar e tentar de novo
+            {t("pages.rank.backRetry")}
           </Link>
         </div>
       ) : null}
@@ -716,28 +733,30 @@ export function FormRankPage() {
         <div className="space-y-12">
           <section aria-labelledby="result-main-heading">
             <h2 id="result-main-heading" className="sr-only">
-              Resultado: {player.profileName}
+              {t("pages.rank.resultHeading", { name: player.profileName })}
             </h2>
             <PlayerHero player={player} row1v1={row1v1} rr={rr} classification={classification} />
           </section>
 
           <section aria-labelledby="gods-heading" className="mx-auto w-full max-w-[min(100%,88rem)] px-2 sm:px-4 md:px-6">
-            <p className="mb-2 text-center font-mono text-[10px] font-medium uppercase tracking-[0.28em] text-zinc-500">Progressão</p>
+            <p className="mb-2 text-center font-mono text-[10px] font-medium uppercase tracking-[0.28em] text-zinc-500">
+              {t("pages.rank.progressionLabel")}
+            </p>
             <h3 id="gods-heading" className="text-center font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-zinc-100 sm:text-2xl">
-              Principais deuses
+              {t("pages.rank.mainGods")}
             </h3>
-            <p className="mx-auto mt-2 max-w-md text-center text-[11px] text-zinc-500">Top 3 por RR na fila Sup 1v1 — mesmo estilo de conquista por faixa.</p>
+            <p className="mx-auto mt-2 max-w-md text-center text-[11px] text-zinc-500">{t("pages.rank.mainGodsDesc")}</p>
             {godsLoading ? (
               <div className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center rounded-2xl border border-aom-border/50 bg-zinc-950/60 py-12 text-center">
                 <span
                   className="inline-block h-8 w-8 animate-spin rounded-full border-2 border-zinc-500/30 border-t-zinc-300"
                   aria-hidden
                 />
-                <p className="mt-4 text-sm text-zinc-500">Carregando principais deuses…</p>
+                <p className="mt-4 text-sm text-zinc-500">{t("pages.rank.loadingGods")}</p>
               </div>
             ) : gods.length === 0 ? (
               <p className="mx-auto mt-8 max-w-xl rounded-2xl border border-aom-border/50 bg-zinc-950/60 py-8 text-center text-sm text-zinc-500">
-                Nenhuma estatística de deuses encontrada.
+                {t("pages.rank.noGodStats")}
               </p>
             ) : (
               <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5 md:gap-6 lg:gap-8">
@@ -746,7 +765,7 @@ export function FormRankPage() {
                     <p className="mb-2 text-center font-mono text-[9px] font-medium uppercase tracking-[0.35em] text-zinc-500">
                       {i + 1} / {gods.length}
                     </p>
-                    <GodAchievementCard god={g} />
+                    <GodAchievementCard god={g} t={t} />
                   </div>
                 ))}
               </div>
@@ -762,8 +781,8 @@ export function FormRankPage() {
           setPickProfiles([]);
           setPickSelectedId(null);
         }}
-        title="Qual jogador deseja consultar?"
-        description="Vários perfis no AoM Stats correspondem a essa pesquisa. Selecione o jogador correto para carregar o RR e as estatísticas."
+        title={t("pages.rank.pickPlayerTitle")}
+        description={t("pages.rank.pickPlayerDescForm")}
         className="max-w-lg"
       >
         <ul className="max-h-[min(50vh,22rem)] space-y-2 overflow-y-auto pr-0.5" role="list">
@@ -806,14 +825,14 @@ export function FormRankPage() {
             onClick={applyPickedProfile}
             className="rounded-xl bg-amber-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Continuar com este perfil
+            {t("pages.rank.continueWithProfile")}
           </button>
           <Link
             to="/rank"
             className="inline-flex items-center rounded-xl border border-aom-border bg-zinc-900/80 px-4 py-2.5 text-sm font-medium text-zinc-300 transition hover:border-amber-500/35 hover:text-amber-100"
             onClick={() => setPickModalOpen(false)}
           >
-            Voltar ao guia
+            {t("pages.rank.backToGuide")}
           </Link>
         </div>
       </ModalApp>

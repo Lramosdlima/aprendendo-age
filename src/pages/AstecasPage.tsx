@@ -9,24 +9,8 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { InfoRow } from "@/components/ui/InfoRow";
 import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
-import {
-  aldeaoSlugById,
-  aldeoes,
-  construcaoSlugById,
-  construcoes,
-  deusSlugById,
-  deuses,
-  deusById,
-  godpowerSlugById,
-  godpowers,
-  mapaSlugByIndex,
-  mapas,
-  panteaoById,
-  panteaoSlugById,
-  startsBuildOrder,
-  unidadeSlugById,
-  unidades,
-} from "@/data/catalog";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { getAldeaoAssetUrl, getConstrucaoAssetUrl, getMapaAssetUrl, getMapaPreviewUrl, getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { formatGodNameForMetaNotion, getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
@@ -46,6 +30,26 @@ const sectionTitleClass =
   "mb-4 font-[family-name:var(--font-display)] text-xl font-semibold text-amber-100/95";
 
 export function AstecasPage() {
+  const { t } = useTranslation();
+  const catalog = useCatalog();
+  const {
+    aldeaoSlugById,
+    aldeoes,
+    construcaoSlugById,
+    construcoes,
+    deusSlugById,
+    deuses,
+    deusById,
+    godpowerSlugById,
+    godpowers,
+    mapaSlugByIndex,
+    mapas,
+    panteaoById,
+    panteaoSlugById,
+    startsBuildOrder,
+    unidadeSlugById,
+    unidades,
+  } = catalog;
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
     () => listIndexLinkStateFromLocation(pathname, locSearch),
@@ -66,7 +70,7 @@ export function AstecasPage() {
           if (aM !== bM) return aM - bM;
           return a.id - b.id;
         }),
-    [],
+    [deuses],
   );
 
   const godpowersAztecas = useMemo(
@@ -74,12 +78,12 @@ export function AstecasPage() {
       [...godpowers]
         .filter((g) => firstNumId(g.panteao) === AZTEC_PANTEON_ID)
         .sort((a, b) => a.id - b.id),
-    [],
+    [godpowers],
   );
 
   const aldeoesAztecas = useMemo(
     () => aldeoes.filter((a) => firstNumId(a.panteao) === AZTEC_PANTEON_ID),
-    [],
+    [aldeoes],
   );
 
   const unidadesAztecas = useMemo(
@@ -87,7 +91,7 @@ export function AstecasPage() {
       [...unidades]
         .filter((u) => firstNumId(u.panteao) === AZTEC_PANTEON_ID)
         .sort((a, b) => a.id - b.id),
-    [],
+    [unidades],
   );
 
   const construcoesAztecas = useMemo(
@@ -95,7 +99,7 @@ export function AstecasPage() {
       [...construcoes]
         .filter((c) => c.panteao_id === AZTEC_PANTEON_ID)
         .sort((a, b) => a.id - b.id),
-    [],
+    [construcoes],
   );
 
   const mapasObsidian = useMemo(
@@ -103,7 +107,7 @@ export function AstecasPage() {
       mapas
         .map((m, i) => ({ m, i }))
         .filter(({ m }) => m.origem === MAPAS_OBSIDIAN_ORIGEM),
-    [],
+    [mapas],
   );
 
   const startsAztecas = useMemo(
@@ -116,7 +120,7 @@ export function AstecasPage() {
           if (aNew !== bNew) return aNew - bNew;
           return a.id - b.id;
         }),
-    [],
+    [startsBuildOrder],
   );
 
   return (
@@ -130,12 +134,12 @@ export function AstecasPage() {
           />
           <div className="mb-10 -mt-2 space-y-0 rounded-2xl border border-aom-border bg-aom-card/60 p-5">
             {Array.isArray(panteaoAzteca.vill) && panteaoAzteca.vill.length > 0 ? (
-              <InfoRow label="Aldeão" icon="aomr_settler_icon">
+              <InfoRow label={t("common.villager")} icon="aomr_settler_icon">
                 {panteaoAzteca.vill.map((v) => v.nome).join(", ")}
               </InfoRow>
             ) : null}
             {Array.isArray(panteaoAzteca.deuses) && panteaoAzteca.deuses.length > 0 ? (
-              <InfoRow label="Deuses" icon={panteaoAzteca.icon ?? undefined}>
+              <InfoRow label={t("common.gods")} icon={panteaoAzteca.icon ?? undefined}>
                 {panteaoAzteca.deuses.map((d) => d.nome).join(", ")}
               </InfoRow>
             ) : null}
@@ -145,22 +149,19 @@ export function AstecasPage() {
                   to={`/panteoes/${panteaoFichaSlug}`}
                   className="text-amber-200/90 underline-offset-2 hover:underline"
                 >
-                  Página do panteão
+                  {t("common.pantheonPageLink")}
                 </Link>{" "}
-                na lista geral.
+                {t("common.inGeneralList")}
               </p>
             ) : null}
           </div>
         </>
       ) : (
-        <PageHeader
-          title="Astecas"
-          description="Índice do panteão asteca: deuses, poderes divinos, aldeão, unidades, construções, starts e mapas do Obsidian Mirror."
-        />
+        <PageHeader title={t("pages.astecas.title")} description={t("pages.astecas.description")} />
       )}
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Deuses</h2>
+        <h2 className={sectionTitleClass}>{t("nav.gods")}</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {deusesAztecas.map((d) => (
             <li key={d.id}>
@@ -184,7 +185,7 @@ export function AstecasPage() {
       </section>
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Poderes divinos</h2>
+        <h2 className={sectionTitleClass}>{t("nav.godpowers")}</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {godpowersAztecas.map((g) => {
             const gid = firstNumId(g.god);
@@ -210,7 +211,7 @@ export function AstecasPage() {
       </section>
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Aldeões</h2>
+        <h2 className={sectionTitleClass}>{t("nav.villagers")}</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {aldeoesAztecas.map((a) => (
             <li key={a.id}>
@@ -229,7 +230,7 @@ export function AstecasPage() {
       </section>
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Unidades</h2>
+        <h2 className={sectionTitleClass}>{t("nav.units")}</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {unidadesAztecas.map((u) => (
             <li key={u.id}>
@@ -257,7 +258,7 @@ export function AstecasPage() {
       </section>
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Construções</h2>
+        <h2 className={sectionTitleClass}>{t("nav.buildings")}</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {construcoesAztecas.map((c) => (
             <li key={c.id}>
@@ -282,7 +283,7 @@ export function AstecasPage() {
       </section>
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Starts (build orders)</h2>
+        <h2 className={sectionTitleClass}>{t("common.startsBuildOrders")}</h2>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {startsAztecas.map((s) => (
             <li key={s.slug} className="min-h-[8.5rem]">
@@ -297,8 +298,8 @@ export function AstecasPage() {
                       <NotionText text={s.titulo} />
                     </span>
                     {s.status === "new" ? (
-                      <span className={startNovoTagClass} title="Novo">
-                        🔷 Novo !
+                      <span className={startNovoTagClass} title={t("common.new")}>
+                        🔷 {t("common.new")} !
                       </span>
                     ) : null}
                   </span>
@@ -314,9 +315,9 @@ export function AstecasPage() {
       </section>
 
       <section className="mt-10">
-        <h2 className={sectionTitleClass}>Mapas — Obsidian Mirror (2026)</h2>
+        <h2 className={sectionTitleClass}>{t("common.mapsObsidianMirror")}</h2>
         <p className="mb-4 text-sm text-zinc-400">
-          Mapas adicionados junto com o conteúdo asteca em <span className="text-zinc-300">{MAPAS_OBSIDIAN_ORIGEM}</span>.
+          {t("common.mapsObsidianDesc", { origin: MAPAS_OBSIDIAN_ORIGEM })}
         </p>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {mapasObsidian.map(({ m, i }) => (
@@ -332,7 +333,7 @@ export function AstecasPage() {
                 watermarkSrc={getMapaAssetUrl(m)}
                 titleIcons={
                   m.mapas_da_ranqueada
-                    ? [{ icon: "aomr_type_hero_icon", label: "Tem na Ranqueada" }]
+                    ? [{ icon: "aomr_type_hero_icon", label: t("common.ranked") }]
                     : undefined
                 }
               />

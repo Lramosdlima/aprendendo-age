@@ -11,6 +11,7 @@ import {
 } from "@/components/spreadsheet/SpreadsheetTable";
 import { SpreadsheetRefChip } from "@/components/spreadsheet/SpreadsheetRefChip";
 import { NotionText } from "@/components/ui/NotionText";
+import { useTranslation } from "@/hooks/useTranslation";
 import type { Godpower } from "@/data/catalog";
 import { godpowerSlugById } from "@/data/catalog";
 import { firstNumId } from "@/lib/entityRefs";
@@ -54,6 +55,7 @@ export function GodpowersSpreadsheet({
   selectedSlugs = [],
   onToggleSelect,
 }: GodpowersSpreadsheetProps) {
+  const { t } = useTranslation();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);
   };
@@ -62,18 +64,18 @@ export function GodpowersSpreadsheet({
     <SpreadsheetTable tableClassName="min-w-[1280px]">
       <SpreadsheetHead>
         <SpreadsheetTh className="min-w-[8rem]" stickyColumn>
-          GodPower
+          {t("common.godPower")}
         </SpreadsheetTh>
-        <SpreadsheetTh>Inglês</SpreadsheetTh>
-        <SpreadsheetTh>God</SpreadsheetTh>
-        <SpreadsheetTh>Era</SpreadsheetTh>
-        <SpreadsheetTh>Cooldown (seg)</SpreadsheetTh>
-        <SpreadsheetTh>Duração no mapa (seg)</SpreadsheetTh>
-        <SpreadsheetTh>Custo repetir</SpreadsheetTh>
-        <SpreadsheetTh>Incremento por uso</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[12rem]">Descrição resumida</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[12rem]">Descrição avançada</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[7.5rem]">Panteão</SpreadsheetTh>
+        <SpreadsheetTh>{t("spreadsheet.english")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("nav.gods")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("common.era")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("spreadsheet.godpowers.cooldown")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("spreadsheet.godpowers.mapDuration")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("spreadsheet.godpowers.repeatCost")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("spreadsheet.godpowers.incrementPerUse")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[12rem]">{t("spreadsheet.godpowers.summaryDescription")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[12rem]">{t("common.advancedDescription")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[7.5rem]">{t("common.pantheon")}</SpreadsheetTh>
       </SpreadsheetHead>
       <SpreadsheetBody>
         {rows.map((g) => {

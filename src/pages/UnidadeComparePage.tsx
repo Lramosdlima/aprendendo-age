@@ -9,14 +9,18 @@ import {
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
+import { entityDisplayDescription } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
-import { unidadeBySlug } from "@/data/catalog";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 
 const compareTitleClass =
   "text-xl leading-snug [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl";
 
 export function UnidadeComparePage() {
+  const { t, locale } = useTranslation();
+  const { unidadeBySlug } = useCatalog();
   const { slugA, slugB } = useParams();
   const u1 = slugA ? unidadeBySlug.get(slugA) : undefined;
   const u2 = slugB ? unidadeBySlug.get(slugB) : undefined;
@@ -24,8 +28,8 @@ export function UnidadeComparePage() {
   if (!u1 || !u2) {
     return (
       <div>
-        <BackLink to="/unidades">Unidades</BackLink>
-        <p className="text-zinc-400">Uma ou ambas as unidades não foram encontradas.</p>
+        <BackLink to="/unidades">{t("nav.units")}</BackLink>
+        <p className="text-zinc-400">{t("common.entityCompareNotFound.unit")}</p>
       </div>
     );
   }
@@ -45,7 +49,7 @@ export function UnidadeComparePage() {
 
   return (
     <div>
-      <BackLink to="/unidades">Unidades</BackLink>
+      <BackLink to="/unidades">{t("nav.units")}</BackLink>
 
       <div
         className={cn(
@@ -59,7 +63,7 @@ export function UnidadeComparePage() {
         <header className="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
           <PageHeaderBlock
             title={u1.nome}
-            description={u1.ingles ? `Inglês: ${u1.ingles}` : undefined}
+            description={entityDisplayDescription(u1, locale, t)}
             headerIconSrc={icon1}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -68,7 +72,7 @@ export function UnidadeComparePage() {
           <PageHeaderBlock
             align="end"
             title={u2.nome}
-            description={u2.ingles ? `Inglês: ${u2.ingles}` : undefined}
+            description={entityDisplayDescription(u2, locale, t)}
             headerIconSrc={icon2}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -77,15 +81,15 @@ export function UnidadeComparePage() {
         </header>
       </div>
 
-      <Section title="Visão geral">
+      <Section title={t("common.overview")}>
         <UnidadeVisaoGeralCompare u1={u1} u2={u2} />
       </Section>
 
-      <Section title="Combate" className="mt-6">
+      <Section title={t("common.combat")} className="mt-6">
         <UnidadeCombateCompare u1={u1} u2={u2} />
       </Section>
 
-      <Section title="Custo e treino" className="mt-6">
+      <Section title={t("common.costAndTraining")} className="mt-6">
         <UnidadeCustoCompare u1={u1} u2={u2} />
       </Section>
     </div>

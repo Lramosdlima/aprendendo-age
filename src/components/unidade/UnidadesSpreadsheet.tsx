@@ -14,6 +14,7 @@ import {
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { NotionCounterIconsRow } from "@/components/ui/NotionTokensOnly";
 import { NotionText } from "@/components/ui/NotionText";
+import { useTranslation } from "@/hooks/useTranslation";
 import type { Unidade } from "@/data/catalog";
 import { unidadeSlugById } from "@/data/catalog";
 import { firstNumId } from "@/lib/entityRefs";
@@ -58,6 +59,7 @@ export function UnidadesSpreadsheet({
   selectedSlugs = [],
   onToggleSelect,
 }: UnidadesSpreadsheetProps) {
+  const { t } = useTranslation();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);
   };
@@ -66,42 +68,44 @@ export function UnidadesSpreadsheet({
     <SpreadsheetTable tableClassName="min-w-[2600px]">
       <SpreadsheetHead>
         <SpreadsheetTh className="min-w-[8.5rem]" stickyColumn>
-          Soldado
+          {t("spreadsheet.unidades.soldier")}
         </SpreadsheetTh>
-        <SpreadsheetTh>Inglês</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[7rem]">Tipo</SpreadsheetTh>
+        <SpreadsheetTh>{t("spreadsheet.english")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[7rem]">{t("common.type")}</SpreadsheetTh>
         <SpreadsheetTh className="min-w-[8rem]" icon="aomr_better_icon">
-          Forte contra
+          {t("spreadsheet.unidades.strongAgainst")}
         </SpreadsheetTh>
         <SpreadsheetTh className="min-w-[8rem]" icon="aomr_worse_icon">
-          Fraco contra
+          {t("spreadsheet.unidades.weakAgainst")}
         </SpreadsheetTh>
-        <SpreadsheetTh>Panteão</SpreadsheetTh>
-        <SpreadsheetTh>Era</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[7rem]">Counter de</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[7rem]">Multiplicador</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_type_building_icon" className="min-w-[8rem]">Construção</SpreadsheetTh>
+        <SpreadsheetTh>{t("common.pantheon")}</SpreadsheetTh>
+        <SpreadsheetTh>{t("common.era")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[7rem]">{t("spreadsheet.unidades.counterOf")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[7rem]">{t("spreadsheet.unidades.multiplier")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_type_building_icon" className="min-w-[8rem]">
+          {t("spreadsheet.unidades.building")}
+        </SpreadsheetTh>
         <SpreadsheetTh className="min-w-[6.5rem]" icon="aomr_hit_points_icon">
-          Pontos de vida
+          {t("spreadsheet.unidades.hitPoints")}
         </SpreadsheetTh>
-        <SpreadsheetTh icon="hackdamage">Dano cortante</SpreadsheetTh>
-        <SpreadsheetTh icon="piercedamage">Dano perfurante</SpreadsheetTh>
-        <SpreadsheetTh icon="rangeicon">Alcance</SpreadsheetTh>
-        <SpreadsheetTh icon="crushdamage">Dano contundente</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_divine_damage_icon">Dano divino</SpreadsheetTh>
-        <SpreadsheetTh icon="attack_cur">Dano área</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_rate_of_fire_icon">Vel. ataque (atk/s)</SpreadsheetTh>
-        <SpreadsheetTh icon="attack_cur">DPS</SpreadsheetTh>
-        <SpreadsheetTh icon="hackarmor">Arm. anticorte</SpreadsheetTh>
-        <SpreadsheetTh icon="piercearmor">Arm. antiperf.</SpreadsheetTh>
-        <SpreadsheetTh icon="foodaom">Comida</SpreadsheetTh>
-        <SpreadsheetTh icon="woodaom">Madeira</SpreadsheetTh>
-        <SpreadsheetTh icon="goldaom">Ouro</SpreadsheetTh>
-        <SpreadsheetTh icon="favoraom">Favor</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_population_provision_icon">População</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_time_icon">Tempo treino</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_speed_icon">Vel. movimento</SpreadsheetTh>
-        <SpreadsheetTh icon="attack_cur">Força atributos</SpreadsheetTh>
+        <SpreadsheetTh icon="hackdamage">{t("spreadsheet.unidades.hackDamage")}</SpreadsheetTh>
+        <SpreadsheetTh icon="piercedamage">{t("spreadsheet.unidades.pierceDamage")}</SpreadsheetTh>
+        <SpreadsheetTh icon="rangeicon">{t("spreadsheet.unidades.range")}</SpreadsheetTh>
+        <SpreadsheetTh icon="crushdamage">{t("spreadsheet.unidades.crushDamage")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_divine_damage_icon">{t("spreadsheet.unidades.divineDamage")}</SpreadsheetTh>
+        <SpreadsheetTh icon="attack_cur">{t("spreadsheet.unidades.areaDamage")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_rate_of_fire_icon">{t("spreadsheet.unidades.attackSpeed")}</SpreadsheetTh>
+        <SpreadsheetTh icon="attack_cur">{t("spreadsheet.unidades.dps")}</SpreadsheetTh>
+        <SpreadsheetTh icon="hackarmor">{t("spreadsheet.unidades.hackArmor")}</SpreadsheetTh>
+        <SpreadsheetTh icon="piercearmor">{t("spreadsheet.unidades.pierceArmor")}</SpreadsheetTh>
+        <SpreadsheetTh icon="foodaom">{t("spreadsheet.food")}</SpreadsheetTh>
+        <SpreadsheetTh icon="woodaom">{t("spreadsheet.wood")}</SpreadsheetTh>
+        <SpreadsheetTh icon="goldaom">{t("spreadsheet.gold")}</SpreadsheetTh>
+        <SpreadsheetTh icon="favoraom">{t("spreadsheet.favor")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_population_provision_icon">{t("spreadsheet.unidades.population")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_time_icon">{t("spreadsheet.unidades.trainTime")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_speed_icon">{t("spreadsheet.unidades.moveSpeed")}</SpreadsheetTh>
+        <SpreadsheetTh icon="attack_cur">{t("spreadsheet.unidades.attributeStrength")}</SpreadsheetTh>
       </SpreadsheetHead>
       <SpreadsheetBody>
         {rows.map((u) => {

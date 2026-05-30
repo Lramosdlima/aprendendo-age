@@ -6,7 +6,8 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { aldeaoById, aldeaoSlugById, deusById, deusSlugById, panteaoBySlug, startById } from "@/data/catalog";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import {
   listIndexLinkStateFromLocation,
@@ -16,9 +17,11 @@ import {
 import { cn } from "@/lib/cn";
 
 export function PanteaoDetailPage() {
+  const { t } = useTranslation();
+  const { aldeaoById, aldeaoSlugById, deusById, deusSlugById, panteaoBySlug, startById } = useCatalog();
   const { pathname, search: locSearch, state: navState } = useLocation();
   const backToList = listIndexReturnTo("/panteoes", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/panteoes", "Panteões");
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/panteoes", t("nav.pantheons"));
   const { slug } = useParams();
   const p = slug ? panteaoBySlug.get(slug) : undefined;
 
@@ -26,7 +29,7 @@ export function PanteaoDetailPage() {
     return (
       <div>
         <BackLink to={backToList}>{backLabel}</BackLink>
-        <p className="text-zinc-400">Panteão não encontrado.</p>
+        <p className="text-zinc-400">{t("common.entityNotFound.pantheon")}</p>
       </div>
     );
   }
@@ -39,9 +42,9 @@ export function PanteaoDetailPage() {
     .map((item) => {
       const a = aldeaoById.get(item.id);
       if (!a) return null;
-      const slug = aldeaoSlugById.get(item.id) ?? String(item.id);
+      const villagerSlug = aldeaoSlugById.get(item.id) ?? String(item.id);
       return (
-        <Link key={item.id} to={`/aldeoes/${slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+        <Link key={item.id} to={`/aldeoes/${villagerSlug}`} className="text-amber-200 underline-offset-2 hover:underline">
           {item.nome}
         </Link>
       );
@@ -74,18 +77,10 @@ export function PanteaoDetailPage() {
     >
       {heroBackground ? (
         <>
-          {/*
-            Base opaca: quando a célula da grid é mais alta que a arte, evita faixa
-            “vazia”/preta por baixo dos gradientes semi-transparentes.
-          */}
           <div
             className="pointer-events-none -z-[12] col-start-1 row-start-1 w-full min-w-0 self-stretch bg-zinc-950"
             aria-hidden
           />
-          {/*
-            Imagem em largura total com altura intrínseca (sem crop). A linha da grid
-            fica max(altura da arte, altura do conteúdo, min-h da página).
-          */}
           <img
             src={heroBackground}
             alt=""
@@ -116,7 +111,7 @@ export function PanteaoDetailPage() {
         {heroBackground ? (
           <header className="space-y-2" aria-labelledby="panteao-detail-heading">
             <p className="font-[family-name:var(--font-display)] text-xs font-medium uppercase tracking-[0.18em] text-amber-400/90">
-              Panteão
+              {t("common.pantheon")}
             </p>
             <h1
               id="panteao-detail-heading"
@@ -130,13 +125,13 @@ export function PanteaoDetailPage() {
         )}
 
         {p.description ? (
-          <Section title="Descrição" className={cn(sectionOnHeroClass)}>
+          <Section title={t("common.description")} className={cn(sectionOnHeroClass)}>
             <NotionText text={p.description} />
           </Section>
         ) : null}
         {"dois_tipos_de_trabalhadores_alimentam_esse_crescimento" in p &&
         p.dois_tipos_de_trabalhadores_alimentam_esse_crescimento ? (
-          <Section title="Trabalhadores" className={cn(sectionOnHeroClass)}>
+          <Section title={t("common.workers")} className={cn(sectionOnHeroClass)}>
             <NotionText text={p.dois_tipos_de_trabalhadores_alimentam_esse_crescimento} />
           </Section>
         ) : null}
@@ -148,7 +143,7 @@ export function PanteaoDetailPage() {
           )}
         >
           {villLinks.length > 0 ? (
-            <InfoRow label={villLinks.length > 1 ? "Aldeões" : "Aldeão"}>
+            <InfoRow label={villLinks.length > 1 ? t("common.villagersPlural") : t("common.villager")}>
               <span className="flex flex-wrap gap-x-2 gap-y-1">
                 {villLinks.map((el, i) => (
                   <span key={i}>
@@ -160,7 +155,7 @@ export function PanteaoDetailPage() {
             </InfoRow>
           ) : null}
           {startEntries.length > 0 ? (
-            <InfoRow label="Starts (referências)">
+            <InfoRow label={t("common.startsRef")}>
               <ul className="list-inside list-disc space-y-1.5 text-sm">
                 {startEntries.map(({ id: sid, nome }) => {
                   const s = startById.get(sid);
@@ -180,7 +175,7 @@ export function PanteaoDetailPage() {
             </InfoRow>
           ) : null}
           {deusPortraitItems.length > 0 ? (
-            <InfoRow label="Deuses">
+            <InfoRow label={t("common.gods")}>
               <DeusPortraitHeaderActions
                 items={deusPortraitItems}
                 linkState={deusLinkState}

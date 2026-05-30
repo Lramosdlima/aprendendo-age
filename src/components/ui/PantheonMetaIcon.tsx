@@ -1,4 +1,4 @@
-import { panteaoById } from "@/data/catalog";
+import { useCatalog } from "@/hooks/useCatalog";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
 const imgClass =
@@ -10,6 +10,7 @@ type PantheonMetaIconProps = {
 
 /** Ícone da civilização (`assets/pantheons`) antes do texto da meta — recebe o id numérico do panteão (ex. `firstNumId(unidade.panteao)` ou `firstNumId(tecnologia.panteoes)`). */
 export function PantheonMetaIcon({ panteaoId }: PantheonMetaIconProps) {
+  const { panteaoById } = useCatalog();
   const p = panteaoById.get(panteaoId);
   const src = p ? getPantheonWatermarkUrl(p) : undefined;
   if (!src) return null;

@@ -5,9 +5,11 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { getPantheonHeroBackgroundUrl, getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { SearchField } from "@/components/ui/SearchField";
-import { panteoes, panteaoSlugById } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 
-function matches(p: (typeof panteoes)[number], q: string) {
+function matches(p: LocaleCatalog["panteoes"][number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
   const blob = [
@@ -23,13 +25,20 @@ function matches(p: (typeof panteoes)[number], q: string) {
 }
 
 export function PanteoesPage() {
+  const { t } = useTranslation();
+  const { panteoes, panteaoSlugById } = useCatalog();
   const [q, setQ] = useState("");
-  const filtered = useMemo(() => panteoes.filter((p) => matches(p, q)), [q]);
+  const filtered = useMemo(() => panteoes.filter((p) => matches(p, q)), [panteoes, q]);
 
   return (
     <div>
-      <PageHeader title="Panteões" description="Civilizações jogáveis e resumo do estilo de jogo." />
-      <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou trecho…" id="panteoes-search" />
+      <PageHeader title={t("pages.panteoes.title")} description={t("pages.panteoes.description")} />
+      <SearchField
+        value={q}
+        onChange={setQ}
+        placeholder={t("pages.panteoes.filterPlaceholder")}
+        id="panteoes-search"
+      />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2">
         {filtered.map((p) => (
           <li key={p.id}>
@@ -38,7 +47,7 @@ export function PanteoesPage() {
               title={p.nome}
               cardTint={pantheonCardTint(p.nome)}
               subtitle={p.description}
-              meta={`${(Array.isArray(p.deuses) ? p.deuses : []).length} deuses`}
+              meta={t("common.deitiesCount", { count: (Array.isArray(p.deuses) ? p.deuses : []).length })}
               subtitleTag={false}
               backgroundCoverSrc={getPantheonHeroBackgroundUrl(p)}
               watermarkSrc={getPantheonWatermarkUrl(p)}
@@ -46,7 +55,9 @@ export function PanteoesPage() {
           </li>
         ))}
       </ul>
-      {filtered.length === 0 ? <p className="mt-8 text-center text-sm text-zinc-500">Nenhum resultado.</p> : null}
+      {filtered.length === 0 ? (
+        <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
+      ) : null}
     </div>
   );
 }

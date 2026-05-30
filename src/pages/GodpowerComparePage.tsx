@@ -5,15 +5,16 @@ import { BackLink } from "@/components/ui/BackLink";
 import { CompareInfoRow } from "@/components/ui/InfoRow";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
+import { entityDisplayDescription } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { parseGameNumber } from "@/lib/numericCompare";
-import { godpowerBySlug, godpowers } from "@/data/catalog";
+import type { Godpower } from "@/data/catalog";
 
 const compareTitleClass =
   "text-xl leading-snug [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl";
-
-type G = (typeof godpowers)[number];
 
 function displayNum(v: unknown): ReactNode {
   if (v == null || v === "") return "—";
@@ -28,29 +29,37 @@ function numericPairFrom(a: unknown, b: unknown, lowerIsBetter?: boolean) {
   };
 }
 
-function GodpowerNumerosCompare({ g1, g2 }: { g1: G; g2: G }) {
+function GodpowerNumerosCompare({
+  g1,
+  g2,
+  t,
+}: {
+  g1: Godpower;
+  g2: Godpower;
+  t: (key: string) => string;
+}) {
   return (
     <div className="space-y-0">
       <CompareInfoRow
-        label="Cooldown (s)"
+        label={t("common.cooldownSec")}
         left={displayNum(g1.cooldown_seg)}
         right={displayNum(g2.cooldown_seg)}
         numericPair={numericPairFrom(g1.cooldown_seg, g2.cooldown_seg, true)}
       />
       <CompareInfoRow
-        label="Duração no mapa (s)"
+        label={t("common.mapDurationSec")}
         left={displayNum(g1.duracao_no_mapa_seg)}
         right={displayNum(g2.duracao_no_mapa_seg)}
         numericPair={numericPairFrom(g1.duracao_no_mapa_seg, g2.duracao_no_mapa_seg)}
       />
       <CompareInfoRow
-        label="Custo repetir"
+        label={t("common.repeatCost")}
         left={displayNum(g1.custo_repetir)}
         right={displayNum(g2.custo_repetir)}
-        numericPair={{...numericPairFrom(g1.custo_repetir, g2.custo_repetir, true), lowerIsBetter: true}}
+        numericPair={{ ...numericPairFrom(g1.custo_repetir, g2.custo_repetir, true), lowerIsBetter: true }}
       />
       <CompareInfoRow
-        label="Incremento por uso"
+        label={t("common.incrementPerUse")}
         left={displayNum(g1.incremento_por_uso)}
         right={displayNum(g2.incremento_por_uso)}
         numericPair={numericPairFrom(g1.incremento_por_uso, g2.incremento_por_uso, true)}
@@ -60,6 +69,8 @@ function GodpowerNumerosCompare({ g1, g2 }: { g1: G; g2: G }) {
 }
 
 export function GodpowerComparePage() {
+  const { t, locale } = useTranslation();
+  const { godpowerBySlug } = useCatalog();
   const { slugA, slugB } = useParams();
   const g1 = slugA ? godpowerBySlug.get(slugA) : undefined;
   const g2 = slugB ? godpowerBySlug.get(slugB) : undefined;
@@ -67,8 +78,8 @@ export function GodpowerComparePage() {
   if (!g1 || !g2) {
     return (
       <div>
-        <BackLink to="/poderes">Poderes divinos</BackLink>
-        <p className="text-zinc-400">Um ou ambos os poderes não foram encontrados.</p>
+        <BackLink to="/poderes">{t("nav.godpowers")}</BackLink>
+        <p className="text-zinc-400">{t("common.entityCompareNotFound.power")}</p>
       </div>
     );
   }
@@ -88,7 +99,7 @@ export function GodpowerComparePage() {
 
   return (
     <div>
-      <BackLink to="/poderes">Poderes divinos</BackLink>
+      <BackLink to="/poderes">{t("nav.godpowers")}</BackLink>
 
       <div
         className={cn(
@@ -102,7 +113,7 @@ export function GodpowerComparePage() {
         <header className="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
           <PageHeaderBlock
             title={g1.nome}
-            description={g1.ingles ? `Inglês: ${g1.ingles}` : undefined}
+            description={entityDisplayDescription(g1, locale, t)}
             headerIconSrc={icon1}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -111,7 +122,7 @@ export function GodpowerComparePage() {
           <PageHeaderBlock
             align="end"
             title={g2.nome}
-            description={g2.ingles ? `Inglês: ${g2.ingles}` : undefined}
+            description={entityDisplayDescription(g2, locale, t)}
             headerIconSrc={icon2}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -120,8 +131,8 @@ export function GodpowerComparePage() {
         </header>
       </div>
 
-      <Section title="Números" className="mt-0">
-        <GodpowerNumerosCompare g1={g1} g2={g2} />
+      <Section title={t("common.numbers")} className="mt-0">
+        <GodpowerNumerosCompare g1={g1} g2={g2} t={t} />
       </Section>
     </div>
   );

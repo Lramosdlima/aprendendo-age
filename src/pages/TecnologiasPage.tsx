@@ -13,9 +13,11 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { tecnologias, tecnologiaSlugByIndex } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
 import { useListViewMode } from "@/hooks/useListViewMode";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { useTranslation } from "@/hooks/useTranslation";
 import { firstNumId, joinRefNomesOrString } from "@/lib/entityRefs";
 import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
@@ -23,7 +25,7 @@ import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 import { campoSearchBlob } from "@/lib/tecnologiaCampo";
 
-function matches(t: (typeof tecnologias)[number], q: string) {
+function matches(t: LocaleCatalog["tecnologias"][number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
   return [
@@ -48,6 +50,8 @@ function matches(t: (typeof tecnologias)[number], q: string) {
 }
 
 export function TecnologiasPage() {
+  const { t } = useTranslation();
+  const { tecnologias, tecnologiaSlugByIndex } = useCatalog();
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
     () => listIndexLinkStateFromLocation(pathname, locSearch),
@@ -60,17 +64,17 @@ export function TecnologiasPage() {
   const filtered = useMemo(
     () =>
       tecnologias
-        .map((t, index) => ({ t, index }))
-        .filter(({ t }) => matches(t, q)),
-    [q],
+        .map((tec, index) => ({ t: tec, index }))
+        .filter(({ t: tec }) => matches(tec, q)),
+    [tecnologias, q],
   );
 
   return (
     <div className="w-full min-w-0">
       <ListPageStickyHeader>
         <PageHeader
-          title="Tecnologias"
-          description="Melhorias e bônus — a lista é grande; use a busca!"
+          title={t("pages.tecnologias.title")}
+          description={t("pages.tecnologias.description")}
           className="!mb-0 w-full"
           actions={
             viewMode === "planilha" ? (
@@ -79,7 +83,12 @@ export function TecnologiasPage() {
           }
         />
         <div className="flex flex-col items-start gap-3">
-          <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome, deus ou panteão…" id="tec-search" />
+          <SearchField
+            value={q}
+            onChange={setQ}
+            placeholder={t("pages.tecnologias.filterPlaceholder")}
+            id="tec-search"
+          />
           <ListViewModeToggle mode={viewMode} onChange={setViewMode} id="tecnologias-view-mode" />
         </div>
       </ListPageStickyHeader>
@@ -93,24 +102,24 @@ export function TecnologiasPage() {
         </SpreadsheetPageWidth>
       ) : (
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-          {filtered.map(({ t, index }) => (
-            <li key={`${index}-${t.nome}`}>
+          {filtered.map(({ t: tec, index }) => (
+            <li key={`${index}-${tec.nome}`}>
               <EntityCard
                 to={`/tecnologias/${tecnologiaSlugByIndex.get(index) ?? index}`}
                 linkState={listIndexState}
-                title={t.nome || `(sem título #${index})`}
-                cardTint={pantheonCardTint(joinRefNomesOrString(t.panteoes))}
-                watermarkSrc={getTecnologiaAssetUrl(t)}
-                subtitle={t.beneficia ? <NotionText text={t.beneficia} /> : undefined}
+                title={tec.nome || t("pages.tecnologias.untitled", { index })}
+                cardTint={pantheonCardTint(joinRefNomesOrString(tec.panteoes))}
+                watermarkSrc={getTecnologiaAssetUrl(tec)}
+                subtitle={tec.beneficia ? <NotionText text={tec.beneficia} /> : undefined}
                 meta={
                   <span className="flex flex-col gap-1.5">
                     <span className="inline-flex flex-wrap items-baseline gap-x-0">
-                      {Array.isArray(t.panteoes) && firstNumId(t.panteoes) != null ? (
-                        <PantheonMetaIcon panteaoId={firstNumId(t.panteoes)!} />
+                      {Array.isArray(tec.panteoes) && firstNumId(tec.panteoes) != null ? (
+                        <PantheonMetaIcon panteaoId={firstNumId(tec.panteoes)!} />
                       ) : null}
-                      <MetaNotionLine parts={[joinRefNomesOrString(t.panteoes), joinRefNomesOrString(t.eras)]} />
+                      <MetaNotionLine parts={[joinRefNomesOrString(tec.panteoes), joinRefNomesOrString(tec.eras)]} />
                     </span>
-                    {t.tipo?.trim() ? <TecnologiaTipoBadges tipo={t.tipo} /> : null}
+                    {tec.tipo?.trim() ? <TecnologiaTipoBadges tipo={tec.tipo} /> : null}
                   </span>
                 }
               />
@@ -118,7 +127,9 @@ export function TecnologiasPage() {
           ))}
         </ul>
       )}
-      {filtered.length === 0 ? <p className="mt-8 text-center text-sm text-zinc-500">Nenhum resultado.</p> : null}
+      {filtered.length === 0 ? (
+        <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
+      ) : null}
     </div>
   );
 }

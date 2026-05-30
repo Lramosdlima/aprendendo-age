@@ -5,7 +5,9 @@ import { AldeaoBonusCompare, AldeaoColetaCompare, AldeaoGeralCompare } from "@/c
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeaderBlock } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { aldeaoBySlug } from "@/data/catalog";
+import { entityDisplayDescription } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { getAldeaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { cn } from "@/lib/cn";
 
@@ -13,6 +15,8 @@ const compareTitleClass =
   "text-xl leading-snug [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl";
 
 export function AldeaoComparePage() {
+  const { t, locale } = useTranslation();
+  const { aldeaoBySlug } = useCatalog();
   const { slugA, slugB } = useParams();
   const a1 = slugA ? aldeaoBySlug.get(slugA) : undefined;
   const a2 = slugB ? aldeaoBySlug.get(slugB) : undefined;
@@ -20,8 +24,8 @@ export function AldeaoComparePage() {
   if (!a1 || !a2) {
     return (
       <div>
-        <BackLink to="/aldeoes">Aldeões</BackLink>
-        <p className="text-zinc-400">Um ou ambos os aldeões não foram encontrados.</p>
+        <BackLink to="/aldeoes">{t("nav.villagers")}</BackLink>
+        <p className="text-zinc-400">{t("common.entityCompareNotFound.villager")}</p>
       </div>
     );
   }
@@ -41,7 +45,7 @@ export function AldeaoComparePage() {
 
   return (
     <div>
-      <BackLink to="/aldeoes">Aldeões</BackLink>
+      <BackLink to="/aldeoes">{t("nav.villagers")}</BackLink>
 
       <div
         className={cn(
@@ -55,7 +59,7 @@ export function AldeaoComparePage() {
         <header className="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between lg:gap-x-8">
           <PageHeaderBlock
             title={a1.nome}
-            description={a1.ingles ? `Inglês: ${a1.ingles}` : undefined}
+            description={entityDisplayDescription(a1, locale, t)}
             headerIconSrc={icon1}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -64,7 +68,7 @@ export function AldeaoComparePage() {
           <PageHeaderBlock
             align="end"
             title={a2.nome}
-            description={a2.ingles ? `Inglês: ${a2.ingles}` : undefined}
+            description={entityDisplayDescription(a2, locale, t)}
             headerIconSrc={icon2}
             descriptionTag
             titleClassName={compareTitleClass}
@@ -74,15 +78,15 @@ export function AldeaoComparePage() {
       </div>
 
       <div className="space-y-6">
-        <Section title="Geral">
+        <Section title={t("common.general")}>
           <AldeaoGeralCompare a1={a1} a2={a2} />
         </Section>
 
-        <Section title="Taxas de coleta (base)">
+        <Section title={t("common.baseGatherRates")}>
           <AldeaoColetaCompare a1={a1} a2={a2} />
         </Section>
 
-        <Section title="Bônus percentuais">
+        <Section title={t("common.percentBonus")}>
           <AldeaoBonusCompare a1={a1} a2={a2} />
         </Section>
       </div>

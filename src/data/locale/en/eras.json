@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "nome": "Archaic",
+    "ingles": "Archaic",
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 0,
+    "tempo_seg": 0,
+    "description": "This is the 1st Age of the game! Starts with access to 1 god power :favoraom: e some basic buildings, como House :aomr_house_icon:, Temple :aomr_temple_icon: e lugares de coleta de recurso. Your start is important to set the pace of the match, so choose wisely based on your strategy (Rush :aggro_icon:, Turtle :turtle_icon: ou Eco :eco_icon:)!",
+    "hint": "Build order important!",
+    "icon": "aomr_archaic_age_icon"
+  },
+  {
+    "id": 2,
+    "nome": "Classical",
+    "ingles": "Classical",
+    "comida": 400,
+    "madeira": 0,
+    "ouro": 0,
+    "tempo_seg": 60,
+    "requisitos_para_subir_de_era": "Temple (Greek), Temple (Egyptian), Temple (Norse), Temple (Atlantean), Temple (Chinese), Temple (Japanese)",
+    "description": "From here we can choose 1 of 2 minor gods (with passive, myth units, god power, and exclusive technologies). We gain access to the first barracks to train troops. Depending on your strategy, put your Rush :aggro_icon:, Turtle :turtle_icon: ou Eco :eco_icon:!",
+    "hint": "Ideal: Age up in 3-5 minutes!",
+    "requisitos_para_subir_de_era_ids": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "icon": "aomr_classical_age_icon"
+  },
+  {
+    "id": 3,
+    "nome": "Heroic",
+    "ingles": "Heroic",
+    "comida": 800,
+    "madeira": 0,
+    "ouro": 500,
+    "tempo_seg": 75,
+    "requisitos_para_subir_de_era": "Armory (Grega), Market (Greek), Armory de Anões",
+    "description": "Usually needed for more destruction power for fortress buildings :aomr_fortress_icon: (using siege units :aomr_type_siege_weapon_icon:) or to access more powerful troops.",
+    "hint": "Ideal: time of 8-10 minutes!",
+    "requisitos_para_subir_de_era_ids": [
+      27,
+      51,
+      34
+    ],
+    "icon": "aomr_heroic_age_icon"
+  },
+  {
+    "id": 4,
+    "nome": "Mythic",
+    "ingles": "Mythic",
+    "comida": 1200,
+    "madeira": 0,
+    "ouro": 1200,
+    "tempo_seg": 120,
+    "requisitos_para_subir_de_era": "Fortress, Fortress Migdol, Forte da Colina, Palácio, Baolei, Castelo",
+    "description": "Essa era geralmente é alcançada em partidas mais longas ou mais boomadas (estratégia de só economia). Os god powers muito poderosos aqui e as tropas ainda mais!",
+    "hint": "Comum: tempo de 15-30 minutos, mas depende muito!",
+    "requisitos_para_subir_de_era_ids": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      68
+    ],
+    "icon": "aomr_mythic_age_icon"
+  },
+  {
+    "id": 5,
+    "nome": "Wonder",
+    "ingles": "Wonder",
+    "comida": 5000,
+    "madeira": 5000,
+    "ouro": 5000,
+    "tempo_seg": 5400,
+    "requisitos_para_subir_de_era": "Maravilha",
+    "description": "Muito raro de acontecer em partidas! Ao construir a Maravilha :aomr_wonder_icon:, suas myth units :aomr_type_myth_unit_icon: ficam mais fortes e god powers mais baratos e rápidos para reutilizar. A partida tem que estar muito acirrada para alguém arriscar isso, mas é uma estratégia possível para vencer a partida!",
+    "hint": "Raro: Pode ocorre mais em partidas de equipe (TG) ou todos contra (FFA)",
+    "requisitos_para_subir_de_era_id": 71,
+    "icon": "aomr_wonder_age_icon"
+  }
+]

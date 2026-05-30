@@ -10,9 +10,11 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { deusById, godpowers, godpowerSlugById, panteaoById } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
 import { useListViewMode } from "@/hooks/useListViewMode";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { useTranslation } from "@/hooks/useTranslation";
 import { formatGodNameForMetaNotion } from "@/lib/deusAssetUrl";
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { firstNumId, joinRefNomes } from "@/lib/entityRefs";
@@ -20,7 +22,7 @@ import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 
-function matches(g: (typeof godpowers)[number], q: string) {
+function matches(g: LocaleCatalog["godpowers"][number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
   return [
@@ -45,6 +47,8 @@ const toolbarBtn =
   "rounded-xl border border-aom-border bg-zinc-900/50 px-3.5 py-2 text-sm font-medium text-amber-100/95 transition-colors hover:border-amber-500/40 hover:bg-zinc-900/80 focus:outline-none focus:ring-2 focus:ring-amber-500/25 disabled:cursor-not-allowed disabled:opacity-45";
 
 export function GodpowersPage() {
+  const { t } = useTranslation();
+  const { deusById, godpowers, godpowerSlugById, panteaoById } = useCatalog();
   const navigate = useNavigate();
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
@@ -57,7 +61,7 @@ export function GodpowersPage() {
   const [compareMode, setCompareMode] = useState(false);
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
-  const filtered = useMemo(() => godpowers.filter((g) => matches(g, q)), [q]);
+  const filtered = useMemo(() => godpowers.filter((g) => matches(g, q)), [godpowers, q]);
 
   function toggleSelect(slug: string) {
     setSelectedSlugs((prev) => {
@@ -84,8 +88,8 @@ export function GodpowersPage() {
     <div className="w-full min-w-0">
       <ListPageStickyHeader>
         <PageHeader
-          title="Poderes divinos"
-          description="Myth powers: cooldown, custo de repetição e descrições."
+          title={t("pages.godpowers.title")}
+          description={t("pages.godpowers.description")}
           className="!mb-0 w-full"
           actions={
             showSpreadsheetPreview ? (
@@ -95,16 +99,16 @@ export function GodpowersPage() {
         />
         <div className="flex flex-col items-start gap-3">
           <div className="flex w-full flex-wrap items-center justify-between gap-3">
-            <SearchField value={q} onChange={setQ} placeholder="Filtrar…" id="gp-search" />
+            <SearchField value={q} onChange={setQ} placeholder={t("common.filter")} id="gp-search" />
             <div className="flex flex-wrap items-center justify-end gap-2">
               {!compareMode ? (
                 <button type="button" className={toolbarBtn} onClick={enterCompareMode}>
-                  Modo Comparação
+                  {t("common.compareMode")}
                 </button>
               ) : (
                 <>
                   <button type="button" className={toolbarBtn} onClick={exitCompareMode}>
-                    Cancelar
+                    {t("common.cancel")}
                   </button>
                   <button
                     type="button"
@@ -115,7 +119,7 @@ export function GodpowersPage() {
                       navigate(`/poderes/compare/${selectedSlugs[0]}/${selectedSlugs[1]}`);
                     }}
                   >
-                    Comparar
+                    {t("common.compare")}
                   </button>
                 </>
               )}
@@ -170,7 +174,9 @@ export function GodpowersPage() {
           })}
         </ul>
       )}
-      {filtered.length === 0 ? <p className="mt-8 text-center text-sm text-zinc-500">Nenhum resultado.</p> : null}
+      {filtered.length === 0 ? (
+        <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
+      ) : null}
     </div>
   );
 }

@@ -8,17 +8,10 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
-import {
-  construcaoBySlug,
-  eraById,
-  eraSlugById,
-  panteaoById,
-  panteaoSlugById,
-  tecnologias,
-  tecnologiaSlugByIndex,
-  unidadeById,
-  unidadeSlugById,
-} from "@/data/catalog";
+import { entityDisplayDescription } from "@/data/catalogLocale";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { formatArmorPercent } from "@/lib/armorDisplay";
 import { getConstrucaoAssetUrl, getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
@@ -37,7 +30,8 @@ function splitCommaNames(raw: string | undefined): string[] {
   return raw.split(",").map((s) => s.trim()).filter(Boolean);
 }
 
-function tecnologiaPortraitItemsFromNames(names: string[]): PortraitHeaderItem[] {
+function tecnologiaPortraitItemsFromNames(catalog: LocaleCatalog, names: string[]): PortraitHeaderItem[] {
+  const { tecnologias, tecnologiaSlugByIndex } = catalog;
   return names.map((nome, i) => {
     const idx = tecnologias.findIndex((t) => t.nome === nome);
     const t = idx >= 0 ? tecnologias[idx] : undefined;
@@ -58,7 +52,8 @@ function unidadeIdsFromConstrucao(c: { unidades_ids?: number[]; unidades_id?: nu
   return ids;
 }
 
-function unidadePortraitItemsFromIds(ids: number[]): PortraitHeaderItem[] {
+function unidadePortraitItemsFromIds(catalog: LocaleCatalog, ids: number[]): PortraitHeaderItem[] {
+  const { unidadeById, unidadeSlugById } = catalog;
   return ids.map((uid, i) => {
     const u = unidadeById.get(uid);
     const slug = unidadeSlugById.get(uid);
@@ -72,10 +67,13 @@ function unidadePortraitItemsFromIds(ids: number[]): PortraitHeaderItem[] {
 }
 
 export function ConstrucaoDetailPage() {
+  const { t, locale } = useTranslation();
+  const catalog = useCatalog();
+  const { construcaoBySlug, eraById, eraSlugById, panteaoById, panteaoSlugById } = catalog;
   const { pathname, search: locSearch, state: navState } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/construcoes", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/construcoes", "Construções");
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/construcoes", t("nav.buildings"));
   const { slug } = useParams();
   const c = slug ? construcaoBySlug.get(slug) : undefined;
 
@@ -83,7 +81,7 @@ export function ConstrucaoDetailPage() {
     return (
       <div>
         <BackLink to={backToList}>{backLabel}</BackLink>
-        <p className="text-zinc-400">Construção não encontrada.</p>
+        <p className="text-zinc-400">{t("common.entityNotFound.building")}</p>
       </div>
     );
   }
@@ -93,10 +91,10 @@ export function ConstrucaoDetailPage() {
   const panteao = c.panteao_id != null ? panteaoById.get(c.panteao_id) : undefined;
 
   const tecnologiaNames = splitCommaNames(c.tecnologias);
-  const tecnologiaPortraitItems = tecnologiaNames.length ? tecnologiaPortraitItemsFromNames(tecnologiaNames) : [];
+  const tecnologiaPortraitItems = tecnologiaNames.length ? tecnologiaPortraitItemsFromNames(catalog, tecnologiaNames) : [];
 
   const unidadeIdList = unidadeIdsFromConstrucao(c);
-  const unidadePortraitItems = unidadeIdList.length ? unidadePortraitItemsFromIds(unidadeIdList) : [];
+  const unidadePortraitItems = unidadeIdList.length ? unidadePortraitItemsFromIds(catalog, unidadeIdList) : [];
 
   const showTecnologiasSection = tecnologiaPortraitItems.length > 0 || Boolean(c.tecnologias?.trim());
   const showUnidadesSection = unidadePortraitItems.length > 0 || Boolean(c.unidades?.trim());
@@ -106,20 +104,20 @@ export function ConstrucaoDetailPage() {
       <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
         title={c.nome}
-        description={c.ingles ? `Inglês: ${c.ingles}` : undefined}
+        description={entityDisplayDescription(c, locale, t)}
         headerIconSrc={construcaoIcon}
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Classificação">
+        <Section title={t("common.classification")}>
           <div className="space-y-0">
             {hasTipoContent(c.tipo) ? (
-              <InfoRow label="Tipo">
+              <InfoRow label={t("common.type")}>
                 <UnidadeTipoLine tipo={c.tipo} colored />
               </InfoRow>
             ) : null}
             {panteao ? (
-              <InfoRow label="Panteão">
+              <InfoRow label={t("common.pantheon")}>
                 <InfoRowPortraitOrText
                   portraits={
                     <PortraitHeaderActions
@@ -140,12 +138,12 @@ export function ConstrucaoDetailPage() {
                 />
               </InfoRow>
             ) : c.panteao ? (
-              <InfoRow label="Panteão">
+              <InfoRow label={t("common.pantheon")}>
                 <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={c.panteao} />} />
               </InfoRow>
             ) : null}
             {era ? (
-              <InfoRow label="Era">
+              <InfoRow label={t("common.era")}>
                 <InfoRowPortraitOrText
                   portraits={
                     <PortraitHeaderActions
@@ -166,26 +164,26 @@ export function ConstrucaoDetailPage() {
                 />
               </InfoRow>
             ) : c.era ? (
-              <InfoRow label="Era">
+              <InfoRow label={t("common.era")}>
                 <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={c.era} />} />
               </InfoRow>
             ) : null}
           </div>
         </Section>
 
-        <Section title="Custo e tempo">
+        <Section title={t("common.costAndTime")}>
           <div className="space-y-0">
-            <InfoRow label="Custo total">{c.custo ?? "—"}</InfoRow>
-            <InfoRow label="Madeira" icon="woodaom">
+            <InfoRow label={t("common.totalCost")}>{c.custo ?? "—"}</InfoRow>
+            <InfoRow label={t("common.wood")} icon="woodaom">
               {c.madeira ?? "—"}
             </InfoRow>
-            <InfoRow label="Ouro" icon="goldaom">
+            <InfoRow label={t("common.gold")} icon="goldaom">
               {c.ouro ?? "—"}
             </InfoRow>
-            <InfoRow label="Tempo (s)" icon="aomr_time_icon">
+            <InfoRow label={t("common.buildTime")} icon="aomr_time_icon">
               {c.tempo_construir_segundos ?? "—"}
             </InfoRow>
-            <InfoRow label="Guarnição" icon="aom_garrison_icon">
+            <InfoRow label={t("common.garrison")} icon="aom_garrison_icon">
               {c.guarnicao ?? "—"}
             </InfoRow>
           </div>
@@ -193,40 +191,40 @@ export function ConstrucaoDetailPage() {
       </div>
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
-        <Section title="Combate / defesa">
+        <Section title={t("common.combatDefense")}>
           <div className="space-y-0">
-            <InfoRow label="Pontos de Vida" icon="aomr_hit_points_icon">
+            <InfoRow label={t("common.hitPoints")} icon="aomr_hit_points_icon">
               {c.pontos_de_vida ?? "—"}
             </InfoRow>
-            <InfoRow label="Dano perfurante" icon="piercedamage">
+            <InfoRow label={t("common.pierceDamage")} icon="piercedamage">
               {c.dano_perfurante ?? "—"}
             </InfoRow>
-            <InfoRow label="Velocidade de ataque (seg)" icon="aomr_rate_of_fire_icon">
+            <InfoRow label={t("common.attackSpeed")} icon="aomr_rate_of_fire_icon">
               {c.velocidade_de_ataque_atk_s ?? "—"}
             </InfoRow>
-            <InfoRow label="DPS" icon="attack_cur">
+            <InfoRow label={t("common.dps")} icon="attack_cur">
               {c.dps ?? "—"}
             </InfoRow>
-            <InfoRow label="Alcance" icon="rangeicon">
+            <InfoRow label={t("common.range")} icon="rangeicon">
               {c.alcance ?? "—"}
             </InfoRow>
-            <InfoRow label="Projéteis" icon="piercedamage">
+            <InfoRow label={t("common.projectiles")} icon="piercedamage">
               {c.no_projeteis ?? "—"}
             </InfoRow>
-            <InfoRow label="Armadura de corte" icon="hackarmor">
+            <InfoRow label={t("common.hackArmor")} icon="hackarmor">
               {formatArmorPercent(c.armadura_anticorte)}
             </InfoRow>
-            <InfoRow label="Armadura de perfuração" icon="piercearmor">
+            <InfoRow label={t("common.pierceArmor")} icon="piercearmor">
               {formatArmorPercent(c.armadura_antiperfurante)}
             </InfoRow>
-            <InfoRow label="Armadura de contusão" icon="crusharmor">
+            <InfoRow label={t("common.crushArmor")} icon="crusharmor">
               {formatArmorPercent(c.armadura_anticontucao)}
             </InfoRow>
           </div>
         </Section>
 
         {showTecnologiasSection ? (
-          <Section title="Tecnologias">
+          <Section title={t("common.technologies")}>
             {tecnologiaPortraitItems.length > 0 ? (
               <InfoRowPortraitCluster>
                 <PortraitHeaderActions
@@ -247,7 +245,7 @@ export function ConstrucaoDetailPage() {
 
       {showUnidadesSection ? (
         <Section
-          title={unidadePortraitItems.length > 0 ? "Unidades relacionadas" : "Unidades"}
+          title={unidadePortraitItems.length > 0 ? t("common.relatedUnits") : t("nav.units")}
           className="mt-6"
         >
           {unidadePortraitItems.length > 0 ? (

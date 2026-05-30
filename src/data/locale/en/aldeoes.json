@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "nome": "Villager",
+    "ingles": "Villager",
+    "recursos": 50,
+    "carne": 50,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 60,
+    "gado_galinhas": 54,
+    "frutinhas": 42,
+    "fazenda": 42,
+    "arvore": 60,
+    "mina": 51,
+    "velocidade_construcao": 54,
+    "cacar_porcento": 0,
+    "gado_porcento": 0,
+    "frutinhas_porcento": 0,
+    "fazenda_porcento": 0,
+    "arvore_porcento": 0,
+    "mina_porcento": 0,
+    "velocidade_construcao_porcento": 0,
+    "icon": "aomr_villager_greek_icon",
+    "panteao": [
+      {
+        "id": 1,
+        "nome": "Greek :aomr_pantheon_greeks_icon:"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Dwarf",
+    "ingles": "Dwarf",
+    "recursos": 60,
+    "ouro": 60,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 48,
+    "gado_galinhas": 43.2,
+    "frutinhas": 33.6,
+    "fazenda": 33.6,
+    "arvore": 48,
+    "mina": 61.2,
+    "velocidade_construcao": 54,
+    "cacar_porcento": -20,
+    "gado_porcento": -20,
+    "frutinhas_porcento": -20,
+    "fazenda_porcento": -20,
+    "arvore_porcento": -20,
+    "mina_porcento": 20,
+    "velocidade_construcao_porcento": 0,
+    "icon": "aomr_dwarf_icon",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Norse :aomr_pantheon_norse_icon:"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Peasant",
+    "ingles": "Peasant",
+    "recursos": 40,
+    "carne": 40,
+    "vida": 50,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 48,
+    "gado_galinhas": 43.2,
+    "frutinhas": 38.4,
+    "fazenda": 33.6,
+    "arvore": 48,
+    "mina": 40.8,
+    "velocidade_construcao": 63.53,
+    "cacar_porcento": -20,
+    "gado_porcento": -20,
+    "frutinhas_porcento": -20,
+    "fazenda_porcento": -20,
+    "arvore_porcento": -20,
+    "mina_porcento": -20,
+    "velocidade_construcao_porcento": -15,
+    "icon": "aomr_peasant_icon",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinese :aomr_pantheon_chinese_icon:"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Citizen",
+    "ingles": "Citizen",
+    "recursos": 100,
+    "carne": 85,
+    "madeira": 15,
+    "vida": 100,
+    "populacao": 2,
+    "tempo_de_treinamento_patch_18_65484": 30,
+    "tempo_de_treinamento": 28,
+    "cacar": 90,
+    "gado_galinhas": 81,
+    "frutinhas": 63,
+    "fazenda": 63,
+    "arvore": 90,
+    "mina": 76.8,
+    "velocidade_construcao": 36,
+    "cacar_porcento": 50,
+    "gado_porcento": 50,
+    "frutinhas_porcento": 50,
+    "fazenda_porcento": 50,
+    "arvore_porcento": 50,
+    "mina_porcento": "50,6%",
+    "velocidade_construcao_porcento": 50,
+    "icon": "aomr_citizen_icon",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Citizen (Hero)",
+    "ingles": "Citizen (Hero)",
+    "recursos": 175,
+    "carne": 150,
+    "madeira": 25,
+    "vida": 125,
+    "populacao": 2,
+    "cacar": 99,
+    "gado_galinhas": 89.1,
+    "frutinhas": 69.6,
+    "fazenda": 69.6,
+    "arvore": 99,
+    "mina": 84,
+    "velocidade_construcao": 32.73,
+    "cacar_porcento": 65,
+    "gado_porcento": 65,
+    "frutinhas_porcento": 65,
+    "fazenda_porcento": 65,
+    "arvore_porcento": 65,
+    "mina_porcento": "64,7%",
+    "velocidade_construcao_porcento": 65,
+    "icon": "aomr_citizen_hero_icon",
+    "panteao": [
+      {
+        "id": 4,
+        "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Gatherer",
+    "ingles": "Gatherer",
+    "recursos": 50,
+    "carne": 50,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 57,
+    "gado_galinhas": 51.6,
+    "frutinhas": 40.2,
+    "fazenda": 40.2,
+    "arvore": 57,
+    "mina": 48.6,
+    "velocidade_construcao": 54,
+    "cacar_porcento": -5,
+    "gado_porcento": "-4,3%",
+    "frutinhas_porcento": "-4,3%",
+    "fazenda_porcento": -5,
+    "arvore_porcento": -5,
+    "mina_porcento": "-4,7%",
+    "velocidade_construcao_porcento": 0,
+    "icon": "aomr_gatherer_icon",
+    "panteao": [
+      {
+        "id": 3,
+        "nome": "Norse :aomr_pantheon_norse_icon:"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Kuafu",
+    "ingles": "Kuafu",
+    "recursos": 150,
+    "carne": 50,
+    "ouro": 100,
+    "vida": 175,
+    "populacao": 3,
+    "tempo_de_treinamento_patch_18_65484": 36,
+    "tempo_de_treinamento": 42,
+    "cacar": 90,
+    "gado_galinhas": 81,
+    "frutinhas": 72,
+    "fazenda": 63,
+    "arvore": 180,
+    "mina": 153,
+    "velocidade_construcao": 18,
+    "cacar_porcento": 50,
+    "gado_porcento": 50,
+    "frutinhas_porcento": 50,
+    "fazenda_porcento": 50,
+    "arvore_porcento": 200,
+    "mina_porcento": 200,
+    "velocidade_construcao_porcento": 200,
+    "icon": "aomr_kuafu_icon",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinese :aomr_pantheon_chinese_icon:"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Kuafu (Hero)",
+    "ingles": "Kuafu (Hero)",
+    "recursos": 0,
+    "vida": 200,
+    "populacao": 3,
+    "cacar": 117,
+    "gado_galinhas": 105.3,
+    "frutinhas": 93.6,
+    "fazenda": 81.9,
+    "arvore": 234,
+    "mina": 198.9,
+    "velocidade_construcao": 13.84,
+    "cacar_porcento": 95,
+    "gado_porcento": 95,
+    "frutinhas_porcento": 95,
+    "fazenda_porcento": 95,
+    "arvore_porcento": 290,
+    "mina_porcento": 290,
+    "velocidade_construcao_porcento": 290,
+    "icon": "aomr_kuafu_hero_icon",
+    "panteao": [
+      {
+        "id": 5,
+        "nome": "Chinese :aomr_pantheon_chinese_icon:"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Commoner",
+    "ingles": "Commoner",
+    "recursos": 50,
+    "carne": 50,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 60,
+    "gado_galinhas": 54,
+    "frutinhas": 42,
+    "fazenda": 42,
+    "arvore": 60,
+    "mina": 51,
+    "velocidade_construcao": 54,
+    "cacar_porcento": 0,
+    "gado_porcento": 0,
+    "frutinhas_porcento": 0,
+    "fazenda_porcento": 0,
+    "arvore_porcento": 0,
+    "mina_porcento": 0,
+    "velocidade_construcao_porcento": 0,
+    "icon": "aomr_commoner_icon",
+    "panteao": [
+      {
+        "id": 6,
+        "nome": "Japanese :aomr_pantheon_japanese_icon:"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Laborer",
+    "ingles": "Laborer",
+    "recursos": 50,
+    "carne": 50,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 54,
+    "gado_galinhas": 48.6,
+    "frutinhas": 37.8,
+    "fazenda": 37.8,
+    "arvore": 54,
+    "mina": 46.2,
+    "velocidade_construcao": 72,
+    "cacar_porcento": -10,
+    "gado_porcento": -10,
+    "frutinhas_porcento": -10,
+    "fazenda_porcento": -10,
+    "arvore_porcento": -10,
+    "mina_porcento": -9,
+    "velocidade_construcao_porcento": -25,
+    "icon": "aomr_laborer_icon",
+    "panteao": [
+      {
+        "id": 2,
+        "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Settler",
+    "ingles": "Settler",
+    "recursos": 50,
+    "carne": 50,
+    "vida": 55,
+    "populacao": 1,
+    "tempo_de_treinamento_patch_18_65484": 18,
+    "tempo_de_treinamento": 17,
+    "cacar": 60,
+    "gado_galinhas": 54,
+    "frutinhas": 42,
+    "fazenda": 42,
+    "arvore": 60,
+    "mina": 51,
+    "velocidade_construcao": 54,
+    "cacar_porcento": 0,
+    "gado_porcento": 0,
+    "frutinhas_porcento": 0,
+    "fazenda_porcento": 0,
+    "arvore_porcento": 0,
+    "mina_porcento": 0,
+    "velocidade_construcao_porcento": 0,
+    "icon": "aomr_settler_icon",
+    "panteao": [
+      {
+        "id": 7,
+        "nome": "Aztecs :aomr_pantheon_aztecs_icon:"
+      }
+    ]
+  }
+]

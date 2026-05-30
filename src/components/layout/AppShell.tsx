@@ -1,14 +1,11 @@
-import { useLayoutEffect, useEffect, useState } from "react";
+import { useLayoutEffect, useEffect, useMemo, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { cn } from "@/lib/cn";
+import { useTranslation } from "@/hooks/useTranslation";
 import { startNovoTagClassNav } from "@/pages/StartsPage";
 
-/**
- * Rotas de listagem com `?search=` + restauração de scroll em memória: não
- * forçar topo aqui; o `useListPageSearchQuery` controla. Detalhe (`/X/slug`,
- * etc.) deve abrir com scroll no início, não herdar o do índice.
- */
 const LIST_INDEX_PATHS = new Set([
   "/construcoes",
   "/deuses",
@@ -20,30 +17,33 @@ const LIST_INDEX_PATHS = new Set([
 ]);
 
 type NavItem =
-  | { to: string; label: string; end?: boolean; navNovo?: boolean }
-  | { to: string; label: string; match: (pathname: string) => boolean; navNovo?: boolean };
+  | { to: string; labelKey: string; end?: boolean; navNovo?: boolean }
+  | { to: string; labelKey: string; match: (pathname: string) => boolean; navNovo?: boolean };
 
-const nav: NavItem[] = [
-  { to: "/", label: "Início", end: true },
-  { to: "/starts", label: "Starts (Build Orders)", navNovo: true },
+const navItems: NavItem[] = [
+  { to: "/", labelKey: "nav.home", end: true },
+  { to: "/starts", labelKey: "nav.starts", navNovo: true },
   {
     to: "/trilha-de-aprendizado",
-    label: "Trilha de Aprendizado",
+    labelKey: "nav.trilha",
     match: (p) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
   },
-  { to: "/panteoes", label: "Panteões" },
-  { to: "/astecas", label: "Astecas", navNovo: true },
-  { to: "/deuses", label: "Deuses" },
-  { to: "/eras", label: "Eras" },
-  { to: "/poderes", label: "Poderes divinos" },
-  { to: "/construcoes", label: "Construções" },
-  { to: "/unidades", label: "Unidades" },
-  { to: "/aldeoes", label: "Aldeões" },
-  { to: "/mapas", label: "Mapas" },
-  { to: "/tecnologias", label: "Tecnologias" },
-  { to: "/rank", label: "Rank (RR)", navNovo: true , match: (p) => p === "/rank" || p.startsWith("/rank/") },
-  // TODO: Ainda está em teste o CLAN
-  // { to: "/clans", label: "Clãs" },
+  { to: "/panteoes", labelKey: "nav.pantheons" },
+  { to: "/astecas", labelKey: "nav.astecas", navNovo: true },
+  { to: "/deuses", labelKey: "nav.gods" },
+  { to: "/eras", labelKey: "nav.eras" },
+  { to: "/poderes", labelKey: "nav.godpowers" },
+  { to: "/construcoes", labelKey: "nav.buildings" },
+  { to: "/unidades", labelKey: "nav.units" },
+  { to: "/aldeoes", labelKey: "nav.villagers" },
+  { to: "/mapas", labelKey: "nav.maps" },
+  { to: "/tecnologias", labelKey: "nav.technologies" },
+  {
+    to: "/rank",
+    labelKey: "nav.rank",
+    navNovo: true,
+    match: (p) => p === "/rank" || p.startsWith("/rank/"),
+  },
 ];
 
 function navClass(active: boolean) {
@@ -55,10 +55,18 @@ function navClass(active: boolean) {
   );
 }
 
-function ShellNavLinks({ pathname, onItemClick }: { pathname: string; onItemClick?: () => void }) {
+function ShellNavLinks({
+  pathname,
+  onItemClick,
+  t,
+}: {
+  pathname: string;
+  onItemClick?: () => void;
+  t: (key: string) => string;
+}) {
   return (
     <>
-      {nav.map((item) => (
+      {navItems.map((item) => (
         <NavLink
           key={item.to}
           to={item.to}
@@ -68,10 +76,10 @@ function ShellNavLinks({ pathname, onItemClick }: { pathname: string; onItemClic
             navClass("match" in item ? item.match(pathname) : isActive)
           }
         >
-          <span className="min-w-0 flex-1 truncate">{item.label}</span>
+          <span className="min-w-0 flex-1 truncate">{t(item.labelKey)}</span>
           {item.navNovo ? (
-            <span className={startNovoTagClassNav} title="Conteúdo recente / novo">
-              Novo
+            <span className={startNovoTagClassNav} title={t("common.newTooltip")}>
+              {t("common.new")}
             </span>
           ) : null}
         </NavLink>
@@ -112,6 +120,7 @@ function MenuGlyph({ open }: { open: boolean }) {
 
 export function AppShell() {
   const { pathname, key } = useLocation();
+  const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useLayoutEffect(() => {
@@ -145,22 +154,27 @@ export function AppShell() {
     };
   }, [mobileMenuOpen]);
 
+  const appTitle = useMemo(() => t("common.appTitle"), [t]);
+  const appByline = useMemo(() => t("common.appByline"), [t]);
+
   return (
     <div className="flex min-h-screen flex-col md:flex-row">
+      <LanguageToggle />
+
       <header className="sticky top-0 z-30 flex min-h-16 shrink-0 items-center gap-3 border-b border-aom-border bg-zinc-950/95 px-3 py-3 backdrop-blur-sm md:hidden">
         <button
           type="button"
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-aom-border bg-zinc-900/80 text-amber-200 transition-colors hover:bg-zinc-800/90 focus:outline-none focus:ring-2 focus:ring-amber-500/35"
           aria-expanded={mobileMenuOpen}
           aria-controls="app-mobile-nav"
-          aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-label={mobileMenuOpen ? t("common.closeMenu") : t("common.openMenu")}
           onClick={() => setMobileMenuOpen((o) => !o)}
         >
           <MenuGlyph open={mobileMenuOpen} />
         </button>
         <div className="min-w-0 flex-1 text-center">
           <div className="truncate font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-amber-200">
-            Aprendendo Age
+            {appTitle}
           </div>
         </div>
         <div className="w-10 shrink-0" aria-hidden />
@@ -174,12 +188,12 @@ export function AppShell() {
       >
         <div className="shrink-0 px-4 pb-3 pt-4 md:px-5 md:pb-6 md:pt-0">
           <div className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-wide text-amber-200">
-            Aprendendo Age
+            {appTitle}
           </div>
-          <p className="mt-1 text-xs text-zinc-500">por Scooby Maníaco</p>
+          <p className="mt-1 text-xs text-zinc-500">{appByline}</p>
         </div>
         <nav className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto px-2 pb-3 md:px-3 md:pb-6">
-          <ShellNavLinks pathname={pathname} />
+          <ShellNavLinks pathname={pathname} t={t} />
         </nav>
       </aside>
 
@@ -188,7 +202,7 @@ export function AppShell() {
           <button
             type="button"
             className="fixed inset-0 z-40 bg-black/55 md:hidden"
-            aria-label="Fechar menu"
+            aria-label={t("common.closeMenu")}
             onClick={() => setMobileMenuOpen(false)}
           />
           <div
@@ -196,19 +210,19 @@ export function AppShell() {
             className="fixed inset-y-0 left-0 z-50 flex w-[min(100%,20rem)] flex-col border-r border-aom-border bg-zinc-950 shadow-2xl md:hidden"
             role="dialog"
             aria-modal="true"
-            aria-label="Navegação"
+            aria-label={t("common.navigation")}
           >
             <div className="flex items-start justify-between gap-3 border-b border-aom-border px-4 py-4">
               <div className="min-w-0">
                 <div className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-wide text-amber-200">
-                  Aprendendo Age
+                  {appTitle}
                 </div>
-                <p className="mt-1 text-xs text-zinc-500">por Scooby Maníaco</p>
+                <p className="mt-1 text-xs text-zinc-500">{appByline}</p>
               </div>
               <button
                 type="button"
                 className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-aom-border bg-zinc-900/80 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500/35"
-                aria-label="Fechar menu"
+                aria-label={t("common.closeMenu")}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="text-xl leading-none" aria-hidden>
@@ -217,7 +231,7 @@ export function AppShell() {
               </button>
             </div>
             <nav className="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4">
-              <ShellNavLinks pathname={pathname} onItemClick={() => setMobileMenuOpen(false)} />
+              <ShellNavLinks pathname={pathname} onItemClick={() => setMobileMenuOpen(false)} t={t} />
             </nav>
           </div>
         </>

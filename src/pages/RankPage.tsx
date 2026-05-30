@@ -1,14 +1,25 @@
-import { type FormEvent, useState } from "react";
+import { type FormEvent, useMemo, useState } from "react";
 import { useNavigate, type NavigateFunction } from "react-router-dom";
 
 import { ModalApp } from "@/components/ui/ModalApp";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { useTranslation } from "@/hooks/useTranslation";
 import { searchPlayersByName, type AomStatsSearchProfileRow } from "@/lib/formRetoldApi";
 import { cn } from "@/lib/cn";
-import { RANK_GUIDE_TIERS as TIERS, type RankGuideTier as RankTier } from "@/lib/rankGuideTiers";
+import { getRankGuideTiers, type RankGuideTier as RankTier } from "@/lib/rankGuideTiers";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
 
-function TierAchievement({ tier, index }: { tier: RankTier; index: number }) {
+function TierAchievement({
+  tier,
+  index,
+  total,
+  t,
+}: {
+  tier: RankTier;
+  index: number;
+  total: number;
+  t: (key: string, params?: Record<string, string | number>) => string;
+}) {
   const iconSrc = getTokenAssetUrl(tier.token);
 
   return (
@@ -31,7 +42,7 @@ function TierAchievement({ tier, index }: { tier: RankTier; index: number }) {
 
       <div className="relative flex min-h-[min(88dvh,52rem)] flex-col items-center justify-center px-4 py-16 sm:px-8 sm:py-20 md:py-24">
         <p className="mb-3 font-mono text-[10px] font-medium uppercase tracking-[0.35em] text-zinc-500">
-          Progressão {index + 1} / {TIERS.length}
+          {t("pages.rank.progression", { current: index + 1, total })}
         </p>
 
         <div className="relative mb-8 flex items-center justify-center">
@@ -68,9 +79,11 @@ function TierAchievement({ tier, index }: { tier: RankTier; index: number }) {
             <span className="text-zinc-200">{tier.eraName}</span>
           </h2>
           <p className="mt-3 text-sm text-zinc-400 sm:text-base">
-            Faixa geral: <span className="font-medium text-zinc-200">{tier.rrBand}</span>
+            {t("pages.rank.generalBand")}{" "}
+            <span className="font-medium text-zinc-200">{tier.rrBand}</span>
             <span className="mx-2 text-zinc-600">·</span>
-            Base (amostra): <span className="font-medium text-zinc-200">{tier.playerShare}</span>
+            {t("pages.rank.playerShareLabel")}{" "}
+            <span className="font-medium text-zinc-200">{tier.playerShare}</span>
           </p>
           <ul className="mt-4 space-y-1.5 text-sm leading-relaxed text-zinc-400 sm:text-[0.9375rem]">
             {tier.narrative.map((line) => (
@@ -80,8 +93,10 @@ function TierAchievement({ tier, index }: { tier: RankTier; index: number }) {
         </div>
 
         <div className="relative z-[1] mt-12 w-full max-w-3xl">
-          <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Subdivisões</p>
-          <p className="mb-6 text-center text-[11px] text-zinc-600">Do menor RR ao maior dentro desta divisão (III → I).</p>
+          <p className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">
+            {t("pages.rank.subdivisions")}
+          </p>
+          <p className="mb-6 text-center text-[11px] text-zinc-600">{t("pages.rank.subdivisionsHint")}</p>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
             {tier.steps.map((step) => (
               <div
@@ -110,6 +125,8 @@ function goToRankForm(navigate: NavigateFunction, alias: string, profileId: numb
 }
 
 export function RankPage() {
+  const { t } = useTranslation();
+  const tiers = useMemo(() => getRankGuideTiers(t), [t]);
   const headerIcon = getTokenAssetUrl("aomr_wonder_age_icon");
   const navigate = useNavigate();
   const [playerQuery, setPlayerQuery] = useState("");
@@ -123,7 +140,7 @@ export function RankPage() {
     e.preventDefault();
     const q = playerQuery.trim();
     if (!q) {
-      setFormError("Digite o nome do jogador (igual ao do jogo).");
+      setFormError(t("pages.rank.enterPlayerName"));
       return;
     }
     setFormError(null);
@@ -131,7 +148,7 @@ export function RankPage() {
     try {
       const profiles = await searchPlayersByName(q);
       if (profiles.length === 0) {
-        setFormError("Nenhum jogador encontrado no AoM Stats com esse nome.");
+        setFormError(t("pages.rank.noPlayerFound"));
         return;
       }
       if (profiles.length === 1) {
@@ -143,7 +160,7 @@ export function RankPage() {
       setPickSelectedId(null);
       setPickModalOpen(true);
     } catch (err) {
-      setFormError(err instanceof Error ? err.message : "Erro ao pesquisar no AoM Stats.");
+      setFormError(err instanceof Error ? err.message : t("pages.rank.searchError"));
     } finally {
       setSearchBusy(false);
     }
@@ -161,25 +178,19 @@ export function RankPage() {
   return (
     <div className="space-y-10 pb-16">
       <PageHeader
-        title="Veja sua RR em Rank"
+        title={t("pages.rank.pageTitle")}
         headerIconSrc={headerIcon}
-        description={
-          <>
-            Já se perguntou: Como que seria meu Elo baseado no Rank? Fizemos um sistema baseado na pontuação ranqueada (RR) com cada divisão no estilo das eras do jogo! Confira!
-          </>
-        }
+        description={t("pages.rank.pageDescription")}
       />
 
       <div className="rounded-2xl border border-aom-border/50 bg-zinc-900/40 p-4 sm:p-5">
-        <p className="text-sm leading-relaxed text-zinc-400 sm:max-w-2xl">
-          Consulte agora seu Elo de RR no estilo das Eras do Age of Mythology! Digite o nome do jogador (idêntico ao do jogo) e abra a consulta no AoM Stats.
-        </p>
+        <p className="text-sm leading-relaxed text-zinc-400 sm:max-w-2xl">{t("pages.rank.consultIntro")}</p>
         <form
           onSubmit={onConsultRank}
           className={cn("mt-4 flex max-w-xl flex-col gap-3 sm:flex-row sm:items-stretch sm:gap-3", searchBusy && "pointer-events-none opacity-70")}
         >
           <label className="min-w-0 flex-1">
-            <span className="sr-only">Nome do jogador</span>
+            <span className="sr-only">{t("pages.rank.playerNameLabel")}</span>
             <input
               type="text"
               value={playerQuery}
@@ -188,7 +199,7 @@ export function RankPage() {
                 if (formError) setFormError(null);
               }}
               disabled={searchBusy}
-              placeholder="Ex: Mosca_"
+              placeholder={t("pages.rank.playerNamePlaceholder")}
               autoComplete="off"
               className="w-full rounded-xl border border-zinc-600/90 bg-black/35 px-4 py-3.5 text-sm text-white placeholder:text-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-amber-500/25 disabled:cursor-not-allowed"
             />
@@ -201,10 +212,10 @@ export function RankPage() {
             {searchBusy ? (
               <>
                 <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-zinc-950/30 border-t-zinc-950" aria-hidden />
-                A procurar…
+                {t("pages.rank.searching")}
               </>
             ) : (
-              "Consultar Rank"
+              t("pages.rank.consultButton")
             )}
           </button>
         </form>
@@ -222,8 +233,8 @@ export function RankPage() {
           setPickProfiles([]);
           setPickSelectedId(null);
         }}
-        title="Qual jogador deseja consultar?"
-        description="Vários perfis no AoM Stats correspondem a essa pesquisa. Selecione o jogador correto para abrir a página de RR."
+        title={t("pages.rank.pickPlayerTitle")}
+        description={t("pages.rank.pickPlayerDescRank")}
         className="max-w-lg"
       >
         <ul className="max-h-[min(50vh,22rem)] space-y-2 overflow-y-auto pr-0.5" role="list">
@@ -266,21 +277,21 @@ export function RankPage() {
             onClick={confirmPickAndGo}
             className="rounded-xl bg-amber-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Consultar este perfil
+            {t("pages.rank.consultThisProfile")}
           </button>
         </div>
       </ModalApp>
 
       <nav
-        aria-label="Atalhos para divisões"
+        aria-label={t("pages.rank.tierNavLabel")}
         className="sticky top-[calc(env(safe-area-inset-top,0px)+4.25rem)] z-20 -mx-1 flex flex-wrap justify-center gap-2 rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-3 shadow-lg shadow-black/40 backdrop-blur-md sm:top-6 sm:px-4 md:top-8"
       >
-        {TIERS.map((t) => {
-          const iconSrc = getTokenAssetUrl(t.token);
+        {tiers.map((tTier) => {
+          const iconSrc = getTokenAssetUrl(tTier.token);
           return (
             <a
-              key={t.id}
-              href={`#${t.id}`}
+              key={tTier.id}
+              href={`#${tTier.id}`}
               className={cn(
                 "inline-flex items-center gap-1.5 rounded-full border border-aom-border/60 bg-zinc-900/80 px-3 py-1.5 text-xs font-medium text-zinc-300 transition hover:border-amber-500/40 hover:text-amber-100",
               )}
@@ -294,42 +305,33 @@ export function RankPage() {
                   height={18}
                 />
               ) : null}
-              <span>{t.rankName}</span>
+              <span>{tTier.rankName}</span>
             </a>
           );
         })}
       </nav>
 
       <div className="space-y-12 md:space-y-16">
-        {TIERS.map((tier, index) => (
-          <TierAchievement key={tier.id} tier={tier} index={index} />
+        {tiers.map((tier, index) => (
+          <TierAchievement key={tier.id} tier={tier} index={index} total={tiers.length} t={t} />
         ))}
       </div>
 
       <section aria-labelledby="como-funciona-heading" className="rounded-2xl border border-zinc-700/40 bg-zinc-900/40 px-5 py-6 sm:px-8 sm:py-8">
         <h2 id="como-funciona-heading" className="font-[family-name:var(--font-display)] text-xl font-semibold text-zinc-100 sm:text-2xl">
-          Como funciona?
+          {t("pages.rank.howItWorks")}
         </h2>
-        <p className="mt-3 text-sm leading-relaxed text-zinc-400">
-          Esse sistema experimental foi calibrado com jogadores de elo alto (~2100) do Retold. Referência:{" "}
-          <strong className="text-zinc-200">7070 jogadores</strong> (fevereiro/2026).
-        </p>
+        <p className="mt-3 text-sm leading-relaxed text-zinc-400">{t("pages.rank.howItWorksDesc")}</p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-400 marker:text-zinc-600">
-          <li>
-            <strong className="text-zinc-200">Só 9 jogadores acima de 2100</strong> → ~<strong className="text-zinc-200">0,13%</strong> da base.
-          </li>
-          <li>
-            <strong className="text-zinc-200">Até o jogador #3755 está em elo 999</strong> → mais de <strong className="text-zinc-200">53%</strong> abaixo de 1000.
-          </li>
-          <li>
-            1000 de elo é o centro aproximado da distribuição; o pico absoluto concentra-se em 1000–1050. A jogabilidade a partir de 1000 muda bastante; depois de 1300, a diferença é ainda maior.
-          </li>
+          <li>{t("pages.rank.howItWorksBullet1")}</li>
+          <li>{t("pages.rank.howItWorksBullet2")}</li>
+          <li>{t("pages.rank.howItWorksBullet3")}</li>
         </ul>
         <div className="mt-6 space-y-2 border-t border-zinc-700/35 pt-6 text-sm text-zinc-400">
-          <p>🔹 A maior parte dos jogadores está em Bronze/Prata.</p>
-          <p>🔹 Ouro deve parecer especial e recompensador.</p>
-          <p>🔹 Esmeralda separa jogadores fortes de muito fortes.</p>
-          <p>🔹 Diamante é pequeno e aspiracional.</p>
+          <p>🔹 {t("pages.rank.howItWorksNote1")}</p>
+          <p>🔹 {t("pages.rank.howItWorksNote2")}</p>
+          <p>🔹 {t("pages.rank.howItWorksNote3")}</p>
+          <p>🔹 {t("pages.rank.howItWorksNote4")}</p>
         </div>
       </section>
     </div>

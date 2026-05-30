@@ -13,6 +13,7 @@ import {
 } from "@/components/spreadsheet/SpreadsheetTable";
 import { TecnologiaTipoBadges } from "@/components/tecnologia/TecnologiaTipoBadges";
 import { NotionText } from "@/components/ui/NotionText";
+import { useTranslation } from "@/hooks/useTranslation";
 import type { Tecnologia } from "@/data/catalog";
 import { firstNumId, joinRefNomesOrString } from "@/lib/entityRefs";
 import {
@@ -52,6 +53,7 @@ function refList(
 }
 
 export function TecnologiasSpreadsheet({ rows, linkState, onPreview }: TecnologiasSpreadsheetProps) {
+  const { t: tr } = useTranslation();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);
   };
@@ -60,20 +62,20 @@ export function TecnologiasSpreadsheet({ rows, linkState, onPreview }: Tecnologi
     <SpreadsheetTable tableClassName="min-w-[1500px]">
       <SpreadsheetHead>
         <SpreadsheetTh className="min-w-[9rem]" stickyColumn>
-          UP
+          {tr("spreadsheet.tecnologias.up")}
         </SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[8rem]">Beneficia</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[7rem]">Tipo</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[7rem]">God específico</SpreadsheetTh>
-        <SpreadsheetTh className="min-w-[9rem]">Construção origem</SpreadsheetTh>
-        <SpreadsheetTh>Era</SpreadsheetTh>
-        <SpreadsheetTh>Inglês</SpreadsheetTh>
-        <SpreadsheetTh>Panteões</SpreadsheetTh>
-        <SpreadsheetTh icon="foodaom">Comida</SpreadsheetTh>
-        <SpreadsheetTh icon="woodaom">Madeira</SpreadsheetTh>
-        <SpreadsheetTh icon="goldaom">Ouro</SpreadsheetTh>
-        <SpreadsheetTh icon="favoraom">Favor</SpreadsheetTh>
-        <SpreadsheetTh icon="aomr_time_icon">Tempo (s)</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[8rem]">{tr("common.benefits")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[7rem]">{tr("common.type")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[7rem]">{tr("common.specificGod")}</SpreadsheetTh>
+        <SpreadsheetTh className="min-w-[9rem]">{tr("common.originBuilding")}</SpreadsheetTh>
+        <SpreadsheetTh>{tr("common.era")}</SpreadsheetTh>
+        <SpreadsheetTh>{tr("spreadsheet.english")}</SpreadsheetTh>
+        <SpreadsheetTh>{tr("spreadsheet.pantheons")}</SpreadsheetTh>
+        <SpreadsheetTh icon="foodaom">{tr("spreadsheet.food")}</SpreadsheetTh>
+        <SpreadsheetTh icon="woodaom">{tr("spreadsheet.wood")}</SpreadsheetTh>
+        <SpreadsheetTh icon="goldaom">{tr("spreadsheet.gold")}</SpreadsheetTh>
+        <SpreadsheetTh icon="favoraom">{tr("spreadsheet.favor")}</SpreadsheetTh>
+        <SpreadsheetTh icon="aomr_time_icon">{tr("spreadsheet.timeSeconds")}</SpreadsheetTh>
       </SpreadsheetHead>
       <SpreadsheetBody>
         {rows.map(({ t, index }) => {
@@ -146,10 +148,10 @@ export function TecnologiasSpreadsheet({ rows, linkState, onPreview }: Tecnologi
                     {tecLink.imageSrc ? (
                       <img src={tecLink.imageSrc} alt="" className="h-6 w-6 shrink-0 rounded object-contain" />
                     ) : null}
-                    <span>{t.nome || `(sem título #${index})`}</span>
+                    <span>{t.nome || tr("spreadsheet.noTitle", { index })}</span>
                   </Link>
                 ) : (
-                  t.nome || `(sem título #${index})`
+                  t.nome || tr("spreadsheet.noTitle", { index })
                 )}
               </SpreadsheetTd>
               <SpreadsheetTd>

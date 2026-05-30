@@ -12,9 +12,11 @@ import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { ModalApp } from "@/components/ui/ModalApp";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { panteaoById, unidadeSlugById, unidades } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
 import { useListViewMode } from "@/hooks/useListViewMode";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { useTranslation } from "@/hooks/useTranslation";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import type { ResolvedEntityLink } from "@/lib/entityResolve";
@@ -29,7 +31,7 @@ import {
   multiplicadorItemsToNotionText,
 } from "@/lib/unidadeMultiplicador";
 
-function matches(u: (typeof unidades)[number], q: string) {
+function matches(u: LocaleCatalog["unidades"][number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
   return [
@@ -56,6 +58,8 @@ const toolbarBtn =
   "rounded-xl border border-aom-border bg-zinc-900/50 px-3.5 py-2 text-sm font-medium text-amber-100/95 transition-colors hover:border-amber-500/40 hover:bg-zinc-900/80 focus:outline-none focus:ring-2 focus:ring-amber-500/25 disabled:cursor-not-allowed disabled:opacity-45";
 
 export function UnidadesPage() {
+  const { t } = useTranslation();
+  const { panteaoById, unidadeSlugById, unidades } = useCatalog();
   const navigate = useNavigate();
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
@@ -69,7 +73,7 @@ export function UnidadesPage() {
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
   const [beneficiosOpen, setBeneficiosOpen] = useState(false);
 
-  const filtered = useMemo(() => unidades.filter((u) => matches(u, q)), [q]);
+  const filtered = useMemo(() => unidades.filter((u) => matches(u, q)), [unidades, q]);
 
   function toggleSelect(unitSlug: string) {
     setSelectedSlugs((prev) => {
@@ -98,8 +102,8 @@ export function UnidadesPage() {
       <button
         type="button"
         onClick={() => setBeneficiosOpen(true)}
-        title="Benefícios de Tropa"
-        aria-label="Abrir modal: Benefícios de Tropa"
+        title={t("pages.unidades.troopBenefits")}
+        aria-label={t("pages.unidades.troopBenefitsAria")}
         className="group shrink-0 cursor-pointer rounded-xl border border-aom-border bg-zinc-900/60 shadow-sm shadow-black/30 transition hover:border-amber-400/50 hover:ring-1 hover:ring-amber-400/30"
       >
         <img
@@ -112,11 +116,11 @@ export function UnidadesPage() {
       <ModalApp
         open={beneficiosOpen}
         onClose={() => setBeneficiosOpen(false)}
-        title="Benefícios de Tropa"
+        title={t("pages.unidades.troopBenefits")}
         description={
           <img
             src={beneficiosImgSrc}
-            alt="Benefícios de Tropa"
+            alt={t("pages.unidades.troopBenefits")}
             className="mt-1 w-full rounded-xl border border-aom-border bg-zinc-950/40 object-contain"
           />
         }
@@ -128,8 +132,8 @@ export function UnidadesPage() {
     <div className="w-full min-w-0">
       <ListPageStickyHeader>
         <PageHeader
-          title="Unidades"
-          description="Militares, mitológicas e heróis — filtros por nome ou papel."
+          title={t("pages.unidades.title")}
+          description={t("pages.unidades.description")}
           className="!mb-0 w-full"
           actions={
             <div className="flex flex-wrap items-start justify-end gap-3">
@@ -143,16 +147,16 @@ export function UnidadesPage() {
 
         <div className="flex flex-col items-start gap-3">
           <div className="flex w-full flex-wrap items-center justify-between gap-3">
-            <SearchField value={q} onChange={setQ} placeholder="Filtrar…" id="unidades-search" />
+            <SearchField value={q} onChange={setQ} placeholder={t("common.filter")} id="unidades-search" />
             <div className="flex flex-wrap items-center justify-end gap-2">
               {!compareMode ? (
                 <button type="button" className={toolbarBtn} onClick={enterCompareMode}>
-                  Modo Comparação
+                  {t("common.compareMode")}
                 </button>
               ) : (
                 <>
                   <button type="button" className={toolbarBtn} onClick={exitCompareMode}>
-                    Cancelar
+                    {t("common.cancel")}
                   </button>
                   <button
                     type="button"
@@ -163,7 +167,7 @@ export function UnidadesPage() {
                       navigate(`/unidades/compare/${selectedSlugs[0]}/${selectedSlugs[1]}`);
                     }}
                   >
-                    Comparar
+                    {t("common.compare")}
                   </button>
                 </>
               )}
@@ -221,7 +225,9 @@ export function UnidadesPage() {
           })}
         </ul>
       )}
-      {filtered.length === 0 ? <p className="mt-8 text-center text-sm text-zinc-500">Nenhum resultado.</p> : null}
+      {filtered.length === 0 ? (
+        <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
+      ) : null}
     </div>
   );
 }

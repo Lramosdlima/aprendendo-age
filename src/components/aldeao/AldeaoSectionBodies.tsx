@@ -4,21 +4,25 @@ import { InfoRow } from "@/components/ui/InfoRow";
 import { InfoRowPortraitOrText } from "@/components/ui/InfoRowPortraitCluster";
 import { NotionText } from "@/components/ui/NotionText";
 import { PortraitHeaderActions } from "@/components/ui/PortraitHeaderActions";
-import { aldeoes, panteaoById, panteaoSlugById } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { firstNome, firstNumId } from "@/lib/entityRefs";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
-type A = (typeof aldeoes)[number];
+type A = LocaleCatalog["aldeoes"][number];
 
 export function AldeaoGeralBody({ a, linkState }: { a: A; linkState?: ListIndexLinkState }) {
+  const { panteaoById, panteaoSlugById } = useCatalog();
+  const { t } = useTranslation();
   const panteaoId = firstNumId(a.panteao);
   const panteao = panteaoId != null ? panteaoById.get(panteaoId) : undefined;
 
   return (
     <div className="space-y-0">
       {panteao ? (
-        <InfoRow label="Panteão">
+        <InfoRow label={t("common.pantheon")}>
           <InfoRowPortraitOrText
             portraits={
               <PortraitHeaderActions
@@ -39,7 +43,7 @@ export function AldeaoGeralBody({ a, linkState }: { a: A; linkState?: ListIndexL
           />
         </InfoRow>
       ) : firstNome(a.panteao) ? (
-        <InfoRow label="Panteão">
+        <InfoRow label={t("common.pantheon")}>
           <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(a.panteao)!} />} />
         </InfoRow>
       ) : null}

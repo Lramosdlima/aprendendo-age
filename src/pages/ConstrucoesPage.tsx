@@ -7,14 +7,16 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { construcoes, construcaoSlugById, panteaoById } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { useTranslation } from "@/hooks/useTranslation";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
 import { panteaoFieldHasMultiplePantheons, pantheonCardTint } from "@/lib/pantheonCardTint";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { hasTipoContent, tipoItemsToSearchBlob } from "@/lib/unidadeTipo";
 
-function matches(c: (typeof construcoes)[number], q: string) {
+function matches(c: LocaleCatalog["construcoes"][number], q: string) {
   if (!q.trim()) return true;
   const s = q.toLowerCase();
   const tipoBlob = hasTipoContent(c.tipo) ? tipoItemsToSearchBlob(c.tipo) : "";
@@ -22,23 +24,30 @@ function matches(c: (typeof construcoes)[number], q: string) {
 }
 
 export function ConstrucoesPage() {
+  const { t } = useTranslation();
+  const { construcoes, construcaoSlugById, panteaoById } = useCatalog();
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
     () => listIndexLinkStateFromLocation(pathname, locSearch),
     [pathname, locSearch],
   );
   const [q, setQ] = useListPageSearchQuery();
-  const filtered = useMemo(() => construcoes.filter((c) => matches(c, q)), [q]);
+  const filtered = useMemo(() => construcoes.filter((c) => matches(c, q)), [construcoes, q]);
 
   return (
     <div>
       <ListPageStickyHeader>
         <PageHeader
-          title="Construções"
-          description="Edifícios, custos e estatísticas de combate quando aplicável."
+          title={t("pages.construcoes.title")}
+          description={t("pages.construcoes.description")}
           className="!mb-0"
         />
-        <SearchField value={q} onChange={setQ} placeholder="Filtrar por nome ou tipo…" id="constr-search" />
+        <SearchField
+          value={q}
+          onChange={setQ}
+          placeholder={t("pages.construcoes.filterPlaceholder")}
+          id="constr-search"
+        />
       </ListPageStickyHeader>
       <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((c) => (
@@ -65,7 +74,9 @@ export function ConstrucoesPage() {
           </li>
         ))}
       </ul>
-      {filtered.length === 0 ? <p className="mt-8 text-center text-sm text-zinc-500">Nenhum resultado.</p> : null}
+      {filtered.length === 0 ? (
+        <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
+      ) : null}
     </div>
   );
 }

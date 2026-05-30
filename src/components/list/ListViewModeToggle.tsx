@@ -1,4 +1,5 @@
 import { cn } from "@/lib/cn";
+import { useTranslation } from "@/hooks/useTranslation";
 import type { ListViewMode } from "@/lib/listViewMode";
 
 type ListViewModeToggleProps = {
@@ -9,10 +10,12 @@ type ListViewModeToggleProps = {
 };
 
 export function ListViewModeToggle({ mode, onChange, className, id = "list-view-mode" }: ListViewModeToggleProps) {
+  const { t } = useTranslation();
+
   return (
     <div
       role="group"
-      aria-label="Modo de visualização"
+      aria-label={t("common.viewMode")}
       className={cn(
         "inline-flex w-fit shrink-0 self-start rounded-lg border border-aom-border bg-zinc-900/50 p-0.5",
         className,
@@ -30,7 +33,7 @@ export function ListViewModeToggle({ mode, onChange, className, id = "list-view-
             : "text-zinc-400 hover:text-zinc-200",
         )}
       >
-        Grade
+        {t("common.grade")}
       </button>
       <button
         type="button"
@@ -44,7 +47,7 @@ export function ListViewModeToggle({ mode, onChange, className, id = "list-view-
             : "text-zinc-400 hover:text-zinc-200",
         )}
       >
-        Planilha
+        {t("common.spreadsheet")}
       </button>
     </div>
   );

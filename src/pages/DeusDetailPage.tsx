@@ -11,23 +11,10 @@ import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { PortraitHeaderActions, type PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
-import {
-  deusById,
-  deusBySlug,
-  deusSlugById,
-  eraById,
-  eraSlugById,
-  godpowerById,
-  godpowerSlugById,
-  panteaoById,
-  panteaoSlugById,
-  startById,
-  tecnologias,
-  tecnologiaSlugByIndex,
-  type DeusExplicacaoBloco,
-  unidadeById,
-  unidadeSlugById,
-} from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
+import type { DeusExplicacaoBloco } from "@/data/catalog";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { firstNome, firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
@@ -38,7 +25,11 @@ import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
-function tecnologiaPortraitItemsFromRefs(refs: { id: string; nome: string }[]): PortraitHeaderItem[] {
+function tecnologiaPortraitItemsFromRefs(
+  catalog: LocaleCatalog,
+  refs: { id: string; nome: string }[],
+): PortraitHeaderItem[] {
+  const { tecnologias, tecnologiaSlugByIndex } = catalog;
   return refs.map((ref, i) => {
     const idx = tecnologias.findIndex((t) => t.nome === ref.nome);
     const t = idx >= 0 ? tecnologias[idx] : undefined;
@@ -52,7 +43,11 @@ function tecnologiaPortraitItemsFromRefs(refs: { id: string; nome: string }[]): 
   });
 }
 
-function unidadePortraitItemsFromRefs(refs: { id: number; nome: string }[]): PortraitHeaderItem[] {
+function unidadePortraitItemsFromRefs(
+  catalog: LocaleCatalog,
+  refs: { id: number; nome: string }[],
+): PortraitHeaderItem[] {
+  const { unidadeById, unidadeSlugById } = catalog;
   return refs.map((ref, i) => {
     const u = unidadeById.get(ref.id);
     const slug = unidadeSlugById.get(ref.id);
@@ -65,23 +60,37 @@ function unidadePortraitItemsFromRefs(refs: { id: number; nome: string }[]): Por
   });
 }
 
-/** Texto do link "← …" conforme a origem (lista de deuses, start ou poder divino). */
-function deusBackLinkLabel(backTo: string): string {
-  const pathOnly = backTo.split("?")[0];
-  if (pathOnly === "/deuses" || backTo.startsWith("/deuses?")) return "Deuses";
-  if (backTo === "/astecas" || backTo.startsWith("/astecas?")) return "Astecas";
-  if (backTo === "/starts" || backTo.startsWith("/starts?")) return "Starts & build orders";
-  if (backTo.startsWith("/starts/")) return "Voltar ao start";
-  if (backTo.startsWith("/poderes/compare")) return "Comparar poderes";
-  if (backTo.startsWith("/poderes/")) return "Voltar ao poder divino";
-  if (backTo === "/poderes" || backTo.startsWith("/poderes?")) return "Poderes divinos";
-  return "Voltar";
-}
-
 export function DeusDetailPage() {
+  const { t } = useTranslation();
+  const catalog = useCatalog();
+  const {
+    deusById,
+    deusBySlug,
+    deusSlugById,
+    eraById,
+    eraSlugById,
+    godpowerById,
+    godpowerSlugById,
+    panteaoById,
+    panteaoSlugById,
+    startById,
+  } = catalog;
   const { pathname, search: locSearch, state: navState } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/deuses", navState);
+
+  function deusBackLinkLabel(backTo: string): string {
+    const pathOnly = backTo.split("?")[0];
+    if (pathOnly === "/deuses" || backTo.startsWith("/deuses?")) return t("nav.gods");
+    if (backTo === "/astecas" || backTo.startsWith("/astecas?")) return t("nav.astecas");
+    if (backTo === "/starts" || backTo.startsWith("/starts?")) return t("nav.starts");
+    if (backTo.startsWith("/starts/")) return t("common.backToStart");
+    if (backTo.startsWith("/poderes/compare")) return t("pages.godpowers.comparePowers");
+    if (backTo.startsWith("/poderes/")) return t("pages.godpowers.backToPower");
+    if (backTo === "/poderes" || backTo.startsWith("/poderes?")) return t("nav.godpowers");
+    return t("common.back");
+  }
+
   const backLinkLabel = deusBackLinkLabel(backToList);
   const { slug } = useParams();
   const d = slug ? deusBySlug.get(slug) : undefined;
@@ -90,7 +99,7 @@ export function DeusDetailPage() {
     return (
       <div>
         <BackLink to={backToList}>{backLinkLabel}</BackLink>
-        <p className="text-zinc-400">Deus não encontrado.</p>
+        <p className="text-zinc-400">{t("common.entityNotFound.god")}</p>
       </div>
     );
   }
@@ -123,10 +132,10 @@ export function DeusDetailPage() {
     .filter(Boolean);
 
   const tecnologiaPortraitItems = d.tecnologias?.length
-    ? tecnologiaPortraitItemsFromRefs(d.tecnologias)
+    ? tecnologiaPortraitItemsFromRefs(catalog, d.tecnologias)
     : [];
   const unidadePortraitItems = d.unidades_exclusivas?.length
-    ? unidadePortraitItemsFromRefs(d.unidades_exclusivas)
+    ? unidadePortraitItemsFromRefs(catalog, d.unidades_exclusivas)
     : [];
 
   return (
@@ -143,11 +152,11 @@ export function DeusDetailPage() {
       />
 
       <div className={d.hierarquia === "Maior" ? "grid gap-6 lg:grid-cols-2" : "grid gap-6"}>
-        <Section title="Visão geral">
+        <Section title={t("common.overview")}>
           <div className="space-y-0">
-          {d.hierarquia ? <InfoRow label="Hierarquia">{d.hierarquia}</InfoRow> : null}
+            {d.hierarquia ? <InfoRow label={t("common.hierarchy")}>{d.hierarquia}</InfoRow> : null}
             {panteao ? (
-              <InfoRow label="Panteão">
+              <InfoRow label={t("common.pantheon")}>
                 <InfoRowPortraitOrText
                   portraits={
                     <PortraitHeaderActions
@@ -168,12 +177,12 @@ export function DeusDetailPage() {
                 />
               </InfoRow>
             ) : firstNome(d.panteao) ? (
-              <InfoRow label="Panteão">
+              <InfoRow label={t("common.pantheon")}>
                 <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(d.panteao)!} />} />
               </InfoRow>
             ) : null}
             {era ? (
-              <InfoRow label="Era">
+              <InfoRow label={t("common.era")}>
                 <InfoRowPortraitOrText
                   portraits={
                     <PortraitHeaderActions
@@ -194,12 +203,12 @@ export function DeusDetailPage() {
                 />
               </InfoRow>
             ) : firstNome(d.era) ? (
-              <InfoRow label="Era">
+              <InfoRow label={t("common.era")}>
                 <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(d.era)!} />} />
               </InfoRow>
             ) : null}
             {gp ? (
-              <InfoRow label="Poder divino">
+              <InfoRow label={t("common.godPower")}>
                 <InfoRowPortraitOrText
                   portraits={
                     <PortraitHeaderActions
@@ -220,7 +229,7 @@ export function DeusDetailPage() {
                 />
               </InfoRow>
             ) : firstNome(d.godpower) ? (
-              <InfoRow label="Poder divino">
+              <InfoRow label={t("common.godPower")}>
                 <InfoRowPortraitOrText portraits={null} textFallback={<NotionText text={firstNome(d.godpower)!} />} />
               </InfoRow>
             ) : null}
@@ -228,7 +237,7 @@ export function DeusDetailPage() {
         </Section>
 
         {d.hierarquia === "Maior" ? (
-          <Section title="Avaliação Arquétipo RTS">
+          <Section title={t("common.archetypeEval")}>
             <DeusBuildAvaliacaoCards rush={d.rush} turtle={d.turtle} eco={d.eco} foco={d.foco} />
           </Section>
         ) : null}
@@ -239,13 +248,13 @@ export function DeusDetailPage() {
       ) : null}
 
       {treeTiers ? (
-        <Section title="Árvore de deuses menores (por era)" className="mt-6">
+        <Section title={t("common.minorGodTree")} className="mt-6">
           <GodMajorDecisionTree major={d} tiers={treeTiers} />
         </Section>
       ) : null}
 
       {d.starts?.length ? (
-        <Section title="Starts (referências)" className="mt-6">
+        <Section title={t("common.startsRef")} className="mt-6">
           <ul className="list-inside list-disc space-y-2 text-sm">
             {d.starts.map(({ id: sid, nome }) => {
               const s = startById.get(sid);
@@ -266,7 +275,7 @@ export function DeusDetailPage() {
       ) : null}
 
       {relacoes.length > 0 && !treeTiers ? (
-        <Section title="Deuses Maiores" className="mt-6">
+        <Section title={t("common.majorGods")} className="mt-6">
           <ul className="list-inside list-disc space-y-1">
             {relacoes.map((el, i) => (
               <li key={i}>{el}</li>
@@ -274,13 +283,13 @@ export function DeusDetailPage() {
           </ul>
         </Section>
       ) : d.god_maior_relacao?.length && !treeTiers ? (
-        <Section title="Deuses Menores" className="mt-6">
+        <Section title={t("common.minorGods")} className="mt-6">
           <NotionText text={joinRefNomes(d.god_maior_relacao)} />
         </Section>
       ) : null}
 
       {tecnologiaPortraitItems.length > 0 ? (
-        <Section title="Tecnologias" className="mt-6">
+        <Section title={t("common.technologies")} className="mt-6">
           <InfoRowPortraitCluster>
             <PortraitHeaderActions
               items={tecnologiaPortraitItems}
@@ -293,7 +302,7 @@ export function DeusDetailPage() {
       ) : null}
 
       {unidadePortraitItems.length > 0 ? (
-        <Section title="Unidades exclusivas" className="mt-6">
+        <Section title={t("common.exclusiveUnits")} className="mt-6">
           <InfoRowPortraitCluster>
             <PortraitHeaderActions
               items={unidadePortraitItems}
@@ -304,7 +313,7 @@ export function DeusDetailPage() {
           </InfoRowPortraitCluster>
         </Section>
       ) : d.unidades_exclusivas?.length ? (
-        <Section title="Unidades exclusivas" className="mt-6">
+        <Section title={t("common.exclusiveUnits")} className="mt-6">
           <NotionText text={joinRefNomes(d.unidades_exclusivas)} />
         </Section>
       ) : null}

@@ -12,18 +12,8 @@ import {
   type PortraitHeaderItem,
 } from "@/components/ui/PortraitHeaderActions";
 import { Section } from "@/components/ui/Section";
-import {
-  construcaoById,
-  construcaoSlugById,
-  deusById,
-  deusSlugById,
-  eraById,
-  eraSlugById,
-  panteaoById,
-  panteaoSlugById,
-  tecnologiaBySlug,
-  tecnologias,
-} from "@/data/catalog";
+import { useCatalog } from "@/hooks/useCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { getEraAssetUrl } from "@/lib/eraAssetUrl";
 import { getConstrucaoAssetUrl } from "@/lib/entityWatermarkUrls";
@@ -36,32 +26,41 @@ import {
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 export function TecnologiaDetailPage() {
+  const { t } = useTranslation();
+  const {
+    construcaoById,
+    construcaoSlugById,
+    deusById,
+    deusSlugById,
+    eraById,
+    eraSlugById,
+    panteaoById,
+    panteaoSlugById,
+    tecnologiaBySlug,
+    tecnologias,
+  } = useCatalog();
   const { pathname, search: locSearch, state: navState } = useLocation();
   const tecLinkState = listIndexLinkStateFromLocation(pathname, locSearch);
   const backToList = listIndexReturnTo("/tecnologias", navState);
-  const backLabel = listOrDetailBackLinkLabel(
-    backToList,
-    "/tecnologias",
-    "Tecnologias",
-  );
+  const backLabel = listOrDetailBackLinkLabel(backToList, "/tecnologias", t("nav.technologies"));
   const { slug } = useParams();
-  const t = slug ? tecnologiaBySlug.get(slug) : undefined;
+  const tech = slug ? tecnologiaBySlug.get(slug) : undefined;
 
-  if (!t) {
+  if (!tech) {
     return (
       <div>
         <BackLink to={backToList}>{backLabel}</BackLink>
-        <p className="text-zinc-400">Registro não encontrado.</p>
+        <p className="text-zinc-400">{t("common.entityNotFound.tech")}</p>
       </div>
     );
   }
 
-  const tecIndex = tecnologias.indexOf(t);
+  const tecIndex = tecnologias.indexOf(tech);
 
-  const eraRefs = t.eras;
-  const panteoesField = t.panteoes;
-  const construcaoOrigemField = t.construcao_origem;
-  const godEspecificoField = t.god_especifico;
+  const eraRefs = tech.eras;
+  const panteoesField = tech.panteoes;
+  const construcaoOrigemField = tech.construcao_origem;
+  const godEspecificoField = tech.god_especifico;
 
   const deusPortraitItems: PortraitHeaderItem[] =
     Array.isArray(godEspecificoField) && godEspecificoField.length
@@ -119,25 +118,28 @@ export function TecnologiaDetailPage() {
     <div>
       <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader
-        title={t.nome || `Sem título (#${tecIndex >= 0 ? tecIndex : "?"})`}
-        headerIconSrc={getTecnologiaAssetUrl(t)}
+        title={
+          tech.nome ||
+          t("common.untitledTech", { index: tecIndex >= 0 ? tecIndex : "?" })
+        }
+        headerIconSrc={getTecnologiaAssetUrl(tech)}
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title="Resumo">
+        <Section title={t("common.summary")}>
           <div className="space-y-0">
-            {t.beneficia ? (
-              <InfoRow label="Beneficia">
-                <NotionText text={t.beneficia} />
+            {tech.beneficia ? (
+              <InfoRow label={t("common.benefits")}>
+                <NotionText text={tech.beneficia} />
               </InfoRow>
             ) : null}
-            {hasTecnologiaTipo(t.tipo) || t.tipo?.trim() ? (
-              <InfoRow label="Tipo">
-                <TecnologiaTipoBadges tipo={t.tipo} />
+            {hasTecnologiaTipo(tech.tipo) || tech.tipo?.trim() ? (
+              <InfoRow label={t("common.type")}>
+                <TecnologiaTipoBadges tipo={tech.tipo} />
               </InfoRow>
             ) : null}
             {panteoesPortraitItems.length > 0 ? (
-              <InfoRow label="Panteão">
+              <InfoRow label={t("common.pantheon")}>
                 <InfoRowPortraitCluster>
                   <PortraitHeaderActions
                     items={panteoesPortraitItems}
@@ -147,13 +149,13 @@ export function TecnologiaDetailPage() {
                   />
                 </InfoRowPortraitCluster>
               </InfoRow>
-            ) : typeof t.panteoes === "string" && t.panteoes.trim() ? (
-              <InfoRow label="Panteão">
-                <NotionText text={t.panteoes} />
+            ) : typeof tech.panteoes === "string" && tech.panteoes.trim() ? (
+              <InfoRow label={t("common.pantheon")}>
+                <NotionText text={tech.panteoes} />
               </InfoRow>
             ) : null}
             {eraPortraitItems.length > 0 ? (
-              <InfoRow label="Era">
+              <InfoRow label={t("common.era")}>
                 <InfoRowPortraitCluster>
                   <PortraitHeaderActions
                     items={eraPortraitItems}
@@ -165,7 +167,7 @@ export function TecnologiaDetailPage() {
               </InfoRow>
             ) : null}
             {construcaoPortraitItems.length > 0 ? (
-              <InfoRow label="Construção de origem">
+              <InfoRow label={t("common.originBuilding")}>
                 <InfoRowPortraitCluster>
                   <PortraitHeaderActions
                     items={construcaoPortraitItems}
@@ -175,14 +177,13 @@ export function TecnologiaDetailPage() {
                   />
                 </InfoRowPortraitCluster>
               </InfoRow>
-            ) : typeof construcaoOrigemField === "string" &&
-              construcaoOrigemField.trim() ? (
-              <InfoRow label="Construção de origem">
+            ) : typeof construcaoOrigemField === "string" && construcaoOrigemField.trim() ? (
+              <InfoRow label={t("common.originBuilding")}>
                 <NotionText text={construcaoOrigemField} />
               </InfoRow>
             ) : null}
             {deusPortraitItems.length > 0 ? (
-              <InfoRow label="Deus específico">
+              <InfoRow label={t("common.specificGod")}>
                 <InfoRowPortraitCluster>
                   <PortraitHeaderActions
                     items={deusPortraitItems}
@@ -193,17 +194,13 @@ export function TecnologiaDetailPage() {
                 </InfoRowPortraitCluster>
               </InfoRow>
             ) : null}
-            
           </div>
         </Section>
-        {t.campo && t.campo.length > 0 ? (
-          <Section title="Campo / efeito">
+        {tech.campo && tech.campo.length > 0 ? (
+          <Section title={t("common.fieldEffect")}>
             <div className="flex flex-col gap-3">
-              {t.campo.map((line, i) => (
-                <p
-                  key={i}
-                  className="m-0 block w-full leading-relaxed text-zinc-300"
-                >
+              {tech.campo.map((line, i) => (
+                <p key={i} className="m-0 block w-full leading-relaxed text-zinc-300">
                   <NotionText text={line} className="block" />
                 </p>
               ))}

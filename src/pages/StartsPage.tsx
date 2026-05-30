@@ -8,15 +8,17 @@ import { EntityCard } from "@/components/ui/EntityCard";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
-import { startsBuildOrder } from "@/data/catalog";
+import type { LocaleCatalog } from "@/data/catalogLocale";
+import { useCatalog } from "@/hooks/useCatalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
+import { useTranslation } from "@/hooks/useTranslation";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { cn } from "@/lib/cn";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 function matchesStart(
-  s: (typeof startsBuildOrder)[number],
+  s: LocaleCatalog["startsBuildOrder"][number],
   q: string,
 ): boolean {
   if (!q.trim()) return true;
@@ -37,6 +39,8 @@ export const startNovoTagClassNav = cn(
 );
 
 export function StartsPage() {
+  const { t } = useTranslation();
+  const { startsBuildOrder } = useCatalog();
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
     () => listIndexLinkStateFromLocation(pathname, locSearch),
@@ -50,20 +54,20 @@ export function StartsPage() {
       const bNew = b.status === "new" ? 0 : 1;
       return aNew - bNew;
     });
-  }, [q]);
+  }, [startsBuildOrder, q]);
 
   return (
     <div>
       <ListPageStickyHeader>
         <PageHeader
-          title="Starts & build orders"
-          description="Start ou Build Order é uma sequência de ações que se executa no início da partida com determinado deus/panteão. Geralmente é focada em um objetivo/intenção (seja rush ou um FH), que é construído a partir da disposição dos aldeões, ou seja, na economia."
+          title={t("pages.starts.title")}
+          description={t("pages.starts.description")}
           className="!mb-0"
         />
         <SearchField
           value={q}
           onChange={setQ}
-          placeholder="Filtrar por título, autor ou deus (maior/menor)…"
+          placeholder={t("pages.starts.filterPlaceholder")}
           id="starts-search"
         />
       </ListPageStickyHeader>
@@ -81,8 +85,8 @@ export function StartsPage() {
                     <NotionText text={s.titulo} />
                   </span>
                   {s.status === "new" ? (
-                    <span className={startNovoTagClass} title="Novo">
-                      🔷 Novo !
+                    <span className={startNovoTagClass} title={t("common.new")}>
+                      {t("pages.starts.newBadge")}
                     </span>
                   ) : null}
                 </span>
@@ -95,7 +99,9 @@ export function StartsPage() {
           </li>
         ))}
       </ul>
-      {filtered.length === 0 ? <p className="mt-8 text-center text-sm text-zinc-500">Nenhum resultado.</p> : null}
+      {filtered.length === 0 ? (
+        <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
+      ) : null}
     </div>
   );
 }
