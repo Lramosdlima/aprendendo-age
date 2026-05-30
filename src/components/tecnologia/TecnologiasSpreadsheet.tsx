@@ -16,13 +16,8 @@ import { NotionText } from "@/components/ui/NotionText";
 import { useTranslation } from "@/hooks/useTranslation";
 import type { Tecnologia } from "@/data/catalog";
 import { firstNumId, joinRefNomesOrString } from "@/lib/entityRefs";
-import {
-  resolveConstrucaoLink,
-  resolveDeusLink,
-  resolveEntityNumRef,
-  resolveTecnologiaLinkByIndex,
-  type ResolvedEntityLink,
-} from "@/lib/entityResolve";
+import { useEntityResolver } from "@/hooks/useEntityResolver";
+import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 
 export type TecnologiaSpreadsheetRow = {
@@ -54,6 +49,8 @@ function refList(
 
 export function TecnologiasSpreadsheet({ rows, linkState, onPreview }: TecnologiasSpreadsheetProps) {
   const { t: tr } = useTranslation();
+  const { resolveConstrucaoLink, resolveDeusLink, resolveEntityNumRef, resolveTecnologiaLinkByIndex } =
+    useEntityResolver();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);
   };

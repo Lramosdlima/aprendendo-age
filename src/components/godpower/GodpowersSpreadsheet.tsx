@@ -15,12 +15,8 @@ import { useTranslation } from "@/hooks/useTranslation";
 import type { Godpower } from "@/data/catalog";
 import { godpowerSlugById } from "@/data/catalog";
 import { firstNumId } from "@/lib/entityRefs";
-import {
-  resolveDeusLink,
-  resolveEntityNumRef,
-  resolveGodpowerLink,
-  type ResolvedEntityLink,
-} from "@/lib/entityResolve";
+import { useEntityResolver } from "@/hooks/useEntityResolver";
+import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 import { cn } from "@/lib/cn";
 
@@ -55,6 +51,7 @@ export function GodpowersSpreadsheet({
   selectedSlugs = [],
   onToggleSelect,
 }: GodpowersSpreadsheetProps) {
+  const { resolveDeusLink, resolveEntityNumRef, resolveGodpowerLink } = useEntityResolver();
   const { t } = useTranslation();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);

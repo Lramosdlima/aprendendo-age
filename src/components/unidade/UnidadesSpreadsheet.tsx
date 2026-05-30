@@ -18,12 +18,8 @@ import { useTranslation } from "@/hooks/useTranslation";
 import type { Unidade } from "@/data/catalog";
 import { unidadeSlugById } from "@/data/catalog";
 import { firstNumId } from "@/lib/entityRefs";
-import {
-  resolveConstrucaoLink,
-  resolveEntityNumRef,
-  resolveUnidadeLink,
-  type ResolvedEntityLink,
-} from "@/lib/entityResolve";
+import { useEntityResolver } from "@/hooks/useEntityResolver";
+import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 import {
   hasMultiplicadorContent,
@@ -59,6 +55,7 @@ export function UnidadesSpreadsheet({
   selectedSlugs = [],
   onToggleSelect,
 }: UnidadesSpreadsheetProps) {
+  const { resolveConstrucaoLink, resolveEntityNumRef, resolveUnidadeLink } = useEntityResolver();
   const { t } = useTranslation();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);

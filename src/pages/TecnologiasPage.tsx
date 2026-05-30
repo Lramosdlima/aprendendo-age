@@ -23,6 +23,7 @@ import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import { pantheonCardTint } from "@/lib/pantheonCardTint";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import { campoSearchBlob } from "@/lib/tecnologiaCampo";
 
 function matches(t: LocaleCatalog["tecnologias"][number], q: string) {
@@ -50,7 +51,7 @@ function matches(t: LocaleCatalog["tecnologias"][number], q: string) {
 }
 
 export function TecnologiasPage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const { tecnologias, tecnologiaSlugByIndex } = useCatalog();
   const { pathname, search: locSearch } = useLocation();
   const listIndexState = useMemo(
@@ -105,7 +106,7 @@ export function TecnologiasPage() {
           {filtered.map(({ t: tec, index }) => (
             <li key={`${index}-${tec.nome}`}>
               <EntityCard
-                to={`/tecnologias/${tecnologiaSlugByIndex.get(index) ?? index}`}
+                to={localeSectionPath(locale, "tecnologias", tecnologiaSlugByIndex.get(index) ?? index)}
                 linkState={listIndexState}
                 title={tec.nome || t("pages.tecnologias.untitled", { index })}
                 cardTint={pantheonCardTint(joinRefNomesOrString(tec.panteoes))}

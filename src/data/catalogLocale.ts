@@ -27,6 +27,7 @@ import {
   aldeaoSlugById,
   tecnologiaBySlug as tecnologiaBySlugPt,
   tecnologiaSlugByIndex,
+  tecnologiaIndexByNotionId,
   mapaBySlug as mapaBySlugPt,
   mapaSlugByIndex,
   type Mapa,
@@ -126,6 +127,7 @@ export type LocaleCatalog = {
   aldeaoSlugById: Map<number, string>;
   tecnologiaBySlug: Map<string, Tecnologia>;
   tecnologiaSlugByIndex: Map<number, string>;
+  tecnologiaIndexByNotionId: Map<string, number>;
   mapaBySlug: Map<string, Mapa>;
   mapaSlugByIndex: Map<number, string>;
 };
@@ -179,6 +181,7 @@ function buildPtCatalog(): LocaleCatalog {
     aldeaoSlugById,
     tecnologiaBySlug: tecnologiaBySlugPt,
     tecnologiaSlugByIndex,
+    tecnologiaIndexByNotionId,
     mapaBySlug: mapaBySlugPt,
     mapaSlugByIndex,
   };
@@ -233,6 +236,7 @@ function buildEnCatalog(): LocaleCatalog {
     aldeaoSlugById,
     tecnologiaBySlug: remapIndexSlugMap(tecnologiaBySlugPt, tecnologiasPt, tecnologiasEn),
     tecnologiaSlugByIndex,
+    tecnologiaIndexByNotionId,
     mapaBySlug: remapIndexSlugMap(mapaBySlugPt, mapasPt, mapasEn),
     mapaSlugByIndex,
   };

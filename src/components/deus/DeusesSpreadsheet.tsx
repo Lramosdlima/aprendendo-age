@@ -15,13 +15,8 @@ import { AppTag } from "@/components/ui/AppTag";
 import { NotionText } from "@/components/ui/NotionText";
 import type { Deus } from "@/lib/godMajorTree";
 import { firstNumId } from "@/lib/entityRefs";
-import {
-  resolveDeusLink,
-  resolveEntityNumRef,
-  resolveGodpowerLink,
-  resolveTecnologiaLink,
-  type ResolvedEntityLink,
-} from "@/lib/entityResolve";
+import { useEntityResolver } from "@/hooks/useEntityResolver";
+import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 import { cn } from "@/lib/cn";
 
@@ -39,6 +34,8 @@ function hierarquiaTagClass(h: string | undefined): string {
 }
 
 export function DeusesSpreadsheet({ rows, linkState, onPreview }: DeusesSpreadsheetProps) {
+  const { resolveDeusLink, resolveEntityNumRef, resolveGodpowerLink, resolveTecnologiaLink } =
+    useEntityResolver();
   const showPreview = (link: ResolvedEntityLink) => {
     onPreview?.(link);
   };

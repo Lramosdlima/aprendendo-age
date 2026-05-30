@@ -21,28 +21,14 @@ import {
   listOrDetailBackLinkLabel,
 } from "@/lib/listIndexReturnState";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
-import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
+import { tecnologiaPortraitItemsFromNames } from "@/lib/tecnologiaPortraitItems";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import { hasTipoContent } from "@/lib/unidadeTipo";
 import type { PortraitHeaderItem } from "@/components/ui/PortraitHeaderActions";
 
 function splitCommaNames(raw: string | undefined): string[] {
   if (!raw?.trim()) return [];
   return raw.split(",").map((s) => s.trim()).filter(Boolean);
-}
-
-function tecnologiaPortraitItemsFromNames(catalog: LocaleCatalog, names: string[]): PortraitHeaderItem[] {
-  const { tecnologias, tecnologiaSlugByIndex } = catalog;
-  return names.map((nome, i) => {
-    const idx = tecnologias.findIndex((t) => t.nome === nome);
-    const t = idx >= 0 ? tecnologias[idx] : undefined;
-    const slug = idx >= 0 ? tecnologiaSlugByIndex.get(idx) : undefined;
-    return {
-      key: `tec-${slug ?? nome}-${i}`,
-      to: slug ? `/tecnologias/${slug}` : "/tecnologias",
-      nome,
-      src: t ? getTecnologiaAssetUrl(t) : undefined,
-    };
-  });
 }
 
 function unidadeIdsFromConstrucao(c: { unidades_ids?: number[]; unidades_id?: number }): number[] {
@@ -53,13 +39,13 @@ function unidadeIdsFromConstrucao(c: { unidades_ids?: number[]; unidades_id?: nu
 }
 
 function unidadePortraitItemsFromIds(catalog: LocaleCatalog, ids: number[]): PortraitHeaderItem[] {
-  const { unidadeById, unidadeSlugById } = catalog;
+  const { locale, unidadeById, unidadeSlugById } = catalog;
   return ids.map((uid, i) => {
     const u = unidadeById.get(uid);
     const slug = unidadeSlugById.get(uid);
     return {
       key: `u-${uid}-${i}`,
-      to: `/unidades/${slug ?? uid}`,
+      to: localeSectionPath(locale, "unidades", slug ?? uid),
       nome: u?.nome ?? `#${uid}`,
       src: u ? getUnidadeAssetUrl(u) : undefined,
     };
@@ -72,8 +58,9 @@ export function ConstrucaoDetailPage() {
   const { construcaoBySlug, eraById, eraSlugById, panteaoById, panteaoSlugById } = catalog;
   const { pathname, search: locSearch, state: navState } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
-  const backToList = listIndexReturnTo("/construcoes", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/construcoes", t("nav.buildings"));
+  const buildingsList = localeSectionPath(locale, "construcoes");
+  const backToList = listIndexReturnTo(buildingsList, navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, buildingsList, t("nav.buildings"));
   const { slug } = useParams();
   const c = slug ? construcaoBySlug.get(slug) : undefined;
 
@@ -124,7 +111,7 @@ export function ConstrucaoDetailPage() {
                       items={[
                         {
                           key: String(panteao.id),
-                          to: `/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`,
+                          to: localeSectionPath(locale, "panteoes", panteaoSlugById.get(panteao.id) ?? panteao.id),
                           nome: panteao.nome,
                           src: getPantheonWatermarkUrl(panteao),
                         },
@@ -150,7 +137,7 @@ export function ConstrucaoDetailPage() {
                       items={[
                         {
                           key: String(era.id),
-                          to: `/eras/${eraSlugById.get(era.id) ?? era.id}`,
+                          to: localeSectionPath(locale, "eras", eraSlugById.get(era.id) ?? era.id),
                           nome: era.nome,
                           src: getEraAssetUrl(era),
                         },

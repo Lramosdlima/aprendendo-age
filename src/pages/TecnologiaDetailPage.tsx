@@ -23,10 +23,11 @@ import {
   listIndexReturnTo,
   listOrDetailBackLinkLabel,
 } from "@/lib/listIndexReturnState";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
 
 export function TecnologiaDetailPage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const {
     construcaoById,
     construcaoSlugById,
@@ -41,8 +42,9 @@ export function TecnologiaDetailPage() {
   } = useCatalog();
   const { pathname, search: locSearch, state: navState } = useLocation();
   const tecLinkState = listIndexLinkStateFromLocation(pathname, locSearch);
-  const backToList = listIndexReturnTo("/tecnologias", navState);
-  const backLabel = listOrDetailBackLinkLabel(backToList, "/tecnologias", t("nav.technologies"));
+  const techList = localeSectionPath(locale, "tecnologias");
+  const backToList = listIndexReturnTo(techList, navState);
+  const backLabel = listOrDetailBackLinkLabel(backToList, techList, t("nav.technologies"));
   const { slug } = useParams();
   const tech = slug ? tecnologiaBySlug.get(slug) : undefined;
 
@@ -68,7 +70,7 @@ export function TecnologiaDetailPage() {
           const d = deusById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/deuses/${deusSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "deuses", deusSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: d ? getDeusAssetUrl(d) : undefined,
           };
@@ -81,7 +83,7 @@ export function TecnologiaDetailPage() {
           const p = panteaoById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/panteoes/${panteaoSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "panteoes", panteaoSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: p ? getPantheonWatermarkUrl(p) : undefined,
           };
@@ -94,7 +96,7 @@ export function TecnologiaDetailPage() {
           const e = eraById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/eras/${eraSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "eras", eraSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: e ? getEraAssetUrl(e) : undefined,
           };
@@ -107,7 +109,7 @@ export function TecnologiaDetailPage() {
           const c = construcaoById.get(r.id);
           return {
             key: `${r.id}-${i}`,
-            to: `/construcoes/${construcaoSlugById.get(r.id) ?? r.id}`,
+            to: localeSectionPath(locale, "construcoes", construcaoSlugById.get(r.id) ?? r.id),
             nome: r.nome,
             src: c ? getConstrucaoAssetUrl(c) : undefined,
           };

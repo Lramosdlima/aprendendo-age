@@ -1,14 +1,25 @@
+import { useLocation, useNavigate } from "react-router-dom";
+
 import { useTranslation } from "@/hooks/useTranslation";
 import { localeFlag, nextLocale } from "@/lib/locale";
+import { swapLocaleInPath } from "@/lib/localeRoutes";
 import { cn } from "@/lib/cn";
 
 export function LanguageToggle({ className }: { className?: string }) {
   const { locale, setLocale, t } = useTranslation();
+  const navigate = useNavigate();
+  const { pathname, search } = useLocation();
 
   return (
     <button
       type="button"
-      onClick={() => setLocale(nextLocale(locale))}
+      onClick={() => {
+        const next = nextLocale(locale);
+        setLocale(next);
+        const current = `${pathname}${search}`;
+        const swapped = swapLocaleInPath(current, next);
+        if (swapped !== current) navigate(swapped);
+      }}
       className={cn(
         "fixed right-4 top-[max(1rem,env(safe-area-inset-top,0px)+0.5rem)] z-[60]",
         "flex h-10 w-10 items-center justify-center rounded-full border border-aom-border",

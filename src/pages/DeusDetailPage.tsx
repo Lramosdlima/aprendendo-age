@@ -23,37 +23,20 @@ import { bucketMinorsByEra } from "@/lib/godMajorTree";
 import { listIndexLinkStateFromLocation, listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
-import { getTecnologiaAssetUrl } from "@/lib/tecnologiaAssetUrl";
-
-function tecnologiaPortraitItemsFromRefs(
-  catalog: LocaleCatalog,
-  refs: { id: string; nome: string }[],
-): PortraitHeaderItem[] {
-  const { tecnologias, tecnologiaSlugByIndex } = catalog;
-  return refs.map((ref, i) => {
-    const idx = tecnologias.findIndex((t) => t.nome === ref.nome);
-    const t = idx >= 0 ? tecnologias[idx] : undefined;
-    const slug = idx >= 0 ? tecnologiaSlugByIndex.get(idx) : undefined;
-    return {
-      key: `tec-${ref.id}-${i}`,
-      to: slug ? `/tecnologias/${slug}` : "/tecnologias",
-      nome: ref.nome,
-      src: t ? getTecnologiaAssetUrl(t) : undefined,
-    };
-  });
-}
+import { localeSectionPath } from "@/lib/localeRoutes";
+import { tecnologiaPortraitItemsFromRefs } from "@/lib/tecnologiaPortraitItems";
 
 function unidadePortraitItemsFromRefs(
   catalog: LocaleCatalog,
   refs: { id: number; nome: string }[],
 ): PortraitHeaderItem[] {
-  const { unidadeById, unidadeSlugById } = catalog;
+  const { locale, unidadeById, unidadeSlugById } = catalog;
   return refs.map((ref, i) => {
     const u = unidadeById.get(ref.id);
     const slug = unidadeSlugById.get(ref.id);
     return {
       key: `u-${ref.id}-${i}`,
-      to: `/unidades/${slug ?? ref.id}`,
+      to: localeSectionPath(locale, "unidades", slug ?? ref.id),
       nome: ref.nome,
       src: u ? getUnidadeAssetUrl(u) : undefined,
     };
@@ -61,7 +44,7 @@ function unidadePortraitItemsFromRefs(
 }
 
 export function DeusDetailPage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const catalog = useCatalog();
   const {
     deusById,
@@ -77,17 +60,18 @@ export function DeusDetailPage() {
   } = catalog;
   const { pathname, search: locSearch, state: navState } = useLocation();
   const linkState = listIndexLinkStateFromLocation(pathname, locSearch);
-  const backToList = listIndexReturnTo("/deuses", navState);
+  const backToList = listIndexReturnTo(localeSectionPath(locale, "deuses"), navState);
 
   function deusBackLinkLabel(backTo: string): string {
     const pathOnly = backTo.split("?")[0];
     if (pathOnly === "/deuses" || backTo.startsWith("/deuses?")) return t("nav.gods");
+    if (pathOnly === "/gods" || backTo.startsWith("/gods?")) return t("nav.gods");
     if (backTo === "/astecas" || backTo.startsWith("/astecas?")) return t("nav.astecas");
     if (backTo === "/starts" || backTo.startsWith("/starts?")) return t("nav.starts");
     if (backTo.startsWith("/starts/")) return t("common.backToStart");
-    if (backTo.startsWith("/poderes/compare")) return t("pages.godpowers.comparePowers");
-    if (backTo.startsWith("/poderes/")) return t("pages.godpowers.backToPower");
-    if (backTo === "/poderes" || backTo.startsWith("/poderes?")) return t("nav.godpowers");
+    if (backTo.startsWith("/poderes/compare") || backTo.startsWith("/god-powers/compare")) return t("pages.godpowers.comparePowers");
+    if (backTo.startsWith("/poderes/") || backTo.startsWith("/god-powers/")) return t("pages.godpowers.backToPower");
+    if (backTo === "/poderes" || backTo.startsWith("/poderes?") || backTo === "/god-powers" || backTo.startsWith("/god-powers?")) return t("nav.godpowers");
     return t("common.back");
   }
 
@@ -122,7 +106,7 @@ export function DeusDetailPage() {
       return x ? (
         <Link
           key={rid}
-          to={`/deuses/${deusSlugById.get(rid) ?? rid}`}
+          to={localeSectionPath(locale, "deuses", deusSlugById.get(rid) ?? rid)}
           className="text-amber-200 underline-offset-2 hover:underline"
         >
           {rel.nome}
@@ -163,7 +147,7 @@ export function DeusDetailPage() {
                       items={[
                         {
                           key: String(panteao.id),
-                          to: `/panteoes/${panteaoSlugById.get(panteao.id) ?? panteao.id}`,
+                          to: localeSectionPath(locale, "panteoes", panteaoSlugById.get(panteao.id) ?? panteao.id),
                           nome: panteao.nome,
                           src: getPantheonWatermarkUrl(panteao),
                         },
@@ -189,7 +173,7 @@ export function DeusDetailPage() {
                       items={[
                         {
                           key: String(era.id),
-                          to: `/eras/${eraSlugById.get(era.id) ?? era.id}`,
+                          to: localeSectionPath(locale, "eras", eraSlugById.get(era.id) ?? era.id),
                           nome: era.nome,
                           src: getEraAssetUrl(era),
                         },
@@ -215,7 +199,7 @@ export function DeusDetailPage() {
                       items={[
                         {
                           key: String(gp.id),
-                          to: `/poderes/${godpowerSlugById.get(gp.id) ?? gp.id}`,
+                          to: localeSectionPath(locale, "poderes", godpowerSlugById.get(gp.id) ?? gp.id),
                           nome: gp.nome,
                           src: getGodPowerAssetUrl(gp),
                         },
@@ -261,7 +245,7 @@ export function DeusDetailPage() {
               return (
                 <li key={sid}>
                   {s ? (
-                    <Link to={`/starts/${s.slug}`} className="text-amber-200 underline-offset-2 hover:underline">
+                    <Link to={localeSectionPath(locale, "starts", s.slug)} className="text-amber-200 underline-offset-2 hover:underline">
                       <NotionText text={nome} />
                     </Link>
                   ) : (

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-import { deusSlugById } from "@/data/catalog";
+import { useCatalog } from "@/hooks/useCatalog";
+import { localeSectionPath } from "@/lib/localeRoutes";
 import tokenAssetMap from "@/data/token_asset_map.json";
 import { getDeusAssetUrl } from "@/lib/deusAssetUrl";
 import { cn } from "@/lib/cn";
@@ -17,6 +18,7 @@ function PortraitLink({
   className?: string;
 }) {
   const src = getDeusAssetUrl(deus);
+  const { deusSlugById, locale } = useCatalog();
   const slug = deusSlugById.get(deus.id) ?? String(deus.id);
   const box =
     size === "lg"
@@ -25,7 +27,7 @@ function PortraitLink({
 
   return (
     <Link
-      to={`/deuses/${slug}`}
+      to={localeSectionPath(locale, "deuses", slug)}
       className={cn(
         "group flex max-w-[110px] flex-col items-center gap-1.5 text-center",
         className,

@@ -4,47 +4,57 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { cn } from "@/lib/cn";
 import { useTranslation } from "@/hooks/useTranslation";
+import { localeSectionPath, sectionFromPathSegment, type LocaleSection } from "@/lib/localeRoutes";
 import { startNovoTagClassNav } from "@/pages/StartsPage";
 
-const LIST_INDEX_PATHS = new Set([
-  "/construcoes",
-  "/deuses",
-  "/poderes",
-  "/mapas",
-  "/starts",
-  "/tecnologias",
-  "/unidades",
+const LIST_INDEX_SECTIONS = new Set<LocaleSection>([
+  "construcoes",
+  "deuses",
+  "poderes",
+  "mapas",
+  "starts",
+  "tecnologias",
+  "unidades",
 ]);
+
+function isCatalogListIndex(pathname: string): boolean {
+  const segment = pathname.split("/").filter(Boolean)[0];
+  if (!segment) return false;
+  const section = sectionFromPathSegment(segment);
+  return section != null && LIST_INDEX_SECTIONS.has(section);
+}
 
 type NavItem =
   | { to: string; labelKey: string; end?: boolean; navNovo?: boolean }
   | { to: string; labelKey: string; match: (pathname: string) => boolean; navNovo?: boolean };
 
-const navItems: NavItem[] = [
-  { to: "/", labelKey: "nav.home", end: true },
-  { to: "/starts", labelKey: "nav.starts", navNovo: true },
-  {
-    to: "/trilha-de-aprendizado",
-    labelKey: "nav.trilha",
-    match: (p) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
-  },
-  { to: "/panteoes", labelKey: "nav.pantheons" },
-  { to: "/astecas", labelKey: "nav.astecas", navNovo: true },
-  { to: "/deuses", labelKey: "nav.gods" },
-  { to: "/eras", labelKey: "nav.eras" },
-  { to: "/poderes", labelKey: "nav.godpowers" },
-  { to: "/construcoes", labelKey: "nav.buildings" },
-  { to: "/unidades", labelKey: "nav.units" },
-  { to: "/aldeoes", labelKey: "nav.villagers" },
-  { to: "/mapas", labelKey: "nav.maps" },
-  { to: "/tecnologias", labelKey: "nav.technologies" },
-  {
-    to: "/rank",
-    labelKey: "nav.rank",
-    navNovo: true,
-    match: (p) => p === "/rank" || p.startsWith("/rank/"),
-  },
-];
+function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
+  return [
+    { to: "/", labelKey: "nav.home", end: true },
+    { to: localeSectionPath(locale, "starts"), labelKey: "nav.starts", navNovo: true },
+    {
+      to: "/trilha-de-aprendizado",
+      labelKey: "nav.trilha",
+      match: (p: string) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
+    },
+    { to: localeSectionPath(locale, "panteoes"), labelKey: "nav.pantheons" },
+    { to: "/astecas", labelKey: "nav.astecas", navNovo: true },
+    { to: localeSectionPath(locale, "deuses"), labelKey: "nav.gods" },
+    { to: localeSectionPath(locale, "eras"), labelKey: "nav.eras" },
+    { to: localeSectionPath(locale, "poderes"), labelKey: "nav.godpowers" },
+    { to: localeSectionPath(locale, "construcoes"), labelKey: "nav.buildings" },
+    { to: localeSectionPath(locale, "unidades"), labelKey: "nav.units" },
+    { to: localeSectionPath(locale, "aldeoes"), labelKey: "nav.villagers" },
+    { to: localeSectionPath(locale, "mapas"), labelKey: "nav.maps" },
+    { to: localeSectionPath(locale, "tecnologias"), labelKey: "nav.technologies" },
+    {
+      to: "/rank",
+      labelKey: "nav.rank",
+      navNovo: true,
+      match: (p: string) => p === "/rank" || p.startsWith("/rank/"),
+    },
+  ];
+}
 
 function navClass(active: boolean) {
   return cn(
@@ -59,11 +69,14 @@ function ShellNavLinks({
   pathname,
   onItemClick,
   t,
+  locale,
 }: {
   pathname: string;
   onItemClick?: () => void;
   t: (key: string) => string;
+  locale: import("@/i18n/types").Locale;
 }) {
+  const navItems = buildNavItems(locale);
   return (
     <>
       {navItems.map((item) => (
@@ -120,11 +133,11 @@ function MenuGlyph({ open }: { open: boolean }) {
 
 export function AppShell() {
   const { pathname, key } = useLocation();
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useLayoutEffect(() => {
-    if (LIST_INDEX_PATHS.has(pathname)) {
+    if (isCatalogListIndex(pathname)) {
       return;
     }
     window.scrollTo(0, 0);
@@ -193,7 +206,7 @@ export function AppShell() {
           <p className="mt-1 text-xs text-zinc-500">{appByline}</p>
         </div>
         <nav className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto px-2 pb-3 md:px-3 md:pb-6">
-          <ShellNavLinks pathname={pathname} t={t} />
+          <ShellNavLinks pathname={pathname} t={t} locale={locale} />
         </nav>
       </aside>
 
@@ -231,7 +244,7 @@ export function AppShell() {
               </button>
             </div>
             <nav className="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4">
-              <ShellNavLinks pathname={pathname} onItemClick={() => setMobileMenuOpen(false)} t={t} />
+              <ShellNavLinks pathname={pathname} onItemClick={() => setMobileMenuOpen(false)} t={t} locale={locale} />
             </nav>
           </div>
         </>

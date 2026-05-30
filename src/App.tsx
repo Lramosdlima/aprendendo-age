@@ -47,27 +47,48 @@ export default function App() {
         <Route element={<AppShell />}>
           <Route index element={<HomePage />} />
           <Route path="panteoes" element={<PanteoesPage />} />
+          <Route path="pantheons" element={<PanteoesPage />} />
           <Route path="panteoes/:slug" element={<PanteaoDetailPage />} />
+          <Route path="pantheons/:slug" element={<PanteaoDetailPage />} />
           <Route path="astecas" element={<AstecasPage />} />
           <Route path="deuses" element={<DeusesPage />} />
+          <Route path="gods" element={<DeusesPage />} />
           <Route path="deuses/:slug" element={<DeusDetailPage />} />
+          <Route path="gods/:slug" element={<DeusDetailPage />} />
           <Route path="eras" element={<ErasPage />} />
+          <Route path="ages" element={<ErasPage />} />
           <Route path="eras/:slug" element={<EraDetailPage />} />
+          <Route path="ages/:slug" element={<EraDetailPage />} />
           <Route path="poderes" element={<GodpowersPage />} />
+          <Route path="god-powers" element={<GodpowersPage />} />
           <Route path="poderes/compare/:slugA/:slugB" element={<GodpowerComparePage />} />
+          <Route path="god-powers/compare/:slugA/:slugB" element={<GodpowerComparePage />} />
           <Route path="poderes/:slug" element={<GodpowerDetailPage />} />
+          <Route path="god-powers/:slug" element={<GodpowerDetailPage />} />
           <Route path="construcoes" element={<ConstrucoesPage />} />
+          <Route path="buildings" element={<ConstrucoesPage />} />
           <Route path="construcoes/:slug" element={<ConstrucaoDetailPage />} />
+          <Route path="buildings/:slug" element={<ConstrucaoDetailPage />} />
           <Route path="unidades" element={<UnidadesPage />} />
+          <Route path="units" element={<UnidadesPage />} />
           <Route path="unidades/compare/:slugA/:slugB" element={<UnidadeComparePage />} />
+          <Route path="units/compare/:slugA/:slugB" element={<UnidadeComparePage />} />
           <Route path="unidades/:slug" element={<UnidadeDetailPage />} />
+          <Route path="units/:slug" element={<UnidadeDetailPage />} />
           <Route path="aldeoes" element={<AldeoesPage />} />
+          <Route path="villagers" element={<AldeoesPage />} />
           <Route path="aldeoes/compare/:slugA/:slugB" element={<AldeaoComparePage />} />
+          <Route path="villagers/compare/:slugA/:slugB" element={<AldeaoComparePage />} />
           <Route path="aldeoes/:slug" element={<AldeaoDetailPage />} />
+          <Route path="villagers/:slug" element={<AldeaoDetailPage />} />
           <Route path="mapas" element={<MapasPage />} />
+          <Route path="maps" element={<MapasPage />} />
           <Route path="mapas/:slug" element={<MapaDetailPage />} />
+          <Route path="maps/:slug" element={<MapaDetailPage />} />
           <Route path="tecnologias" element={<TecnologiasPage />} />
+          <Route path="technologies" element={<TecnologiasPage />} />
           <Route path="tecnologias/:slug" element={<TecnologiaDetailPage />} />
+          <Route path="technologies/:slug" element={<TecnologiaDetailPage />} />
           <Route path="starts" element={<StartsPage />} />
           <Route path="starts/:slug" element={<StartDetailPage />} />
           <Route path="admin/novo-start" element={<SecretStartBuilderPage />} />

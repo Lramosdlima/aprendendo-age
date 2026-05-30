@@ -19,6 +19,7 @@ export type Mapa = {
   icon: string | null;
 };
 import { buildIndexSlugMaps, buildRecordSlugMaps } from "@/lib/entitySlug";
+import { buildTecnologiaNotionIdIndexMap } from "@/lib/tecnologiaIndex";
 import type { EntityNumRef } from "@/lib/entityRefs";
 import type { UnidadeMultiplicadorItem } from "@/lib/unidadeMultiplicador";
 import type { UnidadeTipoItem } from "@/lib/unidadeTipo";
@@ -246,6 +247,11 @@ export const aldeaoSlugById = aldeaoSlugMaps.slugById;
 const tecnologiaSlugMaps = buildIndexSlugMaps(tecnologias, (t) => t.nome ?? "");
 export const tecnologiaBySlug = tecnologiaSlugMaps.bySlug;
 export const tecnologiaSlugByIndex = tecnologiaSlugMaps.slugByIndex;
+export const tecnologiaIndexByNotionId = buildTecnologiaNotionIdIndexMap(
+  tecnologias,
+  construcoes as { tecnologias?: string; tecnologias_ids?: string[]; tecnologias_id?: string }[],
+  deuses as { tecnologias?: { id: string | number; nome: string }[] }[],
+);
 
 const mapaSlugMaps = buildIndexSlugMaps(mapas, (m) => m.nome ?? "");
 export const mapaBySlug = mapaSlugMaps.bySlug;
