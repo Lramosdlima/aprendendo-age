@@ -5,6 +5,7 @@ import {
   type PlayerStatsResponse,
   type ProfileStatRow,
 } from "@/lib/formRetoldApi";
+import { resolveClanIdByAomstatsTag } from "@/lib/clansApi";
 
 export type AomStatsSnapshotFields = {
   aomstatsId: string | null;
@@ -16,6 +17,8 @@ export type AomStatsSnapshotFields = {
   aomstatsWinRate: string | null;
   aomstatsRank: string | null;
   aomstatsSnapshotAt: string | null;
+  aomstatsClan: string | null;
+  clanId: string | null;
   displayName: string | null;
 };
 
@@ -23,12 +26,25 @@ export type AomStatsProfileSyncPayload = {
   aomstatsId: string;
   aomstatsAlias: string;
   logoPath: string | null;
+  aomstatsClan: string | null;
   rr: number;
   wins: number;
   losses: number;
   winRate: string;
   rank: string | null;
 };
+
+function normalizeAomstatsClanTag(tag: string | null | undefined): string | null {
+  const trimmed = tag?.trim();
+  return trimmed ? trimmed.toUpperCase() : null;
+}
+
+function extractAomstatsClan(stats: PlayerStatsResponse): string | null {
+  const fromTag = stats.clanTag?.trim();
+  if (fromTag) return fromTag;
+  const fromFun = stats.funStats?.clan_name?.trim();
+  return fromFun || null;
+}
 
 export function buildAomStatsSyncPayload(stats: PlayerStatsResponse): AomStatsProfileSyncPayload | null {
   const row1v1 = pickSup1v1Row(stats.profileStats);
@@ -39,6 +55,7 @@ export function buildAomStatsSyncPayload(stats: PlayerStatsResponse): AomStatsPr
     aomstatsId: String(stats.profileId),
     aomstatsAlias: stats.profileName.trim() || String(stats.profileId),
     logoPath: stats.playerAvatarUrl?.trim() || null,
+    aomstatsClan: extractAomstatsClan(stats),
     rr,
     wins: row1v1.wins,
     losses: row1v1.losses,
@@ -76,7 +93,7 @@ export function buildRankHeroFromProfile(profile: AomStatsSnapshotFields): {
       : "",
     country: "",
     playerAvatarUrl: profile.logoPath,
-    clanTag: null,
+    clanTag: profile.aomstatsClan,
     profileStats: [row1v1],
   };
 
@@ -93,6 +110,8 @@ export function profileRowToAomStatsFields(row: {
   aomstats_win_rate: string | null;
   aomstats_rank: string | null;
   aomstats_snapshot_at: string | null;
+  aomstats_clan?: string | null;
+  clan_id?: string | null;
 }) {
   return {
     aomstatsId: row.aomstats_id?.trim() || null,
@@ -104,6 +123,8 @@ export function profileRowToAomStatsFields(row: {
     aomstatsWinRate: row.aomstats_win_rate,
     aomstatsRank: row.aomstats_rank,
     aomstatsSnapshotAt: row.aomstats_snapshot_at,
+    aomstatsClan: row.aomstats_clan?.trim() || null,
+    clanId: row.clan_id ?? null,
   };
 }
 
@@ -121,6 +142,21 @@ export function aomStatsSyncPayloadToDbUpdate(payload: AomStatsProfileSyncPayloa
   };
 }
 
+export async function buildAomStatsClanDbUpdate(
+  payload: AomStatsProfileSyncPayload,
+  previousAomstatsClan: string | null | undefined,
+): Promise<{ aomstats_clan: string | null; clan_id: string | null } | null> {
+  const previousNorm = normalizeAomstatsClanTag(previousAomstatsClan);
+  const newNorm = normalizeAomstatsClanTag(payload.aomstatsClan);
+
+  if (previousNorm === newNorm) return null;
+
+  return {
+    aomstats_clan: payload.aomstatsClan,
+    clan_id: await resolveClanIdByAomstatsTag(payload.aomstatsClan),
+  };
+}
+
 export const AOMSTATS_UNSYNC_DB_UPDATE = {
   aomstats_id: null,
   aomstats_alias: null,
@@ -131,4 +167,6 @@ export const AOMSTATS_UNSYNC_DB_UPDATE = {
   aomstats_win_rate: null,
   aomstats_rank: null,
   aomstats_snapshot_at: null,
+  aomstats_clan: null,
+  clan_id: null,
 } as const;

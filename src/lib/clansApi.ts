@@ -36,3 +36,17 @@ export async function fetchClans(): Promise<Clan[]> {
 
   return (data ?? []).map((row) => mapRow(row as Parameters<typeof mapRow>[0]));
 }
+
+export function matchClanIdByAomstatsTag(clans: Clan[], tag: string | null | undefined): string | null {
+  const normalized = tag?.trim().toUpperCase();
+  if (!normalized) return null;
+  return clans.find((clan) => clan.tag.trim().toUpperCase() === normalized)?.id ?? null;
+}
+
+/** Resolve `clan_id` comparando a sigla do AoM Stats com `public.clans.tag`. */
+export async function resolveClanIdByAomstatsTag(tag: string | null | undefined): Promise<string | null> {
+  const normalized = tag?.trim();
+  if (!normalized) return null;
+  const clans = await fetchClans();
+  return matchClanIdByAomstatsTag(clans, normalized);
+}

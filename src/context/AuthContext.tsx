@@ -12,6 +12,7 @@ import type { Session, User } from "@supabase/supabase-js";
 import {
   AOMSTATS_UNSYNC_DB_UPDATE,
   aomStatsSyncPayloadToDbUpdate,
+  buildAomStatsClanDbUpdate,
   profileRowToAomStatsFields,
   type AomStatsProfileSyncPayload,
 } from "@/lib/aomstatsProfileSync";
@@ -35,6 +36,8 @@ export type AppUserProfile = {
   aomstatsWinRate: string | null;
   aomstatsRank: string | null;
   aomstatsSnapshotAt: string | null;
+  aomstatsClan: string | null;
+  clanId: string | null;
 };
 
 type AuthStatus = "loading" | "authenticated" | "unauthenticated" | "unconfigured";
@@ -58,7 +61,7 @@ type AuthContextValue = {
 };
 
 const PROFILE_SELECT =
-  "role, display_name, created_at, aomstats_id, logo_path, aomstats_alias, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at";
+  "role, display_name, created_at, aomstats_id, logo_path, aomstats_alias, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at, aomstats_clan, clan_id";
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
@@ -82,6 +85,8 @@ function mapRowToProfile(
     aomstats_win_rate: string | null;
     aomstats_rank: string | null;
     aomstats_snapshot_at: string | null;
+    aomstats_clan?: string | null;
+    clan_id?: string | null;
   } | null,
 ): AppUserProfile {
   const aom = row
@@ -96,6 +101,8 @@ function mapRowToProfile(
         aomstatsWinRate: null,
         aomstatsRank: null,
         aomstatsSnapshotAt: null,
+        aomstatsClan: null,
+        clanId: null,
       };
 
   return {
@@ -212,16 +219,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       } = await supabase.auth.getUser();
       if (!u) return { ok: false, message: "Sessão inválida." };
 
+      const clanFields = await buildAomStatsClanDbUpdate(payload, profile?.aomstatsClan);
       const { error } = await supabase
         .from("profiles")
-        .update(aomStatsSyncPayloadToDbUpdate(payload))
+        .update({
+          ...aomStatsSyncPayloadToDbUpdate(payload),
+          ...(clanFields ?? {}),
+        })
         .eq("id", u.id);
 
       if (error) return { ok: false, message: error.message };
       await loadProfileForUser(u);
       return { ok: true };
     },
-    [loadProfileForUser, supabase],
+    [loadProfileForUser, profile?.aomstatsClan, supabase],
   );
 
   const unsyncAomStats = useCallback(async (): Promise<AuthResult> => {
