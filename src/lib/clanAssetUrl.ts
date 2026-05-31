@@ -1,5 +1,6 @@
 const CLAN_LOGO_BY_SLUG: Record<string, string> = {
   caok: "/assets/clans/CAOK_ClanAgeOfKings.webp",
+  cbb: "/assets/clans/CBB_ClanBomDeBriga.webp",
   disc: "/assets/clans/DISC_Discordia.webp",
   g3n: "/assets/clans/G3N_Generais.webp",
   mdre: "/assets/clans/MDRE_MandaRecurso.webp",

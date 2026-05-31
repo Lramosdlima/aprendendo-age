@@ -62,10 +62,7 @@ export function ClansPage() {
             <caption className="sr-only">{t("pages.clans.tableCaption")}</caption>
             <thead>
               <tr className="border-b border-zinc-800 bg-zinc-950/80 text-xs font-semibold uppercase tracking-wide text-zinc-500">
-                <th scope="col" className="w-14 px-4 py-3 text-center font-medium">
-                  #
-                </th>
-                <th scope="col" className="w-16 px-2 py-3 font-medium">
+                <th scope="col" className="w-16 px-4 py-3 font-medium">
                   {t("pages.clans.logo")}
                 </th>
                 <th scope="col" className="px-3 py-3 font-medium">
@@ -85,8 +82,7 @@ export function ClansPage() {
                     i % 2 === 0 ? "bg-zinc-950/25" : "bg-zinc-900/20",
                   )}
                 >
-                  <td className="px-4 py-3 text-center tabular-nums text-zinc-500">{i + 1}</td>
-                  <td className="px-2 py-3">
+                  <td className="px-4 py-3">
                     <ClanLogo
                       tag={c.tag}
                       logoSrc={getClanLogoUrl(c)}
@@ -110,7 +106,6 @@ export function ClansPage() {
               key={c.slug}
               className={cn("flex items-center gap-4 px-4 py-4", i % 2 === 0 ? "bg-zinc-950/30" : "bg-zinc-900/15")}
             >
-              <span className="w-6 shrink-0 text-center text-xs tabular-nums text-zinc-500">{i + 1}</span>
               <ClanLogo
                 tag={c.tag}
                 logoSrc={getClanLogoUrl(c)}
