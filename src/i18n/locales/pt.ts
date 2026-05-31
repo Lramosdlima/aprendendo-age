@@ -244,6 +244,11 @@ export const ptMessages: TranslationTree = {
       listAria: "Lista de clãs",
       logo: "Logo",
       logoComingSoon: "Logo de {{name}} — em breve",
+      loading: "Carregando clãs…",
+      loadError: "Não foi possível carregar os clãs.",
+      loadTimeout: "A consulta demorou demais. Volte mais tarde.",
+      unconfigured: "Supabase não configurado. Defina VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY.",
+      empty: "Nenhum clã cadastrado ainda.",
     },
     rank: {
       title: "Rank (RR)",

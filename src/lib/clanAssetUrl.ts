@@ -1,13 +1,7 @@
-const CLAN_LOGO_BY_SLUG: Record<string, string> = {
-  caok: "/assets/clans/CAOK_ClanAgeOfKings.webp",
-  cbb: "/assets/clans/CBB_ClanBomDeBriga.webp",
-  disc: "/assets/clans/DISC_Discordia.webp",
-  g3n: "/assets/clans/G3N_Generais.webp",
-  mdre: "/assets/clans/MDRE_MandaRecurso.webp",
-  psgm: "/assets/clans/PSGM_Prostagma.webp",
-};
+import type { Clan } from "@/data/clans";
 
-/** URL pública do logo do clã em `public/assets/clans/`. */
-export function getClanLogoUrl(clan: { slug: string; logoSrc?: string }): string | undefined {
-  return clan.logoSrc ?? CLAN_LOGO_BY_SLUG[clan.slug];
+/** URL pública do logo do clã (`logo_path` no Supabase). */
+export function getClanLogoUrl(clan: Pick<Clan, "logoPath">): string | undefined {
+  const path = clan.logoPath?.trim();
+  return path || undefined;
 }

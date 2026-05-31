@@ -19,7 +19,6 @@ export const LOCALE_JSON_FILES = [
   "starts_build_order.json",
   "tecnologias.json",
   "unidades_aom.json",
-  "clans.json",
 ];
 
 export function localePtPath(file) {

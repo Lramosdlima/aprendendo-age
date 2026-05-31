@@ -1,5 +1,4 @@
 import type { Locale } from "@/i18n/types";
-import { clans as clansPt, type ClanEntry } from "@/data/clans";
 import {
   aldeoes as aldeoesPt,
   construcoes as construcoesPt,
@@ -47,7 +46,6 @@ import panteoesEnJson from "@/data/locale/en/panteoes.json";
 import startsEnJson from "@/data/locale/en/starts_build_order.json";
 import tecnologiasEnJson from "@/data/locale/en/tecnologias.json";
 import unidadesEnJson from "@/data/locale/en/unidades_aom.json";
-import clansEnJson from "@/data/locale/en/clans.json";
 
 const aldeoesEn = aldeoesEnJson as typeof aldeoesPt;
 const construcoesEn = construcoesEnJson as typeof construcoesPt;
@@ -59,7 +57,6 @@ const panteoesEn = panteoesEnJson as typeof panteoesPt;
 const startsBuildOrderEn = startsEnJson as StartBuildOrder[];
 const tecnologiasEn = tecnologiasEnJson as Tecnologia[];
 const unidadesEn = unidadesEnJson as Unidade[];
-const clansEn = clansEnJson as ClanEntry[];
 
 function byIdMap<T extends { id: number }>(items: readonly T[]): Map<number, T> {
   return new Map(items.map((item) => [item.id, item]));
@@ -101,7 +98,6 @@ export type LocaleCatalog = {
   startsBuildOrder: StartBuildOrder[];
   tecnologias: Tecnologia[];
   unidades: Unidade[];
-  clans: ClanEntry[];
   deusById: Map<number, (typeof deusesPt)[number]>;
   panteaoById: Map<number, (typeof panteoesPt)[number]>;
   eraById: Map<number, (typeof erasPt)[number]>;
@@ -155,7 +151,6 @@ function buildPtCatalog(): LocaleCatalog {
     startsBuildOrder: startsBuildOrderPt,
     tecnologias: tecnologiasPt,
     unidades: unidadesPt,
-    clans: clansPt,
     deusById,
     panteaoById,
     eraById,
@@ -210,7 +205,6 @@ function buildEnCatalog(): LocaleCatalog {
     startsBuildOrder: startsBuildOrderEn,
     tecnologias: tecnologiasEn,
     unidades: unidadesEn,
-    clans: clansEn,
     deusById,
     panteaoById,
     eraById,

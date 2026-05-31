@@ -244,6 +244,11 @@ export const enMessages: TranslationTree = {
       listAria: "Clan list",
       logo: "Logo",
       logoComingSoon: "Logo for {{name}} — coming soon",
+      loading: "Loading clans…",
+      loadError: "Could not load clans.",
+      loadTimeout: "The request timed out. Please try again later.",
+      unconfigured: "Supabase is not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.",
+      empty: "No clans registered yet.",
     },
     rank: {
       title: "Rank (RR)",
