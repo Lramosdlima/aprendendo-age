@@ -1,3 +1,4 @@
+import { getClanLogoUrl } from "@/lib/clanAssetUrl";
 import { createSupabasePublicClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 
@@ -7,6 +8,8 @@ export type AomRacePlayer = {
   aomstatsAlias: string | null;
   logoPath: string | null;
   aomstatsId: string | null;
+  aomstatsClan: string | null;
+  clanLogoPath: string | null;
   rr: number;
   wins: number | null;
   losses: number | null;
@@ -16,7 +19,7 @@ export type AomRacePlayer = {
 };
 
 const PUBLIC_PLAYER_SELECT =
-  "id, display_name, aomstats_alias, logo_path, aomstats_id, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at";
+  "id, display_name, aomstats_alias, logo_path, aomstats_id, aomstats_clan, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at, clans(logo_path, tag)";
 
 function mapRow(row: {
   id: string;
@@ -24,20 +27,27 @@ function mapRow(row: {
   aomstats_alias: string | null;
   logo_path: string | null;
   aomstats_id: string | null;
+  aomstats_clan: string | null;
   aomstats_rr: number | null;
   aomstats_wins: number | null;
   aomstats_losses: number | null;
   aomstats_win_rate: string | null;
   aomstats_rank: string | null;
   aomstats_snapshot_at: string | null;
+  clans: { logo_path: string | null; tag: string | null } | { logo_path: string | null; tag: string | null }[] | null;
 }): AomRacePlayer | null {
   if (row.aomstats_rr == null || !row.aomstats_id) return null;
+
+  const clanRow = Array.isArray(row.clans) ? (row.clans[0] ?? null) : row.clans;
+
   return {
     id: row.id,
     displayName: row.display_name,
     aomstatsAlias: row.aomstats_alias,
     logoPath: row.logo_path,
     aomstatsId: row.aomstats_id,
+    aomstatsClan: row.aomstats_clan?.trim() || null,
+    clanLogoPath: clanRow?.logo_path?.trim() || null,
     rr: row.aomstats_rr,
     wins: row.aomstats_wins,
     losses: row.aomstats_losses,
@@ -49,6 +59,10 @@ function mapRow(row: {
 
 export function playerDisplayLabel(player: AomRacePlayer): string {
   return player.aomstatsAlias?.trim() || player.displayName?.trim() || "?";
+}
+
+export function playerClanLogoUrl(player: AomRacePlayer): string | undefined {
+  return getClanLogoUrl({ logoPath: player.clanLogoPath });
 }
 
 /** Lista jogadores com snapshot AoM Stats para a Corrida AoM. */

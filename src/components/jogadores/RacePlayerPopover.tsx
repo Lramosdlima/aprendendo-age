@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
-import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
+import { type AomRacePlayer, playerClanLogoUrl, playerDisplayLabel } from "@/lib/playersApi";
 import {
   TIER_ACHIEVEMENT_THEME,
   getRankClassification,
@@ -49,6 +49,8 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
   const label = playerDisplayLabel(player);
   const tierPortrait = getFormRankPortraitPath(cls.tierId);
   const roman = rankRomanStepFromRr(player.rr);
+  const clanLogoUrl = playerClanLogoUrl(player);
+  const clanTag = player.aomstatsClan;
 
   useLayoutEffect(() => {
     const update = () => {
@@ -127,20 +129,46 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
             )}
           </div>
 
-          <div className="min-w-0 overflow-hidden">
-            <p className="truncate whitespace-nowrap font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50">
-              {label}
-            </p>
+          <div className="min-w-0 flex-1 overflow-hidden">
+            <div className="flex min-w-0 items-center gap-2">
+              {clanTag ? (
+                <span
+                  className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-zinc-100"
+                  title={clanTag}
+                >
+                  {clanTag}
+                </span>
+              ) : null}
+              <p className="truncate whitespace-nowrap font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50">
+                {label}
+              </p>
+            </div>
             <p className="mt-0.5 truncate whitespace-nowrap text-[11px] text-zinc-400">{cls.categoryLabel}</p>
           </div>
 
-          <img
-            src={tierPortrait}
-            alt=""
-            className="h-9 w-9 shrink-0 object-contain opacity-90"
-            width={36}
-            height={36}
-          />
+          <div className="flex shrink-0 items-center gap-1.5">
+            {clanLogoUrl ? (
+              <div
+                className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border border-zinc-500/50 bg-zinc-950 shadow-inner shadow-black/40"
+                aria-hidden
+              >
+                <img
+                  src={clanLogoUrl}
+                  alt=""
+                  className="h-full w-full object-cover"
+                  width={36}
+                  height={36}
+                />
+              </div>
+            ) : null}
+            <img
+              src={tierPortrait}
+              alt=""
+              className="h-9 w-9 shrink-0 object-contain opacity-90"
+              width={36}
+              height={36}
+            />
+          </div>
         </div>
 
         <div className="mt-4 grid grid-cols-[1fr_auto] gap-2.5">
