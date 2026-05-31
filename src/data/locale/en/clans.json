@@ -18,5 +18,15 @@
     "slug": "disc",
     "tag": "DISC",
     "name": "DISCÓRDIA"
+  },
+  {
+    "slug": "g3n",
+    "tag": "G3N",
+    "name": "Generais"
+  },
+  {
+    "slug": "mdre",
+    "tag": "MDRE",
+    "name": "Manda Recurso"
   }
 ]

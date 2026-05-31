@@ -2,6 +2,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import type { ClanEntry } from "@/data/clans";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
+import { getClanLogoUrl } from "@/lib/clanAssetUrl";
 import { cn } from "@/lib/cn";
 
 function logoInitials(tag: string) {
@@ -26,7 +27,7 @@ function ClanLogo({
         alt=""
         width={48}
         height={48}
-        className="h-12 w-12 shrink-0 rounded-lg border border-zinc-600/80 bg-zinc-900 object-cover shadow-inner shadow-black/40"
+        className="h-12 w-12 shrink-0 rounded-lg border border-zinc-600/80 bg-zinc-900 object-contain p-0.5 shadow-inner shadow-black/40"
       />
     );
   }
@@ -88,7 +89,7 @@ export function ClansPage() {
                   <td className="px-2 py-3">
                     <ClanLogo
                       tag={c.tag}
-                      logoSrc={c.logoSrc}
+                      logoSrc={getClanLogoUrl(c)}
                       logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
                     />
                   </td>
@@ -112,7 +113,7 @@ export function ClansPage() {
               <span className="w-6 shrink-0 text-center text-xs tabular-nums text-zinc-500">{i + 1}</span>
               <ClanLogo
                 tag={c.tag}
-                logoSrc={c.logoSrc}
+                logoSrc={getClanLogoUrl(c)}
                 logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
               />
               <div className="min-w-0 flex-1">
