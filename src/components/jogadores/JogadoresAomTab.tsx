@@ -1,14 +1,16 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
+import { getRankGuideTiers } from "@/lib/rankGuideTiers";
 import {
   TIER_ACHIEVEMENT_THEME,
   getRankClassification,
   rankRomanMedallionClass,
   rankRomanStepFromRr,
+  type RankTierId,
 } from "@/lib/rankClassification";
 
 function PlayerAvatar({
@@ -45,11 +47,18 @@ function PlayerAvatar({
 
 export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
   const { t } = useTranslation();
+  const tiers = useMemo(() => getRankGuideTiers(t), [t]);
+  const [tierFilter, setTierFilter] = useState<RankTierId | null>(null);
 
   const sorted = useMemo(
     () => [...players].sort((a, b) => b.rr - a.rr || playerDisplayLabel(a).localeCompare(playerDisplayLabel(b))),
     [players],
   );
+
+  const filtered = useMemo(() => {
+    if (!tierFilter) return sorted;
+    return sorted.filter((player) => getRankClassification(player.rr).tierId === tierFilter);
+  }, [sorted, tierFilter]);
 
   if (sorted.length === 0) {
     return (
@@ -66,163 +75,215 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
         <p className="mt-1 text-sm text-zinc-400">{t("pages.players.tableSectionDesc")}</p>
       </div>
 
-      <div className="hidden lg:block">
-        <table className="w-full border-collapse text-left text-sm">
-          <caption className="sr-only">{t("pages.players.tableCaption")}</caption>
-          <thead>
-            <tr className="border-b border-zinc-800 bg-zinc-950/80 text-xs font-semibold uppercase tracking-wide text-zinc-500">
-              <th scope="col" className="w-12 px-3 py-3 text-center font-medium">
-                #
-              </th>
-              <th scope="col" className="w-14 px-2 py-3 font-medium">
-                {t("pages.players.colAvatar")}
-              </th>
-              <th scope="col" className="min-w-[8rem] px-3 py-3 font-medium">
-                {t("common.name")}
-              </th>
-              <th scope="col" className="min-w-[7rem] px-3 py-3 font-medium">
-                {t("pages.players.colCategory")}
-              </th>
-              <th scope="col" className="w-14 px-2 py-3 text-center font-medium">
-                {t("pages.players.colTier")}
-              </th>
-              <th scope="col" className="w-20 px-3 py-3 font-medium">
-                {t("pages.players.racePopoverRr")}
-              </th>
-              <th scope="col" className="min-w-[8rem] px-3 py-3 font-medium">
-                {t("pages.players.racePopoverRank")}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {sorted.map((player, i) => {
+      <nav
+        aria-label={t("pages.players.tierFilterLabel")}
+        className="flex flex-wrap justify-center gap-2 border-b border-zinc-800/90 bg-zinc-950/50 px-3 py-3 sm:px-5"
+      >
+        <button
+          type="button"
+          aria-pressed={tierFilter === null}
+          onClick={() => setTierFilter(null)}
+          className={cn(
+            "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition",
+            tierFilter === null
+              ? "border-amber-500/55 bg-amber-950/35 text-amber-100 ring-1 ring-amber-500/25"
+              : "border-aom-border/60 bg-zinc-900/80 text-zinc-300 hover:border-amber-500/40 hover:text-amber-100",
+          )}
+        >
+          {t("pages.players.tierFilterAll")}
+        </button>
+        {tiers.map((tTier) => {
+          const portraitSrc = getFormRankPortraitPath(tTier.id as RankTierId);
+          const active = tierFilter === tTier.id;
+          return (
+            <button
+              key={tTier.id}
+              type="button"
+              aria-pressed={active}
+              onClick={() => setTierFilter(tTier.id as RankTierId)}
+              className={cn(
+                "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition",
+                active
+                  ? "border-amber-500/55 bg-amber-950/35 text-amber-100 ring-1 ring-amber-500/25"
+                  : "border-aom-border/60 bg-zinc-900/80 text-zinc-300 hover:border-amber-500/40 hover:text-amber-100",
+              )}
+            >
+              <img
+                src={portraitSrc}
+                alt=""
+                className="h-[1.125rem] w-[1.125rem] shrink-0 object-contain opacity-95 sm:h-5 sm:w-5"
+                width={20}
+                height={20}
+              />
+              <span>{tTier.rankName}</span>
+            </button>
+          );
+        })}
+      </nav>
+
+      {filtered.length === 0 ? (
+        <p className="px-4 py-10 text-center text-sm text-zinc-500 sm:px-5">{t("pages.players.tierFilterEmpty")}</p>
+      ) : (
+        <>
+          <div className="hidden lg:block">
+            <table className="w-full border-collapse text-left text-sm">
+              <caption className="sr-only">{t("pages.players.tableCaption")}</caption>
+              <thead>
+                <tr className="border-b border-zinc-800 bg-zinc-950/80 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                  <th scope="col" className="w-12 px-3 py-3 text-center font-medium">
+                    #
+                  </th>
+                  <th scope="col" className="w-14 px-2 py-3 font-medium">
+                    {t("pages.players.colAvatar")}
+                  </th>
+                  <th scope="col" className="min-w-[8rem] px-3 py-3 font-medium">
+                    {t("common.name")}
+                  </th>
+                  <th scope="col" className="min-w-[7rem] px-3 py-3 font-medium">
+                    {t("pages.players.colCategory")}
+                  </th>
+                  <th scope="col" className="w-14 px-2 py-3 text-center font-medium">
+                    {t("pages.players.colTier")}
+                  </th>
+                  <th scope="col" className="w-20 px-3 py-3 font-medium">
+                    {t("pages.players.racePopoverRr")}
+                  </th>
+                  <th scope="col" className="min-w-[8rem] px-3 py-3 font-medium">
+                    {t("pages.players.racePopoverRank")}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.map((player, i) => {
+                  const cls = getRankClassification(player.rr);
+                  const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
+                  const label = playerDisplayLabel(player);
+                  const roman = rankRomanStepFromRr(player.rr);
+
+                  return (
+                    <tr
+                      key={player.id}
+                      className={cn(
+                        "border-b border-zinc-800/90 transition-colors hover:bg-zinc-900/50",
+                        i % 2 === 0 ? "bg-zinc-950/25" : "bg-zinc-900/20",
+                      )}
+                    >
+                      <td className="px-3 py-3 text-center tabular-nums text-zinc-500">{i + 1}</td>
+                      <td className="px-2 py-3">
+                        <PlayerAvatar player={player} ringClass={theme.stepRing} />
+                      </td>
+                      <td className="px-3 py-3">
+                        <span className="font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
+                          {label}
+                        </span>
+                      </td>
+                      <td className="px-3 py-3 text-zinc-400">{cls.categoryLabel}</td>
+                      <td className="px-2 py-3 text-center">
+                        <img
+                          src={getFormRankPortraitPath(cls.tierId)}
+                          alt=""
+                          className="mx-auto h-9 w-9 object-contain opacity-90"
+                          width={36}
+                          height={36}
+                        />
+                      </td>
+                      <td className={cn("px-3 py-3 font-semibold tabular-nums", theme.stepAccent)}>{player.rr}</td>
+                      <td className="px-3 py-3">
+                        <div className="flex items-center gap-2">
+                          <span
+                            className={cn(
+                              "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-bold shadow-inner",
+                              rankRomanMedallionClass(cls.tierId),
+                            )}
+                            aria-hidden
+                          >
+                            {roman}
+                          </span>
+                          <span className={cn("font-semibold", theme.titleRankClass)}>{cls.subcategoryLabel}</span>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          <ul className="divide-y divide-zinc-800/90 lg:hidden" aria-label={t("pages.players.listAria")}>
+            {filtered.map((player, i) => {
               const cls = getRankClassification(player.rr);
               const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
               const label = playerDisplayLabel(player);
               const roman = rankRomanStepFromRr(player.rr);
 
               return (
-                <tr
+                <li
                   key={player.id}
-                  className={cn(
-                    "border-b border-zinc-800/90 transition-colors hover:bg-zinc-900/50",
-                    i % 2 === 0 ? "bg-zinc-950/25" : "bg-zinc-900/20",
-                  )}
+                  className={cn("px-4 py-4", i % 2 === 0 ? "bg-zinc-950/30" : "bg-zinc-900/15")}
                 >
-                  <td className="px-3 py-3 text-center tabular-nums text-zinc-500">{i + 1}</td>
-                  <td className="px-2 py-3">
+                  <div className="flex items-start gap-3">
+                    <span className="mt-2 w-5 shrink-0 text-center text-xs tabular-nums text-zinc-500">{i + 1}</span>
                     <PlayerAvatar player={player} ringClass={theme.stepRing} />
-                  </td>
-                  <td className="px-3 py-3">
-                    <span className="font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
-                      {label}
-                    </span>
-                  </td>
-                  <td className="px-3 py-3 text-zinc-400">{cls.categoryLabel}</td>
-                  <td className="px-2 py-3 text-center">
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
+                        {label}
+                      </p>
+                      <p className="mt-0.5 truncate text-xs text-zinc-400">{cls.categoryLabel}</p>
+                    </div>
                     <img
                       src={getFormRankPortraitPath(cls.tierId)}
                       alt=""
-                      className="mx-auto h-9 w-9 object-contain opacity-90"
+                      className="h-9 w-9 shrink-0 object-contain opacity-90"
                       width={36}
                       height={36}
                     />
-                  </td>
-                  <td className={cn("px-3 py-3 font-semibold tabular-nums", theme.stepAccent)}>{player.rr}</td>
-                  <td className="px-3 py-3">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={cn(
-                          "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-bold shadow-inner",
-                          rankRomanMedallionClass(cls.tierId),
-                        )}
-                        aria-hidden
-                      >
-                        {roman}
-                      </span>
-                      <span className={cn("font-semibold", theme.titleRankClass)}>{cls.subcategoryLabel}</span>
+                  </div>
+
+                  <div className="mt-3 grid grid-cols-2 gap-2 pl-8">
+                    <div
+                      className={cn(
+                        "rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2 text-center ring-1 ring-inset",
+                        theme.stepRing,
+                      )}
+                    >
+                      <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-500">
+                        {t("pages.players.racePopoverRr")}
+                      </p>
+                      <p className={cn("mt-1 font-semibold tabular-nums leading-none", theme.stepAccent, "text-lg")}>
+                        {player.rr}
+                      </p>
                     </div>
-                  </td>
-                </tr>
+                    <div
+                      className={cn(
+                        "flex flex-col items-center justify-center rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2 ring-1 ring-inset",
+                        theme.stepRing,
+                      )}
+                    >
+                      <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-500">
+                        {t("pages.players.racePopoverRank")}
+                      </p>
+                      <div className="mt-1 flex items-center gap-1.5">
+                        <span
+                          className={cn(
+                            "flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold shadow-inner",
+                            rankRomanMedallionClass(cls.tierId),
+                          )}
+                          aria-hidden
+                        >
+                          {roman}
+                        </span>
+                        <span className={cn("text-sm font-semibold leading-tight", theme.titleRankClass)}>
+                          {cls.subcategoryLabel}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               );
             })}
-          </tbody>
-        </table>
-      </div>
-
-      <ul className="divide-y divide-zinc-800/90 lg:hidden" aria-label={t("pages.players.listAria")}>
-        {sorted.map((player, i) => {
-          const cls = getRankClassification(player.rr);
-          const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
-          const label = playerDisplayLabel(player);
-          const roman = rankRomanStepFromRr(player.rr);
-
-          return (
-            <li
-              key={player.id}
-              className={cn("px-4 py-4", i % 2 === 0 ? "bg-zinc-950/30" : "bg-zinc-900/15")}
-            >
-              <div className="flex items-start gap-3">
-                <span className="mt-2 w-5 shrink-0 text-center text-xs tabular-nums text-zinc-500">{i + 1}</span>
-                <PlayerAvatar player={player} ringClass={theme.stepRing} />
-                <div className="min-w-0 flex-1">
-                  <p className="truncate font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
-                    {label}
-                  </p>
-                  <p className="mt-0.5 truncate text-xs text-zinc-400">{cls.categoryLabel}</p>
-                </div>
-                <img
-                  src={getFormRankPortraitPath(cls.tierId)}
-                  alt=""
-                  className="h-9 w-9 shrink-0 object-contain opacity-90"
-                  width={36}
-                  height={36}
-                />
-              </div>
-
-              <div className="mt-3 grid grid-cols-2 gap-2 pl-8">
-                <div
-                  className={cn(
-                    "rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2 text-center ring-1 ring-inset",
-                    theme.stepRing,
-                  )}
-                >
-                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-500">
-                    {t("pages.players.racePopoverRr")}
-                  </p>
-                  <p className={cn("mt-1 font-semibold tabular-nums leading-none", theme.stepAccent, "text-lg")}>
-                    {player.rr}
-                  </p>
-                </div>
-                <div
-                  className={cn(
-                    "flex flex-col items-center justify-center rounded-xl border border-aom-border/45 bg-zinc-950/60 px-3 py-2 ring-1 ring-inset",
-                    theme.stepRing,
-                  )}
-                >
-                  <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-500">
-                    {t("pages.players.racePopoverRank")}
-                  </p>
-                  <div className="mt-1 flex items-center gap-1.5">
-                    <span
-                      className={cn(
-                        "flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold shadow-inner",
-                        rankRomanMedallionClass(cls.tierId),
-                      )}
-                      aria-hidden
-                    >
-                      {roman}
-                    </span>
-                    <span className={cn("text-sm font-semibold leading-tight", theme.titleRankClass)}>
-                      {cls.subcategoryLabel}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+          </ul>
+        </>
+      )}
 
       <p className="border-t border-zinc-800/90 px-4 py-3 text-center text-xs text-zinc-600 sm:px-5">
         {t("pages.players.raceSnapshotHint")}

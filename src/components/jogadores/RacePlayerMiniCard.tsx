@@ -1,4 +1,3 @@
-import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
 import {
@@ -16,9 +15,8 @@ type RacePlayerMiniCardProps = {
   className?: string;
 };
 
-/** Resumo do jogador na pista (desktop) — estilo do popover, compacto. */
+/** Resumo do jogador na pista (desktop) — uma linha, estilo do tier. */
 export function RacePlayerMiniCard({ player, className }: RacePlayerMiniCardProps) {
-  const { t } = useTranslation();
   const cls = getRankClassification(player.rr);
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
   const label = playerDisplayLabel(player);
@@ -28,7 +26,7 @@ export function RacePlayerMiniCard({ player, className }: RacePlayerMiniCardProp
   return (
     <div
       className={cn(
-        "pointer-events-none relative min-w-[11.5rem] max-w-[14rem] overflow-hidden rounded-xl border border-aom-border/55 px-3 py-2.5 shadow-lg shadow-black/50",
+        "pointer-events-none relative w-max max-w-[min(20rem,calc(100vw-8rem))] overflow-hidden rounded-xl border border-aom-border/55 px-3 py-2 shadow-lg shadow-black/50",
         theme.surfaceClass,
         className,
       )}
@@ -39,55 +37,29 @@ export function RacePlayerMiniCard({ player, className }: RacePlayerMiniCardProp
         style={{ backgroundImage: GRID_SCRIM }}
       />
 
-      <div className="relative space-y-1.5">
-        <div className="flex min-w-0 items-center gap-2">
-          {clanTag ? (
-            <span
-              className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-1.5 py-0.5 font-mono text-[10px] font-semibold text-zinc-100"
-              title={clanTag}
-            >
-              {clanTag}
-            </span>
-          ) : null}
-          <p className="min-w-0 truncate font-[family-name:var(--font-display)] text-sm font-semibold leading-tight text-zinc-50">
-            {label}
-          </p>
-        </div>
-
-        <div className="flex items-center justify-between gap-2">
-          <div
-            className={cn(
-              "rounded-lg border border-aom-border/45 bg-zinc-950/65 px-2.5 py-1 ring-inset ring-1",
-              theme.stepRing,
-            )}
+      <div className="relative flex min-w-0 items-center gap-2">
+        {clanTag ? (
+          <span
+            className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-1.5 py-0.5 font-mono text-[10px] font-semibold text-zinc-100"
+            title={clanTag}
           >
-            <p className="text-[9px] font-medium uppercase tracking-[0.14em] text-zinc-500">
-              {t("pages.players.racePopoverRr")}
-            </p>
-            <p className={cn("mt-0.5 text-lg font-semibold tabular-nums leading-none", theme.stepAccent)}>
-              {player.rr}
-            </p>
-          </div>
-
-          <div
-            className={cn(
-              "flex flex-col items-center rounded-lg border border-aom-border/45 bg-zinc-950/65 px-2 py-1 ring-inset ring-1",
-              theme.stepRing,
-            )}
-          >
-            <p className="text-[9px] font-medium uppercase tracking-[0.14em] text-zinc-500">
-              {t("pages.players.raceMiniSubTier")}
-            </p>
-            <span
-              className={cn(
-                "mt-1 flex h-8 w-8 items-center justify-center rounded-full border text-sm font-bold shadow-inner",
-                rankRomanMedallionClass(cls.tierId),
-              )}
-            >
-              {roman}
-            </span>
-          </div>
-        </div>
+            {clanTag}
+          </span>
+        ) : null}
+        <p className="min-w-0 truncate font-[family-name:var(--font-display)] text-sm font-semibold leading-none text-zinc-50">
+          {label}
+        </p>
+        <span className={cn("shrink-0 text-sm font-semibold tabular-nums leading-none", theme.stepAccent)}>
+          {player.rr}
+        </span>
+        <span
+          className={cn(
+            "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-bold shadow-inner",
+            rankRomanMedallionClass(cls.tierId),
+          )}
+        >
+          {roman}
+        </span>
       </div>
     </div>
   );
