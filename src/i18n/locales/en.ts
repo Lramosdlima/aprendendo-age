@@ -628,6 +628,7 @@ export const enMessages: TranslationTree = {
       raceAvatarOpen: "View {{name}} on the race track",
       racePopoverRr: "Current RR",
       racePopoverRank: "Rank",
+      raceMiniSubTier: "Sub-tier",
       raceSnapshotHint: "Positions and RR are updated over time.",
     },
     admin: {

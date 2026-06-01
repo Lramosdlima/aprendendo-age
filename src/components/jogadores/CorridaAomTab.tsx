@@ -1,11 +1,17 @@
 import { useEffect, useMemo, useState } from "react";
 
+import { RacePlayerMiniCard } from "@/components/jogadores/RacePlayerMiniCard";
 import { RacePlayerPopover } from "@/components/jogadores/RacePlayerPopover";
 import { getFormRankPortraitPath, MolduraAgeAvatar } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
-import { computeRaceTrackLayout, RACE_TRACK_LANE_CLASS } from "@/lib/raceTrackLayout";
+import {
+  computeRaceTrackLayout,
+  RACE_AVATAR_RENDER_PX,
+  RACE_AVATAR_RENDER_PX_LG,
+  RACE_TRACK_LANE_CLASS,
+} from "@/lib/raceTrackLayout";
 import { getRankGuideTiers } from "@/lib/rankGuideTiers";
 import { getRankClassification, TIER_ACHIEVEMENT_THEME } from "@/lib/rankClassification";
 import { getTokenAssetUrl } from "@/lib/notionTokenAssets";
@@ -14,6 +20,20 @@ type PlacedPlayer = AomRacePlayer & {
   bottomPercent: number;
   zIndex: number;
 };
+
+function useMinWidthLg() {
+  const [lg, setLg] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const update = () => setLg(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  return lg;
+}
 
 function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
   const [hoppingIds, setHoppingIds] = useState<Set<string>>(new Set());
@@ -44,11 +64,6 @@ function useRandomHopPlayerIds(playerIds: string[], intervalMs = 2800) {
   return hoppingIds;
 }
 
-/** Centro do avatar na linha do RR (`bottom` + translateY 50%). */
-function raceAvatarTransform(): string {
-  return "translate(-50%, 50%)";
-}
-
 function RaceAvatar({
   player,
   hopping,
@@ -66,40 +81,48 @@ function RaceAvatar({
 
   return (
     <div
-      className="pointer-events-auto absolute h-14 w-14 shrink-0 sm:h-16 sm:w-16"
+      className="pointer-events-auto absolute"
       style={{
         bottom: `${player.bottomPercent}%`,
         left: "50%",
-        transform: raceAvatarTransform(),
+        transform: "translateY(50%)",
         zIndex: selected ? 25 : player.zIndex,
       }}
     >
-      <button
-        type="button"
-        aria-expanded={selected}
-        aria-label={t("pages.players.raceAvatarOpen", { name: label })}
-        onClick={(e) => onSelect(player, e.currentTarget)}
-        className={cn(
-          "race-avatar-hop relative block h-full w-full touch-manipulation rounded-full bg-transparent p-0 transition",
-          "cursor-pointer overflow-visible",
-          "hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
-          selected && "ring-2 ring-amber-300/70 ring-offset-2 ring-offset-zinc-950",
-          hopping && "is-hopping",
-        )}
-      >
-        <MolduraAgeAvatar
-          tierId={cls.tierId}
-          ageToken={cls.ageToken}
-          frameImageSrc={getFormRankPortraitPath(cls.tierId)}
-          portraitUrl={player.logoPath}
-          size="compact"
-          emptyFallback={
-            <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-[10px] text-zinc-500">
-              ?
-            </div>
-          }
+      <div className="relative h-0 w-0">
+        <button
+          type="button"
+          aria-expanded={selected}
+          aria-label={t("pages.players.raceAvatarOpen", { name: label })}
+          onClick={(e) => onSelect(player, e.currentTarget)}
+          className={cn(
+            "race-avatar-hop absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 touch-manipulation rounded-full bg-transparent p-0 transition",
+            "h-14 w-14 sm:h-16 sm:w-16 lg:h-[5.5rem] lg:w-[5.5rem]",
+            "cursor-pointer overflow-visible",
+            "hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
+            selected && "ring-2 ring-amber-300/70 ring-offset-2 ring-offset-zinc-950",
+            hopping && "is-hopping",
+          )}
+        >
+          <MolduraAgeAvatar
+            tierId={cls.tierId}
+            ageToken={cls.ageToken}
+            frameImageSrc={getFormRankPortraitPath(cls.tierId)}
+            portraitUrl={player.logoPath}
+            size="compact"
+            emptyFallback={
+              <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-[10px] text-zinc-500">
+                ?
+              </div>
+            }
+          />
+        </button>
+
+        <RacePlayerMiniCard
+          player={player}
+          className="absolute top-0 hidden -translate-y-1/2 lg:left-[3.75rem] lg:block"
         />
-      </button>
+      </div>
       <span className="sr-only">
         {t("pages.players.racePlayerRr", { name: label, rr: player.rr })}
       </span>
@@ -110,8 +133,15 @@ function RaceAvatar({
 export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   const { t } = useTranslation();
   const tiers = useMemo(() => getRankGuideTiers(t), [t]);
+  const isLg = useMinWidthLg();
 
-  const layout = useMemo(() => computeRaceTrackLayout(players), [players]);
+  const layout = useMemo(
+    () =>
+      computeRaceTrackLayout(players, {
+        avatarRenderPx: isLg ? RACE_AVATAR_RENDER_PX_LG : RACE_AVATAR_RENDER_PX,
+      }),
+    [players, isLg],
+  );
   const trackMinHeight = layout.containerMinHeightPx;
 
   const placed = useMemo(() => {
@@ -147,17 +177,16 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
   }
 
   return (
-    <div className="relative z-0 mx-auto w-full max-w-2xl">
+    <div className="relative z-0 mx-auto w-full max-w-2xl lg:max-w-5xl">
       <p className="mb-6 text-center text-sm text-zinc-400 sm:mb-8">{t("pages.players.raceDesc")}</p>
 
       <div
-        className="relative mx-auto w-full max-w-md overflow-x-hidden px-4 pb-8 pt-4 sm:overflow-visible sm:px-8 sm:pt-6"
+        className="relative mx-auto w-full max-w-md overflow-x-hidden px-4 pb-8 pt-4 sm:overflow-visible sm:px-8 sm:pt-6 lg:max-w-3xl lg:overflow-visible lg:px-12 lg:pb-10 lg:pt-8"
         style={{ minHeight: `${trackMinHeight}px` }}
       >
-        {/* Faixa útil da pista — marcos, linha e avatares compartilham 0% (base) e 100% (topo) */}
         <div className={cn(RACE_TRACK_LANE_CLASS)}>
           <div
-            className="pointer-events-none absolute inset-y-0 left-1/2 w-[3px] -translate-x-1/2 rounded-full"
+            className="pointer-events-none absolute inset-y-0 left-1/2 w-[3px] -translate-x-1/2 rounded-full lg:w-1"
             aria-hidden
             style={{
               background:
@@ -166,11 +195,10 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             }}
           />
           <div
-            className="pointer-events-none absolute inset-y-0 left-1/2 w-16 -translate-x-1/2 rounded-full border border-dashed border-zinc-700/40"
+            className="pointer-events-none absolute inset-y-0 left-1/2 w-16 -translate-x-1/2 rounded-full border border-dashed border-zinc-700/40 lg:w-28"
             aria-hidden
           />
 
-          {/* Marcos de elo — Bronze em bottom: 0% (ponta da pista) */}
           {layout.markers.map((marker) => {
             const tier = tiers.find((x) => x.id === marker.tierId);
             if (!tier) return null;
@@ -186,30 +214,41 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
                 <div className="relative flex items-end pb-0">
                   <div
                     className={cn(
-                      "flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-2.5 shadow-lg sm:w-[8.25rem] sm:px-2.5",
+                      "flex w-[7.5rem] shrink-0 flex-col items-center rounded-2xl border border-aom-border/50 bg-zinc-950/90 px-2 py-2.5 shadow-lg sm:w-[8.25rem] sm:px-2.5 lg:w-44 lg:rounded-2xl lg:px-3.5 lg:py-3.5",
                       theme.surfaceClass,
                     )}
                   >
                     {iconSrc ? (
-                      <img src={iconSrc} alt="" className="h-9 w-9 object-contain sm:h-10 sm:w-10" width={40} height={40} />
+                      <img
+                        src={iconSrc}
+                        alt=""
+                        className="h-9 w-9 object-contain sm:h-10 sm:w-10 lg:h-14 lg:w-14"
+                        width={56}
+                        height={56}
+                      />
                     ) : null}
-                    <p className={cn("mt-1.5 text-center font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight sm:text-xs", tier.titleClass)}>
+                    <p
+                      className={cn(
+                        "mt-1.5 text-center font-[family-name:var(--font-display)] text-[11px] font-semibold leading-tight sm:text-xs lg:mt-2 lg:text-sm",
+                        tier.titleClass,
+                      )}
+                    >
                       {tier.rankName}
-                      <span className="mt-0.5 block text-[9px] font-normal normal-case tracking-normal text-zinc-400">
+                      <span className="mt-0.5 block text-[9px] font-normal normal-case tracking-normal text-zinc-400 lg:text-[10px]">
                         {tier.eraName}
                       </span>
                     </p>
-                    <p className="mt-0.5 font-mono text-[9px] text-zinc-500">{tier.rrBand}</p>
+                    <p className="mt-0.5 font-mono text-[9px] text-zinc-500 lg:text-[11px]">{tier.rrBand}</p>
                   </div>
 
-                  <div className="absolute bottom-0 left-[7.5rem] right-0 flex items-center gap-2 sm:left-[8.25rem]">
+                  <div className="absolute bottom-0 left-[7.5rem] right-0 flex items-center gap-2 sm:left-[8.25rem] lg:left-44 lg:gap-3">
                     <div
                       className="h-px min-w-0 flex-1 bg-gradient-to-r from-amber-500/40 to-transparent"
                       aria-hidden
                     />
                     <div
                       className={cn(
-                        "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 bg-zinc-950 text-[10px] font-bold tabular-nums shadow-md sm:h-9 sm:w-9",
+                        "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 bg-zinc-950 text-[10px] font-bold tabular-nums shadow-md sm:h-9 sm:w-9 lg:h-12 lg:w-12 lg:text-sm",
                         theme.stepRing,
                         theme.stepAccent,
                       )}
@@ -223,7 +262,6 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
             );
           })}
 
-          {/* Jogadores na linha vertical — z abaixo do header sticky (z-30) */}
           <div className="pointer-events-none absolute inset-0 z-10 overflow-visible">
             {placed.map((player) => (
               <RaceAvatar
