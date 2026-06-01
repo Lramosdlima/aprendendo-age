@@ -15,7 +15,7 @@ type RacePlayerMiniCardProps = {
   className?: string;
 };
 
-/** Resumo do jogador na pista (desktop) — uma linha, estilo do tier. */
+/** Resumo do jogador na pista — uma linha, estilo do tier. */
 export function RacePlayerMiniCard({ player, className }: RacePlayerMiniCardProps) {
   const cls = getRankClassification(player.rr);
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
@@ -26,7 +26,7 @@ export function RacePlayerMiniCard({ player, className }: RacePlayerMiniCardProp
   return (
     <div
       className={cn(
-        "pointer-events-none relative w-max max-w-[min(20rem,calc(100vw-8rem))] overflow-hidden rounded-xl border border-aom-border/55 px-3 py-2 shadow-lg shadow-black/50",
+        "pointer-events-none relative w-max max-w-[calc(50vw-1.25rem)] overflow-hidden rounded-lg border border-aom-border/55 px-2 py-1.5 shadow-lg shadow-black/50 sm:max-w-[min(16rem,calc(50vw-2rem))] sm:rounded-xl sm:px-3 sm:py-2 lg:max-w-[min(20rem,calc(100vw-8rem))]",
         theme.surfaceClass,
         className,
       )}
@@ -37,24 +37,29 @@ export function RacePlayerMiniCard({ player, className }: RacePlayerMiniCardProp
         style={{ backgroundImage: GRID_SCRIM }}
       />
 
-      <div className="relative flex min-w-0 items-center gap-2">
+      <div className="relative flex min-w-0 items-center gap-1.5 sm:gap-2">
         {clanTag ? (
           <span
-            className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-1.5 py-0.5 font-mono text-[10px] font-semibold text-zinc-100"
+            className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-1 py-0.5 font-mono text-[9px] font-semibold text-zinc-100 sm:px-1.5 sm:text-[10px]"
             title={clanTag}
           >
             {clanTag}
           </span>
         ) : null}
-        <p className="min-w-0 truncate font-[family-name:var(--font-display)] text-sm font-semibold leading-none text-zinc-50">
+        <p className="min-w-0 truncate font-[family-name:var(--font-display)] text-xs font-semibold leading-none text-zinc-50 sm:text-sm">
           {label}
         </p>
-        <span className={cn("shrink-0 text-sm font-semibold tabular-nums leading-none", theme.stepAccent)}>
+        <span
+          className={cn(
+            "shrink-0 text-xs font-semibold tabular-nums leading-none sm:text-sm",
+            theme.stepAccent,
+          )}
+        >
           {player.rr}
         </span>
         <span
           className={cn(
-            "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-bold shadow-inner",
+            "flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold shadow-inner sm:h-7 sm:w-7 sm:text-[11px]",
             rankRomanMedallionClass(cls.tierId),
           )}
         >

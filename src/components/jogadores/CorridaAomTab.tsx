@@ -120,7 +120,7 @@ function RaceAvatar({
 
         <RacePlayerMiniCard
           player={player}
-          className="absolute top-0 hidden -translate-y-1/2 lg:left-[3.75rem] lg:block"
+          className="absolute top-0 left-[2rem] z-[15] -translate-y-1/2 sm:left-[2.35rem] lg:left-[3.75rem]"
         />
       </div>
       <span className="sr-only">
@@ -181,7 +181,7 @@ export function CorridaAomTab({ players }: { players: AomRacePlayer[] }) {
       <p className="mb-6 text-center text-sm text-zinc-400 sm:mb-8">{t("pages.players.raceDesc")}</p>
 
       <div
-        className="relative mx-auto w-full max-w-md overflow-x-hidden px-4 pb-8 pt-4 sm:overflow-visible sm:px-8 sm:pt-6 lg:max-w-3xl lg:overflow-visible lg:px-12 lg:pb-10 lg:pt-8"
+        className="relative mx-auto w-full max-w-md overflow-visible px-4 pb-8 pt-4 sm:px-8 sm:pt-6 lg:max-w-3xl lg:px-12 lg:pb-10 lg:pt-8"
         style={{ minHeight: `${trackMinHeight}px` }}
       >
         <div className={cn(RACE_TRACK_LANE_CLASS)}>
