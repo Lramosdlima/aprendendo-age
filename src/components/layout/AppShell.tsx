@@ -40,6 +40,7 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
     {
       to: "/videos-comunidade",
       labelKey: "nav.communityVideos",
+      navNovo: true,
       match: (p: string) => p === "/videos-comunidade" || p.startsWith("/videos-comunidade/"),
     },
     { to: localeSectionPath(locale, "panteoes"), labelKey: "nav.pantheons" },

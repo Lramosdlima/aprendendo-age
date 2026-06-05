@@ -5,6 +5,7 @@ export type YouTubeVideoMetadata = {
   description: string;
   thumbnailUrl: string;
   channelAvatarUrl: string;
+  channelName: string;
 };
 
 type ThumbnailSet = {
@@ -64,6 +65,7 @@ export async function fetchYouTubeVideoMetadata(videoUrl: string): Promise<YouTu
         title?: string;
         description?: string;
         channelId?: string;
+        channelTitle?: string;
         thumbnails?: ThumbnailSet;
       };
     }>;
@@ -74,6 +76,7 @@ export async function fetchYouTubeVideoMetadata(videoUrl: string): Promise<YouTu
 
   const channelId = snippet.channelId?.trim();
   let channelAvatarUrl = "";
+  let channelName = (snippet.channelTitle ?? "").trim();
 
   if (channelId) {
     const channelsRes = await fetch(
@@ -81,9 +84,13 @@ export async function fetchYouTubeVideoMetadata(videoUrl: string): Promise<YouTu
     );
     if (channelsRes.ok) {
       const channelsJson = (await channelsRes.json()) as {
-        items?: Array<{ snippet?: { thumbnails?: ThumbnailSet } }>;
+        items?: Array<{ snippet?: { title?: string; thumbnails?: ThumbnailSet } }>;
       };
-      channelAvatarUrl = pickThumbnail(channelsJson.items?.[0]?.snippet?.thumbnails);
+      const channelSnippet = channelsJson.items?.[0]?.snippet;
+      channelAvatarUrl = pickThumbnail(channelSnippet?.thumbnails);
+      if (channelSnippet?.title?.trim()) {
+        channelName = channelSnippet.title.trim();
+      }
     }
   }
 
@@ -92,5 +99,6 @@ export async function fetchYouTubeVideoMetadata(videoUrl: string): Promise<YouTu
     description: (snippet.description ?? "").trim(),
     thumbnailUrl: pickThumbnail(snippet.thumbnails),
     channelAvatarUrl,
+    channelName,
   };
 }

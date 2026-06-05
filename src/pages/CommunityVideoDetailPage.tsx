@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
+import { CommunityVideoTagBadge } from "@/components/community/CommunityVideoTagBadge";
 import { StartVideosSection } from "@/components/starts/StartVideosSection";
 import { BackLink } from "@/components/ui/BackLink";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -64,10 +65,38 @@ export function CommunityVideoDetailPage() {
     <div>
       <BackLink to={backToList}>{backLabel}</BackLink>
       <PageHeader title={video.title} />
+      {video.tags.length ? (
+        <div className="mb-4 flex flex-wrap gap-2">
+          {video.tags.map((tag) => (
+            <CommunityVideoTagBadge key={tag.id} tag={tag} size="sm" />
+          ))}
+        </div>
+      ) : null}
+      {video.channelName || video.channelAvatarUrl ? (
+        <div className="mb-4 flex items-center gap-2.5">
+          {video.channelAvatarUrl ? (
+            <img
+              src={video.channelAvatarUrl}
+              alt=""
+              className="size-9 shrink-0 rounded-full border border-zinc-700/80 bg-zinc-900 object-cover"
+            />
+          ) : null}
+          {video.channelName ? (
+            <p className="text-sm font-medium text-zinc-300">
+              <span className="text-zinc-500">{t("pages.communityVideos.channelLabel")}: </span>
+              {video.channelName}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
       {video.description ? (
         <p className="max-w-3xl whitespace-pre-wrap text-sm leading-relaxed text-zinc-400">{video.description}</p>
       ) : null}
-      <StartVideosSection title={video.title} urls={[video.videoUrl]} />
+      <StartVideosSection
+        title={video.title}
+        urls={[video.videoUrl]}
+        sectionHeading={t("pages.communityVideos.videoSection")}
+      />
     </div>
   );
 }

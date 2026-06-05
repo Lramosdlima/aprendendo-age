@@ -3,11 +3,12 @@ type SearchFieldProps = {
   onChange: (v: string) => void;
   placeholder?: string;
   id?: string;
+  className?: string;
 };
 
-export function SearchField({ value, onChange, placeholder, id = "search" }: SearchFieldProps) {
+export function SearchField({ value, onChange, placeholder, id = "search", className }: SearchFieldProps) {
   return (
-    <div className="relative max-w-md">
+    <div className={className ?? "relative max-w-md"}>
       <label htmlFor={id} className="sr-only">
         Buscar
       </label>

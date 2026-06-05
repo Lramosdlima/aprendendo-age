@@ -2,6 +2,13 @@ import { createSupabaseClient, createSupabasePublicClient } from "@/lib/supabase
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { extractYouTubeVideoId } from "@/lib/youtubeEmbed";
 
+export type CommunityVideoTag = {
+  id: string;
+  slug: string;
+  name: string;
+  colorHex: string;
+};
+
 export type CommunityVideo = {
   id: string;
   videoUrl: string;
@@ -9,11 +16,13 @@ export type CommunityVideo = {
   description: string | null;
   thumbnailUrl: string | null;
   channelAvatarUrl: string | null;
+  channelName: string | null;
   status: "pending" | "approved";
   submittedBy: string;
   approvedBy: string | null;
   createdAt: string;
   updatedAt: string;
+  tags: CommunityVideoTag[];
 };
 
 export type CommunityVideoSubmitPayload = {
@@ -22,6 +31,8 @@ export type CommunityVideoSubmitPayload = {
   description?: string;
   thumbnailUrl?: string;
   channelAvatarUrl?: string;
+  channelName?: string;
+  tagIds?: string[];
 };
 
 export type CommunityVideoDuplicateCheck = {
@@ -35,24 +46,76 @@ export type CommunityVideoSubmitErrorCode =
   | "DUPLICATE_URL"
   | "DUPLICATE_TITLE"
   | "DUPLICATE_BOTH"
-  | "SUBMIT_ERROR";
+  | "SUBMIT_ERROR"
+  | "TAGS_ERROR";
 
-const SELECT_COLUMNS =
-  "id, video_url, title, description, thumbnail_url, channel_avatar_url, status, submitted_by, approved_by, created_at, updated_at";
+const VIDEO_SELECT = `
+  id,
+  video_url,
+  title,
+  description,
+  thumbnail_url,
+  channel_avatar_url,
+  channel_name,
+  status,
+  submitted_by,
+  approved_by,
+  created_at,
+  updated_at,
+  community_video_tag_links (
+    community_video_tags (
+      id,
+      slug,
+      name,
+      color_hex
+    )
+  )
+`;
 
-function mapRow(row: {
+type TagRow = {
+  id: string;
+  slug: string;
+  name: string;
+  color_hex: string;
+};
+
+type VideoRow = {
   id: string;
   video_url: string;
   title: string;
   description: string | null;
   thumbnail_url: string | null;
   channel_avatar_url: string | null;
+  channel_name: string | null;
   status: "pending" | "approved";
   submitted_by: string;
   approved_by: string | null;
   created_at: string;
   updated_at: string;
-}): CommunityVideo {
+  community_video_tag_links?: Array<{ community_video_tags: TagRow | TagRow[] | null }> | null;
+};
+
+function mapTag(row: TagRow): CommunityVideoTag {
+  return {
+    id: row.id,
+    slug: row.slug,
+    name: row.name,
+    colorHex: row.color_hex,
+  };
+}
+
+function mapTagsFromLinks(links: VideoRow["community_video_tag_links"]): CommunityVideoTag[] {
+  if (!links?.length) return [];
+  const tags: CommunityVideoTag[] = [];
+  for (const link of links) {
+    const raw = link.community_video_tags;
+    const row = Array.isArray(raw) ? raw[0] : raw;
+    if (row) tags.push(mapTag(row));
+  }
+  return tags.sort((a, b) => a.name.localeCompare(b.name, "pt"));
+}
+
+function mapVideoRow(row: VideoRow): CommunityVideo {
   return {
     id: row.id,
     videoUrl: row.video_url,
@@ -60,12 +123,30 @@ function mapRow(row: {
     description: row.description,
     thumbnailUrl: row.thumbnail_url,
     channelAvatarUrl: row.channel_avatar_url,
+    channelName: row.channel_name,
     status: row.status,
     submittedBy: row.submitted_by,
     approvedBy: row.approved_by,
     createdAt: row.created_at,
     updatedAt: row.updated_at,
+    tags: mapTagsFromLinks(row.community_video_tag_links),
   };
+}
+
+/** Catálogo de tags disponíveis para seleção. */
+export async function fetchCommunityVideoTags(): Promise<CommunityVideoTag[]> {
+  if (!isSupabaseConfigured()) return [];
+
+  const supabase = createSupabasePublicClient();
+  if (!supabase) return [];
+
+  const { data, error } = await supabase
+    .from("community_video_tags")
+    .select("id, slug, name, color_hex")
+    .order("name", { ascending: true });
+
+  if (error) throw new Error(error.message);
+  return (data ?? []).map((row) => mapTag(row as TagRow));
 }
 
 /** Lista vídeos aprovados para a página pública. */
@@ -77,12 +158,12 @@ export async function fetchApprovedCommunityVideos(): Promise<CommunityVideo[]> 
 
   const { data, error } = await supabase
     .from("community_videos")
-    .select(SELECT_COLUMNS)
+    .select(VIDEO_SELECT)
     .eq("status", "approved")
     .order("created_at", { ascending: false });
 
   if (error) throw new Error(error.message);
-  return (data ?? []).map((row) => mapRow(row as Parameters<typeof mapRow>[0]));
+  return (data ?? []).map((row) => mapVideoRow(row as VideoRow));
 }
 
 /** Detalhe por id (RLS: aprovado, próprio pendente ou admin). */
@@ -92,11 +173,11 @@ export async function fetchCommunityVideoById(id: string): Promise<CommunityVide
   const supabase = createSupabasePublicClient();
   if (!supabase) return null;
 
-  const { data, error } = await supabase.from("community_videos").select(SELECT_COLUMNS).eq("id", id).maybeSingle();
+  const { data, error } = await supabase.from("community_videos").select(VIDEO_SELECT).eq("id", id).maybeSingle();
 
   if (error) throw new Error(error.message);
   if (!data) return null;
-  return mapRow(data as Parameters<typeof mapRow>[0]);
+  return mapVideoRow(data as VideoRow);
 }
 
 /** Verifica duplicata por YouTube ID ou título (inclui pendentes de outros usuários). */
@@ -139,6 +220,24 @@ function isUniqueViolation(message: string): boolean {
   return message.includes("duplicate key") || message.includes("unique constraint");
 }
 
+async function linkVideoTags(videoId: string, tagIds: string[]): Promise<{ ok: true } | { ok: false; message: string }> {
+  if (!tagIds.length) return { ok: true };
+
+  const supabase = createSupabaseClient();
+  if (!supabase) return { ok: false, message: "SUPABASE_NOT_CONFIGURED" };
+
+  const uniqueIds = [...new Set(tagIds)];
+  const { error } = await supabase.from("community_video_tag_links").insert(
+    uniqueIds.map((tagId) => ({
+      video_id: videoId,
+      tag_id: tagId,
+    })),
+  );
+
+  if (error) return { ok: false, message: error.message };
+  return { ok: true };
+}
+
 /** Envia solicitação (status pending); requer sessão autenticada. */
 export async function submitCommunityVideo(
   payload: CommunityVideoSubmitPayload,
@@ -174,6 +273,7 @@ export async function submitCommunityVideo(
       description: payload.description?.trim() || null,
       thumbnail_url: payload.thumbnailUrl?.trim() || null,
       channel_avatar_url: payload.channelAvatarUrl?.trim() || null,
+      channel_name: payload.channelName?.trim() || null,
       status: "pending",
       submitted_by: user.id,
     })
@@ -184,5 +284,13 @@ export async function submitCommunityVideo(
     if (isUniqueViolation(error.message)) return { ok: false, message: "DUPLICATE_BOTH" };
     return { ok: false, message: "SUBMIT_ERROR" };
   }
-  return { ok: true, id: data.id as string };
+
+  const videoId = data.id as string;
+  const tagLink = await linkVideoTags(videoId, payload.tagIds ?? []);
+  if (!tagLink.ok) {
+    await supabase.from("community_videos").delete().eq("id", videoId);
+    return { ok: false, message: "TAGS_ERROR" };
+  }
+
+  return { ok: true, id: videoId };
 }

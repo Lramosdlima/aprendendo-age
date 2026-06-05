@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+import { CommunityVideoTagMultiselect } from "@/components/community/CommunityVideoTagMultiselect";
 import { ModalApp } from "@/components/ui/ModalApp";
 import { useToast } from "@/context/ToastContext";
 import { useTranslation } from "@/hooks/useTranslation";
-import { submitCommunityVideo } from "@/lib/communityVideosApi";
+import {
+  fetchCommunityVideoTags,
+  submitCommunityVideo,
+  type CommunityVideoTag,
+} from "@/lib/communityVideosApi";
 import { extractYouTubeVideoId } from "@/lib/youtubeEmbed";
 import {
   fetchYouTubeVideoMetadata,
@@ -16,12 +21,13 @@ type Props = {
   open: boolean;
   onClose: () => void;
   onSuccess: () => void;
+  availableTags?: CommunityVideoTag[];
 };
 
 const inputClass =
   "mt-1 w-full rounded-lg border border-aom-border bg-zinc-900/80 px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-500 focus:border-amber-500/50 focus:outline-none focus:ring-1 focus:ring-amber-500/30";
 
-export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
+export function CommunityVideoSubmitModal({ open, onClose, onSuccess, availableTags }: Props) {
   const { t } = useTranslation();
   const { showToast } = useToast();
   const prefix = "pages.communityVideos.submit";
@@ -31,9 +37,23 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
   const [description, setDescription] = useState("");
   const [thumbnailUrl, setThumbnailUrl] = useState("");
   const [channelAvatarUrl, setChannelAvatarUrl] = useState("");
+  const [channelName, setChannelName] = useState("");
+  const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
+  const [tags, setTags] = useState<CommunityVideoTag[]>(availableTags ?? []);
   const [syncing, setSyncing] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (availableTags?.length) {
+      setTags(availableTags);
+      return;
+    }
+    if (!open) return;
+    void fetchCommunityVideoTags()
+      .then(setTags)
+      .catch(() => setTags([]));
+  }, [availableTags, open]);
 
   function resetForm() {
     setVideoUrl("");
@@ -41,6 +61,8 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
     setDescription("");
     setThumbnailUrl("");
     setChannelAvatarUrl("");
+    setChannelName("");
+    setSelectedTagIds([]);
     setError(null);
   }
 
@@ -63,6 +85,7 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
       setDescription(meta.description);
       setThumbnailUrl(meta.thumbnailUrl);
       setChannelAvatarUrl(meta.channelAvatarUrl);
+      setChannelName(meta.channelName);
     } catch (e) {
       if (e instanceof YouTubeApiNotConfiguredError) {
         setError(t(`${prefix}.youtubeNotConfigured`));
@@ -96,6 +119,8 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
       description,
       thumbnailUrl,
       channelAvatarUrl,
+      channelName,
+      tagIds: selectedTagIds,
     });
     setSaving(false);
 
@@ -115,6 +140,8 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
         setError(t(`${prefix}.notAuthenticated`));
       } else if (res.message === "SUPABASE_NOT_CONFIGURED") {
         setError(t("pages.communityVideos.unconfigured"));
+      } else if (res.message === "TAGS_ERROR") {
+        setError(t(`${prefix}.tagsError`));
       } else {
         setError(t(`${prefix}.submitError`));
       }
@@ -173,6 +200,16 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
           />
         </label>
 
+        {tags.length ? (
+          <CommunityVideoTagMultiselect
+            tags={tags}
+            selectedIds={selectedTagIds}
+            onChange={setSelectedTagIds}
+            disabled={saving || syncing}
+            label={t(`${prefix}.tags`)}
+          />
+        ) : null}
+
         <label className="block text-sm">
           <span className="text-zinc-400">{t(`${prefix}.description`)}</span>
           <textarea
@@ -189,6 +226,16 @@ export function CommunityVideoSubmitModal({ open, onClose, onSuccess }: Props) {
             type="url"
             value={thumbnailUrl}
             onChange={(e) => setThumbnailUrl(e.target.value)}
+            className={inputClass}
+          />
+        </label>
+
+        <label className="block text-sm">
+          <span className="text-zinc-400">{t(`${prefix}.channelName`)}</span>
+          <input
+            type="text"
+            value={channelName}
+            onChange={(e) => setChannelName(e.target.value)}
             className={inputClass}
           />
         </label>

@@ -10,3 +10,8 @@ export function parseUserRole(value: string | null | undefined): UserRole {
   }
   return "guest";
 }
+
+/** Quem pode enviar solicitação de vídeo da comunidade. */
+export function canRequestCommunityVideo(role: UserRole | null | undefined): boolean {
+  return role === "admin" || role === "streamer";
+}

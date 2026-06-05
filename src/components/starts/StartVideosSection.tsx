@@ -3,14 +3,16 @@ import { toYouTubeEmbedUrl } from "@/lib/youtubeEmbed";
 type Props = {
   title: string;
   urls: string[];
+  /** Título da seção acima do player; padrão: "Vídeos de referência". */
+  sectionHeading?: string;
 };
 
-export function StartVideosSection({ title, urls }: Props) {
+export function StartVideosSection({ title, urls, sectionHeading = "Vídeos de referência" }: Props) {
   if (!urls.length) return null;
 
   return (
     <div className="mt-10 space-y-6 border-t border-aom-border/60 pt-10">
-      <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95">Vídeos de referência</h2>
+      <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold text-amber-100/95">{sectionHeading}</h2>
       {urls.map((url) => {
         const embed = toYouTubeEmbedUrl(url);
         if (!embed) {
