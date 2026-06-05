@@ -37,6 +37,11 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
       labelKey: "nav.trilha",
       match: (p: string) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
     },
+    {
+      to: "/videos-comunidade",
+      labelKey: "nav.communityVideos",
+      match: (p: string) => p === "/videos-comunidade" || p.startsWith("/videos-comunidade/"),
+    },
     { to: localeSectionPath(locale, "panteoes"), labelKey: "nav.pantheons" },
     { to: "/astecas", labelKey: "nav.astecas", navNovo: true },
     { to: localeSectionPath(locale, "deuses"), labelKey: "nav.gods" },

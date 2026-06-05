@@ -35,6 +35,8 @@ import { StartsPage } from "@/pages/StartsPage";
 import { AtalhosImportantesPage } from "@/pages/trilha-de-aprendizado/AtalhosImportantesPage";
 import { RushTurtleBoomarPage } from "@/pages/trilha-de-aprendizado/RushTurtleBoomarPage";
 import { TiposUnidadesMultiplicadoresPage } from "@/pages/trilha-de-aprendizado/TiposUnidadesMultiplicadoresPage";
+import { CommunityVideoDetailPage } from "@/pages/CommunityVideoDetailPage";
+import { CommunityVideosPage } from "@/pages/CommunityVideosPage";
 import { TrilhaDeAprendizadoPage } from "@/pages/trilha-de-aprendizado/TrilhaDeAprendizadoPage";
 import { TecnologiaDetailPage } from "@/pages/TecnologiaDetailPage";
 import { TecnologiasPage } from "@/pages/TecnologiasPage";
@@ -102,6 +104,8 @@ export default function App() {
           <Route path="aom-players" element={<JogadoresAomPage />} />
           <Route path="clans" element={<ClansPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
+          <Route path="videos-comunidade" element={<CommunityVideosPage />} />
+          <Route path="videos-comunidade/:id" element={<CommunityVideoDetailPage />} />
           <Route
             path="trilha-de-aprendizado/tipos-unidades-multiplicadores"
             element={<TiposUnidadesMultiplicadoresPage />}
