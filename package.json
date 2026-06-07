@@ -7,11 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "data:notion": "python scripts/build_notion_supplement.py",
-    "data:en-locale": "node scripts/translate-locale-en-api.mjs",
-    "data:sync-en": "node scripts/sync-locale-en.mjs",
-    "data:sync-en-refs": "node scripts/sync-en-catalog-refs.mjs",
-    "data:locale-check": "node scripts/extract-untranslated.mjs",
+    "data:extract-unidades": "python scripts/extract-unidades-aom.py",
+    "data:merge-unidades": "python scripts/merge-unidades-aom.py",
     "preview": "vite preview"
   },
   "dependencies": {
