@@ -37,8 +37,8 @@
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "comida": 50,
@@ -96,8 +96,8 @@
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "comida": 40,
@@ -119,8 +119,8 @@
   },
   {
     "id": 3,
-    "nome": "Toxote",
-    "ingles": "Toxote",
+    "nome": "Toxotes",
+    "ingles": "Toxotes",
     "tipo": [
       {
         "type": "Artilharia",
@@ -156,8 +156,8 @@
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
     "comida": 0,
@@ -180,7 +180,7 @@
   {
     "id": 4,
     "nome": "Hipaspista",
-    "ingles": "Hypapist",
+    "ingles": "Hypaspist",
     "tipo": [
       {
         "type": "Infantaria",
@@ -210,13 +210,13 @@
     "pontos_de_vida": 95,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 5,
+    "dps": 7.2,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "comida": 60,
@@ -269,18 +269,18 @@
     "pontos_de_vida": 145,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 6.153846153846,
+    "dps": 10.4,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
-    "comida": 0,
-    "madeira": 70,
-    "ouro": 20,
+    "comida": 70,
+    "madeira": 0,
+    "ouro": 40,
     "populacao": 3,
     "tempo_treinamento": 12,
     "velocidade_movimento": 6,
@@ -329,20 +329,20 @@
     "dano_perfurante": 5,
     "alcance": 18,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 3.333333333333,
+    "dps": 7.5,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
-    "comida": 70,
-    "madeira": 0,
-    "ouro": 40,
+    "comida": 0,
+    "madeira": 70,
+    "ouro": 25,
     "populacao": 2,
-    "tempo_treinamento": 10,
+    "tempo_treinamento": 10.5,
     "velocidade_movimento": 4,
     "forca_atributos": 105.333333333333,
     "categoria": [
@@ -393,8 +393,8 @@
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "comida": 40,
@@ -452,8 +452,8 @@
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "comida": 50,
@@ -512,8 +512,8 @@
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "comida": 0,
@@ -558,14 +558,14 @@
     "counter_de": "Soft-Artilharia :aomr_type_archer_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:",
     "multiplicador": [
       {
-        "type": "Artilharia",
-        "icon": "aomr_type_archer_icon",
-        "value": "1.25"
-      },
-      {
         "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "2"
+      },
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon",
+        "value": "1.25"
       }
     ],
     "pontos_de_vida": 135,
@@ -576,8 +576,8 @@
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "comida": 50,
@@ -609,10 +609,6 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Cavalaria",
-        "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
@@ -639,13 +635,13 @@
     "dano_perfurante": 11,
     "alcance": 19,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 7.333333333333,
+    "dps": 16.5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 20,
     "construcao": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "comida": 0,
@@ -691,7 +687,7 @@
     "multiplicador": [
       {
         "type": "Construção",
-        "icon": "aomr_type_building_icon",
+        "icon": "",
         "value": "4"
       },
       {
@@ -703,13 +699,13 @@
     "pontos_de_vida": 450,
     "dano_cortante": 22,
     "velocidade_de_ataque_atk_s": 1.4,
-    "dps": 15.714285714286,
+    "dps": 30.8,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "comida": 180,
@@ -732,7 +728,7 @@
   {
     "id": 14,
     "nome": "Berserker",
-    "ingles": "Berserker",
+    "ingles": "Berserk",
     "tipo": [
       {
         "type": "Infantaria",
@@ -753,20 +749,27 @@
     ],
     "counter_de": "Todos👥",
     "multiplicador": [],
-    "pontos_de_vida": 85,
+    "pontos_de_vida": 95,
     "dano_cortante": 6.5,
     "velocidade_de_ataque_atk_s": 0.7,
-    "dps": 9.285714285714,
+    "dps": 4.55,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 5,
     "construcao": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       },
       {
-        "id": 4,
-        "nome": "Centro Urbano (Nórdico)"
+        "nome": "Centro Urbano (Nórdico)",
+        "id": 4
+      },
+      {
+        "nome": "Casa Comunal",
+        "id": 39
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 50,
@@ -785,10 +788,6 @@
     "nome": "Lançador de Machados",
     "ingles": "Throwing Axeman",
     "tipo": [
-      {
-        "type": "Artilharia",
-        "icon": "aomr_type_archer_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -818,13 +817,13 @@
     "dano_cortante": 6,
     "alcance": 11,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 4,
+    "dps": 9,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "comida": 0,
@@ -882,8 +881,8 @@
     "armadura_antiperfurante": 5,
     "construcao": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "comida": 40,
@@ -941,8 +940,8 @@
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Grande Salão",
+        "id": 40
       }
     ],
     "comida": 40,
@@ -965,7 +964,7 @@
   {
     "id": 18,
     "nome": "Huscarl",
-    "ingles": "Huscarl",
+    "ingles": "Huskarl",
     "tipo": [
       {
         "type": "Infantaria",
@@ -1000,8 +999,11 @@
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "Forte da Colina",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "comida": 0,
@@ -1053,8 +1055,8 @@
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Grande Salão",
+        "id": 40
       }
     ],
     "comida": 50,
@@ -1095,13 +1097,13 @@
     "pontos_de_vida": 110,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 0.8,
-    "dps": 8.75,
+    "dps": 5.6,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 5,
     "construcao": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "Quartel Militar",
+        "id": 41
       }
     ],
     "comida": 55,
@@ -1148,13 +1150,13 @@
     "pontos_de_vida": 115,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 5,
+    "dps": 7.2,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "Contralquartel",
+        "id": 42
       }
     ],
     "comida": 60,
@@ -1182,10 +1184,6 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Cavalaria",
-        "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
@@ -1212,13 +1210,13 @@
     "dano_perfurante": 5.5,
     "alcance": 14,
     "velocidade_de_ataque_atk_s": 1.8,
-    "dps": 3.055555555556,
+    "dps": 9.9,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "Contralquartel",
+        "id": 42
       }
     ],
     "comida": 0,
@@ -1240,16 +1238,12 @@
   },
   {
     "id": 23,
-    "nome": "Chierobalista",
+    "nome": "Quirobalista",
     "ingles": "Cheiroballista",
     "tipo": [
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
       }
     ],
     "panteao": [
@@ -1272,22 +1266,22 @@
         "value": "5"
       },
       {
-        "type": "Texto",
+        "type": "Ship",
         "icon": "",
-        "value": "🚢3x"
+        "value": "3"
       }
     ],
     "pontos_de_vida": 105,
     "dano_perfurante": 3,
     "alcance": 16,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 1.5,
+    "dps": 6,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "Contralquartel",
+        "id": 42
       }
     ],
     "comida": 0,
@@ -1340,13 +1334,13 @@
     "pontos_de_vida": 140,
     "dano_cortante": 13.5,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 9,
+    "dps": 20.25,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "Quartel Militar",
+        "id": 41
       }
     ],
     "comida": 65,
@@ -1405,8 +1399,8 @@
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "Quartel Militar",
+        "id": 41
       }
     ],
     "comida": 0,
@@ -1453,13 +1447,19 @@
     "pontos_de_vida": 135,
     "dano_cortante": 9,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 7.5,
+    "dps": 10.8,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Campo Militar",
+        "id": 43
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "comida": 30,
@@ -1467,7 +1467,7 @@
     "ouro": 55,
     "populacao": 2,
     "tempo_treinamento": 14,
-    "velocidade_movimento": 3.8,
+    "velocidade_movimento": 4,
     "forca_atributos": 142.8,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
@@ -1506,13 +1506,19 @@
     "pontos_de_vida": 95,
     "dano_cortante": 4,
     "velocidade_de_ataque_atk_s": 1.1,
-    "dps": 3.636363636364,
+    "dps": 4.4,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 5,
     "construcao": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Campo Militar",
+        "id": 43
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "comida": 50,
@@ -1566,13 +1572,19 @@
     "dano_perfurante": 4.5,
     "alcance": 16,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 3.75,
+    "dps": 5.4,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Campo Militar",
+        "id": 43
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "comida": 0,
@@ -1623,7 +1635,7 @@
       },
       {
         "type": "Construção",
-        "icon": "aomr_type_building_icon",
+        "icon": "",
         "value": "6"
       }
     ],
@@ -1636,8 +1648,14 @@
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
       }
     ],
     "comida": 0,
@@ -1685,13 +1703,19 @@
     "dano_perfurante": 8,
     "alcance": 4,
     "velocidade_de_ataque_atk_s": 2.8,
-    "dps": 2.857142857143,
+    "dps": 22.4,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
       }
     ],
     "comida": 0,
@@ -1732,19 +1756,18 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon",
-        "value": "1.75"
+        "value": "1.5"
       }
     ],
-    "pontos_de_vida": 135,
-    "dano_cortante": 13,
-    "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 10.833333333333,
+    "pontos_de_vida": 155,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 22.5,
     "armadura_anticorte": 10,
-    "armadura_antiperfurante": 40,
+    "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "comida": 45,
@@ -1762,7 +1785,8 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "icon": "aomr_white_horse_cavalry_icon"
+    "icon": "aomr_white_horse_cavalry_icon",
+    "dano_perfurante": 15
   },
   {
     "id": 32,
@@ -1797,13 +1821,13 @@
     "pontos_de_vida": 190,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 13.333333333333,
+    "dps": 19.2,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "comida": 105,
@@ -1820,17 +1844,14 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "icon": "aomr_samurai_icon"
+    "icon": "aomr_samurai_icon",
+    "madeira": 0
   },
   {
     "id": 33,
     "nome": "Shinobi",
     "ingles": "Shinobi",
     "tipo": [
-      {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -1856,23 +1877,23 @@
         "value": "2.5"
       }
     ],
-    "pontos_de_vida": 100,
+    "pontos_de_vida": 110,
     "dano_cortante": 4,
     "dano_contundente": 11,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 3.333333333333,
+    "dps": 4.8,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "comida": 65,
-    "ouro": 90,
+    "ouro": 85,
     "populacao": 4,
-    "tempo_treinamento": 17,
+    "tempo_treinamento": 16.5,
     "velocidade_movimento": 5,
     "forca_atributos": 79.833333333333,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
@@ -1883,7 +1904,8 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "icon": "aomr_shinobi_icon"
+    "icon": "aomr_shinobi_icon",
+    "madeira": 0
   },
   {
     "id": 34,
@@ -1915,17 +1937,16 @@
         "value": "10 (dano divino) ignora armaduras"
       }
     ],
-    "pontos_de_vida": 160,
-    "dano_cortante": 10,
-    "dano_divino": 10,
+    "pontos_de_vida": 165,
+    "dano_divino": 11,
     "velocidade_de_ataque_atk_s": 1.4,
-    "dps": 21.428571428571,
+    "dps": 15.4,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "comida": 70,
@@ -1971,7 +1992,7 @@
     "multiplicador": [
       {
         "type": "Construção",
-        "icon": "aomr_type_building_icon",
+        "icon": "",
         "value": "20"
       }
     ],
@@ -1979,13 +2000,13 @@
     "dano_perfurante": 12,
     "alcance": 23,
     "velocidade_de_ataque_atk_s": 2.1,
-    "dps": 5.714285714286,
+    "dps": 25.2,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "comida": 0,
@@ -2042,15 +2063,15 @@
       }
     ],
     "pontos_de_vida": 160,
-    "dano_cortante": 8,
+    "dano_cortante": 9,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 8,
+    "dps": 9,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "comida": 50,
@@ -2113,8 +2134,8 @@
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "comida": 75,
@@ -2170,19 +2191,19 @@
       {
         "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
-        "value": "2"
+        "value": "1.5"
       }
     ],
     "pontos_de_vida": 170,
     "dano_cortante": 13,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 10.833333333333,
+    "dps": 15.6,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "comida": 115,
@@ -2208,20 +2229,12 @@
   },
   {
     "id": 39,
-    "nome": "Pégasos",
+    "nome": "Pégaso",
     "ingles": "Pegasus",
     "tipo": [
       {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -2242,8 +2255,11 @@
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "TempleOfDemeter"
       }
     ],
     "comida": 50,
@@ -2262,15 +2278,17 @@
         "nome": "Zeus"
       }
     ],
-    "icon": "aomr_pegasus_icon"
+    "icon": "aomr_pegasus_icon",
+    "velocidade_de_ataque_atk_s": 0,
+    "dps": 0
   },
   {
     "id": 40,
     "nome": "Minotauro",
-    "ingles": "Minotauro",
+    "ingles": "Minotaur",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2296,19 +2314,22 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 320,
     "dano_cortante": 17,
     "velocidade_de_ataque_atk_s": 1.1,
-    "dps": 15.454545454545,
+    "dps": 18.7,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "TempleOfDemeter"
       }
     ],
     "comida": 0,
@@ -2332,11 +2353,11 @@
   {
     "id": 41,
     "nome": "Centauro",
-    "ingles": "Centauro",
+    "ingles": "Centaur",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -2361,20 +2382,23 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 250,
     "dano_perfurante": 18,
     "alcance": 15,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 12,
+    "dps": 27,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 20,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "TempleOfDemeter"
       }
     ],
     "comida": 0,
@@ -2398,14 +2422,10 @@
   {
     "id": 42,
     "nome": "Ciclope",
-    "ingles": "Ciclope",
+    "ingles": "Cyclops",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2431,20 +2451,23 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
-    "pontos_de_vida": 600,
+    "pontos_de_vida": 630,
     "dano_cortante": 16,
     "dano_contundente": 28,
     "velocidade_de_ataque_atk_s": 1.4,
-    "dps": 11.428571428571,
+    "dps": 22.4,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "TempleOfDemeter"
       }
     ],
     "comida": 150,
@@ -2453,7 +2476,7 @@
     "favor": 18,
     "populacao": 3,
     "tempo_treinamento": 20,
-    "velocidade_movimento": 4.5,
+    "velocidade_movimento": 3.5,
     "forca_atributos": 612.928571428571,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -2471,7 +2494,7 @@
     "ingles": "Anubite",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2497,19 +2520,19 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 200,
     "dano_cortante": 11,
     "velocidade_de_ataque_atk_s": 0.8,
-    "dps": 13.75,
+    "dps": 8.8,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "comida": 100,
@@ -2536,8 +2559,8 @@
     "ingles": "Wadjet",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -2562,20 +2585,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
-    "pontos_de_vida": 260,
+    "pontos_de_vida": 270,
     "dano_perfurante": 12,
     "alcance": 18,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 8,
+    "dps": 18,
     "armadura_anticorte": 25,
-    "armadura_antiperfurante": 25,
+    "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "comida": 0,
@@ -2599,10 +2622,10 @@
   {
     "id": 45,
     "nome": "Esfinge",
-    "ingles": "Esfinge",
+    "ingles": "Sphinx",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2628,20 +2651,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 300,
     "dano_cortante": 15,
     "dano_contundente": 9,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 11.538461538462,
+    "dps": 19.5,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "comida": 0,
@@ -2668,8 +2691,8 @@
     "ingles": "Troll",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -2694,20 +2717,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
-    "pontos_de_vida": 250,
+    "pontos_de_vida": 280,
     "dano_perfurante": 18,
     "alcance": 14,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 12,
+    "dps": 27,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 0,
@@ -2734,7 +2757,7 @@
     "ingles": "Einheri",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2760,7 +2783,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 275,
@@ -2772,8 +2795,8 @@
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 0,
@@ -2792,19 +2815,15 @@
         "nome": "Heimdall"
       }
     ],
-    "icon": "aomr_einherjar_icon"
+    "icon": "aomr_einheri_icon"
   },
   {
     "id": 49,
     "nome": "Valquíria",
-    "ingles": "Valquíria",
+    "ingles": "Valkyrie",
     "tipo": [
       {
-        "type": "Curandeiro✨",
-        "icon": ""
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2830,19 +2849,19 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
-    "pontos_de_vida": 200,
+    "pontos_de_vida": 375,
     "dano_cortante": 14,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 11.666666666667,
+    "dps": 16.8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 200,
@@ -2869,8 +2888,8 @@
     "ingles": "Draugr",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -2895,26 +2914,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
-      },
-      {
-        "type": "Texto",
-        "icon": "",
-        "value": "+2:aomr_pantheon_greeks_icon:(divine)"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 320,
     "dano_perfurante": 5,
     "alcance": 14,
-    "dano_divino": 2,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 9,
+    "dps": 5,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 0,
@@ -2938,10 +2951,10 @@
   {
     "id": 51,
     "nome": "Prometeano",
-    "ingles": "Prometeus",
+    "ingles": "Promethean",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -2967,20 +2980,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 175,
     "dano_cortante": 12,
     "dano_contundente": 6,
     "velocidade_de_ataque_atk_s": 1.1,
-    "dps": 10.909090909091,
+    "dps": 13.2,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "comida": 90,
@@ -3004,10 +3017,10 @@
   {
     "id": 53,
     "nome": "Autômato",
-    "ingles": "Autômato",
+    "ingles": "Automaton",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -3033,7 +3046,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 230,
@@ -3044,8 +3057,8 @@
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "comida": 0,
@@ -3072,16 +3085,8 @@
     "ingles": "Caladria",
     "tipo": [
       {
-        "type": "Curandeiro✨",
-        "icon": ""
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -3104,8 +3109,8 @@
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "comida": 0,
@@ -3114,7 +3119,7 @@
     "favor": 12,
     "populacao": 2,
     "tempo_treinamento": 9,
-    "velocidade_movimento": 5,
+    "velocidade_movimento": 4.8,
     "forca_atributos": 81.5,
     "forte_contra": "-",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -3124,7 +3129,8 @@
         "nome": "Oceano"
       }
     ],
-    "icon": "aomr_caladria_icon"
+    "icon": "aomr_caladria_icon",
+    "dps": 0
   },
   {
     "id": 55,
@@ -3132,8 +3138,8 @@
     "ingles": "Qilin",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -3158,26 +3164,26 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 290,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 10,
+    "dps": 14.4,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "comida": 220,
     "madeira": 0,
     "ouro": 0,
     "favor": 18,
-    "populacao": 2,
+    "populacao": 3,
     "tempo_treinamento": 16,
     "velocidade_movimento": 5.3,
     "forca_atributos": 272.3,
@@ -3197,7 +3203,7 @@
     "ingles": "Yazi",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -3223,19 +3229,19 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 300,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 13.333333333333,
+    "dps": 19.2,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "comida": 0,
@@ -3262,7 +3268,7 @@
     "ingles": "Qiongqi",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -3288,7 +3294,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 400,
@@ -3300,15 +3306,15 @@
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "comida": 0,
     "madeira": 0,
     "ouro": 200,
     "favor": 15,
-    "populacao": 2,
+    "populacao": 3,
     "tempo_treinamento": 18,
     "velocidade_movimento": 5,
     "forca_atributos": 401,
@@ -3324,8 +3330,8 @@
   },
   {
     "id": 58,
-    "nome": "Jazão",
-    "ingles": "Jason",
+    "nome": "Jasão (Herói)",
+    "ingles": "Jason (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -3349,29 +3355,30 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "12x (hack)"
-      },
-      {
-        "type": "Unidade mítica",
-        "icon": "aomr_type_myth_unit_icon",
-        "value": "9x (pierce)"
+        "value": "12"
       }
     ],
     "pontos_de_vida": 200,
     "dano_cortante": 9,
-    "dano_perfurante": 6,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 10,
+    "dps": 13.5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 100,
@@ -3394,8 +3401,8 @@
   },
   {
     "id": 59,
-    "nome": "Teseu",
-    "ingles": "Theseus",
+    "nome": "Teseu (Herói)",
+    "ingles": "Theseus (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -3419,29 +3426,30 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "12x (hack)"
-      },
-      {
-        "type": "Unidade mítica",
-        "icon": "aomr_type_myth_unit_icon",
-        "value": "9x (pierce)"
+        "value": "12"
       }
     ],
     "pontos_de_vida": 190,
     "dano_cortante": 6.5,
-    "dano_perfurante": 6,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 12.5,
+    "dps": 6.5,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 100,
@@ -3464,8 +3472,8 @@
   },
   {
     "id": 60,
-    "nome": "Ajax",
-    "ingles": "Ajax",
+    "nome": "Ájax (Herói)",
+    "ingles": "Ajax (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -3489,29 +3497,30 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "12x (hack)"
-      },
-      {
-        "type": "Unidade mítica",
-        "icon": "aomr_type_myth_unit_icon",
-        "value": "9x (pierce)"
+        "value": "12"
       }
     ],
     "pontos_de_vida": 190,
-    "dano_cortante": 9,
-    "dano_perfurante": 6,
+    "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 15,
+    "dps": 7,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 100,
@@ -3534,16 +3543,12 @@
   },
   {
     "id": 61,
-    "nome": "Faraó",
-    "ingles": "Pharaoh",
+    "nome": "Faraó (Herói)",
+    "ingles": "Pharaoh (Hero)",
     "tipo": [
       {
-        "type": "Curandeiro✨",
-        "icon": ""
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -3564,18 +3569,12 @@
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
         "value": "2.5"
-      },
-      {
-        "type": "Texto",
-        "icon": "",
-        "value": "+1.2:aomr_pantheon_greeks_icon:(divine só míticos)"
       }
     ],
     "pontos_de_vida": 100,
-    "dano_perfurante": 6,
-    "dano_divino": 1.2,
+    "dano_perfurante": 12,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 8.4,
+    "dps": 12,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 30,
     "construcao": [
@@ -3589,7 +3588,7 @@
     "ouro": 0,
     "favor": 0,
     "populacao": 0,
-    "tempo_treinamento": 90,
+    "tempo_treinamento": 0,
     "velocidade_movimento": 4,
     "forca_atributos": 67.4,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3598,20 +3597,12 @@
   },
   {
     "id": 62,
-    "nome": "Sarcedote",
-    "ingles": "Priest",
+    "nome": "Sacerdote (Herói)",
+    "ingles": "Priest (Hero)",
     "tipo": [
       {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
-      {
-        "type": "Curandeiro✨",
-        "icon": ""
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -3632,28 +3623,30 @@
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
         "value": "5"
-      },
-      {
-        "type": "Texto",
-        "icon": "",
-        "value": "+0.5:aomr_pantheon_greeks_icon:(divine só míticos)"
       }
     ],
     "pontos_de_vida": 80,
-    "dano_perfurante": 0.5,
-    "dano_divino": 0.5,
+    "dano_perfurante": 2,
     "velocidade_de_ataque_atk_s": 0.8,
-    "dps": 1.875,
+    "dps": 1.6,
     "armadura_anticorte": 10,
     "armadura_antiperfurante": 1,
     "construcao": [
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "Centro Urbano (Egípcio)",
+        "id": 3
       },
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
+      },
+      {
+        "nome": "Templo (Grego)",
+        "id": 12
+      },
+      {
+        "nome": "CitadelCenter",
+        "id": 12
       }
     ],
     "comida": 0,
@@ -3670,13 +3663,9 @@
   },
   {
     "id": 63,
-    "nome": "Hersir",
-    "ingles": "Hersir",
+    "nome": "Hersir (Herói)",
+    "ingles": "Hersir (Hero)",
     "tipo": [
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -3691,7 +3680,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Clássica :aomr_classical_age_icon:"
+        "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -3703,19 +3692,19 @@
       }
     ],
     "pontos_de_vida": 130,
-    "dano_cortante": 8.8,
-    "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 5.866666666667,
+    "dano_cortante": 8,
+    "velocidade_de_ataque_atk_s": 1.2,
+    "dps": 9.6,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       },
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Grande Salão",
+        "id": 40
       }
     ],
     "comida": 80,
@@ -3735,10 +3724,6 @@
     "nome": "Oráculo (Herói)",
     "ingles": "Oracle (Hero)",
     "tipo": [
-      {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon"
@@ -3765,9 +3750,9 @@
       }
     ],
     "pontos_de_vida": 105,
-    "dano_cortante": 0.9,
+    "dano_cortante": 9,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 0.6,
+    "dps": 13.5,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
     "comida": 30,
@@ -3775,29 +3760,22 @@
     "ouro": 45,
     "favor": 1,
     "populacao": 1,
-    "tempo_treinamento": 10,
-    "velocidade_movimento": 4.2,
+    "tempo_treinamento": 11,
+    "velocidade_movimento": 4.3,
     "forca_atributos": 131.3,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_oracle_hero_icon"
+    "icon": "aomr_oracle_hero_icon",
+    "construcao": null
   },
   {
     "id": 65,
-    "nome": "Pioneiro",
-    "ingles": "Pioneer",
+    "nome": "Pioneiro (Herói)",
+    "ingles": "Pioneer (Hero)",
     "tipo": [
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -3821,19 +3799,19 @@
       }
     ],
     "pontos_de_vida": 90,
-    "dano_perfurante": 0.5,
+    "dano_perfurante": 5,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 0.333333333333,
+    "dps": 7.5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       },
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "comida": 0,
@@ -3854,7 +3832,7 @@
     "ingles": "Hydra",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -3880,20 +3858,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 800,
     "dano_cortante": 30,
     "dano_contundente": 18,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 20,
+    "dps": 45,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "comida": 250,
@@ -3920,8 +3898,8 @@
     "ingles": "Manticore",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -3946,7 +3924,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 420,
@@ -3958,8 +3936,8 @@
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "comida": 0,
@@ -3982,11 +3960,11 @@
   },
   {
     "id": 68,
-    "nome": "Leão de Neméia",
+    "nome": "Leão de Nemeia",
     "ingles": "Nemean Lion",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4012,20 +3990,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 740,
     "dano_cortante": 22,
     "dano_contundente": 14,
     "velocidade_de_ataque_atk_s": 1.1,
-    "dps": 20,
+    "dps": 24.2,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "comida": 0,
@@ -4052,8 +4030,8 @@
     "ingles": "Petsuchos",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -4082,16 +4060,15 @@
       }
     ],
     "pontos_de_vida": 400,
-    "dano_perfurante": 30,
     "alcance": 20,
-    "velocidade_de_ataque_atk_s": 2,
-    "dps": 15,
+    "velocidade_de_ataque_atk_s": 0,
+    "dps": 0,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "comida": 0,
@@ -4118,11 +4095,7 @@
     "ingles": "Scarab",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4148,25 +4121,19 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
-      },
-      {
-        "type": "Construção",
-        "icon": "aomr_type_building_icon",
-        "value": "1"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 1000,
-    "dano_cortante": 15,
     "dano_contundente": 95,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 10,
-    "armadura_anticorte": 5,
+    "dps": 150,
+    "armadura_anticorte": 10,
     "armadura_antiperfurante": 75,
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "comida": 240,
@@ -4175,7 +4142,7 @@
     "favor": 18,
     "populacao": 4,
     "tempo_treinamento": 20,
-    "velocidade_movimento": 3.2,
+    "velocidade_movimento": 3.3,
     "forca_atributos": 949.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -4185,7 +4152,8 @@
         "nome": "Sekhmet"
       }
     ],
-    "icon": "aomr_scarab_icon"
+    "icon": "aomr_scarab_icon",
+    "dano_contusao": 100
   },
   {
     "id": 71,
@@ -4193,7 +4161,7 @@
     "ingles": "Scorpion Man",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4219,19 +4187,19 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 550,
     "dano_cortante": 30,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 25,
+    "dps": 36,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "comida": 0,
@@ -4258,7 +4226,7 @@
     "ingles": "Frost Giant",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4284,20 +4252,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 600,
     "dano_cortante": 36,
     "dano_contundente": 30,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 18,
+    "dps": 72,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 70,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 0,
@@ -4328,11 +4296,7 @@
     "ingles": "Battle Boar",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4358,7 +4322,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 720,
@@ -4370,8 +4334,8 @@
     "armadura_antiperfurante": 60,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 0,
@@ -4394,15 +4358,11 @@
   },
   {
     "id": 74,
-    "nome": "Gigante da Montanha",
+    "nome": "Gigante de Montanha",
     "ingles": "Mountain Giant",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4423,25 +4383,25 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "1"
+        "value": "2"
       },
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 1200,
     "dano_cortante": 26,
     "dano_contundente": 40,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 20,
+    "dps": 33.8,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 250,
@@ -4472,11 +4432,7 @@
     "ingles": "Rock Giant",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4497,20 +4453,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 850,
     "dano_cortante": 50,
     "dano_contundente": 36,
     "velocidade_de_ataque_atk_s": 3.5,
-    "dps": 14.285714285714,
+    "dps": 175,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 75,
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "comida": 0,
@@ -4537,11 +4493,7 @@
     "ingles": "Behemoth",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4567,25 +4519,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
-      },
-      {
-        "type": "Construção",
-        "icon": "aomr_type_building_icon",
-        "value": "1"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 700,
     "dano_cortante": 20,
     "dano_contundente": 110,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 13.333333333333,
+    "dps": 30,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 75,
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "comida": 250,
@@ -4612,8 +4559,8 @@
     "ingles": "Satyr",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -4638,7 +4585,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 400,
@@ -4650,8 +4597,8 @@
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "comida": 0,
@@ -4678,12 +4625,8 @@
     "ingles": "Stymphalian Bird",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -4703,25 +4646,25 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "3"
+        "value": "2"
       },
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 400,
-    "dano_perfurante": 14,
+    "dano_perfurante": 20,
     "alcance": 15,
     "velocidade_de_ataque_atk_s": 1.8,
-    "dps": 7.777777777778,
+    "dps": 36,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "comida": 0,
@@ -4744,11 +4687,11 @@
   },
   {
     "id": 79,
-    "nome": "Taowu",
+    "nome": "Táowù",
     "ingles": "Taowu",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4774,20 +4717,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 780,
     "dano_cortante": 20,
     "dano_contundente": 90,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 10,
+    "dps": 40,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 75,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "comida": 275,
@@ -4814,7 +4757,7 @@
     "ingles": "Taotie",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4840,20 +4783,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 700,
     "dano_cortante": 25,
     "dano_contundente": 20,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 20.833333333333,
+    "dps": 30,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "comida": 0,
@@ -4880,7 +4823,7 @@
     "ingles": "Baihu",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -4906,7 +4849,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 650,
@@ -4918,8 +4861,8 @@
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "comida": 120,
@@ -4942,8 +4885,8 @@
   },
   {
     "id": 82,
-    "nome": "Hércules",
-    "ingles": "Heracles",
+    "nome": "Hércules (Herói)",
+    "ingles": "Heracles (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -4970,21 +4913,27 @@
         "value": "8"
       }
     ],
-    "pontos_de_vida": 357.5,
-    "dano_cortante": 13.2,
-    "dano_perfurante": 8.8,
+    "pontos_de_vida": 325,
+    "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 18.333333333333,
+    "dps": 14.4,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 75,
@@ -4992,7 +4941,7 @@
     "ouro": 175,
     "favor": 2,
     "populacao": 3,
-    "tempo_treinamento": 18,
+    "tempo_treinamento": 20,
     "velocidade_movimento": 5,
     "forca_atributos": 289.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5007,8 +4956,8 @@
   },
   {
     "id": 83,
-    "nome": "Atalanta",
-    "ingles": "Atalanta",
+    "nome": "Atalanta (Heroína)",
+    "ingles": "Atalanta (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -5035,21 +4984,27 @@
         "value": "7"
       }
     ],
-    "pontos_de_vida": 325,
-    "dano_cortante": 13.2,
-    "dano_perfurante": 8.8,
+    "pontos_de_vida": 260,
+    "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1.4,
-    "dps": 15.714285714286,
+    "dps": 16.8,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 75,
@@ -5057,7 +5012,7 @@
     "ouro": 175,
     "favor": 2,
     "populacao": 3,
-    "tempo_treinamento": 18,
+    "tempo_treinamento": 20,
     "velocidade_movimento": 5.6,
     "forca_atributos": 265.314285714286,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5072,8 +5027,8 @@
   },
   {
     "id": 84,
-    "nome": "Aquíles",
-    "ingles": "Achilles",
+    "nome": "Aquiles (Herói)",
+    "ingles": "Achilles (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -5100,21 +5055,27 @@
         "value": "8"
       }
     ],
-    "pontos_de_vida": 330,
-    "dano_cortante": 9.9,
-    "dano_perfurante": 13.2,
-    "velocidade_de_ataque_atk_s": 1,
-    "dps": 23.1,
+    "pontos_de_vida": 300,
+    "dano_perfurante": 12,
+    "velocidade_de_ataque_atk_s": 2,
+    "dps": 24,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 75,
@@ -5122,7 +5083,7 @@
     "ouro": 175,
     "favor": 2,
     "populacao": 3,
-    "tempo_treinamento": 18,
+    "tempo_treinamento": 20,
     "velocidade_movimento": 5.3,
     "forca_atributos": 287.4,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5137,16 +5098,12 @@
   },
   {
     "id": 85,
-    "nome": "Godi",
-    "ingles": "Godi",
+    "nome": "Godi (Herói)",
+    "ingles": "Godi (Hero)",
     "tipo": [
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5169,17 +5126,17 @@
         "value": "6"
       }
     ],
-    "pontos_de_vida": 106,
-    "dano_perfurante": 8.8,
+    "pontos_de_vida": 85,
+    "dano_perfurante": 7,
     "alcance": 17,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 5.866666666667,
+    "dps": 10.5,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Grande Salão",
+        "id": 40
       }
     ],
     "comida": 0,
@@ -5199,10 +5156,6 @@
     "nome": "Murmilo (Herói)",
     "ingles": "Murmillo (Hero)",
     "tipo": [
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -5231,7 +5184,7 @@
     "pontos_de_vida": 125,
     "dano_cortante": 7.5,
     "velocidade_de_ataque_atk_s": 0.8,
-    "dps": 9.375,
+    "dps": 6,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 5,
     "comida": 95,
@@ -5239,22 +5192,19 @@
     "ouro": 55,
     "favor": 2,
     "populacao": 2,
-    "tempo_treinamento": 3,
-    "velocidade_movimento": 4.5,
+    "tempo_treinamento": 0,
+    "velocidade_movimento": 4.8,
     "forca_atributos": 103.875,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_murmillo_hero_icon"
+    "icon": "aomr_murmillo_hero_icon",
+    "construcao": null
   },
   {
     "id": 87,
     "nome": "Katapeltes (Herói)",
     "ingles": "Katapeltes (Hero)",
     "tipo": [
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -5288,7 +5238,7 @@
     "pontos_de_vida": 130,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 5.833333333333,
+    "dps": 8.4,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 10,
     "comida": 105,
@@ -5296,8 +5246,8 @@
     "ouro": 60,
     "favor": 2,
     "populacao": 2,
-    "tempo_treinamento": 3,
-    "velocidade_movimento": 4.5,
+    "tempo_treinamento": 0,
+    "velocidade_movimento": 4.8,
     "forca_atributos": 97.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -5307,7 +5257,8 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "icon": "aomr_katapeltes_hero_icon"
+    "icon": "aomr_katapeltes_hero_icon",
+    "construcao": null
   },
   {
     "id": 88,
@@ -5317,14 +5268,6 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Cavalaria",
-        "icon": "aomr_type_cavalry_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5342,20 +5285,20 @@
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Hard-Counter Artilharia :aomr_type_archer_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
-        "icon": "aomr_type_myth_unit_icon",
-        "value": "8"
-      },
-      {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon",
         "value": "4"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
       }
     ],
     "pontos_de_vida": 95,
     "dano_perfurante": 6.5,
     "velocidade_de_ataque_atk_s": 1.8,
-    "dps": 3.611111111111,
+    "dps": 11.7,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 40,
     "comida": 0,
@@ -5363,8 +5306,8 @@
     "ouro": 70,
     "favor": 2,
     "populacao": 2,
-    "tempo_treinamento": 3,
-    "velocidade_movimento": 5,
+    "tempo_treinamento": 0,
+    "velocidade_movimento": 5.3,
     "forca_atributos": 128.611111111111,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -5374,24 +5317,17 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "icon": "aomr_turma_hero_icon"
+    "icon": "aomr_turma_hero_icon",
+    "construcao": null
   },
   {
     "id": 89,
-    "nome": "Chierobalista (Herói)",
+    "nome": "Quirobalista (Herói)",
     "ingles": "Cheiroballista (Hero)",
     "tipo": [
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5409,26 +5345,26 @@
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Hard-Counter Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
-        "icon": "aomr_type_myth_unit_icon",
-        "value": "8"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "5"
       },
       {
-        "type": "Texto",
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      },
+      {
+        "type": "Ship",
         "icon": "",
-        "value": "🚢3x"
+        "value": "3"
       }
     ],
     "pontos_de_vida": 120,
     "dano_perfurante": 4,
     "alcance": 16,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 2,
+    "dps": 8,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
     "comida": 0,
@@ -5436,8 +5372,8 @@
     "ouro": 175,
     "favor": 4.1,
     "populacao": 4,
-    "tempo_treinamento": 3,
-    "velocidade_movimento": 3.8,
+    "tempo_treinamento": 0,
+    "velocidade_movimento": 4.1,
     "forca_atributos": 51.3,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -5447,7 +5383,8 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "icon": "aomr_cheiroballista_hero_icon"
+    "icon": "aomr_cheiroballista_hero_icon",
+    "construcao": null
   },
   {
     "id": 90,
@@ -5457,10 +5394,6 @@
       {
         "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5491,7 +5424,7 @@
     "pontos_de_vida": 155,
     "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 10,
+    "dps": 22.5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
     "comida": 115,
@@ -5499,7 +5432,7 @@
     "ouro": 70,
     "favor": 3,
     "populacao": 3,
-    "tempo_treinamento": 3,
+    "tempo_treinamento": 0,
     "velocidade_movimento": 6.05,
     "forca_atributos": 132.55,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5510,7 +5443,8 @@
         "icon": "aomr_type_archer_icon"
       }
     ],
-    "icon": "aomr_contarius_hero_icon"
+    "icon": "aomr_contarius_hero_icon",
+    "construcao": null
   },
   {
     "id": 91,
@@ -5520,10 +5454,6 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5562,7 +5492,7 @@
     "ouro": 60,
     "favor": 2,
     "populacao": 2,
-    "tempo_treinamento": 3,
+    "tempo_treinamento": 0,
     "velocidade_movimento": 4.3,
     "forca_atributos": 72.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5573,12 +5503,13 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "icon": "aomr_arcus_hero_icon"
+    "icon": "aomr_arcus_hero_icon",
+    "construcao": null
   },
   {
     "id": 94,
-    "nome": "Sábio",
-    "ingles": "Sage",
+    "nome": "Sábio (Herói)",
+    "ingles": "Sage (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -5605,17 +5536,16 @@
         "value": "4"
       }
     ],
-    "pontos_de_vida": 138,
-    "dano_perfurante": 3.8,
-    "dano_divino": 2.5,
+    "pontos_de_vida": 110,
+    "dano_perfurante": 3,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 8.8,
+    "dps": 3,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "comida": 100,
@@ -5632,12 +5562,12 @@
   },
   {
     "id": 95,
-    "nome": "Odisseu",
-    "ingles": "Odysseus",
+    "nome": "Odisseu (Herói)",
+    "ingles": "Odysseus (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -5660,25 +5590,27 @@
         "value": "8"
       }
     ],
-    "pontos_de_vida": 437.5,
-    "dano_perfurante": 13.75,
-    "dano_divino": 0,
+    "pontos_de_vida": 350,
+    "dano_perfurante": 11,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 11.458333333333,
+    "dps": 13.2,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       },
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 0,
@@ -5686,7 +5618,7 @@
     "ouro": 100,
     "favor": 4,
     "populacao": 2,
-    "tempo_treinamento": 20,
+    "tempo_treinamento": 25,
     "velocidade_movimento": 4.3,
     "forca_atributos": 316.258333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5701,12 +5633,12 @@
   },
   {
     "id": 96,
-    "nome": "Hipólita",
-    "ingles": "Hippolyta",
+    "nome": "Hipólita (Heroína)",
+    "ingles": "Hippolyta (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -5729,25 +5661,27 @@
         "value": "8"
       }
     ],
-    "pontos_de_vida": 406.25,
-    "dano_perfurante": 18.75,
-    "dano_divino": 0,
+    "pontos_de_vida": 325,
+    "dano_perfurante": 15,
     "velocidade_de_ataque_atk_s": 1.7,
-    "dps": 11.029411764706,
+    "dps": 25.5,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       },
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 0,
@@ -5755,7 +5689,7 @@
     "ouro": 100,
     "favor": 4,
     "populacao": 2,
-    "tempo_treinamento": 20,
+    "tempo_treinamento": 25,
     "velocidade_movimento": 4.3,
     "forca_atributos": 284.579411764706,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5770,12 +5704,12 @@
   },
   {
     "id": 97,
-    "nome": "Quíron",
-    "ingles": "Chiron",
+    "nome": "Quíron (Herói)",
+    "ingles": "Chiron (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -5798,25 +5732,27 @@
         "value": "8"
       }
     ],
-    "pontos_de_vida": 437.5,
-    "dano_perfurante": 16.25,
-    "dano_divino": 0,
+    "pontos_de_vida": 350,
+    "dano_perfurante": 13,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 10.833333333333,
-    "armadura_anticorte": 25,
-    "armadura_antiperfurante": 35,
+    "dps": 19.5,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
       },
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       },
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 0,
@@ -5824,7 +5760,7 @@
     "ouro": 100,
     "favor": 4,
     "populacao": 2,
-    "tempo_treinamento": 20,
+    "tempo_treinamento": 25,
     "velocidade_movimento": 5.5,
     "forca_atributos": 316.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -5843,8 +5779,8 @@
     "ingles": "Medusa",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -5862,8 +5798,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "forca_atributos": 0,
@@ -5875,7 +5811,31 @@
         "nome": "Hera"
       }
     ],
-    "icon": "aomr_medusa_icon"
+    "icon": "aomr_medusa_icon",
+    "pontos_de_vida": 500,
+    "velocidade_de_ataque_atk_s": 1.7,
+    "dps": 59.5,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 70,
+    "comida": 0,
+    "madeira": 250,
+    "ouro": 0,
+    "populacao": 4,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 4.3,
+    "dano_perfurante": 35,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 99,
@@ -5883,7 +5843,7 @@
     "ingles": "Colossus",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -5902,8 +5862,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "forca_atributos": 0,
@@ -5915,7 +5875,31 @@
         "nome": "Hefesto"
       }
     ],
-    "icon": "aomr_colossus_icon"
+    "icon": "aomr_colossus_icon",
+    "pontos_de_vida": 1300,
+    "velocidade_de_ataque_atk_s": 1.3,
+    "dps": 39,
+    "armadura_anticorte": 50,
+    "armadura_antiperfurante": 75,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 350,
+    "populacao": 4,
+    "tempo_treinamento": 24,
+    "velocidade_movimento": 3,
+    "dano_cortante": 30,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 100,
@@ -5923,7 +5907,7 @@
     "ingles": "Chimera",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -5942,8 +5926,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "forca_atributos": 0,
@@ -5955,7 +5939,31 @@
         "nome": "Ártemis"
       }
     ],
-    "icon": "aomr_chimera_icon"
+    "icon": "aomr_chimera_icon",
+    "pontos_de_vida": 700,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 28,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 60,
+    "comida": 280,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 4,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 5.3,
+    "dano_cortante": 28,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 101,
@@ -5963,8 +5971,8 @@
     "ingles": "Mummy",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -5982,8 +5990,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "forca_atributos": 0,
@@ -5995,7 +6003,31 @@
         "nome": "Osíris"
       }
     ],
-    "icon": "aomr_mummy_icon"
+    "icon": "aomr_mummy_icon",
+    "pontos_de_vida": 450,
+    "velocidade_de_ataque_atk_s": 1.7,
+    "dps": 51,
+    "armadura_anticorte": 35,
+    "armadura_antiperfurante": 50,
+    "comida": 0,
+    "madeira": 275,
+    "ouro": 0,
+    "populacao": 4,
+    "tempo_treinamento": 17,
+    "velocidade_movimento": 4,
+    "dano_perfurante": 30,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 102,
@@ -6003,7 +6035,7 @@
     "ingles": "Avenger",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6022,8 +6054,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "forca_atributos": 0,
@@ -6035,7 +6067,31 @@
         "nome": "Hórus"
       }
     ],
-    "icon": "aomr_avenger_icon"
+    "icon": "aomr_avenger_icon",
+    "pontos_de_vida": 600,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 28,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 40,
+    "comida": 250,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 3,
+    "tempo_treinamento": 24,
+    "velocidade_movimento": 5.5,
+    "dano_cortante": 28,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 103,
@@ -6043,7 +6099,7 @@
     "ingles": "Phoenix",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6062,8 +6118,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "forca_atributos": 0,
@@ -6075,7 +6131,31 @@
         "nome": "Thoth"
       }
     ],
-    "icon": "aomr_phoenix_icon"
+    "icon": "aomr_phoenix_icon",
+    "pontos_de_vida": 500,
+    "velocidade_de_ataque_atk_s": 2.7,
+    "dps": 135,
+    "armadura_anticorte": 15,
+    "armadura_antiperfurante": 55,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 200,
+    "populacao": 4,
+    "tempo_treinamento": 6,
+    "velocidade_movimento": 4.5,
+    "dano_cortante": 50,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 104,
@@ -6083,8 +6163,8 @@
     "ingles": "Fire Giant",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -6102,8 +6182,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "forca_atributos": 0,
@@ -6119,15 +6199,39 @@
         "nome": "Hel"
       }
     ],
-    "icon": "aomr_fire_giant_icon"
+    "icon": "aomr_fire_giant_icon",
+    "pontos_de_vida": 750,
+    "velocidade_de_ataque_atk_s": 3,
+    "dps": 135,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 70,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 300,
+    "populacao": 4,
+    "tempo_treinamento": 24,
+    "velocidade_movimento": 3.2,
+    "dano_cortante": 45,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 105,
-    "nome": "Lobo de Fenrir",
+    "nome": "Ninhada de Lobo de Fenris",
     "ingles": "Fenris Wolf Brood",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6146,8 +6250,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "forca_atributos": 0,
@@ -6159,7 +6263,31 @@
         "nome": "Tyr"
       }
     ],
-    "icon": "aomr_fenris_wolf_brood_icon"
+    "icon": "aomr_fenris_wolf_brood_icon",
+    "pontos_de_vida": 600,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 60,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 55,
+    "comida": 175,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 2,
+    "tempo_treinamento": 12,
+    "velocidade_movimento": 5.5,
+    "dano_cortante": 40,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 106,
@@ -6167,7 +6295,7 @@
     "ingles": "Fafnir",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6186,8 +6314,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "forca_atributos": 0,
@@ -6199,15 +6327,39 @@
         "nome": "Vidar"
       }
     ],
-    "icon": "aomr_fafnir_icon"
+    "icon": "aomr_fafnir_icon",
+    "pontos_de_vida": 1400,
+    "velocidade_de_ataque_atk_s": 3,
+    "dps": 36,
+    "armadura_anticorte": 65,
+    "armadura_antiperfurante": 70,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 250,
+    "populacao": 5,
+    "tempo_treinamento": 12,
+    "velocidade_movimento": 4.8,
+    "dano_cortante": 12,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 107,
-    "nome": "Centimanus",
+    "nome": "Centimanos",
     "ingles": "Centimanus",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6226,8 +6378,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "forca_atributos": 0,
@@ -6239,7 +6391,26 @@
         "nome": "Hélios"
       }
     ],
-    "icon": "aomr_centimanus_icon"
+    "icon": "aomr_centimanus_icon",
+    "pontos_de_vida": 900,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 82.5,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 60,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 300,
+    "populacao": 4,
+    "tempo_treinamento": 18,
+    "velocidade_movimento": 3.3,
+    "dano_cortante": 55,
+    "multiplicador": [
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 108,
@@ -6247,7 +6418,7 @@
     "ingles": "Argus",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6266,8 +6437,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "forca_atributos": 0,
@@ -6279,7 +6450,31 @@
         "nome": "Atlas"
       }
     ],
-    "icon": "aomr_argus_icon"
+    "icon": "aomr_argus_icon",
+    "pontos_de_vida": 760,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 75,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 70,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 250,
+    "populacao": 4,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 4.1,
+    "dano_cortante": 50,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "3"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 109,
@@ -6287,8 +6482,8 @@
     "ingles": "Lampades",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -6306,8 +6501,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "forca_atributos": 0,
@@ -6319,7 +6514,31 @@
         "nome": "Hécate"
       }
     ],
-    "icon": "aomr_lampades_icon"
+    "icon": "aomr_lampades_icon",
+    "pontos_de_vida": 350,
+    "velocidade_de_ataque_atk_s": 2,
+    "dps": 48,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 50,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 220,
+    "populacao": 4,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 4.3,
+    "dano_perfurante": 24,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 110,
@@ -6327,7 +6546,7 @@
     "ingles": "Hundun",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -6346,8 +6565,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "forca_atributos": 0,
@@ -6359,7 +6578,31 @@
         "nome": "Huangdi"
       }
     ],
-    "icon": "aomr_hundun_icon"
+    "icon": "aomr_hundun_icon",
+    "pontos_de_vida": 1200,
+    "velocidade_de_ataque_atk_s": 1.33,
+    "dps": 53.2,
+    "armadura_anticorte": 45,
+    "armadura_antiperfurante": 65,
+    "comida": 220,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 3,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 3.6,
+    "dano_cortante": 40,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 111,
@@ -6367,12 +6610,8 @@
     "ingles": "Qinglong",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -6390,8 +6629,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "forca_atributos": 0,
@@ -6403,7 +6642,19 @@
         "nome": "Gonggong"
       }
     ],
-    "icon": "aomr_qinglong_icon"
+    "icon": "aomr_qinglong_icon",
+    "pontos_de_vida": 600,
+    "velocidade_de_ataque_atk_s": 0,
+    "dps": 0,
+    "armadura_anticorte": 35,
+    "armadura_antiperfurante": 55,
+    "comida": 0,
+    "madeira": 275,
+    "ouro": 0,
+    "populacao": 4,
+    "tempo_treinamento": 15,
+    "velocidade_movimento": 4.3,
+    "multiplicador": null
   },
   {
     "id": 112,
@@ -6411,12 +6662,8 @@
     "ingles": "Zhuque",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -6434,8 +6681,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "forca_atributos": 0,
@@ -6447,7 +6694,31 @@
         "nome": "Zhurong"
       }
     ],
-    "icon": "aomr_zhuque_icon"
+    "icon": "aomr_zhuque_icon",
+    "pontos_de_vida": 650,
+    "velocidade_de_ataque_atk_s": 4,
+    "dps": 80,
+    "armadura_anticorte": 30,
+    "armadura_antiperfurante": 30,
+    "comida": 0,
+    "madeira": 100,
+    "ouro": 200,
+    "populacao": 4,
+    "tempo_treinamento": 24,
+    "velocidade_movimento": 4,
+    "dano_cortante": 20,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 113,
@@ -6455,16 +6726,8 @@
     "ingles": "Raven",
     "tipo": [
       {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -6489,7 +6752,7 @@
         "nome": "Templo (Nórdico)"
       }
     ],
-    "tempo_treinamento": 180,
+    "tempo_treinamento": 0,
     "velocidade_movimento": 4,
     "forca_atributos": -66,
     "forte_contra": "-",
@@ -6500,12 +6763,18 @@
         "nome": "Odin"
       }
     ],
-    "icon": "aomr_raven_icon"
+    "icon": "aomr_raven_icon",
+    "velocidade_de_ataque_atk_s": 0,
+    "dps": 0,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 0
   },
   {
     "id": 114,
-    "nome": "Belerofonte",
-    "ingles": "Bellerophon",
+    "nome": "Belerofonte (Herói)",
+    "ingles": "Bellerophon (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -6534,12 +6803,47 @@
         "nome": "Zeus"
       }
     ],
-    "icon": "aomr_bellerophon_icon"
+    "icon": "aomr_bellerophon_icon",
+    "pontos_de_vida": 440,
+    "velocidade_de_ataque_atk_s": 1.2,
+    "dps": 18,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 55,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 400,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 6,
+    "dano_cortante": 15,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "4.5"
+      }
+    ],
+    "construcao": [
+      {
+        "nome": "Centro Urbano (Grego)",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
+      }
+    ]
   },
   {
     "id": 115,
-    "nome": "Polifemo",
-    "ingles": "Polyphemus",
+    "nome": "Polifemo (Herói)",
+    "ingles": "Polyphemus (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -6563,7 +6867,7 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "10"
+        "value": "4"
       }
     ],
     "forca_atributos": 0,
@@ -6575,12 +6879,40 @@
         "nome": "Poseidon"
       }
     ],
-    "icon": "aomr_polyphemus_icon"
+    "icon": "aomr_polyphemus_icon",
+    "pontos_de_vida": 700,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 37.5,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 40,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 400,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 4.1,
+    "dano_cortante": 25,
+    "construcao": [
+      {
+        "nome": "Centro Urbano (Grego)",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
+      }
+    ]
   },
   {
     "id": 116,
-    "nome": "Perseus",
-    "ingles": "Perseus",
+    "nome": "Perseus (Herói)",
+    "ingles": "Perseus (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -6609,12 +6941,47 @@
         "nome": "Hades"
       }
     ],
-    "icon": "aomr_perseus_icon"
+    "icon": "aomr_perseus_icon",
+    "pontos_de_vida": 480,
+    "velocidade_de_ataque_atk_s": 1.5,
+    "dps": 27,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 40,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 400,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 4.3,
+    "dano_cortante": 18,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "7"
+      }
+    ],
+    "construcao": [
+      {
+        "nome": "Centro Urbano (Grego)",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
+      }
+    ]
   },
   {
     "id": 117,
-    "nome": "Nezha (Criança)",
-    "ingles": "Nezha (Child)",
+    "nome": "Nezha (Herói)",
+    "ingles": "Nezha (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -6630,7 +6997,7 @@
     "era": [
       {
         "id": 2,
-        "nome": "Clássica :aomr_classical_age_icon:"
+        "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -6641,38 +7008,38 @@
         "value": "6.5"
       }
     ],
-    "pontos_de_vida": 225,
-    "dano_cortante": 9,
+    "pontos_de_vida": 400,
+    "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 7.5,
+    "dps": 18,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "comida": 0,
     "madeira": 0,
-    "ouro": 150,
+    "ouro": 450,
     "favor": 5,
     "populacao": 3,
-    "tempo_treinamento": 10,
+    "tempo_treinamento": 15,
     "velocidade_movimento": 5,
     "forca_atributos": 209.5,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_nezha_child_icon"
+    "icon": "aomr_nezha_icon"
   },
   {
     "id": 118,
-    "nome": "Jiang Ziya",
-    "ingles": "Jiang Ziya",
+    "nome": "Jiang Ziya (Herói)",
+    "ingles": "Jiang Ziya (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -6697,15 +7064,14 @@
     ],
     "pontos_de_vida": 275,
     "dano_perfurante": 8,
-    "dano_divino": 4,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 13.333333333333,
+    "dps": 9.6,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "comida": 150,
@@ -6714,7 +7080,7 @@
     "favor": 5,
     "populacao": 3,
     "tempo_treinamento": 20,
-    "velocidade_movimento": 4.5,
+    "velocidade_movimento": 5.65,
     "forca_atributos": 129.833333333333,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -6722,8 +7088,8 @@
   },
   {
     "id": 119,
-    "nome": "Yang Jian",
-    "ingles": "Yang Jian",
+    "nome": "Yang Jian (Herói)",
+    "ingles": "Yang Jian (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -6753,8 +7119,8 @@
     "dano_cortante": 14,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "forca_atributos": 0,
@@ -6766,16 +7132,27 @@
         "nome": "Fu Xi"
       }
     ],
-    "icon": "aomr_yang_jian_icon"
+    "icon": "aomr_yang_jian_icon",
+    "pontos_de_vida": 420,
+    "velocidade_de_ataque_atk_s": 1.4,
+    "dps": 19.6,
+    "armadura_anticorte": 35,
+    "armadura_antiperfurante": 40,
+    "comida": 200,
+    "madeira": 0,
+    "ouro": 300,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 4.5
   },
   {
     "id": 120,
-    "nome": "Li Jing",
-    "ingles": "Li Jing",
+    "nome": "Li Jing (Herói)",
+    "ingles": "Li Jing (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -6801,8 +7178,8 @@
     "dano_perfurante": 9,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "forca_atributos": 0,
@@ -6814,12 +7191,23 @@
         "nome": "Nu Wa"
       }
     ],
-    "icon": "aomr_li_jing_icon"
+    "icon": "aomr_li_jing_icon",
+    "pontos_de_vida": 300,
+    "velocidade_de_ataque_atk_s": 1.4,
+    "dps": 12.6,
+    "armadura_anticorte": 30,
+    "armadura_antiperfurante": 35,
+    "comida": 0,
+    "madeira": 200,
+    "ouro": 300,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 4.5
   },
   {
     "id": 121,
-    "nome": "Wen Zhong",
-    "ingles": "Wen Zhong",
+    "nome": "Wen Zhong (Herói)",
+    "ingles": "Wen Zhong (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -6850,8 +7238,8 @@
     "dano_contundente": 50,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "forca_atributos": 0,
@@ -6863,17 +7251,24 @@
         "nome": "Shennong"
       }
     ],
-    "icon": "aomr_wen_zhong_icon"
+    "icon": "aomr_wen_zhong_icon",
+    "pontos_de_vida": 450,
+    "velocidade_de_ataque_atk_s": 2,
+    "dps": 20,
+    "armadura_anticorte": 30,
+    "armadura_antiperfurante": 60,
+    "comida": 150,
+    "madeira": 150,
+    "ouro": 200,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 5.8
   },
   {
     "id": 122,
     "nome": "Fanático (Herói)",
     "ingles": "Fanatic (Hero)",
     "tipo": [
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -6894,11 +7289,6 @@
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:, Soft-Cavalaria :aomr_type_cavalry_icon:, Soft-Infantaria :aomr_type_infantry_icon:",
     "multiplicador": [
       {
-        "type": "Unidade mítica",
-        "icon": "aomr_type_myth_unit_icon",
-        "value": "6"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon",
         "value": "1.5"
@@ -6907,6 +7297,11 @@
         "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon",
         "value": "1.5"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
       }
     ],
     "pontos_de_vida": 170,
@@ -6934,17 +7329,15 @@
     ],
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_fanatic_hero_icon"
+    "icon": "aomr_fanatic_hero_icon",
+    "tempo_treinamento": 0,
+    "construcao": null
   },
   {
     "id": 123,
-    "nome": "Herói do Ragnarok",
+    "nome": "Herói de Ragnarok",
     "ingles": "Hero of Ragnarok",
     "tipo": [
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -6970,23 +7363,28 @@
         "value": "4"
       }
     ],
-    "pontos_de_vida": 189,
-    "dano_cortante": 13.1,
+    "pontos_de_vida": 130,
+    "dano_cortante": 10,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 10.076923076923,
+    "dps": 13,
     "armadura_anticorte": 25,
-    "armadura_antiperfurante": 15,
+    "armadura_antiperfurante": 20,
     "populacao": 2,
     "velocidade_movimento": 4.3,
     "forca_atributos": 241.376923076923,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "icon": "aomr_hero_of_ragnarok_icon"
+    "icon": "aomr_hero_of_ragnarok_icon",
+    "comida": 80,
+    "madeira": 0,
+    "ouro": 40,
+    "tempo_treinamento": 0,
+    "construcao": null
   },
   {
     "id": 124,
-    "nome": "Nezha (Jovem)",
-    "ingles": "Nezha (Youth)",
+    "nome": "Nezha (Herói)",
+    "ingles": "Nezha (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -7002,7 +7400,7 @@
     "era": [
       {
         "id": 3,
-        "nome": "Heróica :aomr_heroic_age_icon:"
+        "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
@@ -7013,29 +7411,29 @@
         "value": "6.5"
       }
     ],
-    "pontos_de_vida": 300,
-    "dano_cortante": 12,
+    "pontos_de_vida": 400,
+    "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 10,
+    "dps": 18,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "Academia Imperial",
+        "id": 44
       }
     ],
     "comida": 0,
     "madeira": 0,
-    "ouro": 300,
+    "ouro": 450,
     "favor": 5,
     "populacao": 3,
-    "tempo_treinamento": 10,
+    "tempo_treinamento": 15,
     "velocidade_movimento": 5,
     "forca_atributos": 212,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_nezha_youth_icon"
+    "icon": "aomr_nezha_icon"
   },
   {
     "id": 125,
@@ -7068,9 +7466,9 @@
       }
     ],
     "pontos_de_vida": 400,
-    "dano_cortante": 14,
+    "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 11.666666666667,
+    "dps": 18,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 30,
     "construcao": [
@@ -7097,11 +7495,7 @@
     "ingles": "Kitsune",
     "tipo": [
       {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7127,26 +7521,26 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 100,
     "dano_cortante": 6,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 4,
+    "dps": 9,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "comida": 25,
     "favor": 8,
     "populacao": 1,
     "tempo_treinamento": 15,
-    "velocidade_movimento": 5.7,
+    "velocidade_movimento": 6,
     "forca_atributos": 151.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -7164,7 +7558,9 @@
         "nome": "Susanoo"
       }
     ],
-    "icon": "aomr_kitsune_icon"
+    "icon": "aomr_kitsune_icon",
+    "madeira": 0,
+    "ouro": 0
   },
   {
     "id": 127,
@@ -7172,7 +7568,7 @@
     "ingles": "Kamaitachi",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7198,26 +7594,26 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 300,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 0.7,
-    "dps": 17.142857142857,
+    "dps": 8.4,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "comida": 150,
     "favor": 12,
     "populacao": 3,
     "tempo_treinamento": 14,
-    "velocidade_movimento": 4,
+    "velocidade_movimento": 4.8,
     "forca_atributos": 299.142857142857,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -7227,7 +7623,9 @@
         "nome": "Ame-no-Uzume"
       }
     ],
-    "icon": "aomr_kamaitachi_icon"
+    "icon": "aomr_kamaitachi_icon",
+    "madeira": 0,
+    "ouro": 0
   },
   {
     "id": 128,
@@ -7235,12 +7633,8 @@
     "ingles": "Wanyūdō",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -7265,20 +7659,20 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 300,
     "dano_contundente": 35,
     "dano_area": 2.5,
     "velocidade_de_ataque_atk_s": 1.8,
-    "dps": 1.388888888889,
+    "dps": 63,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 65,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "madeira": 140,
@@ -7295,7 +7689,10 @@
         "nome": "Minakatatomi"
       }
     ],
-    "icon": "aomr_wanyudo_icon"
+    "icon": "aomr_wanyudo_icon",
+    "comida": 0,
+    "ouro": 0,
+    "dano_contusao": 35
   },
   {
     "id": 129,
@@ -7303,7 +7700,7 @@
     "ingles": "Jorogumo",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7329,22 +7726,22 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.5"
       }
     ],
-    "pontos_de_vida": 400,
+    "pontos_de_vida": 420,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 13.333333333333,
+    "dps": 19.2,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
-    "ouro": 160,
+    "ouro": 150,
     "favor": 18,
     "populacao": 3,
     "tempo_treinamento": 15,
@@ -7358,7 +7755,9 @@
         "nome": "Inari Okami"
       }
     ],
-    "icon": "aomr_jorogumo_icon"
+    "icon": "aomr_jorogumo_icon",
+    "comida": 0,
+    "madeira": 0
   },
   {
     "id": 130,
@@ -7366,7 +7765,7 @@
     "ingles": "Tengu",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7392,22 +7791,22 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 600,
-    "dano_cortante": 16,
+    "dano_cortante": 20,
     "velocidade_de_ataque_atk_s": 0.8,
-    "dps": 20,
+    "dps": 16,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
-    "madeira": 200,
+    "madeira": 250,
     "favor": 15,
     "populacao": 3,
     "tempo_treinamento": 20,
@@ -7421,7 +7820,9 @@
         "nome": "Hachiman"
       }
     ],
-    "icon": "aomr_tengu_icon"
+    "icon": "aomr_tengu_icon",
+    "comida": 0,
+    "ouro": 0
   },
   {
     "id": 131,
@@ -7429,7 +7830,7 @@
     "ingles": "Raiju",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7455,7 +7856,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 700,
@@ -7466,8 +7867,8 @@
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "ouro": 220,
@@ -7484,7 +7885,9 @@
         "nome": "Raijin"
       }
     ],
-    "icon": "aomr_raiju_icon"
+    "icon": "aomr_raiju_icon",
+    "comida": 0,
+    "madeira": 0
   },
   {
     "id": 132,
@@ -7492,11 +7895,7 @@
     "ingles": "Oni",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7522,27 +7921,27 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.5%"
+        "value": "0.5"
       }
     ],
     "pontos_de_vida": 1100,
     "dano_cortante": 40,
     "dano_contundente": 60,
     "velocidade_de_ataque_atk_s": 2.5,
-    "dps": 16,
+    "dps": 100,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "comida": 300,
     "favor": 20,
     "populacao": 4,
     "tempo_treinamento": 15,
-    "velocidade_movimento": 3.7,
+    "velocidade_movimento": 3.5,
     "forca_atributos": 1040.7,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
@@ -7552,7 +7951,9 @@
         "nome": "Fujin"
       }
     ],
-    "icon": "aomr_oni_icon"
+    "icon": "aomr_oni_icon",
+    "madeira": 0,
+    "ouro": 0
   },
   {
     "id": 134,
@@ -7560,8 +7961,8 @@
     "ingles": "Shinigami",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -7590,17 +7991,15 @@
       }
     ],
     "pontos_de_vida": 300,
-    "dano_perfurante": 20,
-    "dano_divino": 20,
     "dano_area": 2,
-    "velocidade_de_ataque_atk_s": 2,
-    "dps": 31,
+    "velocidade_de_ataque_atk_s": 0,
+    "dps": 0,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "madeira": 275,
@@ -7617,7 +8016,9 @@
         "nome": "Watatsumi"
       }
     ],
-    "icon": "aomr_shinigami_icon"
+    "icon": "aomr_shinigami_icon",
+    "comida": 0,
+    "ouro": 0
   },
   {
     "id": 135,
@@ -7625,12 +8026,8 @@
     "ingles": "Onmoraki",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -7655,7 +8052,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 550,
@@ -7666,8 +8063,8 @@
     "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "comida": 250,
@@ -7684,7 +8081,9 @@
         "nome": "Okuninushi"
       }
     ],
-    "icon": "aomr_onmoraki_icon"
+    "icon": "aomr_onmoraki_icon",
+    "madeira": 0,
+    "ouro": 0
   },
   {
     "id": 136,
@@ -7692,11 +8091,7 @@
     "ingles": "Asura",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7722,7 +8117,7 @@
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon",
-        "value": "0.25%"
+        "value": "0.25"
       }
     ],
     "pontos_de_vida": 1000,
@@ -7730,13 +8125,13 @@
     "dano_contundente": 30,
     "dano_area": 5,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 17.5,
+    "dps": 60,
     "armadura_anticorte": 45,
     "armadura_antiperfurante": 65,
     "construcao": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "comida": 250,
@@ -7754,7 +8149,8 @@
         "nome": "Takemikazuchi"
       }
     ],
-    "icon": "aomr_asura_icon"
+    "icon": "aomr_asura_icon",
+    "madeira": 0
   },
   {
     "id": 138,
@@ -7762,7 +8158,7 @@
     "ingles": "Shade of Hades",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
       }
     ],
@@ -7782,9 +8178,9 @@
     "pontos_de_vida": 100,
     "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 6,
-    "armadura_anticorte": 50,
-    "armadura_antiperfurante": 50,
+    "dps": 24,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 20,
     "construcao": [
       {
         "id": 21,
@@ -7807,17 +8203,13 @@
         "nome": "Hades"
       }
     ],
-    "icon": "aomr_shade_of_hades_icon"
+    "icon": "aomr_hades_shade_icon"
   },
   {
     "id": 139,
     "nome": "Miko (Heroína)",
     "ingles": "Miko (Hero)",
     "tipo": [
-      {
-        "type": "Curandeiro✨",
-        "icon": ""
-      },
       {
         "type": "Herói",
         "icon": "aomr_type_hero_icon"
@@ -7846,23 +8238,31 @@
     "pontos_de_vida": 50,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 4,
+    "dps": 16,
     "armadura_anticorte": 25,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 7,
-        "nome": "Centro Urbano (Japonês)"
+        "nome": "Centro Urbano (Japonês)",
+        "id": 7
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 50,
     "populacao": 1,
-    "tempo_treinamento": 9,
+    "tempo_treinamento": 12,
     "velocidade_movimento": 3.8,
     "forca_atributos": 82.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_miko_icon"
+    "icon": "aomr_miko_icon",
+    "madeira": 0,
+    "ouro": 0
   },
   {
     "id": 140,
@@ -7872,10 +8272,6 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -7901,13 +8297,13 @@
     "pontos_de_vida": 80,
     "dano_perfurante": 7,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 4.666666666667,
+    "dps": 10.5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       }
     ],
     "madeira": 60,
@@ -7919,7 +8315,8 @@
     "forca_atributos": 100.866666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_bushi_icon"
+    "icon": "aomr_bushi_icon",
+    "comida": 0
   },
   {
     "id": 141,
@@ -7951,22 +8348,22 @@
         "value": "3"
       }
     ],
-    "pontos_de_vida": 200,
+    "pontos_de_vida": 105,
     "dano_cortante": 6,
-    "velocidade_de_ataque_atk_s": 0.9,
-    "dps": 6.666666666667,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 6,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       }
     ],
     "comida": 55,
     "ouro": 25,
     "populacao": 2,
-    "tempo_treinamento": 8,
+    "tempo_treinamento": 10.5,
     "velocidade_movimento": 4.8,
     "forca_atributos": 211.466666666667,
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
@@ -7977,7 +8374,8 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "icon": "aomr_yari_spearman_icon"
+    "icon": "aomr_yari_spearman_icon",
+    "madeira": 0
   },
   {
     "id": 142,
@@ -8013,19 +8411,19 @@
     "dano_perfurante": 8,
     "alcance": 18,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 5.333333333333,
+    "dps": 12,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       }
     ],
     "madeira": 50,
     "ouro": 40,
     "populacao": 2,
-    "tempo_treinamento": 12,
+    "tempo_treinamento": 15,
     "velocidade_movimento": 4,
     "forca_atributos": 95.333333333333,
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
@@ -8036,20 +8434,17 @@
         "icon": "aomr_type_infantry_icon"
       }
     ],
-    "icon": "aomr_yumi_archer_icon"
+    "icon": "aomr_yumi_archer_icon",
+    "comida": 0
   },
   {
     "id": 143,
-    "nome": "Onna-musha (Herói)",
-    "ingles": "Bushi",
+    "nome": "Bushi (Herói)",
+    "ingles": "Bushi (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
-      },
-      {
-        "type": "Infantaria",
-        "icon": "aomr_type_infantry_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -8069,31 +8464,32 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "6"
+        "value": "8"
       }
     ],
-    "pontos_de_vida": 200,
-    "dano_cortante": 16,
+    "pontos_de_vida": 80,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 10.666666666667,
-    "armadura_anticorte": 45,
-    "armadura_antiperfurante": 20,
+    "dps": 10.5,
+    "armadura_anticorte": 15,
+    "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
-    "comida": 130,
-    "ouro": 90,
+    "comida": 0,
+    "ouro": 50,
     "favor": 4,
-    "populacao": 4,
-    "tempo_treinamento": 26,
-    "velocidade_movimento": 4.3,
+    "populacao": 3,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 4.2,
     "forca_atributos": 139.966666666667,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_bushi_icon"
+    "icon": "aomr_bushi_icon",
+    "madeira": 60,
+    "dano_perfurante": 7
   },
   {
     "id": 144,
@@ -8103,10 +8499,6 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Cavalaria",
-        "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
@@ -8132,8 +8524,8 @@
     "armadura_antiperfurante": 25,
     "construcao": [
       {
-        "id": 66,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 66
       }
     ],
     "madeira": 75,
@@ -8144,7 +8536,8 @@
     "forca_atributos": 110,
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
-    "icon": "aomr_yumi_horse_archer_icon"
+    "icon": "aomr_yumi_horse_archer_icon",
+    "comida": 0
   },
   {
     "id": 145,
@@ -8184,14 +8577,14 @@
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 66,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 66
       }
     ],
     "comida": 45,
     "ouro": 70,
     "populacao": 3,
-    "tempo_treinamento": 16,
+    "tempo_treinamento": 15.5,
     "velocidade_movimento": 6,
     "forca_atributos": 148.5,
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
@@ -8206,20 +8599,17 @@
         "icon": "aomr_type_cavalry_icon"
       }
     ],
-    "icon": "aomr_naginata_rider_icon"
+    "icon": "aomr_naginata_rider_icon",
+    "madeira": 0
   },
   {
     "id": 146,
-    "nome": "Onmyyoji (Herói)",
-    "ingles": "Onmyyoji (Hero)",
+    "nome": "Onmyōji (Herói)",
+    "ingles": "Onmyōji (Hero)",
     "tipo": [
       {
-        "type": "Curandeiro✨",
-        "icon": ""
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -8244,16 +8634,16 @@
     ],
     "pontos_de_vida": 120,
     "dano_contundente": 60,
-    "dano_divino": 6,
+    "dano_divino": 5,
     "dano_area": 2,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 9.333333333333,
+    "dps": 7.5,
     "armadura_anticorte": 5,
-    "armadura_antiperfurante": 30,
+    "armadura_antiperfurante": 40,
     "construcao": [
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "ouro": 250,
@@ -8264,7 +8654,9 @@
     "forca_atributos": 22.133333333333,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Herói :aomr_type_hero_icon:",
-    "icon": "aomr_onmyoji_icon"
+    "icon": "aomr_onmyoji_icon",
+    "comida": 0,
+    "madeira": 0
   },
   {
     "id": 147,
@@ -8274,10 +8666,6 @@
       {
         "type": "Cavalaria",
         "icon": "aomr_type_cavalry_icon"
-      },
-      {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -8303,13 +8691,13 @@
     "pontos_de_vida": 180,
     "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 10,
+    "dps": 22.5,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 50,
     "construcao": [
       {
-        "id": 66,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 66
       }
     ],
     "comida": 50,
@@ -8321,7 +8709,8 @@
     "forca_atributos": 163.5,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon: | Infantaria :aomr_type_infantry_icon:",
-    "icon": "aomr_daimyo_icon"
+    "icon": "aomr_daimyo_icon",
+    "madeira": 0
   },
   {
     "id": 151,
@@ -8329,12 +8718,8 @@
     "ingles": "Harpy",
     "tipo": [
       {
-        "type": "Mítica",
+        "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon"
-      },
-      {
-        "type": "Voador",
-        "icon": "aomr_type_flying_unit_icon"
       }
     ],
     "panteao": [
@@ -8352,8 +8737,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "forca_atributos": 0,
@@ -8365,7 +8750,31 @@
         "nome": "Deméter"
       }
     ],
-    "icon": "aomr_harpy_demeter_icon"
+    "icon": "aomr_harpy_icon",
+    "pontos_de_vida": 240,
+    "velocidade_de_ataque_atk_s": 1.8,
+    "dps": 27,
+    "armadura_anticorte": 15,
+    "armadura_antiperfurante": 40,
+    "comida": 150,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 3,
+    "tempo_treinamento": 14,
+    "velocidade_movimento": 5,
+    "dano_perfurante": 15,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.25"
+      }
+    ]
   },
   {
     "id": 152,
@@ -8373,8 +8782,8 @@
     "ingles": "Lykaon",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -8391,14 +8800,24 @@
     ],
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
+      },
+      {
+        "nome": "Templo (Grego)",
+        "id": 12
       }
     ],
     "madeira": 80,
     "ouro": 100,
     "favor": 15,
-    "populacao": 3,
+    "populacao": 2,
     "tempo_treinamento": 20,
     "forca_atributos": -113,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -8409,7 +8828,16 @@
         "nome": "Pan"
       }
     ],
-    "icon": "aomr_lykaon_icon"
+    "icon": "aomr_lykaon_icon",
+    "pontos_de_vida": 55,
+    "velocidade_de_ataque_atk_s": 2,
+    "dps": 24,
+    "armadura_anticorte": 25,
+    "armadura_antiperfurante": 35,
+    "comida": 0,
+    "velocidade_movimento": 3.8,
+    "dano_perfurante": 12,
+    "multiplicador": null
   },
   {
     "id": 153,
@@ -8417,8 +8845,8 @@
     "ingles": "Hamadryad",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -8436,12 +8864,12 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
-    "madeira": 150,
-    "ouro": 100,
+    "madeira": 200,
+    "ouro": 50,
     "favor": 25,
     "populacao": 3,
     "forca_atributos": -128,
@@ -8453,7 +8881,28 @@
         "nome": "Héstia"
       }
     ],
-    "icon": "aomr_hamadryad_icon"
+    "icon": "aomr_hamadryad_icon",
+    "pontos_de_vida": 600,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 30,
+    "armadura_anticorte": 50,
+    "armadura_antiperfurante": 60,
+    "comida": 0,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 4.5,
+    "dano_perfurante": 30,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 154,
@@ -8461,8 +8910,8 @@
     "ingles": "Siren",
     "tipo": [
       {
-        "type": "Mítica",
-        "icon": "aomr_type_myth_unit_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -8480,8 +8929,8 @@
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "construcao": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "forca_atributos": 0,
@@ -8493,16 +8942,40 @@
         "nome": "Perséfone"
       }
     ],
-    "icon": "aomr_siren_icon"
+    "icon": "aomr_siren_icon",
+    "pontos_de_vida": 600,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 36,
+    "armadura_anticorte": 60,
+    "armadura_antiperfurante": 60,
+    "comida": 225,
+    "madeira": 0,
+    "ouro": 0,
+    "populacao": 4,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 4.4,
+    "dano_cortante": 36,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "2"
+      },
+      {
+        "type": "Herói",
+        "icon": "aomr_type_hero_icon",
+        "value": "0.5"
+      }
+    ]
   },
   {
     "id": 155,
-    "nome": "Ícaro",
-    "ingles": "Icarus",
+    "nome": "Ícaro (Herói)",
+    "ingles": "Icarus (Hero)",
     "tipo": [
       {
-        "type": "Herói",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       }
     ],
     "panteao": [
@@ -8520,8 +8993,18 @@
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "forca_atributos": 0,
@@ -8533,12 +9016,31 @@
         "nome": "Deméter"
       }
     ],
-    "icon": "aomr_icarus_icon"
+    "icon": "aomr_icarus_icon",
+    "pontos_de_vida": 300,
+    "velocidade_de_ataque_atk_s": 1.4,
+    "dps": 19.6,
+    "armadura_anticorte": 25,
+    "armadura_antiperfurante": 25,
+    "comida": 0,
+    "madeira": 250,
+    "ouro": 100,
+    "populacao": 2,
+    "tempo_treinamento": 25,
+    "velocidade_movimento": 5,
+    "dano_perfurante": 14,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ]
   },
   {
     "id": 157,
-    "nome": "Orfeu",
-    "ingles": "Orpheus",
+    "nome": "Orfeu (Herói)",
+    "ingles": "Orpheus (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -8560,8 +9062,18 @@
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "forca_atributos": 0,
@@ -8573,12 +9085,31 @@
         "nome": "Deméter"
       }
     ],
-    "icon": "aomr_orpheus_icon"
+    "icon": "aomr_orpheus_icon",
+    "pontos_de_vida": 180,
+    "velocidade_de_ataque_atk_s": 1.2,
+    "dps": 8.4,
+    "armadura_anticorte": 35,
+    "armadura_antiperfurante": 40,
+    "comida": 100,
+    "madeira": 50,
+    "ouro": 0,
+    "populacao": 2,
+    "tempo_treinamento": 5,
+    "velocidade_movimento": 4.2,
+    "dano_perfurante": 7,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "9"
+      }
+    ]
   },
   {
     "id": 158,
-    "nome": "Iolau",
-    "ingles": "Iolaus",
+    "nome": "Iolau (Herói)",
+    "ingles": "Iolaus (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -8600,8 +9131,18 @@
     "counter_de": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "construcao": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "Centro Urbano (Grego)",
+        "id": 1
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "forca_atributos": 0,
@@ -8613,12 +9154,31 @@
         "nome": "Deméter"
       }
     ],
-    "icon": "aomr_iolaus_icon"
+    "icon": "aomr_iolaus_icon",
+    "pontos_de_vida": 300,
+    "velocidade_de_ataque_atk_s": 1.1,
+    "dps": 11,
+    "armadura_anticorte": 30,
+    "armadura_antiperfurante": 30,
+    "comida": 75,
+    "madeira": 0,
+    "ouro": 175,
+    "populacao": 3,
+    "tempo_treinamento": 20,
+    "velocidade_movimento": 5.6,
+    "dano_cortante": 10,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "8"
+      }
+    ]
   },
   {
     "id": 159,
-    "nome": "Rei Midas",
-    "ingles": "King Midas",
+    "nome": "Rei Midas (Herói)",
+    "ingles": "King Midas (Hero)",
     "tipo": [
       {
         "type": "Herói",
@@ -8647,26 +9207,57 @@
         "nome": "Deméter"
       }
     ],
-    "icon": "aomr_midas_icon"
+    "icon": "aomr_midas_icon",
+    "pontos_de_vida": 620,
+    "velocidade_de_ataque_atk_s": 1.15,
+    "dps": 18.4,
+    "armadura_anticorte": 30,
+    "armadura_antiperfurante": 45,
+    "comida": 0,
+    "madeira": 0,
+    "ouro": 350,
+    "populacao": 4,
+    "tempo_treinamento": 30,
+    "velocidade_movimento": 4.5,
+    "dano_divino": 16,
+    "multiplicador": [
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon",
+        "value": "6"
+      }
+    ],
+    "construcao": [
+      {
+        "nome": "Centro Urbano (Grego)",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
+      },
+      {
+        "nome": "CitadelCenter"
+      }
+    ]
   },
   {
     "id": 160,
     "nome": "Espião Quimichin",
-    "ingles": "Quimchim Spy",
+    "ingles": "Quimichin Spy",
     "tipo": [
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
-      },
-      {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
       }
     ],
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -8687,20 +9278,26 @@
     "dano_perfurante": 2,
     "alcance": 4,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 1.538461538462,
+    "dps": 2.6,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 45,
     "construcao": [
       {
-        "id": 9,
-        "nome": "Centro Urbano (Asteca)"
+        "nome": "Centro Urbano (Asteca)",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "comida": 0,
-    "madeira": 0,
-    "ouro": 0,
+    "madeira": 30,
+    "ouro": 15,
     "populacao": 1,
-    "velocidade_movimento": 4.3,
+    "velocidade_movimento": 4.5,
     "forca_atributos": 180.838461538462,
     "categoria": [
       {
@@ -8710,11 +9307,12 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "icon": "aomr_quimchim_spy_icon"
+    "icon": "aomr_quimchin_spy_icon",
+    "tempo_treinamento": 4
   },
   {
     "id": 161,
-    "nome": "Sarcedote de Guerra (Herói)",
+    "nome": "Sacerdote de Guerra (Herói)",
     "ingles": "Warrior Priest (Hero)",
     "tipo": [
       {
@@ -8725,7 +9323,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -8739,30 +9337,31 @@
       {
         "type": "Unidade mítica",
         "icon": "aomr_type_myth_unit_icon",
-        "value": "7"
+        "value": "9"
       }
     ],
-    "pontos_de_vida": 90,
-    "dano_cortante": 2,
-    "velocidade_de_ataque_atk_s": 1,
-    "dps": 2,
+    "pontos_de_vida": 100,
+    "velocidade_de_ataque_atk_s": 2,
+    "dps": 24,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 35,
     "construcao": [
       {
-        "id": 12,
-        "nome": "Templo (Asteca)"
+        "nome": "Templo (Asteca)",
+        "id": 12
       }
     ],
     "comida": 40,
     "madeira": 0,
-    "ouro": 70,
+    "ouro": 60,
     "populacao": 2,
     "velocidade_movimento": 4.8,
     "forca_atributos": 94.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_warrior_priest_hero_icon"
+    "icon": "aomr_warrior_priest_icon",
+    "tempo_treinamento": 11,
+    "dano_perfurante": 12
   },
   {
     "id": 162,
@@ -8777,7 +9376,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -8802,13 +9401,13 @@
     "armadura_antiperfurante": 10,
     "construcao": [
       {
-        "id": 74,
-        "nome": "War Hut"
+        "nome": "War Hut",
+        "id": 74
       }
     ],
-    "comida": 45,
+    "comida": 55,
     "madeira": 0,
-    "ouro": 25,
+    "ouro": 15,
     "populacao": 2,
     "velocidade_movimento": 4.8,
     "forca_atributos": 108.8,
@@ -8820,7 +9419,8 @@
     ],
     "forte_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "icon": "aomr_tlamanih_spearman_icon"
+    "icon": "aomr_tlamanih_spearman_icon",
+    "tempo_treinamento": 9
   },
   {
     "id": 163,
@@ -8835,7 +9435,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -8852,22 +9452,22 @@
         "value": "1.25"
       }
     ],
-    "pontos_de_vida": 85,
+    "pontos_de_vida": 65,
     "dano_perfurante": 5,
     "alcance": 14,
     "velocidade_de_ataque_atk_s": 0.9,
-    "dps": 5.555555555556,
+    "dps": 4.5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 74,
-        "nome": "War Hut"
+        "nome": "War Hut",
+        "id": 74
       }
     ],
     "comida": 0,
-    "madeira": 50,
-    "ouro": 30,
+    "madeira": 60,
+    "ouro": 20,
     "populacao": 2,
     "velocidade_movimento": 4.5,
     "forca_atributos": 133.055555555556,
@@ -8879,7 +9479,8 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "icon": "aomr_tequihua_archer_icon"
+    "icon": "aomr_tequihua_archer_icon",
+    "tempo_treinamento": 13.5
   },
   {
     "id": 164,
@@ -8894,7 +9495,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -8914,13 +9515,13 @@
     "pontos_de_vida": 105,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 5.833333333333,
+    "dps": 8.4,
     "armadura_anticorte": 10,
-    "armadura_antiperfurante": 45,
+    "armadura_antiperfurante": 55,
     "construcao": [
       {
-        "id": 75,
-        "nome": "Noble's Hut"
+        "nome": "Noble's Hut",
+        "id": 75
       }
     ],
     "comida": 30,
@@ -8937,7 +9538,8 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "icon": "aomr_coyote_warrior_icon"
+    "icon": "aomr_coyote_warrior_icon",
+    "tempo_treinamento": 11
   },
   {
     "id": 165,
@@ -8952,7 +9554,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -8966,13 +9568,13 @@
     "pontos_de_vida": 155,
     "dano_cortante": 20,
     "velocidade_de_ataque_atk_s": 1.6,
-    "dps": 12.5,
+    "dps": 32,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 15,
     "construcao": [
       {
-        "id": 75,
-        "nome": "Noble's Hut"
+        "nome": "Noble's Hut",
+        "id": 75
       }
     ],
     "comida": 70,
@@ -8983,7 +9585,8 @@
     "forca_atributos": 154,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "icon": "aomr_ocelotl_warrior_icon"
+    "icon": "aomr_ocelotl_warrior_icon",
+    "tempo_treinamento": 17
   },
   {
     "id": 167,
@@ -8998,13 +9601,13 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
       {
         "id": 2,
-        "nome": "Clássica :aomr_classical_age_icon:"
+        "nome": "Heróica :aomr_heroic_age_icon:"
       }
     ],
     "counter_de": "Todos👥",
@@ -9019,13 +9622,13 @@
     "dano_perfurante": 10,
     "alcance": 19,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 6.666666666667,
+    "dps": 15,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
-        "id": 75,
-        "nome": "Noble's Hut"
+        "nome": "Noble's Hut",
+        "id": 75
       }
     ],
     "comida": 0,
@@ -9036,17 +9639,14 @@
     "forca_atributos": 138.166666666667,
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "icon": "aomr_eagle_warrior_icon"
+    "icon": "aomr_eagle_warrior_icon",
+    "tempo_treinamento": 20
   },
   {
     "id": 168,
     "nome": "Esmagador Otontin",
     "ingles": "Otontin Smasher",
     "tipo": [
-      {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
       {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
@@ -9055,7 +9655,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9068,31 +9668,33 @@
     "multiplicador": [
       {
         "type": "Construção",
-        "icon": "aomr_type_building_icon",
+        "icon": "",
         "value": "8"
       }
     ],
-    "pontos_de_vida": 264,
+    "pontos_de_vida": 270,
     "dano_contundente": 12.1,
     "velocidade_de_ataque_atk_s": 1.4,
-    "dps": 8.642857142857,
-    "armadura_anticorte": 25,
+    "dps": 15.4,
+    "armadura_anticorte": 20,
     "armadura_antiperfurante": 65,
     "construcao": [
       {
-        "id": 77,
-        "nome": "Great Temple"
+        "nome": "Great Temple",
+        "id": 77
       }
     ],
     "comida": 0,
-    "madeira": 150,
-    "ouro": 100,
+    "madeira": 120,
+    "ouro": 80,
     "populacao": 4,
     "velocidade_movimento": 3.2,
     "forca_atributos": 236.842857142857,
     "forte_contra": "Construção :aomr_type_building_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "icon": "aomr_medium_otontin_smasher_icon"
+    "icon": "aomr_otontin_icon",
+    "tempo_treinamento": 11,
+    "dano_cortante": 11
   },
   {
     "id": 169,
@@ -9107,7 +9709,7 @@
     "panteao": [
       {
         "id": 7,
-        "nome": "Astecas :aomr_pantheon_azteca_icon:"
+        "nome": "Asteca :aomr_pantheon_azteca_icon:"
       }
     ],
     "era": [
@@ -9124,16 +9726,16 @@
         "value": "3"
       }
     ],
-    "pontos_de_vida": 192,
-    "dano_cortante": 14.3,
+    "pontos_de_vida": 160,
+    "dano_cortante": 13,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 11,
+    "dps": 16.9,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 20,
     "construcao": [
       {
-        "id": 77,
-        "nome": "Great Temple"
+        "nome": "Great Temple",
+        "id": 77
       }
     ],
     "comida": 90,
@@ -9150,7 +9752,8 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "icon": "aomr_medium_shorn_one_icon"
+    "icon": "aomr_shorn_one_icon",
+    "tempo_treinamento": 8
   },
   {
     "id": 170,
