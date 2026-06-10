@@ -5,16 +5,24 @@
     "comida": 120,
     "construcao_origem": [
       {
-        "id": 14,
-        "nome": "Armazém"
+        "nome": "Armazém",
+        "id": 14
       },
       {
-        "id": 17,
-        "nome": "Campo Madeireiro"
+        "nome": "Campo Madeireiro",
+        "id": 17
       },
       {
-        "id": 19,
-        "nome": "Guilda Econômica"
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -40,16 +48,23 @@
     "comida": 50,
     "construcao_origem": [
       {
-        "id": 14,
-        "nome": "Armazém"
+        "nome": "Armazém",
+        "id": 14
       },
       {
-        "id": 16,
-        "nome": "Campo de Mineração"
+        "nome": "Campo de Mineração",
+        "id": 16
       },
       {
-        "id": 19,
-        "nome": "Guilda Econômica"
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "MiningCampJapanese"
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -74,20 +89,20 @@
     "beneficia": "<highlight-red>:foodaom:</highlight-red><highlight-red>Comida</highlight-red>",
     "construcao_origem": [
       {
-        "id": 15,
-        "nome": "Celeiro (Grego)"
+        "nome": "Celeiro (Grego)",
+        "id": 15
       },
       {
-        "id": 18,
-        "nome": "Celeiro (Egípcio)"
+        "nome": "Guilda Econômica",
+        "id": 19
       },
       {
-        "id": 19,
-        "nome": "Guilda Econômica"
+        "nome": "Moinho de Água",
+        "id": 67
       },
       {
-        "id": 67,
-        "nome": "Moinho de Água"
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -115,8 +130,8 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -144,8 +159,8 @@
     "comida": 75,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -172,8 +187,8 @@
     "beneficia": "<highlight-brown>:piercearmor:</highlight-brown><highlight-brown>Anti-perfurante</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -196,12 +211,24 @@
     ]
   },
   {
-    "nome": "Equipamento de Sobrevivência",
+    "nome": "Equipamento de sobrevivência",
     "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 15,
-        "nome": "Celeiro (Grego)"
+        "nome": "Celeiro (Grego)",
+        "id": 15
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -216,7 +243,7 @@
     "panteoes": "Geral",
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
-    "icon": "aomr_survival_equipment_icon",
+    "icon": "aomr_hunting_equipment_icon",
     "campo": [
       ":aomr_type_villager_icon: Aldeão: Pontos de Vida +25% :aomr_hit_points_icon:",
       ":aomr_type_villager_icon: Aldeão: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:",
@@ -228,8 +255,20 @@
     "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 15,
-        "nome": "Celeiro (Grego)"
+        "nome": "Celeiro (Grego)",
+        "id": 15
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -254,8 +293,8 @@
     "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:piercedamage:)",
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
       }
     ],
     "eras": [
@@ -280,8 +319,11 @@
     "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
+      },
+      {
+        "nome": "Obelisk"
       }
     ],
     "eras": [
@@ -306,8 +348,19 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 69,
-        "nome": "Muralha de Madeira"
+        "nome": "WallShort"
+      },
+      {
+        "nome": "WallMedium"
+      },
+      {
+        "nome": "WallLong"
+      },
+      {
+        "nome": "WallConnector"
+      },
+      {
+        "nome": "WallGate"
       }
     ],
     "eras": [
@@ -321,7 +374,7 @@
     "panteoes": "Geral",
     "tempo_s": 40,
     "tipo": "Defensivo 🛡",
-    "icon": "aomr_fortified_wall_greek_icon",
+    "icon": "aomr_stone_wall_greek_icon",
     "campo": [
       ":aomr_wooden_wall_icon: Muralha: Pontos de Vida + 100% :aomr_hit_points_icon:",
       ":aomr_wooden_wall_icon: Muralha: Adicional 7,00 LDV :los_icon_aoe3de:",
@@ -334,8 +387,17 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
+      },
+      {
+        "nome": "TownCenterAbandoned"
       }
     ],
     "eras": [
@@ -360,8 +422,17 @@
     "comida": 400,
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
+      },
+      {
+        "nome": "TownCenterAbandoned"
       }
     ],
     "eras": [
@@ -386,8 +457,24 @@
     "comida": 250,
     "construcao_origem": [
       {
-        "id": 14,
-        "nome": "Armazém"
+        "nome": "Armazém",
+        "id": 14
+      },
+      {
+        "nome": "Campo Madeireiro",
+        "id": 17
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -408,13 +495,28 @@
     ]
   },
   {
-    "nome": "Poço de Mina",
+    "nome": "Poços de Mina",
     "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow>",
     "comida": 150,
     "construcao_origem": [
       {
-        "id": 14,
-        "nome": "Armazém"
+        "nome": "Armazém",
+        "id": 14
+      },
+      {
+        "nome": "Campo de Mineração",
+        "id": 16
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "MiningCampJapanese"
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -439,8 +541,16 @@
     "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 15,
-        "nome": "Celeiro (Grego)"
+        "nome": "Celeiro (Grego)",
+        "id": 15
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
       }
     ],
     "eras": [
@@ -465,8 +575,14 @@
     "beneficia": ":aomr_town_center_greek_icon: <highlight-purple>TC</highlight-purple> (:aomr_hit_points_icon::aomr_population_provision_icon:)",
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "CitadelCenter"
+      },
+      {
+        "nome": "TownCenterAbandoned"
       }
     ],
     "eras": [
@@ -496,8 +612,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -525,8 +641,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -553,8 +669,8 @@
     "beneficia": "<highlight-brown>:piercearmor:</highlight-brown><highlight-brown>Anti-perfurante</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -581,8 +697,8 @@
     "beneficia": ":rangeicon: <highlight-red>Rastreio</highlight-red>",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -612,8 +728,8 @@
     "comida": 150,
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
       }
     ],
     "eras": [
@@ -639,8 +755,8 @@
     "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
       }
     ],
     "eras": [
@@ -669,8 +785,8 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
       }
     ],
     "eras": [
@@ -682,7 +798,7 @@
     "ingles": "Boiling Oil",
     "madeira": 300,
     "panteoes": "Geral",
-    "tempo_s": 50,
+    "tempo_s": 40,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_boiling_oil_icon",
     "campo": [
@@ -695,8 +811,11 @@
     "beneficia": ":aomr_type_tower_icon: <highlight-gray>Torre</highlight-gray> (:los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
+      },
+      {
+        "nome": "Obelisk"
       }
     ],
     "eras": [
@@ -721,8 +840,19 @@
     "comida": 500,
     "construcao_origem": [
       {
-        "id": 69,
-        "nome": "Muralha de Madeira"
+        "nome": "WallShort"
+      },
+      {
+        "nome": "WallMedium"
+      },
+      {
+        "nome": "WallLong"
+      },
+      {
+        "nome": "WallConnector"
+      },
+      {
+        "nome": "WallGate"
       }
     ],
     "eras": [
@@ -748,24 +878,37 @@
     "comida": 300,
     "construcao_origem": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       },
       {
-        "id": 62,
-        "nome": "Oficina de Cerco"
+        "nome": "Oficina de Cerco",
+        "id": 62
       },
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
       },
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Palácio",
+        "id": 60
       },
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "AsgardianHillFort"
+      },
+      {
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -790,8 +933,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 51,
-        "nome": "Mercado (Grego)"
+        "nome": "Mercado (Grego)",
+        "id": 51
       }
     ],
     "eras": [
@@ -818,8 +961,24 @@
     "comida": 300,
     "construcao_origem": [
       {
-        "id": 14,
-        "nome": "Armazém"
+        "nome": "Armazém",
+        "id": 14
+      },
+      {
+        "nome": "Campo Madeireiro",
+        "id": 17
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -845,8 +1004,23 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 14,
-        "nome": "Armazém"
+        "nome": "Armazém",
+        "id": 14
+      },
+      {
+        "nome": "Campo de Mineração",
+        "id": 16
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "MiningCampJapanese"
+      },
+      {
+        "nome": "Calpulli",
+        "id": 10
       }
     ],
     "eras": [
@@ -871,8 +1045,16 @@
     "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 15,
-        "nome": "Celeiro (Grego)"
+        "nome": "Celeiro (Grego)",
+        "id": 15
+      },
+      {
+        "nome": "Guilda Econômica",
+        "id": 19
+      },
+      {
+        "nome": "Moinho de Água",
+        "id": 67
       }
     ],
     "eras": [
@@ -898,8 +1080,8 @@
     "comida": 450,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -927,8 +1109,8 @@
     "comida": 400,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -955,8 +1137,8 @@
     "beneficia": "<highlight-brown>:piercearmor:</highlight-brown><highlight-brown>Anti-perfurante</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -983,8 +1165,8 @@
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (contra:aomr_type_building_icon:)",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -1018,24 +1200,37 @@
     "comida": 300,
     "construcao_origem": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       },
       {
-        "id": 62,
-        "nome": "Oficina de Cerco"
+        "nome": "Oficina de Cerco",
+        "id": 62
       },
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
       },
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Palácio",
+        "id": 60
       },
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "AsgardianHillFort"
+      },
+      {
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -1068,28 +1263,35 @@
     "beneficia": ":aomr_fortress_icon: Fortaleza (:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       },
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       },
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
       },
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Palácio",
+        "id": 60
       },
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "AsgardianHillFort"
       },
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Baolei",
+        "id": 61
+      },
+      {
+        "nome": "Castelo",
+        "id": 68
+      },
+      {
+        "nome": "GreatTemple",
+        "id": 77
       }
     ],
     "eras": [
@@ -1115,8 +1317,8 @@
     "beneficia": ":aomr_caravan_greek_icon: <highlight-yellow>Caravana</highlight-yellow> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 51,
-        "nome": "Mercado (Grego)"
+        "nome": "Mercado (Grego)",
+        "id": 51
       }
     ],
     "eras": [
@@ -1140,8 +1342,8 @@
     "beneficia": "<highlight-yellow>Taxa do Mercado</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 51,
-        "nome": "Mercado (Grego)"
+        "nome": "Mercado (Grego)",
+        "id": 51
       }
     ],
     "eras": [
@@ -1163,33 +1365,22 @@
     ]
   },
   {
-    "nome": "Segredo dos Titãs",
+    "nome": "Segredos dos Titãs",
     "beneficia": "<highlight-pink>Titã</highlight-pink>",
     "comida": 800,
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
       },
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "VillageCenter"
       },
       {
-        "id": 4,
-        "nome": "Centro Urbano (Nórdico)"
+        "nome": "CitadelCenter"
       },
       {
-        "id": 5,
-        "nome": "Centro Urbano (Atlante)"
-      },
-      {
-        "id": 6,
-        "nome": "Centro Urbano (Chinês)"
-      },
-      {
-        "id": 7,
-        "nome": "Centro Urbano (Japonês)"
+        "nome": "TownCenterAbandoned"
       }
     ],
     "eras": [
@@ -1213,8 +1404,12 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "eras": [
@@ -1246,12 +1441,12 @@
     ]
   },
   {
-    "nome": "Cofre de Érebus",
+    "nome": "Cofres do Érebo",
     "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow> (passivo)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Armazém",
+        "id": 14
       }
     ],
     "eras": [
@@ -1288,8 +1483,8 @@
     "comida": 75,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "eras": [
@@ -1325,8 +1520,8 @@
     "beneficia": ":aomr_minotaur_icon: <highlight-pink>Minotauro</highlight-pink> (:aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -1358,7 +1553,7 @@
         "nome": "Grego"
       }
     ],
-    "tempo_s": 40,
+    "tempo_s": 30,
     "tipo": "Defensivo 🛡",
     "icon": "aomr_labyrinth_of_minos_icon",
     "campo": [
@@ -1371,8 +1566,12 @@
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:piercearmor:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Armaria (Grega)",
+        "id": 27
+      },
+      {
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "eras": [
@@ -1416,8 +1615,12 @@
     "beneficia": ":aomr_hoplite_icon: <highlight-red>Hoplita</highlight-red> (:hackdamage::rangeicon:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Armaria (Grega)",
+        "id": 27
+      },
+      {
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "eras": [
@@ -1462,8 +1665,8 @@
     "beneficia": ":aomr_centaur_icon: <highlight-pink>Centauro</highlight-pink> (:aomr_hit_points_icon::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -1472,7 +1675,7 @@
         "nome": "Clássica :aomr_classical_age_icon:"
       }
     ],
-    "favor": 20,
+    "favor": 18,
     "god_especifico": [
       {
         "id": 1,
@@ -1488,7 +1691,7 @@
       }
     ],
     "ingles": "Sylvan Lore",
-    "madeira": 300,
+    "madeira": 250,
     "panteoes": [
       {
         "id": 1,
@@ -1511,8 +1714,8 @@
     "comida": 125,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "eras": [
@@ -1558,8 +1761,8 @@
     "beneficia": ":aomr_pegasus_icon: Pégaso (:aomr_speed_icon::los_icon_aoe3de:+grátis)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -1604,8 +1807,8 @@
     "beneficia": ":aomr_cyclops_icon: <highlight-pink>Ciclope</highlight-pink> (:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -1651,16 +1854,16 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       },
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       },
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "eras": [
@@ -1684,7 +1887,7 @@
         "nome": "Ares"
       }
     ],
-    "ingles": "Phobos&#x27; Spear of Panic",
+    "ingles": "Phobos' Spear of Panic",
     "panteoes": [
       {
         "id": 1,
@@ -1705,12 +1908,12 @@
     "beneficia": ":aomr_toxotes_icon: <highlight-blue>Toxotes</highlight-blue>",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       },
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
     "eras": [
@@ -1734,7 +1937,7 @@
         "nome": "Ares"
       }
     ],
-    "ingles": "Enyo&#x27;s Bow of Horror",
+    "ingles": "Enyo's Bow of Horror",
     "madeira": 125,
     "panteoes": [
       {
@@ -1756,12 +1959,12 @@
     "beneficia": ":aomr_hypaspist_icon: <highlight-red>Hipaspista</highlight-red> <highlight-teal>ativado ✅</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       },
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "eras": [
@@ -1785,7 +1988,7 @@
         "nome": "Ares"
       }
     ],
-    "ingles": "Deimos&#x27; Sword of Dread",
+    "ingles": "Deimos' Sword of Dread",
     "ouro": 150,
     "panteoes": [
       {
@@ -1802,12 +2005,36 @@
     ]
   },
   {
-    "nome": "Oniciência",
+    "nome": "Onisciência",
     "beneficia": "LOS:los_icon_aoe3de:",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 2
+      },
+      {
+        "nome": "Templo (Nórdico)",
+        "id": 3
+      },
+      {
+        "nome": "Templo (Atlante)",
+        "id": 4
+      },
+      {
+        "nome": "Templo (Chinês)",
+        "id": 5
+      },
+      {
+        "nome": "Templo (Japonês)",
+        "id": 6
+      },
+      {
+        "nome": "Templo (Asteca)",
+        "id": 7
       }
     ],
     "eras": [
@@ -1819,7 +2046,7 @@
     "ingles": "Omniscience",
     "ouro": 100,
     "panteoes": "Geral",
-    "tempo_s": 5,
+    "tempo_s": 4,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_omniscience_icon",
     "campo": [
@@ -1831,8 +2058,8 @@
     "beneficia": ":los_icon_aoe3de:+LOS",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -1879,8 +2106,8 @@
     "beneficia": ":aomr_temple_icon: Templo",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -1925,12 +2152,12 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       },
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
     "eras": [
@@ -1974,8 +2201,15 @@
     "beneficia": "<highlight-pink>:aomr_hydra_icon:</highlight-pink><highlight-pink>Hidra</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Doca (Grego)",
+        "id": 46
+      },
+      {
+        "nome": "Templo (Grego)",
+        "id": 21
+      },
+      {
+        "nome": "NavalShipyard"
       }
     ],
     "eras": [
@@ -2020,8 +2254,8 @@
     "beneficia": "👥 Unidades (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2061,13 +2295,13 @@
     ]
   },
   {
-    "nome": "Cavalaria Trácios",
+    "nome": "Cavalos Trácios",
     "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon:)",
     "comida": 150,
     "construcao_origem": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "eras": [
@@ -2111,8 +2345,18 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Templo (Grego)",
+        "id": 1
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -2156,8 +2400,14 @@
     "comida": 100,
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -2206,8 +2456,8 @@
     "comida": 300,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2250,8 +2500,8 @@
     "beneficia": ":aomr_colossus_icon: <highlight-pink>Colosso</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2299,8 +2549,8 @@
     "beneficia": ":aomr_colossus_icon: <highlight-pink>Colosso</highlight-pink> (:aomr_hit_points_icon::hackdamage:)",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2349,8 +2599,8 @@
     "beneficia": ":aomr_armory_icon: Arsenal (-75%:foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -2400,8 +2650,8 @@
     "beneficia": ":aomr_myrmidon_icon: Mirmidão:aomr_hetairos_icon: Hetairos:aomr_gastraphetoros_icon: Gastrafeta",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       }
     ],
     "eras": [
@@ -2455,8 +2705,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "eras": [
@@ -2496,8 +2746,8 @@
     "beneficia": ":aomr_medusa_icon: <highlight-pink>Medusa</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2539,8 +2789,8 @@
     "comida": 250,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2582,8 +2832,8 @@
     "comida": 300,
     "construcao_origem": [
       {
-        "id": 21,
-        "nome": "Templo (Grego)"
+        "nome": "Templo (Grego)",
+        "id": 21
       }
     ],
     "eras": [
@@ -2628,12 +2878,12 @@
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>",
     "construcao_origem": [
       {
-        "id": 27,
-        "nome": "Armaria (Grega)"
+        "nome": "Armaria (Grega)",
+        "id": 27
       },
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
     "eras": [
@@ -2679,8 +2929,8 @@
     "comida": 125,
     "construcao_origem": [
       {
-        "id": 57,
-        "nome": "Fortaleza"
+        "nome": "Fortaleza",
+        "id": 57
       }
     ],
     "eras": [
@@ -2725,24 +2975,40 @@
     "comida": 150,
     "construcao_origem": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       },
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       },
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "HillFort",
+        "id": 59
       },
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
+      },
+      {
+        "nome": "Palácio",
+        "id": 60
+      },
+      {
+        "nome": "AsgardianHillFort"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -2769,24 +3035,35 @@
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_hit_points_icon::piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       },
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
       },
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Oficina de Máquina",
+        "id": 45
       },
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -2801,7 +3078,7 @@
     "panteoes": "Geral",
     "tempo_s": 20,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_medium_ranged_soldiers_icon",
+    "icon": "aomr_medium_archers_icon",
     "campo": [
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:",
@@ -2821,12 +3098,12 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       },
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -2853,8 +3130,8 @@
     "comida": 150,
     "construcao_origem": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "eras": [
@@ -2882,8 +3159,8 @@
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
     "eras": [
@@ -2913,8 +3190,8 @@
     "comida": 150,
     "construcao_origem": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "eras": [
@@ -2943,12 +3220,20 @@
     "comida": 400,
     "construcao_origem": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       },
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
+      },
+      {
+        "nome": "MilitaryBarracks",
+        "id": 41
+      },
+      {
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "eras": [
@@ -2975,24 +3260,40 @@
     "comida": 300,
     "construcao_origem": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       },
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       },
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "HillFort",
+        "id": 59
       },
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
+      },
+      {
+        "nome": "Palácio",
+        "id": 60
+      },
+      {
+        "nome": "AsgardianHillFort"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -3019,24 +3320,35 @@
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_hit_points_icon::piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       },
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
       },
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Oficina de Máquina",
+        "id": 45
       },
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -3051,7 +3363,7 @@
     "panteoes": "Geral",
     "tempo_s": 30,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_ranged_soldiers_icon",
+    "icon": "aomr_heavy_archers_icon",
     "campo": [
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +15% :piercedamage:",
@@ -3071,12 +3383,20 @@
     "comida": 700,
     "construcao_origem": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       },
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
+      },
+      {
+        "nome": "MilitaryBarracks",
+        "id": 41
+      },
+      {
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "eras": [
@@ -3103,24 +3423,40 @@
     "comida": 500,
     "construcao_origem": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       },
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       },
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "HillFort",
+        "id": 59
       },
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
+      },
+      {
+        "nome": "Palácio",
+        "id": 60
+      },
+      {
+        "nome": "AsgardianHillFort"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -3143,28 +3479,39 @@
     ]
   },
   {
-    "nome": "Soldados de Longo Alcance Campeãos",
+    "nome": "Soldados de Longo Alcance Campeões",
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_hit_points_icon::piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       },
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
       },
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Oficina de Máquina",
+        "id": 45
       },
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -3179,7 +3526,7 @@
     "panteoes": "Geral",
     "tempo_s": 40,
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_ranged_soldiers_icon",
+    "icon": "aomr_champion_archers_icon",
     "campo": [
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Ataque de longo alcance de Dano (Todos os Tipos) +20% :piercedamage:",
@@ -3199,8 +3546,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 35,
-        "nome": "Academia Militar"
+        "nome": "Academia Militar",
+        "id": 35
       }
     ],
     "eras": [
@@ -3228,8 +3575,8 @@
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> (:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 36,
-        "nome": "Campo de Arqueiros"
+        "nome": "Campo de Arqueiros",
+        "id": 36
       }
     ],
     "eras": [
@@ -3259,8 +3606,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 37,
-        "nome": "Estábulo"
+        "nome": "Estábulo",
+        "id": 37
       }
     ],
     "eras": [
@@ -3284,13 +3631,19 @@
     ]
   },
   {
-    "nome": "Pele de Rinocerante",
+    "nome": "Pele do Rinoceronte",
     "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:hackarmor::piercearmor:)",
     "comida": 50,
     "construcao_origem": [
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -3326,8 +3679,8 @@
     "beneficia": "<highlight-red>:foodaom:</highlight-red><highlight-red>Comida</highlight-red> (passiva)",
     "construcao_origem": [
       {
-        "id": 18,
-        "nome": "Celeiro (Egípcio)"
+        "nome": "Celeiro (Egípcio)",
+        "id": 18
       }
     ],
     "eras": [
@@ -3344,7 +3697,7 @@
       }
     ],
     "ingles": "Flood of the Nile",
-    "ouro": 135,
+    "ouro": 150,
     "panteoes": [
       {
         "id": 2,
@@ -3363,8 +3716,8 @@
     "beneficia": ":aomr_vision_icon: <highlight-purple>Visão</highlight-purple>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -3401,8 +3754,8 @@
     "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon:)",
     "construcao_origem": [
       {
-        "id": 18,
-        "nome": "Celeiro (Egípcio)"
+        "nome": "Celeiro (Egípcio)",
+        "id": 18
       }
     ],
     "eras": [
@@ -3449,8 +3802,8 @@
     "beneficia": ":woodaom: <highlight-brown>Madeira</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 17,
-        "nome": "Campo Madeireiro"
+        "nome": "Campo Madeireiro",
+        "id": 17
       }
     ],
     "eras": [
@@ -3495,8 +3848,8 @@
     "beneficia": ":aomr_sphinx_icon: <highlight-pink>Esfinge</highlight-pink> (:aomr_hit_points_icon::hackdamage::crushdamage:)",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -3542,8 +3895,8 @@
     "beneficia": ":aomr_sphinx_icon: <highlight-pink>Esfinge</highlight-pink> (:aomr_speed_icon::hackdamage::crushdamage:)",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -3568,14 +3921,14 @@
       }
     ],
     "ingles": "Hieracosphinx",
-    "madeira": 200,
+    "madeira": 150,
     "panteoes": [
       {
         "id": 2,
         "nome": "Egípcio"
       }
     ],
-    "tempo_s": 40,
+    "tempo_s": 30,
     "tipo": "Ofensivo ⚔",
     "icon": "aomr_hieracosphinx_icon",
     "campo": [
@@ -3590,12 +3943,12 @@
     "comida": 50,
     "construcao_origem": [
       {
-        "id": 28,
-        "nome": "Armaria (Egípcio)"
+        "nome": "Armaria (Egípcio)",
+        "id": 28
       },
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -3638,12 +3991,12 @@
     "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
-        "id": 28,
-        "nome": "Armaria (Egípcio)"
+        "nome": "Armaria (Egípcio)",
+        "id": 28
       },
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -3687,12 +4040,12 @@
     "beneficia": ":aomr_slinger_icon: <highlight-red>Fundeiro</highlight-red> (:piercedamage::aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 28,
-        "nome": "Armaria (Egípcio)"
+        "nome": "Armaria (Egípcio)",
+        "id": 28
       },
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -3738,8 +4091,12 @@
     "beneficia": ":aomr_farm_icon: <highlight-teal>Fazenda</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 18,
-        "nome": "Celeiro (Egípcio)"
+        "nome": "Celeiro (Egípcio)",
+        "id": 18
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 2
       }
     ],
     "eras": [
@@ -3784,8 +4141,8 @@
     "beneficia": ":aomr_anubite_icon: <highlight-pink>Anubita</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -3836,8 +4193,8 @@
     "comida": 125,
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -3880,8 +4237,8 @@
     "beneficia": ":aomr_monuments_retold_anim: <highlight-orange>Monumento</highlight-orange> (+:favoraom:)",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -3921,12 +4278,12 @@
     ]
   },
   {
-    "nome": "Crocodilopolis",
+    "nome": "Crocodilópolis",
     "beneficia": ":aomr_petsuchos_icon: <highlight-pink>Petsuchos</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -3951,7 +4308,7 @@
       }
     ],
     "ingles": "Crocodilopolis",
-    "madeira": 180,
+    "madeira": 200,
     "panteoes": [
       {
         "id": 2,
@@ -4003,24 +4360,27 @@
       }
     ],
     "tipo": "Defensivo 🛡 Utilidade 🔧",
-    "icon": "aomr_sun_dried_mud_brick_icon",
+    "icon": "aomr_sundried_mud_brick_icon",
     "campo": [
       ":aomr_type_building_icon: Construção: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_building_icon: Construção: -10% de custo de Ouro :goldaom:",
       ":aomr_type_building_icon: Construção: -15% de Tempo de Construção :aomr_time_icon:"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 20,
+    "tempo_s": 15
   },
   {
-    "nome": "Água Escuro",
+    "nome": "Água Escura",
     "beneficia": ":aomr_camel_rider_icon: <highlight-red>Cameleiro</highlight-red> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Mercado (Egípcio)",
+        "id": 52
       },
       {
-        "id": 52,
-        "nome": "Mercado (Egípcio)"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -4057,15 +4417,22 @@
       "🐪 Caravana: Pontos de Vida +15% :aomr_hit_points_icon:",
       ":aomr_camel_rider_icon: Cameleiro: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:",
       "🐪Caravana: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
-    ]
+    ],
+    "comida": 200,
+    "favor": 18,
+    "tempo_s": 30
   },
   {
-    "nome": "Arco de Osso Seco",
+    "nome": "Arco de Osso",
     "beneficia": ":aomr_chariot_archer_icon: <highlight-blue>Arqueiro em Biga</highlight-blue> (:rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 28,
-        "nome": "Armaria (Egípcio)"
+        "nome": "Armaria (Egípcio)",
+        "id": 28
+      },
+      {
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -4100,19 +4467,22 @@
     "campo": [
       ":aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_chariot_archer_icon: Arqueiro em Biga: Adiciona 2.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "madeira": 125,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Fundas do Sol",
     "beneficia": ":aomr_slinger_icon: <highlight-red>Fundeiro</highlight-red> (:piercedamage:→:aomr_type_infantry_icon:)",
     "construcao_origem": [
       {
-        "id": 28,
-        "nome": "Armaria (Egípcio)"
+        "nome": "Armaria (Egípcio)",
+        "id": 28
       },
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4146,15 +4516,25 @@
     "icon": "aomr_slings_of_the_sun_icon",
     "campo": [
       ":aomr_slinger_icon: Fundeiro: Adiciona 0.75 ao Ataque de longo alcance Bônus de Dano contra Infantaria :piercedamage: :aomr_type_infantry_icon:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Linho Carmesim",
     "beneficia": ":aomr_scarab_icon: <highlight-pink>Escaravelho</highlight-pink>+:aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Doca (Egípcio)",
+        "id": 47
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 22
+      },
+      {
+        "nome": "NavalShipyard"
       }
     ],
     "eras": [
@@ -4189,15 +4569,18 @@
     "campo": [
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Roubos de Vida por 25.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:",
       ":aomr_scarab_icon: Escaravelho: Roubos de Vida por 75.00% do dano causado por Todas as Ações contra Unidade. :aomr_hit_points_icon:"
-    ]
+    ],
+    "comida": 125,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Força do Vento Oeste",
     "beneficia": ":aomr_catapult_icon: <highlight-brown>Catapulta</highlight-brown> <highlight-teal>ativada</highlight-teal>✅",
     "construcao_origem": [
       {
-        "id": 62,
-        "nome": "Oficina de Cerco"
+        "nome": "Oficina de Cerco",
+        "id": 62
       }
     ],
     "eras": [
@@ -4233,19 +4616,28 @@
       ":aomr_catapult_icon: Catapulta ativado ✅",
       ":aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Esmagar) +15% :crushdamage:",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Todas as Ações de Dano (Esmagar) +15% :crushdamage:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 25,
+    "tempo_s": 90
   },
   {
     "nome": "Ritos Funerários",
     "beneficia": ":goldaom: <highlight-yellow>Ouro</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "TownCenter",
+        "id": 9
       },
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 22
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -4280,19 +4672,28 @@
     "campo": [
       ":aomr_type_human_soldier_icon: Soldado Humano: Recursos devolvidos ao morrer: 8 Ouro :goldaom:",
       ":aomr_type_hero_icon: Herói: Recursos devolvidos ao morrer: 8 Ouro :goldaom:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Espírito de Maat",
     "beneficia": ":aomr_priest_icon::aomr_pharaoh_icon: Curador:aomr_hit_points_icon:",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "TownCenter",
+        "id": 9
       },
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 22
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -4327,15 +4728,28 @@
     "campo": [
       ":aomr_priest_icon: :aomr_pharaoh_icon: Curador: Curar taxa de trabalho para Unidade +50% :aomr_hit_points_icon:",
       ":aomr_priest_icon: Sacerdote (Herói): -30% de custo de Ouro :goldaom:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 25,
+    "tempo_s": 30
   },
   {
     "nome": "Nebty",
     "beneficia": ":aomr_priest_icon: <highlight-yellow>Sacerdote</highlight-yellow>|:aomr_pharaoh_icon: <highlight-yellow>Faraó</highlight-yellow> (:aomr_type_myth_unit_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 2
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -4374,15 +4788,18 @@
       ":aomr_priest_icon: Sacerdote (Herói): Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_pharaoh_icon: Faraó (Herói): Pontos de Vida + 10% :aomr_hit_points_icon:",
       ":aomr_pharaoh_icon: Faraó (Novo Reino) (Herói): Pontos de Vida +10% :aomr_hit_points_icon:"
-    ]
+    ],
+    "madeira": 100,
+    "favor": 15,
+    "tempo_s": 30
   },
   {
     "nome": "Vento do Deserto",
     "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:hackdamage::aomr_hit_points_icon::aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -4417,19 +4834,28 @@
       ":aomr_camel_rider_icon: Cameleiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
       ":aomr_camel_rider_icon: Cameleiro: Pontos de Vida +15% :aomr_hit_points_icon:",
       ":aomr_camel_rider_icon: Cameleiro: Velocidade +15% :aomr_speed_icon:"
-    ]
+    ],
+    "ouro": 300,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Novo Reino",
     "beneficia": "<highlight-yellow>2 Faraós</highlight-yellow><highlight-yellow>:aomr_pharaoh_icon:</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "TownCenter",
+        "id": 9
       },
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Templo (Egípcio)",
+        "id": 22
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -4460,15 +4886,18 @@
       }
     ],
     "tipo": "Utilidade 🔧",
-    "icon": "aomr_new_kingdom_icon"
+    "icon": "aomr_new_kingdom_icon",
+    "ouro": 150,
+    "favor": 20,
+    "tempo_s": 30
   },
   {
     "nome": "Coroa de Atef",
     "beneficia": "<highlight-pink>:aomr_mummy_icon:</highlight-pink><highlight-pink>Múmia</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -4503,15 +4932,18 @@
       ":aomr_mummy_icon: Múmia: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_mummy_icon: Múmia: Ataque de longo alcance de Dano (Todos os Tipos) +40%",
       "Lacaio: +100% de vida útil"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
-    "nome": "Machado de Vingança",
+    "nome": "Machado da Vingança",
     "beneficia": "<highlight-red>:aomr_axeman_icon:</highlight-red><highlight-red>Machadeiro</highlight-red> (:aomr_type_building_icon::hackdamage:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4546,15 +4978,18 @@
     "campo": [
       ":aomr_axeman_icon: Machadeiro: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Construção :aomr_type_building_icon:",
       ":aomr_axeman_icon: Machadeiro: Para cada 1% de PV perdidos, modifique Dano em 0.50% :hackdamage:"
-    ]
+    ],
+    "madeira": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Lança de Hórus",
     "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:hackdamage::aomr_type_cavalry_icon:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4589,15 +5024,18 @@
     "campo": [
       ":aomr_spearman_icon: Lanceiro: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:",
       ":aomr_spearman_icon: Lanceiro: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :hackdamage: :aomr_type_cavalry_icon:"
-    ]
+    ],
+    "comida": 250,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Maior de Cinquenta",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon::aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4632,15 +5070,18 @@
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Vale dos Reis",
     "beneficia": "⏫ Treino Duplo Tropas",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -4674,15 +5115,24 @@
     "icon": "aomr_valley_of_the_kings_icon",
     "campo": [
       "⏫ Fortalecedor: Define taxa de capacitação de Chance de Treino Duplo para 1.00"
-    ]
+    ],
+    "ouro": 500,
+    "favor": 40,
+    "tempo_s": 20
   },
   {
     "nome": "Livro de Thoth",
     "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon::woodaom::goldaom:)",
     "construcao_origem": [
       {
-        "id": 3,
-        "nome": "Centro Urbano (Egípcio)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -4721,15 +5171,18 @@
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:",
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +10% :woodaom:",
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Ouro +10% :goldaom:"
-    ]
+    ],
+    "madeira": 300,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Presas de Apedemak",
     "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefante de Guerra</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -4765,15 +5218,18 @@
       ":aomr_war_elephant_icon: Elefante de Guerra: -10% de custo de Comida :foodaom:",
       ":aomr_war_elephant_icon: Elefante de Guerra: -10% de custo de Ouro :goldaom:",
       ":aomr_war_elephant_icon: Elefante de Guerra: Adiciona-1 ao Limite Populacional :aomr_population_provision_icon:"
-    ]
+    ],
+    "comida": 250,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Lanceiros Médios",
     "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4804,15 +5260,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_medium_spearmen_icon"
+    "icon": "aomr_medium_spearmen_icon",
+    "comida": 100,
+    "ouro": 100,
+    "tempo_s": 20
   },
   {
     "nome": "Machadeiros Médios",
     "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4843,15 +5302,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_medium_axemen_icon"
+    "icon": "aomr_medium_axemen_icon",
+    "comida": 100,
+    "ouro": 100,
+    "tempo_s": 20
   },
   {
     "nome": "Fundeiros Médios",
     "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4882,15 +5344,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_medium_slingers_icon"
+    "icon": "aomr_medium_slingers_icon",
+    "madeira": 100,
+    "ouro": 100,
+    "tempo_s": 20
   },
   {
     "nome": "Convocar Soldados de Quartel",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4921,15 +5386,18 @@
       }
     ],
     "tipo": "Utilidade 🔧",
-    "icon": "aomr_levy_barracks_soldiers_icon"
+    "icon": "aomr_levy_barracks_soldiers_icon",
+    "comida": 150,
+    "madeira": 75,
+    "tempo_s": 20
   },
   {
     "nome": "Convocar Soldados de Migdol",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -4960,15 +5428,18 @@
       }
     ],
     "tipo": "Utilidade 🔧",
-    "icon": "aomr_levy_migdol_soldiers_icon"
+    "icon": "aomr_levy_migdol_soldiers_icon",
+    "madeira": 75,
+    "ouro": 150,
+    "tempo_s": 20
   },
   {
     "nome": "Lanceiros Pesados",
     "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -4999,15 +5470,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_spearmen_icon"
+    "icon": "aomr_heavy_spearmen_icon",
+    "comida": 300,
+    "ouro": 200,
+    "tempo_s": 30
   },
   {
     "nome": "Machadeiros Pesados",
     "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -5038,15 +5512,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_axemen_icon"
+    "icon": "aomr_heavy_axemen_icon",
+    "comida": 300,
+    "ouro": 200,
+    "tempo_s": 30
   },
   {
     "nome": "Fundeiros Pesados",
     "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -5077,15 +5554,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_slingers_icon"
+    "icon": "aomr_heavy_slingers_icon",
+    "madeira": 300,
+    "ouro": 200,
+    "tempo_s": 30
   },
   {
     "nome": "Cameleiros Pesados",
     "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5116,15 +5596,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_camel_riders_icon"
+    "icon": "aomr_heavy_camel_riders_icon",
+    "comida": 250,
+    "ouro": 150,
+    "tempo_s": 15
   },
   {
-    "nome": "Elefantes Pesados",
+    "nome": "Elefantes de Guerra Pesados",
     "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5147,7 +5630,7 @@
         "nome": "Set"
       }
     ],
-    "ingles": "Heavy Elephants",
+    "ingles": "Heavy War Elephants",
     "panteoes": [
       {
         "id": 2,
@@ -5155,15 +5638,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_elephants_icon"
+    "icon": "aomr_heavy_war_elephants_icon",
+    "comida": 300,
+    "ouro": 200,
+    "tempo_s": 15
   },
   {
     "nome": "Lanceiros Campeões",
     "beneficia": ":aomr_spearman_icon: <highlight-red>Lanceiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -5194,15 +5680,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_spearmen_icon"
+    "icon": "aomr_champion_spearmen_icon",
+    "comida": 400,
+    "ouro": 300,
+    "tempo_s": 40
   },
   {
     "nome": "Machadeiros Campeões",
     "beneficia": ":aomr_axeman_icon: <highlight-red>Machadeiro</highlight-red> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -5233,15 +5722,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_axemen_icon"
+    "icon": "aomr_champion_axemen_icon",
+    "comida": 400,
+    "ouro": 300,
+    "tempo_s": 40
   },
   {
     "nome": "Fundeiros Campeões",
     "beneficia": ":aomr_slinger_icon: <highlight-blue>Fundeiro</highlight-blue> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -5272,15 +5764,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_slingers_icon"
+    "icon": "aomr_champion_slingers_icon",
+    "madeira": 400,
+    "ouro": 300,
+    "tempo_s": 40
   },
   {
     "nome": "Cameleiros Campeões",
     "beneficia": ":aomr_camel_rider_icon: <highlight-teal>Cameleiro</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5311,15 +5806,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_camel_riders_icon"
+    "icon": "aomr_champion_camel_riders_icon",
+    "comida": 400,
+    "ouro": 200,
+    "tempo_s": 40
   },
   {
-    "nome": "Elefantes Campeões",
+    "nome": "Elefantes de Guerra Campeões",
     "beneficia": ":aomr_war_elephant_icon: <highlight-teal>Elefantes de Guerra</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5342,7 +5840,7 @@
         "nome": "Set"
       }
     ],
-    "ingles": "Champion Elephants",
+    "ingles": "Champion War Elephants",
     "panteoes": [
       {
         "id": 2,
@@ -5350,15 +5848,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_elephants_icon"
+    "icon": "aomr_champion_war_elephants_icon",
+    "comida": 500,
+    "ouro": 400,
+    "tempo_s": 40
   },
   {
     "nome": "Recrutar Soldados de Quartel",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 38,
-        "nome": "Quartel"
+        "nome": "Quartel",
+        "id": 38
       }
     ],
     "eras": [
@@ -5389,15 +5890,18 @@
       }
     ],
     "tipo": "Utilidade 🔧",
-    "icon": "aomr_conscript_barracks_soldiers_icon"
+    "icon": "aomr_conscript_barracks_soldiers_icon",
+    "comida": 200,
+    "madeira": 100,
+    "tempo_s": 30
   },
   {
-    "nome": "Recrutar Soldados do Migdol",
+    "nome": "Recrutar Soldados de Migdol",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5428,15 +5932,18 @@
       }
     ],
     "tipo": "Utilidade 🔧",
-    "icon": "aomr_conscript_migdol_soldiers_icon"
+    "icon": "aomr_conscript_migdol_soldiers_icon",
+    "madeira": 100,
+    "ouro": 200,
+    "tempo_s": 20
   },
   {
     "nome": "Bigas Pesadas",
     "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5467,15 +5974,18 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_heavy_chariots_icon"
+    "icon": "aomr_heavy_chariot_archers_icon",
+    "madeira": 200,
+    "ouro": 200,
+    "tempo_s": 15
   },
   {
     "nome": "Bigas Campeãs",
     "beneficia": ":aomr_chariot_archer_icon: <highlight-teal>Arqueiro de Biga</highlight-teal> (:aomr_hit_points_icon::hackdamage::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 58,
-        "nome": "Fortaleza Migdol"
+        "nome": "Fortaleza Migdol",
+        "id": 58
       }
     ],
     "eras": [
@@ -5506,21 +6016,24 @@
       }
     ],
     "tipo": "Defensivo 🛡 Ofensivo ⚔",
-    "icon": "aomr_champion_chariots_icon"
+    "icon": "aomr_champion_chariot_archers_icon",
+    "madeira": 400,
+    "ouro": 200,
+    "tempo_s": 40
   },
   {
     "nome": "Martelo do Trovão",
     "beneficia": "<highlight-yellow>:aomr_hersir_icon:</highlight-yellow><highlight-yellow>Hersir (Herói)</highlight-yellow> (+:hackdamage:+:favoraom:)",
     "construcao_origem": [
       {
-        "id": 34,
-        "nome": "Armaria de Anões"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
       {
         "id": 1,
-        "nome": "Arcaica :aomr_archaic_age_icon:"
+        "nome": "Heróica :aomr_heroic_age_icon:"
       }
     ],
     "favor": 10,
@@ -5551,8 +6064,8 @@
     "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:aomr_speed_icon:+:aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -5589,8 +6102,8 @@
     "beneficia": ":los_icon_aoe3de: LOS",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -5599,7 +6112,7 @@
         "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "favor": 2,
+    "favor": 8,
     "god_especifico": [
       {
         "id": 9,
@@ -5607,7 +6120,7 @@
       }
     ],
     "ingles": "Eyes in the Forest",
-    "ouro": 50,
+    "ouro": 75,
     "panteoes": [
       {
         "id": 3,
@@ -5627,8 +6140,14 @@
     "comida": 800,
     "construcao_origem": [
       {
-        "id": 4,
-        "nome": "Centro Urbano (Nórdico)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -5644,7 +6163,7 @@
         "nome": "Frey"
       }
     ],
-    "ingles": "Freyr&#x27;s Gift",
+    "ingles": "Freyr's Gift",
     "panteoes": [
       {
         "id": 3,
@@ -5663,14 +6182,14 @@
     "beneficia": ":aomr_type_human_soldier_icon: Soldado:aomr_type_hero_icon: Herói:aomr_type_ship_icon: Navio:aomr_type_building_icon: Construção (:hackdamage::piercedamage:)",
     "construcao_origem": [
       {
-        "id": 34,
-        "nome": "Armaria de Anões"
+        "nome": "Armaria (Nórdico)",
+        "id": 29
       }
     ],
     "eras": [
       {
         "id": 2,
-        "nome": "Clássica :aomr_classical_age_icon:"
+        "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5693,21 +6212,24 @@
       ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:",
       ":aomr_type_ship_icon: Navio: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:",
       ":aomr_type_building_icon: Construção: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage: :piercedamage:"
-    ]
+    ],
+    "comida": 500,
+    "ouro": 500,
+    "tempo_s": 60
   },
   {
     "nome": "Armadura de Ferro Meteórico",
     "beneficia": ":aomr_type_human_soldier_icon: Soldado:aomr_type_hero_icon: Herói:aomr_type_ship_icon: Navio :aomr_type_building_icon: Construção (:hackarmor::crusharmor:)",
     "construcao_origem": [
       {
-        "id": 34,
-        "nome": "Armaria de Anões"
+        "nome": "Armaria (Nórdico)",
+        "id": 29
       }
     ],
     "eras": [
       {
         "id": 2,
-        "nome": "Clássica :aomr_classical_age_icon:"
+        "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5730,21 +6252,24 @@
       ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
       ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
       ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Esmagar :crushdamage: :crusharmor:"
-    ]
+    ],
+    "comida": 500,
+    "ouro": 500,
+    "tempo_s": 60
   },
   {
-    "nome": "Escudo de Escamas de Dragão",
+    "nome": "Escudos de Escamas de Dragão",
     "beneficia": ":aomr_type_human_soldier_icon: Soldado:aomr_type_hero_icon: Herói:aomr_type_ship_icon: Navio (:piercearmor:)",
     "construcao_origem": [
       {
-        "id": 34,
-        "nome": "Armaria de Anões"
+        "nome": "Armaria (Nórdico)",
+        "id": 29
       }
     ],
     "eras": [
       {
         "id": 2,
-        "nome": "Clássica :aomr_classical_age_icon:"
+        "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
     "god_especifico": [
@@ -5766,15 +6291,18 @@
       ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:",
       ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:",
       ":aomr_type_ship_icon: Navio: -10% de vulnerabilidade a ataques de Furar :piercedamage: :piercearmor:"
-    ]
+    ],
+    "madeira": 500,
+    "ouro": 500,
+    "tempo_s": 60
   },
   {
     "nome": "Dísablót",
     "beneficia": ":aomr_valkyrie_icon: <highlight-pink>Valquíria</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -5813,15 +6341,18 @@
     "campo": [
       ":aomr_valkyrie_icon: Valquíria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +50% :hackdamage:",
       ":aomr_valkyrie_icon: Valquíria: Curar taxa de trabalho para Unidade +33% :aomr_hit_points_icon:"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Cascos Trovejantes",
     "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -5862,15 +6393,18 @@
       ":aomr_valkyrie_icon: Valquíria: Velocidade +10% :aomr_speed_icon:",
       ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_valkyrie_icon: Valquíria: Pontos de Vida +10% :aomr_hit_points_icon:"
-    ]
+    ],
+    "comida": 150,
+    "favor": 20,
+    "tempo_s": 30
   },
   {
     "nome": "Sessrúmnir",
     "beneficia": "<highlight-yellow>:aomr_type_hero_icon:</highlight-yellow><highlight-yellow>Herói</highlight-yellow>|<highlight-yellow>:aomr_godi_icon:</highlight-yellow><highlight-yellow>Godi</highlight-yellow> <highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -5909,15 +6443,23 @@
     "campo": [
       ":aomr_type_hero_icon: Herói: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_godi_icon: Godi (Herói) ativado ✅"
-    ]
+    ],
+    "comida": 100,
+    "madeira": 100,
+    "favor": 10,
+    "tempo_s": 20
   },
   {
     "nome": "Salão dos Thanes",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red>|:aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
+      },
+      {
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -5952,15 +6494,18 @@
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Velocidade +5% :aomr_speed_icon:",
       ":aomr_type_hero_icon: Herói: Velocidade +5% :aomr_speed_icon:"
-    ]
+    ],
+    "madeira": 150,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Peitoral Enânico",
     "beneficia": ":aomr_hirdman_icon: <highlight-red>Hird</highlight-red>|:aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
-        "id": 29,
-        "nome": "Armaria (Nórdico)"
+        "nome": "Armaria (Nórdico)",
+        "id": 29
       }
     ],
     "eras": [
@@ -5995,15 +6540,18 @@
     "campo": [
       ":aomr_hirdman_icon: Hird: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:",
       ":aomr_berserk_icon: Berserker: -15% de vulnerabilidade a ataques de Golpear :hackdamage: :hackarmor:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Troll das Cavernas",
     "beneficia": ":aomr_troll_icon: <highlight-pink>Troll</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6038,15 +6586,18 @@
     "campo": [
       ":aomr_troll_icon: Troll: Adiciona 1.50 à Ataque de longo alcance carregado Área de Dano",
       ":aomr_troll_icon: Troll: Ataque de longo alcance carregado de Dano (Todos os Tipos) +100%"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Gjallarhorn",
     "beneficia": "<highlight-pink>:aomr_einherjar_icon:</highlight-pink><highlight-pink>Einheri</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6082,15 +6633,18 @@
       ":aomr_einherjar_icon: Einheri: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:",
       ":aomr_einherjar_icon: Einheri: Pontos de Vida + 10% :aomr_hit_points_icon:",
       ":aomr_einherjar_icon: Einheri: Adiciona 5.00 à duração de efeito de Impulso 💪"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Salvaguarda",
     "beneficia": ":aomr_type_tower_icon: Torre |:aomr_type_wall_icon: Muralha |:aomr_type_building_icon: Construção (:aomr_hit_points_icon: custo:goldaom:)",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6126,15 +6680,24 @@
       ":aomr_type_tower_icon: Torre de Sentinela: Pontos de Vida +25% :aomr_hit_points_icon:",
       ":aomr_type_wall_icon: Muralha: Pontos de Vida +25% :aomr_hit_points_icon:",
       ":aomr_type_building_icon: Construção: -50% de custo de Ouro :goldaom:"
-    ]
+    ],
+    "madeira": 100,
+    "favor": 12,
+    "tempo_s": 40
   },
   {
     "nome": "Rigsthula",
     "beneficia": ":aomr_type_building_icon: Construção (Treinamento ⏩ e Pesquisa ⏫)",
     "construcao_origem": [
       {
-        "id": 4,
-        "nome": "Centro Urbano (Nórdico)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -6168,15 +6731,18 @@
     "icon": "aomr_rigsthula_icon",
     "campo": [
       ":aomr_type_building_icon: Construção: +20% de Taxa de Trabalho de Treinamento ⏩ e Pesquisa ⏫"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 18,
+    "tempo_s": 20
   },
   {
     "nome": "Valgaldr",
     "beneficia": ":aomr_draugr_icon: <highlight-pink>Draugr</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6209,15 +6775,18 @@
       ":aomr_draugr_icon: Draugr: Adiciona 5.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_draugr_icon: Draugr: Adiciona 5.00 ao Ataque de longo alcance carregado Alcance Máximo :rangeicon:",
       ":aomr_draugr_icon: Draugr: Adiciona 5.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "ouro": 180,
+    "favor": 15,
+    "tempo_s": 20
   },
   {
     "nome": "Servos da Glória",
     "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red>|:aomr_hirdman_icon: <highlight-red>Hird</highlight-red>|:aomr_throwing_axeman_icon: <highlight-blue>TA</highlight-blue> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -6252,15 +6821,24 @@
       ":aomr_hirdman_icon: Hird: Ativa a Ação",
       ":aomr_throwing_axeman_icon: Lançador de Machados: Ativa a Ação",
       ":aomr_berserk_icon: Berserker: Ativa a Ação"
-    ]
+    ],
+    "comida": 200,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Juramento do Anel",
     "beneficia": ":aomr_asgardian_bastion_icon: <highlight-purple>Baluarte Asgardiano</highlight-purple> (menos:favoraom:)",
     "construcao_origem": [
       {
-        "id": 4,
-        "nome": "Centro Urbano (Nórdico)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -6279,7 +6857,7 @@
         "nome": "Ullr"
       }
     ],
-    "ingles": "Ring Oath",
+    "ingles": "Ring-Oath",
     "panteoes": [
       {
         "id": 3,
@@ -6290,15 +6868,18 @@
     "icon": "aomr_ring_oath_icon",
     "campo": [
       "👤 Jogador: -50% de custo de Favor :favoraom: de Baluarte Asgardiano :aomr_asgardian_bastion_icon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 10,
+    "tempo_s": 5
   },
   {
-    "nome": "Ydalir",
+    "nome": "Valgaldr",
     "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown> <highlight-teal>ativado</highlight-teal>✅",
     "construcao_origem": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "Templo (Nórdico)",
+        "id": 3
       }
     ],
     "eras": [
@@ -6329,15 +6910,18 @@
     "campo": [
       ":aomr_portable_ram_icon: Aríete Portátil ativado ✅",
       ":aomr_hill_fort_icon: Fortalezas: +20% de Taxa de Trabalho de Treinamento ⏩ e Pesquisa ⏫"
-    ]
+    ],
+    "ouro": 180,
+    "favor": 15,
+    "tempo_s": 20
   },
   {
     "nome": "Geada",
     "beneficia": ":aomr_frost_giant_icon: <highlight-pink>Gigante de Gelo</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6373,15 +6957,18 @@
       ":aomr_frost_giant_icon: Gigante de Gelo: Pontos de Vida +33% :aomr_hit_points_icon:",
       ":aomr_frost_giant_icon: Gigante de Gelo: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
       ":aomr_frost_giant_icon: Gigante de Gelo: -25% de Tempo de Recarga de Habilidade :aomr_time_icon:"
-    ]
+    ],
+    "comida": 200,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
-    "nome": "Machado da Caça",
+    "nome": "Machado da Caçadora",
     "beneficia": ":aomr_throwing_axeman_icon: <highlight-blue>TA</highlight-blue> (:rangeicon: rastreio e alcance)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -6404,7 +6991,7 @@
         "nome": "Skadi"
       }
     ],
-    "ingles": "Huntress&#x27; Axe",
+    "ingles": "Huntress' Axe",
     "panteoes": [
       {
         "id": 3,
@@ -6416,7 +7003,10 @@
     "campo": [
       ":aomr_throwing_axeman_icon: Lançador de Machados: Adiciona 1.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_throwing_axeman_icon: Lançador de Machados: Define Avaliação de Rastreio para 99.00 :rangeicon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Colheita de Inverno",
@@ -6461,15 +7051,18 @@
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Caça +10% :aomr_caribou_icon: :aomr_rhinoceros_icon:",
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Animal Para Criação +10% :aomr_cow_icon: :aomr_goat_icon: :aomr_pig_icon:",
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Arbusto frutífero +10% :aomr_berry_bush_icon:"
-    ]
+    ],
+    "comida": 100,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Chamado de Valhalla",
     "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -6508,15 +7101,18 @@
     "campo": [
       ":aomr_berserk_icon: Berserker: Pontos de Vida + 10% :aomr_hit_points_icon:",
       ":aomr_berserk_icon: Berserker: Recursos devolvidos ao morrer: 0.5 Favor :favoraom:"
-    ]
+    ],
+    "comida": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Runa de Thurisaz",
     "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>Unidade Mitológica</highlight-pink> (:aomr_speed_icon: <highlight-red>regen</highlight-red><highlight-red>:aomr_hit_points_icon:</highlight-red>)",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6555,15 +7151,18 @@
     "campo": [
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:"
-    ]
+    ],
+    "madeira": 100,
+    "favor": 20,
+    "tempo_s": 30
   },
   {
     "nome": "Formação Svinfylking",
     "beneficia": ":aomr_hirdman_icon: <highlight-red>Hird</highlight-red> (:hackdamage: e +:aomr_type_cavalry_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -6602,15 +7201,18 @@
     "campo": [
       ":aomr_hirdman_icon: Hird: Ataque Corpo a Corpo de Dano (Todos os Tipos) +10% :hackdamage:",
       ":aomr_hirdman_icon: Hird: Adiciona 2.00 ao Ataque Corpo a Corpo Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
-    ]
+    ],
+    "madeira": 125,
+    "favor": 15,
+    "tempo_s": 50
   },
   {
     "nome": "Doador do Anel",
     "beneficia": "<highlight-teal>:aomr_jarl_icon:</highlight-teal><highlight-teal>Jarl</highlight-teal> (:aomr_hit_points_icon: e:hackdamage::aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -6645,15 +7247,18 @@
     "campo": [
       ":aomr_jarl_icon: Jarl: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_jarl_icon: Jarl: Adiciona 1.00 ao Ataque Corpo a Corpo :hackdamage: Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
-    ]
+    ],
+    "ouro": 125,
+    "favor": 25,
+    "tempo_s": 30
   },
   {
-    "nome": "Vinkings",
+    "nome": "Vikings",
     "beneficia": ":aomr_raiding_cavalry_icon: <highlight-teal>Cavalaria Incursora</highlight-teal> (:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -6687,15 +7292,18 @@
     "campo": [
       ":aomr_raiding_cavalry_icon: Cavalaria Incursora: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:",
       "👤 Jogador: Adiciona 10.00 Ouro :goldaom: ao Cavalaria Incursora :aomr_raiding_cavalry_icon: ganho de Recompensa"
-    ]
+    ],
+    "comida": 175,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Jotuns",
     "beneficia": "<highlight-pink>:aomr_mountain_giant_icon:</highlight-pink><highlight-pink>Gigante de Montanha</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6731,15 +7339,18 @@
       ":aomr_mountain_giant_icon: Gigante de Montanha: Ataque Corpo a Corpo de Dano (Todos os Tipos) +25% :hackdamage:",
       ":aomr_mountain_giant_icon: Gigante de Montanha: Velocidade +25% :aomr_speed_icon:",
       ":aomr_mountain_giant_icon: Gigante de Montanha: Ativa a Ação de Bote"
-    ]
+    ],
+    "comida": 175,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Estômago de Ferro",
     "beneficia": "<highlight-pink>:aomr_rock_giant_icon:</highlight-pink><highlight-pink>Gigante das Rochas</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -6769,19 +7380,25 @@
     "campo": [
       ":aomr_rock_giant_icon: Gigante das Rochas: Ativa a Ação de Ataque Corpo a Corpo :hackdamage:",
       ":aomr_rock_giant_icon: Gigante das Rochas: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage:"
-    ]
+    ],
+    "madeira": 125,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Banquetes Renomados",
     "beneficia": ":aomr_town_center_norse_icon: TC |:aomr_hill_fort_icon: Fortalezas:aomr_hit_points_icon:+:foodaom:(passivo)",
     "construcao_origem": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       },
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "HillFort",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "eras": [
@@ -6815,15 +7432,25 @@
       ":aomr_town_center_norse_icon: Centro Urbano: Adiciona 0.50 à Coleta Automática taxa de trabalho para Comida :foodaom:",
       ":aomr_hill_fort_icon: Fortalezas: Ativa a Ação de Coleta Automática :foodaom:",
       ":aomr_hill_fort_icon: Fortalezas: Adiciona 0.50 à Coleta Automática taxa de trabalho para Comida :foodaom:"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 18,
+    "tempo_s": 40
   },
   {
     "nome": "Nove Ondas",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow>|:aomr_type_siege_weapon_icon: <highlight-brown>Cerco</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
+      },
+      {
+        "nome": "HillFort",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "eras": [
@@ -6855,15 +7482,18 @@
       ":aomr_type_siege_weapon_icon: Arma de Cerco: Velocidade +10% :aomr_speed_icon:",
       ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +20% :hackdamage: :piercedamage:",
       ":aomr_type_siege_weapon_icon: Arma de Cerco: Todas as Ações de Dano (Todos os Tipos) +20% :crushdamage:"
-    ]
+    ],
+    "comida": 175,
+    "favor": 22,
+    "tempo_s": 40
   },
   {
     "nome": "Filhos de Sleipnir",
     "beneficia": ":aomr_type_cavalry_icon: <highlight-teal>Cavalaria</highlight-teal>",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -6897,15 +7527,21 @@
     "campo": [
       ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:",
       ":aomr_type_cavalry_icon: Cavalaria: Adiciona 1.00 ao Ataque Corpo a Corpo Bônus de Dano contra Soldado de Longo Alcance :aomr_type_archer_icon:"
-    ]
+    ],
+    "comida": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Verrumão dos Anões",
     "beneficia": ":aomr_portable_ram_icon: <highlight-brown>Aríete Portátil</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "eras": [
@@ -6940,15 +7576,18 @@
       ":aomr_portable_ram_icon: Aríete Portátil: Tempo de treinamento -25% :aomr_time_icon:",
       ":aomr_portable_ram_icon: Aríete Portátil: Velocidade +10% :aomr_speed_icon:",
       ":aomr_portable_ram_icon: Aríete Portátil: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :crushdamage:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Fúria Berserker",
     "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:hackdamage:→:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -6985,15 +7624,21 @@
     "icon": "aomr_berserkergang_icon",
     "campo": [
       ":aomr_berserk_icon: Berserker: Roubos de Vida por 35.00% do dano causado por Todas as Ações contra Unidade. :hackdamage: :aomr_hit_points_icon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Bravura",
     "beneficia": ":aomr_huskarl_icon: <highlight-red>Huskarl</highlight-red> (:crushdamage:+:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "eras": [
@@ -7031,15 +7676,18 @@
     "campo": [
       ":aomr_huskarl_icon: Huscarl: Adiciona 1.25 ao Ataque Corpo a Corpo Bônus de Dano contra Construção :crushdamage:",
       ":aomr_huskarl_icon: Huscarl: Ataque Corpo a Corpo de Dano (Todos os Tipos) +20% :hackdamage:"
-    ]
+    ],
+    "comida": 250,
+    "favor": 22,
+    "tempo_s": 40
   },
   {
     "nome": "Rompante",
     "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>MU</highlight-pink> (:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -7072,15 +7720,18 @@
     "icon": "aomr_rampage_icon",
     "campo": [
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -95% :aomr_time_icon:"
-    ]
+    ],
+    "ouro": 300,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Sangue de Granito",
     "beneficia": "<highlight-pink>:aomr_mountain_giant_icon:</highlight-pink><highlight-pink>:aomr_fire_giant_icon:</highlight-pink><highlight-pink>:aomr_frost_giant_icon:</highlight-pink><highlight-pink>:aomr_rock_giant_icon:</highlight-pink><highlight-pink>Gigantes</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 23,
-        "nome": "Templo (Nórdico)"
+        "nome": "Templo (Nórdico)",
+        "id": 23
       }
     ],
     "eras": [
@@ -7116,19 +7767,22 @@
       ":aomr_fire_giant_icon: Gigante de Fogo: Pontos de Vida +40% :aomr_hit_points_icon:",
       ":aomr_frost_giant_icon: Gigante de Gelo: Pontos de Vida +40% :aomr_hit_points_icon:",
       ":aomr_rock_giant_icon: Gigante das Rochas: Pontos de Vida +20% :aomr_hit_points_icon:"
-    ]
+    ],
+    "madeira": 600,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Crepúsculo dos Deuses",
     "beneficia": ":aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon:&:aomr_type_hero_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "GreatHall",
+        "id": 40
       },
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -7158,15 +7812,23 @@
     "campo": [
       ":aomr_type_human_soldier_icon: Soldado Humano: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_human_soldier_icon: Soldado Humano: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Herói :aomr_type_hero_icon:"
-    ]
+    ],
+    "comida": 100,
+    "madeira": 100,
+    "favor": 18,
+    "tempo_s": 50
   },
   {
     "nome": "Espírito Vingativo",
     "beneficia": "<highlight-yellow>:aomr_hersir_icon:</highlight-yellow><highlight-yellow>Hersir (Herói)</highlight-yellow> (++:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "Templo (Nórdico)",
+        "id": 3
+      },
+      {
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -7197,15 +7859,18 @@
       ":aomr_hersir_icon: Hersir: +20% de dano (após infligir 50 de dano total) :hackdamage:",
       ":aomr_hersir_icon: Hersir: +40% de dano (após infligir 150 de dano total) :hackdamage:",
       ":aomr_hersir_icon: Hersir: +60% de dano (após infligir 300 de dano total) :hackdamage:"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 25,
+    "tempo_s": 30
   },
   {
     "nome": "Determinação Silenciosa",
     "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -7234,15 +7899,18 @@
     "icon": "aomr_silent_resolve_icon",
     "campo": [
       ":aomr_berserk_icon: Berserker: Ativa a Ação de Bônus de Dano por Inatividade :hackdamage:"
-    ]
+    ],
+    "comida": 240,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Fúria dos Caídos",
     "beneficia": ":aomr_berserk_icon: <highlight-red>Berserker</highlight-red> (💀)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -7271,15 +7939,18 @@
     "icon": "aomr_fury_of_the_fallen_icon",
     "campo": [
       ":aomr_berserk_icon: Impulso de Morte: Berserker próximo ganha +15% de dano (acumula) por um breve período de tempo."
-    ]
+    ],
+    "ouro": 175,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
-    "nome": "Convocar Unidades da Casa Comunal",
+    "nome": "Convocar Soldados da Casa Comunal",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -7313,15 +7984,18 @@
         "nome": "Nórdico"
       }
     ],
-    "icon": "aomr_levy_longhouse_soldiers_icon"
+    "icon": "aomr_levy_longhouse_soldiers_icon",
+    "comida": 150,
+    "madeira": 75,
+    "tempo_s": 20
   },
   {
-    "nome": "Convocar Unidades do Grande Salão",
+    "nome": "Convocar Soldados do Grande Salão",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -7355,15 +8029,22 @@
         "nome": "Nórdico"
       }
     ],
-    "icon": "aomr_levy_great_hall_soldiers_icon"
+    "icon": "aomr_levy_great_hall_soldiers_icon",
+    "comida": 75,
+    "madeira": 75,
+    "ouro": 150,
+    "tempo_s": 20
   },
   {
-    "nome": "Convocar Unidades do Forte da Colina",
+    "nome": "Convocar Soldados do Forte de Colina",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "eras": [
@@ -7397,15 +8078,17 @@
         "nome": "Nórdico"
       }
     ],
-    "icon": "aomr_levy_hill_fort_soldiers_icon"
+    "icon": "aomr_levy_hill_fort_soldiers_icon",
+    "comida": 75,
+    "tempo_s": 20
   },
   {
-    "nome": "Recrutar Unidades da Casa Comunal",
+    "nome": "Recrutar Soldados da Casa Comunal",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 39,
-        "nome": "Casa Comunal"
+        "nome": "Casa Comunal",
+        "id": 39
       }
     ],
     "eras": [
@@ -7439,15 +8122,18 @@
         "nome": "Nórdico"
       }
     ],
-    "icon": "aomr_conscript_longhouse_soldiers_icon"
+    "icon": "aomr_conscript_longhouse_soldiers_icon",
+    "comida": 200,
+    "madeira": 100,
+    "tempo_s": 30
   },
   {
-    "nome": "Recrutar Unidades do Grande Salão",
+    "nome": "Recrutar Soldados do Grande Salão",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 40,
-        "nome": "Grande Salão"
+        "nome": "GreatHall",
+        "id": 40
       }
     ],
     "eras": [
@@ -7481,15 +8167,22 @@
         "nome": "Nórdico"
       }
     ],
-    "icon": "aomr_conscript_great_hall_soldiers_icon"
+    "icon": "aomr_conscript_great_hall_soldiers_icon",
+    "comida": 100,
+    "madeira": 100,
+    "ouro": 200,
+    "tempo_s": 30
   },
   {
-    "nome": "Recrutar Unidades do Forte da Colina",
+    "nome": "Recrutar Soldados do Forte de Colina",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 59,
-        "nome": "Forte da Colina"
+        "nome": "HillFort",
+        "id": 59
+      },
+      {
+        "nome": "AsgardianHillFort"
       }
     ],
     "eras": [
@@ -7523,15 +8216,17 @@
         "nome": "Nórdico"
       }
     ],
-    "icon": "aomr_conscript_hill_fort_soldiers_icon"
+    "icon": "aomr_conscript_hill_fort_soldiers_icon",
+    "comida": 100,
+    "tempo_s": 30
   },
   {
     "nome": "Caos Temporal",
     "beneficia": "<highlight-orange>:time_shift_aom:</highlight-orange><highlight-orange>Deslocamento Temporal</highlight-orange>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -7559,15 +8254,19 @@
       "👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Palácio :aomr_palace_icon:",
       "👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Torre de Sentinela",
       "👤 Jogador: -50% de custo de Deslocamento Temporal :time_shift_aom: para Torre Espelho"
-    ]
+    ],
+    "madeira": 100,
+    "ouro": 50,
+    "favor": 10,
+    "tempo_s": 20
   },
   {
     "nome": "Velocidade Empírica",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -7589,18 +8288,34 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_empyrian_speed_icon",
+    "icon": "aomr_empyrean_speed_icon",
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 5,
+    "tempo_s": 30
   },
   {
     "nome": "Canais",
     "beneficia": "<highlight-orange>:aomr_ability_lush_icon:</highlight-orange><highlight-orange>Exuberância</highlight-orange> (:aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "Templo (Atlante)",
+        "id": 24
+      },
+      {
+        "nome": "CitadelCenter"
+      },
+      {
+        "nome": "TownCenterAbandoned"
       }
     ],
     "eras": [
@@ -7625,15 +8340,18 @@
     "icon": "aomr_channels_icon",
     "campo": [
       "👥 Unidade: Velocidade de Movimento em Exuberância + 15% :aomr_ability_lush_icon: :aomr_speed_icon:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Argila Aluvial",
     "beneficia": ":aomr_promethean_icon: <highlight-pink>Prometeano</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -7668,15 +8386,18 @@
       ":aomr_promethean_icon: Prometeano: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_promethean_icon: Prole de Prometeano: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_promethean_icon: Prometeano: Adiciona 1 à geração de Prole de Prometeano na ocorrência de Morte"
-    ]
+    ],
+    "comida": 140,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
-    "nome": "Coração de Titãs",
+    "nome": "Coração dos Titãs",
     "beneficia": ":aomr_type_hero_icon: Promoção de<highlight-yellow>Herói</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -7709,15 +8430,18 @@
     "icon": "aomr_heart_of_the_titans_icon",
     "campo": [
       ":aomr_type_hero_icon: Promoção de Herói: -75% de Pontos de Pesquisa"
-    ]
+    ],
+    "ouro": 50,
+    "favor": 5,
+    "tempo_s": 20
   },
   {
     "nome": "Roubo do Fogo",
     "beneficia": "<highlight-yellow>:aomr_citizen_hero_icon:</highlight-yellow><highlight-yellow>Cidadão (Herói)</highlight-yellow> (:aomr_farm_icon::aomr_caribou_icon::aomr_cow_icon::aomr_berry_bush_icon::goldaom::woodaom::aomr_type_building_icon:)",
     "construcao_origem": [
       {
-        "id": 19,
-        "nome": "Guilda Econômica"
+        "nome": "Guilda Econômica",
+        "id": 19
       }
     ],
     "eras": [
@@ -7756,15 +8480,18 @@
       ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Ouro +20% :goldaom:",
       ":aomr_citizen_hero_icon: Cidadão (Herói): Coletar taxa de trabalho para Madeira +20% :woodaom:",
       ":aomr_citizen_hero_icon: Cidadão (Herói): Construir taxa de trabalho para Construção +20% :aomr_type_building_icon:"
-    ]
+    ],
+    "madeira": 100,
+    "favor": 12,
+    "tempo_s": 30
   },
   {
     "nome": "Vingança de Hefesto",
     "beneficia": "<highlight-pink>:aomr_automaton_icon:</highlight-pink><highlight-pink>Autômato</highlight-pink> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -7798,19 +8525,22 @@
     "campo": [
       ":aomr_automaton_icon: Automato: Adiciona 0.50 à Taxa de Regeneração :aomr_hit_points_icon:",
       ":aomr_automaton_icon: Automato: Pontos de Vida +30% :aomr_hit_points_icon:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 10,
+    "tempo_s": 20
   },
   {
     "nome": "Forja Vulcânica",
     "beneficia": ":aomr_type_human_soldier_icon: Soldado |:aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow>|<highlight-pink>:aomr_automaton_icon:</highlight-pink><highlight-pink>Autômato</highlight-pink> (:piercearmor:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       },
       {
-        "id": 31,
-        "nome": "Armaria (Atlante)"
+        "nome": "Armaria (Atlante)",
+        "id": 31
       }
     ],
     "eras": [
@@ -7845,15 +8575,19 @@
       ":aomr_automaton_icon: Automato: -20% de vulnerabilidade a ataques de Furar :piercearmor:",
       ":aomr_type_human_soldier_icon: Soldado Humano: -15% de vulnerabilidade a ataques de Furar :piercearmor:",
       ":aomr_type_hero_icon: Herói: -15% de vulnerabilidade a ataques de Furar :piercearmor:"
-    ]
+    ],
+    "comida": 100,
+    "ouro": 50,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Percepção",
     "beneficia": "<highlight-yellow>:aomr_oracle_hero_icon:</highlight-yellow><highlight-yellow>Oráculo</highlight-yellow> (:los_icon_aoe3de::favoraom:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -7887,15 +8621,22 @@
     "campo": [
       ":aomr_oracle_hero_icon: Oráculo: LDV +10% :los_icon_aoe3de:",
       ":aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:"
-    ]
+    ],
+    "comida": 50,
+    "madeira": 100,
+    "tempo_s": 30
   },
   {
-    "nome": "Mordida do Turbarão",
+    "nome": "Mordida do Tubarão",
     "beneficia": ":aomr_murmillo_icon: <highlight-red>Murmilo</highlight-red>|:aomr_fanatic_icon: <highlight-red>Fanático</highlight-red> (:hackdamage::aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 31,
-        "nome": "Armaria (Atlante)"
+        "nome": "Armaria (Atlante)",
+        "id": 31
+      },
+      {
+        "nome": "MilitaryBarracks",
+        "id": 41
       }
     ],
     "eras": [
@@ -7918,7 +8659,7 @@
         "nome": "Oceano"
       }
     ],
-    "ingles": "Bite Of The Shark",
+    "ingles": "Bite of the Shark",
     "panteoes": [
       {
         "id": 4,
@@ -7935,15 +8676,22 @@
       ":aomr_murmillo_hero_icon: Murmilo (Herói): Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:",
       ":aomr_fanatic_icon: Fanático: Adiciona 0,25 de dano Divino ao longo do tempo contra a Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:",
       ":aomr_fanatic_hero_icon: Fanático (Herói): Adiciona 0,25 de dano Divino ao longo do tempo à Unidade (exceto Cerco) por 3,0 segundos :aomr_divine_damage_icon:"
-    ]
+    ],
+    "comida": 100,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Maça sem Peso",
     "beneficia": ":aomr_katapeltes_icon: <highlight-red>Katapeltes</highlight-red> (:aomr_speed_icon::hackdamage:)",
     "construcao_origem": [
       {
-        "id": 31,
-        "nome": "Armaria (Atlante)"
+        "nome": "Armaria (Atlante)",
+        "id": 31
+      },
+      {
+        "nome": "CounterBarracks",
+        "id": 42
       }
     ],
     "eras": [
@@ -7979,15 +8727,27 @@
       ":aomr_katapeltes_hero_icon: Katapeltes (Herói): Velocidade +10% :aomr_speed_icon:",
       ":aomr_katapeltes_icon: Katapeltes: Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
       ":aomr_katapeltes_hero_icon: Katapeltes (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:"
-    ]
+    ],
+    "madeira": 75,
+    "ouro": 100,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Heroísmo da Linha de Frente",
     "beneficia": ":aomr_type_hero_icon::aomr_type_infantry_icon: <highlight-yellow>Herói de</highlight-yellow><highlight-red>Infantaria</highlight-red> (:foodaom::goldaom:)",
     "construcao_origem": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
+      },
+      {
+        "nome": "CounterBarracks",
+        "id": 42
+      },
+      {
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8021,15 +8781,18 @@
     "campo": [
       ":aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Comida :foodaom:",
       ":aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Ouro :goldaom:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Gêmeos",
     "beneficia": "<highlight-pink>:aomr_satyr_icon:</highlight-pink><highlight-pink>Sátiro</highlight-pink> (:piercedamage:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8062,15 +8825,22 @@
     "icon": "aomr_gemini_icon",
     "campo": [
       ":aomr_satyr_icon: Sátiro: Ataque de longo alcance carregado de Dano (Todos os Tipos) +50% :piercedamage:"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
-    "nome": "Renovação Heróica",
+    "nome": "Renovação Heroica",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
+      },
+      {
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8104,15 +8874,18 @@
     "campo": [
       ":aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:",
       ":aomr_type_hero_icon: Herói: Pontos de Vida +10% :aomr_hit_points_icon:"
-    ]
+    ],
+    "ouro": 125,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Filhos do Sol",
     "beneficia": "<highlight-yellow>:aomr_oracle_hero_icon:</highlight-yellow><highlight-yellow>Oráculo</highlight-yellow> (zero:favoraom:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8135,7 +8908,7 @@
         "nome": "Hyperion"
       }
     ],
-    "ingles": "Sons Of The Sun",
+    "ingles": "Sons of the Sun",
     "panteoes": [
       {
         "id": 4,
@@ -8146,15 +8919,18 @@
     "campo": [
       ":aomr_oracle_hero_icon: Oráculo (Herói) ativado",
       ":aomr_oracle_hero_icon: Oráculo (Herói): Define Favor custo para 0.00 :favoraom:"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Chifres da Consagração",
     "beneficia": ":aomr_fanatic_icon: <highlight-red>Fanático</highlight-red> <highlight-teal>ativado</highlight-teal> <highlight-red>✅</highlight-red>",
     "construcao_origem": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8177,7 +8953,7 @@
         "nome": "Rheia"
       }
     ],
-    "ingles": "Horns Of Consecration",
+    "ingles": "Horns of Consecration",
     "panteoes": [
       {
         "id": 4,
@@ -8188,15 +8964,26 @@
     "campo": [
       ":aomr_fanatic_icon: Fanático ativado ✅",
       ":aomr_fanatic_icon: Fanático: Tempo de treinamento -20% :aomr_time_icon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Cota de Oricalco",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "Armaria (Atlante)",
+        "id": 31
+      },
+      {
+        "nome": "MilitaryBarracks",
+        "id": 41
+      },
+      {
+        "nome": "CounterBarracks",
+        "id": 42
       }
     ],
     "eras": [
@@ -8229,15 +9016,18 @@
     "icon": "aomr_orichalcum_mail_icon",
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: -15% de vulnerabilidade a ataques de Golpear :hackarmor:"
-    ]
+    ],
+    "ouro": 175,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "O Presente de Reia",
     "beneficia": "⏫ Tecnologia (zero:favoraom:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8260,7 +9050,7 @@
         "nome": "Rheia"
       }
     ],
-    "ingles": "Rheias Gift",
+    "ingles": "Rheia's Gift",
     "panteoes": [
       {
         "id": 4,
@@ -8271,15 +9061,18 @@
     "todas_as_tecnologias": "-100% de custo de Favor :favoraom:",
     "campo": [
       "⏫ Todas as tecnologias: -100% de custo de Favor :favoraom:"
-    ]
+    ],
+    "comida": 75,
+    "ouro": 75,
+    "tempo_s": 5
   },
   {
     "nome": "Visão Profética",
     "beneficia": "<highlight-yellow>:aomr_oracle_hero_icon:</highlight-yellow><highlight-yellow>Oráculo</highlight-yellow> (:favoraom:)",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8314,15 +9107,19 @@
       ":aomr_oracle_hero_icon: Oráculo: Coleta Automática de Favor taxa de trabalho para Favor +10% :favoraom:",
       ":aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:",
       ":aomr_oracle_hero_icon: Oráculo: Ativa a Ação de Revelar Interface de Inimigos"
-    ]
+    ],
+    "comida": 50,
+    "ouro": 100,
+    "favor": 8,
+    "tempo_s": 40
   },
   {
     "nome": "Segredo de Poseidon",
     "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon:-: foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       }
     ],
     "eras": [
@@ -8345,7 +9142,7 @@
         "nome": "Theia"
       }
     ],
-    "ingles": "Poseidons Secret",
+    "ingles": "Poseidon's Secret",
     "panteoes": [
       {
         "id": 4,
@@ -8361,15 +9158,18 @@
       ":aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Comida :foodaom:",
       ":aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Madeira :woodaom:",
       ":aomr_type_cavalry_icon: :aomr_type_hero_icon: Herói da Cavalaria: -10% de custo de Ouro :goldaom:"
-    ]
+    ],
+    "comida": 150,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Lança de Pedra",
     "beneficia": ":aomr_contarius_icon: <highlight-teal>Contarius</highlight-teal> (:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       }
     ],
     "eras": [
@@ -8392,7 +9192,7 @@
         "nome": "Theia"
       }
     ],
-    "ingles": "Lance Of Stone",
+    "ingles": "Lance of Stone",
     "panteoes": [
       {
         "id": 4,
@@ -8405,19 +9205,22 @@
       ":aomr_contarius_hero_icon: Contarius (Herói): Ataque Corpo a Corpo de Dano (Todos os Tipos) +15% :hackdamage:",
       ":aomr_contarius_icon: Contarius: Ataque Corpo a Corpo enreda Todos para 70.00% da velocidade por 2.00 segundos :aomr_rate_of_fire_icon:",
       ":aomr_contarius_hero_icon: Contarius (Herói): Ataque Corpo a Corpo enreda Todos para 70.00% da velocidade por 2.00 segundos :aomr_rate_of_fire_icon:"
-    ]
+    ],
+    "ouro": 100,
+    "favor": 12,
+    "tempo_s": 40
   },
   {
     "nome": "Auréola do Sol",
     "beneficia": "<highlight-blue>Arcus</highlight-blue>| Sifão",
     "construcao_origem": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       },
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8440,22 +9243,25 @@
         "nome": "Hélios"
       }
     ],
-    "ingles": "Halo Of The Sun",
+    "ingles": "Halo of the Sun",
     "panteoes": [
       {
         "id": 4,
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_halo_of_the_sun_icon"
+    "icon": "aomr_halo_of_the_sun_icon",
+    "ouro": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Petrificação",
     "beneficia": "<highlight-brown>Cerco</highlight-brown>",
     "construcao_origem": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8485,15 +9291,19 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_petrification_icon"
+    "icon": "aomr_petrification_icon",
+    "madeira": 150,
+    "ouro": 50,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Titanomaquia",
     "beneficia": "<highlight-pink>Centimanos</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8523,15 +9333,18 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_titanomachy_icon"
+    "icon": "aomr_titanomachy_icon",
+    "comida": 250,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
-    "nome": "Guardião do Io",
+    "nome": "Guardião de Io",
     "beneficia": "<highlight-pink>Argos</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8554,22 +9367,26 @@
         "nome": "Atlas"
       }
     ],
-    "ingles": "Guardian Of Io",
+    "ingles": "Guardian of Io",
     "panteoes": [
       {
         "id": 4,
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_guardian_of_io_icon"
+    "icon": "aomr_guardian_of_io_icon",
+    "comida": 50,
+    "ouro": 200,
+    "favor": 12,
+    "tempo_s": 40
   },
   {
     "nome": "Devotos de Atlas",
     "beneficia": "<highlight-red>Fanático</highlight-red>",
     "construcao_origem": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8592,22 +9409,26 @@
         "nome": "Atlas"
       }
     ],
-    "ingles": "Devotees Of Atlas",
+    "ingles": "Devotees of Atlas",
     "panteoes": [
       {
         "id": 4,
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_devotees_of_atlas_icon"
+    "icon": "aomr_devotees_of_atlas_icon",
+    "comida": 50,
+    "ouro": 100,
+    "favor": 5,
+    "tempo_s": 40
   },
   {
     "nome": "Escudo dos Titãs",
     "beneficia": "Destruidor",
     "construcao_origem": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -8637,15 +9458,19 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_titan_shield_icon"
+    "icon": "aomr_titan_shield_icon",
+    "madeira": 200,
+    "ouro": 75,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Sangue de Ásper",
     "beneficia": "<highlight-pink>Lâmpade</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8675,15 +9500,18 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_asper_blood_icon"
+    "icon": "aomr_asper_blood_icon",
+    "ouro": 175,
+    "favor": 12,
+    "tempo_s": 40
   },
   {
     "nome": "Rejuvenescimento Mítico",
     "beneficia": "<highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8713,15 +9541,18 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_mythic_rejuvenation_icon"
+    "icon": "aomr_mythic_rejuvenation_icon",
+    "ouro": 150,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Celeridade",
     "beneficia": "<highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 24,
-        "nome": "Templo (Atlante)"
+        "nome": "Templo (Atlante)",
+        "id": 24
       }
     ],
     "eras": [
@@ -8751,15 +9582,18 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_celerity_icon"
+    "icon": "aomr_celerity_icon",
+    "ouro": 200,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Armas Celestiais",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -8788,15 +9622,19 @@
       ":aomr_nezha_child_icon: Nezha (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:",
       ":aomr_jiang_ziya_icon: Jiang Ziya (Herói): Adiciona 1.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:",
       ":aomr_yang_jian_icon: Yang Jian (Herói): Adiciona 2.00 ao Todas as Ações Dano(Divino) :aomr_divine_damage_icon:"
-    ]
+    ],
+    "comida": 100,
+    "ouro": 150,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Tai Chi",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:hackarmor::piercearmor::aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -8823,15 +9661,24 @@
       ":aomr_type_hero_icon: Herói: -10% de vulnerabilidade a ataques de Furar :piercearmor:",
       ":aomr_type_hero_icon: Herói: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
       ":aomr_type_hero_icon: Herói: Tempo de treinamento -25% :aomr_time_icon:"
-    ]
+    ],
+    "madeira": 100,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Chefe Kuafu",
     "beneficia": "<highlight-blue>:aomr_kuafu_hero_icon:</highlight-blue><highlight-orange>Kuafu Herói</highlight-orange>",
     "construcao_origem": [
       {
-        "id": 6,
-        "nome": "Centro Urbano (Chinês)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -8853,7 +9700,10 @@
         "nome": "Chinês"
       }
     ],
-    "icon": "aomr_kuafu_chieftain_icon"
+    "icon": "aomr_kuafu_chieftain_icon",
+    "comida": 150,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Poder Montanhoso",
@@ -8893,15 +9743,19 @@
       ":aomr_kuafu_hero_icon: Kuafu (Herói): Adiciona 10.00 LDV :los_icon_aoe3de:",
       ":aomr_kuafu_icon: Kuafu: Adiciona 10.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_kuafu_hero_icon: Kuafu (Herói): Adiciona 10.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:"
-    ]
+    ],
+    "madeira": 150,
+    "ouro": 150,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Medicina Herbal",
     "beneficia": "<highlight-yellow>Sábio (Herói)</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -8923,15 +9777,18 @@
         "nome": "Chinês"
       }
     ],
-    "icon": "aomr_herbal_medicine_icon"
+    "icon": "aomr_herbal_medicine_icon",
+    "ouro": 100,
+    "favor": 5,
+    "tempo_s": 40
   },
   {
     "nome": "Pêssego da Imortalidade",
     "beneficia": "<highlight-yellow>Herói</highlight-yellow>|<highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -8953,19 +9810,33 @@
         "nome": "Chinês"
       }
     ],
-    "icon": "aomr_peach_of_immortality_icon"
+    "icon": "aomr_peach_of_immortality_icon",
+    "comida": 150,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Livros Divinos",
     "beneficia": "<highlight-red>:aomr_military_camp:</highlight-red><highlight-red>Campo Militar</highlight-red>",
     "construcao_origem": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Oficina de Máquina",
+        "id": 45
       },
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -9001,15 +9872,18 @@
       ":aomr_military_camp: Pátio de Treinamento: -25% de custo de Madeira :woodaom:",
       ":aomr_military_camp: Pátio de Treinamento: -25% de custo de Ouro :goldaom:",
       ":aomr_military_camp: Pátio de Treinamento: Ritmo de Treinamento +50% :aomr_time_icon:"
-    ]
+    ],
+    "madeira": 125,
+    "favor": 10,
+    "tempo_s": 20
   },
   {
     "nome": "Reencarnação",
     "beneficia": "(Reviver Soldados)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9042,15 +9916,19 @@
     "icon": "aomr_reincarnation_icon",
     "campo": [
       ":aomr_temple_icon: Templo: Invoca um novo Soldado Humano para cada 5 Soldados Humanos de um tipo que morreram"
-    ]
+    ],
+    "comida": 125,
+    "ouro": 125,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Bênção de Qilin",
     "beneficia": "<highlight-pink>Qilin</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9073,22 +9951,35 @@
         "nome": "Xuannü"
       }
     ],
-    "ingles": "Qilin%27s Blessing",
+    "ingles": "Qilin's Blessing",
     "panteoes": [
       {
         "id": 5,
         "nome": "Chinês"
       }
     ],
-    "icon": "aomr_qilin_27s_blessing_icon"
+    "icon": "aomr_qilins_blessing_icon",
+    "comida": 100,
+    "ouro": 100,
+    "favor": 25,
+    "tempo_s": 20
   },
   {
     "nome": "Mestre das Armas",
     "beneficia": "<highlight-red>:aomr_ge_halberdier_icon:</highlight-red><highlight-red>Alabardeiro Ge</highlight-red> (:rangeicon:&:aomr_type_cavalry_icon:❄️)",
     "construcao_origem": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Armaria (Chinês)",
+        "id": 32
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -9111,7 +10002,7 @@
         "nome": "Chiyou"
       }
     ],
-    "ingles": "Master Of Weaponry",
+    "ingles": "Master of Weaponry",
     "panteoes": [
       {
         "id": 5,
@@ -9122,15 +10013,19 @@
     "campo": [
       ":aomr_ge_halberdier_icon: Alabardeiro Ge: Adiciona 1.00 ao Ataque Corpo a Corpo Alcance Máximo :rangeicon:",
       ":aomr_ge_halberdier_icon: Alabardeiro Ge: Ataque Corpo a Corpo enreda Cavalaria para 60.00% da velocidade por 2.00 segundos. :aomr_type_cavalry_icon:❄️"
-    ]
+    ],
+    "madeira": 100,
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 30
   },
   {
     "nome": "Espólios de Guerra",
     "beneficia": "💥:aomr_type_building_icon:(:woodaom::goldaom:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9153,7 +10048,7 @@
         "nome": "Chiyou"
       }
     ],
-    "ingles": "Spoils Of War",
+    "ingles": "Spoils of War",
     "panteoes": [
       {
         "id": 5,
@@ -9163,15 +10058,18 @@
     "icon": "aomr_spoils_of_war_icon",
     "campo": [
       "👤 Jogador: 50% do custo das construções inimigas destruídas é concedido ao jogador. :aomr_type_building_icon: :woodaom: :goldaom:"
-    ]
+    ],
+    "ouro": 250,
+    "favor": 25,
+    "tempo_s": 30
   },
   {
     "nome": "Filho de Loong",
     "beneficia": "<highlight-pink>:aomr_yazi_icon:</highlight-pink><highlight-pink>Yazi</highlight-pink> (:aomr_hit_points_icon:&:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9194,7 +10092,7 @@
         "nome": "Chiyou"
       }
     ],
-    "ingles": "Son Of Loong",
+    "ingles": "Son of Loong",
     "panteoes": [
       {
         "id": 5,
@@ -9205,15 +10103,18 @@
     "campo": [
       ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:",
       ":aomr_yazi_icon: Yazi: Todas as Ações de Dano (Todos os Tipos) +25% :hackdamage:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
-    "nome": "Fúria de Matança",
+    "nome": "Fúria da Matança",
     "beneficia": "<highlight-pink>:aomr_yazi_icon:</highlight-pink><highlight-pink>Yazi</highlight-pink> (:aomr_hit_points_icon:&:hackdamage::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9236,7 +10137,7 @@
         "nome": "Chiyou"
       }
     ],
-    "ingles": "Rage Of Slaughter",
+    "ingles": "Rage of Slaughter",
     "panteoes": [
       {
         "id": 5,
@@ -9248,19 +10149,37 @@
       ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:",
       ":aomr_yazi_icon: Yazi: Roubos de Vida por 50.00% do dano causado por Todas as Ações contra Unidade. :hackdamage: :aomr_hit_points_icon:",
       ":aomr_yazi_icon: Yazi: Ativa ao derrotar um inimigo: Ganha 80% de Roubo de Vida por 10 segundos"
-    ]
+    ],
+    "madeira": 150,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Defesas Avançadas",
     "beneficia": ":aomr_sentry_tower_icon: Torre de Sentinela e:aomr_baolei: Baolei (:piercedamage::rangeicon::los_icon_aoe3de:)",
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "WallShort"
       },
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "WallMedium"
+      },
+      {
+        "nome": "WallLong"
+      },
+      {
+        "nome": "WallConnector"
+      },
+      {
+        "nome": "WallGate"
+      },
+      {
+        "nome": "SentryTower",
+        "id": 70
+      },
+      {
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "eras": [
@@ -9298,15 +10217,25 @@
       ":aomr_baolei: Baolei: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:",
       ":aomr_baolei: Baolei: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_baolei: Baolei: Adiciona 2.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "madeira": 250,
+    "ouro": 150,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Perseguindo o Sol",
     "beneficia": "🔨:aomr_town_center_chinese::aomr_type_building_icon: Construção & TC",
     "construcao_origem": [
       {
-        "id": 6,
-        "nome": "Centro Urbano (Chinês)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -9340,7 +10269,10 @@
     "campo": [
       ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Construção + 10% 🔨 :aomr_type_building_icon:",
       ":aomr_type_villager_icon: Aldeão: Construir taxa de trabalho para Assentamento +10% 🔨 :aomr_town_center_chinese:"
-    ]
+    ],
+    "madeira": 75,
+    "favor": 3,
+    "tempo_s": 20
   },
   {
     "nome": "Abundância",
@@ -9381,15 +10313,20 @@
     "icon": "aomr_abundance_icon",
     "campo": [
       ":favoraom: Terreno Favorável: A entrega de recursos gera 5% a mais."
-    ]
+    ],
+    "comida": 50,
+    "madeira": 50,
+    "ouro": 50,
+    "favor": 20,
+    "tempo_s": 45
   },
   {
     "nome": "Determinação Sinistra",
     "beneficia": "<highlight-pink>:aomr_qiongqi_icon:</highlight-pink><highlight-pink>Qiongqi</highlight-pink> (:hackarmor::piercearmor:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9422,19 +10359,19 @@
     "icon": "aomr_sinister_defiance_icon",
     "campo": [
       ":aomr_qiongqi_icon: Qiongqi: Ganha 1% de Amadura Antiperfurante e de Corte para cada unidade inimiga dentro de 6 de alcance (Máx: 25) :hackarmor: :piercearmor:"
-    ]
+    ],
+    "comida": 150,
+    "ouro": 50,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Terreno Vibrante",
     "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> (:woodaom:) e:aomr_house_icon:→",
     "construcao_origem": [
       {
-        "id": 20,
-        "nome": "Silo"
-      },
-      {
-        "id": 8,
-        "nome": "Casa"
+        "nome": "Casa",
+        "id": 8
       }
     ],
     "eras": [
@@ -9468,15 +10405,18 @@
     "campo": [
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Madeira +15% :woodaom:",
       ":aomr_house_icon: Casa: Agora funciona como um local de entrega de madeira e invoca uma árvore a cada 120 segundos :woodaom: :aomr_tree_oak_icon:"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Cascos do Vento",
     "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:hackarmor::aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "eras": [
@@ -9499,7 +10439,7 @@
         "nome": "Goumang"
       }
     ],
-    "ingles": "Hooves Of The Wind",
+    "ingles": "Hooves of the Wind",
     "panteoes": [
       {
         "id": 5,
@@ -9510,15 +10450,18 @@
     "campo": [
       ":aomr_type_cavalry_icon: Cavalaria: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
       ":aomr_type_cavalry_icon: Cavalaria: Velocidade +10% :aomr_speed_icon:"
-    ]
+    ],
+    "madeira": 225,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Corrida Frenética",
     "beneficia": "<highlight-pink>:aomr_taowu_icon:</highlight-pink><highlight-pink>Taowu</highlight-pink> (+:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9551,15 +10494,38 @@
     "icon": "aomr_frenzied_dash_icon",
     "campo": [
       ":aomr_taowu_icon: Táowù: Carregar de Dano (Todos os Tipos) +50% :hackdamage:"
-    ]
+    ],
+    "madeira": 200,
+    "ouro": 50,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Penas Ardentes",
     "beneficia": "<highlight-blue>:aomr_type_archer_icon:</highlight-blue><highlight-blue>Artilharia</highlight-blue> (🚫:hackarmor::piercearmor:+:aomr_rate_of_fire_icon:)",
     "construcao_origem": [
       {
-        "id": 32,
-        "nome": "Armaria (Chinês)"
+        "nome": "Armaria (Chinês)",
+        "id": 32
+      },
+      {
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -9593,15 +10559,18 @@
     "campo": [
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Habilita Penas Ardentes, que reduz a armadura contra corte e antiperfurante do inimigo em 1% por acerto por 5 segundos 🚫 :hackarmor: :piercearmor:",
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Velocidade de ataque aumentada em +5% :aomr_rate_of_fire_icon:"
-    ]
+    ],
+    "madeira": 150,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Rocha Sólida",
     "beneficia": ":aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink> (:hackarmor::piercearmor:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9636,15 +10605,18 @@
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Habilita Rocha Sólida, que reduz a armadura contra corte e antiperfurante enquanto fica parada até um máximo de -40% de Vulnerabilidade",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Vulnerabilidade a ataques cortantes -10% :hackarmor:",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Vulnerabilidade a ataques perfurantes -10% :piercearmor:"
-    ]
+    ],
+    "madeira": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Estômago sem fundo",
     "beneficia": "<highlight-pink>:aomr_taotie_icon:</highlight-pink><highlight-pink>Taotis</highlight-pink> (:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9677,15 +10649,27 @@
     "icon": "aomr_bottomless_stomach_icon",
     "campo": [
       ":aomr_taotie_icon: Taotie: -50% de Tempo de Recarga de Habilidade :aomr_time_icon:"
-    ]
+    ],
+    "comida": 250,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Escudos Dourados",
     "beneficia": "<highlight-red>:aomr_dao_swordsman_icon:</highlight-red><highlight-red>Espadachim de Dao</highlight-red> (:hackarmor:)",
     "construcao_origem": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Armaria (Chinês)",
+        "id": 32
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -9718,19 +10702,27 @@
     "icon": "aomr_gilded_shields_icon",
     "campo": [
       ":aomr_dao_swordsman_icon: Espadachim de Dao: -20% de vulnerabilidade a ataques de Furar :hackarmor:"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 22,
+    "tempo_s": 30
   },
   {
     "nome": "Julgamento Divino",
     "beneficia": "<highlight-red>:aomr_type_infantry_icon:</highlight-red><highlight-red>Infantaria</highlight-red> (:aomr_divine_damage_icon:&:aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "Armaria (Chinês)",
+        "id": 32
       },
       {
-        "id": 32,
-        "nome": "Armaria (Chinês)"
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -9753,7 +10745,7 @@
         "nome": "Rushou"
       }
     ],
-    "ingles": "Divine Judgement",
+    "ingles": "Divine Judgment",
     "panteoes": [
       {
         "id": 5,
@@ -9764,15 +10756,19 @@
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Adiciona 1.00 ao Ataque Corpo a Corpo Dano (Divino) :aomr_divine_damage_icon:",
       ":aomr_type_infantry_icon: Infantaria: Adiciona 0.25 ao Ataque Corpo a Corpo Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
-    ]
+    ],
+    "madeira": 150,
+    "ouro": 150,
+    "favor": 30,
+    "tempo_s": 50
   },
   {
     "nome": "Outono da Abundância",
     "beneficia": ":aomr_pixiu_icon: Pixiu (:foodaom::woodaom:)",
     "construcao_origem": [
       {
-        "id": 55,
-        "nome": "Mercado (Chinês)"
+        "nome": "Mercado (Chinês)",
+        "id": 55
       }
     ],
     "eras": [
@@ -9795,7 +10791,7 @@
         "nome": "Rushou"
       }
     ],
-    "ingles": "Autumn Of Abundance",
+    "ingles": "Autumn of Abundance",
     "panteoes": [
       {
         "id": 5,
@@ -9806,15 +10802,18 @@
     "campo": [
       ":aomr_pixiu_icon: Pixiu: define Comércio a taxa de trabalho para Comida em 0.20 :foodaom:",
       ":aomr_pixiu_icon: Pixiu: define Comércio a taxa de trabalho para Madeira em 0.20 :woodaom:"
-    ]
+    ],
+    "ouro": 200,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Agitador do Céu",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_hit_points_icon:&:aomr_type_myth_unit_icon:)",
     "construcao_origem": [
       {
-        "id": 32,
-        "nome": "Armaria (Chinês)"
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -9837,7 +10836,7 @@
         "nome": "Gonggong"
       }
     ],
-    "ingles": "Shaker Of Heaven",
+    "ingles": "Shaker of Heaven",
     "panteoes": [
       {
         "id": 5,
@@ -9848,15 +10847,18 @@
     "campo": [
       ":aomr_type_hero_icon: Herói: Pontos de Vida +30% :aomr_hit_points_icon:",
       ":aomr_type_hero_icon: Herói: Adiciona 1.00 ao Todas as Ações Bônus de Dano contra Unidade Mitológica :aomr_type_myth_unit_icon:"
-    ]
+    ],
+    "ouro": 350,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Tempestade Turbulenta",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:foodaom::woodaom::goldaom:&:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 44,
-        "nome": "Academia Imperial"
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -9892,15 +10894,19 @@
       ":aomr_type_hero_icon: Herói: -15% de custo de Comida :foodaom:",
       ":aomr_type_hero_icon: Herói: -15% de custo de Madeira :woodaom:",
       ":aomr_type_hero_icon: Herói: -15% de custo de Ouro :goldaom:"
-    ]
+    ],
+    "comida": 100,
+    "ouro": 150,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Última Resistência",
     "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> ()",
     "construcao_origem": [
       {
-        "id": 61,
-        "nome": "Baolei"
+        "nome": "Baolei",
+        "id": 61
       }
     ],
     "eras": [
@@ -9934,15 +10940,18 @@
     "campo": [
       ":aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Golpear Armadura em 0.30%.",
       ":aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Furar Armadura em 0.30%."
-    ]
+    ],
+    "comida": 300,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Maré Crescente",
     "beneficia": "<highlight-pink>:aomr_qinglong_icon:</highlight-pink><highlight-pink>QingLong</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -9977,15 +10986,24 @@
       ":aomr_qinglong_icon: Qinglong: Permite Veterania, que fortalece o Qinglong com -25% de Intervalo de Ataque por nível.",
       "🌀 Veterania Nível 1: 150 de Dano",
       "🌀 Veterania Nível 2: 500 de Dano"
-    ]
+    ],
+    "madeira": 150,
+    "ouro": 50,
+    "favor": 20,
+    "tempo_s": 10
   },
   {
     "nome": "Linhagem de Xuanyuan",
     "beneficia": "<highlight-red>:aomr_type_infantry_icon:</highlight-red><highlight-red>Infantaria</highlight-red> (:hackdamage: ao 💀)",
     "construcao_origem": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -10008,27 +11026,49 @@
         "nome": "Huangdi"
       }
     ],
-    "ingles": "Xuanyuan%27s Bloodline",
+    "ingles": "Xuanyuan's Bloodline",
     "panteoes": [
       {
         "id": 5,
         "nome": "Chinês"
       }
     ],
-    "icon": "aomr_xuanyuan_27s_bloodline_icon",
+    "icon": "aomr_xuanyuans_bloodline_icon",
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Ao Morrer: Causa 25% de Dano à Infantaria próxima. :hackdamage:",
       ":aomr_type_infantry_icon: Infantaria: Ao Morrer: Dá 25% de Roubo de Vida à Infantaria próxima. :hackdamage: :aomr_hit_points_icon:",
       ":aomr_time_icon: Duração: 3 segundos."
-    ]
+    ],
+    "ouro": 250,
+    "favor": 20,
+    "tempo_s": 10
   },
   {
     "nome": "Seda de Leizu",
     "beneficia": ":aomr_type_villager_icon: Aldeão &:aomr_type_human_soldier_icon: Soldado (:aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "Armaria (Chinês)",
+        "id": 32
+      },
+      {
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
+      },
+      {
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -10051,28 +11091,36 @@
         "nome": "Huangdi"
       }
     ],
-    "ingles": "Leizu%27s Silk",
+    "ingles": "Leizu's Silk",
     "panteoes": [
       {
         "id": 5,
         "nome": "Chinês"
       }
     ],
-    "icon": "aomr_leizu_27s_silk_icon",
+    "icon": "aomr_leizus_silk_icon",
     "campo": [
       ":aomr_type_villager_icon: Aldeão: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_human_soldier_icon: Soldado Humano: Pontos de Vida + 10% :aomr_hit_points_icon:",
       ":aomr_type_villager_icon: Aldeão: -10% de vulnerabilidade a ataques de Golpear :hackarmor:",
       ":aomr_type_human_soldier_icon: Soldado Humano: -10% de vulnerabilidade a ataques de Golpear :hackarmor:"
-    ]
+    ],
+    "madeira": 300,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Ordem Imperial",
     "beneficia": ":aomr_dao_swordsman_icon: <highlight-red>:aomr_ge_halberdier_icon:</highlight-red>:aomr_wuzu_javelineer_icon: <highlight-red>:aomr_military_camp:</highlight-red> (custos:foodaom::woodaom::goldaom:)",
     "construcao_origem": [
       {
-        "id": 43,
-        "nome": "Campo Militar"
+        "nome": "MilitaryCamp"
+      },
+      {
+        "nome": "MilitaryCampTower"
+      },
+      {
+        "nome": "MilitaryCampTrainingYard"
       }
     ],
     "eras": [
@@ -10115,15 +11163,18 @@
       "<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Comida :foodaom:",
       "<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Madeira :woodaom:",
       "<highlight-red> :aomr_military_camp:</highlight-red>Conector de Campo Militar: -20% de custo de Ouro :goldaom:"
-    ]
+    ],
+    "comida": 300,
+    "favor": 15,
+    "tempo_s": 30
   },
   {
     "nome": "Poder do Caos",
     "beneficia": "<highlight-pink>:aomr_hundun_icon:</highlight-pink><highlight-pink>Hundun</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -10146,7 +11197,7 @@
         "nome": "Huangdi"
       }
     ],
-    "ingles": "Power Of Chaos",
+    "ingles": "Power of Chaos",
     "panteoes": [
       {
         "id": 5,
@@ -10156,15 +11207,19 @@
     "icon": "aomr_power_of_chaos_icon",
     "campo": [
       ":aomr_hundun_icon: Hundun: Banimento de Dano (Divino) +200% :aomr_divine_damage_icon:"
-    ]
+    ],
+    "madeira": 150,
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 30
   },
   {
     "nome": "Sangue Flamejante",
     "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>MU</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -10197,15 +11252,18 @@
     "icon": "aomr_flaming_blood_icon",
     "campo": [
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Ativa a Ação de Sangue Flamejante"
-    ]
+    ],
+    "comida": 200,
+    "favor": 18,
+    "tempo_s": 40
   },
   {
     "nome": "Canção do Solstício de Verão",
     "beneficia": "<highlight-pink>:aomr_zhuque_icon:</highlight-pink><highlight-pink>Zhuque</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
       }
     ],
     "eras": [
@@ -10228,7 +11286,7 @@
         "nome": "Zhurong"
       }
     ],
-    "ingles": "Song Of Midsummer",
+    "ingles": "Song of Midsummer",
     "panteoes": [
       {
         "id": 5,
@@ -10241,15 +11299,24 @@
       ":aomr_zhuque_icon: Zhuque (Pousado): Adiciona 40.00 à Taxa de Regeneração :aomr_hit_points_icon:",
       ":aomr_zhuque_icon: Zhuque: Pontos de Vida +25% :aomr_hit_points_icon:",
       ":aomr_zhuque_icon: Zhuque (Pousado): Pontos de Vida +25% :aomr_hit_points_icon:"
-    ]
+    ],
+    "comida": 200,
+    "favor": 15,
+    "tempo_s": 40
   },
   {
     "nome": "Chama do Sul",
     "beneficia": "<highlight-blue>:aomr_fire_archer_icon:</highlight-blue><highlight-blue>Arqueiro de Fogo</highlight-blue> (:piercedamage:&:piercedamage::aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 45,
-        "nome": "Oficina de Máquina"
+        "nome": "Oficina de Máquina",
+        "id": 45
+      },
+      {
+        "nome": "MachineWorkshopTower"
+      },
+      {
+        "nome": "MachineWorkshopTrainingYard"
       }
     ],
     "eras": [
@@ -10284,15 +11351,21 @@
       ":aomr_fire_archer_icon: Arqueiro de Fogo: Ataque de longo alcance de Dano (Todos os Tipos) +10% :piercedamage:",
       ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 0.20 de dano de Divino ao longo do tempo para Ataque de longo alcance em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon: :piercedamage:",
       ":aomr_fire_archer_icon: Arqueiro de Fogo: Adiciona 0.20 de dano de Divino ao longo do tempo para Ataque de longo alcance em relação a Construção por 6.00 segundos. :aomr_divine_damage_icon: :piercedamage:"
-    ]
+    ],
+    "comida": 150,
+    "madeira": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Kagura",
     "beneficia": "<highlight-yellow>:aomr_miko_icon:</highlight-yellow><highlight-yellow>Miko (Heroína)</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 64,
-        "nome": "Santuário"
+        "nome": "ShrineJapanese"
+      },
+      {
+        "nome": "ShrineOfTheHunt"
       }
     ],
     "eras": [
@@ -10319,15 +11392,22 @@
     "campo": [
       ":aomr_miko_icon: Miko (Heroína): Curar taxa de trabalho para Unidade +25% :aomr_hit_points_icon:",
       ":aomr_miko_icon: Miko (Heroína): Tempo de treinamento -25% :aomr_time_icon:"
-    ]
+    ],
+    "comida": 60,
+    "favor": 5,
+    "tempo_s": 20
   },
   {
     "nome": "Tenshu",
     "beneficia": "Torre |:aomr_castle_icon: Fortaleza",
     "construcao_origem": [
       {
-        "id": 70,
-        "nome": "Torre de Sentinela"
+        "nome": "SentryTower",
+        "id": 70
+      },
+      {
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -10356,15 +11436,18 @@
       ":aomr_castle_icon: Fortalezas: Todas as Ações de Dano (Todos os Tipos) +20% :piercedamage:",
       ":aomr_sentry_tower_icon: Torre: Adiciona 5.00 LDV :los_icon_aoe3de:",
       ":aomr_castle_icon: Fortalezas: Adiciona 5.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "madeira": 350,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
     "nome": "Ondas Esmagadoras",
     "beneficia": ":aomr_type_myth_unit_icon: <highlight-pink>MU</highlight-pink> (:aomr_speed_icon: e:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10391,15 +11474,18 @@
     "campo": [
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 1.00 ao Todas as Ações Dano (Divino) :aomr_divine_damage_icon:"
-    ]
+    ],
+    "comida": 50,
+    "favor": 10,
+    "tempo_s": 20
   },
   {
     "nome": "Foices de Vento",
     "beneficia": ":aomr_kamaitachi_icon: <highlight-pink>Kamaitachi</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10433,19 +11519,22 @@
     "icon": "aomr_wind_sickles_icon",
     "campo": [
       ":aomr_kamaitachi_icon: Kamaitachi: Todas as Ações de Dano (Todos os Tipos) +40% :hackdamage:"
-    ]
+    ],
+    "comida": 100,
+    "favor": 20,
+    "tempo_s": 20
   },
   {
     "nome": "Katagi",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon:++:amaterasu_tier_1_icon:)",
     "construcao_origem": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       },
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "eras": [
@@ -10479,15 +11568,20 @@
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_infantry_icon: Infantaria: Adiciona 75.00 ao morrer EXP de Bushido :amaterasu_tier_1_icon:"
-    ]
+    ],
+    "ouro": 125,
+    "favor": 15,
+    "tempo_s": 30
   },
   {
     "nome": "Varinhas de Gohei",
     "beneficia": "<highlight-yellow>:aomr_miko_icon:</highlight-yellow><highlight-yellow>Miko</highlight-yellow>|:aomr_shrine_icon: Santuário",
     "construcao_origem": [
       {
-        "id": 64,
-        "nome": "Santuário"
+        "nome": "ShrineJapanese"
+      },
+      {
+        "nome": "ShrineOfTheHunt"
       }
     ],
     "eras": [
@@ -10522,15 +11616,18 @@
       ":aomr_miko_icon: Miko (Heroína): Coletar taxa de trabalho para Santuário +10%",
       ":aomr_shrine_icon: Santuário: Adiciona 2.00 LDV :los_icon_aoe3de:",
       ":aomr_shrine_icon: Santuário: Adiciona 2.00 ao Área de Contribuição de Recurso Alcance Máximo :rangeicon:"
-    ]
+    ],
+    "comida": 50,
+    "madeira": 175,
+    "tempo_s": 30
   },
   {
     "nome": "Alma Condenada",
     "beneficia": "<highlight-pink>Wanyudo</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10560,15 +11657,18 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_condemned_soul_icon"
+    "icon": "aomr_condemned_soul_icon",
+    "comida": 160,
+    "favor": 20,
+    "tempo_s": 30
   },
   {
     "nome": "Nascente de Água Salgada",
     "beneficia": ":aomr_type_villager_icon: <highlight-blue>Aldeão</highlight-blue> ()",
     "construcao_origem": [
       {
-        "id": 67,
-        "nome": "Moinho de Água"
+        "nome": "Moinho de Água",
+        "id": 67
       }
     ],
     "eras": [
@@ -10598,19 +11698,22 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_saltwater_spring_icon"
+    "icon": "aomr_saltwater_spring_icon",
+    "ouro": 125,
+    "favor": 12,
+    "tempo_s": 20
   },
   {
     "nome": "Força de Caçador",
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue> ()",
     "construcao_origem": [
       {
-        "id": 33,
-        "nome": "Armaria (Japonês)"
+        "nome": "Armaria (Japonês)",
+        "id": 33
       },
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       }
     ],
     "eras": [
@@ -10633,22 +11736,29 @@
         "nome": "Minakatatomi"
       }
     ],
-    "ingles": "Hunters Strength",
+    "ingles": "Hunter's Strength",
     "panteoes": [
       {
         "id": 6,
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_hunters_strength_icon"
+    "icon": "aomr_hunters_strength_icon",
+    "madeira": 150,
+    "favor": 12,
+    "tempo_s": 30
   },
   {
     "nome": "Kumiki",
     "beneficia": ":aomr_type_archer_icon: <highlight-blue>Artilharia</highlight-blue>e<highlight-orange>Cerco</highlight-orange> (⤵️)",
     "construcao_origem": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
+      },
+      {
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -10678,15 +11788,19 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_kumiki_icon"
+    "icon": "aomr_kumiki_icon",
+    "madeira": 100,
+    "ouro": 50,
+    "favor": 10,
+    "tempo_s": 20
   },
   {
     "nome": "Arapuca Mortal",
     "beneficia": ":aomr_jorogumo_icon: <highlight-pink>Jorogumo</highlight-pink> (:aomr_divine_damage_icon:)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10721,15 +11835,18 @@
     "campo": [
       ":aomr_jorogumo_icon: Jorogumo: Adiciona 2.00 de dano de Divino ao longo do tempo para Arremessar em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:",
       ":aomr_jorogumo_icon: Jorogumo: Adiciona 1.00 de dano de Divino ao longo do tempo para Ataque Corpo a Corpo em relação a Unidade por 6.00 segundos. :aomr_divine_damage_icon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 14,
+    "tempo_s": 30
   },
   {
     "nome": "Sabedoria dos Nove",
     "beneficia": "<highlight-pink>:aomr_kitsune_icon:</highlight-pink><highlight-pink>Kitsune</highlight-pink> (:los_icon_aoe3de::aomr_speed_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10752,7 +11869,7 @@
         "nome": "Inari Okami"
       }
     ],
-    "ingles": "Wisdom Of Nine",
+    "ingles": "Wisdom of Nine",
     "panteoes": [
       {
         "id": 6,
@@ -10765,15 +11882,17 @@
       ":aomr_kitsune_icon: Kitsune: Adiciona 5.00 LDV :los_icon_aoe3de:",
       ":aomr_kitsune_icon: Kitsune: Adiciona 1.00 ao Impulso de Velocidade Limite de Pilha :aomr_speed_icon:",
       ":aomr_kitsune_icon: Kitsune: Pontos de Vida +75% :aomr_hit_points_icon:"
-    ]
+    ],
+    "comida": 100,
+    "favor": 10,
+    "tempo_s": 40
   },
   {
     "nome": "Vassalos Sashimono",
     "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_hit_points_icon: e ++:aomr_type_cavalry_icon:)",
     "construcao_origem": [
       {
-        "id": 66,
-        "nome": "Estábulo"
+        "nome": "StableJapanese"
       }
     ],
     "eras": [
@@ -10808,15 +11927,18 @@
     "campo": [
       ":aomr_type_cavalry_icon: Cavalaria: Pontos de Vida +10% :aomr_hit_points_icon:",
       ":aomr_type_cavalry_icon: Cavalaria: Adiciona 0.20 ao Todas as Ações Bônus de Dano contra Cavalaria :aomr_type_cavalry_icon:"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 20,
+    "tempo_s": 30
   },
   {
     "nome": "Netsuke de Marfim",
     "beneficia": "<highlight-yellow>:goldaom:</highlight-yellow><highlight-yellow>Ouro</highlight-yellow> (passivo)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10851,15 +11973,18 @@
     "campo": [
       "👤 Jogador: Adiciona 0.40 Ouro ao Unidade Mitológica ganho de Recompensa :goldaom:",
       "👤 Jogador: Adiciona 0.04 Ouro ao Tita ganho de Recompensa :goldaom:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 14,
+    "tempo_s": 30
   },
   {
     "nome": "Práticas Ascéticas",
     "beneficia": "<highlight-pink>:aomr_tengu_icon:</highlight-pink><highlight-pink>Tengu</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -10897,15 +12022,22 @@
       ":aomr_tengu_icon: Tengu: Armadura (Furar) taxa de impulso para Ataque com Salto +15% :piercedamage:",
       ":aomr_tengu_icon: Tengu: Adiciona 5.00 ao Ataque com Salto Alcance Máximo :rangeicon:",
       ":aomr_tengu_icon: Tengu: Adiciona 5.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "ouro": 180,
+    "favor": 15,
+    "tempo_s": 30
   },
   {
     "nome": "Pipa de Ouro",
     "beneficia": "<highlight-blue>:aomr_type_archer_icon:</highlight-blue><highlight-blue>Artilharia</highlight-blue> (e ++)",
     "construcao_origem": [
       {
-        "id": 33,
-        "nome": "Armaria (Japonês)"
+        "nome": "Armaria (Japonês)",
+        "id": 33
+      },
+      {
+        "nome": "Posto de Vigia",
+        "id": 65
       }
     ],
     "eras": [
@@ -10944,15 +12076,18 @@
       ":aomr_type_hero_icon: Herói: Ataque Corpo a Corpo de Bônus de Dano contra Unidade Mitológica +25%",
       ":aomr_type_archer_icon: Soldado de Longo Alcance: Todas as Ações de Dano (Todos os Tipos) +15%",
       ":aomr_type_hero_icon: Herói: Todas as Ações de Dano (Todos os Tipos) +15%"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Oito Estandartes",
     "beneficia": ":aomr_type_hero_icon: <highlight-yellow>Herói</highlight-yellow> (:aomr_time_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -10987,15 +12122,18 @@
     "campo": [
       ":aomr_type_hero_icon: Herói: Tempo de treinamento -30% :aomr_time_icon:",
       ":aomr_type_hero_icon: Herói: Adiciona 1.50 à Taxa de Regeneração :aomr_hit_points_icon:"
-    ]
+    ],
+    "comida": 150,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
-    "nome": "Presente Trovejante",
+    "nome": "Presença Trovejante",
     "beneficia": "<highlight-pink>:aomr_raiju_icon:</highlight-pink><highlight-pink>Raijin</highlight-pink> (:hackdamage::aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11025,19 +12163,22 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_thunderous_presence_icon",
+    "icon": "aomr_thunderous_prescence_icon",
     "campo": [
       ":aomr_raiju_icon: Raiju: Todas as Ações de Dano (Todos os Tipos) +35% :hackdamage:",
       ":aomr_raiju_icon: Raiju: Velocidade + 10% :aomr_speed_icon:"
-    ]
+    ],
+    "comida": 250,
+    "favor": 22,
+    "tempo_s": 40
   },
   {
     "nome": "Tambores Den Den",
     "beneficia": "<highlight-purple>God Power</highlight-purple> (+ barato)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11067,19 +12208,22 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_den_den_drums_icon"
+    "icon": "aomr_den_den_drums_icon",
+    "ouro": 300,
+    "favor": 10,
+    "tempo_s": 30
   },
   {
     "nome": "Máscara de Hannya",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (→)",
     "construcao_origem": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       },
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "eras": [
@@ -11109,15 +12253,18 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_hannya_mask_icon"
+    "icon": "aomr_hannya_mask_icon",
+    "comida": 200,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Fúria Mortal",
     "beneficia": "<highlight-pink>:aomr_oni_icon:</highlight-pink><highlight-pink>Oni</highlight-pink> (:hackdamage::hackarmor:)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11152,15 +12299,18 @@
     "campo": [
       ":aomr_oni_icon: Oni: Todas as Ações de Dano (Todos os Tipos) +30% :hackdamage:",
       ":aomr_oni_icon: Oni: -20% de vulnerabilidade a ataques de Golpear :hackarmor:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 16,
+    "tempo_s": 40
   },
   {
     "nome": "Máscara Oni",
     "beneficia": "<highlight-pink>:aomr_type_myth_unit_icon:</highlight-pink><highlight-pink>MU</highlight-pink> (:aomr_time_icon::aomr_hit_points_icon:)",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11195,15 +12345,17 @@
     "campo": [
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Pontos de Vida +25% :aomr_hit_points_icon:",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Tempo de treinamento -40% :aomr_time_icon:"
-    ]
+    ],
+    "comida": 125,
+    "favor": 18,
+    "tempo_s": 30
   },
   {
     "nome": "Fúria do Vendaval",
     "beneficia": "<highlight-teal>:aomr_type_cavalry_icon:</highlight-teal><highlight-teal>Cavalaria</highlight-teal> (:aomr_speed_icon:&:aomr_rate_of_fire_icon::hackdamage:)",
     "construcao_origem": [
       {
-        "id": 66,
-        "nome": "Estábulo"
+        "nome": "StableJapanese"
       }
     ],
     "eras": [
@@ -11226,7 +12378,7 @@
         "nome": "Fujin"
       }
     ],
-    "ingles": "Gales Fury",
+    "ingles": "Gale's Fury",
     "panteoes": [
       {
         "id": 6,
@@ -11239,15 +12391,18 @@
       ":aomr_type_cavalry_icon: Cavalaria: Velocidade +5% :aomr_speed_icon:",
       ":aomr_type_cavalry_icon: Cavalaria: Ataque Corpo a Corpo Intervalo de Ataque 10% :aomr_rate_of_fire_icon: :hackdamage:",
       ":aomr_type_cavalry_icon: Cavalaria: Ataque de longo alcance Intervalo de Ataque 10% :aomr_rate_of_fire_icon: :hackdamage:"
-    ]
+    ],
+    "comida": 100,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Malevolência Ardente",
     "beneficia": "<highlight-pink>:aomr_asura_icon:</highlight-pink><highlight-pink>Asura</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11281,19 +12436,22 @@
     "campo": [
       ":aomr_asura_icon: Asura: Ataque Corpo a Corpo Intervalo de Ataque -25% :aomr_rate_of_fire_icon:",
       ":aomr_asura_icon: Asura: Ataque de longo alcance Intervalo de Ataque -25% :aomr_rate_of_fire_icon:"
-    ]
+    ],
+    "ouro": 300,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Treinamento de Sumô",
     "beneficia": ":aomr_type_infantry_icon: <highlight-red>Infantaria</highlight-red> (:aomr_hit_points_icon:&:crushdamage:)",
     "construcao_origem": [
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Posto de Vigia",
+        "id": 65
       },
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "eras": [
@@ -11327,15 +12485,18 @@
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Pontos de Vida +20% :aomr_hit_points_icon:",
       ":aomr_type_infantry_icon: Infantaria: Adiciona 0.50 ao Todas as Ações Bônus de Dano contra Construção :crushdamage: :aomr_type_building_icon:"
-    ]
+    ],
+    "comida": 150,
+    "favor": 30,
+    "tempo_s": 30
   },
   {
     "nome": "Espada Dez Punhos",
     "beneficia": "<highlight-red>:aomr_samurai_icon:</highlight-red><highlight-red>Samurai</highlight-red> (:hackdamage:)",
     "construcao_origem": [
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "eras": [
@@ -11358,7 +12519,7 @@
         "nome": "Takemikazuchi"
       }
     ],
-    "ingles": "Ten-fist Sword",
+    "ingles": "Ten-Fist Sword",
     "panteoes": [
       {
         "id": 6,
@@ -11370,15 +12531,19 @@
       ":aomr_samurai_icon: Samurai: Todas as Ações de Dano (Todos os Tipos) +10% :hackdamage:",
       ":aomr_samurai_icon: Samurai: Adiciona 1 à geração de Espada Ronin na ocorrência de Morte",
       ":aomr_samurai_icon: Samurai Hatamoto: Adiciona 1 à geração de Espada Ronin na ocorrência de Morte"
-    ]
+    ],
+    "comida": 150,
+    "ouro": 150,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
-    "nome": "Sojutsu",
+    "nome": "Sōjutsu",
     "beneficia": "<highlight-red>:aomr_yari_spearman_icon:</highlight-red><highlight-red>Lanceiro Yari</highlight-red> (:aomr_rate_of_fire_icon::aomr_speed_icon:)",
     "construcao_origem": [
       {
-        "id": 65,
-        "nome": "Posto de Vigia"
+        "nome": "Posto de Vigia",
+        "id": 65
       }
     ],
     "eras": [
@@ -11401,7 +12566,7 @@
         "nome": "Takemikazuchi"
       }
     ],
-    "ingles": "Sojutsu",
+    "ingles": "Sōjutsu",
     "panteoes": [
       {
         "id": 6,
@@ -11412,15 +12577,18 @@
     "campo": [
       ":aomr_yari_spearman_icon: Lanceiro Yari: Ataque Corpo a Corpo Intervalo de Ataque -15% :aomr_rate_of_fire_icon:",
       ":aomr_yari_spearman_icon: Lanceiro Yari: Velocidade +15% :aomr_speed_icon:"
-    ]
+    ],
+    "ouro": 150,
+    "favor": 28,
+    "tempo_s": 30
   },
   {
     "nome": "Exército Inquieto",
     "beneficia": ":aomr_onmoraki_icon: <highlight-pink>Onmoraki</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11455,15 +12623,24 @@
       ":aomr_onmoraki_icon: Onmoraki: Velocidade +10% :aomr_speed_icon:",
       ":aomr_wretch_icon: Miserável: Velocidade +10% :aomr_speed_icon:",
       ":aomr_onmoraki_icon: Onmoraki: Adiciona 4.00 ao Número de Projéteis de Ataque de longo alcance carregado"
-    ]
+    ],
+    "comida": 175,
+    "favor": 25,
+    "tempo_s": 40
   },
   {
     "nome": "Província Divina",
     "beneficia": "Treinamento+Pesquisa:aomr_time_icon:",
     "construcao_origem": [
       {
-        "id": 7,
-        "nome": "Centro Urbano (Japonês)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -11496,15 +12673,18 @@
     "icon": "aomr_divine_prefecture_icon",
     "campo": [
       ":aomr_type_building_icon: Construção: +60% de Taxa de Trabalho de Treinamento e Pesquisa :aomr_time_icon:"
-    ]
+    ],
+    "ouro": 175,
+    "favor": 25,
+    "tempo_s": 20
   },
   {
-    "nome": "Artesão Mecânicos",
+    "nome": "Artesãos Mecânicos",
     "beneficia": ":aomr_oyumi_icon: <highlight-orange>Oyumi</highlight-orange>",
     "construcao_origem": [
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -11540,15 +12720,18 @@
       ":aomr_oyumi_icon: Oyumi: Adiciona 4.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_oyumi_icon: Oyumi: Adiciona 4.00 ao Quebra de Muralha Alcance Máximo :rangeicon:",
       ":aomr_oyumi_icon: Oyumi: Adiciona 4.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 25,
+    "tempo_s": 30
   },
   {
     "nome": "Assombração Eterna",
     "beneficia": "<highlight-pink>:aomr_shinigami_icon:</highlight-pink><highlight-pink>Shinigami</highlight-pink>",
     "construcao_origem": [
       {
-        "id": 26,
-        "nome": "Templo (Japonês)"
+        "nome": "Templo (Japonês)",
+        "id": 26
       }
     ],
     "eras": [
@@ -11581,15 +12764,18 @@
     "icon": "aomr_eternal_haunting_icon",
     "campo": [
       ":aomr_shinigami_icon: Shinigami Fantasmagórico: Adiciona 1 Shinigami Vingativo ao morrer em um Templo."
-    ]
+    ],
+    "ouro": 240,
+    "favor": 30,
+    "tempo_s": 40
   },
   {
     "nome": "Infiltradores à Beira-mar",
     "beneficia": ":aomr_shinobi_icon: <highlight-blue>Shinobi</highlight-blue>",
     "construcao_origem": [
       {
-        "id": 63,
-        "nome": "Dojo"
+        "nome": "Dojo",
+        "id": 63
       }
     ],
     "eras": [
@@ -11619,19 +12805,23 @@
         "nome": "Japonês"
       }
     ],
-    "icon": "aomr_seaside_infiltrators_icon",
+    "icon": "aomr_seaside_infiltration_icon",
     "campo": [
       ":aomr_shinobi_icon: Shinobi: Ativa a Ação de Bomba de Fumaça",
       ":aomr_shinobi_icon: Shinobi: Velocidade +10% :aomr_speed_icon:"
-    ]
+    ],
+    "comida": 200,
+    "madeira": 100,
+    "favor": 20,
+    "tempo_s": 40
   },
   {
-    "nome": "Onmyodo",
+    "nome": "Onmyōdō",
     "beneficia": ":aomr_onmyoji_icon: <highlight-orange>Onmyoji</highlight-orange>",
     "construcao_origem": [
       {
-        "id": 68,
-        "nome": "Castelo"
+        "nome": "Castelo",
+        "id": 68
       }
     ],
     "eras": [
@@ -11654,7 +12844,7 @@
         "nome": "Watatsumi"
       }
     ],
-    "ingles": "Onmyodo",
+    "ingles": "Onmyōdō",
     "panteoes": [
       {
         "id": 6,
@@ -11664,15 +12854,17 @@
     "icon": "aomr_onmyodo_icon",
     "campo": [
       ":aomr_onmyoji_icon: Onmyoji (Herói): Todas as Ações de Dano (Todos os Tipos) +20%"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 25,
+    "tempo_s": 30
   },
   {
     "nome": "Arcos Assimétricos",
     "beneficia": "<highlight-blue>Cavalheiro Arqueiro Yumi</highlight-blue>",
     "construcao_origem": [
       {
-        "id": 66,
-        "nome": "Estábulo"
+        "nome": "StableJapanese"
       }
     ],
     "eras": [
@@ -11695,7 +12887,7 @@
         "nome": "Watatsumi"
       }
     ],
-    "ingles": "Asymmetrical Bows",
+    "ingles": "Asymmetrical bows",
     "panteoes": [
       {
         "id": 6,
@@ -11707,15 +12899,18 @@
       ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Todas as Ações de Dano (Todos os Tipos) +25% :piercedamage:",
       ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Adiciona 2.00 ao Ataque de longo alcance Alcance Máximo :rangeicon:",
       ":aomr_yumi_horse_archer_icon: Cavalaria de Arqueiro Yumi: Adiciona 2.00 LDV :los_icon_aoe3de:"
-    ]
+    ],
+    "madeira": 200,
+    "favor": 22,
+    "tempo_s": 30
   },
   {
-    "nome": "Mãos de Faraó",
+    "nome": "Mãos do Faraó",
     "beneficia": "<highlight-yellow>:aomr_priest_icon:</highlight-yellow><highlight-yellow>Sarcedote</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 22,
-        "nome": "Templo (Egípcio)"
+        "nome": "Templo (Egípcio)",
+        "id": 22
       }
     ],
     "eras": [
@@ -11739,14 +12934,14 @@
       }
     ],
     "ingles": "Hands of the Pharaoh",
-    "ouro": 68,
+    "ouro": 75,
     "panteoes": [
       {
         "id": 2,
         "nome": "Egípcio"
       }
     ],
-    "tempo_s": 28,
+    "tempo_s": 20,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_hands_of_the_pharaoh_icon",
     "campo": [
@@ -11760,8 +12955,12 @@
     "beneficia": "<highlight-yellow>:aomr_pioneer_icon:</highlight-yellow><highlight-yellow>Pioneiro (Herói)</highlight-yellow>",
     "construcao_origem": [
       {
-        "id": 25,
-        "nome": "Templo (Chinês)"
+        "nome": "Templo (Chinês)",
+        "id": 25
+      },
+      {
+        "nome": "ImperialAcademy",
+        "id": 44
       }
     ],
     "eras": [
@@ -11809,8 +13008,10 @@
     "comida": 25,
     "construcao_origem": [
       {
-        "id": 64,
-        "nome": "Santuário"
+        "nome": "ShrineJapanese"
+      },
+      {
+        "nome": "ShrineOfTheHunt"
       }
     ],
     "eras": [
@@ -11855,8 +13056,10 @@
     "comida": 250,
     "construcao_origem": [
       {
-        "id": 64,
-        "nome": "Santuário"
+        "nome": "ShrineJapanese"
+      },
+      {
+        "nome": "ShrineOfTheHunt"
       }
     ],
     "eras": [
@@ -11900,8 +13103,8 @@
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       }
     ],
     "eras": [
@@ -11931,15 +13134,19 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_levy_mainline_soldiers_icon"
+    "icon": "aomr_levy_mainline_soldiers_icon",
+    "comida": 75,
+    "madeira": 75,
+    "ouro": 75,
+    "tempo_s": 20
   },
   {
     "nome": "Convocar Contrassoldados",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
       }
     ],
     "eras": [
@@ -11969,15 +13176,18 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_levy_counter_soldiers_icon"
+    "icon": "aomr_levy_counter_soldiers_icon",
+    "comida": 75,
+    "madeira": 150,
+    "tempo_s": 20
   },
   {
-    "nome": "Convocar Soldado do Palácio",
+    "nome": "Convocar Soldados do Palácio",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -12007,15 +13217,17 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_levy_palace_soldiers_icon"
+    "icon": "aomr_levy_palace_soldiers_icon",
+    "comida": 150,
+    "tempo_s": 20
   },
   {
     "nome": "Recrutar Soldados da Linha Principal",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 41,
-        "nome": "Quartel Militar"
+        "nome": "MilitaryBarracks",
+        "id": 41
       }
     ],
     "eras": [
@@ -12045,15 +13257,19 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_conscript_mainline_soldiers_icon"
+    "icon": "aomr_conscript_mainline_soldiers_icon",
+    "comida": 100,
+    "madeira": 100,
+    "ouro": 100,
+    "tempo_s": 30
   },
   {
-    "nome": "Recrutar Contrassoldados",
+    "nome": "Recrutar Contra-Soldados",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 42,
-        "nome": "Contralquartel"
+        "nome": "CounterBarracks",
+        "id": 42
       }
     ],
     "eras": [
@@ -12083,15 +13299,18 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_conscript_counter_soldiers_icon"
+    "icon": "aomr_conscript_counter_soldiers_icon",
+    "comida": 100,
+    "madeira": 200,
+    "tempo_s": 20
   },
   {
-    "nome": "Recrutar Soldado do Palácio",
+    "nome": "Recrutar Soldados do Palácio",
     "beneficia": "(:aomr_time_icon:)",
     "construcao_origem": [
       {
-        "id": 60,
-        "nome": "Palácio"
+        "nome": "Palácio",
+        "id": 60
       }
     ],
     "eras": [
@@ -12121,7 +13340,9 @@
         "nome": "Atlante"
       }
     ],
-    "icon": "aomr_conscript_palace_soldiers_icon"
+    "icon": "aomr_conscript_palace_soldiers_icon",
+    "comida": 200,
+    "tempo_s": 30
   },
   {
     "nome": "Cortar e Queimar",
@@ -12152,7 +13373,7 @@
         "nome": "Zhurong"
       }
     ],
-    "ingles": "Slash And Burn",
+    "ingles": "Slash and Burn",
     "panteoes": [
       {
         "id": 5,
@@ -12163,7 +13384,10 @@
     "campo": [
       ":aomr_type_villager_icon: Aldeão: Coletar taxa de trabalho para Fazenda +15%",
       ":aomr_farm_icon: Fazenda: -80% de custo de Madeira :woodaom:"
-    ]
+    ],
+    "ouro": 125,
+    "favor": 20,
+    "tempo_s": 30
   },
   {
     "nome": "Trabalho Divino",
@@ -12171,8 +13395,14 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "id": 1,
-        "nome": "Centro Urbano (Grego)"
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
       }
     ],
     "eras": [
@@ -12233,6 +13463,26 @@
     "campo": [
       ":aomr_wooden_wall_icon: Muralha: Ativa a Ação de Refletir Ataque",
       ":aomr_wooden_wall_icon: Muralha: Adiciona 3.00 ao Refletir Ataque Dano (Golpear) :hackdamage:"
+    ],
+    "madeira": 150,
+    "favor": 15,
+    "tempo_s": 40,
+    "construcao_origem": [
+      {
+        "nome": "WallShort"
+      },
+      {
+        "nome": "WallMedium"
+      },
+      {
+        "nome": "WallLong"
+      },
+      {
+        "nome": "WallConnector"
+      },
+      {
+        "nome": "WallGate"
+      }
     ]
   },
   {
@@ -12254,7 +13504,7 @@
         "nome": "Pan"
       }
     ],
-    "ingles": "Pan&#x27;s Pioneers",
+    "ingles": "Pan's Pioneers",
     "panteoes": [
       {
         "id": 1,
@@ -12265,6 +13515,15 @@
     "campo": [
       ":aomr_village_center_egyptians_icon: Centro de Aldeia: Adiciona 1 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção",
       ":aomr_town_center_greek_icon: Centro Urbano: Adiciona 2 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção"
+    ],
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 20,
+    "construcao_origem": [
+      {
+        "nome": "Templo (Grego)",
+        "id": 1
+      }
     ]
   },
   {
@@ -12298,6 +13557,15 @@
       ":aomr_lykaon_icon: Licaão: Adiciona 2.00 ao Ataque Corpo a Corpo Dano (Todos os Tipos) :hackdamage:",
       ":aomr_lykaon_icon: Licaão: Velocidade +20% :aomr_speed_icon:",
       ":aomr_lykaon_icon: Licaão: transforma a vontade"
+    ],
+    "comida": 300,
+    "favor": 20,
+    "tempo_s": 30,
+    "construcao_origem": [
+      {
+        "nome": "Templo (Grego)",
+        "id": 1
+      }
     ]
   },
   {
@@ -12326,7 +13594,22 @@
         "nome": "Grego"
       }
     ],
-    "icon": "aomr_gracious_hospitality_icon"
+    "icon": "aomr_gracious_hospitality_icon",
+    "comida": 150,
+    "favor": 20,
+    "tempo_s": 40,
+    "construcao_origem": [
+      {
+        "nome": "TownCenter",
+        "id": 9
+      },
+      {
+        "nome": "VillageCenter"
+      },
+      {
+        "nome": "CitadelCenter"
+      }
+    ]
   },
   {
     "nome": "Florestas Sagradas",
@@ -12357,6 +13640,15 @@
     "icon": "aomr_hallowed_woodlands_icon",
     "campo": [
       ":aomr_hamadryad_icon: Hamadríade: Ativa a Ação de Manto da Floresta"
+    ],
+    "comida": 300,
+    "favor": 20,
+    "tempo_s": 40,
+    "construcao_origem": [
+      {
+        "nome": "Templo (Grego)",
+        "id": 1
+      }
     ]
   },
   {
@@ -12385,7 +13677,16 @@
         "nome": "Grego"
       }
     ],
-    "icon": "aomr_fated_arrows_icon"
+    "icon": "aomr_fated_arrows_icon",
+    "comida": 300,
+    "favor": 30,
+    "tempo_s": 40,
+    "construcao_origem": [
+      {
+        "nome": "Campo de Arqueiros",
+        "id": 36
+      }
+    ]
   },
   {
     "nome": "Terra Sagrada",
@@ -12416,6 +13717,15 @@
     "icon": "aomr_sacred_land_icon",
     "campo": [
       ":aomr_farm_icon: Fazenda: Ativa a Ação de Curar :aomr_hit_points_icon:"
+    ],
+    "ouro": 100,
+    "favor": 15,
+    "tempo_s": 30,
+    "construcao_origem": [
+      {
+        "nome": "Celeiro (Grego)",
+        "id": 15
+      }
     ]
   },
   {
@@ -12448,6 +13758,15 @@
     "campo": [
       ":aomr_siren_icon: Sirênico: Ária Atraente de Dano (Golpear) +50% :hackdamage:",
       ":aomr_siren_icon: Sirênico: Velocidade da unidade selecionada +50% 💗"
+    ],
+    "ouro": 300,
+    "favor": 20,
+    "tempo_s": 40,
+    "construcao_origem": [
+      {
+        "nome": "Templo (Grego)",
+        "id": 1
+      }
     ]
   },
   {
@@ -12479,6 +13798,16 @@
     "icon": "aomr_pious_sacrifice_icon",
     "campo": [
       "☠ Ao morrer, unidades humanas próximas recebem -10% de velocidade de ataque por 5 s. Pode acumular 5 vezes, até um máximo de -50%. :aomr_rate_of_fire_icon: :hackdamage:"
+    ],
+    "madeira": 125,
+    "ouro": 125,
+    "favor": 30,
+    "tempo_s": 40,
+    "construcao_origem": [
+      {
+        "nome": "Templo (Grego)",
+        "id": 1
+      }
     ]
   }
 ]
