@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "data:extract-unidades": "python scripts/extract-unidades-aom.py",
     "data:merge-unidades": "python scripts/merge-unidades-aom.py",
+    "data:extract-tecnologias": "python scripts/extract-tecnologias-aom.py",
+    "data:merge-tecnologias": "python scripts/merge-tecnologias-aom.py",
     "preview": "vite preview"
   },
   "dependencies": {
