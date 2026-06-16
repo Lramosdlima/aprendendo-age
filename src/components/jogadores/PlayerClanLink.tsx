@@ -46,7 +46,7 @@ export function PlayerClanLink({
       )}
     >
       {logoUrl ? (
-        <img src={logoUrl} alt="" className="absolute inset-0 size-full scale-150 object-cover" width={36} height={36} />
+        <img src={logoUrl} alt="" className="size-full object-cover" width={36} height={36} />
       ) : (
         <div className="flex size-full items-center justify-center bg-zinc-900 font-mono text-[9px] font-bold uppercase text-zinc-400">
           {tag?.slice(0, 3)}

@@ -34,13 +34,13 @@ export function ClanLogo({
     return (
       <div
         className={cn(
-          "relative shrink-0 overflow-hidden rounded-2xl border border-zinc-600/80 bg-zinc-950 shadow-inner shadow-black/40",
+          "relative shrink-0 overflow-hidden rounded-2xl border border-zinc-600/80 bg-transparent shadow-inner shadow-black/40",
           box,
           className,
         )}
         aria-hidden
       >
-        <img src={logoSrc} alt="" className="absolute inset-0 size-full scale-150 object-cover" />
+        <img src={logoSrc} alt="" className="size-full object-cover" />
       </div>
     );
   }

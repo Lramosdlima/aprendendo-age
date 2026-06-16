@@ -250,6 +250,7 @@ export const enMessages: TranslationTree = {
       loadTimeout: "The request timed out. Please try again later.",
       unconfigured: "Supabase is not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.",
       empty: "No clans registered yet.",
+      viewClan: "View clan page →",
       detail: {
         backToList: "Back to clans",
         notFound: "Clan not found.",

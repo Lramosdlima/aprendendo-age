@@ -250,6 +250,7 @@ export const ptMessages: TranslationTree = {
       loadTimeout: "A consulta demorou demais. Volte mais tarde.",
       unconfigured: "Supabase não configurado. Defina VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY.",
       empty: "Nenhum clã cadastrado ainda.",
+      viewClan: "Ver página do clã →",
       detail: {
         backToList: "Voltar aos clãs",
         notFound: "Clã não encontrado.",

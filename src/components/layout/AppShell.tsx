@@ -65,6 +65,11 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
       navNovo: true,
       match: (p: string) => p === "/jogadores-aom" || p === "/aom-players",
     },
+    {
+      to: "/clans",
+      labelKey: "nav.clans",
+      match: (p: string) => p === "/clans" || p.startsWith("/clans/"),
+    },
   ];
 }
 

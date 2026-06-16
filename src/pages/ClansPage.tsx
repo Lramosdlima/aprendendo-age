@@ -1,101 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
-import { ClanLogo } from "@/components/clans/ClanLogo";
+import { ClanListGrid } from "@/components/clans/ClanListCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 import type { Clan } from "@/data/clans";
 import { useTranslation } from "@/hooks/useTranslation";
-import { getClanLogoUrl } from "@/lib/clanAssetUrl";
-import { clanSlugFromTag } from "@/lib/clanSlug";
 import { fetchClans } from "@/lib/clansApi";
-import { cn } from "@/lib/cn";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
-
-function ClansTable({ clans, t }: { clans: Clan[]; t: ReturnType<typeof useTranslation>["t"] }) {
-  return (
-    <>
-      <div className="hidden md:block">
-        <table className="w-full border-collapse text-left text-sm">
-          <caption className="sr-only">{t("pages.clans.tableCaption")}</caption>
-          <thead>
-            <tr className="border-b border-zinc-800 bg-zinc-950/80 text-xs font-semibold uppercase tracking-wide text-zinc-500">
-              <th scope="col" className="w-16 px-4 py-3 font-medium">
-                {t("pages.clans.logo")}
-              </th>
-              <th scope="col" className="px-3 py-3 font-medium">
-                {t("common.tag")}
-              </th>
-              <th scope="col" className="px-3 py-3 font-medium">
-                {t("common.name")}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {clans.map((c, i) => (
-              <tr
-                key={c.id}
-                className={cn(
-                  "border-b border-zinc-800/90 transition-colors hover:bg-zinc-900/50",
-                  i % 2 === 0 ? "bg-zinc-950/25" : "bg-zinc-900/20",
-                )}
-              >
-                <td className="px-4 py-3">
-                  <Link
-                    to={`/clans/${clanSlugFromTag(c.tag)}`}
-                    className="inline-flex rounded-lg transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
-                  >
-                    <ClanLogo
-                      tag={c.tag}
-                      logoSrc={getClanLogoUrl(c)}
-                      logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
-                    />
-                  </Link>
-                </td>
-                <td className="px-3 py-3">
-                  <Link
-                    to={`/clans/${clanSlugFromTag(c.tag)}`}
-                    className="font-mono text-sm font-medium text-sky-400/95 transition hover:text-sky-300"
-                  >
-                    {c.tag}
-                  </Link>
-                </td>
-                <td className="px-3 py-3">
-                  <Link to={`/clans/${clanSlugFromTag(c.tag)}`} className="text-zinc-100 transition hover:text-white">
-                    {c.name}
-                  </Link>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <ul className="divide-y divide-zinc-800/90 md:hidden" aria-label={t("pages.clans.listAria")}>
-        {clans.map((c, i) => (
-          <li key={c.id}>
-            <Link
-              to={`/clans/${clanSlugFromTag(c.tag)}`}
-              className={cn(
-                "flex items-center gap-4 px-4 py-4 transition-colors hover:bg-zinc-900/40",
-                i % 2 === 0 ? "bg-zinc-950/30" : "bg-zinc-900/15",
-              )}
-            >
-              <ClanLogo
-                tag={c.tag}
-                logoSrc={getClanLogoUrl(c)}
-                logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
-              />
-              <div className="min-w-0 flex-1">
-                <p className="font-mono text-sm font-medium text-sky-400/95">{c.tag}</p>
-                <p className="truncate text-sm text-zinc-200">{c.name}</p>
-              </div>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-}
 
 export function ClansPage() {
   const { t } = useTranslation();
@@ -180,7 +90,7 @@ export function ClansPage() {
         ) : clans.length === 0 ? (
           <p className="px-4 py-12 text-center text-sm text-zinc-500">{t("pages.clans.empty")}</p>
         ) : (
-          <ClansTable clans={clans} t={t} />
+          <ClanListGrid clans={clans} />
         )}
       </div>
     </div>
