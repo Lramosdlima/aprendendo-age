@@ -265,19 +265,30 @@ export function MolduraAgeAvatar({
   portraitUrl: string | null | undefined;
   emptyFallback: ReactNode;
   romanBadge?: { step: RankRomanStep; medallionClass: string };
-  size?: "default" | "compact";
+  size?: "default" | "compact" | "hero" | "large" | "clanMember";
   t?: (key: string, params?: Record<string, string | number>) => string;
 }) {
   const theme = TIER_ACHIEVEMENT_THEME[tierId];
   const ageSrc = frameImageSrc?.trim() ? frameImageSrc : getTokenAssetUrl(ageToken);
   const showFlames = tierId === "diamante";
   const compact = size === "compact";
+  const hero = size === "hero";
+  const large = size === "large";
+  const clanMember = size === "clanMember";
 
   return (
     <div
       className={cn(
         "relative mx-auto aspect-square overflow-visible",
-        compact ? "h-full w-full" : "w-[9rem] sm:w-[9.75rem] md:w-[10rem]",
+        compact
+          ? "h-full w-full"
+          : hero
+            ? "w-[12rem] sm:w-[14rem] md:w-[15rem]"
+            : large
+              ? "w-[10.5rem] sm:w-[12rem] md:w-[13rem]"
+              : clanMember
+                ? "w-[8rem] sm:w-[9rem] md:w-[9.75rem]"
+                : "w-[9rem] sm:w-[9.75rem] md:w-[10rem]",
       )}
     >
       {!compact ? (
@@ -320,7 +331,13 @@ export function MolduraAgeAvatar({
             "shrink-0 rounded-full bg-zinc-950/90 shadow-lg ring-inset",
             compact
               ? "h-[58%] w-[58%] border-[2px] p-[2px] ring-1"
-              : "h-[5.75rem] w-[5.75rem] border-[2.5px] p-[3px] ring-2 sm:h-24 sm:w-24",
+              : hero
+                ? "h-[7.5rem] w-[7.5rem] border-[2.5px] p-[3px] ring-2 sm:h-[8.5rem] sm:w-[8.5rem] md:h-[9rem] md:w-[9rem]"
+                : large
+                  ? "h-[6.5rem] w-[6.5rem] border-[2.5px] p-[3px] ring-2 sm:h-[7.25rem] sm:w-[7.25rem] md:h-[7.75rem] md:w-[7.75rem]"
+                  : clanMember
+                    ? "h-[4.65rem] w-[4.65rem] border-[2px] p-[2px] ring-1 sm:h-[5.25rem] sm:w-[5.25rem] md:h-[5.65rem] md:w-[5.65rem]"
+                    : "h-[5.75rem] w-[5.75rem] border-[2.5px] p-[3px] ring-2 sm:h-24 sm:w-24",
             theme.stepRing,
           )}
         >

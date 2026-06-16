@@ -65,6 +65,28 @@ export function playerClanLogoUrl(player: AomRacePlayer): string | undefined {
   return getClanLogoUrl({ logoPath: player.clanLogoPath });
 }
 
+/** Jogadores sincronizados vinculados a um clã (`profiles.clan_id`). */
+export async function fetchClanPlayers(clanId: string): Promise<AomRacePlayer[]> {
+  if (!isSupabaseConfigured()) return [];
+
+  const supabase = createSupabasePublicClient();
+  if (!supabase) return [];
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .select(PUBLIC_PLAYER_SELECT)
+    .eq("clan_id", clanId)
+    .not("aomstats_rr", "is", null)
+    .not("aomstats_id", "is", null)
+    .order("aomstats_rr", { ascending: false });
+
+  if (error) throw new Error(error.message);
+
+  return (data ?? [])
+    .map((row) => mapRow(row as Parameters<typeof mapRow>[0]))
+    .filter((p): p is AomRacePlayer => p != null);
+}
+
 /** Lista jogadores com snapshot AoM Stats para a Corrida AoM. */
 export async function fetchAomRacePlayers(): Promise<AomRacePlayer[]> {
   if (!isSupabaseConfigured()) return [];

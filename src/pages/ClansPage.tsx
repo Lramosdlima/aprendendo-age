@@ -1,48 +1,15 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
+import { ClanLogo } from "@/components/clans/ClanLogo";
 import { PageHeader } from "@/components/ui/PageHeader";
 import type { Clan } from "@/data/clans";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getClanLogoUrl } from "@/lib/clanAssetUrl";
+import { clanSlugFromTag } from "@/lib/clanSlug";
 import { fetchClans } from "@/lib/clansApi";
 import { cn } from "@/lib/cn";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
-
-function logoInitials(tag: string) {
-  const t = tag.replace(/[^a-zA-Z0-9]/g, "");
-  if (t.length <= 2) return t.toUpperCase() || "?";
-  return (t.slice(0, 1) + t.slice(-1)).toUpperCase();
-}
-
-function ClanLogo({
-  tag,
-  logoSrc,
-  logoComingSoonLabel,
-}: {
-  tag: string;
-  logoSrc?: string;
-  logoComingSoonLabel: string;
-}) {
-  if (logoSrc) {
-    return (
-      <div
-        className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-zinc-600/80 bg-zinc-950 shadow-inner shadow-black/40"
-        aria-hidden
-      >
-        <img src={logoSrc} alt="" className="absolute inset-0 size-full scale-150 object-cover" />
-      </div>
-    );
-  }
-  return (
-    <div
-      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-dashed border-zinc-600/90 bg-zinc-950/80 font-mono text-xs font-semibold uppercase tracking-tight text-zinc-500 shadow-inner shadow-black/30"
-      title={logoComingSoonLabel}
-      aria-hidden
-    >
-      {logoInitials(tag)}
-    </div>
-  );
-}
 
 function ClansTable({ clans, t }: { clans: Clan[]; t: ReturnType<typeof useTranslation>["t"] }) {
   return (
@@ -73,16 +40,30 @@ function ClansTable({ clans, t }: { clans: Clan[]; t: ReturnType<typeof useTrans
                 )}
               >
                 <td className="px-4 py-3">
-                  <ClanLogo
-                    tag={c.tag}
-                    logoSrc={getClanLogoUrl(c)}
-                    logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
-                  />
+                  <Link
+                    to={`/clans/${clanSlugFromTag(c.tag)}`}
+                    className="inline-flex rounded-lg transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
+                  >
+                    <ClanLogo
+                      tag={c.tag}
+                      logoSrc={getClanLogoUrl(c)}
+                      logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
+                    />
+                  </Link>
                 </td>
                 <td className="px-3 py-3">
-                  <span className="font-mono text-sm font-medium text-sky-400/95">{c.tag}</span>
+                  <Link
+                    to={`/clans/${clanSlugFromTag(c.tag)}`}
+                    className="font-mono text-sm font-medium text-sky-400/95 transition hover:text-sky-300"
+                  >
+                    {c.tag}
+                  </Link>
                 </td>
-                <td className="px-3 py-3 text-zinc-100">{c.name}</td>
+                <td className="px-3 py-3">
+                  <Link to={`/clans/${clanSlugFromTag(c.tag)}`} className="text-zinc-100 transition hover:text-white">
+                    {c.name}
+                  </Link>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -91,19 +72,24 @@ function ClansTable({ clans, t }: { clans: Clan[]; t: ReturnType<typeof useTrans
 
       <ul className="divide-y divide-zinc-800/90 md:hidden" aria-label={t("pages.clans.listAria")}>
         {clans.map((c, i) => (
-          <li
-            key={c.id}
-            className={cn("flex items-center gap-4 px-4 py-4", i % 2 === 0 ? "bg-zinc-950/30" : "bg-zinc-900/15")}
-          >
-            <ClanLogo
-              tag={c.tag}
-              logoSrc={getClanLogoUrl(c)}
-              logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
-            />
-            <div className="min-w-0 flex-1">
-              <p className="font-mono text-sm font-medium text-sky-400/95">{c.tag}</p>
-              <p className="truncate text-sm text-zinc-200">{c.name}</p>
-            </div>
+          <li key={c.id}>
+            <Link
+              to={`/clans/${clanSlugFromTag(c.tag)}`}
+              className={cn(
+                "flex items-center gap-4 px-4 py-4 transition-colors hover:bg-zinc-900/40",
+                i % 2 === 0 ? "bg-zinc-950/30" : "bg-zinc-900/15",
+              )}
+            >
+              <ClanLogo
+                tag={c.tag}
+                logoSrc={getClanLogoUrl(c)}
+                logoComingSoonLabel={t("pages.clans.logoComingSoon", { name: c.name })}
+              />
+              <div className="min-w-0 flex-1">
+                <p className="font-mono text-sm font-medium text-sky-400/95">{c.tag}</p>
+                <p className="truncate text-sm text-zinc-200">{c.name}</p>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

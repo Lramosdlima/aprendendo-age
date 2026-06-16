@@ -8,6 +8,7 @@ import { AldeaoDetailPage } from "@/pages/AldeaoDetailPage";
 import { AldeoesPage } from "@/pages/AldeoesPage";
 import { AstecasPage } from "@/pages/AstecasPage";
 import { ClansPage } from "@/pages/ClansPage";
+import { ClanDetailPage } from "@/pages/ClanDetailPage";
 import { ConstrucaoDetailPage } from "@/pages/ConstrucaoDetailPage";
 import { ConstrucoesPage } from "@/pages/ConstrucoesPage";
 import { DeusDetailPage } from "@/pages/DeusDetailPage";
@@ -103,6 +104,7 @@ export default function App() {
           <Route path="jogadores-aom" element={<JogadoresAomPage />} />
           <Route path="aom-players" element={<JogadoresAomPage />} />
           <Route path="clans" element={<ClansPage />} />
+          <Route path="clans/:slug" element={<ClanDetailPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
           <Route path="videos-comunidade" element={<CommunityVideosPage />} />
           <Route path="videos-comunidade/:id" element={<CommunityVideoDetailPage />} />

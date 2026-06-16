@@ -20,6 +20,28 @@ function mapRow(row: {
   };
 }
 
+/** Busca um clã pela sigla na rota (`caok` → tag `CaOK`). */
+export async function fetchClanBySlug(slug: string): Promise<Clan | null> {
+  if (!isSupabaseConfigured()) return null;
+
+  const supabase = createSupabasePublicClient();
+  if (!supabase) return null;
+
+  const normalized = slug.trim();
+  if (!normalized) return null;
+
+  const { data, error } = await supabase
+    .from("clans")
+    .select(CLAN_SELECT)
+    .ilike("tag", normalized)
+    .maybeSingle();
+
+  if (error) throw new Error(error.message);
+  if (!data) return null;
+
+  return mapRow(data as Parameters<typeof mapRow>[0]);
+}
+
 /** Lista clãs cadastrados no Supabase. */
 export async function fetchClans(): Promise<Clan[]> {
   if (!isSupabaseConfigured()) return [];
