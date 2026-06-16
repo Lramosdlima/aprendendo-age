@@ -40,6 +40,7 @@ export type AppUserProfile = {
   aomstatsSnapshotAt: string | null;
   aomstatsClan: string | null;
   clanId: string | null;
+  logoPathLocked: boolean;
 };
 
 type AuthStatus = "loading" | "authenticated" | "unauthenticated" | "unconfigured";
@@ -63,7 +64,7 @@ type AuthContextValue = {
 };
 
 const PROFILE_SELECT =
-  "role, display_name, created_at, aomstats_id, logo_path, aomstats_alias, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at, aomstats_clan, clan_id";
+  "role, display_name, created_at, aomstats_id, logo_path, logo_path_locked, aomstats_alias, aomstats_rr, aomstats_wins, aomstats_losses, aomstats_win_rate, aomstats_rank, aomstats_snapshot_at, aomstats_clan, clan_id";
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
@@ -80,6 +81,7 @@ function mapRowToProfile(
     created_at: string | null;
     aomstats_id: string | null;
     logo_path: string | null;
+    logo_path_locked?: boolean | null;
     aomstats_alias: string | null;
     aomstats_rr: number | null;
     aomstats_wins: number | null;
@@ -96,6 +98,7 @@ function mapRowToProfile(
     : {
         aomstatsId: null,
         logoPath: null,
+        logoPathLocked: false,
         aomstatsAlias: null,
         aomstatsRr: null,
         aomstatsWins: null,
@@ -225,7 +228,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { error } = await supabase
         .from("profiles")
         .update({
-          ...aomStatsSyncPayloadToDbUpdate(payload),
+          ...aomStatsSyncPayloadToDbUpdate(payload, { skipLogoPath: profile?.logoPathLocked }),
           ...(clanFields ?? {}),
         })
         .eq("id", u.id);
@@ -248,7 +251,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       await loadProfileForUser(u);
       return { ok: true };
     },
-    [loadProfileForUser, profile?.aomstatsClan, supabase],
+    [loadProfileForUser, profile?.aomstatsClan, profile?.logoPathLocked, supabase],
   );
 
   const unsyncAomStats = useCallback(async (): Promise<AuthResult> => {

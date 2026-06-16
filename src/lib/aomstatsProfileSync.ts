@@ -11,6 +11,7 @@ export type AomStatsSnapshotFields = {
   aomstatsId: string | null;
   aomstatsAlias: string | null;
   logoPath: string | null;
+  logoPathLocked: boolean;
   aomstatsRr: number | null;
   aomstatsWins: number | null;
   aomstatsLosses: number | null;
@@ -103,6 +104,7 @@ export function buildRankHeroFromProfile(profile: AomStatsSnapshotFields): {
 export function profileRowToAomStatsFields(row: {
   aomstats_id: string | null;
   logo_path: string | null;
+  logo_path_locked?: boolean | null;
   aomstats_alias: string | null;
   aomstats_rr: number | null;
   aomstats_wins: number | null;
@@ -116,6 +118,7 @@ export function profileRowToAomStatsFields(row: {
   return {
     aomstatsId: row.aomstats_id?.trim() || null,
     logoPath: row.logo_path?.trim() || null,
+    logoPathLocked: row.logo_path_locked === true,
     aomstatsAlias: row.aomstats_alias?.trim() || null,
     aomstatsRr: row.aomstats_rr,
     aomstatsWins: row.aomstats_wins,
@@ -128,11 +131,13 @@ export function profileRowToAomStatsFields(row: {
   };
 }
 
-export function aomStatsSyncPayloadToDbUpdate(payload: AomStatsProfileSyncPayload) {
-  return {
+export function aomStatsSyncPayloadToDbUpdate(
+  payload: AomStatsProfileSyncPayload,
+  options?: { skipLogoPath?: boolean },
+) {
+  const update: Record<string, unknown> = {
     aomstats_id: payload.aomstatsId,
     aomstats_alias: payload.aomstatsAlias,
-    logo_path: payload.logoPath,
     aomstats_rr: payload.rr,
     aomstats_wins: payload.wins,
     aomstats_losses: payload.losses,
@@ -140,6 +145,12 @@ export function aomStatsSyncPayloadToDbUpdate(payload: AomStatsProfileSyncPayloa
     aomstats_rank: payload.rank,
     aomstats_snapshot_at: new Date().toISOString(),
   };
+
+  if (!options?.skipLogoPath) {
+    update.logo_path = payload.logoPath;
+  }
+
+  return update;
 }
 
 export async function buildAomStatsClanDbUpdate(
