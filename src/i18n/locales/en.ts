@@ -299,8 +299,6 @@ export const enMessages: TranslationTree = {
         godsInsigniaUndefeatedHint: "Highest game-weighted average win rate in the clan.",
         godsInsigniaHighlight: "Highlight",
         godsInsigniaHighlightHint: "Highest game-weighted average RR in the clan.",
-        tierTooltipRrRange: "RR {{min}} – {{max}}",
-        tierTooltipRrMinOnly: "RR {{min}}+",
       },
     },
     communityVideos: {
@@ -736,6 +734,8 @@ export const enMessages: TranslationTree = {
       racePopoverRank: "Rank",
       raceMiniSubTier: "Sub-tier",
       raceSnapshotHint: "Positions and RR are updated over time.",
+      tierTooltipRrRange: "RR {{min}} – {{max}}",
+      tierTooltipRrMinOnly: "RR {{min}}+",
     },
     admin: {
       secretBuilder: {

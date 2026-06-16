@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
+import { TierPortraitBadge } from "@/components/rank/TierPortraitBadge";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import {
@@ -109,7 +110,7 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
       aria-label={label}
       className={cn(
         "fixed z-[300] w-fit min-w-[17rem] max-w-[min(calc(100vw-1.25rem),28rem)]",
-        "overflow-hidden rounded-2xl border border-aom-border/60 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]",
+        "overflow-visible rounded-2xl border border-aom-border/60 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]",
         theme.surfaceClass,
       )}
       style={{ top: position.top, left: position.left }}
@@ -195,12 +196,12 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
                 />
               </div>
             ) : null}
-            <img
-              src={tierPortrait}
-              alt=""
-              className="h-9 w-9 shrink-0 object-contain opacity-90"
-              width={36}
-              height={36}
+            <TierPortraitBadge
+              cls={cls}
+              tierPortrait={tierPortrait}
+              rr={player.rr}
+              tooltipPlacement="above"
+              tooltipAlign="end"
             />
           </div>
         </div>

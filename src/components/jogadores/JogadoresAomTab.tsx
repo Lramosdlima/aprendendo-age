@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 
 import { PlayerClanLink } from "@/components/jogadores/PlayerClanLink";
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
+import { TierPortraitBadge } from "@/components/rank/TierPortraitBadge";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
@@ -70,7 +71,7 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
   }
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-aom-border/60 bg-[#141414] shadow-lg shadow-black/40">
+    <div className="rounded-2xl border border-aom-border/60 bg-[#141414] shadow-lg shadow-black/40">
       <div className="border-b border-zinc-800/90 px-4 py-3 sm:px-5">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">{t("common.community")}</p>
         <p className="mt-1 text-sm text-zinc-400">{t("pages.players.tableSectionDesc")}</p>
@@ -126,7 +127,7 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
         <p className="px-4 py-10 text-center text-sm text-zinc-500 sm:px-5">{t("pages.players.tierFilterEmpty")}</p>
       ) : (
         <>
-          <div className="hidden lg:block">
+          <div className="hidden overflow-visible lg:block">
             <table className="w-full border-collapse text-left text-sm">
               <caption className="sr-only">{t("pages.players.tableCaption")}</caption>
               <thead>
@@ -185,13 +186,14 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                         <PlayerClanLink player={player} size="sm" className="justify-center" />
                       </td>
                       <td className="px-3 py-3 text-zinc-400">{cls.categoryLabel}</td>
-                      <td className="px-2 py-3 text-center">
-                        <img
-                          src={getFormRankPortraitPath(cls.tierId)}
-                          alt=""
-                          className="mx-auto h-9 w-9 object-contain opacity-90"
-                          width={36}
-                          height={36}
+                      <td className="relative overflow-visible px-2 py-3 text-center">
+                        <TierPortraitBadge
+                          cls={cls}
+                          tierPortrait={getFormRankPortraitPath(cls.tierId)}
+                          rr={player.rr}
+                          className="mx-auto w-fit"
+                          tooltipPlacement="above"
+                          tooltipAlign="center"
                         />
                       </td>
                       <td className={cn("px-3 py-3 font-semibold tabular-nums", theme.stepAccent)}>{player.rr}</td>
@@ -238,12 +240,12 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                       <p className="mt-0.5 truncate text-xs text-zinc-400">{cls.categoryLabel}</p>
                     </div>
                     <PlayerClanLink player={player} size="sm" />
-                    <img
-                      src={getFormRankPortraitPath(cls.tierId)}
-                      alt=""
-                      className="h-9 w-9 shrink-0 object-contain opacity-90"
-                      width={36}
-                      height={36}
+                    <TierPortraitBadge
+                      cls={cls}
+                      tierPortrait={getFormRankPortraitPath(cls.tierId)}
+                      rr={player.rr}
+                      tooltipPlacement="above"
+                      tooltipAlign="end"
                     />
                   </div>
 

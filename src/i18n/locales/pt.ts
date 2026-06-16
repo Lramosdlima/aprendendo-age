@@ -299,8 +299,6 @@ export const ptMessages: TranslationTree = {
         godsInsigniaUndefeatedHint: "Maior win rate médio ponderado por partidas no clã.",
         godsInsigniaHighlight: "Destaque",
         godsInsigniaHighlightHint: "Maior RR médio ponderado por partidas no clã.",
-        tierTooltipRrRange: "RR {{min}} – {{max}}",
-        tierTooltipRrMinOnly: "RR {{min}}+",
       },
     },
     communityVideos: {
@@ -737,6 +735,8 @@ export const ptMessages: TranslationTree = {
       racePopoverRank: "Rank",
       raceMiniSubTier: "Sub-tier",
       raceSnapshotHint: "As posições e rr são atualizadas com tempo.",
+      tierTooltipRrRange: "RR {{min}} – {{max}}",
+      tierTooltipRrMinOnly: "RR {{min}}+",
     },
     admin: {
       secretBuilder: {
