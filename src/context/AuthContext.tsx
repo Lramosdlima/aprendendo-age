@@ -16,6 +16,8 @@ import {
   profileRowToAomStatsFields,
   type AomStatsProfileSyncPayload,
 } from "@/lib/aomstatsProfileSync";
+import { fetchGodStats } from "@/lib/formRetoldApi";
+import { deleteProfileGods, upsertProfileGodsFromApi } from "@/lib/profileGodsSync";
 import { authErrorMessage } from "@/lib/auth/authErrors";
 import { MIN_PASSWORD_LENGTH, SIGNUP_APP, parseUserRole, type UserRole } from "@/lib/auth/constants";
 import { createSupabaseClient } from "@/lib/supabase/client";
@@ -229,6 +231,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         .eq("id", u.id);
 
       if (error) return { ok: false, message: error.message };
+
+      const aomstatsId = Number.parseInt(payload.aomstatsId, 10);
+      if (Number.isFinite(aomstatsId) && aomstatsId > 0) {
+        try {
+          const gods = await fetchGodStats(aomstatsId);
+          const godsResult = await upsertProfileGodsFromApi(supabase, u.id, gods);
+          if (!godsResult.ok) {
+            console.warn("[syncAomStats] gods persist failed:", godsResult.message);
+          }
+        } catch (err) {
+          console.warn("[syncAomStats] gods fetch failed:", err);
+        }
+      }
+
       await loadProfileForUser(u);
       return { ok: true };
     },
@@ -244,6 +260,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     const { error } = await supabase.from("profiles").update(AOMSTATS_UNSYNC_DB_UPDATE).eq("id", u.id);
     if (error) return { ok: false, message: error.message };
+
+    const godsDelete = await deleteProfileGods(supabase, u.id);
+    if (!godsDelete.ok) {
+      console.warn("[unsyncAomStats] gods delete failed:", godsDelete.message);
+    }
+
     await loadProfileForUser(u);
     return { ok: true };
   }, [loadProfileForUser, supabase]);

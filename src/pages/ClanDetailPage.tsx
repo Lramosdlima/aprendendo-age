@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { ClanGodsSection } from "@/components/clans/ClanGodsSection";
 import { ClanLogo } from "@/components/clans/ClanLogo";
 import { ClanPlaceholderSections } from "@/components/clans/ClanPlaceholderSections";
 import { ClanRoster } from "@/components/clans/ClanRoster";
@@ -10,6 +11,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { getClanLogoUrl } from "@/lib/clanAssetUrl";
 import { getClanTheme } from "@/lib/clanTheme";
 import { fetchClanBySlug } from "@/lib/clansApi";
+import { aggregateClanGods, fetchClanProfileGods, type ClanGodAggregate } from "@/lib/clanGodsApi";
 import { cn } from "@/lib/cn";
 import { fetchClanPlayers, type AomRacePlayer } from "@/lib/playersApi";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
@@ -60,6 +62,8 @@ export function ClanDetailPage() {
 
   const [clan, setClan] = useState<Clan | null>(null);
   const [players, setPlayers] = useState<AomRacePlayer[]>([]);
+  const [clanGods, setClanGods] = useState<ClanGodAggregate[]>([]);
+  const [godsLoading, setGodsLoading] = useState(false);
   const [loading, setLoading] = useState(supabaseConfigured);
   const [error, setError] = useState<string | null>(null);
   const [notFound, setNotFound] = useState(false);
@@ -72,6 +76,7 @@ export function ClanDetailPage() {
       setLoading(false);
       setClan(null);
       setPlayers([]);
+      setClanGods([]);
       setNotFound(!routeSlug);
       return;
     }
@@ -102,9 +107,22 @@ export function ClanDetailPage() {
 
         const roster = await fetchClanPlayers(found.id);
         if (cancelled) return;
+
+        setGodsLoading(true);
+        let godsAgg: ClanGodAggregate[] = [];
+        try {
+          const godRows = await fetchClanProfileGods(found.id);
+          godsAgg = aggregateClanGods(godRows);
+        } catch {
+          godsAgg = aggregateClanGods([]);
+        } finally {
+          if (!cancelled) setGodsLoading(false);
+        }
+
         window.clearTimeout(timeoutId);
         setClan(found);
         setPlayers(roster);
+        setClanGods(godsAgg);
         setError(null);
       } catch (err) {
         if (cancelled) return;
@@ -229,6 +247,7 @@ export function ClanDetailPage() {
               </section>
 
               <ClanPlaceholderSections theme={theme} />
+              <ClanGodsSection gods={clanGods} theme={theme} loading={godsLoading} />
             </>
           ) : null}
         </div>
