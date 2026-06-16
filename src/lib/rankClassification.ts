@@ -126,6 +126,31 @@ export type RankClassification = {
   avatarRingClass: string;
 };
 
+export type RankRrBounds = {
+  min: number;
+  max: number | null;
+};
+
+/** Faixa de RR da subdivisão atual (I / II / III) — espelha `getRankClassification`. */
+export function getRankRrBounds(rr: number): RankRrBounds {
+  const n = Number.isFinite(rr) ? Math.max(0, Math.floor(rr)) : 0;
+  if (n < 800) return { min: 0, max: 799 };
+  if (n < 900) return { min: 800, max: 899 };
+  if (n < 1000) return { min: 900, max: 999 };
+  if (n < 1100) return { min: 1000, max: 1099 };
+  if (n < 1200) return { min: 1100, max: 1199 };
+  if (n < 1300) return { min: 1200, max: 1299 };
+  if (n < 1400) return { min: 1300, max: 1399 };
+  if (n < 1500) return { min: 1400, max: 1499 };
+  if (n < 1600) return { min: 1500, max: 1599 };
+  if (n < 1700) return { min: 1600, max: 1699 };
+  if (n < 1750) return { min: 1700, max: 1749 };
+  if (n < 1800) return { min: 1750, max: 1799 };
+  if (n < 1900) return { min: 1800, max: 1899 };
+  if (n < 2000) return { min: 1900, max: 1999 };
+  return { min: 2000, max: null };
+}
+
 /** Alinhado ao form-retold (locales pt): Diamante | Titã, etc. */
 export function getRankClassification(rr: number): RankClassification {
   if (rr < 1000) {

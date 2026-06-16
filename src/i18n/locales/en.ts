@@ -299,6 +299,8 @@ export const enMessages: TranslationTree = {
         godsInsigniaUndefeatedHint: "Highest game-weighted average win rate in the clan.",
         godsInsigniaHighlight: "Highlight",
         godsInsigniaHighlightHint: "Highest game-weighted average RR in the clan.",
+        tierTooltipRrRange: "RR {{min}} – {{max}}",
+        tierTooltipRrMinOnly: "RR {{min}}+",
       },
     },
     communityVideos: {

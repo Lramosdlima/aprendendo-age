@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { getFormRankPortraitPath, MolduraAgeAvatar } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import type { ClanTheme } from "@/lib/clanTheme";
@@ -5,15 +7,82 @@ import { cn } from "@/lib/cn";
 import { type AomRacePlayer, playerDisplayLabel } from "@/lib/playersApi";
 import {
   getRankClassification,
+  getRankRrBounds,
   rankRomanMedallionClass,
   rankRomanStepFromRr,
   TIER_ACHIEVEMENT_THEME,
+  type RankClassification,
+  type RankTierId,
 } from "@/lib/rankClassification";
 
 const GRID_SCRIM =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M40 0L40 80M0 40L80 40'/%3E%3C/g%3E%3C/svg%3E\")";
 
 type MemberVariant = "champion" | "elite" | "member";
+
+const TIER_PORTRAIT_MEDAL: Record<RankTierId, string> = {
+  bronze: "border-amber-600/45 bg-gradient-to-br from-amber-950/90 via-amber-900/35 to-zinc-950/95 ring-amber-500/40 shadow-[0_0_10px_rgba(251,191,36,0.25)]",
+  prata: "border-zinc-500/45 bg-gradient-to-br from-zinc-900/90 via-zinc-800/35 to-zinc-950/95 ring-zinc-400/35 shadow-[0_0_10px_rgba(161,161,170,0.2)]",
+  ouro: "border-amber-500/45 bg-gradient-to-br from-amber-950/90 via-yellow-900/30 to-zinc-950/95 ring-amber-400/35 shadow-[0_0_10px_rgba(234,179,8,0.22)]",
+  esmeralda:
+    "border-emerald-600/45 bg-gradient-to-br from-emerald-950/90 via-emerald-900/30 to-zinc-950/95 ring-emerald-500/35 shadow-[0_0_10px_rgba(16,185,129,0.22)]",
+  diamante:
+    "border-sky-500/45 bg-gradient-to-br from-sky-950/90 via-sky-900/30 to-zinc-950/95 ring-sky-400/35 shadow-[0_0_10px_rgba(56,189,248,0.28)]",
+};
+
+function TierPortraitBadge({
+  cls,
+  tierPortrait,
+  rr,
+  t,
+}: {
+  cls: RankClassification;
+  tierPortrait: string;
+  rr: number;
+  t: ReturnType<typeof useTranslation>["t"];
+}) {
+  const [open, setOpen] = useState(false);
+  const bounds = getRankRrBounds(rr);
+  const rrLabel =
+    bounds.max != null
+      ? t("pages.clans.detail.tierTooltipRrRange", { min: bounds.min, max: bounds.max })
+      : t("pages.clans.detail.tierTooltipRrMinOnly", { min: bounds.min });
+
+  return (
+    <div className="group/tier relative shrink-0">
+      <button
+        type="button"
+        aria-label={`${cls.subcategoryLabel}: ${rrLabel}`}
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        onBlur={() => setOpen(false)}
+        className={cn(
+          "flex h-9 w-9 items-center justify-center rounded-full border p-1 ring-2 ring-inset transition hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/50 sm:h-10 sm:w-10",
+          TIER_PORTRAIT_MEDAL[cls.tierId],
+        )}
+      >
+        <img src={tierPortrait} alt="" className="h-full w-full object-contain" width={36} height={36} />
+      </button>
+
+      <div
+        role="tooltip"
+        className={cn(
+          "pointer-events-none absolute right-0 top-full z-20 mt-2 w-48 rounded-xl border border-zinc-700/80 bg-zinc-950/95 px-3 py-2.5 text-left shadow-xl shadow-black/50 backdrop-blur-sm",
+          "opacity-0 transition duration-150",
+          "group-hover/tier:opacity-100 group-focus-within/tier:opacity-100",
+          open && "opacity-100",
+        )}
+      >
+        <p className={cn("text-[11px] font-semibold uppercase tracking-wide", TIER_ACHIEVEMENT_THEME[cls.tierId].titleRankClass)}>
+          {cls.subcategoryLabel}
+        </p>
+        <p className="mt-1 text-[10px] leading-snug text-zinc-300">{cls.categoryLabel}</p>
+        <p className="mt-2 text-[10px] font-medium tabular-nums text-zinc-400">{rrLabel}</p>
+        <p className="mt-1 text-[10px] leading-snug text-zinc-500">{cls.hintCategory}</p>
+      </div>
+    </div>
+  );
+}
 
 function ClanMemberCard({
   player,
@@ -72,7 +141,7 @@ function ClanMemberCard({
               ? t("pages.clans.detail.rankChampion")
               : t("pages.clans.detail.rankPosition", { rank })}
           </span>
-          <img src={tierPortrait} alt="" className="h-8 w-8 object-contain opacity-90 sm:h-9 sm:w-9" width={36} height={36} />
+          <TierPortraitBadge cls={cls} tierPortrait={tierPortrait} rr={player.rr} t={t} />
         </div>
 
         <div className={cn("mt-4 flex flex-col items-center text-center", variant !== "member" && "sm:mt-5")}>

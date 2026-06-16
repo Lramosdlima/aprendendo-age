@@ -299,6 +299,8 @@ export const ptMessages: TranslationTree = {
         godsInsigniaUndefeatedHint: "Maior win rate médio ponderado por partidas no clã.",
         godsInsigniaHighlight: "Destaque",
         godsInsigniaHighlightHint: "Maior RR médio ponderado por partidas no clã.",
+        tierTooltipRrRange: "RR {{min}} – {{max}}",
+        tierTooltipRrMinOnly: "RR {{min}}+",
       },
     },
     communityVideos: {
