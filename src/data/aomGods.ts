@@ -52,6 +52,7 @@ const SLUG_BY_KEY = (() => {
     map.set(normalizeGodKey(god.label), god.slug);
   }
   map.set("freyr", "freyr");
+  map.set("frey", "freyr");
   map.set("urano", "oranos");
   map.set("ouranos", "oranos");
   map.set("oranos", "oranos");

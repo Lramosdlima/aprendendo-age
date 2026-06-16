@@ -5,10 +5,10 @@ import type { ClanGodAggregate } from "@/lib/clanGodsApi";
 import { formatClanPlayRate } from "@/lib/clanGodsApi";
 import type { ClanTheme } from "@/lib/clanTheme";
 import { cn } from "@/lib/cn";
-import { getGodPortraitUrl } from "@/lib/godIconFromName";
+import { getGodPortraitUrlBySlug } from "@/lib/godIconFromName";
 
-function GodPortrait({ label, muted }: { label: string; muted?: boolean }) {
-  const src = getGodPortraitUrl(label);
+function GodPortrait({ slug, muted }: { slug: string; muted?: boolean }) {
+  const src = getGodPortraitUrlBySlug(slug);
   return (
     <div
       className={cn(
@@ -47,7 +47,7 @@ function ClanGodCard({
         muted && "opacity-70",
       )}
     >
-      <GodPortrait label={god.label} muted={muted} />
+      <GodPortrait slug={god.slug} muted={muted} />
       <h3
         className={cn(
           "mt-3 font-[family-name:var(--font-display)] font-semibold text-zinc-100",
