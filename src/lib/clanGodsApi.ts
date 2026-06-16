@@ -123,6 +123,44 @@ export function aggregateClanGods(rows: ProfileGodRow[]): ClanGodAggregate[] {
   });
 }
 
+export type ClanGodInsigniaId = "mostPlayed" | "favorite" | "undefeated" | "highlight";
+
+export type ClanGodInsigniaMap = Record<string, ClanGodInsigniaId[]>;
+
+function maxMetricSlugs(
+  gods: ClanGodAggregate[],
+  value: (g: ClanGodAggregate) => number,
+  minValue = 0,
+): Set<string> {
+  const active = gods.filter((g) => g.hasData);
+  if (active.length === 0) return new Set();
+
+  let best = minValue;
+  for (const g of active) {
+    best = Math.max(best, value(g));
+  }
+  if (best <= minValue) return new Set();
+
+  return new Set(active.filter((g) => value(g) === best).map((g) => g.slug));
+}
+
+/** Insígnias do clã por deus (empates recebem a mesma medalha). */
+export function computeClanGodInsigniaMap(gods: ClanGodAggregate[]): ClanGodInsigniaMap {
+  const map: ClanGodInsigniaMap = {};
+
+  const add = (slug: string, id: ClanGodInsigniaId) => {
+    map[slug] = map[slug] ?? [];
+    if (!map[slug].includes(id)) map[slug].push(id);
+  };
+
+  for (const slug of maxMetricSlugs(gods, (g) => g.totalGames)) add(slug, "mostPlayed");
+  for (const slug of maxMetricSlugs(gods, (g) => g.playerCount)) add(slug, "favorite");
+  for (const slug of maxMetricSlugs(gods, (g) => parseWinRatePercent(g.avgWinRate))) add(slug, "undefeated");
+  for (const slug of maxMetricSlugs(gods, (g) => g.avgElo ?? 0)) add(slug, "highlight");
+
+  return map;
+}
+
 export function sortClanGodsByActivity(gods: ClanGodAggregate[]): ClanGodAggregate[] {
   return [...gods].sort((a, b) => {
     if (b.totalGames !== a.totalGames) return b.totalGames - a.totalGames;
