@@ -1,10 +1,17 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { Link } from "react-router-dom";
 
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
-import { type AomRacePlayer, playerClanLogoUrl, playerDisplayLabel } from "@/lib/playersApi";
+import {
+  type AomRacePlayer,
+  playerClanLogoUrl,
+  playerClanPagePath,
+  playerClanTag,
+  playerDisplayLabel,
+} from "@/lib/playersApi";
 import {
   TIER_ACHIEVEMENT_THEME,
   getRankClassification,
@@ -50,7 +57,8 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
   const tierPortrait = getFormRankPortraitPath(cls.tierId);
   const roman = rankRomanStepFromRr(player.rr);
   const clanLogoUrl = playerClanLogoUrl(player);
-  const clanTag = player.aomstatsClan;
+  const clanTag = playerClanTag(player);
+  const clanPath = playerClanPagePath(player);
 
   useLayoutEffect(() => {
     const update = () => {
@@ -132,12 +140,23 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
           <div className="min-w-0 flex-1 overflow-hidden">
             <div className="flex min-w-0 items-center gap-2">
               {clanTag ? (
-                <span
-                  className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-zinc-100"
-                  title={clanTag}
-                >
-                  {clanTag}
-                </span>
+                clanPath ? (
+                  <Link
+                    to={clanPath}
+                    onClick={onClose}
+                    className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-zinc-100 transition hover:border-sky-500/50 hover:text-sky-200"
+                    title={t("pages.players.openClanPage", { tag: clanTag })}
+                  >
+                    {clanTag}
+                  </Link>
+                ) : (
+                  <span
+                    className="shrink-0 rounded-md border border-zinc-500/45 bg-black/25 px-2 py-0.5 font-mono text-xs font-semibold text-zinc-100"
+                    title={clanTag}
+                  >
+                    {clanTag}
+                  </span>
+                )
               ) : null}
               <p className="truncate whitespace-nowrap font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50">
                 {label}
@@ -147,7 +166,22 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
           </div>
 
           <div className="flex shrink-0 items-center gap-1.5">
-            {clanLogoUrl ? (
+            {clanLogoUrl && clanPath ? (
+              <Link
+                to={clanPath}
+                onClick={onClose}
+                title={t("pages.players.openClanPage", { tag: clanTag ?? "" })}
+                className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border border-zinc-500/50 bg-zinc-950 shadow-inner shadow-black/40 transition hover:border-sky-500/50 hover:ring-2 hover:ring-sky-500/25"
+              >
+                <img
+                  src={clanLogoUrl}
+                  alt=""
+                  className="h-full w-full object-cover"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+            ) : clanLogoUrl ? (
               <div
                 className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border border-zinc-500/50 bg-zinc-950 shadow-inner shadow-black/40"
                 aria-hidden

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+import { PlayerClanLink } from "@/components/jogadores/PlayerClanLink";
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
@@ -139,6 +140,9 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                   <th scope="col" className="min-w-[8rem] px-3 py-3 font-medium">
                     {t("common.name")}
                   </th>
+                  <th scope="col" className="w-16 px-2 py-3 text-center font-medium">
+                    {t("pages.players.colClan")}
+                  </th>
                   <th scope="col" className="min-w-[7rem] px-3 py-3 font-medium">
                     {t("pages.players.colCategory")}
                   </th>
@@ -176,6 +180,9 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                         <span className="font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
                           {label}
                         </span>
+                      </td>
+                      <td className="px-2 py-3 text-center">
+                        <PlayerClanLink player={player} size="sm" className="justify-center" />
                       </td>
                       <td className="px-3 py-3 text-zinc-400">{cls.categoryLabel}</td>
                       <td className="px-2 py-3 text-center">
@@ -230,6 +237,7 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                       </p>
                       <p className="mt-0.5 truncate text-xs text-zinc-400">{cls.categoryLabel}</p>
                     </div>
+                    <PlayerClanLink player={player} size="sm" />
                     <img
                       src={getFormRankPortraitPath(cls.tierId)}
                       alt=""

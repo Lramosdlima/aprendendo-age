@@ -1,4 +1,5 @@
 import { getClanLogoUrl } from "@/lib/clanAssetUrl";
+import { clanSlugFromTag } from "@/lib/clanSlug";
 import { createSupabasePublicClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 
@@ -9,6 +10,7 @@ export type AomRacePlayer = {
   logoPath: string | null;
   aomstatsId: string | null;
   aomstatsClan: string | null;
+  clanLinkedTag: string | null;
   clanLogoPath: string | null;
   rr: number;
   wins: number | null;
@@ -47,6 +49,7 @@ function mapRow(row: {
     logoPath: row.logo_path,
     aomstatsId: row.aomstats_id,
     aomstatsClan: row.aomstats_clan?.trim() || null,
+    clanLinkedTag: clanRow?.tag?.trim() || null,
     clanLogoPath: clanRow?.logo_path?.trim() || null,
     rr: row.aomstats_rr,
     wins: row.aomstats_wins,
@@ -63,6 +66,18 @@ export function playerDisplayLabel(player: AomRacePlayer): string {
 
 export function playerClanLogoUrl(player: AomRacePlayer): string | undefined {
   return getClanLogoUrl({ logoPath: player.clanLogoPath });
+}
+
+/** Sigla do clã para exibição (inclui sigla do AoM Stats mesmo sem cadastro local). */
+export function playerClanTag(player: AomRacePlayer): string | null {
+  return player.clanLinkedTag ?? player.aomstatsClan;
+}
+
+/** Rota da página do clã — só quando o jogador está vinculado a um clã em `public.clans`. */
+export function playerClanPagePath(player: AomRacePlayer): string | null {
+  const tag = player.clanLinkedTag;
+  if (!tag) return null;
+  return `/clans/${clanSlugFromTag(tag)}`;
 }
 
 /** Jogadores sincronizados vinculados a um clã (`profiles.clan_id`). */
