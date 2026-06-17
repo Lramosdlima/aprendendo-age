@@ -105,6 +105,19 @@ const BY_SLUG: Record<string, ClanTheme> = {
     linkWebsite: "from-amber-950/80 to-zinc-950 border-amber-500/35",
     linkInstagram: "from-orange-950/80 to-zinc-950 border-orange-500/35",
   },
+  onf: {
+    heroGradient: "from-sky-950/95 via-blue-950/70 to-orange-950/25",
+    heroGlow: "rgba(251,191,36,0.34)",
+    accentText: "text-amber-300",
+    accentBorder: "border-sky-400/45",
+    accentRing: "ring-sky-400/35",
+    badgeBg: "bg-amber-500/15 text-amber-100 border-amber-400/40",
+    statSurface: "border-sky-500/30 bg-sky-950/35",
+    sectionIcon: "text-sky-400/85",
+    linkDiscord: "from-blue-950/80 to-zinc-950 border-blue-500/35",
+    linkWebsite: "from-sky-950/80 to-zinc-950 border-sky-500/35",
+    linkInstagram: "from-amber-950/80 to-zinc-950 border-amber-500/35",
+  },
 };
 
 export function getClanTheme(slug: string): ClanTheme {
