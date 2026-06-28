@@ -30,9 +30,9 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "group relative isolate flex overflow-hidden rounded-2xl border bg-gradient-to-br shadow-lg shadow-black/40 transition duration-300",
+        "group relative isolate flex w-full max-w-full min-w-0 overflow-hidden rounded-2xl border bg-gradient-to-br shadow-lg shadow-black/40 transition duration-300",
         "hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/55 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
-        compact ? "min-h-[6.5rem]" : "min-h-[7.5rem]",
+        compact ? "h-[6.5rem]" : "h-[7.5rem] sm:h-[8rem]",
         style.cardGradient,
         style.border,
         className,
@@ -45,7 +45,12 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
         aria-hidden
       />
 
-      <div className={cn("relative flex w-full items-center gap-4", compact ? "p-4" : "py-4 pl-5 pr-4 sm:py-5 sm:pl-6 sm:pr-5")}>
+      <div
+        className={cn(
+          "relative flex h-full w-full min-w-0 items-center gap-3 sm:gap-4",
+          compact ? "p-4" : "py-4 pl-4 pr-3 sm:py-5 sm:pl-6 sm:pr-5",
+        )}
+      >
         <div className="relative shrink-0">
           <div
             className="pointer-events-none absolute inset-0 scale-110 rounded-2xl blur-xl opacity-60"
@@ -73,25 +78,30 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
           </div>
         </div>
 
-        <div className="min-w-0 flex-1">
+        <div className="min-w-0 flex-1 overflow-hidden">
           <span
             className={cn(
-              "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest",
+              "inline-flex max-w-full items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest",
               style.badgeBg,
             )}
           >
-            <ChannelCategoryIcon category={channel.category} className="scale-75" />
-            {categoryLabel}
+            <ChannelCategoryIcon category={channel.category} className="scale-75 shrink-0" />
+            <span className="truncate">{categoryLabel}</span>
           </span>
           <p
             className={cn(
-              "mt-2 truncate font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-50",
+              "mt-2 line-clamp-2 break-words font-[family-name:var(--font-display)] font-semibold leading-snug tracking-wide text-zinc-50",
               compact ? "text-sm" : "text-base sm:text-lg",
             )}
           >
             {channel.name}
           </p>
-          <p className={cn("mt-1 text-xs font-medium opacity-0 transition-opacity group-hover:opacity-100", style.accentText)}>
+          <p
+            className={cn(
+              "mt-1 hidden text-xs font-medium opacity-0 transition-opacity group-hover:opacity-100 sm:block",
+              style.accentText,
+            )}
+          >
             {t("pages.channels.visitLink")} →
           </p>
         </div>
@@ -119,7 +129,7 @@ export function ChannelGrid({ channels, compact }: { channels: Channel[]; compac
       aria-label={t("pages.channels.listAria")}
     >
       {channels.map((channel) => (
-        <li key={channel.id}>
+        <li key={channel.id} className="min-w-0">
           <ChannelCard channel={channel} compact={compact} />
         </li>
       ))}

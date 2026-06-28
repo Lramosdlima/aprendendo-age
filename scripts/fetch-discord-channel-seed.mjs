@@ -40,6 +40,7 @@ const SERVERS = [
   { url: "https://discord.gg/qhHJMqUcaV", nameHint: "MDRE", sortOrder: 7 },
   { url: "https://discord.gg/3xGx8WyRva", nameHint: "Forkx", sortOrder: 8 },
   { url: "https://discord.gg/UFCE2KS2yv", nameHint: "KevenAoM", sortOrder: 9 },
+  { url: "https://discord.gg/mcgQWYy4CE", nameHint: "RECANTO DA DISCORDIA", sortOrder: 10 },
 ];
 
 async function fetchDiscordMeta(entry) {
