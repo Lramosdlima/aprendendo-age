@@ -1,9 +1,10 @@
 /** Categorias de canal em `public.channels.category`. */
-export type ChannelCategory = "discord" | "instagram" | "youtube" | "twitch" | "site";
+export type ChannelCategory = "discord" | "instagram" | "whatsapp" | "youtube" | "twitch" | "site";
 
 export const CHANNEL_CATEGORIES: readonly ChannelCategory[] = [
   "discord",
   "instagram",
+  "whatsapp",
   "youtube",
   "twitch",
   "site",

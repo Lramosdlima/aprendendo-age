@@ -323,6 +323,7 @@ export const ptMessages: TranslationTree = {
       category: {
         discord: "Discord",
         instagram: "Instagram",
+        whatsapp: "WhatsApp",
         youtube: "YouTube",
         twitch: "Twitch",
         site: "Site",

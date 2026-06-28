@@ -323,6 +323,7 @@ export const enMessages: TranslationTree = {
       category: {
         discord: "Discord",
         instagram: "Instagram",
+        whatsapp: "WhatsApp",
         youtube: "YouTube",
         twitch: "Twitch",
         site: "Website",
