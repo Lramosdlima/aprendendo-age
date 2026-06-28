@@ -160,6 +160,7 @@ export const enMessages: TranslationTree = {
     rank: "Rank (RR)",
     players: "AoM Players",
     clans: "Clans",
+    streamerLinks: "Links",
   },
   pages: {
     home: {
@@ -300,6 +301,28 @@ export const enMessages: TranslationTree = {
         godsInsigniaUndefeatedHint: "Highest game-weighted average win rate in the clan.",
         godsInsigniaHighlight: "Highlight",
         godsInsigniaHighlightHint: "Highest game-weighted average RR in the clan.",
+      },
+    },
+    streamerLinks: {
+      title: "Streamer Links",
+      description: "Communication channels for the BR Age of Mythology community — Discord, YouTube, Twitch, and more.",
+      sectionDesc: "Official streamer and community hub links.",
+      loading: "Loading links…",
+      loadError: "Could not load links.",
+      loadTimeout: "The request timed out. Please try again later.",
+      unconfigured: "Supabase is not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.",
+      empty: "No links registered yet.",
+    },
+    channels: {
+      listAria: "Communication channels list",
+      visitLink: "Open link",
+      openLink: "Open {{name}} in a new tab",
+      category: {
+        discord: "Discord",
+        instagram: "Instagram",
+        youtube: "YouTube",
+        twitch: "Twitch",
+        site: "Website",
       },
     },
     communityVideos: {

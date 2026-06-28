@@ -1,0 +1,115 @@
+import type { Channel } from "@/data/channels";
+import { useTranslation } from "@/hooks/useTranslation";
+import { ChannelCategoryIcon, getChannelCategoryStyle } from "@/lib/channelCategory";
+import { channelImageUrl } from "@/lib/channelsApi";
+import { cn } from "@/lib/cn";
+
+type ChannelCardProps = {
+  channel: Channel;
+  compact?: boolean;
+  className?: string;
+};
+
+export function ChannelCard({ channel, compact = false, className }: ChannelCardProps) {
+  const { t } = useTranslation();
+  const style = getChannelCategoryStyle(channel.category);
+  const imageSrc = channelImageUrl(channel);
+  const categoryLabel = t(`pages.channels.category.${channel.category}`);
+
+  return (
+    <a
+      href={channel.urlLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        "group relative isolate flex overflow-hidden rounded-2xl border bg-gradient-to-br shadow-lg shadow-black/40 transition duration-300",
+        "hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/55 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
+        compact ? "min-h-[6.5rem]" : "min-h-[7.5rem]",
+        style.cardGradient,
+        style.border,
+        className,
+      )}
+      title={t("pages.channels.openLink", { name: channel.name })}
+    >
+      <div
+        className="pointer-events-none absolute -right-4 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full opacity-40 blur-2xl transition-opacity group-hover:opacity-55"
+        style={{ background: style.glow }}
+        aria-hidden
+      />
+
+      <div className={cn("relative flex w-full items-center gap-4", compact ? "p-4" : "py-4 pl-5 pr-4 sm:py-5 sm:pl-6 sm:pr-5")}>
+        <div className="relative shrink-0">
+          <div
+            className="pointer-events-none absolute inset-0 scale-110 rounded-2xl blur-xl opacity-60"
+            style={{ background: style.glow }}
+            aria-hidden
+          />
+          <div
+            className={cn(
+              "relative flex items-center justify-center overflow-hidden rounded-2xl border-2 bg-zinc-950/80 shadow-lg",
+              compact ? "h-12 w-12" : "h-14 w-14 sm:h-16 sm:w-16",
+            )}
+          >
+            {imageSrc ? (
+              <img src={imageSrc} alt="" className="size-full object-cover" />
+            ) : (
+              <span className={cn("text-zinc-100", style.accentText)}>
+                <ChannelCategoryIcon category={channel.category} />
+              </span>
+            )}
+          </div>
+        </div>
+
+        <div className="min-w-0 flex-1">
+          <span
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest",
+              style.badgeBg,
+            )}
+          >
+            <ChannelCategoryIcon category={channel.category} className="scale-75" />
+            {categoryLabel}
+          </span>
+          <p
+            className={cn(
+              "mt-2 truncate font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-50",
+              compact ? "text-sm" : "text-base sm:text-lg",
+            )}
+          >
+            {channel.name}
+          </p>
+          <p className={cn("mt-1 text-xs font-medium opacity-0 transition-opacity group-hover:opacity-100", style.accentText)}>
+            {t("pages.channels.visitLink")} →
+          </p>
+        </div>
+
+        <ExternalLinkIcon className={cn("hidden shrink-0 opacity-40 transition group-hover:opacity-80 sm:block", style.accentText)} />
+      </div>
+    </a>
+  );
+}
+
+function ExternalLinkIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={cn("h-5 w-5", className)} fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
+      <path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function ChannelGrid({ channels, compact }: { channels: Channel[]; compact?: boolean }) {
+  const { t } = useTranslation();
+
+  return (
+    <ul
+      className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3"
+      aria-label={t("pages.channels.listAria")}
+    >
+      {channels.map((channel) => (
+        <li key={channel.id}>
+          <ChannelCard channel={channel} compact={compact} />
+        </li>
+      ))}
+    </ul>
+  );
+}

@@ -26,6 +26,7 @@ import { PanteaoDetailPage } from "@/pages/PanteaoDetailPage";
 import { PanteoesPage } from "@/pages/PanteoesPage";
 import { FormRankPage } from "@/pages/FormRankPage";
 import { JogadoresAomPage } from "@/pages/JogadoresAomPage";
+import { LinksStreamersPage } from "@/pages/LinksStreamersPage";
 import { LoginPage } from "@/pages/LoginPage";
 import { ProfilePage } from "@/pages/ProfilePage";
 import { RegisterPage } from "@/pages/RegisterPage";
@@ -105,6 +106,8 @@ export default function App() {
           <Route path="aom-players" element={<JogadoresAomPage />} />
           <Route path="clans" element={<ClansPage />} />
           <Route path="clans/:slug" element={<ClanDetailPage />} />
+          <Route path="links-streamers" element={<LinksStreamersPage />} />
+          <Route path="streamer-links" element={<LinksStreamersPage />} />
           <Route path="trilha-de-aprendizado" element={<TrilhaDeAprendizadoPage />} />
           <Route path="videos-comunidade" element={<CommunityVideosPage />} />
           <Route path="videos-comunidade/:id" element={<CommunityVideoDetailPage />} />

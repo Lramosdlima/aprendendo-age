@@ -8,6 +8,12 @@ export type YouTubeVideoMetadata = {
   channelName: string;
 };
 
+export type YouTubeChannelMetadata = {
+  name: string;
+  urlLink: string;
+  imagePath: string;
+};
+
 type ThumbnailSet = {
   maxres?: { url?: string };
   high?: { url?: string };
@@ -31,6 +37,25 @@ function pickThumbnail(thumbnails: ThumbnailSet | undefined): string {
   );
 }
 
+function parseYouTubeChannelHandle(channelUrl: string): string | null {
+  const trimmed = channelUrl.trim();
+  if (!trimmed) return null;
+
+  try {
+    const url = new URL(trimmed);
+    const host = url.hostname.replace(/^www\./, "");
+    if (host !== "youtube.com" && host !== "m.youtube.com") return null;
+
+    const handleMatch = url.pathname.match(/^\/@([^/]+)/i);
+    if (handleMatch?.[1]) return handleMatch[1];
+
+    const legacyMatch = url.pathname.match(/^\/(?:c|user|channel)\/([^/]+)/i);
+    return legacyMatch?.[1] ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export class YouTubeApiNotConfiguredError extends Error {
   constructor() {
     super("YOUTUBE_API_NOT_CONFIGURED");
@@ -43,6 +68,47 @@ export class YouTubeVideoNotFoundError extends Error {
     super("YOUTUBE_VIDEO_NOT_FOUND");
     this.name = "YouTubeVideoNotFoundError";
   }
+}
+
+export class YouTubeChannelNotFoundError extends Error {
+  constructor() {
+    super("YOUTUBE_CHANNEL_NOT_FOUND");
+    this.name = "YouTubeChannelNotFoundError";
+  }
+}
+
+/** Metadados públicos de um canal YouTube (handle `@…` ou URL do canal). */
+export async function fetchYouTubeChannelMetadata(channelUrlOrHandle: string): Promise<YouTubeChannelMetadata> {
+  const apiKey = getYouTubeApiKey();
+  if (!apiKey) throw new YouTubeApiNotConfiguredError();
+
+  const handle = parseYouTubeChannelHandle(
+    channelUrlOrHandle.startsWith("@") ? `https://www.youtube.com/${channelUrlOrHandle}` : channelUrlOrHandle,
+  );
+  if (!handle) throw new YouTubeChannelNotFoundError();
+
+  const channelsRes = await fetch(
+    `https://www.googleapis.com/youtube/v3/channels?part=snippet&forHandle=${encodeURIComponent(handle)}&key=${encodeURIComponent(apiKey)}`,
+  );
+  if (!channelsRes.ok) {
+    throw new Error(`YOUTUBE_API_ERROR:${channelsRes.status}`);
+  }
+
+  const channelsJson = (await channelsRes.json()) as {
+    items?: Array<{ snippet?: { title?: string; customUrl?: string; thumbnails?: ThumbnailSet } }>;
+  };
+
+  const snippet = channelsJson.items?.[0]?.snippet;
+  if (!snippet?.title?.trim()) throw new YouTubeChannelNotFoundError();
+
+  const customHandle = snippet.customUrl?.replace(/^@/, "").trim() || handle;
+  const urlLink = `https://www.youtube.com/@${customHandle}`;
+
+  return {
+    name: snippet.title.trim(),
+    urlLink,
+    imagePath: pickThumbnail(snippet.thumbnails),
+  };
 }
 
 export async function fetchYouTubeVideoMetadata(videoUrl: string): Promise<YouTubeVideoMetadata> {

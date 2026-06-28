@@ -1,17 +1,19 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { ClanAboutSection, ClanChannelsSection } from "@/components/clans/ClanChannelsSection";
 import { ClanGodsSection } from "@/components/clans/ClanGodsSection";
 import { ClanLogo } from "@/components/clans/ClanLogo";
-import { ClanPlaceholderSections } from "@/components/clans/ClanPlaceholderSections";
 import { ClanRoster } from "@/components/clans/ClanRoster";
 import { BackLink } from "@/components/ui/BackLink";
 import type { Clan } from "@/data/clans";
+import type { Channel } from "@/data/channels";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getClanLogoUrl } from "@/lib/clanAssetUrl";
 import { getClanTheme } from "@/lib/clanTheme";
 import { fetchClanBySlug } from "@/lib/clansApi";
 import { aggregateClanGods, fetchClanProfileGods, type ClanGodAggregate } from "@/lib/clanGodsApi";
+import { fetchClanChannels } from "@/lib/channelsApi";
 import { cn } from "@/lib/cn";
 import { fetchClanPlayers, type AomRacePlayer } from "@/lib/playersApi";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
@@ -63,6 +65,7 @@ export function ClanDetailPage() {
   const [clan, setClan] = useState<Clan | null>(null);
   const [players, setPlayers] = useState<AomRacePlayer[]>([]);
   const [clanGods, setClanGods] = useState<ClanGodAggregate[]>([]);
+  const [clanChannels, setClanChannels] = useState<Channel[]>([]);
   const [godsLoading, setGodsLoading] = useState(false);
   const [loading, setLoading] = useState(supabaseConfigured);
   const [error, setError] = useState<string | null>(null);
@@ -77,6 +80,7 @@ export function ClanDetailPage() {
       setClan(null);
       setPlayers([]);
       setClanGods([]);
+      setClanChannels([]);
       setNotFound(!routeSlug);
       return;
     }
@@ -108,6 +112,9 @@ export function ClanDetailPage() {
         const roster = await fetchClanPlayers(found.id);
         if (cancelled) return;
 
+        const channels = await fetchClanChannels(found.id);
+        if (cancelled) return;
+
         setGodsLoading(true);
         let godsAgg: ClanGodAggregate[] = [];
         try {
@@ -122,6 +129,7 @@ export function ClanDetailPage() {
         window.clearTimeout(timeoutId);
         setClan(found);
         setPlayers(roster);
+        setClanChannels(channels);
         setClanGods(godsAgg);
         setError(null);
       } catch (err) {
@@ -246,7 +254,8 @@ export function ClanDetailPage() {
                 <ClanRoster players={players} theme={theme} />
               </section>
 
-              <ClanPlaceholderSections theme={theme} />
+              <ClanChannelsSection channels={clanChannels} theme={theme} />
+              <ClanAboutSection theme={theme} />
               <ClanGodsSection gods={clanGods} theme={theme} loading={godsLoading} />
             </>
           ) : null}

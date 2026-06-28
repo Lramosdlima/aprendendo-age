@@ -44,7 +44,7 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
       match: (p: string) => p === "/videos-comunidade" || p.startsWith("/videos-comunidade/"),
     },
     { to: localeSectionPath(locale, "panteoes"), labelKey: "nav.pantheons" },
-    { to: "/astecas", labelKey: "nav.astecas", navNovo: true },
+    { to: "/astecas", labelKey: "nav.astecas" },
     { to: localeSectionPath(locale, "deuses"), labelKey: "nav.gods" },
     { to: localeSectionPath(locale, "eras"), labelKey: "nav.eras" },
     { to: localeSectionPath(locale, "poderes"), labelKey: "nav.godpowers" },
@@ -56,7 +56,6 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
     {
       to: "/rank",
       labelKey: "nav.rank",
-      navNovo: true,
       match: (p: string) => p === "/rank" || p.startsWith("/rank/"),
     },
     {
@@ -69,6 +68,12 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
       to: "/clans",
       labelKey: "nav.clans",
       match: (p: string) => p === "/clans" || p.startsWith("/clans/"),
+    },
+    {
+      to: "/links-streamers",
+      labelKey: "nav.streamerLinks",
+      navNovo: true,
+      match: (p: string) => p === "/links-streamers" || p === "/streamer-links",
     },
   ];
 }

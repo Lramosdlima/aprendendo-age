@@ -160,6 +160,7 @@ export const ptMessages: TranslationTree = {
     rank: "Rank (RR)",
     players: "Jogadores AoM",
     clans: "Clãs",
+    streamerLinks: "Links",
   },
   pages: {
     home: {
@@ -300,6 +301,28 @@ export const ptMessages: TranslationTree = {
         godsInsigniaUndefeatedHint: "Maior win rate médio ponderado por partidas no clã.",
         godsInsigniaHighlight: "Destaque",
         godsInsigniaHighlightHint: "Maior RR médio ponderado por partidas no clã.",
+      },
+    },
+    streamerLinks: {
+      title: "Links Streamers",
+      description: "Canais de comunicação da comunidade BR de Age of Mythology — Discord, YouTube, Twitch e mais.",
+      sectionDesc: "Links oficiais de streamers e hubs da comunidade.",
+      loading: "Carregando links…",
+      loadError: "Não foi possível carregar os links.",
+      loadTimeout: "A consulta demorou demais. Volte mais tarde.",
+      unconfigured: "Supabase não configurado. Defina VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY.",
+      empty: "Nenhum link cadastrado ainda.",
+    },
+    channels: {
+      listAria: "Lista de canais de comunicação",
+      visitLink: "Abrir link",
+      openLink: "Abrir {{name}} em nova aba",
+      category: {
+        discord: "Discord",
+        instagram: "Instagram",
+        youtube: "YouTube",
+        twitch: "Twitch",
+        site: "Site",
       },
     },
     communityVideos: {
