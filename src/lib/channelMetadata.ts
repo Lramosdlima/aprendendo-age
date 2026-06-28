@@ -25,17 +25,7 @@ function siteDomain(url: string): string | null {
     return null;
   }
 }
-
-function parseTwitchLogin(url: string): string | null {
-  try {
-    const parsed = new URL(url.trim());
-    if (parsed.hostname.replace(/^www\./, "") !== "twitch.tv") return null;
-    return parsed.pathname.split("/").filter(Boolean)[0]?.toLowerCase() ?? null;
-  } catch {
-    return null;
-  }
-}
-
+import { parseTwitchLogin as parseTwitchLoginFromUrl } from "@/lib/channelPlatform";
 function parseDiscordInviteCode(url: string): string | null {
   try {
     const parsed = new URL(url.trim());
@@ -76,7 +66,7 @@ async function fetchUnavatarImage(service: string, identifier: string): Promise<
 }
 
 async function fetchTwitchMetadata(urlLink: string): Promise<ChannelLinkMetadata> {
-  const login = parseTwitchLogin(urlLink);
+  const login = parseTwitchLoginFromUrl(urlLink);
   if (!login) throw new ChannelMetadataNotFoundError();
 
   try {

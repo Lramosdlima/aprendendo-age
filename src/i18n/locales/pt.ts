@@ -315,6 +315,7 @@ export const ptMessages: TranslationTree = {
       loadTimeout: "A consulta demorou demais. Volte mais tarde.",
       unconfigured: "Supabase não configurado. Defina VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY.",
       empty: "Nenhum link cadastrado ainda.",
+      liveChecking: "Verificando transmissões…",
       addChannel: "Adicionar canal",
       adminSubmit: {
         modalTitle: "Adicionar canal",
@@ -350,6 +351,7 @@ export const ptMessages: TranslationTree = {
       listAria: "Lista de canais de comunicação",
       visitLink: "Abrir link",
       openLink: "Abrir {{name}} em nova aba",
+      liveTooltip: "Ao vivo",
       category: {
         discord: "Discord",
         instagram: "Instagram",

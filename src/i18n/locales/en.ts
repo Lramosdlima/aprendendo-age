@@ -315,6 +315,7 @@ export const enMessages: TranslationTree = {
       loadTimeout: "The request timed out. Please try again later.",
       unconfigured: "Supabase is not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.",
       empty: "No links registered yet.",
+      liveChecking: "Checking live streams…",
       addChannel: "Add channel",
       adminSubmit: {
         modalTitle: "Add channel",
@@ -350,6 +351,7 @@ export const enMessages: TranslationTree = {
       listAria: "Communication channels list",
       visitLink: "Open link",
       openLink: "Open {{name}} in a new tab",
+      liveTooltip: "Live",
       category: {
         discord: "Discord",
         instagram: "Instagram",

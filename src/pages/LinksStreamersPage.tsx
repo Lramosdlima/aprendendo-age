@@ -1,12 +1,14 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { ChannelGrid } from "@/components/channels/ChannelCard";
 import { ChannelSubmitModal } from "@/components/channels/ChannelSubmitModal";
 import { PageHeader } from "@/components/ui/PageHeader";
 import type { Channel } from "@/data/channels";
 import { useAuth } from "@/context/AuthContext";
+import { useChannelLiveStatus } from "@/hooks/useChannelLiveStatus";
 import { useTranslation } from "@/hooks/useTranslation";
 import { canManageChannels } from "@/lib/auth/constants";
+import { sortChannelsLiveFirst } from "@/lib/channelLiveStatus";
 import { fetchStreamerChannels } from "@/lib/channelsApi";
 import { cn } from "@/lib/cn";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
@@ -78,6 +80,9 @@ export function LinksStreamersPage() {
   const canAddChannel =
     status === "authenticated" && profileLoadState === "ready" && canManageChannels(profile?.role);
 
+  const { liveIds, checking } = useChannelLiveStatus(channels);
+  const displayChannels = useMemo(() => sortChannelsLiveFirst(channels, liveIds), [channels, liveIds]);
+
   return (
     <div className="space-y-8 pb-16">
       <PageHeader title={t("pages.streamerLinks.title")} description={t("pages.streamerLinks.description")} />
@@ -92,8 +97,17 @@ export function LinksStreamersPage() {
 
       <div className="overflow-hidden rounded-2xl border border-aom-border/60 bg-[#141414] shadow-lg shadow-black/40">
         <div className="border-b border-zinc-800/90 px-4 py-3 sm:px-5">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">{t("common.community")}</p>
-          <p className="mt-1 text-sm text-zinc-400">{t("pages.streamerLinks.sectionDesc")}</p>
+          <div className="flex flex-wrap items-end justify-between gap-2">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">{t("common.community")}</p>
+              <p className="mt-1 text-sm text-zinc-400">{t("pages.streamerLinks.sectionDesc")}</p>
+            </div>
+            {checking && channels.length > 0 ? (
+              <p className="text-[10px] font-medium uppercase tracking-wider text-emerald-500/70">
+                {t("pages.streamerLinks.liveChecking")}
+              </p>
+            ) : null}
+          </div>
         </div>
 
         {loading ? (
@@ -122,7 +136,7 @@ export function LinksStreamersPage() {
           <p className="px-4 py-12 text-center text-sm text-zinc-500">{t("pages.streamerLinks.empty")}</p>
         ) : (
           <div className="p-4 sm:p-5">
-            <ChannelGrid channels={channels} />
+            <ChannelGrid channels={displayChannels} liveChannelIds={liveIds} />
           </div>
         )}
       </div>

@@ -10,9 +10,10 @@ type ChannelCardProps = {
   channel: Channel;
   compact?: boolean;
   className?: string;
+  isLive?: boolean;
 };
 
-export function ChannelCard({ channel, compact = false, className }: ChannelCardProps) {
+export function ChannelCard({ channel, compact = false, className, isLive = false }: ChannelCardProps) {
   const { t } = useTranslation();
   const style = getChannelCategoryStyle(channel.category);
   const imageSrc = channelImageUrl(channel);
@@ -35,6 +36,7 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
         compact ? "h-[6.5rem]" : "h-[7.5rem] sm:h-[8rem]",
         style.cardGradient,
         style.border,
+        isLive && "ring-1 ring-emerald-500/35",
         className,
       )}
       title={t("pages.channels.openLink", { name: channel.name })}
@@ -76,6 +78,7 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
               </span>
             )}
           </div>
+          {isLive ? <LiveIndicator /> : null}
         </div>
 
         <div className="min-w-0 flex-1 overflow-hidden">
@@ -112,6 +115,31 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
   );
 }
 
+function LiveIndicator() {
+  const { t } = useTranslation();
+
+  return (
+    <div
+      className="group/live absolute -right-0.5 -top-0.5 z-10"
+      aria-label={t("pages.channels.liveTooltip")}
+    >
+      <span className="relative flex size-3.5">
+        <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" aria-hidden />
+        <span className="relative inline-flex size-3.5 rounded-full border-2 border-zinc-950 bg-emerald-400" aria-hidden />
+      </span>
+      <div
+        role="tooltip"
+        className={cn(
+          "pointer-events-none absolute left-1/2 top-full z-30 mt-2 w-max -translate-x-1/2 rounded-lg border border-zinc-700/80 bg-zinc-950/95 px-2.5 py-1.5 text-[10px] font-semibold text-emerald-200 shadow-xl shadow-black/50 backdrop-blur-sm",
+          "opacity-0 transition duration-150 group-hover/live:opacity-100 group-focus-within/live:opacity-100",
+        )}
+      >
+        {t("pages.channels.liveTooltip")}
+      </div>
+    </div>
+  );
+}
+
 function ExternalLinkIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={cn("h-5 w-5", className)} fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
@@ -120,7 +148,15 @@ function ExternalLinkIcon({ className }: { className?: string }) {
   );
 }
 
-export function ChannelGrid({ channels, compact }: { channels: Channel[]; compact?: boolean }) {
+export function ChannelGrid({
+  channels,
+  compact,
+  liveChannelIds,
+}: {
+  channels: Channel[];
+  compact?: boolean;
+  liveChannelIds?: Set<string>;
+}) {
   const { t } = useTranslation();
 
   return (
@@ -130,7 +166,7 @@ export function ChannelGrid({ channels, compact }: { channels: Channel[]; compac
     >
       {channels.map((channel) => (
         <li key={channel.id} className="min-w-0">
-          <ChannelCard channel={channel} compact={compact} />
+          <ChannelCard channel={channel} compact={compact} isLive={liveChannelIds?.has(channel.id)} />
         </li>
       ))}
     </ul>
