@@ -1,18 +1,48 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { ChannelGrid } from "@/components/channels/ChannelCard";
+import { ChannelSubmitModal } from "@/components/channels/ChannelSubmitModal";
 import { PageHeader } from "@/components/ui/PageHeader";
 import type { Channel } from "@/data/channels";
+import { useAuth } from "@/context/AuthContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import { canManageChannels } from "@/lib/auth/constants";
 import { fetchStreamerChannels } from "@/lib/channelsApi";
+import { cn } from "@/lib/cn";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
+
+const adminBtnClass = cn(
+  "inline-flex items-center justify-center rounded-xl border border-amber-500/45 bg-amber-500/15 px-4 py-2 text-sm font-semibold text-amber-100 transition",
+  "hover:border-amber-400/55 hover:bg-amber-500/25 focus:outline-none focus:ring-2 focus:ring-amber-500/35",
+);
 
 export function LinksStreamersPage() {
   const { t } = useTranslation();
+  const { status, profile, profileLoadState } = useAuth();
   const supabaseConfigured = isSupabaseConfigured();
   const [channels, setChannels] = useState<Channel[]>([]);
   const [loading, setLoading] = useState(supabaseConfigured);
   const [error, setError] = useState<string | null>(null);
+  const [submitOpen, setSubmitOpen] = useState(false);
+
+  const loadChannels = useCallback(async () => {
+    if (!supabaseConfigured) {
+      setLoading(false);
+      return;
+    }
+    setLoading(true);
+    setError(null);
+    try {
+      const list = await fetchStreamerChannels();
+      setChannels(list);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : t("pages.streamerLinks.loadError"));
+      setChannels([]);
+    } finally {
+      setLoading(false);
+    }
+  }, [supabaseConfigured, t]);
 
   useEffect(() => {
     if (!supabaseConfigured) {
@@ -31,21 +61,11 @@ export function LinksStreamersPage() {
     }, 20_000);
 
     void (async () => {
-      setLoading(true);
-      setError(null);
       try {
-        const list = await fetchStreamerChannels();
-        if (cancelled) return;
-        window.clearTimeout(timeoutId);
-        setChannels(list);
-        setError(null);
-      } catch (err) {
-        if (cancelled) return;
-        window.clearTimeout(timeoutId);
-        setError(err instanceof Error ? err.message : t("pages.streamerLinks.loadError"));
-        setChannels([]);
-      } finally {
-        if (!cancelled) setLoading(false);
+        await loadChannels();
+        if (!cancelled) window.clearTimeout(timeoutId);
+      } catch {
+        if (!cancelled) window.clearTimeout(timeoutId);
       }
     })();
 
@@ -53,11 +73,22 @@ export function LinksStreamersPage() {
       cancelled = true;
       window.clearTimeout(timeoutId);
     };
-  }, [supabaseConfigured, t]);
+  }, [loadChannels, supabaseConfigured, t]);
+
+  const canAddChannel =
+    status === "authenticated" && profileLoadState === "ready" && canManageChannels(profile?.role);
 
   return (
     <div className="space-y-8 pb-16">
       <PageHeader title={t("pages.streamerLinks.title")} description={t("pages.streamerLinks.description")} />
+
+      {canAddChannel ? (
+        <div>
+          <button type="button" onClick={() => setSubmitOpen(true)} className={adminBtnClass}>
+            {t("pages.streamerLinks.addChannel")}
+          </button>
+        </div>
+      ) : null}
 
       <div className="overflow-hidden rounded-2xl border border-aom-border/60 bg-[#141414] shadow-lg shadow-black/40">
         <div className="border-b border-zinc-800/90 px-4 py-3 sm:px-5">
@@ -95,6 +126,13 @@ export function LinksStreamersPage() {
           </div>
         )}
       </div>
+
+      <ChannelSubmitModal
+        open={submitOpen}
+        onClose={() => setSubmitOpen(false)}
+        onSuccess={() => void loadChannels()}
+        channels={channels}
+      />
     </div>
   );
 }

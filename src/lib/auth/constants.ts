@@ -15,3 +15,8 @@ export function parseUserRole(value: string | null | undefined): UserRole {
 export function canRequestCommunityVideo(role: UserRole | null | undefined): boolean {
   return role === "admin" || role === "streamer";
 }
+
+/** Quem pode cadastrar canais em Links (admin). */
+export function canManageChannels(role: UserRole | null | undefined): boolean {
+  return role === "admin";
+}
