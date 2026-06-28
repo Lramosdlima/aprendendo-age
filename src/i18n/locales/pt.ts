@@ -226,6 +226,9 @@ export const ptMessages: TranslationTree = {
       description:
         "Start ou Build Order é uma sequência de ações que se executa no início da partida com determinado deus/panteão. Geralmente é focada em um objetivo/intenção (seja rush ou um FH), que é construído a partir da disposição dos aldeões, ou seja, na economia.",
       filterPlaceholder: "Filtrar por título, autor ou deus (maior/menor)…",
+      filterTagLabel: "Filtrar por panteão ou deus",
+      filterTagAll: "Todos",
+      filterEmpty: "Nenhum start corresponde aos filtros selecionados.",
       newBadge: "🔷 Novo !",
     },
     eras: {

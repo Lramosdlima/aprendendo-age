@@ -226,6 +226,9 @@ export const enMessages: TranslationTree = {
       description:
         "A start or build order is a sequence of actions at the beginning of a match with a given god/pantheon. It is usually focused on a goal/intent (rush or a FH), built from villager placement — the economy.",
       filterPlaceholder: "Filter by title, author, or god (major/minor)…",
+      filterTagLabel: "Filter by pantheon or god",
+      filterTagAll: "All",
+      filterEmpty: "No starts match the selected filters.",
       newBadge: "🔷 New!",
     },
     eras: {

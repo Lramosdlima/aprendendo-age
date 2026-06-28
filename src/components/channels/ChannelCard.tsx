@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import type { Channel } from "@/data/channels";
 import { useTranslation } from "@/hooks/useTranslation";
 import { ChannelCategoryIcon, getChannelCategoryStyle } from "@/lib/channelCategory";
@@ -14,7 +16,13 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
   const { t } = useTranslation();
   const style = getChannelCategoryStyle(channel.category);
   const imageSrc = channelImageUrl(channel);
+  const [imageFailed, setImageFailed] = useState(false);
   const categoryLabel = t(`pages.channels.category.${channel.category}`);
+  const showImage = Boolean(imageSrc) && !imageFailed;
+
+  useEffect(() => {
+    setImageFailed(false);
+  }, [imageSrc, channel.id]);
 
   return (
     <a
@@ -50,8 +58,13 @@ export function ChannelCard({ channel, compact = false, className }: ChannelCard
               compact ? "h-12 w-12" : "h-14 w-14 sm:h-16 sm:w-16",
             )}
           >
-            {imageSrc ? (
-              <img src={imageSrc} alt="" className="size-full object-cover" />
+            {showImage ? (
+              <img
+                src={imageSrc}
+                alt=""
+                className="size-full object-cover"
+                onError={() => setImageFailed(true)}
+              />
             ) : (
               <span className={cn("text-zinc-100", style.accentText)}>
                 <ChannelCategoryIcon category={channel.category} />
