@@ -1,4 +1,5 @@
 import { AOM_MAJOR_GODS } from "@/data/aomGods";
+import type { GodStatRow } from "@/lib/formRetoldApi";
 import { createSupabasePublicClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 
@@ -11,6 +12,20 @@ export type ProfileGodRow = {
   winRate: string;
   playRate: string;
 };
+
+export type PlayerGodAggregate = {
+  slug: string;
+  label: string;
+  elo: number;
+  games: number;
+  winRate: string;
+  playRate: string;
+  hasData: boolean;
+};
+
+export type PlayerGodInsigniaId = "mostPlayed" | "undefeated" | "highlight";
+
+export type PlayerGodInsigniaMap = Record<string, PlayerGodInsigniaId[]>;
 
 export type ClanGodAggregate = {
   slug: string;
@@ -39,6 +54,107 @@ function formatClanPlayRate(value: number): string {
 }
 
 export { formatClanPlayRate };
+
+/** Converte agregado do perfil para o formato usado em `GodAchievementCard`. */
+export function playerGodToStatRow(god: PlayerGodAggregate): GodStatRow {
+  return {
+    god: god.label,
+    elo: god.elo,
+    winRate: god.winRate,
+    playRate: god.playRate,
+    games: god.games,
+  };
+}
+
+/** Deuses com partidas, ordenados por RR (depois por jogos). */
+export function activePlayerGodsByRr(gods: PlayerGodAggregate[]): PlayerGodAggregate[] {
+  return gods
+    .filter((g) => g.hasData)
+    .sort((a, b) => b.elo - a.elo || b.games - a.games);
+}
+
+/** Linhas de `profile_gods` de um perfil. */
+export async function fetchProfileGods(profileId: string): Promise<ProfileGodRow[]> {
+  if (!isSupabaseConfigured()) return [];
+
+  const supabase = createSupabasePublicClient();
+  if (!supabase) return [];
+
+  const { data, error } = await supabase
+    .from("profile_gods")
+    .select("god_slug, god_name, elo, games, win_rate, play_rate, profile_id")
+    .eq("profile_id", profileId);
+
+  if (error) throw new Error(error.message);
+
+  return (data ?? []).map((row) => ({
+    profileId: String((row as { profile_id: string }).profile_id),
+    godSlug: String((row as { god_slug: string }).god_slug),
+    godName: String((row as { god_name: string }).god_name),
+    elo: Number((row as { elo: number }).elo) || 0,
+    games: Number((row as { games: number }).games) || 0,
+    winRate: String((row as { win_rate: string }).win_rate),
+    playRate: String((row as { play_rate: string }).play_rate),
+  }));
+}
+
+/** Lista completa de deuses majores com stats do jogador (ou vazio). */
+export function buildPlayerGods(rows: ProfileGodRow[]): PlayerGodAggregate[] {
+  const bySlug = new Map<string, ProfileGodRow>();
+  for (const row of rows) {
+    bySlug.set(row.godSlug, row);
+  }
+
+  return AOM_MAJOR_GODS.map((god) => {
+    const row = bySlug.get(god.slug);
+    if (!row || row.games <= 0) {
+      return {
+        slug: god.slug,
+        label: god.label,
+        elo: 0,
+        games: 0,
+        winRate: "—",
+        playRate: "—",
+        hasData: false,
+      };
+    }
+
+    return {
+      slug: god.slug,
+      label: row.godName?.trim() || god.label,
+      elo: row.elo,
+      games: row.games,
+      winRate: row.winRate,
+      playRate: row.playRate,
+      hasData: true,
+    };
+  });
+}
+
+/** Insígnias do jogador por deus (empates recebem a mesma medalha). */
+export function computePlayerGodInsigniaMap(gods: PlayerGodAggregate[]): PlayerGodInsigniaMap {
+  const map: PlayerGodInsigniaMap = {};
+  const active = gods.filter((g) => g.hasData);
+  if (active.length === 0) return map;
+
+  const add = (slug: string, id: PlayerGodInsigniaId) => {
+    map[slug] = map[slug] ?? [];
+    if (!map[slug].includes(id)) map[slug].push(id);
+  };
+
+  const maxSlugs = (value: (g: PlayerGodAggregate) => number, minValue = 0): Set<string> => {
+    let best = minValue;
+    for (const g of active) best = Math.max(best, value(g));
+    if (best <= minValue) return new Set();
+    return new Set(active.filter((g) => value(g) === best).map((g) => g.slug));
+  };
+
+  for (const slug of maxSlugs((g) => g.games)) add(slug, "mostPlayed");
+  for (const slug of maxSlugs((g) => parseWinRatePercent(g.winRate))) add(slug, "undefeated");
+  for (const slug of maxSlugs((g) => g.elo)) add(slug, "highlight");
+
+  return map;
+}
 
 /** Linhas de `profile_gods` dos membros de um clã. */
 export async function fetchClanProfileGods(clanId: string): Promise<ProfileGodRow[]> {

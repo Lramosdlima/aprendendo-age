@@ -2,13 +2,16 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { AomStatsSyncModal } from "@/components/aomstats/AomStatsSyncModal";
+import { ProfileGodsSection } from "@/components/rank/ProfileGodsSection";
 import { RankProfileHero } from "@/components/rank/rankProfileUi";
 import { useAuth } from "@/context/AuthContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import { buildRankHeroFromProfile } from "@/lib/aomstatsProfileSync";
+import { buildPlayerGods, fetchProfileGods, type PlayerGodAggregate } from "@/lib/clanGodsApi";
 import { cn } from "@/lib/cn";
 import { getRankClassification } from "@/lib/rankClassification";
 import { localeAuthPath } from "@/lib/localeRoutes";
+import { isSupabaseConfigured } from "@/lib/supabase/env";
 
 function formatMemberSince(iso: string | null, locale: string): string {
   if (!iso) return "—";
@@ -42,6 +45,8 @@ export function ProfilePage() {
   const [syncModalOpen, setSyncModalOpen] = useState(false);
   const [actionError, setActionError] = useState<string | null>(null);
   const [actionBusy, setActionBusy] = useState(false);
+  const [profileGods, setProfileGods] = useState<PlayerGodAggregate[]>([]);
+  const [godsLoading, setGodsLoading] = useState(false);
 
   useEffect(() => {
     if (status === "loading") return;
@@ -50,6 +55,35 @@ export function ProfilePage() {
       navigate(`${localeAuthPath(locale, "login")}?next=${next}`, { replace: true });
     }
   }, [locale, location.pathname, location.search, navigate, status]);
+
+  useEffect(() => {
+    const profileId = profile?.id;
+    const hasAomstats = Boolean(profile?.aomstatsId);
+
+    if (!profileId || !hasAomstats || !isSupabaseConfigured()) {
+      setProfileGods([]);
+      setGodsLoading(false);
+      return;
+    }
+
+    let cancelled = false;
+    setGodsLoading(true);
+
+    void (async () => {
+      try {
+        const rows = await fetchProfileGods(profileId);
+        if (!cancelled) setProfileGods(buildPlayerGods(rows));
+      } catch {
+        if (!cancelled) setProfileGods(buildPlayerGods([]));
+      } finally {
+        if (!cancelled) setGodsLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [profile?.id, profile?.aomstatsId, profile?.aomstatsSnapshotAt]);
 
   const rankHero = useMemo(() => (profile ? buildRankHeroFromProfile(profile) : null), [profile]);
   const classification = rankHero ? getRankClassification(rankHero.rr) : null;
@@ -144,24 +178,28 @@ export function ProfilePage() {
       </div>
 
       {rankHero && classification ? (
-        <section aria-labelledby="profile-rank-heading">
-          <h2 id="profile-rank-heading" className="sr-only">
-            {t("pages.rank.resultHeading", { name: rankHero.player.profileName })}
-          </h2>
-          {profile?.aomstatsSnapshotAt ? (
-            <p className="mb-4 text-center text-xs text-zinc-500">
-              {t("auth.aomstatsSnapshotNote", {
-                date: formatSnapshotDate(profile.aomstatsSnapshotAt, locale),
-              })}
-            </p>
-          ) : null}
-          <RankProfileHero
-            player={rankHero.player}
-            row1v1={rankHero.row1v1}
-            rr={rankHero.rr}
-            classification={classification}
-          />
-        </section>
+        <div className="space-y-10">
+          <section aria-labelledby="profile-rank-heading">
+            <h2 id="profile-rank-heading" className="sr-only">
+              {t("pages.rank.resultHeading", { name: rankHero.player.profileName })}
+            </h2>
+            {profile?.aomstatsSnapshotAt ? (
+              <p className="mb-4 text-center text-xs text-zinc-500">
+                {t("auth.aomstatsSnapshotNote", {
+                  date: formatSnapshotDate(profile.aomstatsSnapshotAt, locale),
+                })}
+              </p>
+            ) : null}
+            <RankProfileHero
+              player={rankHero.player}
+              row1v1={rankHero.row1v1}
+              rr={rankHero.rr}
+              classification={classification}
+            />
+          </section>
+
+          <ProfileGodsSection gods={profileGods} loading={godsLoading} />
+        </div>
       ) : (
         <p className="rounded-2xl border border-aom-border/60 bg-zinc-950/50 px-4 py-8 text-center text-sm text-zinc-500">
           {t("auth.aomstatsNotLinked")}
