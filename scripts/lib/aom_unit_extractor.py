@@ -18,6 +18,7 @@ from aom_proto_maps import (
     UNIT_TYPE_ICON,
 )
 from aom_string_table import parse_string_table
+from aom_game_paths import BAR_ENTRIES
 
 MILITARY_UNIT_TYPES = {
     "MilitaryUnit",
@@ -477,10 +478,8 @@ def ensure_bar_extracted(
         raise FileNotFoundError(f"Data.bar não encontrado em {data_bar}")
 
     expected_files = [
-        cache_dir / "gameplay" / "proto.xml",
-        cache_dir / "gameplay" / "techtree.xml",
-        cache_dir / "strings" / "English" / "string_table.txt",
-        cache_dir / "strings" / "PortugueseBrazil" / "string_table.txt",
+        cache_dir / Path(entry.replace(".XMB", ""))
+        for entry in BAR_ENTRIES
     ]
     if not force and all(path.exists() for path in expected_files):
         return
@@ -497,12 +496,7 @@ def ensure_bar_extracted(
         "bar",
         "export",
         str(data_bar),
-        *[
-            "gameplay/proto.xml.XMB",
-            "gameplay/techtree.xml.XMB",
-            "strings/English/string_table.txt",
-            "strings/PortugueseBrazil/string_table.txt",
-        ],
+        *BAR_ENTRIES,
         "-o",
         str(cache_dir),
         "--decompress",
@@ -510,6 +504,10 @@ def ensure_bar_extracted(
     ]
     subprocess.run(cmd, check=True)
     marker.write_text(
-        json.dumps({"data_bar": str(data_bar), "entries": 4}, ensure_ascii=False, indent=2),
+        json.dumps(
+            {"data_bar": str(data_bar), "entries": len(BAR_ENTRIES)},
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
     )

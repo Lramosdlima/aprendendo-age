@@ -19,7 +19,7 @@
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 55,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "A bolt from the sky that strikes down any military unit.",
+    "descricao_resumida": "A bolt of lightning from the sky strikes down any single military unit.",
     "descricao_avancada": "Deals 10,000 divine damage to the target unit, or 2,500 divine damage if the target unit is a Titan. This power cannot be used on (Villager, Worker, Gatherer, Dwarf, Citizen, Peasant) economic units, (Transport Ship, Roca, Leviathan) transport units, Ox Carts, Dragontale Qilins, Regents, or starting Berserk of Norse players.",
     "panteao": [
       {
@@ -49,7 +49,7 @@
     "duracao_no_mapa_seg": 0,
     "custo_repetir": 20,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Target a spot to erect a special rock that attracts animals to it and spawns chickens. The Attraction summons more Food in later ages and Villagers can leave Food at the Attraction.",
+    "descricao_resumida": "Target a location to erect a special stone which draws animals to it and spawns chickens. The Lure summons more food in later ages, and Villagers can drop off food at the Lure.",
     "descricao_avancada": "Creates a structure that attracts animals and acts as a barn, as well as raising chickens. After attracting a defined amount of food, the bait no longer functions as an attractant.",
     "panteao": [
       {
@@ -57,7 +57,7 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_lure_power_icon"
+    "icon": "aomr_lure_icon"
   },
   {
     "id": 3,
@@ -77,9 +77,9 @@
     ],
     "cooldown_seg": 90,
     "duracao_no_mapa_seg": 3,
-    "custo_repetir": 50,
-    "incremento_por_uso": "+5",
-    "descricao_resumida": "Use in an Urban Center, Village Center or in your or an ally's Fortress to protect it with stone guardians.",
+    "custo_repetir": 60,
+    "incremento_por_uso": "+10",
+    "descricao_resumida": "Target your or an ally’s Town Center, Village Center, or Fortress to protect it with stone guardians.",
     "descricao_avancada": "Summons five Sentinels, immobile stone giants armed with bows, around your own or allied Town Centers. In Retold, up to 3 wards can be created in a row at each location around a single Town Center.",
     "panteao": [
       {
@@ -87,7 +87,7 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_sentinel_power_icon"
+    "icon": "aomr_sentinel_icon"
   },
   {
     "id": 4,
@@ -106,10 +106,10 @@
       }
     ],
     "cooldown_seg": 90,
-    "duracao_no_mapa_seg": 45,
+    "duracao_no_mapa_seg": 50,
     "custo_repetir": 30,
     "incremento_por_uso": "+15",
-    "descricao_resumida": "Target anywhere to make all your Villagers collect Food from Farms faster.",
+    "descricao_resumida": "Target anywhere to make all of your Villagers gather Food from Farms faster, and fishing ships gather Food from fish faster.",
     "descricao_avancada": "For 45 seconds, only the player who summons will experience a 150% increase in Farm collection rates.",
     "panteao": [
       {
@@ -136,10 +136,10 @@
       }
     ],
     "cooldown_seg": 120,
-    "duracao_no_mapa_seg": 50,
+    "duracao_no_mapa_seg": 75,
     "custo_repetir": 60,
     "incremento_por_uso": "+10",
-    "descricao_resumida": "Use anywhere to make all your Villagers and Trade Caravan gather ours faster",
+    "descricao_resumida": "Target anywhere to make all of your Villagers and Trade Caravans gather Gold faster.",
     "descricao_avancada": "For 50 seconds, Workers will collect gold 80% faster. In Retold, Caravans' gold collection rate will also increase by 20% for the duration of the effect.",
     "panteao": [
       {
@@ -169,7 +169,7 @@
     "duracao_no_mapa_seg": 20,
     "custo_repetir": 40,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Use a hidden region on the map to temporarily reveal it.",
+    "descricao_resumida": "Target a region of the map to be temporarily revealed.",
     "descricao_avancada": "Reveals the target area and dispels the Fog of War for the player and their allies for 20 seconds.",
     "panteao": [
       {
@@ -197,9 +197,9 @@
     ],
     "cooldown_seg": 120,
     "duracao_no_mapa_seg": 3,
-    "custo_repetir": 50,
+    "custo_repetir": 75,
     "incremento_por_uso": "+50",
-    "descricao_resumida": "Select a location to create a new Gold Mine that has more Gold and faster collection if used in later ages.",
+    "descricao_resumida": "Select a location to create a new Gold Mine that has more Gold and is gathered faster if used in later ages.",
     "descricao_avancada": "Creates a mystical Gold Mine at the target location. The amount of gold in the mine depends on the era in which this power is used.",
     "panteao": [
       {
@@ -229,7 +229,7 @@
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 25,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Use a group of wild animals to greatly multiply your numbers. If there are none, Odin will summon some of them. It gets more powerful every season.",
+    "descricao_resumida": "Target a group of wild animals to greatly multiply their numbers. If there are none, Odin will summon a small amount. Gets more powerful each age.",
     "descricao_avancada": "Causes animals in the target area to multiply. Its power increases with each Age. If there are no animals, some Elks are spawned.",
     "panteao": [
       {
@@ -257,9 +257,9 @@
     ],
     "cooldown_seg": 30,
     "duracao_no_mapa_seg": 0,
-    "custo_repetir": 60,
+    "custo_repetir": 30,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Use an enemy unit to secretly see what it sees.",
+    "descricao_resumida": "Target an enemy unit to secretly see what it sees.",
     "descricao_avancada": "The power can be used on a target enemy unit to reveal its Line of Sight until it is killed. The power cannot be used on a (which reveals Line of Sight to all players anyway) Titan. Unlike other divine powers, the game does not display a notification when a player invokes this power.",
     "panteao": [
       {
@@ -287,9 +287,9 @@
     ],
     "cooldown_seg": 150,
     "duracao_no_mapa_seg": 3,
-    "custo_repetir": 15,
+    "custo_repetir": 20,
     "incremento_por_uso": "+15",
-    "descricao_resumida": "Use it at a location on the map to send enemy units flying and stun them for a few seconds.",
+    "descricao_resumida": "Target a location on the map to send enemy units flying, stunning them for a few seconds.",
     "descricao_avancada": "Generates a shockwave that deals light damage and scatters enemy units within a relatively small radius. Scattered units are also stunned for several seconds.",
     "panteao": [
       {
@@ -316,10 +316,10 @@
       }
     ],
     "cooldown_seg": 120,
-    "duracao_no_mapa_seg": 66,
+    "duracao_no_mapa_seg": 0,
     "custo_repetir": 0,
     "incremento_por_uso": "+10",
-    "descricao_resumida": "Select a location to grow a Gaia Forest. Villagers collected wood faster from Gaia's trees.",
+    "descricao_resumida": "Select a location to grow a Gaia Forest. Villagers gather wood faster from Gaia Trees.",
     "descricao_avancada": "Creates a forest of aspens, which contain more wood than other trees. Citizens collect wood from these trees at a higher rate. Trees can also be placed strategically to create a barrier that is difficult for other players to overcome.",
     "panteao": [
       {
@@ -346,10 +346,10 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 6,
+    "duracao_no_mapa_seg": 0,
     "custo_repetir": 10,
     "incremento_por_uso": "+10",
-    "descricao_resumida": "Use on an enemy building to deconstruct it. The target player will receive their resources back, but will lose the building.",
+    "descricao_resumida": "Target an enemy building to deconstruct it. The target player will get their resources back but lose the building.",
     "descricao_avancada": "Immediately begins the process of reversing the construction of a target enemy building. The owner will recover the resource cost of the deconstructed building. This power cannot be used in Town Halls, Wonders, Titan Gates and buildings summoned with divine powers.",
     "panteao": [
       {
@@ -361,8 +361,8 @@
   },
   {
     "id": 13,
-    "nome": "PeachBlossomSpring",
-    "ingles": "PeachBlossomSpring",
+    "nome": "The Peach Blossom Spring",
+    "ingles": "The Peach Blossom Spring",
     "god": [
       {
         "id": 13,
@@ -378,8 +378,8 @@
     "cooldown_seg": 180,
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 100,
-    "incremento_por_uso": "+100",
-    "descricao_resumida": "Target a location to create Peach Blossom Spring, whose resource pool increases over time. Peach Blossom Fountain resources are obtained very quickly, but their supply increases when a villager begins his collection.",
+    "incremento_por_uso": "+150",
+    "descricao_resumida": "Target a location to create the Peach Blossom Spring, whose resource stockpile grows over time. The Peach Blossom Spring's resources are gathered very quickly, but its stockpile stops growing once a villager starts gathering from it.",
     "descricao_avancada": "Generates a Peach Blossom Fountain in the summoned area. It automatically accumulates your resource stock over time and can be switched between collecting food, wood or gold. However, its stock stops increasing when a villager collects resources from it.",
     "panteao": [
       {
@@ -387,7 +387,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_peachblossomspring_power"
+    "icon": "aomr_the_peach_blossom_spring_power_icon"
   },
   {
     "id": 14,
@@ -409,7 +409,7 @@
     "duracao_no_mapa_seg": 120,
     "custo_repetir": 75,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Target a location to create a number of Clay Peasants that last a few minutes. Generates more peasants in later eras.",
+    "descricao_resumida": "Target a location to create a number of Clay Peasants that last for a couple of minutes. Spawns more Peasants in later ages.",
     "descricao_avancada": "Spawns a variable number of Clay Peasants that function like regular Peasants, but eventually decay after a short period of time. 2/4/8/12/30 are generated in the Archaic/Classical/Heroic/Mythic/Wonder Ages, respectively.",
     "panteao": [
       {
@@ -417,7 +417,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_creation"
+    "icon": "aomr_creation_icon"
   },
   {
     "id": 15,
@@ -435,11 +435,11 @@
         "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
-    "cooldown_seg": 60,
+    "cooldown_seg": 30,
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 5,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Target 2 Farms to sow butterfly seeds. They will produce food faster, heal nearby villagers, and turn allied units invisible.",
+    "descricao_resumida": "Target 2 Farms to sow the seeds of prosperity. They will produce food faster, heal nearby villagers, and make friendly units on them invisible.",
     "descricao_avancada": "Transforms 2 Farms into Shennong Farms, with triple health, 40% faster food collection rate than normal Farms, a healing effect for nearby villagers, and the ability to turn allied units positioned on them invisible.",
     "panteao": [
       {
@@ -447,7 +447,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_prosperous_seeds"
+    "icon": "aomr_prosperous_seeds_icon"
   },
   {
     "id": 16,
@@ -466,10 +466,10 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 40,
+    "duracao_no_mapa_seg": 0,
     "custo_repetir": 300,
     "incremento_por_uso": "+50",
-    "descricao_resumida": "Target one of your (or your allies') Town Centers to summon and command Frey's golden boar, Gullinbursti, to defend an area. Gullinbursti becomes stronger with each era.",
+    "descricao_resumida": "Target one of your Town Centers (or your allies') to summon and command Freyr's golden boar Gullinbursti to defend the area. Gullinbursti becomes stronger each age.",
     "descricao_avancada": "Can be used as a target in the City Center itself or in an allied Center to summon Gullinbursti for a set period, a powerful unit of heroes whose power and attributes increase with each Age.",
     "panteao": [
       {
@@ -477,7 +477,7 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_gullinbursti_icon"
+    "icon": "aomr_gullinbursti_icon_age1_png_icon"
   },
   {
     "id": 17,
@@ -499,7 +499,7 @@
     "duracao_no_mapa_seg": 10,
     "custo_repetir": 10,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Select a unit to temporarily make it nearly invulnerable",
+    "descricao_resumida": "Target a unit to make it temporarily nearly invulnerable.",
     "descricao_avancada": "For 10 seconds, the target unit gains a 300 rechargeable (+300 with each advancement of era) shield and is healed at 25 HP/s.",
     "panteao": [
       {
@@ -507,7 +507,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_solar_shield"
+    "icon": "aomr_solar_shield_icon"
   },
   {
     "id": 18,
@@ -527,9 +527,9 @@
     ],
     "cooldown_seg": 180,
     "duracao_no_mapa_seg": 10,
-    "custo_repetir": 100,
+    "custo_repetir": 125,
     "incremento_por_uso": "+25",
-    "descricao_resumida": "Target a building to obtain up to 3 free technologies per launch, prioritizing the most expensive all freely available technologies and making military units train faster for a short period.",
+    "descricao_resumida": "Target a building to obtain the three most expensive technologies currently available there for free and cause military units to train faster for a short duration.",
     "descricao_avancada": "Target 1 building to get up to 3 freely available technologies and make military units train faster for a short period. This lasts 10sec. And the technology remains",
     "panteao": [
       {
@@ -537,7 +537,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_new_moon"
+    "icon": "aomr_new_moon_icon"
   },
   {
     "id": 19,
@@ -557,9 +557,9 @@
     ],
     "cooldown_seg": 90,
     "duracao_no_mapa_seg": 10,
-    "custo_repetir": 20,
-    "incremento_por_uso": "+5",
-    "descricao_resumida": "Select a location for Susanoo to launch his sword, Kusanagi. The sword deals damage to nearby enemies and summons a current that launches them into the air.",
+    "custo_repetir": 25,
+    "incremento_por_uso": "+10",
+    "descricao_resumida": "Target a location for Susanoo to cast down his sword, Kusanagi. The sword damages nearby enemies and summons a riptide that blasts them skyward.",
     "descricao_avancada": "Launches a divine sword that damages enemies and summons a current that repels units. Has -50% bonus damage against villagers.",
     "panteao": [
       {
@@ -567,7 +567,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_kusanagi"
+    "icon": "aomr_kusanagi_icon"
   },
   {
     "id": 20,
@@ -589,7 +589,7 @@
     "duracao_no_mapa_seg": 30,
     "custo_repetir": 75,
     "incremento_por_uso": "+25",
-    "descricao_resumida": "For 30 seconds, all combat is prohibited, and the construction of Towers, Keeps, Migdol Keeps, Hillforts, Palaces, and Castles is halted. However, offensive divine powers can still be invoked during this period.",
+    "descricao_resumida": "Target anywhere on the map to prevent every player from fighting and slow the construction of ranged fortifications for a short period of time.",
     "descricao_avancada": "For 30 seconds, all combat is prohibited, and the construction of Towers, Keeps, Migdol Keeps, Hillforts, Palaces, and Castles is halted. However, offensive divine powers can still be invoked during this period.",
     "panteao": [
       {
@@ -617,8 +617,8 @@
     ],
     "cooldown_seg": 120,
     "duracao_no_mapa_seg": 6,
-    "custo_repetir": 100,
-    "incremento_por_uso": "+20",
+    "custo_repetir": 125,
+    "incremento_por_uso": "+25",
     "descricao_avancada": "Allied units and buildings in the target area will quickly recover health for 8 seconds. Outside of combat, this power can almost instantly restore any normal unit to full health. The recovery rate is greatly reduced during combat.",
     "panteao": [
       {
@@ -626,7 +626,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_restoration_icon"
+    "icon": "aomr_restoration_icon",
+    "descricao_resumida": "Target a location to heal units and repair buildings, siege weapons, and ships belonging to you or your allies."
   },
   {
     "id": 22,
@@ -655,7 +656,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_pestilence_icon"
+    "icon": "aomr_pestilence_icon",
+    "descricao_resumida": "Target an enemy town to infect it with plague. The Pestilence prevents buildings from firing projectiles and slows unit production."
   },
   {
     "id": 23,
@@ -684,7 +686,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_underworld_passage_icon"
+    "icon": "aomr_underworld_passage_icon",
+    "descricao_resumida": "Select two locations on the map to create entrances to the Underworld through which units can move."
   },
   {
     "id": 24,
@@ -705,7 +708,7 @@
     "cooldown_seg": 150,
     "duracao_no_mapa_seg": 40,
     "custo_repetir": 150,
-    "incremento_por_uso": "+10",
+    "incremento_por_uso": "+25",
     "descricao_avancada": "Turns all human soldiers, mythical (except Titans) units, and player ships in the target area bronze for 40 seconds, reducing their hacking and piercing vulnerabilities by -35%.",
     "panteao": [
       {
@@ -713,7 +716,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_bronze_icon"
+    "icon": "aomr_bronze_icon",
+    "descricao_resumida": "Target a location to encase your soldiers, myth units, and ships with bronze, reducing their vulnerability in combat."
   },
   {
     "id": 25,
@@ -742,12 +746,13 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_curse_icon"
+    "icon": "aomr_curse_icon",
+    "descricao_resumida": "Target near enemy soldiers to turn several of their units into Pigs."
   },
   {
     "id": 26,
-    "nome": "Plenty Vault",
-    "ingles": "Plenty Vault",
+    "nome": "Plenty",
+    "ingles": "Plenty",
     "god": [
       {
         "id": 26,
@@ -762,7 +767,7 @@
     ],
     "cooldown_seg": 180,
     "duracao_no_mapa_seg": 3,
-    "custo_repetir": 200,
+    "custo_repetir": 300,
     "incremento_por_uso": "+200",
     "descricao_avancada": "Creates a Vault that generates 4 units of food, wood and gold every second. The Vault cannot be destroyed. Instead, it can be captured by enemy units and will be taken by the player who has the most units near the Vault.",
     "panteao": [
@@ -771,7 +776,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_plenty_vault_icon"
+    "icon": "aomr_plenty_vault_icon",
+    "descricao_resumida": "Select a location to erect this great Vault. The bounty of the gods will flow into your coffers as long as you control it."
   },
   {
     "id": 27,
@@ -790,7 +796,7 @@
       }
     ],
     "cooldown_seg": 240,
-    "duracao_no_mapa_seg": 16,
+    "duracao_no_mapa_seg": 15,
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Creates a violent storm in the target area. Lightning can hit enemy units, causing them great damage. The more units there are in the area, the greater the damage caused. This power does not affect own or allied (before Retold , it also did not affect flying units) units and is less effective against structures.",
@@ -800,7 +806,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_lightning_storm_icon"
+    "icon": "aomr_lightning_storm_icon",
+    "descricao_resumida": "Target a location to call down an electric storm from Olympus whose power increases over time. Strong against groups of enemy units."
   },
   {
     "id": 28,
@@ -829,7 +836,8 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_earthquake_icon"
+    "icon": "aomr_earthquake_icon",
+    "descricao_resumida": "Target a location to shatter nearby enemy buildings. The epicenter of the earthquake inflicts the most damage."
   },
   {
     "id": 29,
@@ -848,7 +856,7 @@
       }
     ],
     "cooldown_seg": 150,
-    "duracao_no_mapa_seg": 55,
+    "duracao_no_mapa_seg": 49,
     "custo_repetir": 90,
     "incremento_por_uso": "+25",
     "descricao_avancada": "For 55 seconds, creates a darkness over the entire map, which increases the player's Mythic Units and Landmarks. Mythic units gain +20% attack (including skills), -60% skill cooldown, +15% movement speed, and -10% slashing / -10% piercing / -10% crushing vulnerabilities. Monuments gain +50% favor gain rate. Prior to Retold, on the other divine powers can be summoned by any player while Eclipse is in effect.",
@@ -858,7 +866,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_eclipse_icon"
+    "icon": "aomr_eclipse_icon",
+    "descricao_resumida": "Target anywhere on the map to turn day to night, improving the abilities of your myth units and increasing the rate at which your Monuments generate Favor."
   },
   {
     "id": 30,
@@ -878,7 +887,7 @@
     ],
     "cooldown_seg": 180,
     "duracao_no_mapa_seg": 3,
-    "custo_repetir": 50,
+    "custo_repetir": 40,
     "incremento_por_uso": "+20",
     "descricao_avancada": "Instantly transport a group of allied units from one target location on the map to another. Before Retold, this could be used to move friendly and enemy units; however, enemy units to be transported were randomly selected, with a much lower chance of being transported compared to allied units.",
     "panteao": [
@@ -887,7 +896,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_shifting_sands_icon"
+    "icon": "aomr_shifting_sands_icon",
+    "descricao_resumida": "Target your own or allied units, and then target the location where you wish to teleport them."
   },
   {
     "id": 31,
@@ -916,7 +926,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_plague_of_serpents_icon"
+    "icon": "aomr_plague_of_serpents_icon",
+    "descricao_resumida": "Target a location on the map where dangerous Serpents will rise from the ground or sea and protect that area from your enemies."
   },
   {
     "id": 32,
@@ -945,7 +956,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_locust_swarm_icon"
+    "icon": "aomr_locust_swarm_icon",
+    "descricao_resumida": "Target a path of destruction. Summons a plague of locusts that attacks enemy units and buildings, devouring Farms, livestock, and Berry Bushes."
   },
   {
     "id": 33,
@@ -974,7 +986,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_ancestors_icon"
+    "icon": "aomr_ancestors_icon",
+    "descricao_resumida": "Target a location to awaken ancestral soldiers or ships to fight again for a short time."
   },
   {
     "id": 34,
@@ -1003,7 +1016,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_citadel_power_icon"
+    "icon": "aomr_citadel_icon",
+    "descricao_resumida": "Select a Town Center belonging to you or an ally to transform it into a mighty, defensive Citadel, which trains units and researches technologies faster."
   },
   {
     "id": 35,
@@ -1022,7 +1036,7 @@
       }
     ],
     "cooldown_seg": 240,
-    "duracao_no_mapa_seg": 0,
+    "duracao_no_mapa_seg": 3,
     "custo_repetir": 350,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Transforms the target Pharaoh into a Son of Osiris, a unit with greatly increased attack and hit points, as well as a greater magnitude of power, that uses a lightning chain attack that can hit up to four units at once. A Son of Osiris cannot be healed, and when he dies, an ordinary Pharaoh will replace him. In Retold, it is possible to cast this power again to have multiple Sons of Osiris at the same time.",
@@ -1032,7 +1046,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_son_of_osiris_power_icon"
+    "icon": "aomr_son_of_osiris_icon",
+    "descricao_resumida": "Target your Pharaoh to transform him into a super-empowering, lightning-wielding demigod."
   },
   {
     "id": 36,
@@ -1051,7 +1066,7 @@
       }
     ],
     "cooldown_seg": 240,
-    "duracao_no_mapa_seg": 18,
+    "duracao_no_mapa_seg": 15,
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "For 20 seconds, meteors will fall over the target area. The first impact will be in the center of the target, with subsequent impacts spreading out randomly. Meteor impacts deal massive amounts of damage to structures and launch units into the air, dealing moderate damage to them. Meteors can damage allied units and structures, although not to the same extent as enemies.",
@@ -1061,7 +1076,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_meteor_icon"
+    "icon": "aomr_meteor_icon",
+    "descricao_resumida": "Target an enemy area to bombard with burning rocks from the heavens. Strong against buildings, moderately effective against units."
   },
   {
     "id": 37,
@@ -1090,7 +1106,8 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_tornado_icon"
+    "icon": "aomr_tornado_icon",
+    "descricao_resumida": "Target near an enemy to send a cyclone that will suck their buildings and units up into the sky – but stay out of its way."
   },
   {
     "id": 38,
@@ -1119,7 +1136,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_forest_fire_icon"
+    "icon": "aomr_forest_fire_icon",
+    "descricao_resumida": "Target a forest to burn it to smoldering embers, damaging nearby units and buildings."
   },
   {
     "id": 39,
@@ -1148,7 +1166,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_undermine_icon"
+    "icon": "aomr_undermine_icon",
+    "descricao_resumida": "Target a path of destruction along which to damage enemy buildings. Walls and towers instantly collapse, and other buildings take considerable damage."
   },
   {
     "id": 40,
@@ -1177,7 +1196,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_healing_spring_power_icon"
+    "icon": "aomr_healing_spring_icon",
+    "descricao_resumida": "Target a location on the map to create a spring that will heal all nearby friendly units. The spring cannot be destroyed, but can be taken over by enemy forces."
   },
   {
     "id": 41,
@@ -1206,7 +1226,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_walking_woods_power_icon"
+    "icon": "aomr_walking_woods_icon",
+    "descricao_resumida": "Target near a forest to animate the trees to attack nearby enemies. The animated trees are strong against buildings and decent against units."
   },
   {
     "id": 42,
@@ -1225,7 +1246,7 @@
       }
     ],
     "cooldown_seg": 240,
-    "duracao_no_mapa_seg": 50,
+    "duracao_no_mapa_seg": 45,
     "custo_repetir": 200,
     "incremento_por_uso": "+15",
     "descricao_avancada": "For 50 seconds, all enemy units in the target area will be frozen in place but will have 99% armor, making them nearly invulnerable to any attacks during this period.",
@@ -1235,7 +1256,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_frost_icon"
+    "icon": "aomr_frost_icon",
+    "descricao_resumida": "Target near enemy units to freeze them solid for a short period of time. Frozen units cannot move, but are very hard to kill."
   },
   {
     "id": 43,
@@ -1264,7 +1286,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_flaming_weapons_icon"
+    "icon": "aomr_flaming_weapons_icon",
+    "descricao_resumida": "Target anywhere on the map to cause the weapons of all of your human soldiers and ships to burst into flame, increasing their attack for a short period of time."
   },
   {
     "id": 44,
@@ -1284,7 +1307,7 @@
     ],
     "cooldown_seg": 300,
     "duracao_no_mapa_seg": 3,
-    "custo_repetir": 350,
+    "custo_repetir": 250,
     "incremento_por_uso": "+50",
     "descricao_avancada": "Instantly converts all Collectors and Dwarves on the map into Heroes of Ragnarok, melee infantry units with a huge bonus against mythic units, but unable to collect resources or build Farms. This power essentially sacrifices the player's economy for an instant army.",
     "panteao": [
@@ -1293,7 +1316,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_ragnarok_icon"
+    "icon": "aomr_ragnarok_icon",
+    "descricao_resumida": "Target anywhere on the map to permanently transform all of your Gatherers and Dwarves into mighty Heroes of Ragnarok."
   },
   {
     "id": 45,
@@ -1312,7 +1336,7 @@
       }
     ],
     "cooldown_seg": 240,
-    "duracao_no_mapa_seg": 31,
+    "duracao_no_mapa_seg": 25,
     "custo_repetir": 350,
     "incremento_por_uso": "+55",
     "descricao_avancada": "For 31 seconds, multiple packs of Fimbulwinter Wolves will appear next to enemy Town Centers, Town Centers, or Settlements. The player has no control over the wolves, and they are dismissed when the effect expires. In the original game, no other divine powers can be invoked by any player while Fimbulwinter is in effect.",
@@ -1322,7 +1346,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_fimbulwinter_icon"
+    "icon": "aomr_fimbulwinter_icon",
+    "descricao_resumida": "Target anywhere on the map to summon packs of ferocious wolves to attack enemy Town Centers."
   },
   {
     "id": 46,
@@ -1351,7 +1376,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_nidhogg_icon"
+    "icon": "aomr_nidhogg_icon",
+    "descricao_resumida": "Select a location to summon the mighty Norse dragon from his delve beneath the earth."
   },
   {
     "id": 47,
@@ -1369,10 +1395,10 @@
         "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
-    "cooldown_seg": 90,
+    "cooldown_seg": 60,
     "duracao_no_mapa_seg": 0,
-    "custo_repetir": 0,
-    "incremento_por_uso": "+3",
+    "custo_repetir": 4,
+    "incremento_por_uso": "+4",
     "descricao_avancada": "Places spider eggs in the target area, which will eventually hatch and burrow into the ground. Enemy human units will be killed by spiders as they traverse the area. Eggs can be killed by enemies before they hatch. In Retold, this power uses a directional target.",
     "panteao": [
       {
@@ -1380,7 +1406,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_spider_lair_icon"
+    "icon": "aomr_spider_lair_icon",
+    "descricao_resumida": "Target an area to place spider eggs which will hatch and burrow. The spiders will devour enemy human soldiers that cross through the area, but eggs can be destroyed before they hatch."
   },
   {
     "id": 48,
@@ -1399,7 +1426,7 @@
       }
     ],
     "cooldown_seg": 30,
-    "duracao_no_mapa_seg": 0,
+    "duracao_no_mapa_seg": 3,
     "custo_repetir": 1,
     "incremento_por_uso": "+1",
     "descricao_avancada": "This power instantly transforms Atlantean units into heroes. In the original game, a group of units can be converted. In Retold, this power only affects one unit, but instantly restores its full health.",
@@ -1409,7 +1436,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_valor_icon"
+    "icon": "aomr_valor_icon",
+    "descricao_resumida": "Target one of your human units to convert it into a hero and heal it fully."
   },
   {
     "id": 49,
@@ -1438,7 +1466,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_carnivora_power_icon"
+    "icon": "aomr_carnivora_icon",
+    "descricao_resumida": "Spawns a giant plant that pulls humans and ships in and devours them."
   },
   {
     "id": 50,
@@ -1467,7 +1496,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_traitor_icon"
+    "icon": "aomr_traitor_icon",
+    "descricao_resumida": "Target an enemy unit to convert it to your side."
   },
   {
     "id": 51,
@@ -1486,7 +1516,7 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 12,
+    "duracao_no_mapa_seg": 0,
     "custo_repetir": 60,
     "incremento_por_uso": "+20",
     "descricao_avancada": "In the original game, this power immediately converts a group of enemy units in the target area to Mother Nature, making them hostile to all players. In Retold, it bestows a status effect that causes affected units to attack each other. The duration depends on the number of units affected; the more units affected, the shorter the duration of the divine power.",
@@ -1496,12 +1526,13 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_chaos_icon"
+    "icon": "aomr_chaos_icon",
+    "descricao_resumida": "Target a group of enemy units to make it temporarily hostile to all."
   },
   {
     "id": 52,
-    "nome": "Hesperides",
-    "ingles": "Hesperides",
+    "nome": "Hesperides Tree",
+    "ingles": "Hesperides Tree",
     "god": [
       {
         "id": 52,
@@ -1525,7 +1556,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_hesperides_icon"
+    "icon": "aomr_hesperides_icon",
+    "descricao_resumida": "Select a location to create a tree that summons some Dryad myth units and can train more."
   },
   {
     "id": 53,
@@ -1544,7 +1576,7 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 10,
+    "duracao_no_mapa_seg": 0,
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Creates a spherical \"black hole\", which sucks in and damages nearby units ( exceto units voadoras ) and then explodes, damaging all nearby units and substantial damage to structures. Final explosion damage increases as more units are sucked in.",
@@ -1554,7 +1586,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_implode_icon"
+    "icon": "aomr_implode_icon",
+    "descricao_resumida": "Target a location to do massive damage to nearby units and buildings. This is more powerful when cast near a large number of enemy units."
   },
   {
     "id": 54,
@@ -1573,7 +1606,7 @@
       }
     ],
     "cooldown_seg": 60,
-    "duracao_no_mapa_seg": 3,
+    "duracao_no_mapa_seg": 0,
     "custo_repetir": 0,
     "incremento_por_uso": "+25",
     "descricao_avancada": "Instantly teleports all owned military units across the map to the target location.",
@@ -1583,7 +1616,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_vortex_icon"
+    "icon": "aomr_vortex_icon",
+    "descricao_resumida": "Target a location to transport all of your military units there."
   },
   {
     "id": 55,
@@ -1603,7 +1637,7 @@
     ],
     "cooldown_seg": 240,
     "duracao_no_mapa_seg": 0,
-    "custo_repetir": 350,
+    "custo_repetir": 300,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Instantly opens a portal to the underworld at the target location, spawning neutral creatures hostile to all players. The portal also instantly destroys any building it is thrown at, except City Centers, Wonders, and Titan Gates.",
     "panteao": [
@@ -1612,7 +1646,8 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_tartarian_gate_power_icon"
+    "icon": "aomr_tartarian_gate_icon",
+    "descricao_resumida": "Hekate opens a gate to the Underworld that unleashes creatures hostile to all. The gate will destroy any buildings in the vicinity when it is placed."
   },
   {
     "id": 56,
@@ -1641,7 +1676,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_vanish"
+    "icon": "aomr_vanish_icon",
+    "descricao_resumida": "Target a group of friendly units to make them invisible for a short time. Attacking will reveal their position."
   },
   {
     "id": 57,
@@ -1670,7 +1706,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_lightning_weapons"
+    "icon": "aomr_lightning_weapons_icon",
+    "descricao_resumida": "Target a location to conduct lightning into the weapons of all of your human soldiers, heroes and ships, granting their attacks a chance to stun enemies."
   },
   {
     "id": 58,
@@ -1699,7 +1736,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_earth_wall_power"
+    "icon": "aomr_earth_wall_power_icon",
+    "descricao_resumida": "Target a friendly building to surround it with earthen walls. Allies can pass through them, but enemies cannot."
   },
   {
     "id": 59,
@@ -1719,7 +1757,7 @@
     ],
     "cooldown_seg": 180,
     "duracao_no_mapa_seg": 0,
-    "custo_repetir": 100,
+    "custo_repetir": 125,
     "incremento_por_uso": "+25",
     "descricao_avancada": "When summoned to an allied building, plants sprout from the nearby ground within a 30 radius, healing allied units and immobilizing and dealing momentary damage to nearby enemy units.",
     "panteao": [
@@ -1728,7 +1766,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_forest_protection"
+    "icon": "aomr_forest_protection_icon",
+    "descricao_resumida": "Target a friendly building to protect the surrounding area with Goumang's wood power, which roots enemies and heals allied units."
   },
   {
     "id": 60,
@@ -1757,7 +1796,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_drought"
+    "icon": "aomr_drought_land_icon",
+    "descricao_resumida": "Target an area to spread drought, which makes enemy buildings far easier to destroy, units easier to kill, and prevents all construction and repairs."
   },
   {
     "id": 61,
@@ -1786,7 +1826,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_fei_beasts"
+    "icon": "aomr_venom_beast_icon",
+    "descricao_resumida": "Target a location to spawn poisonous Fei Beasts that spread infection to enemies."
   },
   {
     "id": 62,
@@ -1815,12 +1856,13 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_great_flood"
+    "icon": "aomr_great_flood_icon",
+    "descricao_resumida": "Target a path of destruction for a cataclysmic flood that sweeps away units and annihilates buildings."
   },
   {
     "id": 63,
-    "nome": "Yinglongs Wrath",
-    "ingles": "Yinglongs Wrath",
+    "nome": "Yinglong's Wrath",
+    "ingles": "Yinglong's Wrath",
     "god": [
       {
         "id": 63,
@@ -1844,7 +1886,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_yinglongs_wrath"
+    "icon": "aomr_yinglongs_wrath_icon",
+    "descricao_resumida": "Target a location to summon Yinglong, the legendary rain and lightning dragon of China."
   },
   {
     "id": 64,
@@ -1863,7 +1906,7 @@
       }
     ],
     "cooldown_seg": 300,
-    "duracao_no_mapa_seg": 17,
+    "duracao_no_mapa_seg": 16,
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Darkens the sky and causes flaming rocks to bombard the target area, dealing 25 damage to everything in an area.",
@@ -1873,7 +1916,8 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_blazing_prairie"
+    "icon": "aomr_blazing_prairie_png_icon",
+    "descricao_resumida": "Target a location to open the heavens and set the world on fire. Everything will burn."
   },
   {
     "id": 65,
@@ -1902,7 +1946,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_asgardian_bastion_icon"
+    "icon": "aomr_asgardian_bastion_icon",
+    "descricao_resumida": "Target a location to summon a foundation that will materialize into a spectral Hill Fort when fully constructed. Builds faster in later ages."
   },
   {
     "id": 66,
@@ -1921,7 +1966,7 @@
       }
     ],
     "cooldown_seg": 150,
-    "duracao_no_mapa_seg": 22,
+    "duracao_no_mapa_seg": 20,
     "custo_repetir": 200,
     "incremento_por_uso": "+5",
     "descricao_avancada": "Summons a blizzard that rains down icicles, damaging units, reducing their movement speed, and increasing their cooldown.",
@@ -1931,7 +1976,8 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_tempest_icon"
+    "icon": "aomr_tempest_icon",
+    "descricao_resumida": "Target a location to unleash a vicious hailstorm, damaging enemies and heavily slowing their attacks and movement."
   },
   {
     "id": 67,
@@ -1960,12 +2006,13 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_inferno_icon"
+    "icon": "aomr_inferno_icon",
+    "descricao_resumida": "Target a fiery path of destruction. The great wolf Fenrir will emerge and charge, engulfing enemies in flames before erupting into an apocalyptic inferno of flame and ruin."
   },
   {
     "id": 68,
-    "nome": "Goshinboku Tree",
-    "ingles": "Goshinboku Tree",
+    "nome": "Goshinboku",
+    "ingles": "Goshinboku",
     "god": [
       {
         "id": 68,
@@ -1982,7 +2029,7 @@
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 100,
     "incremento_por_uso": "+100",
-    "descricao_resumida": "Select a location to summon a Goshinboku tree. The tree's blessing resurrects the owner's mythic units as they fall in combat.",
+    "descricao_resumida": "Target a location to summon a Goshinboku tree. The tree's blessing resurrects the owner's myth units as they fall in combat.",
     "descricao_avancada": "Creates a Goshinboku Tree that revives fallen mythical units, up to two at a time; cannot respawn Kitsune, Titans, flying units, or certain untrainable mythic units. The tree cannot be destroyed, but it can be captured by any player who has the most units near it.",
     "panteao": [
       {
@@ -1990,7 +2037,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_goshinboku_tree_icon"
+    "icon": "aomr_goshinboku_icon"
   },
   {
     "id": 69,
@@ -2009,10 +2056,10 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 0,
+    "duracao_no_mapa_seg": 3,
     "custo_repetir": 100,
     "incremento_por_uso": "+30",
-    "descricao_resumida": "Select a Sanctuary to transform it into a Hunting Sanctuary, periodically spawning huntable deer as well as friendly wolves that defend the area",
+    "descricao_resumida": "Target a Shrine to transform it into a Shrine of the Hunt, periodically spawning huntable deer as well as friendly wolves that defend the area.",
     "descricao_avancada": "Transforms a Sanctuary into a Hunting Sanctuary, which spawns huntable deer and guardian wolves; acts as a drop site",
     "panteao": [
       {
@@ -2039,10 +2086,10 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 30,
+    "duracao_no_mapa_seg": 25,
     "custo_repetir": 100,
     "incremento_por_uso": "+25",
-    "descricao_resumida": "Select a location to create a temporary Kappa-infested swamp that will leap out of the water and drown enemy human soldiers",
+    "descricao_resumida": "Target a location to create a temporary swamp infested with Kappa that will leap out of the water and drown enemy human soldiers.",
     "descricao_avancada": "Creates a Kappa-infested 18-radius swamp that periodically drowns enemy human soldiers who come near them",
     "panteao": [
       {
@@ -2069,10 +2116,10 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 0,
+    "duracao_no_mapa_seg": 3,
     "custo_repetir": 100,
     "incremento_por_uso": "+25",
-    "descricao_resumida": "Choose a Daimyo to transform into an immensely powerful Shogun who summons Samurais as he fights.",
+    "descricao_resumida": "Target a Daimyo to transform him into an immensely powerful Shogun, who summons Samurai while he fights.",
     "descricao_avancada": "Transforms a Daimyo into a Shogun, which is more powerful and generates Samurai in combat",
     "panteao": [
       {
@@ -2102,7 +2149,7 @@
     "duracao_no_mapa_seg": 15,
     "custo_repetir": 200,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Aim at a location to release earth-shattering shockwaves. Raijin strikes his den-den daiko drums, creating rings of lightning that expand and damage and stun enemies.",
+    "descricao_resumida": "Target a location to unleash earth-shaking shockwaves. Raijin strikes his den-den daiko drums, causing expanding rings of lightning to damage and stun enemies.",
     "descricao_avancada": "Creates four shockwaves that damage and throw units within a successive expansion radius of 20 to 35, knocking back enemy units and damaging units and buildings. Has -50% bonus damage against villagers.",
     "panteao": [
       {
@@ -2132,7 +2179,7 @@
     "duracao_no_mapa_seg": 0,
     "custo_repetir": 75,
     "incremento_por_uso": "+10",
-    "descricao_resumida": "Aim in one direction to release a huge gust of wind, destroying military units across the map",
+    "descricao_resumida": "Target a direction in which to unleash an immense gust of wind, blasting military units across the map.",
     "descricao_avancada": "Explodes units, both allies and enemies, far towards the target; flying units, workers and animals (such as pastoral animals, huntable animals and animals of Set) are not affected",
     "panteao": [
       {
@@ -2162,7 +2209,7 @@
     "duracao_no_mapa_seg": 10,
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Create a path of destruction. Takemikazuchi will cut through the earth with a colossal katana slash, dealing massive damage to units and stunning survivors",
+    "descricao_resumida": "Target a path of destruction. Takemikazuchi will cleave the earth with a colossal katana slash, inflicting massive damage to units and stunning any survivors.",
     "descricao_avancada": "Deals damage to enemy units in an area 8 wide and 30 long, knocking back and stunning survivors",
     "panteao": [
       {
@@ -2192,7 +2239,7 @@
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 300,
     "incremento_por_uso": "+300",
-    "descricao_resumida": "Select a location to erect a large Torii Gate that makes your Divine Powers cheaper and allows you to summon them again for free",
+    "descricao_resumida": "Target a location to erect a great Torii Gate which makes your God Powers cheaper and immediately enables you to invoke them once again for free.",
     "descricao_avancada": "Creates a Sacred Gate that makes all (except the Sacred Byton) divine powers immediately available one more time, at on the cost, and reduces its reuse cost by 20%. The Gate cannot be destroyed, but it can be captured by any player who has the most units near it.",
     "panteao": [
       {
@@ -2219,10 +2266,10 @@
       }
     ],
     "cooldown_seg": 180,
-    "duracao_no_mapa_seg": 15,
+    "duracao_no_mapa_seg": 12,
     "custo_repetir": 350,
     "incremento_por_uso": "+5",
-    "descricao_resumida": "Aim for a path of destruction. Watatsumi will descend in dragon form and explode into a swirling typhoon, destroying everything in its path.",
+    "descricao_resumida": "Target a path of destruction. Watatsumi will descend in dragon form and erupt into a swirling typhoon, tearing through everything in his path.",
     "descricao_avancada": "Deals damage to enemies in a moving circular area of ​​radius 25; moves 60 pieces in a duration of 12 seconds",
     "panteao": [
       {
@@ -2249,14 +2296,17 @@
       }
     ],
     "duracao_no_mapa_seg": 60,
-    "descricao_resumida": "Unleashes devastation in the target area, drying out berries, plants, and trees, and turning the land into an arid desert where nothing can grow for a short period of time.",
+    "descricao_resumida": "Target a location to wither berries, farms, and trees, rendering the terrain sterile for a short period of time.",
     "panteao": [
       {
         "id": 1,
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_wither_icon"
+    "icon": "aomr_wither_icon",
+    "cooldown_seg": 90,
+    "custo_repetir": 100,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 79,
@@ -2274,15 +2324,18 @@
         "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
-    "duracao_no_mapa_seg": 240,
-    "descricao_resumida": "creates a peaceful field that stops all attacks from units and buildings hit by its glow",
+    "duracao_no_mapa_seg": 75,
+    "descricao_resumida": "Target an area to temporarily turn it into a peaceful meadow. Units and buildings inside the meadow cannot attack.",
     "panteao": [
       {
         "id": 1,
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_arcadian_meadow_icon"
+    "icon": "aomr_arcadian_meadow_icon",
+    "cooldown_seg": 120,
+    "custo_repetir": 100,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 80,
@@ -2301,14 +2354,17 @@
       }
     ],
     "duracao_no_mapa_seg": 3,
-    "descricao_resumida": "Provides bonuses to defensive strength and resources, and can convert enemy units to your side",
+    "descricao_resumida": "Summon a hearth that increases Villager gather rate and converts enemy units.",
     "panteao": [
       {
         "id": 1,
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_communal_hearth_icon"
+    "icon": "aomr_communal_hearth_icon",
+    "cooldown_seg": 150,
+    "custo_repetir": 125,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 81,
@@ -2326,16 +2382,18 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "duracao_no_mapa_seg": 200,
+    "duracao_no_mapa_seg": 180,
     "custo_repetir": 350,
-    "descricao_resumida": "Revive the last 100 fallen units as spectral Eidolons under your control, at the cost of all City Centers you own",
+    "descricao_resumida": "Sacrifice all standing Town and Village Centers to resurrect up to 99 fallen military and Myth units (25 per Settlement). Settlements cannot be repopulated for some time.",
     "panteao": [
       {
         "id": 1,
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_underworld_invasion_icon"
+    "icon": "aomr_underworld_invasion_icon",
+    "cooldown_seg": 300,
+    "incremento_por_uso": "+50"
   },
   {
     "id": 82,
@@ -2354,7 +2412,7 @@
       }
     ],
     "duracao_no_mapa_seg": 30,
-    "custo_repetir": 50,
+    "custo_repetir": 40,
     "descricao_resumida": "Target any unit to grant it immense power for a short duration. When the effect ends, the unit dies, granting you Favor.",
     "panteao": [
       {
@@ -2362,7 +2420,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_blood_pact_icon"
+    "icon": "aomr_blood_pact_icon",
+    "cooldown_seg": 180,
+    "incremento_por_uso": "+10"
   },
   {
     "id": 83,
@@ -2387,7 +2447,11 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_obsidian_mirror_icon"
+    "icon": "aomr_obsidian_mirror_icon",
+    "cooldown_seg": 15,
+    "duracao_no_mapa_seg": 3,
+    "custo_repetir": 1,
+    "incremento_por_uso": "+1"
   },
   {
     "id": 84,
@@ -2414,7 +2478,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_tailwind_icon"
+    "icon": "aomr_tailwind_icon",
+    "cooldown_seg": 180,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 85,
@@ -2441,7 +2507,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_agave_bloom_icon"
+    "icon": "aomr_agave_bloom_icon",
+    "cooldown_seg": 150,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 86,
@@ -2468,7 +2536,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_infestation_icon"
+    "icon": "aomr_infestation_icon",
+    "cooldown_seg": 180,
+    "incremento_por_uso": "+100"
   },
   {
     "id": 87,
@@ -2495,7 +2565,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_lullaby_icon"
+    "icon": "aomr_lullaby_icon",
+    "cooldown_seg": 150,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 88,
@@ -2513,16 +2585,18 @@
         "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "duracao_no_mapa_seg": 5,
+    "duracao_no_mapa_seg": 6,
     "custo_repetir": 150,
-    "descricao_resumida": "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed.",
+    "descricao_resumida": "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed, up to a total of 1500 resource value.",
     "panteao": [
       {
         "id": 7,
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_purge_icon"
+    "icon": "aomr_purge_icon",
+    "cooldown_seg": 240,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 89,
@@ -2540,8 +2614,8 @@
         "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "duracao_no_mapa_seg": 18,
-    "custo_repetir": 250,
+    "duracao_no_mapa_seg": 16,
+    "custo_repetir": 200,
     "descricao_resumida": "Target a location to bombard enemies with falling stars. Tzitzimitl star demons occasionally emerge from the craters to fight for you.",
     "panteao": [
       {
@@ -2549,7 +2623,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_starfall_icon"
+    "icon": "aomr_starfall_icon",
+    "cooldown_seg": 240,
+    "incremento_por_uso": "+20"
   },
   {
     "id": 90,
@@ -2567,7 +2643,7 @@
         "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "duracao_no_mapa_seg": 22.5,
+    "duracao_no_mapa_seg": 22,
     "custo_repetir": 150,
     "descricao_resumida": "Target a location to summon Tlaltecuhtli, the Earth Monster. It erupts from the ground repeatedly to swallow groups of units, trapping them underground before regurgitating survivors.",
     "panteao": [
@@ -2576,7 +2652,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_earth_monster_icon"
+    "icon": "aomr_earth_monster_icon",
+    "cooldown_seg": 240,
+    "incremento_por_uso": "+25"
   },
   {
     "id": 91,
@@ -2603,7 +2681,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_volcano_icon"
+    "icon": "aomr_volcano_icon",
+    "cooldown_seg": 240,
+    "incremento_por_uso": "+5"
   },
   {
     "id": 92,
@@ -2630,7 +2710,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_corrupted_ground_icon"
+    "icon": "aomr_corrupted_ground_icon",
+    "cooldown_seg": 240,
+    "incremento_por_uso": "+5"
   },
   {
     "id": 93,

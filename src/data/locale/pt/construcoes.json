@@ -51,7 +51,8 @@
       155
     ],
     "panteao_id": 1,
-    "icon": "aomr_town_center_greek_icon"
+    "icon": "aomr_town_center_greek_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 3,
@@ -70,10 +71,10 @@
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 10,
-    "madeira": 0,
-    "ouro": 550,
+    "madeira": 350,
+    "ouro": 350,
     "guarnicao": 25,
-    "custo": 550,
+    "custo": 700,
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Town Center",
     "no_projeteis": 2,
@@ -96,7 +97,8 @@
       61
     ],
     "panteao_id": 2,
-    "icon": "aomr_town_center_egyptian_icon"
+    "icon": "aomr_town_center_egyptian_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 4,
@@ -134,7 +136,8 @@
     ],
     "unidades_id": 14,
     "panteao_id": 3,
-    "icon": "aomr_town_center_norse_icon"
+    "icon": "aomr_town_center_norse_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 5,
@@ -165,7 +168,8 @@
     "era_id": 2,
     "tecnologias_id": "29500f30e21180888b25f958d43e6616",
     "panteao_id": 4,
-    "icon": "aomr_town_center_atlantean_icon"
+    "icon": "aomr_town_center_atlantean_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 6,
@@ -200,7 +204,8 @@
       "2b200f30e211801eb5dbd00aff735786"
     ],
     "panteao_id": 5,
-    "icon": "aomr_town_center_chinese"
+    "icon": "aomr_town_center_chinese_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 7,
@@ -236,7 +241,8 @@
     ],
     "unidades_id": 139,
     "panteao_id": 6,
-    "icon": "aomr_town_center_japanese_icon"
+    "icon": "aomr_town_center_japanese_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 9,
@@ -276,7 +282,8 @@
       160
     ],
     "panteao_id": 7,
-    "icon": "aomr_town_center_icon"
+    "icon": "aomr_town_center_icon",
+    "armadura_anticontusao": 10
   },
   {
     "id": 8,
@@ -302,7 +309,8 @@
     "era_id": 1,
     "tecnologias_id": "2b200f30e21180d88cbbe6e49f2601e4",
     "panteao_id": 5,
-    "icon": "aomr_house_icon"
+    "icon": "aomr_house_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 11,
@@ -326,7 +334,9 @@
     "ingles": "Manor",
     "era_id": 1,
     "panteao_id": 4,
-    "icon": "aomr_manor_icon"
+    "icon": "aomr_manor_icon",
+    "armadura_anticontusao": 5,
+    "tempo_construir_segundos": 25
   },
   {
     "id": 14,
@@ -362,7 +372,8 @@
       "29500f30e21180dcbb49f1aa7336abfc"
     ],
     "panteao_id": 1,
-    "icon": "aomr_storehouse_icon"
+    "icon": "aomr_storehouse_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 15,
@@ -397,7 +408,8 @@
       "29500f30e211807f9bf0f7e80238f103"
     ],
     "panteao_id": 1,
-    "icon": "aomr_granary_icon"
+    "icon": "aomr_granary_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 16,
@@ -428,7 +440,8 @@
     "era_id": 1,
     "tecnologias_id": "29500f30e2118049b752f3de95be8821",
     "panteao_id": 2,
-    "icon": "aomr_mining_camp_icon"
+    "icon": "aomr_mining_camp_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 17,
@@ -460,7 +473,8 @@
       "2a800f30e211806fa17bf4221b198d40"
     ],
     "panteao_id": 2,
-    "icon": "aomr_lumber_camp_icon"
+    "icon": "aomr_lumber_camp_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 18,
@@ -479,9 +493,9 @@
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 0,
+    "madeira": 50,
     "ouro": 0,
-    "custo": 0,
+    "custo": 50,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Granary",
     "tecnologias": "Pecuária, Enchente do Nilo, Gatos Sagrados, Shaduf",
@@ -494,7 +508,8 @@
       "2a800f30e2118074804dc972fcba2406"
     ],
     "panteao_id": 2,
-    "icon": "aomr_granary_icon"
+    "icon": "aomr_granary_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 19,
@@ -528,7 +543,8 @@
       "2a900f30e211804eba64f2122c0e6c97"
     ],
     "panteao_id": 4,
-    "icon": "aomr_economic_guild_icon"
+    "icon": "aomr_economic_guild_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 20,
@@ -562,7 +578,8 @@
       "2b200f30e21180d88cbbe6e49f2601e4"
     ],
     "panteao_id": 5,
-    "icon": "aomr_silo"
+    "icon": "aomr_silo_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 10,
@@ -576,7 +593,7 @@
       }
     ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
-    "pontos_de_vida": 400,
+    "pontos_de_vida": 600,
     "dps": 0,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
@@ -591,7 +608,8 @@
     "era_id": 1,
     "tecnologias_ids": [],
     "panteao_id": 7,
-    "icon": "aomr_calpulli_icon"
+    "icon": "aomr_calpulli_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 21,
@@ -673,7 +691,8 @@
       152
     ],
     "panteao_id": 1,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 22,
@@ -693,10 +712,10 @@
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 0,
+    "madeira": 150,
     "ouro": 150,
     "guarnicao": 5,
-    "custo": 150,
+    "custo": 300,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Temple",
     "tecnologias": "Criosfinge, Hierocosfinge, Pés de Chacal, Clarividência, Crocodilopolis, Linho Carmesim, Novo Reino, Coroa de Atef, Ritos Funerários, Espírito de Maat, Necrópole, Mãos de Faraó",
@@ -730,7 +749,8 @@
       103
     ],
     "panteao_id": 2,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 23,
@@ -745,15 +765,15 @@
       }
     ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "pontos_de_vida": 1080,
+    "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 135,
+    "madeira": 150,
     "ouro": 150,
     "guarnicao": 5,
-    "custo": 285,
+    "custo": 300,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Temple",
     "tecnologias": "Valgaldr, Dísablót, Gjallarhorn, Troll das Cavernas, Salão dos Thanes, Salvaguarda, Olhos na Floresta, Geada, Runa de Thurisaz, Jotuns, Estômago de Ferro, Banquetes Renomados, Nove Ondas, Sangue de Granito, Rompante",
@@ -793,7 +813,8 @@
       106
     ],
     "panteao_id": 3,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 24,
@@ -855,7 +876,8 @@
       109
     ],
     "panteao_id": 4,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 25,
@@ -914,7 +936,8 @@
       112
     ],
     "panteao_id": 5,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 26,
@@ -973,7 +996,8 @@
       126
     ],
     "panteao_id": 6,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 12,
@@ -1008,7 +1032,8 @@
       161
     ],
     "panteao_id": 7,
-    "icon": "aomr_temple_icon"
+    "icon": "aomr_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 27,
@@ -1050,7 +1075,8 @@
       "2a300f30e21180c3a363ff2c9735b1dc"
     ],
     "panteao_id": 1,
-    "icon": "aomr_armory_icon"
+    "icon": "aomr_armory_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 28,
@@ -1082,7 +1108,8 @@
       "2a800f30e21180c4b3e2d478e79f2149"
     ],
     "panteao_id": 2,
-    "icon": "aomr_armory_icon"
+    "icon": "aomr_armory_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 29,
@@ -1093,14 +1120,14 @@
       }
     ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "pontos_de_vida": 1080,
+    "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 135,
+    "madeira": 150,
     "ouro": 0,
-    "custo": 135,
+    "custo": 150,
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Armory",
     "tecnologias": "Peitoral Enânico",
@@ -1108,7 +1135,8 @@
     "era_id": 2,
     "tecnologias_id": "2a800f30e21180d48ffbe93f81fd8799",
     "panteao_id": 3,
-    "icon": "aomr_armory_icon"
+    "icon": "aomr_armory_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 31,
@@ -1138,7 +1166,8 @@
       "2b200f30e211804b97a2e6a44b5006cb"
     ],
     "panteao_id": 4,
-    "icon": "aomr_armory_icon"
+    "icon": "aomr_armory_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 32,
@@ -1168,7 +1197,8 @@
       "2b200f30e21180d0bf1dd6400b9f1556"
     ],
     "panteao_id": 5,
-    "icon": "aomr_armory_icon"
+    "icon": "aomr_armory_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 33,
@@ -1197,7 +1227,8 @@
       "2b200f30e2118018adf6d40212380afa"
     ],
     "panteao_id": 6,
-    "icon": "aomr_armory_icon"
+    "icon": "aomr_armory_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 34,
@@ -1228,7 +1259,9 @@
       "2a800f30e21180e38fede4fb52e77dc0"
     ],
     "panteao_id": 3,
-    "icon": "aomr_dwarven_armory_icon"
+    "icon": "aomr_dwarven_armory_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 35,
@@ -1268,7 +1301,9 @@
       1
     ],
     "panteao_id": 1,
-    "icon": "aomr_military_academy_icon"
+    "icon": "aomr_military_academy_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 36,
@@ -1309,7 +1344,9 @@
       3
     ],
     "panteao_id": 1,
-    "icon": "aomr_archery_range_icon"
+    "icon": "aomr_archery_range_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 37,
@@ -1349,7 +1386,9 @@
       2
     ],
     "panteao_id": 1,
-    "icon": "aomr_stable_icon"
+    "icon": "aomr_stable_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 38,
@@ -1367,8 +1406,8 @@
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 100,
-    "ouro": 0,
-    "custo": 100,
+    "ouro": 75,
+    "custo": 75,
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Barracks",
     "tecnologias": "Machado Dentado, Escudo de Couro, Projéteis de Electro, Fundas do Sol, Lança da Serpente, Machado de Vingança, Lança de Hórus, Maior de Cinquenta, Lanceiros Médios, Machadeiros Médios, Fundeiros Médios, Lanceiros Pesados, Machadeiros Pesados, Fundeiros Pesados, Convocar Soldados de Quartel, Lanceiros Campeões, Machadeiros Campeões, Fundeiros Campeões, Recrutar Soldados de Quartel",
@@ -1402,7 +1441,9 @@
       7
     ],
     "panteao_id": 2,
-    "icon": "aomr_barracks_icon"
+    "icon": "aomr_barracks_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 39,
@@ -1450,7 +1491,9 @@
       14
     ],
     "panteao_id": 3,
-    "icon": "aomr_longhouse_icon"
+    "icon": "aomr_longhouse_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 40,
@@ -1497,7 +1540,9 @@
       85
     ],
     "panteao_id": 3,
-    "icon": "aomr_great_hall_icon"
+    "icon": "aomr_great_hall_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 41,
@@ -1543,7 +1588,9 @@
       25
     ],
     "panteao_id": 4,
-    "icon": "aomr_military_barracks_icon"
+    "icon": "aomr_military_barracks_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 42,
@@ -1561,8 +1608,8 @@
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 100,
-    "ouro": 35,
-    "custo": 135,
+    "ouro": 25,
+    "custo": 125,
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Counter Barracks",
     "tecnologias": "Infantaria Média, Soldados de Longo Alcance Médios, Infantaria Pesada, Soldados de Longo Alcance Pesados, Infantaria Campeã, Soldados de Longo Alcance Campeãos, Convocar Contrassoldados, Cota de Oricalco, Recrutar Contrassoldados",
@@ -1586,7 +1633,9 @@
       22
     ],
     "panteao_id": 4,
-    "icon": "aomr_counter-barracks_icon"
+    "icon": "aomr_counter_barracks_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 43,
@@ -1609,7 +1658,7 @@
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Military Academy",
     "tecnologias": "Infantaria Média, Soldados de Longo Alcance Médios, Infantaria Pesada, Soldados de Longo Alcance Pesados, Infantaria Campeã, Soldados de Longo Alcance Campeãos, Escudos Dourados, Julgamento Divino, Mestre das Armas, Ordem Imperial, Linhagem de Xuanyuan, Livros Divinos",
-    "tempo_construir_segundos": 30,
+    "tempo_construir_segundos": 25,
     "unidades": "Lanceiro Wuzu, Alabardeiro Ge, Espadachim de Dao",
     "era_id": 2,
     "tecnologias_ids": [
@@ -1632,7 +1681,9 @@
       26
     ],
     "panteao_id": 5,
-    "icon": "aomr_military_academy_icon"
+    "icon": "aomr_military_academy_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 44,
@@ -1677,7 +1728,9 @@
       117
     ],
     "panteao_id": 5,
-    "icon": "aomr_imperial_academy"
+    "icon": "aomr_imperial_academy_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 45,
@@ -1716,7 +1769,9 @@
       30
     ],
     "panteao_id": 5,
-    "icon": "aomr_machine_workshop"
+    "icon": "aomr_machine_workshop_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 74,
@@ -1746,7 +1801,9 @@
       163
     ],
     "panteao_id": 7,
-    "icon": "aomr_war_hut_icon"
+    "icon": "aomr_war_hut_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 75,
@@ -1777,7 +1834,9 @@
       167
     ],
     "panteao_id": 7,
-    "icon": "aomr_noble_hut_icon"
+    "icon": "aomr_nobles_hut_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 46,
@@ -1793,7 +1852,7 @@
     ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 1600,
-    "dps": 0,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
@@ -1806,7 +1865,11 @@
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 1,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 47,
@@ -1822,20 +1885,24 @@
     ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 1600,
-    "dps": 0,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 0,
+    "madeira": 100,
     "ouro": 50,
     "guarnicao": 10,
-    "custo": 50,
+    "custo": 100,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 2,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 48,
@@ -1850,21 +1917,25 @@
       }
     ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "pontos_de_vida": 1440,
-    "dps": 0,
+    "pontos_de_vida": 1600,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 90,
+    "madeira": 100,
     "ouro": 0,
     "guarnicao": 10,
-    "custo": 90,
+    "custo": 100,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 3,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 49,
@@ -1880,20 +1951,24 @@
     ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 1600,
-    "dps": 0,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 125,
+    "madeira": 100,
     "ouro": 0,
     "guarnicao": 10,
-    "custo": 125,
+    "custo": 100,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Dock",
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 4,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 50,
@@ -1909,7 +1984,7 @@
     ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 1600,
-    "dps": 0,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
@@ -1922,7 +1997,11 @@
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 5,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 78,
@@ -1938,7 +2017,7 @@
     ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 1600,
-    "dps": 0,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
@@ -1951,7 +2030,11 @@
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 6,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 79,
@@ -1967,7 +2050,7 @@
     ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 1600,
-    "dps": 0,
+    "dps": 8,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
@@ -1980,7 +2063,11 @@
     "tempo_construir_segundos": 30,
     "era_id": 1,
     "panteao_id": 7,
-    "icon": "aomr_dock_icon"
+    "icon": "aomr_dock_icon",
+    "dano_perfurante": 8,
+    "alcance": 18,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5
   },
   {
     "id": 51,
@@ -2010,7 +2097,8 @@
       "29500f30e2118074bdebccf07983108e"
     ],
     "panteao_id": 1,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 52,
@@ -2026,9 +2114,9 @@
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 0,
+    "madeira": 150,
     "ouro": 0,
-    "custo": 0,
+    "custo": 150,
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Market",
     "tecnologias": "Água Escuro",
@@ -2036,7 +2124,8 @@
     "era_id": 2,
     "tecnologias_id": "2a800f30e211802bad29c6756f35589e",
     "panteao_id": 2,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 53,
@@ -2047,20 +2136,21 @@
       }
     ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
-    "pontos_de_vida": 1080,
+    "pontos_de_vida": 1200,
     "dps": 0,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 135,
+    "madeira": 150,
     "ouro": 0,
-    "custo": 135,
+    "custo": 150,
     "era": "Clássica :aomr_classical_age_icon:",
     "ingles": "Market",
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 3,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 54,
@@ -2084,7 +2174,8 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 4,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 55,
@@ -2110,7 +2201,8 @@
     "era_id": 2,
     "tecnologias_id": "2b200f30e2118032a6c1e0ccba610132",
     "panteao_id": 5,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 56,
@@ -2134,7 +2226,8 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 6,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 80,
@@ -2158,7 +2251,8 @@
     "tempo_construir_segundos": 40,
     "era_id": 2,
     "panteao_id": 7,
-    "icon": "aomr_market_icon"
+    "icon": "aomr_market_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 57,
@@ -2174,13 +2268,13 @@
     ],
     "panteao": "Grego :aomr_pantheon_greeks_icon:",
     "pontos_de_vida": 3000,
-    "dps": 0,
+    "dps": 37.5,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 300,
     "ouro": 300,
-    "custo": 610,
+    "custo": 600,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 10,
     "ingles": "Fortress",
@@ -2205,7 +2299,13 @@
       151
     ],
     "panteao_id": 1,
-    "icon": "aomr_fortress_icon"
+    "icon": "aomr_fortress_icon",
+    "dano_perfurante": 37.5,
+    "alcance": 4,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5,
+    "guarnicao": 20,
+    "no_projeteis": 3
   },
   {
     "id": 58,
@@ -2221,13 +2321,13 @@
     ],
     "panteao": "Egípcio :aomr_pantheon_egyptians_icon:",
     "pontos_de_vida": 3250,
-    "dps": 0,
+    "dps": 34.5,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 0,
     "ouro": 500,
-    "custo": 510,
+    "custo": 500,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 10,
     "ingles": "Migdol Stronghold",
@@ -2256,7 +2356,13 @@
       13
     ],
     "panteao_id": 2,
-    "icon": "aomr_migdol_stronghold_icon"
+    "icon": "aomr_migdol_stronghold_icon",
+    "dano_perfurante": 34.5,
+    "alcance": 4,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5,
+    "guarnicao": 20,
+    "no_projeteis": 3
   },
   {
     "id": 59,
@@ -2272,18 +2378,18 @@
     ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "pontos_de_vida": 2700,
-    "dps": 0,
+    "dps": 30,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 270,
     "ouro": 300,
-    "custo": 580,
+    "custo": 570,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 10,
     "ingles": "Hill Fort",
     "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Ydalir, Convocar Unidades do Forte da Colina, Recrutar Unidades do Forte da Colina, Banquetes Renomados, Verrumão dos Anões, Bravura",
-    "tempo_construir_segundos": 115,
+    "tempo_construir_segundos": 135,
     "unidades": "Huscarl",
     "era_id": 3,
     "tecnologias_ids": [
@@ -2299,7 +2405,13 @@
     ],
     "unidades_id": 18,
     "panteao_id": 3,
-    "icon": "aomr_hill_fort_icon"
+    "icon": "aomr_hill_fort_icon",
+    "dano_perfurante": 30,
+    "alcance": 4,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5,
+    "guarnicao": 20,
+    "no_projeteis": 3
   },
   {
     "id": 60,
@@ -2315,13 +2427,13 @@
     ],
     "panteao": "Atlante :aomr_pantheon_atlanteans_icon:",
     "pontos_de_vida": 3000,
-    "dps": 0,
+    "dps": 36,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 300,
     "ouro": 300,
-    "custo": 610,
+    "custo": 600,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 10,
     "ingles": "Palace",
@@ -2341,7 +2453,13 @@
     ],
     "unidades_id": 37,
     "panteao_id": 4,
-    "icon": "aomr_palace_icon"
+    "icon": "aomr_palace_icon",
+    "dano_perfurante": 36,
+    "alcance": 4,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5,
+    "guarnicao": 20,
+    "no_projeteis": 3
   },
   {
     "id": 61,
@@ -2357,18 +2475,18 @@
     ],
     "panteao": "Chinês :aomr_pantheon_chinese_icon:",
     "pontos_de_vida": 2500,
-    "dps": 0,
+    "dps": 30,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 250,
     "ouro": 250,
-    "custo": 510,
+    "custo": 500,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 10,
     "ingles": "Baolei",
     "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Defesas Avançadas, Cascos do Vento, Última Resistência",
-    "tempo_construir_segundos": 115,
+    "tempo_construir_segundos": 135,
     "unidades": "Cavalaria de Cavalo Branco, Cavalaria de Tigre",
     "era_id": 3,
     "tecnologias_ids": [
@@ -2384,7 +2502,13 @@
       38
     ],
     "panteao_id": 5,
-    "icon": "aomr_baolei"
+    "icon": "aomr_baolei_icon",
+    "dano_perfurante": 30,
+    "alcance": 4,
+    "velocidade_de_ataque_atk_s": 1,
+    "armadura_anticontusao": 5,
+    "guarnicao": 20,
+    "no_projeteis": 3
   },
   {
     "id": 77,
@@ -2400,17 +2524,17 @@
     ],
     "panteao": "Astecas :aomr_pantheon_azteca_icon:",
     "pontos_de_vida": 3000,
-    "dano_perfurante": 12,
-    "alcance": 20,
+    "dano_perfurante": 36,
+    "alcance": 4,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 12,
+    "dps": 36,
     "armadura_anticontucao": 5,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "madeira": 300,
     "ouro": 300,
     "guarnicao": 20,
-    "custo": 608,
+    "custo": 600,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 8,
     "ingles": "Great Temple",
@@ -2431,7 +2555,8 @@
       171
     ],
     "panteao_id": 7,
-    "icon": "aomr_great_temple_icon"
+    "icon": "aomr_great_temple_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 62,
@@ -2458,7 +2583,7 @@
     "favor": 0,
     "ingles": "Siege Works",
     "tecnologias": "Cavalos de Carga, Engenheiros, Força do Vento Oeste",
-    "tempo_construir_segundos": 115,
+    "tempo_construir_segundos": 40,
     "era_id": 3,
     "tecnologias_ids": [
       "29500f30e2118087abd3f910d9ec1712",
@@ -2466,7 +2591,9 @@
       "2a800f30e211805e880ce9d31cf36125"
     ],
     "panteao_id": 2,
-    "icon": "aomr_siege_works_icon"
+    "icon": "aomr_siege_works_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 63,
@@ -2505,7 +2632,9 @@
       143
     ],
     "panteao_id": 6,
-    "icon": "aomr_dojo_icon"
+    "icon": "aomr_dojo_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 64,
@@ -2519,19 +2648,19 @@
       }
     ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
-    "pontos_de_vida": 600,
+    "pontos_de_vida": 450,
     "dps": 0,
-    "armadura_anticorte": 40,
+    "armadura_anticorte": 30,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
-    "madeira": 75,
-    "ouro": 0,
-    "guarnicao": 1,
-    "custo": 75,
+    "madeira": 100,
+    "ouro": 100,
+    "guarnicao": 5,
+    "custo": 300,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Shrine",
     "tecnologias": "Guardiões Sagrados, Kagura, Jardins de Sakuras, Varinhas de Gohei",
-    "tempo_construir_segundos": 15,
+    "tempo_construir_segundos": 40,
     "e_o_principal_metodo_de_geracao_de_favor": "favoraom: para os japoneses :aomr_japaneses_icon:, quando fortalecidos por Mikos. Santuários localizados perto de recursos naturais geram favor :favoraom: mais rapidamente.",
     "visualmente_as_arvores": "woodaom: dentro do alcance da aura do Santuário se transformam em cerejeiras em plena floração, enquanto animais 🦌 e minas de ouro :goldaom: adquirem um brilho sobrenatural.",
     "quando_o_santuario_e_posicionado_perto_de_recursos_de_coleta": "foodaom::woodaom::goldaom:), os mesmo são aumentados sua quantidade com o tempo, ou seja, subindo lentamente a quantidade a ser coletada.",
@@ -2543,7 +2672,8 @@
       "2b200f30e21180f39f31dce7c16d3603"
     ],
     "panteao_id": 6,
-    "icon": "aomr_shrine_icon"
+    "icon": "aomr_shrine_greek_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 65,
@@ -2583,7 +2713,9 @@
       142
     ],
     "panteao_id": 6,
-    "icon": "aomr_guardhouse_icon"
+    "icon": "aomr_guardhouse_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 66,
@@ -2620,7 +2752,9 @@
       147
     ],
     "panteao_id": 6,
-    "icon": "aomr_stable_icon"
+    "icon": "aomr_stable_icon",
+    "armadura_anticontusao": 5,
+    "guarnicao": 5
   },
   {
     "id": 67,
@@ -2655,7 +2789,8 @@
       "2b200f30e21180cb983dc6c216d0a397"
     ],
     "panteao_id": 6,
-    "icon": "aomr_watermill_icon"
+    "icon": "aomr_watermill_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 68,
@@ -2671,23 +2806,23 @@
     ],
     "panteao": "Japonês :aomr_pantheon_japanese_icon:",
     "pontos_de_vida": 3000,
-    "dano_perfurante": 9,
-    "alcance": 20,
+    "dano_perfurante": 27,
+    "alcance": 4,
     "velocidade_de_ataque_atk_s": 0.8,
-    "dps": 11.25,
+    "dps": 21.6,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 300,
     "ouro": 300,
     "guarnicao": 20,
-    "custo": 610,
+    "custo": 600,
     "era": "Heróica :aomr_heroic_age_icon:",
     "favor": 10,
     "ingles": "Castle",
     "no_projeteis": 3,
     "tecnologias": "Cavalos de Carga, Engenheiros, Fortificações Avançadas, Onmyodo, Oito Estandartes, Artesão Mecânicos",
-    "tempo_construir_segundos": 150,
+    "tempo_construir_segundos": 145,
     "unidades": "Onmyyoji (Herói)",
     "era_id": 3,
     "tecnologias_ids": [
@@ -2700,7 +2835,8 @@
     ],
     "unidades_id": 146,
     "panteao_id": 6,
-    "icon": "aomr_castle_icon"
+    "icon": "aomr_castle_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 69,
@@ -2711,24 +2847,25 @@
       }
     ],
     "panteao": "Geral",
-    "pontos_de_vida": 300,
+    "pontos_de_vida": 600,
     "dps": 0,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
     "madeira": 0,
-    "ouro": 3,
-    "custo": 3,
+    "ouro": 6,
+    "custo": 6,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "Wooden Wall",
     "tecnologias": "Muralha de Pedra, Muralha Fortificada",
-    "tempo_construir_segundos": 5,
+    "tempo_construir_segundos": 15,
     "era_id": 1,
     "tecnologias_ids": [
       "29500f30e21180fc98ccddb7862a6e7c",
       "29500f30e211803c87cedcb432ce6273"
     ],
-    "icon": "aomr_wooden_wall_icon"
+    "icon": "aomr_wooden_wall_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 70,
@@ -2743,10 +2880,10 @@
     ],
     "panteao": "Geral",
     "pontos_de_vida": 600,
-    "dano_perfurante": 8,
-    "alcance": 18,
+    "dano_perfurante": 16,
+    "alcance": 4,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 8,
+    "dps": 16,
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 90,
     "armadura_anticontucao": 5,
@@ -2758,7 +2895,7 @@
     "ingles": "Sentry Tower",
     "no_projeteis": 2,
     "tecnologias": "Torre de Vigia, Fogueiras Sinalizadoras, Ameias, Torre de Guarda, Óleo Fervente, Pombos Correio, Tenshu, Defesas Avançadas",
-    "tempo_construir_segundos": 120,
+    "tempo_construir_segundos": 60,
     "era_id": 2,
     "tecnologias_ids": [
       "29500f30e2118007b175ceca7779aede",
@@ -2770,7 +2907,8 @@
       "2b200f30e211803da085df69958bf2c0",
       "2b200f30e21180959b79cf558a439244"
     ],
-    "icon": "aomr_sentry_tower_icon"
+    "icon": "aomr_sentry_tower_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 71,
@@ -2788,12 +2926,13 @@
     "armadura_anticontucao": 5,
     "madeira": 5000,
     "ouro": 5000,
-    "custo": 10000,
+    "custo": 15000,
     "era": "Mítica :aomr_mythic_age_icon:",
     "ingles": "Wonder",
     "tempo_construir_segundos": 5400,
     "era_id": 4,
-    "icon": "aomr_wonder_icon"
+    "icon": "aomr_wonder_icon",
+    "armadura_anticontusao": 5
   },
   {
     "id": 72,
@@ -2808,13 +2947,19 @@
     ],
     "panteao": "Nórdico :aomr_pantheon_norse_icon:",
     "dps": 0,
-    "custo": 0,
+    "custo": 80,
     "era": "Arcaica :aomr_archaic_age_icon:",
     "ingles": "OX",
     "tecnologias": "Colheita de Inverno",
     "era_id": 1,
     "tecnologias_id": "2a900f30e211807fa7a0c6b01fd9de68",
     "panteao_id": 3,
-    "icon": "aomr_ox_cart_icon"
+    "icon": "aomr_ox_cart_icon",
+    "pontos_de_vida": 80,
+    "armadura_anticorte": 30,
+    "armadura_antiperfurante": 40,
+    "armadura_anticontusao": 99,
+    "madeira": 40,
+    "tempo_construir_segundos": 15
   }
 ]

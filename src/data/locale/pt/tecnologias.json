@@ -238,8 +238,8 @@
       }
     ],
     "ingles": "Survival Equipment",
-    "madeira": 150,
-    "ouro": 150,
+    "madeira": 100,
+    "ouro": 100,
     "panteoes": "Geral",
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
@@ -704,12 +704,12 @@
     "eras": [
       {
         "id": 3,
-        "nome": "Heróica :aomr_heroic_age_icon:"
+        "nome": "Clássica :aomr_classical_age_icon:"
       }
     ],
     "ingles": "Ballistics",
-    "madeira": 200,
-    "ouro": 200,
+    "madeira": 150,
+    "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 50,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
@@ -2510,7 +2510,7 @@
         "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
-    "favor": 20,
+    "favor": 15,
     "god_especifico": [
       {
         "id": 1,
@@ -2530,7 +2530,7 @@
       }
     ],
     "ingles": "Hand of Talos",
-    "madeira": 300,
+    "madeira": 200,
     "panteoes": [
       {
         "id": 1,
@@ -2609,7 +2609,7 @@
         "nome": "Mítica :aomr_mythic_age_icon:"
       }
     ],
-    "favor": 20,
+    "favor": 30,
     "god_especifico": [
       {
         "id": 1,
@@ -2629,7 +2629,7 @@
       }
     ],
     "ingles": "Forge of Olympus",
-    "ouro": 200,
+    "ouro": 300,
     "panteoes": [
       {
         "id": 1,
@@ -8623,7 +8623,7 @@
       ":aomr_oracle_hero_icon: Oráculo: +10% de bônus de capacidade máxima para Coleta Automática de Favor :favoraom:"
     ],
     "comida": 50,
-    "madeira": 100,
+    "madeira": 50,
     "tempo_s": 30
   },
   {
@@ -8783,7 +8783,7 @@
       ":aomr_type_hero_icon: :aomr_type_infantry_icon: Herói de Infantaria: -30% de custo de Ouro :goldaom:"
     ],
     "ouro": 100,
-    "favor": 15,
+    "favor": 12,
     "tempo_s": 40
   },
   {
@@ -8877,7 +8877,7 @@
     ],
     "ouro": 125,
     "favor": 15,
-    "tempo_s": 40
+    "tempo_s": 30
   },
   {
     "nome": "Filhos do Sol",
@@ -8967,7 +8967,7 @@
     ],
     "ouro": 150,
     "favor": 20,
-    "tempo_s": 40
+    "tempo_s": 25
   },
   {
     "nome": "Cota de Oricalco",
@@ -9702,7 +9702,7 @@
     ],
     "icon": "aomr_kuafu_chieftain_icon",
     "comida": 150,
-    "favor": 15,
+    "favor": 10,
     "tempo_s": 40
   },
   {
@@ -9961,7 +9961,7 @@
     "icon": "aomr_qilins_blessing_icon",
     "comida": 100,
     "ouro": 100,
-    "favor": 25,
+    "favor": 15,
     "tempo_s": 20
   },
   {
@@ -10104,8 +10104,8 @@
       ":aomr_yazi_icon: Yazi: Pontos de Vida +15% :aomr_hit_points_icon:",
       ":aomr_yazi_icon: Yazi: Todas as Ações de Dano (Todos os Tipos) +25% :hackdamage:"
     ],
-    "ouro": 150,
-    "favor": 10,
+    "ouro": 125,
+    "favor": 8,
     "tempo_s": 40
   },
   {
@@ -10151,7 +10151,7 @@
       ":aomr_yazi_icon: Yazi: Ativa ao derrotar um inimigo: Ganha 80% de Roubo de Vida por 10 segundos"
     ],
     "madeira": 150,
-    "favor": 10,
+    "favor": 5,
     "tempo_s": 30
   },
   {
@@ -10361,8 +10361,8 @@
       ":aomr_qiongqi_icon: Qiongqi: Ganha 1% de Amadura Antiperfurante e de Corte para cada unidade inimiga dentro de 6 de alcance (Máx: 25) :hackarmor: :piercearmor:"
     ],
     "comida": 150,
-    "ouro": 50,
-    "favor": 15,
+    "ouro": 25,
+    "favor": 10,
     "tempo_s": 40
   },
   {
@@ -10942,7 +10942,7 @@
       ":aomr_type_cavalry_icon: Cavalaria: Para cada 1% de PV perdido, modifique Furar Armadura em 0.30%."
     ],
     "comida": 300,
-    "favor": 15,
+    "favor": 25,
     "tempo_s": 40
   },
   {
@@ -11475,8 +11475,8 @@
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Velocidade +10% :aomr_speed_icon:",
       ":aomr_type_myth_unit_icon: Unidade Mitológica: Adiciona 1.00 ao Todas as Ações Dano (Divino) :aomr_divine_damage_icon:"
     ],
-    "comida": 50,
-    "favor": 10,
+    "comida": 100,
+    "favor": 15,
     "tempo_s": 20
   },
   {
@@ -11745,7 +11745,7 @@
     ],
     "icon": "aomr_hunters_strength_icon",
     "madeira": 150,
-    "favor": 12,
+    "favor": 16,
     "tempo_s": 30
   },
   {
@@ -11790,8 +11790,8 @@
     ],
     "icon": "aomr_kumiki_icon",
     "madeira": 100,
-    "ouro": 50,
-    "favor": 10,
+    "ouro": 100,
+    "favor": 20,
     "tempo_s": 20
   },
   {
@@ -12941,7 +12941,7 @@
         "nome": "Egípcio"
       }
     ],
-    "tempo_s": 20,
+    "tempo_s": 10,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_hands_of_the_pharaoh_icon",
     "campo": [
@@ -13395,14 +13395,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "nome": "TownCenter",
-        "id": 9
-      },
-      {
-        "nome": "VillageCenter"
-      },
-      {
-        "nome": "CitadelCenter"
+        "nome": "Celeiro (Grego)",
+        "id": 15
       }
     ],
     "eras": [
@@ -13411,7 +13405,7 @@
         "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "favor": 15,
+    "favor": 10,
     "god_especifico": [
       {
         "id": 78,
@@ -13431,7 +13425,8 @@
       ":aomr_type_villager_icon: Aldeão: Adiciona 5,00 à Capacidade de Carga de Madeira :woodaom:",
       ":aomr_type_villager_icon: Aldeão: Adiciona 5,00 à Capacidade de Carga de Ouro :goldaom:",
       ":aomr_type_villager_icon: Aldeão: Soma 18,00 em cura :aomr_hit_points_icon: de entrega"
-    ]
+    ],
+    "ouro": 125
   },
   {
     "nome": "Paredes de Espinhos",
@@ -13517,17 +13512,18 @@
       ":aomr_town_center_greek_icon: Centro Urbano: Adiciona 2 à geração de Licaão :aomr_lykaon_icon: na ocorrência de Construção"
     ],
     "ouro": 100,
-    "favor": 15,
+    "favor": 20,
     "tempo_s": 20,
     "construcao_origem": [
       {
-        "nome": "Templo (Grego)",
-        "id": 1
+        "nome": "Celeiro (Grego)",
+        "id": 15
       }
-    ]
+    ],
+    "comida": 200
   },
   {
-    "nome": "Instinto Predatório",
+    "nome": "Chamado de Licaão",
     "beneficia": ":aomr_lykaon_icon: <highlight-pink>Licaão</highlight-pink>",
     "eras": [
       {
@@ -13545,7 +13541,7 @@
         "nome": "Pan"
       }
     ],
-    "ingles": "Predatory Instinct",
+    "ingles": "Call of Lykaion",
     "panteoes": [
       {
         "id": 1,
@@ -13558,8 +13554,8 @@
       ":aomr_lykaon_icon: Licaão: Velocidade +20% :aomr_speed_icon:",
       ":aomr_lykaon_icon: Licaão: transforma a vontade"
     ],
-    "comida": 300,
-    "favor": 20,
+    "comida": 200,
+    "favor": 14,
     "tempo_s": 30,
     "construcao_origem": [
       {
@@ -13596,20 +13592,15 @@
     ],
     "icon": "aomr_gracious_hospitality_icon",
     "comida": 150,
-    "favor": 20,
+    "favor": 22,
     "tempo_s": 40,
     "construcao_origem": [
       {
-        "nome": "TownCenter",
-        "id": 9
-      },
-      {
-        "nome": "VillageCenter"
-      },
-      {
-        "nome": "CitadelCenter"
+        "nome": "Casa",
+        "id": 8
       }
-    ]
+    ],
+    "ouro": 275
   },
   {
     "nome": "Florestas Sagradas",
@@ -13719,14 +13710,15 @@
       ":aomr_farm_icon: Fazenda: Ativa a Ação de Curar :aomr_hit_points_icon:"
     ],
     "ouro": 100,
-    "favor": 15,
+    "favor": 20,
     "tempo_s": 30,
     "construcao_origem": [
       {
         "nome": "Celeiro (Grego)",
         "id": 15
       }
-    ]
+    ],
+    "comida": 200
   },
   {
     "nome": "Hino Encantado",

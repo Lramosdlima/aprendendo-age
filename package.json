@@ -11,6 +11,11 @@
     "data:merge-unidades": "python scripts/merge-unidades-aom.py",
     "data:extract-tecnologias": "python scripts/extract-tecnologias-aom.py",
     "data:merge-tecnologias": "python scripts/merge-tecnologias-aom.py",
+    "data:extract-godpowers": "python scripts/extract-godpowers-aom.py",
+    "data:merge-godpowers": "python scripts/merge-godpowers-aom.py",
+    "data:extract-construcoes": "python scripts/extract-construcoes-aom.py",
+    "data:merge-construcoes": "python scripts/merge-construcoes-aom.py",
+    "data:sync-aom": "python scripts/sync-aom-data.py",
     "preview": "vite preview"
   },
   "dependencies": {

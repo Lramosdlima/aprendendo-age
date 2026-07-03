@@ -1,0 +1,22 @@
+<powers>
+	<include>abilities\greek.abilities</include>
+	<include>abilities\egyptian.abilities</include>
+	<include>abilities\norse.abilities</include>
+	<include>abilities\atlantean.abilities</include>
+	<include>abilities\shared.abilities</include>
+	<include>abilities\spc.abilities</include>
+	<include>god_powers\greek.godpowers</include>
+	<include>god_powers\egyptian.godpowers</include>
+	<include>god_powers\norse.godpowers</include>
+	<include>god_powers\atlantean.godpowers</include>
+	<include>god_powers\shared.godpowers</include>
+	<include>god_powers\spc.godpowers</include>
+	<include>abilities\aotg.abilities</include>
+	<include>god_powers\aotg.godpowers</include>
+	<include>abilities\chinese.abilities</include>
+	<include>god_powers\chinese.godpowers</include>
+	<include>abilities\japanese.abilities</include>
+	<include>god_powers\japanese.godpowers</include>
+	<include>abilities\aztec.abilities</include>
+	<include>god_powers\aztec.godpowers</include>
+</powers>

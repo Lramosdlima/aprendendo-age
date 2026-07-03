@@ -18,6 +18,17 @@ DATA_BAR_REL = Path("game") / "data" / "Data.bar"
 BAR_ENTRIES = [
     "gameplay/proto.xml.XMB",
     "gameplay/techtree.xml.XMB",
+    "gameplay/powers.xml.XMB",
+    "gameplay/god_powers/greek.godpowers.XMB",
+    "gameplay/god_powers/egyptian.godpowers.XMB",
+    "gameplay/god_powers/norse.godpowers.XMB",
+    "gameplay/god_powers/atlantean.godpowers.XMB",
+    "gameplay/god_powers/chinese.godpowers.XMB",
+    "gameplay/god_powers/japanese.godpowers.XMB",
+    "gameplay/god_powers/aztec.godpowers.XMB",
+    "gameplay/god_powers/shared.godpowers.XMB",
+    "gameplay/god_powers/spc.godpowers.XMB",
+    "gameplay/god_powers/aotg.godpowers.XMB",
     "strings/English/string_table.txt",
     "strings/PortugueseBrazil/string_table.txt",
 ]

@@ -161,3 +161,15 @@ Documentação oficial: `BANG_Documentation/Data documentation/AoMRT Comprehensi
 4. Revisar diff no Git e testar no app.
 
 Após patch do jogo: `--force-extract` para refrescar o cache antes do merge.
+
+---
+
+## Sync geral (unidades + tecnologias + god powers)
+
+```bash
+npm run data:sync-aom -- --dry-run
+npm run data:sync-aom -- --write
+npm run data:sync-aom -- --only unidades,tecnologias --write
+```
+
+Script: `scripts/sync-aom-data.py`. Ver também `tecnologias-aom.md`, `godpowers-aom.md` e `construcoes-aom.md`.

@@ -28,10 +28,10 @@ ID = "STR_CIV_HADES_LR"   ;   Str = "Focus: Ranged Soldiers and Buildings.
 • Myth units gain +${HADES_MYTH_UNIT_HP_BONUS}% hitpoints per age.
 • Ranged soldiers and heroes +${HADES_RANGED_BONUS} range and +${HADES_LOS_BONUS} LoS.
 • Ranged fortifications +${HADES_RANGED_FORITIFATION_RANGE_BONUS} range.
-• Ballistics and Burning Pitch are researched instantly for free in their respective ages."
+• Ranged Soldier upgrades cost -${HADES_RANGED_SOLDIER_UPGRADES}%."
 ID = "STR_CIV_POSEIDON"   ;   Str = "Poseidon"
 ID = "STR_CIV_POSEIDON_T"   ;   Str = "God of the Sea"
-ID = "STR_CIV_POSEIDON_LR"   ;   Str = "Focus: Cavalry and Economy.
+ID = "STR_CIV_POSEIDON_LR"   ;   Str = "Focus: Cavalry and Trade.
 • Militia spawn from razed buildings.
 • Cavalry, Caravans, and Myth Units gain +${POSEIDON_UNITS_SPEED_BONUS} speed per age.
 • Stables and Markets are ${POSEIDON_STABLE_MARKET_CHEAP}% cheaper.
@@ -1417,6 +1417,7 @@ ID = "STR_PLAYER_LIST"   ;   Str = "Player List"
 ID = "STR_LOBBY_SETTINGS"   ;   Str = "Game Settings"
 ID = "STR_HK_SKIRMISH_FOCUS_SETTINGS"   ;   Str = "Switch to Game Settings"
 ID = "STR_HK_SKIRMISH_FOCUS_PLAYER_LIST"   ;   Str = "Switch to Player List"
+ID = "STR_HK_SKIRMISH_CHANGE_SETTINGS_TAB"   ;   Str = "Swap Settings Tabs"
 
 // - MP Browse
 ID = "STR_MATCH_DETAILS"   ;   Str = "Game Details"
@@ -2802,6 +2803,10 @@ ID = "STR_UNIT_HEAVY_BALLISTA_NAME"   ;   Str = "Heavy Ballista"
 
 // Norse Heroes
 ID = "STR_UNIT_GULLINBURSTI_NAME"   ;   Str = "Gullinbursti"
+ID = "STR_UNIT_GULLINBURSTI_ARCHAIC_EDT_NAME"   ;   Str = "Gullinbursti (Archaic)"
+ID = "STR_UNIT_GULLINBURSTI_CLASSICAL_EDT_NAME"   ;   Str = "Gullinbursti (Classic)"
+ID = "STR_UNIT_GULLINBURSTI_HEROIC_EDT_NAME"   ;   Str = "Gullinbursti (Heroic)"
+ID = "STR_UNIT_GULLINBURSTI_MYTHICAL_EDT_NAME"   ;   Str = "Gullinbursti (Mythic)"
 ID = "STR_UNIT_GULLINBURSTI_LR"   ;   Str = "Divine hero. A radiant boar wielding Freyr's power, sent from Alfheimr to defend a Town Center for a limited time. His power and speed wanes the further he travels from the summoning point."
 ID = "STR_UNIT_GULLINBURSTI_SR"   ;   Str = "Divine boar hero. Good vs. everything."
 ID = "STR_UNIT_HERSIR_NAME"   ;   Str = "Hersir (Hero)"
@@ -3839,7 +3844,7 @@ ID = "STR_TECH_DRAFT_HORSES_LR"   ;   Str = "Increases siege weapon speed."
 ID = "STR_TECH_ENGINEERS_NAME"   ;   Str = "Engineers"
 ID = "STR_TECH_ENGINEERS_LR"   ;   Str = "Increases siege weapon range and attack, especially against walls."
 ID = "STR_TECH_ADVANCED_FORTIFICATIONS_NAME"   ;   Str = "Advanced Fortifications"
-ID = "STR_TECH_ADVANCED_FORTIFICATIONS_LR"   ;   Str = "Improves the damage and hack armor of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, making them much more resistant to attacks from human soldiers." // Note: The names that appear between the ^ characters within the {} tags should be translated. E.g. In the term "{N^Hill Fort^}", the "Hill Fort" portion should be translated.
+ID = "STR_TECH_ADVANCED_FORTIFICATIONS_LR"   ;   Str = "Improves the damage of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, and your towers." // Note: The names that appear between the ^ characters within the {} tags should be translated. E.g. In the term "{N^Hill Fort^}", the "Hill Fort" portion should be translated.
 ID = "STR_TECH_ADVANCED_FORTIFICATIONS_LR2"   ;   Str = "Improves the damage and hack armor of your Fortress-type buildings, making them much more resistant to attacks from human soldiers."
 // End of Shared Fortress Techs
 
@@ -3907,6 +3912,7 @@ ID = "STR_TECH_SPIRITED_CHARGE_NAME"   ;   Str = "Spirited Charge"
 ID = "STR_TECH_SPIRITED_CHARGE_LR"   ;   Str = "Hermes increases the attack and speed of cavalry and Centaurs."
 ID = "STR_TECH_PHOBOS_SPEAR_OF_PANIC_NAME"   ;   Str = "Phobos' Spear of Panic"
 ID = "STR_TECH_PHOBOS_SPEAR_OF_PANIC_LR"   ;   Str = "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor."
+ID = "STR_TECH_PHOBOS_SPEAR_OF_PANIC_LR2"   ;   Str = "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, and enables Prodromos an age earlier."
 ID = "STR_TECH_DEIMOS_SWORD_OF_DREAD_NAME"   ;   Str = "Deimos' Sword of Dread"
 ID = "STR_TECH_DEIMOS_SWORD_OF_DREAD_LR"   ;   Str = "Ares lends Hypaspists the Sword of Dread, increasing their attack and enabling them an age earlier."
 ID = "STR_TECH_ENYOS_BOW_OF_HORROR_NAME"   ;   Str = "Enyo's Bow of Horror"
@@ -3958,7 +3964,7 @@ ID = "STR_TECH_HAND_OF_TALOS_LR"   ;   Str = "Hephaestus reforges Colossi into S
 ID = "STR_TECH_SHOULDER_OF_TALOS_NAME"   ;   Str = "Shoulder of Talos"
 ID = "STR_TECH_SHOULDER_OF_TALOS_LR"   ;   Str = "Hephaestus reforges Silver Colossi into Gold Colossi, which have more hitpoints and hack armor."
 ID = "STR_TECH_OLYMPIAN_WEAPONS_NAME"   ;   Str = "Olympian Weapons"
-ID = "STR_TECH_OLYMPIAN_WEAPONS_LR"   ;   Str = "Hephaestus improves the attack of Hetairoi, Myrmidons, Gastraphetoroi and Harpies, especially against myth units."
+ID = "STR_TECH_OLYMPIAN_WEAPONS_LR"   ;   Str = "Hephaestus improves the attack of Hetairoi, Myrmidons, and Gastraphetoroi, especially against myth units."
 ID = "STR_TECH_FORGE_OF_OLYMPUS_NAME"   ;   Str = "Forge of Olympus"
 ID = "STR_TECH_FORGE_OF_OLYMPUS_LR"   ;   Str = "Hephaestus uses his Forge of Olympus to reduce the costs of all Armory improvements, and armories research technologies faster."
 // End of Greek God Techs
@@ -4529,7 +4535,7 @@ ID = "STR_TECH_RAGE_OF_SLAUGHTER_LR"   ;   Str = "Chiyou increases Yazi hitpoint
 ID = "STR_TECH_RAGE_OF_SLAUGHTER_OVERRIDE"   ;   Str = "Yazi: Activate on Enemy Killed: Gain 80% Lifesteal for 10 seconds"
 ID = "STR_TECH_SPOILS_OF_WAR_NAME"   ;   Str = "Spoils of War"
 ID = "STR_TECH_SPOILS_OF_WAR_LR"   ;   Str = "Chiyou drives you to pillage resources when you destroy enemy buildings."
-ID = "STR_TECH_SPOILS_OF_WAR_OVERRIDE"   ;   Str = "• Player: 50% of destroyed enemy buildings cost awarded to the player."
+ID = "STR_TECH_SPOILS_OF_WAR_OVERRIDE"   ;   Str = "• Player: 50% of destroyed enemy buildings cost awarded to the player"
 ID = "STR_TECH_ADVANCED_DEFENSES_NAME"   ;   Str = "Advanced Defenses"
 ID = "STR_TECH_ADVANCED_DEFENSES_LR"   ;   Str = "Houtu shares her defensive knowledge, improving Tower and Baolei damage, range, and line of sight, and also allowing you to upgrade wall towers into ranged towers."
 ID = "STR_TECH_ABUNDANCE_NAME"   ;   Str = "Abundance"
@@ -4583,7 +4589,7 @@ ID = "STR_TECH_LEIZUS_SILK_NAME"   ;   Str = "Leizu's Silk"
 ID = "STR_TECH_LEIZUS_SILK_LR"   ;   Str = "Huangdi gifts you his wife's divine silk, improving all human units' hitpoints and hack armor."
 ID = "STR_TECH_XUANYUANS_BLOODLINE_NAME"   ;   Str = "Xuanyuan's Bloodline"
 ID = "STR_TECH_XUANYUANS_BLOODLINE_LR"   ;   Str = "Huangdi temporarily grants infantry units additional damage and regeneration while fighting when nearby allied infantry units die."
-ID = "STR_TECH_XUANYUANS_BLOODLINE_OVERRIDE"   ;   Str = "• Infantry: On Death: Gives 25% Damage to nearby Infantry.\n• Infantry: On Death: Gives 25% Lifesteal to nearby Infantry.\n• Duration: 3 seconds."
+ID = "STR_TECH_XUANYUANS_BLOODLINE_OVERRIDE"   ;   Str = "• Infantry: On Death: Gives 25% Damage to nearby Infantry\n• Infantry: On Death: Gives 25% Lifesteal to nearby Infantry\n• Duration: 3 seconds."
 ID = "STR_TECH_IMPERIAL_ORDER_NAME"   ;   Str = "Imperial Order"
 ID = "STR_TECH_IMPERIAL_ORDER_LR"   ;   Str = "Huangdi calls forth all fighting men, decreasing the cost of Military Camps and their units."
 ID = "STR_TECH_POWER_OF_CHAOS_NAME"   ;   Str = "Power of Chaos"
@@ -5119,6 +5125,7 @@ ID = "STR_UNIT_GAIA_NAME"   ;   Str = "Gaia"
 ID = "STR_UNIT_GAIA_LR"   ;   Str = "Mother of the Titans. Good against everything, especially her son, Kronos."
 ID = "STR_UNIT_GAIA_SR"   ;   Str = "Titan. Good vs. everything."
 ID = "STR_UNIT_GAIA_EDT_NAME"   ;   Str = "Titan Gaia"
+ID = "STR_UNIT_GAIA_AOTG_EDT_NAME"   ;   Str = "Titan Gaia (AOTG)"
 ID = "STR_UNIT_PROMETHEUS_NAME"   ;   Str = "Prometheus"
 ID = "STR_UNIT_PROMETHEUS_LR"   ;   Str = "Titan. Good against everything."
 ID = "STR_UNIT_PROMETHEUS_SR"   ;   Str = "Titan. Good vs. everything."
@@ -5318,6 +5325,7 @@ ID = "STR_BLD_SKY_PASSAGE_SPC_NAME"   ;   Str = "Sky Passage (SPC)"
 ID = "STR_BLD_ODINS_TOWER_NAME"   ;   Str = "Odin's Tower"
 ID = "STR_BLD_ODINS_TOWER_LR"   ;   Str = "Odin's stronghold in Midgard, and the center of his power."
 ID = "STR_BLD_TITAN_GATE_SPC_EDT_NAME" ; Str = "Titan Gate (SPC)"
+ID = "STR_BLD_TITAN_GATE_DEAD_EDT_NAME" ; Str = "Titan Gate (Dead)"
 ID = "STR_BLD_PILLAR_CHINESE_NAME"   ;   Str = "Celestial Pillar"
 ID = "STR_BLD_PILLAR_CHINESE_SR"   ;   Str = "This pillar holds up the sky, separating heaven and earth."
 ID = "STR_BLD_PILLAR_CHINESE_HEAVEN_NAME"   ;   Str = "Central Celestial Pillar"
@@ -5480,6 +5488,7 @@ ID = "STR_EMB_CROWNED_CRANE_NAME"   ;   Str = "Crowned Crane"
 ID = "STR_EMB_CROWNED_CRANE_LR"   ;   Str = "Villagers can hunt wild animals for Food."
 ID = "STR_UNIT_CROWNED_CRANE_SPC_EDT_NAME"   ;   Str = "Crowned Crane SPC"
 ID = "STR_EMB_DEER_NAME"   ;   Str = "Deer"
+ID = "STR_EMB_DEER_SHRINE_OF_THE_HUNT_EDT_NAME"   ;   Str = "Deer (Shrine of the Hunt)"
 ID = "STR_EMB_DEER_LR"   ;   Str = "Villagers can hunt wild animals for Food."
 ID = "STR_EMB_ELEPHANT_NAME"   ;   Str = "Elephant"
 ID = "STR_EMB_ELEPHANT_LR"   ;   Str = "Villagers can hunt wild animals for Food. Elephants will attack hunters."
@@ -5830,6 +5839,7 @@ ID = "STR_EMB_STUMP_PALM_NAME"   ;   Str = "Stump Palm"
 ID = "STR_EMB_STUMP_PINE_NAME"   ;   Str = "Stump Pine"
 ID = "STR_EMB_STUMP_PINE_SNOW_NAME"   ;   Str = "Stump Snow"
 ID = "STR_EMB_STUMP_SAVANNAH_NAME"   ;   Str = "Stump Savannah"
+ID = "STR_EMB_STUMP_SAVANNAH_OLD_EDT_NAME"   ;   Str = "Stump Savannah Old"
 ID = "STR_EMB_STUMP_TUNDRA_NAME"   ;   Str = "Stump Tundra"
 ID = "STR_EMB_STUMP_TUNDRA_SNOW_NAME"   ;   Str = "Stump Tundra Snow"
 ID = "STR_EMB_STUMP_CYPRESS_NAME"   ;   Str = "Stump Cypress"
@@ -5915,6 +5925,7 @@ ID = "STR_EMB_ROCK_CHINESE_TINY_NAME"   ;   Str = "Rock Chinese Tiny"
 ID = "STR_EMB_DOVE_NAME"   ;   Str = "Dove"
 ID = "STR_EMB_EAGLE_NAME"   ;   Str = "Eagle"
 ID = "STR_EMB_HARPY_NAME"   ;   Str = "Harpy"
+ID = "STR_EMB_HARPY_EDT_NAME"   ;   Str = "Harpy (Nature)"
 ID = "STR_EMB_HAWK_NAME"   ;   Str = "Hawk"
 ID = "STR_EMB_SEAGULL_NAME"   ;   Str = "Seagull"
 ID = "STR_EMB_VULTURE_NAME"   ;   Str = "Vulture"
@@ -6248,6 +6259,7 @@ ID = "STR_SCN_PATH_BLOCK1_NAME"   ;   Str = "Path Block 1"
 ID = "STR_SCN_PATH_BLOCK2_NAME"   ;   Str = "Path Block 2"
 ID = "STR_SCN_PATH_BLOCK3_NAME"   ;   Str = "Path Block 3"
 ID = "STR_SCN_MAP_OBJECTIVE_NAME"   ;   Str = "Map Objective"
+ID = "STR_SCN_MAP_OBJECTIVE_COLOR_NAME"   ;   Str = "Map Objective Color"
 ID = "STR_SCN_GOD_POWER_BLOCKER_NAME"   ;   Str = "God Power Blocker"
 ID = "STR_SCN_LIGHTS_YELLOW_NAME"   ;   Str = "Yellow Lights"
 ID = "STR_SCN_SKYDOME_NAME"   ;   Str = "Skydome"
@@ -12981,6 +12993,8 @@ ID = "STR_MOD_UPLOAD_UPDATE_TITLE"   ;   Str = "Upload Update?"   ;   Symbol = "
 ID = "STR_MOD_UPLOAD_UPDATE_DESCRIPTION"   ;   Str = "Upload an updated version of your mod?"   ;   Symbol = "cStringUploadUpdateDescription"
 ID = "STR_MOD_DATE_MISSING"   ;   Str = "-"   ;   Symbol = "cStringModDateMissing"
 ID = "STR_MOD_RATE"   ;   Str = "Rate Mod"
+ID = "STR_MOD_VIEWWEB"   ;   Str = "Web View"
+ID = "STR_MOD_VIEWWEB_TOOLTIP"   ;   Str = "Opens web link in an external browser for this Mod to comment, rate, and view more details. Viewing mods will require you to sign in."
 ID = "STR_SW_MOD_SUBMIT"   ;   Str = "Submit"
 ID = "STR_MOD_OPEN_DIRECTORY"   ;   Str = "Open Directory"
 ID = "STR_MOD_REPAIR_UPDATE_ALL"   ;   Str = "Repair/Update All"
@@ -13366,6 +13380,8 @@ ID = "STR_AI_BEHAVIOR_TOOLTIP"   ;   Str = "Select an AI difficulty for all AI p
 ID = "STR_ALLOW_TITANS"   ;   Str = "Allow Titans"
 ID = "STR_C_TITANS"   ;   Str = "Allow Titans:"
 ID = "STR_ALLOW_TITANS_TOOLTIP"   ;   Str = "Allow Titans to be built."
+ID = "STR_DEFEATED_GO_NEUTRAL"   ;   Str = "Defeated Players Go Neutral"
+ID = "STR_DEFEATED_GO_NEUTRAL_TOOLTIP"   ;   Str = "When enabled, defeated and resigned players become neutral to all remaining players."
 ID = "STR_CHEATS_ALLOWED"   ;   Str = "Allow Cheats"
 ID = "STR_CHEATS_ALLOWED_TOOLTIP"   ;   Str = "Allow Cheats to be used by human players."
 ID = "STR_CHAOS_EVENTS_ENABLED"   ;   Str = "Chaos Events"
@@ -13376,6 +13392,16 @@ ID = "STR_AI_BLESSINGS_ENABLED"   ;   Str = "AI Team Blessing Events"
 ID = "STR_AI_BLESSINGS_ENABLED_TOOLTIP"   ;   Str = "Change this setting to control the maximum rarity of Blessings that may be randomly awarded during gameplay to all teams with only AI players present. These events will occur periodically, like in the Gauntlet game mode. If you set it to \"Gauntlet Default\", the lobby difficulty is used to match Gauntlet mode. (Legendary = Mythical, Extreme = Heroic, Titan and lower = Fine). If there are no teams with only AI present, this event will not do anything."
 ID = "STR_BLESSING_DROPDOWN_DISABLED"   ;   Str = "Disabled"
 ID = "STR_BLESSING_DROPDOWN_LOBBY_SETTING"   ;   Str = "Gauntlet Default"
+ID = "STR_WORLD_TWISTS_ENABLED"   ;   Str = "World Twists"
+ID = "STR_WORLD_TWISTS_ENABLED_TOOLTIP"   ;   Str = "Change to enable a quantity of randomly selected World Twists. You can also choose a single specific World Twist. Some World Twists may not work on all maps. Celestial Remnants is only available randomly in Singleplayer. Prometheus' Secret Knowledge will not be randomly selected if Allow Titans is disabled."
+ID = "STR_WORLD_TWISTS_ENABLED_NONE"   ;   Str = "No World Twists"
+ID = "STR_WORLD_TWISTS_ENABLED_1"   ;   Str = "1 Random World Twist"
+ID = "STR_WORLD_TWISTS_ENABLED_2"   ;   Str = "2 Random World Twists"
+ID = "STR_WORLD_TWISTS_ENABLED_3"   ;   Str = "3 Random World Twists"
+ID = "STR_WORLD_TWISTS_ENABLED_4"   ;   Str = "4 Random World Twists"
+ID = "STR_WORLD_TWISTS_ENABLED_5"   ;   Str = "5 Random World Twists"
+ID = "STR_WORLD_TWISTS_ENABLED_N"   ;   Str = "{0} Random World Twists" // {0} is an integer number of world twists.
+ID = "STR_WORLD_TWIST_ACTIVE_NOTIFICATION"   ;   Str = "World Twist Active: {0}: {1}"   ;   Symbol = "cStringWorldTwistActiveNotification" // {0} is the name of a World Twist and {1} is the description of what that World Twist does.
 ID = "STR_SHOW_FULL_GAMES"   ;   Str = "Show Full Games"
 ID = "STR_SHOW_FULL_GAMES_TOOLTIP"   ;   Str = "Show joinable games that already has the maximum number of players."
 ID = "STR_TEAMS_LOCKED"   ;   Str = "Lock Teams"
@@ -13444,6 +13470,7 @@ ID = "STR_PLAYER_COUNT_TOOLTIP"   ;   Str = "Number of players participating in 
 ID = "STR_ID"   ;   Str = "ID"   ;   Symbol = "cStringID"
 ID = "STR_TEAM"   ;   Str = "Team"   ;   Symbol = "cStringTeam"
 ID = "STR_TEAM_NUMBER"   ;   Str = "Team {0}"   ;   Symbol = "cStringTeamNumber"
+ID = "STR_TEAM_NUMBER_DROPDOWN"   ;   Str = "{0}"   ;   Symbol = "cStringTeamNumberDropdown"
 ID = "STR_TEAM_1"   ;   Str = "Team 1"   ;   Symbol = "cStringTeam1"
 ID = "STR_TEAM_2"   ;   Str = "Team 2"   ;   Symbol = "cStringTeam2"
 ID = "STR_TEAM_3"   ;   Str = "Team 3"   ;   Symbol = "cStringTeam3"
@@ -13817,6 +13844,7 @@ ID = "STR_INGAME_WOOD_GATHERERS_TOOLTIP"   ;   Str = "Number of wood gatherers: 
 ID = "STR_INGAME_GOLD_GATHERERS_TOOLTIP"   ;   Str = "Number of gold gatherers: {0}";   Symbol = "cStringIngameGoldGatherersTooltip"
 ID = "STR_INGAME_FAVOR_GATHERERS_TOOLTIP"   ;   Str = "Number of favor gatherers: {0}";   Symbol = "cStringIngameFavorGatherersTooltip"
 ID = "STR_INGAME_FAVOR_GATHERERS_AZTEC_TOOLTIP"   ;   Str = "+{0} <icon=\"(24)(in_game/res_favor.png)\">/sec for {1} Settlers Devoted";   Symbol = "cStringIngameFavorGatherersAztecTooltip"
+ID = "STR_INGAME_FAVOR_GATHERERS_AZTEC_QUETZALCOATL_TOOLTIP"   ;   Str = "+{0} <icon=\"(24)(in_game/res_favor.png)\">/sec for {1} Settlers Devoted\n+{2} <icon=\"(24)(in_game/res_favor.png)\">/sec for {3} Warrior Priests Bloodletting";   Symbol = "cStringIngameFavorGatherersAztecQuetzalcoatlTooltip"
 ID = "STR_INGAME_FAVOR_DEVOTION_REWARD_TOOLTIP"   ;   Str = "+{0} <icon=\"(24)(in_game/res_favor.png)\">";   Symbol = "cStringIngameFavorDevotionRewardTooltip"
 ID = "STR_INGAME_FAVOR_MULTI_DEVOTION_REWARD_TOOLTIP"   ;   Str = "+{0}({1}) <icon=\"(24)(in_game/res_favor.png)\">";   Symbol = "cStringIngameFavorMultiDevotionRewardTooltip"
 ID = "STR_INGAME_GATHER_RATE"   ;   Str = "+{0} per minute";   Symbol = "cStringIngameGatherRate"
@@ -14910,10 +14938,10 @@ ID = "STR_MAP_YELLOW_RIVER_DESC"   ;   Str = "Predictable crossings on the Yello
 ID = "STR_MAP_YELLOW_RIVER_DESC_LOAD"   ;   Str = "The Yellow River divides the region and forks in the center to form an island. Shallow crossings offer passage, making attacks predictable and rewarding keen awareness of your opponent. Players must migrate to more fertile banks as the starting resources run dry."
 
 ID = "STR_STANDARD_MAP_SET_NAME"   ;   Str = "Standard Maps"
-ID = "STR_STANDARD_MAP_SET_DESC"   ;   Str = "Randomly selects from a tailored pool of maps that welcome strategic diversity and civilization variety. Maps: Alfheim, Cloud Forest, Elysium, Ghost Lake, Giza, Kii, Marsh, Midgard, Mirage, Nile Shallows, Oasis, Obsidian Ridge, Okuchichibu, Savannah, Steppe, Tundra, Valley of Kings, Watering Hole."
+ID = "STR_STANDARD_MAP_SET_DESC"   ;   Str = "Randomly selects from a tailored pool of maps that welcome strategic diversity and civilization variety. Maps: Alfheim, Anatolia, Blue Lagoon, Cloud Forest, Elysium, Ghost Lake, Giza, Marsh, Megalopolis, Midgard, Mirage, Mount Olympus, Nile Shallows, Oasis, Savannah, Steppe, Tundra, Valley of Kings, Watering Hole, Yellow River."
 
 ID = "STR_QUICK_MATCH_MAP_SET_NAME"   ;   Str = "Quick Match Maps"
-ID = "STR_QUICK_MATCH_MAP_SET_DESC"   ;   Str = "Randomly selects from a tailored pool of maps that welcome strategic diversity and civilization variety for quick match. Maps: Alfheim, Cloud Forest, Elysium, Ghost Lake, Giza, Kii, Marsh, Nile Shallows, Oasis, Obsidian Ridge, Okuchichibu, Savannah, Steppe, Tundra, Valley of Kings, Watering Hole."
+ID = "STR_QUICK_MATCH_MAP_SET_DESC"   ;   Str = "Randomly selects from a tailored pool of maps that welcome strategic diversity and civilization variety for quick match. Maps: Alfheim, Blue Lagoon, Cloud Forest, Elysium, Ghost Lake, Giza, Marsh, Megalopolis, Mount Olympus, Nile Shallows, Oasis, Savannah, Steppe, Tundra, Valley of Kings, Watering Hole, Yellow River."
 
 ID = "STR_RANDOM_MAP_SET_NAME"   ;   Str = "All Maps"
 ID = "STR_RANDOM_MAP_SET_DESC"   ;   Str = "Randomly selects from among all possible maps."
@@ -15069,6 +15097,8 @@ ID = "STR_TOGGLE_TITAN"   ;   Str = "Toggle Titans"
 ID = "STR_TOGGLE_TITAN_TOOLTIPS"   ;   Str = "Select to toggle Titans icon."
 ID = "STR_TOGGLE_GOD_POWERS"   ;   Str = "Toggle God Powers"
 ID = "STR_TOGGLE_GOD_POWERS_TOOLTIPS"   ;   Str = "Select to toggle God Powers icon."
+ID = "STR_TOGGLE_BUSHIDO_TIERS"   ;   Str = "Toggle Bushido Tiers"
+ID = "STR_TOGGLE_BUSHIDO_TIERS_TOOLTIP"   ;   Str = "Select to toggle Bushido Tiers icon."
 ID = "STR_FILTER_PLAYERS"   ;   Str = "Filter players:"
 ID = "STR_FOOD_COLLECTED_TOOLTIPS"   ;   Str = "Total Food Collected"
 ID = "STR_WOOD_COLLECTED_TOOLTIPS"   ;   Str = "Total Wood Collected"
@@ -16802,7 +16832,7 @@ ID = "STR_HISTORY_ARROWSHIPS"   ;   Str = "Arrow ships (such as the Trireme) can
 ID = "STR_HISTORY_ATLANTEAN"   ;   Str = "The Atlanteans scout by using their Oracle. \n\nAtlantean soldiers are fairly expensive, but each one of them can be turned into Heroes. \n\nIn later ages, units can be trained from the Palace are their most powerful. \n\nAtlantean Citizens gather resources and construct buildings. \n\nCitizens are slow, expensive units that do not require a drop site to collect resources. \n\nThe Atlanteans gain Favor by stationing Oracles around the map to commune with the gods."
 ID = "STR_HISTORY_BLACKMAP"   ;   Str = "The black areas of the map are areas that neither you nor your allies have explored. This blackness is called the black map. As soon as you send units to explore these black areas, the black map will be replaced with the fog of war.\n\nBlack map is related to fog of war and line of sight.\n"
 ID = "STR_HISTORY_BUILDINGS"   ;   Str = "Buildings train units, serve as resource drop sites, and research improvements. Buildings are built by Villagers or Norse infantry.\n\nBuilding foundations are vulnerable to attack, especially from other buildings. This makes it difficult to build too close to an enemy army.\n\nIf a building foundation is destroyed or deleted, all resources spent on the building will be refunded.\n\nUse siege weapons to attack buildings.\n"
-ID = "STR_HISTORY_CAVALRY"   ;   Str = "Cavalry are fast-moving soldiers. In general, they are powerful against ranged units and weak against infantry. The cost of supporting their highly mobile horses makes them more expensive than infantry.\n\nThe Greek cavalry are the Hippeus and the Prodromos. Poseidon also has the Hetairos.\n\nThe Egyptian cavalry are the Camel Rider and the War Elephant.\n\nThe Norse cavalry are the Raiding Cavalry and the Jarl.\n\nThe Atlantean cavalry are the Contarius and the Turma.\n\nThe Chinese cavalry are the White Horse Cavalry and the Tiger Cavalry\n\nThe Japanese cavalry are the Naginata Rider and the Yumi Horse Archer.\n\nThe Aztec cavalry is the Jaguar Rider."
+ID = "STR_HISTORY_CAVALRY"   ;   Str = "Cavalry are fast-moving soldiers. In general, they are powerful against ranged units and weak against infantry. The cost of supporting their highly mobile horses makes them more expensive than infantry.\n\nThe Greek cavalry are the Hippeus and the Prodromos. Poseidon also has the Hetairos.\n\nThe Egyptian cavalry are the Camel Rider, the Chariot Archer and the War Elephant.\n\nThe Norse cavalry are the Raiding Cavalry and the Jarl.\n\nThe Atlantean cavalry are the Contarius and the Turma.\n\nThe Chinese cavalry are the White Horse Cavalry and the Tiger Cavalry\n\nThe Japanese cavalry are the Naginata Rider and the Yumi Horse Archer.\n\nThe Aztec cavalry is the Jaguar Rider."
 ID = "STR_HISTORY_CLOSECOMBATSHIPS"   ;   Str = "Close-combat ships (such as the Pentekonter) can defeat siege ships.\n\nGreek: Pentekonter\n\nEgyptian: Ramming Galley\n\nNorse: Dreki\n\nAtlantean: Fire Ship\n\nChinese: Mengchong\n\nJapanese: Ramming Wasen\n\nAztec: Tepoztli Canoe"
 ID = "STR_HISTORY_EGYPTIAN"   ;   Str = "Egyptians scout by having their Priests build Obelisks. \n\nEarly Egyptian soldiers tend to be more specialized, but train quickly. \n\nTheir later units from the Migdol Stronghold are more powerful. \n\nMany Egyptian buildings cost Gold, and several others are free, but take longer to build. \n\nEgyptian buildings build faster, gather, train, and research improvements faster, and fight better when empowered by a Pharaoh. \n\nThe Egyptians gain Favor by building Monuments.\n"
 ID = "STR_HISTORY_FAVOR"   ;   Str = "Favor is granted by the gods and is used to train myth units and research mythological improvements.\n\nAll cultures earn Favor in a different way.\n\nAtlanteans earn Favor by stationing Oracles around the map.\n\nGreeks pray at a Temple.\n\nEgyptians build Monuments to the gods.\n\nNorse earn Favor by fighting and hunting, but Hersirs and Godis gain Favor the fastest, as they also generate Favor just by existing.\n\nChinese earn Favor by constructing buildings to expand their Favored Land.\n\nJapanese use Mikos to build Shrines, from which they can gather favor. More favor is earned the more natural resources are covered by the shrines.\n\nAztecs earn Favor by collecting tonalli orbs (life force) dropped by fallen foes, and by devoting their Settlers to the gods at their Temples."
@@ -18924,6 +18954,8 @@ ID = "STR_SKPLS_NEWS_POPUP_TEXT" ; Str = "Venture into this new game mode and fa
 
 ID = "STR_SKPLS_PLACEMENT_POPUP_TITLE" ; Str = "Daily Celestial Challenge Rank" ; Symbol = "cStringSkplsPlacementPopupTitle"
 ID = "STR_SKPLS_PLACEMENT_POPUP_TEXT" ; Str = "You placed at rank {0} for {1}/{2}/{3}!" ; Symbol = "cStringSkplsPlacementPopupText"
+ID = "STR_SETTING_SKPLS_PLACEMENT_NOTIFICATION"   ;   Str = "Daily Celestial Challenge as Notification"
+ID = "STR_SETTING_SKPLS_PLACEMENT_NOTIFICATION_DESC"   ;   Str = "Always show the Daily Celestial Challenge daily rank as a notification instead of as a popup."
 
 ID = "STR_SKPLS_HIGHSCORE" ; Str = "Daily Best" ; Symbol = "cStringSkplsHighscore"
 ID = "STR_SKPLS_LEADERBOARD_TITLE" ; Str = "Daily Leaderboard"
@@ -19182,6 +19214,7 @@ ID = "STR_AOTG_RULE_SEASONS" ; Str= "Freyr's Harsh Weather"
 ID = "STR_AOTG_RULE_SEASONS_DESC" ; Str= "Freyr's influence over the seasons as the weather gets harsher and harsher."
 ID = "STR_AOTG_RULE_SEASONS_PHASE2" ; Str= "Loki's Harsh Weather"
 ID = "STR_AOTG_RULE_SEASONS_PHASE2_DESC" ; Str= "Loki has taken over Freyr's seasons. It is getting colder and darker for longer."
+ID = "STR_AOTG_RULE_SEASONS_EITHER_DESC"   ;   Str = "Freyr or Loki take command of the seasons to manipulate the weather."
 
 ID = "STR_AOTG_ABILITY_LEGEND" ; Str= "Chosen Legend (Passive)"
 ID = "STR_AOTG_ABILITY_LEGEND_LR" ; Str= "Legends can pick up and drop off Relics, cannot be targeted by enemy God Powers and regenerate hitpoints over time."
@@ -19199,6 +19232,8 @@ ID = "STR_CELESTIAL_WT_REMNANTSOFATLANTIS_UNFREEZE_UI" , Str= "Celestial Remnant
 
 ID = "STR_CELESTIAL_RULE_ATLANTEAN_REMNANTS" ; Str= "Celestial Remnants of Atlantis"
 ID = "STR_CELESTIAL_RULE_ATLANTEAN_REMNANTS_DESC" ; Str= "Gaia spawns reinforcements across the map. Complete objectives to unfreeze them."
+
+ID = "STR_CELESTIAL_WT_UI_OBJ" ; Str= "Complete objectives to unfreeze and recruit Celestial Remnants."
 
 ID = "STR_AOTG_WT_REMNANTSOFATLANTIS_OBJ_AGE_HUD" ; Str= "Reach the {0}"
 ID = "STR_AOTG_WT_REMNANTSOFATLANTIS_OBJ_AGE_HUD_CLASSICAL" ; Str= "Reach the Classical Age"
@@ -22493,6 +22528,7 @@ ID = "STR_UNIT_CLAN_MEMBER_DYING_LR"   ;   Str = "A strange warrior on the brink
 ID = "STR_UNIT_CLAN_MEMBER_DYING_NAME"   ;   Str = "Clan Member (Dying)"
 ID = "STR_UNIT_CLAN_MEMBER_SPEAR_EDT_NAME"   ;   Str = "Clan Member (Spear)"
 ID = "STR_UNIT_KODAMA_NAME"   ;   Str = "Kodama" // Name of a Mythical floating ball of energy.
+ID = "STR_UNIT_KODAMA_SHINBOKUSOUL_EDT_NAME"   ;   Str = "Kodama (Shinboku Soul)" // Name of a Mythical floating ball of energy.
 ID = "STR_UNIT_TANUKI_NAME"   ;   Str = "Tanuki" // Name of a Mythical creature.
 ID = "STR_UNIT_TANUKI_LR"   ;   Str = "Myth unit. Heals allied units around it. Has no attack."
 ID = "STR_UNIT_TANUKI_SR"   ;   Str = "Myth unit. Heals allied units."
@@ -24256,12 +24292,12 @@ ID = "STR_PROMO_DEMETER";   Str = "Demeter DLC"   ;   Symbol = "cStringPromoDeme
 // Greek
 ID = "STR_CIV_DEMETER"   ;   Str = "Demeter" // Major God of the Demeter God pack
 ID = "STR_CIV_DEMETER_T"   ;   Str = "Goddess of the Harvest and Agriculture"
-ID = "STR_CIV_DEMETER_LR"   ;   Str = "Focus: Expansion and Resource Gathering.
-• Herdables improve Favor gather rate when near a Temple. (max. 10 herdables per Temple)
+ID = "STR_CIV_DEMETER_LR"   ;   Str = "Focus: Expansion and Economy.
+• Herdables improve Favor gather rate when near a Temple. (max. ${DEMETER_MAX_TEMPLE_CAP} herdables per Temple)
 • Town and Village Centers spawn Herdables on age up.
-• Buildings build faster when close to Gold mines.
-• +${DEMETER_FARMER_COUNT_IMPROVEMENT} Villagers can work a Farm.
-• Village Centers have additional HP and increased attack per garrisoned Villager."
+• Village Centers train units ${DEMETER_VILLAGE_CENTER_TRAIN_SPEED}% faster.
+• Herdables fatten +${DEMETER_HERDABLE_FATTENING_RATE}% faster, and can fatten +${DEMETER_HERDABLE_FOOD_CAP}% more.
+• Human soldiers and myth units train +${DEMETER_TRAIN_SPEED}% faster per age."
 // End of Major Gods
 
 // Actions
@@ -24306,7 +24342,11 @@ ID = "STR_BLD_TEMPLE_OF_DEMETER_LR"   ;   Str = "Temple built in honor of the go
 ID = "STR_BLD_TEMPLE_OF_DEMETER_SR"   ;   Str = "Provides access to mythical units and technologies."
 ID = "STR_BLD_TEMPLE_OF_DEMETER_EDT_NAME"   ;   Str = "Temple (Demeter SPC)"
 
-// Mines
+// Other
+ID = "STR_ABILITY_SOUL_HARVESTER"   ;   Str = "Soul Harvester"
+ID = "STR_ABILITY_SOUL_HARVESTER_LR"   ;   Str = "Rapidly increases attack speed when defeating an enemy unit."
+ID = "STR_ABILITY_AREA_HEAL"   ;   Str = "Area Heal"
+ID = "STR_ABILITY_AREA_HEAL_LR"   ;   Str = "Heals nearby units."
 ID = "STR_EMB_GOLD_MINE_MIDAS_EDT_NAME"   ;   Str = "Gold Mine (Midas)"
 
 // End of Abilities
@@ -24326,17 +24366,17 @@ ID = "STR_BLD_COMMUNAL_HEARTH_SR"   ;   Str = "Increases Villager gather rate an
 // Greek Units
 
 // Greek Heroes
-ID = "STR_UNIT_ICARUS_NAME"   ;   Str = "Icarus (Hero)"
-ID = "STR_UNIT_ICARUS_LR"   ;   Str = "Flying Hero. Has a ranged attack that is good against Myth units. Collects Relics."
-ID = "STR_UNIT_ICARUS_SR"   ;   Str = "Hero. Good vs. myth units."
+ID = "STR_UNIT_ORPHEUS_NAME"   ;   Str = "Orpheus (Hero)"
+ID = "STR_UNIT_ORPHEUS_LR"   ;   Str = "Hero. Good against myth units. Switches to a ranged attack to fight flying units. Nearby friendly human soldiers gain bonus damage towards myth units. Collects Relics."
+ID = "STR_UNIT_ORPHEUS_SR"   ;   Str = "Hero. Good vs. myth units."
 ID = "STR_UNIT_IOLAUS_NAME"   ;   Str = "Iolaus (Hero)"
 ID = "STR_UNIT_IOLAUS_LR"   ;   Str = "Hero. Good against Myth units. Switches to a ranged attack to fight flying units. Collects Relics."
 ID = "STR_UNIT_IOLAUS_SR"   ;   Str = "Hero. Good vs. myth units."
-ID = "STR_UNIT_ORPHEUS_NAME"   ;   Str = "Orpheus (Hero)"
-ID = "STR_UNIT_ORPHEUS_LR"   ;   Str = "Hero. His song has an aura that makes allied Human units more effective against Myth units. Collects Relics."
-ID = "STR_UNIT_ORPHEUS_SR"   ;   Str = "Hero. Supports allies vs. myth units."
+ID = "STR_UNIT_ICARUS_NAME"   ;   Str = "Icarus (Hero)"
+ID = "STR_UNIT_ICARUS_LR"   ;   Str = "Flying Hero. Good against Myth units. Has a ranged attack that is good against Myth units. Collects Relics."
+ID = "STR_UNIT_ICARUS_SR"   ;   Str = "Hero. Good vs. myth units."
 ID = "STR_UNIT_MIDAS_NAME"   ;   Str = "King Midas (Hero)"
-ID = "STR_UNIT_MIDAS_LR"   ;   Str = "Hero. May turn enemies to solid gold, who can then be killed for a gold reward. Good against Myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+ID = "STR_UNIT_MIDAS_LR"   ;   Str = "Hero. Good against Myth units. May turn enemies to solid gold, who can then be killed for a gold reward. Switches to a ranged attack to fight flying units. Collects Relics."
 ID = "STR_UNIT_MIDAS_SR"   ;   Str = "Hero. Good vs. myth units."
 // End of Greek Heroes
 
@@ -24367,8 +24407,8 @@ ID = "STR_UNIT_AMAZON_ARCHER_NAME"   ;   Str = "Amazon Archer"
 ID = "STR_UNIT_MEDIUM_AMAZON_ARCHER_NAME"   ;   Str = "Medium Amazon Archer"
 ID = "STR_UNIT_HEAVY_AMAZON_ARCHER_NAME"   ;   Str = "Heavy Amazon Archer"
 ID = "STR_UNIT_CHAMPION_AMAZON_ARCHER_NAME"   ;   Str = "Champion Amazon Archer"
-ID = "STR_UNIT_AMAZON_ARCHER_LR"   ;   Str = "Ranged Soldier of Demeter. Elite long-range archer with exceptional Line of Sight. Effective against infantry and provides modest pressure against buildings. Limited to 10. Vulnerable to cavalry and fast attackers. Benefits from ranged soldier and armory improvements."
-ID = "STR_UNIT_AMAZON_ARCHER_SR"   ;   Str = "Ranged Soldier. Good vs. infantry and buildings."
+ID = "STR_UNIT_AMAZON_ARCHER_LR"   ;   Str = "Ranged Soldier of Demeter. Elite long-range archer with exceptional Line of Sight. Effective against infantry and slow moving units. Benefits from ranged soldier improvements."
+ID = "STR_UNIT_AMAZON_ARCHER_SR"   ;   Str = "Ranged Soldier. Good vs. infantry."
 // End of Greek Myth Units
 
 
@@ -24385,8 +24425,8 @@ ID = "STR_UNIT_UNDERWORLD_INVASION_EIDOLON"   ;   Str = "{0} Eidolon" ; Symbol =
 // Greek Minor Gods
 ID = "STR_TECH_PAN_NAME"   ;   Str = "Pan"  // Minor God of the Classical Age
 ID = "STR_TECH_PAN_LR"   ;   Str = "God of the wild. Focus: defense."
-ID = "STR_TECH_PAN_SELF"   ;   Str = "You have advanced to the Classical Age through the music of Pan!" // Pan is a Major God
-ID = "STR_TECH_PAN_OTHER"   ;   Str = "{0} advances to the Classical Age through the music of Pan." // {0} will be replaced by player name. Pan is a Major God.
+ID = "STR_TECH_PAN_SELF"   ;   Str = "You have advanced to the Classical Age through the music of Pan!" // Pan is a Minor God
+ID = "STR_TECH_PAN_OTHER"   ;   Str = "{0} advances to the Classical Age through the music of Pan." // {0} will be replaced by player name. Pan is a Minor God.
 ID = "STR_TECH_HESTIA_NAME"   ;   Str = "Hestia" // Minor God of the Heroic Age
 ID = "STR_TECH_HESTIA_LR"   ;   Str = "Goddess of the hearth and hospitality. Focus: population and ranged soldiers."
 ID = "STR_TECH_HESTIA_SELF"   ;   Str = "You have advanced to the Heroic Age through the hospitality of Hestia!"
@@ -24399,33 +24439,46 @@ ID = "STR_TECH_PERSEPHONE_OTHER"   ;   Str = "{0} advances to the Mythic Age thr
 
 // Greek God Techs
 ID = "STR_TECH_DIVINE_LABOR_NAME"   ;   Str = "Divine Labor"
-ID = "STR_TECH_DIVINE_LABOR_LR"   ;   Str = "Demeter’s blessing increases Villager Gold & Wood carrying capacity and heals them when dropping Resources."
+ID = "STR_TECH_DIVINE_LABOR_LR"   ;   Str = "Demeter’s blessing increases Villager Farm and Herdable gathering rates and heals them when dropping Resources."
 ID = "STR_TECH_LOTUS_EATERS_NAME"   ;   Str = "Lotus-Eaters"
 ID = "STR_TECH_LOTUS_EATERS_LR"   ;   Str = "Pan’s mischievous trickery reduces armor of enemy land units and buildings inside an Arcadian Meadow."
 ID = "STR_TECH_PANS_PIONEERS_NAME"   ;   Str = "Pan's Pioneers"
-ID = "STR_TECH_PANS_PIONEERS_LR"   ;   Str = "Pan’s Pioneers emerge after Town and Village Centers are built."
+ID = "STR_TECH_PANS_PIONEERS_LR"   ;   Str = "Pan shows the early pioneers how to cultivate with nature, making buildings cost less wood and allowing more villagers to work on a farm."
+ID = "STR_TECH_PANS_PIONEERS_OVERRIDE"   ;   Str = "Villager gather limit from farm set to 2"
 ID = "STR_TECH_THORNED_WALLS_NAME"   ;   Str = "Thorned Walls"
-ID = "STR_TECH_THORNED_WALLS_LR"   ;   Str = "Pan’s protection allows walls to deal damage when attacked by melee units."
+ID = "STR_TECH_THORNED_WALLS_LR"   ;   Str = "Pan’s protection allows walls and fortifications to deal reflective damage when attacked by melee units."
 ID = "STR_TECH_GRACIOUS_HOSPITALITY_NAME"   ;   Str = "Gracious Hospitality"
-ID = "STR_TECH_GRACIOUS_HOSPITALITY_LR"   ;   Str = "Hestia's nurturing presence causes Farms next to Town Centers to give additional population. Max. 2 farms per Town Center."
+ID = "STR_TECH_GRACIOUS_HOSPITALITY_LR"   ;   Str = "Hestia's nurturing presence allows you to build additional houses."
 ID = "STR_TECH_SACRED_LAND_NAME"   ;   Str = "Sacred Land"
 ID = "STR_TECH_SACRED_LAND_LR"   ;   Str = "Under Persephone’s cycle-turning gaze, Farms heal a single unit standing on them."
-ID = "STR_TECH_SACRED_LAND_ALT_LR"   ;   Str = "Under Persephone’s cycle-turning gaze, Farms heal nearby allied units."
+ID = "STR_TECH_SACRED_LAND_ALT_LR"   ;   Str = "Under Persephone’s cycle-turning gaze, villagers earn gold while farming, and gather food from farms faster."
+ID = "STR_TECH_SACRED_LAND_OVERRIDE"   ;   Str = "Villager: Gather 0.1 gold per second while gathering from Farms."
 ID = "STR_TECH_PIOUS_SACRIFICE_NAME"   ;   Str = "Pious Sacrifice"
 ID = "STR_TECH_PIOUS_SACRIFICE_LR"   ;   Str = "Falling in Persephone’s name, infantry units temporarily increase nearby allied Humans’ rate of fire when killed."
-ID = "STR_TECH_PIOUS_SACRIFICE_OVERRIDE"   ;   Str = " • On death, nearby Human units receive -10% attack speed for 5s. It can stack 5 times to a max of -50%."; 
+ID = "STR_TECH_PIOUS_SACRIFICE_OVERRIDE"   ;   Str = " • On death, nearby Human units receive -10% attack speed for 5s. It can stack 5 times to a max of -50%."
 ID = "STR_TECH_FATED_ARROWS_NAME"   ;   Str = "Fated Arrows"
 ID = "STR_TECH_FATED_ARROWS_LR"   ;   Str = "Hestia’s divine intervention guides archers' arrows to ricochet to up to 3 nearby enemy units, dealing less damage with each bounce."
 ID = "STR_TECH_IRON_GRIP_NAME"   ;   Str = "Iron Grip"
 ID = "STR_TECH_IRON_GRIP_LR"   ;   Str = "Demeter upgrades Harpies to Nephelean Harpies, which are faster, can carry units for longer and can drop them at will."
-ID = "STR_TECH_PREDATORY_INSTINCT_NAME"   ;   Str = "Predatory Instinct"
-ID = "STR_TECH_PREDATORY_INSTINCT_LR"   ;   Str = "Pan upgrades Lykaons to Alpha Lykaons, increasing their speed, attack and allowing them to transform at will."
+ID = "STR_TECH_PREDATORY_INSTINCT_NAME"   ;   Str = "Call of Lykaion"
+ID = "STR_TECH_PREDATORY_INSTINCT_LR"   ;   Str = "Pan upgrades Lykaons to Alpha Lykaons with increased damage, and causes current and future Town and Village Centers to spawn free Lykaons."
+ID = "STR_TECH_CALL_OF_LYKAION_OVERRIDE1"   ;   Str = "Town Center: Summon 1 Lykaon for each current and future Town Center completed"
+ID = "STR_TECH_CALL_OF_LYKAION_OVERRIDE2"   ;   Str = "Village Center: Summon 1 Lykaon for each current and future Village Center completed"
 ID = "STR_TECH_HALLOWED_WOODLANDS_NAME"   ;   Str = "Hallowed Woodlands"
 ID = "STR_TECH_HALLOWED_WOODLANDS_LR"   ;   Str = "Hestia upgrades Hamadryads to Sylvan Hamadryads, increasing their survivability and ranged damage."
 ID = "STR_TECH_ENCHANTED_HYMN_NAME"   ;   Str = "Enchanted Hymn"
 ID = "STR_TECH_ENCHANTED_HYMN_LR"   ;   Str = "Persephone upgrades Sirens to Prima Sirens who inflict more damage and increase the speed of entranced units."
 ID = "STR_BLD_FARM_DEMETER_NAME"   ;   Str = "Bountiful Farm" // Modified name for Farm that appears when the Major God Bonus for Demeter is present.
 ID = "STR_BLD_FARM_DEMETER_LR"   ;   Str = "Farms provide unlimited Food, but are slower than hunting or herding. Demeter allows for two Villagers to work at the same time on each Bountiful Farm." // Modified description for Farm that appears when the Major God Bonus for Demeter is present.
+ID = "STR_TECH_HYMN_OF_THE_WILDWOOD_NAME"   ;   Str = "Hymn of the Wildwood"
+ID = "STR_TECH_HYMN_OF_THE_WILDWOOD_LR"   ;   Str = "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area."
+ID = "STR_TECH_HYMN_OF_THE_WILDWOOD_OVERRIDE"   ;   Str = "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
+ID = "STR_TECH_GUIDING_FLAME_NAME"   ;   Str = "Guiding Flame"
+ID = "STR_TECH_GUIDING_FLAME_LR"   ;   Str = "Hestia's guiding flame increases your ships line of sight and attack range."
+ID = "STR_TECH_HARVEST_OF_SOULS_NAME"   ;   Str = "Harvest of Souls"
+ID = "STR_TECH_HARVEST_OF_SOULS_LR"   ;   Str = "Persephone enhances your infantry allowing them to harvest souls whenever they defeat an enemy, increasing their damage and attack speed for a short duration."
+ID = "STR_TECH_HARVEST_OF_SOULS_OVERRIDE1"   ;   Str = "Infantry: Activate on Enemy Killed: Damage +15% for 5 seconds."
+ID = "STR_TECH_HARVEST_OF_SOULS_OVERRIDE2"   ;   Str = "Infantry: Activate on Enemy Killed: Attack interval -20% for 5 seconds."
 // End of Greek God Techs
 
 // End of Greek Techs
@@ -24455,7 +24508,7 @@ ID = "STR_POWER_COMMUNAL_HEARTH_LR" ; Str = "Summon a hearth that increases Vill
 // Mythic
 ID = "STR_POWER_UNDERWORLD_INVASION" ; Str = "Underworld Invasion"
 ID = "STR_POWER_UNDERWORLD_INVASION_LR" ; Str = "Sacrifice all your Town and Village Centers to resurrect fallen military and Myth units. Settlements cannot be repopulated for some time."
-ID = "STR_POWER_UNDERWORLD_INVASION_ALT_LR" ; Str = "Sacrifice all standing Town and Village Centers to resurrect up to 99 fallen military and Myth units (25 per Settlement). Settlements cannot be repopulated for some time."
+ID = "STR_POWER_UNDERWORLD_INVASION_ALT_LR" ; Str = "Sacrifice all standing Town and Village Centers to resurrect up to 25 + 25 per Town Center up to a maximum of 125 fallen human soldiers. Settlements cannot be repopulated for some time."
 // End of Greek God Powers
 
 // End of God Powers
@@ -24599,10 +24652,13 @@ ID = "STR_HISTORY_TECHS_PIOUSSACRIFICE"   ;   Str = "After being kidnapped by Ha
 ID = "STR_HISTORY_TECHS_PREDATORYINSTINCT"   ;   Str = "Despite his cruelty, King Lykaon and his descendants were renowned heroes for the people of Arcadia. Known for their ferocity, they were both feared and revered. With over 50 sons, King Lykaon's lineage founded numerous cities, established many festivals (including the famous Lycaean Games), and dedicated countless temples to the gods. This fervor for civilization and cultural development starkly contrasted with their ruthless and violent nature."
 ID = "STR_HISTORY_TECHS_SACREDLAND" ; Str = "Far from being solely a figure of death Persephone also embodied the renewal of life. Each year, her return from the underworld to reunite with her mother, Demeter, heralded the arrival of spring and the rebirth of the land. This cyclical journey was not just a seasonal metaphor—it was a sacred symbol of life’s eternal rhythm. In the Eleusinian Mysteries, one of ancient Greece’s most revered religious rites, Persephone’s ascent from the underworld was celebrated as a promise of immortality and spiritual renewal. Her myth offered hope that life could emerge from death, and that the soul, like the seed, could rise again."
 ID = "STR_HISTORY_TECHS_THORNEDWALLS" ; Str = "As a rustic god, Pan existed in the boundary between civilization and the wilderness. He was not commonly worshipped in temples, but instead in natural settings such as the Cave of Pan. Rural communities revered him as a guardian, especially protective of shepherds and their flocks, who would incite great terror on those who would disrupt the simple way of life."
-ID = "STR_HISTORY_TECHS_UNDERWORLDINVASION"   ;   Str = "Persephone's God Power summons spectral echoes of fallen military units by sacrificing all your Town Centers and Village Centers. These revived warriors, drawn from the last military units killed from every player, will fight under your command. However, they have less health than their living counterparts. The sacrificed centers leave behind cursed settlements that cannot be rebuilt for a while.\n\nTo unleash this power, left click on the Underworld Invasion icon, then left click on any Town or Village Center you own."
-ID = "STR_HISTORY_TECHS_UNDERWORLDINVASION_ALTFORGAMEPAD"   ;   Str = "Persephone's God Power summons spectral echoes of fallen military units by sacrificing all your Town Centers and Village Centers. These revived warriors, drawn from the last military units killed from every player, will fight under your command. However, they have less health than their living counterparts. The sacrificed centers leave behind cursed settlements that cannot be rebuilt for a while.\n\nTo unleash this power, select the Underworld Invasion icon from the God Power Menu <icon=\"(32)($TextGamepadLeftTrigger)\"> + <icon=\"(32)($TextGamepadFaceLeft)\">, then press <icon=\"(32)($TextGamepadFaceBottom)\"> on any Town or Village Center you own."
+ID = "STR_HISTORY_TECHS_UNDERWORLDINVASION"   ;   Str = "Persephone's God Power summons spectral echoes of fallen human soldiers by sacrificing all your Town Centers and Village Centers. These revived warriors, drawn from the last human soldiers killed from every player, will fight under your command. The sacrificed centers leave behind cursed settlements that cannot be rebuilt for a while.\n\nTo unleash this power, left click on the Underworld Invasion icon, then left click on any Town or Village Center you own."
+ID = "STR_HISTORY_TECHS_UNDERWORLDINVASION_ALTFORGAMEPAD"   ;   Str = "Persephone's God Power summons spectral echoes of fallen human soldiers by sacrificing all your Town Centers and Village Centers. These revived warriors, drawn from the last human soldiers killed from every player, will fight under your command. The sacrificed centers leave behind cursed settlements that cannot be rebuilt for a while.\n\nTo unleash this power, select the Underworld Invasion icon from the God Power Menu <icon=\"(32)($TextGamepadLeftTrigger)\"> + <icon=\"(32)($TextGamepadFaceLeft)\">, then press <icon=\"(32)($TextGamepadFaceBottom)\"> on any Town or Village Center you own."
 ID = "STR_HISTORY_TECHS_WITHER"   ;   Str = "Demeter’s God Power unleashes a devastating wither upon a targeted area, drying out berries, plants, and trees, and transforming the terrain into barren wasteland where nothing can grow for a short period of time.\n\nTo wither an area of the map, left click on the Wither icon, then left click to start targeting a path where you want the wither to start spreading, once you choose the path, left click again to confirm. You must have line of sight to the area to invoke this God Power."
 ID = "STR_HISTORY_TECHS_WITHER_ALTFORGAMEPAD"   ;   Str = "Demeter’s God Power unleashes a devastating wither upon a targeted area, drying out berries, plants, and trees, and transforming the terrain into barren wasteland where nothing can grow for a short period of time.\n\nTo wither an area of the map, select the Wither icon from the God Power Menu <icon=\"(32)($TextGamepadLeftTrigger)\"> + <icon=\"(32)($TextGamepadFaceLeft)\">, the press <icon=\"(32)($TextGamepadFaceBottom)\"> near where you want the wither to start spreading. Once you choose a path, press <icon=\"(32)($TextGamepadFaceBottom)\"> again to confirm. You must have line of sight to the area to invoke this God Power."
+ID = "STR_HISTORY_TECHS_HARVESTOFSOULS"   ;   Str = "When Persephone returns to the Underworld and the winter months arrive, she embraces her chthonic duties. On numerous occasions, she has been known to govern the affairs of mortals who have found themselves in the domain she shares with Hades. For instance, she took part in allowing Orpheus to leave with Eurydice and permitted Heracles to take Cerberus as part of his twelve labors. Her judgments often show a capacity for mercy and diplomacy that balances her husband's unyielding nature."
+ID = "STR_HISTORY_TECHS_HYMNOFTHEWILDWOOD" ; Str = "Pan once challenged Apollo to a contest of musical skill, claiming that the sound produced by his panpipes surpassed even the god of music's skill with the lyre. Such a contest called for a judge, which the mountain god Tmolus was chosen to be. Pan's music was vibrant and wild, and was enjoyed for its rustic timbre that reflected the nature of the woods surrounding the listeners. However, Apollo's playing was divine and flawless, so Tmolus quickly announced him as the winner. King Midas, who was in attendance, loudly disputed this decision and argued that Pan's music was better. Midas's dissent greatly angered Apollo, causing him to replace the king's ears with those of a donkey to signify his foolishness."
+ID = "STR_HISTORY_TECHS_GUIDINGFLAME"   ;   Str = "The hearth flames that flickered in the homes of the ancient Greeks provided them with not just the comfort of warmth, but also a sense of community. At the heart of every Greek city stood a Prytaneion, a government building containing a holy fire of Hestia that was kept burning continuously. The flame within would be carried out to light the hearths of new settlements, forming a spiritual link between homes across the civilization."
 ID = "STR_HISTORY_UNITS_COMMUNALHEARTH"   ;   Str = "For the Greeks, the hearth lay at the center of the family, the community, and the state. Just as every household had its hearth, so did every seat of government, whether in a village or a city. It was the sacred duty of the chieftain and their family to tend to this hearth. Though it might be ritually extinguished at night, if it ever faded unintentionally, it was considered a grave breach of duty towards the community as a whole."
 ID = "STR_HISTORY_UNITS_HAMADRYAD"   ;   Str = "Scientific name -- Nymphaea arborea.\nSize -- Human sized (Nymph) / 40-80' tall (Tree).\nDiet -- Water, Sunlight.\n\nUnlike other nymphs Hamadryads are intrinsically linked to a particular tree. They are born bonded to the tree, and if the tree dies, so do they. One cannot exist without the other. Generally gentle, shy and nurturing, they are fiercely protective of their tree and the forest they live in."
 ID = "STR_HISTORY_UNITS_HARPY"   ;   Str = "Scientific name -- Ornithandra harpyia.\nSize -- Human sized.\nDiet -- Omnivorous, will often steal food from people or just eat them.\n\nHarpies, whose name means \"snatcher,\" are winged female creatures often portrayed as half-human, half-bird, who served as agents of punishment by the gods. They are the personification of storms and are frequently depicted stealing food or carrying people away to torment them for angering a deity. The most famous episode involving a Harpy is their torment of King Phineus, where they relentlessly stole his food and harassed him."
@@ -24612,7 +24668,7 @@ ID = "STR_HISTORY_UNITS_IOLAUS"   ;   Str = "Age -- 23\nHomeland -- Thebes\nOccu
 ID = "STR_HISTORY_UNITS_LYKAON"   ;   Str = "Scientific name -- Lupus lykaonius.\nSize -- 7' tall.\nDiet -- carnivore, any meat within range.\n\nKing Lykaon was the legendary ruler of Arcadia. Famous for his cruelty, impiety and arrogance, he attempted to test the omniscience of Zeus by inviting him to a feast and serving his own son Nyctimus. Zeus, in a outpouring of rage and disgust, transformed Lykaon into a wolf and restored Nyctimus to life."
 ID = "STR_HISTORY_UNITS_MIDAS"   ;   Str = "Age -- 51\nHomeland -- Phrygia\nOccupation -- King\n\nLegendary King of Phrygia, Midas was known for his immense wealth and ambition. One day, while walking through his rose garden, he found a drunken satyr sleeping. Recognizing him as Silenus, the foster father of the god Dionysus, Midas treated him hospitably and, after eleven days, returned him to Dionysus. Grateful, Dionysus offered Midas any wish as a reward. Driven by greed, Midas asked for the power to turn anything he touched into gold. At first, he delighted in his new ability, transforming much of his household, including every rose in his garden, into gold. He ordered a feast to celebrate, but upon taking the first bite, he discovered that food and water also turned to gold upon touching his lips. Desperate, Midas prayed to Dionysus to lift what had become a curse. The god heard his plea and instructed him to wash in the river Pactolus, which washed away his power and turned the river sands to gold."
 ID = "STR_HISTORY_UNITS_ORPHEUS"   ;   Str = "Age -- 28\nHomeland -- Thrace\nOccupation -- hero and demigod\n\nInheriting his artistic gifts from his mother, the muse Calliope, Orpheus created songs so enthralling that all living things stopped to listen, and even stones were charmed by his music. He joined Jason and the Argonauts, saving the ship from the Sirens by playing his lyre more beautifully than the monsters, overpowering their bewitching song. His most famous adventure, however, is his journey to the underworld in search of his lost love, Eurydice. Using his music to calm Cerberus and gain entry to the underworld, he played his lyre before Hades and Persephone. They were so moved that they allowed Eurydice to return to the world of the living, on the condition that Orpheus walked in front of her and did not look back on the way out. As they neared the exit, Orpheus, in his excitement, turned back to see Eurydice, causing her to disappear back into the underworld forever."
-ID = "STR_HISTORY_UNITS_AMAZONARCHER"   ;   Str = "The Amazon Archer is an elite long-range warrior trained at the Fortress, deadly against infantry and capable of wearing down buildings from afar. Gifted with exceptional sight and precision, they dominate the battlefield at distance but are vulnerable to swift cavalry and sudden assaults. Only ten may be trained at a time.\n\nThe Amazons sworn to Demeter are sacred guardians, trained during the Mythic Age to defend the harvest from all who would despoil it. Their discipline allows them to concentrate fire upon key targets, breaking advancing infantry lines and weakening enemy footholds. Though lightly armored compared to front-line soldiers, their strength lies in distance, patience, and positioning. So long as they hold their ground and the enemy remains at range, the lands of Demeter remain under vigilant watch."
+ID = "STR_HISTORY_UNITS_AMAZONARCHER"   ;   Str = "The Amazon Archer is an elite long-range warrior trained at the Fortress, deadly against infantry and suitable as a mobile power force. Gifted with exceptional sight and precision, they dominate the battlefield at distance but are vulnerable to swift cavalry and sudden assaults.\n\nThe Amazons sworn to Demeter are sacred guardians, trained during the Mythic Age to defend the harvest from all who would despoil it. Their discipline allows them to concentrate fire upon key targets, breaking advancing infantry lines and chasing down enemy retreaters. Though lightly armored compared to front-line soldiers, their strength lies in distance, mobility, and positioning. So long as they hold their ground and the enemy remains at range, the lands of Demeter remain under vigilant watch."
 ID = "STR_HISTORY_LINK_AMAZON_ARCHER"   ;   Str = "Amazon Archer"
 ID = "STR_HISTORY_LINK_DEMETER"   ;   Str = "Demeter"
 ID = "STR_HISTORY_LINK_PAN"   ;   Str = "Pan"
@@ -24905,7 +24961,7 @@ ID = "STR_CIV_QUETZALCOATL_LR"   ;   Str = "Focus: Warrior Priests and Nobles Hu
 • Warrior Priests generate ${QUETZALCOATL_BLOODLETTING} Favor per second by performing Bloodletting at Temples.
 • Calpullis and their additions cost -${QUETZALCOATL_CALPULLI_DISCOUNT}%.
 • Nobles' Hut units +${QUETZALCOATL_NOBLES_HUT_HP}% hitpoints.
-• Eagle Warriors +${QUETZALCOATL_EAGLE_WARRIOR_RANGE} Range."
+• Eagle Warriors gain +${QUETZALCOATL_EAGLE_WARRIOR_RANGE} Range and Line of Sight in the Heroic and Mythic ages."
 
 // End of Aztec Major Gods
 
@@ -24969,6 +25025,8 @@ ID = "STR_CMD_TOGGLE_AMBUSH_MODE_ROLLOVER"   ;   Str = "Toggle Ambush Mode on or
 
 // Actions Aztec
 ID = "STR_ACTION_STEALTH" ; Str = "Stealth"
+ID = "STR_ACTION_STEALTH_VFX_STEALTHEYE_EDT_NAME" ; Str = "VFX Stealth Eye"
+ID = "STR_ACTION_STEALTH_VFX_EXLAMATIONALERT_EDT_NAME" ; Str = "VFX Exclamation Alert"
 ID = "STR_ACTION_STEALTH_DESCRIPTION" ; Str = "Stealth Unit. Invisible to enemies while standing under cover, such as beside a tree."
 ID = "STR_ACTION_DEVOTION" ; Str = "Devotion"
 ID = "STR_ACTION_DEVOTE" ; Str = "Devote"
@@ -25085,7 +25143,7 @@ ID = "STR_ABILITY_CARAPACE_LR" ; Str = "Gains armor as it loses Hitpoints."
 ID = "STR_ABILITY_HUITZILOPOCHTLI" ; Str = "Wrath"
 ID = "STR_ABILITY_HUITZILOPOCHTLI_LR" ; Str = "Huitzilopochtli lets out a war cry, invigorating nearby troops with wrath and increasing their attack damage for a duration."
 ID = "STR_ABILITY_TEZCATLIPOCA" ; Str = "Smoke"
-ID = "STR_ABILITY_TEZCATLIPOCA_LR" ; Str = "Tezcatlipoca disappears in a cloud of smoke, dashing toward his enemy and unleashing a flurry of claw slashes that deals damage in the area."
+ID = "STR_ABILITY_TEZCATLIPOCA_LR" ; Str = "Tezcatlipoca disappears in a cloud of smoke, dashing toward his enemy and unleashing a flurry of claw slashes that deals damage in the area, and increases speed and damage for a duration."
 ID = "STR_ABILITY_QUETZALCOATL" ; Str = "Benevolence"
 ID = "STR_ABILITY_QUETZALCOATL_LR" ; Str = "Quetzalcoatl blesses nearby followers, providing a small amount of health regeneration."
 
@@ -25141,6 +25199,7 @@ ID = "STR_BLD_JAGUAR_MOON_TEMPLE_SR"   ;   Str = "Capturable temple. Provides re
 
 // Aztec God Power Buildings
 ID = "STR_BLD_INFESTED_DEN_NAME"   ;   Str = "Infested Nest"
+ID = "STR_BLD_INFESTED_DEN_SPC_EDT_NAME"   ;   Str = "Infested Nest (SPC)"
 ID = "STR_BLD_INFESTED_DEN_LR"   ;   Str = "Infested Nest which spawns scorpions that obey your commands."
 ID = "STR_BLD_INFESTED_DEN_SR"   ;   Str = "Spawns scorpions that obey your commands."
 ID = "STR_BLD_AGAVE_BLOOM_NAME"   ;   Str = "Agave Bloom"
@@ -25336,7 +25395,7 @@ ID = "STR_UNIT_OBSIDIAN_BUTTERFLY_NAME"   ;   Str = "Obsidian Butterfly"
 ID = "STR_UNIT_OBSIDIAN_BUTTERFLY_LR"   ;   Str = "Myth unit. Spins to inflict tremendous bleed damage to nearby enemies, pulling them in and expelling them. Can hover over water. Good against human soldiers."
 ID = "STR_UNIT_OBSIDIAN_BUTTERFLY_SR"   ;   Str = "Myth unit. Good vs. human soldiers."
 ID = "STR_UNIT_TUNKULUCHU_NAME"   ;   Str = "Tunkuluchu"
-ID = "STR_UNIT_TUNKULUCHU_LR"   ;   Str = "Myth unit. Towering owl-like creature that marks enemies for death and reducing their hitpoints temporarily. Good against human soldiers."
+ID = "STR_UNIT_TUNKULUCHU_LR"   ;   Str = "Myth unit. Towering owl-like creature that marks enemies for death, reducing their hitpoints temporarily. Good against human soldiers."
 ID = "STR_UNIT_TUNKULUCHU_SR"   ;   Str = "Myth unit. Good vs. human soldiers."
 ID = "STR_UNIT_AHUIZOTL_NAME"   ;   Str = "Ahuizotl"
 ID = "STR_UNIT_AHUIZOTL_LR"   ;   Str = "Myth unit. Stealthy, amphibious guardian that can strike from a distance with its long tail, dealing immense damage and stunning targets. Good against human soldiers."
@@ -25444,7 +25503,7 @@ ID = "STR_TECH_MAGUEY_CULTIVATION_NAME"   ;   Str = "Maguey Cultivation"
 ID = "STR_TECH_MAGUEY_CULTIVATION_LR"   ;   Str = "Patecatl introduces maguey cultivation, increasing Settler farming rates and granting a Food bounty when Farms are constructed."
 ID = "STR_TECH_OMEN_OF_MALINALCO_NAME"   ;   Str = "Omen of Malinalco"
 ID = "STR_TECH_OMEN_OF_MALINALCO_LR"   ;   Str = "Malinalxochitl causes Maquizcoatls to release a poisonous cloud on death that damages nearby enemies and corrodes their armor, making them more vulnerable to attacks."
-ID = "STR_TECH_OMEN_OF_MALINALCO_OVERRIDE"   ;   Str = "Maquizcoatl: On death: deal 10 Divine damage in 4 radius.\n • Maquizcoatl: On death: Reduce enemy Hack & Pierce armor by -15% in 4 radius. \n • Maquizcoatl: On death: Deal 1.5 Divine Damage per second, for 6 seconds to enemies in 4 radius"
+ID = "STR_TECH_OMEN_OF_MALINALCO_OVERRIDE"   ;   Str = "Maquizcoatl: On death: deal 10 Divine damage in 4 radius.\n • Maquizcoatl: On death: Reduce enemy Hack & Pierce armor by -20% in 4 radius. \n • Maquizcoatl: On death: Deal 1.5 Divine Damage per second, for 6 seconds to enemies in 4 radius"
 ID = "STR_TECH_STING_OF_YAPPAN_NAME"   ;   Str = "Sting of Yappan"
 ID = "STR_TECH_STING_OF_YAPPAN_LR"   ;   Str = "Malinalxochitl grants your War Hut soldiers the sting of the scorpion, causing their attacks to inflict poison damage over time."
 ID = "STR_TECH_STING_OF_YAPPAN_OVERRIDE1"   ;   Str = "Tlamanih Spearman: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds"
@@ -25505,10 +25564,10 @@ ID = "STR_TECH_TWISTED_LIMBS_LR"   ;   Str = "Xolotl contorts the bodies of Ocel
 ID = "STR_TECH_TORCH_OF_MISFORTUNE_NAME"   ;   Str = "Torch of Misfortune"
 ID = "STR_TECH_TORCH_OF_MISFORTUNE_LR"   ;   Str = "Xolotl upgrades Soul Guides to Soul Masters, which can use chain lightning attacks."
 ID = "STR_TECH_NECKLACE_OF_EYEBALLS_NAME"   ;   Str = "Necklace of Eyeballs"
-ID = "STR_TECH_NECKLACE_OF_EYEBALLS_LR"   ;   Str = "Mictlantecuhtli adorns Teixiptlas with a Necklace of Eyeballs, increasing their attack, hitpoints, and line of sight."
+ID = "STR_TECH_NECKLACE_OF_EYEBALLS_LR"   ;   Str = "Mictlantecuhtli adorns your Heroes with a Necklace of Eyeballs, increasing their attack, hitpoints, and line of sight."
 ID = "STR_TECH_OMEN_OF_DEATH_NAME"   ;   Str = "Omen of Death"
 ID = "STR_TECH_OMEN_OF_DEATH_LR"   ;   Str = "Mictlantecuhtli causes Teixiptlas to call down a strike from the heavens when defeated, damaging nearby enemies."
-ID = "STR_TECH_OMEN_OF_DEATH_OVERRIDE"   ;   Str = "Teixiptla: On Death: Inflict 40 Hack damage and Throw enemies, in 5 radius"
+ID = "STR_TECH_OMEN_OF_DEATH_OVERRIDE"   ;   Str = "Teixiptla: On Death: Inflict 50 Hack damage and Throw enemies, in 5 radius"
 ID = "STR_TECH_PRECIOUS_BONES_NAME"   ;   Str = "Precious Bones"
 ID = "STR_TECH_PRECIOUS_BONES_LR"   ;   Str = "Mictlantecuhtli empowers your ranged soldiers, which increase their damage and compensates you with wood they fall in battle."
 ID = "STR_TECH_MICTECAH_NAME"   ;   Str = "Mictecah"
@@ -25720,6 +25779,8 @@ ID = "STR_ABILITY_WOLF_BROOD_ALPHA_LR" ; Str = "Summons a pack of Fenris Wolves 
 ID = "STR_UNIT_FAFNIR_BOSS_LR"   ;   Str = "Myth unit. Devastatingly powerful wingless dragon that summons Fafnir during battle. Exceptional against human soldiers and buildings."
 ID = "STR_UNIT_FAFNIR_BOSS_SR"   ;   Str = "Myth unit. Exceptional vs. human soldiers and buildings."
 ID = "STR_UNIT_QUETZALCOATL_SNAKE_EDT_NAME"   ;   Str = "Quetzalcoatl Snake"
+ID = "STR_UNIT_QUETZALCOATL_SNAKE_CHEAT_EDT_NAME"   ;   Str = "Quetzalcoatl Snake (Cheat Wandering)"
+ID = "STR_UNIT_QUETZALCOATL_SNAKE_CHEATTWO_EDT_NAME"   ;   Str = "Quetzalcoatl Snake (Cheat)"
 // End of Aztec SPC Units
 
 //SPC Locations
@@ -25897,8 +25958,12 @@ ID = "STR_VFX_SCREEN_TRANSITION_SMOKE_NAME"   ;   Str = "VFX Screen Transition S
 
 // End of Aztec VFX
 
-// Cheat Units Aztec
-// End of Cheat Units Aztec
+// Cheats Added With Aztecs
+ID = "STR_POWER_CURSEOFRA" ; Str = "Curse of Ra"
+ID = "STR_POWER_CURSEOFRA_LR" ; Str = "Target anywhere on the map to summon packs of Mummies and Minions to attack enemy Town Centers."
+ID = "STR_UNIT_FAFNIR_CHEAT_NAME"   ;   Str = "Volatile Fafnir"
+ID = "STR_UNIT_FAFNIR__CHEAT_LR"   ;   Str = "Myth unit. Cursed, but devastatingly powerful wingless dragon that engulfs enemies with fire and poison. Grants Gold to its slayer. Exceptional against human soldiers and buildings. This cheat version of Fafnir is stronger than the normal version and may randomly align with you or your enemies. Summon at your own risk!"
+// End of Cheat Added With Aztecs
 
 // God Powers Aztec
 // Archaic
@@ -25924,7 +25989,7 @@ ID = "STR_POWER_EARTH_MONSTER_LR"   ;   Str = "Target a location to summon Tlalt
 ID = "STR_POWER_STARFALL"   ;   Str = "Starfall"
 ID = "STR_POWER_STARFALL_LR"   ;   Str = "Target a location to bombard enemies with falling stars. Tzitzimitl star demons occasionally emerge from the craters to fight for you."
 ID = "STR_POWER_PURGE"   ;   Str = "Purge"
-ID = "STR_POWER_PURGE_LR"   ;   Str = "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed, up to a total of 1500 resource value."
+ID = "STR_POWER_PURGE_LR"   ;   Str = "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed, up to a total of 1400 resource value."
 
 // Mythic
 ID = "STR_POWER_PILLAR_OF_TLALOCAN"   ;   Str = "Pillar of Tlálocan"
@@ -25943,10 +26008,10 @@ ID = "STR_POWER_NEW_FIRE_CEREMONY_LR"   ;   Str = "Garrison 3 Livestock at the G
 ID = "STR_POWER_NEW_FIRE_CEREMONY_ACTIVE_LR"   ;   Str = "For 60 seconds, Devoting Settlers earns more Favor and livestock fatten faster."
 ID = "STR_POWER_NEW_FIRE_CEREMONY_NOTIFICATION"   ;   Str = "You are performing the New Fire Ceremony."
 ID = "STR_TECH_COSMIC_GUARD"   ;   Str = "Cosmic Guard"
-ID = "STR_TECH_COSMIC_GUARD_LR"   ;   Str = "Garrison 15 human soldiers at the Great Temple and use this command to Devote them.\nReward: Spawns 6 myth units (3 from Age IV and 3 from Age III)."
+ID = "STR_TECH_COSMIC_GUARD_LR"   ;   Str = "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
 ID = "STR_POWER_COSMIC_GUARD"   ;   Str = "Cosmic Guard"
-ID = "STR_POWER_COSMIC_GUARD_LR"   ;   Str = "Garrison 15 human soldiers at the Great Temple and use this command to Devote them.\nReward: Spawns 6 myth units (3 from Age IV and 3 from Age III)."
-ID = "STR_POWER_COSMIC_GUARD_ACTIVE_LR"   ;   Str = "Spawns 6 myth units."
+ID = "STR_POWER_COSMIC_GUARD_LR"   ;   Str = "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+ID = "STR_POWER_COSMIC_GUARD_ACTIVE_LR"   ;   Str = "Spawns 4 myth units."
 ID = "STR_POWER_COSMIC_GUARD_NOTIFICATION"   ;   Str = "You have used the Cosmic Guard power."
 ID = "STR_TECH_ARRIVAL_OF_THE_GODS"   ;   Str = "Arrival of the Gods"
 ID = "STR_TECH_ARRIVAL_OF_THE_GODS_LR"   ;   Str = "Garrison 6 warrior priests at the Great Temple and use this command to Devote them.\nReward: Incarnates your major god as a special teixiptla with greatly increased lifespan and combat stats."
@@ -27607,7 +27672,7 @@ ID = "STR_HISTORY_TRAPS_NAME"   ;   Str = "Traps"
 ID = "STR_HISTORY_TRAPS"   ;   Str = "Quimichin Spies and War Hut units can build two main trap types; Smoke Traps and Spike Traps.\n\nSmoke Traps reduce enemies' line of sight and movement speed, making them vulnerable to ambushes. They can be upgraded to Chilli Bomb Traps, increasing each of their base effects.\n\nSpike Traps impale enemies who walk over them, making them bleed, losing health over time. Spike Traps can be upgraded to Obsidian Spike Traps, increasing their damage.\n\nTraps remain hidden to enemy units until they come very close, triggering when they walk over them. If an enemy attacks a trap before it triggers, it becomes disarmed."
 ID = "STR_HISTORY_DEVOTION"   ;   Str = "The Aztec universe is unstable and continually threatened by destruction. Devotion (sacrifice) is key to balancing and preserving the universe, as the devotee gives up their life force to sustain the gods.\n\nDevotion is a supplementary mechanic to tonalli gathering. Devoting a Settler at the Temple provides a sum of Favor, and increases Favor trickle rate. However, your Settler is lost to the gods, never to return.\n\nDevotion’s Favor reward offers a spike in short term power, at the cost of long term resource gathering. Used wisely however, the myth units, technologies and god powers you buy with that Favor could provide a pivotal edge over your opponent."
 ID = "STR_HISTORY_CEREMONIES_NAME"   ;   Str = "Great Temple Ceremonies"
-ID = "STR_HISTORY_CEREMONIES"   ;   Str = "The Aztec religion pervaded all aspects of the peoples' lives. It’s various rituals and ceremonies were closely bound to the calendar. Some of these rituals called for certain types of offerings, including crops, animals and human lives.\n\nThe Great Temple has 3 ceremonies, each offering unique rewards, whilst requiring the Devotion (sacrifice) of different unit types:\n\nNew Fire Ceremony - Earn bonus Favor from Devotion for 60 sec. (Cost: 3 Livestock)\n\nCosmic Guard - 6 myth unit spawn at your Great Temple (3 from Age IV and 3 from Age III). (Cost: 15 Human Soldiers)\n\nArrival of the Gods - Your major god manifests to fight on your behalf; a stronger version of the Teixiptla, with increased lifespan and combat stats. (Cost: 6 Warrior Priests)"
+ID = "STR_HISTORY_CEREMONIES"   ;   Str = "The Aztec religion pervaded all aspects of the peoples' lives. It’s various rituals and ceremonies were closely bound to the calendar. Some of these rituals called for certain types of offerings, including crops, animals and human lives.\n\nThe Great Temple has 3 ceremonies, each offering unique rewards, whilst requiring the Devotion (sacrifice) of different unit types:\n\nNew Fire Ceremony - Earn bonus Favor from Devotion for 60 sec. (Cost: 3 Livestock)\n\nCosmic Guard - 4 myth unit spawn at your Great Temple (2 from Age IV and 2 from Age III). (Cost: 12 non-scout Human Soldiers)\n\nArrival of the Gods - Your major god manifests to fight on your behalf; a stronger version of the Teixiptla, with increased lifespan and combat stats. (Cost: 6 Warrior Priests)"
 ID = "STR_HISTORY_YOLIKNIN_NAME"   ;   Str = "Yoliknin"
 ID = "STR_HISTORY_YOLIKNIN"   ;   Str = "Whilst concealing his identity during the Obsidian Mirror campaign, Quetzalcoatl introduces himself to Popocatepetl as Yoliknin.\n\nYoliknin is a Nahuatl word deriving from Yollotl (heart) and Ikniu (friend). It can be translated as ‘brother or friend of the heart’.\n\nIn Aztec (Mexica) culture, the root term icniuhtli carried deep social and emotional meaningm, more than just friendship, it implied a bond of loyalty, trust, and shared experience. It could refer to a close ally in daily life, a companion in battle, or even a trusted confidant in ritual or political affairs.\n\nIn poetic or ceremonial contexts, calling someone icniuhtli was an expression of deep respect and affection. This was a recognition of kinship forged not by blood, but by mutual honor and connection." 
 // Technologies

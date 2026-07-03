@@ -52,6 +52,7 @@ TECH_CATALOG_ALIASES = {
     "Champion Chariots": "ChampionChariotArchers",
     "Argive Patronage": "ArgivePatronageZeus",
     "Empyrian Speed": "EmpyreanSpeed",
+    "Divine Judgment": "DivineJudgement",
 }
 
 

@@ -238,8 +238,8 @@
       }
     ],
     "ingles": "Survival Equipment",
-    "madeira": 150,
-    "ouro": 150,
+    "madeira": 100,
+    "ouro": 100,
     "panteoes": "Geral",
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
@@ -708,8 +708,8 @@
       }
     ],
     "ingles": "Ballistics",
-    "madeira": 200,
-    "ouro": 200,
+    "madeira": 150,
+    "ouro": 150,
     "panteoes": "Geral",
     "tempo_s": 50,
     "tipo": "Ofensivo ⚔ Utilidade 🔧",
@@ -2510,7 +2510,7 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "favor": 20,
+    "favor": 15,
     "god_especifico": [
       {
         "id": 1,
@@ -2530,7 +2530,7 @@
       }
     ],
     "ingles": "Hand of Talos",
-    "madeira": 300,
+    "madeira": 200,
     "panteoes": [
       {
         "id": 1,
@@ -2609,7 +2609,7 @@
         "nome": "Mythic :aomr_mythic_age_icon:"
       }
     ],
-    "favor": 20,
+    "favor": 30,
     "god_especifico": [
       {
         "id": 1,
@@ -2629,7 +2629,7 @@
       }
     ],
     "ingles": "Forge of Olympus",
-    "ouro": 200,
+    "ouro": 300,
     "panteoes": [
       {
         "id": 1,
@@ -8623,7 +8623,7 @@
       ":aomr_oracle_hero_icon: Oracle: +10% maximum capacity bonus for Automatic Favor Collection :favoraom:"
     ],
     "comida": 50,
-    "madeira": 100,
+    "madeira": 50,
     "tempo_s": 30
   },
   {
@@ -8783,7 +8783,7 @@
       ":aomr_type_hero_icon: :aomr_type_infantry_icon: Infantry Hero: -30% Gold cost :goldaom:"
     ],
     "ouro": 100,
-    "favor": 15,
+    "favor": 12,
     "tempo_s": 40
   },
   {
@@ -8877,7 +8877,7 @@
     ],
     "ouro": 125,
     "favor": 15,
-    "tempo_s": 40
+    "tempo_s": 30
   },
   {
     "nome": "Sons of the Sun",
@@ -8967,7 +8967,7 @@
     ],
     "ouro": 150,
     "favor": 20,
-    "tempo_s": 40
+    "tempo_s": 25
   },
   {
     "nome": "Orichalcum Mail",
@@ -9702,7 +9702,7 @@
     ],
     "icon": "aomr_kuafu_chieftain_icon",
     "comida": 150,
-    "favor": 15,
+    "favor": 10,
     "tempo_s": 40
   },
   {
@@ -9961,7 +9961,7 @@
     "icon": "aomr_qilins_blessing_icon",
     "comida": 100,
     "ouro": 100,
-    "favor": 25,
+    "favor": 15,
     "tempo_s": 20
   },
   {
@@ -10104,8 +10104,8 @@
       ":aomr_yazi_icon: Yazi: Life Points +15% :aomr_hit_points_icon:",
       ":aomr_yazi_icon: Yazi: All Damage Actions (All Types) +25% :hackdamage:"
     ],
-    "ouro": 150,
-    "favor": 10,
+    "ouro": 125,
+    "favor": 8,
     "tempo_s": 40
   },
   {
@@ -10151,7 +10151,7 @@
       ":aomr_yazi_icon: Yazi: Activates when defeating an enemy: Gains 80% Lifesteal for 10 seconds"
     ],
     "madeira": 150,
-    "favor": 10,
+    "favor": 5,
     "tempo_s": 30
   },
   {
@@ -10361,8 +10361,8 @@
       ":aomr_qiongqi_icon: Qiongqi: Gain 1% Anti-Piercing and Slashing Armor for each enemy unit within 6 range (Max: 25) :hackarmor: :piercearmor:"
     ],
     "comida": 150,
-    "ouro": 50,
-    "favor": 15,
+    "ouro": 25,
+    "favor": 10,
     "tempo_s": 40
   },
   {
@@ -10942,7 +10942,7 @@
       ":aomr_type_cavalry_icon: Cavalry: For every 1% HP lost, modify Armor Piercing by 0.30%."
     ],
     "comida": 300,
-    "favor": 15,
+    "favor": 25,
     "tempo_s": 40
   },
   {
@@ -11475,8 +11475,8 @@
       ":aomr_type_myth_unit_icon: Mythological Unit: Speed ​​+10% :aomr_speed_icon:",
       ":aomr_type_myth_unit_icon: Myth Unit: Adds 1.00 to All Actions Damage (Divine) :aomr_divine_damage_icon:"
     ],
-    "comida": 50,
-    "favor": 10,
+    "comida": 100,
+    "favor": 15,
     "tempo_s": 20
   },
   {
@@ -11745,7 +11745,7 @@
     ],
     "icon": "aomr_hunters_strength_icon",
     "madeira": 150,
-    "favor": 12,
+    "favor": 16,
     "tempo_s": 30
   },
   {
@@ -11790,8 +11790,8 @@
     ],
     "icon": "aomr_kumiki_icon",
     "madeira": 100,
-    "ouro": 50,
-    "favor": 10,
+    "ouro": 100,
+    "favor": 20,
     "tempo_s": 20
   },
   {
@@ -12941,7 +12941,7 @@
         "nome": "Egyptian"
       }
     ],
-    "tempo_s": 20,
+    "tempo_s": 10,
     "tipo": "Utilidade 🔧",
     "icon": "aomr_hands_of_the_pharaoh_icon",
     "campo": [
@@ -13395,14 +13395,8 @@
     "comida": 200,
     "construcao_origem": [
       {
-        "nome": "TownCenter",
-        "id": 9
-      },
-      {
-        "nome": "VillageCenter"
-      },
-      {
-        "nome": "CitadelCenter"
+        "nome": "Granary",
+        "id": 15
       }
     ],
     "eras": [
@@ -13411,7 +13405,7 @@
         "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
-    "favor": 15,
+    "favor": 10,
     "god_especifico": [
       {
         "id": 78,
@@ -13431,7 +13425,8 @@
       ":aomr_type_villager_icon: Villager: Adds 5.00 to Wood Carrying Capacity :woodaom:",
       ":aomr_type_villager_icon: Villager: Adds 5.00 to :goldaom: Gold Carrying Capacity",
       ":aomr_type_villager_icon: Villager: Sums 18.00 in healing delivery :aomr_hit_points_icon:"
-    ]
+    ],
+    "ouro": 125
   },
   {
     "nome": "Thorned Walls",
@@ -13517,17 +13512,18 @@
       ":aomr_town_center_greek_icon: Urban Center: Adds 2 to the generation of Lycaon :aomr_lykaon_icon: in the event of Construction"
     ],
     "ouro": 100,
-    "favor": 15,
+    "favor": 20,
     "tempo_s": 20,
     "construcao_origem": [
       {
-        "nome": "Templo (Grego)",
-        "id": 1
+        "nome": "Granary",
+        "id": 15
       }
-    ]
+    ],
+    "comida": 200
   },
   {
-    "nome": "Predatory Instinct",
+    "nome": "Call of Lykaion",
     "beneficia": ":aomr_lykaon_icon: <highlight-pink>Lesson</highlight-pink>",
     "eras": [
       {
@@ -13545,7 +13541,7 @@
         "nome": "Pan"
       }
     ],
-    "ingles": "Predatory Instinct",
+    "ingles": "Call of Lykaion",
     "panteoes": [
       {
         "id": 1,
@@ -13558,8 +13554,8 @@
       ":aomr_lykaon_icon: Lesson: Speed ​​+20% :aomr_speed_icon:",
       ":aomr_lykaon_icon: Lesson: transform the will"
     ],
-    "comida": 300,
-    "favor": 20,
+    "comida": 200,
+    "favor": 14,
     "tempo_s": 30,
     "construcao_origem": [
       {
@@ -13596,20 +13592,15 @@
     ],
     "icon": "aomr_gracious_hospitality_icon",
     "comida": 150,
-    "favor": 20,
+    "favor": 22,
     "tempo_s": 40,
     "construcao_origem": [
       {
-        "nome": "TownCenter",
-        "id": 9
-      },
-      {
-        "nome": "VillageCenter"
-      },
-      {
-        "nome": "CitadelCenter"
+        "nome": "House",
+        "id": 8
       }
-    ]
+    ],
+    "ouro": 275
   },
   {
     "nome": "Hallowed Woodlands",
@@ -13719,14 +13710,15 @@
       ":aomr_farm_icon: Farm: Activates the Heal Action :aomr_hit_points_icon:"
     ],
     "ouro": 100,
-    "favor": 15,
+    "favor": 20,
     "tempo_s": 30,
     "construcao_origem": [
       {
         "nome": "Granary",
         "id": 15
       }
-    ]
+    ],
+    "comida": 200
   },
   {
     "nome": "Enchanted Hymn",

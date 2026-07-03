@@ -1,0 +1,527 @@
+<powers>
+	<power name="AOTGMeteor" type="Meteor" godpower="">
+		<displaynameid>STR_POWER_METEOR</displaynameid>
+		<rolloverid>STR_POWER_METEOR_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<rangeindicator range="25.0">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>1.0</builduptime>
+		<activetime>7.0</activetime>
+		<radius>25.0</radius>
+		<powerblocker>25.0</powerblocker>
+		<accuracy>1</accuracy>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<allydamageratio>1</allydamageratio>
+		<hideonactivegplist></hideonactivegplist>
+		<meteorprotounit>Meteor</meteorprotounit>
+		<numberofstrikes>1</numberofstrikes>
+		<numberofprioritystrikes>1</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>6.0</groupsearchradius>
+		<secondaryaccuracy>0.5</secondaryaccuracy>
+		<watersplashprotounit>VFXMeteorImpactWater</watersplashprotounit>
+		<landimpactprotounit>VFXMeteorImpactGround</landimpactprotounit>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+	<power name="AOTGBolt" type="Bolt" godpower="">
+		<displaynameid>STR_POWER_BOLT</displaynameid>
+		<rolloverid>STR_POWER_BOLT_LR</rolloverid>
+		<icon>greek\static_color\god_powers\bolt_icon.png</icon>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<placement enemy="" allownature="">Unit</placement>
+		<abstractplacementtargettype>AbstractVillager</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">LightningStrike</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<abstractattacktargettype>AbstractVillager</abstractattacktargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<strikeproto>BoltStrike</strikeproto>
+		<sparksvfxproto>VFXLightningSparks</sparksvfxproto>
+		<scorchvfxproto>VFXBoltScorch</scorchvfxproto>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+	</power>
+	<power name="AOTGFrost" type="Frost" godpower="">
+		<displaynameid>STR_POWER_FROST</displaynameid>
+		<rolloverid>STR_POWER_FROST_LR</rolloverid>
+		<icon>norse\static_color\god_powers\frost_icon.png</icon>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<placement>Skip</placement>
+		<rangeindicator range="10" speed="1.5">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">IceStereo</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">FrostExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>10.0</activetime>
+		<radius>10.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidFrostTarget</abstractattacktargettype>
+		<fasteststriketime>0.5</fasteststriketime>
+		<sloweststriketime>1.0</sloweststriketime>
+		<hideonactivegplist></hideonactivegplist>
+		<stormprotounit>VFXIceSheet</stormprotounit>
+		<snowdriftprotounit>VFXSnowDrift</snowdriftprotounit>
+		<fastestdrifttime>4.0</fastestdrifttime>
+		<slowestdrifttime>8.0</slowestdrifttime>
+		<freezeexpansiontime>3.0</freezeexpansiontime>
+		<freezetransitiontime>1.5</freezetransitiontime>
+		<freezeholdtime>45.0</freezeholdtime>
+		<armoramount>-0.99</armoramount>
+	</power>
+	<power name="AOTGFimbulwinter" type="Fimbulwinter" godpower="">
+		<displaynameid>STR_POWER_FIMBULWINTER</displaynameid>
+		<rolloverid>STR_POWER_FIMBULWINTER_LR</rolloverid>
+		<icon>norse\static_color\god_powers\fimbulwinter_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">FimbulwinterBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" loop="" fadein="2.0">FimbulwinterExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>36.0</activetime>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<fasteststriketime>5.0</fasteststriketime>
+		<sloweststriketime>10.0</sloweststriketime>
+		<hideonactivegplist></hideonactivegplist>
+		<snowpercent>0.66</snowpercent>
+		<wolfproto>FimbulwinterWolf</wolfproto>
+		<wolfvfx>VFXFimbulwinter</wolfvfx>
+		<packsize>3</packsize>
+		<mainpacktargettype>AbstractSettlement</mainpacktargettype>
+		<numextramainpackspawns>5</numextramainpackspawns>
+		<minipacksize>2</minipacksize>
+		<minipacktargettype>VillageCenter</minipacktargettype>
+		<packspawnradius>14.0</packspawnradius>
+		<packscaninterval>5.0</packscaninterval>
+		<packwanderdistance>25.0</packwanderdistance>
+		<minpacktargetspawnradius>15.0</minpacktargetspawnradius>
+		<maxpacktargetspawnradius>30.0</maxpacktargetspawnradius>
+		<maxpackwanderdistance>45.0</maxpackwanderdistance>
+		<spawntargetevalradius>20.0</spawntargetevalradius>
+		<packattacksearchradius>30.0</packattacksearchradius>
+		<snowdrift target="AbstractTownCenter">SnowDriftSettlement</snowdrift>
+		<snowdrift target="AbstractFortress">SnowDriftSettlement</snowdrift>
+		<snowdrift target="LogicalTypeFindBarracks">SnowDriftBarracks</snowdrift>
+		<snowdrift target="ArcheryRange">SnowDriftArchery</snowdrift>
+		<snowdrift target="Stable">SnowDriftStable</snowdrift>
+		<snowdrift target="AbstractTower">SnowDriftTower</snowdrift>
+		<snowdrift target="Obelisk">SnowDriftTower</snowdrift>
+		<snowdrift target="Lighthouse">SnowDriftTower</snowdrift>
+		<snowdrift target="SiegeWorks">SnowDriftSiegeWorks</snowdrift>
+		<snowdrift target="GreatHall">SnowDriftTemple</snowdrift>
+		<snowdrift target="Shrine">SnowDriftTower</snowdrift>
+		<snowdrift target="Temple">SnowDriftTemple</snowdrift>
+	</power>
+	<power name="AOTGForestFire" type="ForestFire" godpower="">
+		<displaynameid>STR_POWER_FOREST_FIRE</displaynameid>
+		<rolloverid>STR_POWER_FOREST_FIRE_LR</rolloverid>
+		<icon>norse\static_color\god_powers\forest_fire_icon.png</icon>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<placement natureonly="">Unit</placement>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ForestFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="1" positional="1">ForestFireExists</soundset>
+		<activetime>15.0</activetime>
+		<fasteststriketime>0.5</fasteststriketime>
+		<sloweststriketime>2.0</sloweststriketime>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<hideonactivegplist></hideonactivegplist>
+		<attackproto>ForestFire</attackproto>
+		<vfxproto>VFXForestFire</vfxproto>
+		<embersproto>ForestFireEmbers</embersproto>
+		<burnlength>10.0</burnlength>
+		<burnfadelength>10.0</burnfadelength>
+		<treedestructionseconds>6.0</treedestructionseconds>
+		<emberlifespan>15.0</emberlifespan>
+		<treesearchradius>3.0</treesearchradius>
+		<damagesearchradius>6.0</damagesearchradius>
+	</power>
+	<power name="AOTGGaiaForest" type="GaiaForest" godpower="">
+		<displaynameid>STR_POWER_GAIA_FOREST</displaynameid>
+		<rolloverid>STR_POWER_GAIA_FOREST_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\gaia_forest_icon.png</icon>
+		<placement>Skip</placement>
+		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<messagealertplayerrelation>All</messagealertplayerrelation>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">GaiaForestBirth</soundset>
+		<activetime>-1</activetime>
+		<radius>20.0</radius>
+		<hideonactivegplist></hideonactivegplist>
+		<treeproto>TreeGaia</treeproto>
+		<treeeffectproto>VFXTreeGaia</treeeffectproto>
+		<totalnumberoftrees>20</totalnumberoftrees>
+		<treespawnintervalmin>3.0</treespawnintervalmin>
+		<treespawnintervalmax>5.0</treespawnintervalmax>
+		<growthradiusstart>2.0</growthradiusstart>
+		<growthradiusincreaserate>0.02</growthradiusincreaserate>
+	</power>
+	<power name="GauntletChaosMeteor" type="Meteor" godpower="" orderhint="1">
+		<displaynameid>STR_POWER_METEOR</displaynameid>
+		<rolloverid>STR_POWER_METEOR_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">12.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>3.0</builduptime>
+		<activetime>15.0</activetime>
+		<radius>25.0</radius>
+		<powerblocker>25.0</powerblocker>
+		<accuracy>1</accuracy>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<meteorprotounit>GauntletChaosMeteor</meteorprotounit>
+		<numberofstrikes>12</numberofstrikes>
+		<numberofprioritystrikes>3</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>6.0</groupsearchradius>
+		<secondaryaccuracy>0.5</secondaryaccuracy>
+		<watersplashprotounit>VFXMeteorImpactWater</watersplashprotounit>
+		<landimpactprotounit>VFXMeteorImpactGround</landimpactprotounit>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+	<power name="GauntletChaosTornado" type="Tornado" godpower="" orderhint="1">
+		<displaynameid>STR_POWER_TORNADO</displaynameid>
+		<rolloverid>STR_POWER_TORNADO_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\tornado_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">20.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>20.0</activetime>
+		<powerblocker>20.0</powerblocker>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidTornadoAttack</abstractattacktargettype>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<rangeindicator range="20.0" speed="5.0">Circle</rangeindicator>
+		<damageinterval>0.5</damageinterval>
+		<tornadoprotounit>GauntletChaosTornado</tornadoprotounit>
+		<minthrowdistance>9.0</minthrowdistance>
+		<maxthrowdistance>15.0</maxthrowdistance>
+		<minthrowheight>14.0</minthrowheight>
+		<maxthrowheight>15.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+		<excludefromthrow>Building</excludefromthrow>
+		<excludefromthrow>Wood</excludefromthrow>
+		<excludefromthrow>Gold</excludefromthrow>
+		<excludefromthrow>Fish</excludefromthrow>
+		<excludefrompullingintofunnel>AbstractSettlement</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Farm</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Building</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Gold</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Wave</excludefrompullingintofunnel>
+		<debrisxzvelocity>6.5</debrisxzvelocity>
+		<debrisyvelocity>3.0</debrisyvelocity>
+		<debrisangularvelocity>3.14</debrisangularvelocity>
+		<funnelradius>4.5</funnelradius>
+		<funnelheight>16.0</funnelheight>
+		<numberofwaypoints>200</numberofwaypoints>
+		<spiralsize>1.0</spiralsize>
+		<greaterdamageradius>15</greaterdamageradius>
+	</power>
+	<power name="GauntletChaosEarthquake" type="Earthquake" godpower="" orderhint="1">
+		<displaynameid>STR_POWER_EARTHQUAKE</displaynameid>
+		<rolloverid>STR_POWER_EARTHQUAKE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\earthquake_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">12.0</minimapeventtime>
+		<reveallos radius="35.0">Revealer</reveallos>
+		<rangeindicator range="35.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">EarthquakeExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<radius>35.0</radius>
+		<activetime>12.0</activetime>
+		<powerblocker>35.0</powerblocker>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeEarthquakeAttack</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Farm</explicitlyrestrictedattacktargettype>
+		<terrainrumbling height="0.25" width="2.0" speed="15.0" fadetime="2.0"></terrainrumbling>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<attackproto>GauntletChaosEarthquake</attackproto>
+		<attackinterval>0.25</attackinterval>
+		<attacktreeaccuracy>0.025</attacktreeaccuracy>
+		<allydamageratio>0.05</allydamageratio>
+		<epicenterzoneradius>7.5</epicenterzoneradius>
+		<middlezoneradius>17.5</middlezoneradius>
+		<outerzoneradius>35.0</outerzoneradius>
+		<epicenterzonedamageratio>1.0</epicenterzonedamageratio>
+		<middlezonedamageratio>0.5</middlezonedamageratio>
+		<outerzonedamageratio>0.2</outerzonedamageratio>
+		<dustsmallvfxproto>VFXDustSmall</dustsmallvfxproto>
+		<dustmediumvfxproto>VFXDustMedium</dustmediumvfxproto>
+		<dustlargevfxproto>VFXDustLarge</dustlargevfxproto>
+	</power>
+	<power name="GauntletChaosThunderBurst" type="ThunderBurst" godpower="" orderhint="1">
+		<displaynameid>STR_POWER_THUNDER_BURST</displaynameid>
+		<rolloverid>STR_POWER_THUNDER_BURST_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\thunder_burst_icon.png</icon>
+		<placement forceonmap="1">Full</placement>
+		<camerashake duration="0.5" strength="0.20" range="40.0"></camerashake>
+		<rangeindicator range="20" speed="0.2">Circle</rangeindicator>
+		<reveallos radius="35.0">Revealer</reveallos>
+		<minimapeventtime sendalertto="All">5.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All" fade="">ThunderBurstBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="4.3">ThunderBurstExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>15</activetime>
+		<cost>200</cost>
+		<repeatcost>5</repeatcost>
+		<radius>20</radius>
+		<powerblocker>20.0</powerblocker>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Tree</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<amount>5</amount>
+		<delay>5.0</delay>
+		<radiusincreasestep>5.0</radiusincreasestep>
+		<minthrowdistance>15.0</minthrowdistance>
+		<maxthrowdistance>25.0</maxthrowdistance>
+		<minthrowheight>6.0</minthrowheight>
+		<maxthrowheight>12.0</maxthrowheight>
+		<minthrowvelocity>15.0</minthrowvelocity>
+		<maxthrowvelocity>22.0</maxthrowvelocity>
+		<throwsizelimit>9</throwsizelimit>
+		<stunduration>0.0</stunduration>
+		<chargingvfx>VFXThunderBurstArea</chargingvfx>
+		<burstvfx>GauntletChaosVFXThunderBurst</burstvfx>
+		<startingvfx>VFXThunderBurstArc</startingvfx>
+	</power>
+	<power name="GauntletChaosNidhogg" type="TempUnit" godpower="" orderhint="1">
+		<displaynameid>STR_POWER_NIDHOGG</displaynameid>
+		<rolloverid>STR_POWER_NIDHOGG_LR</rolloverid>
+		<icon>norse\static_color\god_powers\nidhogg_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement losprotounit="Nidhogg">Skip</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<cost>350.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<createunit quantity="5" radius="10.0" delay="0.0" norandomrotate="" permanent="" playcreatesound="">GauntletChaosNidhogg</createunit>
+	</power>
+	<power name="GauntletChaosLightningStorm" type="LightningStorm" godpower="" orderhint="1">
+		<displaynameid>STR_POWER_LIGHTNING_STORM</displaynameid>
+		<rolloverid>STR_POWER_LIGHTNING_STORM_LR</rolloverid>
+		<icon>greek\static_color\god_powers\lightning_storm_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<reveallos radius="40.0">Revealer</reveallos>
+		<rangeindicator range="40.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.1" strength="0.1"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">LightningBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll">LightThunder</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>15.0</activetime>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Farm</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Settlement</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Gargarensis</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>SonOfOsiris</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Nidhogg</explicitlyrestrictedattacktargettype>
+		<powerblocker>40.0</powerblocker>
+		<accuracy>1</accuracy>
+		<radius>40.0</radius>
+		<powerplayerrelation>EnemyNotMotherNature</powerplayerrelation>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.0</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<strikeproto>GauntletChaosLightningStrike</strikeproto>
+		<rainvfxproto>VFXLightningRain</rainvfxproto>
+		<cloudvfxproto>VFXLightningCloud</cloudvfxproto>
+		<sparksvfxproto>VFXLightningSparks</sparksvfxproto>
+		<scorchvfxproto>VFXLightningScorch</scorchvfxproto>
+		<groundsparksvfxproto>VFXLightningSparksGround</groundsparksvfxproto>
+		<strikesoundset>LightningStrike</strikesoundset>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>1.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>40.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>43.0</cloudfadeoutendtime>
+		<rainbuildupstarttime>2.0</rainbuildupstarttime>
+		<rainbuildupendtime>7.0</rainbuildupendtime>
+		<rainfadeoutstarttime>37.0</rainfadeoutstarttime>
+		<rainfadeoutendtime>38.0</rainfadeoutendtime>
+	</power>
+	<power name="GauntletChaosSwampland" type="DroughtLand" godpower="" orderhint="2">
+		<displaynameid>STR_POWER_SWAMPLAND</displaynameid>
+		<rolloverid>STR_POWER_SWAMPLAND_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\swampland_icon.png</icon>
+		<placement>Skip</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SwamplandBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" positional="1" loop="">SwamplandExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<radius>18.0</radius>
+		<cost>100</cost>
+		<repeatcost>25.0</repeatcost>
+		<terraincreep creep="SwampLand" strength="100.0" maxradius="30.0" growthrate="20.0" decayrate="5.0" minupdateinterval="0.2" maxupdateinterval="0.3" avoidimpassable="" allowdisconnectedgrowth=""></terraincreep>
+		<landprotounit>VFXSwampland</landprotounit>
+	</power>
+	<power name="GauntletChaosPestilence" type="Pestilence" godpower="" orderhint="2">
+		<displaynameid>STR_POWER_PESTILENCE</displaynameid>
+		<rolloverid>STR_POWER_PESTILENCE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\pestilence_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="50.0" speed="0.2">Circle</rangeindicator>
+		<reveallos radius="50.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PestilenceBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>25.0</activetime>
+		<radius>50.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeMilitaryProductionBuilding</abstractattacktargettype>
+		<abstractattacktargettype>Dock</abstractattacktargettype>
+		<abstractattacktargettype>AbstractTower</abstractattacktargettype>
+		<cost>50.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smallvfxproto>VFXPestilenceSmall</smallvfxproto>
+		<largevfxproto>VFXPestilenceLarge</largevfxproto>
+		<rescaninterval>5.0</rescaninterval>
+		<rofpercentpenalty>1.0</rofpercentpenalty>
+		<trainratepenalty>1.5</trainratepenalty>
+	</power>
+	<power name="FavorStashFortifiedPerimeter" type="TempUnit" godpower="" orderhint="2">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL_LR</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>50.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<attachproto>SentinelBase</attachproto>
+		<createunit quantity="5" minradius="20" maxradius="40" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">FavorStashSentinel</createunit>
+		<forceplacement></forceplacement>
+	</power>
+	<power name="GauntletChaosEclipse" type="Eclipse" godpower="" orderhint="2">
+		<displaynameid>STR_POWER_ECLIPSE</displaynameid>
+		<rolloverid>STR_POWER_ECLIPSE_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\eclipse_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">EclipseBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" loop="">EclipseExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<exclusive></exclusive>
+		<exclusiveerrormsgid>STR_ERROR_GODPOWER_ECLIPSE</exclusiveerrormsgid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<cost>90.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<lighting>gp_eclipse</lighting>
+		<effect type="Damage" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="OnHitEffectRate" action="BeamAttack" effecttype="DamageOverTime" dmgtype="all" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">Petsuchos</target>
+		</effect>
+		<effect type="MaximumVelocity" amount="1.15" relativity="BasePercent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="WorkRate" action="AutoGather" amount="1.50" unittype="Favor" relativity="BasePercent">
+			<target type="ProtoUnit">AbstractMonument</target>
+		</effect>
+		<effect type="RechargeTime" amount="0.40" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="ArmorVulnerability" armortype="Hack" amount="-0.10" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="ArmorVulnerability" armortype="Pierce" amount="-0.10" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="ArmorVulnerability" armortype="Crush" amount="-0.10" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="TechActivate">
+			<target type="Tech">EclipseActive</target>
+		</effect>
+	</power>
+	<power name="GauntletChaosCeaseFire" type="CeaseFire" godpower="" orderhint="2">
+		<displaynameid>STR_POWER_CEASE_FIRE</displaynameid>
+		<rolloverid>STR_POWER_CEASE_FIRE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\ceasefire_icon.png</icon>
+		<placement>Skip</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">CeaseFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" playdelay="12.0">CeaseFireExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>15.0</activetime>
+		<exclusive></exclusive>
+		<cost>75.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<vfxproto>VFXDoves</vfxproto>
+		<attachvfxto>AbstractSettlement</attachvfxto>
+		<effect type="BuildPoints" relativity="BasePercent" amount="2.00">
+			<target type="ProtoUnit">LogicalTypeAffectedByCeaseFireBuildingSlow</target>
+		</effect>
+	</power>
+</powers>

@@ -1,0 +1,729 @@
+<powers>
+	<power name="BlessingOfZeus" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_ZEUS_BLESS</displaynameid>
+		<rolloverid>STR_POWER_ZEUS_BLESS_LR</rolloverid>
+		<icon>spc\static_color\god_powers\blessing_of_zeus_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Arkantos</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SOOPBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<vfxproto>VFXBlessingOfZeus</vfxproto>
+		<abstracttype swapto="ArkantosUber">Arkantos</abstracttype>
+	</power>
+	<power name="WellOfUrd" type="Teleport" godpower="">
+		<icon>greek\static_color\god_powers\underworld_passage_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="WellOfUrd" allowsnap="">Full</placement>
+		<dualpowermindistance>30.0</dualpowermindistance>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">UnderworldPassageSelect</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" usesecondlocation="1">UnderworldPassageSelect</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="">UnderworldPassageExists</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="" usesecondlocation="1">UnderworldPassageExists</soundset>
+		<activetime>-1</activetime>
+		<inportal>WellOfUrd</inportal>
+		<outportal>WellOfUrd</outportal>
+	</power>
+	<power name="MeteorSPC" type="Meteor" godpower="">
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<builduptime>3.0</builduptime>
+		<activetime>1.0</activetime>
+		<accuracy>1</accuracy>
+		<radius>1.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>0</fasteststriketime>
+		<sloweststriketime>0</sloweststriketime>
+		<meteorprotounit>MeteorSPC</meteorprotounit>
+		<numberofstrikes>1</numberofstrikes>
+		<numberofprioritystrikes>3</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>6.0</groupsearchradius>
+		<secondaryaccuracy>0.5</secondaryaccuracy>
+		<watersplashprotounit>VFXMeteorImpactWater</watersplashprotounit>
+		<landimpactprotounit>VFXMeteorImpactGround</landimpactprotounit>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+	<power name="ChangeToValkyrie" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ChangeUnit</soundset>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>8.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<findbestposition></findbestposition>
+		<vfxproto>VFXTransformGlow</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="Valkyrie">HumanSoldier</abstracttype>
+		<abstracttype swapto="Valkyrie">AbstractVillager</abstracttype>
+		<abstracttype swapto="Valkyrie">MythUnit</abstracttype>
+		<abstracttype swapto="Valkyrie">Pig</abstracttype>
+	</power>
+	<power name="ChangeToChimera" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ChangeUnit</soundset>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>8.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<findbestposition></findbestposition>
+		<vfxproto>VFXTransformGlow</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="Chimera">HumanSoldier</abstracttype>
+		<abstracttype swapto="Chimera">AbstractVillager</abstracttype>
+		<abstracttype swapto="Chimera">MythUnit</abstracttype>
+		<abstracttype swapto="Chimera">Pig</abstracttype>
+	</power>
+	<power name="ChangeToCyclops" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ChangeUnit</soundset>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>8.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<findbestposition></findbestposition>
+		<vfxproto>VFXTransformGlow</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="Cyclops">HumanSoldier</abstracttype>
+		<abstracttype swapto="Cyclops">AbstractVillager</abstracttype>
+		<abstracttype swapto="Cyclops">MythUnit</abstracttype>
+		<abstracttype swapto="Cyclops">Pig</abstracttype>
+	</power>
+	<power name="ChangeToHydra" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ChangeUnit</soundset>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>8.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<findbestposition></findbestposition>
+		<vfxproto>VFXTransformGlow</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="Hydra">HumanSoldier</abstracttype>
+		<abstracttype swapto="Hydra">AbstractVillager</abstracttype>
+		<abstracttype swapto="Hydra">MythUnit</abstracttype>
+		<abstracttype swapto="Hydra">Pig</abstracttype>
+	</power>
+	<power name="ChangeToManticore" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ChangeUnit</soundset>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>8.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<findbestposition></findbestposition>
+		<vfxproto>VFXTransformGlow</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="Manticore">HumanSoldier</abstracttype>
+		<abstracttype swapto="Manticore">AbstractVillager</abstracttype>
+		<abstracttype swapto="Manticore">MythUnit</abstracttype>
+		<abstracttype swapto="Manticore">Pig</abstracttype>
+	</power>
+	<power name="ChangeToNemeanLion" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ChangeUnit</soundset>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>8.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<findbestposition></findbestposition>
+		<vfxproto>VFXTransformGlow</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="NemeanLion">HumanSoldier</abstracttype>
+		<abstracttype swapto="NemeanLion">AbstractVillager</abstracttype>
+		<abstracttype swapto="NemeanLion">MythUnit</abstracttype>
+		<abstracttype swapto="NemeanLion">Pig</abstracttype>
+	</power>
+	<power name="LightningStormSPC" type="LightningStorm" godpower="">
+		<displaynameid>STR_POWER_LIGHTNING_STORM</displaynameid>
+		<rolloverid>STR_POWER_LIGHTNING_STORM_LR</rolloverid>
+		<icon>greek\static_color\god_powers\lightning_storm_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<messagealertplayerrelation>None</messagealertplayerrelation>
+		<reveallos radius="45.0">Revealer</reveallos>
+		<rangeindicator range="45.0" speed="0.2">Circle</rangeindicator>
+		<builduptime>1.3</builduptime>
+		<hideonactivegplist></hideonactivegplist>
+		<activetime>15.0</activetime>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Farm</explicitlyrestrictedattacktargettype>
+		<accuracy>0.66</accuracy>
+		<radius>45.0</radius>
+		<powerplayerrelation>EnemyNotMotherNature</powerplayerrelation>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<strikeproto>LightningStrike</strikeproto>
+		<cloudvfxproto>VFXLightningCloud</cloudvfxproto>
+		<sparksvfxproto>VFXLightningSparks</sparksvfxproto>
+		<scorchvfxproto>VFXLightningScorch</scorchvfxproto>
+		<groundsparksvfxproto>VFXLightningSparksGround</groundsparksvfxproto>
+		<strikesoundset>LightningStrike</strikesoundset>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>2.0</strikeminoffset>
+		<strikemaxoffset>5.0</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>1.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>40.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>43.0</cloudfadeoutendtime>
+		<rainbuildupstarttime>2.0</rainbuildupstarttime>
+		<rainbuildupendtime>7.0</rainbuildupendtime>
+		<rainfadeoutstarttime>37.0</rainfadeoutstarttime>
+		<rainfadeoutendtime>38.0</rainfadeoutendtime>
+	</power>
+	<power name="DeconstructWonder" type="Deconstruction" godpower="">
+		<displaynameid>STR_POWER_DECONSTRUCT_WONDER</displaynameid>
+		<rolloverid>STR_POWER_DECONSTRUCT_WONDER_LR</rolloverid>
+		<icon>spc\static_color\god_powers\wonder_deconstruction_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>OdinsTower</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">DeconstructionBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cracksoundset>DeconstructionDestruction</cracksoundset>
+		<crackintervalmin>2.0</crackintervalmin>
+		<crackintervalmax>4.0</crackintervalmax>
+		<timefactor>0.1</timefactor>
+	</power>
+	<power name="SeedofGaia" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_SEED_OF_GAIA</displaynameid>
+		<rolloverid>STR_POWER_SEED_OF_GAIA_LR</rolloverid>
+		<icon>spc\static_color\god_powers\seed_of_gaia_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>GaiaPool</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">GaiaForest</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<swapdelay>0.5</swapdelay>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<playbirthaftermutate></playbirthaftermutate>
+		<sfx>Pots</sfx>
+		<overallchance>1.0</overallchance>
+		<abstracttype swapto="SummoningTree">GaiaPool</abstracttype>
+	</power>
+	<power name="TempestSPC" type="Tempest" godpower="">
+		<displaynameid>STR_POWER_TEMPEST</displaynameid>
+		<rolloverid>STR_POWER_TEMPEST_LR</rolloverid>
+		<icon>norse_freyr\static_color\god_powers\tempest_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<reveallos radius="20.0">Revealer</reveallos>
+		<rangeindicator range="23.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.05" strength="0.05"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">TempestBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll">LightThunder</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="" fadein="2.0">TempestExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>4.0</activetime>
+		<abstractattacktargettype>LogicalTypeHandUnitsAttack</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Huntable</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>EmbellishmentClass</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Settlement</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<accuracy>0.75</accuracy>
+		<radius>17.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>0.02</fasteststriketime>
+		<sloweststriketime>0.20</sloweststriketime>
+		<cost>200.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<strikeproto>TempestStrike</strikeproto>
+		<icesheetvfxproto>VFXTempestFloor</icesheetvfxproto>
+		<groundimpactvfxproto>VFXTempestHailImpact</groundimpactvfxproto>
+		<strikesoundset>TempestStrike</strikesoundset>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>3.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>37.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>40.0</cloudfadeoutendtime>
+		<fastestdrifttime>4.0</fastestdrifttime>
+		<slowestdrifttime>8.0</slowestdrifttime>
+		<treebendstrengthmin>-0.1</treebendstrengthmin>
+		<treebendstrengthmax>0.1</treebendstrengthmax>
+		<treebendperiodmin>2.5</treebendperiodmin>
+		<treebendperiodmax>4.0</treebendperiodmax>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="WolfPack" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_WOLF_PACK</displaynameid>
+		<rolloverid>STR_POWER_WOLF_PACK_LR</rolloverid>
+		<icon>spc\player_color\units\ornlu_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="14" speed="0.2">Circle</rangeindicator>
+		<activetime>-1</activetime>
+		<cost>60.0</cost>
+		<hideonactivegplist></hideonactivegplist>
+		<repeatcost>10.0</repeatcost>
+		<createunit quantity="1" minradius="0" maxradius="7" delay="0.0" permanent="">FenrisWolfBrood</createunit>
+		<createunit quantity="1" minradius="0" maxradius="7" delay="0.0" permanent="">FimbulwinterWolf</createunit>
+		<createunit quantity="1" minradius="0" maxradius="7" delay="0.0" permanent="">FenrisWolfBrood</createunit>
+		<createunit quantity="1" minradius="0" maxradius="7" delay="0.0" permanent="">FimbulwinterWolf</createunit>
+		<createunit quantity="1" minradius="0" maxradius="7" delay="0.0" permanent="">FenrisWolfBrood</createunit>
+	</power>
+	<power name="ShockwaveAbility" type="Shockwave" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_SHOCKWAVE</displaynameid>
+		<rolloverid>STR_POWER_SHOCKWAVE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\shockwave_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="5.0" speed="0.3">Circle</rangeindicator>
+		<reveallos radius="5.0">Revealer</reveallos>
+		<camerashake duration="0.10" strength="0.20" range="40.0"></camerashake>
+		<activetime>3.0</activetime>
+		<radius>5.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidShockwaveTarget</abstractattacktargettype>
+		<terrainrumbling height="1.20" width="1.0" speed="25.0" fadetime="0.2"></terrainrumbling>
+		<cost>15.0</cost>
+		<repeatcost>15.0</repeatcost>
+		<stunlength>1.0</stunlength>
+		<shockwavevfx>VFXThunderBurst</shockwavevfx>
+		<minthrowdistance>7.0</minthrowdistance>
+		<maxthrowdistance>9.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>12.0</minthrowvelocity>
+		<maxthrowvelocity>13.0</maxthrowvelocity>
+		<hideonactivegplist></hideonactivegplist>
+		<messagealertplayerrelation>None</messagealertplayerrelation>
+	</power>
+	<power name="ExplosionSPC" type="Meteor" godpower="" orderhint="5">
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<builduptime>3.0</builduptime>
+		<activetime>1.0</activetime>
+		<accuracy>1</accuracy>
+		<radius>1.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>0</fasteststriketime>
+		<sloweststriketime>0</sloweststriketime>
+		<messagealertplayerrelation>None</messagealertplayerrelation>
+		<meteorprotounit>ExplosionSPC</meteorprotounit>
+		<numberofstrikes>1</numberofstrikes>
+		<numberofprioritystrikes>3</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>3.0</groupsearchradius>
+		<secondaryaccuracy>0.5</secondaryaccuracy>
+		<watersplashprotounit>VFXExplosion</watersplashprotounit>
+		<landimpactprotounit>VFXExplosion</landimpactprotounit>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="ExplosionWeakerSPC" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_SHOCKWAVE</displaynameid>
+		<rolloverid>STR_POWER_SHOCKWAVE_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<placement losprotounit="ExplosionWeakerSPC" allowsnap="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<cost>100</cost>
+		<repeatcost>100</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">ExplosionWeakerSPC</createunit>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="FrostSPC" type="Frost" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_FROST</displaynameid>
+		<rolloverid>STR_POWER_FROST_LR</rolloverid>
+		<icon>norse\static_color\god_powers\frost_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="23.5" speed="1.5">Circle</rangeindicator>
+		<reveallos radius="23.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">IceStereo</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">FrostExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>15.0</activetime>
+		<radius>3.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidFrostTarget</abstractattacktargettype>
+		<fasteststriketime>0.5</fasteststriketime>
+		<sloweststriketime>1.0</sloweststriketime>
+		<cost>200.0</cost>
+		<repeatcost>15.0</repeatcost>
+		<stormprotounit>VFXHeavySnowstorm</stormprotounit>
+		<snowdriftprotounit>VFXSnowDrift</snowdriftprotounit>
+		<fastestdrifttime>4.0</fastestdrifttime>
+		<slowestdrifttime>8.0</slowestdrifttime>
+		<freezeexpansiontime>3.0</freezeexpansiontime>
+		<freezetransitiontime>1.5</freezetransitiontime>
+		<freezeholdtime>45.0</freezeholdtime>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="InfestationSPC" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_INFESTATION</displaynameid>
+		<rolloverid>STR_POWER_INFESTATION_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\infestation_icon.png</icon>
+		<placement losprotounit="InfestedDen" allowsnap="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<cost>100</cost>
+		<repeatcost>100</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">InfestedDenSPC</createunit>
+	</power>
+	<power name="WalkingWoodsSingleTargetHIDDEN" type="SwapUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_WALKING_WOODS</displaynameid>
+		<rolloverid>STR_POWER_WALKING_WOODS_LR</rolloverid>
+		<icon>norse\static_color\god_powers\walking_woods_icon.png</icon>
+		<placement allownature="">Unit</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">WalkingWoodsBirth</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">WalkingWoods</soundset>
+		<activetime>3.0</activetime>
+		<swapdelay>0.5</swapdelay>
+		<convertunitstogodpowerplayer></convertunitstogodpowerplayer>
+		<performwalkingwoodsswap></performwalkingwoodsswap>
+		<unittarget></unittarget>
+		<abstracttype swapto="WalkingWoodsCypress">TreeCypress</abstracttype>
+		<abstracttype swapto="WalkingWoodsCypressSnow">TreeCypressSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsGaia">TreeGaia</abstracttype>
+		<abstracttype swapto="WalkingWoodsHades">TreeHades</abstracttype>
+		<abstracttype swapto="WalkingWoodsMarsh">TreeMarsh</abstracttype>
+		<abstracttype swapto="WalkingWoodsOak">TreeOak</abstracttype>
+		<abstracttype swapto="WalkingWoodsOakAutumn">TreeOakAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsOakRound">TreeOakRound</abstracttype>
+		<abstracttype swapto="WalkingWoodsOlive">TreeOlive</abstracttype>
+		<abstracttype swapto="WalkingWoodsPalm">TreePalm</abstracttype>
+		<abstracttype swapto="WalkingWoodsPine">TreePine</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineDead">TreePineDead</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineSnow">TreePineSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsSavannah">TreeSavannah</abstracttype>
+		<abstracttype swapto="WalkingWoodsSavannahOld">TreeSavannahOld</abstracttype>
+		<abstracttype swapto="WalkingWoodsTundra">TreeTundra</abstracttype>
+		<abstracttype swapto="WalkingWoodsTundraSnow">TreeTundraSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsPeach">TreePeach</abstracttype>
+		<abstracttype swapto="WalkingWoodsGinkgo">TreeGinkgo</abstracttype>
+		<abstracttype swapto="WalkingWoodsGinkgoAutumn">TreeGinkgoAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsBamboo">TreeBamboo</abstracttype>
+		<abstracttype swapto="WalkingWoodsSingleBamboo">TreeBambooSingle</abstracttype>
+		<abstracttype swapto="WalkingWoodsMetasequoia">TreeMetasequoia</abstracttype>
+		<abstracttype swapto="WalkingWoodsMetasequoiaAutumn">TreeMetasequoiaAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsPear">TreePear</abstracttype>
+		<abstracttype swapto="WalkingWoodsWillow">TreeWillow</abstracttype>
+		<abstracttype swapto="WalkingWoodsChinesePine">TreeChinesePine</abstracttype>
+		<abstracttype swapto="WalkingWoodsChinesePineDead">TreeChinesePineDead</abstracttype>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="ForestFireHIDDEN" type="ForestFire" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_FOREST_FIRE</displaynameid>
+		<rolloverid>STR_POWER_FOREST_FIRE_LR</rolloverid>
+		<icon>norse\static_color\god_powers\forest_fire_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement allowdeadtarget="" natureonly="">Unit</placement>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ForestFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="1" positional="1">ForestFireExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<fasteststriketime>0.1</fasteststriketime>
+		<sloweststriketime>0.1</sloweststriketime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<ignoreattacktypesforplacement></ignoreattacktypesforplacement>
+		<cost>125.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<attackproto>ForestFire</attackproto>
+		<vfxproto>FireMedium</vfxproto>
+		<embersproto>ForestFireEmbers</embersproto>
+		<burnlength>10.0</burnlength>
+		<burnfadelength>10.0</burnfadelength>
+		<treedestructionseconds>6.0</treedestructionseconds>
+		<emberlifespan>15.0</emberlifespan>
+		<treesearchradius>3.0</treesearchradius>
+		<damagesearchradius>6.0</damagesearchradius>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="ImplodeSPC" type="Implode" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_IMPLODE</displaynameid>
+		<rolloverid>STR_POWER_IMPLODE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\implode_icon.png</icon>
+		<placement>Full</placement>
+		<reveallos radius="30.0">Revealer</reveallos>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="Manual" listenertype="IfOnScreenAll" loop="">ImplodeExists1</soundset>
+		<soundset type="Manual" listenertype="IfOnScreenAll" loop="">ImplodeExists2</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>-1</activetime>
+		<powerblocker>30</powerblocker>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractTitan</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Carnivora</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>CarnivoraWater</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<sphereproto>VFXPortalTezcatlipoca</sphereproto>
+		<shockwaveproto>ImplodeShockwave</shockwaveproto>
+		<vfxpulleffectproto>VFXImplodePullEffect</vfxpulleffectproto>
+		<implodestartsoundset>ImplodeBirth</implodestartsoundset>
+		<implodeexplodesoundset>ImplodeDeath</implodeexplodesoundset>
+		<implodehitsoundset>ImplodeHit</implodehitsoundset>
+		<implodeexplosionwindupsoundset>ImplodeWindup</implodeexplosionwindupsoundset>
+		<explosionwinduplength>1.396</explosionwinduplength>
+		<pullradius>25.0</pullradius>
+		<exploderadius>30.0</exploderadius>
+		<unitescaperadius>30.0</unitescaperadius>
+		<damageintervalseconds>999.0</damageintervalseconds>
+		<pullstrengthincrement>0.1</pullstrengthincrement>
+		<maximumpullstrength>1.0</maximumpullstrength>
+		<pullstrengthoverkillincrement>0.1</pullstrengthoverkillincrement>
+		<pullstrengthadjustfactor>0.06</pullstrengthadjustfactor>
+		<unitacceleration>2.0</unitacceleration>
+		<poweraccumulationincrement>0.1</poweraccumulationincrement>
+		<maximumaccumulatedpower>1.0</maximumaccumulatedpower>
+		<spherescalemultiplier>1.2</spherescalemultiplier>
+		<shearmultiplier>0.2</shearmultiplier>
+		<baseshearincrement>0.1</baseshearincrement>
+		<baseshearmax>1.0</baseshearmax>
+		<unitimplodetimedelaymin>0.15</unitimplodetimedelaymin>
+		<unitimplodetimedelaymax>0.25</unitimplodetimedelaymax>
+		<unitimplodeendtimedelaymin>0.01</unitimplodeendtimedelaymin>
+		<unitimplodeendtimedelaymax>0.1</unitimplodeendtimedelaymax>
+		<spheretargetheight>8.0</spheretargetheight>
+		<unitfloatadjustfactor>0.3</unitfloatadjustfactor>
+		<mintimeinstagestarting>3.0</mintimeinstagestarting>
+		<mintimeinstagepullingunits>4.0</mintimeinstagepullingunits>
+		<mintimeinstageexploding>3.0</mintimeinstageexploding>
+		<explosiondelay>6.0</explosiondelay>
+		<shockwavevelocity>67.2</shockwavevelocity>
+		<outerorbitradiussquared>225.0</outerorbitradiussquared>
+		<middleorbitradiussquared>100.0</middleorbitradiussquared>
+		<innerorbitradiussquared>25.0</innerorbitradiussquared>
+		<outerorbitangularacceleration>0.5</outerorbitangularacceleration>
+		<middleorbitangularacceleration>2.5</middleorbitangularacceleration>
+		<innerorbitangularacceleration>14.0</innerorbitangularacceleration>
+		<initialrumblecamerashakeduration>3.0</initialrumblecamerashakeduration>
+		<initialrumblecamerashakestrength>0.05</initialrumblecamerashakestrength>
+		<unitdeathcamerashakeduration>0.1</unitdeathcamerashakeduration>
+		<unitdeathcamerashakestrength>0.1</unitdeathcamerashakestrength>
+		<explosioncamerashakeduration>0.8</explosioncamerashakeduration>
+		<explosioncamerashakestrength>0.3</explosioncamerashakestrength>
+		<minthrowdistance>15.0</minthrowdistance>
+		<maxthrowdistance>25.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>15.0</minthrowvelocity>
+		<maxthrowvelocity>22.0</maxthrowvelocity>
+	</power>
+	<power name="ImplodeSPCShorter" type="Implode" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_IMPLODE</displaynameid>
+		<rolloverid>STR_POWER_IMPLODE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\implode_icon.png</icon>
+		<placement>Full</placement>
+		<reveallos radius="30.0">Revealer</reveallos>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="Manual" listenertype="IfOnScreenAll" loop="">ImplodeExists1</soundset>
+		<soundset type="Manual" listenertype="IfOnScreenAll" loop="">ImplodeExists2</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>-1</activetime>
+		<powerblocker>30</powerblocker>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractTitan</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Carnivora</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>CarnivoraWater</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<sphereproto>VFXPortalTezcatlipoca</sphereproto>
+		<shockwaveproto>ImplodeShockwave</shockwaveproto>
+		<vfxpulleffectproto>VFXImplodePullEffect</vfxpulleffectproto>
+		<implodestartsoundset>ImplodeBirth</implodestartsoundset>
+		<implodeexplodesoundset>ImplodeDeath</implodeexplodesoundset>
+		<implodehitsoundset>ImplodeHit</implodehitsoundset>
+		<implodeexplosionwindupsoundset>ImplodeWindup</implodeexplosionwindupsoundset>
+		<explosionwinduplength>1.396</explosionwinduplength>
+		<pullradius>25.0</pullradius>
+		<exploderadius>30.0</exploderadius>
+		<unitescaperadius>30.0</unitescaperadius>
+		<damageintervalseconds>999.0</damageintervalseconds>
+		<pullstrengthincrement>0.1</pullstrengthincrement>
+		<maximumpullstrength>1.0</maximumpullstrength>
+		<pullstrengthoverkillincrement>0.1</pullstrengthoverkillincrement>
+		<pullstrengthadjustfactor>0.06</pullstrengthadjustfactor>
+		<unitacceleration>2.0</unitacceleration>
+		<poweraccumulationincrement>0.1</poweraccumulationincrement>
+		<maximumaccumulatedpower>1.0</maximumaccumulatedpower>
+		<spherescalemultiplier>1.2</spherescalemultiplier>
+		<shearmultiplier>0.2</shearmultiplier>
+		<baseshearincrement>0.1</baseshearincrement>
+		<baseshearmax>1.0</baseshearmax>
+		<unitimplodetimedelaymin>0.15</unitimplodetimedelaymin>
+		<unitimplodetimedelaymax>0.25</unitimplodetimedelaymax>
+		<unitimplodeendtimedelaymin>0.01</unitimplodeendtimedelaymin>
+		<unitimplodeendtimedelaymax>0.1</unitimplodeendtimedelaymax>
+		<spheretargetheight>8.0</spheretargetheight>
+		<unitfloatadjustfactor>0.3</unitfloatadjustfactor>
+		<mintimeinstagestarting>3.0</mintimeinstagestarting>
+		<mintimeinstagepullingunits>4.0</mintimeinstagepullingunits>
+		<mintimeinstageexploding>3.0</mintimeinstageexploding>
+		<explosiondelay>2.0</explosiondelay>
+		<shockwavevelocity>67.2</shockwavevelocity>
+		<outerorbitradiussquared>225.0</outerorbitradiussquared>
+		<middleorbitradiussquared>100.0</middleorbitradiussquared>
+		<innerorbitradiussquared>25.0</innerorbitradiussquared>
+		<outerorbitangularacceleration>0.5</outerorbitangularacceleration>
+		<middleorbitangularacceleration>2.5</middleorbitangularacceleration>
+		<innerorbitangularacceleration>14.0</innerorbitangularacceleration>
+		<initialrumblecamerashakeduration>3.0</initialrumblecamerashakeduration>
+		<initialrumblecamerashakestrength>0.05</initialrumblecamerashakestrength>
+		<unitdeathcamerashakeduration>0.1</unitdeathcamerashakeduration>
+		<unitdeathcamerashakestrength>0.1</unitdeathcamerashakestrength>
+		<explosioncamerashakeduration>0.8</explosioncamerashakeduration>
+		<explosioncamerashakestrength>0.3</explosioncamerashakestrength>
+		<minthrowdistance>15.0</minthrowdistance>
+		<maxthrowdistance>25.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>15.0</minthrowvelocity>
+		<maxthrowvelocity>22.0</maxthrowvelocity>
+	</power>
+	<power name="BlazingPrairieSPC" type="TempUnit" godpower="" orderhint="10">
+		<displaynameid>STR_POWER_VOLCANO</displaynameid>
+		<rolloverid>STR_POWER_VOLCANO_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\volcano_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="14" speed="0.2">Circle</rangeindicator>
+		<activetime>3.0</activetime>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<createunit quantity="1" minradius="1" maxradius="10" delay="0.5" permanent="">BlazingPrairieStrike</createunit>
+		<createunit quantity="2" minradius="1" maxradius="14" delay="1.0" permanent="">BlazingPrairieStrike</createunit>
+		<createunit quantity="1" minradius="1" maxradius="10" delay="1.5" permanent="">BlazingPrairieStrike</createunit>
+		<createunit quantity="2" minradius="1" maxradius="14" delay="2.0" permanent="">BlazingPrairieStrike</createunit>
+		<createunit quantity="1" minradius="1" maxradius="10" delay="2.5" permanent="">BlazingPrairieStrike</createunit>
+		<createunit quantity="2" minradius="1" maxradius="14" delay="3.0" permanent="">BlazingPrairieStrike</createunit>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
+	<power name="CurseOfRaCheat" type="Fimbulwinter" godpower="" orderhint="12">
+		<displaynameid>STR_POWER_CURSEOFRA</displaynameid>
+		<rolloverid>STR_POWER_CURSEOFRA_LR</rolloverid>
+		<icon>egyptian\static_color\abilities\mummy_ability_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">FimbulwinterBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" loop="" fadein="2.0">FimbulwinterExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>25.0</activetime>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<fasteststriketime>5.0</fasteststriketime>
+		<sloweststriketime>10.0</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>55.0</repeatcost>
+		<lighting>gp_fimbulwinter</lighting>
+		<snowpercent>0.66</snowpercent>
+		<wolfproto>MummyCurseOfRaCheat</wolfproto>
+		<wolfproto>MinionCurseOfRaCheat</wolfproto>
+		<wolfvfx>VFXFimbulwinter</wolfvfx>
+		<wolfcountsoftcap>40</wolfcountsoftcap>
+		<wolfcounthardcap>60</wolfcounthardcap>
+		<packsize>8</packsize>
+		<mainpacktargettype>AbstractSettlement</mainpacktargettype>
+		<numextramainpackspawns>1</numextramainpackspawns>
+		<minipacksize>2</minipacksize>
+		<minipacktargettype>VillageCenter</minipacktargettype>
+		<packspawnradius>14.0</packspawnradius>
+		<packscaninterval>5.0</packscaninterval>
+		<packwanderdistance>25.0</packwanderdistance>
+		<minpacktargetspawnradius>15.0</minpacktargetspawnradius>
+		<maxpacktargetspawnradius>30.0</maxpacktargetspawnradius>
+		<maxpackwanderdistance>45.0</maxpackwanderdistance>
+		<spawntargetevalradius>20.0</spawntargetevalradius>
+		<packattacksearchradius>30.0</packattacksearchradius>
+		<snowdrift target="AbstractTownCenter">SnowDriftSettlement</snowdrift>
+		<snowdrift target="Settlement">SnowDriftSettlement</snowdrift>
+		<snowdrift target="AbstractFortress">SnowDriftSettlement</snowdrift>
+		<snowdrift target="LogicalTypeFindBarracks">SnowDriftBarracks</snowdrift>
+		<snowdrift target="ArcheryRange">SnowDriftArchery</snowdrift>
+		<snowdrift target="Stable">SnowDriftStable</snowdrift>
+		<snowdrift target="AbstractTower">SnowDriftTower</snowdrift>
+		<snowdrift target="Obelisk">SnowDriftTower</snowdrift>
+		<snowdrift target="Lighthouse">SnowDriftTower</snowdrift>
+		<snowdrift target="SiegeWorks">SnowDriftSiegeWorks</snowdrift>
+		<snowdrift target="GreatHall">SnowDriftTemple</snowdrift>
+		<snowdrift target="Shrine">SnowDriftTower</snowdrift>
+		<snowdrift target="Temple">SnowDriftTemple</snowdrift>
+	</power>
+</powers>

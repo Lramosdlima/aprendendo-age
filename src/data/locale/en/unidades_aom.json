@@ -88,7 +88,7 @@
         "value": "1.5"
       }
     ],
-    "pontos_de_vida": 150,
+    "pontos_de_vida": 155,
     "dano_cortante": 10,
     "velocidade_de_ataque_atk_s": 1,
     "dps": 10,
@@ -271,7 +271,7 @@
     "velocidade_de_ataque_atk_s": 1.3,
     "dps": 10.4,
     "armadura_anticorte": 20,
-    "armadura_antiperfurante": 10,
+    "armadura_antiperfurante": 15,
     "construcao": [
       {
         "id": 37,
@@ -815,12 +815,12 @@
       }
     ],
     "pontos_de_vida": 65,
-    "dano_cortante": 6,
+    "dano_cortante": 5,
     "alcance": 11,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 9,
-    "armadura_anticorte": 30,
-    "armadura_antiperfurante": 15,
+    "dps": 7.5,
+    "armadura_anticorte": 20,
+    "armadura_antiperfurante": 25,
     "construcao": [
       {
         "id": 39,
@@ -933,11 +933,11 @@
         "value": "1.75"
       }
     ],
-    "pontos_de_vida": 105,
+    "pontos_de_vida": 110,
     "dano_cortante": 8,
     "velocidade_de_ataque_atk_s": 1,
     "dps": 8,
-    "armadura_anticorte": 15,
+    "armadura_anticorte": 20,
     "armadura_antiperfurante": 45,
     "construcao": [
       {
@@ -1337,7 +1337,7 @@
         "value": "1.5"
       }
     ],
-    "pontos_de_vida": 140,
+    "pontos_de_vida": 155,
     "dano_cortante": 13.5,
     "velocidade_de_ataque_atk_s": 1.5,
     "dps": 20.25,
@@ -1349,7 +1349,7 @@
         "nome": "Quartel Militar"
       }
     ],
-    "comida": 65,
+    "comida": 75,
     "madeira": 0,
     "ouro": 40,
     "populacao": 3,
@@ -1504,9 +1504,9 @@
       }
     ],
     "pontos_de_vida": 95,
-    "dano_cortante": 4,
+    "dano_cortante": 5,
     "velocidade_de_ataque_atk_s": 1.1,
-    "dps": 4.4,
+    "dps": 5.5,
     "armadura_anticorte": 40,
     "armadura_antiperfurante": 5,
     "construcao": [
@@ -1857,7 +1857,7 @@
         "value": "2.5"
       }
     ],
-    "pontos_de_vida": 110,
+    "pontos_de_vida": 120,
     "dano_cortante": 4,
     "dano_contundente": 11,
     "velocidade_de_ataque_atk_s": 1.2,
@@ -2174,7 +2174,7 @@
         "value": "2"
       }
     ],
-    "pontos_de_vida": 170,
+    "pontos_de_vida": 165,
     "dano_cortante": 13,
     "velocidade_de_ataque_atk_s": 1.2,
     "dps": 15.6,
@@ -2367,11 +2367,11 @@
         "value": "0.25%"
       }
     ],
-    "pontos_de_vida": 250,
-    "dano_perfurante": 18,
+    "pontos_de_vida": 300,
+    "dano_perfurante": 20,
     "alcance": 15,
     "velocidade_de_ataque_atk_s": 1.5,
-    "dps": 27,
+    "dps": 30,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 20,
     "construcao": [
@@ -2920,7 +2920,7 @@
       }
     ],
     "comida": 0,
-    "madeira": 225,
+    "madeira": 200,
     "ouro": 0,
     "favor": 14,
     "populacao": 2,
@@ -3042,8 +3042,8 @@
     "dano_cortante": 11,
     "velocidade_de_ataque_atk_s": 1,
     "dps": 11,
-    "armadura_anticorte": 30,
-    "armadura_antiperfurante": 55,
+    "armadura_anticorte": 40,
+    "armadura_antiperfurante": 50,
     "construcao": [
       {
         "id": 24,
@@ -3055,7 +3055,7 @@
     "ouro": 90,
     "favor": 6,
     "populacao": 2,
-    "tempo_treinamento": 10,
+    "tempo_treinamento": 9,
     "velocidade_movimento": 4.2,
     "forca_atributos": 273.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -3100,10 +3100,10 @@
     ],
     "counter_de": "Soldados Humanos :aomr_type_human_soldier_icon:",
     "multiplicador": [],
-    "pontos_de_vida": 100,
+    "pontos_de_vida": 200,
     "velocidade_de_ataque_atk_s": 0,
     "armadura_anticorte": 5,
-    "armadura_antiperfurante": 45,
+    "armadura_antiperfurante": 50,
     "construcao": [
       {
         "id": 24,
@@ -3229,7 +3229,7 @@
         "value": "0.25%"
       }
     ],
-    "pontos_de_vida": 300,
+    "pontos_de_vida": 320,
     "dano_cortante": 16,
     "velocidade_de_ataque_atk_s": 1.2,
     "dps": 19.2,
@@ -3660,7 +3660,7 @@
     "favor": 0,
     "populacao": 2,
     "tempo_treinamento": 10,
-    "velocidade_movimento": 3.6,
+    "velocidade_movimento": 3.8,
     "forca_atributos": 34.475,
     "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -3948,10 +3948,10 @@
       }
     ],
     "pontos_de_vida": 420,
-    "dano_perfurante": 11,
+    "dano_perfurante": 12,
     "alcance": 16,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 11,
+    "dps": 12,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 60,
     "construcao": [
@@ -4014,10 +4014,10 @@
       }
     ],
     "pontos_de_vida": 740,
-    "dano_cortante": 22,
+    "dano_cortante": 24,
     "dano_contundente": 14,
     "velocidade_de_ataque_atk_s": 1.1,
-    "dps": 24.2,
+    "dps": 26.4,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 60,
     "construcao": [
@@ -4284,11 +4284,11 @@
         "value": "0.5%"
       }
     ],
-    "pontos_de_vida": 600,
-    "dano_cortante": 36,
+    "pontos_de_vida": 700,
+    "dano_cortante": 40,
     "dano_contundente": 30,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 72,
+    "dps": 80,
     "armadura_anticorte": 55,
     "armadura_antiperfurante": 70,
     "construcao": [
@@ -4359,10 +4359,10 @@
       }
     ],
     "pontos_de_vida": 720,
-    "dano_cortante": 20,
+    "dano_cortante": 22,
     "dano_contundente": 30,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 20,
+    "dps": 22,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 60,
     "construcao": [
@@ -4708,7 +4708,7 @@
         "value": "0.25%"
       }
     ],
-    "pontos_de_vida": 400,
+    "pontos_de_vida": 500,
     "dano_perfurante": 20,
     "alcance": 15,
     "velocidade_de_ataque_atk_s": 1.8,
@@ -5182,7 +5182,7 @@
     "favor": 0,
     "populacao": 3,
     "tempo_treinamento": 16,
-    "velocidade_movimento": 4,
+    "velocidade_movimento": 4.3,
     "forca_atributos": 121.866666666667,
     "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -5482,13 +5482,13 @@
         "value": "1.5"
       }
     ],
-    "pontos_de_vida": 155,
+    "pontos_de_vida": 170,
     "dano_cortante": 15,
     "velocidade_de_ataque_atk_s": 1.5,
     "dps": 22.5,
     "armadura_anticorte": 15,
     "armadura_antiperfurante": 45,
-    "comida": 115,
+    "comida": 130,
     "madeira": 0,
     "ouro": 70,
     "favor": 3,
@@ -6074,7 +6074,7 @@
       }
     ],
     "icon": "aomr_avenger_icon",
-    "pontos_de_vida": 600,
+    "pontos_de_vida": 700,
     "velocidade_de_ataque_atk_s": 1,
     "dps": 28,
     "armadura_anticorte": 60,
@@ -6126,7 +6126,7 @@
       }
     ],
     "icon": "aomr_phoenix_icon",
-    "pontos_de_vida": 500,
+    "pontos_de_vida": 600,
     "velocidade_de_ataque_atk_s": 2.7,
     "dps": 135,
     "armadura_anticorte": 15,
@@ -6338,7 +6338,7 @@
       }
     ],
     "icon": "aomr_centimanus_icon",
-    "pontos_de_vida": 900,
+    "pontos_de_vida": 960,
     "velocidade_de_ataque_atk_s": 1.5,
     "dps": 82.5,
     "armadura_anticorte": 60,
@@ -6390,7 +6390,7 @@
       }
     ],
     "icon": "aomr_argus_icon",
-    "pontos_de_vida": 760,
+    "pontos_de_vida": 840,
     "velocidade_de_ataque_atk_s": 1.5,
     "dps": 75,
     "armadura_anticorte": 60,
@@ -6400,7 +6400,7 @@
     "ouro": 250,
     "populacao": 4,
     "tempo_treinamento": 20,
-    "velocidade_movimento": 4.1,
+    "velocidade_movimento": 4.3,
     "dano_cortante": 50
   },
   {
@@ -6449,7 +6449,7 @@
     "armadura_antiperfurante": 50,
     "comida": 0,
     "madeira": 0,
-    "ouro": 220,
+    "ouro": 200,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
@@ -6497,7 +6497,7 @@
     "pontos_de_vida": 1200,
     "velocidade_de_ataque_atk_s": 1.33,
     "dps": 53.2,
-    "armadura_anticorte": 45,
+    "armadura_anticorte": 50,
     "armadura_antiperfurante": 65,
     "comida": 220,
     "madeira": 0,
@@ -6550,7 +6550,7 @@
       }
     ],
     "icon": "aomr_qinglong_icon",
-    "pontos_de_vida": 600,
+    "pontos_de_vida": 720,
     "velocidade_de_ataque_atk_s": 0,
     "dps": 0,
     "armadura_anticorte": 35,
@@ -6605,7 +6605,7 @@
       }
     ],
     "icon": "aomr_zhuque_icon",
-    "pontos_de_vida": 650,
+    "pontos_de_vida": 700,
     "velocidade_de_ataque_atk_s": 4,
     "dps": 80,
     "armadura_anticorte": 30,
@@ -7921,7 +7921,7 @@
         "value": "0.25%"
       }
     ],
-    "pontos_de_vida": 550,
+    "pontos_de_vida": 620,
     "dano_perfurante": 40,
     "velocidade_de_ataque_atk_s": 1,
     "dps": 40,
@@ -7937,7 +7937,7 @@
     "favor": 30,
     "populacao": 4,
     "tempo_treinamento": 24,
-    "velocidade_movimento": 4.2,
+    "velocidade_movimento": 4,
     "forca_atributos": 541.2,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "fraco_contra": "Hero :aomr_type_hero_icon:",
@@ -8532,7 +8532,7 @@
     ],
     "ouro": 250,
     "favor": 5,
-    "populacao": 3,
+    "populacao": 4,
     "tempo_treinamento": 18,
     "velocidade_movimento": 3.8,
     "forca_atributos": 22.133333333333,
@@ -8643,7 +8643,7 @@
       }
     ],
     "icon": "aomr_harpy_icon",
-    "pontos_de_vida": 240,
+    "pontos_de_vida": 380,
     "velocidade_de_ataque_atk_s": 1.8,
     "dps": 27,
     "armadura_anticorte": 15,
@@ -8684,10 +8684,10 @@
         "nome": "Temple (Greek)"
       }
     ],
-    "madeira": 80,
-    "ouro": 100,
+    "madeira": 0,
+    "ouro": 165,
     "favor": 15,
-    "populacao": 2,
+    "populacao": 1,
     "tempo_treinamento": 20,
     "forca_atributos": -113,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -8737,8 +8737,8 @@
         "nome": "Temple (Greek)"
       }
     ],
-    "madeira": 200,
-    "ouro": 50,
+    "madeira": 230,
+    "ouro": 0,
     "favor": 25,
     "populacao": 3,
     "forca_atributos": -128,
@@ -8800,9 +8800,9 @@
       }
     ],
     "icon": "aomr_siren_icon",
-    "pontos_de_vida": 600,
+    "pontos_de_vida": 720,
     "velocidade_de_ataque_atk_s": 1,
-    "dps": 36,
+    "dps": 40,
     "armadura_anticorte": 60,
     "armadura_antiperfurante": 60,
     "comida": 225,
@@ -8811,7 +8811,7 @@
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.4,
-    "dano_cortante": 36
+    "dano_cortante": 40
   },
   {
     "id": 155,
@@ -8855,14 +8855,14 @@
     "pontos_de_vida": 300,
     "velocidade_de_ataque_atk_s": 1.4,
     "dps": 19.6,
-    "armadura_anticorte": 25,
-    "armadura_antiperfurante": 25,
+    "armadura_anticorte": 10,
+    "armadura_antiperfurante": 35,
     "comida": 0,
     "madeira": 250,
     "ouro": 100,
     "populacao": 2,
     "tempo_treinamento": 25,
-    "velocidade_movimento": 5,
+    "velocidade_movimento": 4.5,
     "dano_perfurante": 14
   },
   {
@@ -8904,18 +8904,18 @@
       }
     ],
     "icon": "aomr_orpheus_icon",
-    "pontos_de_vida": 180,
-    "velocidade_de_ataque_atk_s": 1.2,
-    "dps": 8.4,
-    "armadura_anticorte": 35,
+    "pontos_de_vida": 195,
+    "velocidade_de_ataque_atk_s": 1,
+    "dps": 6,
+    "armadura_anticorte": 40,
     "armadura_antiperfurante": 40,
     "comida": 100,
     "madeira": 50,
     "ouro": 0,
     "populacao": 2,
     "tempo_treinamento": 5,
-    "velocidade_movimento": 4.2,
-    "dano_perfurante": 7
+    "velocidade_movimento": 4.3,
+    "dano_perfurante": 6
   },
   {
     "id": 158,
@@ -9003,13 +9003,13 @@
     ],
     "icon": "aomr_midas_icon",
     "pontos_de_vida": 620,
-    "velocidade_de_ataque_atk_s": 1.15,
-    "dps": 18.4,
+    "velocidade_de_ataque_atk_s": 1.1,
+    "dps": 17.6,
     "armadura_anticorte": 30,
     "armadura_antiperfurante": 45,
     "comida": 0,
     "madeira": 0,
-    "ouro": 350,
+    "ouro": 400,
     "populacao": 4,
     "tempo_treinamento": 30,
     "velocidade_movimento": 4.5,
@@ -9050,10 +9050,10 @@
       }
     ],
     "pontos_de_vida": 75,
-    "dano_perfurante": 2,
+    "dano_perfurante": 1,
     "alcance": 4,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 2.6,
+    "dps": 1.3,
     "armadura_anticorte": 5,
     "armadura_antiperfurante": 45,
     "construcao": [
@@ -9109,9 +9109,9 @@
         "value": "7"
       }
     ],
-    "pontos_de_vida": 100,
+    "pontos_de_vida": 110,
     "velocidade_de_ataque_atk_s": 2,
-    "dps": 24,
+    "dps": 20,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 35,
     "construcao": [
@@ -9124,13 +9124,13 @@
     "madeira": 0,
     "ouro": 60,
     "populacao": 2,
-    "velocidade_movimento": 4.8,
+    "velocidade_movimento": 5,
     "forca_atributos": 94.8,
     "forte_contra": "Mythical Creature :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_warrior_priest_icon",
     "tempo_treinamento": 11,
-    "dano_perfurante": 12
+    "dano_perfurante": 10
   },
   {
     "id": 162,
@@ -9281,7 +9281,7 @@
         "value": "2.5"
       }
     ],
-    "pontos_de_vida": 105,
+    "pontos_de_vida": 115,
     "dano_cortante": 7,
     "velocidade_de_ataque_atk_s": 1.2,
     "dps": 8.4,
@@ -9293,7 +9293,7 @@
         "nome": "Noble's Hut"
       }
     ],
-    "comida": 30,
+    "comida": 35,
     "madeira": 0,
     "ouro": 55,
     "populacao": 2,
@@ -9308,7 +9308,7 @@
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_coyote_warrior_icon",
-    "tempo_treinamento": 11
+    "tempo_treinamento": 12
   },
   {
     "id": 165,
@@ -9334,7 +9334,7 @@
     ],
     "counter_de": "Todos👥",
     "multiplicador": [],
-    "pontos_de_vida": 155,
+    "pontos_de_vida": 165,
     "dano_cortante": 20,
     "velocidade_de_ataque_atk_s": 1.6,
     "dps": 32,
@@ -9387,12 +9387,12 @@
         "value": "1.5"
       }
     ],
-    "pontos_de_vida": 95,
+    "pontos_de_vida": 90,
     "dano_perfurante": 10,
     "alcance": 19,
     "velocidade_de_ataque_atk_s": 1.5,
     "dps": 15,
-    "armadura_anticorte": 15,
+    "armadura_anticorte": 10,
     "armadura_antiperfurante": 30,
     "construcao": [
       {
@@ -9401,7 +9401,7 @@
       }
     ],
     "comida": 0,
-    "madeira": 75,
+    "madeira": 80,
     "ouro": 45,
     "populacao": 3,
     "velocidade_movimento": 4.5,
@@ -9409,7 +9409,7 @@
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon: | Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
     "icon": "aomr_eagle_warrior_icon",
-    "tempo_treinamento": 20
+    "tempo_treinamento": 21
   },
   {
     "id": 168,
@@ -9500,9 +9500,9 @@
       }
     ],
     "pontos_de_vida": 160,
-    "dano_cortante": 13,
+    "dano_cortante": 12,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 16.9,
+    "dps": 15.6,
     "armadura_anticorte": 35,
     "armadura_antiperfurante": 20,
     "construcao": [
@@ -9558,10 +9558,10 @@
         "value": "1.5"
       }
     ],
-    "pontos_de_vida": 220,
-    "dano_cortante": 19.8,
+    "pontos_de_vida": 180,
+    "dano_cortante": 18,
     "velocidade_de_ataque_atk_s": 1.3,
-    "dps": 15.230769230769,
+    "dps": 23.4,
     "armadura_anticorte": 20,
     "armadura_antiperfurante": 40,
     "construcao": [
@@ -9570,9 +9570,9 @@
         "nome": "Great Temple"
       }
     ],
-    "comida": 65,
+    "comida": 60,
     "madeira": 0,
-    "ouro": 95,
+    "ouro": 90,
     "populacao": 3,
     "velocidade_movimento": 5.5,
     "forca_atributos": 217.730769230769,
@@ -9584,7 +9584,8 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon: | Cavalaria :aomr_type_cavalry_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "icon": "aomr_jaguar_rider_icon"
+    "icon": "aomr_jaguar_rider_icon",
+    "tempo_treinamento": 8.5
   },
   {
     "id": 171,
@@ -9625,13 +9626,13 @@
         "value": "0.25%"
       }
     ],
-    "pontos_de_vida": 500,
+    "pontos_de_vida": 600,
     "dano_contundente": 150,
-    "dano_perfurante": 10,
+    "dano_perfurante": 15,
     "alcance": 24,
     "velocidade_de_ataque_atk_s": 3,
-    "dps": 3.333333333333,
-    "armadura_anticorte": 15,
+    "dps": 45,
+    "armadura_anticorte": 25,
     "armadura_antiperfurante": 80,
     "construcao": [
       {
@@ -9648,6 +9649,7 @@
     "forca_atributos": 447.333333333333,
     "forte_contra": "Construction :aomr_type_building_icon:",
     "fraco_contra": "Infantry :aomr_type_infantry_icon: | Hero :aomr_type_hero_icon:",
-    "icon": "aomr_quinametzin_icon"
+    "icon": "aomr_quinametzin_icon",
+    "tempo_treinamento": 20
   }
 ]
