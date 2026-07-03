@@ -101,6 +101,35 @@ export function buildRankHeroFromProfile(profile: AomStatsSnapshotFields): {
   return { player, row1v1, rr: profile.aomstatsRr };
 }
 
+export function buildRankHeroFromRacePlayer(player: {
+  aomstatsId: string | null;
+  aomstatsAlias: string | null;
+  displayName: string | null;
+  logoPath: string | null;
+  aomstatsClan: string | null;
+  rr: number;
+  wins: number | null;
+  losses: number | null;
+  winRate: string | null;
+  rank: string | null;
+}) {
+  return buildRankHeroFromProfile({
+    aomstatsId: player.aomstatsId,
+    aomstatsAlias: player.aomstatsAlias,
+    logoPath: player.logoPath,
+    logoPathLocked: false,
+    aomstatsRr: player.rr,
+    aomstatsWins: player.wins,
+    aomstatsLosses: player.losses,
+    aomstatsWinRate: player.winRate,
+    aomstatsRank: player.rank,
+    aomstatsSnapshotAt: null,
+    aomstatsClan: player.aomstatsClan,
+    clanId: null,
+    displayName: player.displayName,
+  });
+}
+
 export function profileRowToAomStatsFields(row: {
   aomstats_id: string | null;
   logo_path: string | null;

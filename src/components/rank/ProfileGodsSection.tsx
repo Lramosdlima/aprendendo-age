@@ -1,21 +1,32 @@
 import { useMemo, useState } from "react";
 
+import type { GodInsigniaKind } from "@/components/gods/GodInsigniaBadges";
 import { GodAchievementCard } from "@/components/rank/rankProfileUi";
 import { useTranslation } from "@/hooks/useTranslation";
-import { activePlayerGodsByRr, playerGodToStatRow, type PlayerGodAggregate } from "@/lib/clanGodsApi";
+import {
+  activePlayerGodsByRr,
+  computePlayerGodInsigniaMap,
+  playerGodToStatRow,
+  type PlayerGodAggregate,
+} from "@/lib/clanGodsApi";
 import { cn } from "@/lib/cn";
 
 export function ProfileGodsSection({
   gods,
   loading,
+  titleKey = "auth.godsTitle",
+  subtitleKey = "auth.godsSubtitle",
 }: {
   gods: PlayerGodAggregate[];
   loading?: boolean;
+  titleKey?: string;
+  subtitleKey?: string;
 }) {
   const { t } = useTranslation();
   const [showAll, setShowAll] = useState(false);
 
   const activeGods = useMemo(() => activePlayerGodsByRr(gods), [gods]);
+  const insigniaMap = useMemo(() => computePlayerGodInsigniaMap(gods), [gods]);
   const topGods = activeGods.slice(0, 3);
   const displayGods = showAll ? activeGods : topGods;
   const hasAnyData = activeGods.length > 0;
@@ -32,9 +43,9 @@ export function ProfileGodsSection({
         id="profile-gods-heading"
         className="text-center font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-zinc-100 sm:text-2xl"
       >
-        {t("auth.godsTitle")}
+        {t(titleKey)}
       </h2>
-      <p className="mx-auto mt-2 max-w-md text-center text-[11px] text-zinc-500">{t("auth.godsSubtitle")}</p>
+      <p className="mx-auto mt-2 max-w-md text-center text-[11px] text-zinc-500">{t(subtitleKey)}</p>
 
       {loading ? (
         <div className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center rounded-2xl border border-aom-border/50 bg-zinc-950/60 py-12 text-center">
@@ -61,7 +72,11 @@ export function ProfileGodsSection({
                 <p className="mb-2 text-center font-mono text-[9px] font-medium uppercase tracking-[0.35em] text-zinc-500">
                   {i + 1} / {displayGods.length}
                 </p>
-                <GodAchievementCard god={playerGodToStatRow(god)} t={t} />
+                <GodAchievementCard
+                  god={playerGodToStatRow(god)}
+                  insignias={(insigniaMap[god.slug] ?? []) as GodInsigniaKind[]}
+                  t={t}
+                />
               </div>
             ))}
           </div>

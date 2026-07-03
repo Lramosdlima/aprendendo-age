@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { PlayerClanLink } from "@/components/jogadores/PlayerClanLink";
+import { PlayerProfileLink } from "@/components/jogadores/PlayerProfileLink";
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { TierPortraitBadge } from "@/components/rank/TierPortraitBadge";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -22,7 +23,7 @@ function PlayerAvatar({
   player: AomRacePlayer;
   ringClass: string;
 }) {
-  return (
+  const avatar = (
     <div
       className={cn(
         "relative h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 bg-zinc-950 p-0.5 shadow-md sm:h-11 sm:w-11",
@@ -45,6 +46,8 @@ function PlayerAvatar({
       )}
     </div>
   );
+
+  return <PlayerProfileLink player={player} className="inline-block">{avatar}</PlayerProfileLink>;
 }
 
 export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
@@ -178,9 +181,11 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                         <PlayerAvatar player={player} ringClass={theme.stepRing} />
                       </td>
                       <td className="px-3 py-3">
-                        <span className="font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
-                          {label}
-                        </span>
+                        <PlayerProfileLink player={player} className="inline-block">
+                          <span className="font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100 transition hover:text-amber-100">
+                            {label}
+                          </span>
+                        </PlayerProfileLink>
                       </td>
                       <td className="px-2 py-3 text-center">
                         <PlayerClanLink player={player} size="sm" className="justify-center" />
@@ -234,9 +239,11 @@ export function JogadoresAomTab({ players }: { players: AomRacePlayer[] }) {
                     <span className="mt-2 w-5 shrink-0 text-center text-xs tabular-nums text-zinc-500">{i + 1}</span>
                     <PlayerAvatar player={player} ringClass={theme.stepRing} />
                     <div className="min-w-0 flex-1">
-                      <p className="truncate font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100">
-                        {label}
-                      </p>
+                      <PlayerProfileLink player={player} className="inline-block max-w-full">
+                        <p className="truncate font-[family-name:var(--font-display)] font-semibold tracking-wide text-zinc-100 transition hover:text-amber-100">
+                          {label}
+                        </p>
+                      </PlayerProfileLink>
                       <p className="mt-0.5 truncate text-xs text-zinc-400">{cls.categoryLabel}</p>
                     </div>
                     <PlayerClanLink player={player} size="sm" />

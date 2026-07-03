@@ -1,5 +1,6 @@
 import { Fragment, type ReactNode, useMemo, useState } from "react";
 
+import { GodInsignias, PLAYER_INSIGNIA_ORDER, type GodInsigniaKind } from "@/components/gods/GodInsigniaBadges";
 import { ModalApp } from "@/components/ui/ModalApp";
 import { useTranslation } from "@/hooks/useTranslation";
 import {
@@ -544,7 +545,15 @@ export function RankProfileHero({
   );
 }
 
-export function GodAchievementCard({ god, t }: { god: GodStatRow; t: (key: string) => string }) {
+export function GodAchievementCard({
+  god,
+  t,
+  insignias,
+}: {
+  god: GodStatRow;
+  t: (key: string) => string;
+  insignias?: GodInsigniaKind[];
+}) {
   const cls = getRankClassification(god.elo);
   const theme = TIER_ACHIEVEMENT_THEME[cls.tierId];
   const portrait = getGodPortraitUrl(god.god);
@@ -552,8 +561,43 @@ export function GodAchievementCard({ god, t }: { god: GodStatRow; t: (key: strin
   const godRomanStep = rankRomanStepFromRr(god.elo);
   const godRomanMedallion = rankRomanMedallionClass(cls.tierId);
 
+  function playerInsigniaLabelKey(id: GodInsigniaKind): string {
+    switch (id) {
+      case "mostPlayed":
+        return "auth.godsInsigniaMostPlayed";
+      case "undefeated":
+        return "auth.godsInsigniaUndefeated";
+      case "highlight":
+        return "auth.godsInsigniaHighlight";
+      default:
+        return "auth.godsInsigniaMostPlayed";
+    }
+  }
+
+  function playerInsigniaHintKey(id: GodInsigniaKind): string {
+    switch (id) {
+      case "mostPlayed":
+        return "auth.godsInsigniaMostPlayedHint";
+      case "undefeated":
+        return "auth.godsInsigniaUndefeatedHint";
+      case "highlight":
+        return "auth.godsInsigniaHighlightHint";
+      default:
+        return "auth.godsInsigniaMostPlayedHint";
+    }
+  }
+
   return (
-    <AchievementShell tierId={cls.tierId} className="h-full">
+    <AchievementShell tierId={cls.tierId} className="relative h-full">
+      {insignias && insignias.length > 0 ? (
+        <GodInsignias
+          insignias={insignias}
+          order={PLAYER_INSIGNIA_ORDER}
+          labelKey={playerInsigniaLabelKey}
+          hintKey={playerInsigniaHintKey}
+          t={t}
+        />
+      ) : null}
       <div className="flex w-full min-w-0 max-w-full flex-col items-center px-3 pb-8 pt-7 sm:px-4 sm:pb-9 sm:pt-8 md:px-5">
         <p className="mb-4 text-center font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-white/85">
           {t("pages.rank.godSection")}

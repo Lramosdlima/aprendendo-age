@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
+import { PlayerProfileLink } from "@/components/jogadores/PlayerProfileLink";
 import { getFormRankPortraitPath } from "@/components/rank/rankProfileUi";
 import { TierPortraitBadge } from "@/components/rank/TierPortraitBadge";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -123,20 +124,22 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
 
       <div className="relative p-4">
         <div className="flex items-start gap-3">
-          <div
-            className={cn(
-              "relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 bg-zinc-950 p-0.5 shadow-md",
-              theme.stepRing,
-            )}
-          >
-            {player.logoPath ? (
-              <img src={player.logoPath} alt="" className="h-full w-full rounded-full object-cover" width={44} height={44} />
-            ) : (
-              <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-sm text-zinc-500">
-                ?
-              </div>
-            )}
-          </div>
+          <PlayerProfileLink player={player} onNavigate={onClose} className="block shrink-0">
+            <div
+              className={cn(
+                "relative h-12 w-12 overflow-hidden rounded-full border-2 bg-zinc-950 p-0.5 shadow-md transition hover:brightness-110",
+                theme.stepRing,
+              )}
+            >
+              {player.logoPath ? (
+                <img src={player.logoPath} alt="" className="h-full w-full rounded-full object-cover" width={44} height={44} />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center rounded-full bg-zinc-800 text-sm text-zinc-500">
+                  ?
+                </div>
+              )}
+            </div>
+          </PlayerProfileLink>
 
           <div className="min-w-0 flex-1 overflow-hidden">
             <div className="flex min-w-0 items-center gap-2">
@@ -159,9 +162,11 @@ export function RacePlayerPopover({ player, anchorEl, onClose }: RacePlayerPopov
                   </span>
                 )
               ) : null}
-              <p className="truncate whitespace-nowrap font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50">
-                {label}
-              </p>
+              <PlayerProfileLink player={player} onNavigate={onClose} className="min-w-0">
+                <p className="truncate whitespace-nowrap font-[family-name:var(--font-display)] text-base font-semibold tracking-wide text-zinc-50 transition hover:text-amber-100">
+                  {label}
+                </p>
+              </PlayerProfileLink>
             </div>
             <p className="mt-0.5 truncate whitespace-nowrap text-[11px] text-zinc-400">{cls.categoryLabel}</p>
           </div>

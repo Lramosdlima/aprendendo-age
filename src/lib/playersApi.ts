@@ -80,6 +80,11 @@ export function playerClanPagePath(player: AomRacePlayer): string | null {
   return `/clans/${clanSlugFromTag(tag)}`;
 }
 
+/** Rota pública do perfil do jogador (UUID em `profiles.id`). */
+export function playerProfilePagePath(profileId: string, locale: "pt" | "en" = "pt"): string {
+  return locale === "en" ? `/player/${profileId}` : `/jogador/${profileId}`;
+}
+
 /** Jogadores sincronizados vinculados a um clã (`profiles.clan_id`). */
 export async function fetchClanPlayers(clanId: string): Promise<AomRacePlayer[]> {
   if (!isSupabaseConfigured()) return [];
@@ -121,4 +126,25 @@ export async function fetchAomRacePlayers(): Promise<AomRacePlayer[]> {
   return (data ?? [])
     .map((row) => mapRow(row as Parameters<typeof mapRow>[0]))
     .filter((p): p is AomRacePlayer => p != null);
+}
+
+/** Perfil público de um jogador sincronizado ao AoM Stats. */
+export async function fetchAomRacePlayerById(profileId: string): Promise<AomRacePlayer | null> {
+  if (!isSupabaseConfigured()) return null;
+
+  const supabase = createSupabasePublicClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .select(PUBLIC_PLAYER_SELECT)
+    .eq("id", profileId)
+    .not("aomstats_rr", "is", null)
+    .not("aomstats_id", "is", null)
+    .maybeSingle();
+
+  if (error) throw new Error(error.message);
+  if (!data) return null;
+
+  return mapRow(data as Parameters<typeof mapRow>[0]);
 }

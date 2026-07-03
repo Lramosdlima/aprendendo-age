@@ -17,6 +17,11 @@ export type AuthSection = "login" | "register" | "profile";
 
 export type PlayersSection = "jogadores";
 
+const PLAYER_PROFILE_SEGMENT: Record<Locale, string> = {
+  pt: "jogador",
+  en: "player",
+};
+
 const PLAYERS_SEGMENT: Record<Locale, string> = {
   pt: "jogadores-aom",
   en: "aom-players",
@@ -140,6 +145,12 @@ export function swapLocaleInPath(pathname: string, toLocale: Locale): string {
       return `/${parts.join("/")}${search}`;
     }
     return `${pathname}`;
+  }
+
+  const fromLocaleProfile: Locale = toLocale === "pt" ? "en" : "pt";
+  if (parts[0] === PLAYER_PROFILE_SEGMENT[fromLocaleProfile]) {
+    parts[0] = PLAYER_PROFILE_SEGMENT[toLocale];
+    return `/${parts.join("/")}${search}`;
   }
 
   const authSection = authSectionFromPathSegment(parts[0]!);

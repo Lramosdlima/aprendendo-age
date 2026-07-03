@@ -28,6 +28,7 @@ import { FormRankPage } from "@/pages/FormRankPage";
 import { JogadoresAomPage } from "@/pages/JogadoresAomPage";
 import { LinksStreamersPage } from "@/pages/LinksStreamersPage";
 import { LoginPage } from "@/pages/LoginPage";
+import { PublicPlayerProfilePage } from "@/pages/PublicPlayerProfilePage";
 import { ProfilePage } from "@/pages/ProfilePage";
 import { RegisterPage } from "@/pages/RegisterPage";
 import { RankPage } from "@/pages/RankPage";
@@ -121,6 +122,8 @@ export default function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="cadastro" element={<RegisterPage />} />
           <Route path="register" element={<RegisterPage />} />
+          <Route path="jogador/:id" element={<PublicPlayerProfilePage />} />
+          <Route path="player/:id" element={<PublicPlayerProfilePage />} />
           <Route path="perfil" element={<ProfilePage />} />
           <Route path="profile" element={<ProfilePage />} />
           <Route path="home" element={<Navigate to="/" replace />} />
