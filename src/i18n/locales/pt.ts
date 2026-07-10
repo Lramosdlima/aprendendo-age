@@ -133,6 +133,7 @@ export const ptMessages: TranslationTree = {
       power: "Poder não encontrado.",
       villager: "Aldeão não encontrado.",
       tech: "Tecnologia não encontrada.",
+      relic: "Relíquia não encontrada.",
       start: "Start não encontrado.",
       record: "Registro não encontrado.",
     },
@@ -156,6 +157,7 @@ export const ptMessages: TranslationTree = {
     units: "Unidades",
     villagers: "Aldeões",
     maps: "Mapas",
+    reliquias: "Relíquias",
     technologies: "Tecnologias",
     rank: "Rank (RR)",
     players: "Jogadores AoM",
@@ -215,6 +217,11 @@ export const ptMessages: TranslationTree = {
       title: "Mapas",
       description: "Origem, ranqueada e tipo!",
       filterPlaceholder: "Filtrar por nome ou tipo…",
+    },
+    reliquias: {
+      title: "Relíquias",
+      description: "Bônus de mapa — capture com heróis e guarneça no templo.",
+      filterPlaceholder: "Filtrar por nome ou efeito…",
     },
     panteoes: {
       title: "Panteões",

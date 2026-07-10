@@ -12,6 +12,7 @@ const LIST_INDEX_SECTIONS = new Set<LocaleSection>([
   "deuses",
   "poderes",
   "mapas",
+  "reliquias",
   "starts",
   "tecnologias",
   "unidades",
@@ -52,6 +53,7 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
     { to: localeSectionPath(locale, "unidades"), labelKey: "nav.units" },
     { to: localeSectionPath(locale, "aldeoes"), labelKey: "nav.villagers" },
     { to: localeSectionPath(locale, "mapas"), labelKey: "nav.maps" },
+    { to: localeSectionPath(locale, "reliquias"), labelKey: "nav.reliquias" },
     { to: localeSectionPath(locale, "tecnologias"), labelKey: "nav.technologies" },
     {
       to: "/rank",

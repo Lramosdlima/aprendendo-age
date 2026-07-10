@@ -4,6 +4,7 @@ import deusesJson from "./locale/pt/deuses_aom.json";
 import erasJson from "./locale/pt/eras.json";
 import godpowersJson from "./locale/pt/godpowers.json";
 import mapasJson from "./locale/pt/mapas.json";
+import reliquiasJson from "./locale/pt/reliquias.json";
 
 /** Entrada em `mapas.json` — campos sim/não são booleanos para i18n. */
 export type Mapa = {
@@ -143,6 +144,18 @@ export type Godpower = {
 
 export const godpowers = godpowersJson as Godpower[];
 
+/** Entrada em `reliquias.json` — bônus de mapa obtidos em templos. */
+export type Relic = {
+  id: number;
+  nome: string;
+  ingles?: string;
+  icon?: string;
+  descricao_resumida?: string;
+  descricao_avancada?: string;
+};
+
+export const reliquias = reliquiasJson as Relic[];
+
 /** Entrada em `tecnologias.json` — custos e textos opcionais conforme a linha. */
 export type Tecnologia = {
   nome: string;
@@ -212,6 +225,7 @@ export const deusById = new Map(deuses.map((d) => [d.id, d]));
 export const panteaoById = new Map(panteoes.map((p) => [p.id, p]));
 export const eraById = new Map(eras.map((e) => [e.id, e]));
 export const godpowerById = new Map(godpowers.map((g) => [g.id, g]));
+export const reliquiaById = new Map(reliquias.map((r) => [r.id, r]));
 export const construcaoById = new Map(construcoes.map((c) => [c.id, c]));
 export const unidadeById = new Map(unidades.map((u) => [u.id, u]));
 export const aldeaoById = new Map(aldeoes.map((a) => [a.id, a]));
@@ -231,6 +245,10 @@ export const eraSlugById = eraSlugMaps.slugById;
 const godpowerSlugMaps = buildRecordSlugMaps(godpowers, (g) => g.nome);
 export const godpowerBySlug = godpowerSlugMaps.bySlug;
 export const godpowerSlugById = godpowerSlugMaps.slugById;
+
+const reliquiaSlugMaps = buildRecordSlugMaps(reliquias, (r) => r.nome);
+export const reliquiaBySlug = reliquiaSlugMaps.bySlug;
+export const reliquiaSlugById = reliquiaSlugMaps.slugById;
 
 const construcaoSlugMaps = buildRecordSlugMaps(construcoes, (c) => c.nome);
 export const construcaoBySlug = construcaoSlugMaps.bySlug;

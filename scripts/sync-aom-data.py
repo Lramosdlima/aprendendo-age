@@ -7,6 +7,7 @@ Atualiza, conforme seleção:
   - tecnologias.json (PT + EN)
   - godpowers.json (PT + EN)
   - construcoes.json (PT + EN)
+  - reliquias.json (PT + EN)
 
 Exemplos:
   python scripts/sync-aom-data.py --dry-run
@@ -41,6 +42,10 @@ DEFAULTS = {
     "construcoes": {
         "script": "merge-construcoes-aom.py",
         "args": ["--ids", "1-80"],
+    },
+    "reliquias": {
+        "script": "merge-relics-aom.py",
+        "args": ["--ids", "1-114"],
     },
 }
 
@@ -89,7 +94,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--only",
-        help="Catálogos separados por vírgula: unidades,tecnologias,godpowers,construcoes",
+        help="Catálogos separados por vírgula: unidades,tecnologias,godpowers,construcoes,reliquias",
     )
     parser.add_argument(
         "--locale",

@@ -32,6 +32,8 @@ import { PublicPlayerProfilePage } from "@/pages/PublicPlayerProfilePage";
 import { ProfilePage } from "@/pages/ProfilePage";
 import { RegisterPage } from "@/pages/RegisterPage";
 import { RankPage } from "@/pages/RankPage";
+import { ReliquiasDetailPage } from "@/pages/ReliquiasDetailPage";
+import { ReliquiasPage } from "@/pages/ReliquiasPage";
 import { SecretStartBuilderPage } from "@/pages/SecretStartBuilderPage";
 import { StartDetailPage } from "@/pages/StartDetailPage";
 import { StartsPage } from "@/pages/StartsPage";
@@ -94,6 +96,10 @@ export default function App() {
           <Route path="maps" element={<MapasPage />} />
           <Route path="mapas/:slug" element={<MapaDetailPage />} />
           <Route path="maps/:slug" element={<MapaDetailPage />} />
+          <Route path="reliquias" element={<ReliquiasPage />} />
+          <Route path="relics" element={<ReliquiasPage />} />
+          <Route path="reliquias/:slug" element={<ReliquiasDetailPage />} />
+          <Route path="relics/:slug" element={<ReliquiasDetailPage />} />
           <Route path="tecnologias" element={<TecnologiasPage />} />
           <Route path="technologies" element={<TecnologiasPage />} />
           <Route path="tecnologias/:slug" element={<TecnologiaDetailPage />} />

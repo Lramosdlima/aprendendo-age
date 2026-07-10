@@ -10,6 +10,7 @@ export type LocaleSection =
   | "unidades"
   | "aldeoes"
   | "mapas"
+  | "reliquias"
   | "tecnologias"
   | "starts";
 
@@ -37,6 +38,7 @@ const SECTION_SEGMENT: Record<Locale, Record<LocaleSection, string>> = {
     unidades: "unidades",
     aldeoes: "aldeoes",
     mapas: "mapas",
+    reliquias: "reliquias",
     tecnologias: "tecnologias",
     starts: "starts",
   },
@@ -49,6 +51,7 @@ const SECTION_SEGMENT: Record<Locale, Record<LocaleSection, string>> = {
     unidades: "units",
     aldeoes: "villagers",
     mapas: "maps",
+    reliquias: "relics",
     tecnologias: "technologies",
     starts: "starts",
   },

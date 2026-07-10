@@ -6,6 +6,7 @@ import {
   eras as erasPt,
   godpowers as godpowersPt,
   mapas as mapasPt,
+  reliquias as reliquiasPt,
   panteoes as panteoesPt,
   startsBuildOrder as startsBuildOrderPt,
   tecnologias as tecnologiasPt,
@@ -18,6 +19,8 @@ import {
   eraSlugById,
   godpowerBySlug as godpowerBySlugPt,
   godpowerSlugById,
+  reliquiaBySlug as reliquiaBySlugPt,
+  reliquiaSlugById,
   construcaoBySlug as construcaoBySlugPt,
   construcaoSlugById,
   unidadeBySlug as unidadeBySlugPt,
@@ -31,6 +34,7 @@ import {
   mapaSlugByIndex,
   type Mapa,
   type Godpower,
+  type Relic,
   type Tecnologia,
   type Unidade,
   type StartBuildOrder,
@@ -42,6 +46,7 @@ import deusesEnJson from "@/data/locale/en/deuses_aom.json";
 import erasEnJson from "@/data/locale/en/eras.json";
 import godpowersEnJson from "@/data/locale/en/godpowers.json";
 import mapasEnJson from "@/data/locale/en/mapas.json";
+import reliquiasEnJson from "@/data/locale/en/reliquias.json";
 import panteoesEnJson from "@/data/locale/en/panteoes.json";
 import startsEnJson from "@/data/locale/en/starts_build_order.json";
 import tecnologiasEnJson from "@/data/locale/en/tecnologias.json";
@@ -53,6 +58,7 @@ const deusesEn = deusesEnJson as typeof deusesPt;
 const erasEn = erasEnJson as typeof erasPt;
 const godpowersEn = godpowersEnJson as Godpower[];
 const mapasEn = mapasEnJson as Mapa[];
+const reliquiasEn = reliquiasEnJson as Relic[];
 const panteoesEn = panteoesEnJson as typeof panteoesPt;
 const startsBuildOrderEn = startsEnJson as StartBuildOrder[];
 const tecnologiasEn = tecnologiasEnJson as Tecnologia[];
@@ -93,6 +99,7 @@ export type LocaleCatalog = {
   deuses: typeof deusesPt;
   eras: typeof erasPt;
   godpowers: Godpower[];
+  reliquias: Relic[];
   mapas: Mapa[];
   panteoes: typeof panteoesPt;
   startsBuildOrder: StartBuildOrder[];
@@ -102,6 +109,7 @@ export type LocaleCatalog = {
   panteaoById: Map<number, (typeof panteoesPt)[number]>;
   eraById: Map<number, (typeof erasPt)[number]>;
   godpowerById: Map<number, Godpower>;
+  reliquiaById: Map<number, Relic>;
   construcaoById: Map<number, (typeof construcoesPt)[number]>;
   unidadeById: Map<number, Unidade>;
   aldeaoById: Map<number, (typeof aldeoesPt)[number]>;
@@ -115,6 +123,8 @@ export type LocaleCatalog = {
   eraSlugById: Map<number, string>;
   godpowerBySlug: Map<string, Godpower>;
   godpowerSlugById: Map<number, string>;
+  reliquiaBySlug: Map<string, Relic>;
+  reliquiaSlugById: Map<number, string>;
   construcaoBySlug: Map<string, (typeof construcoesPt)[number]>;
   construcaoSlugById: Map<number, string>;
   unidadeBySlug: Map<string, Unidade>;
@@ -133,6 +143,7 @@ function buildPtCatalog(): LocaleCatalog {
   const panteaoById = byIdMap(panteoesPt);
   const eraById = byIdMap(erasPt);
   const godpowerById = byIdMap(godpowersPt);
+  const reliquiaById = byIdMap(reliquiasPt);
   const construcaoById = byIdMap(construcoesPt);
   const unidadeById = byIdMap(unidadesPt);
   const aldeaoById = byIdMap(aldeoesPt);
@@ -146,6 +157,7 @@ function buildPtCatalog(): LocaleCatalog {
     deuses: deusesPt,
     eras: erasPt,
     godpowers: godpowersPt,
+    reliquias: reliquiasPt,
     mapas: mapasPt,
     panteoes: panteoesPt,
     startsBuildOrder: startsBuildOrderPt,
@@ -155,6 +167,7 @@ function buildPtCatalog(): LocaleCatalog {
     panteaoById,
     eraById,
     godpowerById,
+    reliquiaById,
     construcaoById,
     unidadeById,
     aldeaoById,
@@ -168,6 +181,8 @@ function buildPtCatalog(): LocaleCatalog {
     eraSlugById,
     godpowerBySlug: godpowerBySlugPt,
     godpowerSlugById,
+    reliquiaBySlug: reliquiaBySlugPt,
+    reliquiaSlugById,
     construcaoBySlug: construcaoBySlugPt,
     construcaoSlugById,
     unidadeBySlug: unidadeBySlugPt,
@@ -187,6 +202,7 @@ function buildEnCatalog(): LocaleCatalog {
   const panteaoById = byIdMap(panteoesEn);
   const eraById = byIdMap(erasEn);
   const godpowerById = byIdMap(godpowersEn);
+  const reliquiaById = byIdMap(reliquiasEn);
   const construcaoById = byIdMap(construcoesEn);
   const unidadeById = byIdMap(unidadesEn);
   const aldeaoById = byIdMap(aldeoesEn);
@@ -200,6 +216,7 @@ function buildEnCatalog(): LocaleCatalog {
     deuses: deusesEn,
     eras: erasEn,
     godpowers: godpowersEn,
+    reliquias: reliquiasEn,
     mapas: mapasEn,
     panteoes: panteoesEn,
     startsBuildOrder: startsBuildOrderEn,
@@ -209,6 +226,7 @@ function buildEnCatalog(): LocaleCatalog {
     panteaoById,
     eraById,
     godpowerById,
+    reliquiaById,
     construcaoById,
     unidadeById,
     aldeaoById,
@@ -222,6 +240,8 @@ function buildEnCatalog(): LocaleCatalog {
     eraSlugById,
     godpowerBySlug: remapSlugMap(godpowerBySlugPt, godpowerById),
     godpowerSlugById,
+    reliquiaBySlug: remapSlugMap(reliquiaBySlugPt, reliquiaById),
+    reliquiaSlugById,
     construcaoBySlug: remapSlugMap(construcaoBySlugPt, construcaoById),
     construcaoSlugById,
     unidadeBySlug: remapSlugMap(unidadeBySlugPt, unidadeById),

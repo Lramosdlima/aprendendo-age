@@ -133,6 +133,7 @@ export const enMessages: TranslationTree = {
       power: "God power not found.",
       villager: "Villager not found.",
       tech: "Technology not found.",
+      relic: "Relic not found.",
       start: "Start not found.",
       record: "Record not found.",
     },
@@ -156,6 +157,7 @@ export const enMessages: TranslationTree = {
     units: "Units",
     villagers: "Villagers",
     maps: "Maps",
+    reliquias: "Relics",
     technologies: "Technologies",
     rank: "Rank (RR)",
     players: "AoM Players",
@@ -215,6 +217,11 @@ export const enMessages: TranslationTree = {
       title: "Maps",
       description: "Origin, ranked, and type!",
       filterPlaceholder: "Filter by name or type…",
+    },
+    reliquias: {
+      title: "Relics",
+      description: "Map bonuses — capture with heroes and garrison in a temple.",
+      filterPlaceholder: "Filter by name or effect…",
     },
     panteoes: {
       title: "Pantheons",

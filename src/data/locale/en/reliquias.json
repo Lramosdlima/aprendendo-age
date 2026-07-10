@@ -1,0 +1,914 @@
+[
+  {
+    "id": 1,
+    "nome": "Adamantine Shingles",
+    "ingles": "Adamantine Shingles",
+    "descricao_resumida": "Increases House hitpoints.",
+    "descricao_avancada": "You have recovered the Adamantine Shingles, which increase House hitpoints.",
+    "icon": "aomr_relic_bricks_icon"
+  },
+  {
+    "id": 2,
+    "nome": "Ame no Murakumo no Tsurugi",
+    "ingles": "Ame no Murakumo no Tsurugi",
+    "descricao_resumida": "Bonus divine damage to units' attacks.",
+    "descricao_avancada": "As long as you wield Ame no Murakumo no Tsurugi, your units will be granted bonus divine damage to their attacks.",
+    "icon": "aomr_relic_torch_icon"
+  },
+  {
+    "id": 3,
+    "nome": "Ankh of Ra",
+    "ingles": "Ankh of Ra",
+    "descricao_resumida": "Provides a small trickle of Favor.",
+    "descricao_avancada": "You have found the Ankh of Ra, which brings extra Favor from the gods.",
+    "icon": "aomr_relic_ankh_icon"
+  },
+  {
+    "id": 4,
+    "nome": "Anvil of Hephaestus",
+    "ingles": "Anvil of Hephaestus",
+    "descricao_resumida": "Armory improvements cost less Gold.",
+    "descricao_avancada": "You have recovered the Anvil of Hephaestus, which makes Armory improvements cost less Gold.",
+    "icon": "aomr_relic_anvil_icon"
+  },
+  {
+    "id": 5,
+    "nome": "Archimedes' Ledger",
+    "ingles": "Archimedes' Ledger",
+    "descricao_resumida": "Siege weapons take less population space.",
+    "descricao_avancada": "You have recovered Archimedes' Ledger, which makes siege weapons take less population space.",
+    "icon": "aomr_relic_scroll_icon"
+  },
+  {
+    "id": 6,
+    "nome": "Armor of Achilles",
+    "ingles": "Armor of Achilles",
+    "descricao_resumida": "Increases the hack armor of infantry.",
+    "descricao_avancada": "You have recovered the Armor of Achilles, increasing the hack armor of your infantry.",
+    "icon": "aomr_relic_armor_icon"
+  },
+  {
+    "id": 7,
+    "nome": "Arrows of the Alfar",
+    "ingles": "Arrows of the Alfar",
+    "descricao_resumida": "Increases the ranged attack of buildings.",
+    "descricao_avancada": "You have found the Arrows of the Alfar, which increase the ranged attack of buildings.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 8,
+    "nome": "Arrows of Heracles",
+    "ingles": "Arrows of Heracles",
+    "descricao_resumida": "Increases the attack of ranged soldiers and ranged heroes.",
+    "descricao_avancada": "You have recovered the poisoned Arrows of Heracles, which increase the attack of ranged soldiers and ranged heroes.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 9,
+    "nome": "Atlatl of Ehecatl",
+    "ingles": "Atlatl of Ehecatl",
+    "descricao_resumida": "Ranged soldiers and buildings shoot faster.",
+    "descricao_avancada": "You have found the Atlatl of Ehecatl, which allows your ranged soldiers and buildings to shoot faster.",
+    "icon": "aomr_relic_atlatl_icon"
+  },
+  {
+    "id": 10,
+    "nome": "Black Lotus",
+    "ingles": "Black Lotus",
+    "descricao_resumida": "Villagers farm faster.",
+    "descricao_avancada": "You have found the Black Lotus, which increases farming rate.",
+    "icon": "aomr_relic_vase_icon"
+  },
+  {
+    "id": 11,
+    "nome": "Blanket of Empress Zoe",
+    "ingles": "Blanket of Empress Zoe",
+    "descricao_resumida": "Buildings are more resistant to siege weapons.",
+    "descricao_avancada": "You have the Blanket of Empress Zoe, which makes buildings more resistant to siege weapons.",
+    "icon": "aomr_relic_blanket_icon"
+  },
+  {
+    "id": 12,
+    "nome": "Blue Crystal Shard",
+    "ingles": "Blue Crystal Shard",
+    "descricao_resumida": "Villagers gather Wood and Gold faster.",
+    "descricao_avancada": "You have recovered the Shard of Blue Crystal, which increases Wood and Gold gather rates.",
+    "icon": "aomr_relic_jewelry_icon"
+  },
+  {
+    "id": 13,
+    "nome": "Bone Shards of Mictlan",
+    "ingles": "Bone Shards of Mictlan",
+    "descricao_resumida": "Myth units return favor upon death.",
+    "descricao_avancada": "You have found the Bone Shards of Mictlan, which allows myth units to return favor on death.",
+    "icon": "aomr_relic_mictlan_icon"
+  },
+  {
+    "id": 14,
+    "nome": "Bow of Artemis",
+    "ingles": "Bow of Artemis",
+    "descricao_resumida": "Ranged soldiers and ranged myth units are cheaper.",
+    "descricao_avancada": "You have located the Bow of Artemis, which makes ranged human soldiers and ranged myth units cheaper.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 15,
+    "nome": "Bridle of Pegasus",
+    "ingles": "Bridle of Pegasus",
+    "descricao_resumida": "A Pegasus scout will periodically appear at your Temple and respawn if killed.",
+    "descricao_avancada": "You have recovered the Golden Bridle of Pegasus. A Pegasus will periodically appear at your Temple.",
+    "icon": "aomr_relic_tools_icon"
+  },
+  {
+    "id": 16,
+    "nome": "Canopic Jar of Imsety",
+    "ingles": "Canopic Jar of Imsety",
+    "descricao_resumida": "Infantry train faster.",
+    "descricao_avancada": "You have recovered the Canopic Jar of Imsety, son of Horus, which makes infantry train faster.",
+    "icon": "aomr_relic_vase_icon"
+  },
+  {
+    "id": 17,
+    "nome": "Cartographer's Hourglass",
+    "ingles": "Cartographer's Hourglass",
+    "descricao_resumida": "Reduces your villager gatherrates and line of sight.",
+    "descricao_avancada": "You have found the cartographer's Hourgless, which reduces villager gatherrates and line of sight.",
+    "icon": "aomr_relic_chains_icon"
+  },
+  {
+    "id": 18,
+    "nome": "Chariot of Cybele",
+    "ingles": "Chariot of Cybele",
+    "descricao_resumida": "A pair of Lions will periodically appear at your Temple and respawn if killed.",
+    "descricao_avancada": "You have captured the Chariot of Cybele. Her pair of Lions will periodically respawn at your Temple.",
+    "icon": "aomr_relic_statue_lion_icon"
+  },
+  {
+    "id": 19,
+    "nome": "Charon's Obol",
+    "ingles": "Charon's Obol",
+    "descricao_resumida": "Villagers return part of their cost upon dying.",
+    "descricao_avancada": "You have found the payment of the Underworld ferryman Charon, allowing fallen Villagers to return part of their cost.",
+    "icon": "aomr_relic_coins_icon"
+  },
+  {
+    "id": 20,
+    "nome": "Crown of Hera",
+    "ingles": "Crown of Hera",
+    "descricao_resumida": "Grants one use of the Lightning Storm God Power when picked up.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_crown_icon"
+  },
+  {
+    "id": 21,
+    "nome": "Cup of Dionysus",
+    "ingles": "Cup of Dionysus",
+    "descricao_resumida": "Grants one use of the Bronze God Power when picked up.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_vase_icon"
+  },
+  {
+    "id": 22,
+    "nome": "Deceptive Wooden Sword",
+    "ingles": "Deceptive Wooden Sword",
+    "descricao_resumida": "Shinobi use their special ability more often.",
+    "descricao_avancada": "You have acquired an ornate wooden sword containing a hidden blade, allowing your Shinobi to use their special abiliy more often.",
+    "icon": "aomr_relic_staff_icon"
+  },
+  {
+    "id": 23,
+    "nome": "Demeter's Cornucopia",
+    "ingles": "Demeter's Cornucopia",
+    "descricao_resumida": "Retrieve this at any cost.",
+    "descricao_avancada": "Demeter's Cornucopia has been restored!",
+    "icon": "aomr_relic_coins_icon"
+  },
+  {
+    "id": 24,
+    "nome": "Demeter's Throne",
+    "ingles": "Demeter's Throne",
+    "descricao_resumida": "Dropsites, Ox Carts, Houses, and Manors cost less and are built faster.",
+    "descricao_avancada": "As long as you welcome Demeter into your home, Dropsites, Ox Carts, Houses, and Manors will cost less and build faster.",
+    "icon": "aomr_relic_coins_icon"
+  },
+  {
+    "id": 25,
+    "nome": "Dragon Palace Crystal",
+    "ingles": "Dragon Palace Crystal",
+    "descricao_resumida": "Walls and Towers gain more hitpoints.",
+    "descricao_avancada": "You have unearthed a Dragon Palace Crystal. Your Walls and Towers now have more hitpoints.",
+    "icon": "aomr_relic_bricks_icon"
+  },
+  {
+    "id": 26,
+    "nome": "Dwarven Calipers",
+    "ingles": "Dwarven Calipers",
+    "descricao_resumida": "Siege weapons are cheaper.",
+    "descricao_avancada": "You have recovered the Dwarven Calipers, which make siege weapons cheaper.",
+    "icon": "aomr_relic_tools_icon"
+  },
+  {
+    "id": 27,
+    "nome": "Dwarven Horseshoes",
+    "ingles": "Dwarven Horseshoes",
+    "descricao_resumida": "Improves cavalry speed.",
+    "descricao_avancada": "You have found the Dwarven Horseshoes, which increase the movement speed of cavalry.",
+    "icon": "aomr_relic_horseshoe_icon"
+  },
+  {
+    "id": 28,
+    "nome": "Ehecailacocozcatl",
+    "ingles": "Ehecailacocozcatl",
+    "descricao_resumida": "All units move faster.",
+    "descricao_avancada": "You have found the wind jewel Ehecailacocozcatl, which increases the movement speed of all units.",
+    "icon": "aomr_relic_ehecailacocozcatl_icon"
+  },
+  {
+    "id": 29,
+    "nome": "Eye of Horus",
+    "ingles": "Eye of Horus",
+    "descricao_resumida": "Town Centers provide more population.",
+    "descricao_avancada": "You have recovered the Eye of Horus, which lets Town Centers support more population.",
+    "icon": "aomr_relic_jewelry_icon"
+  },
+  {
+    "id": 30,
+    "nome": "Eye of Ornlu",
+    "ingles": "Eye of Ornlu",
+    "descricao_resumida": "Increases the attack of counter-infantry units.",
+    "descricao_avancada": "You have recovered the Eye of Ornlu the Wolf, increasing the attack of counter-infantry units.",
+    "icon": "aomr_relic_sword_icon"
+  },
+  {
+    "id": 31,
+    "nome": "Feather of Bifang",
+    "ingles": "Feather of Bifang",
+    "descricao_resumida": "Human soldiers do more damage to buildings.",
+    "descricao_avancada": "As long as you harness the destructive power within the Feather of Bifang, your human soldiers will deal more damage to buildings.",
+    "icon": "aomr_relic_feather_icon"
+  },
+  {
+    "id": 32,
+    "nome": "Feather of Jingwei",
+    "ingles": "Feather of Jingwei",
+    "descricao_resumida": "Provides a small trickle of Wood.",
+    "descricao_avancada": "You have found the Feather of Jingwei, which provides a steady income of Wood.",
+    "icon": "aomr_relic_feather_icon"
+  },
+  {
+    "id": 33,
+    "nome": "Fetters of Fenrir",
+    "ingles": "Fetters of Fenrir",
+    "descricao_resumida": "Increases Villagers' attack.",
+    "descricao_avancada": "You have recovered the Fetters of Fenrir, increasing the attack of Villagers.",
+    "icon": "aomr_relic_chains_icon"
+  },
+  {
+    "id": 34,
+    "nome": "Five Colored Stone of Nüwa",
+    "ingles": "Five Colored Stone of Nüwa",
+    "descricao_resumida": "Reduces the cost of repairing buildings.",
+    "descricao_avancada": "You have found the Five Colored Stone of Nüwa. Your buildings now cost less to repair.",
+    "icon": "aomr_relic_stone_icon"
+  },
+  {
+    "id": 35,
+    "nome": "Flagstone of Buhen",
+    "ingles": "Flagstone of Buhen",
+    "descricao_resumida": "Gates are free.",
+    "descricao_avancada": "You now own the Flagstone from the Citadel of Buhen, which makes Gates free.",
+    "icon": "aomr_relic_bricks_icon"
+  },
+  {
+    "id": 36,
+    "nome": "Fragment of the Killing Stone",
+    "ingles": "Fragment of the Killing Stone",
+    "descricao_resumida": "Myth units poison nearby enemies and apply poison with their attacks.",
+    "descricao_avancada": "You have acquired a fragment of the cursed stone Sesshō-seki, which allows your myth units to poison enemies, both passively and with attacks, dealing damage over time.",
+    "icon": "aomr_relic_oracle_bone_icon"
+  },
+  {
+    "id": 37,
+    "nome": "Fur of Boyi",
+    "ingles": "Fur of Boyi",
+    "descricao_resumida": "Heroes regenerate hitpoints over time.",
+    "descricao_avancada": "As long as your heroes don the Fur of Boyi, they will regenerate hitpoints.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 38,
+    "nome": "Gaia's Book of Knowledge",
+    "ingles": "Gaia's Book of Knowledge",
+    "descricao_resumida": "Infantry do more damage to Titans.",
+    "descricao_avancada": "You have discovered Gaia's Book of Knowledge, which increases the damage that infantry does to Titans.",
+    "icon": "aomr_relic_scroll_icon"
+  },
+  {
+    "id": 39,
+    "nome": "Gambanteinn, Odin's Wand",
+    "ingles": "Gambanteinn, Odin's Wand",
+    "descricao_resumida": "Temple improvements are cheaper.",
+    "descricao_avancada": "As long as you hold Odin's Wand, Temple improvements are cheaper.",
+    "icon": "aomr_relic_tools_icon"
+  },
+  {
+    "id": 40,
+    "nome": "Girdle of Hippolyta",
+    "ingles": "Girdle of Hippolyta",
+    "descricao_resumida": "Ranged soldiers have more hitpoints.",
+    "descricao_avancada": "You have won the Girdle of Hippolyta the Amazon, which increases the hitpoints of ranged soldiers.",
+    "icon": "aomr_relic_armor_icon"
+  },
+  {
+    "id": 41,
+    "nome": "Glaucus' Book of Prophecies",
+    "ingles": "Glaucus' Book of Prophecies",
+    "descricao_resumida": "Fish gathers faster.",
+    "descricao_avancada": "You have discovered the prophecies of the sea deity Glaucus, which increases fishing rate.",
+    "icon": "aomr_relic_scroll_icon"
+  },
+  {
+    "id": 42,
+    "nome": "Golden Camel Statue",
+    "ingles": "Golden Camel Statue",
+    "descricao_resumida": "Improves Osiris Piece Cart speed.",
+    "descricao_avancada": "You have recovered a divine camel statue, increasing the speed that your camels pull the piece of Osiris.",
+    "icon": "aomr_relic_jewelry_icon"
+  },
+  {
+    "id": 43,
+    "nome": "Grass-Cutting Sword",
+    "ingles": "Grass-Cutting Sword",
+    "descricao_resumida": "Infantry move faster.",
+    "descricao_avancada": "You have found the Grass-Cutting Sword, which makes infantry move faster.",
+    "icon": "aomr_relic_sword_icon"
+  },
+  {
+    "id": 44,
+    "nome": "Great Tzompantli",
+    "ingles": "Great Tzompantli",
+    "descricao_resumida": "Towers are cheaper to build.",
+    "descricao_avancada": "You have found the Great Tzompantli, which allows you to build cheaper Towers.",
+    "icon": "aomr_relic_great_tzompantli_icon"
+  },
+  {
+    "id": 45,
+    "nome": "Gungnir, Odin's Spear",
+    "ingles": "Gungnir, Odin's Spear",
+    "descricao_resumida": "Increases the attack of counter-cavalry infantry units.",
+    "descricao_avancada": "You brandish Gungnir, Odin's Spear, which increases the attack of counter-cavalry units.",
+    "icon": "aomr_relic_spear_icon"
+  },
+  {
+    "id": 46,
+    "nome": "Harmonia's Necklace",
+    "ingles": "Harmonia's Necklace",
+    "descricao_resumida": "Gold gathers faster.",
+    "descricao_avancada": "You have recovered Harmonia's Necklace, which increases the gather rate of Gold.",
+    "icon": "aomr_relic_jewelry_icon"
+  },
+  {
+    "id": 47,
+    "nome": "Head of Orpheus",
+    "ingles": "Head of Orpheus",
+    "descricao_resumida": "Improves all buildings' line of sight.",
+    "descricao_avancada": "You have recovered the Head of Orpheus, which increases buildings' line of sight.",
+    "icon": "aomr_relic_statue_man_icon"
+  },
+  {
+    "id": 48,
+    "nome": "Heavenly Jeweled Spear",
+    "ingles": "Heavenly Jeweled Spear",
+    "descricao_resumida": "Increases the melee attack range of counter-cavalry units.",
+    "descricao_avancada": "You have recovered the Heavenly Jeweled Spear, which increases the melee attack range of counter-cavalry units.",
+    "icon": "aomr_relic_spear_icon"
+  },
+  {
+    "id": 49,
+    "nome": "Hekate's Torches",
+    "ingles": "Hekate's Torches",
+    "descricao_resumida": "God Powers recharge faster and cost less Favor to recast.",
+    "descricao_avancada": "As long as you keep Hekate's Torches aflame, your God Powers will recharge faster and cost less Favor to recast.",
+    "icon": "aomr_relic_torch_icon"
+  },
+  {
+    "id": 50,
+    "nome": "Hermes' Winged Sandals",
+    "ingles": "Hermes' Winged Sandals",
+    "descricao_resumida": "Improves hero speed.",
+    "descricao_avancada": "You have acquired Hermes' Winged Sandals, which improve the speed of heroes.",
+    "icon": "aomr_relic_horseshoe_icon"
+  },
+  {
+    "id": 51,
+    "nome": "Hestia's Hearth",
+    "ingles": "Hestia's Hearth",
+    "descricao_resumida": "Villagers train faster.",
+    "descricao_avancada": "As long as you venerate Hestia's Hearth, your Villagers will train faster.",
+    "icon": "aomr_relic_torch_icon"
+  },
+  {
+    "id": 52,
+    "nome": "Hoderi’s Lost Fish Hook",
+    "ingles": "Hoderi’s Lost Fish Hook",
+    "descricao_resumida": "Fish gathers faster.",
+    "descricao_avancada": "You have found the long-lost fish hook of Hoderi, which increases fishing rate.",
+    "icon": "aomr_relic_tools_icon"
+  },
+  {
+    "id": 53,
+    "nome": "Hoori's Hunting Bow",
+    "ingles": "Hoori's Hunting Bow",
+    "descricao_resumida": "Villagers gather food from hunted animals faster.",
+    "descricao_avancada": "You have found Hoori's Hunting Bow, which allows Villagers to gather food from hunted animals faster.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 54,
+    "nome": "Hummingbird's Beak",
+    "ingles": "Hummingbird's Beak",
+    "descricao_resumida": "Infantry deal bonus damage against other infantry.",
+    "descricao_avancada": "You have found the Hummingbird's Beak, which enables your infantry to deal additional damage against other infantry.",
+    "icon": "aomr_relic_hummingbird_icon"
+  },
+  {
+    "id": 55,
+    "nome": "Jade Hare",
+    "ingles": "Jade Hare",
+    "descricao_resumida": "Improves myth unit speed.",
+    "descricao_avancada": "As long as you welcome the Jade Hare into your home, your myth units will move faster.",
+    "icon": "aomr_relic_hare_icon"
+  },
+  {
+    "id": 56,
+    "nome": "The Khopesh of Horus",
+    "ingles": "The Khopesh of Horus",
+    "descricao_resumida": "Heroes do more damage to myth units.",
+    "descricao_avancada": "You now wield the Khopesh of Horus, which increases the damage that heroes do to myth units.",
+    "icon": "aomr_relic_khopesh_icon"
+  },
+  {
+    "id": 57,
+    "nome": "Kithara of Apollo",
+    "ingles": "Kithara of Apollo",
+    "descricao_resumida": "Increases Villagers' movement speed.",
+    "descricao_avancada": "You have found the Kithara of Apollo, which increases the movement speed of Villagers.",
+    "icon": "aomr_relic_music_instruments_icon"
+  },
+  {
+    "id": 58,
+    "nome": "Kui Drum",
+    "ingles": "Kui Drum",
+    "descricao_resumida": "Heroes do more damage as they lose hitpoints.",
+    "descricao_avancada": "You have found the Kui Drum, which increases the damage that heroes do as they lose hitpoints.",
+    "icon": "aomr_relic_drum_icon"
+  },
+  {
+    "id": 59,
+    "nome": "Little Crow Circle",
+    "ingles": "Little Crow Circle",
+    "descricao_resumida": "Weapon upgrades at the Armory are cheaper.",
+    "descricao_avancada": "You have acquired the Little Crow Circle, which makes weapon upgrades at the Armory cheaper.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 60,
+    "nome": "Mayahuel's Maguey",
+    "ingles": "Mayahuel's Maguey",
+    "descricao_resumida": "Human Soldiers return a portion of their cost upon dying.",
+    "descricao_avancada": "You have found Mayahuel's Maguey, which allows human soldiers to return a portion of their cost on death.",
+    "icon": "aomr_relic_maguey_icon"
+  },
+  {
+    "id": 61,
+    "nome": "Nine Cauldrons",
+    "ingles": "Nine Cauldrons",
+    "descricao_resumida": "Increases the hack and pierce armor of soldiers trained at fortress-type buildings.",
+    "descricao_avancada": "You have recovered the Nine Cauldrons. Your soldiers trained at fortress-type buildings now have more hack and pierce armor.",
+    "icon": "aomr_relic_cauldron_icon"
+  },
+  {
+    "id": 62,
+    "nome": "Nine-Tailed Fox Charm",
+    "ingles": "Nine-Tailed Fox Charm",
+    "descricao_resumida": "Myth units regenerate hitpoints.",
+    "descricao_avancada": "You have found a Nine-Tailed Fox Charm, which allows myth units to regenerate hitpoints.",
+    "icon": "aomr_relic_statue_lion_icon"
+  },
+  {
+    "id": 63,
+    "nome": "Nose of the Sphinx",
+    "ingles": "Nose of the Sphinx",
+    "descricao_resumida": "Increases building hitpoints.",
+    "descricao_avancada": "You mount the Nose of the Sphinx above the doorway of your Temple. Your buildings now have more hitpoints.",
+    "icon": "aomr_relic_statue_lion_icon"
+  },
+  {
+    "id": 64,
+    "nome": "Shennong's Ochre Whip",
+    "ingles": "Shennong's Ochre Whip",
+    "descricao_resumida": "Researching the Plow, Irrigation, and Flood Control technologies provides an additional 5% bonus Food gather rate from Farms.",
+    "descricao_avancada": "As long as you crack Shennong's Ochre Whip, technologies that improve Farm gather rate will be even more effective.",
+    "icon": "aomr_relic_whip_icon"
+  },
+  {
+    "id": 65,
+    "nome": "Ogre-Bitten Helm",
+    "ingles": "Ogre-Bitten Helm",
+    "descricao_resumida": "Increases hero hitpoints.",
+    "descricao_avancada": "You have found the Ogre-Bitten Helm, increasing your heroes' hitpoints.",
+    "icon": "aomr_relic_armor_icon"
+  },
+  {
+    "id": 66,
+    "nome": "Ōkuninushi's Covenant",
+    "ingles": "Ōkuninushi's Covenant",
+    "descricao_resumida": "Temples are significantly cheaper.",
+    "descricao_avancada": "You have found Ōkuninushi's Covenant, which makes Temples significantly cheaper.",
+    "icon": "aomr_relic_soil_icon"
+  },
+  {
+    "id": 67,
+    "nome": "Onikiri, Demon Slayer",
+    "ingles": "Onikiri, Demon Slayer",
+    "descricao_resumida": "Infantry do more damage to myth units.",
+    "descricao_avancada": "You wield Onikiri, the demon-slaying sword, which increases the damage that infantry do to myth units.",
+    "icon": "aomr_relic_chinese_sword_icon"
+  },
+  {
+    "id": 68,
+    "nome": "Oracle Bone",
+    "ingles": "Oracle Bone",
+    "descricao_resumida": "Increases Favor generation rate from Chinese Favored Land.",
+    "descricao_avancada": "You have found the Oracle Bone, which increases the Favor generation rate from Chinese Favored Land.",
+    "icon": "aomr_relic_oracle_bone_icon"
+  },
+  {
+    "id": 69,
+    "nome": "Oseberg Wagon",
+    "ingles": "Oseberg Wagon",
+    "descricao_resumida": "Caravans are cheaper and move faster.",
+    "descricao_avancada": "You have recovered the Oseberg Wagon, which makes Caravans cheaper and move faster.",
+    "icon": "aomr_relic_horseshoe_icon"
+  },
+  {
+    "id": 70,
+    "nome": "Pandora's Box",
+    "ingles": "Pandora's Box",
+    "descricao_resumida": "Myth units cost less Favor.",
+    "descricao_avancada": "You have recovered Pandora's Box, which unleashes evil upon the world by making myth units cost less Favor.",
+    "icon": "aomr_relic_jewelry_icon"
+  },
+  {
+    "id": 71,
+    "nome": "Pelt of Argus",
+    "ingles": "Pelt of Argus",
+    "descricao_resumida": "Improves all units' line of sight.",
+    "descricao_avancada": "You have recovered the Pelt of the many-eyed Argus, which improves all units' line of sight.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 72,
+    "nome": "Prow of the Argo",
+    "ingles": "Prow of the Argo",
+    "descricao_resumida": "Increases warship hitpoints.",
+    "descricao_avancada": "You have found the prow of the Argo, increasing warship hitpoints.",
+    "icon": "aomr_relic_vase_icon"
+  },
+  {
+    "id": 73,
+    "nome": "Ptah's Sceptre",
+    "ingles": "Ptah's Sceptre",
+    "descricao_resumida": "Farms are cheaper.",
+    "descricao_avancada": "As long as you hold Ptah's Was Sceptre, Farms are cheaper.",
+    "icon": "aomr_relic_ankh_icon"
+  },
+  {
+    "id": 74,
+    "nome": "Pygmalion's Statue",
+    "ingles": "Pygmalion's Statue",
+    "descricao_resumida": "Increases Villager hitpoints.",
+    "descricao_avancada": "You have recovered Pygmalion's Statue, which increases Villager hitpoints.",
+    "icon": "aomr_relic_statue_man_icon"
+  },
+  {
+    "id": 75,
+    "nome": "Relic of Ancestors",
+    "ingles": "Relic of Ancestors",
+    "descricao_resumida": "Grants one use of the Ancestors God Power.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_statue_man_icon"
+  },
+  {
+    "id": 76,
+    "nome": "Relic of Bronze",
+    "ingles": "Relic of Bronze",
+    "descricao_resumida": "Grants one use of the Bronze God Power.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_armor_icon"
+  },
+  {
+    "id": 77,
+    "nome": "Relic of Earthquake",
+    "ingles": "Relic of Earthquake",
+    "descricao_resumida": "Grants one use of the Earthquake God Power.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_chains_icon"
+  },
+  {
+    "id": 78,
+    "nome": "Relic of Prosperity",
+    "ingles": "Relic of Prosperity",
+    "descricao_resumida": "Grants one use of the Prosperity God Power.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_coins_icon"
+  },
+  {
+    "id": 79,
+    "nome": "Relic of Tornado",
+    "ingles": "Relic of Tornado",
+    "descricao_resumida": "Grants one use of the Tornado God Power.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_torch_icon"
+  },
+  {
+    "id": 80,
+    "nome": "Rheia's Crown",
+    "ingles": "Rheia's Crown",
+    "descricao_resumida": "Town and Village Centers cost less and generate Favor.",
+    "descricao_avancada": "As long as Rheia's Crown is mounted in your Temple, your Town and Village Centers will cost less and generate Favor.",
+    "icon": "aomr_relic_crown_icon"
+  },
+  {
+    "id": 81,
+    "nome": "Ring of the Nibelung",
+    "ingles": "Ring of the Nibelung",
+    "descricao_resumida": "Provides a small trickle of Gold.",
+    "descricao_avancada": "You have unearthed the Ring of the Nibelung, which provides a steady income of Gold.",
+    "icon": "aomr_relic_coins_icon"
+  },
+  {
+    "id": 82,
+    "nome": "Scales of a Catoblepas",
+    "ingles": "Scales of a Catoblepas",
+    "descricao_resumida": "Myth units are more resistant to pierce damage.",
+    "descricao_avancada": "Your Scales of a Catoblepas make myth units more resistant to pierce damage.",
+    "icon": "aomr_relic_armor_icon"
+  },
+  {
+    "id": 83,
+    "nome": "Scales of Echidna",
+    "ingles": "Scales of Echidna",
+    "descricao_resumida": "Myth units are cheaper.",
+    "descricao_avancada": "You have found the Scales of Echidna, which make myth units cheaper.",
+    "icon": "aomr_relic_dragon_head_icon"
+  },
+  {
+    "id": 84,
+    "nome": "The Scarab Pendant",
+    "ingles": "The Scarab Pendant",
+    "descricao_resumida": "Increases the crush damage of siege weapons and siege myth units.",
+    "descricao_avancada": "Your Scarab Pendant increases the crush damage dealt by siege weapons and siege myth units.",
+    "icon": "aomr_relic_jewelry_icon"
+  },
+  {
+    "id": 85,
+    "nome": "Shachihoko Ornament",
+    "ingles": "Shachihoko Ornament",
+    "descricao_resumida": "Increases the range of towers and Fortress-type buildings.",
+    "descricao_avancada": "You have found an ornamental Shachihoko statue to mount on your structures, which increases the attack range of your fortifications.",
+    "icon": "aomr_relic_statue_monkey_icon"
+  },
+  {
+    "id": 86,
+    "nome": "Shen of Nekhbet",
+    "ingles": "Shen of Nekhbet",
+    "descricao_resumida": "Improves the attack of naval myth units.",
+    "descricao_avancada": "You have recovered the fabled Shen of Nekhbet, which increases naval myth unit attack.",
+    "icon": "aomr_relic_statue_lion_icon"
+  },
+  {
+    "id": 87,
+    "nome": "Shield of Athena",
+    "ingles": "Shield of Athena",
+    "descricao_resumida": "Grants one use of the Restoration God Power when picked up.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_staff_icon"
+  },
+  {
+    "id": 88,
+    "nome": "Ship of Fingernails",
+    "ingles": "Ship of Fingernails",
+    "descricao_resumida": "Provides a small trickle of Food.",
+    "descricao_avancada": "You have recovered the Ship of Fingernails, which provides a steady income of Food.",
+    "icon": "aomr_relic_dragon_head_icon"
+  },
+  {
+    "id": 89,
+    "nome": "Sistrum of Bast",
+    "ingles": "Sistrum of Bast",
+    "descricao_resumida": "Villagers are cheaper.",
+    "descricao_avancada": "You have recovered the Sistrum of Bast, which makes Villagers cheaper.",
+    "icon": "aomr_relic_music_instruments_icon"
+  },
+  {
+    "id": 90,
+    "nome": "Skulls of the Cercopes",
+    "ingles": "Skulls of the Cercopes",
+    "descricao_resumida": "A group of Monkeys will periodically appear at your Temple and respawn if killed.",
+    "descricao_avancada": "You have found the Skulls of the Cercopes, which grant a group of respawning Monkeys.",
+    "icon": "aomr_relic_statue_monkey_icon"
+  },
+  {
+    "id": 91,
+    "nome": "Staff of Dionysus",
+    "ingles": "Staff of Dionysus",
+    "descricao_resumida": "Villagers regenerate hitpoints.",
+    "descricao_avancada": "You have found the Staff of Dionysus, which allows Villagers to regenerate hitpoints.",
+    "icon": "aomr_relic_staff_icon"
+  },
+  {
+    "id": 92,
+    "nome": "Svadilfari's Sledge",
+    "ingles": "Svadilfari's Sledge",
+    "descricao_resumida": "Removes the Favor cost of Fortress-type buildings.",
+    "descricao_avancada": "Now that you harness your draft animals to Svadilfari's Sledge, your Fortress-type buildings no longer cost Favor.",
+    "icon": "aomr_relic_tools_icon"
+  },
+  {
+    "id": 93,
+    "nome": "Tail Feathers of Heaven",
+    "ingles": "Tail Feathers of Heaven",
+    "descricao_resumida": "Infantry attacks ignite enemies, dealing fire damage over time.",
+    "descricao_avancada": "You have claimed the Tail Feathers of Heaven. Your infantry's attacks now ignite enemies, dealing fire damage over time.",
+    "icon": "aomr_relic_feather_icon"
+  },
+  {
+    "id": 94,
+    "nome": "Tail of Cerberus",
+    "ingles": "Tail of Cerberus",
+    "descricao_resumida": "Myth units use their special attacks more often.",
+    "descricao_avancada": "You have seized the Tail of Cerberus, which lets myth units use their special attacks more often.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 95,
+    "nome": "Tail of Fei",
+    "ingles": "Tail of Fei",
+    "descricao_resumida": "A Fei will periodically appear at your Temple and respawn if killed.",
+    "descricao_avancada": "You have seized the Tail of Fei. A Fei will periodically appear at your Temple.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 96,
+    "nome": "Tawara Toda's Last Arrow",
+    "ingles": "Tawara Toda's Last Arrow",
+    "descricao_resumida": "Ranged soldiers inflict divine damage.",
+    "descricao_avancada": "You have recovered Tawara Toda's Last Arrow, which causes ranged soldiers to inflict divine damage.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 97,
+    "nome": "Texts of Imhotep",
+    "ingles": "Texts of Imhotep",
+    "descricao_resumida": "Buildings are constructed faster.",
+    "descricao_avancada": "As long as your Villagers study the Texts of the famed architect Imhotep, they will construct buildings faster.",
+    "icon": "aomr_relic_scroll_icon"
+  },
+  {
+    "id": 98,
+    "nome": "Thundercloud Shawl",
+    "ingles": "Thundercloud Shawl",
+    "descricao_resumida": "Increases the pierce armor of human soldiers.",
+    "descricao_avancada": "You have recovered Hera's Thundercloud Shawl, which increases your soldiers' pierce armor.",
+    "icon": "aomr_relic_blanket_icon"
+  },
+  {
+    "id": 99,
+    "nome": "The Titan's Treasure",
+    "ingles": "The Titan's Treasure",
+    "descricao_resumida": "Reduces the cost of advancing to the next Age or researching Secrets of the Titans.",
+    "descricao_avancada": "You have found the Titans' Treasure, which reduces the cost of advancing to the next Age or researching Secrets of the Titans.",
+    "icon": "aomr_relic_coins_icon"
+  },
+  {
+    "id": 100,
+    "nome": "Tower of Sestus",
+    "ingles": "Tower of Sestus",
+    "descricao_resumida": "Increases Tower attack against myth units.",
+    "descricao_avancada": "You have found the Tower of Sestus, home to Hero and Leander, which increases Tower attack against myth units.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 101,
+    "nome": "Treasure of Coyoacan",
+    "ingles": "Treasure of Coyoacan",
+    "descricao_resumida": "Wonders are constructed faster.",
+    "descricao_avancada": "You have found the Treasure of Coyoacan, which allows wonders to be constructed faster.",
+    "icon": "aomr_relic_chicahuaztli_icon"
+  },
+  {
+    "id": 102,
+    "nome": "Treasure of Mexicaltzingo",
+    "ingles": "Treasure of Mexicaltzingo",
+    "descricao_resumida": "Wonders are constructed faster.",
+    "descricao_avancada": "You have found the Treasure of Mexicaltzingo, which allows wonders to be constructed faster.",
+    "icon": "aomr_relic_xocolatl_icon"
+  },
+  {
+    "id": 103,
+    "nome": "Treasure of Tlacopan",
+    "ingles": "Treasure of Tlacopan",
+    "descricao_resumida": "Wonders are constructed faster.",
+    "descricao_avancada": "You have found the Treasure of Tlacopan, which allows wonders to be constructed faster.",
+    "icon": "aomr_relic_atlatl_icon"
+  },
+  {
+    "id": 104,
+    "nome": "Trojan Gate Hinge",
+    "ingles": "Trojan Gate Hinge",
+    "descricao_resumida": "Increases Wall hitpoints.",
+    "descricao_avancada": "You have recovered the Gate Hinge of the fallen city of Troy. Your Walls now have more hitpoints.",
+    "icon": "aomr_relic_chains_icon"
+  },
+  {
+    "id": 105,
+    "nome": "Tusk of Dangkang",
+    "ingles": "Tusk of Dangkang",
+    "descricao_resumida": "A pair of Pigs will periodically appear at your Town Center.",
+    "descricao_avancada": "You have recovered the Tusk of Dangkang, which periodically grants a pair of Pigs.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 106,
+    "nome": "Tusk of the Iron Boar",
+    "ingles": "Tusk of the Iron Boar",
+    "descricao_resumida": "Increases cavalry hitpoints.",
+    "descricao_avancada": "You have found the Tusk of the Iron Boar, increasing cavalry hitpoints.",
+    "icon": "aomr_relic_fur_icon"
+  },
+  {
+    "id": 107,
+    "nome": "Tyrfing, Angantyr's Sword",
+    "ingles": "Tyrfing, Angantyr's Sword",
+    "descricao_resumida": "Heroes regain hitpoints while fighting enemy units.",
+    "descricao_avancada": "As long as you wield Angantyr's cursed sword Tyrfing, your heroes will regain hitpoints while fighting enemy units.",
+    "icon": "aomr_relic_sword_icon"
+  },
+  {
+    "id": 108,
+    "nome": "Ullr's Bow",
+    "ingles": "Ullr's Bow",
+    "descricao_resumida": "Increases the range and line of sight of ranged soldiers.",
+    "descricao_avancada": "You have recovered Ullr's legendary Bow, which increases the range and line of sight of ranged soldiers.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 109,
+    "nome": "Wuhao, Bow of Huangdi",
+    "ingles": "Wuhao, Bow of Huangdi",
+    "descricao_resumida": "Ranged attacks from human soldiers will slow enemy units for a moment.",
+    "descricao_avancada": "You have recovered Wuhao, the legendary Bow of Huangdi. Your human soldiers' ranged attacks will temporarily slow down enemy units.",
+    "icon": "aomr_relic_bow_icon"
+  },
+  {
+    "id": 110,
+    "nome": "Xirang",
+    "ingles": "Xirang",
+    "descricao_resumida": "Walls regenerate hitpoints.",
+    "descricao_avancada": "You have acquired the magical soil Xirang, which allows Walls to regenerate hitpoints.",
+    "icon": "aomr_relic_soil_icon"
+  },
+  {
+    "id": 111,
+    "nome": "Xiuhcoatl",
+    "ingles": "Xiuhcoatl",
+    "descricao_resumida": "Myth Units deal additional damage to other Myth Units.",
+    "descricao_avancada": "You have found the Fire Serpent Xiuhcoatl, which allows your Myth Units to deal additional damage to other Myth Units.",
+    "icon": "aomr_relic_xiuhcoatl_icon"
+  },
+  {
+    "id": 112,
+    "nome": "Xocolatl",
+    "ingles": "Xocolatl",
+    "descricao_resumida": "Human soldiers have more hitpoints.",
+    "descricao_avancada": "You have found the bean of Xococatl, which grants human soldiers more hitpoints.",
+    "icon": "aomr_relic_xocolatl_icon"
+  },
+  {
+    "id": 113,
+    "nome": "Xuanyuan Sword",
+    "ingles": "Xuanyuan Sword",
+    "descricao_resumida": "Improves the attack of all human soldiers and heroes.",
+    "descricao_avancada": "You have recovered the Xuanyuan Sword, which improves the attack of all human soldiers and heroes.",
+    "icon": "aomr_relic_chinese_sword_icon"
+  },
+  {
+    "id": 114,
+    "nome": "Zeus' Thunderbolts",
+    "ingles": "Zeus' Thunderbolts",
+    "descricao_resumida": "Garrison this into Zeus' Temple to vanquish your foes.",
+    "descricao_avancada": "",
+    "icon": "aomr_relic_chains_icon"
+  }
+]
