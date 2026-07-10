@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 
+from aom_relic_effects import format_relic_effects_both
 from aom_string_table import parse_string_table
 from aom_unit_extractor import ensure_bar_extracted, icon_token_from_path
 
@@ -58,18 +59,29 @@ def lookup_relic_strings(
     return nome_pt, nome_en, desc_pt, desc_en, adv_pt, adv_en
 
 
+def parse_all_techs(techtree_path: Path) -> dict[str, ET.Element]:
+    tree = ET.parse(techtree_path)
+    return {
+        tech.get("name"): tech
+        for tech in tree.getroot().findall("tech")
+        if tech.get("name")
+    }
+
+
 def extract_relic_record(
     proto_name: str,
     tech: ET.Element,
     *,
     strings_en: dict[str, str],
     strings_pt: dict[str, str],
+    tech_index: dict[str, ET.Element] | None = None,
 ) -> dict[str, Any]:
-    nome_pt, nome_en, desc_pt, desc_en, adv_pt, adv_en = lookup_relic_strings(
+    nome_pt, nome_en, desc_pt, desc_en, _adv_pt_flavor, _adv_en_flavor = lookup_relic_strings(
         tech,
         strings_en=strings_en,
         strings_pt=strings_pt,
     )
+    adv_pt, adv_en = format_relic_effects_both(tech, tech_index=tech_index)
     icon_path = _text(tech, "icon")
     record: dict[str, Any] = {
         "proto_name": proto_name,
@@ -104,6 +116,7 @@ def extract_relics(
     strings_en = parse_string_table(strings_en_path)
     strings_pt = parse_string_table(strings_pt_path)
     relics = parse_relic_techs(techtree_path)
+    tech_index = parse_all_techs(techtree_path)
 
     records: list[dict[str, Any]] = []
     for proto_name, tech in sorted(relics.items()):
@@ -115,6 +128,7 @@ def extract_relics(
                 tech,
                 strings_en=strings_en,
                 strings_pt=strings_pt,
+                tech_index=tech_index,
             )
         )
     return records

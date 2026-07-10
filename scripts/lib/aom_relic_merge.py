@@ -25,29 +25,56 @@ def match_catalog_to_relic(catalog_row: dict[str, Any]) -> str:
     )
 
 
-def resolve_proto_name(
-    catalog_name: str,
-    extracted_index: dict[str, dict[str, Any]],
-) -> str | None:
-    if not catalog_name:
-        return None
-
-    compact_index = {_compact_key(proto): proto for proto in extracted_index}
-
-    for candidate in (catalog_name,):
-        if candidate in extracted_index:
-            return candidate
-        resolved = compact_index.get(_compact_key(candidate))
-        if resolved:
-            return resolved
-
-    return None
-
-
 def index_extracted_by_proto(
     extracted_rows: list[dict[str, Any]],
 ) -> dict[str, dict[str, Any]]:
     return {row["proto_name"]: row for row in extracted_rows if row.get("proto_name")}
+
+
+def index_extracted_by_catalog_name(
+    extracted_rows: list[dict[str, Any]],
+) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for row in extracted_rows:
+        proto = row.get("proto_name")
+        if not proto:
+            continue
+        for field in ("ingles", "nome"):
+            label = decode_catalog_name(str(row.get(field, "")))
+            if label:
+                out[_compact_key(label)] = proto
+        out[_compact_key(proto)] = proto
+    return out
+
+
+def resolve_proto_name(
+    catalog_name: str,
+    extracted_index: dict[str, dict[str, Any]],
+    *,
+    catalog_name_index: dict[str, str] | None = None,
+) -> str | None:
+    if not catalog_name:
+        return None
+
+    if catalog_name in extracted_index:
+        return catalog_name
+
+    compact = _compact_key(catalog_name)
+    if catalog_name_index and compact in catalog_name_index:
+        return catalog_name_index[compact]
+
+    compact_index = {_compact_key(proto): proto for proto in extracted_index}
+    resolved = compact_index.get(compact)
+    if resolved:
+        return resolved
+
+    for row in extracted_index.values():
+        for field in ("ingles", "nome"):
+            label = decode_catalog_name(str(row.get(field, "")))
+            if label and _compact_key(label) == compact:
+                return row["proto_name"]
+
+    return None
 
 
 def build_merged_row(
@@ -164,6 +191,7 @@ def merge_catalog_file(
         }
 
     rows = load_catalog(catalog_path)
+    catalog_name_index = index_extracted_by_catalog_name(list(extracted_index.values()))
     updated_rows: list[dict[str, Any]] = []
     report: list[dict[str, Any]] = []
     missing: list[str] = []
@@ -182,7 +210,11 @@ def merge_catalog_file(
             updated_rows.append(row)
             continue
 
-        resolved_proto = resolve_proto_name(catalog_name, extracted_index)
+        resolved_proto = resolve_proto_name(
+            catalog_name,
+            extracted_index,
+            catalog_name_index=catalog_name_index,
+        )
         extracted = extracted_index.get(resolved_proto or "") if resolved_proto else None
         if not extracted:
             missing.append(catalog_name or f"id={row.get('id')}")

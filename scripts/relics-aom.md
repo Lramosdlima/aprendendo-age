@@ -28,6 +28,6 @@ python scripts/sync-aom-data.py --only reliquias --write
 
 **Preservados:** `id`
 
-**Atualizados do jogo:** `nome`, `ingles`, `descricao_resumida`, `descricao_avancada`, `icon`
+**Atualizados do jogo:** `nome`, `ingles`, `descricao_resumida`, `descricao_avancada` (efeitos numéricos do techtree), `icon`
 
 **Ícones:** exportados para `public/assets/relics/` e mapeados em `token_asset_map.json`.

@@ -4,7 +4,7 @@
     "nome": "Telhas Adamantinas",
     "ingles": "Adamantine Shingles",
     "descricao_resumida": "Aumenta os pontos de vida da Câmara.",
-    "descricao_avancada": "Você recuperou as telhas Adamantinas, que aumentam os pontos de vida da Casa.",
+    "descricao_avancada": "Casas têm +200% de pontos de vida.\nManors têm +100% de pontos de vida.",
     "icon": "aomr_relic_bricks_icon"
   },
   {
@@ -12,7 +12,7 @@
     "nome": "Ame no Murakumo no Tsurugi",
     "ingles": "Ame no Murakumo no Tsurugi",
     "descricao_resumida": "Bônus de dano divino aos ataques das unidades.",
-    "descricao_avancada": "Enquanto você empunhar Ame no Murakumo no Tsurugi, suas unidades receberão dano divino adicional em seus ataques.",
+    "descricao_avancada": "Unit ganham +2.5 de dano.",
     "icon": "aomr_relic_torch_icon"
   },
   {
@@ -20,7 +20,7 @@
     "nome": "O Ankh de Rá",
     "ingles": "Ankh of Ra",
     "descricao_resumida": "Fornece um pequeno fluxo constante de Favor.",
-    "descricao_avancada": "Você encontrou a Cruz Ansata de Rá, que traz Favor extra dos deuses.",
+    "descricao_avancada": "Produz um fluxo de 3.6 de Favor por minuto.",
     "icon": "aomr_relic_ankh_icon"
   },
   {
@@ -28,7 +28,7 @@
     "nome": "Bigorna de Hefesto",
     "ingles": "Anvil of Hephaestus",
     "descricao_resumida": "Melhorias da Armaria custam menos ouro.",
-    "descricao_avancada": "Você recuperou a bigorna de Hefesto, que reduz o custo de ouro de todas as melhorias da Armaria.",
+    "descricao_avancada": "Melhorias da armaria custam 50% menos de Ouro.",
     "icon": "aomr_relic_anvil_icon"
   },
   {
@@ -36,7 +36,7 @@
     "nome": "Diário de Arquimedes",
     "ingles": "Archimedes' Ledger",
     "descricao_resumida": "As armas de cerco ocupam menos espaço populacional.",
-    "descricao_avancada": "Você recuperou o Livro-razão de Arquimedes, que faz as armas de cerco ocuparem menos espaço populacional.",
+    "descricao_avancada": "Armas de cerco e Quinametzin custam 1 a menos de população.",
     "icon": "aomr_relic_scroll_icon"
   },
   {
@@ -44,7 +44,7 @@
     "nome": "Armadura de Aquiles",
     "ingles": "Armor of Achilles",
     "descricao_resumida": "Aumenta a armadura de corte da infantaria.",
-    "descricao_avancada": "Você recuperou a Armadura de Aquiles, que aumenta a armadura anticorte de sua infantaria.",
+    "descricao_avancada": "Infantaria têm 5% menos vulnerabilidade a dano cortante.",
     "icon": "aomr_relic_armor_icon"
   },
   {
@@ -52,7 +52,7 @@
     "nome": "Flechas do Alfar",
     "ingles": "Arrows of the Alfar",
     "descricao_resumida": "Aumentar o ataque de longo alcance de construções.",
-    "descricao_avancada": "Você encontrou as flechas de Alfar, que aumentam o ataque com alcance das construções.",
+    "descricao_avancada": "Construções causam 15% mais dano.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -60,7 +60,7 @@
     "nome": "Flechas de Hércules",
     "ingles": "Arrows of Heracles",
     "descricao_resumida": "Aumenta o ataque de soldados e heróis de longo alcance.",
-    "descricao_avancada": "Você recuperou as Flechas envenenadas de Hércules, que aumentam o ataque de soldados e heróis de longo alcance.",
+    "descricao_avancada": "Soldados de longo alcance e Heróis causam 5% mais dano.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -68,7 +68,7 @@
     "nome": "Estólica de Ehecatl",
     "ingles": "Atlatl of Ehecatl",
     "descricao_resumida": "Soldados de longo alcance e construções atiram mais rápido.",
-    "descricao_avancada": "Você encontrou a Estólica de Ehecatl, que permite que seus soldados de longo alcance e construções atirem mais rápido.",
+    "descricao_avancada": "Soldados de longo alcance, Ballista, Torres, Fortalezas, Centros Urbanos, SiegeCrossbow e Oyumi atacam 5.3% mais rápido.",
     "icon": "aomr_relic_atlatl_icon"
   },
   {
@@ -76,7 +76,7 @@
     "nome": "Lótus Negra",
     "ingles": "Black Lotus",
     "descricao_resumida": "Aldeões cultivam mais rapidamente.",
-    "descricao_avancada": "Você encontrou a Lótus Negra, que aumenta a taxa de coleta de fazendas.",
+    "descricao_avancada": "Aldeões trabalham 10% mais rápido.",
     "icon": "aomr_relic_vase_icon"
   },
   {
@@ -84,7 +84,7 @@
     "nome": "Cobertor da Imperatriz Zoé",
     "ingles": "Blanket of Empress Zoe",
     "descricao_resumida": "Construções são mais resistentes a armas de cerco.",
-    "descricao_avancada": "Você tem agora o Lenço da Imperatriz Zoe, que faz construções serem mais resistentes a armas de cerco.",
+    "descricao_avancada": "Construções têm 15% menos vulnerabilidade a dano contundente.",
     "icon": "aomr_relic_blanket_icon"
   },
   {
@@ -92,7 +92,7 @@
     "nome": "Fragmento do Cristal Azul",
     "ingles": "Blue Crystal Shard",
     "descricao_resumida": "Aldeões coletam Madeira e Ouro mais rápido.",
-    "descricao_avancada": "Você recuperou o Fragmento do Cristal Azul, que aumenta a taxa de coleta de Ouro e Madeira.",
+    "descricao_avancada": "Aldeões trabalham 5% mais rápido.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -100,7 +100,7 @@
     "nome": "Fragmentos de Osso de Mictlan",
     "ingles": "Bone Shards of Mictlan",
     "descricao_resumida": "Unidades mitológicas devolvem favor ao morrer.",
-    "descricao_avancada": "Você encontrou os Fragmentos de Osso de Mictlan, que permitem que unidades mitológicas devolvam favor ao morrer.",
+    "descricao_avancada": "LogicalTypeTrainableMythUnit concedem +2 de Favor ao serem abatidos.",
     "icon": "aomr_relic_mictlan_icon"
   },
   {
@@ -108,7 +108,7 @@
     "nome": "Arco de Ártemis",
     "ingles": "Bow of Artemis",
     "descricao_resumida": "Soldados à distância e unidades mitológicas variados, são mais baratos.",
-    "descricao_avancada": "Você localizou o Arco de Ártemis, que torna os soldados humanos e as unidades mitológicas mais baratos.",
+    "descricao_avancada": "Soldados de longo alcance, ballista e logicaltyperangedmythunit custam 10% menos de Madeira e Ouro.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -116,7 +116,7 @@
     "nome": "Rédeas de Pégaso",
     "ingles": "Bridle of Pegasus",
     "descricao_resumida": "Um batedor de Pégaso aparecerá regularmente em seu Templo e ressurgirá se for morto.",
-    "descricao_avancada": "Você recuperou as Rédeas Douradas do Pégaso. Um Pégaso irá periodicamente aparecer no seu Templo.",
+    "descricao_avancada": "Unidade bônus reaparece a cada 60 segundos.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -124,7 +124,7 @@
     "nome": "Vaso Canópico de Imsety",
     "ingles": "Canopic Jar of Imsety",
     "descricao_resumida": "Infantaria é treinada mais rapidamente.",
-    "descricao_avancada": "Você recuperou o Vaso Canópico de Imsety, filho de Hórus, o qual faz infantaria ser treinada mais rápido.",
+    "descricao_avancada": "Infantaria treinam 25% mais rápido.",
     "icon": "aomr_relic_vase_icon"
   },
   {
@@ -132,7 +132,7 @@
     "nome": "Ampulheta do Cartógrafo",
     "ingles": "Cartographer's Hourglass",
     "descricao_resumida": "Reduz as taxas de coleta e a linha de visão do aldeão.",
-    "descricao_avancada": "Você encontrou a Ampulheta do cartógrafo, que reduz as taxas de coleta dos aldeões e a linha de visão.",
+    "descricao_avancada": "Aldeões têm +-50% de linha de visão.\nAldeões trabalham -25% mais rápido.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -140,7 +140,7 @@
     "nome": "Biga de Cibele",
     "ingles": "Chariot of Cybele",
     "descricao_resumida": "Um par de Leões aparecerá regularmente em seu Templo e ressurgirá se for morto.",
-    "descricao_avancada": "Você capturou a Biga de Cibele. Uma dupla de Leões ressurgirá periodicamente em seu Templo.",
+    "descricao_avancada": "Unidade bônus reaparece a cada 60 segundos.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -148,7 +148,7 @@
     "nome": "Óbolo de Caronte",
     "ingles": "Charon's Obol",
     "descricao_resumida": "Os Aldeões devolvem parte de seu custo ao morrer.",
-    "descricao_avancada": "Você encontrou o pagamento do barqueiro do Mundo Inferior, Caronte, permitindo que os aldeões caídos devolvam parte de seu custo.",
+    "descricao_avancada": "VillagerGreek, VillagerEgyptian, VillagerNorse, Kuafu, KuafuHero, VillagerJapanese, Miko e VillagerAztec concedem +25 de Comida ao serem abatidos.\nVillagerDwarf concedem +30 de Ouro ao serem abatidos.\nVillagerAtlantean concedem +42.5 de Comida ao serem abatidos.\nVillagerAtlantean concedem +7.5 de Madeira ao serem abatidos.\nVillagerAtlanteanHero concedem +60 de Comida ao serem abatidos.\nVillagerAtlanteanHero concedem +10 de Madeira ao serem abatidos.\nVillagerAtlanteanHero concedem +1 de Favor ao serem abatidos.\nVillagerChinese concedem +20 de Comida ao serem abatidos.\nKuafu e KuafuHero concedem +50 de Ouro ao serem abatidos.\nKuafu e KuafuHero concedem +8.5 de Favor ao serem abatidos.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -172,7 +172,7 @@
     "nome": "Espada de Madeira Enganosa",
     "ingles": "Deceptive Wooden Sword",
     "descricao_resumida": "Shinobi usam sua habilidade especial com mais frequência.",
-    "descricao_avancada": "Você adquiriu uma espada de madeira ornamentada com uma lâmina escondida, permitindo que seus Shinobi usem a habilidade especial mais vezes.",
+    "descricao_avancada": "Shinobi têm recarga 25% mais rápida.",
     "icon": "aomr_relic_staff_icon"
   },
   {
@@ -188,7 +188,7 @@
     "nome": "Trono de Deméter",
     "ingles": "Demeter's Throne",
     "descricao_resumida": "Locais de entrega, Carros de Boi, Casas e Mansões custam menos e são construídos mais rapidamente.",
-    "descricao_avancada": "Se você receber Deméter em sua casa, locais de entrega, Carros de Boi, Casas e Mansões custarão menos e serão construídos mais rapidamente.",
+    "descricao_avancada": "Armazéns, Granary, LumberCamp, MiningCamp, OxCartBuilding, Casas, Manors, EconomicGuild, Silo, Watermill, MiningCampJapanese e Calpulli são construídos 300% mais rápido.\nArmazéns, granary, oxcartbuilding, casas, manors, economicguild, silo, watermill, miningcampjapanese e calpulli custam 50% menos de Madeira.\nOxcartbuilding custam 50% menos de Comida.\nManors, economicguild e silo custam 50% menos de Ouro.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -196,7 +196,7 @@
     "nome": "Cristal do Palácio do Dragão",
     "ingles": "Dragon Palace Crystal",
     "descricao_resumida": "Muralhas e Torres ganham mais pontos de vida.",
-    "descricao_avancada": "Você encontrou um Cristal do Palácio do Dragão. Suas Muralhas e Torres agora têm mais pontos de vida.",
+    "descricao_avancada": "AbstractWall e Torres têm +10% de pontos de vida.",
     "icon": "aomr_relic_bricks_icon"
   },
   {
@@ -204,7 +204,7 @@
     "nome": "Calibrador dos Anões",
     "ingles": "Dwarven Calipers",
     "descricao_resumida": "As armas de cerco são mais baratas.",
-    "descricao_avancada": "Você recuperou as Pinças Enânicas, que tornam as armas de cerco mais baratas.",
+    "descricao_avancada": "Armas de cerco e quinametzin custam 20% menos de Comida, Madeira, Ouro e Favor.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -212,7 +212,7 @@
     "nome": "Ferraduras dos Anões",
     "ingles": "Dwarven Horseshoes",
     "descricao_resumida": "Melhora a velocidade de cavalaria.",
-    "descricao_avancada": "Você encontrou as Ferraduras Enânicas, que aumentam a velocidade de movimento da cavalaria.",
+    "descricao_avancada": "Cavalaria movem-se 5% mais rápido.",
     "icon": "aomr_relic_horseshoe_icon"
   },
   {
@@ -220,7 +220,7 @@
     "nome": "Ehecailacocozcatl",
     "ingles": "Ehecailacocozcatl",
     "descricao_resumida": "Todas as unidades se movem mais rápido.",
-    "descricao_avancada": "Você encontrou a joia do vento Ehecailacocozcatl, que aumenta a velocidade de movimento de todas as unidades.",
+    "descricao_avancada": "Unit movem-se 2.5% mais rápido.",
     "icon": "aomr_relic_ehecailacocozcatl_icon"
   },
   {
@@ -228,7 +228,7 @@
     "nome": "Olho de Hórus",
     "ingles": "Eye of Horus",
     "descricao_resumida": "Centros Urbanos suportam mais população.",
-    "descricao_avancada": "Você recuperou o Olho de Hórus, que aumenta a capacidade populacional dos Centros Urbanos.",
+    "descricao_avancada": "Centros Urbanos suportam +4 de população.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -236,7 +236,7 @@
     "nome": "Olho de Ornlu",
     "ingles": "Eye of Ornlu",
     "descricao_resumida": "Aumenta o ataque de unidades de contrainfantaria.",
-    "descricao_avancada": "Você recuperou o Olho de Ornlu, o Lobo, aumentando o ataque das unidades de contrainfantaria.",
+    "descricao_avancada": "Hypaspist, Axeman, ThrowingAxeman, Cheiroballista, CheiroballistaHero, FireArcher, Samurai e ShornOne causam 5% mais dano.",
     "icon": "aomr_relic_sword_icon"
   },
   {
@@ -244,7 +244,7 @@
     "nome": "Pena de Bifang",
     "ingles": "Feather of Bifang",
     "descricao_resumida": "Soldados humanos causam mais dano às construções.",
-    "descricao_avancada": "Enquanto você canalizar o poder destrutivo dentro da Pena de Bifang, seus soldados humanos causarão mais dano às construções.",
+    "descricao_avancada": "Soldados humanos ganham +0.2 de dano.",
     "icon": "aomr_relic_feather_icon"
   },
   {
@@ -252,7 +252,7 @@
     "nome": "Pena de Jingwei",
     "ingles": "Feather of Jingwei",
     "descricao_resumida": "Fornece um pequeno fluxo de Madeira.",
-    "descricao_avancada": "Você encontrou a Pena de Jingwei, que fornece um rendimento constante de Madeira.",
+    "descricao_avancada": "Produz um fluxo de 30 de Madeira por minuto.",
     "icon": "aomr_relic_feather_icon"
   },
   {
@@ -260,7 +260,7 @@
     "nome": "Grilhões de Fenrir",
     "ingles": "Fetters of Fenrir",
     "descricao_resumida": "Aumenta o ataque dos Aldeões.",
-    "descricao_avancada": "Você recuperou os Grilhões de Fenrir, aumentando o ataque dos Aldeões.",
+    "descricao_avancada": "Aldeões causam 30% mais dano.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -268,7 +268,7 @@
     "nome": "Pedra de Cinco Cores de Nüwa",
     "ingles": "Five Colored Stone of Nüwa",
     "descricao_resumida": "Reduz o custo de reparo de construções.",
-    "descricao_avancada": "Você encontrou a Pedra das Cinco Cores de Nüwa. Agora custa menos para reparar suas construções.",
+    "descricao_avancada": "Reparos custam 50% menos.",
     "icon": "aomr_relic_stone_icon"
   },
   {
@@ -276,7 +276,7 @@
     "nome": "Laje de Buhen",
     "ingles": "Flagstone of Buhen",
     "descricao_resumida": "Os portões são gratuitos.",
-    "descricao_avancada": "Você agora possui a Laje da Cidadela de Buhen, que deixa portões gratuitos.",
+    "descricao_avancada": "Portões são gratuitos.",
     "icon": "aomr_relic_bricks_icon"
   },
   {
@@ -284,7 +284,7 @@
     "nome": "Fragmento da Pedra da Morte",
     "ingles": "Fragment of the Killing Stone",
     "descricao_resumida": "Unidades mitológicas envenenam inimigos próximos e aplicam veneno com seus ataques.",
-    "descricao_avancada": "Você adquiriu um fragmento da pedra amaldiçoada Sesshō-seki, que permite que suas unidades mitológicas envenenem inimigos, tanto passivamente quanto com ataques, causando dano ao longo do tempo.",
+    "descricao_avancada": "Unidades mitológicas ganham uma nova ação.\nUnidades mitológicas aplicam efeito especial ao acertar.\nUnidades mitológicas aplicam efeito adicional ao acertar.",
     "icon": "aomr_relic_oracle_bone_icon"
   },
   {
@@ -292,7 +292,7 @@
     "nome": "Pelo de Boyi",
     "ingles": "Fur of Boyi",
     "descricao_resumida": "Heróis regeneram pontos de vida ao longo do tempo.",
-    "descricao_avancada": "Enquanto seus heróis usarem o Pelo of Boyi eles regenerarão pontos de vida.",
+    "descricao_avancada": "heróis curáveis regeneram 0.2 PV/s.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -300,7 +300,7 @@
     "nome": "Livro do Conhecimento de Gaia",
     "ingles": "Gaia's Book of Knowledge",
     "descricao_resumida": "A infantaria causa mais dano aos Titãs.",
-    "descricao_avancada": "Você descobriu o Livro do Conhecimento de Gaia, que aumenta o dano que a infantaria causa aos Titãs.",
+    "descricao_avancada": "Infantaria ganham +3 de dano.",
     "icon": "aomr_relic_scroll_icon"
   },
   {
@@ -308,7 +308,7 @@
     "nome": "Gambanteinn, Varinha de Odin",
     "ingles": "Gambanteinn, Odin's Wand",
     "descricao_resumida": "Melhorias no Templo são mais baratas.",
-    "descricao_avancada": "Enquanto você tiver a Varinha de Odin, as melhorias no Templo serão mais baratas.",
+    "descricao_avancada": "Melhorias do templo custam 25% menos de Comida, Madeira, Ouro e Favor.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -316,7 +316,7 @@
     "nome": "Cinturão de Hipólita",
     "ingles": "Girdle of Hippolyta",
     "descricao_resumida": "Soldados de longo alcance têm mais pontos de vida.",
-    "descricao_avancada": "Você ganhou o Cinturão de Hipólita, a amazona, que aumenta os pontos de vida dos soldados de longo alcance.",
+    "descricao_avancada": "Soldados de longo alcance têm +10% de pontos de vida.",
     "icon": "aomr_relic_armor_icon"
   },
   {
@@ -324,7 +324,7 @@
     "nome": "Livro das Profecias de Glauco",
     "ingles": "Glaucus' Book of Prophecies",
     "descricao_resumida": "Aumenta a velocidade de pescaria.",
-    "descricao_avancada": "Você descobriu as profecias da divindade do mar, Glauco, que aumenta a velocidade de pescaria.",
+    "descricao_avancada": "AbstractFishingShip trabalham 30% mais rápido.",
     "icon": "aomr_relic_scroll_icon"
   },
   {
@@ -332,7 +332,7 @@
     "nome": "Estátua de Camelo Dourado",
     "ingles": "Golden Camel Statue",
     "descricao_resumida": "Melhora a velocidade da Carroça com Pedaço de Osíris.",
-    "descricao_avancada": "Você recuperou uma estátua de camelo divino, que aumenta a velocidade com que seus camelos puxam um pedaço de Osíris.",
+    "descricao_avancada": "carroças da Peça de Osíris ganham +1 de velocidade.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -340,7 +340,7 @@
     "nome": "Espada Cortadora de Grama",
     "ingles": "Grass-Cutting Sword",
     "descricao_resumida": "Infantaria se move mais rápido.",
-    "descricao_avancada": "Você encontrou a Espada Cortadora de Grama, que faz a infantaria se mover mais rápido.",
+    "descricao_avancada": "Infantaria movem-se 5% mais rápido.",
     "icon": "aomr_relic_sword_icon"
   },
   {
@@ -348,7 +348,7 @@
     "nome": "Grande Tzompantli",
     "ingles": "Great Tzompantli",
     "descricao_resumida": "Torres custam menos para construir.",
-    "descricao_avancada": "Você encontrou o Grande Tzompantli, que permite construir Torres mais baratas.",
+    "descricao_avancada": "Torres de sentinela custam 15% menos de Ouro e Madeira.",
     "icon": "aomr_relic_great_tzompantli_icon"
   },
   {
@@ -356,7 +356,7 @@
     "nome": "Gungnir, Lança de Odin",
     "ingles": "Gungnir, Odin's Spear",
     "descricao_resumida": "Aumenta o ataque de unidades de infantaria contra-cavalaria.",
-    "descricao_avancada": "Você brande Gungnir, a Lança de Odin, que aumenta o ataque de unidades contra-cavalaria.",
+    "descricao_avancada": "Hirdman, Hoplite, Spearman, Katapeltes, KatapeltesHero, GeHalberdier, YariSpearman e TlamanihSpearman causam 5% mais dano.",
     "icon": "aomr_relic_spear_icon"
   },
   {
@@ -364,7 +364,7 @@
     "nome": "Colar da Harmonia",
     "ingles": "Harmonia's Necklace",
     "descricao_resumida": "Ouro é coletado mais rápido.",
-    "descricao_avancada": "Você recuperou o Colar da Harmonia, que aumenta a taxa de coleta de Ouro.",
+    "descricao_avancada": "Aldeões trabalham 10% mais rápido.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -372,7 +372,7 @@
     "nome": "Cabeça de Orfeu",
     "ingles": "Head of Orpheus",
     "descricao_resumida": "Melhora a linha de visão de todos os construções.",
-    "descricao_avancada": "Você recuperou a Cabeça de Orfeu, que aumenta a linha de visão das construções.",
+    "descricao_avancada": "Construções ganham +8 de linha de visão.",
     "icon": "aomr_relic_statue_man_icon"
   },
   {
@@ -380,7 +380,7 @@
     "nome": "Lança Celestial Cravejada",
     "ingles": "Heavenly Jeweled Spear",
     "descricao_resumida": "Aumenta o alcance do ataque corpo a corpo das unidades anticavalaria.",
-    "descricao_avancada": "Você recuperou a Lança Celestial Cravejada, que aumenta o alcance do ataque corpo a corpo das unidades anticavalaria.",
+    "descricao_avancada": "Prodromos, Spearman, Hirdman, Katapeltes, KatapeltesHero, GeHalberdier, YariSpearman e TlamanihSpearman ganham +0.2 de alcance.",
     "icon": "aomr_relic_spear_icon"
   },
   {
@@ -388,7 +388,7 @@
     "nome": "Tochas de Hécate",
     "ingles": "Hekate's Torches",
     "descricao_resumida": "Os Poderes Divinos recarregam mais rapidamente e custam menos Favor para serem conjurados novamente.",
-    "descricao_avancada": "Contanto que você mantenha as tochas de Hécate acesas, seus Poderes Divinos recarregarão mais rápido e custarão menos favor para reformular.",
+    "descricao_avancada": "Poderes divinos têm recarga 10% menor.\nPoderes divinos têm custo 10% menor.",
     "icon": "aomr_relic_torch_icon"
   },
   {
@@ -396,7 +396,7 @@
     "nome": "Sandálias Aladas de Hermes",
     "ingles": "Hermes' Winged Sandals",
     "descricao_resumida": "Melhora a velocidade de Heróis.",
-    "descricao_avancada": "Você adquiriu as Sandálias Aladas de Hermes, que melhoram a velocidade dos heróis.",
+    "descricao_avancada": "Heróis movem-se 5% mais rápido.",
     "icon": "aomr_relic_horseshoe_icon"
   },
   {
@@ -404,7 +404,7 @@
     "nome": "Lareira de Héstia",
     "ingles": "Hestia's Hearth",
     "descricao_resumida": "Treina aldeões mais rapidamente.",
-    "descricao_avancada": "Enquanto você venerar a Lareira de Héstia, seus aldeões serão treinados mais rapidamente.",
+    "descricao_avancada": "Aldeões treinam -5% mais devagar.",
     "icon": "aomr_relic_torch_icon"
   },
   {
@@ -412,7 +412,7 @@
     "nome": "Anzol Perdido de Hoderi",
     "ingles": "Hoderi’s Lost Fish Hook",
     "descricao_resumida": "Aumenta a velocidade de pescaria.",
-    "descricao_avancada": "Você encontrou o anzol perdido de Hoderi, que aumenta a taxa de pesca.",
+    "descricao_avancada": "AbstractFishingShip trabalham 40% mais rápido.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -420,7 +420,7 @@
     "nome": "Arco de Caça de Hoori",
     "ingles": "Hoori's Hunting Bow",
     "descricao_resumida": "Aldeões coletam comida de animais caçados mais rápido.",
-    "descricao_avancada": "Você encontrou o Arco de Caça de Hoori, que permite aos Aldeões coletar comida de animais caçados mais rápido.",
+    "descricao_avancada": "Aldeões trabalham 5% mais rápido.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -428,7 +428,7 @@
     "nome": "Bico do Beija-flor",
     "ingles": "Hummingbird's Beak",
     "descricao_resumida": "Infantaria causa dano bônus contra outras infantarias.",
-    "descricao_avancada": "Você encontrou o Bico do Beija-flor, que permite que sua infantaria cause dano adicional contra outras infantarias.",
+    "descricao_avancada": "Infantaria causam 10% mais dano.",
     "icon": "aomr_relic_hummingbird_icon"
   },
   {
@@ -436,7 +436,7 @@
     "nome": "Lebre de Jade",
     "ingles": "Jade Hare",
     "descricao_resumida": "Melhora a velocidade da unidade mitológica.",
-    "descricao_avancada": "Enquanto você receber a Lebre de Jade em sua casa, suas unidades mitológicas se moverão mais rápido.",
+    "descricao_avancada": "Unidades mitológicas movem-se 5% mais rápido.",
     "icon": "aomr_relic_hare_icon"
   },
   {
@@ -444,7 +444,7 @@
     "nome": "O Khopesh de Hórus",
     "ingles": "The Khopesh of Horus",
     "descricao_resumida": "Heróis causam mais dano a unidades mitológicas.",
-    "descricao_avancada": "Agora você brande a Khopesh de Hórus, que aumenta o dano que os heróis causam às unidades mitológicas.",
+    "descricao_avancada": "Heróis ganham +1 de dano.",
     "icon": "aomr_relic_khopesh_icon"
   },
   {
@@ -452,7 +452,7 @@
     "nome": "Cítara de Apolo",
     "ingles": "Kithara of Apollo",
     "descricao_resumida": "Aumenta a velocidade de movimento dos Aldeões.",
-    "descricao_avancada": "Você encontrou a Cítara de Apolo, que aumenta a velocidade de movimento dos aldeões.",
+    "descricao_avancada": "Aldeões movem-se 10% mais rápido.",
     "icon": "aomr_relic_music_instruments_icon"
   },
   {
@@ -460,7 +460,7 @@
     "nome": "Tambor de Kui",
     "ingles": "Kui Drum",
     "descricao_resumida": "Os heróis causam mais dano à medida que perdem pontos de vida.",
-    "descricao_avancada": "Você encontrou o Tambor de Kui, que aumenta o dano que os heróis causam à medida que perdem pontos de vida.",
+    "descricao_avancada": "Heróis reduzem dano recebido.",
     "icon": "aomr_relic_drum_icon"
   },
   {
@@ -468,7 +468,7 @@
     "nome": "Pequeno Círculo de Corvos",
     "ingles": "Little Crow Circle",
     "descricao_resumida": "As melhorias de armas na Armaria são mais baratas.",
-    "descricao_avancada": "Você adquiriu o Pequeno Círculo de Corvos, que torna os aprimoramentos de arma na Armaria mais baratos.",
+    "descricao_avancada": "Armoryweaponstechnology custam 50% menos de Comida e Ouro.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -476,7 +476,7 @@
     "nome": "O Maguey de Mayahuel",
     "ingles": "Mayahuel's Maguey",
     "descricao_resumida": "Soldados Humanos devolvem uma parte do seu custo ao morrer.",
-    "descricao_avancada": "Você encontrou o Maguey de Mayahuel, que permite que soldados humanos devolvam parte do seu custo ao morrer.",
+    "descricao_avancada": "Soldados humanos devolvem 5% dos recursos gastos em Comida.\nSoldados humanos devolvem 5% dos recursos gastos em Madeira.\nSoldados humanos devolvem 5% dos recursos gastos em Ouro.",
     "icon": "aomr_relic_maguey_icon"
   },
   {
@@ -484,7 +484,7 @@
     "nome": "Nove Caldeirões",
     "ingles": "Nine Cauldrons",
     "descricao_resumida": "Aumenta a armadura de corte e antiperfurante de soldados treinados em construções do tipo fortaleza.",
-    "descricao_avancada": "Você recuperou os Nove Caldeirões. Seus soldados treinados em construções do tipo fortaleza agora têm mais armaduras de corte e antiperfurante.",
+    "descricao_avancada": "Myrmidon, Gastraphetoros, Hetairos, ChariotArcher, CamelRider, WarElephant, Huskarl, Destroyer, DestroyerHero, Fanatic, FanaticHero, WhiteHorseCavalry, TigerCavalry, TigerCavalryDismounted, Otontin, ShornOne e JaguarRider têm 5% menos vulnerabilidade a dano cortante.\nMyrmidon, Gastraphetoros, Hetairos, ChariotArcher, CamelRider, WarElephant, Huskarl, Destroyer, DestroyerHero, Fanatic, FanaticHero, WhiteHorseCavalry, TigerCavalry, TigerCavalryDismounted, Otontin, ShornOne e JaguarRider têm 5% menos vulnerabilidade a dano perfurante.",
     "icon": "aomr_relic_cauldron_icon"
   },
   {
@@ -492,7 +492,7 @@
     "nome": "Amuleto de Raposa de Nove Caudas",
     "ingles": "Nine-Tailed Fox Charm",
     "descricao_resumida": "Unidades mitológicas regeneram pontos de vida.",
-    "descricao_avancada": "Você encontrou um Amuleto da Raposa de Nove Caudas, que permite que unidades mitológicas regenerem pontos de vida.",
+    "descricao_avancada": "LogicalTypeMythUnitNotTitan regeneram 0.5 PV/s.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -500,7 +500,7 @@
     "nome": "Nariz da Esfinge",
     "ingles": "Nose of the Sphinx",
     "descricao_resumida": "Aumenta os pontos de vida da construção.",
-    "descricao_avancada": "Você montou o Nariz da Esfinge acima da porta do seu Templo. Agora, suas construções têm mais pontos de vida.",
+    "descricao_avancada": "Construções têm +15% de pontos de vida.\nLogicalTypeUnitIsConstructed têm +-15% de pontos de vida.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -508,7 +508,7 @@
     "nome": "Chicote Ocre de Shennong",
     "ingles": "Shennong's Ochre Whip",
     "descricao_resumida": "Pesquisar as tecnologias de Arado, Irrigação e Controle de Inundações fornece um bônus adicional de 5% taxa de coleta de Comida das fazendas.",
-    "descricao_avancada": "Enquanto você usar o Chicote Ocre de Shennong, as tecnologias que melhoram a taxa de coleta da fazenda serão ainda mais eficazes.",
+    "descricao_avancada": "Plow, Irrigação, Controle de Cheias e Chinampas concedem +5% extra de coleta de Comida em fazendas.",
     "icon": "aomr_relic_whip_icon"
   },
   {
@@ -516,7 +516,7 @@
     "nome": "Elmo Mordido de Ogro",
     "ingles": "Ogre-Bitten Helm",
     "descricao_resumida": "Aumenta os pontos de vida de heróis.",
-    "descricao_avancada": "Você encontrou o Elmo Mordido de Ogro, que aumenta os pontos de vida de seus heróis.",
+    "descricao_avancada": "Heróis têm +10% de pontos de vida.",
     "icon": "aomr_relic_armor_icon"
   },
   {
@@ -524,7 +524,7 @@
     "nome": "Pacto de Ōkuninushi",
     "ingles": "Ōkuninushi's Covenant",
     "descricao_resumida": "Os templos são muito mais baratos.",
-    "descricao_avancada": "Você encontrou o Pacto de Ōkuninushi, que torna os Templos significativamente mais baratos.",
+    "descricao_avancada": "Melhorias do templo custam 75% menos de Ouro e Madeira.",
     "icon": "aomr_relic_soil_icon"
   },
   {
@@ -532,7 +532,7 @@
     "nome": "Onikiri, Matador de Demônios",
     "ingles": "Onikiri, Demon Slayer",
     "descricao_resumida": "Infantaria causa mais dano a unidades mitológicas.",
-    "descricao_avancada": "Você empunha Onikiri, a espada matadora de demônios, que aumenta o dano que a infantaria causa a unidades mitológicas.",
+    "descricao_avancada": "Infantaria ganham +0.5 de dano.",
     "icon": "aomr_relic_chinese_sword_icon"
   },
   {
@@ -540,7 +540,7 @@
     "nome": "Osso do Oráculo",
     "ingles": "Oracle Bone",
     "descricao_resumida": "Aumenta a taxa de geração de Favor de Terrenos Favoráveis chineses.",
-    "descricao_avancada": "Você encontrou o Osso do Oráculo, que aumenta a taxa de geração de Favor do Terreno Favorável chinês.",
+    "descricao_avancada": "Geração de Favor em cadeia +100%.",
     "icon": "aomr_relic_oracle_bone_icon"
   },
   {
@@ -548,7 +548,7 @@
     "nome": "Carroça de Oseberg",
     "ingles": "Oseberg Wagon",
     "descricao_resumida": "Caravanas são mais baratas e se movem mais rápido.",
-    "descricao_avancada": "Você recuperou a Carroça de Oseberg, que torna as caravanas mais baratas e rápidas.",
+    "descricao_avancada": "Caravanas movem-se 10% mais rápido.\nCaravanas custam 25% menos de Comida.",
     "icon": "aomr_relic_horseshoe_icon"
   },
   {
@@ -556,7 +556,7 @@
     "nome": "Caixa de Pandora",
     "ingles": "Pandora's Box",
     "descricao_resumida": "Unidades mitológicas custam menos Favor.",
-    "descricao_avancada": "Você recuperou a Caixa de Pandora, que desencadeia o mal sobre o mundo fazendo com que as unidades mitológicas custem menos favor.",
+    "descricao_avancada": "Unidades mitológicas custam 15% menos de Favor.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -564,7 +564,7 @@
     "nome": "Couro de Argos",
     "ingles": "Pelt of Argus",
     "descricao_resumida": "Melhora a linha de visão de todas as unidades.",
-    "descricao_avancada": "Você recuperou o Couro de Argos Panoptes, que melhora a linha de visão de todas as unidades.",
+    "descricao_avancada": "Unit ganham +6 de linha de visão.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -572,7 +572,7 @@
     "nome": "Proa do Argo",
     "ingles": "Prow of the Argo",
     "descricao_resumida": "Aumenta os pontos de vida dos navios de guerra.",
-    "descricao_avancada": "Você encontrou a proa do Argo, que aumenta os pontos de vida dos navios de guerra.",
+    "descricao_avancada": "AbstractWarship e AbstractWarshipHero têm +20% de pontos de vida.",
     "icon": "aomr_relic_vase_icon"
   },
   {
@@ -580,7 +580,7 @@
     "nome": "Cetro de Ptah",
     "ingles": "Ptah's Sceptre",
     "descricao_resumida": "As Fazendas são mais baratas.",
-    "descricao_avancada": "Enquanto você segurar o Cetro Was de Ptah, as Fazendas serão mais baratas.",
+    "descricao_avancada": "Farm custam 25% menos de Madeira e Ouro.",
     "icon": "aomr_relic_ankh_icon"
   },
   {
@@ -588,7 +588,7 @@
     "nome": "Estátua de Pigmalião",
     "ingles": "Pygmalion's Statue",
     "descricao_resumida": "Aumenta os pontos de vida de Aldeões.",
-    "descricao_avancada": "Você recuperou a Estátua de Pigmalião, o que aumenta os pontos de vida dos aldeões.",
+    "descricao_avancada": "Aldeões têm +40% de pontos de vida.",
     "icon": "aomr_relic_statue_man_icon"
   },
   {
@@ -636,7 +636,7 @@
     "nome": "Coroa de Reia",
     "ingles": "Rheia's Crown",
     "descricao_resumida": "Centros da Cidade e de Aldeia custam menos e geram Favor.",
-    "descricao_avancada": "Enquanto a Coroa de Reia estiver montada em seu Templo, seus Centros da Cidade e de Aldeia custarão menos e gerarão Favor.",
+    "descricao_avancada": "Centros Urbanos desbloqueiam uma ação especial.\nCentros urbanos custam 10% menos de Madeira e Ouro.",
     "icon": "aomr_relic_crown_icon"
   },
   {
@@ -644,7 +644,7 @@
     "nome": "O Anel de Nibelungo",
     "ingles": "Ring of the Nibelung",
     "descricao_resumida": "Fornece um pequeno fluxo constante de Ouro.",
-    "descricao_avancada": "Você desenterrou o Anel de Nibelungo, que fornece um constante fluxo de Ouro.",
+    "descricao_avancada": "Produz um fluxo de 30 de Ouro por minuto.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -652,7 +652,7 @@
     "nome": "Escamas de Catóblepa",
     "ingles": "Scales of a Catoblepas",
     "descricao_resumida": "Unidades mitológicas são mais resistentes a danos perfurante.",
-    "descricao_avancada": "Suas Escamas de Catóblepa tornam as unidades mitológicas mais resistentes a dano perfurante.",
+    "descricao_avancada": "Unidades mitológicas têm 15% menos vulnerabilidade a dano perfurante.",
     "icon": "aomr_relic_armor_icon"
   },
   {
@@ -660,7 +660,7 @@
     "nome": "Escamas da Equidna",
     "ingles": "Scales of Echidna",
     "descricao_resumida": "Unidades mitológicas são mais baratas.",
-    "descricao_avancada": "Você encontrou as Escamas da Equidna, que tornam as unidades mitológicas mais baratas.",
+    "descricao_avancada": "Unidades mitológicas custam 15% menos de Comida, Madeira e Ouro.",
     "icon": "aomr_relic_dragon_head_icon"
   },
   {
@@ -668,7 +668,7 @@
     "nome": "Pingente do Escaravelho",
     "ingles": "The Scarab Pendant",
     "descricao_resumida": "Aumenta o dano de esmagamento de armas de cerco e unidades mitológicas de cerco.",
-    "descricao_avancada": "Seu Pingente de Escaravelho aumenta o dano de esmagamento causado por armas de cerco e unidades mitológicas de cerco.",
+    "descricao_avancada": "Behemoth, Scarab, MountainGiant, Colossus, TaoWu, Oni, Armas de cerco, Ayotochtli e Quinametzin causam 20% mais dano.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -676,7 +676,7 @@
     "nome": "Ornamento Shachihoko",
     "ingles": "Shachihoko Ornament",
     "descricao_resumida": "Aumenta o alcance de torres e construções do tipo Fortaleza.",
-    "descricao_avancada": "Você encontrou uma estátua ornamental de Shachihoko para colocar em suas estruturas, o que aumenta o alcance de ataque das suas fortificações.",
+    "descricao_avancada": "Torres e Fortalezas têm +50% de alcance.",
     "icon": "aomr_relic_statue_monkey_icon"
   },
   {
@@ -684,7 +684,7 @@
     "nome": "Junco de Nekhbet",
     "ingles": "Shen of Nekhbet",
     "descricao_resumida": "Melhora o ataque de unidades navais mitológicas.",
-    "descricao_avancada": "Você recuperou o lendário Junco de Nekhbet, que aumenta o ataque de unidades mitológicas navais.",
+    "descricao_avancada": "LogicalTypeNavalMythUnit causam 100% mais dano.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -700,7 +700,7 @@
     "nome": "Navio das Unhas",
     "ingles": "Ship of Fingernails",
     "descricao_resumida": "Fornece um pequeno fluxo constante de Comida.",
-    "descricao_avancada": "Você recuperou o Navio das Unhas, que proporciona uma renda constante de comida.",
+    "descricao_avancada": "Produz um fluxo de 30 de Comida por minuto.",
     "icon": "aomr_relic_dragon_head_icon"
   },
   {
@@ -708,7 +708,7 @@
     "nome": "O Sistro de Bast",
     "ingles": "Sistrum of Bast",
     "descricao_resumida": "Aldeões são mais baratos.",
-    "descricao_avancada": "Você recuperou o Sistro de Bast, que reduz o custo dos aldeões.",
+    "descricao_avancada": "Aldeões custam 15% menos de Comida, Madeira e Ouro.",
     "icon": "aomr_relic_music_instruments_icon"
   },
   {
@@ -716,7 +716,7 @@
     "nome": "Caveiras dos Cêrcopes",
     "ingles": "Skulls of the Cercopes",
     "descricao_resumida": "Um grupo de Macacos aparecerá regularmente em seu Templo e ressurgirá se for morto.",
-    "descricao_avancada": "Você encontrou as Caveiras dos Cêrcopes, que concedem um grupo de Macacos que ressurge.",
+    "descricao_avancada": "Unidade bônus reaparece a cada 120 segundos.",
     "icon": "aomr_relic_statue_monkey_icon"
   },
   {
@@ -724,7 +724,7 @@
     "nome": "Cajado de Dionísio",
     "ingles": "Staff of Dionysus",
     "descricao_resumida": "Os aldeões regeneram pontos de vida.",
-    "descricao_avancada": "Você encontrou o Cajado de Dionísio, que dá a regeneração de vida aos seus aldeões.",
+    "descricao_avancada": "Aldeões regeneram 1 PV/s.",
     "icon": "aomr_relic_staff_icon"
   },
   {
@@ -732,7 +732,7 @@
     "nome": "Trenó de Svadilfari",
     "ingles": "Svadilfari's Sledge",
     "descricao_resumida": "Remove o custo de Favor de construções do tipo Fortaleza.",
-    "descricao_avancada": "Agora que você utiliza seus animais de tração no trenó de Svadilfari, suas construções do tipo Fortaleza não custam mais favor.",
+    "descricao_avancada": "Fortalezas são gratuitos.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -740,7 +740,7 @@
     "nome": "Penas da Cauda do Céu",
     "ingles": "Tail Feathers of Heaven",
     "descricao_resumida": "Os ataques de infantaria incendeiam os inimigos, causando dano de fogo ao longo do tempo.",
-    "descricao_avancada": "Você conquistou as Penas da Cauda do Céu. Os ataques da sua infantaria agora incendeiam os inimigos, causando dano de fogo ao longo do tempo.",
+    "descricao_avancada": "Infantaria aplicam efeito especial ao acertar.\nInfantaria aplicam efeito adicional ao acertar.",
     "icon": "aomr_relic_feather_icon"
   },
   {
@@ -748,7 +748,7 @@
     "nome": "Cauda do Cérbero",
     "ingles": "Tail of Cerberus",
     "descricao_resumida": "Unidades mitológicas usam seus ataques especiais com mais frequência.",
-    "descricao_avancada": "Você aproveitou a Cauda de Cérbero, que permite que as unidades mitológicas usem seus ataques especiais com mais frequência.",
+    "descricao_avancada": "Unidades mitológicas têm recarga 25% mais rápida.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -756,7 +756,7 @@
     "nome": "Cauda de Fei",
     "ingles": "Tail of Fei",
     "descricao_resumida": "Uma Fei aparecerá regularmente no seu Templo, e ressurgirá se for morta.",
-    "descricao_avancada": "Você apreendeu a Cauda de Fei. Uma Fei aparecerá periodicamente no seu Templo.",
+    "descricao_avancada": "Unidade bônus reaparece a cada 120 segundos.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -764,7 +764,7 @@
     "nome": "A Última Flecha de Tawara Toda",
     "ingles": "Tawara Toda's Last Arrow",
     "descricao_resumida": "Soldados de longo alcance infligem dano divino.",
-    "descricao_avancada": "Você recuperou a Última Flecha de Tawara Toda, que faz com que soldados de longo alcance inflijam dano divino.",
+    "descricao_avancada": "Soldados de longo alcance ganham +0.2 de dano.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -772,7 +772,7 @@
     "nome": "Textos de Imotepe",
     "ingles": "Texts of Imhotep",
     "descricao_resumida": "As construções são erigidas mais rapidamente.",
-    "descricao_avancada": "Enquanto seus aldeões estudarem os textos do famoso arquiteto Imhotep, eles construirão construções mais rapidamente.",
+    "descricao_avancada": "Construções são construídos 11.1% mais rápido.",
     "icon": "aomr_relic_scroll_icon"
   },
   {
@@ -780,7 +780,7 @@
     "nome": "Xale de Tormentas",
     "ingles": "Thundercloud Shawl",
     "descricao_resumida": "Aumenta a armadura antiperfurante dos soldados humanos.",
-    "descricao_avancada": "Você recuperou o Xale do Trovão de Hera, que aumenta a armadura antiperfurante de seus soldados.",
+    "descricao_avancada": "Soldados humanos e HeroShadowUpgraded têm 5% menos vulnerabilidade a dano perfurante.",
     "icon": "aomr_relic_blanket_icon"
   },
   {
@@ -788,7 +788,7 @@
     "nome": "O Tesouro dos Titãs",
     "ingles": "The Titan's Treasure",
     "descricao_resumida": "Reduz o custo de avançar para a próxima Era ou pesquisar Segredos dos Titãs.",
-    "descricao_avancada": "Você encontrou o Tesouro dos Titãs, o que reduz o custo de avançar para a próxima Era ou pesquisar Segredos dos Titãs.",
+    "descricao_avancada": "Ageupgrade e secretsofthetitans custam 10% menos de Comida e Ouro.\nSecretsofthetitans custam 10% menos de Madeira e Favor.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -796,7 +796,7 @@
     "nome": "A Torre de Sesto",
     "ingles": "Tower of Sestus",
     "descricao_resumida": "Aumenta o ataque da Torre contra unidades mitológicas.",
-    "descricao_avancada": "Você recuperou a Torre de Sesto, lar de Hero e Leandro, que aumenta o ataque da Torre contra unidades mitológicas.",
+    "descricao_avancada": "Torres de sentinela ganham +1 de dano.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -804,7 +804,7 @@
     "nome": "Tesouro de Coyoacan",
     "ingles": "Treasure of Coyoacan",
     "descricao_resumida": "Maravilhas são construídas mais rapidamente.",
-    "descricao_avancada": "Você encontrou o Tesouro de Coyoacan, que permite que Maravilhas sejam construídas mais rapidamente.",
+    "descricao_avancada": "Wonder são construídos 53.9% mais rápido.",
     "icon": "aomr_relic_chicahuaztli_icon"
   },
   {
@@ -812,7 +812,7 @@
     "nome": "Tesouro de Mexicaltzingo",
     "ingles": "Treasure of Mexicaltzingo",
     "descricao_resumida": "Maravilhas são construídas mais rapidamente.",
-    "descricao_avancada": "Você encontrou o Tesouro de Mexicaltzingo, que permite que Maravilhas sejam construídas mais rapidamente.",
+    "descricao_avancada": "Wonder são construídos 53.9% mais rápido.",
     "icon": "aomr_relic_xocolatl_icon"
   },
   {
@@ -820,7 +820,7 @@
     "nome": "Tesouro de Tlacopan",
     "ingles": "Treasure of Tlacopan",
     "descricao_resumida": "Maravilhas são construídas mais rapidamente.",
-    "descricao_avancada": "Você encontrou o Tesouro de Tlacopan, que permite que Maravilhas sejam construídas mais rapidamente.",
+    "descricao_avancada": "Wonder são construídos 53.9% mais rápido.",
     "icon": "aomr_relic_atlatl_icon"
   },
   {
@@ -828,7 +828,7 @@
     "nome": "Dobradiça do Portão de Troia",
     "ingles": "Trojan Gate Hinge",
     "descricao_resumida": "Aumenta os pontos de vida da Muralha.",
-    "descricao_avancada": "Você recuperou a Dobradiça do Portão das ruínas de Troia. Suas Muralhas agora têm mais pontos de vida.",
+    "descricao_avancada": "AbstractWall têm +40% de pontos de vida.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -836,7 +836,7 @@
     "nome": "Presa de Dangkang",
     "ingles": "Tusk of Dangkang",
     "descricao_resumida": "Um par de Porcos aparecerá regularmente no seu Centro Urbano.",
-    "descricao_avancada": "Você recuperou a Presa de Dangkang, que periodicamente concede um par de Porcos.",
+    "descricao_avancada": "Unidade bônus reaparece a cada 150 segundos.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -844,7 +844,7 @@
     "nome": "Presa do Javali de Ferro",
     "ingles": "Tusk of the Iron Boar",
     "descricao_resumida": "Aumenta os pontos de vida da cavalaria.",
-    "descricao_avancada": "Você encontrou a Presa do Javali de Ferro, que aumenta os pontos de vida da cavalaria.",
+    "descricao_avancada": "Cavalaria têm +10% de pontos de vida.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -852,7 +852,7 @@
     "nome": "Tyrfing, Espada de Angantyr",
     "ingles": "Tyrfing, Angantyr's Sword",
     "descricao_resumida": "Os heróis recuperam pontos de vida quando enfrentam unidades inimigas.",
-    "descricao_avancada": "Enquanto você estiver empunhando Tyrfing, a espada amaldiçoada de Angantyr, seus heróis recuperam pontos de vida quando enfrentam unidades inimigas.",
+    "descricao_avancada": "heróis curáveis recuperam 10% do dano causado como vida.",
     "icon": "aomr_relic_sword_icon"
   },
   {
@@ -860,7 +860,7 @@
     "nome": "Arco de Ullr",
     "ingles": "Ullr's Bow",
     "descricao_resumida": "Aumenta o alcance e a linha de visão dos soldados de longo alcance.",
-    "descricao_avancada": "Você recuperou o lendário arco de Ullr, que aumenta o alcance e a linha de visão dos soldados de longo alcance.",
+    "descricao_avancada": "Soldados de longo alcance e Ballista ganham +1 de alcance.\nSoldados de longo alcance e Ballista ganham +1 de linha de visão.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -868,7 +868,7 @@
     "nome": "Wuhao, Arco de Huang Di",
     "ingles": "Wuhao, Bow of Huangdi",
     "descricao_resumida": "Ataques de longo alcance de soldados humanos diminuirão a velocidade das unidades inimigas por um momento.",
-    "descricao_avancada": "Você recuperou Wuhao, o lendário Arco de Huang Di. Os ataques de longo alcance dos seus soldados humanos desacelerarão temporariamente as unidades inimigas.",
+    "descricao_avancada": "Soldados de longo alcance aplicam efeito especial ao acertar.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -876,7 +876,7 @@
     "nome": "Xirang",
     "ingles": "Xirang",
     "descricao_resumida": "Muralhas regeneram pontos de vida.",
-    "descricao_avancada": "Você adquiriu o solo mágico Xirang, que permite que as Muralhas regenerem pontos de vida.",
+    "descricao_avancada": "AbstractWall regeneram 10 PV/s.",
     "icon": "aomr_relic_soil_icon"
   },
   {
@@ -884,7 +884,7 @@
     "nome": "Xiuhcoatl",
     "ingles": "Xiuhcoatl",
     "descricao_resumida": "Unidades Mitológicas causam dano adicional a outras Unidades Mitológicas.",
-    "descricao_avancada": "Você encontrou a Serpente de Fogo Xiuhcoatl, que permite que suas Unidades Mitológicas causem dano adicional a outras Unidades Mitológicas.",
+    "descricao_avancada": "Unidades mitológicas causam 10% mais dano.",
     "icon": "aomr_relic_xiuhcoatl_icon"
   },
   {
@@ -892,7 +892,7 @@
     "nome": "Xocolatl",
     "ingles": "Xocolatl",
     "descricao_resumida": "Soldados humanos têm mais pontos de vida.",
-    "descricao_avancada": "Você encontrou o grão de Xococatl, que concede mais pontos de vida aos soldados humanos.",
+    "descricao_avancada": "Soldados humanos têm +4% de pontos de vida.",
     "icon": "aomr_relic_xocolatl_icon"
   },
   {
@@ -900,7 +900,7 @@
     "nome": "Espada Xuanyuan",
     "ingles": "Xuanyuan Sword",
     "descricao_resumida": "Melhora o ataque de todos os soldados e heróis humanos.",
-    "descricao_avancada": "Você recuperou a Espada Xuanyuan, que melhora o ataque de todos os soldados e heróis humanos.",
+    "descricao_avancada": "Heróis e Soldados humanos causam 15% mais dano.",
     "icon": "aomr_relic_chinese_sword_icon"
   },
   {
