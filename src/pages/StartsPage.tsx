@@ -55,6 +55,7 @@ export function StartsPage() {
   );
   const [q, setQ] = useListPageSearchQuery();
   const [filterKey, setFilterKey] = useState<string | null>(null);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const filterOptions = useMemo(
     () => buildStartFilterOptions(startsBuildOrder, panteoes),
     [startsBuildOrder, panteoes],
@@ -78,13 +79,44 @@ export function StartsPage() {
           className="!mb-0"
         />
         <div className="flex w-full flex-col gap-3">
-          <SearchField
-            value={q}
-            onChange={setQ}
-            placeholder={t("pages.starts.filterPlaceholder")}
-            id="starts-search"
-          />
-          <StartFilterTags options={filterOptions} value={filterKey} onChange={setFilterKey} />
+          <button
+            type="button"
+            onClick={() => setMobileFiltersOpen((open) => !open)}
+            aria-expanded={mobileFiltersOpen}
+            aria-controls="starts-filters-panel"
+            className={cn(
+              "inline-flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition md:hidden",
+              "focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/35",
+              mobileFiltersOpen
+                ? "border-zinc-600 bg-zinc-900/80 text-zinc-200"
+                : "border-aom-border bg-zinc-900/60 text-zinc-300 hover:border-zinc-600 hover:text-zinc-100",
+            )}
+          >
+            {mobileFiltersOpen ? t("pages.starts.hideFilters") : t("pages.starts.showFilters")}
+            {hasActiveFilter && !mobileFiltersOpen ? (
+              <span
+                className="h-2 w-2 shrink-0 rounded-full bg-amber-400"
+                aria-label={t("pages.starts.filtersActive")}
+              />
+            ) : null}
+          </button>
+          <div
+            id="starts-filters-panel"
+            className={cn(
+              "w-full flex-col gap-3",
+              mobileFiltersOpen ? "flex" : "hidden",
+              "md:flex",
+            )}
+          >
+            <SearchField
+              value={q}
+              onChange={setQ}
+              placeholder={t("pages.starts.filterPlaceholder")}
+              id="starts-search"
+              className="relative w-full max-w-none"
+            />
+            <StartFilterTags options={filterOptions} value={filterKey} onChange={setFilterKey} />
+          </div>
         </div>
       </ListPageStickyHeader>
       <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
