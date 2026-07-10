@@ -12,7 +12,7 @@
     "nome": "Ame no Murakumo no Tsurugi",
     "ingles": "Ame no Murakumo no Tsurugi",
     "descricao_resumida": "Bonus divine damage to units' attacks.",
-    "descricao_avancada": "Unit gain +2.5 damage.",
+    "descricao_avancada": "Units gain +2.5 damage.",
     "icon": "aomr_relic_torch_icon"
   },
   {
@@ -68,7 +68,7 @@
     "nome": "Atlatl of Ehecatl",
     "ingles": "Atlatl of Ehecatl",
     "descricao_resumida": "Ranged soldiers and buildings shoot faster.",
-    "descricao_avancada": "Ranged soldiers, Ballista, Towers, Fortresses, Town Centers, SiegeCrossbow and Oyumi attack 5.3% faster.",
+    "descricao_avancada": "Ranged soldiers, Ballista, Towers, Fortresses, Town Centers, Siege Crossbow and Oyumi attack 5.3% faster.",
     "icon": "aomr_relic_atlatl_icon"
   },
   {
@@ -100,7 +100,7 @@
     "nome": "Bone Shards of Mictlan",
     "ingles": "Bone Shards of Mictlan",
     "descricao_resumida": "Myth units return favor upon death.",
-    "descricao_avancada": "LogicalTypeTrainableMythUnit grant +2 favor when killed.",
+    "descricao_avancada": "Trainable myth units grant +2 favor when killed.",
     "icon": "aomr_relic_mictlan_icon"
   },
   {
@@ -108,7 +108,7 @@
     "nome": "Bow of Artemis",
     "ingles": "Bow of Artemis",
     "descricao_resumida": "Ranged soldiers and ranged myth units are cheaper.",
-    "descricao_avancada": "Ranged soldiers, Ballista and LogicalTypeRangedMythUnit cost 10% less wood and gold.",
+    "descricao_avancada": "Ranged soldiers, Ballista and Ranged myth units cost 10% less wood and gold.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -132,7 +132,7 @@
     "nome": "Cartographer's Hourglass",
     "ingles": "Cartographer's Hourglass",
     "descricao_resumida": "Reduces your villager gatherrates and line of sight.",
-    "descricao_avancada": "Villagers have +-50% line of sight.\nVillagers work -25% faster.",
+    "descricao_avancada": "Villagers have 50% less line of sight.\nVillagers work 25% slower.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -148,7 +148,7 @@
     "nome": "Charon's Obol",
     "ingles": "Charon's Obol",
     "descricao_resumida": "Villagers return part of their cost upon dying.",
-    "descricao_avancada": "VillagerGreek, VillagerEgyptian, VillagerNorse, Kuafu, KuafuHero, VillagerJapanese, Miko and VillagerAztec grant +25 food when killed.\nVillagerDwarf grant +30 gold when killed.\nVillagerAtlantean grant +42.5 food when killed.\nVillagerAtlantean grant +7.5 wood when killed.\nVillagerAtlanteanHero grant +60 food when killed.\nVillagerAtlanteanHero grant +10 wood when killed.\nVillagerAtlanteanHero grant +1 favor when killed.\nVillagerChinese grant +20 food when killed.\nKuafu and KuafuHero grant +50 gold when killed.\nKuafu and KuafuHero grant +8.5 favor when killed.",
+    "descricao_avancada": "Villager, Laborer, Gatherer, Kuafu, Kuafu (Hero), Commoner, Miko (Hero) and Settler grant +25 food when killed.\nDwarf grant +30 gold when killed.\nCitizen grant +42.5 food when killed.\nCitizen grant +7.5 wood when killed.\nCitizen (Hero) grant +60 food when killed.\nCitizen (Hero) grant +10 wood when killed.\nCitizen (Hero) grant +1 favor when killed.\nPeasant grant +20 food when killed.\nKuafu and Kuafu (Hero) grant +50 gold when killed.\nKuafu and Kuafu (Hero) grant +8.5 favor when killed.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -188,7 +188,7 @@
     "nome": "Demeter's Throne",
     "ingles": "Demeter's Throne",
     "descricao_resumida": "Dropsites, Ox Carts, Houses, and Manors cost less and are built faster.",
-    "descricao_avancada": "Storehouses, Granary, LumberCamp, MiningCamp, OxCartBuilding, Houses, Manors, EconomicGuild, Silo, Watermill, MiningCampJapanese and Calpulli are built 300% faster.\nStorehouses, Granary, OxCartBuilding, Houses, Manors, EconomicGuild, Silo, Watermill, MiningCampJapanese and Calpulli cost 50% less wood.\nOxCartBuilding cost 50% less food.\nManors, EconomicGuild and Silo cost 50% less gold.",
+    "descricao_avancada": "Storehouses, Granaries, Lumber camps, Mining camps, Ox carts, Houses, Manors, Economic guilds, Silos, Watermills, Japanese mining camps and Calpulli are built 300% faster.\nStorehouses, Granaries, Ox carts, Houses, Manors, Economic guilds, Silos, Watermills, Japanese mining camps and Calpulli cost 50% less wood.\nOx carts cost 50% less food.\nManors, Economic guilds and Silos cost 50% less gold.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -196,7 +196,7 @@
     "nome": "Dragon Palace Crystal",
     "ingles": "Dragon Palace Crystal",
     "descricao_resumida": "Walls and Towers gain more hitpoints.",
-    "descricao_avancada": "AbstractWall and Towers have +10% hit points.",
+    "descricao_avancada": "Walls and Towers have +10% hit points.",
     "icon": "aomr_relic_bricks_icon"
   },
   {
@@ -220,7 +220,7 @@
     "nome": "Ehecailacocozcatl",
     "ingles": "Ehecailacocozcatl",
     "descricao_resumida": "All units move faster.",
-    "descricao_avancada": "Unit move 2.5% faster.",
+    "descricao_avancada": "Units move 2.5% faster.",
     "icon": "aomr_relic_ehecailacocozcatl_icon"
   },
   {
@@ -236,7 +236,7 @@
     "nome": "Eye of Ornlu",
     "ingles": "Eye of Ornlu",
     "descricao_resumida": "Increases the attack of counter-infantry units.",
-    "descricao_avancada": "Hypaspist, Axeman, ThrowingAxeman, Cheiroballista, CheiroballistaHero, FireArcher, Samurai and ShornOne deal 5% more damage.",
+    "descricao_avancada": "Hypaspist, Axeman, Throwing Axeman, Cheiroballista, Cheiroballista (Hero), Fire Archer, Samurai and Shorn One deal 5% more damage.",
     "icon": "aomr_relic_sword_icon"
   },
   {
@@ -324,7 +324,7 @@
     "nome": "Glaucus' Book of Prophecies",
     "ingles": "Glaucus' Book of Prophecies",
     "descricao_resumida": "Fish gathers faster.",
-    "descricao_avancada": "AbstractFishingShip work 30% faster.",
+    "descricao_avancada": "Fishing ships work 30% faster.",
     "icon": "aomr_relic_scroll_icon"
   },
   {
@@ -356,7 +356,7 @@
     "nome": "Gungnir, Odin's Spear",
     "ingles": "Gungnir, Odin's Spear",
     "descricao_resumida": "Increases the attack of counter-cavalry infantry units.",
-    "descricao_avancada": "Hirdman, Hoplite, Spearman, Katapeltes, KatapeltesHero, GeHalberdier, YariSpearman and TlamanihSpearman deal 5% more damage.",
+    "descricao_avancada": "Hirdman, Hoplite, Spearman, Katapeltes, Katapeltes (Hero), Ge Halberdier, Yari Spearman and Tlamanih Spearman deal 5% more damage.",
     "icon": "aomr_relic_spear_icon"
   },
   {
@@ -380,7 +380,7 @@
     "nome": "Heavenly Jeweled Spear",
     "ingles": "Heavenly Jeweled Spear",
     "descricao_resumida": "Increases the melee attack range of counter-cavalry units.",
-    "descricao_avancada": "Prodromos, Spearman, Hirdman, Katapeltes, KatapeltesHero, GeHalberdier, YariSpearman and TlamanihSpearman gain +0.2 range.",
+    "descricao_avancada": "Prodromos, Spearman, Hirdman, Katapeltes, Katapeltes (Hero), Ge Halberdier, Yari Spearman and Tlamanih Spearman gain +0.2 range.",
     "icon": "aomr_relic_spear_icon"
   },
   {
@@ -412,7 +412,7 @@
     "nome": "Hoderi’s Lost Fish Hook",
     "ingles": "Hoderi’s Lost Fish Hook",
     "descricao_resumida": "Fish gathers faster.",
-    "descricao_avancada": "AbstractFishingShip work 40% faster.",
+    "descricao_avancada": "Fishing ships work 40% faster.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -468,7 +468,7 @@
     "nome": "Little Crow Circle",
     "ingles": "Little Crow Circle",
     "descricao_resumida": "Weapon upgrades at the Armory are cheaper.",
-    "descricao_avancada": "ArmoryWeaponsTechnology cost 50% less food and gold.",
+    "descricao_avancada": "Armory weapon upgrades cost 50% less food and gold.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -484,7 +484,7 @@
     "nome": "Nine Cauldrons",
     "ingles": "Nine Cauldrons",
     "descricao_resumida": "Increases the hack and pierce armor of soldiers trained at fortress-type buildings.",
-    "descricao_avancada": "Myrmidon, Gastraphetoros, Hetairos, ChariotArcher, CamelRider, WarElephant, Huskarl, Destroyer, DestroyerHero, Fanatic, FanaticHero, WhiteHorseCavalry, TigerCavalry, TigerCavalryDismounted, Otontin, ShornOne and JaguarRider have 5% less vulnerability to hack damage.\nMyrmidon, Gastraphetoros, Hetairos, ChariotArcher, CamelRider, WarElephant, Huskarl, Destroyer, DestroyerHero, Fanatic, FanaticHero, WhiteHorseCavalry, TigerCavalry, TigerCavalryDismounted, Otontin, ShornOne and JaguarRider have 5% less vulnerability to pierce damage.",
+    "descricao_avancada": "Myrmidon, Gastraphetoros, Hetairos, Chariot Archer, Camel Rider, War Elephant, Huskarl, Destroyer, Destroyer (Hero), Fanatic, Fanatic (Hero), White Horse Cavalry, Tiger Cavalry, Tiger Cavalry (Dismounted), Otontin Smasher, Shorn One and Jaguar Rider have 5% less vulnerability to hack damage.\nMyrmidon, Gastraphetoros, Hetairos, Chariot Archer, Camel Rider, War Elephant, Huskarl, Destroyer, Destroyer (Hero), Fanatic, Fanatic (Hero), White Horse Cavalry, Tiger Cavalry, Tiger Cavalry (Dismounted), Otontin Smasher, Shorn One and Jaguar Rider have 5% less vulnerability to pierce damage.",
     "icon": "aomr_relic_cauldron_icon"
   },
   {
@@ -492,7 +492,7 @@
     "nome": "Nine-Tailed Fox Charm",
     "ingles": "Nine-Tailed Fox Charm",
     "descricao_resumida": "Myth units regenerate hitpoints.",
-    "descricao_avancada": "LogicalTypeMythUnitNotTitan regenerate 0.5 HP/s.",
+    "descricao_avancada": "Myth units (except Titans) regenerate 0.5 HP/s.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -500,7 +500,7 @@
     "nome": "Nose of the Sphinx",
     "ingles": "Nose of the Sphinx",
     "descricao_resumida": "Increases building hitpoints.",
-    "descricao_avancada": "Buildings have +15% hit points.\nLogicalTypeUnitIsConstructed have +-15% hit points.",
+    "descricao_avancada": "Buildings have +15% hit points.\nUnits under construction have 15% less hit points.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -564,7 +564,7 @@
     "nome": "Pelt of Argus",
     "ingles": "Pelt of Argus",
     "descricao_resumida": "Improves all units' line of sight.",
-    "descricao_avancada": "Unit gain +6 line of sight.",
+    "descricao_avancada": "Units gain +6 line of sight.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -572,7 +572,7 @@
     "nome": "Prow of the Argo",
     "ingles": "Prow of the Argo",
     "descricao_resumida": "Increases warship hitpoints.",
-    "descricao_avancada": "AbstractWarship and AbstractWarshipHero have +20% hit points.",
+    "descricao_avancada": "Warships and Naval heroes have +20% hit points.",
     "icon": "aomr_relic_vase_icon"
   },
   {
@@ -668,7 +668,7 @@
     "nome": "The Scarab Pendant",
     "ingles": "The Scarab Pendant",
     "descricao_resumida": "Increases the crush damage of siege weapons and siege myth units.",
-    "descricao_avancada": "Behemoth, Scarab, MountainGiant, Colossus, TaoWu, Oni, Siege weapons, Ayotochtli and Quinametzin deal 20% more damage.",
+    "descricao_avancada": "Behemoth, Scarab, Mountain Giant, Colossus, Taowu, Oni, Siege weapons, Ayotochtli and Quinametzin deal 20% more damage.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -684,7 +684,7 @@
     "nome": "Shen of Nekhbet",
     "ingles": "Shen of Nekhbet",
     "descricao_resumida": "Improves the attack of naval myth units.",
-    "descricao_avancada": "LogicalTypeNavalMythUnit deal 100% more damage.",
+    "descricao_avancada": "Naval myth units deal 100% more damage.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -780,7 +780,7 @@
     "nome": "Thundercloud Shawl",
     "ingles": "Thundercloud Shawl",
     "descricao_resumida": "Increases the pierce armor of human soldiers.",
-    "descricao_avancada": "Human soldiers and HeroShadowUpgraded have 5% less vulnerability to pierce damage.",
+    "descricao_avancada": "Human soldiers and Hero shadows have 5% less vulnerability to pierce damage.",
     "icon": "aomr_relic_blanket_icon"
   },
   {
@@ -788,7 +788,7 @@
     "nome": "The Titan's Treasure",
     "ingles": "The Titan's Treasure",
     "descricao_resumida": "Reduces the cost of advancing to the next Age or researching Secrets of the Titans.",
-    "descricao_avancada": "AgeUpgrade and SecretsOfTheTitans cost 10% less food and gold.\nSecretsOfTheTitans cost 10% less wood and favor.",
+    "descricao_avancada": "Age upgrades and Secrets of the Titans cost 10% less food and gold.\nSecrets of the Titans cost 10% less wood and favor.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -828,7 +828,7 @@
     "nome": "Trojan Gate Hinge",
     "ingles": "Trojan Gate Hinge",
     "descricao_resumida": "Increases Wall hitpoints.",
-    "descricao_avancada": "AbstractWall have +40% hit points.",
+    "descricao_avancada": "Walls have +40% hit points.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -876,7 +876,7 @@
     "nome": "Xirang",
     "ingles": "Xirang",
     "descricao_resumida": "Walls regenerate hitpoints.",
-    "descricao_avancada": "AbstractWall regenerate 10 HP/s.",
+    "descricao_avancada": "Walls regenerate 10 HP/s.",
     "icon": "aomr_relic_soil_icon"
   },
   {

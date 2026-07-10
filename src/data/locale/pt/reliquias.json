@@ -12,7 +12,7 @@
     "nome": "Ame no Murakumo no Tsurugi",
     "ingles": "Ame no Murakumo no Tsurugi",
     "descricao_resumida": "Bônus de dano divino aos ataques das unidades.",
-    "descricao_avancada": "Unit ganham +2.5 de dano.",
+    "descricao_avancada": "Unidades ganham +2.5 de dano.",
     "icon": "aomr_relic_torch_icon"
   },
   {
@@ -68,7 +68,7 @@
     "nome": "Estólica de Ehecatl",
     "ingles": "Atlatl of Ehecatl",
     "descricao_resumida": "Soldados de longo alcance e construções atiram mais rápido.",
-    "descricao_avancada": "Soldados de longo alcance, Ballista, Torres, Fortalezas, Centros Urbanos, SiegeCrossbow e Oyumi atacam 5.3% mais rápido.",
+    "descricao_avancada": "Soldados de longo alcance, Balista, Torres, Fortalezas, Centros Urbanos, Besta de Cerco e Oyumi atacam 5.3% mais rápido.",
     "icon": "aomr_relic_atlatl_icon"
   },
   {
@@ -100,7 +100,7 @@
     "nome": "Fragmentos de Osso de Mictlan",
     "ingles": "Bone Shards of Mictlan",
     "descricao_resumida": "Unidades mitológicas devolvem favor ao morrer.",
-    "descricao_avancada": "LogicalTypeTrainableMythUnit concedem +2 de Favor ao serem abatidos.",
+    "descricao_avancada": "Unidades mitológicas treináveis concedem +2 de Favor ao serem abatidos.",
     "icon": "aomr_relic_mictlan_icon"
   },
   {
@@ -108,7 +108,7 @@
     "nome": "Arco de Ártemis",
     "ingles": "Bow of Artemis",
     "descricao_resumida": "Soldados à distância e unidades mitológicas variados, são mais baratos.",
-    "descricao_avancada": "Soldados de longo alcance, ballista e logicaltyperangedmythunit custam 10% menos de Madeira e Ouro.",
+    "descricao_avancada": "Soldados de longo alcance, balista e unidades mitológicas de longo alcance custam 10% menos de Madeira e Ouro.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -132,7 +132,7 @@
     "nome": "Ampulheta do Cartógrafo",
     "ingles": "Cartographer's Hourglass",
     "descricao_resumida": "Reduz as taxas de coleta e a linha de visão do aldeão.",
-    "descricao_avancada": "Aldeões têm +-50% de linha de visão.\nAldeões trabalham -25% mais rápido.",
+    "descricao_avancada": "Aldeões têm 50% menos linha de visão.\nAldeões trabalham 25% mais devagar.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -148,7 +148,7 @@
     "nome": "Óbolo de Caronte",
     "ingles": "Charon's Obol",
     "descricao_resumida": "Os Aldeões devolvem parte de seu custo ao morrer.",
-    "descricao_avancada": "VillagerGreek, VillagerEgyptian, VillagerNorse, Kuafu, KuafuHero, VillagerJapanese, Miko e VillagerAztec concedem +25 de Comida ao serem abatidos.\nVillagerDwarf concedem +30 de Ouro ao serem abatidos.\nVillagerAtlantean concedem +42.5 de Comida ao serem abatidos.\nVillagerAtlantean concedem +7.5 de Madeira ao serem abatidos.\nVillagerAtlanteanHero concedem +60 de Comida ao serem abatidos.\nVillagerAtlanteanHero concedem +10 de Madeira ao serem abatidos.\nVillagerAtlanteanHero concedem +1 de Favor ao serem abatidos.\nVillagerChinese concedem +20 de Comida ao serem abatidos.\nKuafu e KuafuHero concedem +50 de Ouro ao serem abatidos.\nKuafu e KuafuHero concedem +8.5 de Favor ao serem abatidos.",
+    "descricao_avancada": "Aldeão, Trabalhador, Coletor, Kuafu, Kuafu (Herói), Plebeu, Miko (Heroína) e Plebeu concedem +25 de Comida ao serem abatidos.\nAnão concedem +30 de Ouro ao serem abatidos.\nCidadão concedem +42.5 de Comida ao serem abatidos.\nCidadão concedem +7.5 de Madeira ao serem abatidos.\nCidadão (Herói) concedem +60 de Comida ao serem abatidos.\nCidadão (Herói) concedem +10 de Madeira ao serem abatidos.\nCidadão (Herói) concedem +1 de Favor ao serem abatidos.\nCamponês concedem +20 de Comida ao serem abatidos.\nKuafu e Kuafu (Herói) concedem +50 de Ouro ao serem abatidos.\nKuafu e Kuafu (Herói) concedem +8.5 de Favor ao serem abatidos.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -188,7 +188,7 @@
     "nome": "Trono de Deméter",
     "ingles": "Demeter's Throne",
     "descricao_resumida": "Locais de entrega, Carros de Boi, Casas e Mansões custam menos e são construídos mais rapidamente.",
-    "descricao_avancada": "Armazéns, Granary, LumberCamp, MiningCamp, OxCartBuilding, Casas, Manors, EconomicGuild, Silo, Watermill, MiningCampJapanese e Calpulli são construídos 300% mais rápido.\nArmazéns, granary, oxcartbuilding, casas, manors, economicguild, silo, watermill, miningcampjapanese e calpulli custam 50% menos de Madeira.\nOxcartbuilding custam 50% menos de Comida.\nManors, economicguild e silo custam 50% menos de Ouro.",
+    "descricao_avancada": "Armazéns, Celeiros, Campos madeireiros, Campos de mineração, Carroças de boi, Casas, Manors, Guildas econômicas, Silos, Moinhos d'água, Campos de mineração japoneses e Calpulli são construídos 300% mais rápido.\nArmazéns, celeiros, carroças de boi, casas, manors, guildas econômicas, silos, moinhos d'água, campos de mineração japoneses e calpulli custam 50% menos de Madeira.\nCarroças de boi custam 50% menos de Comida.\nManors, guildas econômicas e silos custam 50% menos de Ouro.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -196,7 +196,7 @@
     "nome": "Cristal do Palácio do Dragão",
     "ingles": "Dragon Palace Crystal",
     "descricao_resumida": "Muralhas e Torres ganham mais pontos de vida.",
-    "descricao_avancada": "AbstractWall e Torres têm +10% de pontos de vida.",
+    "descricao_avancada": "Muralhas e Torres têm +10% de pontos de vida.",
     "icon": "aomr_relic_bricks_icon"
   },
   {
@@ -220,7 +220,7 @@
     "nome": "Ehecailacocozcatl",
     "ingles": "Ehecailacocozcatl",
     "descricao_resumida": "Todas as unidades se movem mais rápido.",
-    "descricao_avancada": "Unit movem-se 2.5% mais rápido.",
+    "descricao_avancada": "Unidades movem-se 2.5% mais rápido.",
     "icon": "aomr_relic_ehecailacocozcatl_icon"
   },
   {
@@ -236,7 +236,7 @@
     "nome": "Olho de Ornlu",
     "ingles": "Eye of Ornlu",
     "descricao_resumida": "Aumenta o ataque de unidades de contrainfantaria.",
-    "descricao_avancada": "Hypaspist, Axeman, ThrowingAxeman, Cheiroballista, CheiroballistaHero, FireArcher, Samurai e ShornOne causam 5% mais dano.",
+    "descricao_avancada": "Hipaspista, Machadeiro, Lançador de Machados, Quirobalista, Quirobalista (Herói), Arqueiro de Fogo, Samurai e Tosquiado causam 5% mais dano.",
     "icon": "aomr_relic_sword_icon"
   },
   {
@@ -292,7 +292,7 @@
     "nome": "Pelo de Boyi",
     "ingles": "Fur of Boyi",
     "descricao_resumida": "Heróis regeneram pontos de vida ao longo do tempo.",
-    "descricao_avancada": "heróis curáveis regeneram 0.2 PV/s.",
+    "descricao_avancada": "Heróis curáveis regeneram 0.2 PV/s.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -324,7 +324,7 @@
     "nome": "Livro das Profecias de Glauco",
     "ingles": "Glaucus' Book of Prophecies",
     "descricao_resumida": "Aumenta a velocidade de pescaria.",
-    "descricao_avancada": "AbstractFishingShip trabalham 30% mais rápido.",
+    "descricao_avancada": "Barcos de pesca trabalham 30% mais rápido.",
     "icon": "aomr_relic_scroll_icon"
   },
   {
@@ -356,7 +356,7 @@
     "nome": "Gungnir, Lança de Odin",
     "ingles": "Gungnir, Odin's Spear",
     "descricao_resumida": "Aumenta o ataque de unidades de infantaria contra-cavalaria.",
-    "descricao_avancada": "Hirdman, Hoplite, Spearman, Katapeltes, KatapeltesHero, GeHalberdier, YariSpearman e TlamanihSpearman causam 5% mais dano.",
+    "descricao_avancada": "Hird, Hoplita, Lanceiro, Katapeltes, Katapeltes (Herói), Alabardeiro Ge, Lanceiro Yari e Lanceiro Tlamanih causam 5% mais dano.",
     "icon": "aomr_relic_spear_icon"
   },
   {
@@ -380,7 +380,7 @@
     "nome": "Lança Celestial Cravejada",
     "ingles": "Heavenly Jeweled Spear",
     "descricao_resumida": "Aumenta o alcance do ataque corpo a corpo das unidades anticavalaria.",
-    "descricao_avancada": "Prodromos, Spearman, Hirdman, Katapeltes, KatapeltesHero, GeHalberdier, YariSpearman e TlamanihSpearman ganham +0.2 de alcance.",
+    "descricao_avancada": "Prodromos, Lanceiro, Hird, Katapeltes, Katapeltes (Herói), Alabardeiro Ge, Lanceiro Yari e Lanceiro Tlamanih ganham +0.2 de alcance.",
     "icon": "aomr_relic_spear_icon"
   },
   {
@@ -412,7 +412,7 @@
     "nome": "Anzol Perdido de Hoderi",
     "ingles": "Hoderi’s Lost Fish Hook",
     "descricao_resumida": "Aumenta a velocidade de pescaria.",
-    "descricao_avancada": "AbstractFishingShip trabalham 40% mais rápido.",
+    "descricao_avancada": "Barcos de pesca trabalham 40% mais rápido.",
     "icon": "aomr_relic_tools_icon"
   },
   {
@@ -468,7 +468,7 @@
     "nome": "Pequeno Círculo de Corvos",
     "ingles": "Little Crow Circle",
     "descricao_resumida": "As melhorias de armas na Armaria são mais baratas.",
-    "descricao_avancada": "Armoryweaponstechnology custam 50% menos de Comida e Ouro.",
+    "descricao_avancada": "Melhorias de armas da armaria custam 50% menos de Comida e Ouro.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -484,7 +484,7 @@
     "nome": "Nove Caldeirões",
     "ingles": "Nine Cauldrons",
     "descricao_resumida": "Aumenta a armadura de corte e antiperfurante de soldados treinados em construções do tipo fortaleza.",
-    "descricao_avancada": "Myrmidon, Gastraphetoros, Hetairos, ChariotArcher, CamelRider, WarElephant, Huskarl, Destroyer, DestroyerHero, Fanatic, FanaticHero, WhiteHorseCavalry, TigerCavalry, TigerCavalryDismounted, Otontin, ShornOne e JaguarRider têm 5% menos vulnerabilidade a dano cortante.\nMyrmidon, Gastraphetoros, Hetairos, ChariotArcher, CamelRider, WarElephant, Huskarl, Destroyer, DestroyerHero, Fanatic, FanaticHero, WhiteHorseCavalry, TigerCavalry, TigerCavalryDismounted, Otontin, ShornOne e JaguarRider têm 5% menos vulnerabilidade a dano perfurante.",
+    "descricao_avancada": "Mirmidão, Gastrafeta, Hetairos, Arqueiro em Biga, Cameleiro, Elefante de Guerra, Huscarl, Destruidor, Destruidor (Herói), Fanático, Fanático (Herói), Cavalaria de Cavalo Branco, Cavalaria de Tigre, Cavalaria de Tigre (Desmontada), Esmagador Otontin, Tosquiado e Cavaleiro Jaguar têm 5% menos vulnerabilidade a dano cortante.\nMirmidão, Gastrafeta, Hetairos, Arqueiro em Biga, Cameleiro, Elefante de Guerra, Huscarl, Destruidor, Destruidor (Herói), Fanático, Fanático (Herói), Cavalaria de Cavalo Branco, Cavalaria de Tigre, Cavalaria de Tigre (Desmontada), Esmagador Otontin, Tosquiado e Cavaleiro Jaguar têm 5% menos vulnerabilidade a dano perfurante.",
     "icon": "aomr_relic_cauldron_icon"
   },
   {
@@ -492,7 +492,7 @@
     "nome": "Amuleto de Raposa de Nove Caudas",
     "ingles": "Nine-Tailed Fox Charm",
     "descricao_resumida": "Unidades mitológicas regeneram pontos de vida.",
-    "descricao_avancada": "LogicalTypeMythUnitNotTitan regeneram 0.5 PV/s.",
+    "descricao_avancada": "Unidades mitológicas (exceto Titãs) regeneram 0.5 PV/s.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -500,7 +500,7 @@
     "nome": "Nariz da Esfinge",
     "ingles": "Nose of the Sphinx",
     "descricao_resumida": "Aumenta os pontos de vida da construção.",
-    "descricao_avancada": "Construções têm +15% de pontos de vida.\nLogicalTypeUnitIsConstructed têm +-15% de pontos de vida.",
+    "descricao_avancada": "Construções têm +15% de pontos de vida.\nUnidades em construção têm 15% menos pontos de vida.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -564,7 +564,7 @@
     "nome": "Couro de Argos",
     "ingles": "Pelt of Argus",
     "descricao_resumida": "Melhora a linha de visão de todas as unidades.",
-    "descricao_avancada": "Unit ganham +6 de linha de visão.",
+    "descricao_avancada": "Unidades ganham +6 de linha de visão.",
     "icon": "aomr_relic_fur_icon"
   },
   {
@@ -572,7 +572,7 @@
     "nome": "Proa do Argo",
     "ingles": "Prow of the Argo",
     "descricao_resumida": "Aumenta os pontos de vida dos navios de guerra.",
-    "descricao_avancada": "AbstractWarship e AbstractWarshipHero têm +20% de pontos de vida.",
+    "descricao_avancada": "Navios de guerra e Heróis navais têm +20% de pontos de vida.",
     "icon": "aomr_relic_vase_icon"
   },
   {
@@ -580,7 +580,7 @@
     "nome": "Cetro de Ptah",
     "ingles": "Ptah's Sceptre",
     "descricao_resumida": "As Fazendas são mais baratas.",
-    "descricao_avancada": "Farm custam 25% menos de Madeira e Ouro.",
+    "descricao_avancada": "Fazenda custam 25% menos de Madeira e Ouro.",
     "icon": "aomr_relic_ankh_icon"
   },
   {
@@ -668,7 +668,7 @@
     "nome": "Pingente do Escaravelho",
     "ingles": "The Scarab Pendant",
     "descricao_resumida": "Aumenta o dano de esmagamento de armas de cerco e unidades mitológicas de cerco.",
-    "descricao_avancada": "Behemoth, Scarab, MountainGiant, Colossus, TaoWu, Oni, Armas de cerco, Ayotochtli e Quinametzin causam 20% mais dano.",
+    "descricao_avancada": "Beemote, Escaravelho, Gigante de Montanha, Colosso, Táowù, Oni, Armas de cerco, Ayotochtli e Quinametzin causam 20% mais dano.",
     "icon": "aomr_relic_jewelry_icon"
   },
   {
@@ -684,7 +684,7 @@
     "nome": "Junco de Nekhbet",
     "ingles": "Shen of Nekhbet",
     "descricao_resumida": "Melhora o ataque de unidades navais mitológicas.",
-    "descricao_avancada": "LogicalTypeNavalMythUnit causam 100% mais dano.",
+    "descricao_avancada": "Unidades mitológicas navais causam 100% mais dano.",
     "icon": "aomr_relic_statue_lion_icon"
   },
   {
@@ -780,7 +780,7 @@
     "nome": "Xale de Tormentas",
     "ingles": "Thundercloud Shawl",
     "descricao_resumida": "Aumenta a armadura antiperfurante dos soldados humanos.",
-    "descricao_avancada": "Soldados humanos e HeroShadowUpgraded têm 5% menos vulnerabilidade a dano perfurante.",
+    "descricao_avancada": "Soldados humanos e sombras de heróis têm 5% menos vulnerabilidade a dano perfurante.",
     "icon": "aomr_relic_blanket_icon"
   },
   {
@@ -788,7 +788,7 @@
     "nome": "O Tesouro dos Titãs",
     "ingles": "The Titan's Treasure",
     "descricao_resumida": "Reduz o custo de avançar para a próxima Era ou pesquisar Segredos dos Titãs.",
-    "descricao_avancada": "Ageupgrade e secretsofthetitans custam 10% menos de Comida e Ouro.\nSecretsofthetitans custam 10% menos de Madeira e Favor.",
+    "descricao_avancada": "Avanços de era e segredos dos titãs custam 10% menos de Comida e Ouro.\nSegredos dos titãs custam 10% menos de Madeira e Favor.",
     "icon": "aomr_relic_coins_icon"
   },
   {
@@ -804,7 +804,7 @@
     "nome": "Tesouro de Coyoacan",
     "ingles": "Treasure of Coyoacan",
     "descricao_resumida": "Maravilhas são construídas mais rapidamente.",
-    "descricao_avancada": "Wonder são construídos 53.9% mais rápido.",
+    "descricao_avancada": "Maravilha são construídos 53.9% mais rápido.",
     "icon": "aomr_relic_chicahuaztli_icon"
   },
   {
@@ -812,7 +812,7 @@
     "nome": "Tesouro de Mexicaltzingo",
     "ingles": "Treasure of Mexicaltzingo",
     "descricao_resumida": "Maravilhas são construídas mais rapidamente.",
-    "descricao_avancada": "Wonder são construídos 53.9% mais rápido.",
+    "descricao_avancada": "Maravilha são construídos 53.9% mais rápido.",
     "icon": "aomr_relic_xocolatl_icon"
   },
   {
@@ -820,7 +820,7 @@
     "nome": "Tesouro de Tlacopan",
     "ingles": "Treasure of Tlacopan",
     "descricao_resumida": "Maravilhas são construídas mais rapidamente.",
-    "descricao_avancada": "Wonder são construídos 53.9% mais rápido.",
+    "descricao_avancada": "Maravilha são construídos 53.9% mais rápido.",
     "icon": "aomr_relic_atlatl_icon"
   },
   {
@@ -828,7 +828,7 @@
     "nome": "Dobradiça do Portão de Troia",
     "ingles": "Trojan Gate Hinge",
     "descricao_resumida": "Aumenta os pontos de vida da Muralha.",
-    "descricao_avancada": "AbstractWall têm +40% de pontos de vida.",
+    "descricao_avancada": "Muralhas têm +40% de pontos de vida.",
     "icon": "aomr_relic_chains_icon"
   },
   {
@@ -852,7 +852,7 @@
     "nome": "Tyrfing, Espada de Angantyr",
     "ingles": "Tyrfing, Angantyr's Sword",
     "descricao_resumida": "Os heróis recuperam pontos de vida quando enfrentam unidades inimigas.",
-    "descricao_avancada": "heróis curáveis recuperam 10% do dano causado como vida.",
+    "descricao_avancada": "Heróis curáveis recuperam 10% do dano causado como vida.",
     "icon": "aomr_relic_sword_icon"
   },
   {
@@ -860,7 +860,7 @@
     "nome": "Arco de Ullr",
     "ingles": "Ullr's Bow",
     "descricao_resumida": "Aumenta o alcance e a linha de visão dos soldados de longo alcance.",
-    "descricao_avancada": "Soldados de longo alcance e Ballista ganham +1 de alcance.\nSoldados de longo alcance e Ballista ganham +1 de linha de visão.",
+    "descricao_avancada": "Soldados de longo alcance e Balista ganham +1 de alcance.\nSoldados de longo alcance e Balista ganham +1 de linha de visão.",
     "icon": "aomr_relic_bow_icon"
   },
   {
@@ -876,7 +876,7 @@
     "nome": "Xirang",
     "ingles": "Xirang",
     "descricao_resumida": "Muralhas regeneram pontos de vida.",
-    "descricao_avancada": "AbstractWall regeneram 10 PV/s.",
+    "descricao_avancada": "Muralhas regeneram 10 PV/s.",
     "icon": "aomr_relic_soil_icon"
   },
   {

@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
+from pathlib import Path
 from typing import Any
+
+from aom_relic_targets import target_label
 
 SKIP_TRICKLE_FAVOR = 0.011
 
@@ -29,69 +32,6 @@ ARMOR_PT = {
     "Crush": "contundente",
 }
 
-TARGET_EN: dict[str, str] = {
-    "AbstractInfantry": "Infantry",
-    "AbstractArcher": "Ranged soldiers",
-    "AbstractCavalry": "Cavalry",
-    "AbstractSiegeWeapon": "Siege weapons",
-    "AbstractTower": "Towers",
-    "AbstractFortress": "Fortresses",
-    "AbstractTownCenter": "Town Centers",
-    "AbstractMythUnit": "Myth units",
-    "MythUnit": "Myth units",
-    "Hero": "Heroes",
-    "Building": "Buildings",
-    "EconomicUpgraded": "Villagers",
-    "HumanSoldier": "Human soldiers",
-    "TradeUnit": "Trade units",
-    "House": "Houses",
-    "Manor": "Manors",
-    "TownCenter": "Town Centers",
-    "CitadelCenter": "Citadel Centers",
-    "Armory": "Armory technologies",
-    "DwarvenArmory": "Dwarven Armory technologies",
-    "Temple": "Temple technologies",
-    "SentryTower": "Sentry Towers",
-    "WallGate": "Gates",
-    "Storehouse": "Storehouses",
-    "Quinametzin": "Quinametzin",
-    "OsirisPieceCart": "Osiris Piece carts",
-    "LogicalTypeHealableHero": "Healable heroes",
-    "Player": "",
-}
-
-TARGET_PT: dict[str, str] = {
-    "AbstractInfantry": "Infantaria",
-    "AbstractArcher": "Soldados de longo alcance",
-    "AbstractCavalry": "Cavalaria",
-    "AbstractSiegeWeapon": "Armas de cerco",
-    "AbstractTower": "Torres",
-    "AbstractFortress": "Fortalezas",
-    "AbstractTownCenter": "Centros Urbanos",
-    "AbstractMythUnit": "Unidades mitológicas",
-    "MythUnit": "Unidades mitológicas",
-    "Hero": "Heróis",
-    "Building": "Construções",
-    "EconomicUpgraded": "Aldeões",
-    "HumanSoldier": "Soldados humanos",
-    "TradeUnit": "Caravanas",
-    "House": "Casas",
-    "Manor": "Manors",
-    "TownCenter": "Centros Urbanos",
-    "CitadelCenter": "Cidadelas",
-    "Armory": "melhorias da Armaria",
-    "DwarvenArmory": "melhorias da Armaria Anã",
-    "Temple": "melhorias do Templo",
-    "SentryTower": "Torres de sentinela",
-    "WallGate": "Portões",
-    "Storehouse": "Armazéns",
-    "Quinametzin": "Quinametzin",
-    "OsirisPieceCart": "carroças da Peça de Osíris",
-    "LogicalTypeHealableHero": "heróis curáveis",
-    "Player": "",
-}
-
-
 def _float(value: str | None, default: float = 0.0) -> float:
     if not value:
         return default
@@ -112,13 +52,16 @@ def _pct_from_multiplier(multiplier: float) -> float:
     return (multiplier - 1.0) * 100.0
 
 
+def _pct_change(multiplier: float) -> tuple[float, bool]:
+    return abs(_pct_from_multiplier(multiplier)), multiplier >= 1.0
+
+
 def _discount_from_cost_factor(factor: float) -> float:
     return (1.0 - factor) * 100.0
 
 
-def _target_label(proto: str, *, locale: str) -> str:
-    labels = TARGET_PT if locale == "pt" else TARGET_EN
-    return labels.get(proto, proto)
+def _target_label(proto: str, *, locale: str, cache_dir: Path | None = None) -> str:
+    return target_label(proto, locale=locale, cache_dir=cache_dir)
 
 
 def _resource_label(resource: str, *, locale: str) -> str:
@@ -174,7 +117,7 @@ def _is_noise_effect(effect: dict[str, Any]) -> bool:
         return False
     if effect["resource"] != "Favor":
         return False
-    return effect["amount"] <= SKIP_TRICKLE_FAVOR
+    return abs(effect["amount"]) <= SKIP_TRICKLE_FAVOR
 
 
 def _effect_key(effect: dict[str, Any]) -> tuple[Any, ...]:
@@ -248,8 +191,8 @@ def _bonus_work_rate_line(
     )
 
 
-def _join_targets(targets: list[str], *, locale: str) -> str:
-    labels = [_target_label(proto, locale=locale) for proto in targets if proto]
+def _join_targets(targets: list[str], *, locale: str, cache_dir: Path | None = None) -> str:
+    labels = [_target_label(proto, locale=locale, cache_dir=cache_dir) for proto in targets if proto]
     labels = [label for label in labels if label]
     if not labels:
         return ""
@@ -274,6 +217,7 @@ def _format_single_effect(
     *,
     locale: str,
     tech_index: dict[str, ET.Element] | None = None,
+    cache_dir: Path | None = None,
 ) -> str | None:
     if effect.get("effect_type") == "TechStatus":
         linked = effect.get("linked_tech", "")
@@ -292,7 +236,7 @@ def _format_single_effect(
     amount = effect["amount"]
     resource = effect["resource"]
     relativity = effect["relativity"]
-    targets = _join_targets(effect.get("targets", []), locale=locale)
+    targets = _join_targets(effect.get("targets", []), locale=locale, cache_dir=cache_dir)
     armor = _armor_label(effect["armortype"], locale=locale) if effect["armortype"] else ""
 
     if subtype == "ResourceTrickleRate" and relativity == "Absolute":
@@ -315,20 +259,38 @@ def _format_single_effect(
         discount = _discount_from_cost_factor(amount)
         res = _resource_label(resource, locale=locale) if resource else ""
         if locale == "pt":
+            if discount >= 0:
+                if res and targets:
+                    return f"{targets.capitalize()} custam {_fmt_num(discount)}% menos de {res}."
+                if res:
+                    return f"Custa {_fmt_num(discount)}% menos de {res}."
+                if targets:
+                    return f"{targets.capitalize()} custam {_fmt_num(discount)}% menos."
+                return f"Custo reduzido em {_fmt_num(discount)}%."
+            extra = abs(discount)
             if res and targets:
-                return f"{targets.capitalize()} custam {_fmt_num(discount)}% menos de {res}."
+                return f"{targets.capitalize()} custam {_fmt_num(extra)}% mais de {res}."
             if res:
-                return f"Custa {_fmt_num(discount)}% menos de {res}."
+                return f"Custa {_fmt_num(extra)}% mais de {res}."
             if targets:
-                return f"{targets.capitalize()} custam {_fmt_num(discount)}% menos."
-            return f"Custo reduzido em {_fmt_num(discount)}%."
+                return f"{targets.capitalize()} custam {_fmt_num(extra)}% mais."
+            return f"Custo aumentado em {_fmt_num(extra)}%."
+        if discount >= 0:
+            if res and targets:
+                return f"{targets} cost {_fmt_num(discount)}% less {res}."
+            if res:
+                return f"Costs {_fmt_num(discount)}% less {res}."
+            if targets:
+                return f"{targets} cost {_fmt_num(discount)}% less."
+            return f"Cost reduced by {_fmt_num(discount)}%."
+        extra = abs(discount)
         if res and targets:
-            return f"{targets} cost {_fmt_num(discount)}% less {res}."
+            return f"{targets} cost {_fmt_num(extra)}% more {res}."
         if res:
-            return f"Costs {_fmt_num(discount)}% less {res}."
+            return f"Costs {_fmt_num(extra)}% more {res}."
         if targets:
-            return f"{targets} cost {_fmt_num(discount)}% less."
-        return f"Cost reduced by {_fmt_num(discount)}%."
+            return f"{targets} cost {_fmt_num(extra)}% more."
+        return f"Cost increased by {_fmt_num(extra)}%."
 
     if subtype == "ArmorVulnerability" and relativity == "Percent":
         reduction = abs(amount) * 100.0
@@ -349,48 +311,81 @@ def _format_single_effect(
 
     if subtype in {"Damage", "DamageBonus", "Damagebonus"}:
         if relativity in {"BasePercent", "Percent"}:
-            bonus = _pct_from_multiplier(amount)
+            pct, is_increase = _pct_change(amount)
             if locale == "pt":
                 if targets:
-                    return f"{targets} causam {_fmt_num(bonus)}% mais dano."
-                return f"+{_fmt_num(bonus)}% de dano."
+                    if is_increase:
+                        return f"{targets} causam {_fmt_num(pct)}% mais dano."
+                    return f"{targets} causam {_fmt_num(pct)}% menos dano."
+                if is_increase:
+                    return f"+{_fmt_num(pct)}% de dano."
+                return f"-{_fmt_num(pct)}% de dano."
             if targets:
-                return f"{targets} deal {_fmt_num(bonus)}% more damage."
-            return f"+{_fmt_num(bonus)}% damage."
+                if is_increase:
+                    return f"{targets} deal {_fmt_num(pct)}% more damage."
+                return f"{targets} deal {_fmt_num(pct)}% less damage."
+            if is_increase:
+                return f"+{_fmt_num(pct)}% damage."
+            return f"-{_fmt_num(pct)}% damage."
         if relativity == "Absolute" and targets:
             if locale == "pt":
                 return f"{targets} ganham +{_fmt_num(amount)} de dano."
             return f"{targets} gain +{_fmt_num(amount)} damage."
 
     if subtype == "Hitpoints" and relativity == "BasePercent":
-        bonus = _pct_from_multiplier(amount)
+        pct, is_increase = _pct_change(amount)
         if locale == "pt":
             if targets:
-                return f"{targets} têm +{_fmt_num(bonus)}% de pontos de vida."
-            return f"+{_fmt_num(bonus)}% de pontos de vida."
+                if is_increase:
+                    return f"{targets} têm +{_fmt_num(pct)}% de pontos de vida."
+                return f"{targets} têm {_fmt_num(pct)}% menos pontos de vida."
+            if is_increase:
+                return f"+{_fmt_num(pct)}% de pontos de vida."
+            return f"-{_fmt_num(pct)}% de pontos de vida."
         if targets:
-            return f"{targets} have +{_fmt_num(bonus)}% hit points."
-        return f"+{_fmt_num(bonus)}% hit points."
+            if is_increase:
+                return f"{targets} have +{_fmt_num(pct)}% hit points."
+            return f"{targets} have {_fmt_num(pct)}% less hit points."
+        if is_increase:
+            return f"+{_fmt_num(pct)}% hit points."
+        return f"-{_fmt_num(pct)}% hit points."
 
     if subtype == "WorkRate" and relativity in {"BasePercent", "Percent"}:
-        bonus = _pct_from_multiplier(amount)
+        pct, is_increase = _pct_change(amount)
         if locale == "pt":
             if targets:
-                return f"{targets} trabalham {_fmt_num(bonus)}% mais rápido."
-            return f"+{_fmt_num(bonus)}% de velocidade de trabalho."
+                if is_increase:
+                    return f"{targets} trabalham {_fmt_num(pct)}% mais rápido."
+                return f"{targets} trabalham {_fmt_num(pct)}% mais devagar."
+            if is_increase:
+                return f"+{_fmt_num(pct)}% de velocidade de trabalho."
+            return f"-{_fmt_num(pct)}% de velocidade de trabalho."
         if targets:
-            return f"{targets} work {_fmt_num(bonus)}% faster."
-        return f"+{_fmt_num(bonus)}% work rate."
+            if is_increase:
+                return f"{targets} work {_fmt_num(pct)}% faster."
+            return f"{targets} work {_fmt_num(pct)}% slower."
+        if is_increase:
+            return f"+{_fmt_num(pct)}% work rate."
+        return f"-{_fmt_num(pct)}% work rate."
 
     if subtype == "BuildPoints" and relativity == "Percent":
-        bonus = _pct_from_multiplier(1.0 / amount) if amount else 0.0
+        speed_mult = 1.0 / amount if amount else 0.0
+        pct, is_increase = _pct_change(speed_mult)
         if locale == "pt":
             if targets:
-                return f"{targets} são construídos {_fmt_num(bonus)}% mais rápido."
-            return f"Construção {_fmt_num(bonus)}% mais rápida."
+                if is_increase:
+                    return f"{targets} são construídos {_fmt_num(pct)}% mais rápido."
+                return f"{targets} são construídos {_fmt_num(pct)}% mais devagar."
+            if is_increase:
+                return f"Construção {_fmt_num(pct)}% mais rápida."
+            return f"Construção {_fmt_num(pct)}% mais devagar."
         if targets:
-            return f"{targets} are built {_fmt_num(bonus)}% faster."
-        return f"Build speed +{_fmt_num(bonus)}%."
+            if is_increase:
+                return f"{targets} are built {_fmt_num(pct)}% faster."
+            return f"{targets} are built {_fmt_num(pct)}% slower."
+        if is_increase:
+            return f"Build speed +{_fmt_num(pct)}%."
+        return f"Build speed -{_fmt_num(pct)}%."
 
     if subtype == "MaximumRange":
         if relativity == "Absolute":
@@ -398,10 +393,22 @@ def _format_single_effect(
                 return f"{targets} ganham +{_fmt_num(amount)} de alcance." if targets else f"+{_fmt_num(amount)} de alcance."
             return f"{targets} gain +{_fmt_num(amount)} range." if targets else f"+{_fmt_num(amount)} range."
         if relativity in {"BasePercent", "Percent"}:
-            bonus = _pct_from_multiplier(amount)
+            pct, is_increase = _pct_change(amount)
             if locale == "pt":
-                return f"{targets} têm +{_fmt_num(bonus)}% de alcance." if targets else f"+{_fmt_num(bonus)}% de alcance."
-            return f"{targets} have +{_fmt_num(bonus)}% range." if targets else f"+{_fmt_num(bonus)}% range."
+                if targets:
+                    if is_increase:
+                        return f"{targets} têm +{_fmt_num(pct)}% de alcance."
+                    return f"{targets} têm {_fmt_num(pct)}% menos alcance."
+                if is_increase:
+                    return f"+{_fmt_num(pct)}% de alcance."
+                return f"-{_fmt_num(pct)}% de alcance."
+            if targets:
+                if is_increase:
+                    return f"{targets} have +{_fmt_num(pct)}% range."
+                return f"{targets} have {_fmt_num(pct)}% less range."
+            if is_increase:
+                return f"+{_fmt_num(pct)}% range."
+            return f"-{_fmt_num(pct)}% range."
 
     if subtype == "MaximumVelocity":
         if relativity == "Absolute":
@@ -409,10 +416,22 @@ def _format_single_effect(
                 return f"{targets} ganham +{_fmt_num(amount)} de velocidade." if targets else f"+{_fmt_num(amount)} de velocidade."
             return f"{targets} gain +{_fmt_num(amount)} speed." if targets else f"+{_fmt_num(amount)} speed."
         if relativity in {"BasePercent", "Percent"}:
-            bonus = _pct_from_multiplier(amount)
+            pct, is_increase = _pct_change(amount)
             if locale == "pt":
-                return f"{targets} movem-se {_fmt_num(bonus)}% mais rápido." if targets else f"+{_fmt_num(bonus)}% de velocidade."
-            return f"{targets} move {_fmt_num(bonus)}% faster." if targets else f"+{_fmt_num(bonus)}% speed."
+                if targets:
+                    if is_increase:
+                        return f"{targets} movem-se {_fmt_num(pct)}% mais rápido."
+                    return f"{targets} movem-se {_fmt_num(pct)}% mais devagar."
+                if is_increase:
+                    return f"+{_fmt_num(pct)}% de velocidade."
+                return f"-{_fmt_num(pct)}% de velocidade."
+            if targets:
+                if is_increase:
+                    return f"{targets} move {_fmt_num(pct)}% faster."
+                return f"{targets} move {_fmt_num(pct)}% slower."
+            if is_increase:
+                return f"+{_fmt_num(pct)}% speed."
+            return f"-{_fmt_num(pct)}% speed."
 
     if subtype == "LOS":
         if relativity == "Absolute":
@@ -420,10 +439,22 @@ def _format_single_effect(
                 return f"{targets} ganham +{_fmt_num(amount)} de linha de visão." if targets else f"+{_fmt_num(amount)} de linha de visão."
             return f"{targets} gain +{_fmt_num(amount)} line of sight." if targets else f"+{_fmt_num(amount)} line of sight."
         if relativity in {"BasePercent", "Percent"}:
-            bonus = _pct_from_multiplier(amount)
+            pct, is_increase = _pct_change(amount)
             if locale == "pt":
-                return f"{targets} têm +{_fmt_num(bonus)}% de linha de visão." if targets else f"+{_fmt_num(bonus)}% de linha de visão."
-            return f"{targets} have +{_fmt_num(bonus)}% line of sight." if targets else f"+{_fmt_num(bonus)}% line of sight."
+                if targets:
+                    if is_increase:
+                        return f"{targets} têm +{_fmt_num(pct)}% de linha de visão."
+                    return f"{targets} têm {_fmt_num(pct)}% menos linha de visão."
+                if is_increase:
+                    return f"+{_fmt_num(pct)}% de linha de visão."
+                return f"-{_fmt_num(pct)}% de linha de visão."
+            if targets:
+                if is_increase:
+                    return f"{targets} have +{_fmt_num(pct)}% line of sight."
+                return f"{targets} have {_fmt_num(pct)}% less line of sight."
+            if is_increase:
+                return f"+{_fmt_num(pct)}% line of sight."
+            return f"-{_fmt_num(pct)}% line of sight."
 
     if subtype == "PopulationCapAddition" and relativity == "Absolute":
         if locale == "pt":
@@ -541,7 +572,13 @@ def _format_single_effect(
     return None
 
 
-def _merge_cost_lines(lines: list[str], effects: list[dict[str, Any]], *, locale: str) -> list[str]:
+def _merge_cost_lines(
+    lines: list[str],
+    effects: list[dict[str, Any]],
+    *,
+    locale: str,
+    cache_dir: Path | None = None,
+) -> list[str]:
     cost_groups: dict[tuple[str, float, str], list[str]] = {}
     other_effects: list[dict[str, Any]] = []
     for effect in effects:
@@ -549,7 +586,11 @@ def _merge_cost_lines(lines: list[str], effects: list[dict[str, Any]], *, locale
             "Percent",
             "BasePercent",
         }:
-            key = (effect["subtype"], round(effect["amount"], 6), _join_targets(effect.get("targets", []), locale=locale))
+            key = (
+                effect["subtype"],
+                round(effect["amount"], 6),
+                _join_targets(effect.get("targets", []), locale=locale, cache_dir=cache_dir),
+            )
             cost_groups.setdefault(key, [])
             if effect["resource"] and effect["resource"] not in cost_groups[key]:
                 cost_groups[key].append(effect["resource"])
@@ -561,19 +602,36 @@ def _merge_cost_lines(lines: list[str], effects: list[dict[str, Any]], *, locale
         discount = _discount_from_cost_factor(amount)
         joined = _join_resources(resources, locale=locale)
         if locale == "pt":
-            if targets and joined:
-                out.append(f"{targets.capitalize()} custam {_fmt_num(discount)}% menos de {joined}.")
-            elif joined:
-                out.append(f"Custa {_fmt_num(discount)}% menos de {joined}.")
-            elif targets:
-                out.append(f"{targets.capitalize()} custam {_fmt_num(discount)}% menos.")
-        else:
+            if discount >= 0:
+                if targets and joined:
+                    out.append(f"{targets.capitalize()} custam {_fmt_num(discount)}% menos de {joined}.")
+                elif joined:
+                    out.append(f"Custa {_fmt_num(discount)}% menos de {joined}.")
+                elif targets:
+                    out.append(f"{targets.capitalize()} custam {_fmt_num(discount)}% menos.")
+            else:
+                extra = abs(discount)
+                if targets and joined:
+                    out.append(f"{targets.capitalize()} custam {_fmt_num(extra)}% mais de {joined}.")
+                elif joined:
+                    out.append(f"Custa {_fmt_num(extra)}% mais de {joined}.")
+                elif targets:
+                    out.append(f"{targets.capitalize()} custam {_fmt_num(extra)}% mais.")
+        elif discount >= 0:
             if targets and joined:
                 out.append(f"{targets} cost {_fmt_num(discount)}% less {joined}.")
             elif joined:
                 out.append(f"Costs {_fmt_num(discount)}% less {joined}.")
             elif targets:
                 out.append(f"{targets} cost {_fmt_num(discount)}% less.")
+        else:
+            extra = abs(discount)
+            if targets and joined:
+                out.append(f"{targets} cost {_fmt_num(extra)}% more {joined}.")
+            elif joined:
+                out.append(f"Costs {_fmt_num(extra)}% more {joined}.")
+            elif targets:
+                out.append(f"{targets} cost {_fmt_num(extra)}% more.")
     return out
 
 
@@ -582,6 +640,7 @@ def format_relic_effects(
     *,
     locale: str,
     tech_index: dict[str, ET.Element] | None = None,
+    cache_dir: Path | None = None,
 ) -> str:
     raw = parse_data_effects(tech)
     deduped = _dedupe_effects(raw)
@@ -616,12 +675,12 @@ def format_relic_effects(
             lines.append(bonus_line)
 
     for effect in non_cost:
-        line = _format_single_effect(effect, locale=locale, tech_index=tech_index)
+        line = _format_single_effect(effect, locale=locale, tech_index=tech_index, cache_dir=cache_dir)
         if line and line not in lines:
             lines.append(line)
 
     if cost_effects:
-        lines = _merge_cost_lines(lines, cost_effects, locale=locale)
+        lines = _merge_cost_lines(lines, cost_effects, locale=locale, cache_dir=cache_dir)
 
     return "\n".join(lines)
 
@@ -630,8 +689,9 @@ def format_relic_effects_both(
     tech: ET.Element,
     *,
     tech_index: dict[str, ET.Element] | None = None,
+    cache_dir: Path | None = None,
 ) -> tuple[str, str]:
     return (
-        format_relic_effects(tech, locale="pt", tech_index=tech_index),
-        format_relic_effects(tech, locale="en", tech_index=tech_index),
+        format_relic_effects(tech, locale="pt", tech_index=tech_index, cache_dir=cache_dir),
+        format_relic_effects(tech, locale="en", tech_index=tech_index, cache_dir=cache_dir),
     )

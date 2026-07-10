@@ -75,13 +75,14 @@ def extract_relic_record(
     strings_en: dict[str, str],
     strings_pt: dict[str, str],
     tech_index: dict[str, ET.Element] | None = None,
+    cache_dir: Path | None = None,
 ) -> dict[str, Any]:
     nome_pt, nome_en, desc_pt, desc_en, _adv_pt_flavor, _adv_en_flavor = lookup_relic_strings(
         tech,
         strings_en=strings_en,
         strings_pt=strings_pt,
     )
-    adv_pt, adv_en = format_relic_effects_both(tech, tech_index=tech_index)
+    adv_pt, adv_en = format_relic_effects_both(tech, tech_index=tech_index, cache_dir=cache_dir)
     icon_path = _text(tech, "icon")
     record: dict[str, Any] = {
         "proto_name": proto_name,
@@ -129,6 +130,7 @@ def extract_relics(
                 strings_en=strings_en,
                 strings_pt=strings_pt,
                 tech_index=tech_index,
+                cache_dir=cache_dir,
             )
         )
     return records
