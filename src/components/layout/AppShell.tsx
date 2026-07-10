@@ -25,11 +25,27 @@ function isCatalogListIndex(pathname: string): boolean {
   return section != null && LIST_INDEX_SECTIONS.has(section);
 }
 
-type NavItem =
+type NavLinkItem =
   | { to: string; labelKey: string; end?: boolean; navNovo?: boolean }
   | { to: string; labelKey: string; match: (pathname: string) => boolean; navNovo?: boolean };
 
-function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
+type NavModule = {
+  id: string;
+  labelKey: string;
+  items: NavLinkItem[];
+};
+
+type NavEntry = NavLinkItem | NavModule;
+
+function isNavModule(entry: NavEntry): entry is NavModule {
+  return "items" in entry;
+}
+
+function isNavItemActive(item: NavLinkItem, pathname: string): boolean {
+  return "match" in item ? item.match(pathname) : pathname === item.to;
+}
+
+function buildNavStructure(locale: import("@/i18n/types").Locale): NavEntry[] {
   return [
     { to: "/", labelKey: "nav.home", end: true },
     { to: localeSectionPath(locale, "starts"), labelKey: "nav.starts", navNovo: true },
@@ -39,43 +55,55 @@ function buildNavItems(locale: import("@/i18n/types").Locale): NavItem[] {
       match: (p: string) => p === "/trilha-de-aprendizado" || p.startsWith("/trilha-de-aprendizado/"),
     },
     {
-      to: "/videos-comunidade",
-      labelKey: "nav.communityVideos",
-      navNovo: true,
-      match: (p: string) => p === "/videos-comunidade" || p.startsWith("/videos-comunidade/"),
-    },
-    { to: localeSectionPath(locale, "panteoes"), labelKey: "nav.pantheons" },
-    { to: "/astecas", labelKey: "nav.astecas" },
-    { to: localeSectionPath(locale, "deuses"), labelKey: "nav.gods" },
-    { to: localeSectionPath(locale, "eras"), labelKey: "nav.eras" },
-    { to: localeSectionPath(locale, "poderes"), labelKey: "nav.godpowers" },
-    { to: localeSectionPath(locale, "construcoes"), labelKey: "nav.buildings" },
-    { to: localeSectionPath(locale, "unidades"), labelKey: "nav.units" },
-    { to: localeSectionPath(locale, "aldeoes"), labelKey: "nav.villagers" },
-    { to: localeSectionPath(locale, "mapas"), labelKey: "nav.maps" },
-    { to: localeSectionPath(locale, "reliquias"), labelKey: "nav.reliquias" },
-    { to: localeSectionPath(locale, "tecnologias"), labelKey: "nav.technologies" },
-    {
-      to: "/rank",
-      labelKey: "nav.rank",
-      match: (p: string) => p === "/rank" || p.startsWith("/rank/"),
+      id: "conhecimento-age",
+      labelKey: "nav.modules.conhecimentoAge",
+      items: [
+        { to: localeSectionPath(locale, "panteoes"), labelKey: "nav.pantheons" },
+        { to: "/astecas", labelKey: "nav.astecas" },
+        { to: localeSectionPath(locale, "deuses"), labelKey: "nav.gods" },
+        { to: localeSectionPath(locale, "eras"), labelKey: "nav.eras" },
+        { to: localeSectionPath(locale, "poderes"), labelKey: "nav.godpowers" },
+        { to: localeSectionPath(locale, "construcoes"), labelKey: "nav.buildings" },
+        { to: localeSectionPath(locale, "unidades"), labelKey: "nav.units" },
+        { to: localeSectionPath(locale, "aldeoes"), labelKey: "nav.villagers" },
+        { to: localeSectionPath(locale, "mapas"), labelKey: "nav.maps" },
+        { to: localeSectionPath(locale, "reliquias"), labelKey: "nav.reliquias" },
+        { to: localeSectionPath(locale, "tecnologias"), labelKey: "nav.technologies" },
+      ],
     },
     {
-      to: "/jogadores-aom",
-      labelKey: "nav.players",
-      navNovo: true,
-      match: (p: string) => p === "/jogadores-aom" || p === "/aom-players",
-    },
-    {
-      to: "/clans",
-      labelKey: "nav.clans",
-      match: (p: string) => p === "/clans" || p.startsWith("/clans/"),
-    },
-    {
-      to: "/links-streamers",
-      labelKey: "nav.streamerLinks",
-      navNovo: true,
-      match: (p: string) => p === "/links-streamers" || p === "/streamer-links",
+      id: "comunidade",
+      labelKey: "nav.modules.comunidade",
+      items: [
+        {
+          to: "/videos-comunidade",
+          labelKey: "nav.communityVideos",
+          navNovo: true,
+          match: (p: string) => p === "/videos-comunidade" || p.startsWith("/videos-comunidade/"),
+        },
+        {
+          to: "/jogadores-aom",
+          labelKey: "nav.players",
+          navNovo: true,
+          match: (p: string) => p === "/jogadores-aom" || p === "/aom-players",
+        },
+        {
+          to: "/clans",
+          labelKey: "nav.clans",
+          match: (p: string) => p === "/clans" || p.startsWith("/clans/"),
+        },
+        {
+          to: "/links-streamers",
+          labelKey: "nav.streamerLinks",
+          navNovo: true,
+          match: (p: string) => p === "/links-streamers" || p === "/streamer-links",
+        },
+        {
+          to: "/rank",
+          labelKey: "nav.rank",
+          match: (p: string) => p === "/rank" || p.startsWith("/rank/"),
+        },
+      ],
     },
   ];
 }
@@ -86,6 +114,59 @@ function navClass(active: boolean) {
     active
       ? "bg-amber-500/15 text-amber-200 ring-1 ring-amber-500/35"
       : "text-zinc-300 hover:bg-zinc-800/80 hover:text-white",
+  );
+}
+
+function NavLinkRow({
+  item,
+  pathname,
+  onItemClick,
+  t,
+  nested = false,
+}: {
+  item: NavLinkItem;
+  pathname: string;
+  onItemClick?: () => void;
+  t: (key: string) => string;
+  nested?: boolean;
+}) {
+  const active = isNavItemActive(item, pathname);
+  return (
+    <NavLink
+      to={item.to}
+      end={"end" in item ? item.end : false}
+      onClick={onItemClick}
+      className={cn(navClass(active), nested && "ml-2 border-l border-zinc-800 pl-2.5")}
+    >
+      <span className="min-w-0 flex-1 truncate">{t(item.labelKey)}</span>
+      {item.navNovo ? (
+        <span className={startNovoTagClassNav} title={t("common.newTooltip")}>
+          {t("common.new")}
+        </span>
+      ) : null}
+    </NavLink>
+  );
+}
+
+function ChevronGlyph({ expanded }: { expanded: boolean }) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("shrink-0 text-zinc-500 transition-transform", expanded && "rotate-90")}
+      aria-hidden
+    >
+      <path
+        d="M9 6l6 6-6 6"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
@@ -100,27 +181,77 @@ function ShellNavLinks({
   t: (key: string) => string;
   locale: import("@/i18n/types").Locale;
 }) {
-  const navItems = buildNavItems(locale);
+  const navStructure = useMemo(() => buildNavStructure(locale), [locale]);
+  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>(() => {
+    const initial: Record<string, boolean> = {};
+    for (const entry of buildNavStructure(locale)) {
+      if (isNavModule(entry) && entry.items.some((item) => isNavItemActive(item, pathname))) {
+        initial[entry.id] = true;
+      }
+    }
+    return initial;
+  });
+
+  useEffect(() => {
+    for (const entry of navStructure) {
+      if (!isNavModule(entry)) continue;
+      if (entry.items.some((item) => isNavItemActive(item, pathname))) {
+        setExpandedModules((prev) => (prev[entry.id] ? prev : { ...prev, [entry.id]: true }));
+      }
+    }
+  }, [pathname, navStructure]);
+
   return (
     <>
-      {navItems.map((item) => (
-        <NavLink
-          key={item.to}
-          to={item.to}
-          end={"end" in item ? item.end : false}
-          onClick={onItemClick}
-          className={({ isActive }) =>
-            navClass("match" in item ? item.match(pathname) : isActive)
-          }
-        >
-          <span className="min-w-0 flex-1 truncate">{t(item.labelKey)}</span>
-          {item.navNovo ? (
-            <span className={startNovoTagClassNav} title={t("common.newTooltip")}>
-              {t("common.new")}
-            </span>
-          ) : null}
-        </NavLink>
-      ))}
+      {navStructure.map((entry) => {
+        if (!isNavModule(entry)) {
+          return (
+            <NavLinkRow
+              key={entry.to}
+              item={entry}
+              pathname={pathname}
+              onItemClick={onItemClick}
+              t={t}
+            />
+          );
+        }
+
+        const expanded = expandedModules[entry.id] ?? false;
+        const moduleActive = entry.items.some((item) => isNavItemActive(item, pathname));
+
+        return (
+          <div key={entry.id} className="flex flex-col gap-0.5">
+            <button
+              type="button"
+              className={cn(
+                navClass(moduleActive),
+                "w-full text-left font-medium",
+              )}
+              aria-expanded={expanded}
+              onClick={() =>
+                setExpandedModules((prev) => ({ ...prev, [entry.id]: !expanded }))
+              }
+            >
+              <ChevronGlyph expanded={expanded} />
+              <span className="min-w-0 flex-1 truncate">{t(entry.labelKey)}</span>
+            </button>
+            {expanded ? (
+              <div className="flex flex-col gap-0.5 pb-0.5">
+                {entry.items.map((item) => (
+                  <NavLinkRow
+                    key={item.to}
+                    item={item}
+                    pathname={pathname}
+                    onItemClick={onItemClick}
+                    t={t}
+                    nested
+                  />
+                ))}
+              </div>
+            ) : null}
+          </div>
+        );
+      })}
     </>
   );
 }

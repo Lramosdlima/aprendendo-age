@@ -148,11 +148,15 @@ export const ptMessages: TranslationTree = {
     starts: "Starts (Build Orders)",
     trilha: "Trilha de Aprendizado",
     communityVideos: "Vídeos da Comunidade",
-    pantheons: "Panteões",
+    modules: {
+      conhecimentoAge: "Conhecimento Age",
+      comunidade: "Comunidade",
+    },
+    pantheons: "Panteão",
     astecas: "Astecas",
     gods: "Deuses",
     eras: "Eras",
-    godpowers: "Poderes divinos",
+    godpowers: "Poderes Divinos",
     buildings: "Construções",
     units: "Unidades",
     villagers: "Aldeões",
@@ -162,7 +166,7 @@ export const ptMessages: TranslationTree = {
     rank: "Rank (RR)",
     players: "Jogadores AoM",
     clans: "Clãs",
-    streamerLinks: "Links",
+    streamerLinks: "Canais",
   },
   pages: {
     home: {

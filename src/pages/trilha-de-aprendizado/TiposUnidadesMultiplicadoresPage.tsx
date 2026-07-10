@@ -35,9 +35,9 @@ export function TiposUnidadesMultiplicadoresPage() {
           <p>{t("pages.trilha.multipliers.introP1")}</p>
           <p>{t("pages.trilha.multipliers.introP2a")}</p>
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
-            <a href={tiposImg("image.png")} target="_blank" rel="noreferrer" className="shrink-0">
+            <a href={tiposImg("image.webp")} target="_blank" rel="noreferrer" className="shrink-0">
               <img
-                src={tiposImg("image.png")}
+                src={tiposImg("image.webp")}
                 alt={t("pages.trilha.multipliers.hoplitePanelAlt")}
                 className="max-w-md rounded-lg border border-aom-border"
               />

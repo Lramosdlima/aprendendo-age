@@ -20,7 +20,7 @@ export const START_AUTHOR_IMAGE_URLS: Record<string, string> = {
     "https://yt3.googleusercontent.com/2poWZZtWyNVFCtLMmiiYeLwZw1WYr-VwUdDAtQc-BflKZeVE7G_RxMgRFuMkzQYh4A6Q2qLC9w=s160-c-k-c0x00ffffff-no-rj",
   HuskSuppe:
     "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj",
-  Aussie_Drongo: "/assets/authors/aussie-drongo.jpg",
+  Aussie_Drongo: "/assets/authors/aussie-drongo.webp",
 };
 
 const AUTHOR_NAME_ALIASES: Record<string, string> = {

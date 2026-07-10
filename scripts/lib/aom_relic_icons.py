@@ -5,6 +5,11 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
+try:
+    from PIL import Image
+except ImportError:
+    Image = None  # type: ignore[misc, assignment]
+
 from aom_game_paths import DEFAULT_CRYBAR, DEFAULT_GAME_DIR, UI_TEXTURE_CACHE_BAR, resolve_game_dir
 from aom_unit_extractor import icon_token_from_path
 
@@ -16,7 +21,7 @@ TOKEN_MAP_PATH = ROOT / "src" / "data" / "token_asset_map.json"
 def token_to_asset_filename(token: str) -> str:
     stem = token.replace("aomr_", "").replace("_icon", "")
     parts = [part for part in stem.split("_") if part]
-    return "AoMR_" + "_".join(part.capitalize() for part in parts) + "_icon.png"
+    return "AoMR_" + "_".join(part.capitalize() for part in parts) + "_icon.webp"
 
 
 def token_to_public_url(token: str) -> str:
@@ -66,6 +71,17 @@ def update_token_asset_map(
     return changes
 
 
+def png_to_webp(source_png: Path, dest_webp: Path, *, quality: int = 90) -> None:
+    if Image is None:
+        raise RuntimeError("Pillow é necessário para exportar ícones WebP (pip install Pillow)")
+    with Image.open(source_png) as img:
+        if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info):
+            img = img.convert("RGBA")
+        elif img.mode != "RGB":
+            img = img.convert("RGB")
+        img.save(dest_webp, "WEBP", quality=quality, method=6)
+
+
 def sync_relic_icons(
     extracted_rows: list[dict[str, Any]],
     *,
@@ -87,8 +103,8 @@ def sync_relic_icons(
 
     for token, icon_path in sorted(tokens.items()):
         asset_name = token_to_asset_filename(token)
-        dest_png = ASSETS_DIR / asset_name
-        if dest_png.exists():
+        dest_webp = ASSETS_DIR / asset_name
+        if dest_webp.exists():
             skipped.append(asset_name)
             continue
 
@@ -140,7 +156,11 @@ def sync_relic_icons(
             missing.append(dds_entry)
             continue
 
-        png_files[0].replace(dest_png)
+        try:
+            png_to_webp(png_files[0], dest_webp)
+        except Exception:
+            missing.append(dds_entry)
+            continue
         exported.append(asset_name)
 
     map_changes = update_token_asset_map(tokens, dry_run=dry_run)

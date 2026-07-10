@@ -148,11 +148,15 @@ export const enMessages: TranslationTree = {
     starts: "Starts (Build Orders)",
     trilha: "Learning Path",
     communityVideos: "Community Videos",
-    pantheons: "Pantheons",
+    modules: {
+      conhecimentoAge: "Age Knowledge",
+      comunidade: "Community",
+    },
+    pantheons: "Pantheon",
     astecas: "Aztecs",
     gods: "Gods",
     eras: "Ages",
-    godpowers: "God powers",
+    godpowers: "God Powers",
     buildings: "Buildings",
     units: "Units",
     villagers: "Villagers",
@@ -162,7 +166,7 @@ export const enMessages: TranslationTree = {
     rank: "Rank (RR)",
     players: "AoM Players",
     clans: "Clans",
-    streamerLinks: "Links",
+    streamerLinks: "Channels",
   },
   pages: {
     home: {

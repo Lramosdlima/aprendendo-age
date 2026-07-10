@@ -18,6 +18,8 @@
     "data:extract-relics": "python scripts/extract-relics-aom.py",
     "data:merge-relics": "python scripts/merge-relics-aom.py",
     "data:sync-aom": "python scripts/sync-aom-data.py",
+    "assets:convert-webp": "python scripts/convert-assets-to-webp.py --write --delete-originals",
+    "assets:convert-webp:dry-run": "python scripts/convert-assets-to-webp.py --dry-run",
     "preview": "vite preview"
   },
   "dependencies": {

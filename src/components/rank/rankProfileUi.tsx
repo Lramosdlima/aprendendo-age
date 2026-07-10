@@ -26,11 +26,11 @@ const GRID_SCRIM =
 
 /** Retratos em `public/assets/rank` — moldura/título no FormRankPage (perfil, deuses); Classificação continua com tokens de eras. */
 const FORM_RANK_PORTRAIT: Record<RankTierId, string> = {
-  bronze: "/assets/rank/Portrait_Archaic.png",
-  prata: "/assets/rank/Portrait_Classical.png",
-  ouro: "/assets/rank/Portrait_Heroic.png",
-  esmeralda: "/assets/rank/Portrait_Mythic.png",
-  diamante: "/assets/rank/Portrait_Wonder.png",
+  bronze: "/assets/rank/Portrait_Archaic.webp",
+  prata: "/assets/rank/Portrait_Classical.webp",
+  ouro: "/assets/rank/Portrait_Heroic.webp",
+  esmeralda: "/assets/rank/Portrait_Mythic.webp",
+  diamante: "/assets/rank/Portrait_Wonder.webp",
 };
 
 function getFormRankPortraitPath(tierId: RankTierId): string {

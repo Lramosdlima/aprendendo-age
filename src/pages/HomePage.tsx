@@ -5,7 +5,7 @@ import { useCatalog } from "@/hooks/useCatalog";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { cn } from "@/lib/cn";
 
-const HERO_BG = "/assets/others/AprendendoAge_BG.png";
+const HERO_BG = "/assets/others/AprendendoAge_BG.webp";
 
 export function HomePage() {
   const { t } = useTranslation();

@@ -94,7 +94,7 @@ export function AtalhosImportantesPage() {
           </h2>
           <div className="flex flex-col gap-6 lg:flex-row">
             <div className="flex min-w-0 flex-1 flex-col gap-3">
-              <img src={atalhosImg("image.png")} alt="" className="rounded-lg border border-aom-border" />
+              <img src={atalhosImg("image.webp")} alt="" className="rounded-lg border border-aom-border" />
               <img src={atalhosImg("image 1.png")} alt="" className="rounded-lg border border-aom-border" />
             </div>
             <div className="min-w-0 flex-[1.4] space-y-3">
@@ -309,7 +309,7 @@ export function AtalhosImportantesPage() {
           <p className="mb-3">{t("pages.trilha.shortcuts.militarySelectP1")}</p>
           <div className="grid gap-4 sm:grid-cols-2">
             <img src={atalhosImg("image 7.png")} alt="" className="rounded-lg border border-aom-border" />
-            <img src={atalhosImg("image 8.png")} alt="" className="rounded-lg border border-aom-border" />
+            <img src={atalhosImg("image 8.webp")} alt="" className="rounded-lg border border-aom-border" />
           </div>
         </section>
 

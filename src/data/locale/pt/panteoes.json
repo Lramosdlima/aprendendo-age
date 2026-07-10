@@ -4,7 +4,7 @@
     "nome": "Grego",
     "description": "Os gregos são bons em reconhecimento, pois começam com um Kataskopos em terra e podem treinar Pégasos voadores no Templo . Adoradores de Poseidon também recebem um Hipocampo ao construir uma Doca . Soldados gregos tendem a ser mais fortes e mais caros do que os de outras civilizações. Os gregos só podem treinar um punhado de Heróis por vez, mas todos são excepcionalmente fortes. Heróis gregos também treinam mais rápido e têm maior dano contra unidades míticas em eras posteriores . Eles ganham Favor ao orar em Templos.",
     "icon": "aomr_pantheon_greeks_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Greek.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Greek.webp",
     "deuses": [
       {
         "id": 1,
@@ -101,7 +101,7 @@
     "nome": "Egípcio",
     "description": "Os egípcios exploram fazendo com que seus sacerdotes construam obeliscos . Os primeiros soldados egípcios tendem a ser mais especializados, mas treinam rapidamente. Suas unidades posteriores, da Fortaleza Migdol, são mais poderosas. Muitas construções egípcias custam ouro e várias outras são gratuitas, mas levam mais tempo para serem construídas. As construções egípcias são mais rápidas, coletam, treinam e pesquisam melhorias com mais rapidez e lutam melhor quando fortalecidas por um faraó . Os egípcios ganham Favor construindo Monumentos .",
     "icon": "aomr_pantheon_egyptians_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_egyptian.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_egyptian.webp",
     "deuses": [
       {
         "id": 4,
@@ -186,7 +186,7 @@
     "nome": "Nórdico",
     "description": "Os nórdicos não possuem batedores dedicados , então devem usar um Berserk ou outra infantaria. A infantaria nórdica também constrói edifícios ; seus aldeões , chamados coletores , apenas coletam recursos. Os nórdicos também podem treinar anões , que são mineradores especializados. Os nórdicos podem ter quantos heróis puderem pagar. Eles ganham favores lutando contra soldados inimigos e matando animais .",
     "icon": "aomr_pantheon_norse_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Norse.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Norse.webp",
     "deuses": [
       {
         "id": 7,
@@ -295,7 +295,7 @@
     "nome": "Atlante",
     "description": "Os atlantes exploram usando seus Oráculos . Soldados atlantes são bastante caros, mas cada um deles pode ser transformado em Heróis . Em eras posteriores, as unidades que podem ser treinadas no Palácio são as mais poderosas. Cidadãos atlantes coletam recursos e constroem edifícios. Cidadãos são unidades lentas e caras que não precisam de um local de desembarque para coletar recursos. Os atlantes ganham Favor posicionando Oráculos pelo mapa para comungar com os deuses.",
     "icon": "aomr_pantheon_atlanteans_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Atlantean.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Atlantean.webp",
     "deuses": [
       {
         "id": 10,
@@ -389,7 +389,7 @@
     "description": "Os chineses se destacam na expansão, construindo cidades magníficas por todo o mapa. Cada edifício estende a Terra Favorecida, gerando Favor e concedendo bônus poderosos com base no Deus escolhido. Quanto maior o império, mais divinamente poderosos os chineses se tornam.",
     "dois_tipos_de_trabalhadores_alimentam_esse_crescimento": "o Camponês e o Kuafu . Os camponeses são menos eficientes do que os Aldeões de outras culturas, mas são apoiados pelos Kuafu, gigantes poderosos que se destacam na construção de edifícios.",
     "icon": "aomr_pantheon_chinese_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Chinese.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Chinese.webp",
     "deuses": [
       {
         "id": 13,
@@ -478,7 +478,7 @@
     "nome": "Japonês",
     "description": "Os japoneses exploram com unidades míticas Kitsune. Os soldados japoneses tendem a ser versáteis e poderosos, mas caros. Suas unidades de elite do Dojo são especialmente perigosas e contribuem para um medidor de Bushidō, que concede outros bônus.Os japoneses utilizam uma variedade de heróis de ataque à distância, montados e de infantaria de suas diferentes estruturas militares. Os japoneses ganham Favor ao fazer com que Mikos construam e cuidem de Santuários.",
     "icon": "aomr_pantheon_japanese_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_japanese.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_japanese.webp",
     "deuses": [
       {
         "id": 17,
@@ -567,7 +567,7 @@
     "nome": "Astecas",
     "description": "Os astecas exploram com Espião Quimichin que conseguem se esconder perto das árvores. Eles geram favor através da Tonalli, que é gerado ao derrotar unidades inimigas e coletado por Sarcedote de Guerra (Herói) ou torres. Também é possível devotar aldeões em Templos para gerar favor. Os astecas podem criar armadilhas escondidas com suas tropas.",
     "icon": "aomr_pantheon_aztecs_icon",
-    "hero_background": "/assets/pantheons/UI_god_pantheon_Aztec.png",
+    "hero_background": "/assets/pantheons/UI_god_pantheon_Aztec.webp",
     "deuses": [
       {
         "id": 82,

@@ -13,17 +13,17 @@ function escapeHtmlAttr(s: string): string {
 const map = tokenAssetMap as MapType;
 
 /**
- * Tokens usados nos JSON (Notion) cujo ficheiro esperado (ex.: AoMR_Classical_Age_icon.png)
+ * Tokens usados nos JSON (Notion) cujo ficheiro esperado (ex.: AoMR_Classical_Age_icon.webp)
  * ainda não está em public/assets. Usamos ícones existentes até esses PNGs serem adicionados;
  * depois disso, o mapa principal passa a ter prioridade.
  */
 const TOKEN_FALLBACK_URL: Record<string, string> = {
-  aomr_archaic_age_icon: "/assets/techs/AoMR_Pickaxe_icon.png",
-  aomr_classical_age_icon: "/assets/techs/AoMR_Coinage_icon.png",
+  aomr_archaic_age_icon: "/assets/techs/AoMR_Pickaxe_icon.webp",
+  aomr_classical_age_icon: "/assets/techs/AoMR_Coinage_icon.webp",
   aomr_heroic_age_icon: "/assets/techs/techs_atlantean/AoMR_Heroic_Renewal_icon.webp",
   aomr_mythic_age_icon: "/assets/techs/techs_atlantean/AoMR_Mythic_Rejuvenation_icon.webp",
-  aomr_wonder_age_icon: "/assets/others/AoMR_Wonder_icon.png",
-  aomr_japaneses_icon: "/assets/buildings/AoMR_Town_Center_Japanese_icon.png",
+  aomr_wonder_age_icon: "/assets/others/AoMR_Wonder_icon.webp",
+  aomr_japaneses_icon: "/assets/buildings/AoMR_Town_Center_Japanese_icon.webp",
 };
 
 /** Token como em `:favoraom:` ou `:aomr_type_ship_icon:` (sem dois-pontos). */
