@@ -176,13 +176,84 @@ export const enMessages: TranslationTree = {
       startHere: "Start here:",
       trilhaCta: "Learning path",
       buildOrdersCta: "View build orders",
-      mainContent: "Main Content",
-      mainContentDesc: "These are the resources I recommend for you!",
-      tiles: {
-        starts: { label: "Starts (Build Orders)", hint: "Build orders or starts." },
-        gods: { label: "Gods", hint: "Tech tree and bonuses." },
-        units: { label: "Units", hint: "Military and myth units." },
-        maps: { label: "Maps", hint: "Ranked, origin, and type." },
+      exploreTitle: "Explore the site",
+      exploreDesc:
+        "From basics to advanced play: a guided path, the game catalog, and tools built with the Brazilian AoM community.",
+      entryTitle: "First steps",
+      entryDesc: "Start with the guided path or jump straight into community build orders.",
+      entryTrailHint: "Where to begin",
+      knowledgeDesc:
+        "Full Retold catalog — civilizations, gods, units, maps, and everything you look up mid-match.",
+      knowledgeTrailHint: "Knowledge trail",
+      communityDesc:
+        "Videos, players, clans, channels, and the rank system — the social side of Aprendendo Age.",
+      communityTrailHint: "Community trail",
+      carousel: {
+        prev: "Previous",
+        next: "Next",
+        knowledgeAria: "Carousel — Age Knowledge",
+        communityAria: "Carousel — Community",
+      },
+      showcase: {
+        explore: "Explore",
+        trailStep: "Step",
+        trilha: {
+          description:
+            "Step-by-step route from noob to pro: unit types, ages, hotkeys, and classic strategies.",
+        },
+        starts: {
+          description:
+            "Ready-made build orders by god and pantheon — economy, age-ups, and game plan explained.",
+        },
+        panteoes: {
+          description: "Overview of each playable civilization and every pantheon's playstyle.",
+        },
+        astecas: {
+          description:
+            "Obsidian Mirror hub: Aztec gods, units, buildings, and starts in one place.",
+        },
+        deuses: {
+          description: "Major and minor gods with bonuses, focus, and references to shape your strategy.",
+        },
+        eras: {
+          description: "Archaic → Wonder progression: what unlocks with each age advance.",
+        },
+        poderes: {
+          description: "God powers with cooldown, repeat cost, and when they're worth spending.",
+        },
+        construcoes: {
+          description: "Buildings by pantheon and age — from town center to military production.",
+        },
+        unidades: {
+          description: "Human, myth, and hero units — stats, roles, and combat multipliers.",
+        },
+        aldeoes: {
+          description: "Gathering, civilization variants, and how the Aztec villager differs.",
+        },
+        mapas: {
+          description: "Ranked pool, map origin, and terrain type so you can prep before queueing.",
+        },
+        reliquias: {
+          description: "Map bonuses to capture with heroes and garrison in a temple.",
+        },
+        tecnologias: {
+          description: "Upgrades and tech — search by god, pantheon, or effect.",
+        },
+        communityVideos: {
+          description: "Tutorials, matches, and tips submitted by the community — tagged and searchable.",
+        },
+        players: {
+          description: "Profiles synced to AoM Stats, RR race, and community leaderboard.",
+        },
+        clans: {
+          description: "Brazilian rosters with RR, wins, and each clan's favorite gods.",
+        },
+        streamerLinks: {
+          description: "Official streamer channels and community hubs — with live status.",
+        },
+        rank: {
+          description: "Experimental tier system (Bronze → Diamond) calibrated on the Retold player base.",
+        },
       },
     },
     aldeoes: {

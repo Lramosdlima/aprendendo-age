@@ -176,13 +176,84 @@ export const ptMessages: TranslationTree = {
       startHere: "Comece por aqui:",
       trilhaCta: "Trilha de aprendizado",
       buildOrdersCta: "Ver build orders",
-      mainContent: "Principais Conteúdos",
-      mainContentDesc: "Esses são os conteúdos que eu indico para vocês!",
-      tiles: {
-        starts: { label: "Starts (Build Orders)", hint: "Build Orders ou Starts." },
-        gods: { label: "Deuses", hint: "Árvore tecnológica e bônus." },
-        units: { label: "Unidades", hint: "Militares e mitológicas." },
-        maps: { label: "Mapas", hint: "Ranqueada, origem e tipo." },
+      exploreTitle: "Explore o site",
+      exploreDesc:
+        "Do básico ao avançado: trilha guiada, catálogo do jogo e ferramentas feitas com a comunidade brasileira de AoM.",
+      entryTitle: "Primeiros passos",
+      entryDesc: "Comece pela trilha guiada ou mergulhe direto nas build orders da comunidade.",
+      entryTrailHint: "Por onde começar",
+      knowledgeDesc:
+        "Catálogo completo do Retold — civilizações, deuses, unidades, mapas e tudo que você consulta durante a partida.",
+      knowledgeTrailHint: "Trilha do conhecimento",
+      communityDesc:
+        "Vídeos, jogadores, clãs, canais e o sistema de rank — o lado social do Aprendendo Age.",
+      communityTrailHint: "Trilha da comunidade",
+      carousel: {
+        prev: "Anterior",
+        next: "Próximo",
+        knowledgeAria: "Carrossel — Conhecimento Age",
+        communityAria: "Carrossel — Comunidade",
+      },
+      showcase: {
+        explore: "Explorar",
+        trailStep: "Etapa",
+        trilha: {
+          description:
+            "Roteiro passo a passo do noob ao pro: tipos de unidade, eras, atalhos e estratégias clássicas.",
+        },
+        starts: {
+          description:
+            "Build orders prontas por deus e panteão — economia, marcos de era e intenção de jogo explicados.",
+        },
+        panteoes: {
+          description: "Visão geral de cada civilização jogável e o estilo de jogo de cada panteão.",
+        },
+        astecas: {
+          description:
+            "Hub do Obsidian Mirror: deuses, unidades, construções e starts do panteão asteca em um só lugar.",
+        },
+        deuses: {
+          description: "Maiores e menores com bônus, foco de jogo e referências para montar sua estratégia.",
+        },
+        eras: {
+          description: "Progressão Aracaica → Maravilha: o que desbloqueia em cada salto de era.",
+        },
+        poderes: {
+          description: "Poderes divinos com cooldown, custo de repetição e quando vale a pena gastar.",
+        },
+        construcoes: {
+          description: "Edifícios por panteão e era — do centro da cidade às produções militares.",
+        },
+        unidades: {
+          description: "Humanos, mitológicas e heróis — stats, papéis e multiplicadores de combate.",
+        },
+        aldeoes: {
+          description: "Coleta, variações por civilização e diferenças do aldeão asteca.",
+        },
+        mapas: {
+          description: "Pool ranqueado, origem do mapa e tipo de terreno para se preparar antes da partida.",
+        },
+        reliquias: {
+          description: "Bônus de mapa para capturar com heróis e guarnecer no templo.",
+        },
+        tecnologias: {
+          description: "Melhorias e upgrades — busque por deus, panteão ou efeito.",
+        },
+        communityVideos: {
+          description: "Tutoriais, partidas e dicas enviados pela galera — com tags e busca.",
+        },
+        players: {
+          description: "Perfis sincronizados ao AoM Stats, corrida por RR e ranking da comunidade.",
+        },
+        clans: {
+          description: "Elencos BR com RR, vitórias e deuses favoritos de cada clã.",
+        },
+        streamerLinks: {
+          description: "Canais oficiais de streamers e hubs da comunidade — com status ao vivo.",
+        },
+        rank: {
+          description: "Sistema experimental de divisões (Bronze → Diamante) calibrado com a base do Retold.",
+        },
       },
     },
     aldeoes: {
