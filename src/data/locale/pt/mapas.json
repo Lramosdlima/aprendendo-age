@@ -24,12 +24,12 @@
   {
     "nome": "Anatólia",
     "ingles": "Anatolia",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_anatolia_icon"
   },
   {
@@ -82,9 +82,9 @@
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Original (2002)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "padrao": true,
+    "partidas_rapidas": true,
+    "tipo": "Terra 🌳",
     "icon": "aomr_watering_hole_icon"
   },
   {
@@ -105,7 +105,7 @@
     "saiu_da_ranqueada": true,
     "origem": "AoM: Heavenly Spear (2025)",
     "padrao": false,
-    "partidas_rapidas": true,
+    "partidas_rapidas": false,
     "tipo": "Terra 🌳",
     "icon": "aomr_snake_dance_icon"
   },
@@ -205,17 +205,17 @@
     "origem": "AoM: Retold (2024)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_kerlaugar_icon"
   },
   {
     "nome": "Kii",
     "ingles": "Kii",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Heavenly Spear (2025)",
-    "padrao": true,
-    "partidas_rapidas": true,
+    "padrao": false,
+    "partidas_rapidas": false,
     "tipo": "Terra 🌳",
     "icon": "aomr_kii_icon"
   },
@@ -238,13 +238,13 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_qinghai_lake_icon"
   },
   {
     "nome": "Lagoa Azul",
     "ingles": "Blue Lagoon",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Tale of the Dragon (2016)",
     "padrao": true,
@@ -260,7 +260,7 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_sea_of_worms_icon"
   },
   {
@@ -271,7 +271,7 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_black_sea_icon"
   },
   {
@@ -282,13 +282,13 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_mediterranean_icon"
   },
   {
     "nome": "Megalópole",
     "ingles": "Megalopolis",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Titans (2003)",
     "padrao": true,
@@ -304,7 +304,7 @@
     "origem": "AoM: Original (2002)",
     "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_midgard_icon"
   },
   {
@@ -324,19 +324,19 @@
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
     "origem": "AoM: Retold (2024)",
-    "padrao": false,
+    "padrao": true,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Terra 🌳",
     "icon": "aomr_mirage_icon"
   },
   {
     "nome": "Monte Olimpo",
     "ingles": "Mount Olympus",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Retold (2024)",
-    "padrao": false,
-    "partidas_rapidas": false,
+    "padrao": true,
+    "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_mount_olympus_icon"
   },
@@ -359,7 +359,7 @@
     "origem": "AoM: Original (2002)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Terra 🌳",
     "icon": "aomr_nomad_icon"
   },
   {
@@ -376,11 +376,11 @@
   {
     "nome": "Okuchichibu",
     "ingles": "Okuchichibu",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Heavenly Spear (2025)",
-    "padrao": true,
-    "partidas_rapidas": true,
+    "padrao": false,
+    "partidas_rapidas": false,
     "tipo": "Terra 🌳",
     "icon": "aomr_okuchichibu_icon"
   },
@@ -393,9 +393,6 @@
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
-    "no_oasis_so_tem_1_zona_de_caca_inicial": "aomr_caribou_icon: na sua base junto com as frutinhas :aomr_berry_bush_icon: e galinhas :aomr_chicken_icon:. Por causa disso, sair da base é quase que imediato após a passagem para Clássica :aomr_classical_age_icon:.",
-    "entao_sabendo_disso_voce_podera_raidar_seu_rival_muito_cedo_porem_nesse_mapa_tambem_tem_muita_cabra": "aomr_goat_icon:. Então se você for alvo dessa agressividade, você poderá recorrer as suas cabras :aomr_goat_icon:.",
-    "esse_mapa_existem_3_variacoes": "",
     "icon": "aomr_oasis_icon"
   },
   {
@@ -417,7 +414,7 @@
     "origem": "AoM: Titans (2003)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_highland_icon"
   },
   {
@@ -427,19 +424,19 @@
     "saiu_da_ranqueada": false,
     "origem": "AoM: Titans (2003)",
     "padrao": true,
-    "partidas_rapidas": false,
+    "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_marsh_icon"
   },
   {
     "nome": "Rio Amarelo",
     "ingles": "Yellow River",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "padrao": true,
+    "partidas_rapidas": true,
+    "tipo": "Naval 🌊",
     "icon": "aomr_yellow_river_icon"
   },
   {
@@ -503,7 +500,7 @@
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
     "origem": "AoM: Heavenly Spear (2025)",
-    "padrao": true,
+    "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
     "icon": "aomr_setonaikai_icon"
@@ -516,7 +513,7 @@
     "origem": "AoM: Immortal Pillars (2025)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_peach_blossom_land_icon"
   },
   {
@@ -544,11 +541,11 @@
   {
     "nome": "Vaus do Nilo",
     "ingles": "Nile Shallows",
-    "mapas_da_ranqueada": false,
+    "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
     "origem": "AoM: Retold (2024)",
-    "padrao": false,
-    "partidas_rapidas": false,
+    "padrao": true,
+    "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_nile_shallows_icon"
   },
@@ -582,7 +579,7 @@
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Naval 🌊, Terra 🌳",
+    "tipo": "Naval 🌊",
     "icon": "aomr_blood_river_crossing_icon"
   },
   {
@@ -591,16 +588,16 @@
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
     "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Terra 🌳",
+    "padrao": true,
+    "partidas_rapidas": true,
+    "tipo": "Naval 🌊, Terra 🌳",
     "icon": "aomr_cloud_forest_icon"
   },
   {
     "nome": "Crista de Obsidiana",
     "ingles": "Obsidian Ridge",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
     "origem": "AoM: Obsidian Mirror (2026)",
     "padrao": false,
     "partidas_rapidas": false,

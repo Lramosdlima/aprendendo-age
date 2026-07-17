@@ -3,7 +3,10 @@
 Atualiza mapas.json (PT + EN) e exporta ícones/previews dos mapas em WebP.
 
 Campos editoriais preservados em entradas existentes:
-  mapas_da_ranqueada, saiu_da_ranqueada, origem e campos adicionais.
+  origem, histórico saiu_da_ranqueada e campos adicionais.
+
+Pools sincronizados dos arquivos .set instalados:
+  padrao/mapas_da_ranqueada, partidas_rapidas e tipo Land/Water.
 
 Exemplos:
   python scripts/merge-mapas-aom.py --dry-run

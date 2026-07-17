@@ -205,6 +205,8 @@ def extract_maps(
                 "tipo": _map_type(map_id, sets),
                 "padrao": map_id in sets["standard"],
                 "partidas_rapidas": map_id in sets["quick"],
+                # O jogo chama este mesmo pool de "Standard/Ranked Map Set".
+                "mapas_da_ranqueada": map_id in sets["standard"],
                 "origem_padrao": ORIGIN_OVERRIDES.get(map_id, ""),
             }
         )

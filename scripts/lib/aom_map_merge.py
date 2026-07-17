@@ -31,11 +31,11 @@ def _new_row(extracted: dict[str, Any], locale: str) -> dict[str, Any]:
     return {
         "nome": name,
         "ingles": extracted["nome_en"],
-        "mapas_da_ranqueada": False,
+        "mapas_da_ranqueada": extracted["mapas_da_ranqueada"],
         "saiu_da_ranqueada": False,
         "origem": origin,
-        "padrao": False,
-        "partidas_rapidas": False,
+        "padrao": extracted["padrao"],
+        "partidas_rapidas": extracted["partidas_rapidas"],
         "tipo": extracted["tipo"],
         "icon": extracted["icon"],
     }
@@ -76,6 +76,26 @@ def merge_catalog_file(
         else:
             row = catalog[position]
             changes: dict[str, dict[str, Any]] = {}
+            was_ranked = bool(row.get("mapas_da_ranqueada", False))
+            for field in (
+                "padrao",
+                "partidas_rapidas",
+                "tipo",
+                "mapas_da_ranqueada",
+            ):
+                value = extracted[field]
+                if row.get(field) != value:
+                    changes[field] = {"before": row.get(field), "after": value}
+                    row[field] = value
+
+            if (
+                was_ranked
+                and not extracted["mapas_da_ranqueada"]
+                and not row.get("saiu_da_ranqueada", False)
+            ):
+                changes["saiu_da_ranqueada"] = {"before": False, "after": True}
+                row["saiu_da_ranqueada"] = True
+
             if not row.get("icon"):
                 changes["icon"] = {"before": row.get("icon"), "after": extracted["icon"]}
                 row["icon"] = extracted["icon"]
