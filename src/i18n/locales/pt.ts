@@ -293,6 +293,15 @@ export const ptMessages: TranslationTree = {
       title: "Mapas",
       description: "Origem, ranqueada e tipo!",
       filterPlaceholder: "Filtrar por nome ou tipo…",
+      filterTagLabel: "Filtrar mapas por categoria",
+      filterTagAll: "Todos",
+      filters: {
+        ranked: "Mapas ranqueados",
+        default: "Mapas padrão",
+        quickMatches: "Partidas rápidas",
+        land: "Mapas de terra",
+        water: "Mapas de água",
+      },
     },
     reliquias: {
       title: "Relíquias",

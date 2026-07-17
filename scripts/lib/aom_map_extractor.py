@@ -116,7 +116,7 @@ def _asset_stem(value: str, fallback: str) -> str:
     return Path(value).stem if value else fallback
 
 
-def _map_type(map_id: str, sets: dict[str, list[str]]) -> str:
+def _map_type(map_id: str, sets: dict[str, list[str]]) -> str | None:
     if map_id in MAP_TYPE_OVERRIDES:
         return MAP_TYPE_OVERRIDES[map_id]
     is_land = map_id in sets["land"]
@@ -125,7 +125,9 @@ def _map_type(map_id: str, sets: dict[str, list[str]]) -> str:
         return "Terra 🌳"
     if is_water and not is_land:
         return "Naval 🌊"
-    return "Naval 🌊, Terra 🌳"
+    if is_land and is_water:
+        return "Naval 🌊, Terra 🌳"
+    return None
 
 
 def extract_maps(

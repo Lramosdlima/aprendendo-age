@@ -28,6 +28,11 @@ def _new_row(extracted: dict[str, Any], locale: str) -> dict[str, Any]:
         raise ValueError(
             f"Mapa novo sem origem editorial definida: {extracted['map_id']}"
         )
+    map_type = extracted.get("tipo")
+    if not map_type:
+        raise ValueError(
+            f"Mapa novo sem classificação Land/Water: {extracted['map_id']}"
+        )
     return {
         "nome": name,
         "ingles": extracted["nome_en"],
@@ -36,7 +41,7 @@ def _new_row(extracted: dict[str, Any], locale: str) -> dict[str, Any]:
         "origem": origin,
         "padrao": extracted["padrao"],
         "partidas_rapidas": extracted["partidas_rapidas"],
-        "tipo": extracted["tipo"],
+        "tipo": map_type,
         "icon": extracted["icon"],
     }
 
@@ -84,6 +89,8 @@ def merge_catalog_file(
                 "mapas_da_ranqueada",
             ):
                 value = extracted[field]
+                if field == "tipo" and value is None:
+                    continue
                 if row.get(field) != value:
                     changes[field] = {"before": row.get(field), "after": value}
                     row[field] = value

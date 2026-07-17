@@ -115,6 +115,14 @@ def main() -> int:
     if not args.include_special_maps:
         rows = [row for row in rows if row["map_id"] not in SPECIAL_MAP_IDS]
 
+    unclassified = [row["map_id"] for row in rows if row.get("tipo") is None]
+    if unclassified:
+        print(
+            "Aviso: mapa(s) fora de Land/Water; tipo existente será preservado: "
+            f"{', '.join(unclassified)}",
+            file=sys.stderr,
+        )
+
     if args.map_ids:
         wanted = {part.strip().casefold() for part in args.map_ids.split(",") if part.strip()}
         rows = [row for row in rows if row["map_id"].casefold() in wanted]

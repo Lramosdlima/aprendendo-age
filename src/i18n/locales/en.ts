@@ -293,6 +293,15 @@ export const enMessages: TranslationTree = {
       title: "Maps",
       description: "Origin, ranked, and type!",
       filterPlaceholder: "Filter by name or type…",
+      filterTagLabel: "Filter maps by category",
+      filterTagAll: "All",
+      filters: {
+        ranked: "Ranked maps",
+        default: "Standard maps",
+        quickMatches: "Quick matches",
+        land: "Land maps",
+        water: "Water maps",
+      },
     },
     reliquias: {
       title: "Relics",
