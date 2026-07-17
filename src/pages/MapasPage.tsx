@@ -161,25 +161,40 @@ export function MapasPage() {
         </div>
       </ListPageStickyHeader>
       <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-        {filtered.map(({ m, i }) => (
-          <li key={`${m.nome}-${i}`}>
-            <EntityCard
-              to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
-              linkState={listIndexState}
-              title={m.nome}
-              subtitle={m.tipo}
-              meta={m.origem}
-              backgroundCoverSrc={getMapaPreviewUrl(m)}
-              backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
-              watermarkSrc={getMapaAssetUrl(m)}
-              titleIcons={
-                m.mapas_da_ranqueada
-                  ? [{ icon: "aomr_type_hero_icon", label: t("common.ranked") }]
-                  : undefined
-              }
-            />
-          </li>
-        ))}
+        {filtered.map(({ m, i }) => {
+          const mapaIcon = getMapaAssetUrl(m);
+          return (
+            <li key={`${m.nome}-${i}`}>
+              <EntityCard
+                to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
+                linkState={listIndexState}
+                title={m.nome}
+                subtitle={m.tipo}
+                meta={m.origem}
+                backgroundCoverSrc={getMapaPreviewUrl(m)}
+                backgroundCoverFallbackSrc={mapaIcon}
+                watermarkSrc={mapaIcon}
+                titleIcons={
+                  m.mapas_da_ranqueada
+                    ? [{ icon: "aomr_type_hero_icon", label: t("common.ranked") }]
+                    : undefined
+                }
+                hoverPreview={
+                  mapaIcon ? (
+                    <div className="flex justify-center">
+                      <img
+                        src={mapaIcon}
+                        alt=""
+                        aria-hidden
+                        className="size-64 rounded-xl object-contain"
+                      />
+                    </div>
+                  ) : undefined
+                }
+              />
+            </li>
+          );
+        })}
       </ul>
       {filtered.length === 0 ? (
         <p className="mt-8 text-center text-sm text-zinc-500">{t("common.noResults")}</p>
