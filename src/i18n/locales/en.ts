@@ -78,6 +78,7 @@ export const enMessages: TranslationTree = {
     community: "Community",
     tag: "Tag",
     name: "Name",
+    icon: "Icon",
     startTableRowTypes: {
       default: "(default)",
       hint: "hint — tip",

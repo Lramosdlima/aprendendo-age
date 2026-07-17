@@ -78,6 +78,7 @@ export const ptMessages: TranslationTree = {
     community: "Comunidade",
     tag: "Sigla",
     name: "Nome",
+    icon: "Ícone",
     startTableRowTypes: {
       default: "(padrão)",
       hint: "hint — dica",

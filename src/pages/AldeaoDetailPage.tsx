@@ -47,18 +47,30 @@ export function AldeaoDetailPage() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Section title={t("common.general")}>
+        <Section title={t("common.general")} className="h-full">
           <AldeaoGeralBody a={a} linkState={linkState} />
         </Section>
 
-        <Section title={t("common.baseGatherRates")}>
-          <AldeaoColetaBody a={a} />
-        </Section>
+        {aldeaoIcon ? (
+          <Section title={t("common.icon")} className="h-full">
+            <img
+              src={aldeaoIcon}
+              alt={`${a.nome} — ${t("common.icon")}`}
+              className="mx-auto h-auto w-full max-w-96 rounded-xl object-contain"
+            />
+          </Section>
+        ) : null}
       </div>
 
-      <Section title={t("common.percentBonus")} className="mt-6">
-        <AldeaoBonusBody a={a} />
-      </Section>
+      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+        <Section title={t("common.baseGatherRates")} className="h-full">
+          <AldeaoColetaBody a={a} />
+        </Section>
+
+        <Section title={t("common.percentBonus")} className="h-full">
+          <AldeaoBonusBody a={a} />
+        </Section>
+      </div>
     </div>
   );
 }
