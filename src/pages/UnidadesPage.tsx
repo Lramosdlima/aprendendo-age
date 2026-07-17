@@ -56,6 +56,16 @@ function matches(u: LocaleCatalog["unidades"][number], q: string) {
     .includes(s);
 }
 
+function unitBenchmarkValueClass(
+  value: number | undefined,
+  benchmark: number,
+  lowerIsBetter: boolean,
+): string | undefined {
+  if (value == null || value === 0) return undefined;
+  const isBetter = lowerIsBetter ? value <= benchmark : value >= benchmark;
+  return isBetter ? "text-emerald-400" : "text-red-400";
+}
+
 const toolbarBtn =
   "rounded-xl border border-aom-border bg-zinc-900/50 px-3.5 py-2 text-sm font-medium text-amber-100/95 transition-colors hover:border-amber-500/40 hover:bg-zinc-900/80 focus:outline-none focus:ring-2 focus:ring-amber-500/25 disabled:cursor-not-allowed disabled:opacity-45";
 
@@ -219,9 +229,24 @@ export function UnidadesPage() {
                   hoverPreview={
                     <EntityCardPreviewStats
                       items={[
-                        { icon: "foodaom", label: t("common.food"), value: u.comida },
-                        { icon: "woodaom", label: t("common.wood"), value: u.madeira },
-                        { icon: "goldaom", label: t("common.gold"), value: u.ouro },
+                        {
+                          icon: "foodaom",
+                          label: t("common.food"),
+                          value: u.comida,
+                          valueClassName: unitBenchmarkValueClass(u.comida, 50, true),
+                        },
+                        {
+                          icon: "woodaom",
+                          label: t("common.wood"),
+                          value: u.madeira,
+                          valueClassName: unitBenchmarkValueClass(u.madeira, 50, true),
+                        },
+                        {
+                          icon: "goldaom",
+                          label: t("common.gold"),
+                          value: u.ouro,
+                          valueClassName: unitBenchmarkValueClass(u.ouro, 50, true),
+                        },
                         {
                           icon: "favoraom",
                           label: t("common.favor"),
@@ -231,42 +256,50 @@ export function UnidadesPage() {
                           icon: "aomr_population_provision_icon",
                           label: t("spreadsheet.unidades.population"),
                           value: u.populacao,
+                          valueClassName: unitBenchmarkValueClass(u.populacao, 2, true),
                         },
                         {
                           icon: "aomr_time_icon",
                           label: t("spreadsheet.unidades.trainTime"),
                           value: u.tempo_treinamento,
+                          valueClassName: unitBenchmarkValueClass(u.tempo_treinamento, 15, true),
                         },
                         {
                           icon: "aomr_speed_icon",
                           label: t("spreadsheet.unidades.moveSpeed"),
                           value: u.velocidade_movimento,
+                          valueClassName: unitBenchmarkValueClass(u.velocidade_movimento, 4, false),
                         },
                         {
                           icon: "aomr_hit_points_icon",
                           label: t("spreadsheet.unidades.hitPoints"),
                           value: u.pontos_de_vida,
+                          valueClassName: unitBenchmarkValueClass(u.pontos_de_vida, 80, false),
                         },
                         { icon: "rangeicon", label: t("spreadsheet.unidades.range"), value: u.alcance },
                         {
                           icon: "hackdamage",
                           label: t("spreadsheet.unidades.hackDamage"),
                           value: u.dano_cortante,
+                          valueClassName: unitBenchmarkValueClass(u.dano_cortante, 10, false),
                         },
                         {
                           icon: "piercedamage",
                           label: t("spreadsheet.unidades.pierceDamage"),
                           value: u.dano_perfurante,
+                          valueClassName: unitBenchmarkValueClass(u.dano_perfurante, 10, false),
                         },
                         {
                           icon: "aomr_rate_of_fire_icon",
                           label: t("spreadsheet.unidades.attackSpeed"),
                           value: u.velocidade_de_ataque_atk_s,
+                          valueClassName: unitBenchmarkValueClass(u.velocidade_de_ataque_atk_s, 1, true),
                         },
                         {
                           icon: "hackarmor",
                           label: t("spreadsheet.unidades.hackArmor"),
                           value: u.armadura_anticorte != null ? formatArmorPercent(u.armadura_anticorte) : null,
+                          valueClassName: unitBenchmarkValueClass(u.armadura_anticorte, 40, false),
                         },
                         {
                           icon: "piercearmor",
@@ -275,6 +308,7 @@ export function UnidadesPage() {
                             u.armadura_antiperfurante != null
                               ? formatArmorPercent(u.armadura_antiperfurante)
                               : null,
+                          valueClassName: unitBenchmarkValueClass(u.armadura_antiperfurante, 40, false),
                         },
                       ]}
                     />
