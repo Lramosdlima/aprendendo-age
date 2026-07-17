@@ -100,6 +100,22 @@ def icon_token_from_path(icon_path: str) -> str:
     return f"aomr_{stem}_icon" if stem else ""
 
 
+UNIT_ICON_TOKEN_OVERRIDES = {
+    # Alguns caminhos internos do jogo não correspondem aos nomes dos assets públicos.
+    "aomr_hades_shade_icon": "aomr_shade_of_hades_icon",
+    "aomr_harpy_icon": "aomr_harpy_demeter_icon",
+    "aomr_quimchin_spy_icon": "aomr_quimchim_spy_icon",
+    "aomr_warrior_priest_icon": "aomr_warrior_priest_hero_icon",
+    "aomr_otontin_icon": "aomr_medium_otontin_smasher_icon",
+    "aomr_shorn_one_icon": "aomr_medium_shorn_one_icon",
+}
+
+
+def unit_icon_token(icon_path: str) -> str:
+    token = icon_token_from_path(icon_path)
+    return UNIT_ICON_TOKEN_OVERRIDES.get(token, token)
+
+
 def is_alt_temple(proto: str) -> bool:
     return proto != "Temple" and (
         proto in SECONDARY_TEMPLE_PROTOS or proto.startswith("Temple")
@@ -370,7 +386,7 @@ def extract_unit_record(
         "tempo_treinamento": _float(_text(unit, "trainpoints")),
         "velocidade_movimento": _float(_text(unit, "maxvelocity")),
         "construcao": construcao,
-        "icon": icon_token_from_path(_text(unit, "icon")),
+        "icon": unit_icon_token(_text(unit, "icon")),
         "unit_types": sorted(unit_types),
         "attack_action": attack.get("action", ""),
         "max_range": attack.get("maxrange", 0.0),

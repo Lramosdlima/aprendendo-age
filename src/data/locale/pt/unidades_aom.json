@@ -8191,7 +8191,7 @@
         "nome": "Hades"
       }
     ],
-    "icon": "aomr_hades_shade_icon"
+    "icon": "aomr_shade_of_hades_icon"
   },
   {
     "id": 139,
@@ -8738,7 +8738,7 @@
         "nome": "Deméter"
       }
     ],
-    "icon": "aomr_harpy_icon",
+    "icon": "aomr_harpy_demeter_icon",
     "pontos_de_vida": 380,
     "velocidade_de_ataque_atk_s": 1.8,
     "dps": 27,
@@ -9295,7 +9295,7 @@
     ],
     "forte_contra": "Artilharia :aomr_type_archer_icon:",
     "fraco_contra": "Cavalaria :aomr_type_cavalry_icon:",
-    "icon": "aomr_quimchin_spy_icon",
+    "icon": "aomr_quimchim_spy_icon",
     "tempo_treinamento": 4
   },
   {
@@ -9347,7 +9347,7 @@
     "forca_atributos": 94.8,
     "forte_contra": "Criatura Mítica :aomr_type_myth_unit_icon:",
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
-    "icon": "aomr_warrior_priest_icon",
+    "icon": "aomr_warrior_priest_hero_icon",
     "tempo_treinamento": 11,
     "dano_perfurante": 10
   },
@@ -9680,7 +9680,7 @@
     "forca_atributos": 236.842857142857,
     "forte_contra": "Construção :aomr_type_building_icon:",
     "fraco_contra": "Infantaria :aomr_type_infantry_icon:",
-    "icon": "aomr_otontin_icon",
+    "icon": "aomr_medium_otontin_smasher_icon",
     "tempo_treinamento": 11,
     "dano_cortante": 11
   },
@@ -9740,7 +9740,7 @@
     ],
     "forte_contra": "Infantaria :aomr_type_infantry_icon:",
     "fraco_contra": "Artilharia :aomr_type_archer_icon:",
-    "icon": "aomr_shorn_one_icon",
+    "icon": "aomr_medium_shorn_one_icon",
     "tempo_treinamento": 8
   },
   {
