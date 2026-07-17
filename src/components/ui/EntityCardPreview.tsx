@@ -2,12 +2,14 @@ import type { ReactNode } from "react";
 
 import { NotionText } from "@/components/ui/NotionText";
 import type { DeusExplicacaoBloco } from "@/data/catalog";
+import { cn } from "@/lib/cn";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 export type EntityCardPreviewStat = {
   icon?: string;
   label: string;
   value: ReactNode;
+  valueClassName?: string;
 };
 
 export function EntityCardPreviewStats({ items }: { items: EntityCardPreviewStat[] }) {
@@ -31,7 +33,12 @@ export function EntityCardPreviewStats({ items }: { items: EntityCardPreviewStat
                 {item.label}
               </span>
             )}
-            <span className="min-w-0 truncate text-xs font-semibold tabular-nums text-zinc-100">
+            <span
+              className={cn(
+                "min-w-0 truncate text-xs font-semibold tabular-nums",
+                item.valueClassName ?? "text-zinc-100",
+              )}
+            >
               {item.value}
             </span>
             <span className="sr-only">{item.label}</span>
