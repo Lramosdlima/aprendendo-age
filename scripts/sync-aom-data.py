@@ -9,6 +9,7 @@ Atualiza, conforme seleção:
   - construcoes.json (PT + EN)
   - reliquias.json (PT + EN)
   - mapas.json (PT + EN) + ícones/previews WebP
+  - aldeoes.json (PT + EN), incluindo taxas de coleta
 
 Exemplos:
   python scripts/sync-aom-data.py --dry-run
@@ -51,6 +52,10 @@ DEFAULTS = {
     "mapas": {
         "script": "merge-mapas-aom.py",
         "args": [],
+    },
+    "aldeoes": {
+        "script": "merge-aldeoes-aom.py",
+        "args": ["--ids", "1-11"],
     },
 }
 
@@ -101,7 +106,7 @@ def main() -> int:
         "--only",
         help=(
             "Catálogos separados por vírgula: "
-            "unidades,tecnologias,godpowers,construcoes,reliquias,mapas"
+            "unidades,tecnologias,godpowers,construcoes,reliquias,mapas,aldeoes"
         ),
     )
     parser.add_argument(

@@ -948,7 +948,6 @@ export const ptMessages: TranslationTree = {
       resourceCostWood: "Recursos (custo) - madeira",
       resourceCostGold: "Recursos (custo) - ouro",
       trainTime: "Treino (s)",
-      trainTimePatch: "Treino patch (s)",
       hunt: "Caçar",
       livestock: "Gado / galinhas",
       berries: "Frutinhas",

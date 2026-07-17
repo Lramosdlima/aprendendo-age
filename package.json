@@ -19,6 +19,8 @@
     "data:merge-relics": "python scripts/merge-relics-aom.py",
     "data:extract-mapas": "python scripts/extract-mapas-aom.py",
     "data:merge-mapas": "python scripts/merge-mapas-aom.py",
+    "data:extract-aldeoes": "python scripts/extract-aldeoes-aom.py",
+    "data:merge-aldeoes": "python scripts/merge-aldeoes-aom.py",
     "data:sync-aom": "python scripts/sync-aom-data.py",
     "assets:convert-webp": "python scripts/convert-assets-to-webp.py --write --delete-originals",
     "assets:convert-webp:dry-run": "python scripts/convert-assets-to-webp.py --dry-run",

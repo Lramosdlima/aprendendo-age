@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { EntityCardPreviewStats } from "@/components/ui/EntityCardPreview";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -115,6 +116,62 @@ export function AldeoesPage() {
                 cardTint={pantheonCardTint(tintNome)}
                 subtitle={firstNome(a.panteao) ? <NotionText text={firstNome(a.panteao)!} /> : undefined}
                 meta={<MetaNotionLine parts={[a.ingles]} />}
+                hoverPreview={
+                  <EntityCardPreviewStats
+                    items={[
+                      {
+                        icon: "aomr_hit_points_icon",
+                        label: t("spreadsheet.unidades.hitPoints"),
+                        value: a.vida,
+                      },
+                      {
+                        icon: "aomr_population_provision_icon",
+                        label: t("spreadsheet.unidades.population"),
+                        value: a.populacao,
+                      },
+                      {
+                        icon: "aomr_time_icon",
+                        label: t("spreadsheet.aldeoes.trainTime"),
+                        value: a.tempo_de_treinamento,
+                      },
+                      {
+                        icon: "aomr_caribou_icon",
+                        label: t("spreadsheet.aldeoes.hunt"),
+                        value: a.cacar,
+                      },
+                      {
+                        icon: "aomr_cow_icon",
+                        label: t("spreadsheet.aldeoes.livestock"),
+                        value: a.gado_galinhas,
+                      },
+                      {
+                        icon: "aomr_berry_bush_icon",
+                        label: t("spreadsheet.aldeoes.berries"),
+                        value: a.frutinhas,
+                      },
+                      {
+                        icon: "aomr_farm_icon",
+                        label: t("spreadsheet.aldeoes.farm"),
+                        value: a.fazenda,
+                      },
+                      {
+                        icon: "aomr_tree_oak_icon",
+                        label: t("spreadsheet.aldeoes.tree"),
+                        value: a.arvore,
+                      },
+                      {
+                        icon: "aomr_gold_mine_icon",
+                        label: t("spreadsheet.aldeoes.mine"),
+                        value: a.mina,
+                      },
+                      {
+                        icon: "aomr_type_building_icon",
+                        label: t("spreadsheet.aldeoes.buildSpeed"),
+                        value: a.velocidade_construcao,
+                      },
+                    ]}
+                  />
+                }
                 watermarkSrc={getAldeaoAssetUrl(a)}
                 compareMode={compareMode}
                 selected={selected}

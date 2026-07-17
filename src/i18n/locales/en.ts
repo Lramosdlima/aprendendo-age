@@ -947,7 +947,6 @@ export const enMessages: TranslationTree = {
       resourceCostWood: "Resource cost — wood",
       resourceCostGold: "Resource cost — gold",
       trainTime: "Train time (s)",
-      trainTimePatch: "Train time patch (s)",
       hunt: "Hunt",
       livestock: "Livestock / chickens",
       berries: "Berries",

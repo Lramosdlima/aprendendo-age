@@ -10,6 +10,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { firstNome, firstNumId } from "@/lib/entityRefs";
 import type { ListIndexLinkState } from "@/lib/listIndexReturnState";
 import { localeSectionPath } from "@/lib/localeRoutes";
+import { parseGameNumber } from "@/lib/numericCompare";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 
 type A = LocaleCatalog["aldeoes"][number];
@@ -75,9 +76,6 @@ export function AldeaoGeralBody({ a, linkState }: { a: A; linkState?: ListIndexL
       <InfoRow label={t("spreadsheet.aldeoes.trainTime")} icon="aomr_time_icon">
         {a.tempo_de_treinamento ?? "—"}
       </InfoRow>
-      <InfoRow label={t("spreadsheet.aldeoes.trainTimePatch")} icon="aomr_time_icon">
-        {a.tempo_de_treinamento_patch_18_65484 ?? "—"}
-      </InfoRow>
     </div>
   );
 }
@@ -87,6 +85,50 @@ function coletaRow(label: string, icon: string, value: ReactNode) {
     <InfoRow label={label} icon={icon}>
       {value}
     </InfoRow>
+  );
+}
+
+function AldeaoBonusBar({ value, locale }: { value: unknown; locale: string }) {
+  const parsed = parseGameNumber(value) ?? 0;
+  const magnitude = Math.min(Math.abs(parsed) / 100, 1) * 50;
+  const positive = parsed > 0;
+  const negative = parsed < 0;
+  const formatted = parsed.toLocaleString(locale === "pt" ? "pt-BR" : "en-US", {
+    maximumFractionDigits: 2,
+  });
+
+  return (
+    <div className="flex min-w-[11rem] items-center justify-end gap-3">
+      <span
+        className={[
+          "w-16 shrink-0 text-right text-sm font-semibold tabular-nums",
+          positive ? "text-emerald-400" : negative ? "text-red-400" : "text-zinc-400",
+        ].join(" ")}
+      >
+        {positive ? "+" : ""}
+        {formatted}%
+      </span>
+      <div
+        className="relative h-2.5 w-32 overflow-hidden rounded-full bg-zinc-800/90 ring-1 ring-inset ring-zinc-700/60"
+        title={`${positive ? "+" : ""}${formatted}%`}
+      >
+        <span className="absolute inset-y-0 left-1/2 w-px bg-zinc-500/70" aria-hidden />
+        {positive ? (
+          <span
+            className="absolute inset-y-0 left-1/2 rounded-r-full bg-emerald-500 transition-[width]"
+            style={{ width: `${magnitude}%` }}
+            aria-hidden
+          />
+        ) : null}
+        {negative ? (
+          <span
+            className="absolute inset-y-0 right-1/2 rounded-l-full bg-red-500 transition-[width]"
+            style={{ width: `${magnitude}%` }}
+            aria-hidden
+          />
+        ) : null}
+      </div>
+    </div>
   );
 }
 
@@ -107,30 +149,30 @@ export function AldeaoColetaBody({ a }: { a: A }) {
 }
 
 export function AldeaoBonusBody({ a }: { a: A }) {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="space-y-0">
       <InfoRow label={t("spreadsheet.aldeoes.huntPercent")} icon="aomr_caribou_icon">
-        {a.cacar_porcento ?? 0}
+        <AldeaoBonusBar value={a.cacar_porcento} locale={locale} />
       </InfoRow>
       <InfoRow label={t("spreadsheet.aldeoes.livestockPercent")} icon="aomr_cow_icon">
-        {a.gado_porcento ?? 0}
+        <AldeaoBonusBar value={a.gado_porcento} locale={locale} />
       </InfoRow>
       <InfoRow label={t("spreadsheet.aldeoes.berriesPercent")} icon="aomr_berry_bush_icon">
-        {a.frutinhas_porcento ?? 0}
+        <AldeaoBonusBar value={a.frutinhas_porcento} locale={locale} />
       </InfoRow>
       <InfoRow label={t("spreadsheet.aldeoes.farmPercent")} icon="aomr_farm_icon">
-        {a.fazenda_porcento ?? 0}
+        <AldeaoBonusBar value={a.fazenda_porcento} locale={locale} />
       </InfoRow>
       <InfoRow label={t("spreadsheet.aldeoes.treePercent")} icon="aomr_tree_oak_icon">
-        {a.arvore_porcento ?? 0}
+        <AldeaoBonusBar value={a.arvore_porcento} locale={locale} />
       </InfoRow>
       <InfoRow label={t("spreadsheet.aldeoes.minePercent")} icon="aomr_gold_mine_icon">
-        {a.mina_porcento ?? 0}
+        <AldeaoBonusBar value={a.mina_porcento} locale={locale} />
       </InfoRow>
       <InfoRow label={t("spreadsheet.aldeoes.buildSpeedPercent")} icon="aomr_type_building_icon">
-        {a.velocidade_construcao_porcento ?? 0}
+        <AldeaoBonusBar value={a.velocidade_construcao_porcento} locale={locale} />
       </InfoRow>
     </div>
   );

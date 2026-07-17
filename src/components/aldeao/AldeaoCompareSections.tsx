@@ -127,16 +127,6 @@ export function AldeaoGeralCompare({ a1, a2 }: { a1: A; a2: A }) {
         right={a2.tempo_de_treinamento ?? "—"}
         numericPair={{ ...numericPairFrom(a1.tempo_de_treinamento, a2.tempo_de_treinamento), lowerIsBetter: true }}
       />
-      <CompareInfoRow
-        label={t("spreadsheet.aldeoes.trainTimePatch")}
-        icon="aomr_time_icon"
-        left={a1.tempo_de_treinamento_patch_18_65484 ?? "—"}
-        right={a2.tempo_de_treinamento_patch_18_65484 ?? "—"}
-        numericPair={{
-          ...numericPairFrom(a1.tempo_de_treinamento_patch_18_65484, a2.tempo_de_treinamento_patch_18_65484),
-          lowerIsBetter: true,
-        }}
-      />
     </div>
   );
 }
