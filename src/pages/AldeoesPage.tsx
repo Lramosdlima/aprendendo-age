@@ -23,9 +23,17 @@ function matches(a: LocaleCatalog["aldeoes"][number], q: string) {
   return [a.nome, a.ingles ?? "", joinRefNomes(a.panteao)].join(" ").toLowerCase().includes(s);
 }
 
-function gatherBonusValueClass(value: number | undefined): string | undefined {
-  if (value == null || value === 0) return undefined;
-  return value > 0 ? "text-emerald-400" : "text-red-400";
+function zeroValueClass(value: number | undefined): string | undefined {
+  return value === 0 ? "text-zinc-500" : undefined;
+}
+
+function gatherBonusValueClass(
+  baseValue: number | undefined,
+  percentBonus: number | undefined,
+): string | undefined {
+  if (baseValue === 0) return "text-zinc-500";
+  if (percentBonus == null || percentBonus === 0) return undefined;
+  return percentBonus > 0 ? "text-emerald-400" : "text-red-400";
 }
 
 const toolbarBtn =
@@ -128,58 +136,64 @@ export function AldeoesPage() {
                         icon: "aomr_hit_points_icon",
                         label: t("spreadsheet.unidades.hitPoints"),
                         value: a.vida,
+                        valueClassName: zeroValueClass(a.vida),
                       },
                       {
                         icon: "aomr_population_provision_icon",
                         label: t("spreadsheet.unidades.population"),
                         value: a.populacao,
+                        valueClassName: zeroValueClass(a.populacao),
                       },
                       {
                         icon: "aomr_time_icon",
                         label: t("spreadsheet.aldeoes.trainTime"),
                         value: a.tempo_de_treinamento,
+                        valueClassName: zeroValueClass(a.tempo_de_treinamento),
                       },
                       {
                         icon: "aomr_caribou_icon",
                         label: t("spreadsheet.aldeoes.hunt"),
                         value: a.cacar,
-                        valueClassName: gatherBonusValueClass(a.cacar_porcento),
+                        valueClassName: gatherBonusValueClass(a.cacar, a.cacar_porcento),
                       },
                       {
                         icon: "aomr_cow_icon",
                         label: t("spreadsheet.aldeoes.livestock"),
                         value: a.gado_galinhas,
-                        valueClassName: gatherBonusValueClass(a.gado_porcento),
+                        valueClassName: gatherBonusValueClass(a.gado_galinhas, a.gado_porcento),
                       },
                       {
                         icon: "aomr_berry_bush_icon",
                         label: t("spreadsheet.aldeoes.berries"),
                         value: a.frutinhas,
-                        valueClassName: gatherBonusValueClass(a.frutinhas_porcento),
+                        valueClassName: gatherBonusValueClass(a.frutinhas, a.frutinhas_porcento),
                       },
                       {
                         icon: "aomr_farm_icon",
                         label: t("spreadsheet.aldeoes.farm"),
                         value: a.fazenda,
-                        valueClassName: gatherBonusValueClass(a.fazenda_porcento),
+                        valueClassName: gatherBonusValueClass(a.fazenda, a.fazenda_porcento),
                       },
                       {
                         icon: "aomr_tree_oak_icon",
                         label: t("spreadsheet.aldeoes.tree"),
                         value: a.arvore,
-                        valueClassName: gatherBonusValueClass(a.arvore_porcento),
+                        valueClassName: gatherBonusValueClass(a.arvore, a.arvore_porcento),
                       },
                       {
                         icon: "aomr_gold_mine_icon",
                         label: t("spreadsheet.aldeoes.mine"),
                         value: a.mina,
-                        valueClassName: gatherBonusValueClass(a.mina_porcento),
+                        valueClassName: gatherBonusValueClass(a.mina, a.mina_porcento),
                       },
                       {
                         icon: "aomr_type_building_icon",
                         label: t("spreadsheet.aldeoes.buildSpeed"),
                         value: a.velocidade_construcao,
-                        valueClassName: gatherBonusValueClass(a.velocidade_construcao_porcento),
+                        valueClassName: gatherBonusValueClass(
+                          a.velocidade_construcao,
+                          a.velocidade_construcao_porcento,
+                        ),
                       },
                     ]}
                   />
