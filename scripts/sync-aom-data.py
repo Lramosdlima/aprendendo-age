@@ -8,6 +8,7 @@ Atualiza, conforme seleção:
   - godpowers.json (PT + EN)
   - construcoes.json (PT + EN)
   - reliquias.json (PT + EN)
+  - mapas.json (PT + EN) + ícones/previews WebP
 
 Exemplos:
   python scripts/sync-aom-data.py --dry-run
@@ -37,7 +38,7 @@ DEFAULTS = {
     },
     "godpowers": {
         "script": "merge-godpowers-aom.py",
-        "args": ["--ids", "1-92"],
+        "args": ["--ids", "1-93"],
     },
     "construcoes": {
         "script": "merge-construcoes-aom.py",
@@ -46,6 +47,10 @@ DEFAULTS = {
     "reliquias": {
         "script": "merge-relics-aom.py",
         "args": ["--ids", "1-114"],
+    },
+    "mapas": {
+        "script": "merge-mapas-aom.py",
+        "args": [],
     },
 }
 
@@ -94,7 +99,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--only",
-        help="Catálogos separados por vírgula: unidades,tecnologias,godpowers,construcoes,reliquias",
+        help=(
+            "Catálogos separados por vírgula: "
+            "unidades,tecnologias,godpowers,construcoes,reliquias,mapas"
+        ),
     )
     parser.add_argument(
         "--locale",

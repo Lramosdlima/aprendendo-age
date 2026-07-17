@@ -8,7 +8,7 @@ Campos preservados (não sobrescritos):
 Exemplos:
   python scripts/merge-godpowers-aom.py --power Bolt --dry-run
   python scripts/merge-godpowers-aom.py --ids 1-10 --write
-  python scripts/merge-godpowers-aom.py --ids 1-92 --write
+  python scripts/merge-godpowers-aom.py --ids 1-93 --write
 """
 
 from __future__ import annotations

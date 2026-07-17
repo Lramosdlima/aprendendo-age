@@ -285,7 +285,7 @@
         "nome": "Arcaica :aomr_archaic_age_icon:"
       }
     ],
-    "cooldown_seg": 150,
+    "cooldown_seg": 180,
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 20,
     "incremento_por_uso": "+15",
@@ -615,7 +615,7 @@
         "nome": "Clássica :aomr_classical_age_icon:"
       }
     ],
-    "cooldown_seg": 120,
+    "cooldown_seg": 180,
     "duracao_no_mapa_seg": 6,
     "custo_repetir": 125,
     "incremento_por_uso": "+25",
@@ -1515,7 +1515,7 @@
         "nome": "Heróica :aomr_heroic_age_icon:"
       }
     ],
-    "cooldown_seg": 180,
+    "cooldown_seg": 240,
     "duracao_no_mapa_seg": 0,
     "custo_repetir": 60,
     "incremento_por_uso": "+20",
@@ -2362,7 +2362,7 @@
       }
     ],
     "icon": "aomr_communal_hearth_icon",
-    "cooldown_seg": 150,
+    "cooldown_seg": 180,
     "custo_repetir": 125,
     "incremento_por_uso": "+25"
   },
@@ -2384,7 +2384,7 @@
     ],
     "duracao_no_mapa_seg": 180,
     "custo_repetir": 350,
-    "descricao_resumida": "Sacrifique todos os Centros Urbanos e Centros de Vilas ativos para ressuscitar até 99 unidades militares e mitológicas abatidas (25 por Povoado). Os Povoados não podem ser repovoados por algum tempo.",
+    "descricao_resumida": "Sacrifique todos os Centros Urbanos e Vilarejos que ainda estão de pé para ressuscitar até 25 + 25 por Centro Urbano, até um máximo de 125 soldados humanos caídos. Os Povoados não poderão ser repovoados por algum tempo.",
     "panteao": [
       {
         "id": 1,
@@ -2587,7 +2587,7 @@
     ],
     "duracao_no_mapa_seg": 6,
     "custo_repetir": 150,
-    "descricao_resumida": "Selecione uma unidade militar inimiga para marcá-la para sacrifício. A unidade fica suspensa no ar e, após um breve intervalo, todos os inimigos próximos do mesmo tipo são destruídos, até um total de 1500 de valor de recurso.",
+    "descricao_resumida": "Selecione uma unidade militar inimiga para marcá-la para sacrifício. A unidade fica suspensa no ar e, após um breve intervalo, todos os inimigos próximos do mesmo tipo são destruídos, até um total de 1400 de valor de recurso.",
     "panteao": [
       {
         "id": 7,
@@ -2731,13 +2731,16 @@
       }
     ],
     "custo_repetir": 350,
-    "descricao_resumida": "Target a location to call down the Pillar of Tlálocan, obliterating fortifications on impact. The statue remains to defend the area with water strikes until destroyed.",
+    "descricao_resumida": "Escolha um local para invocar o Pilar de Tlálocan, obliterando as fortificações ao impacto. A estátua permanecerá para defender a área com jatos de água até ser destruída.",
     "panteao": [
       {
         "id": 7,
         "nome": "Astecas :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_pillar_of_tlalocan_icon"
+    "icon": "aomr_pillar_of_tlalocan_icon",
+    "cooldown_seg": 240,
+    "duracao_no_mapa_seg": 0,
+    "incremento_por_uso": "+5"
   }
 ]

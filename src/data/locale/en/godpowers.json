@@ -285,7 +285,7 @@
         "nome": "Archaic :aomr_archaic_age_icon:"
       }
     ],
-    "cooldown_seg": 150,
+    "cooldown_seg": 180,
     "duracao_no_mapa_seg": 3,
     "custo_repetir": 20,
     "incremento_por_uso": "+15",
@@ -615,7 +615,7 @@
         "nome": "Classical :aomr_classical_age_icon:"
       }
     ],
-    "cooldown_seg": 120,
+    "cooldown_seg": 180,
     "duracao_no_mapa_seg": 6,
     "custo_repetir": 125,
     "incremento_por_uso": "+25",
@@ -1515,7 +1515,7 @@
         "nome": "Heroic :aomr_heroic_age_icon:"
       }
     ],
-    "cooldown_seg": 180,
+    "cooldown_seg": 240,
     "duracao_no_mapa_seg": 0,
     "custo_repetir": 60,
     "incremento_por_uso": "+20",
@@ -2362,7 +2362,7 @@
       }
     ],
     "icon": "aomr_communal_hearth_icon",
-    "cooldown_seg": 150,
+    "cooldown_seg": 180,
     "custo_repetir": 125,
     "incremento_por_uso": "+25"
   },
@@ -2384,7 +2384,7 @@
     ],
     "duracao_no_mapa_seg": 180,
     "custo_repetir": 350,
-    "descricao_resumida": "Sacrifice all standing Town and Village Centers to resurrect up to 99 fallen military and Myth units (25 per Settlement). Settlements cannot be repopulated for some time.",
+    "descricao_resumida": "Sacrifice all standing Town and Village Centers to resurrect up to 25 + 25 per Town Center up to a maximum of 125 fallen human soldiers. Settlements cannot be repopulated for some time.",
     "panteao": [
       {
         "id": 1,
@@ -2587,7 +2587,7 @@
     ],
     "duracao_no_mapa_seg": 6,
     "custo_repetir": 150,
-    "descricao_resumida": "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed, up to a total of 1500 resource value.",
+    "descricao_resumida": "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed, up to a total of 1400 resource value.",
     "panteao": [
       {
         "id": 7,
@@ -2738,6 +2738,9 @@
         "nome": "Aztecs :aomr_pantheon_azteca_icon:"
       }
     ],
-    "icon": "aomr_pillar_of_tlalocan_icon"
+    "icon": "aomr_pillar_of_tlalocan_icon",
+    "cooldown_seg": 240,
+    "duracao_no_mapa_seg": 0,
+    "incremento_por_uso": "+5"
   }
 ]

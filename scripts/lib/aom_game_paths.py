@@ -15,6 +15,7 @@ DEFAULT_CACHE_DIR = (
 
 DATA_BAR_REL = Path("game") / "data" / "Data.bar"
 UI_TEXTURE_CACHE_BAR = Path("game") / "ui" / "UITextureCache.bar"
+RANDOM_MAPS_DIR = Path("game") / "random_maps"
 
 BAR_ENTRIES = [
     "gameplay/proto.xml.XMB",

@@ -628,5 +628,16 @@
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
     "icon": "aomr_valley_of_the_sun_serpent_icon"
+  },
+  {
+    "nome": "O Coração de Tenochtitlán",
+    "ingles": "Tenochtitlan's Heart",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Naval 🌊",
+    "icon": "aomr_tenochtitlans_heart_icon"
   }
 ]
