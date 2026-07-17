@@ -22,6 +22,23 @@ RESOURCE_FIELD = {
     "Favor": "favor",
 }
 
+TECH_ICON_TOKEN_OVERRIDES = {
+    # Alguns caminhos internos do jogo não correspondem aos nomes dos assets públicos.
+    "aomr_hunting_equipment_icon": "aomr_survival_equipment_icon",
+    "aomr_empyrean_speed_icon": "aomr_empyrian_speed_icon",
+    "aomr_qilins_blessing_icon": "aomr_qilin_27s_blessing_icon",
+    "aomr_xuanyuans_bloodline_icon": "aomr_xuanyuan_27s_bloodline_icon",
+    "aomr_leizus_silk_icon": "aomr_leizu_27s_silk_icon",
+    "aomr_thunderous_prescence_icon": "aomr_thunderous_presence_icon",
+    "aomr_seaside_infiltration_icon": "aomr_seaside_infiltrators_icon",
+}
+
+
+def tech_icon_token(icon_path: str) -> str:
+    token = icon_token_from_path(icon_path)
+    return TECH_ICON_TOKEN_OVERRIDES.get(token, token)
+
+
 BUILDING_PROTO_TO_ENGLISH = {
     "MilitaryAcademy": "Military Academy",
     "ArcheryRange": "Archery Range",
@@ -298,7 +315,7 @@ def extract_tech_record(
         "proto_name": tech_name,
         "nome": nome_pt or tech_name,
         "ingles": nome_en or tech_name,
-        "icon": icon_token_from_path(_text(tech, "icon")),
+        "icon": tech_icon_token(_text(tech, "icon")),
         "tempo_s": int(round(_float(_text(tech, "researchpoints")))),
         "eras": parse_tech_era(tech),
         "construcao_origem": construcao_origem,

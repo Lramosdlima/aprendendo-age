@@ -243,7 +243,7 @@
     "panteoes": "Geral",
     "tempo_s": 20,
     "tipo": "Defensivo 🛡",
-    "icon": "aomr_hunting_equipment_icon",
+    "icon": "aomr_survival_equipment_icon",
     "campo": [
       ":aomr_type_villager_icon: Villager: Health Points +25% :aomr_hit_points_icon:",
       ":aomr_type_villager_icon: Villager: Melee Attack Damage (All Types) +25% :hackdamage:",
@@ -8288,7 +8288,7 @@
         "nome": "Atlantean"
       }
     ],
-    "icon": "aomr_empyrean_speed_icon",
+    "icon": "aomr_empyrian_speed_icon",
     "campo": [
       ":aomr_type_infantry_icon: Infantaria: Velocidade +10% :aomr_speed_icon:"
     ],
@@ -9958,7 +9958,7 @@
         "nome": "Chinese"
       }
     ],
-    "icon": "aomr_qilins_blessing_icon",
+    "icon": "aomr_qilin_27s_blessing_icon",
     "comida": 100,
     "ouro": 100,
     "favor": 15,
@@ -11033,7 +11033,7 @@
         "nome": "Chinese"
       }
     ],
-    "icon": "aomr_xuanyuans_bloodline_icon",
+    "icon": "aomr_xuanyuan_27s_bloodline_icon",
     "campo": [
       ":aomr_type_infantry_icon: Infantry: On Death: Deals 25% Damage to nearby Infantry. :hackdamage:",
       ":aomr_type_infantry_icon: Infantry: On Death: Gives 25% Lifesteal to nearby Infantry. :hackdamage: :aomr_hit_points_icon:",
@@ -11098,7 +11098,7 @@
         "nome": "Chinese"
       }
     ],
-    "icon": "aomr_leizus_silk_icon",
+    "icon": "aomr_leizu_27s_silk_icon",
     "campo": [
       ":aomr_type_villager_icon: Villager: Life Points +10% :aomr_hit_points_icon:",
       ":aomr_type_human_soldier_icon: Human Soldier: Hit Points + 10% :aomr_hit_points_icon:",
@@ -12163,7 +12163,7 @@
         "nome": "Japanese"
       }
     ],
-    "icon": "aomr_thunderous_prescence_icon",
+    "icon": "aomr_thunderous_presence_icon",
     "campo": [
       ":aomr_raiju_icon: Raiju: All Damage Actions (All Types) +35% :hackdamage:",
       ":aomr_raiju_icon: Raiju: Velocidade + 10% :aomr_speed_icon:"
@@ -12805,7 +12805,7 @@
         "nome": "Japanese"
       }
     ],
-    "icon": "aomr_seaside_infiltration_icon",
+    "icon": "aomr_seaside_infiltrators_icon",
     "campo": [
       ":aomr_shinobi_icon: Shinobi: Activates Smoke Bomb Action",
       ":aomr_shinobi_icon: Shinobi: Velocidade +10% :aomr_speed_icon:"
