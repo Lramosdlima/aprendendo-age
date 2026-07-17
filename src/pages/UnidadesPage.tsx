@@ -223,6 +223,11 @@ export function UnidadesPage() {
                         { icon: "woodaom", label: t("common.wood"), value: u.madeira },
                         { icon: "goldaom", label: t("common.gold"), value: u.ouro },
                         {
+                          icon: "favoraom",
+                          label: t("common.favor"),
+                          value: typeof u.favor === "number" && u.favor > 0 ? u.favor : null,
+                        },
+                        {
                           icon: "aomr_population_provision_icon",
                           label: t("spreadsheet.unidades.population"),
                           value: u.populacao,

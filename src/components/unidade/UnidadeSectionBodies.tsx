@@ -200,6 +200,11 @@ export function UnidadeCustoBody({ u }: { u: U }) {
       <InfoRow label={t("common.gold")} icon="goldaom">
         {u.ouro ?? "—"}
       </InfoRow>
+      {typeof u.favor === "number" && u.favor > 0 ? (
+        <InfoRow label={t("spreadsheet.favor")} icon="favoraom">
+          {u.favor}
+        </InfoRow>
+      ) : null}
       <InfoRow label={t("spreadsheet.unidades.population")} icon="aomr_population_provision_icon">
         {u.populacao ?? "—"}
       </InfoRow>
