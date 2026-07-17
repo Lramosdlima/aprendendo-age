@@ -15,7 +15,7 @@ function Mapa3dSection({ src, mapName, title }: { src: string; mapName: string; 
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <Section title={title} className={loaded ? undefined : "hidden"}>
+    <Section title={title} className={loaded ? "mt-6" : "hidden"}>
       <img
         src={src}
         alt={`${mapName} — ${title}`}
