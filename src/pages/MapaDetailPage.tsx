@@ -64,16 +64,27 @@ export function MapaDetailPage() {
       heroBackgroundSrc={previewUrl}
       heroBackgroundFallbackSrc={mapaIcon}
     >
-      <Section title={t("common.metadata")}>
-        <div className="space-y-0">
-          <InfoRow label={t("common.ranked")}>{fmtSimNao(m.mapas_da_ranqueada)}</InfoRow>
-          <InfoRow label={t("common.leftRanked")}>{fmtSimNao(m.saiu_da_ranqueada)}</InfoRow>
-          <InfoRow label={t("common.default")}>{fmtSimNao(m.padrao)}</InfoRow>
-          <InfoRow label={t("common.quickMatches")}>{fmtSimNao(m.partidas_rapidas)}</InfoRow>
-          <InfoRow label={t("common.type")}>{m.tipo ?? "—"}</InfoRow>
-          <InfoRow label={t("common.origin")}>{m.origem ?? "—"}</InfoRow>
-        </div>
-      </Section>
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Section title={t("common.metadata")} className="h-full">
+          <div className="space-y-0">
+            <InfoRow label={t("common.ranked")}>{fmtSimNao(m.mapas_da_ranqueada)}</InfoRow>
+            <InfoRow label={t("common.leftRanked")}>{fmtSimNao(m.saiu_da_ranqueada)}</InfoRow>
+            <InfoRow label={t("common.default")}>{fmtSimNao(m.padrao)}</InfoRow>
+            <InfoRow label={t("common.quickMatches")}>{fmtSimNao(m.partidas_rapidas)}</InfoRow>
+            <InfoRow label={t("common.type")}>{m.tipo ?? "—"}</InfoRow>
+            <InfoRow label={t("common.origin")}>{m.origem ?? "—"}</InfoRow>
+          </div>
+        </Section>
+        {mapaIcon ? (
+          <Section title={t("common.map2d")} className="h-full">
+            <img
+              src={mapaIcon}
+              alt={`${m.nome} — ${t("common.map2d")}`}
+              className="mx-auto h-auto max-h-80 w-auto max-w-full rounded-xl object-contain"
+            />
+          </Section>
+        ) : null}
+      </div>
       {map3dUrl ? (
         <Mapa3dSection key={map3dUrl} src={map3dUrl} mapName={m.nome} title={t("common.map3d")} />
       ) : null}
