@@ -66,7 +66,7 @@ export const ptMessages: TranslationTree = {
     specificGod: "Deus específico",
     fieldEffect: "Campo / efeito",
     advancedDescription: "Descrição avançada",
-    percentBonus: "Bônus percentuais",
+    percentBonus: "Bônus percentuais (baseados no Aldeão Grego)",
     garrison: "Guarnição",
     projectiles: "Projéteis",
     pierceArmor: "Armadura de perfuração",

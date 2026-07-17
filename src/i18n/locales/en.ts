@@ -66,7 +66,7 @@ export const enMessages: TranslationTree = {
     specificGod: "Specific god",
     fieldEffect: "Field / effect",
     advancedDescription: "Advanced description",
-    percentBonus: "Percent bonuses",
+    percentBonus: "Percent bonuses (based on the Greek Villager)",
     garrison: "Garrison",
     projectiles: "Projectiles",
     pierceArmor: "Pierce armor",
