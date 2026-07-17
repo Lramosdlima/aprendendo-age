@@ -15,6 +15,13 @@ export function getMapaPreviewUrl(m: { icon?: string | null }): string | undefin
   return u.replace("/assets/maps/", "/assets/maps/previews/");
 }
 
+/** Imagem 3D opcional, com o mesmo nome do asset principal em `/assets/maps/3d/`. */
+export function getMapa3dUrl(m: { icon?: string | null }): string | undefined {
+  const u = getMapaAssetUrl(m);
+  if (!u) return undefined;
+  return u.replace("/assets/maps/", "/assets/maps/3d/");
+}
+
 export function getUnidadeAssetUrl(u: { icon?: string | null }): string | undefined {
   return getIconFieldUrl(u?.icon);
 }

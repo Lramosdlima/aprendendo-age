@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
 import { AppPageDetail } from "@/components/layout/AppPageDetail";
@@ -7,8 +8,24 @@ import { Section } from "@/components/ui/Section";
 import { entityDisplayDescription } from "@/data/catalogLocale";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
-import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
+import { getMapa3dUrl, getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
+
+function Mapa3dSection({ src, mapName, title }: { src: string; mapName: string; title: string }) {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <Section title={title} className={loaded ? undefined : "hidden"}>
+      <img
+        src={src}
+        alt={`${mapName} — ${title}`}
+        className="mx-auto h-auto w-full rounded-xl object-contain"
+        onLoad={() => setLoaded(true)}
+        onError={() => setLoaded(false)}
+      />
+    </Section>
+  );
+}
 
 export function MapaDetailPage() {
   const { t, locale } = useTranslation();
@@ -35,6 +52,7 @@ export function MapaDetailPage() {
 
   const mapaIcon = getMapaAssetUrl(m);
   const previewUrl = getMapaPreviewUrl(m);
+  const map3dUrl = getMapa3dUrl(m);
 
   return (
     <AppPageDetail
@@ -56,6 +74,9 @@ export function MapaDetailPage() {
           <InfoRow label={t("common.origin")}>{m.origem ?? "—"}</InfoRow>
         </div>
       </Section>
+      {map3dUrl ? (
+        <Mapa3dSection key={map3dUrl} src={map3dUrl} mapName={m.nome} title={t("common.map3d")} />
+      ) : null}
     </AppPageDetail>
   );
 }
