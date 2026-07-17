@@ -9,11 +9,65 @@ import type { LocaleCatalog } from "@/data/catalogLocale";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { useTranslation } from "@/hooks/useTranslation";
+import { cn } from "@/lib/cn";
 import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
-import { cn } from "@/lib/cn";
+import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 type MapFilterKey = "ranked" | "default" | "quickMatches" | "land" | "water";
+
+type MapFilterOption = {
+  key: MapFilterKey | null;
+  label: string;
+  iconSrc: string;
+};
+
+function MapFilterChip({
+  option,
+  active,
+  onClick,
+}: {
+  option: MapFilterOption;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <div className="group/filter relative shrink-0">
+      <button
+        type="button"
+        onClick={onClick}
+        aria-pressed={active}
+        aria-label={option.label}
+        title={option.label}
+        className={cn(
+          "flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border transition focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40",
+          active
+            ? "border-amber-500/55 bg-amber-500/15 ring-2 ring-amber-500/35 ring-offset-1 ring-offset-zinc-950"
+            : "border-aom-border/80 bg-zinc-900/60 hover:border-zinc-500",
+        )}
+      >
+        <img
+          src={option.iconSrc}
+          alt=""
+          className="h-7 w-7 rounded-full object-cover"
+          width={28}
+          height={28}
+          loading="lazy"
+          decoding="async"
+        />
+      </button>
+      <span
+        role="tooltip"
+        className={cn(
+          "pointer-events-none absolute left-1/2 top-full z-30 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-zinc-700/80 bg-zinc-950/95 px-2 py-1 text-[10px] font-medium text-zinc-200 shadow-lg shadow-black/40",
+          "opacity-0 transition duration-150 group-hover/filter:opacity-100 group-focus-within/filter:opacity-100",
+        )}
+      >
+        {option.label}
+      </span>
+    </div>
+  );
+}
 
 function matchesMapFilter(m: LocaleCatalog["mapas"][number], filterKey: MapFilterKey | null) {
   if (!filterKey) return true;
@@ -51,12 +105,25 @@ export function MapasPage() {
     () => mapas.map((m, i) => ({ m, i })).filter(({ m, i }) => matches(m, q, i, filterKey)),
     [mapas, q, filterKey],
   );
-  const filterOptions: Array<{ key: MapFilterKey; label: string }> = [
-    { key: "ranked", label: t("pages.mapas.filters.ranked") },
-    { key: "default", label: t("pages.mapas.filters.default") },
-    { key: "quickMatches", label: t("pages.mapas.filters.quickMatches") },
-    { key: "land", label: t("pages.mapas.filters.land") },
-    { key: "water", label: t("pages.mapas.filters.water") },
+  const filterOptions: MapFilterOption[] = [
+    { key: null, label: t("pages.mapas.filterTagAll"), iconSrc: "/assets/maps/all_maps.webp" },
+    {
+      key: "ranked",
+      label: t("pages.mapas.filters.ranked"),
+      iconSrc: resolveTokenIconSrc("aomr_type_hero_icon") ?? "",
+    },
+    {
+      key: "default",
+      label: t("pages.mapas.filters.default"),
+      iconSrc: "/assets/maps/MapThumb_Standard.webp",
+    },
+    {
+      key: "quickMatches",
+      label: t("pages.mapas.filters.quickMatches"),
+      iconSrc: "/assets/maps/MapThumb_Standard.webp",
+    },
+    { key: "land", label: t("pages.mapas.filters.land"), iconSrc: "/assets/maps/MapThumb_Land.webp" },
+    { key: "water", label: t("pages.mapas.filters.water"), iconSrc: "/assets/maps/MapThumb_Navy.webp" },
   ];
 
   return (
@@ -79,36 +146,15 @@ export function MapasPage() {
             className="flex min-w-0 flex-wrap items-center gap-2"
             aria-label={t("pages.mapas.filterTagLabel")}
           >
-            <button
-              type="button"
-              onClick={() => setFilterKey(null)}
-              aria-pressed={filterKey === null}
-              className={cn(
-                "cursor-pointer rounded-full border px-3 py-1 text-xs font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/35",
-                filterKey === null
-                  ? "border-amber-500/50 bg-amber-500/15 text-amber-100"
-                  : "border-aom-border bg-zinc-900/60 text-zinc-400 hover:border-zinc-600 hover:text-zinc-200",
-              )}
-            >
-              {t("pages.mapas.filterTagAll")}
-            </button>
             {filterOptions.map((option) => {
               const active = filterKey === option.key;
               return (
-                <button
-                  key={option.key}
-                  type="button"
+                <MapFilterChip
+                  key={option.key ?? "all"}
+                  option={option}
+                  active={active}
                   onClick={() => setFilterKey(active ? null : option.key)}
-                  aria-pressed={active}
-                  className={cn(
-                    "cursor-pointer rounded-full border px-3 py-1 text-xs font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/35",
-                    active
-                      ? "border-amber-500/50 bg-amber-500/15 text-amber-100"
-                      : "border-aom-border bg-zinc-900/60 text-zinc-400 hover:border-zinc-600 hover:text-zinc-200",
-                  )}
-                >
-                  {option.label}
-                </button>
+                />
               );
             })}
           </div>
