@@ -80,7 +80,7 @@ export function MapaDetailPage() {
             <img
               src={mapaIcon}
               alt={`${m.nome} — ${t("common.map2d")}`}
-              className="mx-auto h-auto max-h-96 w-auto max-w-full rounded-xl object-contain"
+              className="mx-auto h-auto w-full max-w-96 rounded-xl object-contain"
             />
           </Section>
         ) : null}
