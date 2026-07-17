@@ -238,11 +238,6 @@ export function UnidadesPage() {
                           value: u.velocidade_movimento,
                         },
                         {
-                          icon: "attack_cur",
-                          label: t("spreadsheet.unidades.attributeStrength"),
-                          value: u.forca_atributos,
-                        },
-                        {
                           icon: "aomr_hit_points_icon",
                           label: t("spreadsheet.unidades.hitPoints"),
                           value: u.pontos_de_vida,
@@ -263,7 +258,6 @@ export function UnidadesPage() {
                           label: t("spreadsheet.unidades.attackSpeed"),
                           value: u.velocidade_de_ataque_atk_s,
                         },
-                        { icon: "attack_cur", label: t("spreadsheet.unidades.dps"), value: u.dps },
                         {
                           icon: "hackarmor",
                           label: t("spreadsheet.unidades.hackArmor"),
