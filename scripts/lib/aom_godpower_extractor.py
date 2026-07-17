@@ -20,6 +20,40 @@ GODPOWER_FILES = (
     "aotg.godpowers",
 )
 
+GODPOWER_ICON_TOKEN_OVERRIDES = {
+    # Alguns caminhos internos do jogo não correspondem aos nomes dos assets públicos.
+    "aomr_lure_icon": "aomr_lure_power_icon",
+    "aomr_sentinel_icon": "aomr_sentinel_power_icon",
+    "aomr_the_peach_blossom_spring_power_icon": "aomr_peachblossomspring_power",
+    "aomr_creation_icon": "aomr_creation",
+    "aomr_prosperous_seeds_icon": "aomr_prosperous_seeds",
+    "aomr_gullinbursti_icon_age1_png_icon": "aomr_gullinbursti_icon",
+    "aomr_solar_shield_icon": "aomr_solar_shield",
+    "aomr_new_moon_icon": "aomr_new_moon",
+    "aomr_kusanagi_icon": "aomr_kusanagi",
+    "aomr_citadel_icon": "aomr_citadel_power_icon",
+    "aomr_son_of_osiris_icon": "aomr_son_of_osiris_power_icon",
+    "aomr_healing_spring_icon": "aomr_healing_spring_power_icon",
+    "aomr_walking_woods_icon": "aomr_walking_woods_power_icon",
+    "aomr_carnivora_icon": "aomr_carnivora_power_icon",
+    "aomr_tartarian_gate_icon": "aomr_tartarian_gate_power_icon",
+    "aomr_vanish_icon": "aomr_vanish",
+    "aomr_lightning_weapons_icon": "aomr_lightning_weapons",
+    "aomr_earth_wall_power_icon": "aomr_earth_wall_power",
+    "aomr_forest_protection_icon": "aomr_forest_protection",
+    "aomr_drought_land_icon": "aomr_drought",
+    "aomr_venom_beast_icon": "aomr_fei_beasts",
+    "aomr_great_flood_icon": "aomr_great_flood",
+    "aomr_yinglongs_wrath_icon": "aomr_yinglongs_wrath",
+    "aomr_blazing_prairie_png_icon": "aomr_blazing_prairie",
+    "aomr_goshinboku_icon": "aomr_goshinboku_tree_icon",
+}
+
+
+def godpower_icon_token(icon_path: str) -> str:
+    token = icon_token_from_path(icon_path)
+    return GODPOWER_ICON_TOKEN_OVERRIDES.get(token, token)
+
 
 def _text(node: ET.Element | None, tag: str, default: str = "") -> str:
     if node is None:
@@ -124,7 +158,7 @@ def extract_power_record(
         "ingles": nome_en or power_name,
         "descricao_resumida_pt": desc_pt,
         "descricao_resumida_en": desc_en,
-        "icon": icon_token_from_path(_text(power, "icon")),
+        "icon": godpower_icon_token(_text(power, "icon")),
         "duracao_no_mapa_seg": parse_active_time(power),
         "incremento_por_uso": format_repeat_cost(repeat_cost) if repeat_cost else None,
     }

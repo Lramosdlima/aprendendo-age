@@ -57,7 +57,7 @@
         "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_lure_icon"
+    "icon": "aomr_lure_power_icon"
   },
   {
     "id": 3,
@@ -87,7 +87,7 @@
         "nome": "Grego :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_sentinel_icon"
+    "icon": "aomr_sentinel_power_icon"
   },
   {
     "id": 4,
@@ -387,7 +387,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_the_peach_blossom_spring_power_icon"
+    "icon": "aomr_peachblossomspring_power"
   },
   {
     "id": 14,
@@ -417,7 +417,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_creation_icon"
+    "icon": "aomr_creation"
   },
   {
     "id": 15,
@@ -447,7 +447,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_prosperous_seeds_icon"
+    "icon": "aomr_prosperous_seeds"
   },
   {
     "id": 16,
@@ -477,7 +477,7 @@
         "nome": "Nórdico :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_gullinbursti_icon_age1_png_icon"
+    "icon": "aomr_gullinbursti_icon"
   },
   {
     "id": 17,
@@ -507,7 +507,7 @@
         "nome": "Japonês :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_solar_shield_icon"
+    "icon": "aomr_solar_shield"
   },
   {
     "id": 18,
@@ -537,7 +537,7 @@
         "nome": "Japonês :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_new_moon_icon"
+    "icon": "aomr_new_moon"
   },
   {
     "id": 19,
@@ -567,7 +567,7 @@
         "nome": "Japonês :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_kusanagi_icon"
+    "icon": "aomr_kusanagi"
   },
   {
     "id": 20,
@@ -1016,7 +1016,7 @@
         "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_citadel_icon",
+    "icon": "aomr_citadel_power_icon",
     "descricao_resumida": "Selecione um Centro Urbano pertencente a você ou a um aliado para transformá-lo em uma poderosa Cidadela defensiva que treina unidades e realiza pesquisas tecnológicas mais rapidamente."
   },
   {
@@ -1046,7 +1046,7 @@
         "nome": "Egípcio :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_son_of_osiris_icon",
+    "icon": "aomr_son_of_osiris_power_icon",
     "descricao_resumida": "Use em seu faraó para transformá-lo em um semideus superfortalecedor que dispara raios."
   },
   {
@@ -1196,7 +1196,7 @@
         "nome": "Nórdico :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_healing_spring_icon",
+    "icon": "aomr_healing_spring_power_icon",
     "descricao_resumida": "Use num local no mapa para criar uma fonte que cura todas as unidades próximas. A fonte é indestrutível, mas pode ser tomada por forças inimigas."
   },
   {
@@ -1226,7 +1226,7 @@
         "nome": "Nórdico :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_walking_woods_icon",
+    "icon": "aomr_walking_woods_power_icon",
     "descricao_resumida": "Use perto de uma floresta para fazer as árvores ganharem vida e atacarem inimigos nas proximidades. As árvores andantes são fortes contra construções e razoáveis contra unidades."
   },
   {
@@ -1466,7 +1466,7 @@
         "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_carnivora_icon",
+    "icon": "aomr_carnivora_power_icon",
     "descricao_resumida": "Gera uma planta gigante que devora humanos e navios."
   },
   {
@@ -1646,7 +1646,7 @@
         "nome": "Atlante :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_tartarian_gate_icon",
+    "icon": "aomr_tartarian_gate_power_icon",
     "descricao_resumida": "Hécate abre um portão para o Mundo Inferior que libera criaturas hostis a todos. O portão destruirá todas as construções nas proximidades quando for colocado."
   },
   {
@@ -1676,7 +1676,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_vanish_icon",
+    "icon": "aomr_vanish",
     "descricao_resumida": "Mire em um grupo de unidades aliadas para torná-las invisíveis por um curto período de tempo. O ataque revelará sua posição."
   },
   {
@@ -1706,7 +1706,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_lightning_weapons_icon",
+    "icon": "aomr_lightning_weapons",
     "descricao_resumida": "Mire em um local para conduzir raios nas armas de todos os seus soldados humanos, heróis e navios, concedendo a seus ataques a chance de atordoar os inimigos."
   },
   {
@@ -1736,7 +1736,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_earth_wall_power_icon",
+    "icon": "aomr_earth_wall_power",
     "descricao_resumida": "Mire em uma construção aliada para cercá-la com muralhas de terra. Os aliados podem passar, mas os inimigos não."
   },
   {
@@ -1766,7 +1766,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_forest_protection_icon",
+    "icon": "aomr_forest_protection",
     "descricao_resumida": "Mire em uma construção aliada para proteger a área ao redor com o poder de madeira de Goumang, que enraíza os inimigos e cura unidades aliadas."
   },
   {
@@ -1796,7 +1796,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_drought_land_icon",
+    "icon": "aomr_drought",
     "descricao_resumida": "Mire em uma área para espalhar a seca, o que torna as construções inimigas muito mais fáceis de destruir, as unidades mais fáceis de matar e impede todas as construções e reparos."
   },
   {
@@ -1826,7 +1826,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_venom_beast_icon",
+    "icon": "aomr_fei_beasts",
     "descricao_resumida": "Mire em um local para gerar Bestas Fei venenosas que espalham infecção para os inimigos."
   },
   {
@@ -1856,7 +1856,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_great_flood_icon",
+    "icon": "aomr_great_flood",
     "descricao_resumida": "Mire em um caminho de destruição para uma inundação cataclísmica que varre unidades e aniquila construções."
   },
   {
@@ -1886,7 +1886,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_yinglongs_wrath_icon",
+    "icon": "aomr_yinglongs_wrath",
     "descricao_resumida": "Mire em um local para invocar Yinglong, o lendário dragão da chuva e do relâmpago da China."
   },
   {
@@ -1916,7 +1916,7 @@
         "nome": "Chinês :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_blazing_prairie_png_icon",
+    "icon": "aomr_blazing_prairie",
     "descricao_resumida": "Mire em um local para abrir os céus e incendiar o mundo. Tudo vai queimar."
   },
   {
@@ -2037,7 +2037,7 @@
         "nome": "Japonês :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_goshinboku_icon"
+    "icon": "aomr_goshinboku_tree_icon"
   },
   {
     "id": 69,

@@ -57,7 +57,7 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_lure_icon"
+    "icon": "aomr_lure_power_icon"
   },
   {
     "id": 3,
@@ -87,7 +87,7 @@
         "nome": "Greek :aomr_pantheon_greeks_icon:"
       }
     ],
-    "icon": "aomr_sentinel_icon"
+    "icon": "aomr_sentinel_power_icon"
   },
   {
     "id": 4,
@@ -387,7 +387,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_the_peach_blossom_spring_power_icon"
+    "icon": "aomr_peachblossomspring_power"
   },
   {
     "id": 14,
@@ -417,7 +417,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_creation_icon"
+    "icon": "aomr_creation"
   },
   {
     "id": 15,
@@ -447,7 +447,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_prosperous_seeds_icon"
+    "icon": "aomr_prosperous_seeds"
   },
   {
     "id": 16,
@@ -477,7 +477,7 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_gullinbursti_icon_age1_png_icon"
+    "icon": "aomr_gullinbursti_icon"
   },
   {
     "id": 17,
@@ -507,7 +507,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_solar_shield_icon"
+    "icon": "aomr_solar_shield"
   },
   {
     "id": 18,
@@ -537,7 +537,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_new_moon_icon"
+    "icon": "aomr_new_moon"
   },
   {
     "id": 19,
@@ -567,7 +567,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_kusanagi_icon"
+    "icon": "aomr_kusanagi"
   },
   {
     "id": 20,
@@ -1016,7 +1016,7 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_citadel_icon",
+    "icon": "aomr_citadel_power_icon",
     "descricao_resumida": "Select a Town Center belonging to you or an ally to transform it into a mighty, defensive Citadel, which trains units and researches technologies faster."
   },
   {
@@ -1046,7 +1046,7 @@
         "nome": "Egyptian :aomr_pantheon_egyptians_icon:"
       }
     ],
-    "icon": "aomr_son_of_osiris_icon",
+    "icon": "aomr_son_of_osiris_power_icon",
     "descricao_resumida": "Target your Pharaoh to transform him into a super-empowering, lightning-wielding demigod."
   },
   {
@@ -1196,7 +1196,7 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_healing_spring_icon",
+    "icon": "aomr_healing_spring_power_icon",
     "descricao_resumida": "Target a location on the map to create a spring that will heal all nearby friendly units. The spring cannot be destroyed, but can be taken over by enemy forces."
   },
   {
@@ -1226,7 +1226,7 @@
         "nome": "Nordic :aomr_pantheon_norse_icon:"
       }
     ],
-    "icon": "aomr_walking_woods_icon",
+    "icon": "aomr_walking_woods_power_icon",
     "descricao_resumida": "Target near a forest to animate the trees to attack nearby enemies. The animated trees are strong against buildings and decent against units."
   },
   {
@@ -1466,7 +1466,7 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_carnivora_icon",
+    "icon": "aomr_carnivora_power_icon",
     "descricao_resumida": "Spawns a giant plant that pulls humans and ships in and devours them."
   },
   {
@@ -1646,7 +1646,7 @@
         "nome": "Atlantean :aomr_pantheon_atlanteans_icon:"
       }
     ],
-    "icon": "aomr_tartarian_gate_icon",
+    "icon": "aomr_tartarian_gate_power_icon",
     "descricao_resumida": "Hekate opens a gate to the Underworld that unleashes creatures hostile to all. The gate will destroy any buildings in the vicinity when it is placed."
   },
   {
@@ -1676,7 +1676,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_vanish_icon",
+    "icon": "aomr_vanish",
     "descricao_resumida": "Target a group of friendly units to make them invisible for a short time. Attacking will reveal their position."
   },
   {
@@ -1706,7 +1706,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_lightning_weapons_icon",
+    "icon": "aomr_lightning_weapons",
     "descricao_resumida": "Target a location to conduct lightning into the weapons of all of your human soldiers, heroes and ships, granting their attacks a chance to stun enemies."
   },
   {
@@ -1736,7 +1736,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_earth_wall_power_icon",
+    "icon": "aomr_earth_wall_power",
     "descricao_resumida": "Target a friendly building to surround it with earthen walls. Allies can pass through them, but enemies cannot."
   },
   {
@@ -1766,7 +1766,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_forest_protection_icon",
+    "icon": "aomr_forest_protection",
     "descricao_resumida": "Target a friendly building to protect the surrounding area with Goumang's wood power, which roots enemies and heals allied units."
   },
   {
@@ -1796,7 +1796,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_drought_land_icon",
+    "icon": "aomr_drought",
     "descricao_resumida": "Target an area to spread drought, which makes enemy buildings far easier to destroy, units easier to kill, and prevents all construction and repairs."
   },
   {
@@ -1826,7 +1826,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_venom_beast_icon",
+    "icon": "aomr_fei_beasts",
     "descricao_resumida": "Target a location to spawn poisonous Fei Beasts that spread infection to enemies."
   },
   {
@@ -1856,7 +1856,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_great_flood_icon",
+    "icon": "aomr_great_flood",
     "descricao_resumida": "Target a path of destruction for a cataclysmic flood that sweeps away units and annihilates buildings."
   },
   {
@@ -1886,7 +1886,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_yinglongs_wrath_icon",
+    "icon": "aomr_yinglongs_wrath",
     "descricao_resumida": "Target a location to summon Yinglong, the legendary rain and lightning dragon of China."
   },
   {
@@ -1916,7 +1916,7 @@
         "nome": "Chinese :aomr_pantheon_chinese_icon:"
       }
     ],
-    "icon": "aomr_blazing_prairie_png_icon",
+    "icon": "aomr_blazing_prairie",
     "descricao_resumida": "Target a location to open the heavens and set the world on fire. Everything will burn."
   },
   {
@@ -2037,7 +2037,7 @@
         "nome": "Japanese :aomr_pantheon_japanese_icon:"
       }
     ],
-    "icon": "aomr_goshinboku_icon"
+    "icon": "aomr_goshinboku_tree_icon"
   },
   {
     "id": 69,
