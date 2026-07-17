@@ -68,6 +68,56 @@ export function multiplicadorTypeFromIcon(icon: string): string {
   return k.replace(/^aomr_/, "").replace(/_icon$/i, "").replace(/_/g, " ");
 }
 
+/** Fallback quando `multiplicador.icon` vem vazio no JSON — resolve pelo rótulo `type`. */
+const TYPE_LABEL_TO_ICON: Record<string, string> = {
+  construção: "aomr_type_building_icon",
+  construcao: "aomr_type_building_icon",
+  building: "aomr_type_building_icon",
+  infantaria: "aomr_type_infantry_icon",
+  infantry: "aomr_type_infantry_icon",
+  cavalaria: "aomr_type_cavalry_icon",
+  cavalry: "aomr_type_cavalry_icon",
+  artilharia: "aomr_type_archer_icon",
+  archer: "aomr_type_archer_icon",
+  "unidade mítica": "aomr_type_myth_unit_icon",
+  "myth unit": "aomr_type_myth_unit_icon",
+  herói: "aomr_type_hero_icon",
+  heroi: "aomr_type_hero_icon",
+  hero: "aomr_type_hero_icon",
+  navio: "aomr_type_ship_icon",
+  ship: "aomr_type_ship_icon",
+  "navio de cerco": "aomr_type_siege_ship_icon",
+  "siege ship": "aomr_type_siege_ship_icon",
+  "arma de cerco": "aomr_type_siege_weapon_icon",
+  "siege weapon": "aomr_type_siege_weapon_icon",
+  "unidade voadora": "aomr_type_flying_unit_icon",
+  "flying unit": "aomr_type_flying_unit_icon",
+  titã: "aomr_type_titan_icon",
+  titan: "aomr_type_titan_icon",
+  torre: "aomr_type_tower_icon",
+  tower: "aomr_type_tower_icon",
+  muralha: "aomr_type_wall_icon",
+  wall: "aomr_type_wall_icon",
+  aldeão: "aomr_type_villager_icon",
+  aldeao: "aomr_type_villager_icon",
+  villager: "aomr_type_villager_icon",
+  "soldado humano": "aomr_type_human_soldier_icon",
+  "human soldier": "aomr_type_human_soldier_icon",
+};
+
+export function multiplicadorIconFromType(type: string | undefined): string | undefined {
+  const key = (type ?? "").trim().toLowerCase();
+  if (!key) return undefined;
+  return TYPE_LABEL_TO_ICON[key];
+}
+
+/** Ícone do multiplicador: token explícito, ou fallback pelo rótulo `type`. */
+export function resolveMultiplicadorIcon(item: Pick<UnidadeMultiplicadorItem, "icon" | "type">): string | undefined {
+  const explicit = (item.icon ?? "").trim();
+  if (explicit) return explicit;
+  return multiplicadorIconFromType(item.type);
+}
+
 /** Há conteúdo a mostrar (não é lista vazia / ausente). */
 export function hasMultiplicadorContent(
   m: UnidadeMultiplicadorItem[] | null | undefined,

@@ -1,5 +1,6 @@
 import type { LocaleCatalog } from "@/data/catalogLocale";
 import { useTranslation } from "@/hooks/useTranslation";
+import { resolveMultiplicadorIcon } from "@/lib/unidadeMultiplicador";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 type Unidade = LocaleCatalog["unidades"][number];
@@ -51,7 +52,8 @@ export function UnidadeMultiplierDamagePreview({ unidade }: { unidade: Unidade }
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
       {rows.map(({ key, damage, multiplier, factor, calculatedDamage }) => {
         const damageIcon = resolveTokenIconSrc(damage.icon);
-        const targetIcon = resolveTokenIconSrc(multiplier.icon);
+        const targetToken = resolveMultiplicadorIcon(multiplier);
+        const targetIcon = targetToken ? resolveTokenIconSrc(targetToken) : undefined;
         const favorable = factor >= 1;
         const resultIcon = favorable ? betterIcon : worseIcon;
 
