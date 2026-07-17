@@ -1,4 +1,5 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState, type FocusEvent, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import { Link, type To } from "react-router-dom";
 
 import { AppTag, type AppTagVariant } from "@/components/ui/AppTag";
@@ -44,6 +45,8 @@ type EntityCardProps = {
   cardTint?: string;
   /** Ícones à direita do título; `label` aparece no hover (atributo `title`). Sem entrada em `token_asset_map.json`, mostra o texto de `icon`. */
   titleIcons?: EntityCardTitleIcon[];
+  /** Resumo exibido ao passar o mouse ou focar o card. O nome do card é incluído automaticamente no topo. */
+  hoverPreview?: ReactNode;
 };
 
 export function EntityCard({
@@ -65,11 +68,67 @@ export function EntityCard({
   selectDisabled,
   cardTint,
   titleIcons,
+  hoverPreview,
 }: EntityCardProps) {
   const [coverSrc, setCoverSrc] = useState(backgroundCoverSrc);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 });
+  const anchorRef = useRef<HTMLElement | null>(null);
+  const previewRef = useRef<HTMLDivElement>(null);
+  const previewId = useId();
   useEffect(() => {
     setCoverSrc(backgroundCoverSrc);
   }, [backgroundCoverSrc]);
+
+  useLayoutEffect(() => {
+    if (!previewOpen || !hoverPreview) return;
+
+    const updatePosition = () => {
+      const anchor = anchorRef.current;
+      if (!anchor) return;
+
+      const pad = 10;
+      const gap = 10;
+      const anchorRect = anchor.getBoundingClientRect();
+      const previewWidth = previewRef.current?.offsetWidth ?? 416;
+      const previewHeight = previewRef.current?.offsetHeight ?? 180;
+      const left = Math.max(
+        pad,
+        Math.min(
+          anchorRect.left + anchorRect.width / 2 - previewWidth / 2,
+          window.innerWidth - previewWidth - pad,
+        ),
+      );
+      const below = anchorRect.bottom + gap;
+      const above = anchorRect.top - previewHeight - gap;
+      const top =
+        below + previewHeight <= window.innerHeight - pad
+          ? below
+          : Math.max(pad, above);
+
+      setPreviewPosition({ top, left });
+    };
+
+    updatePosition();
+    const resizeObserver = previewRef.current ? new ResizeObserver(updatePosition) : null;
+    if (previewRef.current && resizeObserver) resizeObserver.observe(previewRef.current);
+    window.addEventListener("resize", updatePosition);
+    window.addEventListener("scroll", updatePosition, true);
+    return () => {
+      resizeObserver?.disconnect();
+      window.removeEventListener("resize", updatePosition);
+      window.removeEventListener("scroll", updatePosition, true);
+    };
+  }, [hoverPreview, previewOpen]);
+
+  useEffect(() => {
+    if (!previewOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setPreviewOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [previewOpen]);
 
   const hasTint = Boolean(cardTint);
   const hasBgCover = Boolean(coverSrc);
@@ -241,37 +300,88 @@ export function EntityCard({
       />
     ) : null;
 
+  const preview =
+    previewOpen && hoverPreview && typeof document !== "undefined"
+      ? createPortal(
+          <div
+            ref={previewRef}
+            id={previewId}
+            role="tooltip"
+            className="pointer-events-none fixed z-[300] w-[min(26rem,calc(100vw-1.25rem))] overflow-hidden rounded-xl border border-zinc-700/80 bg-zinc-950/95 text-left shadow-xl shadow-black/60 backdrop-blur-sm"
+            style={{ top: previewPosition.top, left: previewPosition.left }}
+          >
+            <div className="border-b border-zinc-800/90 px-3.5 py-2.5">
+              <p className="font-[family-name:var(--font-display)] text-sm font-semibold tracking-wide text-amber-100">
+                {title}
+              </p>
+            </div>
+            <div className="px-3.5 py-3">{hoverPreview}</div>
+          </div>,
+          document.body,
+        )
+      : null;
+
+  const previewHandlers = hoverPreview
+    ? {
+        onMouseEnter: () => setPreviewOpen(true),
+        onMouseLeave: () => setPreviewOpen(false),
+        onFocus: () => setPreviewOpen(true),
+        onBlur: (event: FocusEvent<HTMLElement>) => {
+          if (!event.currentTarget.contains(event.relatedTarget)) setPreviewOpen(false);
+        },
+        "aria-describedby": previewOpen ? previewId : undefined,
+      }
+    : {};
+
   if (compareMode) {
     return (
-      <div
-        role="button"
-        tabIndex={0}
+      <>
+        <div
+          ref={(node) => {
+            anchorRef.current = node;
+          }}
+          role="button"
+          tabIndex={0}
+          className={shellClass}
+          onClick={() => {
+            if (selectDisabled && !selected) return;
+            onToggleSelect?.();
+          }}
+          onKeyDown={(e) => {
+            if (e.key !== "Enter" && e.key !== " ") return;
+            e.preventDefault();
+            if (selectDisabled && !selected) return;
+            onToggleSelect?.();
+          }}
+          {...previewHandlers}
+        >
+          {coverProbe}
+          {bgCoverLayers}
+          {tintLayers}
+          {inner}
+        </div>
+        {preview}
+      </>
+    );
+  }
+
+  return (
+    <>
+      <Link
+        ref={(node) => {
+          anchorRef.current = node;
+        }}
+        to={to}
         className={shellClass}
-        onClick={() => {
-          if (selectDisabled && !selected) return;
-          onToggleSelect?.();
-        }}
-        onKeyDown={(e) => {
-          if (e.key !== "Enter" && e.key !== " ") return;
-          e.preventDefault();
-          if (selectDisabled && !selected) return;
-          onToggleSelect?.();
-        }}
+        state={linkState}
+        {...previewHandlers}
       >
         {coverProbe}
         {bgCoverLayers}
         {tintLayers}
         {inner}
-      </div>
-    );
-  }
-
-  return (
-    <Link to={to} className={shellClass} state={linkState}>
-      {coverProbe}
-      {bgCoverLayers}
-      {tintLayers}
-      {inner}
-    </Link>
+      </Link>
+      {preview}
+    </>
   );
 }

@@ -8,6 +8,7 @@ import { SpreadsheetPageWidth } from "@/components/spreadsheet/SpreadsheetPageWi
 import { TecnologiaTipoBadges } from "@/components/tecnologia/TecnologiaTipoBadges";
 import { TecnologiasSpreadsheet } from "@/components/tecnologia/TecnologiasSpreadsheet";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { EntityCardPreviewText } from "@/components/ui/EntityCardPreview";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
@@ -122,6 +123,9 @@ export function TecnologiasPage() {
                     </span>
                     {tec.tipo?.trim() ? <TecnologiaTipoBadges tipo={tec.tipo} /> : null}
                   </span>
+                }
+                hoverPreview={
+                  tec.campo?.length ? <EntityCardPreviewText lines={tec.campo} maxLines={4} /> : undefined
                 }
               />
             </li>

@@ -7,12 +7,14 @@ import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { SpreadsheetHoverPreview } from "@/components/spreadsheet/SpreadsheetHoverPreview";
 import { SpreadsheetPageWidth } from "@/components/spreadsheet/SpreadsheetPageWidth";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { EntityCardPreviewGodBonuses } from "@/components/ui/EntityCardPreview";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { NotionText } from "@/components/ui/NotionText";
 import { PantheonMetaIcon } from "@/components/ui/PantheonMetaIcon";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
 import type { LocaleCatalog } from "@/data/catalogLocale";
+import type { DeusExplicacaoBloco } from "@/data/catalog";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useListViewMode } from "@/hooks/useListViewMode";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
@@ -106,6 +108,13 @@ export function DeusesPage() {
                   </span>
                 }
                 watermarkSrc={getDeusAssetUrl(d)}
+                hoverPreview={
+                  d.explicacao_maior?.blocos?.length ? (
+                    <EntityCardPreviewGodBonuses
+                      blocks={d.explicacao_maior.blocos as DeusExplicacaoBloco[]}
+                    />
+                  ) : undefined
+                }
               />
             </li>
           ))}

@@ -7,6 +7,7 @@ import { ListViewModeToggle } from "@/components/list/ListViewModeToggle";
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { SpreadsheetHoverPreview } from "@/components/spreadsheet/SpreadsheetHoverPreview";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { EntityCardPreviewDescription } from "@/components/ui/EntityCardPreview";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
@@ -164,6 +165,11 @@ export function GodpowersPage() {
                   watermarkSrc={getGodPowerAssetUrl(g)}
                   subtitleMinLines={3}
                   subtitleTag={false}
+                  hoverPreview={
+                    g.descricao_avancada ? (
+                      <EntityCardPreviewDescription text={g.descricao_avancada} />
+                    ) : undefined
+                  }
                   compareMode={compareMode}
                   selected={selected}
                   selectDisabled={selectDisabled}

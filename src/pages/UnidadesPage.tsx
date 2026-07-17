@@ -7,6 +7,7 @@ import { SpreadsheetHoverPreview } from "@/components/spreadsheet/SpreadsheetHov
 import { SpreadsheetPageWidth } from "@/components/spreadsheet/SpreadsheetPageWidth";
 import { UnidadesSpreadsheet } from "@/components/unidade/UnidadesSpreadsheet";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { EntityCardPreviewStats } from "@/components/ui/EntityCardPreview";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { ModalApp } from "@/components/ui/ModalApp";
@@ -18,6 +19,7 @@ import { useListViewMode } from "@/hooks/useListViewMode";
 import { useListPageSearchQuery } from "@/hooks/useListPageSearchQuery";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getUnidadeAssetUrl } from "@/lib/entityWatermarkUrls";
+import { formatArmorPercent } from "@/lib/armorDisplay";
 import { firstNumId, joinRefNomes } from "@/lib/entityRefs";
 import type { ResolvedEntityLink } from "@/lib/entityResolve";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
@@ -213,6 +215,70 @@ export function UnidadesPage() {
                   }
                   meta={
                     <MetaNotionLine parts={[joinRefNomes(u.panteao), joinRefNomes(u.era), categoriaText]} />
+                  }
+                  hoverPreview={
+                    <EntityCardPreviewStats
+                      items={[
+                        { icon: "foodaom", label: t("common.food"), value: u.comida },
+                        { icon: "woodaom", label: t("common.wood"), value: u.madeira },
+                        { icon: "goldaom", label: t("common.gold"), value: u.ouro },
+                        {
+                          icon: "aomr_population_provision_icon",
+                          label: t("spreadsheet.unidades.population"),
+                          value: u.populacao,
+                        },
+                        {
+                          icon: "aomr_time_icon",
+                          label: t("spreadsheet.unidades.trainTime"),
+                          value: u.tempo_treinamento,
+                        },
+                        {
+                          icon: "aomr_speed_icon",
+                          label: t("spreadsheet.unidades.moveSpeed"),
+                          value: u.velocidade_movimento,
+                        },
+                        {
+                          icon: "attack_cur",
+                          label: t("spreadsheet.unidades.attributeStrength"),
+                          value: u.forca_atributos,
+                        },
+                        {
+                          icon: "aomr_hit_points_icon",
+                          label: t("spreadsheet.unidades.hitPoints"),
+                          value: u.pontos_de_vida,
+                        },
+                        { icon: "rangeicon", label: t("spreadsheet.unidades.range"), value: u.alcance },
+                        {
+                          icon: "hackdamage",
+                          label: t("spreadsheet.unidades.hackDamage"),
+                          value: u.dano_cortante,
+                        },
+                        {
+                          icon: "piercedamage",
+                          label: t("spreadsheet.unidades.pierceDamage"),
+                          value: u.dano_perfurante,
+                        },
+                        {
+                          icon: "aomr_rate_of_fire_icon",
+                          label: t("spreadsheet.unidades.attackSpeed"),
+                          value: u.velocidade_de_ataque_atk_s,
+                        },
+                        { icon: "attack_cur", label: t("spreadsheet.unidades.dps"), value: u.dps },
+                        {
+                          icon: "hackarmor",
+                          label: t("spreadsheet.unidades.hackArmor"),
+                          value: u.armadura_anticorte != null ? formatArmorPercent(u.armadura_anticorte) : null,
+                        },
+                        {
+                          icon: "piercearmor",
+                          label: t("spreadsheet.unidades.pierceArmor"),
+                          value:
+                            u.armadura_antiperfurante != null
+                              ? formatArmorPercent(u.armadura_antiperfurante)
+                              : null,
+                        },
+                      ]}
+                    />
                   }
                   watermarkSrc={getUnidadeAssetUrl(u)}
                   compareMode={compareMode}

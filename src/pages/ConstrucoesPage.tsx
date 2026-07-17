@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import { EntityCard } from "@/components/ui/EntityCard";
+import { EntityCardPreviewStats } from "@/components/ui/EntityCardPreview";
 import { MetaNotionLine } from "@/components/ui/MetaNotionLine";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SearchField } from "@/components/ui/SearchField";
@@ -69,6 +70,21 @@ export function ConstrucoesPage() {
                 ) : undefined
               }
               meta={<MetaNotionLine parts={[c.panteao, c.era]} />}
+              hoverPreview={
+                <EntityCardPreviewStats
+                  items={[
+                    { label: t("common.totalCost"), value: c.custo },
+                    { icon: "woodaom", label: t("common.wood"), value: c.madeira },
+                    { icon: "goldaom", label: t("common.gold"), value: c.ouro },
+                    {
+                      icon: "aomr_time_icon",
+                      label: t("common.buildTime"),
+                      value: c.tempo_construir_segundos,
+                    },
+                    { icon: "aom_garrison_icon", label: t("common.garrison"), value: c.guarnicao },
+                  ]}
+                />
+              }
               watermarkSrc={getConstrucaoAssetUrl(c)}
             />
           </li>
