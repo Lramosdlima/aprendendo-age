@@ -102,6 +102,7 @@ def icon_token_from_path(icon_path: str) -> str:
 
 UNIT_ICON_TOKEN_OVERRIDES = {
     # Alguns caminhos internos do jogo não correspondem aos nomes dos assets públicos.
+    "aomr_einheri_icon": "aomr_einherjar_icon",
     "aomr_hades_shade_icon": "aomr_shade_of_hades_icon",
     "aomr_harpy_icon": "aomr_harpy_demeter_icon",
     "aomr_quimchin_spy_icon": "aomr_quimchim_spy_icon",

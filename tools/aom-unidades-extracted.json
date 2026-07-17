@@ -9953,7 +9953,7 @@
         "nome": "Templo (Grego)"
       }
     ],
-    "icon": "aomr_einheri_icon",
+    "icon": "aomr_einherjar_icon",
     "unit_types": [
       "CountsTowardMilitaryScore",
       "LogicalTypeAffectedByRestoration",
