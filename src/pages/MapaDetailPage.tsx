@@ -38,7 +38,7 @@ export function MapaDetailPage() {
 
   function fmtSimNao(v: boolean | undefined): string {
     if (v === undefined) return "—";
-    return v ? t("common.yes") : t("common.no");
+    return v ? "✅" : "❌";
   }
 
   if (!m) {
