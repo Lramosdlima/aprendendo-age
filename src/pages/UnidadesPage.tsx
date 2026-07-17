@@ -61,7 +61,8 @@ function unitBenchmarkValueClass(
   benchmark: number,
   lowerIsBetter: boolean,
 ): string | undefined {
-  if (value == null || value === 0) return undefined;
+  if (value === 0) return "text-zinc-500";
+  if (value == null) return undefined;
   const isBetter = lowerIsBetter ? value <= benchmark : value >= benchmark;
   return isBetter ? "text-emerald-400" : "text-red-400";
 }
