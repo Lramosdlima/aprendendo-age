@@ -204,7 +204,7 @@
       "2b200f30e211801eb5dbd00aff735786"
     ],
     "panteao_id": 5,
-    "icon": "aomr_town_center_chinese_icon",
+    "icon": "aomr_town_center_chinese",
     "armadura_anticontusao": 10
   },
   {
@@ -578,7 +578,7 @@
       "2b200f30e21180d88cbbe6e49f2601e4"
     ],
     "panteao_id": 5,
-    "icon": "aomr_silo_icon",
+    "icon": "aomr_silo",
     "armadura_anticontusao": 5
   },
   {
@@ -1633,7 +1633,7 @@
       22
     ],
     "panteao_id": 4,
-    "icon": "aomr_counter_barracks_icon",
+    "icon": "aomr_counter-barracks_icon",
     "armadura_anticontusao": 5,
     "guarnicao": 5
   },
@@ -1728,7 +1728,7 @@
       117
     ],
     "panteao_id": 5,
-    "icon": "aomr_imperial_academy_icon",
+    "icon": "aomr_imperial_academy",
     "armadura_anticontusao": 5,
     "guarnicao": 5
   },
@@ -1769,7 +1769,7 @@
       30
     ],
     "panteao_id": 5,
-    "icon": "aomr_machine_workshop_icon",
+    "icon": "aomr_machine_workshop",
     "armadura_anticontusao": 5,
     "guarnicao": 5
   },
@@ -1834,7 +1834,7 @@
       167
     ],
     "panteao_id": 7,
-    "icon": "aomr_nobles_hut_icon",
+    "icon": "aomr_noble_hut_icon",
     "armadura_anticontusao": 5,
     "guarnicao": 5
   },
@@ -2502,7 +2502,7 @@
       38
     ],
     "panteao_id": 5,
-    "icon": "aomr_baolei_icon",
+    "icon": "aomr_baolei",
     "dano_perfurante": 30,
     "alcance": 4,
     "velocidade_de_ataque_atk_s": 1,
@@ -2672,7 +2672,7 @@
       "2b200f30e21180f39f31dce7c16d3603"
     ],
     "panteao_id": 6,
-    "icon": "aomr_shrine_greek_icon",
+    "icon": "aomr_shrine_icon",
     "armadura_anticontusao": 5
   },
   {

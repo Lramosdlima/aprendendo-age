@@ -28,6 +28,18 @@ PANTHEON_ID_TO_CULTURE = {
 
 CULTURE_TO_PANTHEON_ID = {culture: pid for pid, culture in PANTHEON_ID_TO_CULTURE.items()}
 
+BUILDING_ICON_TOKEN_OVERRIDES = {
+    # Alguns caminhos internos do jogo não correspondem aos nomes dos assets públicos.
+    "aomr_town_center_chinese_icon": "aomr_town_center_chinese",
+    "aomr_silo_icon": "aomr_silo",
+    "aomr_counter_barracks_icon": "aomr_counter-barracks_icon",
+    "aomr_imperial_academy_icon": "aomr_imperial_academy",
+    "aomr_machine_workshop_icon": "aomr_machine_workshop",
+    "aomr_nobles_hut_icon": "aomr_noble_hut_icon",
+    "aomr_baolei_icon": "aomr_baolei",
+    "aomr_shrine_greek_icon": "aomr_shrine_icon",
+}
+
 
 def is_building_unit(unit: ET.Element) -> bool:
     unit_types = {node.text.strip() for node in unit.findall("unittype") if node.text}
@@ -58,15 +70,19 @@ def parse_building_attack(unit: ET.Element) -> dict[str, Any]:
 
 
 def icon_for_culture(unit: ET.Element, culture: str | None) -> str:
+    def resolve(icon_path: str) -> str:
+        token = icon_token_from_path(icon_path)
+        return BUILDING_ICON_TOKEN_OVERRIDES.get(token, token)
+
     if culture:
         for icon_node in unit.findall("icon"):
             if icon_node.get("culture") == culture and icon_node.text:
-                return icon_token_from_path(icon_node.text.strip())
+                return resolve(icon_node.text.strip())
     for icon_node in unit.findall("icon"):
         if icon_node.text and not icon_node.get("culture"):
-            return icon_token_from_path(icon_node.text.strip())
+            return resolve(icon_node.text.strip())
     if unit.find("icon") is not None and unit.find("icon").text:
-        return icon_token_from_path(unit.find("icon").text.strip())
+        return resolve(unit.find("icon").text.strip())
     return ""
 
 
