@@ -211,6 +211,7 @@ export type Unidade = {
   madeira?: number;
   ouro?: number;
   favor?: number;
+  custo_total?: number;
   populacao?: number;
   tempo_treinamento?: number;
   velocidade_movimento?: number;

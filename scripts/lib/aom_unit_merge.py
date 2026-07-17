@@ -35,6 +35,8 @@ STAT_FIELDS = (
     "comida",
     "madeira",
     "ouro",
+    "favor",
+    "custo_total",
     "populacao",
     "tempo_treinamento",
     "velocidade_movimento",

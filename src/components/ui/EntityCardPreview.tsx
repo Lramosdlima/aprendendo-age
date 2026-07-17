@@ -29,7 +29,7 @@ export function EntityCardPreviewStats({ items }: { items: EntityCardPreviewStat
             {iconSrc ? (
               <img src={iconSrc} alt="" aria-hidden className="size-5 shrink-0 object-contain" />
             ) : (
-              <span className="max-w-16 shrink-0 truncate text-[9px] font-medium uppercase tracking-wide text-zinc-500">
+              <span className="max-w-20 shrink-0 truncate text-[9px] font-medium uppercase tracking-wide text-zinc-500">
                 {item.label}
               </span>
             )}

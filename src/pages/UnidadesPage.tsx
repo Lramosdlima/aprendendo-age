@@ -69,9 +69,7 @@ function unitBenchmarkValueClass(
 }
 
 const HUMAN_UNIT_BENCHMARKS = {
-  food: 50,
-  wood: 50,
-  gold: 50,
+  totalCost: 147,
   population: 2,
   trainTime: 15,
   moveSpeed: 4,
@@ -83,27 +81,38 @@ const HUMAN_UNIT_BENCHMARKS = {
   pierceArmor: 40,
 };
 
-const MYTH_AND_HERO_UNIT_BENCHMARKS = {
+const MYTH_UNIT_BENCHMARKS = {
   ...HUMAN_UNIT_BENCHMARKS,
-  food: 150,
-  wood: 150,
-  gold: 150,
+  totalCost: 227,
   hitPoints: 300,
   pierceDamage: 6,
 };
 
-function unitBenchmarksFor(u: LocaleCatalog["unidades"][number]) {
-  const isMythOrHero = u.tipo?.some((item) => {
+const HERO_UNIT_BENCHMARKS = {
+  ...MYTH_UNIT_BENCHMARKS,
+  totalCost: 288,
+};
+
+function hasUnitType(
+  u: LocaleCatalog["unidades"][number],
+  icons: string[],
+  labels: string[],
+): boolean {
+  return Boolean(u.tipo?.some((item) => {
     const icon = item.icon?.toLowerCase();
     const type = item.type.toLowerCase();
-    return (
-      icon === "aomr_type_myth_unit_icon" ||
-      icon === "aomr_type_hero_icon" ||
-      type === "unidade mítica" ||
-      type === "herói"
-    );
-  });
-  return isMythOrHero ? MYTH_AND_HERO_UNIT_BENCHMARKS : HUMAN_UNIT_BENCHMARKS;
+    return (icon != null && icons.includes(icon)) || labels.includes(type);
+  }));
+}
+
+function unitBenchmarksFor(u: LocaleCatalog["unidades"][number]) {
+  if (hasUnitType(u, ["aomr_type_hero_icon"], ["herói", "hero"])) {
+    return HERO_UNIT_BENCHMARKS;
+  }
+  if (hasUnitType(u, ["aomr_type_myth_unit_icon"], ["unidade mítica", "myth unit"])) {
+    return MYTH_UNIT_BENCHMARKS;
+  }
+  return HUMAN_UNIT_BENCHMARKS;
 }
 
 const toolbarBtn =
@@ -271,29 +280,11 @@ export function UnidadesPage() {
                     <div className="space-y-2">
                       <EntityCardPreviewStats
                         items={[
-                        {
-                          icon: "foodaom",
-                          label: t("common.food"),
-                          value: u.comida,
-                          valueClassName: unitBenchmarkValueClass(u.comida, benchmarks.food, true),
-                        },
-                        {
-                          icon: "woodaom",
-                          label: t("common.wood"),
-                          value: u.madeira,
-                          valueClassName: unitBenchmarkValueClass(u.madeira, benchmarks.wood, true),
-                        },
-                        {
-                          icon: "goldaom",
-                          label: t("common.gold"),
-                          value: u.ouro,
-                          valueClassName: unitBenchmarkValueClass(u.ouro, benchmarks.gold, true),
-                        },
-                        {
-                          icon: "favoraom",
-                          label: t("common.favor"),
-                          value: typeof u.favor === "number" && u.favor > 0 ? u.favor : null,
-                        },
+                          {
+                            label: t("common.totalCost"),
+                            value: u.custo_total,
+                            valueClassName: unitBenchmarkValueClass(u.custo_total, benchmarks.totalCost, true),
+                          },
                         {
                           icon: "aomr_population_provision_icon",
                           label: t("spreadsheet.unidades.population"),

@@ -383,6 +383,8 @@ def extract_unit_record(
         "comida": int(costs["comida"]) if costs["comida"].is_integer() else costs["comida"],
         "madeira": int(costs["madeira"]) if costs["madeira"].is_integer() else costs["madeira"],
         "ouro": int(costs["ouro"]) if costs["ouro"].is_integer() else costs["ouro"],
+        "favor": int(costs["favor"]) if costs["favor"].is_integer() else costs["favor"],
+        "custo_total": int(sum(costs.values())) if sum(costs.values()).is_integer() else sum(costs.values()),
         "populacao": int(_float(_text(unit, "populationcount"))),
         "tempo_treinamento": _float(_text(unit, "trainpoints")),
         "velocidade_movimento": _float(_text(unit, "maxvelocity")),
