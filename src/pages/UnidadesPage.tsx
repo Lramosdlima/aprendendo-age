@@ -72,7 +72,7 @@ const HUMAN_UNIT_BENCHMARKS = {
   totalCost: 147,
   population: 2,
   trainTime: 15,
-  moveSpeed: 4,
+  moveSpeed: 4.5,
   hitPoints: 80,
   hackDamage: 10,
   pierceDamage: 10,
