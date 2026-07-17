@@ -5,6 +5,7 @@ import { ListPageStickyHeader } from "@/components/layout/ListPageStickyHeader";
 import { ListViewModeToggle } from "@/components/list/ListViewModeToggle";
 import { SpreadsheetHoverPreview } from "@/components/spreadsheet/SpreadsheetHoverPreview";
 import { SpreadsheetPageWidth } from "@/components/spreadsheet/SpreadsheetPageWidth";
+import { UnidadeMultiplierDamagePreview } from "@/components/unidade/UnidadeMultiplierDamagePreview";
 import { UnidadesSpreadsheet } from "@/components/unidade/UnidadesSpreadsheet";
 import { EntityCard } from "@/components/ui/EntityCard";
 import { EntityCardPreviewStats } from "@/components/ui/EntityCardPreview";
@@ -228,8 +229,9 @@ export function UnidadesPage() {
                     <MetaNotionLine parts={[joinRefNomes(u.panteao), joinRefNomes(u.era), categoriaText]} />
                   }
                   hoverPreview={
-                    <EntityCardPreviewStats
-                      items={[
+                    <div className="space-y-2">
+                      <EntityCardPreviewStats
+                        items={[
                         {
                           icon: "foodaom",
                           label: t("common.food"),
@@ -266,35 +268,17 @@ export function UnidadesPage() {
                           valueClassName: unitBenchmarkValueClass(u.tempo_treinamento, 15, true),
                         },
                         {
-                          icon: "aomr_speed_icon",
-                          label: t("spreadsheet.unidades.moveSpeed"),
-                          value: u.velocidade_movimento,
-                          valueClassName: unitBenchmarkValueClass(u.velocidade_movimento, 4, false),
+                          icon: "aomr_rate_of_fire_icon",
+                          label: t("spreadsheet.unidades.attackSpeed"),
+                          value: u.velocidade_de_ataque_atk_s,
+                          valueClassName: unitBenchmarkValueClass(u.velocidade_de_ataque_atk_s, 1, true),
                         },
+                        { icon: "rangeicon", label: t("spreadsheet.unidades.range"), value: u.alcance },
                         {
                           icon: "aomr_hit_points_icon",
                           label: t("spreadsheet.unidades.hitPoints"),
                           value: u.pontos_de_vida,
                           valueClassName: unitBenchmarkValueClass(u.pontos_de_vida, 80, false),
-                        },
-                        { icon: "rangeicon", label: t("spreadsheet.unidades.range"), value: u.alcance },
-                        {
-                          icon: "hackdamage",
-                          label: t("spreadsheet.unidades.hackDamage"),
-                          value: u.dano_cortante,
-                          valueClassName: unitBenchmarkValueClass(u.dano_cortante, 10, false),
-                        },
-                        {
-                          icon: "piercedamage",
-                          label: t("spreadsheet.unidades.pierceDamage"),
-                          value: u.dano_perfurante,
-                          valueClassName: unitBenchmarkValueClass(u.dano_perfurante, 10, false),
-                        },
-                        {
-                          icon: "aomr_rate_of_fire_icon",
-                          label: t("spreadsheet.unidades.attackSpeed"),
-                          value: u.velocidade_de_ataque_atk_s,
-                          valueClassName: unitBenchmarkValueClass(u.velocidade_de_ataque_atk_s, 1, true),
                         },
                         {
                           icon: "hackarmor",
@@ -311,8 +295,28 @@ export function UnidadesPage() {
                               : null,
                           valueClassName: unitBenchmarkValueClass(u.armadura_antiperfurante, 40, false),
                         },
-                      ]}
-                    />
+                        {
+                          icon: "hackdamage",
+                          label: t("spreadsheet.unidades.hackDamage"),
+                          value: u.dano_cortante,
+                          valueClassName: unitBenchmarkValueClass(u.dano_cortante, 10, false),
+                        },
+                        {
+                          icon: "piercedamage",
+                          label: t("spreadsheet.unidades.pierceDamage"),
+                          value: u.dano_perfurante,
+                          valueClassName: unitBenchmarkValueClass(u.dano_perfurante, 10, false),
+                        },
+                        {
+                          icon: "aomr_speed_icon",
+                          label: t("spreadsheet.unidades.moveSpeed"),
+                          value: u.velocidade_movimento,
+                          valueClassName: unitBenchmarkValueClass(u.velocidade_movimento, 4, false),
+                        },
+                        ]}
+                      />
+                      <UnidadeMultiplierDamagePreview unidade={u} />
+                    </div>
                   }
                   watermarkSrc={getUnidadeAssetUrl(u)}
                   compareMode={compareMode}
