@@ -16,14 +16,11 @@ export {
 
 export {
   filterAttackerPool,
-  filterAttackerSoldiers,
   filterDefenderPool,
-  isHeroEligibleForCurrentEra,
   isHeroUnit,
+  isHumanSoldierUnit,
   isMythUnit,
   isUnitEligibleForCurrentEra,
-  listEligibleHeroes,
-  pickDeckHero,
 } from "./filters";
 
 export {

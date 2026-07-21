@@ -10,10 +10,9 @@ import {
   filterAttackerPool,
   filterDefenderPool,
   isHeroUnit,
+  isHumanSoldierUnit,
   isMythUnit,
-  listEligibleHeroes,
   lookupBattleResult,
-  pickDeckHero,
   pickDefender,
   resolvePlayerChoice,
   summarizeRun,
@@ -49,30 +48,27 @@ describe("battleGame plan", () => {
 });
 
 describe("battleGame filters", () => {
-  it("monta deck sem míticas e com no máximo 1 herói", () => {
-    const hero = pickDeckHero(units, 1, 2, createRng(7));
-    expect(hero).not.toBeNull();
-
-    const classic = filterAttackerPool(units, 1, 2, hero?.id);
+  it("monta deck apenas com soldados humanos", () => {
+    const classic = filterAttackerPool(units, 1, 2);
     expect(classic.length).toBeGreaterThan(0);
     expect(classic.every((u) => u.panteao?.[0]?.id === 1)).toBe(true);
+    expect(classic.every(isHumanSoldierUnit)).toBe(true);
     expect(classic.every((u) => !isMythUnit(u))).toBe(true);
-    expect(classic.filter((u) => isHeroUnit(u))).toHaveLength(1);
-    expect(classic.some((u) => u.id === hero!.id)).toBe(true);
+    expect(classic.every((u) => !isHeroUnit(u))).toBe(true);
   });
 
-  it("permite heróis arcaicos no deck da Clássica", () => {
-    const archaicHeroes = listEligibleHeroes(units, 1, 2).filter(
-      (u) => u.era?.[0]?.id === 1,
-    );
-    expect(archaicHeroes.length).toBeGreaterThan(0);
+  it("monta pool defensor apenas com soldados humanos", () => {
+    const defenders = filterDefenderPool(units, 4, []);
+    expect(defenders.length).toBeGreaterThan(0);
+    expect(defenders.every(isHumanSoldierUnit)).toBe(true);
+    expect(defenders.every((u) => !isMythUnit(u))).toBe(true);
+    expect(defenders.every((u) => !isHeroUnit(u))).toBe(true);
   });
 
   it("mantém pools não vazios para todos os panteões nas 3 eras", () => {
     for (const pantheonId of [1, 2, 3, 4, 5, 6, 7]) {
       for (const eraId of [2, 3, 4] as const) {
-        const hero = pickDeckHero(units, pantheonId, eraId, createRng(pantheonId * 10 + eraId));
-        expect(filterAttackerPool(units, pantheonId, eraId, hero?.id).length).toBeGreaterThan(0);
+        expect(filterAttackerPool(units, pantheonId, eraId).length).toBeGreaterThan(0);
         expect(filterDefenderPool(units, eraId, []).length).toBeGreaterThan(0);
       }
     }

@@ -1,10 +1,6 @@
 import type { Unidade } from "@/data/catalog";
 import { firstNumId } from "@/lib/entityRefs";
-import {
-  getDefenderTypeIds,
-  resolveBattleTypeId,
-} from "@/lib/battleSimulator/classification";
-import { pickRandomUnit } from "./run";
+import { getDefenderTypeIds } from "@/lib/battleSimulator/classification";
 import type { PlayableEraId } from "./types";
 
 /**
@@ -21,92 +17,39 @@ export function isUnitEligibleForCurrentEra(
   return eraId >= 2 && eraId <= currentEraId;
 }
 
-/** Heróis podem vir da Arcaica (1) até a Era atual. */
-export function isHeroEligibleForCurrentEra(
-  unit: Unidade,
-  currentEraId: PlayableEraId,
-): boolean {
-  const eraId = firstNumId(unit.era);
-  if (eraId == null) return false;
-  return eraId >= 1 && eraId <= currentEraId;
-}
-
 export function isMythUnit(unit: Unidade): boolean {
   return getDefenderTypeIds(unit).has("unidade_mitica");
 }
 
 export function isHeroUnit(unit: Unidade): boolean {
-  for (const item of unit.tipo ?? []) {
-    const id = resolveBattleTypeId(item.type, item.icon);
-    if (id === "heroi") return true;
-  }
-  return false;
+  return getDefenderTypeIds(unit).has("heroi");
 }
 
-/** Soldados/humanos do panteão (sem míticas e sem heróis). */
-export function filterAttackerSoldiers(
-  units: readonly Unidade[],
-  pantheonId: number,
-  currentEraId: PlayableEraId,
-): Unidade[] {
-  return units.filter(
-    (u) =>
-      firstNumId(u.panteao) === pantheonId &&
-      !isMythUnit(u) &&
-      !isHeroUnit(u) &&
-      isUnitEligibleForCurrentEra(u, currentEraId),
+/** Apenas Infantaria, Cavalaria ou Artilharia; exclui combinações com Herói/Mítica. */
+export function isHumanSoldierUnit(unit: Unidade): boolean {
+  const types = getDefenderTypeIds(unit);
+  return (
+    types.has("soldado_humano") &&
+    !types.has("heroi") &&
+    !types.has("unidade_mitica")
   );
 }
 
-/** Heróis elegíveis do panteão (era 1…atual), sem míticas. */
-export function listEligibleHeroes(
-  units: readonly Unidade[],
-  pantheonId: number,
-  currentEraId: PlayableEraId,
-): Unidade[] {
-  return units.filter(
-    (u) =>
-      firstNumId(u.panteao) === pantheonId &&
-      isHeroUnit(u) &&
-      !isMythUnit(u) &&
-      isHeroEligibleForCurrentEra(u, currentEraId),
-  );
-}
-
-export function pickDeckHero(
-  units: readonly Unidade[],
-  pantheonId: number,
-  currentEraId: PlayableEraId,
-  rng: () => number = Math.random,
-): Unidade | null {
-  return pickRandomUnit(listEligibleHeroes(units, pantheonId, currentEraId), rng);
-}
-
-/**
- * Deck do atacante: soldados cumulativos da Era + exatamente 1 herói sorteado
- * (passado por `deckHeroId`). Unidades míticas nunca entram.
- */
+/** Deck do atacante: apenas soldados humanos cumulativos do panteão. */
 export function filterAttackerPool(
   units: readonly Unidade[],
   pantheonId: number,
   currentEraId: PlayableEraId,
-  deckHeroId?: number | null,
 ): Unidade[] {
-  const soldiers = filterAttackerSoldiers(units, pantheonId, currentEraId);
-  if (deckHeroId == null) return soldiers;
-
-  const hero = units.find(
+  return units.filter(
     (u) =>
-      u.id === deckHeroId &&
       firstNumId(u.panteao) === pantheonId &&
-      isHeroUnit(u) &&
-      !isMythUnit(u) &&
-      isHeroEligibleForCurrentEra(u, currentEraId),
+      isHumanSoldierUnit(u) &&
+      isUnitEligibleForCurrentEra(u, currentEraId),
   );
-  if (!hero) return soldiers;
-  return [...soldiers, hero];
 }
 
+/** Pool da máquina: apenas soldados humanos cumulativos de qualquer panteão. */
 export function filterDefenderPool(
   units: readonly Unidade[],
   currentEraId: PlayableEraId,
@@ -114,9 +57,16 @@ export function filterDefenderPool(
 ): Unidade[] {
   const used = new Set(usedDefenderIds);
   const fresh = units.filter(
-    (u) => isUnitEligibleForCurrentEra(u, currentEraId) && !used.has(u.id),
+    (u) =>
+      isHumanSoldierUnit(u) &&
+      isUnitEligibleForCurrentEra(u, currentEraId) &&
+      !used.has(u.id),
   );
   if (fresh.length > 0) return fresh;
   // Se esgotou opções inéditas, permite repetir.
-  return units.filter((u) => isUnitEligibleForCurrentEra(u, currentEraId));
+  return units.filter(
+    (u) =>
+      isHumanSoldierUnit(u) &&
+      isUnitEligibleForCurrentEra(u, currentEraId),
+  );
 }

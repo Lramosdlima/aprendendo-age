@@ -12,7 +12,6 @@ import {
   buildBattleResultIndex,
   buildRoundPlan,
   filterAttackerPool,
-  pickDeckHero,
   pickDefender,
   resolvePlayerChoice,
   summarizeRun,
@@ -129,13 +128,11 @@ function BattleRandomSession({
   const plan = useMemo(() => buildRoundPlan(), []);
   const firstEra = (plan[0]?.eraId ?? 2) as PlayableEraId;
   const first = initialDefender(unidades, firstEra);
-  const initialHero = pickDeckHero(unidades, pantheon.id, firstEra);
 
   const [phase, setPhase] = useState<BattlePhase>("playing");
   const [roundIndex, setRoundIndex] = useState(0);
   const [defenderId, setDefenderId] = useState<number | null>(first.defenderId);
   const [usedDefenderIds, setUsedDefenderIds] = useState<number[]>(first.used);
-  const [deckHeroId, setDeckHeroId] = useState<number | null>(initialHero?.id ?? null);
   const [pendingAttackerId, setPendingAttackerId] = useState<number | null>(null);
   const [history, setHistory] = useState<RoundRecord[]>([]);
   const [lastResult, setLastResult] = useState<LastResult | null>(null);
@@ -145,8 +142,8 @@ function BattleRandomSession({
   const currentEra = eraById.get(currentEraId);
 
   const attackerPool = useMemo(
-    () => filterAttackerPool(unidades, pantheon.id, currentEraId, deckHeroId),
-    [unidades, pantheon.id, currentEraId, deckHeroId],
+    () => filterAttackerPool(unidades, pantheon.id, currentEraId),
+    [unidades, pantheon.id, currentEraId],
   );
 
   const defender = defenderId != null ? unidadeById.get(defenderId) : undefined;
@@ -212,10 +209,8 @@ function BattleRandomSession({
     const nextIndex = roundIndex + 1;
     const nextEra = plan[nextIndex]?.eraId ?? currentEraId;
     const nextDefender = pickDefender(unidades, nextEra, usedDefenderIds);
-    const nextHero = pickDeckHero(unidades, pantheon.id, nextEra);
     setRoundIndex(nextIndex);
     setDefenderId(nextDefender?.id ?? null);
-    setDeckHeroId(nextHero?.id ?? null);
     if (nextDefender) {
       setUsedDefenderIds((prev) =>
         prev.includes(nextDefender.id) ? prev : [...prev, nextDefender.id],
@@ -224,7 +219,7 @@ function BattleRandomSession({
     setAgeUpEraId(null);
     setLastResult(null);
     setPhase("playing");
-  }, [roundIndex, plan, currentEraId, unidades, usedDefenderIds, pantheon.id]);
+  }, [roundIndex, plan, currentEraId, unidades, usedDefenderIds]);
 
   if (defenderId == null) {
     return (
