@@ -2377,6 +2377,10 @@
     "ingles": "Centaur",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -2581,6 +2585,10 @@
     "ingles": "Wadjet",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -2714,6 +2722,10 @@
     "nome": "Troll",
     "ingles": "Troll",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -2918,6 +2930,10 @@
     "nome": "Draugr",
     "ingles": "Draugr",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -3185,6 +3201,10 @@
     "nome": "Qilin",
     "ingles": "Qilin",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -3981,6 +4001,10 @@
     "ingles": "Manticore",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -4114,6 +4138,10 @@
     "nome": "Petsuchos",
     "ingles": "Petsuchos",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -4681,6 +4709,10 @@
     "nome": "Satyr",
     "ingles": "Satyr",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -5925,6 +5957,10 @@
     "ingles": "Medusa",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -5966,11 +6002,12 @@
     "comida": 0,
     "madeira": 250,
     "ouro": 0,
-    "custo_total": 250,
+    "custo_total": 274,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
-    "dano_perfurante": 35
+    "dano_perfurante": 35,
+    "favor": 24
   },
   {
     "id": 99,
@@ -6084,6 +6121,10 @@
     "ingles": "Mummy",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -6125,11 +6166,12 @@
     "comida": 0,
     "madeira": 275,
     "ouro": 0,
-    "custo_total": 275,
+    "custo_total": 300,
     "populacao": 4,
     "tempo_treinamento": 17,
     "velocidade_movimento": 4,
-    "dano_perfurante": 30
+    "dano_perfurante": 30,
+    "favor": 25
   },
   {
     "id": 102,
@@ -6243,6 +6285,10 @@
     "ingles": "Fire Giant",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -6288,11 +6334,12 @@
     "comida": 0,
     "madeira": 0,
     "ouro": 300,
-    "custo_total": 300,
+    "custo_total": 328,
     "populacao": 4,
     "tempo_treinamento": 24,
     "velocidade_movimento": 3.2,
-    "dano_cortante": 45
+    "dano_cortante": 45,
+    "favor": 28
   },
   {
     "id": 105,
@@ -6512,6 +6559,10 @@
     "ingles": "Lampades",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -6553,11 +6604,12 @@
     "comida": 0,
     "madeira": 0,
     "ouro": 200,
-    "custo_total": 200,
+    "custo_total": 220,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
-    "dano_perfurante": 24
+    "dano_perfurante": 24,
+    "favor": 20
   },
   {
     "id": 110,
@@ -7609,8 +7661,8 @@
     "ingles": "Wanyūdō",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       },
       {
         "type": "Mythic",
@@ -7949,6 +8001,10 @@
     "nome": "Shinigami",
     "ingles": "Shinigami",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -8856,6 +8912,10 @@
     "ingles": "Hamadryad",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
       }
@@ -8881,7 +8941,7 @@
     ],
     "madeira": 230,
     "ouro": 0,
-    "favor": 25,
+    "favor": 20,
     "populacao": 3,
     "forca_atributos": -128,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -8899,7 +8959,7 @@
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 60,
     "comida": 0,
-    "custo_total": 255,
+    "custo_total": 250,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.5,
     "dano_perfurante": 30
@@ -8909,6 +8969,10 @@
     "nome": "Siren",
     "ingles": "Siren",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Mythic",
         "icon": "aomr_type_myth_unit_icon"
@@ -8951,11 +9015,12 @@
     "comida": 225,
     "madeira": 0,
     "ouro": 0,
-    "custo_total": 225,
+    "custo_total": 245,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.4,
-    "dano_cortante": 40
+    "dano_cortante": 40,
+    "favor": 20
   },
   {
     "id": 155,
@@ -9751,8 +9816,8 @@
     "ingles": "Quinametzin",
     "tipo": [
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       },
       {
         "type": "Mythic",
@@ -9801,8 +9866,8 @@
     "comida": 0,
     "madeira": 0,
     "ouro": 300,
-    "favor": 20,
-    "custo_total": 320,
+    "favor": 5,
+    "custo_total": 305,
     "populacao": 4,
     "velocidade_movimento": 3,
     "forca_atributos": 447.333333333333,

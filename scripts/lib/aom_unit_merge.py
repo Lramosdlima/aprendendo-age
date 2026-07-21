@@ -51,6 +51,12 @@ LOCALIZED_FIELDS = (
     "construcao",
 )
 
+# O extrator usa rótulos PT; no catálogo EN alguns tipos históricos diferem.
+TIPO_LABEL_EN = {
+    "Unidade mítica": "Mythic",
+    "Arma de cerco": "Cerco",
+}
+
 BUILDING_PROTO_ALIASES = {
     "MilitaryAcademy": "Military Academy",
     "ArcheryRange": "Archery Range",
@@ -260,6 +266,25 @@ def supplement_extracted_index(
     return added
 
 
+def localize_tipo(
+    extracted_tipo: list[dict[str, Any]] | None,
+    *,
+    locale: str,
+) -> list[dict[str, Any]] | None:
+    if not extracted_tipo:
+        return extracted_tipo
+    if locale.lower() != "en":
+        return deepcopy(extracted_tipo)
+    localized: list[dict[str, Any]] = []
+    for item in extracted_tipo:
+        mapped = deepcopy(item)
+        label = mapped.get("type")
+        if isinstance(label, str) and label in TIPO_LABEL_EN:
+            mapped["type"] = TIPO_LABEL_EN[label]
+        localized.append(mapped)
+    return localized
+
+
 def merge_entity_refs(
     existing: list[dict[str, Any]] | None,
     extracted: list[dict[str, Any]] | None,
@@ -347,6 +372,12 @@ def build_merged_row(
             extracted.get("construcao"),
             building_ids,
         )
+    else:
+        # EN preserva textos editoriais de panteão/era/construção/multiplicador,
+        # mas sincroniza `tipo` (com rótulos EN históricos como Mythic/Cerco).
+        localized_tipo = localize_tipo(extracted.get("tipo"), locale=locale_key)
+        if localized_tipo:
+            merged["tipo"] = localized_tipo
 
     for field in STAT_FIELDS:
         if field in merged:

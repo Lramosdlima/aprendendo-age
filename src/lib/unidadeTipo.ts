@@ -49,10 +49,17 @@ function tipoTypeToneTextClass(typeLabel: string): string {
   if (t.startsWith("Infantaria")) return "text-red-300";
   if (t.startsWith("Cavalaria")) return "text-emerald-300";
   if (t.startsWith("Artilharia")) return "text-sky-300";
-  if (t.startsWith("Herói")) return "text-yellow-300";
+  if (t.startsWith("Herói") || t.startsWith("Hero")) return "text-yellow-300";
   if (t.startsWith("Batedor")) return "text-zinc-300";
-  if (t.startsWith("Mítica")) return "text-pink-300";
-  if (t.startsWith("Cerco")) return "text-amber-300";
+  if (
+    t.startsWith("Mítica") ||
+    t.startsWith("Mythic") ||
+    t.includes("mítica") ||
+    t.includes("Myth")
+  ) {
+    return "text-pink-300";
+  }
+  if (t.startsWith("Cerco") || t.startsWith("Arma de cerco")) return "text-amber-300";
   if (t.startsWith("Voador")) return "text-zinc-200";
 
   return "text-zinc-200";
@@ -81,16 +88,21 @@ export function tipoTypeTagShellClass(typeLabel: string): string {
   if (t.startsWith("Artilharia")) {
     return `border-sky-500/50 bg-sky-950/45 ${text}`;
   }
-  if (t.startsWith("Herói")) {
+  if (t.startsWith("Herói") || t.startsWith("Hero")) {
     return `border-yellow-500/55 bg-yellow-950/40 ${text}`;
   }
   if (t.startsWith("Batedor")) {
     return `border-zinc-600 bg-zinc-900/90 ${text}`;
   }
-  if (t.startsWith("Mítica")) {
+  if (
+    t.startsWith("Mítica") ||
+    t.startsWith("Mythic") ||
+    t.includes("mítica") ||
+    t.includes("Myth")
+  ) {
     return `border-pink-500/50 bg-pink-950/45 ${text}`;
   }
-  if (t.startsWith("Cerco")) {
+  if (t.startsWith("Cerco") || t.startsWith("Arma de cerco")) {
     return `border-amber-700/55 bg-amber-950/50 ${text}`;
   }
   if (t.startsWith("Voador")) {

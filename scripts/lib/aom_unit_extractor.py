@@ -50,6 +50,13 @@ PRIMARY_ROLE_TYPES = [
     ("Villager", "Aldeão"),
 ]
 
+MYTH_UNIT_TYPE = "Unidade mítica"
+
+# Tipos do proto que definem uma unidade mítica. No jogo, uma unidade mítica de
+# ataque à distância também carrega `Ranged`/`AbstractArcher`, então o papel de
+# combate (Artilharia) precisa conviver com a classificação "Unidade mítica".
+MYTH_UNIT_TOKENS = ("AbstractMythUnit", "MythUnit")
+
 
 def _text(node: ET.Element | None, tag: str, default: str = "") -> str:
     if node is None:
@@ -91,6 +98,23 @@ def detect_primary_role(unit_types: set[str]) -> str | None:
         if token in unit_types:
             return label
     return None
+
+
+def detect_roles(unit_types: set[str]) -> list[str]:
+    """Papel de combate principal + classificação mítica quando aplicável.
+
+    Unidades míticas de ataque à distância (ex.: Centauro, Qilin, Troll, Draugr,
+    Wadjet) mantêm o papel de combate (Artilharia) e ganham também "Unidade
+    mítica", em vez de perder a classificação mítica.
+    """
+    roles: list[str] = []
+    primary = detect_primary_role(unit_types)
+    if primary:
+        roles.append(primary)
+    is_myth = any(token in unit_types for token in MYTH_UNIT_TOKENS)
+    if is_myth and MYTH_UNIT_TYPE not in roles:
+        roles.append(MYTH_UNIT_TYPE)
+    return roles
 
 
 def icon_token_from_path(icon_path: str) -> str:
@@ -298,10 +322,16 @@ def format_pantheon(meta: dict[str, Any]) -> list[dict[str, Any]]:
     return [{"id": meta["id"], "nome": f"{meta['nome']} :{meta['icon']}:"}]
 
 
-def format_tipo(role: str | None) -> list[dict[str, str]]:
-    if not role:
+def format_tipo(roles: str | list[str] | None) -> list[dict[str, str]]:
+    if not roles:
         return []
-    return [{"type": role, "icon": UNIT_TYPE_ICON.get(role, "")}]
+    if isinstance(roles, str):
+        roles = [roles]
+    return [
+        {"type": role, "icon": UNIT_TYPE_ICON.get(role, "")}
+        for role in roles
+        if role
+    ]
 
 
 def format_multiplicador(bonuses: list[dict[str, Any]]) -> list[dict[str, str]]:
@@ -335,7 +365,7 @@ def extract_unit_record(
 ) -> dict[str, Any]:
     unit_types = {node.text.strip() for node in unit.findall("unittype") if node.text}
     pantheon = detect_pantheon(unit)
-    role = detect_primary_role(unit_types)
+    roles = detect_roles(unit_types)
     attack = parse_attack(unit)
     costs = parse_costs(unit)
     armor = parse_armor(unit)
@@ -373,7 +403,7 @@ def extract_unit_record(
         "nome": nome_pt,
         "ingles": nome_en,
         "displaynameid": display_id,
-        "tipo": format_tipo(role),
+        "tipo": format_tipo(roles),
         "panteao": format_pantheon(pantheon) if pantheon else [],
         "era": [era] if era else [],
         "multiplicador": format_multiplicador(attack.get("bonuses", [])),

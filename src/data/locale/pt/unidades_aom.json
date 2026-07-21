@@ -2391,6 +2391,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -2591,6 +2595,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -2725,6 +2733,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -2925,6 +2937,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -3179,6 +3195,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -3951,6 +3971,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -4085,6 +4109,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -4622,6 +4650,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -5861,6 +5893,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -5900,7 +5936,7 @@
     "comida": 0,
     "madeira": 250,
     "ouro": 0,
-    "custo_total": 250,
+    "custo_total": 274,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
@@ -5916,7 +5952,8 @@
         "icon": "aomr_type_hero_icon",
         "value": "0.25"
       }
-    ]
+    ],
+    "favor": 24
   },
   {
     "id": 99,
@@ -6056,6 +6093,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -6095,7 +6136,7 @@
     "comida": 0,
     "madeira": 275,
     "ouro": 0,
-    "custo_total": 275,
+    "custo_total": 300,
     "populacao": 4,
     "tempo_treinamento": 17,
     "velocidade_movimento": 4,
@@ -6111,7 +6152,8 @@
         "icon": "aomr_type_hero_icon",
         "value": "0.25"
       }
-    ]
+    ],
+    "favor": 25
   },
   {
     "id": 102,
@@ -6251,6 +6293,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -6294,7 +6340,7 @@
     "comida": 0,
     "madeira": 0,
     "ouro": 300,
-    "custo_total": 300,
+    "custo_total": 328,
     "populacao": 4,
     "tempo_treinamento": 24,
     "velocidade_movimento": 3.2,
@@ -6310,7 +6356,8 @@
         "icon": "aomr_type_hero_icon",
         "value": "0.25"
       }
-    ]
+    ],
+    "favor": 28
   },
   {
     "id": 105,
@@ -6575,6 +6622,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -6614,7 +6665,7 @@
     "comida": 0,
     "madeira": 0,
     "ouro": 200,
-    "custo_total": 200,
+    "custo_total": 220,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.3,
@@ -6630,7 +6681,8 @@
         "icon": "aomr_type_hero_icon",
         "value": "0.25"
       }
-    ]
+    ],
+    "favor": 20
   },
   {
     "id": 110,
@@ -7745,6 +7797,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -8078,6 +8134,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -8977,6 +9037,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -9000,7 +9064,7 @@
     ],
     "madeira": 230,
     "ouro": 0,
-    "favor": 25,
+    "favor": 20,
     "populacao": 3,
     "forca_atributos": -128,
     "forte_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
@@ -9018,7 +9082,7 @@
     "armadura_anticorte": 50,
     "armadura_antiperfurante": 60,
     "comida": 0,
-    "custo_total": 255,
+    "custo_total": 250,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.5,
     "dano_perfurante": 30,
@@ -9043,6 +9107,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -9082,7 +9150,7 @@
     "comida": 225,
     "madeira": 0,
     "ouro": 0,
-    "custo_total": 225,
+    "custo_total": 245,
     "populacao": 4,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.4,
@@ -9098,7 +9166,8 @@
         "icon": "aomr_type_hero_icon",
         "value": "0.5"
       }
-    ]
+    ],
+    "favor": 20
   },
   {
     "id": 155,
@@ -9968,6 +10037,10 @@
       {
         "type": "Artilharia",
         "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Unidade mítica",
+        "icon": "aomr_type_myth_unit_icon"
       }
     ],
     "panteao": [
@@ -10012,8 +10085,8 @@
     "comida": 0,
     "madeira": 0,
     "ouro": 300,
-    "favor": 20,
-    "custo_total": 320,
+    "favor": 5,
+    "custo_total": 305,
     "populacao": 4,
     "velocidade_movimento": 3,
     "forca_atributos": 447.333333333333,
