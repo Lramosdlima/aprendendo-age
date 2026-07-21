@@ -51,11 +51,16 @@ PRIMARY_ROLE_TYPES = [
 ]
 
 MYTH_UNIT_TYPE = "Unidade mítica"
+HERO_UNIT_TYPE = "Herói"
 
 # Tipos do proto que definem uma unidade mítica. No jogo, uma unidade mítica de
 # ataque à distância também carrega `Ranged`/`AbstractArcher`, então o papel de
 # combate (Artilharia) precisa conviver com a classificação "Unidade mítica".
 MYTH_UNIT_TOKENS = ("AbstractMythUnit", "MythUnit")
+
+# Idem para heróis: Hersir, Godi e conversões atlantes `(Herói)` também têm
+# Infantaria/Artilharia/Cavalaria no proto e precisam manter ambas as tags.
+HERO_UNIT_TOKENS = ("Hero", "AbstractHero")
 
 
 def _text(node: ET.Element | None, tag: str, default: str = "") -> str:
@@ -101,19 +106,25 @@ def detect_primary_role(unit_types: set[str]) -> str | None:
 
 
 def detect_roles(unit_types: set[str]) -> list[str]:
-    """Papel de combate principal + classificação mítica quando aplicável.
+    """Papel de combate principal + classificações mítica/herói quando aplicável.
 
     Unidades míticas de ataque à distância (ex.: Centauro, Qilin, Troll, Draugr,
-    Wadjet) mantêm o papel de combate (Artilharia) e ganham também "Unidade
-    mítica", em vez de perder a classificação mítica.
+    Wadjet) e heróis com papel humano (ex.: Hersir, Godi, Murmilo (Herói))
+    mantêm o papel de combate e ganham também a classificação secundária.
     """
     roles: list[str] = []
     primary = detect_primary_role(unit_types)
     if primary:
         roles.append(primary)
+
     is_myth = any(token in unit_types for token in MYTH_UNIT_TOKENS)
     if is_myth and MYTH_UNIT_TYPE not in roles:
         roles.append(MYTH_UNIT_TYPE)
+
+    is_hero = any(token in unit_types for token in HERO_UNIT_TOKENS)
+    if is_hero and HERO_UNIT_TYPE not in roles:
+        roles.append(HERO_UNIT_TYPE)
+
     return roles
 
 

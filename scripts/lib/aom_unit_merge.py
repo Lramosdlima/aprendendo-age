@@ -55,7 +55,37 @@ LOCALIZED_FIELDS = (
 TIPO_LABEL_EN = {
     "Unidade mítica": "Mythic",
     "Arma de cerco": "Cerco",
+    "Herói": "Hero",
 }
+
+# Classes geridas pelo extrator. Qualquer outro rótulo em `tipo` é editorial
+# (ex.: Curandeiro✨, Batedor, Voador) e deve ser preservado no merge.
+EXTRACTED_TIPO_LABELS = frozenset(
+    {
+        "Infantaria",
+        "Artilharia",
+        "Cavalaria",
+        "Arma de cerco",
+        "Cerco",
+        "Navio",
+        "Unidade mítica",
+        "Mythic",
+        "Herói",
+        "Hero",
+        "Aldeão",
+    }
+)
+
+COMBAT_TIPO_LABELS = frozenset(
+    {
+        "Infantaria",
+        "Artilharia",
+        "Cavalaria",
+        "Arma de cerco",
+        "Cerco",
+        "Navio",
+    }
+)
 
 BUILDING_PROTO_ALIASES = {
     "MilitaryAcademy": "Military Academy",
@@ -285,6 +315,44 @@ def localize_tipo(
     return localized
 
 
+def merge_tipo(
+    existing: list[dict[str, Any]] | None,
+    extracted_tipo: list[dict[str, Any]] | None,
+    *,
+    locale: str,
+) -> list[dict[str, Any]] | None:
+    """Sincroniza classes do jogo e preserva tags editoriais (Curandeiro, Batedor...)."""
+    localized = localize_tipo(extracted_tipo, locale=locale)
+    if not localized:
+        return existing
+
+    merged = deepcopy(localized)
+    seen = {item.get("type") for item in merged if item.get("type")}
+    extracted_combat = {label for label in seen if label in COMBAT_TIPO_LABELS}
+    existing_labels = {
+        item.get("type") for item in (existing or []) if item.get("type")
+    }
+
+    for item in existing or []:
+        label = item.get("type")
+        if not label or label in seen:
+            continue
+        if label not in EXTRACTED_TIPO_LABELS:
+            # Editorial puro (Curandeiro✨, Batedor, Voador...).
+            merged.append(deepcopy(item))
+            seen.add(label)
+            continue
+        # Combate secundário já curado (ex.: Turma Artilharia+Cavalaria).
+        if (
+            label in COMBAT_TIPO_LABELS
+            and extracted_combat
+            and extracted_combat <= existing_labels
+        ):
+            merged.append(deepcopy(item))
+            seen.add(label)
+    return merged
+
+
 def merge_entity_refs(
     existing: list[dict[str, Any]] | None,
     extracted: list[dict[str, Any]] | None,
@@ -358,7 +426,11 @@ def build_merged_row(
             del merged[field]
 
     if locale_key != "en":
-        merged["tipo"] = deepcopy(extracted.get("tipo") or merged.get("tipo"))
+        merged["tipo"] = merge_tipo(
+            existing.get("tipo"),
+            extracted.get("tipo"),
+            locale=locale_key,
+        )
         merged["multiplicador"] = deepcopy(
             extracted.get("multiplicador") or merged.get("multiplicador")
         )
@@ -374,10 +446,13 @@ def build_merged_row(
         )
     else:
         # EN preserva textos editoriais de panteão/era/construção/multiplicador,
-        # mas sincroniza `tipo` (com rótulos EN históricos como Mythic/Cerco).
-        localized_tipo = localize_tipo(extracted.get("tipo"), locale=locale_key)
-        if localized_tipo:
-            merged["tipo"] = localized_tipo
+        # mas sincroniza `tipo` (com rótulos EN históricos como Mythic/Hero/Cerco)
+        # e mantém tags editoriais como Curandeiro/Batedor.
+        merged["tipo"] = merge_tipo(
+            existing.get("tipo"),
+            extracted.get("tipo"),
+            locale=locale_key,
+        )
 
     for field in STAT_FIELDS:
         if field in merged:

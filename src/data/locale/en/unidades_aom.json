@@ -3615,12 +3615,16 @@
     "ingles": "Pharaoh (Hero)",
     "tipo": [
       {
-        "type": "Curandeiro✨",
-        "icon": ""
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       },
       {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
       }
     ],
     "panteao": [
@@ -3679,16 +3683,20 @@
     "ingles": "Priest (Hero)",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
+      },
+      {
         "type": "Batedor",
         "icon": "aomr_type_scout_icon"
       },
       {
         "type": "Curandeiro✨",
         "icon": ""
-      },
-      {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -3751,12 +3759,12 @@
     "ingles": "Hersir (Hero)",
     "tipo": [
       {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -3871,12 +3879,12 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Batedor",
-        "icon": "aomr_type_scout_icon"
-      },
-      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Batedor",
+        "icon": "aomr_type_scout_icon"
       }
     ],
     "panteao": [
@@ -5308,12 +5316,12 @@
     "ingles": "Murmillo (Hero)",
     "tipo": [
       {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5361,12 +5369,12 @@
     "ingles": "Katapeltes (Hero)",
     "tipo": [
       {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -5429,12 +5437,12 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Cavalaria",
-        "icon": "aomr_type_cavalry_icon"
-      },
-      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Cavalaria",
+        "icon": "aomr_type_cavalry_icon"
       }
     ],
     "panteao": [
@@ -5497,12 +5505,12 @@
         "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Cerco",
-        "icon": "aomr_type_siege_weapon_icon"
-      },
-      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Cerco",
+        "icon": "aomr_type_siege_weapon_icon"
       }
     ],
     "panteao": [
@@ -5545,8 +5553,8 @@
     "comida": 0,
     "madeira": 200,
     "ouro": 175,
-    "favor": 4.1,
-    "custo_total": 379.1,
+    "favor": 4,
+    "custo_total": 379,
     "populacao": 4,
     "tempo_treinamento": 0,
     "velocidade_movimento": 4.1,
@@ -5750,6 +5758,10 @@
     "ingles": "Odysseus (Hero)",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
       }
@@ -5819,6 +5831,10 @@
     "ingles": "Hippolyta (Hero)",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
       }
@@ -5887,6 +5903,10 @@
     "nome": "Chiron (Hero)",
     "ingles": "Chiron (Hero)",
     "tipo": [
+      {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
       {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
@@ -7046,6 +7066,10 @@
     "ingles": "Jiang Ziya (Hero)",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
       }
@@ -7161,6 +7185,10 @@
     "ingles": "Li Jing (Hero)",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
       }
@@ -7210,10 +7238,11 @@
     "comida": 0,
     "madeira": 200,
     "ouro": 300,
-    "custo_total": 500,
+    "custo_total": 508,
     "populacao": 4,
     "tempo_treinamento": 30,
-    "velocidade_movimento": 4.5
+    "velocidade_movimento": 4.5,
+    "favor": 8
   },
   {
     "id": 121,
@@ -7282,12 +7311,12 @@
     "ingles": "Fanatic (Hero)",
     "tipo": [
       {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -7355,12 +7384,12 @@
     "ingles": "Hero of Ragnarok",
     "tipo": [
       {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
-      },
-      {
         "type": "Infantaria",
         "icon": "aomr_type_infantry_icon"
+      },
+      {
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -7399,7 +7428,8 @@
     "madeira": 0,
     "ouro": 40,
     "custo_total": 120,
-    "tempo_treinamento": 0
+    "tempo_treinamento": 0,
+    "favor": 0
   },
   {
     "id": 124,
@@ -8506,12 +8536,12 @@
     "ingles": "Bushi (Hero)",
     "tipo": [
       {
-        "type": "Hero",
-        "icon": "aomr_type_hero_icon"
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       },
       {
-        "type": "Infantaria",
-        "icon": "aomr_type_infantry_icon"
+        "type": "Hero",
+        "icon": "aomr_type_hero_icon"
       }
     ],
     "panteao": [
@@ -8547,7 +8577,7 @@
     ],
     "comida": 0,
     "ouro": 50,
-    "favor": 4,
+    "favor": 2,
     "populacao": 3,
     "tempo_treinamento": 20,
     "velocidade_movimento": 4.2,
@@ -8556,7 +8586,7 @@
     "fraco_contra": "Soldados humanos :aomr_type_human_soldier_icon:",
     "icon": "aomr_bushi_icon",
     "madeira": 60,
-    "custo_total": 114,
+    "custo_total": 112,
     "dano_perfurante": 7
   },
   {
@@ -8682,12 +8712,16 @@
     "ingles": "Onmyōji (Hero)",
     "tipo": [
       {
-        "type": "Curandeiro✨",
-        "icon": ""
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
       },
       {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
+      },
+      {
+        "type": "Curandeiro✨",
+        "icon": ""
       }
     ],
     "panteao": [
@@ -9028,6 +9062,10 @@
     "ingles": "Icarus (Hero)",
     "tipo": [
       {
+        "type": "Artilharia",
+        "icon": "aomr_type_archer_icon"
+      },
+      {
         "type": "Hero",
         "icon": "aomr_type_hero_icon"
       }
@@ -9069,11 +9107,12 @@
     "comida": 0,
     "madeira": 250,
     "ouro": 100,
-    "custo_total": 350,
+    "custo_total": 354,
     "populacao": 2,
     "tempo_treinamento": 25,
     "velocidade_movimento": 4.5,
-    "dano_perfurante": 14
+    "dano_perfurante": 14,
+    "favor": 4
   },
   {
     "id": 157,
