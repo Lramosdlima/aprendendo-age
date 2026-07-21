@@ -938,6 +938,9 @@ export const enMessages: TranslationTree = {
       revealDeckUnitCategory: "Reveal 1 Deck Unit Category",
       revealDeckUnitCategoryHint:
         "After purchasing, click a unit. Its category appears in the modal for this round only.",
+      unlockPreviousAgeUnits: "Unlock 2 Previous-Age Units",
+      unlockPreviousAgeUnitsHint:
+        "Randomly unlocks up to 2 units from previous Ages during this round.",
       effectActive: "Active",
       wins: "Wins",
       losses: "Losses",

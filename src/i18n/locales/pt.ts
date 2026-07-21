@@ -939,6 +939,9 @@ export const ptMessages: TranslationTree = {
       revealDeckUnitCategory: "Revelar Categoria de 1 Unidade do Seu Deck",
       revealDeckUnitCategoryHint:
         "Após resgatar, clique em uma unidade. A categoria dela aparecerá no modal somente nesta rodada.",
+      unlockPreviousAgeUnits: "Desbloquear 2 Unidades de Eras Anteriores",
+      unlockPreviousAgeUnitsHint:
+        "Libera aleatoriamente até 2 unidades bloqueadas de Eras anteriores durante esta rodada.",
       effectActive: "Ativo",
       wins: "Vitórias",
       losses: "Derrotas",

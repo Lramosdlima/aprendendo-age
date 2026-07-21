@@ -20,6 +20,7 @@ export {
   isHeroUnit,
   isHumanSoldierUnit,
   isMythUnit,
+  isUnitFromPreviousEra,
   isUnitEligibleForCurrentEra,
 } from "./filters";
 
@@ -45,6 +46,7 @@ export {
   FAVOR_PER_WIN,
   INITIAL_FAVOR,
   canPurchaseFavorEffect,
+  pickRandomUniqueIds,
   purchaseFavorEffect,
   rewardFavor,
   type FavorEffectId,

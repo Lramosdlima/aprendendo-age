@@ -14,8 +14,10 @@ import {
   isHeroUnit,
   isHumanSoldierUnit,
   isMythUnit,
+  isUnitFromPreviousEra,
   lookupBattleResult,
   pickDefender,
+  pickRandomUniqueIds,
   purchaseFavorEffect,
   resolvePlayerChoice,
   rewardFavor,
@@ -84,6 +86,21 @@ describe("battleGame filters", () => {
     const next = filterDefenderPool(units, 2, used);
     expect(next.every((u) => !used.includes(u.id))).toBe(true);
   });
+
+  it("identifica unidades de Eras anteriores a partir da Heróica", () => {
+    const heroicDeck = filterAttackerPool(units, 1, 3);
+    const previous = heroicDeck.filter((u) => isUnitFromPreviousEra(u, 3));
+    const current = heroicDeck.filter((u) => !isUnitFromPreviousEra(u, 3));
+
+    expect(previous.length).toBeGreaterThan(0);
+    expect(previous.every((u) => u.era?.[0]?.id === 2)).toBe(true);
+    expect(current.some((u) => u.era?.[0]?.id === 3)).toBe(true);
+    expect(
+      filterAttackerPool(units, 1, 2).some((u) =>
+        isUnitFromPreviousEra(u, 2),
+      ),
+    ).toBe(false);
+  });
 });
 
 describe("battleGame lookup", () => {
@@ -117,12 +134,24 @@ describe("battleGame favor economy", () => {
     expect(rewardFavor(INITIAL_FAVOR, "draw")).toBe(10);
   });
 
-  it("cobra 20 para revelar defensor e 10 para revelar unidade", () => {
+  it("cobra os custos configurados para cada efeito", () => {
     expect(FAVOR_EFFECT_COSTS.revealDefenderCategory).toBe(20);
     expect(FAVOR_EFFECT_COSTS.revealDeckUnitCategory).toBe(10);
+    expect(FAVOR_EFFECT_COSTS.unlockPreviousAgeUnits).toBe(30);
     expect(purchaseFavorEffect(20, "revealDefenderCategory")).toBe(0);
     expect(purchaseFavorEffect(10, "revealDeckUnitCategory")).toBe(0);
+    expect(purchaseFavorEffect(30, "unlockPreviousAgeUnits")).toBe(0);
     expect(purchaseFavorEffect(10, "revealDefenderCategory")).toBeNull();
+  });
+
+  it("desbloqueia 2 IDs aleatórios distintos de forma reproduzível", () => {
+    const first = pickRandomUniqueIds([1, 2, 3, 4], 2, createRng(7));
+    const second = pickRandomUniqueIds([1, 2, 3, 4], 2, createRng(7));
+
+    expect(first).toEqual(second);
+    expect(first).toHaveLength(2);
+    expect(new Set(first).size).toBe(2);
+    expect(pickRandomUniqueIds([1], 2, createRng(7))).toEqual([1]);
   });
 });
 

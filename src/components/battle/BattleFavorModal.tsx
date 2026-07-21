@@ -9,9 +9,12 @@ type Props = {
   favor: number;
   defenderRevealed: boolean;
   deckUnitRevealPurchased: boolean;
+  hasLockedPreviousAgeUnits: boolean;
+  previousAgeUnitsUnlocked: boolean;
   onClose: () => void;
   onRevealDefender: () => void;
   onRevealDeckUnit: () => void;
+  onUnlockPreviousAgeUnits: () => void;
 };
 
 export function BattleFavorModal({
@@ -19,9 +22,12 @@ export function BattleFavorModal({
   favor,
   defenderRevealed,
   deckUnitRevealPurchased,
+  hasLockedPreviousAgeUnits,
+  previousAgeUnitsUnlocked,
   onClose,
   onRevealDefender,
   onRevealDeckUnit,
+  onUnlockPreviousAgeUnits,
 }: Props) {
   const { t } = useTranslation();
   const favorIcon = getIconFieldUrl("favoraom");
@@ -66,6 +72,19 @@ export function BattleFavorModal({
           purchased={deckUnitRevealPurchased}
           favorIcon={favorIcon}
           onClick={onRevealDeckUnit}
+        />
+        <EffectButton
+          title={t("pages.battle.unlockPreviousAgeUnits")}
+          description={t("pages.battle.unlockPreviousAgeUnitsHint")}
+          cost={FAVOR_EFFECT_COSTS.unlockPreviousAgeUnits}
+          disabled={
+            !hasLockedPreviousAgeUnits ||
+            previousAgeUnitsUnlocked ||
+            favor < FAVOR_EFFECT_COSTS.unlockPreviousAgeUnits
+          }
+          purchased={previousAgeUnitsUnlocked}
+          favorIcon={favorIcon}
+          onClick={onUnlockPreviousAgeUnits}
         />
       </div>
     </ModalApp>

@@ -6,6 +6,7 @@ type Props = {
   icon?: string | null;
   selected?: boolean;
   disabled?: boolean;
+  locked?: boolean;
   size?: "sm" | "md" | "lg";
   onClick?: () => void;
   className?: string;
@@ -22,6 +23,7 @@ export function BattleUnitPortrait({
   icon,
   selected,
   disabled,
+  locked,
   size = "md",
   onClick,
   className,
@@ -31,7 +33,15 @@ export function BattleUnitPortrait({
   const body = (
     <>
       {src ? (
-        <img src={src} alt="" aria-hidden className="size-full object-contain p-1.5" />
+        <img
+          src={src}
+          alt=""
+          aria-hidden
+          className={cn(
+            "size-full object-contain p-1.5 transition",
+            locked && "grayscale opacity-45",
+          )}
+        />
       ) : (
         <span className="px-1 text-center text-[10px] leading-tight text-zinc-400">{nome}</span>
       )}
@@ -51,11 +61,30 @@ export function BattleUnitPortrait({
           selected
             ? "border-amber-400 ring-2 ring-amber-400/40"
             : "border-aom-border hover:border-amber-400/60 hover:bg-zinc-900",
-          disabled && "cursor-not-allowed opacity-40 hover:border-aom-border",
+          disabled && !locked && "cursor-not-allowed opacity-40 hover:border-aom-border",
+          locked &&
+            "cursor-not-allowed border-zinc-700 bg-zinc-950 hover:border-zinc-700",
           className,
         )}
       >
         {body}
+        {locked ? (
+          <span
+            aria-hidden
+            className="absolute inset-0 flex items-center justify-center bg-black/30"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="size-6 text-zinc-200 drop-shadow"
+            >
+              <rect x="5" y="10" width="14" height="11" rx="2" />
+              <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+            </svg>
+          </span>
+        ) : null}
         <span className="sr-only">{nome}</span>
       </button>
     );

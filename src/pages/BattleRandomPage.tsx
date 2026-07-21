@@ -14,6 +14,8 @@ import {
   buildRoundPlan,
   filterAttackerPool,
   INITIAL_FAVOR,
+  isUnitFromPreviousEra,
+  pickRandomUniqueIds,
   pickDefender,
   purchaseFavorEffect,
   resolvePlayerChoice,
@@ -148,6 +150,9 @@ function BattleRandomSession({
   const [revealedAttackerId, setRevealedAttackerId] = useState<number | null>(
     null,
   );
+  const [unlockedPreviousAgeUnitIds, setUnlockedPreviousAgeUnitIds] = useState<
+    number[]
+  >([]);
 
   const currentEraId = (plan[roundIndex]?.eraId ?? 2) as PlayableEraId;
   const currentEra = eraById.get(currentEraId);
@@ -155,6 +160,20 @@ function BattleRandomSession({
   const attackerPool = useMemo(
     () => filterAttackerPool(unidades, pantheon.id, currentEraId),
     [unidades, pantheon.id, currentEraId],
+  );
+  const previousAgeUnitIds = useMemo(
+    () =>
+      attackerPool
+        .filter((unit) => isUnitFromPreviousEra(unit, currentEraId))
+        .map((unit) => unit.id),
+    [attackerPool, currentEraId],
+  );
+  const unlockedPreviousAgeUnitIdSet = useMemo(
+    () => new Set(unlockedPreviousAgeUnitIds),
+    [unlockedPreviousAgeUnitIds],
+  );
+  const lockedPreviousAgeUnitIds = previousAgeUnitIds.filter(
+    (id) => !unlockedPreviousAgeUnitIdSet.has(id),
   );
 
   const defender = defenderId != null ? unidadeById.get(defenderId) : undefined;
@@ -187,6 +206,21 @@ function BattleRandomSession({
     if (nextFavor == null || deckUnitRevealPurchased) return;
     setFavor(nextFavor);
     setRevealDeckUnitArmed(true);
+    setFavorModalOpen(false);
+  };
+
+  const buyPreviousAgeUnlock = () => {
+    const nextFavor = purchaseFavorEffect(favor, "unlockPreviousAgeUnits");
+    if (
+      nextFavor == null ||
+      unlockedPreviousAgeUnitIds.length > 0 ||
+      lockedPreviousAgeUnitIds.length === 0
+    ) {
+      return;
+    }
+    const unlocked = pickRandomUniqueIds(lockedPreviousAgeUnitIds, 2);
+    setFavor(nextFavor);
+    setUnlockedPreviousAgeUnitIds(unlocked);
     setFavorModalOpen(false);
   };
 
@@ -226,6 +260,7 @@ function BattleRandomSession({
     setRevealDefenderCategory(false);
     setRevealDeckUnitArmed(false);
     setRevealedAttackerId(null);
+    setUnlockedPreviousAgeUnitIds([]);
     setFavorModalOpen(false);
 
     if (willAgeUp(plan, roundIndex)) {
@@ -372,7 +407,7 @@ function BattleRandomSession({
             type="button"
             disabled={phase !== "playing"}
             onClick={() => setFavorModalOpen(true)}
-            className="mt-2 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-950/35 px-3 py-1.5 text-sm font-semibold text-blue-100 shadow-sm shadow-blue-950/40 transition hover:border-blue-300/55 hover:bg-blue-950/55 focus:outline-none focus:ring-2 focus:ring-blue-400/30 disabled:cursor-not-allowed disabled:opacity-55"
+            className="mt-2 inline-flex cursor-pointer items-center gap-2 rounded-full border border-blue-400/30 bg-blue-950/35 px-3 py-1.5 text-sm font-semibold text-blue-100 shadow-sm shadow-blue-950/40 transition hover:border-blue-300/55 hover:bg-blue-950/55 focus:outline-none focus:ring-2 focus:ring-blue-400/30 disabled:cursor-not-allowed disabled:opacity-55"
           >
             {getIconFieldUrl("favoraom") ? (
               <img
@@ -433,18 +468,24 @@ function BattleRandomSession({
           </p>
           <p className="mt-1 text-sm text-zinc-400">{t("pages.battle.pickUnitHint")}</p>
           <ul className="mt-4 grid grid-cols-4 gap-2 sm:grid-cols-5 md:grid-cols-6">
-            {attackerPool.map((u) => (
-              <li key={u.id} className="flex justify-center">
-                <BattleUnitPortrait
-                  nome={u.nome}
-                  icon={u.icon}
-                  size="sm"
-                  disabled={phase !== "playing"}
-                  selected={pendingAttackerId === u.id}
-                  onClick={() => selectAttacker(u.id)}
-                />
-              </li>
-            ))}
+            {attackerPool.map((u) => {
+              const locked =
+                isUnitFromPreviousEra(u, currentEraId) &&
+                !unlockedPreviousAgeUnitIdSet.has(u.id);
+              return (
+                <li key={u.id} className="flex justify-center">
+                  <BattleUnitPortrait
+                    nome={u.nome}
+                    icon={u.icon}
+                    size="sm"
+                    locked={locked}
+                    disabled={phase !== "playing" || locked}
+                    selected={pendingAttackerId === u.id}
+                    onClick={() => selectAttacker(u.id)}
+                  />
+                </li>
+              );
+            })}
           </ul>
           {attackerPool.length === 0 ? (
             <p className="mt-4 text-sm text-rose-300">{t("pages.battle.emptyDeck")}</p>
@@ -527,9 +568,12 @@ function BattleRandomSession({
         favor={favor}
         defenderRevealed={revealDefenderCategory}
         deckUnitRevealPurchased={deckUnitRevealPurchased}
+        hasLockedPreviousAgeUnits={lockedPreviousAgeUnitIds.length > 0}
+        previousAgeUnitsUnlocked={unlockedPreviousAgeUnitIds.length > 0}
         onClose={() => setFavorModalOpen(false)}
         onRevealDefender={buyDefenderReveal}
         onRevealDeckUnit={buyDeckUnitReveal}
+        onUnlockPreviousAgeUnits={buyPreviousAgeUnlock}
       />
 
       <BattleAgeUpOverlay

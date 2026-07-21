@@ -17,6 +17,16 @@ export function isUnitEligibleForCurrentEra(
   return eraId >= 2 && eraId <= currentEraId;
 }
 
+/** Unidade humana disponível, mas pertencente a uma Era anterior à atual. */
+export function isUnitFromPreviousEra(
+  unit: Unidade,
+  currentEraId: PlayableEraId,
+): boolean {
+  const eraId = firstNumId(unit.era);
+  if (eraId == null) return false;
+  return eraId >= 2 && eraId < currentEraId;
+}
+
 export function isMythUnit(unit: Unidade): boolean {
   return getDefenderTypeIds(unit).has("unidade_mitica");
 }
