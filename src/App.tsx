@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { AppShell } from "@/components/layout/AppShell";
@@ -7,6 +7,8 @@ import { AldeaoComparePage } from "@/pages/AldeaoComparePage";
 import { AldeaoDetailPage } from "@/pages/AldeaoDetailPage";
 import { AldeoesPage } from "@/pages/AldeoesPage";
 import { AstecasPage } from "@/pages/AstecasPage";
+import { BattlePage } from "@/pages/BattlePage";
+import { BattlePantheonPage } from "@/pages/BattlePantheonPage";
 import { ClansPage } from "@/pages/ClansPage";
 import { ClanDetailPage } from "@/pages/ClanDetailPage";
 import { ConstrucaoDetailPage } from "@/pages/ConstrucaoDetailPage";
@@ -48,6 +50,18 @@ import { TecnologiasPage } from "@/pages/TecnologiasPage";
 import { UnidadeComparePage } from "@/pages/UnidadeComparePage";
 import { UnidadeDetailPage } from "@/pages/UnidadeDetailPage";
 import { UnidadesPage } from "@/pages/UnidadesPage";
+
+const BattleRandomPage = lazy(() =>
+  import("@/pages/BattleRandomPage").then((m) => ({ default: m.BattleRandomPage })),
+);
+
+function BattleRandomFallback() {
+  return (
+    <div className="flex min-h-48 items-center justify-center text-sm text-zinc-400">
+      Carregando…
+    </div>
+  );
+}
 
 export default function App() {
   useEffect(() => startAppUpdateWatcher(), []);
@@ -107,6 +121,16 @@ export default function App() {
           <Route path="starts" element={<StartsPage />} />
           <Route path="starts/:slug" element={<StartDetailPage />} />
           <Route path="admin/novo-start" element={<SecretStartBuilderPage />} />
+          <Route path="battle" element={<BattlePage />} />
+          <Route path="battle/random" element={<BattlePantheonPage />} />
+          <Route
+            path="battle/random/:pantheonSlug"
+            element={
+              <Suspense fallback={<BattleRandomFallback />}>
+                <BattleRandomPage />
+              </Suspense>
+            }
+          />
           <Route path="rank" element={<RankPage />} />
           <Route path="rank/form" element={<FormRankPage />} />
           <Route path="jogadores-aom" element={<JogadoresAomPage />} />

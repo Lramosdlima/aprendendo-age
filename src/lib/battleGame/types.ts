@@ -1,0 +1,33 @@
+import type { PrecomputedBattleMode } from "@/lib/battleSimulator/precompute";
+
+export type PlayableEraId = 2 | 3 | 4;
+
+export type RoundPlan = {
+  index: number;
+  eraId: PlayableEraId;
+};
+
+export type RoundOutcome = "win" | "loss" | "draw";
+
+export type RoundRecord = {
+  index: number;
+  eraId: PlayableEraId;
+  defenderId: number;
+  attackerId: number;
+  outcome: RoundOutcome;
+  mode: PrecomputedBattleMode;
+};
+
+export type RunSummary = {
+  totalRounds: number;
+  wins: number;
+  losses: number;
+  draws: number;
+  byEra: Record<
+    PlayableEraId,
+    { rounds: number; wins: number; losses: number; draws: number }
+  >;
+  history: RoundRecord[];
+};
+
+export type BattlePhase = "playing" | "result" | "age_up" | "summary";

@@ -200,6 +200,8 @@ export type Unidade = {
   dano_cortante?: number;
   dano_perfurante?: number;
   dano_contundente?: number;
+  /** Alias legado de crush em alguns registros do JSON. */
+  dano_contusao?: number;
   dano_divino?: number;
   dano_area?: number;
   alcance?: number;
