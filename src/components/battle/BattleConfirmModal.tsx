@@ -8,11 +8,21 @@ type Props = {
   open: boolean;
   attacker: Unidade | null;
   defender: Unidade | null;
+  revealAttackerCategory: boolean;
+  revealDefenderCategory: boolean;
   onClose: () => void;
   onConfirm: () => void;
 };
 
-export function BattleConfirmModal({ open, attacker, defender, onClose, onConfirm }: Props) {
+export function BattleConfirmModal({
+  open,
+  attacker,
+  defender,
+  revealAttackerCategory,
+  revealDefenderCategory,
+  onClose,
+  onConfirm,
+}: Props) {
   const { t } = useTranslation();
   if (!attacker || !defender) return null;
 
@@ -31,7 +41,9 @@ export function BattleConfirmModal({ open, attacker, defender, onClose, onConfir
           </p>
           <BattleUnitPortrait nome={attacker.nome} icon={attacker.icon} size="lg" />
           <p className="max-w-28 text-sm font-medium text-amber-50">{attacker.nome}</p>
-          <UnidadeTipoLine tipo={attacker.tipo} colored className="justify-center" />
+          {revealAttackerCategory ? (
+            <UnidadeTipoLine tipo={attacker.tipo} colored className="justify-center" />
+          ) : null}
         </div>
         <p className="font-[family-name:var(--font-display)] text-2xl font-bold text-amber-400">VS</p>
         <div className="flex flex-col items-center gap-2 text-center">
@@ -40,7 +52,9 @@ export function BattleConfirmModal({ open, attacker, defender, onClose, onConfir
           </p>
           <BattleUnitPortrait nome={defender.nome} icon={defender.icon} size="lg" />
           <p className="max-w-28 text-sm font-medium text-amber-50">{defender.nome}</p>
-          <UnidadeTipoLine tipo={defender.tipo} colored className="justify-center" />
+          {revealDefenderCategory ? (
+            <UnidadeTipoLine tipo={defender.tipo} colored className="justify-center" />
+          ) : null}
         </div>
       </div>
 

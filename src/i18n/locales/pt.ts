@@ -929,6 +929,17 @@ export const ptMessages: TranslationTree = {
       noDefender: "Nenhum defensor sorteado.",
       currentAge: "Era atual",
       roundProgress: "Rodada {{current}} / {{total}}",
+      favor: "Favor",
+      favorShopTitle: "Efeitos de Favor",
+      favorShopDescription:
+        "Gaste Favor para revelar informações escondidas nesta rodada.",
+      revealDefenderCategory: "Revelar Categoria do Defensor",
+      revealDefenderCategoryHint:
+        "Mostra a categoria do defensor no campo e no modal de confirmação durante esta rodada.",
+      revealDeckUnitCategory: "Revelar Categoria de 1 Unidade do Seu Deck",
+      revealDeckUnitCategoryHint:
+        "Após resgatar, clique em uma unidade. A categoria dela aparecerá no modal somente nesta rodada.",
+      effectActive: "Ativo",
       wins: "Vitórias",
       losses: "Derrotas",
       draws: "Empates",

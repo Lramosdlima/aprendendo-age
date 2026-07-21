@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from "react-router-dom";
 
 import { BattleAgeUpOverlay } from "@/components/battle/BattleAgeUpOverlay";
 import { BattleConfirmModal } from "@/components/battle/BattleConfirmModal";
+import { BattleFavorModal } from "@/components/battle/BattleFavorModal";
 import { BattleUnitPortrait } from "@/components/battle/BattleUnitPortrait";
 import { UnidadeTipoLine } from "@/components/unidade/UnidadeTipoLine";
 import type { Unidade } from "@/data/catalog";
@@ -12,8 +13,11 @@ import {
   buildBattleResultIndex,
   buildRoundPlan,
   filterAttackerPool,
+  INITIAL_FAVOR,
   pickDefender,
+  purchaseFavorEffect,
   resolvePlayerChoice,
+  rewardFavor,
   summarizeRun,
   willAgeUp,
   type BattlePhase,
@@ -137,6 +141,13 @@ function BattleRandomSession({
   const [history, setHistory] = useState<RoundRecord[]>([]);
   const [lastResult, setLastResult] = useState<LastResult | null>(null);
   const [ageUpEraId, setAgeUpEraId] = useState<PlayableEraId | null>(null);
+  const [favor, setFavor] = useState(INITIAL_FAVOR);
+  const [favorModalOpen, setFavorModalOpen] = useState(false);
+  const [revealDefenderCategory, setRevealDefenderCategory] = useState(false);
+  const [revealDeckUnitArmed, setRevealDeckUnitArmed] = useState(false);
+  const [revealedAttackerId, setRevealedAttackerId] = useState<number | null>(
+    null,
+  );
 
   const currentEraId = (plan[roundIndex]?.eraId ?? 2) as PlayableEraId;
   const currentEra = eraById.get(currentEraId);
@@ -153,6 +164,31 @@ function BattleRandomSession({
   const wins = history.filter((h) => h.outcome === "win").length;
   const losses = history.filter((h) => h.outcome === "loss").length;
   const draws = history.filter((h) => h.outcome === "draw").length;
+  const deckUnitRevealPurchased =
+    revealDeckUnitArmed || revealedAttackerId != null;
+
+  const selectAttacker = (attackerId: number) => {
+    setPendingAttackerId(attackerId);
+    if (revealDeckUnitArmed && revealedAttackerId == null) {
+      setRevealedAttackerId(attackerId);
+      setRevealDeckUnitArmed(false);
+    }
+  };
+
+  const buyDefenderReveal = () => {
+    const nextFavor = purchaseFavorEffect(favor, "revealDefenderCategory");
+    if (nextFavor == null || revealDefenderCategory) return;
+    setFavor(nextFavor);
+    setRevealDefenderCategory(true);
+  };
+
+  const buyDeckUnitReveal = () => {
+    const nextFavor = purchaseFavorEffect(favor, "revealDeckUnitCategory");
+    if (nextFavor == null || deckUnitRevealPurchased) return;
+    setFavor(nextFavor);
+    setRevealDeckUnitArmed(true);
+    setFavorModalOpen(false);
+  };
 
   const confirmAttack = useCallback(() => {
     if (!pendingAttacker || !defender || phase !== "playing") return;
@@ -175,6 +211,7 @@ function BattleRandomSession({
       attacker: pendingAttacker,
       defender,
     });
+    setFavor((current) => rewardFavor(current, resolved.outcome));
     setPendingAttackerId(null);
     setPhase("result");
   }, [pendingAttacker, defender, phase, index, roundIndex, currentEraId]);
@@ -185,6 +222,11 @@ function BattleRandomSession({
       setPhase("summary");
       return;
     }
+
+    setRevealDefenderCategory(false);
+    setRevealDeckUnitArmed(false);
+    setRevealedAttackerId(null);
+    setFavorModalOpen(false);
 
     if (willAgeUp(plan, roundIndex)) {
       setAgeUpEraId(plan[nextIndex]!.eraId);
@@ -326,6 +368,25 @@ function BattleRandomSession({
               total: String(plan.length),
             })}
           </p>
+          <button
+            type="button"
+            disabled={phase !== "playing"}
+            onClick={() => setFavorModalOpen(true)}
+            className="mt-2 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-950/35 px-3 py-1.5 text-sm font-semibold text-blue-100 shadow-sm shadow-blue-950/40 transition hover:border-blue-300/55 hover:bg-blue-950/55 focus:outline-none focus:ring-2 focus:ring-blue-400/30 disabled:cursor-not-allowed disabled:opacity-55"
+          >
+            {getIconFieldUrl("favoraom") ? (
+              <img
+                src={getIconFieldUrl("favoraom")}
+                alt=""
+                aria-hidden
+                className="size-5 object-contain"
+              />
+            ) : null}
+            <span className="tabular-nums">{favor}</span>
+            <span className="font-medium text-blue-200/75">
+              {t("pages.battle.favor")}
+            </span>
+          </button>
         </div>
         <div className="flex flex-wrap items-center gap-2 text-sm">
           <ScorePill label={t("pages.battle.wins")} value={wins} tone="win" />
@@ -380,7 +441,7 @@ function BattleRandomSession({
                   size="sm"
                   disabled={phase !== "playing"}
                   selected={pendingAttackerId === u.id}
-                  onClick={() => setPendingAttackerId(u.id)}
+                  onClick={() => selectAttacker(u.id)}
                 />
               </li>
             ))}
@@ -404,7 +465,13 @@ function BattleRandomSession({
             <div className="mt-4 flex flex-col items-center gap-3 text-center">
               <BattleUnitPortrait nome={defender.nome} icon={defender.icon} size="lg" />
               <p className="font-semibold text-amber-50">{defender.nome}</p>
-              <UnidadeTipoLine tipo={defender.tipo} colored className="justify-center" />
+              {revealDefenderCategory ? (
+                <UnidadeTipoLine
+                  tipo={defender.tipo}
+                  colored
+                  className="justify-center"
+                />
+              ) : null}
               {firstNome(defender.panteao) ? (
                 <p className="text-xs text-zinc-400">
                   <NotionText text={firstNome(defender.panteao)!} />
@@ -446,8 +513,23 @@ function BattleRandomSession({
         open={pendingAttackerId != null && phase === "playing"}
         attacker={pendingAttacker ?? null}
         defender={defender ?? null}
+        revealAttackerCategory={
+          pendingAttackerId != null &&
+          pendingAttackerId === revealedAttackerId
+        }
+        revealDefenderCategory={revealDefenderCategory}
         onClose={() => setPendingAttackerId(null)}
         onConfirm={confirmAttack}
+      />
+
+      <BattleFavorModal
+        open={favorModalOpen && phase === "playing"}
+        favor={favor}
+        defenderRevealed={revealDefenderCategory}
+        deckUnitRevealPurchased={deckUnitRevealPurchased}
+        onClose={() => setFavorModalOpen(false)}
+        onRevealDefender={buyDefenderReveal}
+        onRevealDeckUnit={buyDeckUnitReveal}
       />
 
       <BattleAgeUpOverlay

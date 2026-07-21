@@ -928,6 +928,17 @@ export const enMessages: TranslationTree = {
       noDefender: "No defender was drawn.",
       currentAge: "Current Age",
       roundProgress: "Round {{current}} / {{total}}",
+      favor: "Favor",
+      favorShopTitle: "Favor Effects",
+      favorShopDescription:
+        "Spend Favor to reveal hidden information during this round.",
+      revealDefenderCategory: "Reveal Defender Category",
+      revealDefenderCategoryHint:
+        "Shows the defender category on the field and confirmation modal during this round.",
+      revealDeckUnitCategory: "Reveal 1 Deck Unit Category",
+      revealDeckUnitCategoryHint:
+        "After purchasing, click a unit. Its category appears in the modal for this round only.",
+      effectActive: "Active",
       wins: "Wins",
       losses: "Losses",
       draws: "Draws",

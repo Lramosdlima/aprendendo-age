@@ -9,12 +9,16 @@ import {
   createRng,
   filterAttackerPool,
   filterDefenderPool,
+  FAVOR_EFFECT_COSTS,
+  INITIAL_FAVOR,
   isHeroUnit,
   isHumanSoldierUnit,
   isMythUnit,
   lookupBattleResult,
   pickDefender,
+  purchaseFavorEffect,
   resolvePlayerChoice,
+  rewardFavor,
   summarizeRun,
   willAgeUp,
   type RoundRecord,
@@ -102,6 +106,23 @@ describe("battleGame lookup", () => {
   it("empata quando atacante e defensor são a mesma unidade", () => {
     const same = resolvePlayerChoice(index, 1, 1);
     expect(same?.outcome).toBe("draw");
+  });
+});
+
+describe("battleGame favor economy", () => {
+  it("começa com 10 e concede mais 10 somente em vitória", () => {
+    expect(INITIAL_FAVOR).toBe(10);
+    expect(rewardFavor(INITIAL_FAVOR, "win")).toBe(20);
+    expect(rewardFavor(INITIAL_FAVOR, "loss")).toBe(10);
+    expect(rewardFavor(INITIAL_FAVOR, "draw")).toBe(10);
+  });
+
+  it("cobra 20 para revelar defensor e 10 para revelar unidade", () => {
+    expect(FAVOR_EFFECT_COSTS.revealDefenderCategory).toBe(20);
+    expect(FAVOR_EFFECT_COSTS.revealDeckUnitCategory).toBe(10);
+    expect(purchaseFavorEffect(20, "revealDefenderCategory")).toBe(0);
+    expect(purchaseFavorEffect(10, "revealDeckUnitCategory")).toBe(0);
+    expect(purchaseFavorEffect(10, "revealDefenderCategory")).toBeNull();
   });
 });
 

@@ -39,3 +39,13 @@ export {
   resolvePlayerChoice,
   summarizeRun,
 } from "./run";
+
+export {
+  FAVOR_EFFECT_COSTS,
+  FAVOR_PER_WIN,
+  INITIAL_FAVOR,
+  canPurchaseFavorEffect,
+  purchaseFavorEffect,
+  rewardFavor,
+  type FavorEffectId,
+} from "./economy";
