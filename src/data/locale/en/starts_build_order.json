@@ -7921,5 +7921,173 @@
     },
     "slug": "quetzalcoatl-eco-todos-upgrades-do-calpulli-husksuppe",
     "pantheon": "Aztecs"
+  },
+  {
+    "status": "new",
+    "id": 38,
+    "titulo": "Tezcatlipoca (Upgrades :aomr_calpulli_lumber_outpost_icon::aomr_calpulli_livestock_pen_icon::aomr_calpulli_craft_workshop_icon: from Calpulli :aomr_calpulli_icon:) by HuskSuppe",
+    "author": [
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
+    ],
+    "god": [
+      "Tezcatlipoca"
+    ],
+    "image": "aomr_tezcatlipoca_icon",
+    "youtube": [],
+    "descricao_curta": "Tezcatlipoca Build Order with Calpulli upgrades by HuskSuppe",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Starts with 4 Colonists + 1 Quimchim Spy"
+            }
+          ],
+          "table": [
+            {
+              "description": "4 initial Colonists on wood + Calpulli",
+              "food": null,
+              "wood": "4",
+              "gold": null,
+              "favor": null,
+              "pop": "5/15",
+              "type": null
+            },
+            {
+              "description": "Upgrade \"Calpulli from \"Firewood Outpost\" :aomr_calpulli_lumber_outpost_icon: into wood",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+3 Colonist on food + Calpulli",
+              "food": "3",
+              "wood": "4",
+              "gold": null,
+              "favor": null,
+              "pop": "8/15",
+              "type": null
+            },
+            {
+              "description": "Upgrade Calpulli from \"Corral\" :aomr_calpulli_livestock_pen_icon: for food",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+3 Colonist on food + Calpulli",
+              "food": "6",
+              "wood": "4",
+              "gold": null,
+              "favor": null,
+              "pop": "11/15",
+              "type": null
+            },
+            {
+              "description": "Build House with wood Colonist",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "2 Colonists on gold + Calpulli",
+              "food": "6",
+              "wood": "4",
+              "gold": "2",
+              "favor": null,
+              "pop": "13/15",
+              "type": null
+            },
+            {
+              "description": "Upgrade Calpulli from \"Craft Workshop\" :aomr_calpulli_craft_workshop_icon: to gold",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+1 Colonist on gold",
+              "food": "6",
+              "wood": "4",
+              "gold": "3",
+              "favor": null,
+              "pop": "14/15",
+              "type": null
+            },
+            {
+              "description": "+1 Colonist on food + Calpulli",
+              "food": "7",
+              "wood": "4",
+              "gold": "3",
+              "favor": null,
+              "pop": "15/25",
+              "type": null
+            },
+            {
+              "description": "Next 2 Colonists on Temple then gold (<code>≈3:30</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "Rising Age by Huehuecóyotl (defensive)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Colonists disposition",
+              "food": "7",
+              "wood": "5",
+              "gold": "5",
+              "favor": null,
+              "pop": "18/25",
+              "type": null
+            },
+            {
+              "description": "UP <highlight-pink>Pickaxe</highlight-pink> :aomr_pickaxe_icon:",
+              "food": "7",
+              "wood": "5",
+              "gold": "5",
+              "favor": null,
+              "pop": "18/25",
+              "type": "hint"
+            },
+            {
+              "description": "War Priest",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            }
+          ]
+        }
+      ]
+    },
+    "slug": "tezcatlipoca-por-husksuppe-husksuppe",
+    "pantheon": "Aztecs"
   }
 ]

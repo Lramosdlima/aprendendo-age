@@ -7919,5 +7919,173 @@
     },
     "slug": "quetzalcoatl-eco-todos-upgrades-do-calpulli-husksuppe",
     "pantheon": "Astecas"
+  },
+  {
+    "status": "new",
+    "id": 38,
+    "titulo": "Tezcatlipoca (Upgrades :aomr_calpulli_lumber_outpost_icon::aomr_calpulli_livestock_pen_icon::aomr_calpulli_craft_workshop_icon: do Calpulli :aomr_calpulli_icon:) por HuskSuppe",
+    "author": [
+      {
+        "name": "HuskSuppe",
+        "imageUrl": "https://yt3.googleusercontent.com/LSsFrC1RmJi-mqiNTmC5W2eDMShIq3kDKb0kEEx3QMlYPZmsqAc0i1cDdGoval6zAmlveh2HwQ=s160-c-k-c0x00ffffff-no-rj"
+      }
+    ],
+    "god": [
+      "Tezcatlipoca"
+    ],
+    "image": "aomr_tezcatlipoca_icon",
+    "youtube": [],
+    "descricao_curta": "Tezcatlipoca Build Order com upgrades do Calpulli por HuskSuppe",
+    "structured": {
+      "segments": [
+        {
+          "lead": [
+            {
+              "kind": "callout",
+              "text": "Começa com 4 Colonos + 1 Espião Quimchim"
+            }
+          ],
+          "table": [
+            {
+              "description": "4 colonos iniciais na madeira + Calpulli",
+              "food": null,
+              "wood": "4",
+              "gold": null,
+              "favor": null,
+              "pop": "5/15",
+              "type": null
+            },
+            {
+              "description": "Faça o upgrade \"Calpulli do \"Posto Avançado de Lenha\" :aomr_calpulli_lumber_outpost_icon: na madeira",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+3 Colono na comida + Calpulli",
+              "food": "3",
+              "wood": "4",
+              "gold": null,
+              "favor": null,
+              "pop": "8/15",
+              "type": null
+            },
+            {
+              "description": "Faça upgrade do Calpulli do \"Curral\" :aomr_calpulli_livestock_pen_icon: para comida",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+3 Colono na comida + Calpulli",
+              "food": "6",
+              "wood": "4",
+              "gold": null,
+              "favor": null,
+              "pop": "11/15",
+              "type": null
+            },
+            {
+              "description": "Sobe Casa com Colono da madeira",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "2 Colonos no ouro + Calpulli",
+              "food": "6",
+              "wood": "4",
+              "gold": "2",
+              "favor": null,
+              "pop": "13/15",
+              "type": null
+            },
+            {
+              "description": "Upgrade do Calpulli da \"Oficina de Artesanato\" :aomr_calpulli_craft_workshop_icon: para ouro",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
+            },
+            {
+              "description": "+1 Colono no ouro",
+              "food": "6",
+              "wood": "4",
+              "gold": "3",
+              "favor": null,
+              "pop": "14/15",
+              "type": null
+            },
+            {
+              "description": "+1 Colono na comida + Calpulli",
+              "food": "7",
+              "wood": "4",
+              "gold": "3",
+              "favor": null,
+              "pop": "15/25",
+              "type": null
+            },
+            {
+              "description": "Próximos 2 Colonos no Templo depois ouro (<code>≈3:30</code>)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "blue"
+            },
+            {
+              "description": "Subindo de Era por Huehuecóyotl (defensivo)",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "Colonos disposição",
+              "food": "7",
+              "wood": "5",
+              "gold": "5",
+              "favor": null,
+              "pop": "18/25",
+              "type": null
+            },
+            {
+              "description": "UP da <highlight-pink>Picareta</highlight-pink> :aomr_pickaxe_icon:",
+              "food": "7",
+              "wood": "5",
+              "gold": "5",
+              "favor": null,
+              "pop": "18/25",
+              "type": "hint"
+            },
+            {
+              "description": "Sarcerdote de Guerra",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": null
+            }
+          ]
+        }
+      ]
+    },
+    "slug": "tezcatlipoca-por-husksuppe-husksuppe",
+    "pantheon": "Astecas"
   }
 ]
