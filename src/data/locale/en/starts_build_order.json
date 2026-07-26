@@ -7985,7 +7985,7 @@
               "type": "hint"
             },
             {
-              "description": "+3 Colonist on food + Calpulli",
+              "description": "+3 Colonist on food",
               "food": "6",
               "wood": "4",
               "gold": null,
@@ -8030,7 +8030,7 @@
               "type": null
             },
             {
-              "description": "+1 Colonist on food + Calpulli",
+              "description": "+1 Colonist on food",
               "food": "7",
               "wood": "4",
               "gold": "3",
@@ -8075,13 +8075,31 @@
               "type": "hint"
             },
             {
-              "description": "War Priest",
+              "description": "Train 3 War Priests to collect Relics and defend yourself",
               "food": null,
               "wood": null,
               "gold": null,
               "favor": null,
               "pop": null,
               "type": null
+            },
+            {
+              "description": "<strong>Rising Age</strong>",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "The goal is to follow the line of <highlight-pink>Tezcatlipoca</highlight-pink> :aomr_tezcatlipoca_icon: and rise to the Heroic age to spam Jaguar Riders",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
             }
           ]
         }

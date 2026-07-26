@@ -7983,7 +7983,7 @@
               "type": "hint"
             },
             {
-              "description": "+3 Colono na comida + Calpulli",
+              "description": "+3 Colono na comida",
               "food": "6",
               "wood": "4",
               "gold": null,
@@ -8028,7 +8028,7 @@
               "type": null
             },
             {
-              "description": "+1 Colono na comida + Calpulli",
+              "description": "+1 Colono na comida",
               "food": "7",
               "wood": "4",
               "gold": "3",
@@ -8073,13 +8073,31 @@
               "type": "hint"
             },
             {
-              "description": "Sarcerdote de Guerra",
+              "description": "Treine 3 Sarcerdote de Guerra",
               "food": null,
               "wood": null,
               "gold": null,
               "favor": null,
               "pop": null,
               "type": null
+            },
+            {
+              "description": "<strong>Subiu Era</strong>",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "pink"
+            },
+            {
+              "description": "O objetivo é seguir pela linha de <highlight-pink>Tezcatlipoca</highlight-pink> :aomr_tezcatlipoca_icon: e subir Heróica para spam de Cavaleiro Jaguar",
+              "food": null,
+              "wood": null,
+              "gold": null,
+              "favor": null,
+              "pop": null,
+              "type": "hint"
             }
           ]
         }
