@@ -95,6 +95,8 @@ export const ptMessages: TranslationTree = {
     map2d: "Mapa em 2D",
     map3d: "Mapa em 3D",
     mapPreview: "Mapa Preview",
+    mapPreviewInGame: "No Jogo",
+    mapPreview3dVision: "Visão 3d",
     god: "Deus",
     costAndTime: "Custo e tempo",
     combatDefense: "Combate / defesa",

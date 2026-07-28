@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
 import { AppPageDetail } from "@/components/layout/AppPageDetail";
@@ -8,34 +8,167 @@ import { Section } from "@/components/ui/Section";
 import { entityDisplayDescription } from "@/data/catalogLocale";
 import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
+import { cn } from "@/lib/cn";
 import { getMapa3dUrl, getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
 import { formatMapaOrigem, mapaOrigemTitleIcons } from "@/lib/mapaOrigemIcons";
 
-function MapaImageSection({
-  src,
+type PreviewTabId = "ingame" | "vision3d";
+
+function MapaPreviewSection({
   mapName,
-  title,
-  hideUntilLoaded = false,
+  previewUrl,
+  map3dUrl,
 }: {
-  src: string;
   mapName: string;
-  title: string;
-  hideUntilLoaded?: boolean;
+  previewUrl?: string;
+  map3dUrl?: string;
 }) {
-  const [loaded, setLoaded] = useState(!hideUntilLoaded);
+  const { t } = useTranslation();
+  const [previewFailed, setPreviewFailed] = useState(false);
+  const [map3dFailed, setMap3dFailed] = useState(false);
+  const [tab, setTab] = useState<PreviewTabId>("ingame");
+  const trackRef = useRef<HTMLDivElement>(null);
+  const scrollingFromTab = useRef(false);
+  const tabRef = useRef(tab);
+  tabRef.current = tab;
+
+  const hasPreview = Boolean(previewUrl) && !previewFailed;
+  const has3d = Boolean(map3dUrl) && !map3dFailed;
+  const showTabs = hasPreview && has3d;
+
+  useEffect(() => {
+    if (!hasPreview && has3d) setTab("vision3d");
+    else if (hasPreview) setTab("ingame");
+  }, [hasPreview, has3d]);
+
+  const scrollToTab = useCallback(
+    (next: PreviewTabId, behavior: ScrollBehavior = "smooth") => {
+      const el = trackRef.current;
+      if (!el || !showTabs) return;
+      scrollingFromTab.current = true;
+      const index = next === "ingame" ? 0 : 1;
+      el.scrollTo({ left: index * el.clientWidth, behavior });
+      setTab(next);
+      window.setTimeout(() => {
+        scrollingFromTab.current = false;
+      }, behavior === "smooth" ? 400 : 50);
+    },
+    [showTabs],
+  );
+
+  useEffect(() => {
+    if (!showTabs) return;
+    scrollToTab(tabRef.current, "instant");
+    const onResize = () => scrollToTab(tabRef.current, "instant");
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [showTabs, scrollToTab]);
+
+  const syncTabFromScroll = useCallback(() => {
+    if (scrollingFromTab.current) return;
+    const el = trackRef.current;
+    if (!el || !showTabs) return;
+    const index = Math.round(el.scrollLeft / Math.max(el.clientWidth, 1));
+    const next: PreviewTabId = index >= 1 ? "vision3d" : "ingame";
+    setTab((prev) => (prev === next ? prev : next));
+  }, [showTabs]);
+
+  if (!hasPreview && !has3d) return null;
 
   return (
-    <Section title={title} className={loaded ? "mt-6" : "hidden"}>
-      <img
-        src={src}
-        alt={`${mapName} — ${title}`}
-        className="mx-auto h-auto w-full rounded-xl object-contain"
-        onLoad={() => setLoaded(true)}
-        onError={() => {
-          if (hideUntilLoaded) setLoaded(false);
-        }}
-      />
+    <Section title={t("common.mapPreview")} className="mt-6">
+      {showTabs ? (
+        <div
+          role="tablist"
+          aria-label={t("common.mapPreview")}
+          className="mb-3 flex flex-wrap gap-2"
+        >
+          {(
+            [
+              { id: "ingame" as const, label: t("common.mapPreviewInGame") },
+              { id: "vision3d" as const, label: t("common.mapPreview3dVision") },
+            ] as const
+          ).map((item) => {
+            const active = tab === item.id;
+            return (
+              <button
+                key={item.id}
+                type="button"
+                role="tab"
+                aria-selected={active}
+                onClick={() => scrollToTab(item.id)}
+                className={cn(
+                  "rounded-lg px-3.5 py-1.5 text-sm font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40",
+                  active
+                    ? "bg-amber-500/15 text-amber-200 ring-1 ring-amber-500/35"
+                    : "text-zinc-400 hover:bg-zinc-900/80 hover:text-zinc-200",
+                )}
+              >
+                {item.label}
+              </button>
+            );
+          })}
+        </div>
+      ) : null}
+
+      {showTabs ? (
+        <div
+          ref={trackRef}
+          className="flex touch-pan-x snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          onScroll={syncTabFromScroll}
+        >
+          <div className="w-full min-w-full shrink-0 snap-center snap-always" role="tabpanel">
+            <img
+              src={previewUrl}
+              alt={`${mapName} — ${t("common.mapPreviewInGame")}`}
+              className="mx-auto h-auto w-full select-none rounded-xl object-contain"
+              draggable={false}
+              onError={() => setPreviewFailed(true)}
+            />
+          </div>
+          <div className="w-full min-w-full shrink-0 snap-center snap-always" role="tabpanel">
+            <img
+              src={map3dUrl}
+              alt={`${mapName} — ${t("common.mapPreview3dVision")}`}
+              className="mx-auto h-auto w-full select-none rounded-xl object-contain"
+              draggable={false}
+              onError={() => setMap3dFailed(true)}
+            />
+          </div>
+        </div>
+      ) : hasPreview ? (
+        <img
+          src={previewUrl}
+          alt={`${mapName} — ${t("common.mapPreview")}`}
+          className="mx-auto h-auto w-full rounded-xl object-contain"
+          onError={() => setPreviewFailed(true)}
+        />
+      ) : (
+        <img
+          src={map3dUrl}
+          alt={`${mapName} — ${t("common.mapPreview3dVision")}`}
+          className="mx-auto h-auto w-full rounded-xl object-contain"
+          onError={() => setMap3dFailed(true)}
+        />
+      )}
+
+      {showTabs ? (
+        <div className="mt-3 flex justify-center gap-1.5" aria-hidden>
+          <span
+            className={cn(
+              "h-1.5 w-1.5 rounded-full transition",
+              tab === "ingame" ? "bg-amber-400" : "bg-zinc-600",
+            )}
+          />
+          <span
+            className={cn(
+              "h-1.5 w-1.5 rounded-full transition",
+              tab === "vision3d" ? "bg-amber-400" : "bg-zinc-600",
+            )}
+          />
+        </div>
+      ) : null}
     </Section>
   );
 }
@@ -115,24 +248,12 @@ export function MapaDetailPage() {
           </Section>
         ) : null}
       </div>
-      {previewUrl ? (
-        <MapaImageSection
-          key={previewUrl}
-          src={previewUrl}
-          mapName={m.nome}
-          title={t("common.mapPreview")}
-          hideUntilLoaded
-        />
-      ) : null}
-      {map3dUrl ? (
-        <MapaImageSection
-          key={map3dUrl}
-          src={map3dUrl}
-          mapName={m.nome}
-          title={t("common.map3d")}
-          hideUntilLoaded
-        />
-      ) : null}
+      <MapaPreviewSection
+        key={`${previewUrl ?? ""}|${map3dUrl ?? ""}`}
+        mapName={m.nome}
+        previewUrl={previewUrl}
+        map3dUrl={map3dUrl}
+      />
     </AppPageDetail>
   );
 }
