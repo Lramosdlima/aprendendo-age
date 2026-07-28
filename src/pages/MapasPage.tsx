@@ -12,15 +12,21 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
-import { formatMapaOrigem, mapaOrigemTitleIcons } from "@/lib/mapaOrigemIcons";
+import {
+  formatMapaOrigem,
+  MAPA_ORIGEM_FILTERS,
+  mapaOrigemTitleIcons,
+} from "@/lib/mapaOrigemIcons";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 type MapFilterKey = "ranked" | "default" | "quickMatches" | "land" | "water";
 
 type MapFilterOption = {
-  key: MapFilterKey | null;
+  key: string;
   label: string;
   iconSrc: string;
+  /** `contain` para ícones de DLC quadrados; `cover` (padrão) para thumbs circulares. */
+  iconFit?: "cover" | "contain";
 };
 
 function MapFilterChip({
@@ -32,6 +38,7 @@ function MapFilterChip({
   active: boolean;
   onClick: () => void;
 }) {
+  const fitContain = option.iconFit === "contain";
   return (
     <div className="group/filter relative shrink-0">
       <button
@@ -50,7 +57,10 @@ function MapFilterChip({
         <img
           src={option.iconSrc}
           alt=""
-          className="h-7 w-7 rounded-full object-cover"
+          className={cn(
+            "h-7 w-7",
+            fitContain ? "rounded-md object-contain p-0.5" : "rounded-full object-cover",
+          )}
           width={28}
           height={28}
           loading="lazy"
@@ -79,13 +89,20 @@ function matchesMapFilter(m: LocaleCatalog["mapas"][number], filterKey: MapFilte
   return m.tipo?.toLowerCase().includes("naval");
 }
 
+function matchesOrigemFilter(m: LocaleCatalog["mapas"][number], origem: string | null) {
+  if (!origem) return true;
+  return m.origem?.includes(origem) ?? false;
+}
+
 function matches(
   m: LocaleCatalog["mapas"][number],
   q: string,
   index: number,
   filterKey: MapFilterKey | null,
+  origemFilter: string | null,
 ) {
   if (!matchesMapFilter(m, filterKey)) return false;
+  if (!matchesOrigemFilter(m, origemFilter)) return false;
   if (!q.trim()) return true;
   const s = q.toLowerCase();
   const blob = [m.nome, m.ingles ?? "", m.tipo ?? "", formatMapaOrigem(m.origem), String(index)]
@@ -104,12 +121,16 @@ export function MapasPage() {
   );
   const [q, setQ] = useListPageSearchQuery();
   const [filterKey, setFilterKey] = useState<MapFilterKey | null>(null);
+  const [origemFilter, setOrigemFilter] = useState<string | null>(null);
   const filtered = useMemo(
-    () => mapas.map((m, i) => ({ m, i })).filter(({ m, i }) => matches(m, q, i, filterKey)),
-    [mapas, q, filterKey],
+    () =>
+      mapas
+        .map((m, i) => ({ m, i }))
+        .filter(({ m, i }) => matches(m, q, i, filterKey, origemFilter)),
+    [mapas, q, filterKey, origemFilter],
   );
   const filterOptions: MapFilterOption[] = [
-    { key: null, label: t("pages.mapas.filterTagAll"), iconSrc: "/assets/maps/all_maps.webp" },
+    { key: "all", label: t("pages.mapas.filterTagAll"), iconSrc: "/assets/maps/all_maps.webp" },
     {
       key: "ranked",
       label: t("pages.mapas.filters.ranked"),
@@ -128,6 +149,12 @@ export function MapasPage() {
     { key: "land", label: t("pages.mapas.filters.land"), iconSrc: "/assets/maps/MapThumb_Land.webp" },
     { key: "water", label: t("pages.mapas.filters.water"), iconSrc: "/assets/maps/MapThumb_Navy.webp" },
   ];
+  const origemFilterOptions: MapFilterOption[] = MAPA_ORIGEM_FILTERS.map((o) => ({
+    key: o.label,
+    label: o.label,
+    iconSrc: o.iconSrc,
+    iconFit: "contain",
+  }));
 
   return (
     <div>
@@ -150,13 +177,37 @@ export function MapasPage() {
             aria-label={t("pages.mapas.filterTagLabel")}
           >
             {filterOptions.map((option) => {
-              const active = filterKey === option.key;
+              const active =
+                option.key === "all" ? filterKey === null : filterKey === option.key;
               return (
                 <MapFilterChip
-                  key={option.key ?? "all"}
+                  key={option.key}
                   option={option}
                   active={active}
-                  onClick={() => setFilterKey(active ? null : option.key)}
+                  onClick={() =>
+                    setFilterKey(
+                      option.key === "all"
+                        ? null
+                        : active
+                          ? null
+                          : (option.key as MapFilterKey),
+                    )
+                  }
+                />
+              );
+            })}
+            <span
+              aria-hidden
+              className="mx-1 hidden h-6 w-px shrink-0 bg-zinc-700/80 sm:block"
+            />
+            {origemFilterOptions.map((option) => {
+              const active = origemFilter === option.key;
+              return (
+                <MapFilterChip
+                  key={option.key}
+                  option={option}
+                  active={active}
+                  onClick={() => setOrigemFilter(active ? null : option.key)}
                 />
               );
             })}

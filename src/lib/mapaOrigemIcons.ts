@@ -10,6 +10,14 @@ const ORIGEM_ICON_BY_LABEL: Record<string, string> = {
   "Mod: Pandoras Box 2": "pandoras_box_2",
 };
 
+/** Ordem estável dos filtros de origem na listagem de mapas. */
+export const MAPA_ORIGEM_FILTERS: { label: string; iconSrc: string }[] = Object.entries(
+  ORIGEM_ICON_BY_LABEL,
+).map(([label, slug]) => ({
+  label,
+  iconSrc: `/assets/dlc_icons/${slug}.webp`,
+}));
+
 export function mapaOrigemIconSrc(origem: string): string | undefined {
   const slug = ORIGEM_ICON_BY_LABEL[origem.trim()];
   return slug ? `/assets/dlc_icons/${slug}.webp` : undefined;
