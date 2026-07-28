@@ -329,23 +329,25 @@ export function AstecasPage() {
                 <EntityCard
                   to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
                   linkState={listIndexState}
-                  title={
-                    <span className="inline-flex max-w-full items-center gap-1.5">
-                      <span className="min-w-0 truncate">{m.nome}</span>
-                      {dlcIcons.map((ti) => (
-                        <img
-                          key={ti.src}
-                          src={ti.src}
-                          alt=""
-                          title={ti.label}
-                          draggable={false}
-                          className="size-5 shrink-0 object-contain"
-                        />
-                      ))}
-                    </span>
-                  }
+                  title={m.nome}
                   subtitle={m.tipo}
-                  meta={origemMeta || undefined}
+                  meta={
+                    origemMeta || dlcIcons.length ? (
+                      <span className="inline-flex items-center gap-1.5">
+                        {dlcIcons.map((ti) => (
+                          <img
+                            key={ti.src}
+                            src={ti.src}
+                            alt=""
+                            title={ti.label}
+                            draggable={false}
+                            className="size-4 shrink-0 object-contain"
+                          />
+                        ))}
+                        {origemMeta ? <span>{origemMeta}</span> : null}
+                      </span>
+                    ) : undefined
+                  }
                   backgroundCoverSrc={getMapaPreviewUrl(m)}
                   backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
                   watermarkSrc={getMapaAssetUrl(m)}
