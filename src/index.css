@@ -464,3 +464,39 @@ body {
 .race-avatar-hop.is-hopping {
   animation: race-avatar-hop 0.65s ease-out;
 }
+
+/* Mapas ranqueados — brilho ocasional na borda dourada do EntityCard */
+@keyframes entity-card-ranked-shine {
+  0%,
+  78% {
+    transform: translateX(-130%) skewX(-18deg);
+    opacity: 0;
+  }
+  82% {
+    opacity: 0.55;
+  }
+  92% {
+    transform: translateX(130%) skewX(-18deg);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateX(130%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+.entity-card-ranked::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  border-radius: inherit;
+  background: linear-gradient(
+    105deg,
+    transparent 38%,
+    rgba(255, 236, 170, 0.45) 50%,
+    transparent 62%
+  );
+  animation: entity-card-ranked-shine 7.5s ease-in-out infinite;
+}

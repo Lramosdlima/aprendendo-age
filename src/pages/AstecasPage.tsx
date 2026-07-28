@@ -16,6 +16,7 @@ import { formatGodNameForMetaNotion, getDeusAssetUrl } from "@/lib/deusAssetUrl"
 import { getGodPowerAssetUrl } from "@/lib/godPowerAssetUrl";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
 import { firstNome, firstNumId, joinRefNomes } from "@/lib/entityRefs";
+import { formatMapaOrigem, mapaOrigemTitleIcons } from "@/lib/mapaOrigemIcons";
 import { getPantheonWatermarkUrl } from "@/lib/pantheonAssetUrl";
 import { panteaoFieldHasMultiplePantheons, pantheonCardTint } from "@/lib/pantheonCardTint";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
@@ -106,7 +107,7 @@ export function AstecasPage() {
     () =>
       mapas
         .map((m, i) => ({ m, i }))
-        .filter(({ m }) => m.origem === MAPAS_OBSIDIAN_ORIGEM),
+        .filter(({ m }) => m.origem.includes(MAPAS_OBSIDIAN_ORIGEM)),
     [mapas],
   );
 
@@ -320,25 +321,26 @@ export function AstecasPage() {
           {t("common.mapsObsidianDesc", { origin: MAPAS_OBSIDIAN_ORIGEM })}
         </p>
         <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-          {mapasObsidian.map(({ m, i }) => (
-            <li key={`${m.nome}-${i}`}>
-              <EntityCard
-                to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
-                linkState={listIndexState}
-                title={m.nome}
-                subtitle={m.tipo}
-                meta={m.origem}
-                backgroundCoverSrc={getMapaPreviewUrl(m)}
-                backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
-                watermarkSrc={getMapaAssetUrl(m)}
-                titleIcons={
-                  m.mapas_da_ranqueada
-                    ? [{ icon: "aomr_type_hero_icon", label: t("common.ranked") }]
-                    : undefined
-                }
-              />
-            </li>
-          ))}
+          {mapasObsidian.map(({ m, i }) => {
+            const dlcIcons = mapaOrigemTitleIcons(m.origem);
+            const origemMeta = formatMapaOrigem(m.origem);
+            return (
+              <li key={`${m.nome}-${i}`}>
+                <EntityCard
+                  to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
+                  linkState={listIndexState}
+                  title={m.nome}
+                  subtitle={m.tipo}
+                  meta={origemMeta || undefined}
+                  backgroundCoverSrc={getMapaPreviewUrl(m)}
+                  backgroundCoverFallbackSrc={getMapaAssetUrl(m)}
+                  watermarkSrc={getMapaAssetUrl(m)}
+                  rankedHighlight={m.mapas_da_ranqueada}
+                  titleIcons={dlcIcons.length ? dlcIcons : undefined}
+                />
+              </li>
+            );
+          })}
         </ul>
       </section>
     </div>

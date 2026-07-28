@@ -28,6 +28,11 @@ def _new_row(extracted: dict[str, Any], locale: str) -> dict[str, Any]:
         raise ValueError(
             f"Mapa novo sem origem editorial definida: {extracted['map_id']}"
         )
+    origin_list = (
+        [part.strip() for part in str(origin).split(",") if part.strip()]
+        if isinstance(origin, str)
+        else [str(x).strip() for x in origin if str(x).strip()]
+    )
     map_type = extracted.get("tipo")
     if not map_type:
         raise ValueError(
@@ -38,7 +43,7 @@ def _new_row(extracted: dict[str, Any], locale: str) -> dict[str, Any]:
         "ingles": extracted["nome_en"],
         "mapas_da_ranqueada": extracted["mapas_da_ranqueada"],
         "saiu_da_ranqueada": False,
-        "origem": origin,
+        "origem": origin_list,
         "padrao": extracted["padrao"],
         "partidas_rapidas": extracted["partidas_rapidas"],
         "tipo": map_type,

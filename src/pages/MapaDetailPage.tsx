@@ -10,6 +10,7 @@ import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getMapa3dUrl, getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
+import { formatMapaOrigem } from "@/lib/mapaOrigemIcons";
 
 function Mapa3dSection({ src, mapName, title }: { src: string; mapName: string; title: string }) {
   const [loaded, setLoaded] = useState(false);
@@ -72,7 +73,7 @@ export function MapaDetailPage() {
             <InfoRow label={t("common.default")}>{fmtSimNao(m.padrao)}</InfoRow>
             <InfoRow label={t("common.quickMatches")}>{fmtSimNao(m.partidas_rapidas)}</InfoRow>
             <InfoRow label={t("common.type")}>{m.tipo ?? "—"}</InfoRow>
-            <InfoRow label={t("common.origin")}>{m.origem ?? "—"}</InfoRow>
+            <InfoRow label={t("common.origin")}>{formatMapaOrigem(m.origem) || "—"}</InfoRow>
           </div>
         </Section>
         {mapaIcon ? (

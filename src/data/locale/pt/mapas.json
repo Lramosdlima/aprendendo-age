@@ -4,7 +4,9 @@
     "ingles": "Acropolis",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -15,7 +17,9 @@
     "ingles": "Alfheim",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -26,7 +30,9 @@
     "ingles": "Anatolia",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -38,7 +44,9 @@
     "icon": "aomr_dry_arabia_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -48,7 +56,9 @@
     "ingles": "Arena",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -59,7 +69,9 @@
     "ingles": "Archipelago",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -71,7 +83,9 @@
     "icon": "aomr_atacama_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -81,7 +95,9 @@
     "ingles": "Aïr",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -92,7 +108,9 @@
     "ingles": "Bamboo Grove",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Immortal Pillars (2025)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -104,7 +122,9 @@
     "icon": "aomr_budapest_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -114,7 +134,9 @@
     "ingles": "Watering Hole",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -126,7 +148,9 @@
     "icon": "aomr_frozen_continent_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -136,7 +160,9 @@
     "ingles": "Gold Rush",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -147,7 +173,9 @@
     "ingles": "Obsidian Ridge",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Obsidian Mirror (2026)",
+    "origem": [
+      "AoM: Obsidian Mirror (2026)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -158,7 +186,9 @@
     "ingles": "Snake Dance",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -170,7 +200,9 @@
     "icon": "aomr_gorge_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -180,7 +212,9 @@
     "ingles": "Elysium",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -192,7 +226,9 @@
     "icon": "aomr_frozen_wastes_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -203,7 +239,9 @@
     "icon": "aomr_hideout_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -213,7 +251,9 @@
     "ingles": "Steppe",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Immortal Pillars (2025)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -224,7 +264,9 @@
     "ingles": "MirkWood",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Tale of the Dragon (2016)",
+    "origem": [
+      "AoM: Tale of the Dragon (2016)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -235,7 +277,9 @@
     "ingles": "IronWood",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -246,7 +290,9 @@
     "ingles": "Cloud Forest",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
+    "origem": [
+      "AoM: Obsidian Mirror (2026)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -257,7 +303,9 @@
     "ingles": "Giza",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -268,7 +316,9 @@
     "ingles": "Great Wall",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Immortal Pillars (2025)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -280,7 +330,9 @@
     "icon": "aomr_haywire_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -290,7 +342,9 @@
     "ingles": "Islands",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Titans (2003)",
+    "origem": [
+      "AoM: Titans (2003)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -301,7 +355,9 @@
     "ingles": "Jotunheim",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -312,7 +368,9 @@
     "ingles": "Kerlaugar",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -323,7 +381,9 @@
     "ingles": "Kii",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -334,7 +394,9 @@
     "ingles": "Ghost Lake",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -345,7 +407,9 @@
     "ingles": "Qinghai Lake",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Immortal Pillars (2025)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -356,7 +420,9 @@
     "ingles": "Blue Lagoon",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Tale of the Dragon (2016)",
+    "origem": [
+      "AoM: Tale of the Dragon (2016)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -367,7 +433,9 @@
     "ingles": "Sea of Worms",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -378,7 +446,9 @@
     "ingles": "Black Sea",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -389,7 +459,9 @@
     "ingles": "Mediterranean",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -400,7 +472,9 @@
     "ingles": "Megalopolis",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Titans (2003)",
+    "origem": [
+      "AoM: Titans (2003)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -411,7 +485,9 @@
     "ingles": "Midgard",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -422,7 +498,9 @@
     "ingles": "Team Migration",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -433,7 +511,9 @@
     "ingles": "Mirage",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": true,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -444,7 +524,9 @@
     "ingles": "Mount Olympus",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -455,7 +537,9 @@
     "ingles": "Muspellheim",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -466,7 +550,9 @@
     "ingles": "Nomad",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -477,7 +563,9 @@
     "ingles": "Land Nomad",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -488,7 +576,9 @@
     "ingles": "Tenochtitlan's Heart",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
+    "origem": [
+      "AoM: Obsidian Mirror (2026)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -499,7 +589,9 @@
     "ingles": "Okuchichibu",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -510,7 +602,9 @@
     "ingles": "Oasis",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -521,7 +615,9 @@
     "ingles": "Aso Grasslands",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -532,7 +628,9 @@
     "ingles": "Highland",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Titans (2003)",
+    "origem": [
+      "AoM: Titans (2003)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -544,7 +642,9 @@
     "icon": "aomr_prairie_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -554,7 +654,9 @@
     "ingles": "Marsh",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Titans (2003)",
+    "origem": [
+      "AoM: Titans (2003)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -566,7 +668,9 @@
     "icon": "aomr_king_of_the_hill_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -576,7 +680,10 @@
     "ingles": "Yellow River",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)",
+      "AoM: Tale of the Dragon (2016)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Naval 🌊",
@@ -587,7 +694,9 @@
     "ingles": "River Styx",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -598,7 +707,9 @@
     "ingles": "River Nile",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -609,7 +720,10 @@
     "ingles": "Silk Road",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Immortal Pillars (2025), AoM: Tale of the Dragon (2016)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)",
+      "AoM: Tale of the Dragon (2016)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -620,7 +734,9 @@
     "ingles": "Savannah",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -631,7 +747,9 @@
     "ingles": "Senjōgahara",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -642,7 +760,9 @@
     "ingles": "Setonaikai",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Heavenly Spear (2025)",
+    "origem": [
+      "AoM: Heavenly Spear (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -654,7 +774,9 @@
     "icon": "aomr_socotra_icon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "Mod: Pandoras Box 2",
+    "origem": [
+      "Mod: Pandoras Box 2"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra ??"
@@ -664,7 +786,9 @@
     "ingles": "Temple of the Jaguar Moon",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
+    "origem": [
+      "AoM: Obsidian Mirror (2026)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -675,7 +799,9 @@
     "ingles": "Peach Blossom Land",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": true,
-    "origem": "AoM: Immortal Pillars (2025)",
+    "origem": [
+      "AoM: Immortal Pillars (2025)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -686,7 +812,9 @@
     "ingles": "Blood River Crossing",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
+    "origem": [
+      "AoM: Obsidian Mirror (2026)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -697,7 +825,9 @@
     "ingles": "Tundra",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Titans (2003)",
+    "origem": [
+      "AoM: Titans (2003)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -708,7 +838,9 @@
     "ingles": "Valley of the Sun Serpent",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
+    "origem": [
+      "AoM: Obsidian Mirror (2026)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
@@ -719,7 +851,9 @@
     "ingles": "Valley of Kings",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -730,7 +864,9 @@
     "ingles": "Nile Shallows",
     "mapas_da_ranqueada": true,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Retold (2024)",
+    "origem": [
+      "AoM: Retold (2024)"
+    ],
     "padrao": true,
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
@@ -741,7 +877,9 @@
     "ingles": "Vinlandsaga",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
@@ -752,7 +890,9 @@
     "ingles": "Erebus",
     "mapas_da_ranqueada": false,
     "saiu_da_ranqueada": false,
-    "origem": "AoM: Original (2002)",
+    "origem": [
+      "AoM: Original (2002)"
+    ],
     "padrao": false,
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",

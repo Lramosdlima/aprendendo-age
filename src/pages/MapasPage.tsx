@@ -12,6 +12,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { cn } from "@/lib/cn";
 import { getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexLinkStateFromLocation } from "@/lib/listIndexReturnState";
+import { formatMapaOrigem, mapaOrigemTitleIcons } from "@/lib/mapaOrigemIcons";
 import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 
 type MapFilterKey = "ranked" | "default" | "quickMatches" | "land" | "water";
@@ -87,7 +88,9 @@ function matches(
   if (!matchesMapFilter(m, filterKey)) return false;
   if (!q.trim()) return true;
   const s = q.toLowerCase();
-  const blob = [m.nome, m.ingles ?? "", m.tipo ?? "", m.origem ?? "", String(index)].join(" ").toLowerCase();
+  const blob = [m.nome, m.ingles ?? "", m.tipo ?? "", formatMapaOrigem(m.origem), String(index)]
+    .join(" ")
+    .toLowerCase();
   return blob.includes(s);
 }
 
@@ -163,6 +166,8 @@ export function MapasPage() {
       <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map(({ m, i }) => {
           const mapaIcon = getMapaAssetUrl(m);
+          const origemMeta = formatMapaOrigem(m.origem);
+          const dlcIcons = mapaOrigemTitleIcons(m.origem);
           return (
             <li key={`${m.nome}-${i}`}>
               <EntityCard
@@ -170,15 +175,12 @@ export function MapasPage() {
                 linkState={listIndexState}
                 title={m.nome}
                 subtitle={m.tipo}
-                meta={m.origem}
+                meta={origemMeta || undefined}
                 backgroundCoverSrc={getMapaPreviewUrl(m)}
                 backgroundCoverFallbackSrc={mapaIcon}
                 watermarkSrc={mapaIcon}
-                titleIcons={
-                  m.mapas_da_ranqueada
-                    ? [{ icon: "aomr_type_hero_icon", label: t("common.ranked") }]
-                    : undefined
-                }
+                rankedHighlight={m.mapas_da_ranqueada}
+                titleIcons={dlcIcons.length ? dlcIcons : undefined}
                 hoverPreview={
                   mapaIcon ? (
                     <div className="flex justify-center">

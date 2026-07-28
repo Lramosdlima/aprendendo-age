@@ -8,7 +8,10 @@ import { resolveTokenIconSrc } from "@/lib/tokenIconUrl";
 import { cssUrl, watermarkStripImageStyle } from "@/lib/watermarkImageStyle";
 
 export type EntityCardTitleIcon = {
-  icon: string;
+  /** Token em `token_asset_map.json`; ignorado se `src` estiver definido. */
+  icon?: string;
+  /** URL direta do ícone (ex.: DLC em `/assets/dlc_icons`). */
+  src?: string;
   label: string;
 };
 
@@ -45,6 +48,8 @@ type EntityCardProps = {
   cardTint?: string;
   /** Ícones à direita do título; `label` aparece no hover (atributo `title`). Sem entrada em `token_asset_map.json`, mostra o texto de `icon`. */
   titleIcons?: EntityCardTitleIcon[];
+  /** Borda dourada + brilho ocasional — ex.: mapas da ranqueada. */
+  rankedHighlight?: boolean;
   /** Resumo exibido ao passar o mouse ou focar o card. O nome do card é incluído automaticamente no topo. */
   hoverPreview?: ReactNode;
 };
@@ -68,6 +73,7 @@ export function EntityCard({
   selectDisabled,
   cardTint,
   titleIcons,
+  rankedHighlight = false,
   hoverPreview,
 }: EntityCardProps) {
   const [coverSrc, setCoverSrc] = useState(backgroundCoverSrc);
@@ -154,8 +160,9 @@ export function EntityCard({
     "group relative block overflow-hidden rounded-xl border p-4 transition-colors",
     !hasTint && !hasBgCover && "bg-zinc-900/40",
     !hasTint && hasBgCover && "bg-transparent",
-    compareMode
-      ? "cursor-pointer border-aom-border hover:border-amber-500/35"
+    compareMode ? "cursor-pointer" : false,
+    rankedHighlight
+      ? "entity-card-ranked border-amber-400/75 shadow-[0_0_0_1px_rgba(251,191,36,0.28),0_0_14px_rgba(245,158,11,0.18)] hover:border-amber-300/90"
       : "border-aom-border hover:border-amber-500/35",
     !hasTint && !hasBgCover && "hover:bg-zinc-900/70",
     selected && compareMode && !hasTint && !hasBgCover ? "border-amber-500/50 bg-zinc-900/70 ring-1 ring-amber-500/30" : false,
@@ -253,9 +260,10 @@ export function EntityCard({
             {titleIcons?.length ? (
               <span className="flex shrink-0 items-center gap-1">
                 {titleIcons.map((ti, idx) => {
-                  const src = resolveTokenIconSrc(ti.icon);
+                  const src = ti.src ?? (ti.icon ? resolveTokenIconSrc(ti.icon) : undefined);
+                  const key = ti.src ?? ti.icon ?? ti.label;
                   return (
-                    <span key={`${ti.icon}-${idx}`} title={ti.label} className="inline-flex">
+                    <span key={`${key}-${idx}`} title={ti.label} className="inline-flex">
                       {src ? (
                         <img
                           src={src}
@@ -265,7 +273,7 @@ export function EntityCard({
                         />
                       ) : (
                         <span className="max-w-[7rem] truncate text-xs font-normal normal-case text-amber-200/85">
-                          {ti.icon}
+                          {ti.icon ?? ti.label}
                         </span>
                       )}
                     </span>

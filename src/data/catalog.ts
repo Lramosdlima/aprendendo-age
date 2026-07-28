@@ -12,7 +12,7 @@ export type Mapa = {
   ingles: string;
   mapas_da_ranqueada: boolean;
   saiu_da_ranqueada: boolean;
-  origem: string;
+  origem: string[];
   padrao: boolean;
   partidas_rapidas: boolean;
   tipo: string;
