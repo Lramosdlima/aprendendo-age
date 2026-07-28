@@ -127,7 +127,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Naval 🌊"
   },
   {
     "nome": "Buraco d’Água",
@@ -153,7 +153,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Naval 🌊"
   },
   {
     "nome": "Corrida do Ouro",
@@ -779,7 +779,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Naval 🌊"
   },
   {
     "nome": "Templo da Lua Jaguar",

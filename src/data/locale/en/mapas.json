@@ -166,7 +166,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Naval 🌊"
   },
   {
     "nome": "Cloud Forest",
@@ -231,7 +231,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Naval 🌊"
   },
   {
     "nome": "Frozen Wastes",
@@ -768,7 +768,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra 🌳"
+    "tipo": "Naval 🌊"
   },
   {
     "nome": "Steppe",

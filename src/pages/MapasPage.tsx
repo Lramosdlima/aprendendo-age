@@ -43,7 +43,10 @@ function MapFilterChip({
     <div className="group/filter relative shrink-0">
       <button
         type="button"
-        onClick={onClick}
+        onClick={(e) => {
+          onClick();
+          e.currentTarget.blur();
+        }}
         aria-pressed={active}
         aria-label={option.label}
         title={option.label}
@@ -71,7 +74,7 @@ function MapFilterChip({
         role="tooltip"
         className={cn(
           "pointer-events-none absolute left-1/2 top-full z-30 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-zinc-700/80 bg-zinc-950/95 px-2 py-1 text-[10px] font-medium text-zinc-200 shadow-lg shadow-black/40",
-          "opacity-0 transition duration-150 group-hover/filter:opacity-100 group-focus-within/filter:opacity-100",
+          "opacity-0 transition duration-150 group-hover/filter:opacity-100",
         )}
       >
         {option.label}
