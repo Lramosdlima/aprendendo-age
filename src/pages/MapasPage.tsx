@@ -173,14 +173,32 @@ export function MapasPage() {
               <EntityCard
                 to={`/mapas/${mapaSlugByIndex.get(i) ?? i}`}
                 linkState={listIndexState}
-                title={m.nome}
+                title={
+                  <span className="inline-flex max-w-full items-center gap-1.5">
+                    <span className="min-w-0 truncate">{m.nome}</span>
+                    {dlcIcons.map((ti) => (
+                      <img
+                        key={ti.src}
+                        src={ti.src}
+                        alt=""
+                        title={ti.label}
+                        draggable={false}
+                        className="size-5 shrink-0 object-contain"
+                      />
+                    ))}
+                  </span>
+                }
                 subtitle={m.tipo}
                 meta={origemMeta || undefined}
                 backgroundCoverSrc={getMapaPreviewUrl(m)}
                 backgroundCoverFallbackSrc={mapaIcon}
                 watermarkSrc={mapaIcon}
                 rankedHighlight={m.mapas_da_ranqueada}
-                titleIcons={dlcIcons.length ? dlcIcons : undefined}
+                titleIcons={
+                  m.mapas_da_ranqueada
+                    ? [{ icon: "aomr_type_hero_icon", label: t("common.ranked") }]
+                    : undefined
+                }
                 hoverPreview={
                   mapaIcon ? (
                     <div className="flex justify-center">

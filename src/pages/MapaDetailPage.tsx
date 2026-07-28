@@ -10,10 +10,20 @@ import { useCatalog } from "@/hooks/useCatalog";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getMapa3dUrl, getMapaAssetUrl, getMapaPreviewUrl } from "@/lib/entityWatermarkUrls";
 import { listIndexBackLinkLabel, listIndexReturnTo } from "@/lib/listIndexReturnState";
-import { formatMapaOrigem } from "@/lib/mapaOrigemIcons";
+import { formatMapaOrigem, mapaOrigemTitleIcons } from "@/lib/mapaOrigemIcons";
 
-function Mapa3dSection({ src, mapName, title }: { src: string; mapName: string; title: string }) {
-  const [loaded, setLoaded] = useState(false);
+function MapaImageSection({
+  src,
+  mapName,
+  title,
+  hideUntilLoaded = false,
+}: {
+  src: string;
+  mapName: string;
+  title: string;
+  hideUntilLoaded?: boolean;
+}) {
+  const [loaded, setLoaded] = useState(!hideUntilLoaded);
 
   return (
     <Section title={title} className={loaded ? "mt-6" : "hidden"}>
@@ -22,7 +32,9 @@ function Mapa3dSection({ src, mapName, title }: { src: string; mapName: string; 
         alt={`${mapName} — ${title}`}
         className="mx-auto h-auto w-full rounded-xl object-contain"
         onLoad={() => setLoaded(true)}
-        onError={() => setLoaded(false)}
+        onError={() => {
+          if (hideUntilLoaded) setLoaded(false);
+        }}
       />
     </Section>
   );
@@ -54,6 +66,7 @@ export function MapaDetailPage() {
   const mapaIcon = getMapaAssetUrl(m);
   const previewUrl = getMapaPreviewUrl(m);
   const map3dUrl = getMapa3dUrl(m);
+  const dlcIcons = mapaOrigemTitleIcons(m.origem);
 
   return (
     <AppPageDetail
@@ -64,6 +77,22 @@ export function MapaDetailPage() {
       headerIconSrc={mapaIcon}
       heroBackgroundSrc={previewUrl}
       heroBackgroundFallbackSrc={mapaIcon}
+      actions={
+        dlcIcons.length ? (
+          <div className="flex items-center gap-2">
+            {dlcIcons.map((ti) => (
+              <img
+                key={ti.src}
+                src={ti.src}
+                alt=""
+                title={ti.label}
+                draggable={false}
+                className="size-12 rounded-lg border border-aom-border/80 bg-zinc-900/50 object-contain p-1 shadow-sm shadow-black/25 sm:size-14"
+              />
+            ))}
+          </div>
+        ) : undefined
+      }
     >
       <div className="grid gap-6 lg:grid-cols-2">
         <Section title={t("common.metadata")} className="h-full">
@@ -86,8 +115,23 @@ export function MapaDetailPage() {
           </Section>
         ) : null}
       </div>
+      {previewUrl ? (
+        <MapaImageSection
+          key={previewUrl}
+          src={previewUrl}
+          mapName={m.nome}
+          title={t("common.mapPreview")}
+          hideUntilLoaded
+        />
+      ) : null}
       {map3dUrl ? (
-        <Mapa3dSection key={map3dUrl} src={map3dUrl} mapName={m.nome} title={t("common.map3d")} />
+        <MapaImageSection
+          key={map3dUrl}
+          src={map3dUrl}
+          mapName={m.nome}
+          title={t("common.map3d")}
+          hideUntilLoaded
+        />
       ) : null}
     </AppPageDetail>
   );

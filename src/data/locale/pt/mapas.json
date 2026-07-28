@@ -39,7 +39,7 @@
     "icon": "aomr_anatolia_icon"
   },
   {
-    "nome": "Ar?bia Seca",
+    "nome": "Arábia Seca",
     "ingles": "Dry Arabia",
     "icon": "aomr_dry_arabia_icon",
     "mapas_da_ranqueada": false,
@@ -49,7 +49,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Arena",
@@ -88,7 +88,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Aïr",
@@ -127,7 +127,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Buraco d’Água",
@@ -153,7 +153,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Corrida do Ouro",
@@ -205,7 +205,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Elísio",
@@ -231,7 +231,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Esconderijo",
@@ -244,7 +244,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Estepe",
@@ -335,7 +335,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Ilhas",
@@ -647,7 +647,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Pântano",
@@ -673,7 +673,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Rio Amarelo",
@@ -779,7 +779,7 @@
     ],
     "padrao": false,
     "partidas_rapidas": false,
-    "tipo": "Terra ??"
+    "tipo": "Terra 🌳"
   },
   {
     "nome": "Templo da Lua Jaguar",

@@ -94,6 +94,7 @@ export const ptMessages: TranslationTree = {
     metadata: "Metadados",
     map2d: "Mapa em 2D",
     map3d: "Mapa em 3D",
+    mapPreview: "Mapa Preview",
     god: "Deus",
     costAndTime: "Custo e tempo",
     combatDefense: "Combate / defesa",

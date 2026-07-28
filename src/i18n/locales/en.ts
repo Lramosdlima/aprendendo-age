@@ -94,6 +94,7 @@ export const enMessages: TranslationTree = {
     metadata: "Metadata",
     map2d: "2D map",
     map3d: "3D map",
+    mapPreview: "Map preview",
     god: "God",
     costAndTime: "Cost and time",
     combatDefense: "Combat / defense",
