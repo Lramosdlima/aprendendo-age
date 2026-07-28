@@ -33,6 +33,17 @@
     "icon": "aomr_anatolia_icon"
   },
   {
+    "nome": "Ar?bia Seca",
+    "ingles": "Dry Arabia",
+    "icon": "aomr_dry_arabia_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
+  },
+  {
     "nome": "Arena",
     "ingles": "Arena",
     "mapas_da_ranqueada": false,
@@ -53,6 +64,17 @@
     "partidas_rapidas": false,
     "tipo": "Naval 🌊",
     "icon": "aomr_archipelago_icon"
+  },
+  {
+    "nome": "Atacama",
+    "ingles": "Atacama",
+    "icon": "aomr_atacama_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
   },
   {
     "nome": "Aïr",
@@ -77,6 +99,17 @@
     "icon": "aomr_bamboo_grove_icon"
   },
   {
+    "nome": "Budapeste",
+    "ingles": "Budapest",
+    "icon": "aomr_budapest_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
+  },
+  {
     "nome": "Buraco d’Água",
     "ingles": "Watering Hole",
     "mapas_da_ranqueada": true,
@@ -86,6 +119,17 @@
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_watering_hole_icon"
+  },
+  {
+    "nome": "Continente Congelado",
+    "ingles": "Frozen Continent",
+    "icon": "aomr_frozen_continent_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
   },
   {
     "nome": "Corrida do Ouro",
@@ -99,6 +143,17 @@
     "icon": "aomr_gold_rush_icon"
   },
   {
+    "nome": "Crista de Obsidiana",
+    "ingles": "Obsidian Ridge",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": true,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳",
+    "icon": "aomr_obsidian_ridge_icon"
+  },
+  {
     "nome": "Dança da Cobra",
     "ingles": "Snake Dance",
     "mapas_da_ranqueada": false,
@@ -110,6 +165,17 @@
     "icon": "aomr_snake_dance_icon"
   },
   {
+    "nome": "Desfiladeiro",
+    "ingles": "Gorge",
+    "icon": "aomr_gorge_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
+  },
+  {
     "nome": "Elísio",
     "ingles": "Elysium",
     "mapas_da_ranqueada": true,
@@ -119,6 +185,28 @@
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_elysium_icon"
+  },
+  {
+    "nome": "Ermos Congelados",
+    "ingles": "Frozen Wastes",
+    "icon": "aomr_frozen_wastes_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
+  },
+  {
+    "nome": "Esconderijo",
+    "ingles": "Hideout",
+    "icon": "aomr_hideout_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
   },
   {
     "nome": "Estepe",
@@ -154,6 +242,17 @@
     "icon": "aomr_ironwood_icon"
   },
   {
+    "nome": "Floresta Nebulosa",
+    "ingles": "Cloud Forest",
+    "mapas_da_ranqueada": true,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": true,
+    "partidas_rapidas": true,
+    "tipo": "Terra 🌳",
+    "icon": "aomr_cloud_forest_icon"
+  },
+  {
     "nome": "Gizé",
     "ingles": "Giza",
     "mapas_da_ranqueada": true,
@@ -174,6 +273,17 @@
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
     "icon": "aomr_great_wall_icon"
+  },
+  {
+    "nome": "Haywire",
+    "ingles": "Haywire",
+    "icon": "aomr_haywire_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
   },
   {
     "nome": "Ilhas",
@@ -374,6 +484,17 @@
     "icon": "aomr_land_nomad_icon"
   },
   {
+    "nome": "O Coração de Tenochtitlán",
+    "ingles": "Tenochtitlan's Heart",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Naval 🌊",
+    "icon": "aomr_tenochtitlans_heart_icon"
+  },
+  {
     "nome": "Okuchichibu",
     "ingles": "Okuchichibu",
     "mapas_da_ranqueada": false,
@@ -418,6 +539,17 @@
     "icon": "aomr_highland_icon"
   },
   {
+    "nome": "Pradaria",
+    "ingles": "Prairie",
+    "icon": "aomr_prairie_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
+  },
+  {
     "nome": "Pântano",
     "ingles": "Marsh",
     "mapas_da_ranqueada": true,
@@ -427,6 +559,17 @@
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_marsh_icon"
+  },
+  {
+    "nome": "Rei da Colina",
+    "ingles": "King of the Hill",
+    "icon": "aomr_king_of_the_hill_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
   },
   {
     "nome": "Rio Amarelo",
@@ -506,6 +649,28 @@
     "icon": "aomr_setonaikai_icon"
   },
   {
+    "nome": "Socotra",
+    "ingles": "Socotra",
+    "icon": "aomr_socotra_icon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "Mod: Pandoras Box 2",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra ??"
+  },
+  {
+    "nome": "Templo da Lua Jaguar",
+    "ingles": "Temple of the Jaguar Moon",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳",
+    "icon": "aomr_temple_of_the_jaguar_icon"
+  },
+  {
     "nome": "Terra da Flor de Pêssego",
     "ingles": "Peach Blossom Land",
     "mapas_da_ranqueada": false,
@@ -517,6 +682,17 @@
     "icon": "aomr_peach_blossom_land_icon"
   },
   {
+    "nome": "Travessia do Rio de Sangue",
+    "ingles": "Blood River Crossing",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Naval 🌊",
+    "icon": "aomr_blood_river_crossing_icon"
+  },
+  {
     "nome": "Tundra",
     "ingles": "Tundra",
     "mapas_da_ranqueada": true,
@@ -526,6 +702,17 @@
     "partidas_rapidas": true,
     "tipo": "Terra 🌳",
     "icon": "aomr_tundra_icon"
+  },
+  {
+    "nome": "Vale da Serpente do Sol",
+    "ingles": "Valley of the Sun Serpent",
+    "mapas_da_ranqueada": false,
+    "saiu_da_ranqueada": false,
+    "origem": "AoM: Obsidian Mirror (2026)",
+    "padrao": false,
+    "partidas_rapidas": false,
+    "tipo": "Terra 🌳",
+    "icon": "aomr_valley_of_the_sun_serpent_icon"
   },
   {
     "nome": "Vale dos Reis",
@@ -570,71 +757,5 @@
     "partidas_rapidas": false,
     "tipo": "Terra 🌳",
     "icon": "aomr_erebus_icon"
-  },
-  {
-    "nome": "Travessia do Rio de Sangue",
-    "ingles": "Blood River Crossing",
-    "mapas_da_ranqueada": false,
-    "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Naval 🌊",
-    "icon": "aomr_blood_river_crossing_icon"
-  },
-  {
-    "nome": "Floresta Nebulosa",
-    "ingles": "Cloud Forest",
-    "mapas_da_ranqueada": true,
-    "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": true,
-    "partidas_rapidas": true,
-    "tipo": "Terra 🌳",
-    "icon": "aomr_cloud_forest_icon"
-  },
-  {
-    "nome": "Crista de Obsidiana",
-    "ingles": "Obsidian Ridge",
-    "mapas_da_ranqueada": false,
-    "saiu_da_ranqueada": true,
-    "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Terra 🌳",
-    "icon": "aomr_obsidian_ridge_icon"
-  },
-  {
-    "nome": "Templo da Lua Jaguar",
-    "ingles": "Temple of the Jaguar Moon",
-    "mapas_da_ranqueada": false,
-    "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Terra 🌳",
-    "icon": "aomr_temple_of_the_jaguar_icon"
-  },
-  {
-    "nome": "Vale da Serpente do Sol",
-    "ingles": "Valley of the Sun Serpent",
-    "mapas_da_ranqueada": false,
-    "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Terra 🌳",
-    "icon": "aomr_valley_of_the_sun_serpent_icon"
-  },
-  {
-    "nome": "O Coração de Tenochtitlán",
-    "ingles": "Tenochtitlan's Heart",
-    "mapas_da_ranqueada": false,
-    "saiu_da_ranqueada": false,
-    "origem": "AoM: Obsidian Mirror (2026)",
-    "padrao": false,
-    "partidas_rapidas": false,
-    "tipo": "Naval 🌊",
-    "icon": "aomr_tenochtitlans_heart_icon"
   }
 ]
